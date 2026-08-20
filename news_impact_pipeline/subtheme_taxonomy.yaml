@@ -1,0 +1,408 @@
+# subtheme_taxonomy.yaml — etichette di sotto-tema CANONICHE e loro pattern.
+#
+# Perché esiste (lacuna dichiarata nell'analisi 2026-08-15): le etichette di
+# sotto-tema erano prese dal campo `sub_themes` della scheda/ricerca e applicate
+# a TUTTE le date citate da quel documento. Risultato: su `structural_themes`
+# 53 episodi su 58 avevano `semis`, 52 `ai_capex`, 49 `valuation_derisking` →
+# `analogues.py find --subtheme` non discriminava, e schede con domande diverse
+# (news_03 = finanziamento del capex, news_04 = ciclo della memoria) ottenevano
+# lo stesso pool.
+#
+# Come si usa: `analogues.py build` prende il CONTESTO LOCALE di ogni data (la
+# riga di tabella / il bullet / il paragrafo in cui compare) e ci cerca dentro
+# questi pattern. Le etichette che matchano finiscono in `subthemes_local`, che
+# è specifico dell'episodio invece che del documento. `find --subtheme` prova
+# prima `subthemes_local`, poi ricade sull'unione, poi sul tema.
+#
+# Formato: <tema canonico>: { <etichetta>: [regex, ...] }. La sezione `_any`
+# vale per tutti i temi. Match case-insensitive su testo IT/EN.
+# Aggiungere etichette è sicuro: non tocca `subthemes` (unione storica), che
+# resta come rete di recall.
+
+_any:
+  export_controls:
+    - 'export control'
+    - 'entity list'
+    - 'controlli? (all[\''`]?)?export'
+    - 'restrizioni? (all[\''`]?)?export'
+    - 'divieto di esportazion'
+  tariff_escalation:
+    - '\btariff'
+    - '\bdazi\b'
+    - 'dazio'
+    - 'guerra commerciale'
+    - 'trade war'
+    - 'section 301'
+  sanctions:
+    - '\bsanzion'
+    - '\bsanction'
+    - '\bembargo'
+    - 'price cap'
+  election_risk:
+    - '\belezion'
+    - '\belection'
+    - 'ballottaggio'
+    - 'run-?off'
+    - 'sondagg'
+    - '\bpoll\b'
+  # Aggiunto il 2026-08-16: gli attriti commerciali Giappone-Cina sono stati
+  # scartati per la terza volta perché il canale (dogane, avvisi turistici,
+  # licenze terre rare) non aveva alcun token. Il tratto distintivo è che la
+  # ritorsione è AMMINISTRATIVA e differita, non tariffaria e immediata:
+  # merita un'etichetta propria, non `tariff_escalation`.
+  administrative_retaliation:
+    - 'ritardi doganal'
+    - 'controlli doganal'
+    - 'blocco doganale'
+    - 'avvis[oi] (di viaggio|turistic)'
+    - 'travel advisory'
+    - 'sospensione delle licenze'
+    - 'licenz\w+ (di|all[\''`]?)export'
+    - 'terre rare'
+    - 'rare earth'
+    - 'boicottagg'
+    - 'ispezioni (straordinarie|sanitarie)'
+    - 'yasukuni'
+
+structural_themes:
+  # --- il taglio richiesto dall'analisi: capex/finanziamento vs ciclo memoria ---
+  ai_capex_spending:
+    - '\bcapex\b'
+    - 'hyperscaler'
+    - 'data ?cent(er|re)'
+    - 'spesa in conto capitale'
+    - 'piano di investiment'
+    - 'guidance sugli investiment'
+  ai_capex_financing:
+    - 'financing vehicle'
+    - '\bspv\b'
+    - 'special purpose'
+    - 'obbligazion.{0,30}(ai|chip|data ?cent)'
+    - '(debito|debt|leva|leverage).{0,40}(ai|chip|capex|data ?cent)'
+    - 'aumento di capitale'
+    - 'equity raise'
+    - 'vendor financing'
+    - 'circular(ità|ity)'
+    - 'spread di credito'
+    - 'credit spread'
+  memory_cycle:
+    - '\bhbm\b'
+    - '\bdram\b'
+    - '\bnand\b'
+    - 'memoria ad alta banda'
+    - 'high[- ]bandwidth memory'
+    - 'micron'
+    - 'hynix'
+    - 'kioxia'
+    - 'sandisk'
+    - 'ciclo della memoria'
+    - 'memory (cycle|price|maker)'
+  foundry_logic:
+    - '\btsmc\b'
+    - '\bfoundry\b'
+    - '\basml\b'
+    - '\bfonderia\b'
+    - 'nodo (a )?[0-9]{1,2} ?nm'
+    - 'litografia'
+  valuation_derisking:
+    - 'valutazion'
+    - 'valuation'
+    - 'multipl[oi]'
+    - 'de-?risking'
+    - 'profit[- ]taking'
+    - 'presa di profitto'
+    - 'correzione'
+    - 'sell-?off'
+    - 'bolla'
+    - 'bubble'
+  model_capability_shock:
+    - 'deepseek'
+    - 'nuovo modello'
+    - 'frontier model'
+    - 'efficienza (del|dei) model'
+    - 'costo di (addestramento|training)'
+  earnings_shock:
+    - 'trimestrale'
+    - 'earnings'
+    - 'guidance'
+    - 'risultati (sopra|sotto) le attese'
+    - 'utili'
+  concentration_risk:
+    - 'concentrazione'
+    - 'concentration'
+    - 'magnificent'
+    - 'peso dell[\''`]?indice'
+    - 'mega-?cap'
+
+commodity_energy:
+  supply_disruption:
+    - 'supply[- ]shock'
+    - 'interruzion'
+    - 'blocco della produzione'
+    - 'outage'
+    - 'fermo impianto'
+    - 'chiusura del giacimento'
+  refinery_products:
+    - 'raffineri'
+    - 'refiner'
+    - 'crack'
+    - 'diesel'
+    - 'gasolio'
+    - 'distillat'
+    - 'prodotti raffinati'
+    - 'benzina'
+    - 'gasoline'
+    - 'carburante'
+    - 'razionamento'
+  # Separato da refinery_products (2026-08-16): l'analisi del giorno ha dovuto
+  # forzare --min-n 5 e integrare 2 episodi a mano perché `refinery_products`
+  # ne aveva solo 4 date-locali. Molti episodi del canale sono attacchi a
+  # impianti che il testo descrive come "attacco con droni alla raffineria":
+  # il tratto ricorrente è la modalità, non il prodotto.
+  infrastructure_attack:
+    - 'drone'
+    - 'attacc\w+ (a|alla|al|contro)\s+(una |la |il )?(raffineri|impiant|deposito|terminal|porto|oleodotto|gasdotto)'
+    - 'incendio'
+    - 'sabotagg'
+    - 'esplosion'
+    - 'oleodotto'
+    - 'gasdotto'
+    - 'fermo impianto'
+  shipping_chokepoint:
+    - 'hormuz'
+    - 'ormuz'
+    - 'bab al-?mandeb'
+    - 'mar rosso'
+    - 'red sea'
+    - 'suez'
+    - 'chokepoint'
+    - 'stretto'
+    - 'petroliera'
+    - 'tanker'
+    - 'naviglio'
+  opec_policy:
+    - 'opec'
+    - 'taglio (della )?produzione'
+    - 'quota di produzione'
+  gas_europe:
+    - '\bttf\b'
+    - 'nord stream'
+    - 'gazprom'
+    - 'gas europeo'
+    - '\blng\b'
+  demand_side:
+    - 'domanda (debole|in calo)'
+    - 'demand destruction'
+    - 'scorte in aumento'
+    - 'build in inventor'
+
+geopolitical:
+  military_escalation:
+    - 'escalation militar'
+    - 'attacco'
+    - 'raid'
+    - 'invasion'
+    - 'invasione'
+    - 'bombardament'
+    - 'missil'
+    - 'drone'
+  negotiation_track:
+    - 'negoziat'
+    - 'colloqui'
+    - 'talks'
+    - 'tregua'
+    - 'cessate il fuoco'
+    - 'ceasefire'
+    - 'accordo quadro'
+  financial_warfare:
+    - 'guerra finanziaria'
+    - 'financial warfare'
+    - 'isolamento economico'
+    - 'sanzioni secondarie'
+    - 'secondary sanction'
+    - 'swift'
+  sovereignty_claim:
+    - 'rivendicazione territorial'
+    - 'sovranità'
+    - 'annession'
+    - 'territorial claim'
+    - 'unclos'
+
+# NB (2026-08-16): i pattern di questa sezione sono stati ricalibrati misurando i
+# contesti reali, non a intuito. La prima versione era tutta in italiano
+# ('taglio dei tassi', 'punti base') mentre le schede scrivono in inglese
+# tecnico: `rate_decision` restituiva 0 episodi date-locali su 94. Frequenze
+# osservate sui 537 contesti di tema: fomc 77, bp 140, dot plot 64, hike 73,
+# rialzo 67, cut 35, taglio 30, intervento 25, chair 16, ycc 12.
+# Prima di aggiungere o cambiare un token: `analogues.py labels --theme <t>`.
+monetary_policy:
+  rate_decision:
+    - '\bfomc\b'
+    - '\d+\s*bps?\b'
+    - '\b(rate|tassi)\s+(cut|hike)'
+    - '\b(hike|cut)\b'
+    - '(taglio|rialzo)\s+(di|dei|da|del)?\s*(tass|\d)'
+    - 'punti base'
+    - 'basis point'
+    - 'terminal rate'
+    - 'tasso terminale'
+  guidance_pivot:
+    - 'forward guidance'
+    - '\bpivot\b'
+    - 'dot plot'
+    - '\bdots\b'
+    - 'proiezioni'
+    - 'hawkish'
+    - 'dovish'
+    - 'dissens'
+    - '\bstatement\b'
+  balance_sheet:
+    - 'quantitative (easing|tightening)'
+    - '\bqe\b'
+    - '\bqt\b'
+    - 'bilancio della banca centrale'
+    - 'reinvestiment'
+    - 'tapering'
+  cb_independence:
+    - 'indipendenza della banca centrale'
+    - 'central bank independence'
+    - 'pressione politica sulla (fed|bce)'
+    - '\bchair\b'
+    - 'presidente della fed'
+    - 'nomina.{0,30}(fed|bce|governatore)'
+  fx_intervention:
+    - 'intervento (valutario|sul cambio|sulla valuta)'
+    - 'fx intervention'
+    - 'carry trade'
+    - '\bycc\b'
+    - 'yield curve control'
+  # --- Aggiunti il 2026-08-18 (lacuna A dell'analisi del giorno) --------------
+  # Il sistema non distingueva un selloff guidato dalle ASPETTATIVE SUI TASSI da
+  # uno guidato dal PREMIO A TERMINE: hanno segno opposto sull'azionario, e
+  # mescolarli nello stesso pool e' l'ipotesi piu' plausibile per l'IC negativo
+  # di ^TNX (-0,20) e IEF (-0,29) nella scorecard W34.
+  # Frequenze misurate sulle schede 2026 prima di scrivere i pattern:
+  #   curva 328 · duration 292 · asta 185 · selloff 155 · sell-off 117 · ycc 82
+  #   premio a termine 73 · term premium 71 · steepening 60 · gilt 50 · jgb 48
+  #   parte lunga 39 · 30y 38 · irripidimento 15 · sincronizzat 10
+  # 'curva' e 'duration' NON sono usati da soli: troppo generici, comparirebbero
+  # in quasi ogni scheda di politica monetaria e non discriminerebbero nulla.
+  #
+  # ⚠ COPERTURA ATTUALE ~0 — E' UN SEME, NON UN FILTRO USABILE OGGI.
+  # Misurato il 2026-08-18 su 2.805 contesti date-locali: term_premium 5,
+  # synchronized_selloff 1, sovereign_auction 0. I pattern sono corretti (i match
+  # trovati sono veri: 'term premium', 'premio a termine', 'steepening', '30 anni');
+  # il problema e' STRUTTURALE, non di calibrazione: questo vocabolario vive nella
+  # PROSA delle schede (73 'premio a termine' + 71 'term premium' in totale), non
+  # nelle righe degli episodi datati, che sono telegrafiche ('2017-12-22 — Trump
+  # firma il TCJA'). Le etichette date-locali vedono solo il testo attorno a una
+  # data, quindi non possono catturarlo.
+  # NON usare questi token in `find --subtheme` finche' `analogues.py labels` non
+  # mostra copertura reale: si otterrebbe un pool sotto min-n che degrada in
+  # silenzio al filtro debole. La strada e' far si' che le righe-episodio nominino
+  # il MECCANISMO (v. passo 3 del PHASE5_RUNBOOK) piu' la research KB sul tema.
+  term_premium:
+    - 'premio a termine'
+    - 'term premium'
+    - 'parte lunga'
+    - 'long end'
+    - '\b30\s*(anni|y)\b'
+    - 'scadenze lunghe'
+    - 'rendimenti lunghi'
+    - 'bear steepen'
+    - 'steepening'
+    - 'irripidiment'
+  sovereign_auction:
+    - '\baste?\b.{0,40}(titoli|jgb|gilt|treasury|btp|bund|stato)'
+    - '(jgb|gilt|treasury|btp|bund).{0,40}\baste?\b'
+    - 'bid-to-cover'
+    - '\bauction\b'
+    - 'domanda (debole|scarsa|ai minimi)'
+  synchronized_selloff:
+    - '(selloff|sell-off).{0,40}(global|sincronizzat|simultane|cross)'
+    - '(global|sincronizzat|simultane).{0,40}(selloff|sell-off)'
+    - '\bacgb\b'
+    - '(jgb|gilt).{0,60}(gilt|jgb|acgb|treasury)'
+
+macro_data:
+  labour_market:
+    - 'occupazione'
+    - 'payroll'
+    - '\bnfp\b'
+    - 'disoccupazione'
+    - 'jobless'
+    - 'mercato del lavoro'
+  inflation_print:
+    - '\bcpi\b'
+    - '\bpce\b'
+    - 'inflazione'
+    - 'inflation'
+    - 'deflatore'
+  activity_growth:
+    - '\bpil\b'
+    - '\bgdp\b'
+    - '\bpmi\b'
+    - 'produzione industriale'
+    - 'ism'
+  consumer:
+    - 'vendite al dettaglio'
+    - 'retail sales'
+    - 'fiducia dei consumatori'
+    - 'consumer sentiment'
+    - 'michigan'
+
+# Aggiunta 2026-08-16. `fiscal_policy` ha 11 episodi in tutto, tutti eurozona, e
+# ZERO etichette date-locali: è la ragione per cui il bilancio taiwanese da 93 mld
+# è stato scartato pur mappando su asset in DB. Questi token da soli NON colmano
+# la lacuna — servono episodi datati extra-eurozona (una research KB o un
+# catalogo curato). Sono qui perché gli episodi futuri nascano già etichettati.
+fiscal_policy:
+  budget_passage:
+    - 'bilancio (statale|federale|annuale|pluriennale)'
+    - 'legge di bilancio'
+    - 'manovra'
+    - 'budget (bill|package|approv)'
+    - 'approvazione del bilancio'
+    - 'stanziament'
+  fiscal_deadlock:
+    - 'shutdown'
+    - 'stallo (di bilancio|fiscale|parlamentare)'
+    - 'tetto del debito'
+    - 'debt ceiling'
+    - 'bocciat\w+ in parlamento'
+    - 'voto di fiducia'
+    - 'blocco del bilancio'
+  fiscal_expansion:
+    - 'stimolo fiscale'
+    - 'fiscal stimulus'
+    - 'pacchetto di spesa'
+    - 'spesa pubblica in aumento'
+    - 'deficit in (aumento|allargamento)'
+    - 'emissione (netta )?in aumento'
+  fiscal_consolidation:
+    - 'consolidamento fiscale'
+    - 'austerit'
+    - 'tagli di spesa'
+    - 'riduzione del deficit'
+    - 'aumento delle tasse'
+
+financial_stability:
+  credit_stress:
+    - 'spread di credito'
+    - 'credit spread'
+    - 'high yield'
+    - 'default'
+    - 'insolvenz'
+  bank_run:
+    - 'corsa agli sportelli'
+    - 'bank run'
+    - 'deposit'
+    - 'salvataggio'
+    - 'bailout'
+  liquidity_event:
+    - 'liquidità'
+    - 'margin call'
+    - 'deleveraging'
+    - 'vendite forzate'
+    - 'forced selling'
+    - 'unwind'

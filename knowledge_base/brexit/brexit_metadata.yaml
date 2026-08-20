@@ -1,0 +1,203 @@
+---
+report:
+  titolo: "Brexit: Bilancio Scientifico e Impatti su Economia e Finanza (2020–2026)"
+  data_produzione: "2026-05-26"
+  autore: "Claude Sonnet 4.6 / Anthropic — ricerca commissionata"
+  lingua: "italiano"
+  livello: "MSc Finance — analisi accademica"
+
+tema_principale: "Effetti economici, commerciali e finanziari della Brexit"
+
+sotto_temi:
+  macroeconomia:
+    - PIL e gap controfattuale (doppelganger / synthetic control)
+    - Investimenti d'impresa e FDI
+    - Inflazione e costo della vita (food prices, pass-through cambio)
+    - Produttività del lavoro (TFP, output gap)
+    - Finanze pubbliche (gettito mancante, contributi netti UE)
+    - Tasso di cambio GBP (svalutazione strutturale post-2016)
+    - Politica monetaria Bank of England (Bank Rate, QE/QT losses)
+
+  commercio:
+    - Flussi beni UK–UE (TCA, regole d'origine, barriere SPS)
+    - Flussi servizi UK–UE e extra-UE
+    - Automotive, agroalimentare, pesca
+    - Nuovi FTA (CPTPP, India, US Economic Prosperity Deal)
+    - Non-tariff barriers e costi di compliance doganale
+
+  migrazione_e_lavoro:
+    - Points-based immigration system
+    - Migrazione netta UE (negativa dal 2021)
+    - Migrazione netta non-UE (picco 2022–2023, crollo 2025)
+    - Carenze settoriali (hospitality, agriculture, healthcare, construction)
+    - Effetti salariali e distribuzionali
+
+  regolatorio_istituzionale:
+    - Windsor Framework / Northern Ireland Protocol
+    - Smarter Regulatory Framework e FSMA 2023
+    - Edinburgh Reforms (dicembre 2022)
+    - UK–EU reset Starmer (maggio 2025)
+    - Divergenza regolatoria vs convergenza pragmatica
+
+  settore_finanziario:
+    - Competitività City of London (GFCI 38)
+    - Perdita passporting e regime equivalenza UE
+    - Riallocazione banche e attivi (440+ firms, £900bn+)
+    - Clearing derivati OTC in euro (LCH Ltd vs Eurex, EMIR 3)
+    - Asset management UCITS/AIFMD (Dublino, Lussemburgo)
+    - Insurance: Solvency UK vs Solvency II UE
+    - LSE e attività IPO (record negativo 2024)
+    - Edinburgh Reforms: competitiveness objective FCA/PRA
+    - Fintech e capital markets
+
+  opinione_pubblica:
+    - Polling "Bregret" (YouGov, Euronews 2025)
+    - Posizioni partiti politici (Labour, Reform UK, LibDem)
+    - Scenario rejoin: condizionalità euro, salience politica
+    - "Bresignation" come fenomeno sociologico
+
+analisi_controfattuale:
+  metodi:
+    - Synthetic control / doppelganger (Springford, CER)
+    - Error correction model (Gudgin–Lu, UKICE — critica al CER)
+    - Multi-weight average (Bloom et al., NBER WP 34459)
+    - Gravity model (ECB OP 379)
+    - Difference-in-differences (CEP/LSE, vari)
+  stima_centrale_PIL: "-4% a -6% rispetto al controfattuale (lungo periodo)"
+  stima_alta: "-6% / -8% (Bloom et al., NBER 2025)"
+  stima_bassa: "-3.25% (Bank of England MPR, febbraio 2026)"
+  commercio_beni: "-15% intensità (OBR); -18% esportazioni reali verso UE (ONS 2024)"
+  commercio_servizi: "+19% esportazioni reali verso UE (ONS 2024) — dato parzialmente positivo"
+
+asset_rilevanti:
+  valutari:
+    - GBP/USD
+    - GBP/EUR
+    - GBP REER (Real Effective Exchange Rate)
+  reddito_fisso:
+    - UK Gilts (2Y, 10Y, 30Y)
+    - UK–Bund spread (risk premium Brexit)
+    - BoE Bank Rate trajectory
+  azionario:
+    - FTSE 100 (sovraesposizione a financials e mining)
+    - FTSE 250 (proxy economia domestica UK)
+    - LSE Group (LSEG.L)
+    - Deutsche Börse / Eurex (beneficiario clearing shift)
+    - Euronext (beneficiario listings shift)
+  settore_finanziario_europeo:
+    - BNP Paribas, Société Générale, Crédit Agricole (Parigi hub)
+    - Deutsche Bank, Commerzbank (Francoforte hub)
+    - ING Group (Amsterdam hub)
+    - AIB, Bank of Ireland (Dublino hub)
+  real_economy:
+    - JLR / Stellantis (automotive, supply chain disruption)
+    - Greggs, Next, Tesco (food inflation proxy)
+    - Barratt Developments, Taylor Wimpey (costruzioni, labour shortage)
+
+finestra_temporale:
+  evento_chiave_1: "2016-06-23 — Referendum Brexit (51.9% Leave)"
+  evento_chiave_2: "2020-01-31 — Uscita formale UK dall'UE"
+  evento_chiave_3: "2020-12-31 — Fine del transition period; TCA in vigore"
+  evento_chiave_4: "2021-01-01 — Full border controls; fine libertà di movimento"
+  evento_chiave_5: "2022-12-08 — Edinburgh Reforms annunciate"
+  evento_chiave_6: "2023-02-27 — Windsor Framework firmato"
+  evento_chiave_7: "2023-10-01 — Windsor Framework in vigore"
+  evento_chiave_8: "2024-07-04 — Elezioni UK, governo Labour Starmer"
+  evento_chiave_9: "2024-12-15 — UK aderisce al CPTPP"
+  evento_chiave_10: "2024-12-31 — Solvency UK in vigore"
+  evento_chiave_11: "2025-05-19 — UK–EU Summit, reset (SPS, ETS, pesca)"
+  evento_chiave_12: "2025-06-25 — EMIR 3 in vigore (Active Account Requirement)"
+  analisi_al: "2026-05-26"
+
+fonti_primarie:
+  istituzioni_uk:
+    - "Bank of England — Monetary Policy Reports, Financial Stability Reports, speeches"
+    - "Office for Budget Responsibility (OBR) — EFO, WP No.9 novembre 2025"
+    - "Office for National Statistics (ONS) — trade, GDP, migration data"
+    - "HM Treasury — Edinburgh Reforms, Financial Services and Markets Act 2023"
+    - "Financial Conduct Authority (FCA) / Prudential Regulation Authority (PRA)"
+    - "House of Commons Library — CBP-7851 (UK-EU trade), CBP-10446 (migration)"
+    - "House of Lords European Affairs Committee — reset report 2025"
+  istituzioni_eu_internazionali:
+    - "European Central Bank — Financial Integration Review giugno 2024, OP 379"
+    - "European Parliament — EPRS BRI(2025)765767"
+    - "IMF Article IV UK"
+    - "OECD Economic Surveys UK"
+  think_tank_accademici:
+    - "Centre for European Reform (CER) — John Springford doppelganger series"
+    - "NIESR — National Institute of Economic and Social Research"
+    - "LSE Centre for Economic Performance (CEP) — Brexit Analysis series"
+    - "UK in a Changing Europe (UKICE)"
+    - "Resolution Foundation"
+    - "Migration Observatory, University of Oxford"
+    - "IFS — Institute for Fiscal Studies"
+  paper_accademici:
+    - "Bloom, Bunn, Mizen, Smietanka, Thwaites — NBER WP 34459 (2025)"
+    - "Costa, Dhingra, Machin — CEP DP 1890 / Journal of International Economics (2024)"
+    - "Breinlich, Leromain, Novy, Sampson — VoxEU/CEPR (2020, aggiornato)"
+    - "Bakker, Datta, Davies, De Lyon — CEP Brexit Analysis No.18, LSE (2023)"
+    - "Mancini, Borin et al. — ECB Occasional Paper No.379 (2024)"
+    - "Demarigny et al. — EUI/CEPR financial services (2024)"
+    - "Du, Jun — Aston University, SPS deal estimates (2025)"
+    - "Hall, Heneghan — Regional Studies, missing jobs (2023)"
+  operatori_settore:
+    - "New Financial — Brexit & The City: The Impact So Far (2021)"
+    - "Z/Yen Partners — GFCI 38 (settembre 2025)"
+    - "EY — IPO Eye Q4 2024, Q2 2025"
+    - "Slaughter & May, Clifford Chance, Skadden, Morgan Lewis (legal analysis)"
+
+keyword:
+  macroeconomia:
+    - Brexit GDP impact
+    - Brexit productivity loss UK
+    - Brexit counterfactual synthetic control
+    - OBR Brexit assumption 4 percent
+    - UK business investment post-Brexit
+    - GBP depreciation pass-through
+    - UK food price inflation Brexit
+    - Brexit fiscal cost
+  commercio:
+    - UK-EU trade flows post-Brexit
+    - Trade and Cooperation Agreement TCA
+    - Non-tariff barriers UK EU
+    - UK export performance 2021-2025
+    - CPTPP UK accession
+    - Brexit trade impact quantitative
+  finanza:
+    - City of London post-Brexit competitiveness
+    - Brexit financial services passporting
+    - Euro clearing LCH Eurex EMIR 3
+    - Brexit bank relocation Dublin Frankfurt Paris
+    - UCITS AIFMD post-Brexit asset management
+    - Solvency UK insurance reform PRA
+    - LSE IPO activity decline Brexit
+    - Edinburgh Reforms FCA PRA competitiveness
+    - Brexit financial services equivalence
+    - GFCI 38 London ranking
+  migrazione:
+    - UK points-based immigration system
+    - EU net migration negative 2021
+    - UK labour shortages post-Brexit
+    - UK net migration ONS 2025
+  politica:
+    - Brexit reset Starmer 2025
+    - Windsor Framework Northern Ireland
+    - Bregret polling YouGov 2025
+    - UK EU rejoin public opinion
+    - Bresignation political salience
+
+metodologia_controfattuale:
+  descrizione: >
+    Approccio doppelganger / synthetic control: costruzione di un'economia
+    "gemella" del UK usando una media ponderata di paesi comparatori (USA,
+    Canada, Australia, Norvegia, Svizzera, Germania, Francia, ecc.) che
+    replicano le caratteristiche pre-2016 del UK su PIL, commercio,
+    produttività. La divergenza post-2016 tra UK e doppelganger è attribuita
+    causalmente alla Brexit. Critica principale: scelta dei pesi e dei paesi
+    comparatori influenza le stime; shock asimmetrici (COVID, energia, Trump
+    tariffs) non facilmente isolabili.
+  principale_riferimento: "Springford (CER, aggiornamenti 2018–2025)"
+  critica_principale: "Gudgin–Lu (UKICE WP 5); Policy Exchange (2024)"
+  risposta_alla_critica: "Portes (2023): ECM alternativo produce risultati funzionalmente identici"
+  range_stime_PIL: "-3.25% (BoE) / -4% (OBR) / -5 to -5.5% (CER) / -6 to -8% (NBER WP 34459)"
+---

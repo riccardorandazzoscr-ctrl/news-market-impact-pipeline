@@ -1,0 +1,1353 @@
+generated_at: '2026-08-19T23:54:20'
+num_entries: 20
+entries:
+- source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
+    (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
+    (2010–2026).md'
+  title: 'ASEAN / Sud-Est asiatico: shock geopolitici — regime ed episodi storici
+    (2010–2026)'
+  date_compiled: 2026-07-30
+  primary_theme: geopolitical
+  sub_themes:
+  - asean
+  - south_east_asia
+  - thailand
+  - cambodia
+  - myanmar
+  - philippines
+  - indonesia
+  - south_china_sea
+  - maritime_dispute
+  - coup
+  - border_dispute
+  - tariff_leverage
+  - emerging_markets
+  relevant_assets:
+  - EEM
+  - ^N225
+  - DX-Y.NYB
+  - CNY=X
+  external_assets_mentioned:
+  - THB=X (baht thailandese) — verificato su yfinance, non ancora in DB
+  - SGD=X (dollaro di Singapore) — verificato su yfinance, non ancora in DB
+  - MYR=X (ringgit malese) — verificato su yfinance, non ancora in DB
+  - IDR=X (rupia indonesiana) — verificato su yfinance, non ancora in DB
+  - THD (ETF Thailandia) — verificato su yfinance, non ancora in DB
+  - EWS (ETF Singapore) — verificato su yfinance, non ancora in DB
+  - EIDO (ETF Indonesia) — verificato su yfinance, non ancora in DB
+  time_window:
+    start: 2010-01-01
+    end: present
+  regime_phases:
+  - post_asian_crisis_integration_2010_2013: 2010-01-01 to 2013-12-31
+  - thailand_instability_2013_2015: 2014-01-01 to 2015-12-31
+  - south_china_sea_escalation_2014_2016: 2014-01-01 to 2016-12-31
+  - consolidation_belt_and_road_2017_2019: 2017-01-01 to 2019-12-31
+  - pandemic_myanmar_coup_2020_2021: 2020-01-01 to 2021-12-31
+  - us_tariff_tensions_2025_2026: 2025-01-01 to present
+  keywords:
+  - asean
+  - sud-est asiatico
+  - southeast asia
+  - thailandia
+  - thailand
+  - cambogia
+  - cambodia
+  - myanmar
+  - coup
+  - colpo di stato
+  - filippine
+  - philippines
+  - indonesia
+  - malaysia
+  - singapore
+  - mar cinese meridionale
+  - south china sea
+  - scarborough shoal
+  - second thomas shoal
+  - dispute marittime
+  - baht
+  - ringgit
+  - rupia
+  - tariff leverage
+  - elezioni
+  - border dispute
+  - eem
+- source_file: Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo
+    della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  title: Ciclo della memoria (DRAM/NAND/HBM) e mercato azionario coreano — regime
+    ed episodi storici (2016–2026)
+  date_compiled: 2026-08-15
+  primary_theme: structural_themes
+  sub_themes:
+  - memory_cycle
+  - hbm
+  - dram
+  - nand
+  - korea
+  - kospi
+  - semiconductor_cycle
+  - foundry_logic
+  - export_controls
+  - valuation_derisking
+  - duopoly_contestability
+  - retail_leverage
+  - market_structure_korea
+  relevant_assets:
+  - EWY
+  - EWT
+  - SOXX
+  - ^NDX
+  - EEM
+  - ^VIX
+  - CNY=X
+  external_assets_mentioned:
+  - 'KRW=X (won coreano) — NON in DB: è la lacuna più rilevante per questo studio'
+  - Samsung Electronics 005930.KS, SK Hynix 000660.KS — single-name, non in DB
+  - Micron MU, SanDisk, Intel INTC, ASML, TSMC, SMIC, Hua Hong, CXMT — non in DB
+  - KOSPI (indice locale) — non in DB; EWY ne è il proxy con scarto di una seduta
+  - prezzi contrattuali DRAM/NAND (TrendForce, Counterpoint) — serie non in DB
+  time_window:
+    start: 2016-01-01
+    end: present
+  regime_phases:
+  - commodity_cycle_pre_ai: 2016-01-01 to 2022-12-31
+  - hbm_transition: 2023-01-01 to 2024-12-31
+  - hbm_scarcity_bull: 2025-01-01 to 2026-06-30
+  - duopoly_contestability: 2026-07-01 to present
+  keywords:
+  - memoria
+  - memory
+  - dram
+  - nand
+  - hbm
+  - hbm3e
+  - hbm4
+  - ciclo della memoria
+  - memory cycle
+  - samsung
+  - sk hynix
+  - micron
+  - corea
+  - korea
+  - kospi
+  - ewy
+  - ewt
+  - taiwan
+  - duopolio
+  - duopoly
+  - cxmt
+  - duv
+  - litografia
+  - lithography
+  - qualifica
+  - qualification
+  - taglio di produzione
+  - production cut
+  - vendite allo scoperto
+  - short selling ban
+  - legge marziale
+  - martial law
+  - bank of korea
+  - leva retail
+  - liquidazioni forzate
+  - circuit breaker
+  - semiconductor cycle
+  - export controls
+- source_file: Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori &
+    AI capex (2023–2026).md
+  title: 'Ciclo semiconduttori & AI capex (2023–2026): catalizzatori discreti e trasmissione'
+  date_compiled: 2026-06-08
+  primary_theme: structural_themes
+  sub_themes:
+  - ai_capex
+  - ai
+  - semiconductors
+  - semis
+  - chips
+  - nvidia
+  - earnings_guidance_shock
+  - earnings
+  - hyperscaler_capex
+  - hyperscaler
+  - market_concentration
+  - export_controls
+  relevant_assets:
+  - ^GSPC
+  - ^N225
+  external_assets_mentioned:
+  - SOXX (iShares Semiconductor ETF) — presente in tabella prices ma non in assets
+  - ^NDX (Nasdaq-100) — presente in tabella prices ma non in assets
+  - Philadelphia Semiconductor Index ^SOX — proxy = SOXX
+  - NVDA, AVGO (Broadcom), AMD, MU (Micron), TSM, ASML, SK Hynix, Samsung — single-name,
+    non in DB
+  - 'Hyperscaler equities: MSFT, GOOGL, AMZN, META — non in DB'
+  - 'Power/AI infra: Vistra, Constellation Energy, Siemens Energy, GE Vernova — non
+    in DB'
+  time_window:
+    start: 2018-01-01
+    end: 2026-12-31
+  regime_phases:
+  - pre_ai_semis_cycle: 2018-01-01 to 2022-12-31
+  - chatgpt_ignition_and_nvidia_repricing: 2023-01-01 to 2024-06-30
+  - hyperscaler_capex_arms_race: 2024-07-01 to 2025-01-26
+  - capex_returns_scrutiny_deepseek_onward: 2025-01-27 to 2026-12-31
+  keywords:
+  - ai capex
+  - semiconductors
+  - nvidia
+  - broadcom
+  - micron
+  - deepseek
+  - guidance shock
+  - earnings surprise
+  - hbm
+  - gpu
+  - hyperscaler
+  - data center
+  - nasdaq 100
+  - sox semiconductor index
+  - export controls
+  - chips act
+  - market concentration
+  - magnificent seven
+  - dot-com comparison
+  - productivity
+  - intangible investment
+- source_file: Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+    e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+  title: Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)
+  date_compiled: 2026-07-13
+  primary_theme: geopolitical
+  sub_themes:
+  - trade_war
+  - tariffs
+  - us_china
+  - protectionism
+  - supply_chain
+  - export_controls
+  - trade_policy_uncertainty
+  - cny
+  - risk_off
+  relevant_assets:
+  - ^GSPC
+  - ^NDX
+  - SOXX
+  - CNY=X
+  - EEM
+  - HG=F
+  - ^VIX
+  - DX-Y.NYB
+  - GC=F
+  - ^STOXX50E
+  - ^GDAXI
+  - EURUSD=X
+  external_assets_mentioned:
+  - singoli titoli tariff-exposed (auto, industriali, agricoltura) — non in DB
+  - soybean / commodity agricole — non in DB
+  - yuan offshore CNH — non in DB (storia yfinance assente)
+  - indici settoriali US/EU — non in DB
+  time_window:
+    start: 2018-01-01
+    end: present
+  regime_phases:
+  - first_trade_war_2018_2019: 2018-01-01 to 2019-12-31
+  - phase_one_truce_2020: 2020-01-01 to 2020-12-31
+  - second_wave_tariffs_2025_2026: 2025-01-01 to present
+  keywords:
+  - dazi
+  - tariffs
+  - trade war
+  - guerra commerciale
+  - section 301
+  - section 232
+  - usmca
+  - us-china
+  - cina
+  - yuan
+  - cny
+  - liberation day
+  - trump tariffs
+  - phase one
+  - export controls
+  - semiconductor
+  - chip
+  - protezionismo
+  - supply chain
+  - trade policy uncertainty
+  - retaliation
+  - wto
+  - piie
+  - risk-off
+- source_file: Elezioni LatAm e nazionalismo delle risorse, rame e litio (2018–2026)/Elezioni
+    LatAm e nazionalismo delle risorse- rame e litio (2018–2026).md
+  title: 'Elezioni LatAm e nazionalismo delle risorse: rame e litio (2018–2026)'
+  date_compiled: 2026-06-13
+  primary_theme: geopolitical
+  sub_themes:
+  - resource_nationalism
+  - latam_elections
+  - copper
+  - lithium
+  - mining_policy
+  - em_political_risk
+  - commodity_supply_shock
+  relevant_assets:
+  - HG=F
+  - LIT
+  - EEM
+  - GC=F
+  - DX-Y.NYB
+  external_assets_mentioned:
+  - SCCO (Southern Copper), FCX (Freeport), ALB (Albemarle), SQM — single-name, non
+    in DB
+  - ^BVSP (Bovespa Brasile), BRL/CLP/PEN/MXN (valute LatAm), EPU (ETF Perù) — non
+    in DB
+  - Prezzo spot del litio (carbonato) — non in DB; LIT (ETF) è il proxy in DB
+  time_window:
+    start: 2018-01-01
+    end: 2026-12-31
+  regime_phases:
+  - pink_tide_resurgence: 2018-01-01 to 2021-12-31
+  - resource_nationalism_wave: 2022-01-01 to 2024-06-30
+  - recent_cycle: 2024-07-01 to 2026-12-31
+  keywords:
+  - latin america
+  - elections
+  - resource nationalism
+  - copper
+  - lithium
+  - mining royalties
+  - nationalization
+  - chile lithium
+  - peru copper
+  - las bambas
+  - cobre panama
+  - pink tide
+  - lula
+  - boric
+  - sheinbaum
+  - castillo
+  - emerging markets political risk
+  - commodity supply shock
+  - critical minerals
+  - energy transition
+  - country risk
+  - capital flight
+- source_file: Fed_ reaction function, indipendenza e divergenza con la BCE (2023–2026)/Fed_
+    reaction function, indipendenza e divergenza con la BCE (2023–2026).md
+  title: 'Fed: reaction function, indipendenza e divergenza con la BCE (2023–2026)'
+  date_compiled: 2026-06-11
+  primary_theme: monetary_policy
+  sub_themes:
+  - fed_reaction_function
+  - dot_plot
+  - forward_guidance
+  - central_bank_independence
+  - fed_ecb_divergence
+  - term_premium
+  - oil_overhang
+  relevant_assets:
+  - ^TNX
+  - IEF
+  - ^GSPC
+  - EURUSD=X
+  - GC=F
+  external_assets_mentioned:
+  - DXY / Dollar Index (proxy DX-Y.NYB) — citato come canale di trasmissione su indipendenza
+  - 2Y Treasury / front-end della curva — non in DB (in DB ^TNX 10Y e IEF 7-10Y)
+  - Fed funds futures / OIS — non in DB
+  - TIPS / breakeven d'inflazione (DFII10) — non in DB
+  time_window:
+    start: 2023-01-01
+    end: 2026-12-31
+  regime_phases:
+  - terminal_rate_plateau: 2023-08-01 to 2024-06-30
+  - cut_expectations_and_false_starts: 2024-07-01 to 2025-06-30
+  - oil_overhang_hawkish_repricing: 2025-07-01 to 2026-04-30
+  - independence_pressure_and_transition: 2026-05-01 to 2026-12-31
+  keywords:
+  - federal reserve
+  - fomc
+  - reaction function
+  - taylor rule
+  - dot plot
+  - forward guidance
+  - data dependence
+  - dual mandate
+  - rate cuts
+  - hawkish hold
+  - term premium
+  - central bank independence
+  - fed chair transition
+  - fiscal dominance
+  - fed ecb divergence
+  - eur usd
+  - dollar
+  - breakeven inflation
+  - high-frequency identification
+  - fed information effect
+  - oil overhang
+- source_file: Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  title: Politica fiscale fuori dall'eurozona e trasmissione ai mercati — regime ed
+    episodi storici (2011–2026)
+  date_compiled: 2026-08-16
+  primary_theme: fiscal_policy
+  sub_themes:
+  - budget_passage
+  - fiscal_deadlock
+  - fiscal_expansion
+  - fiscal_consolidation
+  - debt_ceiling
+  - government_shutdown
+  - sovereign_rating
+  - defence_budget
+  - term_premium
+  - fiscal_credibility
+  relevant_assets:
+  - ^TNX
+  - IEF
+  - ^GSPC
+  - ^NDX
+  - DX-Y.NYB
+  - GC=F
+  - ^VIX
+  - HYG
+  - ^N225
+  - JPY=X
+  - EWT
+  - EWY
+  - SHLD.L
+  - EWZ
+  - BRL=X
+  - GBPUSD=X
+  - EURUSD=X
+  external_assets_mentioned:
+  - 'JGB 10Y/30Y/40Y: proxy diretto del canale premio a termine giapponese, catturato
+    solo indirettamente da ^N225/JPY=X'
+  - 'Taiwan 10Y e TWD: proxy del canale credibilità/valuta di Taiwan, non replicabile
+    con EWT'
+  - 'KRW: canale valuta coreano, catturato solo indirettamente da EWY'
+  - 'CDS sovrani (USA, Brasile, UK): misura pulita del rischio di credito prezzato
+    all''annuncio dei rating'
+  time_window:
+    start: 2011-01-01
+    end: present
+  regime_phases:
+  - post_crisis_austerity: 2011-01-01 to 2015-12-31
+  - zero_rate_fiscal_irrelevance: 2016-01-01 to 2019-12-31
+  - pandemic_fiscal_dominance: 2020-01-01 to 2021-12-31
+  - binding_budget_constraint_positive_rates: 2022-01-01 to present
+  keywords:
+  - politica fiscale
+  - fiscal policy
+  - tetto del debito
+  - debt ceiling
+  - shutdown
+  - government shutdown
+  - declassamento
+  - sovereign downgrade
+  - premio a termine
+  - term premium
+  - credibilità fiscale
+  - fiscal credibility
+  - bilancio difesa
+  - defence budget
+  - JGB
+  - gilt
+  - mini-budget
+  - imposta sui consumi
+  - consumption tax
+  - quadro fiscale
+  - spending cap
+  - bilancio supplementare
+  - supplementary budget
+  - manovra
+  - aumento tasse
+  - stimolo fiscale
+  - fiscal expansion
+  - fiscal consolidation
+- source_file: 'Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita
+    YCC e interventi FX — regime ed episodi storici (1998–2026).md'
+  title: 'Giappone / Bank of Japan: carry trade, uscita YCC e interventi FX — regime
+    ed episodi storici (1998–2026)'
+  date_compiled: 2026-07-19
+  primary_theme: monetary_policy
+  sub_themes:
+  - boj
+  - yen
+  - jpy
+  - carry_trade
+  - carry_unwind
+  - ycc
+  - nirp
+  - fx_intervention
+  - risk_off
+  - safe_haven
+  - japan
+  relevant_assets:
+  - JPY=X
+  - ^N225
+  - ^NDX
+  - ^GSPC
+  - ^VIX
+  - ^TNX
+  - IEF
+  - GC=F
+  - CHF=X
+  - DX-Y.NYB
+  external_assets_mentioned: JGB (titoli di stato giapponesi 10Y) — non in DB; TOPIX
+    / indici bancari giapponesi — non in DB; coppie di carry AUD/JPY, MXN/JPY — non
+    in DB
+  time_window: start 1998-01-01, end present
+  regime_phases: zirp_deflation_pre_2013 (1998-01-01 to 2012-12-31); abenomics_qqe_2013_2015
+    (2013-01-01 to 2015-12-31); nirp_ycc_2016_2022 (2016-01-01 to 2022-11-30); normalization_exit_2022_2024
+    (2022-12-01 to 2024-03-31); post_ycc_2024_2026 (2024-04-01 to present)
+  keywords:
+  - giappone
+  - japan
+  - bank of japan
+  - boj
+  - yen
+  - jpy
+  - usd/jpy
+  - carry trade
+  - carry unwind
+  - ycc
+  - yield curve control
+  - nirp
+  - negative rates
+  - fx intervention
+  - mof
+  - ministry of finance
+  - abenomics
+  - qqe
+  - nikkei
+  - risk-off
+  - safe haven
+  - august 2024
+  - deleveraging
+  - crash risk
+- source_file: Industria della difesa europea e riarmo — regime ed episodi storici
+    (2014–2026)/Industria della difesa europea e riarmo — regime ed episodi storici
+    (2014–2026).md
+  title: Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)
+  date_compiled: 2026-08-10
+  primary_theme: geopolitical
+  sub_themes:
+  - defense
+  - difesa
+  - rearmament
+  - riarmo
+  - nato
+  - defense_spending
+  - ukraine_war
+  - zeitenwende
+  - rearm_europe
+  - munitions_shortage
+  - article_5
+  - defense_industry
+  relevant_assets:
+  - SHLD.L
+  - ^STOXX50E
+  - ^GDAXI
+  - EWY
+  - EWT
+  - ^VIX
+  - GC=F
+  - EURUSD=X
+  - BTP_BUND_SPREAD
+  external_assets_mentioned:
+  - Rheinmetall, Thales, Leonardo, BAE Systems, Saab (singoli titoli) — non in DB
+  - DFNS/DFEN (VanEck Defense UCITS ETF, storia dal 2023-03-31, maggiore peso europeo)
+    — non in DB
+  - indici settoriali difesa con storia pre-2018 (es. STOXX Europe Aerospace & Defense)
+    — non in DB
+  time_window:
+    start: 2014-01-01
+    end: present
+  regime_phases:
+  - pre_crimea_defense_spending_decline: 2010-01-01 to 2014-02-28
+  - crimea_slow_rearmament: 2014-03-01 to 2022-01-31
+  - zeitenwende_accelerated_rearmament: 2022-02-01 to 2025-02-28
+  - rearm_europe_5pct_target: 2025-03-01 to present
+  keywords:
+  - difesa
+  - defense
+  - riarmo
+  - rearmament
+  - nato
+  - zeitenwende
+  - sondervermögen
+  - rearm europe
+  - safe
+  - crimea
+  - ucraina war
+  - ukraine war
+  - munitions
+  - intercettori
+  - patriot
+  - article 5
+  - articolo 5
+  - defense spending
+  - geopolitical risk premium
+  - defense industry
+  - aerospace
+- source_file: PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+    e politica economica cinese — regime ed episodi storici (2022–2026).md
+  title: PBOC e politica economica cinese — regime ed episodi storici (2022–2026)
+  date_compiled: 2026-07-24
+  primary_theme: macro_data
+  sub_themes:
+  - pboc
+  - china
+  - cny
+  - monetary_policy
+  - fiscal_stimulus
+  - property_crisis
+  - credit_channel
+  - politburo
+  - emerging_markets
+  relevant_assets:
+  - CNY=X
+  - HG=F
+  - EEM
+  - ^NDX
+  - EWZ
+  - BRL=X
+  - GC=F
+  - DX-Y.NYB
+  external_assets_mentioned:
+  - CSI 300 / Shanghai Composite — non in DB
+  - Hang Seng — non in DB
+  - iron ore futures — non in DB
+  - spread credito high-yield sviluppatori immobiliari cinesi — non in DB
+  time_window:
+    start: 2022-01-01
+    end: present
+  regime_phases:
+  - zero_covid_lockdowns_2022: 2022-01-01 to 2022-11-30
+  - reopening_rebound_2023: 2022-12-01 to 2023-06-30
+  - property_debt_deflation_gradual_easing_2023_2024: 2023-07-01 to 2024-08-31
+  - aggressive_stimulus_post_sept_2024: 2024-09-01 to 2025-06-30
+  - current_regime_2025_2026: 2025-07-01 to present
+  keywords:
+  - pboc
+  - people's bank of china
+  - cina
+  - china
+  - yuan
+  - cny
+  - rmb
+  - renminbi
+  - mlf
+  - lpr
+  - rrr
+  - politburo
+  - state council
+  - stimulus
+  - stimolo
+  - evergrande
+  - country garden
+  - property crisis
+  - crisi immobiliare
+  - zero covid
+  - reopening
+  - deflation
+  - easing
+  - fixing
+  - trade war spillover
+  - emerging markets
+  - commodity demand
+- source_file: Premio a termine globale e selloff sincronizzati della parte lunga
+    regime ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+    della parte lunga- regime ed episodi storici (1994–2026).md
+  title: 'Premio a termine globale e selloff sincronizzati della parte lunga: regime
+    ed episodi storici (1994–2026)'
+  date_compiled: 2026-08-18
+  primary_theme: monetary_policy
+  sub_themes:
+  - term_premium
+  - curve_steepening
+  - boj_normalization
+  - duration_supply
+  - credibility_shock
+  - guidance_pivot
+  relevant_assets:
+  - ^TNX
+  - IEF
+  - IEAG.AS
+  - JPY=X
+  - GBPUSD=X
+  - EURUSD=X
+  - DX-Y.NYB
+  - ^NDX
+  - ^GSPC
+  - ^STOXX50E
+  - ^N225
+  - ^GDAXI
+  - BTP_BUND_SPREAD
+  - GC=F
+  - ^VIX
+  external_assets_mentioned:
+  - UK gilt 10y/30y — cuore della crisi LDI 2022 e del rout 2025-2026, non catturato
+    da ^TNX
+  - JGB 2y/5y/10y/30y/40y — canale del risparmio giapponese e trasmissione JGB→UST
+  - ACGB Australia 10y/30y — conferma della sincronizzazione globale della parte lunga
+  - US Treasury 30y — la scadenza del fenomeno 2025-2026; in DB solo il 10y via ^TNX
+  - US break-even inflation 5y/10y — separa tassi reali da nominali per classificare
+    l'episodio
+  - Stima ACM/Kim-Wright del term premium — variabile che definisce term_premium_shock
+    vs rate_expectations_shock
+  - Indice MOVE (volatilità obbligazionaria) — distingue credibilità acuta da erosione
+    lenta
+  time_window:
+    start: 1994-02-04
+    end: present
+  regime_phases:
+  - great_moderation_term_premium_compression: 1994-01-01 to 2008-09-15
+  - quantitative_easing_central_bank_price_insensitive_buyer: 2008-09-16 to 2021-12-31
+  - quantitative_tightening_positive_net_supply: 2022-01-01 to 2024-03-18
+  - japanese_normalization_supply_side_inflation: 2024-03-19 to present
+  keywords:
+  - premio a termine
+  - term premium
+  - selloff parte lunga
+  - long-end selloff
+  - curve steepening
+  - irripidimento curva
+  - bond vigilantes
+  - taper tantrum
+  - bund tantrum
+  - YCC
+  - yield curve control
+  - BoJ normalization
+  - normalizzazione BoJ
+  - carry trade unwind
+  - unwind del carry
+  - LDI crisis
+  - crisi LDI
+  - mini-budget
+  - credibility shock
+  - crisi di credibilità
+  - fiscal dominance
+  - dominanza fiscale
+  - reflation trade
+  - convexity hedging
+  - copertura di convessità
+  - basis trade
+  - gold and yields rising together
+  - oro e rendimenti insieme
+  - duration supply
+  - offerta di duration
+  - AI capex issuance
+  - emissione per capex IA
+  - MOVE index
+  - 30-year yield
+  - trentennale
+  - spread BTP-Bund
+- source_file: Regno Unito, shock politici e monetari — regime ed episodi storici
+    (2016–2026)/Regno Unito- shock politici e monetari — regime ed episodi storici
+    (2016–2026).md
+  title: 'Regno Unito: shock politici e monetari — regime ed episodi storici (2016–2026)'
+  date_compiled: 2026-06-23
+  primary_theme: geopolitical
+  sub_themes:
+  - monetary_policy
+  - fiscal_policy
+  - uk_political_risk
+  - gbp
+  - boe_reaction_function
+  - boe
+  - uk_cpi
+  - cpi
+  - inflation
+  - macro_data
+  - gilt_crisis
+  - brexit
+  - leadership_transition
+  - safe_haven_flows
+  relevant_assets:
+  - GBPUSD=X
+  - ^TNX
+  - IEF
+  - GC=F
+  - ^VIX
+  - DX-Y.NYB
+  - ^STOXX50E
+  - ^GDAXI
+  - EURUSD=X
+  - BTP_BUND_SPREAD
+  external_assets_mentioned:
+  - FTSE 100 — non in DB
+  - rendimenti gilt UK 2Y/10Y/30Y — non in DB
+  - spread gilt-Bund — non in DB
+  - indici settoriali UK — non in DB
+  time_window:
+    start: 2016-06-23
+    end: present
+  regime_phases:
+  - brexit_uncertainty_2016_2019: 2016-06-23 to 2019-12-31
+  - pandemic_qe_2020_2021: 2020-01-01 to 2021-12-31
+  - fiscal_shock_gilt_crisis_2022: 2022-01-01 to 2022-12-31
+  - disinflation_boe_cuts_2023_2026: 2023-01-01 to present
+  keywords:
+  - uk
+  - regno unito
+  - brexit
+  - referendum
+  - truss
+  - kwarteng
+  - mini-budget
+  - gilt crisis
+  - ldi
+  - pension funds
+  - bank of england
+  - boe
+  - mpc
+  - bailey
+  - rate cuts
+  - services inflation
+  - sterlina
+  - gbp
+  - pound
+  - starmer
+  - labour
+  - sunak
+  - leadership transition
+  - fiscal credibility
+  - obr
+  - risk-off
+  - safe haven
+- source_file: Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi
+    datati per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime
+    sanzioni — mappa di episodi datati per event study (2022–2026).md
+  title: 'Russia-Ucraina: attrito energetico e regime sanzioni — regime ed episodi
+    storici (2022–2026)'
+  date_compiled: 2026-06-18
+  primary_theme: geopolitical
+  sub_themes:
+  - commodity_energy
+  - oil_supply_shock
+  - gas_supply_shock
+  - sanctions_regime
+  - price_cap
+  - energy_attrition
+  - risk_off
+  - safe_haven_flows
+  - eurozone_fragmentation
+  relevant_assets:
+  - BZ=F
+  - GC=F
+  - ^STOXX50E
+  - ^GDAXI
+  - FTSEMIB.MI
+  - EURUSD=X
+  - ^TNX
+  - DX-Y.NYB
+  - ^VIX
+  - BTP_BUND_SPREAD
+  - EEM
+  - HG=F
+  external_assets_mentioned:
+  - Gas europeo TTF — non in DB
+  - Urals e sconto Urals-Brent — non in DB
+  - diesel/gasolio e crack spread prodotti — non in DB
+  - indici difesa europea — non in DB
+  - volumi shadow fleet / aderenza price cap — non in DB
+  time_window:
+    start: 2022-02-24
+    end: present
+  regime_phases:
+  - acute_gas_shock_2022: 2022-02-24 to 2022-12-31
+  - price_cap_rerouting_2023: 2023-01-01 to 2023-12-31
+  - refinery_attrition_2024: 2024-01-01 to 2024-12-31
+  - current_overlap_hormuz_opec_2025_2026: 2025-01-01 to present
+  keywords:
+  - russia
+  - ukraine
+  - ucraina
+  - energy attrition
+  - sanctions
+  - price cap
+  - g7
+  - oil cap
+  - urals
+  - gazprom
+  - nord stream
+  - ttf
+  - gas europeo
+  - repowereu
+  - shadow fleet
+  - refinery strikes
+  - brent
+  - diesel
+  - risk-off
+  - safe haven
+  - eurozone fragmentation
+  - defense
+  - re-routing
+  - india china oil
+- source_file: bitcoin (2014-2026)/bitcoin (2014-2026).md
+  title: 'Bitcoin e cripto: regimi, driver e trasmissione (2014–2026)'
+  date_compiled: 2026-06-05
+  primary_theme: structural_themes
+  sub_themes:
+  - crypto
+  - bitcoin
+  - digital_gold
+  - risk_appetite
+  - global_liquidity
+  - halving_cycle
+  - etf_adoption
+  - regulation
+  relevant_assets:
+  - BTC-USD
+  - ETH-USD
+  - ^NDX
+  - GC=F
+  - DX-Y.NYB
+  - ^VIX
+  external_assets_mentioned:
+  - Stablecoin (USDT/USDC) — non in DB
+  - Indici on-chain / hashrate — non in DB
+  - Azioni cripto-correlate (Coinbase, MicroStrategy) — non in DB
+  time_window:
+    start: 2014-09-01
+    end: 2026-12-31
+  regime_phases:
+  - early_retail_and_mtgox: 2014-09-01 to 2016-12-31
+  - ico_bubble_and_winter: 2017-01-01 to 2019-12-31
+  - macro_liquidity_institutionalization: 2020-01-01 to 2021-11-30
+  - deleveraging_terra_ftx: 2021-12-01 to 2022-12-31
+  - etf_era_and_repricing: 2023-01-01 to 2026-12-31
+  keywords:
+  - bitcoin
+  - ethereum
+  - cryptocurrency
+  - digital gold
+  - store of value
+  - risk-on
+  - nasdaq correlation
+  - global liquidity
+  - real rates
+  - halving
+  - spot etf
+  - sec
+  - stablecoin
+  - tether
+  - ftx collapse
+  - terra luna
+  - mt gox
+  - leverage liquidation
+  - institutional adoption
+  - safe haven hedge
+  - regime-dependent correlation
+- source_file: brexit/brexit_dynamics.md
+  title: 'Brexit: bilancio scientifico e impatti su economia e finanza (2020-2026)'
+  date_compiled: 2026-05-26
+  primary_theme: geopolitical
+  sub_themes:
+  - uk_eu_relations
+  - brexit
+  - uk
+  - gbp
+  - gbp_dynamics
+  - city_of_london
+  - financial_services_relocation
+  - euro_clearing
+  - sovereign_risk
+  - trade_disruption
+  - regulatory_divergence
+  - uk_political_risk
+  - solvency_uk
+  - migration_labour
+  relevant_assets:
+  - GBPUSD=X
+  - FTSEMIB.MI
+  - ^STOXX50E
+  - ^GDAXI
+  - BTP_BUND_SPREAD
+  external_assets_mentioned:
+  - ^FTSE (UK 100) — non in DB
+  - UK 10Y Gilt — non in DB
+  - LSEG.L, Eurex (Deutsche Boerse), Euronext — non in DB
+  - BNP Paribas, Deutsche Bank, Société Générale, ING, HSBC — non in DB
+  time_window:
+    start: 2016-06-01
+    end: present
+  regime_phases:
+  - referendum_shock: 2016-06-23 to 2016-09-30
+  - negotiation_period: 2016-10-01 to 2019-12-31
+  - withdrawal_and_transition: 2020-01-01 to 2020-12-31
+  - implementation_post_tca: 2021-01-01 to 2022-12-31
+  - regulatory_divergence_phase: 2023-01-01 to 2025-04-30
+  - reset_starmer: 2025-05-19 to present
+  keywords:
+  - brexit
+  - uk
+  - eu
+  - sterling
+  - gbp
+  - tca
+  - trade and cooperation agreement
+  - city of london
+  - euro clearing
+  - lch eurex
+  - emir 3
+  - solvency uk
+  - edinburgh reforms
+  - windsor framework
+  - northern ireland protocol
+  - obr productivity 4 percent
+  - synthetic control doppelganger
+  - bregret
+  - ucits aifmd
+  - cptpp uk
+  - reset starmer
+- source_file: ciclo_inflazione_eurozona_2021-2023/Ciclo inflazione Eurozona 2021–2023.md
+  title: 'Ciclo inflazione Eurozona 2021–2023: shock di offerta, energia e risposta
+    BCE'
+  date_compiled: 2026-06-03
+  primary_theme: macro_data
+  sub_themes:
+  - inflation
+  - hicp
+  - cpi
+  - energy_passthrough
+  - monetary_policy
+  - ecb
+  - sovereign_fragmentation
+  - eurozone
+  - eurozone_activity
+  - zew
+  - ifo
+  - sentiment_survey
+  - business_survey
+  - german_activity
+  relevant_assets:
+  - ^STOXX50E
+  - ^GDAXI
+  - FTSEMIB.MI
+  - EURUSD=X
+  - IEAG.AS
+  - BZ=F
+  - GC=F
+  - ^TNX
+  - BTP_BUND_SPREAD
+  external_assets_mentioned:
+  - Bund/Schatz 10Y-2Y e curva tassi euro — non in DB
+  - Prezzo gas naturale TTF — non in DB
+  time_window:
+    start: 2021-01-01
+    end: 2023-12-31
+  regime_phases:
+  - reopening_bottlenecks: 2021-01-01 to 2022-02-23
+  - energy_war_shock: 2022-02-24 to 2022-10-31
+  - peak_and_disinflation: 2022-11-01 to 2023-12-31
+  keywords:
+  - eurozone inflation
+  - hicp
+  - core inflation
+  - ecb
+  - lagarde
+  - energy shock
+  - natural gas
+  - ukraine war
+  - supply bottlenecks
+  - pass-through
+  - phillips curve
+  - inflation expectations
+  - rate hikes
+  - end of negative rates
+  - pepp
+  - app
+  - tpi
+  - transmission protection instrument
+  - fragmentation
+  - btp-bund spread
+  - wage-price spiral
+  - second-round effects
+  - fed ecb divergence
+  - disinflation
+- source_file: dati_macro_USA_e_trasmissione_ai_mercati_(2013–2024)/dati macro USA
+    e trasmissione ai mercati (2013–2024).md
+  title: 'Sorprese sui dati macro USA e trasmissione ai mercati (2013–2024): regimi,
+    canali e state-dependence'
+  date_compiled: 2026-06-04
+  primary_theme: macro_data
+  sub_themes:
+  - inflation_surprises
+  - cpi
+  - ppi
+  - pce
+  - labor_market
+  - nfp
+  - payrolls
+  - jobless_claims
+  - claims
+  - ism
+  - pmi
+  - retail_sales
+  - monetary_policy
+  - yield_curve
+  - dollar_dynamics
+  - state_dependence
+  relevant_assets:
+  - ^GSPC
+  - ^TNX
+  - IEF
+  - EURUSD=X
+  - JPY=X
+  - GC=F
+  external_assets_mentioned:
+  - Citi Economic Surprise Index (CESI) — non in DB, indice di sorpresa
+  - 2Y Treasury / front-end della curva — non in DB (in DB solo ^TNX 10Y e IEF 7-10Y)
+  - 'DXY dollar index — non in DB (proxy: EURUSD=X, JPY=X)'
+  - Fed funds futures / OIS — non in DB
+  time_window:
+    start: 2013-01-01
+    end: 2024-12-31
+  regime_phases:
+  - zirp_forward_guidance_taper: 2013-01-01 to 2015-11-30
+  - gradual_normalization_to_2018_peak: 2015-12-01 to 2019-07-31
+  - covid_shock_and_reopening: 2020-02-01 to 2021-02-28
+  - inflation_shock_aggressive_hiking: 2021-03-01 to 2023-07-31
+  - disinflation_and_pivot_expectations: 2023-08-01 to 2024-12-31
+  keywords:
+  - macro surprise
+  - economic surprise index
+  - citi surprise index
+  - cpi
+  - pce
+  - non-farm payrolls
+  - nfp
+  - employment situation
+  - unemployment rate
+  - jolts
+  - ism
+  - pmi
+  - gdp
+  - retail sales
+  - treasury yields
+  - yield curve
+  - 10-year yield
+  - federal reserve
+  - fomc
+  - dot plot
+  - forward guidance
+  - taper tantrum
+  - good news is bad news
+  - state dependence
+  - business cycle
+  - announcement effect
+  - high-frequency identification
+  - fed information effect
+  - dollar
+  - real rates
+  - safe haven
+  - soft landing
+  - hard landing
+- source_file: iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+  title: 'Iran – Stretto di Hormuz e il premio geopolitico sul petrolio: regime ed
+    episodi storici (1980–2026)'
+  date_compiled: 2026-05-31
+  primary_theme: commodity_energy
+  sub_themes:
+  - geopolitical
+  - oil_supply_shock
+  - geopolitical_risk_premium
+  - strait_of_hormuz
+  - iran_sanctions
+  - safe_haven_flows
+  relevant_assets:
+  - BZ=F
+  - GC=F
+  - CHF=X
+  - JPY=X
+  - ^GSPC
+  - ^STOXX50E
+  - FTSEMIB.MI
+  - ^GDAXI
+  - ^TNX
+  - IEF
+  - EURUSD=X
+  external_assets_mentioned:
+  - WTI (CL=F) — non in DB
+  - rendimenti sovrani Gulf/Saudi — non in DB
+  - spare capacity OPEC / OPEC+ — non in DB
+  time_window:
+    start: 1980-09-01
+    end: present
+  regime_phases:
+  - tanker_war_1980s: 1984-01-01 to 1988-08-20
+  - iran_nuclear_sanctions_hormuz_threats: 2011-12-01 to 2012-12-31
+  - maximum_pressure_tanker_attacks: 2019-05-01 to 2020-01-31
+  - red_sea_houthi_premium: 2023-11-01 to 2024-12-31
+  - hormuz_closure_mou_2026: 2026-02-01 to present
+  keywords:
+  - iran
+  - hormuz
+  - strait of hormuz
+  - oil shock
+  - brent
+  - geopolitical risk premium
+  - oil supply disruption
+  - naval blockade
+  - tanker war
+  - abqaiq
+  - soleimani
+  - opec spare capacity
+  - safe haven
+  - risk-off
+  - nuclear talks
+  - iaea
+  - enriched uranium
+  - mou
+- source_file: sovereign_debt/sovereign_debt_crisis.md
+  title: 'La crisi del debito sovrano dell''eurozona (2009–2012): origini, contagio,
+    politica monetaria e lasciti'
+  date_compiled: 2026-05-29
+  primary_theme: financial_stability
+  sub_themes:
+  - sovereign_debt
+  - bank_sovereign_doom_loop
+  - ecb
+  - ecb_monetary_policy
+  - fiscal_austerity
+  - redenomination_risk
+  - contagion
+  - optimum_currency_area
+  - eurozone
+  - eurozone_fragmentation
+  - eurozone_periphery
+  - btp
+  - spread
+  relevant_assets:
+  - BTP_BUND_SPREAD
+  - FTSEMIB.MI
+  - ^STOXX50E
+  - ^GDAXI
+  - EURUSD=X
+  - IEAG.AS
+  external_assets_mentioned:
+  - Greek/Irish/Portuguese/Spanish 10Y sovereign yields — non in DB
+  - Bankia, Anglo Irish Bank, AIB (bank equities) — non in DB
+  - TARGET2 balances — non in DB
+  time_window:
+    start: 2009-10-01
+    end: present
+  regime_phases:
+  - greek_revelation: 2009-10-01 to 2010-04-30
+  - first_bailouts_contagion: 2010-05-01 to 2011-06-30
+  - acute_phase_italy_spain: 2011-07-01 to 2012-07-25
+  - draghi_whatever_it_takes_omt: 2012-07-26 to 2012-12-31
+  - institutional_legacy: 2013-01-01 to present
+  keywords:
+  - sovereign debt crisis
+  - eurozone
+  - btp-bund spread
+  - doom loop
+  - bank-sovereign nexus
+  - redenomination risk
+  - ltro
+  - omt
+  - whatever it takes
+  - draghi
+  - ecb
+  - greece
+  - ireland
+  - spain
+  - italy
+  - piigs
+  - austerity
+  - fiscal compact
+  - banking union
+  - esm
+  - target2
+  - sudden stop
+  - optimum currency area
+  - mundell
+  - risk-free
+  - contagion
+  - reinhart rogoff
+  - ngeu
+- source_file: spacex_ipo/spacex_ipo.md
+  title: 'The SpaceX IPO: a comprehensive analytical report'
+  date_compiled: 2026-05-27
+  primary_theme: corporate_idiosyncratic
+  sub_themes:
+  - mega_ipo_dynamics
+  - ipo
+  - hot_issue_underpricing
+  - dual_class_governance
+  - retail_behavioral_finance
+  - index_inclusion_mechanics
+  - space_economy
+  - ai_infrastructure_capex
+  - ai_capex
+  - private_to_public_shift
+  - mega_cap
+  - key_person_risk
+  - sovereign_industrial_policy
+  relevant_assets:
+  - ^GSPC
+  - ^TNX
+  external_assets_mentioned:
+  - SPCX (Nasdaq, prima quotazione attesa 2026-06-12) — non in DB
+  - RKLB (Rocket Lab) — non in DB
+  - ASTS (AST SpaceMobile) — non in DB
+  - PL (Planet Labs) — non in DB
+  - TSLA (Tesla) — non in DB
+  - AMZN (Amazon, Project Kuiper) — non in DB
+  - DXYZ (Destiny Tech100 closed-end) — non in DB
+  - LMT, NOC, LHX (defense primes) — non in DB
+  time_window:
+    start: 2002-03-14
+    end: 2026-06-12
+  regime_phases:
+  - private_growth_era: 2002-03-14 to 2024-11-30
+  - mega_round_runup: 2024-12-01 to 2026-01-31
+  - xai_merger_consolidation: 2026-02-01 to 2026-04-30
+  - s1_filed_to_pricing: 2026-05-01 to 2026-06-11
+  - first_trade_window: 2026-06-12 to present
+  keywords:
+  - spacex ipo
+  - spcx nasdaq
+  - s-1 filing
+  - largest ipo in history
+  - aramco comparison
+  - starlink connectivity
+  - elon musk dual-class
+  - super-voting shares
+  - hot issue market
+  - ipo underpricing
+  - long-run ipo underperformance
+  - retail allocation 30 percent
+  - finfluencer effect
+  - grey market pre-ipo
+  - sum-of-the-parts sotp
+  - real options valuation
+  - dcf terminal value
+  - sentiment baker wurgler
+  - nasdaq-100 rule change
+  - s&p 500 inclusion
+  - index inclusion mechanics
+  - megacap waiver
+  - private to public shift
+  - low float playbook
+  - space economy valuation
+  - 1.8 trillion space economy
+  - ai infrastructure capex
+  - orbital data centers
+  - xai merger
+  - cursor anysphere
+  - echostar spectrum
+  - cfius foci
+  - key person risk
+  - controlled company exemption
+  - ritter 1991
+  - loughran ritter 1995
+  - cornelli goldreich ljungqvist 2006
+  - damodaran 2009 ssrn 1418687
+  - gompers ishii metrick 2010 rfs

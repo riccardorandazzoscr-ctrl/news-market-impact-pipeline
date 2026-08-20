@@ -1,0 +1,58 @@
+# ---------------------------------------------------------------------------
+# Secrets — never commit. Credentials live in ~/Claude/.env, OUTSIDE this repo,
+# and are read at runtime (FRED / Stooq / Telegram). Nothing in this tree
+# contains a key, but these patterns are here as a backstop.
+# ---------------------------------------------------------------------------
+.env
+*.env
+*secret*
+*credentials*
+
+# ---------------------------------------------------------------------------
+# Regenerable artifacts — excluded to keep the repo reviewable.
+# ---------------------------------------------------------------------------
+
+# Virtualenv (177 MB) — rebuild with: python3 -m venv venv && venv/bin/pip install -r requirements.txt
+news_impact_pipeline/venv/
+__pycache__/
+*.pyc
+
+# Market database (28 MB) — rebuild from scratch with bootstrap_market_data.py
+market_data/*.db
+market_data/exports/
+
+# Rendered HTML reports — generated from the .md sources by render_report.py
+*.html
+
+# Run logs
+news_impact_pipeline/logs/
+
+# Deep-research PDFs — the .md version of every study is committed; the PDF is
+# the same content re-exported, and would add ~4 MB of duplicates.
+*.pdf
+
+# macOS
+.DS_Store
+
+# ---------------------------------------------------------------------------
+# Daily analysis archive.
+#
+# The system has produced ~86 days of analysis. Each card embeds a short
+# summary of the day's news, second-hand from wire reporting (Reuters,
+# Bloomberg) — so the full archive is kept local and only a pinned sample is
+# published, as a representative illustration of the output.
+#
+# This also means the daily automation, which writes into daily_analysis/
+# every morning, cannot silently add new files to a commit.
+# ---------------------------------------------------------------------------
+daily_analysis/*
+!daily_analysis/_scorecard/
+!daily_analysis/2026-08-17/
+!daily_analysis/2026-08-18/
+!daily_analysis/2026-08-19/
+
+# Forecast ledger: the raw evidence behind the weekly scorecard — kept.
+!daily_analysis/forecast_ledger.csv
+
+# Stray run logs next to the database
+market_data/*.log

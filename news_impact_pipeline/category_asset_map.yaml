@@ -1,0 +1,249 @@
+# category_asset_map.yaml
+#
+# Mappa fra le 9 categorie dell'ontologia (Design Document §6.1) e i ticker
+# dell'universo asset del progetto (i 26 strumenti del DB).
+#
+# Per ogni categoria definiamo due livelli di esposizione:
+#   primary   = asset direttamente impattati (canale di trasmissione diretto)
+#   secondary = asset con effetto indiretto o di "second round"
+#
+# Il sistema usa questa mappa nello Step 2 della pipeline (§6.2) come default
+# starting point; l'analista (Claude in sessione) puo' aggiungere o togliere
+# asset specifici in base al contenuto della notizia.
+#
+# IMPORTANTE: i ticker qui devono esistere nella tabella `assets` del DB.
+# Per aggiungerne di nuovi (es. UK Gilt, settoriali europei) bisogna prima
+# estendere l'universo asset in bootstrap_market_data.py.
+
+monetary_policy:
+  description: "Decisioni Fed/BCE/BoE/BoJ, dot plot, segnali hawkish/dovish, QT/QE"
+  horizon: "1-5 giorni di trading"
+  primary:
+    - ^TNX            # US Treasury 10Y yield (canale diretto)
+    - ^FVX            # US Treasury 5Y: con 10Y e 30Y da' la FORMA della curva
+    - ^TYX            # US Treasury 30Y yield: la scadenza del PREMIO A TERMINE
+    - IEF             # iShares 7-10Y Treasury (proxy duration USA)
+    - IEAG.AS         # ETF Euro Aggregate Bond (proxy duration eurozona)
+    - EURUSD=X        # spread tassi → cambio
+    - JPY=X           # USD/JPY tipicamente piu' sensibile al differenziale
+    - GBPUSD=X
+    # Curve sovrane non-USA (dal 2026-08-18): servono per distinguere uno shock
+    # di politica monetaria LOCALE da un selloff GLOBALE del premio a termine.
+    # ⚠ Sono PREZZI di ETF: scendono quando i rendimenti salgono, al contrario
+    # di ^TNX/^TYX. In un selloff sincronizzato ^TYX sale e questi tre scendono.
+    - IGLT.L          # Gilt UK
+    - 1482.T          # JGB Giappone (storia dal 2016-05)
+    - VGB.AX          # ACGB Australia (storia dal 2012-04)
+  secondary:
+    - ^GSPC           # equity reagisce al "risk-free rate"
+    - ^STOXX50E
+    - FTSEMIB.MI
+    - ^GDAXI
+    - BTP_BUND_SPREAD # politica BCE impatta lo spread periferico
+    - GC=F            # oro come hedge contro tassi reali
+    - ^NDX            # growth/tech molto sensibile ai tassi di sconto
+    - ^VIX            # stretta/sorprese di policy → volatilità
+    - ^MOVE           # volatilità OBBLIGAZIONARIA: ordinato vs stress (dal 2026-08-19)
+
+fiscal_policy:
+  description: "Budget, deficit, debito sovrano, manovre fiscali nazionali"
+  horizon: "1-10 giorni di trading"
+  primary:
+    - BTP_BUND_SPREAD # spread sovrano = misura diretta del rischio fiscale eurozona
+    - FTSEMIB.MI      # equity domestico Italia
+    - ^GDAXI          # equity domestico Germania
+    - ^STOXX50E       # equity area euro aggregato
+  secondary:
+    - EURUSD=X        # crisi fiscale → cambio
+    - IEAG.AS         # bond eurozona
+    - ^TNX            # contagio cross-area per crisi maggiori
+    - ^TYX            # premio a termine: il canale fiscale si vede sul 30 anni
+    - GC=F            # safe haven
+    # Curve extra-eurozona: il canale fiscale di UK/Giappone/Australia
+    # (mini-budget, aste JGB, bilanci). PREZZI → segno inverso ai rendimenti.
+    - IGLT.L
+    - 1482.T
+    - VGB.AX
+    - ^GSPTSE         # equity domestico Canada
+
+geopolitical:
+  description: "Conflitti armati, sanzioni, tensioni diplomatiche, elezioni a rischio"
+  horizon: "1-5 giorni di trading (acuto), settimane (cronico)"
+  primary:
+    - GC=F            # oro = safe haven principale
+    - CHF=X           # franco svizzero = safe haven monetario
+    - JPY=X           # yen = safe haven monetario
+    - BZ=F            # Brent (energia spesso al centro dei conflitti)
+  secondary:
+    - ^GSPC           # risk-off generale
+    - ^STOXX50E
+    - ^N225
+    - GBPUSD=X        # eventi UK-specifici (Brexit, Scozia, etc.)
+    - BTC-USD         # narrative "digital gold" durante stress
+    - ^VIX            # risk-off → spike di volatilità
+    - TTF=F           # gas EU: canale energetico diretto (es. escalation Russia-Ucraina)
+    - EXH9.DE         # utility EU: esposte a shock prezzi energia da conflitti
+    - CNY=X           # yuan: termometro guerra commerciale / dazi / tensioni USA-Cina
+    - EWZ             # Brasile: elezioni / rischio politico-fiscale LatAm (equity)
+    - BRL=X           # real: canale valutario del rischio politico brasiliano
+    - DX-Y.NYB        # dollaro come safe haven valutario
+    # ASEAN: canale diretto per shock del Sud-Est asiatico (EEM è troppo diluito,
+    # Thailandia ~2% del peso). NB: la Cambogia non ha proxy quotato.
+    - THB=X           # baht: Thailandia (rischio politico, dispute confinarie, dazi)
+    - THD             # equity Thailandia
+    - IDR=X           # rupia: Indonesia, maggiore economia ASEAN
+    - EIDO            # equity Indonesia
+    - MYR=X           # ringgit: Malaysia
+    - SGD=X           # dollaro di Singapore: hub finanziario, proxy stabile regionale
+    - EWS             # equity Singapore
+    # Difesa + Corea/Taiwan: canali ricorrenti (Patriot, NATO Art.5, tensione
+    # Taiwan-Cina) segnalati come strutturalmente invisibili prima del 2026-08-10.
+    - SHLD.L          # difesa/sicurezza globale, forte esposizione NATO/Europa
+    - EWY             # Corea del Sud: anche canale rischio geopolitico regionale
+    - EWT             # Taiwan: proxy diretto del rischio Taiwan/Cina
+    - ILS=X           # shekel: canale più diretto del conflitto mediorientale
+    - ITA             # difesa USA (con SHLD.L separa impulso americano da europeo)
+    - REMX            # terre rare/metalli strategici: controlli all'export cinesi
+    - IYT             # trasporti: costo dei chokepoint marittimi
+    - CRACK_321       # raid su raffinerie (Ucraina-Russia, Houthi): colpiscono il MARGINE
+    - CAD=X           # dollaro canadese: dazi e attriti commerciali USA-Canada (dal 2026-08-16)
+    - HO=F            # diesel: il prodotto sanzionato/colpito nei conflitti energetici
+
+macro_data:
+  description: "Release CPI, NFP/jobs, GDP, PMI, sentiment surveys"
+  horizon: "intraday-1 giorno"
+  primary:
+    - ^TNX            # tassi reagiscono direttamente a inflazione/crescita
+    - EURUSD=X        # FX driver primario sui dati
+    - ^GSPC           # equity USA reagisce a release USA
+  secondary:
+    - IEF
+    - IEAG.AS
+    - ^STOXX50E       # release eurozona
+    - GBPUSD=X
+    - JPY=X
+    - GC=F            # se sorpresa su inflazione
+    - DX-Y.NYB        # il dollaro reagisce direttamente alle sorprese macro USA
+    - CNY=X           # dati macro cinesi (PIL, PMI, export) → yuan
+    - ^VIX            # sorprese forti → volatilità
+    - ^NDX            # equity growth molto reattivo a CPI/jobs
+    - HG=F            # rame = termometro della crescita globale
+    - INDA            # India: importatore netto, trasmissione shock energetico
+    - INR=X
+    - KRW=X           # won: ciclo esportazioni/memoria coreano
+
+corporate_idiosyncratic:
+  description: "Earnings, M&A, IPO, eventi su singole aziende o settori specifici"
+  horizon: "intraday-3 giorni"
+  primary: []         # dipende dall'azienda — l'analista identifica caso per caso
+  secondary:
+    - ^GSPC           # se azienda S&P 500 (effetto indice)
+    - ^STOXX50E       # se azienda eurozona large cap
+    - FTSEMIB.MI      # se azienda Italia
+    - ^GDAXI          # se azienda Germania
+    - SOXX            # proxy settoriale per single-name dei semiconduttori
+    - ^NDX            # proxy per single-name mega-cap tech
+    - IGV             # proxy per single-name software
+    - XLV             # proxy per single-name sanitario/farmaceutico
+    - XLE             # proxy per single-name energia
+    - ITA             # proxy per single-name difesa/aerospazio
+  notes: |
+    Per questa categoria gli asset diretti non sono nel nostro DB di 26 strumenti
+    (che e' cross-asset, non single-name). L'analista deve cercare un proxy:
+    indice settoriale, ETF settoriale, oppure indice di mercato in cui il titolo
+    pesa molto. Per IPO mega-cap (es. SpaceX), monitorare anche l'indice di
+    destinazione (^GSPC se attesa inclusione S&P 500).
+
+regulatory:
+  description: "Nuove normative, antitrust, sanzioni regolatorie, riforme settoriali"
+  horizon: "1-10 giorni di trading"
+  primary: []         # dipende dal settore impattato
+  secondary:
+    - ^GSPC
+    - ^STOXX50E
+    - FTSEMIB.MI
+    - ^GDAXI
+    - BTP_BUND_SPREAD # se la regulation tocca finanza eurozona
+    - CNY=X           # dazi/misure commerciali verso la Cina
+    - CAD=X           # dazi/misure commerciali verso il Canada (dal 2026-08-16)
+    - ^GSPTSE         # equity Canada: l'asset piu' colpito dai dazi (dal 2026-08-18)
+    - XLV             # sanitario: drug pricing e regolazione farmaceutica
+    - IGV             # software: antitrust e regolazione delle piattaforme
+    - REMX            # terre rare: controlli all'export come strumento regolatorio
+    - DX-Y.NYB        # dollaro: canale aggregato delle misure commerciali
+  notes: |
+    Categoria settoriale per definizione. Il nostro universo cross-asset cattura
+    solo gli effetti di sistema (es. riforma banche → indice eurozona). Per
+    effetti settoriali specifici servirebbero ETF settoriali (futura estensione
+    dell'universo).
+
+commodity_energy:
+  description: "OPEC+, shock petrolio, gas, eventi energetici, transizione"
+  horizon: "1-5 giorni di trading"
+  primary:
+    - BZ=F            # Brent crude = canale diretto
+    - CRACK_321       # margine di raffinazione: IL canale per attacchi/fermi raffineria
+    - HO=F            # diesel/gasolio: prodotto piu' esposto ai raid sulle raffinerie
+    - RB=F            # benzina RBOB
+    - TTF=F           # gas naturale europeo (Dutch TTF) = canale diretto gas EU
+    - GC=F            # oro spesso correlato a regime inflation
+  secondary:
+    - EXH9.DE         # utility europee = proxy prezzo elettricità EU
+    - EXV7.DE         # chimica europea: energivora E dipendente dal Reno (dal 2026-08-18)
+    - ^GSPC           # energy sector pesa nei principali indici
+    - ^N225           # Giappone importatore netto, molto esposto a oil price
+    - EURUSD=X        # eurozona importatore netto
+    - ^STOXX50E
+    - ^TNX            # oil shock → break-even inflation → tassi nominali
+    - HG=F            # rame: domanda industriale, spesso co-mossa con l'energia
+    - XLE             # energia azionaria USA: utili del settore vs prezzo del greggio
+    - IYT             # trasporti: il carburante è un costo diretto
+    - NOK=X           # corona norvegese: valuta petrolifera
+    - INDA            # India: importatore netto di energia
+
+financial_stability:
+  description: "Bank runs, default sovrani, contagio, crisi liquidita', stress sistemico"
+  horizon: "intraday-5 giorni (puo' protrarsi)"
+  primary:
+    - BTP_BUND_SPREAD # misura diretta di stress periferico
+    - HYG             # high yield = primo termometro dello stress sul credito
+    - ^VIX            # indice della paura: spike in ogni crisi di liquidità
+    - ^MOVE           # volatilità obbligazionaria: lo stress sui Treasury si vede qui
+    - GC=F            # safe haven principale
+    - CHF=X
+    - JPY=X
+    - IEF             # flight-to-quality verso Treasury USA
+  secondary:
+    - ^GSPC
+    - ^STOXX50E
+    - FTSEMIB.MI      # se origine eurozona
+    - ^GDAXI
+    - ^TNX            # tassi crollano in flight-to-quality
+    - DX-Y.NYB        # dollaro come safe haven globale
+
+structural_themes:
+  description: "AI, transizione energetica, demografia, deglobalizzazione, demografia"
+  horizon: "mesi-anni (non event-study standard)"
+  primary:
+    - SOXX            # semiconduttori = cuore del tema AI/chip
+    - ^NDX            # Nasdaq-100 = mega-cap tech, proxy diretto del capex AI
+  secondary:
+    - ^GSPC           # esposizione tematica via mega-cap USA
+    - BTC-USD         # tema digitale/AI
+    - ETH-USD
+    - LIT             # litio/batterie = transizione energetica
+    - URA             # uranio/nucleare = transizione energetica
+    - EEM             # deglobalizzazione / mercati emergenti
+    - BZ=F            # transizione energetica
+    - GC=F            # demografia/inflazione strutturale
+    - EWY             # Corea: Samsung/SK Hynix, epicentro memoria/HBM per il ciclo AI
+    - KRW=X           # won: separa effetto valuta ed effetto azionario dentro EWY
+    - EWT             # Taiwan: TSMC, semiconduttori avanzati
+    - IGV             # software: con SOXX misura la rotazione INTERNA al tema AI
+    - TAN             # solare: transizione energetica
+    - REMX            # terre rare: input critico di batterie e difesa
+  notes: |
+    Tema di lungo periodo: l'event study a 1-10 giorni e' meno informativo qui.
+    Usare questa categoria per tagging delle notizie ma NON per inferire impatti
+    di breve. Il match col knowledge base e' piu' rilevante della finestra di
+    rendimento.

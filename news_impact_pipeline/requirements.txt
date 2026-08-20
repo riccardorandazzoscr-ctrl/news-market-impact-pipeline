@@ -1,0 +1,8 @@
+yfinance
+pandas
+numpy
+fredapi
+sqlalchemy
+pyyaml
+beautifulsoup4
+markdown
