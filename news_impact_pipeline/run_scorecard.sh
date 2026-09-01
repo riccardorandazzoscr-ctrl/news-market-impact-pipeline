@@ -31,5 +31,13 @@ log "START run_scorecard."
 cd "$PIPE"
 "$PY" forecast_tracking.py run >> "$LOG" 2>&1
 RC=$?
+
+# Invio su Telegram (dal 2026-08-24): prima la scorecard veniva rigenerata ma
+# restava solo su disco, quindi era indistinguibile da un job non partito.
+if [[ $RC -eq 0 ]]; then
+  /bin/zsh "$PIPE/send_telegram.sh" --scorecard >> "$LOG" 2>&1 \
+    || log "WARN: invio Telegram della scorecard fallito."
+fi
+
 log "DONE run_scorecard (rc=$RC)."
 exit 0

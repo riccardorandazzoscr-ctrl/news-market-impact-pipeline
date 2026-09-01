@@ -31,11 +31,15 @@ passed, that claim is scored against what the market actually did.
 
 ## The three layers
 
+Le dimensioni sono una fotografia al **2026-08-30**: il sistema cresce, i numeri qui
+sotto no. Per i valori correnti vedi la sezione "Dati che NON si scrivono qui" in
+`CLAUDE.md`.
+
 | Layer | What it is |
 |---|---|
-| **1 — Market data** | 66 assets, daily, 2011→present, in SQLite. Equities, FX, rates, commodities, credit, volatility. Includes two *derived* series computed daily from raw tickers — a 3-2-1 refining margin and a sovereign yield spread — stored as tickers so the event-study engine treats them like any other asset. |
-| **2 — Knowledge base** | 20 deep-research studies. Each documents a regime, its transmission channels, and a dated catalogue of anchor episodes, with a structured YAML metadata block used for matching. |
-| **3 — Analytics** | The episode library (~850 dated episodes), the event-study engine, the category→asset map, and the weekly forecast scorecard. |
+| **1 — Market data** | 78 assets, daily, 2011→present, in SQLite. Equities, FX, rates, commodities, credit, volatility. Includes two *derived* series computed daily from raw tickers — a 3-2-1 refining margin and a sovereign yield spread — stored as tickers so the event-study engine treats them like any other asset. |
+| **2 — Knowledge base** | 24 deep-research studies. Each documents a regime, its transmission channels, and a dated catalogue of anchor episodes, with a structured YAML metadata block used for matching. |
+| **3 — Analytics** | The episode library (~980 dated episodes), the event-study engine, the category→asset map, and the weekly forecast scorecard. |
 
 ## Architecture note: the agent is the classifier
 
@@ -119,15 +123,18 @@ news_impact_pipeline/     the code
   analogues.py              episode library: build / find / labels / stats
   event_study.py            cumulative-return event study with percentile bands
   forecast_tracking.py      forecast ledger + weekly scorecard (IC, hit rate, coverage)
-  bootstrap_market_data.py  one-time historical load  (66 assets)
+  bootstrap_market_data.py  one-time historical load  (all assets in ASSETS)
   update_market_data.py     daily incremental refresh
   subtheme_taxonomy.yaml    canonical sub-theme vocabulary
   category_asset_map.yaml   ontology category → transmission assets
   PHASE5_RUNBOOK.md         the operating procedure the daily run follows
 
-knowledge_base/           20 research studies + the episode library
+knowledge_base/           research studies + the episode library
 daily_analysis/           sample output + the full weekly scorecard history
-CLAUDE.md                 architecture, invariants, and hard-won constraints
+references/               one file per recurring method (asset coverage, reading
+                          conventions, derived series, label attribution, run cost)
+CLAUDE.md                 the map: where things are, how to run them, hard constraints
+MEMORY.md                 current state per workstream (status / decided / next step)
 Design_Document_NewsImpact.md   original design spec
 ```
 
@@ -137,7 +144,7 @@ Design_Document_NewsImpact.md   original design spec
 cd news_impact_pipeline
 python3 -m venv venv && venv/bin/pip install -r requirements.txt
 
-venv/bin/python bootstrap_market_data.py     # one-time: 15y history, 66 assets
+venv/bin/python bootstrap_market_data.py     # one-time: 15y history, all assets
 venv/bin/python update_market_data.py        # daily incremental
 venv/bin/python analogues.py build           # (re)build the episode library
 venv/bin/python analogues.py stats           # library size + quality metrics

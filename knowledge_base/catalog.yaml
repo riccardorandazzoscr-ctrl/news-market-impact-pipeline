@@ -1,5 +1,5 @@
-generated_at: '2026-08-19T23:54:20'
-num_entries: 20
+generated_at: '2026-08-29T18:53:02'
+num_entries: 24
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -73,6 +73,72 @@ entries:
   - elezioni
   - border dispute
   - eem
+- source_file: Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
+    e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi
+    storici (2022–2026).md
+  title: 'Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina):
+    regime ed episodi storici (2022–2026)'
+  date_compiled: 2026-08-27
+  primary_theme: commodity_energy
+  sub_themes:
+  - refinery_products
+  - infrastructure_attack
+  - refinery_strike
+  - upstream_export_strike
+  - refinery_repair_restart
+  - sanctions_product_ban
+  - crack_spread
+  relevant_assets:
+  - CRACK_321
+  - HO=F
+  - RB=F
+  - BZ=F
+  - TTF=F
+  - EXH9.DE
+  - EXV7.DE
+  - ^VIX
+  - HG=F
+  - XLE
+  - IYT
+  - NOK=X
+  - EURUSD=X
+  - ^STOXX50E
+  - GC=F
+  external_assets_mentioned:
+  - crack spread RBOB-Brent singolo (3-1-2 o semplice) — isolerebbe la componente
+    benzina, oggi solo il crack 321 aggregato è in DB
+  - ESPO/Urals-Brent differential — lo sconto del greggio russo, misura quanto l'export
+    stia bypassando la raffinazione colpita
+  - Baltic Dirty Tanker Index (o simile) — canale trasporto/flotta ombra, non disponibile
+  time_window:
+    start: 2022-01-01
+    end: present
+  regime_phases:
+  - pre_eu_product_embargo: 2022-01-01 to 2023-02-04
+  - post_embargo_price_cap: 2023-02-05 to 2023-12-31
+  - drone_campaign_ramp: 2024-01-01 to 2025-07-31
+  - long_range_intensification: 2025-08-01 to present
+  keywords:
+  - raffineria russa
+  - refinery strike
+  - drone strike refinery
+  - attacco raffineria
+  - crack spread
+  - margine di raffinazione
+  - Ryazan
+  - Volgograd
+  - Novokuibyshevsk
+  - Tuapse
+  - diesel russo
+  - embargo prodotti petroliferi
+  - price cap diesel
+  - oleodotto
+  - pipeline attack
+  - upstream
+  - export terminal
+  - Ust-Luga
+  - Primorsk
 - source_file: Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo
     della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
   title: Ciclo della memoria (DRAM/NAND/HBM) e mercato azionario coreano — regime
@@ -528,6 +594,82 @@ entries:
   - august 2024
   - deleveraging
   - crash risk
+- source_file: Il consumatore cinese, domanda interna, e-commerce e trasmissione ai
+    mercati (2011–2026)/ Il consumatore cinese- domanda interna, e-commerce e trasmissione
+    ai mercati (2011–2026).md
+  title: 'Il consumatore cinese: domanda interna, e-commerce e trasmissione ai mercati
+    (2011–2026)'
+  date_compiled: 2026-08-26
+  primary_theme: macro_data
+  sub_themes:
+  - china_consumption
+  - retail_sales
+  - platform_earnings
+  - deflation_risk
+  - property_wealth
+  - cny
+  - holiday_spending
+  relevant_assets:
+  - EEM
+  - CNY=X
+  - HG=F
+  - EWS
+  - THD
+  - EIDO
+  - MYR=X
+  - THB=X
+  - EWY
+  - EWT
+  - LIT
+  - REMX
+  - ^GDAXI
+  - EXV7.DE
+  - ^STOXX50E
+  external_assets_mentioned:
+  - KWEB (ETF internet/e-commerce cinese, storia dal 2013-08-01) — proxy naturale
+    del canale primario consumo→piattaforme; conterebbe perché nessun asset in DB
+    lo replica senza forte perdita di segnale
+  - CQQQ (China tech, storia dal 2011-01-03) — copre il regime di crescita 2011-2015
+    che KWEB non raggiunge
+  - Hang Seng Tech Index — benchmark HK del canale internet/consumo cinese
+  - CSI 300 / Shanghai Composite — reazione onshore agli shock di consumo e stimolo
+  - Hang Seng Index — reazione offshore HK
+  - Vendite al dettaglio mensili NBS — la variabile-oggetto stessa, non prezzabile
+    direttamente
+  - Indice di fiducia dei consumatori NBS — determinante del risparmio precauzionale
+  - Prezzi nuove case 70 città NBS — canale-ricchezza immobiliare
+  - Tasso di risparmio/depositi delle famiglie (PBoC) — determinante del consumo mancato
+  time_window:
+    start: 2011-01-01
+    end: present
+  regime_phases:
+  - rapid_consumption_growth_urbanization: 2011-01-01 to 2015-12-31
+  - ecommerce_credit_expansion: 2016-01-01 to 2019-12-31
+  - pandemic_lockdowns: 2020-01-01 to 2022-12-31
+  - disappointing_reopening_deflation: 2023-01-01 to present
+  keywords:
+  - consumo cinese
+  - vendite al dettaglio
+  - e-commerce
+  - fiducia dei consumatori
+  - deflazione
+  - Capodanno lunare
+  - Settimana d'oro
+  - effetto ricchezza immobiliare
+  - tasso di risparmio
+  - sussidi al consumo
+  - rottamazione
+  - china consumption
+  - retail sales
+  - consumer confidence
+  - Singles Day
+  - Golden Week
+  - property prices
+  - savings rate
+  - consumption stimulus
+  - platform earnings
+  - luxury demand
+  - Chinese tourism
 - source_file: Industria della difesa europea e riarmo — regime ed episodi storici
     (2014–2026)/Industria della difesa europea e riarmo — regime ed episodi storici
     (2014–2026).md
@@ -593,6 +735,90 @@ entries:
   - geopolitical risk premium
   - defense industry
   - aerospace
+- source_file: La gestione del cambio da parte della People's Bank of China fixing,
+    strumenti, regimi ed episodi datati (2005–2026)/La gestione del cambio da parte
+    della People's Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
+  title: 'La gestione del cambio da parte della People''s Bank of China: fixing, strumenti,
+    regimi ed episodi datati (2005–2026)'
+  date_compiled: 2026-08-21
+  primary_theme: monetary_policy
+  sub_themes:
+  - pboc
+  - cny
+  - fx_intervention
+  - fixing
+  - managed_float
+  - capital_controls
+  - china_stimulus
+  - asian_fx_spillover
+  relevant_assets:
+  - CNY=X
+  - KRW=X
+  - SGD=X
+  - MYR=X
+  - IDR=X
+  - THB=X
+  - JPY=X
+  - EEM
+  - HG=F
+  - DX-Y.NYB
+  - EWS
+  - THD
+  - EIDO
+  - EWY
+  - EWT
+  - ^GSPC
+  - ^VIX
+  - GC=F
+  - REMX
+  - LIT
+  external_assets_mentioned:
+  - 'CNY-CNH spread (differenziale onshore-offshore): misura diretta della pressione
+    di mercato contro il fixing; non nel database'
+  - 'CFETS RMB Index: distingue debolezza vs USD da debolezza vs paniere; non nel
+    database'
+  - 'USD/CNY e USD/CNH forward points: catturano attese e costo di scommettere contro
+    il fix'
+  - 'SAFE monthly FX reserves: proxy (imperfetta) di intervento; mescola valutazione
+    e flusso'
+  - 'CNH HIBOR: costo di funding offshore, indicatore di squeeze anti-short'
+  - 'Reuters/Bloomberg model-implied fix consensus: denominatore dello scarto di fixing'
+  time_window:
+    start: 2005-07-21
+    end: present
+  regime_phases:
+  - hard_peg: 1994-01-01 to 2005-07-21
+  - administered_appreciation: 2005-07-21 to 2008-12-31
+  - crisis_reanchoring: 2008-12-31 to 2010-06-21
+  - gradual_appreciation_widening_band: 2010-06-21 to 2015-08-11
+  - eight_eleven_reform_disorderly_defense: 2015-08-11 to 2017-05-26
+  - countercyclical_factor_basket_management: 2017-05-26 to 2019-05-01
+  - tariffs_and_seven_threshold: 2019-05-01 to 2019-12-31
+  - covid_appreciation: 2020-01-01 to 2021-12-31
+  - depreciation_defense: 2022-01-01 to 2024-12-31
+  - current_appreciation_management: 2025-01-01 to present
+  keywords:
+  - yuan
+  - renminbi
+  - fixing
+  - tasso di riferimento
+  - banda
+  - svalutazione
+  - riserve valutarie
+  - stimolo
+  - PBoC
+  - daily fix
+  - midpoint
+  - countercyclical factor
+  - devaluation
+  - managed float
+  - CNH
+  - offshore yuan
+  - RRR
+  - reserve requirement
+  - CFETS
+  - capital controls
+  - asian fx spillover
 - source_file: PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
     e politica economica cinese — regime ed episodi storici (2022–2026).md
   title: PBOC e politica economica cinese — regime ed episodi storici (2022–2026)
@@ -888,6 +1114,81 @@ entries:
   - defense
   - re-routing
   - india china oil
+- source_file: 'Sorprese macro e reaction function dei mercati: fase del ciclo di
+    politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito
+    (2007–2026)/Sorprese macro e reaction function dei mercati: fase del ciclo di
+    politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito
+    (2007–2026).md'
+  title: 'Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+    monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)'
+  date_compiled: 2026-08-22
+  primary_theme: macro_data
+  sub_themes:
+  - activity_growth
+  - pmi
+  - ism
+  - labour_market
+  - reaction_function
+  - policy_cycle_phase
+  - eurozone_release
+  - britain_release
+  - good_news_bad_news
+  relevant_assets:
+  - ^TNX
+  - ^FVX
+  - ^GSPC
+  - ^NDX
+  - ^VIX
+  - DX-Y.NYB
+  - EURUSD=X
+  - GBPUSD=X
+  - ^STOXX50E
+  - ^GDAXI
+  - FTSEMIB.MI
+  - EXX6.DE
+  - IGLT.L
+  external_assets_mentioned:
+  - ^FTSE (FTSE 100 — indice azionario UK di riferimento; IGLT.L copre solo il canale
+    tassi, serve per l'azionario UK diretto)
+  - DE 2Y/10Y Bund yield (rendimento cash; EXX6.DE è solo proxy ETF, serve per l'ampiezza
+    esatta del canale tassi-cambio)
+  - UK 2Y/10Y gilt yield (rendimento cash; IGLT.L è solo proxy ETF)
+  - Fed funds / €STR / SONIA futures + CME FedWatch (pricing tagli/rialzi; indispensabile
+    per codificare la fase non discrezionalmente)
+  - EURGBP, USDJPY (rilevanti per episodi di carry come 2024-08-05)
+  time_window:
+    start: 2007-01-01
+    end: present
+  regime_phases:
+  - great_financial_crisis_and_easing: 2008-09-15 to 2009-06-30
+  - zero_rate_pre_taper: 2010-01-01 to 2013-05-21
+  - taper_tantrum_and_slow_normalization: 2013-05-22 to 2015-11-30
+  - hiking_cycle: 2015-12-16 to 2018-12-19
+  - preventive_cuts: 2019-07-31 to 2019-10-31
+  - covid_crash_and_response: 2020-02-20 to 2020-04-30
+  - post_inflation_rapid_hiking: 2022-03-16 to 2023-07-26
+  - higher_for_longer_and_first_cuts: 2023-08-01 to 2024-12-31
+  - current_phase: 2025-01-01 to present
+  keywords:
+  - sorpresa macro
+  - reaction function
+  - ciclo di policy
+  - buone notizie cattive notizie
+  - PMI
+  - ISM
+  - payroll
+  - good news is bad news
+  - policy pivot
+  - rate cuts priced
+  - flash PMI
+  - activity surprise
+  - eurozone data
+  - UK data
+  - higher for longer
+  - taper tantrum
+  - insurance cuts
+  - fase del ciclo
+  - trasmissione tassi-cambio
 - source_file: bitcoin (2014-2026)/bitcoin (2014-2026).md
   title: 'Bitcoin e cripto: regimi, driver e trasmissione (2014–2026)'
   date_compiled: 2026-06-05

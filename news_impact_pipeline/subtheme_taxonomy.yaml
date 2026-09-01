@@ -325,6 +325,79 @@ monetary_policy:
     - '(jgb|gilt).{0,60}(gilt|jgb|acgb|treasury)'
 
 macro_data:
+  # Geografia della release (aggiunto 2026-08-26). Lacuna misurata il 25/08 in
+  # news_06: `--subtheme pmi` dava 19 episodi in larga parte USA, e su EURUSD=X
+  # la mediana risultava POSITIVA dopo un dato europeo debole perché il pool
+  # descriveva in realtà debolezza americana (dollaro giù più dell'euro).
+  # Gli episodi europei c'erano già in libreria — dalla research del 22/08 —
+  # ma senza etichetta geografica erano indistinguibili da quelli americani.
+  # NB: i nomi sono `eurozone_release`/`britain_release` e NON `eu_release`/
+  # `uk_release`: in `local_labels` le parole di <=2 caratteri vengono scartate,
+  # quindi entrambi i nomi brevi si riducevano alla sola parola "release" e
+  # qualunque contesto che la contenesse attivava tutt'e due le etichette.
+  # NB2: non esiste `us_release` di proposito. Marcare gli USA richiederebbe
+  # pattern larghi ad alto rischio di falsi positivi, e il problema dichiarato
+  # è isolare l'Europa: per il resto del pool il comportamento attuale basta.
+  eurozone_release:
+    - '\barea_euro\b'          # colonna Geografia della research 2026-08-22
+    - 'area euro'
+    - 'euro.?zona'
+    - 'euro.?zone'
+    - 'euro area'
+    - '\bifo\b'
+    - '\bzew\b'
+    - '\bhicp\b'
+    - 'bundesbank'
+  # Solo pattern che identificano la RELEASE (istituzione o indicatore che
+  # pubblica), mai gli effetti collaterali: `gilt`, `sterlina`, `\bons\b` erano
+  # nella prima stesura e producevano falsi positivi su episodi USA, perché
+  # `_contexts` estende le righe corte alle vicine e una menzione dell'effetto
+  # sul cambio bastava a marcare l'episodio come britannico.
+  britain_release:
+    - '\bregno unito\b'
+    - "banca d[''`]inghilterra"
+    - 'bank of england'
+    - '\bboe\b'
+  # --- Geografie aggiunte il 2026-08-27 (lacuna 4 dell'analisi del giorno) -----
+  # ⚠ LA LACUNA ERA MAL DIAGNOSTICATA, e la misura conta piu' della diagnosi.
+  # L'analisi diceva: «la lacuna e' DI TASSONOMIA, non di copertura: il conteggio
+  # date-locale e' zero perche' il token non esiste, non perche' sia sotto soglia».
+  # Misurato sugli 8.735 contesti date-locali reali (schede + research KB) PRIMA
+  # di scrivere questi pattern:
+  #     australia_release   0     korea_release   1     canada_release   1
+  #     japan_release     106  (monetary_policy 64 · macro_data 17 · KB 22)
+  # Cioe': per Australia, Corea e Canada il conteggio resta ZERO anche con il
+  # token, perche' non mancano le etichette — mancano gli EPISODI DATATI. Le 140
+  # occorrenze di "RBA" e le 332 di "Corea" nelle schede vivono nella PROSA, non
+  # nelle righe attorno a una data, e le etichette date-locali vedono solo quelle.
+  # Stessa identica dinamica gia' documentata per `term_premium` (2026-08-18).
+  # → Tre di questi quattro token sono SEMI, non filtri: servono perche' gli
+  #   episodi FUTURI (e la research australiana della lacuna 5) nascano gia'
+  #   etichettati. NON usarli in `find --subtheme` finche' `analogues.py labels`
+  #   non mostra copertura reale: degraderebbero in silenzio al filtro debole.
+  # → `japan_release` invece e' USABILE da subito su `monetary_policy` (64).
+  # Solo pattern che identificano la RELEASE o l'ISTITUZIONE che la pubblica, mai
+  # gli effetti collaterali: `\baustralia\b` generico e `\bcanada\b` generico sono
+  # stati provati e SCARTATI — il secondo pescava 14 contesti quasi tutti di dazi
+  # USA-Canada sotto `regulatory`/`geopolitical`, che non sono release macro.
+  australia_release:
+    - '\brba\b'
+    - 'reserve bank of australia'
+    - 'banca centrale australiana'
+  korea_release:
+    - 'bank of korea'
+    - '\bbok\b'
+    - 'banca centrale coreana'
+  canada_release:
+    - 'bank of canada'
+    - '\bboc\b'
+    - 'statistics canada'
+    - 'banca del canada'
+  japan_release:
+    - '\bboj\b'
+    - 'bank of japan'
+    - 'banca del giappone'
+    - '\btankan\b'
   labour_market:
     - 'occupazione'
     - 'payroll'

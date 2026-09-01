@@ -230,6 +230,57 @@ ARGS_RE = re.compile(r"^\s*--|--events\b|--ticker\b")
 HEADER_RE = re.compile(r"\*\*(data analisi|fonte|slug)\*\*", re.I)
 
 
+def _narrow(line: str, d: str) -> str:
+    """Nella prosa lunga tiene solo la FRASE che contiene la data (2026-08-26).
+
+    Secondo meccanismo di contaminazione, distinto da quello di `_has_own_text`:
+    una riga di prosa può nominare un episodio e, più avanti nella stessa riga,
+    tutt'altro. Il caso reale che l'ha rivelato è il §6 di una research:
+    «L'episodio 2008-12-05 (payroll −533k) ha reazione intraday non verificata
+    puntualmente. Il ZEW "34,2" è di agosto 2026...» — un payroll USA marcato
+    `eu_release` per via di uno ZEW citato due frasi dopo. Il filtro sulle righe
+    con più date ISO non lo intercetta: "agosto 2026" non è in formato ISO.
+
+    Esenti le righe di TABELLA (ogni colonna descrive la stessa riga: troncare
+    perderebbe la colonna Descrizione, la più informativa) e i BULLET: in un
+    elenco puntato tutte le frasi descrivono lo stesso episodio, e la prima
+    stesura di questa funzione le tagliava, togliendo per esempio a
+    «- `2015-07-14` — JCPOA firmato a Vienna. Sblocco a 60+ giorni della
+    rimozione sanzioni → ...» tutto ciò che veniva dopo il primo punto.
+    Resta quindi solo la prosa continua, che è il caso in cui la riga cambia
+    davvero argomento a metà.
+    """
+    # Il marcatore di lista vuole lo SPAZIO dopo: senza, `**Grassetto**` a inizio
+    # paragrafo passava per un bullet e la riga restava intera (è esattamente il
+    # caso «**Incertezze residue dichiarate.** L'episodio 2008-12-05 ...»).
+    if re.match(r"\s*(\||[-*•>]\s)", line) or len(line) <= 200:
+        return line
+    parts = re.split(r"(?<=[.;])\s+", line)
+    hit = [p for p in parts if d in p]
+    return " ".join(hit) if hit else line
+
+
+def _has_own_text(line: str, d: str) -> bool:
+    """La riga si descrive già da sé? (aggiunto 2026-08-26)
+
+    `_contexts` estende le righe corte alle vicine per ricucire i bullet spezzati
+    su due righe. Ma il criterio `len(line) < 60` non distingue una riga TRONCATA
+    («- `2025-01-10`», la descrizione sta sotto) da una riga CORTA MA COMPLETA
+    («- `2025-01-10` — US NFP dic 2024 sotto consenso.»): la seconda assorbiva
+    comunque i vicini e ne ereditava le etichette. È così che un payroll USA
+    finiva marcato `eu_release`/`uk_release` quando il bullet accanto parlava di
+    area euro o di gilt — misurato il 2026-08-26 sui token geografici, ma il
+    difetto valeva per OGNI etichetta, solo che sulle altre era meno visibile
+    perché in un elenco omogeneo il vicino diceva spesso la stessa cosa.
+
+    Criterio: tolta la data e i marcatori di lista/tabella, restano almeno tre
+    parole? Allora la riga ha una descrizione propria e non va estesa.
+    """
+    residuo = DATE_RE.sub(" ", line)
+    residuo = re.sub(r"[`\-*|•—–:>#_~\[\]()]+", " ", residuo)
+    return len(residuo.split()) >= 3
+
+
 def _contexts(text: str, d: str) -> str:
     """Testo attorno a ogni occorrenza della data `d`, tenendo solo le occorrenze
     che parlano di QUELLA data e di nessun'altra.
@@ -252,8 +303,8 @@ def _contexts(text: str, d: str) -> str:
             continue
         if len(set(DATE_RE.findall(line))) > 1:
             continue
-        chunk = line
-        if len(line) < 60:
+        chunk = _narrow(line, d)
+        if len(line) < 60 and not _has_own_text(line, d):
             neigh = [lines[j] for j in (i - 1, i + 1) if 0 <= j < len(lines)]
             chunk = " ".join([line] + [ln for ln in neigh
                                        if ln.strip() and not DATE_RE.search(ln)
@@ -345,7 +396,8 @@ def cmd_build():
 
     today = date.today().isoformat()
 
-    def add(d, theme, direction, subthemes, local, source, dir_local=(), declared=False):
+    def add(d, theme, direction, subthemes, local, source, dir_local=(),
+            declared=False, dir_declared=()):
         if not theme or not DATE_RE.fullmatch(d):
             return
         if d > today:
@@ -353,11 +405,17 @@ def cmd_build():
         key = (d, theme)
         e = lib.setdefault(key, {"date": d, "theme": theme, "directions": set(),
                                  "directions_local": set(),
+                                 "directions_declared": set(),
                                  "subthemes": set(), "subthemes_local": set(),
                                  "sources": set(), "declared": False})
         if direction:
             e["directions"].add(direction)
+        # Le due fonti restano SEPARATE (2026-08-29). Vedi il commento in cmd_find:
+        # un verso scritto a mano nel blocco dichiarato e uno indovinato da una
+        # regex non hanno la stessa affidabilità, e fonderli rendeva il primo
+        # inutilizzabile appena una seconda scheda citava lo stesso episodio.
         e["directions_local"].update(dir_local)
+        e["directions_declared"].update(dir_declared)
         if declared:
             e["declared"] = True
         e["subthemes"].update(subthemes)
@@ -383,7 +441,8 @@ def cmd_build():
                     dec_t or local_labels(text, d, theme, subthemes, taxonomy),
                     f"card:{day.name}/{card.name}",
                     dec_v or local_direction(text, d),
-                    declared=bool(dec_v))
+                    declared=bool(dec_v),
+                    dir_declared=dec_v)
 
     # 2) ricerche KB (esclude _prompts e file con prefisso _)
     n_kb = 0
@@ -413,6 +472,7 @@ def cmd_build():
                          "direction": (dirs[0] if len(dirs) == 1
                                        else ("mixed" if dirs else "")),
                          "directions": dirs,
+                         "directions_declared": sorted(e["directions_declared"]),
                          "directions_local": sorted(e["directions_local"]),
                          "declared": bool(e.get("declared")),
                          "subthemes": sorted(e["subthemes"]),
@@ -463,8 +523,21 @@ def cmd_find(theme: str, direction: str | None, before: str | None,
             note = (f" [etichette date-locali davano solo {len(strict)} episodi "
                     f"(<{min_n}) → uso i sotto-temi a livello di documento]")
         else:
-            note = (f" [sotto-tema '{lbl}' dava solo {len(loose)} "
-                    f"episodi (<{min_n}) → uso il pool del tema]")
+            # Il messaggio riporta ENTRAMBI i conteggi (correzione 2026-08-27).
+            # Prima stampava solo `loose`, e quando le date-locali esistevano ma
+            # stavano sotto soglia il degrado sembrava un'assenza di copertura.
+            # Caso reale, analisi del 26/08: `macro_data + tariff_escalation` ha
+            # 11 episodi date-locali e 0 a livello di documento; il messaggio
+            # diceva "dava solo 0 episodi" e l'analisi ha registrato come lacuna
+            # una "copertura date-locale nulla" che non esisteva — riclassificando
+            # una notizia commerciale sotto `geopolitical` per ottenere un pool.
+            note = (f" [sotto-tema '{lbl}': {len(strict)} episodi date-locali e "
+                    f"{len(loose)} a livello di documento, entrambi <{min_n} "
+                    f"→ uso il pool del tema]")
+            if strict:
+                note += (f" [⚠ la copertura date-locale ESISTE ({len(strict)}): "
+                         f"con --min-n {len(strict)} ottieni il filtro STRETTO, "
+                         f"pool piccolo ma pulito. Non è una lacuna di tassonomia]")
     if direction:
         # Match STRETTO prima (solo episodi taggati esattamente `direction`), con
         # fallback a mixed/sconosciuto solo se il pool stretto è troppo piccolo —
@@ -479,16 +552,46 @@ def cmd_find(theme: str, direction: str | None, before: str | None,
         # conta come "pos" se almeno una delle schede di quel giorno era pos, anche
         # se un'altra era neg. Fallback alla vecchia chiave singola per librerie
         # generate prima del 2026-08-10.
-        # Tre livelli, come per i sotto-temi (2026-08-19). Il livello DATE-LOCALE è
-        # il solo che descriva davvero l'episodio: gli altri due dicono soltanto
-        # com'era orientata la scheda che l'ha citato.
+        # QUATTRO livelli dal 2026-08-29 (prima tre). Il livello nuovo è il primo:
+        # `directions_declared`, cioè i versi scritti A MANO nella colonna "Verso"
+        # del blocco episodi della scheda — non inferiti da nessuna regex.
+        #
+        # Perché è stato aggiunto, e perché risolve la CLASSE invece del caso.
+        # Il verso di un episodio aveva due fonti di qualità incomparabile — la
+        # dichiarazione dell'analista e l'euristica `DIRECTION_PATTERNS` — che
+        # `cmd_build` fondeva nello stesso insieme `directions_local`. Bastava che
+        # UNA seconda scheda citasse lo stesso episodio solo in prosa perché
+        # l'euristica gli appiccicasse il verso opposto, e il filtro `--direction`
+        # lo restituisse per ENTRAMBI i versi. Misurato il 2026-08-29 su 984
+        # episodi: 171 avevano `pos` e `neg` insieme, e **152 di questi erano
+        # episodi con blocco dichiarato**, tutti citati da più schede (fino a 24).
+        # Cioè: la dichiarazione scritta a mano veniva sistematicamente annullata
+        # dall'euristica di un'altra scheda.
+        # È la causa comune di errori che finora sono stati trattati uno alla volta
+        # come problemi di vocabolario: «imporre vs revocare una sanzione» (lacuna
+        # del 20/08) e «`hormuz` non distingue escalation da de-escalation» (lacuna
+        # del 29/08, 3 episodi su 21 con il verso rovesciato). Non erano token da
+        # calibrare: era questa fusione. Allargare il vocabolario non li avrebbe
+        # risolti, e ogni token nuovo ne avrebbe generato uno nuovo.
+        # Il livello dichiarato **migliora da solo**: le schede compilano il blocco
+        # per regola di runbook dal 2026-08-19, quindi cresce ogni giorno mentre
+        # l'euristica resta ferma. Non c'è nessuna regex da mantenere.
+        declared = [e for e in eps if direction in (e.get("directions_declared") or [])]
         local = [e for e in eps if direction in (e.get("directions_local") or [])]
         strict = [e for e in eps
                   if direction in (e.get("directions") or [e.get("direction", "")])]
-        if len(local) >= min_n:
+        if len(declared) >= min_n:
+            eps = declared
+            note += (f" [direzione '{direction}' DICHIARATA dalle schede: "
+                     f"{len(declared)} episodi — filtro forte, nessuna euristica]")
+        elif len(local) >= min_n:
             eps = local
             note += (f" [direzione '{direction}' su marcatori date-locali: "
                      f"{len(local)} episodi]")
+            if declared:
+                note += (f" [⚠ {len(declared)} episodi l'avevano DICHIARATA: sotto "
+                         f"la soglia, quindi il pool include versi inferiti da regex. "
+                         f"Con --min-n {len(declared)} avresti solo i dichiarati]")
         elif len(strict) >= min_n:
             eps = strict
             note += (f" [direzione date-locale dava solo {len(local)} episodi "
@@ -567,7 +670,14 @@ def cmd_stats():
     nolab = sum(1 for e in eps if not e.get("subthemes_local"))
     nodir = sum(1 for e in eps if not e.get("directions_local"))
     print("\n  Qualità della libreria")
+    # Direzione DICHIARATA e NON ambigua: il livello di filtro più forte (2026-08-29).
+    # Ambigua = due schede hanno dichiarato versi opposti per lo stesso (data,tema);
+    # può essere legittimo (giornata davvero a due facce) ma non filtra per verso.
+    dirdecl = sum(1 for e in eps if e.get("directions_declared"))
+    netta = sum(1 for e in eps if len(e.get("directions_declared") or []) == 1)
     print(f"    dichiarati dalla scheda      {decl:4d}  ({100*decl/n:4.1f}%)  ← obiettivo: in crescita")
+    print(f"    con VERSO dichiarato         {dirdecl:4d}  ({100*dirdecl/n:4.1f}%)  ← filtro forte su --direction")
+    print(f"      di cui NETTO (un solo verso){netta:4d}  ({100*netta/n:4.1f}%)  ← l'euristica non lo tocca")
     print(f"    senza sotto-tema date-locale {nolab:4d}  ({100*nolab/n:4.1f}%)")
     print(f"    senza direzione date-locale  {nodir:4d}  ({100*nodir/n:4.1f}%)")
 

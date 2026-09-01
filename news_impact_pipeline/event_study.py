@@ -348,8 +348,13 @@ def format_console(study: dict, windows: list[int]) -> str:
     return "\n".join(lines)
 
 
-def format_markdown(study: dict, windows: list[int]) -> str:
-    """Tabella markdown da incollare in una scheda news."""
+def format_markdown(study: dict, windows: list[int], detail: bool = True) -> str:
+    """Tabella markdown da incollare in una scheda news.
+
+    Con detail=False omette il blocco <details> per-event: è l'85% dei byte
+    dell'output e nelle schede non viene mai incollato. Chiedilo solo quando
+    serve davvero ispezionare i singoli episodi (potatura del pool, outlier).
+    """
     blocks = []
     for ticker, data in study.items():
         block = [f"### Event study — `{ticker}`\n"]
@@ -386,6 +391,15 @@ def format_markdown(study: dict, windows: list[int]) -> str:
             )
 
         # Dettaglio per-event (collassabile mentale)
+        if not detail:
+            if data["skipped_events"]:
+                block.append(
+                    f"\n> {len(data['skipped_events'])} evento/i scartato/i "
+                    f"(fuori serie o dati mancanti). Rilancia con --detail per l'elenco."
+                )
+            blocks.append("\n".join(block))
+            continue
+
         block.append("\n<details><summary>Dettaglio per-event</summary>\n")
         block.append("| Event date | Anchor | " +
                      " | ".join(f"T+{w}" for w in windows) + " |")
@@ -445,6 +459,11 @@ def main():
                    help="Usa 'close' invece di 'adj_close' (default: usa adj_close)")
     p.add_argument("--markdown", action="store_true",
                    help="Output in formato markdown (incollabile in schede news)")
+    p.add_argument("--detail", action="store_true",
+                   help="Con --markdown: aggiunge il blocco <details> per-event "
+                        "(una riga per episodio). Di default è OMESSO: pesa l'85%% "
+                        "dell'output e nelle schede non si incolla mai. Chiedilo "
+                        "solo per ispezionare i singoli episodi (potatura, outlier).")
 
     args = p.parse_args()
 
@@ -462,7 +481,7 @@ def main():
     study = run_event_study(tickers, event_dates, windows, use_adj=not args.no_adj)
 
     if args.markdown:
-        print(format_markdown(study, windows))
+        print(format_markdown(study, windows, detail=args.detail))
     else:
         print(format_console(study, windows))
 

@@ -99,9 +99,8 @@ $PIPE/PHASE5_RUNBOOK.md. Passi:
 1) Genera il digest di triage: pipeline_tools.py digest --date $TODAY
 2) Tria le 20 notizie con scope "subset triato": scheda completa SOLO per
    notizie che mappano su uno degli asset dell'universo corrente in DB
-   (verifica nell'elenco aggiornato category_asset_map.yaml, NON a memoria:
-   include ora anche AI/semis ^NDX/SOXX, rame HG=F, credito HYG/^VIX, EM EEM,
-   uranio/litio URA/LIT, dollaro DX-Y.NYB) e hanno un analogo storico plausibile;
+   (verifica in category_asset_map.yaml, NON a memoria — leggilo UNA volta sola
+   qui) e hanno un analogo storico plausibile;
    consolida notizie sullo stesso tema in un'unica scheda; scarta il resto con
    una riga di motivazione. Compila la tabella di _index.md.
 3) Per ogni notizia tenuta esegui il flusso completo (assets, match, new-card).
@@ -117,15 +116,65 @@ $PIPE/PHASE5_RUNBOOK.md. Passi:
    (IC storicamente negativo) NON trarre una direzione attesa — riporta l'event study ma
    dichiara che il segno storico è inaffidabile. Rileggi l'elenco lì, non a memoria.
 4) Compila la "Sintesi di sessione" in _index.md.
+
+ECONOMIA DEL RUN (vincolante, sezione omonima del runbook): il costo cresce col
+QUADRATO dei turni. Quindi: raccogli TUTTO prima di scrivere (pool potato, event
+study, match KB, sezione 5-bis della scorecard) e scrivi ogni file in UN SOLO
+passaggio; per le correzioni usa Edit chirurgico, mai un heredoc che rigenera il
+corpo; non rileggere ciò che hai appena scritto; non lanciare --help (i flag sono
+nel runbook, sezione "Riferimento comandi"). Questo non deve accorciare né
+impoverire le schede: stesso contenuto, meno giri.
+
 Output finale in chat: riepilogo con quante notizie tenute/scartate e i temi
 delle schede prodotte. Lavora in $DAILY/$TODAY/.
 EOF
 
 log "Lancio Claude Code headless (model=$MODEL)."
 cd "$NEWSDIR"
-"$CLAUDE" -p "$PROMPT" --model "$MODEL" --permission-mode bypassPermissions >> "$LOG" 2>&1
+# --output-format json: oltre al testo finale restituisce turni, token e costo.
+# Senza questo il consumo del run non è misurabile (diagnosi del 2026-08-21: si
+# poteva ricostruire solo scavando nei transcript di ~/.claude/projects/).
+RAW="$LOGDIR/.raw_${TODAY}.json"
+"$CLAUDE" -p "$PROMPT" --model "$MODEL" --permission-mode bypassPermissions \
+  --output-format json > "$RAW" 2>>"$LOG"
 RC=$?
 log "Claude exit code $RC."
+
+# Estrae il testo finale (nel log, come prima) e accoda una riga al CSV dei consumi.
+"$PY" - "$RAW" "$LOG" "$LOGDIR/usage.csv" "$TODAY" <<'PY' || log "WARN: parsing usage fallito."
+import json, sys, os, csv
+raw, logf, csvf, day = sys.argv[1:5]
+try:
+    d = json.load(open(raw))
+except Exception:
+    # JSON malformato (crash, auth scaduta): riversa il grezzo nel log e basta.
+    with open(logf, 'a') as f:
+        f.write(open(raw, errors='replace').read())
+    raise SystemExit(0)
+
+u = d.get('usage') or {}
+cr = u.get('cache_read_input_tokens', 0)
+cw = u.get('cache_creation_input_tokens', 0)
+ti = u.get('input_tokens', 0)
+to = u.get('output_tokens', 0)
+turns = d.get('num_turns', 0)
+cost = d.get('total_cost_usd', 0.0)
+
+with open(logf, 'a') as f:
+    f.write((d.get('result') or '') + '\n')
+    f.write(f"[usage] turni={turns} input={ti} cache_write={cw} "
+            f"cache_read={cr} output={to} costo=${cost:.2f}\n")
+
+new = not os.path.exists(csvf)
+with open(csvf, 'a', newline='') as f:
+    w = csv.writer(f)
+    if new:
+        w.writerow(['date', 'turns', 'input', 'cache_write', 'cache_read',
+                    'output', 'cost_usd', 'duration_ms'])
+    w.writerow([day, turns, ti, cw, cr, to, f"{cost:.4f}",
+                d.get('duration_ms', 0)])
+PY
+rm -f "$RAW"
 
 # --- Allarme su fallimento del run headless -------------------------------
 # Il vero segnale di successo è che _index.md sia stato prodotto. Se manca è un
@@ -137,9 +186,16 @@ if [[ ! -f "$DAILY/$TODAY/_index.md" ]]; then
   MSG="run $TODAY FALLITO (exit $RC, _index.md assente)."
   if grep -qi "Invalid authentication\|401\|Not logged in\|Please run /login" "$LOG" 2>/dev/null; then
     MSG="login Claude scaduto: esegui 'claude /login'. Run $TODAY non prodotto."
+  elif grep -qi "529\|Overloaded\|rate.limit\|500 Internal\|503" "$LOG" 2>/dev/null; then
+    MSG="API sovraccarica (529/5xx): run $TODAY non prodotto. Rilancia: run_daily_analysis.sh $TODAY"
   fi
   log "ERROR: $MSG"
   /usr/bin/osascript -e "display notification \"$MSG\" with title \"News-Impact Pipeline\" sound name \"Basso\"" 2>/dev/null
+  # Anche senza analisi, il briefing grezzo va spedito: il 2026-08-24 un 529 ha
+  # fatto uscire lo script qui, e il risultato è stato silenzio totale su Telegram
+  # (nessun brief, nessuna analisi) — indistinguibile da "il job non è partito".
+  log "Invio su Telegram del solo briefing (analisi assente)."
+  /bin/zsh "$PIPE/send_telegram.sh" "$TODAY" >> "$LOG" 2>&1 || log "WARN: invio Telegram fallito."
   exit 1
 elif [[ $RC -ne 0 ]]; then
   log "WARN: Claude exit $RC ma _index.md prodotto → procedo comunque con render + invio."

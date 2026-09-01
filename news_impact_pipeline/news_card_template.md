@@ -87,6 +87,14 @@ i campi qui sono presi come sono, senza che `analogues.py` debba dedurli dalla p
   di oggi. Se la giornata storica fu genuinamente ambivalente, scrivi `pos, neg`.
 - `Meccanismo`: uno o più token canonici di `subtheme_taxonomy.yaml`, separati da virgola.
   Verifica la copertura con `analogues.py labels --theme <t>` prima di sceglierli.
+- **Geografia della release (dal 2026-08-26)**: se l'episodio è una pubblicazione di
+  dati o una decisione **dell'area euro** o **del Regno Unito**, aggiungi fra i
+  meccanismi il token `eurozone_release` o `britain_release`. Serve perché l'euristica sul testo
+  non basta: il 2026-08-25 il pool `pmi` era in larga parte americano e su EURUSD=X
+  dava mediana **positiva** dopo un dato europeo debole (descriveva debolezza USA, con
+  il dollaro che perdeva più dell'euro). I campi dichiarati vincono sull'euristica,
+  quindi è qui che la geografia diventa affidabile. Non esiste `us_release`: gli USA
+  sono il default implicito del campione.
 - Righe con verso non riconoscibile vengono ignorate (si ricade sull'euristica), quindi
   una tabella malformata degrada senza rompere nulla.
 

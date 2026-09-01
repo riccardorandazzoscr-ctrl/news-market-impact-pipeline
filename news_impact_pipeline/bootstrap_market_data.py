@@ -196,6 +196,63 @@ ASSETS = [
     # Curva e volatilita' obbligazionaria.
     {"ticker": "^FVX",        "name": "US Treasury 5Y yield",                "asset_class": "fixed_income", "region": "US",        "currency": "USD", "source": "yfinance", "description": "Rendimento Treasury 5 anni — con ^TNX e ^TYX da' la FORMA della curva USA, non solo il livello: distingue un irripidimento guidato dal front end da uno guidato dal premio a termine (lacuna 2026-08-14). RENDIMENTO: sale quando i titoli scendono", "download": True},
     {"ticker": "^MOVE",       "name": "ICE BofA MOVE Index",                 "asset_class": "volatility",   "region": "US",        "currency": "USD", "source": "yfinance", "description": "Volatilita' implicita obbligazionaria — l'equivalente del VIX per i Treasury: distingue un riprezzamento ordinato da uno stress di mercato. L'universo aveva ^VIX come unica misura di volatilita'", "download": True},
+
+    # Consumo cinese (aggiunti il 2026-08-26). Lacuna del 25/08: il canale della
+    # DOMANDA interna cinese non era misurabile. CNY=X e' compresso dal fixing
+    # PBOC (mediane a zero su tutti gli orizzonti), EEM e' troppo diluito e HG=F
+    # prezza le infrastrutture, non il carrello della spesa — al punto che una
+    # trimestrale PDD era stata usata come evidenza macro in mancanza d'altro.
+    {"ticker": "KWEB",        "name": "KraneShares CSI China Internet ETF",   "asset_class": "equity",       "region": "china",     "currency": "USD", "source": "yfinance", "description": "Internet/e-commerce cinese (Alibaba, PDD, JD, Meituan) — proxy piu' diretto del consumo discrezionale cinese: e' l'asset che mancava quando le trimestrali delle piattaforme entravano come evidenza macro. Storia dal 2013-08", "download": True},
+    {"ticker": "CQQQ",        "name": "Invesco China Technology ETF",        "asset_class": "equity",       "region": "china",     "currency": "USD", "source": "yfinance", "description": "Tecnologia cinese in senso ampio — complementare a KWEB (che e' solo internet/consumo): storia dal 2011-01, copre l'intero range del DB e quindi i regimi pre-2013 che KWEB non raggiunge", "download": True},
+
+    # Australia (aggiunti il 2026-08-27). Lacuna del 26/08: il dato RBA del giorno
+    # (media troncata mensile 0,5% contro 0,3% atteso, che riapriva il caso di un
+    # rialzo a settembre) e' stato SCARTATO in triage per sola assenza di asset.
+    # L'unico proxy era VGB.AX, un prezzo di ETF obbligazionario con storia dal
+    # 2012-04: niente cambio, niente azionario. Il briefing tratta le release
+    # australiane come "primo dato core dei mercati sviluppati della settimana",
+    # cioe' come PRIOR per il core PCE americano — un ruolo che si ripete.
+    # ⚠ AUD=X e' USD/AUD (come CAD=X, CNY=X), NON la quotazione di mercato AUD/USD:
+    # sale quando il dollaro australiano si INDEBOLISCE. Un dato RBA hawkish lo fa
+    # SCENDERE. Convenzione del DB, non un refuso.
+    {"ticker": "AUD=X",       "name": "USD/AUD (dollaro australiano)",       "asset_class": "fx",           "region": "australia", "currency": "AUD", "source": "yfinance", "description": "Cambio dollaro USA/dollaro australiano — canale diretto delle release RBA e del ciclo delle materie prime; con VGB.AX separa la reazione VALUTARIA da quella obbligazionaria. Storia completa dal 2011-01. INVERSO: sale = AUD debole", "download": True},
+    {"ticker": "^AXJO",       "name": "S&P/ASX 200",                         "asset_class": "equity",       "region": "australia", "currency": "AUD", "source": "yfinance", "description": "Azionario australiano — terza gamba del canale (con AUD=X e VGB.AX) e proxy dell'esposizione al ciclo minerario/cinese in un mercato sviluppato. Storia dal 2011-01", "download": True},
+
+    # Consumo USA (aggiunti il 2026-08-27). Lacuna del 27/08, seconda volta in
+    # agosto che una scheda sul consumatore americano si chiude senza asset: il
+    # dato piu' informativo del PCE di luglio — beni -49,9 mld contro servizi
+    # +86,2 mld a reddito crescente — non era misurabile con nulla in DB.
+    # Il segnale sta nel RAPPORTO XLY/XLP, non nel livello di ciascuno: e' li'
+    # che si legge la rotazione difensiva. Correlazione dei rendimenti XLY-XLP
+    # 0,54 dal 2019 (misurata prima di aggiungerli): sono davvero due cose diverse.
+    # ⚠ XLY e' cap-weighted e dominato da Amazon+Tesla — correla 0,89 con ^GSPC:
+    # da solo NON e' il consumatore, e' mezzo mega-cap tech. XRT (retail, pesi
+    # molto piu' distribuiti) correla 0,76 con XLY e 0,71 con ^GSPC: e' la
+    # correzione di quella distorsione, non un duplicato. Su una notizia di
+    # spesa delle famiglie usali insieme e commenta la divergenza.
+    {"ticker": "XLY",         "name": "Consumer Discretionary Select Sector SPDR", "asset_class": "equity",  "region": "US",        "currency": "USD", "source": "yfinance", "description": "Consumo discrezionale USA — il canale settoriale della domanda delle famiglie. ⚠ Cap-weighted: Amazon e Tesla ne dominano il peso, quindi correla 0,89 con ^GSPC. Da leggere in RAPPORTO a XLP e in contrasto con XRT, non da solo. Storia dal 2011-01", "download": True},
+    {"ticker": "XLP",         "name": "Consumer Staples Select Sector SPDR",  "asset_class": "equity",       "region": "US",        "currency": "USD", "source": "yfinance", "description": "Beni di prima necessita' USA — il DENOMINATORE difensivo: la rotazione da consumo ciclico a difensivo si misura in XLY/XLP, che e' il segnale, mentre il livello di ciascuno e' dominato dal beta di mercato. Storia dal 2011-01", "download": True},
+    {"ticker": "XRT",         "name": "SPDR S&P Retail ETF",                  "asset_class": "equity",       "region": "US",        "currency": "USD", "source": "yfinance", "description": "Retail USA con pesi distribuiti — corregge la concentrazione Amazon/Tesla di XLY: separa la spesa effettiva nei negozi dall'andamento di due mega-cap. Storia dal 2011-01", "download": True},
+
+    # Completamento del G10 valutario (2026-08-29). Aggiunta NON reattiva: chiude
+    # la CLASSE invece del singolo caso. Il 28/08 una decisione RBNZ e' stata
+    # scartata in triage per sola assenza di asset — terza istanza in dieci giorni
+    # della stessa classe (Corea 12-27/08, Australia 20-26/08, ora Nuova Zelanda),
+    # e il briefing tratta esplicitamente Corea-Giappone-Nuova Zelanda come un
+    # unico pattern: le banche centrali che si muovono PRIMA della Fed e ne sono
+    # il prior. Verificato che NZD e SEK erano gli ultimi due buchi del G10:
+    # con questi due il paniere e' completo e la lacuna non puo' ripresentarsi.
+    # ⚠ Come CAD=X/AUD=X/CNY=X: sono USD/XXX, salgono quando la valuta locale si
+    # INDEBOLISCE. Una banca centrale hawkish le fa SCENDERE.
+    {"ticker": "NZD=X",       "name": "USD/NZD (dollaro neozelandese)",      "asset_class": "fx",           "region": "new_zealand", "currency": "NZD", "source": "yfinance", "description": "Dollaro neozelandese — canale delle decisioni RBNZ, la banca centrale che ha alzato prima e piu' della Fed nel ciclo 2021-2023 ed e' usata come anticipatore. Storia completa dal 2011-01. INVERSO: sale = NZD debole", "download": True},
+    {"ticker": "SEK=X",       "name": "USD/SEK (corona svedese)",            "asset_class": "fx",           "region": "sweden",      "currency": "SEK", "source": "yfinance", "description": "Corona svedese — Riksbank, l'altra banca centrale piccola e anticipatrice; con NOK=X separa lo shock scandinavo petrolifero (Norvegia) da quello puramente monetario/ciclico (Svezia). Storia completa dal 2011-01. INVERSO: sale = SEK debole", "download": True},
+
+    # Lacune 1, 2 e 3 dell'analisi del 2026-08-29. Tutte e tre verificate col test
+    # di ridondanza (correlazione col concorrente piu' vicino gia' in DB) prima di
+    # essere aggiunte: e' il test che il 26/08 aveva scartato COPA.L sul rame.
+    {"ticker": "IWM",         "name": "iShares Russell 2000 ETF",            "asset_class": "equity",       "region": "US",        "currency": "USD", "source": "yfinance", "description": "Small cap USA — il FATTORE DIMENSIONE, che l'universo non aveva. Le piccole capitalizzazioni hanno molto piu' debito a tasso variabile: sono il primo bersaglio quando il tratto breve della curva si riprezza. Il segnale e' nello SPREAD IWM/^GSPC (dev.std 0,81%/giorno, divergenza >1% nel 19% delle sedute), non nel livello: correla 0,87 con ^GSPC, com'e' normale fra due indici azionari USA. Beta 1,11. Storia dal 2011-01", "download": True},
+    {"ticker": "GDX",         "name": "VanEck Gold Miners ETF",              "asset_class": "equity",       "region": "global",    "currency": "USD", "source": "yfinance", "description": "Minatori auriferi — il BETA AZIONARIO dell'oro, dove sta il segnale quando GC=F (marcato debole in scorecard, IC -0,04) non basta. Leva operativa reale e misurata: beta 1,58 su GC=F, e in agosto 2026 oro +15,6% contro GDX +36,3%. Serve anche come termometro dell'affollamento del posizionamento sull'oro. Storia dal 2011-01", "download": True},
+    {"ticker": "XLU",         "name": "Utilities Select Sector SPDR",        "asset_class": "equity",       "region": "US",        "currency": "USD", "source": "yfinance", "description": "Utility USA — canale della DOMANDA ELETTRICA come vincolo del capex AI (code di connessione alla rete invece che forniture di chip). ⚠ Copre la generazione/distribuzione, NON l'equipaggiamento di rete e le turbine: quella parte resta scoperta. Scelto al posto di GRID, che correlava 0,80 con SOXX e quindi confondeva i due canali invece di separarli; XLU e' ortogonale al tech (0,31 con SOXX, residuo -0,21 al netto del mercato). Storia dal 2011-01", "download": True},
 ]
 
 

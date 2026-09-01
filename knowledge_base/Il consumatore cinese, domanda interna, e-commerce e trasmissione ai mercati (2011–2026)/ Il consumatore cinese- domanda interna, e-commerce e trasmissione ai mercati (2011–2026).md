@@ -1,0 +1,172 @@
+# Il consumatore cinese: domanda interna, e-commerce e trasmissione ai mercati (2011–2026)
+
+## TL;DR
+
+- **Il canale di trasmissione più affidabile tra gli asset effettivamente in database non è quello cinese, ma quello degli esportatori europei verso la Cina** (^GDAXI, EXV7.DE, ^STOXX50E): quando arriva la prova che le famiglie cinesi spendono meno, il lusso francese (LVMH) e l'auto tedesca (BMW, Volkswagen) reagiscono con un segnale pulito e datato. Il proxy naturale del canale primario — l'azionario internet/consumo cinese (KWEB, Hang Seng Tech) — **non è nel database** e nessun ticker disponibile lo sostituisce senza forte perdita di segnale: EEM è troppo diluito, CNY=X è amministrato e dà mediane nulle, HG=F prezza le infrastrutture e l'elettrificazione, non il carrello della spesa.
+- **La trimestrale di piattaforma è evidenza macro solo parziale, e dal 2021 il rumore idiosincratico domina spesso il segnale sul consumo aggregato.** Concorrenza al coltello (Alibaba vs PDD vs Douyin/ByteDance), guerre di prezzo, compressione dei margini e il giro di vite regolatorio del 2021 muovono i titoli quanto e più della domanda aggregata. La classe `platform_earnings` va quindi usata con cautela e mai come singolo segnale: episodi di segno opposto lo stesso trimestre (PDD giù, Meituan su) provano che il rumore aziendale può capovolgere il segno.
+- **Il regime conta più del tipo di evento.** Nel regime di crescita (2011–2019) un "miss" era rallentamento da alta base; nel regime depresso (2023–2026) è deflazione conclamata, fiducia dei consumatori inchiodata ai minimi storici e un canale-ricchezza immobiliare negativo. Gli analoghi vanno cercati **all'interno dello stesso regime**, mai a cavallo.
+
+---
+
+## Key Findings
+
+**1. Distinzione produttore/consumatore, applicata ai ticker.** Il vincolo centrale dello studio — la Cina-consumatore contro la Cina-produttore — non è teoria: si legge nei prezzi. Il rame (HG=F) è l'esempio canonico di ticker fuorviante per questo studio. Circa il 56% del rame raffinato cinese è storicamente andato a infrastrutture ed edilizia (fonte: USITC, "China's Dominance as a Global Consumer and Producer of Refined Copper", 2012), e la Cina rappresenta circa il 55–58% della domanda mondiale di rame raffinato. Ma la componente marginale della domanda si è spostata verso elettrificazione, veicoli elettrici, rete elettrica e data center per l'IA: come nota Sprott ("Beyond Dr. Copper", 2025), "copper has broken away from Chinese equities, reflecting a declining correlation that has been apparent since 2021". Conseguenza operativa: **HG=F è un proxy del consumo cinese solo quando l'evento tocca l'edilizia** (per esempio i prezzi delle case); per un dato di vendite al dettaglio o una trimestrale e-commerce è, nel migliore dei casi, muto, e nel peggiore prezza l'IA americana. Il rame va usato come *controllo*, non come *proxy*: in un episodio contaminato da stimolo infrastrutturale, il movimento di HG=F isola la componente-produttore e permette di depurare gli altri asset.
+
+**2. Il canale europeo è il più catturabile — e quantificabile.** Il 15 ottobre 2024, LVMH ha riportato ricavi del terzo trimestre pari a 19,08 miliardi di euro (−4,4% reported, −3% organico), sotto il consensus Visible Alpha di 19,94 miliardi, con l'Asia ex-Giappone a −16% e la divisione moda/pelletteria a −5% (fonte: WWD, 15/10/2024, che parla di un "marked deterioration in sales to Chinese nationals"). Il CFO Jean-Jacques Guiony ha dichiarato che la fiducia dei consumatori nella Cina continentale era "back in line with the all-time low reached during Covid". Il titolo è caduto fino al −7,5% a Parigi il 16 ottobre, trascinando Hermès, Kering e Richemont e cancellando circa 30 miliardi di euro di capitalizzazione dei quattro titoli del lusso in una seduta (fonte: Irish Times, 16/10/2024). Sul fronte auto, BMW ha riportato il 7 novembre 2024 un utile ante imposte del terzo trimestre a 838 milioni di euro (−80% a/a), con vendite in Cina giù di quasi il 30%, e nel 2024 utile netto −37% a 7,7 miliardi (fonte: Euronron/Malay Mail-AFP). Nel secondo trimestre 2026 Volkswagen, Mercedes-Benz, BMW e Porsche hanno visto le vendite in Cina crollare tra il 30% e il 41% (fonte: Fortune, 11/07/2026; Volkswagen −36,6%). **Il segnale catturabile su ^GDAXI/EXV7.DE è quindi elevato ma con due avvertenze**: (a) la domanda cinese debole si intreccia con la perdita di quota verso i marchi cinesi (BYD), che è un fenomeno di offerta non di consumo aggregato; (b) EXV7.DE (STOXX Europe 600 Automobiles & Parts) è più puro di ^GDAXI, dove auto e lusso pesano ma non dominano.
+
+**3. La classe platform_earnings è la più numerosa ma la meno pulita.** Ho datato dodici episodi di trimestrale. La prova che il rumore idiosincratico può capovolgere il segno arriva dall'estate 2024: il 26 agosto 2024 PDD Holdings è crollata del 28,57% (peggior seduta dall'IPO Nasdaq del 2018) con ricavi del secondo trimestre a 97,06 miliardi di yuan (13,6 miliardi di dollari, +86% a/a) contro attese FactSet di 99,98 miliardi, ma il tonfo è stato innescato soprattutto dai commenti ribassisti del co-CEO Lei Chen sulla concorrenza e sui margini futuri (fonte: CNBC, 27/08/2024); appena due giorni dopo, il 28 agosto 2024, Meituan ha battuto le attese (ricavi +21% a/a, utile rettificato record +77,6%) e il titolo è salito oltre il 12% a Hong Kong il 29 agosto. **Stesso consumatore, stessa settimana, segni opposti**: la differenza è aziendale, non macro. Questa è la principale minaccia alla validità dell'intera classe.
+
+**4. I dati ufficiali di vendite al dettaglio sono il segnale più "pulito" come tempistica, ma quasi solo nel regime depresso.** Il calendario di rilascio è nettamente pre-apertura europea: l'NBS pubblica la mattina a Pechino. Episodi ancorati: aprile 2022 −11,1% a/a (crollo da lockdown di Shanghai, dato uscito il 16 maggio 2022); agosto 2024 +2,1% contro attese 2,5% (rilascio sabato 14 settembre 2024, prima seduta di reazione lunedì 16); dicembre 2025 +0,9%, minimo triennale (19 gennaio 2026); aprile 2026 +0,2%, minimo di 40 mesi ma contaminato dal fallout della guerra in Iran (18 maggio 2026).
+
+**5. Il canale-ricchezza immobiliare è strutturalmente negativo da metà 2023 e non è ciclico.** I prezzi delle nuove case nelle 70 città sono scesi il più possibile in oltre 9 anni a ottobre 2024 (−5,9% a/a, peggior ritmo da aprile 2015; fonte: NBS via TradingEconomics, 15/11/2024) e a fine 2025 il mercato secondario di Pechino segnava −8,5% a/a. L'indice residenziale è sceso oltre il 14% dal picco di agosto 2021 (fonte: World Bank via Visual Capitalist). Poiché la ricchezza delle famiglie cinesi è concentrata nel mattone, questo è il determinante di fondo della fiducia depressa e del risparmio precauzionale.
+
+---
+
+## Details
+
+### §1 Sintesi esecutiva
+
+La domanda interna cinese è misurabile ai fini dell'event study, ma il valore del sistema dipende in modo decisivo da **quale asset** si usa come proxy, e la risposta onesta è scomoda: il canale di trasmissione primario — dal consumo debole ai ricavi e ai margini delle piattaforme all'azionario internet/consumo cinese — ha come proxy naturale KWEB o l'Hang Seng Tech, e **nessuno dei due è nel database**. Tra gli asset disponibili, EEM (MSCI Emerging Markets) è l'unica approssimazione, ma è talmente diluito (Cina è solo una frazione, accanto a India, Taiwan, Corea, Brasile) che il segnale sul consumo cinese si perde nel rumore. CNY=X è amministrativamente compresso dal fixing della PBoC e dà mediane nulle su tutti gli orizzonti, quindi è inutilizzabile come proxy direzionale. HG=F prezza le infrastrutture e l'elettrificazione. La conseguenza è netta: **il canale più diretto che possediamo davvero non è cinese, ma europeo** (^GDAXI, EXV7.DE, ^STOXX50E), perché lusso e auto tedesche sono il mercato di sbocco più esposto alla domanda cinese tra tutti gli asset in database.
+
+Sulla domanda che ha generato questa richiesta — la trimestrale di piattaforma è evidenza macro o rumore aziendale? — la risposta è: **è un ibrido in cui la quota di rumore è cresciuta nel tempo ed è oggi elevata**. Nel regime di crescita (2011–2019) una trimestrale di Alibaba era una lettura ragionevolmente pulita del consumo urbano cinese, perché la concorrenza era meno feroce e la regolamentazione assente. Dal 2021 tre forze hanno inquinato il segnale: (a) il giro di vite regolatorio sul settore tecnologico (multa antitrust ad Alibaba, blocco dell'IPO di Ant, restrizioni sui dati); (b) la guerra di prezzo a tre tra Alibaba, PDD e Douyin/ByteDance, che sposta quote tra piattaforme senza dirci nulla sulla spesa aggregata; (c) la compressione dei margini da investimenti (Temu, cloud/IA). Perciò la classe `platform_earnings` va marcata come **segnale debole**: utilizzabile in coorte, mai come episodio singolo, e sempre incrociata con un dato ufficiale di vendite al dettaglio vicino nel tempo.
+
+Il canale deflazionistico globale (sovracapacità industriale cinese → export a prezzi in discesa → disinflazione dei beni importati in Occidente) è **redistributivo** — buono per l'inflazione dei paesi importatori, cattivo per i loro produttori — e opera su orizzonti di mesi, non di giorni. Una finestra T+1/T+10 **non lo coglie**: al più cattura la reazione sentiment del giorno del dato CPI/PPI, non l'effetto macro reale. Va dichiarato esplicitamente e non confuso con i canali direzionali.
+
+### §2 Tassonomia dei canali di trasmissione
+
+**Canale 1 — Diretto sull'azionario cinese (direzionale).** Catena: `consumo debole → ricavi/margini piattaforme e-commerce → azionario internet/consumo cinese`. Proxy naturale: KWEB (storia dal 2013-08-01) o Hang Seng Tech. **Non in database.** Miglior surrogato disponibile: EEM, ma con perdita di segnale grave — la Cina è diluita in un paniere di emergenti e il beta specifico al consumo cinese è basso. Documentazione della perdita: nella settimana dello stimolo del 24 settembre 2024, mentre KWEB e le ADR cinesi (Alibaba +24,6%, Pinduoduo in forte rialzo dal 24 settembre; fonte: Fortune, 07/10/2024) esplodevano, EEM registrava una frazione del movimento perché zavorrato dagli altri mercati. Questo è il canale primario dello studio ed è quello che **oggi non abbiamo modo di misurare** con precisione.
+
+**Canale 2 — Esportatori verso la Cina (direzionale).** Catena: `domanda cinese debole → ordini in calo per lusso, auto e chimica europee → margini e revisioni al ribasso → ^GDAXI, EXV7.DE, ^STOXX50E`. È il canale con la trasmissione più diretta **tra gli asset che possediamo davvero**. Quota di segnale catturabile: alta per shock che colpiscono esplicitamente il consumatore cinese di fascia alta (LVMH il 15/10/2024; BMW il 07/11/2024), moderata per i dati di vendite al dettaglio generici (che pesano di più su beni di massa non venduti da questi marchi). Avvertenza: parte del calo delle auto tedesche in Cina è perdita di quota verso i marchi cinesi (fenomeno di offerta), non contrazione della domanda aggregata; EXV7.DE (auto e componenti) è più puro di ^GDAXI su questo canale.
+
+**Canale 3 — Materie prime con inversione (amplificatore, potenzialmente fuorviante).** Catena: `domanda cinese → rame`, ma il rame prezza soprattutto edilizia, rete elettrica e — sempre più — elettrificazione/IA, non la spesa delle famiglie. HG=F è un proxy **valido** del consumo cinese solo quando l'evento tocca il canale-ricchezza immobiliare (prezzi delle case) o l'edilizia; è **fuorviante** per vendite al dettaglio e trimestrali e-commerce. Da usare come controllo per separare la componente-produttore in episodi contaminati da stimolo infrastrutturale. Tra i ticker in database, LIT (litio/batterie) e REMX (terre rare) sono ancora più legati al lato produttore/elettrificazione e vanno trattati con la stessa cautela.
+
+**Canale 4 — Regionale asiatico (direzionale).** Catena: `consumo cinese debole → turismo cinese in uscita e import dai vicini in calo → EWS, THD, EIDO, MYR=X, THB=X`. Thailandia e Singapore sono i più esposti al turismo cinese. Quantificazione dell'esposizione storica: nel 2019 i turisti cinesi erano il 27,5% degli arrivi in Thailandia, e le entrate turistiche valevano l'11,5% del PIL thailandese (fonte: UN in Thailand, 2020); il turismo contribuiva al 14,71% del PIL thailandese nel 2024 (fonte: Travel And Tour World). Nel 2025 gli arrivi cinesi in Thailandia sono crollati di circa il 34%, tanto che la Malaysia ha superato la Cina come primo mercato di origine. **Beta storico qualitativo**: THD (Thailandia) è l'asset più sensibile a un dato di consumo/turismo cinese deludente, seguito da EWS (Singapore); THB=X e MYR=X catturano la componente valutaria (deprezzamento del baht/ringgit quando calano gli introiti in valuta). EIDO (Indonesia) è il meno esposto al turismo cinese diretto, più al canale materie prime. Nota di prudenza: non ho un beta numerico verificato episodio-per-episodio; la pipeline deve stimarlo sui rendimenti storici.
+
+**Canale 5 — Deflazionistico globale (redistributivo, orizzonte mesi).** Catena: `domanda interna debole → sovracapacità industriale → export a prezzi in discesa → disinflazione dei beni importati in Occidente`. Buono per l'inflazione dei paesi importatori, cattivo per i loro produttori (quindi in teoria negativo per ^GDAXI/EXV7.DE sul medio termine, ma positivo per il potere d'acquisto). **Dichiarazione esplicita: una finestra T+1/T+10 non può cogliere questo canale**, che opera su trimestri. Un event study su un dato CPI/PPI cattura solo la reazione-sentiment del giorno, non l'effetto redistributivo reale.
+
+Sintesi: canali **direzionali** = 1, 2, 4; canale **redistributivo** = 5; canale **amplificatore/fuorviante** = 3.
+
+### §3 Catalogo di episodi-ancora datati
+
+Note sulla tempistica: le trimestrali di BABA/JD/PDD (quotate USA) escono **prima dell'apertura di Wall Street** (pre-market) a mercati cinesi già chiusi, quindi la seduta di reazione USA è lo stesso giorno di calendario. Meituan (quotata a Hong Kong) riporta **dopo la chiusura di HK**, quindi la reazione è il giorno di borsa successivo. I dati NBS escono la mattina a Pechino, prima dell'apertura europea.
+
+| Data (ISO) | Evento | Tipo | Direzione attesa | Asset-canale | Note no-look-ahead |
+|---|---|---|---|---|---|
+| 2014-11-04 | Prima trimestrale BABA post-IPO: ricavi +54% battono, utile netto sotto attese | platform_earnings | mista | EEM (proxy KWEB assente) | Pre-apertura NY; regime crescita |
+| 2015-01-29 | BABA trimestre dic-2014 manca le stime ricavi (4,22 vs 4,45 mld$); titolo −10% il 2015-01-29/30 | platform_earnings | ribasso | EEM | Reazione stessa seduta USA (pre-market) |
+| 2015-08-12 | BABA FQ1'16: ricavi +28% a 3,26 mld$ mancano 3,39; crescita più lenta in 3 anni | platform_earnings | ribasso | EEM | **Contaminato**: reazione dentro il crollo di mercato dell'agosto 2015; % move non confermato da fonte primaria — usare con cautela |
+| 2016-05-05 | BABA FQ4'16: ricavi +39% a 24,2 mld yuan battono; titolo +3,5% | platform_earnings | rialzo | EEM | Regime crescita; letto come "consumatore cinese non ancora in indebolimento" (CNBC) |
+| 2019-05-10 | JD Q1'19: ricavi +20,9% a 121,1 mld yuan battono; +8,6% pre-market | platform_earnings | rialzo | EEM | Pre-apertura NY |
+| 2021-11-18 | BABA fiscal Q2'22: ricavi 200,69 mld yuan mancano 204,93; consumo rallenta; ADR −2,4% pre-market, poi Hong Kong −10% il 2021-11-19 | platform_earnings | ribasso | EEM | Inizio contaminazione regolatoria |
+| 2022-02-24 | BABA: crescita ricavi più lenta di sempre (+10%); titolo circa −3% pre-market | platform_earnings | ribasso | EEM | **Contaminato**: invasione russa dell'Ucraina la stessa seduta; usare EEM/^STOXX50E come controllo del rischio globale |
+| 2022-05-17 | JD Q1'22: ricavi +18% a 239,7 mld yuan battono ma crescita più lenta di sempre (lockdown Shanghai); +8% | platform_earnings | mista | EEM | Pre-apertura NY |
+| 2024-05-14 | BABA fiscal Q4'24: utile rettificato manca di 2 cent; titolo −5% pre-market | platform_earnings | ribasso | EEM | Pre-apertura NY |
+| 2024-08-15 | BABA: ricavi mancano le stime, commercio Cina si contrae, utile netto −27% | platform_earnings | ribasso | EEM | Segnale sul consumo domestico |
+| 2024-08-26 | PDD Q2'24: ricavi 97,06 mld yuan (13,6 mld$, +86%) mancano 99,98; **−28,57%, peggior seduta da IPO** | platform_earnings | ribasso | EEM | **Rumore idiosincratico dominante**: tonfo innescato da guidance ribassista del management, non solo dai numeri (CNBC 27/08/2024) |
+| 2024-08-28 | Meituan Q2'24: batte (ricavi +21%, utile rettificato record +77,6%); **+12% a Hong Kong il 2024-08-29** | platform_earnings | rialzo | EEM | Dopo chiusura HK → reazione giorno dopo; segno opposto a PDD due giorni prima |
+| 2024-11-21 | PDD Q3'24: doppio miss (ricavi 99,4 mld yuan vs 102,7; utile sotto attese); **−10,6%** | platform_earnings | ribasso | EEM | Pre-apertura NY |
+| 2022-05-16 | Vendite al dettaglio aprile 2022 −11,1% a/a (lockdown Shanghai), catering −22,7% | retail_sales | ribasso | ^GDAXI, EEM | Uscita mattina Pechino → seduta europea stesso giorno |
+| 2024-09-14 | Vendite al dettaglio agosto 2024 +2,1% mancano 2,5% | retail_sales | ribasso | ^GDAXI | Dato uscito **sabato** → prima seduta utile lunedì **2024-09-16** |
+| 2025-09-15 | Vendite al dettaglio agosto 2025 +3,4%, sotto attese 3,8%, minimo da nov-2024 | retail_sales | ribasso | ^GDAXI | Uscita mattina Pechino |
+| 2026-01-19 | Vendite al dettaglio dic-2025 +0,9%, minimo triennale | retail_sales | ribasso | ^GDAXI | Stessa data prezzi case (contaminazione property) |
+| 2026-05-18 | Vendite al dettaglio aprile 2026 +0,2%, minimo 40 mesi | retail_sales | ribasso | ^GDAXI | **Contaminato**: fallout guerra Iran sullo stesso periodo |
+| 2026-08-17 | Vendite al dettaglio luglio 2026 +0,6% mancano 1,5%; auto −17% | retail_sales | ribasso | ^GDAXI, EXV7.DE | Uscita mattina Pechino |
+| 2023-08-09 | CPI luglio 2023 −0,3% a/a: prima deflazione da febbraio 2021; PPI −4,4% | deflation_print | ribasso | EXV7.DE, ^GDAXI | **Redistributivo**: finestra T+1/T+10 coglie solo il sentiment |
+| 2024-02-08 | CPI gennaio 2024 −0,8% a/a: calo più forte da settembre 2009, 4° mese negativo; PPI −2,5% (16° calo); oltre attese Reuters −0,5% | deflation_print | ribasso | EXV7.DE | Effetto base Capodanno lunare — non confrontabile a/a isolatamente |
+| 2025-03-09 | CPI febbraio 2025 −0,7% a/a: primo calo da gen-2024, oltre attese Bloomberg −0,4%; core negativo | deflation_print | ribasso | EXV7.DE | Data del rilascio; distorsione Capodanno (shift gen→feb) |
+| 2024-02-19 | Capodanno lunare 2024: spesa totale +47,3% ma spesa/viaggio/giorno −9,5% vs 2019 ("consumption downgrading", Goldman Sachs) | holiday_spending | ribasso | THD, EWS | Dati Ministero Cultura e Turismo pubblicati a fine festività |
+| 2025-02-05 | Capodanno lunare 2025: entrate +7% a 677 mld yuan, ma spesa/giorno 168,9 yuan, −5% vs 2019 (176,9) | holiday_spending | ribasso | THD, EWS | Prima seduta utile dopo festività |
+| 2024-10-08 | Settimana d'oro ottobre 2024: 765 mln viaggi (+5,9%), ma spesa pro capite −2,09% vs 2019 | holiday_spending | ribasso | THD, EWS | Prima seduta dopo Golden Week (mercati CN chiusi 1–7 ottobre) |
+| 2025-11-13 | Singles' Day 2025: 1,695 trilioni yuan (~238 mld$) su tutte le piattaforme, +14,2% a/a contro +26,6% nel 2024 (Syntun via CNBC) | holiday_spending | ribasso | EEM | Confronto non diretto: festival ~1 settimana più lungo |
+| 2024-11-15 | Prezzi nuove case 70 città ottobre 2024 −5,9% a/a: peggior ritmo da aprile 2015 | property_wealth | ribasso | EEM, ^GDAXI, HG=F | Qui HG=F è proxy valido (canale edilizia) |
+| 2024-10-15 | LVMH T3 2024: ricavi 19,08 mld€ (−4,4% reported, −3% organico) sotto consensus 19,94; Asia ex-Giappone −16%, moda/pelletteria −5%; azione fino a −7,5% il 2024-10-16 | property_wealth/export | ribasso | ^STOXX50E, ^GDAXI | CFO: fiducia consumatori CN "ai minimi dell'era Covid" |
+| 2025-01-08 | Espansione programma rottamazione consumi da 8 a 12 categorie di elettrodomestici; sussidi fino a 500 yuan su smartphone | consumption_stimulus | rialzo | EEM | Annuncio NDRC/Ministero Finanze |
+| 2024-09-24 | Pacchetto stimolo: CSI300 +16% in una settimana (miglior settimana dal 2008) | consumption_stimulus | rialzo | EEM, EWY, EWT | **CONTAMINATO POLICY**: taglio RRR e tassi lo stesso giorno → usare HG=F come controllo per isolare la componente infrastrutturale dalla componente consumo |
+
+**Date non-ISO (esplicitamente NON episodi):** "inizio 2022" (crollo della fiducia dei consumatori a 86,7, minimo storico dall'inizio della serie nel 1990); "autunno 2015" (fase di rallentamento generale); "marzo 2024" (Piano d'azione per la rottamazione dei beni di consumo, inizio fase non un singolo shock di mercato); "inizio 2023" (riapertura post-Covid, inizio di regime).
+
+### §4 Statistiche indicative
+
+**Avvertenza metodologica vincolante:** non ho calcolato i rendimenti cumulati effettivi a T+1/T+3/T+5/T+10, perché richiedono le serie storiche di prezzo degli asset, fuori dal perimetro di questa ricerca documentale. Questa sezione riporta **N per coorte, direzione qualitativa attesa e le avvertenze di segno**; il calcolo numerico spetta alla pipeline. Ogni coorte con N < 10 è marcata **INDICATIVE ONLY**.
+
+- **`platform_earnings`: N = 12.** Regime crescita (2011–2019): N = 4 (2014-11-04, 2015-01-29, 2015-08-12, 2016-05-05, 2019-05-10 → in realtà 5 se si conta il 2016; conteggio prudenziale 5). Regime depresso (2021–2026): N = 7. **INDICATIVE ONLY su entrambe le sotto-coorti.** Segnale atteso: nel regime di crescita un "beat" (2016-05-05, 2019-05-10) era letto come conferma del consumatore in salute (reazione positiva EEM/KWEB); nel regime depresso i "miss" dominano ma il segno del titolo è inaffidabile per il rumore aziendale (PDD 2024-08-26 vs Meituan 2024-08-28). **Raccomandazione: non usare questa coorte come segnale singolo.**
+- **`retail_sales`: N = 6**, tutti nel regime depresso (2022–2026). **INDICATIVE ONLY.** È la coorte con la tempistica più pulita (pre-apertura europea) e la contaminazione aziendale nulla; segnale atteso su ^GDAXI/EXV7.DE modesto ma coerente in segno.
+- **`deflation_print`: N = 3. INDICATIVE ONLY.** Canale redistributivo: la finestra breve coglie solo il sentiment.
+- **`holiday_spending`: N = 4. INDICATIVE ONLY.** Complicato dall'effetto base e dalla lunghezza variabile del festival; il segnale "spesa pro capite sotto il 2019" è più informativo del titolo aggregato.
+- **`property_wealth`: N = 2. INDICATIVE ONLY.** L'unica coorte in cui HG=F è proxy legittimo.
+- **`consumption_stimulus`: N = 2. INDICATIVE ONLY.** Direzione positiva ma spesso contaminata da policy monetaria/fiscale.
+
+**KWEB e Hang Seng Tech come serie mancanti:** in tutti gli episodi cinesi documentati, il movimento osservato su KWEB/ADR cinesi è stato sistematicamente più ampio di quello su EEM (esempio calibrante: Alibaba +24,6% dal 24 settembre 2024 contro una frazione su EEM). Questo documenta quantitativamente **quanta parte del segnale viva in serie che oggi non possediamo** e costituisce l'argomento più forte per aggiungere KWEB (storia dal 2013-08-01) e CQQQ (dal 2011-01-03) al database.
+
+### §5 Fasi di regime
+
+- **`rapid_consumption_growth_urbanization`: 2011-01-01 → 2015-12-31.** Consumo urbano in rapida crescita, urbanizzazione, reddito disponibile in salita. Un "miss" di piattaforma era rallentamento da alta base, non crisi. Gli analoghi di questa fase **non sono usabili** nel regime corrente: il segno e l'ampiezza sono diversi.
+- **`ecommerce_credit_expansion`: 2016-01-01 → 2019-12-31.** Espansione dell'e-commerce, del mobile payment e del credito al consumo. Trimestrali di piattaforma ancora relativamente pulite come proxy macro. Analoghi parzialmente usabili ma con cautela.
+- **`pandemic_lockdowns`: 2020-01-01 → 2022-12-31.** Shock da zero-Covid, crollo verticale delle vendite al dettaglio (aprile 2022 −11,1%), collasso della fiducia dei consumatori a 86,7 (minimo storico). Regime a sé: gli shock sono da restrizione amministrativa, non da domanda strutturale. Analoghi usabili solo per altri shock di offerta/mobilità.
+- **`disappointing_reopening_deflation`: 2023-01-01 → present.** Riapertura delusa, deflazione conclamata (CPI negativo ricorrente da agosto 2023), fiducia dei consumatori inchiodata sotto 90, canale-ricchezza immobiliare negativo, risparmio precauzionale record. **È il regime corrente e l'unico in cui cercare analoghi per una notizia odierna.** Il segno dei canali è stabile: domanda debole → negativo per esportatori europei, negativo per turismo regionale, deflazionistico per l'Occidente.
+
+### §6 Caveat metodologici
+
+**Affidabilità dei dati ufficiali e revisioni.** I dati NBS sono soggetti a revisione: le vendite al dettaglio e l'online retail sono stati rivisti secondo i risultati del Quinto Censimento Economico Nazionale, con ricalcolo dei tassi mensili 2025 "su base comparabile" (fonte: NBS, dicembre 2025). Gli analisti affiancano ai dati ufficiali fonti alternative: Syntun per il GMV del Singles' Day (le piattaforme hanno smesso di pubblicare i dati ufficiali dal 2022), Bain per l'industria, i dati di consegna pacchi dello State Post Bureau, i sondaggi McKinsey e la survey trimestrale dei depositanti urbani della PBoC. Il divario tra il dato ufficiale di fiducia dei consumatori NBS (crollato a ~86–90 e mai ripreso) e altre misure (Thomson Reuters/Ipsos meno drammatica) è esso stesso oggetto di dibattito (fonte: China Leadership Monitor).
+
+**Rumore idiosincratico delle piattaforme — la principale minaccia alla validità.** È la ragione per cui la sezione §1 marca `platform_earnings` come segnale debole. Tre fonti di rumore: (a) la concorrenza a tre Alibaba/PDD/Douyin sposta quote senza toccare l'aggregato; (b) il giro di vite regolatorio del 2021 (multa antitrust ad Alibaba, blocco IPO di Ant, crackdown sui big tech) ha depresso i titoli per ragioni non legate al consumo; (c) gli investimenti in Temu, cloud e IA comprimono i margini a domanda invariata. L'episodio PDD −28,57% (2024-08-26) vs Meituan +12% (2024-08-29) è la prova che il rumore può capovolgere il segno nella stessa settimana.
+
+**Stagionalità estrema del calendario cinese.** Il Capodanno lunare è mobile tra gennaio e febbraio: gennaio e febbraio **non sono confrontabili anno su anno se non aggregati**. L'NBS pubblica i due mesi insieme per le vendite al dettaglio proprio per questo. Il CPI di gennaio 2024 (−0,8%) e di febbraio 2025 (−0,7%) sono entrambi distorti dall'effetto base del festival: l'economista Lynn Song (ING) ha notato che "the base effects make January's data look worse than they are". Gli episodi `holiday_spending` vanno letti sulla spesa pro capite, non sul totale, e mai confrontati tra un anno con festival lungo e uno con festival corto.
+
+**Sovrapposizione dati/policy.** Il perimetro esclude PBoC, fixing, RRR, stimolo infrastrutturale e dazi, ma alcuni episodi sono contaminati. Regole di isolamento adottate nel catalogo: (a) per il 2024-09-24 (stimolo consumo + taglio RRR simultaneo) usare HG=F come controllo per la componente infrastrutturale; (b) per il 2022-02-24 (BABA miss + invasione dell'Ucraina) usare ^STOXX50E/EEM come controllo del rischio globale; (c) per il 2026-05-18 (vendite deboli + guerra Iran) marcare come contaminato e non usare in isolamento.
+
+**Disallineamenti di fuso.** I dati NBS escono la mattina a Pechino, prima dell'apertura europea e con circa 15 ore di anticipo su New York: la seduta di reazione europea è lo stesso giorno, quella USA pure ma successiva. Le trimestrali di BABA/JD/PDD escono pre-apertura di Wall Street a mercati cinesi già chiusi. Meituan riporta dopo la chiusura di Hong Kong: la reazione è il giorno di borsa successivo (per questo l'episodio Meituan Q2'24 è datato 2024-08-28 con reazione 2024-08-29). Per le festività lunghe (Capodanno, Settimana d'oro) si usa la prima seduta utile, esplicitata in Note.
+
+**Serie citate ma non disponibili.** KWEB (ETF internet/e-commerce cinese, storia dal 2013-08-01) e CQQQ (China tech, dal 2011-01-03) — i proxy naturali del canale primario; CSI 300 e Shanghai Composite; Hang Seng e Hang Seng Tech; vendite al dettaglio mensili NBS; indice di fiducia dei consumatori NBS; prezzi delle case nelle 70 città; tasso di risparmio delle famiglie. La loro assenza è la limitazione più grave dello studio: il canale primario è oggi misurabile solo per surrogato diluito (EEM).
+
+**Incertezze residue esplicite.** La reazione di prezzo dell'episodio BABA del 2015-08-12 non è confermata da fonte primaria (il tonfo è confuso con il crollo di mercato dell'agosto 2015). La data del CPI di febbraio 2025 (2025-03-09) è il giorno del rilascio secondo AFP/Malay Mail ma potrebbe variare di ±1 giorno a seconda della fonte. I beta regionali (THD, EWS) sono qualitativi, non stimati numericamente. I rendimenti T+1/T+10 non sono calcolati e vanno prodotti dalla pipeline.
+
+---
+
+## Recommendations
+
+**Passo 1 — usa subito il canale europeo come proxy primario di lavoro.** Per qualsiasi notizia odierna sul consumatore cinese, il segnale più affidabile tra gli asset in database è ^GDAXI ed EXV7.DE (auto) e ^STOXX50E (lusso via LVMH/Kering). Ancoralo agli episodi 2024-10-15 (LVMH) e 2024-11-07/2024-11-15 (BMW/prezzi case). Soglia che cambia la raccomandazione: se la notizia riguarda beni di massa (non lusso/auto premium), il canale europeo perde potere e va sostituito dal dato di vendite al dettaglio.
+
+**Passo 2 — tratta `platform_earnings` come coorte, mai come episodio singolo, e incrociala.** Prima di attribuire un movimento di BABA/PDD/Meituan al consumo aggregato, verifica che (a) il commento del management fosse sui volumi/domanda e non su concorrenza/margini, e (b) esista un dato di vendite al dettaglio vicino nel tempo con segno coerente. Se i due divergono, scarta l'episodio-piattaforma. Benchmark che declassa la coorte: se in una finestra la dispersione dei segni intra-coorte (es. PDD vs Meituan) supera la mediana, marca l'intera coorte come rumore.
+
+**Passo 3 — usa HG=F esclusivamente come controllo, non come proxy del consumo.** Attivalo solo negli episodi `property_wealth` e nei contaminati da stimolo infrastrutturale (2024-09-24), per sottrarre la componente-produttore. Soglia: se l'evento non tocca edilizia/rete elettrica, escludi HG=F dal set.
+
+**Passo 4 — per il canale regionale, dai priorità a THD, poi EWS.** Attiva THB=X/MYR=X come conferma valutaria. Riserva EIDO al canale materie prime. Prima di usarli, fai stimare alla pipeline i beta storici su almeno gli episodi `holiday_spending` (N=4) e `retail_sales` (N=6).
+
+**Passo 5 — non usare la finestra T+1/T+10 per il canale deflazionistico.** Per gli episodi `deflation_print`, misura al più la reazione-sentiment del giorno; per l'effetto redistributivo reale servirebbe una finestra a mesi, fuori dal design.
+
+**Passo 6 — investimento nel database, con benchmark decisionale.** Aggiungi KWEB e CQQQ. Il criterio che giustifica la spesa: negli episodi documentati il movimento su KWEB/ADR cinesi è stato sistematicamente multiplo di quello su EEM. Se, ricostruendo storicamente, il rapporto di ampiezza KWEB/EEM sugli episodi cinesi supera stabilmente ~2x, l'aggiunta è giustificata perché EEM sta perdendo la maggioranza del segnale.
+
+---
+
+## Caveats
+
+Questo è uno studio di **statistica descrittiva storica**: non contiene previsioni né raccomandazioni operative di trading, e le "direzioni attese" nel catalogo sono ipotesi di segno da verificare empiricamente, non pronostici. I rendimenti cumulati T+1/T+3/T+5/T+10 **non sono stati calcolati** e devono essere prodotti dalla pipeline sulle serie di prezzo. Alcune date sono esplicitamente incerte o contaminate (segnalate in §3 e §6): in particolare la reazione di prezzo dell'episodio BABA 2015-08-12 non è confermata da fonte primaria e va usata con cautela. I beta regionali sono qualitativi. Le fonti quantitative principali sono NBS, Ministero della Cultura e del Turismo, PBoC, Syntun, Reuters/CNBC/Bloomberg e i comunicati societari; dove i dati ufficiali cinesi sono soggetti a revisione o dibattito di affidabilità, è indicato nel testo. Il limite strutturale più grave resta l'assenza dal database del proxy naturale del canale primario (KWEB/Hang Seng Tech): il consumatore cinese, oggi, è misurabile solo per surrogato imperfetto.
+
+```yaml
+---
+title: "Il consumatore cinese: domanda interna, e-commerce e trasmissione ai mercati (2011–2026)"
+date_compiled: 2026-08-26
+primary_theme: macro_data
+sub_themes: [china_consumption, retail_sales, platform_earnings, deflation_risk, property_wealth, cny, holiday_spending]
+relevant_assets: [EEM, CNY=X, HG=F, EWS, THD, EIDO, MYR=X, THB=X, EWY, EWT, LIT, REMX, ^GDAXI, EXV7.DE, ^STOXX50E]
+external_assets_mentioned:
+  - "KWEB (ETF internet/e-commerce cinese, storia dal 2013-08-01) — proxy naturale del canale primario consumo→piattaforme; conterebbe perché nessun asset in DB lo replica senza forte perdita di segnale"
+  - "CQQQ (China tech, storia dal 2011-01-03) — copre il regime di crescita 2011-2015 che KWEB non raggiunge"
+  - "Hang Seng Tech Index — benchmark HK del canale internet/consumo cinese"
+  - "CSI 300 / Shanghai Composite — reazione onshore agli shock di consumo e stimolo"
+  - "Hang Seng Index — reazione offshore HK"
+  - "Vendite al dettaglio mensili NBS — la variabile-oggetto stessa, non prezzabile direttamente"
+  - "Indice di fiducia dei consumatori NBS — determinante del risparmio precauzionale"
+  - "Prezzi nuove case 70 città NBS — canale-ricchezza immobiliare"
+  - "Tasso di risparmio/depositi delle famiglie (PBoC) — determinante del consumo mancato"
+time_window:
+  start: 2011-01-01
+  end: present
+regime_phases:
+  - rapid_consumption_growth_urbanization: 2011-01-01 to 2015-12-31
+  - ecommerce_credit_expansion: 2016-01-01 to 2019-12-31
+  - pandemic_lockdowns: 2020-01-01 to 2022-12-31
+  - disappointing_reopening_deflation: 2023-01-01 to present
+keywords: [consumo cinese, vendite al dettaglio, e-commerce, fiducia dei consumatori, deflazione, Capodanno lunare, Settimana d'oro, effetto ricchezza immobiliare, tasso di risparmio, sussidi al consumo, rottamazione, china consumption, retail sales, consumer confidence, Singles Day, Golden Week, property prices, savings rate, consumption stimulus, platform earnings, luxury demand, Chinese tourism]
+```
