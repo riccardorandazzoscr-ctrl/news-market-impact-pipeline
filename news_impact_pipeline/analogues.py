@@ -494,7 +494,8 @@ def _load() -> list[dict]:
 
 
 def cmd_find(theme: str, direction: str | None, before: str | None,
-             subtheme: list[str] | None, min_n: int, max_pool: int):
+             subtheme: list[str] | None, min_n: int, max_pool: int,
+             match_all: bool = False):
     eps = [e for e in _load() if e["theme"] == theme]
     if before:
         eps = [e for e in eps if e["date"] < before]   # no look-ahead
@@ -502,9 +503,24 @@ def cmd_find(theme: str, direction: str | None, before: str | None,
     if subtheme:
         wanted = [_norm_label(s) for s in subtheme]
 
-        def _match(field):
+        # `--match-all` (2026-09-02): più `--subtheme` sono in UNIONE per default,
+        # ed è quasi sempre quel che serve — i token descrivono la stessa notizia da
+        # angoli diversi e l'unione allarga il pool. Ma quando uno dei token è
+        # GEOGRAFICO l'unione fa il contrario di quel che l'analista crede di aver
+        # chiesto. Caso reale, analisi del 2026-09-02 (news_03): il filtro
+        # `eurozone_release + inflation_print` ha restituito 65 episodi, di cui circa
+        # metà release AMERICANE entrate per il solo `inflation_print` — cioè proprio
+        # la dimensione che il token `eurozone_release` doveva isolare. Lo stesso
+        # difetto era già stato misurato il 2026-08-25 su un pool `pmi` in prevalenza
+        # americano, che diede il segno sbagliato su EURUSD=X dopo un dato europeo.
+        # Con `--match-all` l'episodio deve portare TUTTI i token richiesti.
+        # Non è il default: costa N, e su token non geografici l'unione resta la
+        # scelta giusta. Vedi `references/etichette_date_locali.md`.
+        def _match(field, test=None):
+            test = test or (all if match_all else any)
             return [e for e in eps
-                    if any(w in st for w in wanted for st in (e.get(field) or []))]
+                    if test(any(w in st for st in (e.get(field) or []))
+                            for w in wanted)]
 
         # Degrado a tre livelli. `subthemes_local` sono etichette ricavate dal
         # contesto della singola data: discriminano davvero, ma esistono solo dove
@@ -515,6 +531,49 @@ def cmd_find(theme: str, direction: str | None, before: str | None,
         strict = _match("subthemes_local")
         loose = _match("subthemes")
         lbl = ",".join(subtheme)
+        # La modalità va SEMPRE dichiarata quando i token sono più di uno: la nota
+        # finisce nei caveat della scheda, e un pool in intersezione va letto
+        # diversamente da uno in unione (N più piccolo per costruzione, ma omogeneo
+        # su tutti i token richiesti). Con un solo token la distinzione non esiste.
+        if len(wanted) > 1:
+            lbl += " (INTERSEZIONE)" if match_all else " (unione)"
+        # Token ANNIDATI (2026-09-02, corretto 2026-09-03). Il match è per
+        # SOTTOSTRINGA — scelta voluta, vedi `_norm_label` — quindi se un token è
+        # contenuto nell'altro, l'episodio che porta il più lungo matcha per forza
+        # anche il più corto. Ne segue un'identità esatta: su una coppia annidata
+        # l'INTERSEZIONE è sempre uguale al token più lungo usato da solo, perché il
+        # token corto non aggiunge alcun vincolo.
+        # ⚠ La prima versione di questo avviso generalizzava da 7 coppie misurate
+        # (`inflation+inflation_print` 58=58, `capex+ai_capex` 18=18) e dichiarava che
+        # l'intersezione "NON stringe". È FALSO in generale: quelle 7 coppie erano
+        # inerti solo perché lì il token corto non compare mai da solo. Misurate
+        # 2026-09-03 su tutta la libreria: 63 coppie annidate, di cui 56 in cui l'AND
+        # stringe eccome (`escalation+military_escalation` 76→36, `ai_capex+
+        # ai_capex_spending` 18→10). Un analista che avesse creduto all'avviso
+        # sarebbe tornato all'unione contaminata. Ora l'esito si MISURA e si dichiara.
+        # ⚠ `note` viene RIASSEGNATA (=) in ognuno dei rami di degrado qui sotto,
+        # quindi l'avviso si accumula a parte e si appende in coda al blocco.
+        nested = sorted({f"'{y}' contiene '{x}'"
+                         for x in wanted for y in wanted if x != y and x in y})
+        nested_warn = ""
+        if match_all and nested:
+            # Il confronto va fatto sullo stesso livello di etichette su cui il
+            # filtro verrà poi applicato: quello date-locale, che è il ramo buono.
+            n_and = len(_match("subthemes_local"))
+            n_or = len(_match("subthemes_local", test=any))
+            # Il più lungo dei token richiesti è quello a cui l'AND si riduce.
+            longest = max(wanted, key=len)
+            if n_and == n_or:
+                esito = (f"su questa coppia l'intersezione NON stringe "
+                         f"(AND = unione = {n_and} episodi): il token corto non "
+                         f"compare mai da solo")
+            else:
+                esito = (f"l'intersezione stringe da {n_or} a {n_and} episodi, ma "
+                         f"il vincolo lo porta tutto il token più lungo")
+            nested_warn = (f" [⚠ token annidati ({'; '.join(nested)}): {esito}. "
+                           f"Il match è per sottostringa, quindi questo AND equivale "
+                           f"esattamente a `--subtheme {longest}` da solo: usalo, "
+                           f"è più leggibile nel caveat]")
         if len(strict) >= min_n:
             eps = strict
             note = f" [sotto-tema '{lbl}' su etichette date-locali: {len(strict)} episodi]"
@@ -522,6 +581,19 @@ def cmd_find(theme: str, direction: str | None, before: str | None,
             eps = loose
             note = (f" [etichette date-locali davano solo {len(strict)} episodi "
                     f"(<{min_n}) → uso i sotto-temi a livello di documento]")
+            if match_all:
+                # L'intersezione a livello DOCUMENTO non è l'intersezione che
+                # l'analista ha chiesto: `subthemes` è l'unione dei token dichiarati
+                # dall'intero studio, quindi passa ogni episodio di uno studio che
+                # tratti entrambi i temi da qualche parte — non l'episodio che li
+                # porta entrambi. Senza questa riga il caveat direbbe "intersezione"
+                # su un pool che non lo è: stessa classe dell'errore del 2026-08-27,
+                # dove un degrado non dichiarato fu letto come una lacuna di KB.
+                note += (f" [⚠ '{lbl}' NON è più garantita a questo livello: i token "
+                         f"sono del documento, non della data. Il pool è più largo "
+                         f"di un'intersezione vera — dichiaralo nel caveat, o usa "
+                         f"--min-n {len(strict)} per tenere solo i {len(strict)} "
+                         f"episodi date-locali]")
         else:
             # Il messaggio riporta ENTRAMBI i conteggi (correzione 2026-08-27).
             # Prima stampava solo `loose`, e quando le date-locali esistevano ma
@@ -538,6 +610,19 @@ def cmd_find(theme: str, direction: str | None, before: str | None,
                 note += (f" [⚠ la copertura date-locale ESISTE ({len(strict)}): "
                          f"con --min-n {len(strict)} ottieni il filtro STRETTO, "
                          f"pool piccolo ma pulito. Non è una lacuna di tassonomia]")
+            if match_all:
+                # Degradare da intersezione a pool-del-tema è il salto peggiore:
+                # l'analista ha chiesto il filtro PIÙ stretto e si ritrova quello
+                # più largo di tutti. Dichiara quanto dava l'unione, così la scelta
+                # fra "pool piccolo in intersezione" e "pool grande da potare a mano"
+                # resta esplicita invece di essere presa dal degrado.
+                n_or = len({e["date"] for e in eps
+                            if any(w in st for w in wanted
+                                   for st in (e.get("subthemes_local") or []))})
+                note += (f" [⚠ richiesta INTERSEZIONE: in unione gli stessi token "
+                         f"danno {n_or} episodi date-locali, ma mescolati sui token "
+                         f"non condivisi — se li usi, potali a mano]")
+        note += nested_warn
     if direction:
         # Match STRETTO prima (solo episodi taggati esattamente `direction`), con
         # fallback a mixed/sconosciuto solo se il pool stretto è troppo piccolo —
@@ -692,6 +777,12 @@ def main():
     f.add_argument("--subtheme", action="append", default=None,
                    help="Token di sotto-tema (ripetibile). Restringe il pool; "
                         "se lascia <--min-n episodi ricade sul tema.")
+    f.add_argument("--match-all", action="store_true",
+                   help="Più --subtheme in INTERSEZIONE invece che in unione: "
+                        "l'episodio deve portarli tutti. Da usare quando uno dei "
+                        "token è geografico (eurozone_release, japan_release...), "
+                        "altrimenti l'unione lo annulla riempiendo il pool di "
+                        "release di altre aree. Costa N: verifica la nota.")
     f.add_argument("--min-n", type=int, default=12,
                    help="Soglia minima episodi sotto cui NON applicare il filtro sotto-tema.")
     f.add_argument("--max-pool", type=int, default=30,
@@ -711,7 +802,7 @@ def main():
         cmd_labels(args.theme, args.min_n)
     elif args.cmd == "find":
         cmd_find(args.theme, args.direction, args.before, args.subtheme,
-                 args.min_n, args.max_pool)
+                 args.min_n, args.max_pool, args.match_all)
     elif args.cmd == "stats":
         cmd_stats()
 

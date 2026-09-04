@@ -87,6 +87,59 @@ Effetto complessivo: 61 episodi su 929 toccati, 79 etichette rimosse e 23 aggiun
 (1.617 → 1.561 etichette locali). I tre falsi positivi noti spariti, pool
 `eurozone_release` pulito su tutti gli episodi verificabili.
 
+## Il token geografico non filtra, se il filtro è in unione (corretto il 2026-09-02)
+
+Più `--subtheme` erano **sempre** combinati in unione. Su token che descrivono la
+stessa notizia da angoli diversi è il comportamento giusto — allarga il pool senza
+sporcarlo. Su un token **geografico** fa l'opposto di quel che sembra: l'episodio
+entra se porta *uno qualsiasi* dei token, quindi ogni release americana taggata
+`inflation_print` entra in un pool chiesto come `eurozone_release + inflation_print`,
+e il token geografico non esclude nulla.
+
+Misurato il 2026-09-02 su quella coppia esatta: **65 episodi in unione contro 22 in
+intersezione**, con circa metà del pool in unione fatto di release americane. È la
+spiegazione più plausibile del perché l'IC di `EURUSD=X` su `macro_data` sia
+indistinguibile da zero, ed è lo stesso difetto già misurato il 2026-08-25 su un pool
+`pmi` in prevalenza americano, che diede il segno sbagliato su `EURUSD=X` dopo un dato
+europeo debole.
+
+**Rimedio:** `analogues.py find ... --match-all` (l'episodio deve portare *tutti* i
+token). Non è il default: costa N, e fuori dai token geografici l'unione resta la
+scelta giusta.
+
+⚠ **Il degrado può annullarlo in silenzio.** Se l'intersezione date-locale sta sotto
+`--min-n`, `find` scende al livello **documento**, dove i token sono quelli dell'intero
+studio e non della singola data: un'intersezione a quel livello passa ogni episodio di
+uno studio che tratti entrambi i temi da qualche parte. La nota su stderr lo dichiara —
+leggila prima di scrivere nel caveat che il pool è geograficamente isolato.
+
+### Due trappole misurate testando il flag (2026-09-02)
+
+**1. Token annidati: a volte l'intersezione non stringe, ma non generalizzare.** Il
+match è per **sottostringa**, quindi su una coppia annidata l'AND *può* coincidere con
+l'OR — succede quando il token corto non compare mai da solo, solo dentro il più lungo.
+Ma non è la regola: misurato il 2026-09-03 su tutte le **63 coppie annidate** della
+libreria (non solo le prime trovate), in **56 l'intersezione stringe eccome**
+(`escalation + military_escalation`: 74 → 34; `ai_capex + ai_capex_spending`: 18 → 10).
+Solo **7 sono davvero inerti** — `inflation + inflation_print`, `ai_capex + capex`,
+`tariff + tariff_escalation`, `opec + opec_policy`, `trade + trade_war` — e generalizzare
+da queste (come la prima versione di questa nota faceva) porta a scartare intersezioni
+che invece funzionano. **Il flag ora misura l'esito per la coppia effettivamente
+richiesta** e lo dichiara nella nota: se coincide con l'unione dice che il token corto è
+ridondante e suggerisce quello lungo da solo; se stringe, dice di quanto.
+
+**2. L'intersezione compra purezza e paga in regime.** Il cap di recency (`--max-pool`,
+default 30) taglia l'unione ai 30 episodi più recenti, ma un pool in intersezione è
+spesso più piccolo del cap e quindi **non viene tagliato**: trascina episodi vecchi che
+l'unione avrebbe scartato. Misurato su 217 coppie: nel **35%** dei casi il pool in
+intersezione ha mediana più vecchia. Casi estremi — `inflation_print + eurozone_release`
+passa da mediana 2024-09-23 a 2022-10-31; `iran + sanctions` da 2025-01-15 a 2022-03-08.
+
+È un baratto, non un difetto: si guadagna omogeneità sui token e si perde omogeneità di
+**regime**, che è esattamente ciò contro cui il cap è stato introdotto. Con `--match-all`
+controlla sempre l'estensione temporale del pool, e se scavalca un cambio di regime
+dichiaralo nel caveat o stringi con `--before`.
+
 ## Trappole note
 
 - ⚠ **Non usare prefissi di 1-2 lettere** nei nomi delle etichette canoniche (difetto 3).

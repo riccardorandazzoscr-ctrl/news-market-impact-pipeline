@@ -76,9 +76,15 @@ venv/bin/python pipeline_tools.py new-card --date AAAA-MM-GG --slug <slug> \
 
 # 4. pool di analoghi dalla libreria
 venv/bin/python analogues.py find --theme <t> [--subtheme <tok>]... \
-  [--direction pos|neg|neutral] [--before AAAA-MM-GG] [--min-n N] [--max-pool N]
+  [--direction pos|neg|neutral] [--before AAAA-MM-GG] [--min-n N] [--max-pool N] \
+  [--match-all]
 #   --subtheme ripetibile · --max-pool default 30 (0 = nessun tetto)
 #   --min-n = soglia sotto cui il filtro sotto-tema NON viene applicato
+#   --match-all = più --subtheme in INTERSEZIONE (default: unione). Obbligatorio
+#     quando uno dei token è GEOGRAFICO (eurozone_release, japan_release,
+#     britain_release): in unione il token geografico non filtra nulla e il pool
+#     si riempie di release di altre aree. Leggi sempre la nota su stderr: se
+#     dichiara il degrado "a livello di documento", l'intersezione NON è garantita.
 venv/bin/python analogues.py labels --theme <t>    # copertura per token
 venv/bin/python analogues.py stats                 # adozione blocchi dichiarati
 
