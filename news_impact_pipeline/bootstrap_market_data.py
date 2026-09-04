@@ -129,6 +129,20 @@ ASSETS = [
     {"ticker": "HO=F",        "name": "Heating oil / diesel futures",       "asset_class": "commodity", "region": "US",     "currency": "USD", "source": "yfinance", "description": "Gasolio da riscaldamento (futures, $/gallone) — miglior proxy quotato del DIESEL, il prodotto più esposto agli attacchi alle raffinerie russe", "download": True},
     {"ticker": "CRACK_321",   "name": "Crack spread 3-2-1 (vs Brent)",      "asset_class": "commodity", "region": "global", "currency": "USD", "source": "computed", "description": "Margine di raffinazione 3-2-1 in $/barile = (2*RB=F + 1*HO=F)*42/3 - BZ=F. Calcolato da compute_crack_spread.py ad ogni update. NB: combina prodotti NYMEX con greggio Brent (convenzione comune e piu' pertinente al canale europeo/russo del WTI).", "download": False},
 
+    # --- Cereali: il canale Mar Nero (2026-09-04) ------------------------------
+    # Lacuna del 2026-09-04: sull'apertura negoziale russo-ucraina il canale che ha
+    # REAGITO davvero — grano di Chicago −2% sulle parole di Putin, mais sopra 5,10
+    # $/staio — non era misurabile, e la scheda ha dovuto descrivere solo i canali
+    # secondari (gas, greggio, difesa). Dal 2022 il complesso cerealicolo prezza il
+    # corridoio del Mar Nero prima del raccolto: è un canale geopolitico, non agricolo.
+    # Audit di correlazione 2026-09-04 (soglia 0,85 da references/copertura_asset.md):
+    # max +0,147 (ZW=F) e +0,150 (ZC=F), entrambi su BZ=F — l'universo non aveva
+    # ALCUNA esposizione agricola. Fra loro correlano 0,566: due canali distinti
+    # (il grano è l'export ucraino/russo, il mais è più legato al ciclo USA/etanolo).
+    # ⚠ Prezzi in cent/staio, non in dollari: conta la variazione %, non il livello.
+    {"ticker": "ZW=F",        "name": "Chicago wheat futures",              "asset_class": "commodity", "region": "global", "currency": "USD", "source": "yfinance", "description": "Grano Chicago (futures, cent/staio) — il canale del corridoio del Mar Nero: dal 2022 reagisce a guerra/accordi Russia-Ucraina prima che al raccolto", "download": True},
+    {"ticker": "ZC=F",        "name": "Corn futures",                       "asset_class": "commodity", "region": "global", "currency": "USD", "source": "yfinance", "description": "Mais (futures, cent/staio) — export Mar Nero e ciclo USA/etanolo; correla 0,57 col grano, quindi canale distinto e non duplicato", "download": True},
+
     # --- Curva obbligazionaria tedesca (2026-08-11) ----------------------------
     # Mancava un proxy PULITO del tasso privo di rischio tedesco: IEAG.AS e' un
     # aggregato euro (include periferia = rischio di credito) e BTP_BUND_SPREAD e'

@@ -16,6 +16,7 @@ V=news_impact_pipeline/venv/bin/python
 $V news_impact_pipeline/bootstrap_market_data.py   # storico una tantum (15 anni)
 $V news_impact_pipeline/update_market_data.py      # incrementale: solo le righe mancanti
 $V news_impact_pipeline/forecast_tracking.py run   # feedback loop settimanale (= job lun 09:00)
+cd news_impact_pipeline && ./run_tests.sh          # tutte le suite (asset | analogues)
 # setup venv:
 cd news_impact_pipeline && python3 -m venv venv && venv/bin/pip install -r requirements.txt
 ```
@@ -29,6 +30,9 @@ cd news_impact_pipeline && python3 -m venv venv && venv/bin/pip install -r requi
 - `news_impact_pipeline/` — script e venv. `category_asset_map.yaml` è la **fonte unica**
   della mappa categoria→asset.
 - `daily_analysis/YYYY-MM-DD/` — schede del giorno + `report.html`.
+- `news_impact_pipeline/tests/` — suite non distruttive, si lanciano con `run_tests.sh`.
+  `test_asset_universe.py` accetta i ticker come argomento: **usalo per validare la
+  prossima aggiunta di asset**, non serve riscriverlo.
 
 Aggiungere uno studio: cartella sotto `knowledge_base/`, .md col blocco YAML finale, poi
 `build_catalog.py` (ricorsivo, `source_file` relativo alla KB, i file senza YAML saltati)

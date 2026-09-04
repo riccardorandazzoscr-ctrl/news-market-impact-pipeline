@@ -42,6 +42,7 @@ Base: 17 asset originali.
 | 2026-08-27 | `XLY` `XLP` `XRT` | consumo USA: seconda volta in agosto che una scheda sul consumatore americano si chiudeva senza asset (il PCE di luglio, beni −49,9 mld contro servizi +86,2 mld, non era misurabile) |
 | 2026-08-29 | `NZD=X` `SEK=X` | **completano il G10 valutario** (audit non reattivo, vedi sopra) |
 | 2026-08-29 | `IWM` `GDX` `XLU` | fattore dimensione/small cap, minatori auriferi, utility USA per il vincolo elettrico del capex AI |
+| 2026-09-04 | `ZW=F` `ZC=F` | **cereali = canale Mar Nero.** Sull'apertura negoziale russo-ucraina il canale che aveva davvero reagito (grano −2,5%) non era misurabile e la scheda ha descritto solo i canali secondari. Prima esposizione agricola dell'universo: correlazione massima con l'esistente **+0,15** (entrambi su `BZ=F`), fra loro **0,57** |
 
 ## Lacune aperte
 
@@ -62,6 +63,18 @@ problema dello spread BTP-Bund.
 **Equipaggiamento di rete e turbine** — `XLU` misura la *domanda* elettrica, non chi
 vende gli impianti. `GRID` è stato valutato e **scartato** il 2026-08-29: correlava
 0,80 con `SOXX`, cioè confondeva i due canali invece di separarli.
+
+**Cereali fuori dal canale geopolitico** (aperta il 2026-09-04, con l'aggiunta di
+`ZW=F`/`ZC=F`). I due ticker sono mappati **solo** sotto `geopolitical`, perché è il
+canale documentato: dal 2022 il complesso cerealicolo prezza il corridoio del Mar Nero.
+Una notizia **agricola pura** — siccità, raccolto, scorte USDA — verrebbe classificata
+`commodity_energy`, la cui descrizione («OPEC+, shock petrolio, gas, eventi energetici»)
+non copre i cereali: si chiuderebbe di nuovo senza asset. Estendere quella categoria
+richiede di riscriverne la definizione, non solo di aggiungere due righe: **da decidere
+alla prima occorrenza reale**, non prima. Nota anche `ZS=F` (soia), misurato lo stesso
+giorno e **non aggiunto**: correlazione max +0,21 con l'universo, quindi tecnicamente
+aggiungibile, ma il suo canale è la ritorsione tariffaria USA-Cina e nessuna scheda si
+è ancora chiusa per la sua assenza — manca la *ripetizione* che il progetto richiede.
 
 ## Trappole note
 

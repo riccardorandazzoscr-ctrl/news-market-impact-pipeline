@@ -56,3 +56,6 @@ daily_analysis/*
 
 # Stray run logs next to the database
 market_data/*.log
+
+# Baseline dei conteggi righe per i test di regressione: si rigenera da sola
+news_impact_pipeline/tests/.baseline_assets.json

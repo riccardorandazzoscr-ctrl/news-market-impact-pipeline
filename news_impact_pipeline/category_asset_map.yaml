@@ -128,6 +128,15 @@ geopolitical:
                       # Su risk-off il segnale sta qui più che nel metallo, e GC=F è
                       # marcato debole in scorecard. Anche proxy dell'affollamento
                       # del posizionamento (dal 2026-08-29)
+    # Cereali = canale MAR NERO (dal 2026-09-04). Dal 2022 il complesso cerealicolo
+    # prezza il corridoio ucraino-russo prima del raccolto: guerra, accordi sul grano
+    # e trattative di pace lo muovono più dei fondamentali agricoli. Verso ATTESO
+    # OPPOSTO a quello di gas/greggio su una notizia di pace: la pace RIAPRE l'export
+    # del Mar Nero → più offerta → cereali giù, mentre l'energia scende per il calo
+    # del premio di rischio. Correlazione con l'universo esistente ~0,15: non
+    # duplicano nulla. ⚠ Quotati in cent/staio: leggere le variazioni %, mai i livelli.
+    - ZW=F            # grano Chicago: il più esposto all'export ucraino/russo
+    - ZC=F            # mais: Mar Nero + ciclo USA/etanolo (0,57 col grano, non un doppione)
 
 macro_data:
   description: "Release CPI, NFP/jobs, GDP, PMI, sentiment surveys"
