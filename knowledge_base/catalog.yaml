@@ -1,5 +1,5 @@
-generated_at: '2026-08-29T18:53:02'
-num_entries: 24
+generated_at: '2026-09-04T09:20:41'
+num_entries: 26
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -670,6 +670,127 @@ entries:
   - platform earnings
   - luxury demand
   - Chinese tourism
+- source_file: Il consumatore statunitense; sentimento dichiarato, spesa realizzata
+    e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+    statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato del
+    lavoro — regime ed episodi storici (2000–2026).md
+  title: 'Il consumatore statunitense: sentimento dichiarato, spesa realizzata e anticipo
+    sul mercato del lavoro — regime ed episodi storici (2000–2026)'
+  date_compiled: 2026-09-02
+  primary_theme: macro_data
+  sub_themes:
+  - consumer
+  - consumer_expectations
+  - sentiment_spending_divergence
+  - expectations_collapse
+  - labour_differential_break
+  - confidence_broad_drop
+  - confidence_rebound
+  - michigan_inflation_expectations
+  - conference_board
+  - soft_data
+  relevant_assets:
+  - XLY
+  - XLP
+  - XRT
+  - IWM
+  - ^GSPC
+  - ^NDX
+  - ^TNX
+  - ^FVX
+  - ^VIX
+  - IEF
+  - DX-Y.NYB
+  - GC=F
+  - HYG
+  - IYT
+  - XLV
+  - ^MOVE
+  external_assets_mentioned:
+  - '^IRX — 3 mesi: il tratto di curva che si muove per primo su un dato di fiducia
+    debole'
+  - dati di spesa con carta (Chase/BofA) — misurerebbero DIRETTAMENTE il divario sondaggio/spesa
+    oggetto dello studio
+  time_window:
+    start: 2000-01-01
+    end: present
+  regime_phases:
+  - pre_gfc_confidence_regime: 2000-01-01 to 2008-08-31
+  - gfc_and_recovery: 2008-09-01 to 2016-10-31
+  - partisan_amplification: 2016-11-01 to 2020-02-29
+  - post_pandemic_level_break: 2020-03-01 to 2024-03-31
+  - web_methodology_and_constrained_fed: 2024-04-01 to present
+  keywords:
+  - fiducia dei consumatori
+  - consumer confidence
+  - consumer sentiment
+  - expectations index
+  - present situation
+  - aspettative dei consumatori
+  - conference board
+  - university of michigan
+  - jobs plentiful
+  - jobs hard to get
+  - labour differential
+  - soft data
+  - hard data
+  - spesa delle famiglie
+  - consumer spending
+  - retail sales
+  - vendite al dettaglio
+  - recessione
+  - recession signal
+  - aspettative di inflazione
+  - inflation expectations
+  - polarizzazione politica
+- source_file: Il vincolo elettrico del capex AI; potenza, reti e turbine come collo
+    di bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico
+    del capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+    storici (2021–presente).md
+  title: 'Il vincolo elettrico del capex AI: potenza, reti e turbine come collo di
+    bottiglia — regime ed episodi storici (2021–presente)'
+  date_compiled: 2026-09-03
+  primary_theme: structural_themes
+  sub_themes:
+  - power_bottleneck
+  - grid_capacity
+  - ai_capex
+  relevant_assets:
+  - SOXX
+  - XLU
+  - ^NDX
+  - ^GSPC
+  - EWT
+  - IGV
+  - TAN
+  - REMX
+  external_assets_mentioned:
+  - 'GRID: valutato e scartato — correla 0,80 con SOXX, non separa i canali'
+  - 'VOLT (Tema Electrification ETF, NASDAQ, inception 2024-12-03): candidato migliore
+    per il canale turbine/trasformatori — detiene GE Vernova, Eaton, Quanta, Powell
+    Industries; tilt industrials ~41% / utilities ~30%; ma paniere diversificato,
+    storia cortissima, non nel database'
+  - 'GEV (GE Vernova): singolo nome, non ETF — proxy diretto del backlog turbine/trasformatori'
+  time_window:
+    start: 2021-01-01
+    end: present
+  regime_phases:
+  - chip_scarcity_regime: 2021-01-01 to 2024-09-19
+  - power_repricing_onset: 2024-09-20 to 2025-01-26
+  - efficiency_shock_interlude: 2025-01-27 to 2025-02-28
+  - power_as_binding_constraint: 2025-03-01 to present
+  keywords:
+  - vincolo elettrico
+  - power bottleneck
+  - grid
+  - rete elettrica
+  - turbine
+  - data center
+  - interconnection queue
+  - capex AI
+  - hyperscaler
+  - SMR
+  - power purchase agreement
 - source_file: Industria della difesa europea e riarmo — regime ed episodi storici
     (2014–2026)/Industria della difesa europea e riarmo — regime ed episodi storici
     (2014–2026).md
