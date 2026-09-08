@@ -1,5 +1,5 @@
-generated_at: '2026-09-04T16:41:13'
-num_entries: 26
+generated_at: '2026-09-05T09:19:26'
+num_entries: 27
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -594,6 +594,57 @@ entries:
   - august 2024
   - deleveraging
   - crash risk
+- source_file: Giappone; i dati macroeconomici come canale distinto dalla politica
+    della Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati
+    macroeconomici come canale distinto dalla politica della Bank of Japan — regime
+    ed episodi storici (2013–presente).md
+  title: 'Giappone: i dati macroeconomici come canale distinto dalla politica della
+    Bank of Japan — regime ed episodi storici (2013–presente)'
+  date_compiled: 2026-09-04
+  primary_theme: macro_data
+  sub_themes:
+  - japan_release
+  - japan_data
+  - household_spending
+  - gdp_surprise
+  - trade_balance
+  - tankan
+  - pmi
+  - japan_cpi
+  relevant_assets:
+  - JPY=X
+  - ^N225
+  - 1482.T
+  external_assets_mentioned:
+  - TOPIX — indice più ampio di ^N225, meno concentrato su poche mega-cap; non in
+    DB
+  - indice bancario giapponese (es. TOPIX Banks) — isolerebbe l'effetto tassi sul
+    settore finanziario dall'effetto cambio sugli esportatori; non in DB
+  time_window:
+    start: 2013-01-01
+    end: present
+  regime_phases:
+  - abenomics_qqe_2013_2015: 2013-01-01 to 2015-12-31
+  - nirp_ycc_2016_2022: 2016-01-01 to 2022-11-30
+  - normalization_exit_2022_2024: 2022-12-01 to 2024-03-31
+  - post_ycc_2024_2026: 2024-04-01 to present
+  keywords:
+  - giappone
+  - japan
+  - dato macro giapponese
+  - spesa delle famiglie
+  - household spending
+  - PIL giapponese
+  - GDP Japan
+  - bilancia commerciale
+  - trade balance
+  - tankan
+  - PMI Jibun Bank
+  - CPI Tokyo
+  - CPI nazionale
+  - aspettative BoJ
+  - yen
+  - nikkei
 - source_file: Il consumatore cinese, domanda interna, e-commerce e trasmissione ai
     mercati (2011–2026)/ Il consumatore cinese- domanda interna, e-commerce e trasmissione
     ai mercati (2011–2026).md
