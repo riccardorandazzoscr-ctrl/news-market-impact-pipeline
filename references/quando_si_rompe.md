@@ -3,7 +3,7 @@
 **Quando aprire questo file:** il report giornaliero non è uscito, il database sembra
 vuoto, o qualcosa fallisce senza dirlo.
 
-## ⚠ Il guasto silenzioso: login scaduto (401)
+## ⚠ Il guasto silenzioso 1: login scaduto (401)
 
 **È già successo: dal 25 al 27 giugno 2026 il report non è stato prodotto per tre
 giorni, e nessuno se n'è accorto.**
@@ -31,6 +31,37 @@ fermo.
 
 **Se ricapita spesso**, l'opzione strutturale è una API key dedicata passata via
 variabile d'ambiente nel plist: più stabile di OAuth per l'automazione.
+
+## ⚠ Il guasto silenzioso 2: briefing letto a metà (2026-09-07)
+
+**Il 7 settembre il run è partito su un briefing ancora in scrittura e non se n'è
+accorto.** Alle 09:15:42 il file conteneva **solo l'intestazione HTML** — 2.833 byte,
+zero notizie; quello completo (33.947 byte, 20 notizie) è arrivato circa un minuto dopo.
+
+Il punto che rende il guasto insidioso: il `digest` sul file parziale ha prodotto una
+tabella **vuota senza errore**, e a log comparivano `START` e `DB ok` del tutto regolari.
+Solo un controllo umano ha evitato un `_index.md` vuoto spacciato per run riuscito.
+
+**Causa.** `WatchPaths` nel plist sorveglia la **cartella** dei briefing, quindi il job
+scatta quando il file *compare*, non quando il generatore ha finito di scriverlo. Lo
+script controllava solo `-f "$BRIEF"`, cioè l'esistenza.
+
+⚠ Uscire e aspettare un nuovo trigger **non** funziona: le scritture successive sullo
+stesso file non modificano la cartella, e infatti nel log del 07/09 non c'è nessun terzo
+trigger dopo quello sul file parziale. Il run di quel giorno non sarebbe più ripartito.
+
+**Protezione applicata** (`run_daily_analysis.sh`, funzione `brief_completo`): il file è
+accettato solo se contiene `</body>` **e** almeno 20 blocchi `class="story"` — invariante
+verificata su tutti i 138 briefing in archivio, che ne hanno esattamente 20. Se è
+incompleto lo script **attende dentro il processo** fino a 10 minuti, ricontrollando ogni
+15 secondi; se allo scadere non si è completato, fallisce con `ERROR`, notifica desktop
+ed `exit 1` — nessuna analisi invece di un'analisi vuota.
+
+- L'attesa avviene **dopo** il lock, così un trigger sovrapposto esce subito invece di
+  mettersi in coda ad aspettare anche lui.
+- Se cambia il layout del briefing, `class="story"` va aggiornato **sia** qui **sia** in
+  `parse_briefing.py`, che usa la stessa definizione per contare le notizie.
+- Test: `./run_tests.sh briefing` (34 controlli, inclusa la corsa riprodotta davvero).
 
 ## Certificati SSL su Mac
 
@@ -78,7 +109,7 @@ darebbe una serie **mensile** al posto di quella giornaliera, senza segnalarlo.
 copia `.db.bak` **fuori** dalla cartella di lavoro, così uno spostamento di file non
 può azzerarla.
 
-## La regola che vale per tutti e tre
+## La regola sul database, ogni volta che si sposta qualcosa
 
 Ogni volta che si sposta o riorganizza qualcosa in `~/Claude`, il database va verificato
 **prima e dopo**, esplicitamente. Mai un `mv` "a occhio": è così che è sparito la prima

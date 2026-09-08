@@ -6,6 +6,8 @@
 #   - se l'analisi di oggi è già fatta (_index.md esiste) → esce
 #   - se il briefing di oggi non è ancora arrivato → esce (sarà ri-triggerato
 #     da WatchPaths appena il file atterra)
+#   - se il briefing c'è ma è ancora a metà scrittura → aspetta che si completi,
+#     e se non si completa fallisce ad alta voce invece di analizzare il vuoto
 #   - lock per evitare run concorrenti (calendario + watchpath sovrapposti)
 #   - ricostruisce il DB mercati se risulta incompleto
 # Poi lancia Claude Code headless sul runbook.
@@ -15,6 +17,15 @@ export PATH="/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # --- Configurazione --------------------------------------------------------
 MODEL="claude-opus-5"   # modello per il run headless (Opus 5)
+
+# Integrità del briefing (guasto del 2026-09-07, vedi la funzione brief_completo).
+# MIN_STORIES=20 non è una stima: è un'invariante misurata su tutti i 138 briefing
+# in archivio, che ne hanno esattamente 20 — nessuno ne ha mai avuti meno.
+# Sovrascrivibili dall'ambiente solo perché la suite in tests/ possa verificare
+# l'attesa senza restare ferma dieci minuti: launchd non le imposta.
+MIN_STORIES=${MIN_STORIES:-20}
+WAIT_MAX=${WAIT_MAX:-600}       # attesa massima del completamento, in secondi
+WAIT_STEP=${WAIT_STEP:-15}      # ogni quanto ricontrollare
 PROJECT="$HOME/Claude"
 NEWSDIR="$PROJECT/mercati_finanza"
 PIPE="$NEWSDIR/news_impact_pipeline"
@@ -36,6 +47,29 @@ LOG="$LOGDIR/${TODAY}.log"
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >> "$LOG"; }
 
+# Quante notizie contiene il briefing. Stessa definizione usata dal parser
+# (`parse_briefing.py` cerca gli elementi con class="story"): se cambia il
+# layout del briefing vanno aggiornati entrambi, non solo questo.
+conta_story() { grep -o 'class="story"' "$BRIEF" 2>/dev/null | wc -l | tr -d ' '; }
+
+# Il briefing è FINITO di essere scritto?
+#
+# ⚠ `WatchPaths` sorveglia la CARTELLA, quindi il job scatta quando il file viene
+# creato — non quando il generatore ha finito di scriverlo. Il 2026-09-07 alle
+# 09:15:42 il run è partito su un file di 2.833 byte con la sola intestazione HTML;
+# quello completo (33.947 byte, 20 notizie) è arrivato un minuto dopo. Il digest sul
+# file parziale ha prodotto ZERO notizie *senza errore*, con START e DB ok regolari a
+# log: senza un controllo umano il run sarebbe finito con un `_index.md` vuoto e
+# nessun segnale di guasto — la classe di guasto silenzioso di `quando_si_rompe.md`.
+#
+# Il solo `-f` non basta: servono due segni che la scrittura sia conclusa, il tag di
+# chiusura e il conteggio delle notizie. Entrambi verificati su 138 briefing su 138.
+brief_completo() {
+  [[ -f "$BRIEF" ]]                          || return 1
+  grep -q '</body>' "$BRIEF" 2>/dev/null     || return 1
+  [[ "$(conta_story)" -ge "$MIN_STORIES" ]]
+}
+
 # --- Idempotenza -----------------------------------------------------------
 if [[ -f "$INDEX" ]]; then
   log "SKIP: analisi di $TODAY già presente ($INDEX)."
@@ -55,6 +89,36 @@ if ! mkdir "$LOCK" 2>/dev/null; then
   exit 0
 fi
 trap 'rmdir "$LOCK" 2>/dev/null' EXIT
+
+# --- Il briefing è completo? (guasto del 2026-09-07) -----------------------
+# Si ASPETTA dentro il processo invece di uscire e contare su un nuovo trigger:
+# `WatchPaths` sorveglia la cartella e scatta quando il file compare, ma le
+# scritture successive sullo stesso file non la modificano — nel log del 07/09 non
+# c'è infatti nessun terzo trigger dopo quello sul file parziale. Uscendo qui, il
+# run di quel giorno non sarebbe più ripartito da solo. L'attesa avviene DOPO il
+# lock, così un trigger sovrapposto esce subito invece di mettersi ad aspettare
+# anche lui.
+if ! brief_completo; then
+  log "PARZIALE: briefing incompleto ($(stat -f%z "$BRIEF" 2>/dev/null) byte, $(conta_story)/$MIN_STORIES notizie). Attendo il completamento (max ${WAIT_MAX}s)."
+  waited=0
+  while (( waited < WAIT_MAX )); do
+    sleep "$WAIT_STEP"
+    waited=$(( waited + WAIT_STEP ))
+    if brief_completo; then
+      log "OK: briefing completo dopo ${waited}s ($(conta_story) notizie)."
+      break
+    fi
+  done
+fi
+
+# Scaduta l'attesa senza completamento è un guasto vero, e va detto ad alta voce:
+# meglio nessuna analisi con un allarme che un'analisi vuota in silenzio.
+if ! brief_completo; then
+  MSG="briefing $TODAY incompleto dopo ${WAIT_MAX}s ($(conta_story)/$MIN_STORIES notizie): analisi NON eseguita. Controlla il generatore del brief, poi rilancia: run_daily_analysis.sh $TODAY"
+  log "ERROR: $MSG"
+  /usr/bin/osascript -e "display notification \"$MSG\" with title \"News-Impact Pipeline\" sound name \"Basso\"" 2>/dev/null
+  exit 1
+fi
 
 log "START: briefing $TODAY trovato, avvio analisi."
 

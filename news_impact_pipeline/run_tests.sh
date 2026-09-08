@@ -3,6 +3,7 @@
 #
 #   ./run_tests.sh              # tutto
 #   ./run_tests.sh asset        # solo l'universo asset
+#   ./run_tests.sh briefing     # solo il guardiano sul briefing
 #   ./run_tests.sh analogues    # solo il filtro sotto-tema di analogues.py
 #
 # I test sono NON distruttivi: leggono il DB e lanciano i tool in sola lettura.
@@ -14,12 +15,16 @@ V=venv/bin/python
 FILTRO="${1:-tutto}"
 FALLITE=0
 
-run() {   # run <etichetta> <file> [args...]
+run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
   echo
   echo "############################################################"
   echo "# $1"
   echo "############################################################"
-  if $V "$2" "${@:3}"; then
+  case "$2" in
+    *.sh) INTERPRETE=(/bin/zsh) ;;
+    *)    INTERPRETE=($V) ;;
+  esac
+  if "${INTERPRETE[@]}" "$2" "${@:3}"; then
     echo "→ $1: OK"
   else
     echo "→ $1: FALLITA"
@@ -34,6 +39,10 @@ run() {   # run <etichetta> <file> [args...]
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "asset" ] && \
   run "universo asset — registro, dati, mappa, integrazione, regressione" \
       tests/test_asset_universe.py
+
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "briefing" ] && \
+  run "briefing — guardiano contro il run su file scritto a metà" \
+      tests/test_briefing_race.sh
 
 echo
 echo "============================================================"
