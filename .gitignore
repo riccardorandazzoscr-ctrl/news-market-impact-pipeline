@@ -59,3 +59,12 @@ market_data/*.log
 
 # Baseline dei conteggi righe per i test di regressione: si rigenera da sola
 news_impact_pipeline/tests/.baseline_assets.json
+
+# ---------------------------------------------------------------------------
+# Prompt di deep research (2026-09-10): restano SOLO locali, mai committati —
+# sono richieste di lavoro in sospeso per il maintainer, non output finito.
+# README.md e _TEMPLATE.md (l'infrastruttura della cartella) restano tracciati.
+# ---------------------------------------------------------------------------
+knowledge_base/_prompts/*
+!knowledge_base/_prompts/README.md
+!knowledge_base/_prompts/_TEMPLATE.md

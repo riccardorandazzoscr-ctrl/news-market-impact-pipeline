@@ -30,6 +30,15 @@ Cosa fa Claude **dopo** che la research è stata eseguita e caricata:
 4. il prompt in `_prompts/` si **cancella** (o si marca `[ESEGUITO → percorso]` in testa),
    così questa cartella resta la lista di ciò che manca ancora.
 
+## Git (deciso 2026-09-10)
+
+I prompt (`<slug>.md`) **restano solo locali, mai committati** — sono richieste di
+lavoro in sospeso per il maintainer, non output finito. Esclusi via `.gitignore`
+(`knowledge_base/_prompts/*`). Questo file e `_TEMPLATE.md` restano tracciati:
+sono l'infrastruttura della cartella, non una richiesta pendente.
+⚠ Prima di questa data due prompt erano stati committati per errore (rimossi dal
+tracking, restano sul disco): non è un precedente da seguire.
+
 ## Perché il prefisso `_`
 
 Sia `build_catalog.py` sia `analogues.py` saltano ogni file/cartella il cui nome
