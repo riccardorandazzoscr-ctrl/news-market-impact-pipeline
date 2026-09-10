@@ -75,12 +75,19 @@ Aggiornato: 2026-08-30
 
 - **Stato** — quarto livello `directions_declared` introdotto il 29/08: **356 episodi con
   verso dichiarato (36,2%), 235 netti**. Prima erano 171 su 984 con `pos` e `neg` insieme,
-  152 dei quali dichiarati.
+  152 dei quali dichiarati. Il 10/09 aggiunte due etichette `inflation_upside`/
+  `inflation_downside` in `subtheme_taxonomy.yaml`: il verso dichiarato codifica la
+  reazione dell'asset della scheda, non il verso del dato, e il pool `inflation_print`
+  mescolava rialzi e ribassi del CPI/PCE (N=1143, mediane schiacciate a zero). N=14/15
+  episodi date-locali, sopra soglia; testato con 27 casi sintetici prima del deploy.
 - **Deciso** — il verso dichiarato a mano batte ogni euristica e **cresce da solo** mentre
   le schede compilano il blocco: nessuna regex da mantenere. Gli errori tipo "imporre vs
-  revocare una sanzione" **non erano problemi di vocabolario**.
-- **Prossimo passo** — monitorare l'adozione con `analogues.py stats`; nessun intervento
-  di codice previsto.
+  revocare una sanzione" **non erano problemi di vocabolario**. Per il verso del *dato*
+  macro (diverso dal verso della *reazione*) si usa un sotto-tema regex date-locale, non
+  si tocca il formato dichiarato — che resta sulla reazione, per costruzione.
+- **Prossimo passo** — le prossime schede su `inflation_print` usano `--subtheme
+  inflation_upside`/`inflation_downside` invece di `--direction` quando la domanda è sul
+  dato. Ricontrollare fra un mese se la mediana di `macro_data` si allontana da zero.
 
 Meccanica e post-mortem: [references/etichette_date_locali.md](references/etichette_date_locali.md)
-Aggiornato: 2026-08-30
+Aggiornato: 2026-09-10

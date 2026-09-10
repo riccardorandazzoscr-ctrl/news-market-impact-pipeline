@@ -411,6 +411,27 @@ macro_data:
     - 'inflazione'
     - 'inflation'
     - 'deflatore'
+  # Aggiunte 2026-09-10: lacuna dichiarata nella scheda del giorno (news_07). Il
+  # verso DICHIARATO (`directions_declared`) codifica la reazione dell'asset
+  # della scheda che cita l'episodio, non il verso della sorpresa sul dato — lo
+  # stesso CPI caldo compare `pos` in una scheda (l'asset che seguiva è salito)
+  # e `neg` in un'altra, e il pool `inflation_print` filtrato con `--direction`
+  # mescola rialzi e ribassi del dato sotto la stessa mediana (misurato: N=1143
+  # previsioni schiacciate verso zero). Queste due etichette leggono il VERSO
+  # DEL DATO dal contesto locale — usale con `--subtheme`, non `--direction`,
+  # quando la domanda è "il dato ha sorpreso al rialzo o al ribasso" e non "come
+  # ha reagito l'asset".
+  inflation_upside:
+    - '(cpi|pce|deflatore|inflazione|inflation).{0,60}(sopra|superiore|accelera|sale|risale|batte|beats?|above|higher|hot(ter)?)'
+    - '(sopra|superiore|accelera|batte|beats?|above|higher|hot(ter)?).{0,60}(cpi|pce|deflatore|inflazione|inflation)'
+    - 'sorpresa (di )?inflazione al rialzo'
+    - 'inflation (surprises? )?(to the )?upside'
+  inflation_downside:
+    - '(cpi|pce|deflatore|inflazione|inflation).{0,60}(sotto|inferiore|rallenta|scende|delude|miss(es)?|below|lower|cool(er)?)'
+    - '(sotto|inferiore|rallenta|delude|miss(es)?|below|lower|cool(er)?).{0,60}(cpi|pce|deflatore|inflazione|inflation)'
+    - 'sorpresa (di )?inflazione al ribasso'
+    - 'inflation (surprises? )?(to the )?downside'
+    - 'disinflazion\w*'
   activity_growth:
     - '\bpil\b'
     - '\bgdp\b'
