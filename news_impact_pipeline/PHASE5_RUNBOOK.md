@@ -244,9 +244,10 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
    ```bash
    venv/bin/python render_report.py --date YYYY-MM-DD
    ```
-   Produce `daily_analysis/YYYY-MM-DD/report.html` (indice + tutte le schede in
-   un'unica pagina). Nel job automatico questo passo è eseguito dal wrapper dopo
-   Claude, quindi non serve farlo a mano lì.
+   Produce `daily_analysis/YYYY-MM-DD/report.html` (indice + tutte le schede +
+   glossario comune in fondo, da `glossario.md`, in un'unica pagina). Nel job
+   automatico questo passo è eseguito dal wrapper dopo Claude, quindi non serve
+   farlo a mano lì.
 
 ## Note metodologiche (vincolanti — cfr. CLAUDE.md e Design Doc §7)
 

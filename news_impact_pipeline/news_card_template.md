@@ -133,18 +133,6 @@ _Incolla qui le tabelle generate._
 
 ---
 
-## Glossario — sigle e termini
-
-<!-- Elenca QUI ogni sigla/termine tecnico usato nella scheda, con spiegazione di
-     una riga. Includi dati macro (CPI, NFP, PCE, ISM, PMI, GDP/PIL, HICP, JOLTS),
-     strumenti di policy (TPI, OMT, PEPP, QT, forward guidance) e i ticker citati
-     (es. ^TNX = Treasury USA 10Y; BTP_BUND_SPREAD = spread BTP-Bund). Ometti la
-     sezione solo se la scheda non contiene NESSuna sigla. -->
-
-- **SIGLA** — spiegazione in una riga.
-
----
-
 ## Caveat
 
 <!-- Quali limiti metodologici applicare alla lettura di questa scheda.
@@ -158,3 +146,13 @@ _Incolla qui le tabelle generate._
 - Generata da: Claude Code session (manual classification)
 - Tool versions: pipeline_tools.py / build_catalog.py (project news_impact_pipeline)
 - Catalog timestamp: {{CATALOG_TIMESTAMP}}
+
+---
+
+<!-- Non ridefinire sigle/ticker qui: vanno nel glossario comune
+     (news_impact_pipeline/glossario.md), una volta sola per tutto il report.
+     Se questa scheda usa un termine che lì non c'è ancora, aggiungilo tu —
+     una riga, nella sezione più adatta, ordine alfabetico — invece di
+     spiegarlo in questa scheda. -->
+
+→ [Glossario di sigle e termini](#doc-glossario) (in fondo al report)

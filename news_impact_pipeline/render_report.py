@@ -29,6 +29,7 @@ import markdown
 
 
 DAILY_ANALYSIS_DIR = Path.home() / "Claude" / "mercati_finanza" / "daily_analysis"
+GLOSSARY_PATH = Path(__file__).resolve().parent / "glossario.md"
 
 CSS = """
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -102,6 +103,10 @@ def render(day_dir: Path, day: str) -> Path:
         anchor = f"doc-{p.stem}"
         md.reset()
         docs.append((anchor, f"{p.stem} — {title}", md.convert(text)))
+
+    if GLOSSARY_PATH.exists():
+        md.reset()
+        docs.append(("doc-glossario", "Glossario", md.convert(GLOSSARY_PATH.read_text(encoding="utf-8"))))
 
     nav = "\n".join(
         f'      <li><a href="#{a}">{t}</a></li>' for a, t, _ in docs

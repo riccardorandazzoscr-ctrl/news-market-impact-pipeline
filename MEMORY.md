@@ -26,13 +26,20 @@ Aggiornato: 2026-08-30
   21/08, ora tracciato in `news_impact_pipeline/logs/usage.csv`.
 - **Deciso** — si riducono i **byte riletti a ogni turno**, non le operazioni. Il runbook
   ha una sezione "Economia del run" vincolante.
-- **Prossimo passo** — due proposte non ancora applicate, la seconda più redditizia:
-  (1) cap di lunghezza per scheda/indice con glossario unico in `render_report.py`;
-  (2) **persistere le descrizioni degli episodi** in `_episodes.yaml`, che oggi butta via
-  il testo — il 21/08 su 129 righe riscritte a memoria, 119 erano già in libreria.
+- **Prossimo passo** — una proposta applicata, una no:
+  (1) **fatto il 2026-09-11** — glossario unico in `news_impact_pipeline/glossario.md`,
+  reso da `render_report.py` una sola volta in fondo al report; ogni scheda linka lì
+  invece di ridefinire le sigle. Il template dice all'agente di aggiungere un termine
+  mancante al file condiviso solo se genuinamente nuovo, non di riscriverlo.
+  (2) resta aperta — **persistere le descrizioni degli episodi** in `_episodes.yaml`,
+  che oggi butta via il testo — il 21/08 su 129 righe riscritte a memoria, 119 erano
+  già in libreria.
+- **Da verificare** — l'effetto sul costo si vede solo al prossimo run reale
+  (`logs/usage.csv`): la scommessa è che l'agente smetta di riscrivere definizioni
+  già note, ma non è stato ancora osservato su un run vero.
 
 Metodo e misure: [references/economia_del_run.md](references/economia_del_run.md)
-Aggiornato: 2026-08-30
+Aggiornato: 2026-09-11
 
 ---
 

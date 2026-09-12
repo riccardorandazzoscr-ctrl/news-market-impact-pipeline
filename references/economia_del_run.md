@@ -52,12 +52,24 @@ In un sistema dove il cache-read è l'85% della spesa, è l'unica leva che conta
 e una **copia stale costa doppio**: occupa contesto *e* costringe a rileggere la fonte
 vera per non fidarsene.
 
+## Interventi applicati il 2026-09-11
+
+**Glossario unico**: `news_impact_pipeline/glossario.md` è la fonte unica delle
+definizioni (sigle, dati macro, ticker); `render_report.py` lo rende una sola volta,
+in fondo al report. Il template scheda non ha più la sezione "Glossario" — solo un
+link (`#doc-glossario`) e un'istruzione: aggiungere un termine al file condiviso
+**solo se manca davvero**, non ridefinirlo in scheda. Nato dall'11/09: un run parziale
+(6 schede su 20, limite di sessione) aveva già speso quanto un giorno intero, in parte
+perché ogni scheda riscriveva da zero glossari quasi identici.
+
+⚠ **Non ancora verificato su un run reale** — l'effetto si legge su
+`news_impact_pipeline/logs/usage.csv` al prossimo run, confrontando byte/turno con la
+tabella di riferimento sopra.
+
 ## Proposte aperte
 
 Stato e priorità in [MEMORY.md](../MEMORY.md).
 
-- **Cap di lunghezza per scheda/indice**, con glossario unico renderizzato da
-  `render_report.py` invece che ripetuto in ogni scheda.
 - **Persistenza delle descrizioni degli episodi**: oggi `_episodes.yaml` salva
   data/verso/sotto-temi ma **butta via il testo**, così ogni mattina l'agente ri-scrive
   a memoria descrizioni di episodi già noti. Il 21/08 sono state scritte 129 righe di
