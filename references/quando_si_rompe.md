@@ -63,6 +63,49 @@ ed `exit 1` — nessuna analisi invece di un'analisi vuota.
   `parse_briefing.py`, che usa la stessa definizione per contare le notizie.
 - Test: `./run_tests.sh briefing` (34 controlli, inclusa la corsa riprodotta davvero).
 
+## ⚠ Il guasto silenzioso 3: analisi interrotta a metà (2026-09-11)
+
+**L'11 settembre il run si è fermato a metà e ha spedito lo stesso il report, senza un
+allarme.** Alle 09:24 Claude ha esaurito il **limite di sessione** (`You've hit your
+session limit · resets 12:40pm`) dopo 6 schede su 20, uscendo con codice 1.
+
+Il punto insidioso è che la protezione del guasto 1 si è **ritorta contro**: quella regola
+dice "se `_index.md` c'è, il lavoro è stato scritto, non buttare via il giorno". Ma
+`_index.md` nasce come **scheletro** di triage (tutte le righe a ⏳) e viene compilato
+alla fine — quindi esiste fin dal primo minuto. Risultato: `WARN` invece di `ERROR`,
+nessuna notifica, e su Telegram un'analisi con la tabella vuota che sembrava normale.
+
+Stessa dinamica il **31/07** (limite di sessione) e il **19/07** (`connection closed`):
+tre run monchi, tre report partiti in silenzio.
+
+**Secondo effetto, peggiore del primo:** l'idempotenza guardava anch'essa la sola
+esistenza del file, quindi lo scheletro **bloccava i tentativi successivi**. Alle 10:07
+il ri-trigger ha loggato `SKIP: analisi già presente` su un'analisi mai finita: senza
+cancellare i file a mano, quel giorno non sarebbe più ripartito.
+
+**Protezioni applicate** (`run_daily_analysis.sh`, funzione `index_completo`):
+
+1. Il segnale di successo non è più che `_index.md` **esista**, ma che sia **compilato**:
+   nessuna riga ⏳ e nessun segnaposto "Da compilare dopo il triage". Invariante misurata
+   su 105 `_index.md` in archivio — i 102 sani non hanno né l'uno né l'altro, i 3 rotti
+   hanno entrambi. Sono i marcatori del template in `PHASE5_RUNBOOK.md`: **se cambiano lì,
+   vanno cambiati anche qui.**
+2. Gli esiti diventano tre invece di due: assente → fallimento pieno; **monco → `ERROR` +
+   notifica + didascalia Telegram d'allarme + `exit 1`**, ma le schede prodotte si tengono
+   e si spediscono; compilato → successo, anche con exit ≠0 (resta il caso del 10/07).
+3. L'idempotenza esce solo davanti a un'analisi **completa**: un giorno monco riparte da
+   solo al trigger successivo. Il parziale non si sovrascrive e non si cancella — finisce
+   in `_interrotto_<ora>/`, che il prefisso `_` tiene fuori dal glob di `render_report.py`
+   e `analogues.py` (altrimenti quelle schede entrerebbero due volte in report e libreria).
+4. L'allarme riporta **l'ora di reset del limite**, così il rilancio non è a vuoto.
+
+- Test: `./run_tests.sh analisi` (45 controlli, inclusa la regressione su tutti gli
+  `_index.md` in archivio: i 3 giorni rotti noti riconosciuti, i 102 sani accettati).
+- ⚠ Il limite di sessione è **esterno**: il codice non può evitarlo, può solo smettere di
+  spacciarlo per un successo. Se ricapita spesso, le leve vere sono spostare il run dove
+  la finestra di utilizzo è libera, o ridurre il costo del run
+  ([economia_del_run.md](economia_del_run.md)).
+
 ## Certificati SSL su Mac
 
 Python 3.12 installato da python.org richiede di lanciare **una volta**:

@@ -40,6 +40,15 @@ D="${1:-$(date +%Y-%m-%d)}"
 BRIEF="$PROJECT/morning brief/${D}-morning-briefing.html"
 REPORT="$NEWSDIR/daily_analysis/$D/report.html"
 
+# send_telegram.sh AAAA-MM-GG --parziale → didascalia d'allarme sull'analisi.
+# La passa run_daily_analysis.sh quando il run si è interrotto a metà: il report
+# contiene le schede fatte fino a lì, ma il triage è rimasto in sospeso e la
+# differenza deve vedersi dal telefono, non solo nel log sul Mac.
+CAP_ANALISI="📊 Analisi del giorno ${D}"
+if [[ "${2:-}" == "--parziale" ]]; then
+  CAP_ANALISI="⚠️ Analisi ${D} INCOMPLETA — run interrotto a metà: triage in sospeso, schede parziali. Da rifare."
+fi
+
 sent=0
 if [[ -f "$BRIEF" ]]; then
   "${CURL[@]}" -F chat_id="$CHAT" \
@@ -49,7 +58,7 @@ fi
 if [[ -f "$REPORT" ]]; then
   "${CURL[@]}" -F chat_id="$CHAT" \
     -F "document=@${REPORT};filename=analisi-${D}.html" \
-    -F caption="📊 Analisi del giorno ${D}" "$API/sendDocument" >/dev/null && sent=$((sent+1))
+    -F caption="$CAP_ANALISI" "$API/sendDocument" >/dev/null && sent=$((sent+1))
 fi
 
 echo "[telegram] inviati $sent file per $D"
