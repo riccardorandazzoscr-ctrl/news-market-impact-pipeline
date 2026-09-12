@@ -106,6 +106,64 @@ cancellare i file a mano, quel giorno non sarebbe più ripartito.
   la finestra di utilizzo è libera, o ridurre il costo del run
   ([economia_del_run.md](economia_del_run.md)).
 
+## ⚠ Il guasto silenzioso 4: il run appeso che non torna più (2026-08-05)
+
+**Il 5 agosto `claude -p` è rimasto appeso 410,9 minuti — sei ore e cinquanta — e il
+report è uscito alle 14:36 invece che alle 08:05.** Nessun errore, nessuna notifica:
+alla fine il processo è persino tornato con codice 0.
+
+Il danno non è solo il ritardo. Per tutte e sette le ore il **lock è rimasto occupato**,
+quindi ogni ri-trigger di `WatchPaths` ha loggato `SKIP: altro run in corso` — il giorno
+non poteva ripartire nemmeno volendo, e dall'esterno la pipeline sembrava semplicemente
+ferma.
+
+**Causa.** La chiamata era sincrona e senza tetto: uno script che aspetta non ha modo di
+distinguere "sta lavorando" da "non tornerà mai". È la stessa famiglia dei guasti 2 e 3
+— il codice accetta per buono un segnale che non significa quello che sembra.
+
+**Protezioni applicate** (`run_daily_analysis.sh`):
+
+1. **Tetto di durata** (`RUN_MAX`, 3600s). Come `MIN_STORIES` non è una stima: su 104 run
+   in archivio la mediana è 19,4 minuti, il p90 25,8 e il secondo massimo 37,2. Il massimo
+   vero, 410,9, **è** il guasto. 3600s sta 1,6 volte sopra il run legittimo più lungo mai
+   visto e sui 104 in archivio sarebbe scattato solo sull'05/08. Allo scadere Claude viene
+   terminato e il giorno cade nel ramo **INCOMPLETA che esisteva già** (guasto 3): ERROR,
+   notifica, Telegram con `--parziale`, `exit 1`, schede prodotte tenute.
+2. **Allarme sulla terminazione esterna.** Ctrl-C, `launchctl kill`, logout, spegnimento:
+   prima il trap toglieva il lock e basta, quindi un run ucciso non lasciava **niente** a
+   log ed era indistinguibile da un job mai partito. Ora scrive `ERROR: ... INTERROTTO dal
+   segnale X` e notifica.
+3. **Lock a prova di `kill -9`.** Il lock si porta dentro il PID di chi lo tiene. Prima,
+   un processo ucciso di netto — i casi in cui il trap di pulizia **non** gira — lasciava
+   la cartella lì per sempre: da quel momento ogni run successivo sarebbe uscito con
+   `SKIP`, e la pipeline si sarebbe fermata in silenzio e senza scadenza. Un lock il cui
+   PID non è più vivo (o che non ne ha, formato vecchio) viene dichiarato `STANTIO` e
+   rilevato.
+
+- Test: `./run_tests.sh watchdog` (46 controlli: hang oltre il tetto, parziale tenuto e
+  spedito, nessun falso allarme sotto il tetto, TERM a metà run, lock di un morto, lock di
+  un vivo, lock senza PID).
+- ⚠ Il watchdog uccide il **processo figlio**, non tutto il suo albero: in uno script i job
+  non hanno un process group proprio, e un kill di gruppo porterebbe via anche lo script.
+- ⚠ `kill -0` non distingue un PID **riciclato** dall'originale. È un rischio accettato: la
+  finestra è quella di un riavvio, e sbagliare di qua costa un doppio run improbabile,
+  mentre sbagliare di là costa la pipeline bloccata a tempo indefinito.
+
+### ⚠ Trappola per chi tocca questo script: `CLAUDE_PID` non è tua
+
+Scrivendo il watchdog (12/09/2026) la variabile del PID si chiamava `CLAUDE_PID` e veniva
+letta nella pulizia **senza essere mai stata azzerata**. Ma l'app Claude Code **esporta
+`CLAUDE_PID` nell'ambiente dei processi che lancia**, col PID dell'applicazione stessa:
+la pulizia ereditava quel numero e spediva `SIGTERM` all'app dell'utente — che moriva con
+codice 143 — a ogni uscita anticipata, per esempio durante i dieci minuti di attesa del
+briefing. Si è manifestato come test che venivano uccisi a metà senza spiegazione.
+
+Regola che ne segue: **ogni variabile che finisce dentro un `kill` va azzerata
+esplicitamente prima dei trap**, e non deve portare un nome che l'ambiente possa già
+usare. Qui si chiamano `PID_HEADLESS` e `PID_GUARDIANO`, azzerate sopra le `trap`.
+I casi 8 e 9 di `./run_tests.sh watchdog` tengono ferma sia la sostanza (una sentinella
+innocua deve sopravvivere al run) sia la forma (l'azzeramento precede i trap).
+
 ## Certificati SSL su Mac
 
 Python 3.12 installato da python.org richiede di lanciare **una volta**:

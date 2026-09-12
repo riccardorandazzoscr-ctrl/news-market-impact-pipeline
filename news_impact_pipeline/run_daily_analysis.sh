@@ -26,6 +26,14 @@ MODEL="claude-opus-5"   # modello per il run headless (Opus 5)
 MIN_STORIES=${MIN_STORIES:-20}
 WAIT_MAX=${WAIT_MAX:-600}       # attesa massima del completamento, in secondi
 WAIT_STEP=${WAIT_STEP:-15}      # ogni quanto ricontrollare
+
+# Tetto di durata del run headless (guasto del 2026-08-05, vedi il watchdog più sotto).
+# Come MIN_STORIES non è una stima: su 104 run in archivio la mediana è 19,4 minuti,
+# il p90 25,8 e il secondo massimo 37,2. Il massimo vero — 410,9 minuti — È il guasto,
+# non un run lungo. 3600s sta 1,6 volte sopra il run legittimo più lungo mai visto, e
+# sui 104 in archivio sarebbe scattato solo su quello.
+RUN_MAX=${RUN_MAX:-3600}               # durata massima di `claude -p`, in secondi
+RUN_KILL_GRACE=${RUN_KILL_GRACE:-20}   # quanto si aspetta fra il TERM e il KILL
 PROJECT="$HOME/Claude"
 NEWSDIR="$PROJECT/mercati_finanza"
 PIPE="$NEWSDIR/news_impact_pipeline"
@@ -33,7 +41,9 @@ PY="$PIPE/venv/bin/python"
 BRIEF_DIR="$PROJECT/morning brief"
 DAILY="$NEWSDIR/daily_analysis"
 LOGDIR="$PIPE/logs"
-CLAUDE="/opt/homebrew/bin/claude"
+# Sovrascrivibile per la stessa ragione di MIN_STORIES e WAIT_MAX: la suite in
+# tests/ deve poter mettere al suo posto un finto `claude`. launchd non la imposta.
+CLAUDE=${CLAUDE:-/opt/homebrew/bin/claude}
 
 mkdir -p "$LOGDIR"
 # Data del run: di default oggi. Si può passare una data ISO come primo argomento
@@ -107,12 +117,73 @@ if [[ ! -f "$BRIEF" ]]; then
 fi
 
 # --- Lock (evita doppio run calendario+watchpath) --------------------------
+# Il lock si porta dentro il PID di chi lo tiene. Senza, un processo ucciso di netto
+# — `kill -9`, corrente staccata: i casi in cui il trap di pulizia NON gira — lasciava
+# la cartella lì per sempre, e da quel momento OGNI run successivo sarebbe uscito con
+# "SKIP: altro run in corso": la pipeline ferma in silenzio e senza scadenza.
+#
+# ⚠ `kill -0` non distingue un PID riciclato dall'originale. È un rischio accettato:
+# la finestra è quella di un riavvio, e sbagliare di qua costa un doppio run
+# improbabile, mentre sbagliare di là costa la pipeline bloccata a tempo indefinito.
 LOCK="$LOGDIR/.lock"
-if ! mkdir "$LOCK" 2>/dev/null; then
+
+# ⚠ I due PID si azzerano QUI, prima di ogni trap, e non si chiamano CLAUDE_PID.
+# Incidente del 2026-09-12: la pulizia faceva `kill "$CLAUDE_PID"` fidandosi che la
+# variabile fosse vuota finché non l'avevamo riempita noi. Ma l'app Claude Code
+# esporta `CLAUDE_PID` nell'ambiente dei processi che lancia, col PID dell'app
+# stessa: la pulizia ereditava quel numero e spediva SIGTERM all'applicazione
+# dell'utente — che moriva con codice 143 — ogni volta che il run usciva prima di
+# aver avviato Claude, per esempio durante i dieci minuti di attesa del briefing.
+# Un nome proprio non basta da solo: senza l'azzeramento esplicito, qualunque
+# variabile d'ambiente omonima tornerebbe a puntare un processo che non è nostro.
+PID_HEADLESS=""
+PID_GUARDIANO=""
+
+pulisci() {
+  [[ -n "$PID_GUARDIANO" ]] && kill "$PID_GUARDIANO" 2>/dev/null
+  [[ -n "$PID_HEADLESS" ]]  && kill "$PID_HEADLESS" 2>/dev/null
+  [[ -n "${RAW:-}" ]]          && /bin/rm -f "$RAW"
+  [[ -n "${SCADUTO:-}" ]]      && /bin/rm -f "$SCADUTO"
+  /bin/rm -f "$LOCK/pid" 2>/dev/null
+  rmdir "$LOCK" 2>/dev/null
+  return 0
+}
+
+# Terminazione esterna: Ctrl-C di chi lancia a mano, `launchctl kill`, logout,
+# spegnimento. Prima il trap toglieva il lock e basta — nel log non restava NIENTE e
+# sul telefono nemmeno, quindi un run ucciso era indistinguibile da un job mai
+# partito. L'unico modo di accorgersene era notare il `.raw_<data>.json` rimasto.
+interrotto() {
+  log "ERROR: run $TODAY INTERROTTO dal segnale $1 (analisi non completata). Rilancia: run_daily_analysis.sh $TODAY"
+  /usr/bin/osascript -e "display notification \"run $TODAY interrotto ($1): analisi non completata.\" with title \"News-Impact Pipeline\" sound name \"Basso\"" 2>/dev/null
+  exit 1
+}
+
+prendi_lock() {
+  if mkdir "$LOCK" 2>/dev/null; then
+    print -r -- $$ > "$LOCK/pid"
+    return 0
+  fi
+  local pid=$(cat "$LOCK/pid" 2>/dev/null)
+  if [[ -n "$pid" ]] && kill -0 "$pid" 2>/dev/null; then
+    return 1                     # c'è davvero un run in corso
+  fi
+  # Nessun pid (lock del vecchio formato) o pid di un processo morto: è un relitto.
+  log "STANTIO: lock di un processo non più vivo (pid=${pid:-assente}). Lo rilevo."
+  print -r -- $$ > "$LOCK/pid"
+  # Riletto: se due trigger ravvicinati trovano lo stesso relitto vince chi scrive
+  # per ultimo, e l'altro esce invece di mettersi a girare in parallelo.
+  [[ "$(cat "$LOCK/pid" 2>/dev/null)" == "$$" ]]
+}
+
+if ! prendi_lock; then
   log "SKIP: altro run in corso (lock presente)."
   exit 0
 fi
-trap 'rmdir "$LOCK" 2>/dev/null' EXIT
+trap 'pulisci' EXIT
+trap 'interrotto TERM' TERM
+trap 'interrotto INT'  INT
+trap 'interrotto HUP'  HUP
 
 # --- Il briefing è completo? (guasto del 2026-09-07) -----------------------
 # Si ASPETTA dentro il processo invece di uscire e contare su un nuovo trigger:
@@ -236,15 +307,47 @@ Output finale in chat: riepilogo con quante notizie tenute/scartate e i temi
 delle schede prodotte. Lavora in $DAILY/$TODAY/.
 EOF
 
-log "Lancio Claude Code headless (model=$MODEL)."
+log "Lancio Claude Code headless (model=$MODEL, tetto ${RUN_MAX}s)."
 cd "$NEWSDIR"
 # --output-format json: oltre al testo finale restituisce turni, token e costo.
 # Senza questo il consumo del run non è misurabile (diagnosi del 2026-08-21: si
 # poteva ricostruire solo scavando nei transcript di ~/.claude/projects/).
 RAW="$LOGDIR/.raw_${TODAY}.json"
+SCADUTO="$LOGDIR/.timeout_${TODAY}"
+/bin/rm -f "$SCADUTO"
+
+# ⚠ Watchdog (guasto del 2026-08-05). Quel giorno `claude -p` è rimasto appeso
+# 410,9 minuti: il report è uscito alle 14:36 invece che alle 08:05, il lock è restato
+# occupato per tutte e sette le ore — ogni ri-trigger a log come SKIP — e non è partito
+# un solo allarme. Una chiamata sincrona senza tetto non ha modo di distinguere
+# "sta lavorando" da "non tornerà mai": è il terzo guasto muto della stessa famiglia.
+#
+# Il guardiano NON dorme in un colpo solo. Controlla ogni secondo se Claude è ancora
+# vivo e si spegne da sé appena finisce: un singolo `sleep $RUN_MAX` lascerebbe un
+# processo addormentato per un'ora dopo OGNI run riuscito.
+# ⚠ Uccide il processo figlio, non tutto il suo albero: in uno script i job non hanno
+# un process group proprio, quindi un kill di gruppo porterebbe via anche noi.
 "$CLAUDE" -p "$PROMPT" --model "$MODEL" --permission-mode bypassPermissions \
-  --output-format json > "$RAW" 2>>"$LOG"
+  --output-format json > "$RAW" 2>>"$LOG" &
+PID_HEADLESS=$!
+( trascorso=0
+  while (( trascorso < RUN_MAX )); do
+    sleep 1; trascorso=$(( trascorso + 1 ))
+    kill -0 "$PID_HEADLESS" 2>/dev/null || exit 0
+  done
+  print -r -- "$RUN_MAX" > "$SCADUTO"
+  kill -TERM "$PID_HEADLESS" 2>/dev/null
+  sleep "$RUN_KILL_GRACE"
+  kill -KILL "$PID_HEADLESS" 2>/dev/null ) &
+PID_GUARDIANO=$!
+wait "$PID_HEADLESS"
 RC=$?
+kill "$PID_GUARDIANO" 2>/dev/null
+PID_GUARDIANO=""; PID_HEADLESS=""
+if [[ -f "$SCADUTO" ]]; then
+  log "TIMEOUT: Claude non è tornato entro ${RUN_MAX}s, processo ucciso."
+  /bin/rm -f "$SCADUTO"
+fi
 log "Claude exit code $RC."
 
 # Estrae il testo finale (nel log, come prima) e accoda una riga al CSV dei consumi.
@@ -295,7 +398,9 @@ rm -f "$RAW"
 INCOMPLETA=0
 if [[ ! -f "$INDEX" ]]; then
   MSG="run $TODAY FALLITO (exit $RC, _index.md assente)."
-  if grep -qi "Invalid authentication\|401\|Not logged in\|Please run /login" "$LOG" 2>/dev/null; then
+  if grep -q "TIMEOUT:" "$LOG" 2>/dev/null; then
+    MSG="Claude appeso oltre ${RUN_MAX}s e ucciso dal watchdog senza aver scritto nulla: run $TODAY non prodotto. Rilancia: run_daily_analysis.sh $TODAY"
+  elif grep -qi "Invalid authentication\|401\|Not logged in\|Please run /login" "$LOG" 2>/dev/null; then
     MSG="login Claude scaduto: esegui 'claude /login'. Run $TODAY non prodotto."
   elif grep -qi "session limit\|usage limit" "$LOG" 2>/dev/null; then
     MSG="limite di sessione Claude: run $TODAY non prodotto. Rilancia dopo il reset: run_daily_analysis.sh $TODAY"
@@ -318,7 +423,9 @@ elif ! index_completo; then
   # L'ora di reset la scrive Claude stesso nell'ultima riga utile del log
   # ("You've hit your session limit · resets 12:40pm (Europe/Rome)"): riportarla
   # evita il rilancio a vuoto prima che il limite si sia azzerato.
-  if grep -qi "session limit\|usage limit" "$LOG" 2>/dev/null; then
+  if grep -q "TIMEOUT:" "$LOG" 2>/dev/null; then
+    MSG="watchdog: Claude appeso oltre ${RUN_MAX}s, ucciso a metà run. Analisi $TODAY INCOMPLETA (${#PARZIALI} schede prodotte, $PENDENTI notizie non triate). Rilancia: run_daily_analysis.sh $TODAY"
+  elif grep -qi "session limit\|usage limit" "$LOG" 2>/dev/null; then
     RESET=$(grep -o 'resets [0-9:apm]*' "$LOG" 2>/dev/null | tail -1)
     MSG="limite di sessione Claude a metà run: analisi $TODAY INCOMPLETA (${#PARZIALI} schede, $PENDENTI notizie non triate). Rilancia${RESET:+ dopo le ${RESET#resets }}: run_daily_analysis.sh $TODAY"
   fi

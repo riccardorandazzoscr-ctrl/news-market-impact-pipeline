@@ -5,6 +5,7 @@
 #   ./run_tests.sh asset        # solo l'universo asset
 #   ./run_tests.sh briefing     # solo il guardiano sul briefing in ingresso
 #   ./run_tests.sh analisi      # solo il guardiano sull'analisi in uscita
+#   ./run_tests.sh watchdog     # solo il tetto di durata e il lock
 #   ./run_tests.sh analogues    # solo il filtro sotto-tema di analogues.py
 #
 # I test sono NON distruttivi: leggono il DB e lanciano i tool in sola lettura.
@@ -48,6 +49,10 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "analisi" ] && \
   run "analisi — guardiano contro il run interrotto a metà" \
       tests/test_index_incompleto.sh
+
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "watchdog" ] && \
+  run "watchdog — tetto sul run appeso e lock a prova di kill" \
+      tests/test_watchdog.sh
 
 echo
 echo "============================================================"

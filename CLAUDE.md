@@ -16,7 +16,7 @@ V=news_impact_pipeline/venv/bin/python
 $V news_impact_pipeline/bootstrap_market_data.py   # storico una tantum (15 anni)
 $V news_impact_pipeline/update_market_data.py      # incrementale: solo le righe mancanti
 $V news_impact_pipeline/forecast_tracking.py run   # feedback loop settimanale (= job lun 09:00)
-cd news_impact_pipeline && ./run_tests.sh          # tutte le suite (asset | analogues)
+cd news_impact_pipeline && ./run_tests.sh          # tutte le suite; con un filtro ne lancia una
 # setup venv:
 cd news_impact_pipeline && python3 -m venv venv && venv/bin/pip install -r requirements.txt
 ```

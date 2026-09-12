@@ -148,7 +148,11 @@ check "grep -q 'SKIP: analisi' '$LOG'" "logga SKIP"
 teardown
 setup
 scrivi_brief 0
-mkdir -p "$FPIPE/logs/.lock"     # lock di un altro run
+# Lock di un altro run VIVO. Dal 12/09 il lock si porta dentro il PID di chi lo tiene
+# e una cartella vuota vale come relitto da rilevare (tests/test_watchdog.sh, casi 5-7):
+# per fingere un run davvero in corso serve il PID di un processo vivo, e qui il più
+# vivo che ci sia è il processo di test stesso.
+mkdir -p "$FPIPE/logs/.lock"; print -r -- $$ > "$FPIPE/logs/.lock/pid"
 RC=$(run_sut 1 1)
 check "[[ $RC -eq 0 ]]" "lock presente → esce senza aspettare" "rc=$RC"
 check "grep -q 'SKIP: altro run' '$LOG'" "logga SKIP per il lock"
