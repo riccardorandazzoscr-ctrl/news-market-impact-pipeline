@@ -28,9 +28,13 @@
 |---|---|
 | `primary_theme` | {{PRIMARY_THEME}} |
 | `sub_themes` | {{SUB_THEMES}} |
+| `direction_reference` |  |
 | `sentiment` | {{SENTIMENT}} <!-- hawkish/dovish, bullish/bearish, risk-on/risk-off, neutral --> |
 | `confidence` | {{CONFIDENCE}} <!-- low / medium / high --> |
 | `horizon` | {{HORIZON}} <!-- da category_asset_map.yaml --> |
+
+<!-- Compila direction_reference col ticker del prezzo cui si riferiscono TUTTE
+     le righe Verso della scheda, prima di costruire gli analoghi direzionali. -->
 
 **Motivazione classificazione**: <!-- 1-3 frasi: perché questo theme, sentiment e confidence. -->
 
@@ -83,8 +87,9 @@
 i campi qui sono presi come sono, senza che `analogues.py` debba dedurli dalla prosa.
 È la correzione a monte del difetto che generava una lacuna quasi ogni giorno.
 
-- `Verso`: `pos` / `neg` / `neutral` — il verso **di quell'episodio**, non della notizia
-  di oggi. Se la giornata storica fu genuinamente ambivalente, scrivi `pos, neg`.
+- Nella classificazione compila ``| `direction_reference` | BZ=F |`` (sostituisci BZ=F con il ticker scelto). Un solo asset di riferimento per tutti i blocchi storici della scheda.
+- `Verso`: pressione attesa del meccanismo sul **prezzo dell'asset di riferimento** usando le informazioni disponibili all'evento: `pos` al rialzo, `neg` al ribasso, `neutral` senza pressione direzionale. Non è un giudizio positivo/negativo sull'evento, né il segno del rendimento misurato a posteriori. Per i bond è il prezzo, non il rendimento; per FX è la quotazione del ticker.
+- Se il verso è ambiguo, `pos, neg` esclude l'episodio dai pool direzionali. Senza riferimento esplicito le vecchie etichette non sono ammesse. Per asset diversi usa dichiarazioni separate; non trasferire automaticamente il segno.
 - `Meccanismo`: uno o più token canonici di `subtheme_taxonomy.yaml`, separati da virgola.
   Verifica la copertura con `analogues.py labels --theme <t>` prima di sceglierli.
 - **Geografia della release (dal 2026-08-26)**: se l'episodio è una pubblicazione di
@@ -95,8 +100,7 @@ i campi qui sono presi come sono, senza che `analogues.py` debba dedurli dalla p
   il dollaro che perdeva più dell'euro). I campi dichiarati vincono sull'euristica,
   quindi è qui che la geografia diventa affidabile. Non esiste `us_release`: gli USA
   sono il default implicito del campione.
-- Righe con verso non riconoscibile vengono ignorate (si ricade sull'euristica), quindi
-  una tabella malformata degrada senza rompere nulla.
+- Righe con verso non riconoscibile sono escluse dal filtro direzionale; nessun ripiego euristico.
 
 | Data | Verso | Meccanismo | Descrizione |
 |---|---|---|---|

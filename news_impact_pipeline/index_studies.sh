@@ -8,7 +8,7 @@
 # Cosa fa:
 #   - scopre le sottocartelle-studio NON ancora indicizzate (= nessun .md con
 #     blocco ```yaml in fondo) ma che contengono materiale sorgente
-#   - se ce ne sono, lancia Claude Code headless con un prompt che legge la
+#   - se ce ne sono, lancia Codex headless con un prompt che legge la
 #     ricerca (anche da PDF), accoda il blocco YAML canonico §5.2 e rilancia
 #     build_catalog.py
 #   - idempotente: se non trova studi non indicizzati esce subito (no-op),
@@ -18,14 +18,14 @@ set -u
 export PATH="/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # --- Configurazione --------------------------------------------------------
-MODEL="claude-opus-4-7"   # stesso modello del run giornaliero
+MODEL="gpt-5.6-terra"   # estrazione strutturata di metadati
 PROJECT="$HOME/Claude"
 NEWSDIR="$PROJECT/mercati_finanza"
 PIPE="$NEWSDIR/news_impact_pipeline"
 PY="$PIPE/venv/bin/python"
 KB="$NEWSDIR/knowledge_base"
 LOGDIR="$PIPE/logs"
-CLAUDE="/opt/homebrew/bin/claude"
+CODEX="/Applications/ChatGPT.app/Contents/Resources/codex"
 
 mkdir -p "$LOGDIR"
 LOG="$LOGDIR/index_studies.log"
@@ -50,6 +50,7 @@ UNINDEXED=()
 for d in "$KB"/*/; do
   d="${d%/}"
   name="$(basename "$d")"
+  [[ "$name" == _* ]] && continue
   # già indicizzato? un .md con blocco ```yaml in fondo
   indexed=0
   for md in "$d"/*.md; do
@@ -57,7 +58,8 @@ for d in "$KB"/*/; do
   done
   (( indexed )) && continue
   # contiene materiale sorgente da cui indicizzare?
-  src=("$d"/*.pdf "$d"/*.md "$d"/*.html "$d"/*.txt "$d"/*.docx)
+  # Senza ricerca .md del maintainer non c'è nulla che l'agente possa indicizzare.
+  src=("$d"/*.md)
   (( ${#src[@]} )) && UNINDEXED+=("$name")
 done
 
@@ -81,7 +83,10 @@ fi
 if (( ${#UNINDEXED[@]} == 0 )); then
   if (( stale )); then
     log "Nessuno studio da generare, ma catalog stale → rebuild build_catalog.py."
-    ( cd "$PIPE" && "$PY" build_catalog.py ) >> "$LOG" 2>&1
+    ( cd "$PIPE" && "$PY" build_catalog.py ) >> "$LOG" 2>&1 || {
+      log "ERROR: build_catalog fallito."
+      exit 1
+    }
     log "build_catalog rieseguito. DONE."
   else
     log "SKIP: nessuno studio non indicizzato e catalog aggiornato. No-op."
@@ -108,12 +113,11 @@ propria sottocartella sotto $KB:
 $LIST
 
 Per OGNI studio nell'elenco:
-1) Leggi il materiale sorgente nella sua cartella (PDF, .md, .html, .txt — lo
-   strumento Read apre anche i PDF). Comprendi tema, fasi di regime, asset e
+1) Leggi il materiale sorgente nella sua cartella (PDF, .md, .html, .txt).
+   Comprendi tema, fasi di regime, asset e
    meccanismi di trasmissione descritti.
-2) Individua il file markdown della ricerca nella cartella. Se non esiste un .md
-   di ricerca leggibile, creane uno sintetizzando il contenuto del sorgente
-   (nome file: <slug_studio>.md).
+2) Individua il file markdown della ricerca scritto dal maintainer. Se non esiste,
+   segnala la lacuna e NON scrivere una ricerca o un prompt al suo posto.
 3) Accoda IN FONDO a quel .md il blocco metadata YAML canonico (Design Document
    §5.2), dentro un fence \`\`\`yaml. Campi obbligatori: title, date_compiled
    (oggi), primary_theme, sub_themes, relevant_assets, time_window
@@ -123,9 +127,8 @@ Per OGNI studio nell'elenco:
      monetary_policy, fiscal_policy, geopolitical, macro_data,
      corporate_idiosyncratic, regulatory, commodity_energy,
      financial_stability, structural_themes.
-   - relevant_assets DEVE usare SOLO ticker presenti in DB:
-     BTC-USD, BTP_BUND_SPREAD, BZ=F, CHF=X, ETH-USD, EURUSD=X, FTSEMIB.MI,
-     GBPUSD=X, GC=F, IEAG.AS, IEF, JPY=X, ^GDAXI, ^GSPC, ^N225, ^STOXX50E, ^TNX.
+   - relevant_assets DEVE usare SOLO ticker presenti nella tabella assets del DB
+     $NEWSDIR/market_data/market_data.db. Interroga il DB, non usare una lista fissa.
      Eventuali asset citati ma non in DB vanno in un campo extra
      external_assets_mentioned (lista descrittiva), NON in relevant_assets.
    - Usa come riferimento di stile il blocco già presente in
@@ -138,10 +141,15 @@ Output finale in chat: per ogni studio, lo slug, il primary_theme assegnato e
 gli asset rilevanti; più la riga di riepilogo del catalog (n. entries, warning).
 EOF
 
-log "Lancio Claude Code headless (model=$MODEL)."
+log "Lancio Codex headless (model=$MODEL)."
 cd "$NEWSDIR"
-"$CLAUDE" -p "$PROMPT" --model "$MODEL" --permission-mode bypassPermissions >> "$LOG" 2>&1
+"$CODEX" exec --model "$MODEL" -c 'model_reasoning_effort="medium"' \
+  --sandbox workspace-write -C "$NEWSDIR" "$PROMPT" </dev/null >> "$LOG" 2>&1
 RC=$?
-log "Claude exit code $RC."
+log "Codex exit code $RC."
+if (( RC != 0 )); then
+  log "ERROR: indicizzazione incompleta."
+  exit "$RC"
+fi
 log "DONE."
 exit 0

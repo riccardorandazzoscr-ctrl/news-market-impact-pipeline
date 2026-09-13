@@ -1,0 +1,448 @@
+# Revisione delle etichette per asset: fonte e motivazione per ogni decisione.
+# Gli esclusi non entrano nei pool direzionali. Non misura il rendimento ex post.
+reviews:
+- date: '2011-12-27'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-31/news_01.md
+  reason: 'Minaccia di chiusura di Hormuz: premio di rischio sul greggio.'
+  direction: pos
+- date: '2012-01-04'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-21/news_03.md
+  reason: Evento non identificato con certezza nella scheda.
+  status: excluded
+- date: '2012-01-23'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-31/news_01.md
+  reason: 'Embargo UE sul greggio iraniano: offerta attesa più scarsa.'
+  direction: pos
+- date: '2014-11-27'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-06/news_03.md
+  reason: 'OPEC non taglia: offerta attesa più abbondante.'
+  direction: neg
+- date: '2015-07-14'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: 'JCPOA: prospettiva di rientro dei barili iraniani.'
+  direction: neg
+- date: '2016-01-19'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: Rimozione sanzioni iraniane e apertura OPEC-Russia attribuite alla stessa
+    data, con pressioni opposte.
+  status: excluded
+- date: '2016-11-30'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-30/news_03.md
+  reason: 'Accordo OPEC di taglio: offerta attesa più scarsa.'
+  direction: pos
+- date: '2018-05-08'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-23/news_02.md
+  reason: 'Uscita USA dal JCPOA: export iraniano atteso in calo.'
+  direction: pos
+- date: '2019-05-12'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: 'Sabotaggio navi a Fujairah: premio sulla rotta del greggio.'
+  direction: pos
+- date: '2019-05-13'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-08/news_01.md
+  reason: 'Attacco alla pipeline Est-Ovest: rischio sulla via alternativa a Hormuz.'
+  direction: pos
+- date: '2019-06-13'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: 'Attacco alle petroliere nel Golfo dell’Oman: premio sulla rotta.'
+  direction: pos
+- date: '2019-07-01'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-31/news_01.md
+  reason: 'Superamento dei limiti JCPOA: rischio di restrizioni sull’export.'
+  direction: pos
+- date: '2019-09-14'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: 'Attacco ad Abqaiq e Khurais: capacità produttiva interrotta.'
+  direction: pos
+- date: '2019-09-16'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: 'Prima seduta dopo Abqaiq: interruzione nota all’apertura.'
+  direction: pos
+- date: '2020-01-03'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-31/news_01.md
+  reason: 'Uccisione di Soleimani: aumenta il rischio di ritorsione regionale.'
+  direction: pos
+- date: '2020-01-08'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: Il premio iniziale si rovescia nella stessa seduta dopo nuove informazioni;
+    manca un timestamp univoco.
+  status: excluded
+- date: '2020-04-13'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-05/news_06.md
+  reason: 'Taglio OPEC contemporaneo al crollo della domanda pandemica: pressione
+    giornaliera non isolabile.'
+  status: excluded
+- date: '2022-02-24'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-31/news_01.md
+  reason: 'Invasione dell’Ucraina: rischio immediato sull’offerta russa.'
+  direction: pos
+- date: '2022-03-08'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-21/news_03.md
+  reason: Picco delle commodity, non evento discreto con pressione ex ante chiara.
+  status: excluded
+- date: '2022-06-14'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-20/news_04.md
+  reason: 'Taglio di Nord Stream 1: canale del gas europeo, non del Brent in modo
+    univoco.'
+  status: excluded
+- date: '2022-08-15'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-21/news_08.md
+  reason: 'Schede diverse citano dati cinesi, negoziati JCPOA e distillati: eventi
+    distinti.'
+  status: excluded
+- date: '2022-10-05'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-07/news_02.md
+  reason: 'Taglio OPEC+: offerta attesa più scarsa.'
+  direction: pos
+- date: '2023-02-05'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-27/news_05.md
+  reason: 'Embargo sui prodotti raffinati: canale crack, pressione sul greggio non
+    univoca.'
+  status: excluded
+- date: '2023-03-10'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: 'Accordo Arabia Saudita-Iran: premio regionale ridotto.'
+  direction: neg
+- date: '2023-04-03'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-30/news_03.md
+  reason: 'Tagli volontari OPEC+ a sorpresa: offerta attesa più scarsa.'
+  direction: pos
+- date: '2023-11-01'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: 'Data usata come inizio di regime Houthi e per altri shock: manca evento
+    discreto univoco.'
+  status: excluded
+- date: '2023-12-18'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-21/news_08.md
+  reason: 'Sospensione dei transiti nel Mar Rosso: canale noli, trasmissione al Brent
+    non univoca.'
+  status: excluded
+- date: '2024-01-12'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-31/news_01.md
+  reason: 'Raid contro Houthi: deterrenza o escalation, pressione Brent non univoca.'
+  status: excluded
+- date: '2024-01-22'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: Prosecuzione dei raid già prezzati, senza nuovo shock discreto.
+  status: excluded
+- date: '2024-03-13'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-27/news_05.md
+  reason: 'Attacchi a raffinerie russe: canale prodotti e crack, non greggio univoco.'
+  status: excluded
+- date: '2024-04-12'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-27/news_05.md
+  reason: 'Attacchi a raffinerie e tensione Iran-Israele contemporanei: meccanismi
+    sovrapposti.'
+  status: excluded
+- date: '2024-04-15'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-31/news_01.md
+  reason: 'Esito limitato dell’attacco iraniano noto all’apertura: premio ridotto.'
+  direction: neg
+- date: '2024-04-22'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-03/news_07.md
+  reason: 'Risposta israeliana limitata: rischio di escalation ridotto.'
+  direction: neg
+- date: '2024-10-26'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: 'Raid che risparmia le infrastrutture energetiche: rischio di perdita di
+    offerta ridotto.'
+  direction: neg
+- date: '2024-12-31'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-07/news_02.md
+  reason: Rinvio OPEC descritto come fase, non annuncio discreto confermato per questa
+    data.
+  status: excluded
+- date: '2025-01-10'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-20/news_04.md
+  reason: 'Sanzioni OFAC su produttori e navi russe: export atteso più difficile.'
+  direction: pos
+- date: '2025-01-15'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: 'Cessate il fuoco a Gaza e sanzioni su petroliere nella stessa data: pressioni
+    opposte.'
+  status: excluded
+- date: '2025-04-03'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-06/news_03.md
+  reason: 'Dazi USA e aumento OPEC+: domanda attesa minore e offerta maggiore.'
+  direction: neg
+- date: '2025-06-13'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-31/news_01.md
+  reason: 'Attacco israeliano all’Iran: rischio di interruzione regionale.'
+  direction: pos
+- date: '2025-06-22'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: Rappresaglia collocata qui dalla scheda recente ma al giorno successivo
+    in altre schede.
+  status: excluded
+- date: '2025-06-23'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: 'Ritorsione telegrafata senza interruzione dei flussi: premio ridotto.'
+  direction: neg
+- date: '2025-06-24'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-25/news_02.md
+  reason: 'Cessate il fuoco Israele-Iran: premio di guerra ridotto.'
+  direction: neg
+- date: '2025-10-22'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-08-27/news_05.md
+  reason: 'Sanzioni su Rosneft e Lukoil: export russo atteso più difficile.'
+  direction: pos
+- date: '2026-02-01'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: Avvio di un regime di chiusura, non singolo evento isolabile.
+  status: excluded
+- date: '2026-02-17'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-06/news_02.md
+  reason: Esercitazioni e premi assicurativi, passaggio giornaliero al Brent incerto.
+  status: excluded
+- date: '2026-02-27'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: 'Rapporto IAEA, attacchi e Epic Fury attribuiti alla stessa data: datazione
+    incoerente.'
+  status: excluded
+- date: '2026-02-28'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-06/news_02.md
+  reason: Avvio della guerra e miglioramento dei flussi attribuiti alla stessa data.
+  status: excluded
+- date: '2026-03-12'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: 'Distensione, attacchi e riserve IEA attribuiti alla stessa data: pressioni
+    incompatibili.'
+  status: excluded
+- date: '2026-04-11'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-06/news_02.md
+  reason: La descrizione usa il blocco navale del 13 aprile, informazione successiva.
+  status: excluded
+- date: '2026-04-17'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: 'Annuncio di riapertura di Hormuz: premio di blocco ridotto.'
+  direction: neg
+- date: '2026-05-26'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: Ondata di raid priva di evento dettagliato verificabile nella scheda.
+  status: excluded
+- date: '2026-06-18'
+  theme: commodity_energy
+  reference: BZ=F
+  source: 2026-09-13/news_01.md
+  reason: Minaccia su Pickaxe Mountain senza corroborazione in un’altra scheda.
+  status: excluded
+- date: '2018-03-22'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-08-22/news_01.md
+  reason: 'Annuncio inatteso di dazi Section 301: maggior costo atteso per imprese
+    USA.'
+  direction: neg
+- date: '2018-06-15'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-08-22/news_01.md
+  reason: 'Dazi confermati e ritorsione cinese: maggior rischio per imprese USA.'
+  direction: neg
+- date: '2018-07-02'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-09-09/news_04.md
+  reason: Ritorsioni canadesi e altri eventi nazionali, impatto sull’indice USA non
+    univoco.
+  status: excluded
+- date: '2018-09-17'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-08-22/news_01.md
+  reason: 'Aliquota annunciata inferiore alle attese: costo tariffario atteso minore.'
+  direction: pos
+- date: '2018-10-10'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-08-22/news_01.md
+  reason: 'Selloff simultaneo a stretta monetaria: shock tariffario non isolabile.'
+  status: excluded
+- date: '2018-10-29'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-09-13/news_04.md
+  reason: 'Minaccia di estendere i dazi all’intero import cinese: costo atteso maggiore.'
+  direction: neg
+- date: '2018-12-26'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-08-22/news_01.md
+  reason: Rimbalzo da posizionamento estremo, senza nuova decisione tariffaria.
+  status: excluded
+- date: '2019-02-19'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-08-30/news_04.md
+  reason: 'Rapporto su possibili dazi auto: applicazione e impatto sull’indice USA
+    non univoci.'
+  status: excluded
+- date: '2019-05-13'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-09-08/news_05.md
+  reason: 'Ritorsione cinese ai dazi USA: costi e rischio commerciale in aumento.'
+  direction: neg
+- date: '2019-08-12'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-08-22/news_01.md
+  reason: 'Allargamento dei dazi sul residuo import cinese: costi attesi maggiori.'
+  direction: neg
+- date: '2024-12-15'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-09-13/news_04.md
+  reason: Fase pre-insediamento, non provvedimento discreto identificato per questa
+    data.
+  status: excluded
+- date: '2025-01-01'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-08-30/news_04.md
+  reason: Avvio di fase descritto in giorno festivo, non annuncio discreto per l’indice.
+  status: excluded
+- date: '2025-01-14'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-08-22/news_01.md
+  reason: 'Indiscrezione su introduzione graduale dei dazi: costo atteso attenuato.'
+  direction: pos
+- date: '2025-02-27'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-08-22/news_01.md
+  reason: 'Conferma di dazi al 25% sui vicini USA: costi attesi maggiori.'
+  direction: neg
+- date: '2025-04-02'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-08-23/news_01.md
+  reason: 'Annuncio di dazi reciproci generalizzati: costi attesi maggiori.'
+  direction: neg
+- date: '2025-04-04'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-09-09/news_04.md
+  reason: 'Ritorsione ai dazi USA: maggiore intensità della guerra commerciale.'
+  direction: neg
+- date: '2025-04-30'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-08-22/news_01.md
+  reason: 'Deroghe ai dazi auto: costo tariffario atteso attenuato.'
+  direction: pos
+- date: '2025-07-07'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-09-13/news_04.md
+  reason: 'Lettera riferita alla Thailandia: trasmissione al S&P 500 non univoca.'
+  status: excluded
+- date: '2026-08-18'
+  theme: regulatory
+  reference: ^GSPC
+  source: 2026-08-22/news_01.md
+  reason: 'Disputa Canada-USA insieme a selloff dei bond lunghi: fattori non separabili.'
+  status: excluded

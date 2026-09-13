@@ -40,4 +40,4 @@ if [[ $RC -eq 0 ]]; then
 fi
 
 log "DONE run_scorecard (rc=$RC)."
-exit 0
+exit "$RC"

@@ -1,7 +1,7 @@
 # Prompt di ricerca notizie — Morning Briefing (v2.2, 2026-06-06)
 
-> Questo è il prompt che la routine schedulata di Claude esegue ogni mattina.
-> Copia canonica e versionabile. **Incolla nella routine `/schedule` SOLO il blocco
+> Questo è il prompt che la routine programmata di ChatGPT esegue ogni mattina.
+> Copia canonica e versionabile. **Usa nella routine SOLO il blocco
 > qui sotto delimitato da `=== PROMPT START/END ===`** (è in inglese di proposito:
 > un prompt in inglese produce un briefing in inglese — la v2/v2.1 erano in italiano
 > e facevano uscire il briefing in italiano).
@@ -30,7 +30,7 @@ read their full text — in that case verify the story on an accessible source
 verifiable primary link/source.
 
 **Deduplication (important).** Before generating the briefing, read the most recent
-briefing file in `~/Claude/morning brief/` (the previous day's file). Any story
+briefing file in `/Users/riccardo/Claude/morning brief/` (the previous day's file). Any story
 already present there with **no concrete new development today** must be excluded — do
 not repeat static facts, standing estimates, or unchanged institutional positions. A
 story may reappear **only** if there is a concrete update (new data released, policy
@@ -65,10 +65,17 @@ is a data release, include actual vs expected as above.
 The single most market-moving development to monitor today, and why.
 
 **Saving.** After generating the briefing, save it as an HTML file named
-`YYYY-MM-DD-morning-briefing.html` (using today's date) in `~/Claude/morning brief/`
+`YYYY-MM-DD-morning-briefing.html` (using today's Europe/Rome date) in
+`/Users/riccardo/Claude/morning brief/`
 — clean, readable HTML: white background, sans-serif font, comfortable line spacing,
-styled headings, mobile-friendly. **Keep a stable HTML structure** (consistent
-`<h1>`/`<h2>`/`<h3>` headings for sections and story titles): a downstream parser
-reads this file, so do not change the tag layout from one day to the next.
+styled headings, mobile-friendly. **Keep the existing HTML structure**: exactly
+20 numbered story containers with `class="story"`, 10 under an `<h2>` containing
+"International" and 10 under an `<h2>` containing "Economics & Finance". Each
+story needs an `<h3>` headline, a text paragraph, and a source link with the
+actual URL. The downstream parser depends on these tags and class names. Build
+the entire HTML in a temporary file in the same directory, verify 20 story
+containers and a closing `</body>` tag, then atomically rename it to the final
+filename. If the final file already exists and passes these checks, do not
+overwrite it. Never publish a partial briefing as the final filename.
 
 === PROMPT END ===

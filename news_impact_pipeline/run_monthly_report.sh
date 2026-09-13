@@ -1,20 +1,20 @@
 #!/bin/zsh
 # run_monthly_report.sh — wrapper launchd (Fase 6 / Layer 6).
 # Una volta al mese (1° del mese) produce il Report Strategico Mensile del mese
-# appena concluso: genera la bozza aggregata, lancia Claude headless per compilare
+# appena concluso: genera la bozza aggregata, lancia Codex headless per compilare
 # le sezioni (PHASE6_RUNBOOK.md), poi rende l'HTML. Idempotente (sentinella .done).
 
 set -u
 export PATH="/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
-MODEL="claude-opus-5"
+MODEL="gpt-6-astra"
 PROJECT="$HOME/Claude"
 NEWSDIR="$PROJECT/mercati_finanza"
 PIPE="$NEWSDIR/news_impact_pipeline"
 PY="$PIPE/venv/bin/python"
 MONTHLY="$NEWSDIR/daily_analysis/_monthly"
 LOGDIR="$PIPE/logs"
-CLAUDE="/opt/homebrew/bin/claude"
+CODEX="/Applications/ChatGPT.app/Contents/Resources/codex"
 
 mkdir -p "$LOGDIR" "$MONTHLY"
 MONTH=$(date -v-1m +%Y-%m)          # mese appena concluso (BSD date, macOS)
@@ -38,7 +38,10 @@ trap 'rmdir "$LOCK" 2>/dev/null' EXIT
 log "START report mensile $MONTH."
 
 # 1) Bozza aggregata (input per l'agente).
-"$PY" "$PIPE/monthly_digest.py" --month "$MONTH" --force >> "$LOG" 2>&1
+"$PY" "$PIPE/monthly_digest.py" --month "$MONTH" --force >> "$LOG" 2>&1 || {
+  log "ERROR: bozza aggregata non prodotta."
+  exit 1
+}
 
 # 2) Compilazione sezioni via Claude headless.
 read -r -d '' PROMPT <<EOF
@@ -56,13 +59,26 @@ previsioni falsificabili.
 EOF
 
 cd "$NEWSDIR"
-"$CLAUDE" -p "$PROMPT" --model "$MODEL" --permission-mode bypassPermissions >> "$LOG" 2>&1
-log "Claude exit code $?."
+"$CODEX" exec --model "$MODEL" -c 'model_reasoning_effort="high"' \
+  --sandbox workspace-write -C "$NEWSDIR" "$PROMPT" </dev/null >> "$LOG" 2>&1
+RC=$?
+log "Codex exit code $RC."
+if (( RC != 0 )); then
+  log "ERROR: report mensile non compilato."
+  exit "$RC"
+fi
+
+"$PY" "$PIPE/validate_monthly_report.py" "$MONTHLY/$MONTH.md" >> "$LOG" 2>&1 || {
+  log "ERROR: report mensile ancora incompleto; sentinella .done non creata."
+  exit 1
+}
 
 # 3) Render HTML del report compilato.
-"$PY" "$PIPE/monthly_digest.py" --month "$MONTH" --render-only >> "$LOG" 2>&1 \
-  && log "HTML report mensile generato: $MONTHLY/$MONTH.html" \
-  || log "WARN: render-only fallito."
+"$PY" "$PIPE/monthly_digest.py" --month "$MONTH" --render-only >> "$LOG" 2>&1 || {
+  log "ERROR: render-only fallito."
+  exit 1
+}
+log "HTML report mensile generato: $MONTHLY/$MONTH.html"
 
 touch "$DONE"
 log "DONE report mensile $MONTH."

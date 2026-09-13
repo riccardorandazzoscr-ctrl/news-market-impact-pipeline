@@ -12,7 +12,7 @@ pescare 20-40 analoghi per tema invece di 5.
 
 Sottocomandi:
   build                          (ri)costruisce knowledge_base/_episodes.yaml
-  find --theme X [--direction d] [--before YYYY-MM-DD]
+  find --theme X [--direction d --direction-reference TICKER] [--before YYYY-MM-DD]
                                  stampa le date-episodio (CSV pronto per --events)
   stats                          conteggio episodi per tema
 """
@@ -28,6 +28,7 @@ import yaml
 DAILY_DIR = Path.home() / "Claude" / "mercati_finanza" / "daily_analysis"
 KB_DIR = Path.home() / "Claude" / "mercati_finanza" / "knowledge_base"
 LIB_PATH = KB_DIR / "_episodes.yaml"   # prefisso "_" → build_catalog lo ignora
+REVIEW_PATH = KB_DIR / "_direction_reviews.yaml"
 TAXONOMY_PATH = Path(__file__).with_name("subtheme_taxonomy.yaml")
 
 DATE_RE = re.compile(r"\b(\d{4}-\d{2}-\d{2})\b")
@@ -143,8 +144,7 @@ def declared_episodes(text: str) -> dict[str, tuple[set[str], set[str]]]:
     """Episodi dichiarati nella scheda: {data: (versi, token di meccanismo)}.
 
     Ignora le righe di intestazione/separatore della tabella e le righe il cui
-    verso non è riconoscibile: meglio ricadere sull'euristica che registrare un
-    segno inventato."""
+    verso non è riconoscibile: restano fuori dai filtri direzionali per asset."""
     out: dict[str, tuple[set[str], set[str]]] = {}
     for d, verso_raw, mecc_raw in DECLARED_ROW_RE.findall(text):
         versi = {_VERSO_MAP[v] for v in
@@ -397,7 +397,7 @@ def cmd_build():
     today = date.today().isoformat()
 
     def add(d, theme, direction, subthemes, local, source, dir_local=(),
-            declared=False, dir_declared=()):
+            declared=False, dir_declared=(), direction_reference=""):
         if not theme or not DATE_RE.fullmatch(d):
             return
         if d > today:
@@ -406,6 +406,8 @@ def cmd_build():
         e = lib.setdefault(key, {"date": d, "theme": theme, "directions": set(),
                                  "directions_local": set(),
                                  "directions_declared": set(),
+                                 "directions_by_reference": {},
+                                 "direction_sources": {},
                                  "subthemes": set(), "subthemes_local": set(),
                                  "sources": set(), "declared": False})
         if direction:
@@ -416,6 +418,9 @@ def cmd_build():
         # inutilizzabile appena una seconda scheda citava lo stesso episodio.
         e["directions_local"].update(dir_local)
         e["directions_declared"].update(dir_declared)
+        if direction_reference and dir_declared:
+            e["directions_by_reference"].setdefault(direction_reference, set()).update(dir_declared)
+            e["direction_sources"].setdefault(direction_reference, set()).add(source)
         if declared:
             e["declared"] = True
         e["subthemes"].update(subthemes)
@@ -442,7 +447,8 @@ def cmd_build():
                     f"card:{day.name}/{card.name}",
                     dec_v or local_direction(text, d),
                     declared=bool(dec_v),
-                    dir_declared=dec_v)
+                    dir_declared=dec_v,
+                    direction_reference=_field(text, "direction_reference").strip("` "))
 
     # 2) ricerche KB (esclude _prompts e file con prefisso _)
     n_kb = 0
@@ -456,6 +462,39 @@ def cmd_build():
                 local_labels(body, d, theme, subthemes, taxonomy),
                 f"kb:{md.parent.name}",
                 local_direction(body, d))
+
+    # Le etichette legacy non hanno un asset. Il registro è una revisione
+    # esplicita, con scheda di origine e motivazione, oppure un veto per date
+    # con eventi simultanei o attribuzione temporale incerta.
+    seen_reviews = set()
+    reviews = yaml.safe_load(REVIEW_PATH.read_text(encoding="utf-8")) if REVIEW_PATH.exists() else {}
+    for row in (reviews or {}).get("reviews", []):
+        d, theme, ref = (str(row.get(k, "")).strip() for k in ("date", "theme", "reference"))
+        source = str(row.get("source", "")).strip()
+        reason = str(row.get("reason", "")).strip()
+        key = (d, theme, ref)
+        if key in seen_reviews or key[:2] not in lib or not ref or not reason or not source:
+            raise ValueError(f"Revisione direzionale incompleta o duplicata: {key}")
+        seen_reviews.add(key)
+        source_parts = Path(source).parts
+        source_file = DAILY_DIR / source
+        if (len(source_parts) != 2 or not DAY_DIR_RE.fullmatch(source_parts[0])
+                or not re.fullmatch(r"news_\d+\.md", source_parts[1])
+                or not source_file.is_file()
+                or d not in declared_episodes(source_file.read_text(encoding="utf-8"))):
+            raise ValueError(f"Fonte della revisione assente o senza data {d}: {source}")
+        e = lib[key[:2]]
+        if row.get("status") == "excluded":
+            e.setdefault("direction_review_excluded", {})[ref] = reason
+            continue
+        sign = row.get("direction")
+        if sign not in {"pos", "neg", "neutral"} or row.get("status"):
+            raise ValueError(f"Verso della revisione non valido: {key}")
+        existing = e["directions_by_reference"].get(ref, set())
+        if existing and existing != {sign}:
+            raise ValueError(f"Revisione {key} in conflitto con scheda esplicita: {existing}")
+        e["directions_by_reference"].setdefault(ref, set()).add(sign)
+        e["direction_sources"].setdefault(ref, set()).add(f"card:{source}")
 
     episodes = []
     for e in sorted(lib.values(), key=lambda x: (x["theme"], x["date"])):
@@ -473,6 +512,11 @@ def cmd_build():
                                        else ("mixed" if dirs else "")),
                          "directions": dirs,
                          "directions_declared": sorted(e["directions_declared"]),
+                         **({"directions_by_reference": {k: sorted(v) for k, v in sorted(e["directions_by_reference"].items())},
+                             "direction_sources": {k: sorted(v) for k, v in sorted(e["direction_sources"].items())}}
+                            if e["directions_by_reference"] else {}),
+                         **({"direction_review_excluded": e["direction_review_excluded"]}
+                            if e.get("direction_review_excluded") else {}),
                          "directions_local": sorted(e["directions_local"]),
                          "declared": bool(e.get("declared")),
                          "subthemes": sorted(e["subthemes"]),
@@ -495,7 +539,7 @@ def _load() -> list[dict]:
 
 def cmd_find(theme: str, direction: str | None, before: str | None,
              subtheme: list[str] | None, min_n: int, max_pool: int,
-             match_all: bool = False):
+             match_all: bool = False, direction_reference: str | None = None):
     eps = [e for e in _load() if e["theme"] == theme]
     if before:
         eps = [e for e in eps if e["date"] < before]   # no look-ahead
@@ -624,68 +668,25 @@ def cmd_find(theme: str, direction: str | None, before: str | None,
                          f"non condivisi — se li usi, potali a mano]")
         note += nested_warn
     if direction:
-        # Match STRETTO prima (solo episodi taggati esattamente `direction`), con
-        # fallback a mixed/sconosciuto solo se il pool stretto è troppo piccolo —
-        # stesso pattern del filtro sotto-tema sopra. Bug corretto (2026-08-10,
-        # segnalato dall'agente in sessione): la versione precedente lasciava
-        # passare SEMPRE "mixed"/"" insieme a `direction`, e su temi ad alto volume
-        # giornaliero (macro_data, commodity_energy — più schede/giorno tendono a
-        # fondersi in "mixed" sulla chiave (data,tema)) il pool "mixed" dominava al
-        # punto che --direction pos e --direction neg restituivano LO STESSO pool
-        # (verificato: macro_data+nfp, 51/56 episodi "mixed" → 0 differenza pos/neg).
-        # Match sulla LISTA delle direzioni osservate (vedi cmd_build): un episodio
-        # conta come "pos" se almeno una delle schede di quel giorno era pos, anche
-        # se un'altra era neg. Fallback alla vecchia chiave singola per librerie
-        # generate prima del 2026-08-10.
-        # QUATTRO livelli dal 2026-08-29 (prima tre). Il livello nuovo è il primo:
-        # `directions_declared`, cioè i versi scritti A MANO nella colonna "Verso"
-        # del blocco episodi della scheda — non inferiti da nessuna regex.
-        #
-        # Perché è stato aggiunto, e perché risolve la CLASSE invece del caso.
-        # Il verso di un episodio aveva due fonti di qualità incomparabile — la
-        # dichiarazione dell'analista e l'euristica `DIRECTION_PATTERNS` — che
-        # `cmd_build` fondeva nello stesso insieme `directions_local`. Bastava che
-        # UNA seconda scheda citasse lo stesso episodio solo in prosa perché
-        # l'euristica gli appiccicasse il verso opposto, e il filtro `--direction`
-        # lo restituisse per ENTRAMBI i versi. Misurato il 2026-08-29 su 984
-        # episodi: 171 avevano `pos` e `neg` insieme, e **152 di questi erano
-        # episodi con blocco dichiarato**, tutti citati da più schede (fino a 24).
-        # Cioè: la dichiarazione scritta a mano veniva sistematicamente annullata
-        # dall'euristica di un'altra scheda.
-        # È la causa comune di errori che finora sono stati trattati uno alla volta
-        # come problemi di vocabolario: «imporre vs revocare una sanzione» (lacuna
-        # del 20/08) e «`hormuz` non distingue escalation da de-escalation» (lacuna
-        # del 29/08, 3 episodi su 21 con il verso rovesciato). Non erano token da
-        # calibrare: era questa fusione. Allargare il vocabolario non li avrebbe
-        # risolti, e ogni token nuovo ne avrebbe generato uno nuovo.
-        # Il livello dichiarato **migliora da solo**: le schede compilano il blocco
-        # per regola di runbook dal 2026-08-19, quindi cresce ogni giorno mentre
-        # l'euristica resta ferma. Non c'è nessuna regex da mantenere.
-        declared = [e for e in eps if direction in (e.get("directions_declared") or [])]
-        local = [e for e in eps if direction in (e.get("directions_local") or [])]
-        strict = [e for e in eps
-                  if direction in (e.get("directions") or [e.get("direction", "")])]
-        if len(declared) >= min_n:
-            eps = declared
-            note += (f" [direzione '{direction}' DICHIARATA dalle schede: "
-                     f"{len(declared)} episodi — filtro forte, nessuna euristica]")
-        elif len(local) >= min_n:
-            eps = local
-            note += (f" [direzione '{direction}' su marcatori date-locali: "
-                     f"{len(local)} episodi]")
-            if declared:
-                note += (f" [⚠ {len(declared)} episodi l'avevano DICHIARATA: sotto "
-                         f"la soglia, quindi il pool include versi inferiti da regex. "
-                         f"Con --min-n {len(declared)} avresti solo i dichiarati]")
-        elif len(strict) >= min_n:
-            eps = strict
-            note += (f" [direzione date-locale dava solo {len(local)} episodi "
-                     f"(<{min_n}) → uso la direzione a livello di scheda: FILTRO DEBOLE, "
-                     f"dichiaralo nel caveat]")
+        # A sign has meaning only for an explicit reference asset. Legacy labels
+        # mix event sentiment and asset pressure. Never widen this filter to
+        # meet min_n, and never accept conflicting signs for the same reference.
+        if not direction_reference:
+            eps = []
+            note += " [⚠ specificare --direction-reference TICKER: Verso senza asset è ambiguo; nessun episodio selezionato]"
         else:
-            eps = [e for e in eps if e["direction"] in (direction, "mixed", "")]
-            note += (f" [direzione '{direction}' stretta dava solo {len(strict)} "
-                     f"episodi (<{min_n}) → incluso mixed/sconosciuto]")
+            reference = direction_reference.strip()
+            missing = sum(not e.get("directions_by_reference", {}).get(reference) for e in eps)
+            conflicts = sum(len(set(e.get("directions_by_reference", {}).get(reference, []))) > 1 for e in eps)
+            vetoed = sum(reference in e.get("direction_review_excluded", {}) for e in eps)
+            eps = [e for e in eps
+                   if set(e.get("directions_by_reference", {}).get(reference, [])) == {direction}
+                   and reference not in e.get("direction_review_excluded", {})]
+            note += (f" [direzione '{direction}' riferita a {reference}: {len(eps)} episodi; "
+                     f"esclusi {missing} senza riferimento, {conflicts} con versi in conflitto "
+                     f"e {vetoed} dalla revisione; nessun fallback direzionale]")
+            if len(eps) < min_n:
+                note += f" [⚠ N={len(eps)} < {min_n}: campione insufficiente, non ampliato con etichette ambigue]"
     dates = sorted({e["date"] for e in eps})
     # Tetto di recency: su temi a pool largo (geopolitical, commodity_energy) troppi
     # episodi diluiscono il segnale direzionale e mescolano regimi diversi. Scorecard
@@ -774,6 +775,7 @@ def main():
     f = sub.add_parser("find")
     f.add_argument("--theme", required=True)
     f.add_argument("--direction", choices=["pos", "neg", "neutral"], default=None)
+    f.add_argument("--direction-reference", help="Ticker del prezzo cui si riferisce il verso; necessario con --direction.")
     f.add_argument("--subtheme", action="append", default=None,
                    help="Token di sotto-tema (ripetibile). Restringe il pool; "
                         "se lascia <--min-n episodi ricade sul tema.")
@@ -802,7 +804,7 @@ def main():
         cmd_labels(args.theme, args.min_n)
     elif args.cmd == "find":
         cmd_find(args.theme, args.direction, args.before, args.subtheme,
-                 args.min_n, args.max_pool, args.match_all)
+                 args.min_n, args.max_pool, args.match_all, args.direction_reference)
     elif args.cmd == "stats":
         cmd_stats()
 

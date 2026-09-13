@@ -1,5 +1,5 @@
-generated_at: '2026-09-10T17:43:13'
-num_entries: 28
+generated_at: '2026-09-13T16:38:23'
+num_entries: 29
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -139,6 +139,56 @@ entries:
   - export terminal
   - Ust-Luga
   - Primorsk
+- source_file: Auto-limitazione volontaria dell'offerta in settori a capacità strategica;
+    precedenti storici e trasmissione ai mercati (1975–presente)/Auto-limitazione
+    volontaria dell'offerta in settori a capacità strategica- precedenti storici
+    e trasmissione ai mercati (1975–presente).md
+  title: 'Auto-limitazione volontaria dell''offerta in settori a capacità strategica:
+    precedenti storici e trasmissione ai mercati (1975–presente)'
+  date_compiled: 2026-09-13
+  primary_theme: structural_themes
+  sub_themes:
+  - voluntary_capacity_constraint
+  - safety_pause
+  - regulatory_anticipation
+  relevant_assets:
+  - ^NDX
+  - SOXX
+  - IGV
+  - XLU
+  external_assets_mentioned:
+  - produttori di uranio/nucleare storici (URA, Cameco/CCJ, NLR, Exelon, E.ON, RWE,
+    EnBW) — non in DB, canale Three Mile Island/Fukushima
+  - ETF settore aereo USA (es. JETS, indice XAL; DAL, UAL, AAL, LUV) — non in DB,
+    canale disciplina di capacità 2008-2016
+  - produttori di memoria (MU, Samsung 005930.KS, SK Hynix 000660.KS) — parzialmente
+    in DB via studio ciclo memoria
+  - Cheniere/GNL (LNG) — non in DB, canale sostituzione post-Fukushima
+  time_window:
+    start: 1975-01-01
+    end: present
+  regime_phases:
+  - pre_market_safety_self_governance_1975_2010: 1975-02-24 to 2011-03-10
+  - nuclear_capacity_derating_2011_2013: 2011-03-11 to 2013-12-31
+  - capacity_discipline_margin_2008_2016: 2008-01-01 to 2016-12-31
+  - platform_ethics_retrenchment_2018_2021: 2018-03-19 to 2021-11-02
+  - ai_frontier_self_governance_2019_presente: 2019-02-14 to present
+  keywords:
+  - auto-limitazione
+  - capacity discipline
+  - disciplina di capacità
+  - voluntary pause
+  - moratoria
+  - safety pause
+  - frontier AI
+  - rallentamento coordinato
+  - capex discipline
+  - self-regulation
+  - market share defense
+  - gain-of-function
+  - Asilomar
+  - ritiro volontario
+  - precautionary pause
 - source_file: Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo
     della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
   title: Ciclo della memoria (DRAM/NAND/HBM) e mercato azionario coreano — regime

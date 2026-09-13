@@ -38,6 +38,9 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
   run "analogues.py — filtro sotto-tema (unione vs --match-all)" \
       tests/test_analogues_match_all.py
 
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "analogues" ] && \
+  run "analogues.py — verso e riferimento" tests/test_analogues_direction.py
+
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "asset" ] && \
   run "universo asset — registro, dati, mappa, integrazione, regressione" \
       tests/test_asset_universe.py

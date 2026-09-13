@@ -7,15 +7,17 @@ Stato per filone. Max 10 righe a filone. Ciò che resta vero per sempre va in
 
 ## Impianto generale
 
-- **Stato** — **tutte le fasi complete e live**: market data (update 08:00), knowledge
-  base (auto-indicizzata), classificazione (l'agente stesso), event study con libreria
-  episodi "Opzione B", automazione giornaliera, report mensile strategico, scorecard
-  settimanale. ⚠ Non descrivere nessuna fase come "da fare" o "Opzione A".
+- **Stato** — tutte le fasi implementate: market data, knowledge base, classificazione
+  dell'agente, event study "Opzione B", analisi giornaliera, report mensile e scorecard.
+  Il 13/09/2026 l'orchestrazione è stata migrata ai task locali ChatGPT; la prima
+  esecuzione programmata resta da osservare. ⚠ Non descrivere fasi come "da fare".
 - **Deciso** — niente API key Anthropic; l'Opzione B ha sostituito le ~5 analogie scelte
   a mano; le research le scrive il maintainer.
-- **Prossimo passo** — nessuno aperto sull'impianto: il lavoro è sui tre filoni sotto.
+- **Prossimo passo** — verificare i primi run ChatGPT dalla sezione Scheduled,
+  il brief HTML, il report, la scorecard e l'invio Telegram. Vedi
+  `references/chatgpt_routine.md`.
 
-Aggiornato: 2026-08-30
+Aggiornato: 2026-09-13
 
 ---
 

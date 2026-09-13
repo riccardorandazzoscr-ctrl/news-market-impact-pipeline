@@ -22,13 +22,13 @@ sistema (riportare N, dispersione, "indicative only").
 
 ## Input
 
-- Schede del mese in `~/Claude/daily_analysis/YYYY-MM-*/news_*.md`.
-- Ultima scorecard in `~/Claude/daily_analysis/_scorecard/`.
+- Schede del mese in `~/Claude/mercati_finanza/daily_analysis/YYYY-MM-*/news_*.md`.
+- Ultima scorecard in `~/Claude/mercati_finanza/daily_analysis/_scorecard/`.
 - Catalogo KB (`knowledge_base/catalog.yaml`) per i regimi attivi.
 
 ## Output
 
-- `~/Claude/daily_analysis/_monthly/YYYY-MM.md` (+ `.html`): il report compilato.
+- `~/Claude/mercati_finanza/daily_analysis/_monthly/YYYY-MM.md` (+ `.html`): il report compilato.
 
 ## Procedura (comandi dalla dir `news_impact_pipeline/`)
 
@@ -83,7 +83,7 @@ quando ci sarà almeno un'edizione di previsioni da controllare.)
 ## Prompt suggerito per la routine `/schedule`
 
 > Produci il Report Strategico Mensile del mese appena concluso seguendo
-> `~/Claude/news_impact_pipeline/PHASE6_RUNBOOK.md`: genera la bozza aggregata con
+> `~/Claude/mercati_finanza/news_impact_pipeline/PHASE6_RUNBOOK.md`: genera la bozza aggregata con
 > `monthly_digest.py`, poi compila le 6 sezioni (regimi, rischi, calendario, scenari
 > condizionali, lettura pesata dalla scorecard, 3-4 previsioni falsificabili),
 > rispettando lo stile (espandi le sigle, spiega i meccanismi, pesa per la scorecard:

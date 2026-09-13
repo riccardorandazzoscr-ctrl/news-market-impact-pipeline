@@ -26,9 +26,9 @@ processare il morning briefing del giorno e produrre le schede di analisi.
 
 ## Output
 
-- `~/Claude/daily_analysis/YYYY-MM-DD/_index.md` — digest di triage (tutte le 20
+- `~/Claude/mercati_finanza/daily_analysis/YYYY-MM-DD/_index.md` — digest di triage (tutte le 20
   notizie con decisione ✅/✖ + motivazione + link alle schede).
-- `~/Claude/daily_analysis/YYYY-MM-DD/news_NN.md` — una scheda completa per ogni
+- `~/Claude/mercati_finanza/daily_analysis/YYYY-MM-DD/news_NN.md` — una scheda completa per ogni
   notizia tenuta (subset triato: tipicamente 3-6/giorno).
 
 ## Economia del run (VINCOLANTE — leggi prima di iniziare)
@@ -76,7 +76,8 @@ venv/bin/python pipeline_tools.py new-card --date AAAA-MM-GG --slug <slug> \
 
 # 4. pool di analoghi dalla libreria
 venv/bin/python analogues.py find --theme <t> [--subtheme <tok>]... \
-  [--direction pos|neg|neutral] [--before AAAA-MM-GG] [--min-n N] [--max-pool N] \
+  [--direction pos|neg|neutral --direction-reference TICKER] \
+  [--before AAAA-MM-GG] [--min-n N] [--max-pool N] \
   [--match-all]
 #   --subtheme ripetibile · --max-pool default 30 (0 = nessun tetto)
 #   --min-n = soglia sotto cui il filtro sotto-tema NON viene applicato
@@ -124,7 +125,7 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
    Il `find` recupera gli **episodi storici analoghi dalla libreria** (Opzione B —
    pool ampio invece di 5 a mano), filtrando per sotto-tema, **direzione** e con il
    **no-look-ahead** (`--before` = la data della notizia).
-   **Passa SEMPRE `--direction`** e, sui temi a pool largo (`geopolitical`,
+   **Passa SEMPRE `--direction` e `--direction-reference TICKER`** e, sui temi a pool largo (`geopolitical`,
    `commodity_energy`), **anche `--subtheme`**: senza filtri il pool si gonfia e
    diluisce il segnale (scorecard W28→W30: IC eroso proprio su quei temi). La libreria
    applica già un **tetto di recency** (default: 30 episodi più recenti = regime
@@ -173,36 +174,27 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
    classificazione, asset, regime, episodi+motivazione, lettura sintetica, caveat).
    Se min(N) < 10 → la scheda riporta già "INDICATIVE ONLY".
 
-   **Leggi la riga diagnostica di `find`, anche per la direzione.** Dal 2026-08-29
-   `--direction` ha **quattro** livelli: verso **DICHIARATO** dalle schede (forte,
-   nessuna euristica) → marcatori date-locali da regex → direzione della scheda
-   (**debole**, e lo dichiara) → mixed/sconosciuto. Se leggi «uso la direzione a
-   livello di scheda» il segno del pool non descrive gli episodi ma l'orientamento
-   delle schede che li avevano citati: va dichiarato nel caveat.
-
-   ⚠ **Se la riga dice «N episodi l'avevano DICHIARATA: sotto la soglia», abbassa
-   `--min-n` a quel numero invece di accettare il pool più largo.** È il singolo
-   controllo che previene la classe di errore più costosa del sistema: un pool che
-   contiene episodi **di verso opposto** a quello richiesto. Caso reale del 29/08:
-   `commodity_energy + hormuz + --direction pos` restituiva 13 episodi, di cui 5
-   erano escalation **dichiarate `neg`** — entrate perché il filtro era degradato al
-   livello scheda. Con `--min-n 8` il pool scende a 8 episodi tutti dichiarati `pos`.
-   Meglio N=8 pulito che N=13 con il 38% di segni rovesciati: un episodio con il
-   verso sbagliato non diluisce la mediana, la **sposta dalla parte opposta**.
-
-   **Compila il blocco episodi DICHIARATO** (tabella `Data | Verso | Meccanismo |
-   Descrizione` in `news_card_template.md`). Da 2026-08-19 è da lì che la libreria
-   legge verso e meccanismo di ogni episodio, invece di dedurli dalla prosa: i campi
-   dichiarati **vincono** sull'euristica. È l'unico punto della scheda che alimenta
-   direttamente la qualità dei pool di domani — compilarlo male è peggio che lasciarlo
-   vuoto, perché una riga con verso illeggibile viene ignorata ma una sbagliata no.
-   Dal 2026-08-29 la colonna **Verso** conta il doppio: alimenta un livello di filtro
-   dedicato (`directions_declared`) che l'euristica non può più contaminare, ed è il
-   solo modo di far crescere quel livello. Ogni riga che compili oggi è un episodio
-   che domani filtra correttamente per verso — anche se un'altra scheda lo cita in
-   prosa con parole di segno opposto.
-   Verifica i token con `analogues.py labels --theme <t>` prima di sceglierli, e
-   controlla l'adozione con `analogues.py stats`.
+   **Convenzione Verso dal 2026-09-13.** Passa `--direction-reference TICKER`
+   insieme a `--direction`. Il verso indica la pressione sul prezzo dell'asset
+   di riferimento (pos rialzo, neg ribasso, neutral nessuna pressione), basata sul
+   meccanismo noto all'evento, mai sul rendimento successivo. Per bond: prezzo,
+   non yield; per FX: quotazione del ticker. Non significa evento buono/cattivo.
+   La scheda deve contenere nella classificazione la riga
+   ``| `direction_reference` | BZ=F |`` con il ticker scelto per tutti i suoi episodi.
+   Compila `Data | Verso | Meccanismo | Descrizione` come nel template.
+   `find` usa esclusivamente dichiarazioni con quel riferimento; esclude versi
+   conflittuali e dichiarazioni legacy prive di riferimento, conservando le fonti
+   in libreria. Nessun fallback direzionale, neppure sotto `--min-n`.
+   Senza riferimento il risultato è vuoto con diagnostica esplicita. Con campione
+   insufficiente integra episodi verificati a mano e dichiara N; non reinterpretare
+   automaticamente le etichette legacy. Il registro
+   `knowledge_base/_direction_reviews.yaml` conserva scheda d'origine, asset e
+   motivazione. Il `build` incorpora anche i veti: una data dubbia resta esclusa
+   pur se una scheda recente le attribuiva un verso. Al 13/09 sono stati esaminati
+   gli episodi dichiarati di energia per `BZ=F` e quelli regolatori per `^GSPC`;
+   gli altri temi restano privi di verso verificato per asset.
+   Per confrontare altri asset puoi usare lo stesso evento, ma non attribuire loro
+   il verso del riferimento senza una classificazione separata.
 
    ⚠ **Dichiara la geografia sulle release non americane** (dal 2026-08-26): se
    l'episodio è un dato o una decisione dell'**area euro** o del **Regno Unito**,
@@ -309,9 +301,9 @@ La lunghezza non è un problema; l'oscurità sì. Regole:
 ## Prompt suggerito per la routine `/schedule`
 
 > Processa il morning briefing di oggi seguendo
-> `~/Claude/news_impact_pipeline/PHASE5_RUNBOOK.md`: genera il digest di triage,
+> `~/Claude/mercati_finanza/news_impact_pipeline/PHASE5_RUNBOOK.md`: genera il digest di triage,
 > tria le 20 notizie (subset triato), e produci una scheda di event study completa
-> per ciascuna notizia tenuta in `~/Claude/daily_analysis/<oggi>/`. Se il DB mercati
+> per ciascuna notizia tenuta in `~/Claude/mercati_finanza/daily_analysis/<oggi>/`. Se il DB mercati
 > è vuoto, ricostruiscilo prima con bootstrap + fetch_fred. **Rispetta la sezione
 > "Stile e chiarezza" del runbook: espandi tutte le sigle alla prima occorrenza,
 > spiega i meccanismi causali, interpreta i numeri a parole — preferisci la chiarezza

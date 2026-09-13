@@ -1,5 +1,5 @@
-generated_at: '2026-09-12T07:45:02'
-num_episodes: 1064
+generated_at: '2026-09-13T16:38:28'
+num_episodes: 1075
 episodes:
 - date: '1984-01-01'
   theme: commodity_energy
@@ -91,6 +91,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-08-31/news_01.md
   directions_local:
   - neg
   declared: true
@@ -149,6 +155,8 @@ episodes:
   directions_declared:
   - neg
   - neutral
+  direction_review_excluded:
+    BZ=F: Evento non identificato con certezza nella scheda.
   directions_local:
   - neg
   - neutral
@@ -210,6 +218,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-08-31/news_01.md
   directions_local:
   - neg
   declared: true
@@ -313,6 +327,12 @@ episodes:
   - neutral
   directions_declared:
   - neg
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-06/news_03.md
   directions_local:
   - neg
   declared: true
@@ -355,6 +375,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
   directions_local:
   - neg
   - pos
@@ -397,7 +423,7 @@ episodes:
   - negotiation_track
   - sanctions
   - shipping_chokepoint
-  n_sources: 28
+  n_sources: 29
 - date: '2015-08-24'
   theme: commodity_energy
   direction: mixed
@@ -431,6 +457,15 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
+  direction_review_excluded:
+    BZ=F: Rimozione sanzioni iraniane e apertura OPEC-Russia attribuite alla stessa
+      data, con pressioni opposte.
   directions_local:
   - neg
   - pos
@@ -473,7 +508,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 30
+  n_sources: 32
 - date: '2016-01-20'
   theme: commodity_energy
   direction: neg
@@ -496,6 +531,12 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-08-30/news_03.md
   directions_local:
   - pos
   declared: true
@@ -530,6 +571,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-08-23/news_02.md
   directions_local:
   - neg
   - pos
@@ -567,7 +614,7 @@ episodes:
   - oil_supply_shock
   - sanctions
   - supply_disruption
-  n_sources: 20
+  n_sources: 21
 - date: '2018-11-13'
   theme: commodity_energy
   direction: neg
@@ -639,6 +686,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
   directions_local:
   - neg
   - pos
@@ -670,7 +723,7 @@ episodes:
   - infrastructure_attack
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 22
+  n_sources: 24
 - date: '2019-05-13'
   theme: commodity_energy
   direction: mixed
@@ -681,6 +734,13 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-08/news_01.md
+    - card:2026-09-13/news_01.md
   directions_local:
   - neg
   - pos
@@ -714,17 +774,27 @@ episodes:
   - iran
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 24
+  - upstream_export_strike
+  n_sources: 26
 - date: '2019-06-13'
   theme: commodity_energy
   direction: mixed
   directions:
   - neg
   - neutral
+  - pos
   directions_declared:
   - neg
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
   directions_local:
   - neg
+  - pos
   declared: true
   subthemes:
   - de_escalation
@@ -742,6 +812,7 @@ episodes:
   - iran_sanctions
   - middle_east
   - middle_east_war
+  - military_escalation
   - oil_supply
   - oil_supply_shock
   - refinery_products
@@ -757,8 +828,9 @@ episodes:
   subthemes_local:
   - infrastructure_attack
   - iran
+  - military_escalation
   - shipping_chokepoint
-  n_sources: 21
+  n_sources: 22
 - date: '2019-07-01'
   theme: commodity_energy
   direction: mixed
@@ -769,6 +841,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-08-31/news_01.md
   directions_local:
   - neg
   - pos
@@ -808,7 +886,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 24
+  n_sources: 25
 - date: '2019-08-01'
   theme: commodity_energy
   direction: neg
@@ -858,6 +936,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
   directions_local:
   - neg
   - pos
@@ -898,7 +982,7 @@ episodes:
   - shipping_chokepoint
   - supply_disruption
   - upstream_export_strike
-  n_sources: 26
+  n_sources: 28
 - date: '2019-09-16'
   theme: commodity_energy
   direction: mixed
@@ -909,6 +993,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
   directions_local:
   - neg
   - pos
@@ -958,7 +1048,7 @@ episodes:
   - infrastructure_attack
   - oil_supply_shock
   - supply_disruption
-  n_sources: 29
+  n_sources: 31
 - date: '2019-09-18'
   theme: commodity_energy
   direction: mixed
@@ -1058,6 +1148,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-08-31/news_01.md
   directions_local:
   - neg
   declared: true
@@ -1114,6 +1210,15 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
+  direction_review_excluded:
+    BZ=F: Il premio iniziale si rovescia nella stessa seduta dopo nuove informazioni;
+      manca un timestamp univoco.
   directions_local:
   - neg
   - pos
@@ -1174,7 +1279,7 @@ episodes:
   - opec
   - opec_policy
   - shipping_chokepoint
-  n_sources: 51
+  n_sources: 53
 - date: '2020-01-31'
   theme: commodity_energy
   direction: mixed
@@ -1227,6 +1332,9 @@ episodes:
   - pos
   directions_declared:
   - pos
+  direction_review_excluded:
+    BZ=F: 'Taglio OPEC contemporaneo al crollo della domanda pandemica: pressione
+      giornaliera non isolabile.'
   directions_local:
   - pos
   declared: true
@@ -1240,7 +1348,7 @@ episodes:
   - oil_supply_shock
   - opec_policy
   - supply_disruption
-  n_sources: 4
+  n_sources: 5
 - date: '2020-08-06'
   theme: commodity_energy
   direction: neg
@@ -1279,6 +1387,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-08-31/news_01.md
   directions_local:
   - neg
   declared: true
@@ -1316,6 +1430,8 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    BZ=F: Picco delle commodity, non evento discreto con pressione ex ante chiara.
   directions_local:
   - neg
   declared: true
@@ -1367,6 +1483,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    BZ=F: 'Taglio di Nord Stream 1: canale del gas europeo, non del Brent in modo
+      univoco.'
   directions_local:
   - neg
   declared: true
@@ -1435,6 +1554,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    BZ=F: 'Schede diverse citano dati cinesi, negoziati JCPOA e distillati: eventi
+      distinti.'
   directions_local:
   - neg
   - pos
@@ -1479,11 +1601,12 @@ episodes:
   - infrastructure_attack
   - iran
   - negotiation_track
+  - opec_policy
   - refinery_products
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 37
+  n_sources: 38
 - date: '2022-08-22'
   theme: commodity_energy
   direction: neg
@@ -1512,6 +1635,12 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-07/news_02.md
   directions_local:
   - pos
   declared: true
@@ -1558,6 +1687,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    BZ=F: 'Embargo sui prodotti raffinati: canale crack, pressione sul greggio non
+      univoca.'
   directions_local:
   - neg
   - pos
@@ -1605,6 +1737,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
   directions_local:
   - neg
   - pos
@@ -1635,7 +1773,7 @@ episodes:
   - iran
   - negotiation_track
   - shipping_chokepoint
-  n_sources: 23
+  n_sources: 24
 - date: '2023-03-13'
   theme: commodity_energy
   direction: neg
@@ -1660,6 +1798,12 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-08-30/news_03.md
   directions_local:
   - pos
   declared: true
@@ -1734,6 +1878,15 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
+  direction_review_excluded:
+    BZ=F: 'Data usata come inizio di regime Houthi e per altri shock: manca evento
+      discreto univoco.'
   directions_local:
   - neg
   - pos
@@ -1767,7 +1920,7 @@ episodes:
   - refinery_products
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 21
+  n_sources: 23
 - date: '2023-12-18'
   theme: commodity_energy
   direction: mixed
@@ -1776,6 +1929,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    BZ=F: 'Sospensione dei transiti nel Mar Rosso: canale noli, trasmissione al Brent
+      non univoca.'
   directions_local:
   - neg
   declared: true
@@ -1825,6 +1981,8 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    BZ=F: 'Raid contro Houthi: deterrenza o escalation, pressione Brent non univoca.'
   directions_local:
   - neg
   declared: true
@@ -1880,25 +2038,40 @@ episodes:
   n_sources: 1
 - date: '2024-01-22'
   theme: commodity_energy
-  direction: ''
-  directions: []
-  directions_declared: []
+  direction: pos
+  directions:
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
+  direction_review_excluded:
+    BZ=F: Prosecuzione dei raid già prezzati, senza nuovo shock discreto.
   directions_local:
   - neg
-  declared: false
+  - pos
+  declared: true
   subthemes:
   - crack_spread
   - infrastructure_attack
+  - military_escalation
   - refinery_products
   - refinery_repair_restart
   - refinery_strike
   - sanctions_product_ban
+  - shipping_chokepoint
   - upstream_export_strike
   subthemes_local:
   - gas_europe
   - infrastructure_attack
+  - military_escalation
+  - shipping_chokepoint
   - upstream_export_strike
-  n_sources: 1
+  n_sources: 2
 - date: '2024-02-23'
   theme: commodity_energy
   direction: neg
@@ -1985,6 +2158,8 @@ episodes:
   - pos
   directions_declared:
   - pos
+  direction_review_excluded:
+    BZ=F: 'Attacchi a raffinerie russe: canale prodotti e crack, non greggio univoco.'
   directions_local:
   - neg
   - pos
@@ -2023,6 +2198,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    BZ=F: 'Attacchi a raffinerie e tensione Iran-Israele contemporanei: meccanismi
+      sovrapposti.'
   directions_local:
   - neg
   - pos
@@ -2084,6 +2262,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-08-31/news_01.md
   directions_local:
   - neg
   declared: true
@@ -2185,6 +2369,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-03/news_07.md
   directions_local:
   - neg
   - pos
@@ -2408,6 +2598,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
   directions_local:
   - neg
   - pos
@@ -2464,7 +2660,7 @@ episodes:
   - military_escalation
   - oil_supply_shock
   - shipping_chokepoint
-  n_sources: 46
+  n_sources: 48
 - date: '2024-11-27'
   theme: commodity_energy
   direction: pos
@@ -2492,6 +2688,9 @@ episodes:
   - pos
   directions_declared:
   - pos
+  direction_review_excluded:
+    BZ=F: Rinvio OPEC descritto come fase, non annuncio discreto confermato per questa
+      data.
   directions_local:
   - pos
   declared: true
@@ -2561,6 +2760,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-08-20/news_04.md
   directions_local:
   - neg
   declared: true
@@ -2601,6 +2806,15 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
+  direction_review_excluded:
+    BZ=F: 'Cessate il fuoco a Gaza e sanzioni su petroliere nella stessa data: pressioni
+      opposte.'
   directions_local:
   - neg
   - pos
@@ -2652,7 +2866,7 @@ episodes:
   - shipping_chokepoint
   - supply_disruption
   - tariff_escalation
-  n_sources: 36
+  n_sources: 38
 - date: '2025-01-26'
   theme: commodity_energy
   direction: ''
@@ -2720,6 +2934,12 @@ episodes:
   - neutral
   directions_declared:
   - neg
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-06/news_03.md
   directions_local:
   - neg
   declared: true
@@ -2778,6 +2998,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-08-31/news_01.md
   directions_local:
   - neg
   declared: true
@@ -2840,6 +3066,15 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
+  direction_review_excluded:
+    BZ=F: Rappresaglia collocata qui dalla scheda recente ma al giorno successivo
+      in altre schede.
   directions_local:
   - neg
   - pos
@@ -2900,7 +3135,7 @@ episodes:
   - iran
   - military_escalation
   - shipping_chokepoint
-  n_sources: 47
+  n_sources: 48
 - date: '2025-06-23'
   theme: commodity_energy
   direction: mixed
@@ -2911,6 +3146,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
   directions_local:
   - neg
   - pos
@@ -2966,7 +3207,7 @@ episodes:
   - iran
   - military_escalation
   - shipping_chokepoint
-  n_sources: 45
+  n_sources: 46
 - date: '2025-06-24'
   theme: commodity_energy
   direction: mixed
@@ -2976,6 +3217,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-08-25/news_02.md
   directions_local:
   - neg
   declared: true
@@ -3110,6 +3357,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-08-27/news_05.md
   directions_local:
   - neg
   - pos
@@ -3162,6 +3415,14 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
+  direction_review_excluded:
+    BZ=F: Avvio di un regime di chiusura, non singolo evento isolabile.
   directions_local:
   - neg
   - pos
@@ -3214,7 +3475,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 40
+  n_sources: 42
 - date: '2026-02-17'
   theme: commodity_energy
   direction: mixed
@@ -3224,6 +3485,8 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    BZ=F: Esercitazioni e premi assicurativi, passaggio giornaliero al Brent incerto.
   directions_local:
   - neg
   declared: true
@@ -3270,6 +3533,15 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
+  direction_review_excluded:
+    BZ=F: 'Rapporto IAEA, attacchi e Epic Fury attribuiti alla stessa data: datazione
+      incoerente.'
   directions_local:
   - neg
   - pos
@@ -3328,7 +3600,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 49
+  n_sources: 51
 - date: '2026-02-28'
   theme: commodity_energy
   direction: mixed
@@ -3337,6 +3609,14 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
+  direction_review_excluded:
+    BZ=F: Avvio della guerra e miglioramento dei flussi attribuiti alla stessa data.
   directions_local:
   - neg
   declared: true
@@ -3374,7 +3654,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 18
+  n_sources: 19
 - date: '2026-03-01'
   theme: commodity_energy
   direction: neg
@@ -3574,6 +3854,15 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
+  direction_review_excluded:
+    BZ=F: 'Distensione, attacchi e riserve IEA attribuiti alla stessa data: pressioni
+      incompatibili.'
   directions_local:
   - neg
   - pos
@@ -3622,7 +3911,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 30
+  n_sources: 32
 - date: '2026-03-19'
   theme: commodity_energy
   direction: mixed
@@ -3737,6 +4026,8 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    BZ=F: La descrizione usa il blocco navale del 13 aprile, informazione successiva.
   directions_local:
   - neg
   declared: true
@@ -3853,6 +4144,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
   directions_local:
   - neg
   - pos
@@ -3907,6 +4204,7 @@ episodes:
   - commodity_energy_oil
   - de_escalation
   - hormuz
+  - infrastructure_attack
   - iran
   - iran_hormuz
   - military_escalation
@@ -3915,7 +4213,8 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 40
+  - upstream_export_strike
+  n_sources: 42
 - date: '2026-04-18'
   theme: commodity_energy
   direction: mixed
@@ -4031,22 +4330,37 @@ episodes:
   n_sources: 20
 - date: '2026-05-26'
   theme: commodity_energy
-  direction: neg
+  direction: mixed
   directions:
   - neg
-  directions_declared: []
-  directions_local: []
-  declared: false
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
+  direction_review_excluded:
+    BZ=F: Ondata di raid priva di evento dettagliato verificabile nella scheda.
+  directions_local:
+  - pos
+  declared: true
   subthemes:
   - energy_infrastructure
   - geopolitical_risk_premium
   - hormuz
+  - military_escalation
   - oil_de_escalation
   - oil_supply_shock
   - opec
+  - shipping_chokepoint
   - strait_of_hormuz
-  subthemes_local: []
-  n_sources: 4
+  subthemes_local:
+  - iran
+  - military_escalation
+  n_sources: 5
 - date: '2026-05-27'
   theme: commodity_energy
   direction: mixed
@@ -4181,17 +4495,29 @@ episodes:
   n_sources: 20
 - date: '2026-06-18'
   theme: commodity_energy
-  direction: neg
+  direction: mixed
   directions:
   - neg
-  directions_declared: []
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-13/news_01.md
+  direction_review_excluded:
+    BZ=F: Minaccia su Pickaxe Mountain senza corroborazione in un’altra scheda.
   directions_local:
   - neg
-  declared: false
+  - pos
+  declared: true
   subthemes:
   - crack_spread
   - eu_russia_energy
   - infrastructure_attack
+  - military_escalation
   - oil_supply
   - price_cap
   - refinery_products
@@ -4200,13 +4526,16 @@ episodes:
   - russia
   - sanctions
   - sanctions_product_ban
+  - shipping_chokepoint
   - upstream_export_strike
   subthemes_local:
   - gas_europe
   - infrastructure_attack
+  - iran
+  - military_escalation
   - refinery_products
   - refinery_strike
-  n_sources: 2
+  n_sources: 3
 - date: '2026-07-06'
   theme: commodity_energy
   direction: ''
@@ -6687,7 +7016,7 @@ episodes:
   subthemes_local:
   - difesa
   - nato
-  n_sources: 2
+  n_sources: 3
 - date: '2014-11-27'
   theme: geopolitical
   direction: mixed
@@ -7421,17 +7750,19 @@ episodes:
   directions:
   - neg
   - neutral
-  directions_declared: []
+  directions_declared:
+  - pos
   directions_local:
   - neg
   - pos
-  declared: false
+  declared: true
   subthemes:
   - brazil
   - brics_bloc
   - commodity_supply
   - commodity_supply_shock
   - copper
+  - election_risk
   - em_fx
   - em_political_risk
   - latam_election
@@ -7448,7 +7779,7 @@ episodes:
   - us_brazil
   subthemes_local:
   - election_risk
-  n_sources: 7
+  n_sources: 8
 - date: '2018-11-15'
   theme: geopolitical
   direction: neg
@@ -7884,15 +8215,17 @@ episodes:
   - safe_haven
   - safe_haven_bid
   - sanctions
+  - shipping_chokepoint
   - strait_of_hormuz
   subthemes_local:
   - hormuz
+  - infrastructure_attack
   - iran
   - iran_hormuz
   - military_escalation
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 23
+  n_sources: 24
 - date: '2019-06-29'
   theme: geopolitical
   direction: neg
@@ -8359,17 +8692,21 @@ episodes:
   n_sources: 4
 - date: '2019-12-12'
   theme: geopolitical
-  direction: neg
+  direction: mixed
   directions:
   - neg
-  directions_declared: []
-  directions_local: []
-  declared: false
+  - neutral
+  directions_declared:
+  - pos
+  directions_local:
+  - pos
+  declared: true
   subthemes:
   - boe
   - boe_reaction_function
   - brexit
   - cpi
+  - election_risk
   - fiscal_credibility
   - fiscal_policy
   - gbp
@@ -8383,9 +8720,10 @@ episodes:
   - uk_cpi
   - uk_political_risk
   subthemes_local:
+  - britain_release
   - election_risk
   - gbp
-  n_sources: 2
+  n_sources: 3
 - date: '2019-12-13'
   theme: geopolitical
   direction: neg
@@ -8542,6 +8880,7 @@ episodes:
   - safe_haven_unwind
   - sanctions
   - shipping
+  - shipping_chokepoint
   - strait_of_hormuz
   - war_premium_unwind
   subthemes_local:
@@ -8550,7 +8889,7 @@ episodes:
   - iran
   - military_escalation
   - oil_supply_shock
-  n_sources: 34
+  n_sources: 35
 - date: '2020-01-15'
   theme: geopolitical
   direction: neg
@@ -8785,18 +9124,22 @@ episodes:
   n_sources: 1
 - date: '2021-06-07'
   theme: geopolitical
-  direction: neg
+  direction: mixed
   directions:
   - neg
-  directions_declared: []
-  directions_local: []
-  declared: false
+  - neutral
+  directions_declared:
+  - neg
+  directions_local:
+  - neg
+  declared: true
   subthemes:
   - brazil
   - commodity_metals
   - commodity_supply
   - commodity_supply_shock
   - copper
+  - election_risk
   - em_political_risk
   - latam_election
   - latam_elections
@@ -8805,19 +9148,23 @@ episodes:
   - resource_nationalism
   subthemes_local:
   - election_risk
-  n_sources: 5
+  n_sources: 6
 - date: '2021-12-19'
   theme: geopolitical
-  direction: neg
+  direction: mixed
   directions:
   - neg
-  directions_declared: []
-  directions_local: []
-  declared: false
+  - neutral
+  directions_declared:
+  - neg
+  directions_local:
+  - neg
+  declared: true
   subthemes:
   - brazil
   - commodity_supply_shock
   - copper
+  - election_risk
   - em_political_risk
   - latam_elections
   - lithium
@@ -8825,7 +9172,7 @@ episodes:
   - resource_nationalism
   subthemes_local:
   - election_risk
-  n_sources: 3
+  n_sources: 4
 - date: '2021-12-20'
   theme: geopolitical
   direction: neg
@@ -9002,7 +9349,7 @@ episodes:
   - nato
   - risk_off
   - sanctions
-  n_sources: 26
+  n_sources: 27
 - date: '2022-02-27'
   theme: geopolitical
   direction: neg
@@ -9030,7 +9377,7 @@ episodes:
   - difesa
   - nato
   - zeitenwende
-  n_sources: 2
+  n_sources: 3
 - date: '2022-03-07'
   theme: geopolitical
   direction: ''
@@ -9169,8 +9516,9 @@ episodes:
   - zeitenwende
   subthemes_local:
   - difesa
+  - nato
   - sanctions
-  n_sources: 11
+  n_sources: 12
 - date: '2022-06-14'
   theme: geopolitical
   direction: mixed
@@ -9264,7 +9612,7 @@ episodes:
   subthemes_local:
   - difesa
   - nato
-  n_sources: 2
+  n_sources: 3
 - date: '2022-07-07'
   theme: geopolitical
   direction: neg
@@ -10113,7 +10461,8 @@ episodes:
   subthemes_local:
   - black_sea
   - difesa
-  n_sources: 3
+  - nato
+  n_sources: 4
 - date: '2023-04-20'
   theme: geopolitical
   direction: neg
@@ -10190,7 +10539,8 @@ episodes:
   - zeitenwende
   subthemes_local:
   - difesa
-  n_sources: 2
+  - military_escalation
+  n_sources: 3
 - date: '2023-05-17'
   theme: geopolitical
   direction: ''
@@ -10276,7 +10626,7 @@ episodes:
   subthemes_local:
   - difesa
   - nato
-  n_sources: 2
+  n_sources: 3
 - date: '2023-07-17'
   theme: geopolitical
   direction: neg
@@ -10665,12 +11015,13 @@ episodes:
   - sanctions
   - sanctions_era
   - shadow_fleet
+  - shipping_chokepoint
   - strait_of_hormuz
   - ukraine
   subthemes_local:
   - military_escalation
   - shipping_chokepoint
-  n_sources: 23
+  n_sources: 24
 - date: '2024-01-30'
   theme: geopolitical
   direction: ''
@@ -11072,7 +11423,7 @@ episodes:
   - military_escalation
   - risk_off
   - sanctions
-  n_sources: 24
+  n_sources: 25
 - date: '2024-06-03'
   theme: geopolitical
   direction: neg
@@ -11204,9 +11555,11 @@ episodes:
   directions:
   - neg
   - neutral
-  directions_declared: []
-  directions_local: []
-  declared: false
+  directions_declared:
+  - neutral
+  directions_local:
+  - neutral
+  declared: true
   subthemes:
   - boe
   - boe_reaction_function
@@ -11214,6 +11567,7 @@ episodes:
   - cabinet_incognita
   - city_of_london
   - cpi
+  - election_risk
   - euro_clearing
   - financial_services_relocation
   - fiscal_credibility
@@ -11239,9 +11593,10 @@ episodes:
   - uk_political_risk
   - uk_political_transition_—_new_labour_pm_after_starmer_resignation
   subthemes_local:
+  - britain_release
   - election_risk
   - gbp
-  n_sources: 4
+  n_sources: 5
 - date: '2024-07-09'
   theme: geopolitical
   direction: neg
@@ -11268,7 +11623,7 @@ episodes:
   subthemes_local:
   - difesa
   - nato
-  n_sources: 2
+  n_sources: 3
 - date: '2024-08-01'
   theme: geopolitical
   direction: neutral
@@ -12141,12 +12496,13 @@ episodes:
   - black_sea
   - de_escalation
   - defence
+  - difesa
   - military_escalation
   - nato
   - negotiation_track
   - russia
   - sanctions
-  n_sources: 31
+  n_sources: 32
 - date: '2025-02-27'
   theme: geopolitical
   direction: mixed
@@ -12246,7 +12602,7 @@ episodes:
   subthemes_local:
   - difesa
   - nato
-  n_sources: 2
+  n_sources: 3
 - date: '2025-03-04'
   theme: geopolitical
   direction: neg
@@ -12391,7 +12747,8 @@ episodes:
   - zeitenwende
   subthemes_local:
   - difesa
-  n_sources: 2
+  - nato
+  n_sources: 3
 - date: '2025-03-25'
   theme: geopolitical
   direction: ''
@@ -13088,6 +13445,7 @@ episodes:
   - safe_haven_unwind
   - sanctions
   - shipping
+  - shipping_chokepoint
   - strait_of_hormuz
   - ukraine
   - war_premium_unwind
@@ -13097,8 +13455,9 @@ episodes:
   - de_escalation
   - hormuz
   - iran
+  - military_escalation
   - negotiation_track
-  n_sources: 35
+  n_sources: 36
 - date: '2025-06-24'
   theme: geopolitical
   direction: mixed
@@ -13161,6 +13520,7 @@ episodes:
   - safe_haven_bid
   - sanctions
   - shipping
+  - shipping_chokepoint
   - strait_of_hormuz
   - ukraine
   - war_premium_unwind
@@ -13173,7 +13533,7 @@ episodes:
   - iran
   - military_escalation
   - negotiation_track
-  n_sources: 41
+  n_sources: 42
 - date: '2025-06-25'
   theme: geopolitical
   direction: mixed
@@ -13265,7 +13625,7 @@ episodes:
   - nato
   - negotiation_track
   - risk_off
-  n_sources: 31
+  n_sources: 32
 - date: '2025-07-01'
   theme: geopolitical
   direction: ''
@@ -13386,7 +13746,8 @@ episodes:
   - zeitenwende
   subthemes_local:
   - difesa
-  n_sources: 2
+  - military_escalation
+  n_sources: 3
 - date: '2025-07-14'
   theme: geopolitical
   direction: neg
@@ -13872,9 +14233,10 @@ episodes:
   - ukraine
   subthemes_local:
   - difesa
+  - military_escalation
   - nato
   - nato_airspace_breach
-  n_sources: 16
+  n_sources: 17
 - date: '2025-10-09'
   theme: geopolitical
   direction: neg
@@ -14366,7 +14728,8 @@ episodes:
   - zeitenwende
   subthemes_local:
   - difesa
-  n_sources: 2
+  - nato
+  n_sources: 3
 - date: '2026-02-17'
   theme: geopolitical
   direction: mixed
@@ -14507,6 +14870,7 @@ episodes:
   - safe_haven_flows
   - safe_haven_unwind
   - sanctions
+  - shipping_chokepoint
   - strait_of_hormuz
   - tanker
   - war_premium_unwind
@@ -14521,7 +14885,7 @@ episodes:
   - negotiation_track
   - oil_supply_shock
   - sanctions
-  n_sources: 46
+  n_sources: 47
 - date: '2026-02-28'
   theme: geopolitical
   direction: mixed
@@ -14575,6 +14939,7 @@ episodes:
   - sanctions
   - sanctions_regime
   - secondary_tariffs
+  - shipping_chokepoint
   - strait_of_hormuz
   - tanker
   - tanker_attack
@@ -14588,8 +14953,9 @@ episodes:
   - military_escalation
   - russia
   - sanctions
+  - shipping_chokepoint
   - ukraine
-  n_sources: 42
+  n_sources: 43
 - date: '2026-03-01'
   theme: geopolitical
   direction: neg
@@ -15095,6 +15461,7 @@ episodes:
   - sec_232
   - semis
   - shipping
+  - shipping_chokepoint
   - strait_of_hormuz
   - supply_chain
   - taiwan
@@ -15110,9 +15477,11 @@ episodes:
   subthemes_local:
   - export_controls
   - hormuz
+  - infrastructure_attack
   - iran
   - sanctions
-  n_sources: 50
+  - shipping_chokepoint
+  n_sources: 51
 - date: '2026-04-18'
   theme: geopolitical
   direction: mixed
@@ -15182,17 +15551,20 @@ episodes:
   - zeitenwende
   subthemes_local:
   - difesa
+  - military_escalation
   - nato
-  n_sources: 2
+  n_sources: 3
 - date: '2026-05-07'
   theme: geopolitical
-  direction: neg
+  direction: mixed
   directions:
   - neg
-  directions_declared: []
+  - neutral
+  directions_declared:
+  - neg
   directions_local:
   - neg
-  declared: false
+  declared: true
   subthemes:
   - boe
   - boe_reaction_function
@@ -15200,6 +15572,7 @@ episodes:
   - china_japan
   - cny
   - cpi
+  - election_risk
   - escalation
   - export_controls
   - fiscal_policy
@@ -15235,9 +15608,10 @@ episodes:
   - us_china
   - us_china_political_tension
   subthemes_local:
+  - britain_release
   - election_risk
   - gbp
-  n_sources: 11
+  n_sources: 12
 - date: '2026-05-19'
   theme: geopolitical
   direction: neg
@@ -15337,17 +15711,20 @@ episodes:
   - safe_haven_flows
   - sanctions
   - shipping
+  - shipping_chokepoint
   - strait_of_hormuz
   - tanker
   - ukraine
   subthemes_local:
+  - difesa
   - hormuz
   - infrastructure_attack
   - iran
   - military_escalation
   - nato
   - sanctions
-  n_sources: 49
+  - shipping_chokepoint
+  n_sources: 51
 - date: '2026-05-27'
   theme: geopolitical
   direction: mixed
@@ -15408,6 +15785,7 @@ episodes:
   - safe_haven_flows
   - sanctions
   - shipping
+  - shipping_chokepoint
   - strait_of_hormuz
   - tanker
   - ukraine
@@ -15423,7 +15801,8 @@ episodes:
   - military_escalation
   - negotiation_track
   - sanctions
-  n_sources: 41
+  - shipping_chokepoint
+  n_sources: 42
 - date: '2026-05-29'
   theme: geopolitical
   direction: mixed
@@ -15644,6 +16023,7 @@ episodes:
   - defence
   - defense
   - difesa
+  - election_risk
   - energy_attrition
   - energy_channel
   - energy_infrastructure
@@ -15693,6 +16073,7 @@ episodes:
   - sanctions_evasion
   - secondary_tariffs
   - shadow_fleet
+  - shipping_chokepoint
   - strait_of_hormuz
   - tanker
   - tariff
@@ -15702,13 +16083,14 @@ episodes:
   - ukraine
   - ukraine_russia_energy
   subthemes_local:
+  - britain_release
   - election_risk
   - gbp
   - hormuz
   - iran
   - military_escalation
   - sanctions
-  n_sources: 56
+  n_sources: 58
 - date: '2026-06-23'
   theme: geopolitical
   direction: mixed
@@ -15765,7 +16147,8 @@ episodes:
   - zeitenwende
   subthemes_local:
   - difesa
-  n_sources: 2
+  - military_escalation
+  n_sources: 3
 - date: '2026-07-09'
   theme: geopolitical
   direction: mixed
@@ -15889,7 +16272,8 @@ episodes:
   - zeitenwende
   subthemes_local:
   - difesa
-  n_sources: 2
+  - nato
+  n_sources: 3
 - date: '2026-08-07'
   theme: geopolitical
   direction: neg
@@ -15946,8 +16330,9 @@ episodes:
   - zeitenwende
   subthemes_local:
   - difesa
+  - military_escalation
   - nato
-  n_sources: 2
+  n_sources: 3
 - date: '2026-09-06'
   theme: geopolitical
   direction: ''
@@ -17783,7 +18168,7 @@ episodes:
   - labour_market
   - nfp
   - us_cpi
-  n_sources: 18
+  n_sources: 19
 - date: '2022-04-11'
   theme: macro_data
   direction: mixed
@@ -17995,7 +18380,7 @@ episodes:
   - labour_market
   - nfp
   - risk_on
-  n_sources: 33
+  n_sources: 34
 - date: '2022-06-10'
   theme: macro_data
   direction: mixed
@@ -18158,7 +18543,7 @@ episodes:
   - labour_market
   - nfp
   - state_dependence
-  n_sources: 19
+  n_sources: 20
 - date: '2022-07-13'
   theme: macro_data
   direction: mixed
@@ -18473,7 +18858,7 @@ episodes:
   - inflation_print
   - inflation_upside
   - us_cpi
-  n_sources: 20
+  n_sources: 21
 - date: '2022-09-22'
   theme: macro_data
   direction: neg
@@ -18661,7 +19046,7 @@ episodes:
   - inflation_print
   - inflation_upside
   - us_cpi
-  n_sources: 35
+  n_sources: 36
 - date: '2022-10-25'
   theme: macro_data
   direction: ''
@@ -18840,7 +19225,7 @@ episodes:
   - inflation_print
   - us_cpi
   - us_inflation
-  n_sources: 19
+  n_sources: 20
 - date: '2022-11-30'
   theme: macro_data
   direction: mixed
@@ -18878,7 +19263,7 @@ episodes:
   - disinflation
   - eurozone_release
   - inflation_print
-  n_sources: 15
+  n_sources: 16
 - date: '2022-12-01'
   theme: macro_data
   direction: mixed
@@ -18976,7 +19361,7 @@ episodes:
   - inflation_print
   - ism
   - pmi
-  n_sources: 56
+  n_sources: 57
 - date: '2022-12-07'
   theme: macro_data
   direction: ''
@@ -19052,7 +19437,7 @@ episodes:
   - inflation_print
   - labour_market
   - us_cpi
-  n_sources: 22
+  n_sources: 23
 - date: '2022-12-15'
   theme: macro_data
   direction: ''
@@ -19260,7 +19645,7 @@ episodes:
   - inflation_print
   - inflation_upside
   - us_cpi
-  n_sources: 21
+  n_sources: 22
 - date: '2023-06-01'
   theme: macro_data
   direction: mixed
@@ -19532,7 +19917,7 @@ episodes:
   - inflation_print
   - pboc
   - pmi
-  n_sources: 12
+  n_sources: 13
 - date: '2023-07-12'
   theme: macro_data
   direction: mixed
@@ -19603,7 +19988,7 @@ episodes:
   - inflation_downside
   - inflation_print
   - us_cpi
-  n_sources: 36
+  n_sources: 37
 - date: '2023-07-28'
   theme: macro_data
   direction: neg
@@ -20106,7 +20491,7 @@ episodes:
   - inflation_downside
   - inflation_print
   - us_cpi
-  n_sources: 27
+  n_sources: 28
 - date: '2023-12-08'
   theme: macro_data
   direction: mixed
@@ -20209,7 +20594,7 @@ episodes:
   - nfp
   - umich
   - us_cpi
-  n_sources: 57
+  n_sources: 58
 - date: '2023-12-13'
   theme: macro_data
   direction: ''
@@ -20388,7 +20773,7 @@ episodes:
   - labour_market
   - nfp
   - state_dependence
-  n_sources: 47
+  n_sources: 48
 - date: '2024-01-19'
   theme: macro_data
   direction: mixed
@@ -20735,7 +21120,7 @@ episodes:
   - inflation_print
   - japan_cpi
   - japan_release
-  n_sources: 3
+  n_sources: 4
 - date: '2024-04-01'
   theme: macro_data
   direction: mixed
@@ -20927,7 +21312,7 @@ episodes:
   - inflation_print
   - labour_market
   - nfp
-  n_sources: 37
+  n_sources: 38
 - date: '2024-04-10'
   theme: macro_data
   direction: mixed
@@ -21096,8 +21481,9 @@ episodes:
   - ecb
   - eurozone_release
   - inflation_print
+  - labour_market
   - rate_decision
-  n_sources: 7
+  n_sources: 8
 - date: '2024-06-07'
   theme: macro_data
   direction: mixed
@@ -21230,7 +21616,7 @@ episodes:
   - inflation_downside
   - inflation_print
   - us_cpi
-  n_sources: 32
+  n_sources: 33
 - date: '2024-07-30'
   theme: macro_data
   direction: ''
@@ -21500,7 +21886,7 @@ episodes:
   - inflation_print
   - pboc
   - pmi
-  n_sources: 11
+  n_sources: 12
 - date: '2024-08-26'
   theme: macro_data
   direction: ''
@@ -21711,7 +22097,7 @@ episodes:
   - inflation_print
   - inflation_upside
   - us_cpi
-  n_sources: 29
+  n_sources: 30
 - date: '2024-09-14'
   theme: macro_data
   direction: ''
@@ -22468,7 +22854,7 @@ episodes:
   - labour_market
   - nfp
   - us_cpi
-  n_sources: 71
+  n_sources: 72
 - date: '2024-12-09'
   theme: macro_data
   direction: mixed
@@ -22833,7 +23219,7 @@ episodes:
   - pboc
   - pmi
   - us_cpi
-  n_sources: 63
+  n_sources: 64
 - date: '2025-01-23'
   theme: macro_data
   direction: neg
@@ -23086,7 +23472,7 @@ episodes:
   - pmi
   - tariff_escalation
   - us_cpi
-  n_sources: 82
+  n_sources: 83
 - date: '2025-03-07'
   theme: macro_data
   direction: mixed
@@ -23298,7 +23684,7 @@ episodes:
   - labour_market
   - nfp
   - tariff_escalation
-  n_sources: 44
+  n_sources: 45
 - date: '2025-04-08'
   theme: macro_data
   direction: mixed
@@ -23785,7 +24171,7 @@ episodes:
   - eurozone_release
   - inflation_print
   - us_cpi
-  n_sources: 16
+  n_sources: 17
 - date: '2025-08-21'
   theme: macro_data
   direction: mixed
@@ -23820,7 +24206,7 @@ episodes:
   - eurozone_release
   - inflation_print
   - pmi
-  n_sources: 12
+  n_sources: 13
 - date: '2025-09-15'
   theme: macro_data
   direction: ''
@@ -24659,8 +25045,9 @@ episodes:
   - energy_passthrough
   - eurozone_release
   - inflation_print
+  - labour_market
   - us_cpi
-  n_sources: 61
+  n_sources: 62
 - date: '2026-06-05'
   theme: macro_data
   direction: mixed
@@ -24814,7 +25201,7 @@ episodes:
   - rate_decision
   - term_premium
   - us_cpi
-  n_sources: 14
+  n_sources: 15
 - date: '2026-06-30'
   theme: macro_data
   direction: ''
@@ -24930,7 +25317,7 @@ episodes:
   - eurozone_release
   - inflation_print
   - pmi
-  n_sources: 38
+  n_sources: 39
 - date: '2026-08-14'
   theme: macro_data
   direction: ''
@@ -25603,6 +25990,7 @@ episodes:
   - leadership_transition
   - policy_uncertainty
   - pre_fomc
+  - rate_decision
   - term_premium
   subthemes_local:
   - cb_independence
@@ -25611,7 +25999,7 @@ episodes:
   - pre_fomc
   - rate_decision
   - term_premium
-  n_sources: 7
+  n_sources: 8
 - date: '2014-01-29'
   theme: monetary_policy
   direction: neutral
@@ -25720,7 +26108,7 @@ episodes:
   - hawkish
   - hawkish_repricing
   - rate_decision
-  n_sources: 18
+  n_sources: 19
 - date: '2014-09-17'
   theme: monetary_policy
   direction: neg
@@ -26329,7 +26717,7 @@ episodes:
   - hawkish
   - japan_release
   - rate_decision
-  n_sources: 29
+  n_sources: 31
 - date: '2018-12-24'
   theme: monetary_policy
   direction: mixed
@@ -26581,9 +26969,11 @@ episodes:
   - pboc
   - rate_decision
   subthemes_local:
+  - boj
+  - jpy
   - pboc
   - rate_decision
-  n_sources: 2
+  n_sources: 3
 - date: '2022-02-03'
   theme: monetary_policy
   direction: neg
@@ -26765,11 +27155,12 @@ episodes:
   - ecb_supply_shock_pivot
   - eurozone_release
   - guidance_pivot
+  - japan_release
   - jpy
   - rate_decision
   - rate_hike
   - yen
-  n_sources: 32
+  n_sources: 34
 - date: '2022-08-15'
   theme: monetary_policy
   direction: mixed
@@ -26793,9 +27184,10 @@ episodes:
   - rate_decision
   subthemes_local:
   - china_stimulus
+  - hawkish
   - pboc
   - rate_decision
-  n_sources: 4
+  n_sources: 5
 - date: '2022-08-26'
   theme: monetary_policy
   direction: mixed
@@ -26869,7 +27261,7 @@ episodes:
   - pboc
   - rate_decision
   - yen
-  n_sources: 30
+  n_sources: 31
 - date: '2022-09-05'
   theme: monetary_policy
   direction: ''
@@ -26961,7 +27353,7 @@ episodes:
   - guidance_pivot
   - hawkish
   - rate_decision
-  n_sources: 28
+  n_sources: 29
 - date: '2022-09-21'
   theme: monetary_policy
   direction: mixed
@@ -27057,6 +27449,7 @@ episodes:
   - jpy
   - jpy_intervention
   - nirp
+  - rate_decision
   - rate_differential
   - risk_off
   - safe_haven
@@ -27070,7 +27463,7 @@ episodes:
   - japan_release
   - jpy
   - yen
-  n_sources: 7
+  n_sources: 8
 - date: '2022-09-23'
   theme: monetary_policy
   direction: neg
@@ -27180,6 +27573,7 @@ episodes:
   - jpy
   - jpy_intervention
   - nirp
+  - rate_decision
   - rate_differential
   - risk_off
   - safe_haven
@@ -27193,7 +27587,7 @@ episodes:
   - japan_release
   - jpy
   - yen
-  n_sources: 7
+  n_sources: 8
 - date: '2022-10-24'
   theme: monetary_policy
   direction: mixed
@@ -27343,7 +27737,7 @@ episodes:
   - hawkish
   - hawkish_hold
   - rate_decision
-  n_sources: 35
+  n_sources: 36
 - date: '2022-12-15'
   theme: monetary_policy
   direction: mixed
@@ -27404,7 +27798,7 @@ episodes:
   - hawkish
   - hawkish_guidance
   - rate_decision
-  n_sources: 22
+  n_sources: 23
 - date: '2022-12-20'
   theme: monetary_policy
   direction: mixed
@@ -27481,7 +27875,7 @@ episodes:
   - term_premium
   - ycc
   - yen
-  n_sources: 37
+  n_sources: 39
 - date: '2023-01-01'
   theme: monetary_policy
   direction: neg
@@ -27576,7 +27970,7 @@ episodes:
   - hawkish
   - hawkish_guidance
   - rate_decision
-  n_sources: 33
+  n_sources: 34
 - date: '2023-02-09'
   theme: monetary_policy
   direction: mixed
@@ -27717,7 +28111,7 @@ episodes:
   - guidance_pivot
   - hawkish
   - rate_decision
-  n_sources: 25
+  n_sources: 26
 - date: '2023-06-13'
   theme: monetary_policy
   direction: mixed
@@ -27736,9 +28130,10 @@ episodes:
   - pboc
   - rate_decision
   subthemes_local:
+  - hawkish
   - pboc
   - rate_decision
-  n_sources: 2
+  n_sources: 3
 - date: '2023-06-15'
   theme: monetary_policy
   direction: mixed
@@ -27825,7 +28220,7 @@ episodes:
   - hawkish
   - pboc
   - rate_decision
-  n_sources: 39
+  n_sources: 40
 - date: '2023-07-27'
   theme: monetary_policy
   direction: mixed
@@ -28027,11 +28422,13 @@ episodes:
   - pboc
   - rate_decision
   subthemes_local:
+  - boj
   - china_stimulus
   - cny
+  - jpy
   - pboc
   - rate_decision
-  n_sources: 5
+  n_sources: 6
 - date: '2023-08-22'
   theme: monetary_policy
   direction: mixed
@@ -28134,7 +28531,7 @@ episodes:
   - hawkish
   - projection
   - rate_decision
-  n_sources: 28
+  n_sources: 29
 - date: '2023-09-20'
   theme: monetary_policy
   direction: mixed
@@ -28238,7 +28635,7 @@ episodes:
   - jpy
   - term_premium
   - yen
-  n_sources: 21
+  n_sources: 23
 - date: '2023-10-31'
   theme: monetary_policy
   direction: mixed
@@ -28363,7 +28760,7 @@ episodes:
   - rate_decision
   - ycc
   - yen
-  n_sources: 46
+  n_sources: 48
 - date: '2024-03-20'
   theme: monetary_policy
   direction: mixed
@@ -28421,7 +28818,7 @@ episodes:
   - guidance_pivot
   - hawkish
   - rate_decision
-  n_sources: 31
+  n_sources: 32
 - date: '2024-03-31'
   theme: monetary_policy
   direction: pos
@@ -28542,6 +28939,7 @@ episodes:
   - jpy_intervention
   - nirp
   - pboc
+  - rate_decision
   - rate_differential
   - rates
   - risk_off
@@ -28557,7 +28955,7 @@ episodes:
   - japan_release
   - jpy
   - yen
-  n_sources: 18
+  n_sources: 19
 - date: '2024-05-01'
   theme: monetary_policy
   direction: mixed
@@ -28642,7 +29040,7 @@ episodes:
   - jpy
   - rate_decision
   - yen
-  n_sources: 49
+  n_sources: 51
 - date: '2024-06-12'
   theme: monetary_policy
   direction: mixed
@@ -28712,7 +29110,7 @@ episodes:
   - hawkish_hold
   - rate_decision
   - us_cpi
-  n_sources: 36
+  n_sources: 37
 - date: '2024-06-30'
   theme: monetary_policy
   direction: mixed
@@ -29025,7 +29423,7 @@ episodes:
   - rate_decision
   - tariff_escalation
   - yen
-  n_sources: 57
+  n_sources: 59
 - date: '2024-08-02'
   theme: monetary_policy
   direction: mixed
@@ -29291,7 +29689,7 @@ episodes:
   - infrastructure_attack
   - pboc
   - rate_decision
-  n_sources: 47
+  n_sources: 48
 - date: '2024-09-24'
   theme: monetary_policy
   direction: neutral
@@ -29573,7 +29971,7 @@ episodes:
   - rate_decision
   - term_premium
   - yen
-  n_sources: 72
+  n_sources: 73
 - date: '2024-12-31'
   theme: monetary_policy
   direction: mixed
@@ -30251,7 +30649,7 @@ episodes:
   - cb_independence
   - guidance_pivot
   - hawkish
-  n_sources: 21
+  n_sources: 22
 - date: '2025-09-03'
   theme: monetary_policy
   direction: neg
@@ -30472,8 +30870,10 @@ episodes:
   - duration_supply
   - fx_intervention
   - guidance_pivot
+  - hawkish
   - japan_release
   - pboc
+  - rate_decision
   - term_premium
   subthemes_local:
   - boj
@@ -30482,11 +30882,12 @@ episodes:
   - cpi
   - credibility_shock
   - duration_supply
+  - hawkish
   - japan_release
   - rate_decision
   - synchronized_selloff
   - term_premium
-  n_sources: 7
+  n_sources: 8
 - date: '2025-12-30'
   theme: monetary_policy
   direction: neutral
@@ -30554,7 +30955,7 @@ episodes:
   - guidance_pivot
   - hawkish
   - rate_decision
-  n_sources: 22
+  n_sources: 23
 - date: '2026-02-27'
   theme: monetary_policy
   direction: ''
@@ -30774,8 +31175,9 @@ episodes:
   - credibility_shock
   - guidance_pivot
   - hawkish
+  - rate_decision
   - warsh
-  n_sources: 28
+  n_sources: 29
 - date: '2026-05-19'
   theme: monetary_policy
   direction: neg
@@ -30950,7 +31352,7 @@ episodes:
   - synchronized_selloff
   - tariff_escalation
   - term_premium
-  n_sources: 12
+  n_sources: 13
 - date: '2026-08-20'
   theme: monetary_policy
   direction: ''
@@ -30995,6 +31397,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - card:2026-08-22/news_01.md
   directions_local:
   - neg
   declared: true
@@ -31030,7 +31438,7 @@ episodes:
   - tariff
   - tariff_escalation
   - trade_war
-  n_sources: 17
+  n_sources: 18
 - date: '2018-03-23'
   theme: regulatory
   direction: neg
@@ -31053,6 +31461,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - card:2026-08-22/news_01.md
   directions_local:
   - neg
   declared: true
@@ -31080,10 +31494,11 @@ episodes:
   - transatlantic_trade
   - trump_trade_war_v2
   subthemes_local:
+  - china_trade
   - sec_301
   - tariff_escalation
   - trade_war
-  n_sources: 17
+  n_sources: 18
 - date: '2018-07-02'
   theme: regulatory
   direction: mixed
@@ -31093,6 +31508,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^GSPC: Ritorsioni canadesi e altri eventi nazionali, impatto sull’indice USA non
+      univoco.
   directions_local:
   - neg
   declared: true
@@ -31126,7 +31544,7 @@ episodes:
   - tariff
   - tariff_escalation
   - trade_war
-  n_sources: 18
+  n_sources: 19
 - date: '2018-07-06'
   theme: regulatory
   direction: neg
@@ -31149,6 +31567,12 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    ^GSPC:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - card:2026-08-22/news_01.md
   directions_local:
   - pos
   declared: true
@@ -31187,6 +31611,8 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^GSPC: 'Selloff simultaneo a stretta monetaria: shock tariffario non isolabile.'
   directions_local:
   - neg
   declared: true
@@ -31215,7 +31641,7 @@ episodes:
   - risk_off
   - tariff_escalation
   - trade_war
-  n_sources: 17
+  n_sources: 18
 - date: '2018-10-29'
   theme: regulatory
   direction: neg
@@ -31223,6 +31649,12 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - card:2026-09-13/news_04.md
   directions_local:
   - neg
   declared: true
@@ -31247,7 +31679,7 @@ episodes:
   - tariff_escalation
   - trade
   - trade_war
-  n_sources: 13
+  n_sources: 14
 - date: '2018-12-26'
   theme: regulatory
   direction: mixed
@@ -31258,6 +31690,8 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    ^GSPC: Rimbalzo da posizionamento estremo, senza nuova decisione tariffaria.
   directions_local:
   - neg
   - pos
@@ -31294,6 +31728,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    ^GSPC: 'Rapporto su possibili dazi auto: applicazione e impatto sull’indice USA
+      non univoci.'
   directions_local:
   - neg
   - pos
@@ -31320,7 +31757,7 @@ episodes:
   - sec_232
   - tariff_escalation
   - trade_war
-  n_sources: 12
+  n_sources: 13
 - date: '2019-05-13'
   theme: regulatory
   direction: mixed
@@ -31330,6 +31767,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - card:2026-09-08/news_05.md
   directions_local:
   - neg
   declared: true
@@ -31358,7 +31801,7 @@ episodes:
   - de_escalation
   - tariff_escalation
   - trade_war
-  n_sources: 16
+  n_sources: 17
 - date: '2019-08-01'
   theme: regulatory
   direction: neg
@@ -31381,6 +31824,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - card:2026-08-22/news_01.md
   directions_local:
   - neg
   declared: true
@@ -31473,6 +31922,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^GSPC: Fase pre-insediamento, non provvedimento discreto identificato per questa
+      data.
   directions_local:
   - neg
   declared: true
@@ -31501,7 +31953,7 @@ episodes:
   - nafta_usmca
   - tariff_escalation
   - trade_war
-  n_sources: 15
+  n_sources: 16
 - date: '2025-01-01'
   theme: regulatory
   direction: neg
@@ -31509,6 +31961,8 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^GSPC: Avvio di fase descritto in giorno festivo, non annuncio discreto per l’indice.
   directions_local:
   - neg
   declared: true
@@ -31536,6 +31990,12 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    ^GSPC:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - card:2026-08-22/news_01.md
   directions_local:
   - pos
   declared: true
@@ -31597,6 +32057,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - card:2026-08-22/news_01.md
   directions_local:
   - neg
   declared: true
@@ -31663,6 +32129,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - card:2026-08-23/news_01.md
   directions_local:
   - neg
   declared: true
@@ -31694,7 +32166,7 @@ episodes:
   - tariff_escalation
   - tariffs
   - trade_war
-  n_sources: 16
+  n_sources: 17
 - date: '2025-04-04'
   theme: regulatory
   direction: mixed
@@ -31703,6 +32175,12 @@ episodes:
   - neutral
   directions_declared:
   - neg
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - card:2026-09-09/news_04.md
   directions_local:
   - neg
   declared: true
@@ -31728,8 +32206,9 @@ episodes:
   subthemes_local:
   - ai_export_controls
   - auction
+  - risk_off
   - tariff_escalation
-  n_sources: 8
+  n_sources: 9
 - date: '2025-04-08'
   theme: regulatory
   direction: neg
@@ -31765,6 +32244,12 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    ^GSPC:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - card:2026-08-22/news_01.md
   directions_local:
   - pos
   declared: true
@@ -31831,6 +32316,8 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^GSPC: 'Lettera riferita alla Thailandia: trasmissione al S&P 500 non univoca.'
   directions_local:
   - neg
   declared: true
@@ -31842,7 +32329,7 @@ episodes:
   - border_dispute
   - emerging_markets
   - tariff_escalation
-  n_sources: 1
+  n_sources: 2
 - date: '2025-07-30'
   theme: regulatory
   direction: neg
@@ -31915,6 +32402,8 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^GSPC: 'Disputa Canada-USA insieme a selloff dei bond lunghi: fattori non separabili.'
   directions_local:
   - neg
   declared: true
@@ -31931,6 +32420,20 @@ episodes:
   - nafta_usmca
   - tariff_escalation
   n_sources: 7
+- date: '1979-03-28'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_capacity_constraint
+  subthemes_local:
+  - earnings_shock
+  n_sources: 1
 - date: '2002-03-14'
   theme: structural_themes
   direction: neutral
@@ -31945,6 +32448,47 @@ episodes:
   - semis
   - valuation_derisking
   subthemes_local: []
+  n_sources: 1
+- date: '2011-03-11'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_capacity_constraint
+  subthemes_local: []
+  n_sources: 1
+- date: '2011-03-14'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_capacity_constraint
+  subthemes_local:
+  - earnings_shock
+  n_sources: 1
+- date: '2011-05-30'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_capacity_constraint
+  subthemes_local:
+  - earnings_shock
   n_sources: 1
 - date: '2012-05-18'
   theme: structural_themes
@@ -31990,6 +32534,21 @@ episodes:
   - valuation_derisking
   subthemes_local: []
   n_sources: 1
+- date: '2017-12-19'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_local:
+  - pos
+  declared: false
+  subthemes:
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_capacity_constraint
+  subthemes_local:
+  - earnings_shock
+  n_sources: 1
 - date: '2018-01-01'
   theme: structural_themes
   direction: neg
@@ -32002,6 +32561,32 @@ episodes:
   - ai_semis
   - hyperscaler_capex
   - megacap_earnings
+  subthemes_local: []
+  n_sources: 1
+- date: '2018-03-19'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_capacity_constraint
+  subthemes_local: []
+  n_sources: 1
+- date: '2018-06-01'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_capacity_constraint
   subthemes_local: []
   n_sources: 1
 - date: '2018-10-10'
@@ -32244,6 +32829,19 @@ episodes:
   - tariff_escalation
   - valuation_derisking
   n_sources: 13
+- date: '2020-06-08'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_capacity_constraint
+  subthemes_local: []
+  n_sources: 1
 - date: '2020-09-03'
   theme: structural_themes
   direction: mixed
@@ -32296,6 +32894,19 @@ episodes:
   - concentration_risk
   - valuation_derisking
   n_sources: 30
+- date: '2021-11-02'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_capacity_constraint
+  subthemes_local: []
+  n_sources: 1
 - date: '2021-11-30'
   theme: structural_themes
   direction: mixed
@@ -32765,7 +33376,7 @@ episodes:
   - hyperscaler_capex
   - memory_cycle
   - valuation_derisking
-  n_sources: 51
+  n_sources: 52
 - date: '2023-07-03'
   theme: structural_themes
   direction: mixed
@@ -32866,7 +33477,7 @@ episodes:
   - hyperscaler_capex
   - memory_cycle
   - valuation_derisking
-  n_sources: 12
+  n_sources: 13
 - date: '2023-08-23'
   theme: structural_themes
   direction: neutral
@@ -32896,6 +33507,20 @@ episodes:
   - semis
   - valuation_derisking
   subthemes_local: []
+  n_sources: 1
+- date: '2023-10-24'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_capacity_constraint
+  subthemes_local:
+  - earnings_shock
   n_sources: 1
 - date: '2023-11-06'
   theme: structural_themes
@@ -33107,7 +33732,7 @@ episodes:
   - ai_semis
   - earnings_shock
   - export_controls
-  n_sources: 45
+  n_sources: 46
 - date: '2024-05-22'
   theme: structural_themes
   direction: neutral
@@ -33140,6 +33765,7 @@ episodes:
   subthemes:
   - ai
   - ai_capex
+  - ai_capex_spending
   - ai_capex_uncertainty
   - ai_chip
   - ai_infrastructure_capex
@@ -33178,11 +33804,12 @@ episodes:
   - valuation_derisking
   subthemes_local:
   - ai_capex
+  - ai_semis
   - earnings_shock
   - hbm
   - hyperscaler_capex
   - valuation_derisking
-  n_sources: 39
+  n_sources: 40
 - date: '2024-06-10'
   theme: structural_themes
   direction: mixed
@@ -33435,6 +34062,7 @@ episodes:
   subthemes:
   - ai
   - ai_capex
+  - ai_capex_spending
   - ai_capex_uncertainty
   - ai_chip
   - ai_infrastructure_capex
@@ -33471,9 +34099,11 @@ episodes:
   - valuation_derisking
   subthemes_local:
   - ai_capex
+  - ai_capex_spending
   - earnings_shock
+  - hyperscaler_capex
   - valuation_derisking
-  n_sources: 35
+  n_sources: 36
 - date: '2024-09-20'
   theme: structural_themes
   direction: ''
@@ -33855,7 +34485,7 @@ episodes:
   - model_capability_shock
   - risk_on_rebound
   - valuation_derisking
-  n_sources: 37
+  n_sources: 38
 - date: '2025-02-26'
   theme: structural_themes
   direction: neutral
@@ -33938,7 +34568,7 @@ episodes:
   - memory_cycle
   - model_capability_shock
   - valuation_derisking
-  n_sources: 48
+  n_sources: 49
 - date: '2025-03-31'
   theme: structural_themes
   direction: mixed
@@ -34261,10 +34891,11 @@ episodes:
   subthemes_local:
   - ai_capex
   - ai_capex_spending
+  - ai_semis
   - earnings_shock
   - hyperscaler_capex
   - tariff_escalation
-  n_sources: 41
+  n_sources: 42
 - date: '2025-09-19'
   theme: structural_themes
   direction: mixed
@@ -34475,7 +35106,7 @@ episodes:
   - kospi
   - memory_cycle
   - valuation_derisking
-  n_sources: 42
+  n_sources: 43
 - date: '2026-06-19'
   theme: structural_themes
   direction: pos
@@ -34640,12 +35271,13 @@ episodes:
   subthemes_local:
   - ai_capex
   - ai_capex_spending
+  - datacenter
   - earnings_shock
   - hbm
   - hyperscaler_capex
   - memory_cycle
   - valuation_derisking
-  n_sources: 14
+  n_sources: 15
 - date: '2026-07-30'
   theme: structural_themes
   direction: pos
@@ -34713,7 +35345,7 @@ episodes:
   - kospi
   - memory_cycle
   - valuation_derisking
-  n_sources: 11
+  n_sources: 12
 - date: '2026-08-14'
   theme: structural_themes
   direction: mixed
@@ -34748,13 +35380,15 @@ episodes:
   - valuation_derisking
   subthemes_local:
   - ai_capex
+  - ai_capex_spending
   - concentration_risk
   - earnings_shock
   - hbm
+  - hyperscaler_capex
   - kospi
   - memory_cycle
   - valuation_derisking
-  n_sources: 14
+  n_sources: 15
 - date: '2026-08-24'
   theme: structural_themes
   direction: ''
@@ -34769,4 +35403,17 @@ episodes:
   subthemes_local:
   - ai_capex_spending
   - valuation_derisking
+  n_sources: 1
+- date: '2026-09-12'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_capacity_constraint
+  subthemes_local: []
   n_sources: 1

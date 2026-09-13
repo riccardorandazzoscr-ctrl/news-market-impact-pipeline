@@ -1,3 +1,21 @@
+# Convenzione corrente del verso (2026-09-13)
+
+`find --direction` richiede `--direction-reference TICKER`: pressione sul prezzo
+(pos rialzo, neg ribasso, neutral nessuna), non sentiment dell'evento né ritorno
+ex post. La riga `direction_reference` nella classificazione della scheda vale
+per tutti i suoi blocchi dichiarati. `directions_by_reference` separa gli asset;
+`direction_sources` conserva le schede di origine. Conflitti sullo stesso asset
+sono esclusi, così come etichette senza riferimento. Nessun fallback direzionale
+per raggiungere min_n. Per i sotto-temi rimangono le regole di fallback descritte sotto.
+Il registro `knowledge_base/_direction_reviews.yaml` conserva decisioni, scheda
+d'origine e motivazione. `direction_review_excluded` è un veto per date con eventi
+incompatibili, datazione dubbia o trasmissione non univoca all'asset. Sono stati
+esaminati gli episodi dichiarati `commodity_energy` per Brent (`BZ=F`) e
+`regulatory` per S&P 500 (`^GSPC`); gli altri temi restano senza classificazione
+direzionale per asset finché non vengono esaminati allo stesso modo.
+
+**Il seguito documenta il comportamento storico, superato per la direzione.**
+
 # Etichette date-locali: i quattro livelli e i difetti corretti
 
 **Quando aprire questo file:** stai aggiungendo un'etichetta canonica, calibrando un
