@@ -19,7 +19,7 @@ PIPE="${0:A:h:h}"
 SCRIPT="$PIPE/run_daily_analysis.sh"
 BRIEF_REALI="$HOME/Claude/morning brief"
 PASS=0; FAIL=0
-MIN_STORIES_ATTESA=20   # invariante attesa, usata solo nei messaggi
+MIN_STORIES_ATTESA=1    # una storia verificata è un briefing parziale valido
 
 ok()  { print -r -- "  ✓ $1"; PASS=$((PASS+1)); }
 ko()  { print -r -- "  ✗ $1"; print -r -- "      $2"; FAIL=$((FAIL+1)); }
@@ -45,7 +45,7 @@ teardown() { [[ -n "${SANDBOX:-}" ]] && rm -rf "$SANDBOX"; }
 
 # esegue lo script nella sandbox; le attese sono compresse
 run_sut() {
-  ( HOME="$FAKE_HOME" MIN_STORIES=20 WAIT_MAX="${1:-2}" WAIT_STEP="${2:-1}" \
+  ( HOME="$FAKE_HOME" WAIT_MAX="${1:-2}" WAIT_STEP="${2:-1}" \
     /bin/zsh "$FPIPE/run.sh" "$GIORNO" >/dev/null 2>&1 )
   echo $?
 }
@@ -54,9 +54,11 @@ run_sut() {
 scrivi_brief() {
   local n=$1 chiusura=${2:-chiuso}
   { print -r -- "<html><head><title>Morning Briefing</title></head><body>"
-    for i in $(seq 1 $n); do
-      print -r -- "<section><h2>World</h2><div class=\"story\"><h3>Notizia $i</h3><p>Testo.</p></div></section>"
-    done
+    if (( n > 0 )); then
+      for i in $(seq 1 $n); do
+        print -r -- "<section><h2>World</h2><div class=\"story\"><h3>Notizia $i</h3><p>Testo.</p></div></section>"
+      done
+    fi
     [[ "$chiusura" == "chiuso" ]] && print -r -- "</body></html>"
   } > "$BRIEF"
 }
@@ -129,7 +131,8 @@ teardown
 setup
 scrivi_brief 9             # troncato a metà elenco
 RC=$(run_sut 1 1)
-check "[[ $RC -eq 1 ]]" "9 notizie su 20 → incompleto" "rc=$RC"
+check "[[ $RC -eq 0 ]]" "9 notizie chiuse → briefing parziale valido" "rc=$RC"
+check "grep -q 'START' '$LOG'" "avvia l'analisi sul briefing parziale valido"
 teardown
 setup
 : > "$BRIEF"               # file vuoto (0 byte)
@@ -181,7 +184,7 @@ done
 check "[[ $tot -gt 100 ]]" "archivio trovato ($tot file)"
 check "[[ $accettati -eq $tot ]]" "tutti accettati dallo script vero ($accettati/$tot)" \
       "respinti per errore: ${respinti[*]}"
-check "[[ $storie_min -ge 20 ]]" "minimo storico di notizie = $storie_min (soglia $MIN_STORIES_ATTESA)"
+check "[[ $storie_min -ge $MIN_STORIES_ATTESA ]]" "minimo storico di notizie = $storie_min (soglia $MIN_STORIES_ATTESA)"
 teardown
 
 # un briefing reale, passato per intero allo script

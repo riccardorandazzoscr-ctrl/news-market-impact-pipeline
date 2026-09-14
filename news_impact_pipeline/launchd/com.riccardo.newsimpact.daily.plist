@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.riccardo.newsimpact.daily</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/run_daily_analysis.sh</string>
+    </array>
+
+    <!-- 08:15 il run vero; 09:15 e 10:15 sono RITENTATIVI, non run in più:
+         lo script esce subito se l'analisi di oggi è già compilata. Coprono il
+         caso "run fallito a metà" (limite di sessione, 5xx), che i WatchPaths
+         da soli non ricatturano perché il file del briefing non cambia più.
+         Ereditati dalla routine ChatGPT, che aveva gli stessi tre orari. -->
+    <key>StartCalendarInterval</key>
+    <array>
+        <dict>
+            <key>Hour</key>
+            <integer>8</integer>
+            <key>Minute</key>
+            <integer>15</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>9</integer>
+            <key>Minute</key>
+            <integer>15</integer>
+        </dict>
+        <dict>
+            <key>Hour</key>
+            <integer>10</integer>
+            <key>Minute</key>
+            <integer>15</integer>
+        </dict>
+    </array>
+
+    <!-- Riparte appena cambia il contenuto della cartella dei briefing:
+         gestisce il caso "briefing in ritardo" → analisi appena arriva. -->
+    <key>WatchPaths</key>
+    <array>
+        <string>/Users/riccardo/Claude/morning brief</string>
+    </array>
+
+    <!-- Non eseguire al caricamento del plist (evita run a sorpresa) -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/logs/launchd.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/logs/launchd.err.log</string>
+</dict>
+</plist>

@@ -1,20 +1,20 @@
 #!/bin/zsh
 # run_monthly_report.sh — wrapper launchd (Fase 6 / Layer 6).
 # Una volta al mese (1° del mese) produce il Report Strategico Mensile del mese
-# appena concluso: genera la bozza aggregata, lancia Codex headless per compilare
+# appena concluso: genera la bozza aggregata, lancia Claude headless per compilare
 # le sezioni (PHASE6_RUNBOOK.md), poi rende l'HTML. Idempotente (sentinella .done).
 
 set -u
 export PATH="/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
-MODEL="gpt-6-astra"
+MODEL="claude-opus-5"
 PROJECT="$HOME/Claude"
 NEWSDIR="$PROJECT/mercati_finanza"
 PIPE="$NEWSDIR/news_impact_pipeline"
 PY="$PIPE/venv/bin/python"
 MONTHLY="$NEWSDIR/daily_analysis/_monthly"
 LOGDIR="$PIPE/logs"
-CODEX="/Applications/ChatGPT.app/Contents/Resources/codex"
+CLAUDE="/opt/homebrew/bin/claude"
 
 mkdir -p "$LOGDIR" "$MONTHLY"
 MONTH=$(date -v-1m +%Y-%m)          # mese appena concluso (BSD date, macOS)
@@ -59,10 +59,10 @@ previsioni falsificabili.
 EOF
 
 cd "$NEWSDIR"
-"$CODEX" exec --model "$MODEL" -c 'model_reasoning_effort="high"' \
-  --sandbox workspace-write -C "$NEWSDIR" "$PROMPT" </dev/null >> "$LOG" 2>&1
+"$CLAUDE" -p "$PROMPT" --model "$MODEL" --permission-mode bypassPermissions \
+  </dev/null >> "$LOG" 2>&1
 RC=$?
-log "Codex exit code $RC."
+log "Claude exit code $RC."
 if (( RC != 0 )); then
   log "ERROR: report mensile non compilato."
   exit "$RC"

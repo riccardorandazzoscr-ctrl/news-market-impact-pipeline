@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.riccardo.newsimpact.brief</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/run_morning_brief.sh</string>
+    </array>
+
+    <!-- Ogni giorno alle 07:30 (ora locale del Mac): 45 minuti prima
+         dell'analisi delle 08:15, come la vecchia routine.
+         Idempotente: se il briefing di oggi c'è già ed è completo, esce. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Hour</key>
+        <integer>7</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
+
+    <!-- Non eseguire al caricamento del plist (evita run a sorpresa) -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/logs/brief.launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/logs/brief.launchd.error.log</string>
+</dict>
+</plist>

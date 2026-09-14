@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.riccardo.newsimpact.indexkb</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/index_studies.sh</string>
+    </array>
+
+    <!-- Riparte appena cambia il contenuto della Knowledge Base:
+         tipicamente l'aggiunta di una nuova sottocartella-studio.
+         Lo script è idempotente: se non trova studi non indicizzati fa no-op,
+         quindi la riscrittura di catalog.yaml non innesca un loop. -->
+    <key>WatchPaths</key>
+    <array>
+        <string>/Users/riccardo/Claude/mercati_finanza/knowledge_base</string>
+    </array>
+
+    <!-- Non eseguire al caricamento del plist (evita run a sorpresa) -->
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/logs/indexkb.out.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/logs/indexkb.err.log</string>
+</dict>
+</plist>

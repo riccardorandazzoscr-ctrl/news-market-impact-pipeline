@@ -7,6 +7,8 @@
 #   ./run_tests.sh analisi      # solo il guardiano sull'analisi in uscita
 #   ./run_tests.sh watchdog     # solo il tetto di durata e il lock
 #   ./run_tests.sh analogues    # solo il filtro sotto-tema di analogues.py
+#   ./run_tests.sh usage        # solo il parser dei consumi del run headless
+#   ./run_tests.sh brief        # solo il job che produce il briefing (07:30)
 #
 # I test sono NON distruttivi: leggono il DB e lanciano i tool in sola lettura.
 # L'unica eccezione è `update_market_data.py`, rilanciato per verificare che sia
@@ -41,9 +43,16 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "analogues" ] && \
   run "analogues.py — verso e riferimento" tests/test_analogues_direction.py
 
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "usage" ] && \
+  run "consumi — parser del grezzo di claude -p" tests/test_record_usage.py
+
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "asset" ] && \
   run "universo asset — registro, dati, mappa, integrazione, regressione" \
       tests/test_asset_universe.py
+
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "brief" ] && \
+  run "morning brief — il job che PRODUCE il briefing delle 07:30" \
+      tests/test_morning_brief.sh
 
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "briefing" ] && \
   run "briefing — guardiano contro il run su file scritto a metà" \

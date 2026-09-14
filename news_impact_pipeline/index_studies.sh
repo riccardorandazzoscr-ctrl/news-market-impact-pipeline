@@ -8,7 +8,7 @@
 # Cosa fa:
 #   - scopre le sottocartelle-studio NON ancora indicizzate (= nessun .md con
 #     blocco ```yaml in fondo) ma che contengono materiale sorgente
-#   - se ce ne sono, lancia Codex headless con un prompt che legge la
+#   - se ce ne sono, lancia Claude Code headless con un prompt che legge la
 #     ricerca (anche da PDF), accoda il blocco YAML canonico §5.2 e rilancia
 #     build_catalog.py
 #   - idempotente: se non trova studi non indicizzati esce subito (no-op),
@@ -18,14 +18,14 @@ set -u
 export PATH="/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # --- Configurazione --------------------------------------------------------
-MODEL="gpt-5.6-terra"   # estrazione strutturata di metadati
+MODEL="claude-opus-5"   # stesso modello del run giornaliero
 PROJECT="$HOME/Claude"
 NEWSDIR="$PROJECT/mercati_finanza"
 PIPE="$NEWSDIR/news_impact_pipeline"
 PY="$PIPE/venv/bin/python"
 KB="$NEWSDIR/knowledge_base"
 LOGDIR="$PIPE/logs"
-CODEX="/Applications/ChatGPT.app/Contents/Resources/codex"
+CLAUDE="/opt/homebrew/bin/claude"
 
 mkdir -p "$LOGDIR"
 LOG="$LOGDIR/index_studies.log"
@@ -141,12 +141,12 @@ Output finale in chat: per ogni studio, lo slug, il primary_theme assegnato e
 gli asset rilevanti; più la riga di riepilogo del catalog (n. entries, warning).
 EOF
 
-log "Lancio Codex headless (model=$MODEL)."
+log "Lancio Claude Code headless (model=$MODEL)."
 cd "$NEWSDIR"
-"$CODEX" exec --model "$MODEL" -c 'model_reasoning_effort="medium"' \
-  --sandbox workspace-write -C "$NEWSDIR" "$PROMPT" </dev/null >> "$LOG" 2>&1
+"$CLAUDE" -p "$PROMPT" --model "$MODEL" --permission-mode bypassPermissions \
+  </dev/null >> "$LOG" 2>&1
 RC=$?
-log "Codex exit code $RC."
+log "Claude exit code $RC."
 if (( RC != 0 )); then
   log "ERROR: indicizzazione incompleta."
   exit "$RC"

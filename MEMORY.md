@@ -9,15 +9,18 @@ Stato per filone. Max 10 righe a filone. Ciò che resta vero per sempre va in
 
 - **Stato** — tutte le fasi implementate: market data, knowledge base, classificazione
   dell'agente, event study "Opzione B", analisi giornaliera, report mensile e scorecard.
-  Il 13/09/2026 l'orchestrazione è stata migrata ai task locali ChatGPT; la prima
-  esecuzione programmata resta da osservare. ⚠ Non descrivere fasi come "da fare".
+  Il 15/09/2026 l'orchestrazione è **rientrata su Claude Code** (era passata ai task
+  ChatGPT il 13/09): 6 job launchd, i tre che usano un modello lanciano `claude -p`
+  headless su Opus 5. ⚠ Non descrivere fasi come "da fare".
 - **Deciso** — niente API key Anthropic; l'Opzione B ha sostituito le ~5 analogie scelte
-  a mano; le research le scrive il maintainer.
-- **Prossimo passo** — verificare i primi run ChatGPT dalla sezione Scheduled,
-  il brief HTML, il report, la scorecard e l'invio Telegram. Vedi
-  `references/chatgpt_routine.md`.
+  a mano; le research le scrive il maintainer. Il morning brief, che non aveva uno
+  script locale, ora è un job come gli altri: niente dipende più da un'app aperta.
+- **Prossimo passo** — osservare il primo ciclo completo del 16/09 (brief 07:30 →
+  analisi 08:15 → Telegram) e la prima riga di `logs/usage.csv` su Opus 5: il costo
+  per run va riconfrontato con i $27,9 misurati ad agosto, che erano su un altro
+  modello e un altro formato di scheda. Vedi `references/routine_giornaliera.md`.
 
-Aggiornato: 2026-09-13
+Aggiornato: 2026-09-15
 
 ---
 

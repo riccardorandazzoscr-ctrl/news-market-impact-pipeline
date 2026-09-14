@@ -152,7 +152,7 @@ if zsh -n "$SCRIPT" 2>/dev/null; then ok "run_daily_analysis.sh: sintassi valida
 else ko "run_daily_analysis.sh: sintassi valida" "zsh -n fallisce"; fi
 # test_index_incompleto.sh ritaglia il blocco della chiamata a Claude fra questi
 # due marcatori: se il watchdog li duplicasse, quella suite taglierebbe a caso.
-check "grep -c '^log \"Lancio Codex headless' '$SCRIPT' | grep -q '^1$'" \
+check "grep -c '^log \"Lancio Claude Code headless' '$SCRIPT' | grep -q '^1$'" \
       "resta UN solo marcatore di apertura (^log \"Lancio...)"
 check "grep -c '^rm -f ' '$SCRIPT' | grep -q '^1$'" \
       "resta UN solo marcatore di chiusura (^rm -f)"

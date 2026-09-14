@@ -68,7 +68,7 @@ RC=${STUB_RC:-0}
 log "Claude exit code $RC."
 STUB
   awk -v stubf="$SANDBOX/stub.zsh" '
-    /^log "Lancio Codex headless/ { while ((getline l < stubf) > 0) print l; salta=1; next }
+    /^log "Lancio Claude Code headless/ { while ((getline l < stubf) > 0) print l; salta=1; next }
     /^rm -f / { salta=0; next }
     !salta { print }
   ' "$SCRIPT" > "$FPIPE/run_fin.sh"
@@ -154,7 +154,7 @@ for s in "$SCRIPT" "$PIPE/send_telegram.sh"; do
   if zsh -n "$s" 2>/dev/null; then ok "${s:t}: sintassi valida"
   else ko "${s:t}: sintassi valida" "zsh -n fallisce"; fi
 done
-check "grep -c '^log \"Lancio Codex headless' '$SCRIPT' | grep -q '^1$'" \
+check "grep -c '^log \"Lancio Claude Code headless' '$SCRIPT' | grep -q '^1$'" \
       "lo stub dei test aggancia un marcatore unico (^log \"Lancio...)"
 check "grep -c '^rm -f ' '$SCRIPT' | grep -q '^1$'" \
       "lo stub dei test chiude su un marcatore unico (^rm -f)"
@@ -223,7 +223,7 @@ check "grep -q '12:40pm' '$LOG'" "riporta quando si azzera il limite"
 check "grep -q '6 schede' '$LOG'" "conta le schede salvate dal parziale"
 check "grep -q 'run_daily_analysis.sh $GIORNO' '$LOG'" "suggerisce come rilanciare"
 check "! grep -q 'DONE' '$LOG'" "NON si dichiara completato"
-check "! grep -q 'WARN: Codex exit' '$LOG'" "non è più il WARN silenzioso di prima"
+check "! grep -q 'WARN: Claude exit' '$LOG'" "non è più il WARN silenzioso di prima"
 check "[[ -f '$GIORNODIR/report.html' ]]" "il lavoro parziale viene comunque renderizzato"
 check "grep -q -- '--parziale' '$TELEGRAM'" "Telegram avvisa che il report è incompleto"
 teardown
@@ -249,7 +249,7 @@ cp "$GIORNODIR/_index.md" "$SANDBOX/completo.md"
 rm -rf "$GIORNODIR"
 RC=$(run_finale 1 "$SANDBOX/completo.md" 3)
 check "[[ $RC -eq 0 ]]" "il giorno non si butta via" "rc=$RC"
-check "grep -q 'WARN: Codex exit 1' '$LOG'" "logga il WARN"
+check "grep -q 'WARN: Claude exit 1' '$LOG'" "logga il WARN"
 check "grep -q 'DONE' '$LOG'" "arriva in fondo"
 check "! grep -q -- '--parziale' '$TELEGRAM'" "Telegram con la didascalia normale"
 teardown

@@ -6,7 +6,7 @@ processare il morning briefing del giorno e produrre le schede di analisi.
 ## Input
 
 - Briefing HTML in `~/Claude/morning brief/YYYY-MM-DD-morning-briefing.html`
-  (20 notizie: 10 International + 10 Economics & Finance, + 1 "One Thing to Watch").
+  (N notizie: fino a 10 International e fino a 10 Economics & Finance, + 1 "One Thing to Watch").
 - DB mercati in `market_data/market_data.db`.
   ⚠ **L'elenco degli asset NON è scritto qui.** L'unica fonte autorevole è
   `category_asset_map.yaml` (o `pipeline_tools.py list-categories`), che cresce nel
@@ -26,7 +26,7 @@ processare il morning briefing del giorno e produrre le schede di analisi.
 
 ## Output
 
-- `~/Claude/mercati_finanza/daily_analysis/YYYY-MM-DD/_index.md` — digest di triage (tutte le 20
+- `~/Claude/mercati_finanza/daily_analysis/YYYY-MM-DD/_index.md` — digest di triage (tutte le N
   notizie con decisione ✅/✖ + motivazione + link alle schede).
 - `~/Claude/mercati_finanza/daily_analysis/YYYY-MM-DD/news_NN.md` — una scheda completa per ogni
   notizia tenuta (subset triato: tipicamente 3-6/giorno).
@@ -101,7 +101,7 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
 1. **Parse + scaffold triage.** `pipeline_tools.py digest --date AAAA-MM-GG`
    (comandi e flag: sezione "Riferimento comandi" sopra).
 
-2. **Triage.** Leggi `_index.md`. Per ognuna delle 20 notizie decidi:
+2. **Triage.** Leggi `_index.md`. Per ognuna delle N notizie decidi:
    - ✅ **tieni** se (a) mappa su uno degli asset dell'universo corrente in DB —
      **verifica in `category_asset_map.yaml`, NON a memoria** (letto una volta sola,
      qui in fase di triage) — *e* (b) esiste un
@@ -302,7 +302,7 @@ La lunghezza non è un problema; l'oscurità sì. Regole:
 
 > Processa il morning briefing di oggi seguendo
 > `~/Claude/mercati_finanza/news_impact_pipeline/PHASE5_RUNBOOK.md`: genera il digest di triage,
-> tria le 20 notizie (subset triato), e produci una scheda di event study completa
+> tria tutte le notizie presenti (subset triato), e produci una scheda di event study completa
 > per ciascuna notizia tenuta in `~/Claude/mercati_finanza/daily_analysis/<oggi>/`. Se il DB mercati
 > è vuoto, ricostruiscilo prima con bootstrap + fetch_fred. **Rispetta la sezione
 > "Stile e chiarezza" del runbook: espandi tutte le sigle alla prima occorrenza,

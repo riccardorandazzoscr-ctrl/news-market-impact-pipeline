@@ -1,8 +1,11 @@
 # Prompt di ricerca notizie — Morning Briefing (v2.2, 2026-06-06)
 
-> Questo è il prompt che la routine programmata di ChatGPT esegue ogni mattina.
-> Copia canonica e versionabile. **Usa nella routine SOLO il blocco
-> qui sotto delimitato da `=== PROMPT START/END ===`** (è in inglese di proposito:
+> Questo è il prompt che il job `com.riccardo.newsimpact.brief` esegue ogni mattina
+> alle 07:30. Copia canonica e versionabile, **fonte unica**:
+> `run_morning_brief.sh` estrae da qui SOLO il blocco delimitato da
+> `=== PROMPT START/END ===` e non ne tiene una copia propria — quindi per
+> cambiare il briefing si modifica questo file, e basta. Le note qui sopra
+> restano fuori dal prompt (è in inglese di proposito:
 > un prompt in inglese produce un briefing in inglese — la v2/v2.1 erano in italiano
 > e facevano uscire il briefing in italiano).
 >
@@ -68,14 +71,18 @@ The single most market-moving development to monitor today, and why.
 `YYYY-MM-DD-morning-briefing.html` (using today's Europe/Rome date) in
 `/Users/riccardo/Claude/morning brief/`
 — clean, readable HTML: white background, sans-serif font, comfortable line spacing,
-styled headings, mobile-friendly. **Keep the existing HTML structure**: exactly
-20 numbered story containers with `class="story"`, 10 under an `<h2>` containing
-"International" and 10 under an `<h2>` containing "Economics & Finance". Each
-story needs an `<h3>` headline, a text paragraph, and a source link with the
-actual URL. The downstream parser depends on these tags and class names. Build
-the entire HTML in a temporary file in the same directory, verify 20 story
-containers and a closing `</body>` tag, then atomically rename it to the final
-filename. If the final file already exists and passes these checks, do not
-overwrite it. Never publish a partial briefing as the final filename.
+styled headings, mobile-friendly. **Keep the existing HTML structure**: each
+verified story must be in a numbered container with `class="story"`, grouped under
+an `<h2>` containing either "International" or "Economics & Finance". Include up to
+10 stories per section. If fewer than 20 stories are available, publish a clearly
+labelled partial edition with only the new, verified stories; do not pad it with
+older, duplicate or weakly verified items. Each story needs an `<h3>` headline, a
+text paragraph, and a source link with the actual URL. The downstream parser depends
+on these tags and class names. Build the entire HTML in a temporary file in the same
+directory, verify that the number of `story` containers matches the number of
+published stories and that a closing `</body>` tag is present, then atomically rename
+it to the final filename. If the final file already exists and passes these checks,
+do not overwrite it. If no new, verifiable stories are available, do not publish a
+file and report that outcome.
 
 === PROMPT END ===

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.riccardo.newsimpact.monthly</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/run_monthly_report.sh</string>
+    </array>
+
+    <!-- Il 1° di ogni mese alle 09:30 (ora locale): copre il mese appena concluso.
+         Dopo update dati (08:00) e analisi (08:15). Idempotente via sentinella .done;
+         se il Mac era spento il 1°, launchd coalizza l'evento al risveglio. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Day</key>
+        <integer>1</integer>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>30</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/logs/monthly.launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/logs/monthly.launchd.error.log</string>
+</dict>
+</plist>

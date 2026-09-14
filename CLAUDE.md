@@ -57,9 +57,11 @@ contesto di regime → analoghi storici dalla **libreria episodi** (`analogues.p
 study (rendimenti cumulati a T+1, T+3, T+5, T+10) → scheda in `daily_analysis/YYYY-MM-DD/`
 → `render_report.py` → `send_telegram.sh`.
 
-Automazione: 5 job launchd `com.riccardo.newsimpact.*` — marketdata-update 08:00, daily
-08:15 (+ WatchPaths sul briefing), scorecard lunedì 09:00, monthly 1° del mese 09:30,
-indexkb.
+Automazione: 6 job launchd `com.riccardo.newsimpact.*` — brief 07:30, marketdata-update
+08:00, daily 08:15 con ritentativi 09:15/10:15 (+ WatchPaths sul briefing), scorecard
+lunedì 09:00, monthly 1° del mese 09:30, indexkb (WatchPaths sulla KB). I tre job che
+usano un modello lanciano `claude -p` headless su Opus 5; gli altri sono Python puro.
+Orari, verifica e ripristino: [references/routine_giornaliera.md](references/routine_giornaliera.md).
 
 ## Reference
 
@@ -82,6 +84,8 @@ indexkb.
   modifichi runbook, tool o formato delle schede.
 - [quando_si_rompe.md](references/quando_si_rompe.md) — il report non è uscito, il DB
   sembra vuoto, o qualcosa fallisce in silenzio.
+- [routine_giornaliera.md](references/routine_giornaliera.md) — cosa gira a che ora, con
+  quale modello, e i comandi per verificare che sia partito o per ricaricare i job.
 
 ## Vincoli non negoziabili
 
@@ -94,8 +98,10 @@ indexkb.
   Claude Code, Python espone solo tool deterministici via Bash. `anthropic` non si usa.
 - ⚠ `update_market_data.py` importa costanti e helper da `bootstrap_market_data.py` —
   **non separarli**.
-- ⚠ I 5 job launchd girano **da dentro questa cartella**: se viene spostata, i plist vanno
+- ⚠ I 6 job launchd girano **da dentro questa cartella**: se viene spostata, i plist vanno
   modificati **e ricaricati** (`launchctl bootout` poi `bootstrap`), o smettono in silenzio.
+  La copia versionata dei plist sta in `news_impact_pipeline/launchd/`; quella **viva** sta
+  in `~/Library/LaunchAgents/`. Modificare la prima non basta: va copiata e ricaricata.
 - Riporta **sempre la numerosità (N)**; con N<10 segnala il risultato come indicativo.
 - Analogie storiche: **solo informazione disponibile all'epoca** dell'evento (no look-ahead).
 - La segmentazione per regime (`regime_phases` nei metadati KB) è la difesa primaria contro

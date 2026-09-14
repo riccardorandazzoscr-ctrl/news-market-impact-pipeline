@@ -10,20 +10,20 @@
 #     e se non si completa fallisce ad alta voce invece di analizzare il vuoto
 #   - lock per evitare run concorrenti (calendario + watchpath sovrapposti)
 #   - ricostruisce il DB mercati se risulta incompleto
-# Poi lancia Codex headless sul runbook.
+# Poi lancia Claude Code headless sul runbook.
 
 set -u
 export PATH="/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # --- Configurazione --------------------------------------------------------
-MODEL="gpt-5.6-sol"   # analisi giornaliera: qualità elevata su molte schede
+MODEL="claude-opus-5"   # analisi giornaliera: qualità elevata su molte schede
 
 # Integrità del briefing (guasto del 2026-09-07, vedi la funzione brief_completo).
-# MIN_STORIES=20 non è una stima: è un'invariante misurata su tutti i 138 briefing
-# in archivio, che ne hanno esattamente 20 — nessuno ne ha mai avuti meno.
-# Sovrascrivibili dall'ambiente solo perché la suite in tests/ possa verificare
-# l'attesa senza restare ferma dieci minuti: launchd non le imposta.
-MIN_STORIES=${MIN_STORIES:-20}
+# Un briefing pubblicato può essere parziale: contiene tutte e sole le notizie nuove
+# e verificabili disponibili al momento del run. La soglia minima distingue quindi
+# un briefing valido da un file vuoto o scritto a metà; il tag </body> resta il segno
+# di pubblicazione atomica. Sovrascrivibile per le prove della suite.
+MIN_STORIES=${MIN_STORIES:-1}
 WAIT_MAX=${WAIT_MAX:-600}       # attesa massima del completamento, in secondi
 WAIT_STEP=${WAIT_STEP:-15}      # ogni quanto ricontrollare
 
@@ -32,7 +32,7 @@ WAIT_STEP=${WAIT_STEP:-15}      # ogni quanto ricontrollare
 # il p90 25,8 e il secondo massimo 37,2. Il massimo vero — 410,9 minuti — È il guasto,
 # non un run lungo. 3600s sta 1,6 volte sopra il run legittimo più lungo mai visto, e
 # sui 104 in archivio sarebbe scattato solo su quello.
-RUN_MAX=${RUN_MAX:-3600}               # durata massima di `codex exec`, in secondi
+RUN_MAX=${RUN_MAX:-3600}               # durata massima di `claude -p`, in secondi
 RUN_KILL_GRACE=${RUN_KILL_GRACE:-20}   # quanto si aspetta fra il TERM e il KILL
 PROJECT="$HOME/Claude"
 NEWSDIR="$PROJECT/mercati_finanza"
@@ -42,10 +42,8 @@ BRIEF_DIR="$PROJECT/morning brief"
 DAILY="$NEWSDIR/daily_analysis"
 LOGDIR="$PIPE/logs"
 # Sovrascrivibile per la stessa ragione di MIN_STORIES e WAIT_MAX: la suite in
-# tests/ deve poter mettere al suo posto un finto eseguibile. Il task non la imposta.
-# CLAUDE resta solo come alias del test storico: CODEX prevale sempre se impostato.
-CLAUDE=${CLAUDE:-}
-CODEX=${CODEX:-${CLAUDE:-/Applications/ChatGPT.app/Contents/Resources/codex}}
+# tests/ deve poter mettere al suo posto un finto `claude`. launchd non la imposta.
+CLAUDE=${CLAUDE:-/opt/homebrew/bin/claude}
 
 mkdir -p "$LOGDIR"
 # Data del run: di default oggi. Si può passare una data ISO come primo argomento
@@ -277,7 +275,7 @@ read -r -d '' PROMPT <<EOF
 Processa il morning briefing di oggi ($TODAY) seguendo ESATTAMENTE il runbook
 $PIPE/PHASE5_RUNBOOK.md. Passi:
 1) Genera il digest di triage: pipeline_tools.py digest --date $TODAY
-2) Tria le 20 notizie con scope "subset triato": scheda completa SOLO per
+2) Tria tutte le $(conta_story) notizie del briefing con scope "subset triato": scheda completa SOLO per
    notizie che mappano su uno degli asset dell'universo corrente in DB
    (verifica in category_asset_map.yaml, NON a memoria — leggilo UNA volta sola
    qui) e hanno un analogo storico plausibile;
@@ -312,26 +310,28 @@ Output finale in chat: riepilogo con quante notizie tenute/scartate e i temi
 delle schede prodotte. Lavora in $DAILY/$TODAY/.
 EOF
 
-log "Lancio Codex headless (model=$MODEL, tetto ${RUN_MAX}s)."
+log "Lancio Claude Code headless (model=$MODEL, tetto ${RUN_MAX}s)."
 cd "$NEWSDIR"
-# Codex --json emette JSONL con eventi e usage, non un unico oggetto JSON.
-RAW="$LOGDIR/.raw_${TODAY}.jsonl"
+# --output-format json: oltre al testo finale restituisce turni, token e costo.
+# Senza questo il consumo del run non è misurabile (diagnosi del 2026-08-21: si
+# poteva ricostruire solo scavando nei transcript di ~/.claude/projects/).
+RAW="$LOGDIR/.raw_${TODAY}.json"
 SCADUTO="$LOGDIR/.timeout_${TODAY}"
 /bin/rm -f "$SCADUTO"
 
-# ⚠ Watchdog (guasto del 2026-08-05). Quel giorno il vecchio agente è rimasto appeso
+# ⚠ Watchdog (guasto del 2026-08-05). Quel giorno `claude -p` è rimasto appeso
 # 410,9 minuti: il report è uscito alle 14:36 invece che alle 08:05, il lock è restato
 # occupato per tutte e sette le ore — ogni ri-trigger a log come SKIP — e non è partito
 # un solo allarme. Una chiamata sincrona senza tetto non ha modo di distinguere
 # "sta lavorando" da "non tornerà mai": è il terzo guasto muto della stessa famiglia.
 #
-# Il guardiano NON dorme in un colpo solo. Controlla ogni secondo se Codex è ancora
+# Il guardiano NON dorme in un colpo solo. Controlla ogni secondo se Claude è ancora
 # vivo e si spegne da sé appena finisce: un singolo `sleep $RUN_MAX` lascerebbe un
 # processo addormentato per un'ora dopo OGNI run riuscito.
 # ⚠ Uccide il processo figlio, non tutto il suo albero: in uno script i job non hanno
 # un process group proprio, quindi un kill di gruppo porterebbe via anche noi.
-"$CODEX" exec --json --model "$MODEL" -c 'model_reasoning_effort="high"' \
-  --sandbox workspace-write -C "$NEWSDIR" "$PROMPT" </dev/null > "$RAW" 2>>"$LOG" &
+"$CLAUDE" -p "$PROMPT" --model "$MODEL" --permission-mode bypassPermissions \
+  --output-format json </dev/null > "$RAW" 2>>"$LOG" &
 PID_HEADLESS=$!
 ( trascorso=0
   while (( trascorso < RUN_MAX )); do
@@ -348,14 +348,14 @@ RC=$?
 kill "$PID_GUARDIANO" 2>/dev/null
 PID_GUARDIANO=""; PID_HEADLESS=""
 if [[ -f "$SCADUTO" ]]; then
-  log "TIMEOUT: Codex non è tornato entro ${RUN_MAX}s, processo ucciso."
+  log "TIMEOUT: Claude non è tornato entro ${RUN_MAX}s, processo ucciso."
   /bin/rm -f "$SCADUTO"
 fi
-log "Codex exit code $RC."
+log "Claude exit code $RC."
 
 # Estrae il testo finale (nel log, come prima) e accoda una riga al CSV dei consumi.
-"$PY" "$PIPE/record_codex_usage.py" "$RAW" "$LOG" "$LOGDIR/codex_usage.csv" "$TODAY" \
-  || log "WARN: parsing usage Codex fallito."
+"$PY" "$PIPE/record_claude_usage.py" "$RAW" "$LOG" "$LOGDIR/usage.csv" "$TODAY" \
+  || log "WARN: parsing usage fallito."
 rm -f "$RAW"
 
 # --- Allarme su fallimento del run headless -------------------------------
@@ -371,11 +371,11 @@ INCOMPLETA=0
 if [[ ! -f "$INDEX" ]]; then
   MSG="run $TODAY FALLITO (exit $RC, _index.md assente)."
   if grep -q "TIMEOUT:" "$LOG" 2>/dev/null; then
-    MSG="Codex appeso oltre ${RUN_MAX}s e ucciso dal watchdog senza aver scritto nulla: run $TODAY non prodotto. Rilancia: run_daily_analysis.sh $TODAY"
+    MSG="Claude appeso oltre ${RUN_MAX}s e ucciso dal watchdog senza aver scritto nulla: run $TODAY non prodotto. Rilancia: run_daily_analysis.sh $TODAY"
   elif grep -qi "Invalid authentication\|401\|Not logged in\|Please run /login" "$LOG" 2>/dev/null; then
-    MSG="login ChatGPT/Codex scaduto: esegui 'codex login'. Run $TODAY non prodotto."
+    MSG="login Claude scaduto: esegui 'claude /login'. Run $TODAY non prodotto."
   elif grep -qi "session limit\|usage limit" "$LOG" 2>/dev/null; then
-    MSG="limite di sessione Codex: run $TODAY non prodotto. Rilancia dopo il reset: run_daily_analysis.sh $TODAY"
+    MSG="limite di sessione Claude: run $TODAY non prodotto. Rilancia dopo il reset: run_daily_analysis.sh $TODAY"
   elif grep -qi "529\|Overloaded\|rate.limit\|500 Internal\|503" "$LOG" 2>/dev/null; then
     MSG="API sovraccarica (529/5xx): run $TODAY non prodotto. Rilancia: run_daily_analysis.sh $TODAY"
   fi
@@ -396,15 +396,15 @@ elif ! index_completo; then
   # ("You've hit your session limit · resets 12:40pm (Europe/Rome)"): riportarla
   # evita il rilancio a vuoto prima che il limite si sia azzerato.
   if grep -q "TIMEOUT:" "$LOG" 2>/dev/null; then
-    MSG="watchdog: Codex appeso oltre ${RUN_MAX}s, ucciso a metà run. Analisi $TODAY INCOMPLETA (${#PARZIALI} schede prodotte, $PENDENTI notizie non triate). Rilancia: run_daily_analysis.sh $TODAY"
+    MSG="watchdog: Claude appeso oltre ${RUN_MAX}s, ucciso a metà run. Analisi $TODAY INCOMPLETA (${#PARZIALI} schede prodotte, $PENDENTI notizie non triate). Rilancia: run_daily_analysis.sh $TODAY"
   elif grep -qi "session limit\|usage limit" "$LOG" 2>/dev/null; then
     RESET=$(grep -o 'resets [0-9:apm]*' "$LOG" 2>/dev/null | tail -1)
-    MSG="limite di sessione Codex a metà run: analisi $TODAY INCOMPLETA (${#PARZIALI} schede, $PENDENTI notizie non triate). Rilancia${RESET:+ dopo le ${RESET#resets }}: run_daily_analysis.sh $TODAY"
+    MSG="limite di sessione Claude a metà run: analisi $TODAY INCOMPLETA (${#PARZIALI} schede, $PENDENTI notizie non triate). Rilancia${RESET:+ dopo le ${RESET#resets }}: run_daily_analysis.sh $TODAY"
   fi
   log "ERROR: $MSG"
   /usr/bin/osascript -e "display notification \"$MSG\" with title \"News-Impact Pipeline\" sound name \"Basso\"" 2>/dev/null
 elif [[ $RC -ne 0 ]]; then
-  log "WARN: Codex exit $RC ma _index.md compilato → procedo comunque con render + invio."
+  log "WARN: Claude exit $RC ma _index.md compilato → procedo comunque con render + invio."
 fi
 
 # Render HTML del report (apribile con doppio clic nel browser).

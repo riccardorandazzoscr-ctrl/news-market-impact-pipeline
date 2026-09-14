@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.riccardo.newsimpact.scorecard</string>
+
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/run_scorecard.sh</string>
+    </array>
+
+    <!-- Ogni lunedì alle 09:00 (ora locale): dopo l'update dati (08:00) e
+         l'analisi giornaliera (08:15), così la settimana è già processata.
+         Maturazione rolling: i T+10 non ancora pronti vengono raccolti i lunedì
+         successivi. -->
+    <key>StartCalendarInterval</key>
+    <dict>
+        <key>Weekday</key>
+        <integer>1</integer>
+        <key>Hour</key>
+        <integer>9</integer>
+        <key>Minute</key>
+        <integer>0</integer>
+    </dict>
+
+    <key>RunAtLoad</key>
+    <false/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/logs/scorecard.launchd.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/logs/scorecard.launchd.error.log</string>
+</dict>
+</plist>
