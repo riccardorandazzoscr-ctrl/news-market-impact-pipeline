@@ -16,6 +16,7 @@ V=news_impact_pipeline/venv/bin/python
 $V news_impact_pipeline/bootstrap_market_data.py   # storico una tantum (15 anni)
 $V news_impact_pipeline/update_market_data.py      # incrementale: finestra sovrapposta
 $V news_impact_pipeline/update_market_data.py --check   # freschezza/buchi, senza scaricare
+$V news_impact_pipeline/stato_giornata.py --date AAAA-MM-GG  # a che punto e' la giornata
 $V news_impact_pipeline/forecast_tracking.py run   # feedback loop settimanale (= job lun 09:00)
 cd news_impact_pipeline && ./run_tests.sh          # tutte le suite; con un filtro ne lancia una
 # setup venv:
@@ -30,7 +31,9 @@ cd news_impact_pipeline && python3 -m venv venv && venv/bin/pip install -r requi
   research che termina con un blocco YAML (template in Design_Document §5.2).
 - `news_impact_pipeline/` — script e venv. `category_asset_map.yaml` è la **fonte unica**
   della mappa categoria→asset.
-- `daily_analysis/YYYY-MM-DD/` — schede del giorno + `report.html`.
+- `daily_analysis/YYYY-MM-DD/` — schede del giorno + `report.html` + `_state.json`
+  (impronta del briefing usato e ricevuta dell'invio: tutto il resto dello stato si
+  ricalcola dal disco, vedi `stato_giornata.py`).
 - `news_impact_pipeline/tests/` — suite non distruttive, si lanciano con `run_tests.sh`.
   `test_asset_universe.py` accetta i ticker come argomento: **usalo per validare la
   prossima aggiunta di asset**, non serve riscriverlo.

@@ -50,18 +50,23 @@ script controllava solo `-f "$BRIEF"`, cioè l'esistenza.
 stesso file non modificano la cartella, e infatti nel log del 07/09 non c'è nessun terzo
 trigger dopo quello sul file parziale. Il run di quel giorno non sarebbe più ripartito.
 
-**Protezione applicata** (`run_daily_analysis.sh`, funzione `brief_completo`): il file è
-accettato solo se contiene `</body>` **e** almeno 20 blocchi `class="story"` — invariante
-verificata su tutti i 138 briefing in archivio, che ne hanno esattamente 20. Se è
+**Protezione applicata** (fase `input_validato` di `stato_giornata.py`): il file è
+accettato solo se contiene `</body>` **e** almeno `MIN_STORIES` notizie estratte dal
+parser vero — non un `grep` su `class="story"`, che passava anche su un HTML da cui il
+parser non estraeva nulla. ⚠ `MIN_STORIES` vale **1**, non 20: un briefing pubblicato può
+essere parziale per scelta (contiene tutte e sole le notizie nuove e verificabili), quindi
+la soglia distingue un briefing valido da un file vuoto o scritto a metà, non da uno
+corto. Se è
 incompleto lo script **attende dentro il processo** fino a 10 minuti, ricontrollando ogni
 15 secondi; se allo scadere non si è completato, fallisce con `ERROR`, notifica desktop
 ed `exit 1` — nessuna analisi invece di un'analisi vuota.
 
 - L'attesa avviene **dopo** il lock, così un trigger sovrapposto esce subito invece di
   mettersi in coda ad aspettare anche lui.
-- Se cambia il layout del briefing, `class="story"` va aggiornato **sia** qui **sia** in
-  `parse_briefing.py`, che usa la stessa definizione per contare le notizie.
-- Test: `./run_tests.sh briefing` (34 controlli, inclusa la corsa riprodotta davvero).
+- Il layout del briefing lo conosce **solo** `parse_briefing.py`: non c'è più una seconda
+  definizione di "notizia" da tenere allineata a mano.
+- Test: `./run_tests.sh briefing` (inclusa la corsa riprodotta davvero e la regressione
+  su tutti i briefing in archivio).
 
 ## ⚠ Il guasto silenzioso 3: analisi interrotta a metà (2026-09-11)
 
@@ -83,13 +88,16 @@ esistenza del file, quindi lo scheletro **bloccava i tentativi successivi**. All
 il ri-trigger ha loggato `SKIP: analisi già presente` su un'analisi mai finita: senza
 cancellare i file a mano, quel giorno non sarebbe più ripartito.
 
-**Protezioni applicate** (`run_daily_analysis.sh`, funzione `index_completo`):
+**Protezioni applicate** (fasi `triage_completato` e `schede_validate` di
+`stato_giornata.py`):
 
-1. Il segnale di successo non è più che `_index.md` **esista**, ma che sia **compilato**:
-   nessuna riga ⏳ e nessun segnaposto "Da compilare dopo il triage". Invariante misurata
-   su 105 `_index.md` in archivio — i 102 sani non hanno né l'uno né l'altro, i 3 rotti
-   hanno entrambi. Sono i marcatori del template in `PHASE5_RUNBOOK.md`: **se cambiano lì,
-   vanno cambiati anche qui.**
+1. Il segnale di successo non è più che `_index.md` **esista**, ma che il triage sia
+   davvero chiuso: ogni riga decisa (✅ o ✖), la Sintesi scritta, e — dal 15/09 — le righe
+   della tabella che **corrispondono alle notizie del briefing in ingresso**. Senza
+   quest'ultimo controllo un `_index.md` completamente **vuoto** passava: non ha righe ⏳
+   né segnaposto. I marcatori vengono dal template in `PHASE5_RUNBOOK.md`: **se cambiano
+   lì, vanno cambiati anche qui.** Poi ogni riga ✅ deve avere la sua scheda, e la scheda
+   deve contenere i risultati dell'event study.
 2. Gli esiti diventano tre invece di due: assente → fallimento pieno; **monco → `ERROR` +
    notifica + didascalia Telegram d'allarme + `exit 1`**, ma le schede prodotte si tengono
    e si spediscono; compilato → successo, anche con exit ≠0 (resta il caso del 10/07).
@@ -98,6 +106,47 @@ cancellare i file a mano, quel giorno non sarebbe più ripartito.
    in `_interrotto_<ora>/`, che il prefisso `_` tiene fuori dal glob di `render_report.py`
    e `analogues.py` (altrimenti quelle schede entrerebbero due volte in report e libreria).
 4. L'allarme riporta **l'ora di reset del limite**, così il rilancio non è a vuoto.
+5. Dal 15/09 il ritentativo **riusa le schede già valide** invece di rifarle: restano al
+   loro posto se il testo delle notizie che le alimentano non è cambiato. L'11/09 il
+   ritentativo ripagava anche le 6 schede su 20 già prodotte.
+
+## A che punto è arrivata la giornata
+
+```bash
+V=news_impact_pipeline/venv/bin/python
+$V news_impact_pipeline/stato_giornata.py --date AAAA-MM-GG
+```
+
+Risponde con la **prima fase incompleta** fra sei, e col perché. È lo stesso giudizio che
+usa il wrapper: non c'è una seconda logica da tenere allineata.
+
+| Fase | Cosa vuole |
+|---|---|
+| `input_validato` | briefing arrivato, `</body>` presente, notizie estratte ≥ `MIN_STORIES` |
+| `dati_pronti` | l'aggiornamento prezzi di oggi ha scritto, e nessuna serie **scaricata** è ferma (le due serie derivate, `assets.source = 'computed'`, danno solo un avviso: hanno la procedura manuale di `serie_derivate.md`) |
+| `triage_completato` | la tabella copre tutte le notizie del briefing, ogni riga è decisa, la Sintesi è scritta |
+| `schede_validate` | ogni riga ✅ ha la sua `news_NN.md`, con `### Risultati` e `## Provenance` |
+| `html_prodotto` | `report.html` esiste, è più recente di indice e schede, e incorpora ogni scheda |
+| `consegna_confermata` | c'è la ricevuta dell'invio in `_state.json`, per **questo** `report.html` |
+
+Il ritentativo riparte dalla prima fase incompleta: se mancano solo render o consegna,
+**non richiama l'agente** e non ricosta un run. Prima usciva subito davanti a un indice
+compilato, e quelle due fasi non venivano mai riparate.
+
+⚠ Le giornate in archivio non hanno `_state.json` e non lo avranno: per loro la consegna
+risulta **sconosciuta**, non fallita. Nessuna migrazione da fare.
+
+### L'analisi non parte e il log dice `ATTESA: prezzi non ancora aggiornati`
+
+Normale prima delle 08:30 (`DATI_PRONTI_ENTRO`): il briefing delle 07:30 fa scattare il
+job prima dell'aggiornamento prezzi delle 08:00, e il run esce in silenzio lasciando fare
+a quello di calendario delle 08:15. **Dopo** quell'ora lo stesso stato è un guasto: allarme
+e `exit 1`. Non c'è un flag per scavalcare il controllo — si ripara il dato:
+
+```bash
+$V news_impact_pipeline/update_market_data.py          # scarica
+$V news_impact_pipeline/update_market_data.py --check  # cosa manca ancora
+```
 
 - Test: `./run_tests.sh analisi` (45 controlli, inclusa la regressione su tutti gli
   `_index.md` in archivio: i 3 giorni rotti noti riconosciuti, i 102 sani accettati).

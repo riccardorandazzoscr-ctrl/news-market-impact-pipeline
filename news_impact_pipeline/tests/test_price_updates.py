@@ -141,7 +141,7 @@ class Diagnosi(unittest.TestCase):
         self.conn.execute("UPDATE prices SET close=NULL, adj_close=NULL "
                           "WHERE ticker='ROTTO' AND date=?",
                           ((OGGI - timedelta(days=50)).isoformat(),))
-        testo = "\n".join(umd.diagnostica(self.conn, OGGI))
+        testo = "\n".join(pr.testo for pr in umd.diagnostica(self.conn, OGGI))
         self.assertIn("[freschezza] FERMO", testo)
         self.assertIn("[copertura]  BUCO", testo)
         self.assertIn("[no prezzo]  ROTTO", testo)
@@ -152,14 +152,14 @@ class Diagnosi(unittest.TestCase):
         corto = [(OGGI - timedelta(days=g)).isoformat() for g in range(60, 45, -1)]
         self.serie("GIOVANE", 200, salta=set(corto))
         self.assertIn("[copertura]  GIOVANE",
-                      "\n".join(umd.diagnostica(self.conn, OGGI)))
+                      "\n".join(pr.testo for pr in umd.diagnostica(self.conn, OGGI)))
 
     def test_trova_la_barra_provvisoria_mai_promossa(self):
         self.serie("APPESO", 1100)
         self.conn.execute("UPDATE prices SET status='provisional' WHERE date=?",
                           ((OGGI - timedelta(days=60)).isoformat(),))
         self.assertIn("[provvisoria] APPESO",
-                      "\n".join(umd.diagnostica(self.conn, OGGI)))
+                      "\n".join(pr.testo for pr in umd.diagnostica(self.conn, OGGI)))
 
 
 class CicloCompleto(unittest.TestCase):

@@ -27,6 +27,9 @@ import yfinance as yf
 
 # Riusiamo le definizioni gia' scritte nel bootstrap, per non duplicarle:
 # la lista degli asset, il percorso del database e le funzioni di supporto.
+from diagnosi_serie import (LOOKBACK_DEFAULT, PONTE_MASSIMO, Problema,  # noqa: F401
+                            salto_normale,
+                            diagnostica, stampa_diagnosi)
 from bootstrap_market_data import (ASSETS, DB_PATH, START_DATE,
                                    create_database, store_prices)
 
@@ -44,8 +47,6 @@ LOOKBACK_GIORNI = {
     "volatility": 10,
     "commodity": 10,
 }
-LOOKBACK_DEFAULT = 10
-
 # La finestra breve non copre le revisioni storiche: quando yfinance ricalcola
 # l'adj_close per un dividendo o uno split, cambia TUTTA la serie all'indietro,
 # non gli ultimi giorni. Per questo una volta a settimana (sabato, mercati
@@ -56,12 +57,6 @@ GIORNO_DEEP = 5  # 5 = sabato
 # Serve un tetto: una riga che la fonte non sa piu' riempire non deve far
 # riscaricare l'intero storico a ogni run.
 RIPARAZIONE_MAX_GIORNI = 400
-
-# Ponte di borsa piu' lungo fra i mercati che seguiamo (Capodanno giapponese).
-# Serve come soglia di ripiego per uno strumento troppo giovane perche' il suo
-# calendario si deduca dalla sua storia.
-PONTE_MASSIMO = 9
-
 
 def ultima_data(conn, ticker):
     """Restituisce l'ultima data salvata per un ticker (stringa) o None."""
@@ -103,93 +98,6 @@ def finestra_download(conn, asset, oggi, deep=False):
         start = date.fromisoformat(rotta)
         motivo = f"riparazione da {rotta}"
     return start.isoformat(), motivo
-
-
-def salto_normale(giorni, minimo=5):
-    """Il ponte festivo piu' lungo che questo strumento fa di suo.
-
-    E' il calendario di borsa dedotto dalla serie stessa, invece di una lista di
-    festivita' da mantenere a mano: Capodanno giapponese, Golden Week e Natale
-    tedesco durano giorni diversi, e nessuno dei tre e' un buco.
-
-    Si misura sulla storia PRECEDENTE alla finestra esaminata: se la calcolassimo
-    sugli stessi giorni che stiamo controllando, un buco alzerebbe la soglia e si
-    nasconderebbe da solo.
-
-    ⚠ Cosi' tarata, la soglia trova le interruzioni di piu' giorni, non la singola
-    seduta mancante: per quella servirebbe un calendario di borsa vero, che qui
-    non c'e'.
-    """
-    salti = [(b - a).days for a, b in zip(giorni, giorni[1:])]
-    return max(minimo, max(salti, default=minimo))
-
-
-def diagnostica(conn, oggi, anni=2):
-    """Freschezza e copertura per ticker. Sola lettura: non scarica nulla.
-
-    Restituisce la lista dei problemi trovati (vuota = tutto a posto). Il
-    conteggio dei ticker non vede niente di tutto questo: un ticker fermo da
-    tre settimane e una riga senza prezzo contano come presenti.
-    """
-    problemi = []
-    inizio = (oggi - timedelta(days=365 * anni)).isoformat()
-    tickers = [r[0] for r in conn.execute(
-        "SELECT DISTINCT ticker FROM prices ORDER BY ticker")]
-
-    for ticker in tickers:
-        tutti = [date.fromisoformat(r[0]) for r in conn.execute(
-            "SELECT date FROM prices WHERE ticker = ? ORDER BY date", (ticker,))]
-        giorni = [d for d in tutti if d.isoformat() >= inizio]
-        if len(giorni) < 30:
-            problemi.append(f"[copertura]  {ticker:<14} solo {len(giorni)} sedute "
-                            f"negli ultimi {anni} anni")
-            continue
-        # Soglia dalla storia precedente alla finestra. Se lo strumento e' troppo
-        # giovane per averne, si usa la soglia fissa: dedurla dalla finestra che
-        # stiamo controllando la renderebbe cieca proprio ai buchi che cerca.
-        riferimento = [d for d in tutti if d.isoformat() < inizio]
-        normale = (salto_normale(riferimento) if len(riferimento) > 250
-                   else PONTE_MASSIMO)
-        buchi = [(a, b) for a, b in zip(giorni, giorni[1:]) if (b - a).days > normale]
-        if buchi:
-            esempi = ", ".join(f"{a}→{b}" for a, b in buchi[:3])
-            problemi.append(f"[copertura]  {ticker:<14} {len(buchi)} buchi oltre "
-                            f"{normale}g: {esempi}")
-        ritardo = (oggi - giorni[-1]).days
-        if ritardo > normale:
-            problemi.append(f"[freschezza] {ticker:<14} fermo al {giorni[-1]} "
-                            f"({ritardo}g fa, normale ≤{normale}g)")
-
-    for ticker, n, prima, ultima in conn.execute(
-            "SELECT ticker, COUNT(*), MIN(date), MAX(date) FROM prices "
-            "WHERE close IS NULL AND adj_close IS NULL GROUP BY ticker"):
-        problemi.append(f"[no prezzo]  {ticker:<14} {n} righe senza close ne' "
-                        f"adj_close ({prima} → {ultima})")
-
-    # `status` e' arrivata dopo il primo schema: su un DB non ancora migrato
-    # (o su una copia vecchia) la diagnosi deve funzionare lo stesso.
-    if "status" not in {r[1] for r in conn.execute("PRAGMA table_info(prices)")}:
-        return problemi
-
-    scaduto = (oggi - timedelta(days=LOOKBACK_DEFAULT)).isoformat()
-    for ticker, n, ultima in conn.execute(
-            "SELECT ticker, COUNT(*), MAX(date) FROM prices "
-            "WHERE status = 'provisional' AND date < ? GROUP BY ticker", (scaduto,)):
-        problemi.append(f"[provvisoria] {ticker:<13} {n} barre mai promosse a "
-                        f"definitive (ultima {ultima}): la fonte non le ripubblica")
-
-    return problemi
-
-
-def stampa_diagnosi(problemi):
-    print("\n--- Freschezza e copertura delle serie ---")
-    if not problemi:
-        print("  nessun problema: serie fresche, nessun buco, nessuna riga senza prezzo.")
-        return
-    for riga in problemi:
-        print(f"  {riga}")
-    print(f"  ({len(problemi)} segnalazioni. Nessuna e' stata corretta d'ufficio: "
-          f"vanno guardate.)")
 
 
 def main():

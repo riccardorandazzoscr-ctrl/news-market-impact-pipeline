@@ -28,6 +28,7 @@ Uso programmatico:
 """
 
 import argparse
+import hashlib
 import json
 import re
 import sys
@@ -44,6 +45,12 @@ FILENAME_RE = re.compile(r"(\d{4}-\d{2}-\d{2})-morning-briefing\.html$")
 # Etichette di sezione canoniche dell'output.
 SECTION_INTERNATIONAL = "international"
 SECTION_FINANCE = "finance"
+
+# Sigla breve della sezione, usata nella colonna "Sez." della tabella di triage.
+# Sta QUI e non in pipeline_tools perche' insieme al numero forma l'IDENTITA' di
+# una notizia: i numeri si ripetono fra le due sezioni (esiste un 01 intl e un 01
+# fin nello stesso briefing), quindi il numero da solo non identifica nulla.
+SEZIONE_BREVE = {SECTION_INTERNATIONAL: "intl", SECTION_FINANCE: "fin"}
 
 
 def briefing_path(d: date) -> Path:
@@ -213,6 +220,44 @@ def _all_items(parsed: dict, which: str) -> list[tuple[str, dict]]:
     return out
 
 
+def chiave_item(label: str, story: dict) -> str:
+    """Identita' di una notizia dentro un briefing: "intl/01", "fin/07".
+
+    Il solo numero non basta: si ripete fra le due sezioni."""
+    return f"{SEZIONE_BREVE.get(label, label)}/{story.get('num') or '—'}"
+
+
+def _canonico(story: dict) -> str:
+    """Forma canonica del contenuto di una storia, per l'impronta."""
+    fonti = " ; ".join(f"{s['name']}|{s['url']}" for s in story["sources"])
+    return "\n".join([story["title"], story["body"], fonti])
+
+
+def impronte(parsed: dict) -> dict:
+    """Impronte del briefing: una per notizia, una per l'insieme.
+
+    Servono a legare lo stato di una giornata all'IDENTITA' del suo input e non
+    alla sola data (cfr. R07): al ritentativo una scheda si riusa solo se il testo
+    delle notizie che la alimentano non e' cambiato.
+
+    Il box "One Thing to Watch" e' escluso di proposito dall'impronta complessiva:
+    non alimenta nessuna scheda, e includerlo farebbe rifare da capo un'intera
+    giornata per una riga di contorno riscritta.
+
+    Ritorna {"briefing": <sha>, "items": {"intl/01": <sha>, ...}}.
+    """
+    items, ordinate = {}, []
+    for label, story in _all_items(parsed, "all"):
+        k = chiave_item(label, story)
+        h = hashlib.sha256(_canonico(story).encode("utf-8")).hexdigest()[:16]
+        items[k] = h
+        ordinate.append(f"{k}={h}")
+    return {
+        "briefing": hashlib.sha256("\n".join(ordinate).encode("utf-8")).hexdigest()[:16],
+        "items": items,
+    }
+
+
 def format_listing(parsed: dict, which: str = "all") -> str:
     """Listing leggibile per l'agente: titoli + corpo per sezione."""
     lines = []
@@ -272,6 +317,11 @@ def main(argv=None):
         help="Elenca le date dei briefing disponibili ed esce.",
     )
     ap.add_argument(
+        "--impronte",
+        action="store_true",
+        help="Stampa in JSON l'impronta del briefing e quella di ogni notizia.",
+    )
+    ap.add_argument(
         "--count",
         action="store_true",
         help="Stampa solo il numero totale di storie estratte (per guardie shell) ed esce.",
@@ -312,6 +362,10 @@ def main(argv=None):
 
     if args.count:
         print(sum(len(stories) for stories in parsed["sections"].values()))
+        return 0
+
+    if args.impronte:
+        print(json.dumps(impronte(parsed), ensure_ascii=False, indent=2))
         return 0
 
     if args.json:

@@ -83,6 +83,38 @@ case "$*" in
     mkdir -p "$R"; print -r -- "<html>report finto $3</html>" > "$R/report.html" ;;
   *parse_briefing.py*)
     grep -o 'class="story"' "$3" 2>/dev/null | wc -l | tr -d ' ' ;;
+  *stato_giornata.py*)
+    # Lo stato della giornata ricostruito dai file. Queste suite collaudano i RAMI
+    # del wrapper (run monco, watchdog, lock), non il calcolo delle fasi, che ha la
+    # sua suite: tests/test_stato_giornata.py. Qui la fase `dati_pronti` non compare
+    # mai — in sandbox non c'e' un database — e il ramo dei prezzi resta scoperto
+    # di proposito.
+    D="$HOME/Claude/mercati_finanza/daily_analysis"
+    case "$*" in
+      *--registra-consegna\ ok*) print -r -- '{}' > "$D/$3/_state.json"; exit 0 ;;
+      *--registra*) exit 0 ;;
+    esac
+    B="$HOME/Claude/morning brief/$3-morning-briefing.html"
+    N=$(grep -o 'class="story"' "$B" 2>/dev/null | wc -l | tr -d ' ')
+    if [[ ! -f "$B" ]] || ! grep -q '</body>' "$B" 2>/dev/null || (( N < ${MIN_STORIES:-1} )); then
+      F=input_validato
+    elif [[ ! -f "$D/$3/_index.md" ]] || grep -q '⏳' "$D/$3/_index.md" 2>/dev/null \
+         || grep -q 'Da compilare dopo il triage' "$D/$3/_index.md" 2>/dev/null; then
+      F=triage_completato
+    elif [[ ! -f "$D/$3/report.html" ]]; then F=html_prodotto
+    elif [[ ! -f "$D/$3/_state.json" ]]; then F=consegna_confermata
+    else F=completa
+    fi
+    case "$*" in
+      *--json*)
+        [[ "$F" == completa ]] && FJ=null || FJ="\"$F\""
+        print -r -- "{\"fase\":$FJ,\"input_riconosciuto\":false,\"impronta_registrata\":null,\"schede_riusabili\":[]}" ;;
+      *) print -r -- "$F" ;;
+    esac ;;
+  # `leggi_stato` passa il JSON dello stato a un python -c: quello e' python VERO,
+  # ma gli serve solo la stdlib (json, shlex), quindi lo si delega a quello di
+  # sistema invece di fingere anche quello.
+  -c*) exec /usr/bin/python3 "$@" ;;
   -) print 99 ;;          # controllo salute DB (heredoc su stdin)
   *) : ;;                 # analogues.py build & co.
 esac
@@ -140,6 +172,16 @@ scrivi_index() {
   esac
 }
 
+# Dal 2026-09-15 (R07) "giornata fatta" non è più "indice compilato": la catena ha
+# sei fasi e finisce alla CONSEGNA. Un indice compilato senza report reso e senza
+# ricevuta d'invio è una giornata ferma, non una giornata conclusa — ed è giusto
+# che il ritentativo la riprenda. Per provare l'idempotenza servono tutti e tre.
+giornata_conclusa() {
+  scrivi_index completo
+  print -r -- "<html>report finto</html>" > "$GIORNODIR/report.html"
+  print -r -- '{"consegna": {"esito": "ok"}}' > "$GIORNODIR/_state.json"
+}
+
 run_sut()     { ( HOME="$FAKE_HOME" WAIT_MAX=1 WAIT_STEP=1 /bin/zsh "$FPIPE/run.sh" "$GIORNO" >/dev/null 2>&1 ); echo $?; }
 run_finale()  { ( HOME="$FAKE_HOME" WAIT_MAX=1 WAIT_STEP=1 \
                   STUB_RC="${1:-0}" STUB_INDEX="${2:-}" STUB_SCHEDE="${3:-0}" STUB_LOG="${4:-}" \
@@ -163,12 +205,12 @@ check "grep -c '^rm -f ' '$SCRIPT' | grep -q '^1$'" \
 teardown
 
 # ------------------------------------------------- 1. idempotenza solo se completa
-print -- "\n1. Analisi COMPLETA già presente → si esce, come prima"
+print -- "\n1. Giornata CONCLUSA (indice + report + consegna) → si esce, come prima"
 setup
-scrivi_index completo
+giornata_conclusa
 RC=$(run_sut)
 check "[[ $RC -eq 0 ]]" "esce con 0" "rc=$RC"
-check "grep -q 'SKIP: analisi' '$LOG'" "logga SKIP"
+check "grep -q 'SKIP: giornata' '$LOG'" "logga SKIP"
 check "! grep -q 'RIPRESA\|START' '$LOG'" "non rifà nulla"
 check "[[ -f '$GIORNODIR/_index.md' ]]" "non tocca l'analisi esistente"
 teardown
@@ -180,7 +222,7 @@ scrivi_index scheletro
 print -r -- "# scheda vera" > "$GIORNODIR/news_01.md"
 RC=$(run_sut)
 check "[[ $RC -eq 0 ]]" "prosegue invece di uscire" "rc=$RC"
-check "! grep -q 'SKIP: analisi' '$LOG'" "NON logga SKIP (era il blocco dell'11/09 alle 10:07)"
+check "! grep -q 'SKIP: giornata' '$LOG'" "NON logga SKIP (era il blocco dell'11/09 alle 10:07)"
 check "grep -q 'RIPRESA' '$LOG'" "logga RIPRESA"
 check "grep -q 'START' '$LOG'" "arriva ad avviare una nuova analisi"
 teardown
@@ -275,9 +317,13 @@ ROTTI_ATTESI=(2026-07-19 2026-07-31 2026-09-11)
 tot=0; sani=0; monchi=(); falsi_allarmi=()
 for f in "$INDEX_REALI"/2026-*/_index.md(N); do
   giorno="${${f:h}:t}"
+  # report e ricevuta finti: qui si misura il giudizio sull'INDICE, non le due
+  # fasi di coda, che hanno le loro prove negli scenari 5-8.
   mkdir -p "$GIORNODIR"; cp "$f" "$GIORNODIR/_index.md"; rm -f "$LOG"
+  print -r -- "<html>report finto</html>" > "$GIORNODIR/report.html"
+  print -r -- '{"consegna": {"esito": "ok"}}' > "$GIORNODIR/_state.json"
   tot=$((tot+1))
-  if [[ "$(run_sut)" -eq 0 ]] && grep -q 'SKIP: analisi' "$LOG"; then
+  if [[ "$(run_sut)" -eq 0 ]] && grep -q 'SKIP: giornata' "$LOG"; then
     sani=$((sani+1))
     (( ${ROTTI_ATTESI[(Ie)$giorno]} )) && falsi_allarmi+=("$giorno accettato ma è rotto")
   else

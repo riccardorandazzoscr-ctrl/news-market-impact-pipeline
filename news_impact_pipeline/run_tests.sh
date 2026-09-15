@@ -5,6 +5,7 @@
 #   ./run_tests.sh asset        # solo l'universo asset
 #   ./run_tests.sh briefing     # solo il guardiano sul briefing in ingresso
 #   ./run_tests.sh analisi      # solo il guardiano sull'analisi in uscita
+#   ./run_tests.sh stato        # solo le sei fasi di completamento della giornata
 #   ./run_tests.sh watchdog     # solo il tetto di durata e il lock
 #   ./run_tests.sh analogues    # solo il filtro sotto-tema di analogues.py
 #   ./run_tests.sh usage        # solo il parser dei consumi del run headless
@@ -43,6 +44,10 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
 
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "analogues" ] && \
   run "analogues.py — verso e riferimento" tests/test_analogues_direction.py
+
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "stato" ] && \
+  run "stato giornata — le sei fasi, il riuso delle schede, la ricevuta di consegna" \
+      tests/test_stato_giornata.py
 
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "usage" ] && \
   run "consumi — parser del grezzo di claude -p" tests/test_record_usage.py

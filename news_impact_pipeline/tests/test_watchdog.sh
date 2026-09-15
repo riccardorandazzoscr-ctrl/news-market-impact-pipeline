@@ -81,6 +81,38 @@ case "$*" in
     mkdir -p "$R"; print -r -- "<html>report finto $3</html>" > "$R/report.html" ;;
   *parse_briefing.py*)
     grep -o 'class="story"' "$3" 2>/dev/null | wc -l | tr -d ' ' ;;
+  *stato_giornata.py*)
+    # Lo stato della giornata ricostruito dai file. Queste suite collaudano i RAMI
+    # del wrapper (run monco, watchdog, lock), non il calcolo delle fasi, che ha la
+    # sua suite: tests/test_stato_giornata.py. Qui la fase `dati_pronti` non compare
+    # mai — in sandbox non c'e' un database — e il ramo dei prezzi resta scoperto
+    # di proposito.
+    D="$HOME/Claude/mercati_finanza/daily_analysis"
+    case "$*" in
+      *--registra-consegna\ ok*) print -r -- '{}' > "$D/$3/_state.json"; exit 0 ;;
+      *--registra*) exit 0 ;;
+    esac
+    B="$HOME/Claude/morning brief/$3-morning-briefing.html"
+    N=$(grep -o 'class="story"' "$B" 2>/dev/null | wc -l | tr -d ' ')
+    if [[ ! -f "$B" ]] || ! grep -q '</body>' "$B" 2>/dev/null || (( N < ${MIN_STORIES:-1} )); then
+      F=input_validato
+    elif [[ ! -f "$D/$3/_index.md" ]] || grep -q '⏳' "$D/$3/_index.md" 2>/dev/null \
+         || grep -q 'Da compilare dopo il triage' "$D/$3/_index.md" 2>/dev/null; then
+      F=triage_completato
+    elif [[ ! -f "$D/$3/report.html" ]]; then F=html_prodotto
+    elif [[ ! -f "$D/$3/_state.json" ]]; then F=consegna_confermata
+    else F=completa
+    fi
+    case "$*" in
+      *--json*)
+        [[ "$F" == completa ]] && FJ=null || FJ="\"$F\""
+        print -r -- "{\"fase\":$FJ,\"input_riconosciuto\":false,\"impronta_registrata\":null,\"schede_riusabili\":[]}" ;;
+      *) print -r -- "$F" ;;
+    esac ;;
+  # `leggi_stato` passa il JSON dello stato a un python -c: quello e' python VERO,
+  # ma gli serve solo la stdlib (json, shlex), quindi lo si delega a quello di
+  # sistema invece di fingere anche quello.
+  -c*) exec /usr/bin/python3 "$@" ;;
   -) print 99 ;;          # controllo salute DB (heredoc su stdin)
   *) : ;;                 # analogues.py build, parsing usage & co.
 esac

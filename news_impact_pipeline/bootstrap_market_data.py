@@ -22,10 +22,11 @@ import yfinance as yf
 
 
 # --- 1. Dove salviamo il database -------------------------------------------
-# Path.home() e' la tua cartella utente (la home dell'utente). Cosi' costruiamo il
-# percorso ~/Claude/mercati_finanza/market_data/market_data.db senza scrivere indirizzi a mano.
-DB_DIR = Path.home() / "Claude" / "mercati_finanza" / "market_data"
-DB_PATH = DB_DIR / "market_data.db"
+# I due percorsi vivono in diagnosi_serie.py, che non importa ne' pandas ne'
+# yfinance: cosi' chi vuole solo LEGGERE il database non si tira dietro il
+# downloader. Reimportati qui perche' meta' del progetto fa
+# `from bootstrap_market_data import DB_PATH`.
+from diagnosi_serie import DB_DIR, DB_PATH  # noqa: F401
 
 # Periodo storico da scaricare: dal 1 gennaio 2011 a oggi.
 START_DATE = "2011-01-01"

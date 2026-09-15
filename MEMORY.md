@@ -15,10 +15,16 @@ Stato per filone. Max 10 righe a filone. Ciò che resta vero per sempre va in
 - **Deciso** — niente API key Anthropic; l'Opzione B ha sostituito le ~5 analogie scelte
   a mano; le research le scrive il maintainer. Il morning brief, che non aveva uno
   script locale, ora è un job come gli altri: niente dipende più da un'app aperta.
+- **Deciso (15/09, R07)** — la catena giornaliera ha **sei fasi verificabili**
+  (`stato_giornata.py`): il ritentativo riparte dalla prima incompleta e non
+  richiama l'agente se mancano solo render o consegna. La verità è il disco;
+  `_state.json` tiene solo impronta dell'input e ricevuta dell'invio. I prezzi sono
+  un cancello bloccante senza scavalco: si ripara il dato.
 - **Prossimo passo** — osservare il primo ciclo completo del 16/09 (brief 07:30 →
   analisi 08:15 → Telegram) e la prima riga di `logs/usage.csv` su Opus 5: il costo
   per run va riconfrontato con i $27,9 misurati ad agosto, che erano su un altro
-  modello e un altro formato di scheda. Vedi `references/routine_giornaliera.md`.
+  modello e un altro formato di scheda. Al primo ritentativo vero, verificare che il
+  riuso delle schede scatti davvero. Vedi `references/routine_giornaliera.md`.
 
 Aggiornato: 2026-09-15
 

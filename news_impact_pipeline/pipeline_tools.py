@@ -29,7 +29,8 @@ from pathlib import Path
 
 import yaml
 
-from parse_briefing import parse_briefing, briefing_path, available_dates
+from parse_briefing import (parse_briefing, briefing_path, available_dates,
+                            SEZIONE_BREVE)
 
 
 HERE = Path(__file__).parent
@@ -401,13 +402,12 @@ def cmd_digest(args):
         "| # | Sez. | Notizia | Decisione | Tema / Motivazione | Scheda |",
         "|---|------|---------|-----------|--------------------|--------|",
     ]
-    sec_short = {"international": "intl", "finance": "fin"}
     for label in ("international", "finance"):
         for s in parsed["sections"].get(label, []):
             num = s["num"] or "—"
             title = s["title"].replace("|", "\\|")
             lines.append(
-                f"| {num} | {sec_short[label]} | {title} | ⏳ | | |"
+                f"| {num} | {SEZIONE_BREVE[label]} | {title} | ⏳ | | |"
             )
 
     lines += ["", "## 🔍 One Thing to Watch Today", ""]

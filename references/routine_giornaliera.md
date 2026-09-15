@@ -22,7 +22,16 @@ Il job `daily` ha anche `WatchPaths` sulla cartella dei briefing: se il brief
 arriva in ritardo, l'analisi parte appena il file atterra. I ritentativi delle
 09:15 e 10:15 coprono un caso diverso — il run **fallito a metà** — che i
 WatchPaths non ricatturano, perché a quel punto il file del briefing non cambia
-più. Entrambi escono subito se l'analisi del giorno è già compilata.
+più. Entrambi escono subito se la giornata è già conclusa, e altrimenti
+riprendono dalla **prima fase incompleta**: se mancano solo il report o l'invio
+non richiamano l'agente. A che punto sia una giornata lo dice
+`stato_giornata.py --date AAAA-MM-GG` (tabella delle sei fasi in
+[quando_si_rompe.md](quando_si_rompe.md)).
+
+⚠ Il brief delle 07:30 può far scattare l'analisi **prima** dell'aggiornamento
+prezzi delle 08:00. Prima delle 08:30 quel run esce in silenzio (`ATTESA:` nel
+log) e lascia fare a quello di calendario; dopo, i prezzi mancanti sono un
+guasto e il run si ferma con un allarme invece di analizzare su dati vecchi.
 
 Il brief segue `news_impact_pipeline/news_research_prompt.md` (lo script estrae
 il blocco fra `=== PROMPT START/END ===`, non ne tiene una copia propria);
@@ -60,7 +69,9 @@ dall'elenco non è "a riposo", è **scaricato**: non partirà.
 ## Rilanciare a mano
 
 Ogni script accetta una data ISO per rigenerare un giorno saltato, ed è
-idempotente: se il lavoro di quel giorno c'è già, esce senza rifarlo.
+idempotente: se il lavoro di quel giorno c'è già **fino alla consegna**, esce
+senza rifarlo; se è rimasto a metà, riprende da dove si era fermato senza
+rifare le schede già valide.
 
 ```bash
 /bin/zsh news_impact_pipeline/run_morning_brief.sh   2026-09-15

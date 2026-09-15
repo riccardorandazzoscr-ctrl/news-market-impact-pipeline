@@ -34,16 +34,39 @@ setup() {
   FPIPE="$FAKE_HOME/Claude/mercati_finanza/news_impact_pipeline"
   mkdir -p "$BDIR" "$DAILY" "$FPIPE/logs" "$FPIPE/venv/bin"
   # copia troncata dopo lo START: vedi nota in testa
-  awk '/^log "START/ { print; print "exit 0"; exit } { print }' \
+  # Troncata su PRONTO: questa suite prova i CANCELLI in ingresso (briefing
+  # completo, prezzi aggiornati), non il lavoro che viene dopo.
+  awk '/^log "PRONTO/ { print; print "exit 0"; exit } { print }' \
       "$SCRIPT" > "$FPIPE/run.sh"
   chmod +x "$FPIPE/run.sh"
   # conta_story() lancia il parser vero: gli serve un venv con bs4, non un
   # finto — uno shim che rilancia il python reale del progetto (un symlink
   # nudo non basta: un venv risolve il proprio prefix dal percorso reale
   # dell'eseguibile e si rompe se lo si raggiunge tramite un altro symlink).
-  cp "$PIPE/parse_briefing.py" "$FPIPE/parse_briefing.py"
+  # Il giudizio "briefing completo" e' la fase input_validato di stato_giornata.py:
+  # qui si usa quello VERO, perche' il punto di questa suite e' proprio validarlo
+  # sui 145 briefing reali in archivio.
+  cp "$PIPE/parse_briefing.py" "$PIPE/stato_giornata.py" "$PIPE/pipeline_tools.py" \
+     "$PIPE/diagnosi_serie.py" "$FPIPE/"
   { print -r -- '#!/bin/zsh'; print -r -- "exec \"$PIPE/venv/bin/python\" \"\$@\"" } > "$FPIPE/venv/bin/python"
   chmod +x "$FPIPE/venv/bin/python"
+  # Il wrapper non avvia l'analisi finche' i prezzi del giorno non sono aggiornati
+  # (R07). Qui serve un DB minimo che soddisfi quella fase: una riga scritta oggi.
+  # Poche sedute producono solo un avviso di copertura, che non blocca.
+  HOME="$FAKE_HOME" "$PIPE/venv/bin/python" - <<PYDB >/dev/null 2>&1
+import sqlite3, sys
+sys.path.insert(0, "$PIPE")
+from datetime import date
+import bootstrap_market_data as b
+b.DB_DIR.mkdir(parents=True, exist_ok=True)
+c = sqlite3.connect(b.DB_PATH)
+b.create_database(c)
+c.execute("INSERT OR REPLACE INTO assets (ticker, source) VALUES ('FINTO','yfinance')")
+oggi = date.today().isoformat()
+c.execute(b.PRICE_INSERT, ('FINTO', oggi, 1.0, 1.0, 1.0, 1.0, 1.0, 1,
+                           'yfinance', 'final', oggi + 'T09:00:00'))
+c.commit(); c.close()
+PYDB
   GIORNO="2026-09-07"
   BRIEF="$BDIR/${GIORNO}-morning-briefing.html"
   LOG="$FPIPE/logs/${GIORNO}.log"
@@ -63,7 +86,7 @@ scrivi_brief() {
   { print -r -- "<html><head><title>Morning Briefing</title></head><body>"
     if (( n > 0 )); then
       for i in $(seq 1 $n); do
-        print -r -- "<section><h2>International</h2><div class=\"story\"><h3>Notizia $i</h3><p>Testo.</p></div></section>"
+        print -r -- "<section><h2>International</h2><div class=\"story\"><span class=\"story-num\">$i</span><h3>Notizia $i</h3><p>Testo.</p></div></section>"
       done
     fi
     [[ "$chiusura" == "chiuso" ]] && print -r -- "</body></html>"
@@ -85,7 +108,7 @@ setup
 RC=$(run_sut)
 check "[[ $RC -eq 0 ]]" "esce con 0 senza fare nulla" "rc=$RC"
 check "grep -q 'WAIT: briefing' '$LOG'" "logga WAIT"
-check "! grep -q 'START' '$LOG'" "non avvia l'analisi"
+check "! grep -q 'PRONTO' '$LOG'" "non avvia l'analisi"
 check "[[ ! -d '$FPIPE/logs/.lock' ]]" "non lascia lock appesi"
 teardown
 
@@ -95,7 +118,7 @@ setup
 scrivi_brief 20
 RC=$(run_sut)
 check "[[ $RC -eq 0 ]]" "esce con 0" "rc=$RC"
-check "grep -q 'START' '$LOG'" "arriva ad avviare l'analisi"
+check "grep -q 'PRONTO' '$LOG'" "arriva ad avviare l'analisi"
 check "! grep -q 'PARZIALE' '$LOG'" "non segnala attesa inutile"
 check "[[ ! -d '$FPIPE/logs/.lock' ]]" "rilascia il lock"
 teardown
@@ -111,7 +134,7 @@ wait $COMPLETER 2>/dev/null
 check "[[ $RC -eq 0 ]]" "esce con 0 dopo aver atteso" "rc=$RC"
 check "grep -q 'PARZIALE' '$LOG'" "riconosce il file incompleto"
 check "grep -q 'OK: briefing completo dopo' '$LOG'" "rileva il completamento"
-check "grep -q 'START' '$LOG'" "prosegue con l'analisi"
+check "grep -q 'PRONTO' '$LOG'" "prosegue con l'analisi"
 check "! grep -q 'ERROR' '$LOG'" "non segnala errori"
 teardown
 
@@ -124,7 +147,7 @@ check "[[ $RC -eq 1 ]]" "esce con codice 1" "rc=$RC"
 check "grep -q 'ERROR' '$LOG'" "logga ERROR"
 check "grep -q 'analisi NON eseguita' '$LOG'" "dice chiaramente cosa non è stato fatto"
 check "grep -q 'run_daily_analysis.sh $GIORNO' '$LOG'" "suggerisce come rilanciare"
-check "! grep -q 'START' '$LOG'" "NON avvia l'analisi sul vuoto"
+check "! grep -q 'PRONTO' '$LOG'" "NON avvia l'analisi sul vuoto"
 check "[[ ! -d '$FPIPE/logs/.lock' ]]" "rilascia il lock anche fallendo"
 teardown
 
@@ -139,7 +162,7 @@ setup
 scrivi_brief 9             # troncato a metà elenco
 RC=$(run_sut 1 1)
 check "[[ $RC -eq 0 ]]" "9 notizie chiuse → briefing parziale valido" "rc=$RC"
-check "grep -q 'START' '$LOG'" "avvia l'analisi sul briefing parziale valido"
+check "grep -q 'PRONTO' '$LOG'" "avvia l'analisi sul briefing parziale valido"
 teardown
 setup
 : > "$BRIEF"               # file vuoto (0 byte)
@@ -151,10 +174,25 @@ teardown
 print -- "\n6. Idempotenza e lock"
 setup
 scrivi_brief 20
-mkdir -p "$DAILY/$GIORNO"; print -r -- "# già fatto" > "$DAILY/$GIORNO/_index.md"
+# Dal 2026-09-15 (R07) la giornata è "fatta" solo fino alla CONSEGNA: indice che
+# copre tutte le notizie in ingresso, report reso, ricevuta d'invio. Le righe sono
+# tutte ✖, così non servono schede. La ricevuta la scrive lo script vero, che è
+# l'unico a sapere quale impronta del report ci va dentro.
+mkdir -p "$DAILY/$GIORNO"
+{ print -r -- "# Daily Analysis — $GIORNO"
+  print -r -- "## Triage"
+  print -r -- "| # | Sez. | Notizia | Decisione | Tema / Motivazione | Scheda |"
+  print -r -- "|---|------|---------|-----------|--------------------|--------|"
+  for i in $(seq 1 20); do print -r -- "| $i | intl | Notizia $i | ✖ | fuori universo | — |"; done
+  print -r -- "## Sintesi di sessione"
+  print -r -- "Giornata senza notizie mappabili."
+} > "$DAILY/$GIORNO/_index.md"
+print -r -- "<html>report finto</html>" > "$DAILY/$GIORNO/report.html"
+HOME="$FAKE_HOME" "$FPIPE/venv/bin/python" "$FPIPE/stato_giornata.py" \
+  --date "$GIORNO" --registra-consegna ok >/dev/null 2>&1
 RC=$(run_sut)
-check "[[ $RC -eq 0 ]]" "analisi già presente → esce subito" "rc=$RC"
-check "grep -q 'SKIP: analisi' '$LOG'" "logga SKIP"
+check "[[ $RC -eq 0 ]]" "giornata conclusa → esce subito" "rc=$RC"
+check "grep -q 'SKIP: giornata' '$LOG'" "logga SKIP"
 teardown
 setup
 scrivi_brief 0
@@ -182,7 +220,7 @@ for f in "$BRIEF_REALI"/*.html(N); do
   (( n < storie_min )) && storie_min=$n
   tot=$((tot+1))
   # WAIT_MAX=0 → nessuna attesa: o è completo subito, o viene respinto
-  if [[ "$(run_sut 0 1)" -eq 0 ]] && grep -q 'START' "$LOG"; then
+  if [[ "$(run_sut 0 1)" -eq 0 ]] && grep -q 'PRONTO' "$LOG"; then
     accettati=$((accettati+1))
   else
     respinti+=("${f:t} (story=$n)")
@@ -200,7 +238,7 @@ setup
 cp "$(ls -1t "$BRIEF_REALI"/*.html | head -1)" "$BRIEF"
 RC=$(run_sut)
 check "[[ $RC -eq 0 ]]" "briefing reale accettato" "rc=$RC"
-check "grep -q 'START' '$LOG'" "arriva ad avviare l'analisi"
+check "grep -q 'PRONTO' '$LOG'" "arriva ad avviare l'analisi"
 check "! grep -q 'PARZIALE\|ERROR' '$LOG'" "nessun falso allarme"
 teardown
 
