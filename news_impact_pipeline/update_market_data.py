@@ -14,6 +14,7 @@ Come si esegue a mano (dal Terminale, nella cartella del progetto):
 
 from datetime import date, timedelta
 import sqlite3
+import sys
 
 import pandas as pd
 import yfinance as yf
@@ -54,6 +55,8 @@ def main():
         print(f"Aggiornamento incrementale - {oggi.isoformat()}\n")
 
         nuove_totali = 0
+        tentativi = 0
+        errori = 0
         for a in da_aggiornare:
             ticker = a["ticker"]
             last = ultima_data(conn, ticker)
@@ -69,6 +72,7 @@ def main():
                 print(f"  [-] {ticker:<12} gia' aggiornato (ultimo: {last})")
                 continue
 
+            tentativi += 1
             try:
                 df = yf.download(
                     ticker,
@@ -88,11 +92,20 @@ def main():
                 ultimo_nuovo = df.index.max().strftime("%Y-%m-%d")
                 print(f"  [+] {ticker:<12} +{n} righe (fino al {ultimo_nuovo})")
             except Exception as e:
+                errori += 1
                 print(f"  [!] {ticker:<12} errore: {e}")
 
         print(f"\nFatto. Nuove righe aggiunte: {nuove_totali}")
     finally:
         conn.close()
+
+    # Se OGNI download tentato e' fallito (rete giu', yfinance giu', ecc.) il
+    # ciclo sopra non solleva: stampa gli errori e prosegue silenziosamente.
+    # Un esito cosi' non e' un aggiornamento riuscito con "nessun dato nuovo",
+    # e non deve alimentare spread/crack spread sotto con prezzi non rinfrescati.
+    if tentativi > 0 and errori == tentativi:
+        print(f"\n[!] Tutti i {tentativi} download falliti: nessun dato aggiornato.")
+        sys.exit(1)
 
     # Spread BTP-Bund (Stooq): rinfresco SETTIMANALE, solo il lunedi'.
     # Motivo: Stooq blocca con verifica anti-bot se riceve troppe richieste ravvicinate;

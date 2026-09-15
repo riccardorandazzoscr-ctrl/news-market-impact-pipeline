@@ -247,14 +247,15 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
 - **Asset su cui NON trarre una direzione attesa.** Prima di scrivere la lettura
   direzionale, apri la scorecard più recente (`daily_analysis/_scorecard/` — l'ultimo
   file per settimana ISO) e leggi la sezione **"5-bis. Su quali ASSET prevediamo
-  meglio?"**. Gli asset marcati ❌ **controproducente** hanno IC storicamente
-  *negativo*: su quelli la mediana degli analoghi punta nella direzione sbagliata più
-  spesso che no. Riporta pure la tabella dell'event study, ma **dichiara esplicitamente
-  che il segno storico è inaffidabile** su quell'asset invece di costruirci sopra una
-  previsione. ⚠ NON dare per scontato l'elenco a memoria: cambia ogni settimana, va
-  riletto dalla scorecard corrente (all'audit del 2026-08-10 erano DX-Y.NYB, GC=F,
-  IEF, SOXX, ^TNX — cioè rifugio/tassi/dollaro; ^VIX, EEM, ^NDX, ^STOXX50E erano
-  invece i più affidabili).
+  meglio?"**. La tabella non dà più un giudizio automatico: hit-rate e IC sono
+  metriche diverse (hit-rate = quota di segni corretti, IC = se l'ordine delle
+  magnitudini rispecchia il realizzato) e possono divergere — un IC negativo NON
+  implica da solo che la direzione sia sbagliata più spesso che no. Leggi i due
+  numeri dell'asset che ti serve; se appaiono deboli o incoerenti fra loro, riporta
+  pure la tabella dell'event study ma **dichiara esplicitamente che il segno
+  storico è inaffidabile** su quell'asset invece di costruirci sopra una previsione.
+  ⚠ NON dare per scontato un elenco a memoria: cambia ogni settimana, i numeri vanno
+  riletti dalla scorecard corrente.
 - Selezione analoghi: solo info disponibile alla data dell'episodio (no look-ahead).
 - La segmentazione per regime è la difesa principale contro il mixing di contesti
   macro strutturalmente diversi: dichiara sempre se gli analoghi appartengono a

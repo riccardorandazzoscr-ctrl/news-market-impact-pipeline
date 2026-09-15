@@ -14,7 +14,7 @@ già pronto.
 - **Deviazione standard / dispersione** — quanto i singoli episodi si allontanano dalla mediana. Quando è molto più grande della mediana stessa, il segno storico è debole anche se "torna" nella direzione giusta.
 - **Event study** — misura sistematica di come si muove un asset nei giorni attorno a episodi storici comparabili a quello di oggi.
 - **Hit rate** — quota di episodi in cui il segno del rendimento realizzato ha rispettato il segno atteso dal pool storico.
-- **IC (Information Coefficient)** — correlazione di rango fra direzione prevista e rendimento realizzato; è la metrica che la scorecard usa per dire se il segno storico di un asset è affidabile.
+- **IC (Information Coefficient)** — correlazione di rango (Spearman) fra la mediana prevista e il rendimento realizzato: dice se le previsioni più sbilanciate corrispondono a movimenti reali più grandi, non se il segno è giusto o sbagliato. Diversa dall'hit rate — le due possono divergere — la scorecard le riporta entrambe.
 - **Look-ahead bias** — usare, nel valutare un episodio storico, informazioni che a quella data non erano ancora disponibili. L'event study del progetto lo esclude per costruzione.
 - **Media** — sensibile ai casi estremi: un singolo episodio anomalo può spostarla parecchio. Quando media e mediana hanno segno opposto, la media non è utilizzabile.
 - **Mediana** — il valore centrale del campione di episodi: metà sta sopra, metà sotto. Più robusta della media sui campioni piccoli.

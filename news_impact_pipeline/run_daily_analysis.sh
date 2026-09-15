@@ -293,9 +293,12 @@ $PIPE/PHASE5_RUNBOOK.md. Passi:
    Puoi potare i non pertinenti; integra a mano solo se il pool è piccolo. Poi compila
    via Edit tutte le sezioni qualitative. Se min(N)<10 la scheda riporta "INDICATIVE ONLY".
    PRIMA di scrivere la lettura direzionale leggi la scorecard più recente in
-   $DAILY/_scorecard/ sezione "5-bis" (per-asset): sugli asset marcati ❌ controproducente
-   (IC storicamente negativo) NON trarre una direzione attesa — riporta l'event study ma
-   dichiara che il segno storico è inaffidabile. Rileggi l'elenco lì, non a memoria.
+   $DAILY/_scorecard/ sezione "5-bis" (per-asset): hit-rate e IC sono metriche
+   diverse (possono divergere) e nella tabella NON c'è più un giudizio automatico —
+   leggi i due numeri dell'asset toccato dalla scheda e giudica tu; se appaiono
+   deboli o incoerenti fra loro riporta l'event study ma dichiara esplicitamente
+   che il segno storico è inaffidabile, invece di trarne una direzione attesa.
+   Rileggi i numeri lì, non a memoria.
 4) Compila la "Sintesi di sessione" in _index.md.
 
 ECONOMIA DEL RUN (vincolante, sezione omonima del runbook): il costo cresce col

@@ -36,15 +36,19 @@ metà del campione**:
 nel regime attuale, fatto di shock inflattivi e da offerta, non da crescita.
 
 **Come si usa, in pratica:** prima di scrivere la lettura direzionale, leggi la sezione
-**"5-bis. Su quali ASSET prevediamo meglio?"** della scorecard corrente. Sugli asset
-marcati ❌, **dichiara inaffidabile il segno storico invece di prevederci sopra**.
+**"5-bis. Su quali ASSET prevediamo meglio?"** della scorecard corrente. Dal 2026-09-15
+la tabella non porta più un giudizio automatico (✅/❌): mostra hit-rate e IC fianco a
+fianco, metriche diverse che possono divergere (hit-rate = segno corretto, IC =
+ordine delle magnitudini). Leggi entrambi per l'asset che ti serve; se appaiono
+deboli o incoerenti fra loro, **dichiara inaffidabile il segno storico invece di
+prevederci sopra**.
 
 ⚠ **Sempre con rimando alla scorecard viva, mai a una lista fissa** copiata qui o
 altrove. È la lezione del bug "17 asset": una lista trascritta invecchia e mente. La
 tabella qui sopra è la fotografia del 10 agosto, serve a capire *il fenomeno* — non a
 decidere su quale asset fidarsi oggi.
 
-Meccanismo: `forecast_tracking.py`, soglia `ASSET_MIN_N=50`, giudizio ✅/⚠️/❌.
+Meccanismo: `forecast_tracking.py`, soglia `ASSET_MIN_N=50`.
 
 ## 2. L'IC va calcolato DENTRO ciascun asset, non tutto insieme
 

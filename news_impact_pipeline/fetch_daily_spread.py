@@ -194,8 +194,9 @@ def backfill_manual(triples, dry_run=False):
         if control_ok is False:
             raise SystemExit("STOP: il ricalcolo non riproduce una riga storica. Nulla scritto.")
         if control_ok is None:
-            print("⚠ nessuna data di controllo fra quelle passate: "
-                  "includine una già in DB per validare il metodo.")
+            raise SystemExit(
+                "STOP: nessuna data di controllo fra quelle passate — il metodo non è "
+                "validato. Includine una già in DB. Nulla scritto.")
         if dry_run:
             print(f"\n[dry-run] {len(rows)} righe NON scritte.")
             return

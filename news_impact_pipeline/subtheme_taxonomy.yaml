@@ -126,7 +126,7 @@ structural_themes:
     - 'earnings'
     - 'guidance'
     - 'risultati (sopra|sotto) le attese'
-    - 'utili'
+    - '\butili\b'
   concentration_risk:
     - 'concentrazione'
     - 'concentration'
@@ -437,7 +437,7 @@ macro_data:
     - '\bgdp\b'
     - '\bpmi\b'
     - 'produzione industriale'
-    - 'ism'
+    - '\bism\b'
   consumer:
     - 'vendite al dettaglio'
     - 'retail sales'

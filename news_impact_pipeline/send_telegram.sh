@@ -19,6 +19,25 @@ API="https://api.telegram.org/bot${TOKEN}"
 # in cui un "connection closed" fece fallire l'invio pur con i file su disco).
 CURL=(curl -s --retry 4 --retry-delay 5 --retry-all-errors --max-time 90)
 
+# send_doc: invia un documento e verifica sia l'HTTP status sia il campo JSON
+# "ok" della risposta Telegram — un curl "riuscito" (retry compreso) può
+# comunque restituire {"ok":false,...} su es. token scaduto o chat_id errato.
+# Stampa una ricevuta per l'artefatto e ritorna 0/1 di conseguenza.
+send_doc() {
+  local file="$1" fname="$2" caption="$3" resp http body
+  resp=$("${CURL[@]}" -w $'\n%{http_code}' -F chat_id="$CHAT" \
+    -F "document=@${file};filename=${fname}" \
+    -F caption="$caption" "$API/sendDocument")
+  http="${resp##*$'\n'}"
+  body="${resp%$'\n'*}"
+  if [[ "$http" == "200" && "$body" == *'"ok":true'* ]]; then
+    echo "[telegram] OK: ${fname}"
+    return 0
+  fi
+  echo "[telegram] FALLITO: ${fname} (http=${http}) ${body:0:200}"
+  return 1
+}
+
 # Modalità scorecard: send_telegram.sh --scorecard [AAAA-Www]
 # Chiamata da run_scorecard.sh. Prima del 2026-08-24 la scorecard settimanale
 # veniva rigenerata correttamente ma non spediva nulla: restava invisibile in
@@ -27,10 +46,9 @@ if [[ "${1:-}" == "--scorecard" ]]; then
   W="${2:-$(date +%G-W%V)}"
   SC="$NEWSDIR/daily_analysis/_scorecard/${W}.html"
   if [[ -f "$SC" ]]; then
-    "${CURL[@]}" -F chat_id="$CHAT" \
-      -F "document=@${SC};filename=scorecard-${W}.html" \
-      -F caption="🎯 Scorecard settimanale ${W}" "$API/sendDocument" >/dev/null \
-      && { echo "[telegram] scorecard $W inviata"; exit 0; }
+    if send_doc "$SC" "scorecard-${W}.html" "🎯 Scorecard settimanale ${W}"; then
+      exit 0
+    fi
     echo "[telegram] invio scorecard $W fallito"; exit 1
   fi
   echo "[telegram] scorecard $W non trovata ($SC)"; exit 1
@@ -49,17 +67,16 @@ if [[ "${2:-}" == "--parziale" ]]; then
   CAP_ANALISI="⚠️ Analisi ${D} INCOMPLETA — run interrotto a metà: triage in sospeso, schede parziali. Da rifare."
 fi
 
+expected=0
 sent=0
 if [[ -f "$BRIEF" ]]; then
-  "${CURL[@]}" -F chat_id="$CHAT" \
-    -F "document=@${BRIEF};filename=brief-${D}.html" \
-    -F caption="📰 Morning brief ${D}" "$API/sendDocument" >/dev/null && sent=$((sent+1))
+  expected=$((expected+1))
+  send_doc "$BRIEF" "brief-${D}.html" "📰 Morning brief ${D}" && sent=$((sent+1))
 fi
 if [[ -f "$REPORT" ]]; then
-  "${CURL[@]}" -F chat_id="$CHAT" \
-    -F "document=@${REPORT};filename=analisi-${D}.html" \
-    -F caption="$CAP_ANALISI" "$API/sendDocument" >/dev/null && sent=$((sent+1))
+  expected=$((expected+1))
+  send_doc "$REPORT" "analisi-${D}.html" "$CAP_ANALISI" && sent=$((sent+1))
 fi
 
-echo "[telegram] inviati $sent file per $D"
-[[ $sent -gt 0 ]]
+echo "[telegram] inviati $sent/$expected file per $D"
+[[ $expected -gt 0 && $sent -eq $expected ]]

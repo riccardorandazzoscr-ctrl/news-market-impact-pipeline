@@ -667,13 +667,17 @@ def cmd_scorecard(open_browser: bool = False) -> None:
     # -0.12 con hit-rate 31% = 3.4 sigma sotto il caso, GC=F -0.09). Senza questa
     # tabella il difetto è rimasto invisibile per mesi.
     L.append("## 5-bis. Su quali ASSET prevediamo meglio? _(per ticker)_\n")
-    L.append("**Come si legge:** è la vista più operativa. Un IC negativo con N "
-             "grande NON è rumore: significa che su quell'asset la lettura storica "
-             "è **sistematicamente rovesciata**, e conviene non usarla (o invertirla "
-             "consapevolmente). Solo asset con almeno "
-             f"{ASSET_MIN_N} previsioni mature. Ordinato per numerosità.\n")
-    L.append("| Asset | Copertura | Hit-rate | IC | N | Giudizio |")
-    L.append("|---|---|---|---|---|---|")
+    L.append("**Come si legge:** copertura, hit-rate e IC per asset, solo con almeno "
+             f"{ASSET_MIN_N} previsioni mature. Sono metriche diverse: **hit-rate** è "
+             "la quota di segni corretti, **IC** (Spearman) è se l'*ordine* delle "
+             "magnitudini realizzate rispecchia quello previsto — possono divergere "
+             "(un IC negativo non implica un hit-rate basso). Nessun giudizio "
+             "automatico qui sotto: leggi i due numeri insieme prima di fidarti o "
+             "scartare un asset. Statistica più seria (indipendenza delle "
+             "osservazioni, segno vs magnitudine vs copertura) resta da fare. "
+             "Ordinato per numerosità.\n")
+    L.append("| Asset | Copertura | Hit-rate | IC | N |")
+    L.append("|---|---|---|---|---|")
     by_asset: dict = {}
     for r in rows:
         by_asset.setdefault(r["asset"], []).append(r)
@@ -686,25 +690,9 @@ def cmd_scorecard(open_browser: bool = False) -> None:
         cov = (sum(r["_iqr"] for r in cov_sub) / len(cov_sub)) if cov_sub else None
         hit = (sum(r["_hit"] for r in hit_sub) / len(hit_sub)) if hit_sub else None
         ic = _spearman([r["_med"] for r in med_sub], [r["_real"] for r in med_sub])
-        if ic is None:
-            verdict = "n/d"
-        elif ic <= -0.05:
-            verdict = "❌ controproducente"
-        elif ic >= 0.10:
-            verdict = "✅ affidabile"
-        else:
-            verdict = "⚠️ debole"
         ic_s = "n/a" if ic is None else f"{ic:+.2f}"
-        L.append(f"| {asset} | {_pct(cov)} | {_pct(hit)} | {ic_s} | {len(sub)} | {verdict} |")
+        L.append(f"| {asset} | {_pct(cov)} | {_pct(hit)} | {ic_s} | {len(sub)} |")
     L.append("")
-    bad = [a for a, s in by_asset.items() if len(s) >= ASSET_MIN_N
-           and (_spearman([r["_med"] for r in s if r["_med"] is not None],
-                          [r["_real"] for r in s if r["_med"] is not None]) or 0) <= -0.05]
-    if bad:
-        L.append(f"> ❌ **Asset da NON usare per la direzione**: {', '.join(sorted(bad))}. "
-                 "Su questi la mediana storica ha correlazione negativa col realizzato: "
-                 "riportare pure l'event study, ma **non trarne una direzione attesa** "
-                 "(o dichiarare esplicitamente che il segno storico è inaffidabile).\n")
 
     # 6) Magnitudine (de-enfatizzata: le schede disconoscono la trasferibilita')
     L.append("## 6. Errore tipico di grandezza _(MAE)_ — secondario\n")
