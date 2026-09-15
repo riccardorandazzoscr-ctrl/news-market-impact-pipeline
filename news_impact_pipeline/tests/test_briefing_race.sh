@@ -32,11 +32,18 @@ setup() {
   BDIR="$FAKE_HOME/Claude/morning brief"
   DAILY="$FAKE_HOME/Claude/mercati_finanza/daily_analysis"
   FPIPE="$FAKE_HOME/Claude/mercati_finanza/news_impact_pipeline"
-  mkdir -p "$BDIR" "$DAILY" "$FPIPE/logs"
+  mkdir -p "$BDIR" "$DAILY" "$FPIPE/logs" "$FPIPE/venv/bin"
   # copia troncata dopo lo START: vedi nota in testa
   awk '/^log "START/ { print; print "exit 0"; exit } { print }' \
       "$SCRIPT" > "$FPIPE/run.sh"
   chmod +x "$FPIPE/run.sh"
+  # conta_story() lancia il parser vero: gli serve un venv con bs4, non un
+  # finto — uno shim che rilancia il python reale del progetto (un symlink
+  # nudo non basta: un venv risolve il proprio prefix dal percorso reale
+  # dell'eseguibile e si rompe se lo si raggiunge tramite un altro symlink).
+  cp "$PIPE/parse_briefing.py" "$FPIPE/parse_briefing.py"
+  { print -r -- '#!/bin/zsh'; print -r -- "exec \"$PIPE/venv/bin/python\" \"\$@\"" } > "$FPIPE/venv/bin/python"
+  chmod +x "$FPIPE/venv/bin/python"
   GIORNO="2026-09-07"
   BRIEF="$BDIR/${GIORNO}-morning-briefing.html"
   LOG="$FPIPE/logs/${GIORNO}.log"
@@ -56,7 +63,7 @@ scrivi_brief() {
   { print -r -- "<html><head><title>Morning Briefing</title></head><body>"
     if (( n > 0 )); then
       for i in $(seq 1 $n); do
-        print -r -- "<section><h2>World</h2><div class=\"story\"><h3>Notizia $i</h3><p>Testo.</p></div></section>"
+        print -r -- "<section><h2>International</h2><div class=\"story\"><h3>Notizia $i</h3><p>Testo.</p></div></section>"
       done
     fi
     [[ "$chiusura" == "chiuso" ]] && print -r -- "</body></html>"

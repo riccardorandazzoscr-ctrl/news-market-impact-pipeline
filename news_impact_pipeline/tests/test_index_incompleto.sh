@@ -81,6 +81,8 @@ case "$*" in
   *render_report.py*)
     R="$HOME/Claude/mercati_finanza/daily_analysis/$3"
     mkdir -p "$R"; print -r -- "<html>report finto $3</html>" > "$R/report.html" ;;
+  *parse_briefing.py*)
+    grep -o 'class="story"' "$3" 2>/dev/null | wc -l | tr -d ' ' ;;
   -) print 99 ;;          # controllo salute DB (heredoc su stdin)
   *) : ;;                 # analogues.py build & co.
 esac

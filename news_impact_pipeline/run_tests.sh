@@ -63,6 +63,10 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
   run "briefing — guardiano contro il run su file scritto a metà" \
       tests/test_briefing_race.sh
 
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "parser" ] && \
+  run "parse_briefing/render_report — corpo multi-paragrafo, fonti con URL, link interni" \
+      tests/test_parse_briefing.py
+
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "analisi" ] && \
   run "analisi — guardiano contro il run interrotto a metà" \
       tests/test_index_incompleto.sh

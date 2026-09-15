@@ -57,10 +57,10 @@ LOG="$LOGDIR/${TODAY}.log"
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >> "$LOG"; }
 
-# Quante notizie contiene il briefing. Stessa definizione usata dal parser
-# (`parse_briefing.py` cerca gli elementi con class="story"): se cambia il
-# layout del briefing vanno aggiornati entrambi, non solo questo.
-conta_story() { grep -o 'class="story"' "$BRIEF" 2>/dev/null | wc -l | tr -d ' '; }
+# Quante notizie contiene il briefing — il parser VERO (`parse_briefing.py --count`),
+# non un grep su `class="story"`: un HTML senza il contenitore <section> richiesto
+# dal parser passava il vecchio controllo grep pur estraendo zero notizie davvero.
+conta_story() { "$PY" "$PIPE/parse_briefing.py" --file "$BRIEF" --count 2>/dev/null || echo 0; }
 
 # Il briefing è FINITO di essere scritto?
 #

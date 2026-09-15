@@ -68,6 +68,24 @@ def _clean(text: str) -> str:
     return re.sub(r"\s+", " ", text or "").strip()
 
 
+def _body_text(story) -> str:
+    """Tutto il testo di contenuto della storia, non solo il primo paragrafo."""
+    paras = [p for p in story.find_all("p") if p.get("class") != ["source"]]
+    return _clean(" ".join(p.get_text() for p in paras))
+
+
+def _sources(story) -> list[dict]:
+    """Fonti della storia come {name, url}; url vuoto se il layout non la porta."""
+    src = story.find(class_="source")
+    if not src:
+        return []
+    links = src.find_all("a")
+    if links:
+        return [{"name": _clean(a.get_text()), "url": a.get("href", "")} for a in links]
+    text = re.sub(r"^\s*Source:\s*", "", _clean(src.get_text()))
+    return [{"name": n.strip(), "url": ""} for n in re.split(r"[;/]", text) if n.strip()]
+
+
 def _first_text(node, selectors: list[str]) -> str:
     """Testo del primo selettore che matcha (gestisce la deriva di layout).
 
@@ -135,15 +153,14 @@ def parse_briefing(path: Path) -> dict:
 
         for story in section.find_all(class_="story"):
             num_tag = story.find(class_="story-num")
-            src = story.find(class_="source")
             sections[label].append(
                 {
                     "num": _clean(num_tag.get_text()) if num_tag else "",
                     # Il tag del titolo e' variato fra le "ere" dei briefing:
                     # <h3> (layout attuale) oppure .headline (fine aprile).
                     "title": _first_text(story, ["h3", ".headline"]),
-                    "body": _clean(story.find("p").get_text()) if story.find("p") else "",
-                    "sources": _clean(src.get_text()) if src else "",
+                    "body": _body_text(story),
+                    "sources": _sources(story),
                 }
             )
 
@@ -220,7 +237,11 @@ def format_listing(parsed: dict, which: str = "all") -> str:
             lines.append(f"[{label}/{s['num']}] {s['title']}")
             lines.append(f"    {s['body']}")
             if s["sources"]:
-                lines.append(f"    — {s['sources']}")
+                src_str = "; ".join(
+                    f"{src['name']} ({src['url']})" if src["url"] else src["name"]
+                    for src in s["sources"]
+                )
+                lines.append(f"    — {src_str}")
             lines.append("")
 
     if which == "all" and parsed.get("watch"):
@@ -250,6 +271,11 @@ def main(argv=None):
         action="store_true",
         help="Elenca le date dei briefing disponibili ed esce.",
     )
+    ap.add_argument(
+        "--count",
+        action="store_true",
+        help="Stampa solo il numero totale di storie estratte (per guardie shell) ed esce.",
+    )
     args = ap.parse_args(argv)
 
     if args.list_dates:
@@ -275,11 +301,18 @@ def main(argv=None):
     try:
         parsed = parse_briefing(path)
     except FileNotFoundError as e:
+        if args.count:
+            print(0)
+            return 0
         print(str(e), file=sys.stderr)
         avail = available_dates()
         if avail:
             print(f"Disponibili: {avail[0]} … {avail[-1]} ({len(avail)} file)", file=sys.stderr)
         return 1
+
+    if args.count:
+        print(sum(len(stories) for stories in parsed["sections"].values()))
+        return 0
 
     if args.json:
         if args.section != "all":

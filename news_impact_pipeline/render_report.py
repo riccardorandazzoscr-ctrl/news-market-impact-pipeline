@@ -74,6 +74,14 @@ footer { border-top: 1px solid #e8e8e8; padding: 24px 0; margin-top: 40px; font-
 
 MD_EXTENSIONS = ["tables", "fenced_code", "sane_lists", "nl2br"]
 
+_NEWS_LINK_RE = re.compile(r"\]\((news_\d+)\.md\)")
+
+
+def _internal_links(text: str) -> str:
+    """Riscrive i link `news_NN.md` del triage in ancore interne alla pagina
+    renderizzata: `doc-{stem}` e' l'id di sezione assegnato piu' sotto in `render()`."""
+    return _NEWS_LINK_RE.sub(r"](#doc-\1)", text)
+
 
 def _first_h1(md_text: str, fallback: str) -> str:
     m = re.search(r"^#\s+(.+)$", md_text, flags=re.MULTILINE)
@@ -95,10 +103,11 @@ def render(day_dir: Path, day: str) -> Path:
 
     if index_path.exists():
         md.reset()
-        docs.append(("doc-index", "Indice & triage", md.convert(index_path.read_text(encoding="utf-8"))))
+        text = _internal_links(index_path.read_text(encoding="utf-8"))
+        docs.append(("doc-index", "Indice & triage", md.convert(text)))
 
     for p in news_paths:
-        text = p.read_text(encoding="utf-8")
+        text = _internal_links(p.read_text(encoding="utf-8"))
         title = _first_h1(text, p.stem)
         anchor = f"doc-{p.stem}"
         md.reset()
