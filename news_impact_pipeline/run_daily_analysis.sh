@@ -257,6 +257,14 @@ else
   log "DB ok (ticker=$DBCHECK)."
 fi
 
+# Il conteggio dei ticker qui sopra dice solo che i ticker ci sono: una serie
+# ferma da tre settimane e una riga senza prezzo passano lo stesso. --check
+# guarda freschezza, buchi e barre rimaste provvisorie. Non scarica nulla e non
+# blocca l'analisi: segnala, la decisione resta a mano.
+if ! "$PY" "$PIPE/update_market_data.py" --check >> "$LOG" 2>&1; then
+  log "WARN: serie prezzi con anomalie (freschezza/copertura). Dettaglio nel log."
+fi
+
 # --- Backstop indicizzazione KB (Variante A) -------------------------------
 # I WatchPaths su knowledge_base/ gestiscono il caso "nuova sottocartella", ma
 # non sempre l'aggiunta di un file dentro una cartella già esistente. Qui

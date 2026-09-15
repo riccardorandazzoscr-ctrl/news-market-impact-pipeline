@@ -151,7 +151,10 @@ def refresh_daily_spread(dry_run: bool = False, keep_monthly_before: str | None 
              None)                             # volume — n/a
             for ts, r in df_to_write.iterrows()
         ]
-        conn.executemany("INSERT OR REPLACE INTO prices VALUES (?,?,?,?,?,?,?,?)", rows)
+        conn.executemany(
+            "INSERT OR REPLACE INTO prices (ticker, date, open, high, low, close, adj_close, volume, source, status, fetched_at)"
+            " VALUES (?,?,?,?,?,?,?,?, 'stooq', 'final', datetime('now','localtime'))",
+            rows)
         conn.commit()
 
         tot = conn.execute("SELECT COUNT(*), MIN(date), MAX(date) FROM prices WHERE ticker=?",
@@ -200,7 +203,10 @@ def backfill_manual(triples, dry_run=False):
         if dry_run:
             print(f"\n[dry-run] {len(rows)} righe NON scritte.")
             return
-        conn.executemany("INSERT OR REPLACE INTO prices VALUES (?,?,?,?,?,?,?,?)", rows)
+        conn.executemany(
+            "INSERT OR REPLACE INTO prices (ticker, date, open, high, low, close, adj_close, volume, source, status, fetched_at)"
+            " VALUES (?,?,?,?,?,?,?,?, 'manuale', 'final', datetime('now','localtime'))",
+            rows)
         conn.commit()
         t = conn.execute("SELECT COUNT(*), MIN(date), MAX(date) FROM prices WHERE ticker=?",
                          (TICKER_SPREAD,)).fetchone()

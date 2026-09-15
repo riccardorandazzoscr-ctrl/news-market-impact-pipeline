@@ -13,7 +13,7 @@ Come si esegue (dal Terminale, dentro la cartella del progetto):
 """
 
 from pathlib import Path
-from datetime import date
+from datetime import date, datetime
 import sqlite3
 import time
 
@@ -270,6 +270,25 @@ ASSETS = [
 ]
 
 
+# Colonne di stato e provenienza, aggiunte dopo il primo schema (ALTER idempotente).
+# Servono perche' l'update riscarica una finestra sovrapposta: senza sapere se una
+# barra e' ancora in formazione, una riga presa a mercato aperto resta definitiva
+# per sempre; senza sapere da dove viene, una revisione sbagliata non e' tracciabile.
+PRICE_META_COLUMNS = {
+    "source":     "TEXT",  # yfinance | stooq | fred | csv | derived
+    "status":     "TEXT",  # 'provisional' (seduta non ancora chiusa) | 'final'
+    "fetched_at": "TEXT",  # quando la riga e' entrata in DB (ISO, ora locale)
+}
+
+# Insert esplicito sulle colonne: posizionale si romperebbe al prossimo ALTER.
+PRICE_INSERT = (
+    "INSERT OR REPLACE INTO prices"
+    " (ticker, date, open, high, low, close, adj_close, volume,"
+    "  source, status, fetched_at)"
+    " VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"
+)
+
+
 def create_database(conn):
     """Crea le due tabelle (assets e prices) se non esistono gia'."""
     conn.execute("""
@@ -296,6 +315,10 @@ def create_database(conn):
             PRIMARY KEY (ticker, date)
         )
     """)
+    gia_presenti = {r[1] for r in conn.execute("PRAGMA table_info(prices)")}
+    for colonna, tipo in PRICE_META_COLUMNS.items():
+        if colonna not in gia_presenti:
+            conn.execute(f"ALTER TABLE prices ADD COLUMN {colonna} {tipo}")
     conn.commit()
 
 
@@ -341,23 +364,44 @@ def download_one(ticker):
     return df
 
 
-def store_prices(conn, ticker, df):
-    """Salva nel database i prezzi di un ticker. Restituisce il n. di righe."""
-    rows = []
+def store_prices(conn, ticker, df, source="yfinance", oggi=None):
+    """Salva nel database i prezzi di un ticker. Restituisce il n. di righe scritte.
+
+    Due regole proteggono lo storico ora che l'update riscarica una finestra
+    sovrapposta e la stessa data puo' essere riscritta piu' volte:
+
+    1. una riga senza prezzo (close E adj_close entrambi nulli) NON viene scritta.
+       Non e' un prezzo: e' una barra intraday a meta' formazione. Scriverla
+       cancellerebbe il valore buono gia' in database (INSERT OR REPLACE).
+    2. la barra della giornata corrente nasce 'provisional'. L'update del giorno
+       dopo la riscarica dentro la finestra e la promuove a 'final'.
+    """
+    oggi = oggi or date.today().isoformat()
+    fetched_at = datetime.now().isoformat(timespec="seconds")
+    rows, senza_prezzo = [], 0
     for timestamp, row in df.iterrows():
+        giorno = timestamp.strftime("%Y-%m-%d")
+        close = _to_float(row.get("Close"))
+        adj_close = _to_float(row.get("Adj Close"))
+        if close is None and adj_close is None:
+            senza_prezzo += 1
+            continue
         rows.append((
             ticker,
-            timestamp.strftime("%Y-%m-%d"),
+            giorno,
             _to_float(row.get("Open")),
             _to_float(row.get("High")),
             _to_float(row.get("Low")),
-            _to_float(row.get("Close")),
-            _to_float(row.get("Adj Close")),
+            close,
+            adj_close,
             _to_int(row.get("Volume")),
+            source,
+            "provisional" if giorno >= oggi else "final",
+            fetched_at,
         ))
-    conn.executemany(
-        "INSERT OR REPLACE INTO prices VALUES (?, ?, ?, ?, ?, ?, ?, ?)", rows
-    )
+    if senza_prezzo:
+        print(f"      ({ticker}: {senza_prezzo} barre senza prezzo, non scritte)")
+    conn.executemany(PRICE_INSERT, rows)
     conn.commit()
     return len(rows)
 

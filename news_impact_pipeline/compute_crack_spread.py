@@ -34,7 +34,7 @@ Uso: `compute_crack_spread.py [--dry-run]`, oppure importare refresh_crack_sprea
 import argparse
 import sqlite3
 
-from bootstrap_market_data import DB_PATH
+from bootstrap_market_data import DB_PATH, create_database
 
 TICKER = "CRACK_321"
 GASOLINE = "RB=F"
@@ -52,6 +52,7 @@ def refresh_crack_spread(dry_run: bool = False) -> int:
     Restituisce il numero di righe scritte.
     """
     conn = sqlite3.connect(DB_PATH)
+    create_database(conn)  # allinea lo schema: le colonne di stato arrivano da qui
     rows = conn.execute(
         """
         SELECT g.date,
@@ -88,8 +89,10 @@ def refresh_crack_spread(dry_run: bool = False) -> int:
 
     conn.execute("DELETE FROM prices WHERE ticker = ?", (TICKER,))
     conn.executemany(
-        """INSERT INTO prices(ticker, date, open, high, low, close, adj_close, volume)
-           VALUES (?, ?, NULL, NULL, NULL, ?, ?, NULL)""",
+        """INSERT INTO prices(ticker, date, open, high, low, close, adj_close, volume,
+                             source, status, fetched_at)
+           VALUES (?, ?, NULL, NULL, NULL, ?, ?, NULL,
+                   'derived', 'final', datetime('now','localtime'))""",
         [(TICKER, dt, v, v) for dt, v in out],
     )
     conn.commit()

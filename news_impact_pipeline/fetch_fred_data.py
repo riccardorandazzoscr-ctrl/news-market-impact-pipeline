@@ -119,7 +119,9 @@ def store_spread(conn, df: pd.DataFrame, from_date: str | None = None) -> int:
 
     if rows:
         conn.executemany(
-            "INSERT OR REPLACE INTO prices VALUES (?, ?, ?, ?, ?, ?, ?, ?)", rows
+            "INSERT OR REPLACE INTO prices (ticker, date, open, high, low, close, adj_close, volume, source, status, fetched_at)"
+            " VALUES (?,?,?,?,?,?,?,?, 'fred', 'final', datetime('now','localtime'))",
+            rows
         )
         conn.commit()
     return len(rows)

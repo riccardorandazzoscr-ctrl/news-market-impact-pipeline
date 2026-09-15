@@ -8,6 +8,7 @@
 #   ./run_tests.sh watchdog     # solo il tetto di durata e il lock
 #   ./run_tests.sh analogues    # solo il filtro sotto-tema di analogues.py
 #   ./run_tests.sh usage        # solo il parser dei consumi del run headless
+#   ./run_tests.sh prezzi       # solo finestra, stato della barra e diagnosi serie
 #   ./run_tests.sh brief        # solo il job che produce il briefing (07:30)
 #
 # I test sono NON distruttivi: leggono il DB e lanciano i tool in sola lettura.
@@ -45,6 +46,10 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
 
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "usage" ] && \
   run "consumi — parser del grezzo di claude -p" tests/test_record_usage.py
+
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "prezzi" ] && \
+  run "prezzi — finestra sovrapposta, barra provvisoria, freschezza e buchi" \
+      tests/test_price_updates.py
 
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "asset" ] && \
   run "universo asset — registro, dati, mappa, integrazione, regressione" \

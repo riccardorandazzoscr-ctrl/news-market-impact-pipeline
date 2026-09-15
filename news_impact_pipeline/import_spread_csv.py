@@ -63,7 +63,8 @@ def main():
             return
 
         conn.executemany(
-            "INSERT OR REPLACE INTO prices VALUES (?,?,?,?,?,?,?,?)",
+            "INSERT OR REPLACE INTO prices (ticker, date, open, high, low, close, adj_close, volume, source, status, fetched_at)"
+            " VALUES (?,?,?,?,?,?,?,?, 'csv', 'final', datetime('now','localtime'))",
             [
                 (TICKER_SPREAD, ts.strftime("%Y-%m-%d"), None, None, None,
                  float(r["spread"]), float(r["spread"]), None)

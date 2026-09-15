@@ -175,6 +175,29 @@ Python 3.12 installato da python.org richiede di lanciare **una volta**:
 Senza, la verifica dei certificati fallisce e **tutte** le chiamate HTTPS si bloccano,
 FRED compreso.
 
+## Una serie di prezzi ferma, bucata o senza prezzo
+
+Il conteggio dei ticker (quello che il wrapper fa prima dell'analisi) dice solo che i
+ticker esistono: un ticker fermo da tre settimane e una riga con `close` e `adj_close`
+nulli lo superano. La diagnosi vera, in sola lettura e senza scaricare niente:
+
+```bash
+news_impact_pipeline/venv/bin/python news_impact_pipeline/update_market_data.py --check
+```
+
+Segnala per ogni ticker: serie ferma (freschezza), interruzioni di più giorni (copertura),
+righe senza prezzo, barre rimaste `provisional` che la fonte non ripubblica. La soglia dei
+buchi è il ponte festivo più lungo che **quel** ticker fa di suo, dedotto dalla sua storia:
+Capodanno giapponese e Natale tedesco non sono buchi.
+
+**Non corregge nulla da solo.** Cosa fare dopo:
+- serie ferma o riga senza prezzo recente → il normale `update_market_data.py` riscarica
+  una finestra che torna indietro fino alla riga rotta (entro 400 giorni) e la riscrive;
+- buco vecchio, o `adj_close` che sembra non riflettere un dividendo → passata profonda
+  `update_market_data.py --deep`, che rilegge tutto lo storico (gira da sola il sabato);
+- la fonte continua a non dare quel prezzo → resta segnalato. È una decisione a mano:
+  nessuno cancella righe d'ufficio.
+
 ## Ricostruire il database dei prezzi
 
 ⚠ **`market_data.db` non ha backup** ed è già stato azzerato una volta (29 maggio 2026,
