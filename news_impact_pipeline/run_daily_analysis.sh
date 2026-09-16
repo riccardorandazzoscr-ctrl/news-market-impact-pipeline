@@ -45,7 +45,7 @@ PROJECT="$HOME/Claude"
 NEWSDIR="$PROJECT/mercati_finanza"
 PIPE="$NEWSDIR/news_impact_pipeline"
 PY="$PIPE/venv/bin/python"
-BRIEF_DIR="$PROJECT/morning brief"
+BRIEF_DIR="$NEWSDIR/morning brief"
 DAILY="$NEWSDIR/daily_analysis"
 LOGDIR="$PIPE/logs"
 # Sovrascrivibile per la stessa ragione di MIN_STORIES e WAIT_MAX: la suite in
@@ -243,9 +243,9 @@ if [[ "$FASE" == "input_validato" ]]; then
 fi
 
 # --- I dati di mercato sono pronti? (R07) ----------------------------------
-# `WatchPaths` sorveglia la cartella dei briefing: il brief delle 07:30 fa scattare
+# `WatchPaths` sorveglia la cartella dei briefing: il brief delle 07:40 fa scattare
 # l'analisi PRIMA dell'aggiornamento prezzi delle 08:00. Un'attesa secca qui
-# scadrebbe alle 07:41 — WAIT_MAX è 600s — e suonerebbe l'allarme ogni mattina su
+# scadrebbe alle 07:51 — WAIT_MAX è 600s — e suonerebbe l'allarme ogni mattina su
 # un ritardo che non è un guasto. Quindi due regimi separati da un'ora di soglia:
 # prima si esce in silenzio e ci pensa il run di calendario delle 08:15; dopo, il
 # ritardo è un guasto vero e si urla.

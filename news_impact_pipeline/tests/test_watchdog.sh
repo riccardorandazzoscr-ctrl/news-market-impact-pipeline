@@ -43,7 +43,7 @@ check() { if eval "$1"; then ok "$2"; else ko "$2" "${3:-condizione non soddisfa
 setup() {
   SANDBOX=$(mktemp -d)
   export FAKE_HOME="$SANDBOX/home"
-  BDIR="$FAKE_HOME/Claude/morning brief"
+  BDIR="$FAKE_HOME/Claude/mercati_finanza/morning brief"
   DAILY="$FAKE_HOME/Claude/mercati_finanza/daily_analysis"
   FPIPE="$FAKE_HOME/Claude/mercati_finanza/news_impact_pipeline"
   mkdir -p "$BDIR" "$DAILY" "$FPIPE/logs" "$FPIPE/venv/bin"
@@ -92,7 +92,7 @@ case "$*" in
       *--registra-consegna\ ok*) print -r -- '{}' > "$D/$3/_state.json"; exit 0 ;;
       *--registra*) exit 0 ;;
     esac
-    B="$HOME/Claude/morning brief/$3-morning-briefing.html"
+    B="$HOME/Claude/mercati_finanza/morning brief/$3-morning-briefing.html"
     N=$(grep -o 'class="story"' "$B" 2>/dev/null | wc -l | tr -d ' ')
     if [[ ! -f "$B" ]] || ! grep -q '</body>' "$B" 2>/dev/null || (( N < ${MIN_STORIES:-1} )); then
       F=input_validato

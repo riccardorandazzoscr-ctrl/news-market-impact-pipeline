@@ -38,7 +38,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 
 
-BRIEFING_DIR = Path.home() / "Claude" / "morning brief"
+BRIEFING_DIR = Path.home() / "Claude" / "mercati_finanza" / "morning brief"
 FILENAME_FMT = "{date}-morning-briefing.html"
 FILENAME_RE = re.compile(r"(\d{4}-\d{2}-\d{2})-morning-briefing\.html$")
 

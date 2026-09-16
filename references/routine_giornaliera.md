@@ -11,7 +11,7 @@ dell'abbonamento Claude, la stessa della CLI interattiva.
 
 | Fase | Orario Europe/Rome | Job launchd | Script | Modello |
 |---|---|---|---|---|
-| Morning briefing | 07:30 ogni giorno | `…newsimpact.brief` | `run_morning_brief.sh` | Opus 5 (ricerca web) |
+| Morning briefing | 07:40 ogni giorno | `…newsimpact.brief` | `run_morning_brief.sh` | Opus 5 (ricerca web) |
 | Prezzi | 08:00 ogni giorno | `…newsimpact.marketdata-update` | `update_market_data.py` | Nessuno: Python deterministico |
 | Analisi | 08:15, ritentativi 09:15 e 10:15 | `…newsimpact.daily` | `run_daily_analysis.sh` | Opus 5 |
 | Indicizzazione KB | a ogni modifica di `knowledge_base/` | `…newsimpact.indexkb` | `index_studies.sh` | Opus 5 |
@@ -28,7 +28,7 @@ non richiamano l'agente. A che punto sia una giornata lo dice
 `stato_giornata.py --date AAAA-MM-GG` (tabella delle sei fasi in
 [quando_si_rompe.md](quando_si_rompe.md)).
 
-⚠ Il brief delle 07:30 può far scattare l'analisi **prima** dell'aggiornamento
+⚠ Il brief delle 07:40 può far scattare l'analisi **prima** dell'aggiornamento
 prezzi delle 08:00. Prima delle 08:30 quel run esce in silenzio (`ATTESA:` nel
 log) e lascia fare a quello di calendario; dopo, i prezzi mancanti sono un
 guasto e il run si ferma con un allarme invece di analizzare su dati vecchi.
@@ -58,7 +58,7 @@ claude --version                                        # la CLI c'è
 launchctl list | grep newsimpact                        # i 6 job sono caricati
 tail -30 news_impact_pipeline/logs/brief-$(date +%F).log # il brief è uscito?
 tail -30 news_impact_pipeline/logs/$(date +%F).log       # l'analisi è uscita?
-ls -l "../morning brief/$(date +%F)-morning-briefing.html"
+ls -l "morning brief/$(date +%F)-morning-briefing.html"
 tail -3 news_impact_pipeline/logs/usage.csv             # costo degli ultimi run
 ```
 

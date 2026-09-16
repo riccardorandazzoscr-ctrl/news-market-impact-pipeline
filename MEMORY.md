@@ -20,7 +20,7 @@ Stato per filone. Max 10 righe a filone. Ciò che resta vero per sempre va in
   richiama l'agente se mancano solo render o consegna. La verità è il disco;
   `_state.json` tiene solo impronta dell'input e ricevuta dell'invio. I prezzi sono
   un cancello bloccante senza scavalco: si ripara il dato.
-- **Prossimo passo** — osservare il primo ciclo completo del 16/09 (brief 07:30 →
+- **Prossimo passo** — osservare il primo ciclo completo del 16/09 (brief 07:40 →
   analisi 08:15 → Telegram) e la prima riga di `logs/usage.csv` su Opus 5: il costo
   per run va riconfrontato con i $27,9 misurati ad agosto, che erano su un altro
   modello e un altro formato di scheda. Al primo ritentativo vero, verificare che il

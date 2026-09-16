@@ -1,5 +1,5 @@
 #!/bin/zsh
-# test_morning_brief.sh — guardiano sul job che PRODUCE il briefing (07:30).
+# test_morning_brief.sh — guardiano sul job che PRODUCE il briefing (07:40).
 #
 # Perché esiste: fino al 15/09/2026 questo passo non aveva uno script — era una
 # routine cloud, poi un task dell'app ChatGPT — quindi non aveva neppure un test.
@@ -39,7 +39,7 @@ GIORNO="2026-09-15"
 setup() {
   SANDBOX=$(mktemp -d)
   FAKE_HOME="$SANDBOX/home"
-  BDIR="$FAKE_HOME/Claude/morning brief"
+  BDIR="$FAKE_HOME/Claude/mercati_finanza/morning brief"
   FPIPE="$FAKE_HOME/Claude/mercati_finanza/news_impact_pipeline"
   mkdir -p "$BDIR" "$FPIPE/logs" "$FPIPE/venv/bin"
 

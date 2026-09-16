@@ -138,7 +138,7 @@ risulta **sconosciuta**, non fallita. Nessuna migrazione da fare.
 
 ### L'analisi non parte e il log dice `ATTESA: prezzi non ancora aggiornati`
 
-Normale prima delle 08:30 (`DATI_PRONTI_ENTRO`): il briefing delle 07:30 fa scattare il
+Normale prima delle 08:30 (`DATI_PRONTI_ENTRO`): il briefing delle 07:40 fa scattare il
 job prima dell'aggiornamento prezzi delle 08:00, e il run esce in silenzio lasciando fare
 a quello di calendario delle 08:15. **Dopo** quell'ora lo stesso stato è un guasto: allarme
 e `exit 1`. Non c'è un flag per scavalcare il controllo — si ripara il dato:

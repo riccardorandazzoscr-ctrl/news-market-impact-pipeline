@@ -11,15 +11,16 @@
         <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/run_morning_brief.sh</string>
     </array>
 
-    <!-- Ogni giorno alle 07:30 (ora locale del Mac): 45 minuti prima
-         dell'analisi delle 08:15, come la vecchia routine.
+    <!-- Ogni giorno alle 07:40 (ora locale del Mac): 35 minuti prima
+         dell'analisi delle 08:15 (spostato da 07:30 il 2026-09-16 per
+         ridurre la distanza fra brief e analisi).
          Idempotente: se il briefing di oggi c'è già ed è completo, esce. -->
     <key>StartCalendarInterval</key>
     <dict>
         <key>Hour</key>
         <integer>7</integer>
         <key>Minute</key>
-        <integer>30</integer>
+        <integer>40</integer>
     </dict>
 
     <!-- Non eseguire al caricamento del plist (evita run a sorpresa) -->

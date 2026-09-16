@@ -42,7 +42,7 @@
          gestisce il caso "briefing in ritardo" → analisi appena arriva. -->
     <key>WatchPaths</key>
     <array>
-        <string>/Users/riccardo/Claude/morning brief</string>
+        <string>/Users/riccardo/Claude/mercati_finanza/morning brief</string>
     </array>
 
     <!-- Non eseguire al caricamento del plist (evita run a sorpresa) -->

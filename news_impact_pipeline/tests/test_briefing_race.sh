@@ -17,7 +17,7 @@
 set -u
 PIPE="${0:A:h:h}"
 SCRIPT="$PIPE/run_daily_analysis.sh"
-BRIEF_REALI="$HOME/Claude/morning brief"
+BRIEF_REALI="$HOME/Claude/mercati_finanza/morning brief"
 PASS=0; FAIL=0
 MIN_STORIES_ATTESA=1    # una storia verificata è un briefing parziale valido
 
@@ -29,7 +29,7 @@ check() { if eval "$1"; then ok "$2"; else ko "$2" "${3:-condizione non soddisfa
 setup() {
   SANDBOX=$(mktemp -d)
   export FAKE_HOME="$SANDBOX/home"
-  BDIR="$FAKE_HOME/Claude/morning brief"
+  BDIR="$FAKE_HOME/Claude/mercati_finanza/morning brief"
   DAILY="$FAKE_HOME/Claude/mercati_finanza/daily_analysis"
   FPIPE="$FAKE_HOME/Claude/mercati_finanza/news_impact_pipeline"
   mkdir -p "$BDIR" "$DAILY" "$FPIPE/logs" "$FPIPE/venv/bin"

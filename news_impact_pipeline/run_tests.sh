@@ -10,7 +10,7 @@
 #   ./run_tests.sh analogues    # solo il filtro sotto-tema di analogues.py
 #   ./run_tests.sh usage        # solo il parser dei consumi del run headless
 #   ./run_tests.sh prezzi       # solo finestra, stato della barra e diagnosi serie
-#   ./run_tests.sh brief        # solo il job che produce il briefing (07:30)
+#   ./run_tests.sh brief        # solo il job che produce il briefing (07:40)
 #
 # I test sono NON distruttivi: leggono il DB e lanciano i tool in sola lettura.
 # L'unica eccezione è `update_market_data.py`, rilanciato per verificare che sia
@@ -61,7 +61,7 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
       tests/test_asset_universe.py
 
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "brief" ] && \
-  run "morning brief — il job che PRODUCE il briefing delle 07:30" \
+  run "morning brief — il job che PRODUCE il briefing delle 07:40" \
       tests/test_morning_brief.sh
 
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "briefing" ] && \

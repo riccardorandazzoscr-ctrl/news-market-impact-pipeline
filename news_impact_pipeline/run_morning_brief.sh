@@ -1,5 +1,5 @@
 #!/bin/zsh
-# run_morning_brief.sh — produce il morning briefing HTML del giorno (07:30).
+# run_morning_brief.sh — produce il morning briefing HTML del giorno (07:40).
 #
 # Fino al 2026-09-15 questo passo NON aveva uno script: era una routine cloud
 # (Claude), poi un'attività locale dell'app ChatGPT. Entrambe dipendevano da
@@ -22,9 +22,10 @@ export PATH="/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 MODEL="claude-opus-5"   # ricerca web + sintesi: stesso modello del run giornaliero
 
 # Tetto di durata. Il brief è una ricerca web, non un'analisi su molte schede:
-# i 138 briefing in archivio sono usciti fra le 07:45 e le 07:51 partendo dalle
-# 07:30, cioè 15-21 minuti. 1800s sta comodamente sopra, e resta ben dentro la
-# finestra prima dell'analisi delle 08:15.
+# i 138 briefing in archivio (partiti dalle 07:30) sono usciti in 15-21 minuti.
+# Da 07:40 la stessa durata porta a 07:55-08:01: 1800s di tetto sta comodamente
+# sopra, ma il margine prima dell'analisi delle 08:15 è più stretto di prima
+# (spostato da 07:30 il 2026-09-16).
 RUN_MAX=${RUN_MAX:-1800}
 RUN_KILL_GRACE=${RUN_KILL_GRACE:-20}
 
@@ -32,7 +33,7 @@ PROJECT="$HOME/Claude"
 NEWSDIR="$PROJECT/mercati_finanza"
 PIPE="$NEWSDIR/news_impact_pipeline"
 PY="$PIPE/venv/bin/python"
-BRIEF_DIR="$PROJECT/morning brief"
+BRIEF_DIR="$NEWSDIR/morning brief"
 LOGDIR="$PIPE/logs"
 PROMPT_FILE="$PIPE/news_research_prompt.md"
 # Sovrascrivibile perché la suite in tests/ possa metterci un finto `claude`.

@@ -55,7 +55,7 @@ if [[ "${1:-}" == "--scorecard" ]]; then
 fi
 
 D="${1:-$(date +%Y-%m-%d)}"
-BRIEF="$PROJECT/morning brief/${D}-morning-briefing.html"
+BRIEF="$NEWSDIR/morning brief/${D}-morning-briefing.html"
 REPORT="$NEWSDIR/daily_analysis/$D/report.html"
 
 # send_telegram.sh AAAA-MM-GG --parziale → didascalia d'allarme sull'analisi.

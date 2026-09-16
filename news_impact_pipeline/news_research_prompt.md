@@ -1,7 +1,7 @@
 # Prompt di ricerca notizie — Morning Briefing (v2.2, 2026-06-06)
 
 > Questo è il prompt che il job `com.riccardo.newsimpact.brief` esegue ogni mattina
-> alle 07:30. Copia canonica e versionabile, **fonte unica**:
+> alle 07:40. Copia canonica e versionabile, **fonte unica**:
 > `run_morning_brief.sh` estrae da qui SOLO il blocco delimitato da
 > `=== PROMPT START/END ===` e non ne tiene una copia propria — quindi per
 > cambiare il briefing si modifica questo file, e basta. Le note qui sopra
@@ -33,7 +33,7 @@ read their full text — in that case verify the story on an accessible source
 verifiable primary link/source.
 
 **Deduplication (important).** Before generating the briefing, read the most recent
-briefing file in `/Users/riccardo/Claude/morning brief/` (the previous day's file). Any story
+briefing file in `/Users/riccardo/Claude/mercati_finanza/morning brief/` (the previous day's file). Any story
 already present there with **no concrete new development today** must be excluded — do
 not repeat static facts, standing estimates, or unchanged institutional positions. A
 story may reappear **only** if there is a concrete update (new data released, policy
@@ -69,7 +69,7 @@ The single most market-moving development to monitor today, and why.
 
 **Saving.** After generating the briefing, save it as an HTML file named
 `YYYY-MM-DD-morning-briefing.html` (using today's Europe/Rome date) in
-`/Users/riccardo/Claude/morning brief/`
+`/Users/riccardo/Claude/mercati_finanza/morning brief/`
 — clean, readable HTML: white background, sans-serif font, comfortable line spacing,
 styled headings, mobile-friendly. **Keep the existing HTML structure**: each
 verified story must be in a numbered container with `class="story"`, grouped under

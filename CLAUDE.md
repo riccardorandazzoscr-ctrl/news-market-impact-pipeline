@@ -25,6 +25,10 @@ cd news_impact_pipeline && python3 -m venv venv && venv/bin/pip install -r requi
 
 ## Dove sta ogni cosa
 
+- `morning brief/YYYY-MM-DD-morning-briefing.html` — briefing del giorno, prodotto da
+  `run_morning_brief.sh` alle 07:40 e consumato da `run_daily_analysis.sh`,
+  `parse_briefing.py` e `send_telegram.sh`. Spostato qui da `~/Claude/morning brief/`
+  il 2026-09-16 (era condiviso a livello di root, ma lo usa solo questo progetto).
 - `market_data/market_data.db` — SQLite, prezzi giornalieri dal 2011. Tabelle `assets`
   (registry) e `prices` (ticker × data, OHLCV + adj_close).
 - `knowledge_base/` — una sottocartella per studio: materiale di origine + un .md di deep
@@ -61,7 +65,7 @@ contesto di regime → analoghi storici dalla **libreria episodi** (`analogues.p
 study (rendimenti cumulati a T+1, T+3, T+5, T+10) → scheda in `daily_analysis/YYYY-MM-DD/`
 → `render_report.py` → `send_telegram.sh`.
 
-Automazione: 6 job launchd `com.riccardo.newsimpact.*` — brief 07:30, marketdata-update
+Automazione: 6 job launchd `com.riccardo.newsimpact.*` — brief 07:40, marketdata-update
 08:00, daily 08:15 con ritentativi 09:15/10:15 (+ WatchPaths sul briefing), scorecard
 lunedì 09:00, monthly 1° del mese 09:30, indexkb (WatchPaths sulla KB). I tre job che
 usano un modello lanciano `claude -p` headless su Opus 5; gli altri sono Python puro.

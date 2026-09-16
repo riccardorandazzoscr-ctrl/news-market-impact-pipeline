@@ -5,7 +5,7 @@ processare il morning briefing del giorno e produrre le schede di analisi.
 
 ## Input
 
-- Briefing HTML in `~/Claude/morning brief/YYYY-MM-DD-morning-briefing.html`
+- Briefing HTML in `~/Claude/mercati_finanza/morning brief/YYYY-MM-DD-morning-briefing.html`
   (N notizie: fino a 10 International e fino a 10 Economics & Finance, + 1 "One Thing to Watch").
 - DB mercati in `market_data/market_data.db`.
   ⚠ **L'elenco degli asset NON è scritto qui.** L'unica fonte autorevole è
