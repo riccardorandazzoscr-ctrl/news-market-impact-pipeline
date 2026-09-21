@@ -1,4 +1,4 @@
-generated_at: '2026-09-13T16:38:23'
+generated_at: '2026-09-21T14:41:13'
 num_entries: 29
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -615,10 +615,15 @@ entries:
   external_assets_mentioned: JGB (titoli di stato giapponesi 10Y) — non in DB; TOPIX
     / indici bancari giapponesi — non in DB; coppie di carry AUD/JPY, MXN/JPY — non
     in DB
-  time_window: start 1998-01-01, end present
-  regime_phases: zirp_deflation_pre_2013 (1998-01-01 to 2012-12-31); abenomics_qqe_2013_2015
-    (2013-01-01 to 2015-12-31); nirp_ycc_2016_2022 (2016-01-01 to 2022-11-30); normalization_exit_2022_2024
-    (2022-12-01 to 2024-03-31); post_ycc_2024_2026 (2024-04-01 to present)
+  time_window:
+    start: 1998-01-01
+    end: present
+  regime_phases:
+  - zirp_deflation_pre_2013: 1998-01-01 to 2012-12-31
+  - abenomics_qqe_2013_2015: 2013-01-01 to 2015-12-31
+  - nirp_ycc_2016_2022: 2016-01-01 to 2022-11-30
+  - normalization_exit_2022_2024: 2022-12-01 to 2024-03-31
+  - post_ycc_2024_2026: 2024-04-01 to present
   keywords:
   - giappone
   - japan
