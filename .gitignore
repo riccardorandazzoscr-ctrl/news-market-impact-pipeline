@@ -54,6 +54,12 @@ daily_analysis/*
 # Forecast ledger: the raw evidence behind the weekly scorecard — kept.
 !daily_analysis/forecast_ledger.csv
 
+# Revisioni e specifiche di progettazione: non sono schede e non contengono
+# materiale di agenzia — sono i contratti che i run di manutenzione
+# implementano. Senza questa eccezione il piano rimanda a file che esistono
+# solo su una macchina.
+!daily_analysis/_reviews/
+
 # Stray run logs next to the database
 market_data/*.log
 
