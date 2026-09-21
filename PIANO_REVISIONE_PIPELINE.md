@@ -270,20 +270,53 @@ dell'input e non solo alla data.
   che la fonte sia una scheda. Resta aperto per il 5b: se riscrivere la tabella dentro il
   `.md` della research o lasciarla in prosa (la spec raccomanda la seconda).
 
-## [ ] Run 5b — Schema KB: IMPLEMENTAZIONE
+## [x] Run 5b — Schema KB: IMPLEMENTAZIONE (parte 1/2) — FATTO — 2026-09-21
 **Modello:** Opus 5 · effort high
 **Precondizione:** schema del Run 5a approvato.
 
-- [ ] **Un solo parser YAML** per catalogo ed episodi. Oggi sono due e divergono: YAML valido
+⚠ **Run spezzato in due.** Questa parte chiude R04 (parser, schema, scanner,
+pubblicazione). Il ramo KB di `analogues.py` e il recupero delle righe già scritte
+passano al **Run 5c**, sotto.
+
+- [x] **Un solo parser YAML** per catalogo ed episodi. Oggi sono due e divergono: YAML valido
       con `primary_theme: "macro_data"` passa il catalogo e perde il tema nell'estrattore.
-- [ ] `build_catalog.validate` (riga ~96): validare tipi e strutture, non solo presenza dei campi.
+- [x] `build_catalog.validate` (riga ~96): validare tipi e strutture, non solo presenza dei campi.
       Oggi la research BoJ usa stringhe per `time_window`/`regime_phases`, passa, e
       `monthly_digest.kb_regimes` (riga ~83) restituisce come fase corrente il carattere `)`.
-- [ ] `index_studies.sh` (riga ~50): oggi considera indicizzata un'intera cartella se **un
+- [x] `index_studies.sh` (riga ~50): oggi considera indicizzata un'intera cartella se **un
       qualsiasi** Markdown contiene un fence YAML. Scoperta file condivisa fra scanner e builder,
       ricorsiva, che rilevi rimozioni e rinomine.
-- [ ] Indici generati in temporaneo, validati, pubblicati **atomicamente**. Un errore su un file
+- [x] Indici generati in temporaneo, validati, pubblicati **atomicamente**. Un errore su un file
       deve essere esplicito, mai pubblicare un catalogo degradato in silenzio.
+
+**Note di chiusura:**
+- Nuovo `kb_metadata.py`: l'unico parser dei metadati KB, senza dipendenze pesanti (lo
+  importano sia il builder sia `analogues`). Il difetto dei due parser era **peggio** di
+  come il report lo descriveva: con `primary_theme` fra virgolette l'estrattore restituiva
+  tema vuoto, e un tema vuoto fa scartare ogni riga in `add()` — una research col tema
+  quotato appariva nel catalogo e contribuiva **zero** episodi, senza un warning da nessuna
+  parte. Riprodotto prima di correggere, ora coperto da test.
+- La validazione distingue **ERRORE** (non pubblica) da **avviso** (pubblica). Un ticker
+  esterno resta avviso: esiste `external_assets_mentioned` per dichiararlo. Il primo run
+  del nuovo builder ha rifiutato di pubblicare per il solo file BoJ, con messaggio preciso;
+  corretti i suoi due campi alla forma canonica (28/29 file già la usavano, nessun cambio
+  di contenuto) e la fase corrente nel digest mensile è tornata `post_ycc_2024_2026`
+  invece di `)`.
+- Lo scanner non ha più una propria nozione di «indicizzato»: `build_catalog.py --scan`
+  risponde allo shell. Lo staleness è per **contenuto**, quindi rileva rimozioni e
+  rinomine che la vecchia mtime non vedeva mai. Effetto misurato del parser unico sulla
+  libreria: **0 episodi persi, 9 guadagnano sotto-temi** (liste `sub_themes` multilinea che
+  la vecchia regex buttava via). Nuova suite `run_tests.sh kb`, 36 asserzioni.
+
+---
+
+## [ ] Run 5c — Ramo KB di `analogues` e recupero delle righe
+**ID report:** R01 + resto di R03
+**Modello:** Opus 5 · effort high
+**Precondizione:** Run 5b parte 1 chiuso. Contratto in
+`daily_analysis/_reviews/2026-09-21-r04-r01-schema-episodi.md` — **già approvato, non
+rinegoziare**: la research non si riscrive, le dichiarazioni vivono nel registro.
+
 - [ ] `analogues.py` ramo KB (riga ~453): leggere i **blocchi dichiarati** come già fa per le
       schede giornaliere, e produrre `directions_by_reference`. Oggi le research catalogate non
       soddisfano il filtro `--direction` + `--direction-reference` e vengono scartate.
@@ -296,8 +329,16 @@ dell'input e non solo alla data.
       non al paragrafo (il Tankan 1 apr 2024 prende «inflazione» dal paragrafo sul regime successivo).
 - [ ] Normalizzare le tabelle di eventi già esistenti (es. `24 mag 2023 AC` nella research
       semiconduttori, oggi estrae zero date).
+- [ ] **Recupero delle righe già scritte** (deciso col maintainer il 2026-09-21): copre
+      research **e** schede senza `direction_reference` — quelle di agosto e i due terzi di
+      settembre precedenti al giorno 14. Quattro gruppi e tavola delle inversioni in §7.3
+      della spec. Regola non negoziabile: **quando si decide il verso non si apre il DB
+      prezzi.** Una riga non approvata non viene usata.
+- [ ] Aggiungere `mechanism` e `description` a `_direction_reviews.yaml` (opzionali, per non
+      invalidare le righe già compilate a mano) e togliere il vincolo che la fonte sia una
+      scheda, conservando il controllo equivalente sulle research.
 
-> **Finché il Run 5b non è chiuso: non commissionare nuove research.** Finirebbero nello
+> **Finché il Run 5c non è chiuso: non commissionare nuove research.** Finirebbero nello
 > stesso imbuto rotto.
 
 ---
