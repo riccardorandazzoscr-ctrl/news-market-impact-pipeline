@@ -18,12 +18,15 @@ Sottocomandi:
 """
 
 import argparse
+import os
 import re
 from collections import defaultdict
 from datetime import date, datetime
 from pathlib import Path
 
 import yaml
+
+import kb_metadata
 
 DAILY_DIR = Path.home() / "Claude" / "mercati_finanza" / "daily_analysis"
 KB_DIR = Path.home() / "Claude" / "mercati_finanza" / "knowledge_base"
@@ -34,13 +37,12 @@ TAXONOMY_PATH = Path(__file__).with_name("subtheme_taxonomy.yaml")
 DATE_RE = re.compile(r"\b(\d{4}-\d{2}-\d{2})\b")
 DAY_DIR_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
-# Blocco di metadata in coda alle ricerche KB: ```yaml ... ``` (template Design
-# Doc §5.2). Contiene date che NON sono episodi — `date_compiled`, `time_window`
-# e soprattutto i confini di `regime_phases` — e che finivano in libreria come
-# eventi fasulli (67 al 2026-08-15: 2023-01-01, 2024-06-30, 2025-01-26,
-# perfino 2026-12-31, una data futura). Erano entrate anche nei pool reali:
-# il `--events` di 2026-08-15/news_04 ne conteneva cinque.
-KB_META_RE = re.compile(r"\n```yaml\b.*?(?:\n```|\Z)", re.S)
+# Il blocco di metadata in coda alle ricerche KB (```yaml ... ```, template Design
+# Doc §5.2) si rimuove con `kb_metadata.strip`: contiene date che NON sono episodi
+# — `date_compiled`, `time_window` e soprattutto i confini di `regime_phases` — e
+# che finivano in libreria come eventi fasulli (67 al 2026-08-15: 2023-01-01,
+# 2024-06-30, 2025-01-26, perfino 2026-12-31, una data futura). Erano entrate anche
+# nei pool reali: il `--events` di 2026-08-15/news_04 ne conteneva cinque.
 
 # Intervallo di date: «2014-03-01 to 2022-01-31», «2025-03-01 → presente».
 # Gli estremi di un intervallo sono CONFINI DI REGIME, non eventi. Le §5 delle
@@ -378,13 +380,22 @@ def harvest_card(path: Path) -> tuple[str, str, set[str], set[str], str]:
 def harvest_kb(path: Path) -> tuple[str, set[str], set[str], str]:
     """Da uno studio KB: (primary_theme, sub_themes, {ISO date citate nel testo},
     testo-senza-metadata). Le date in prosa sono analoghi curati dalla
-    deep-research; quelle nel blocco YAML di coda NO (vedi KB_META_RE)."""
+    deep-research; quelle nel blocco YAML di coda NO (vedi kb_metadata.strip).
+
+    I metadati si leggono con l'UNICO parser (`kb_metadata`), non più con regex
+    locali. Le regex leggevano il testo grezzo e divergevano dal catalogo su YAML
+    perfettamente valido: `primary_theme: "macro_data"` dava tema VUOTO qui e
+    'macro_data' nel catalogo, e un tema vuoto fa scartare ogni riga in `add()`.
+    Una research col tema fra virgolette era quindi indicizzata e contribuiva
+    zero episodi — senza un warning da nessuna parte."""
     text = path.read_text(encoding="utf-8")
-    m = re.search(r"primary_theme:\s*([^\n]+)", text)
-    theme = _norm_theme(m.group(1)) if m else ""
-    ms = re.search(r"sub_themes:\s*\[([^\]]*)\]", text)
-    subthemes = _split_subthemes(ms.group(1)) if ms else set()
-    body = KB_META_RE.sub("\n", text)
+    meta = kb_metadata.extract(text) or {}
+    theme = _norm_theme(str(meta.get("primary_theme") or ""))
+    raw_subs = meta.get("sub_themes") or []
+    if isinstance(raw_subs, str):
+        raw_subs = [raw_subs]
+    subthemes = {lbl for s in raw_subs if (lbl := _norm_label(str(s)))}
+    body = kb_metadata.strip(text)
     dates = set(DATE_RE.findall(body)) - _range_only_dates(body)
     return theme, subthemes, dates, body
 
@@ -452,9 +463,7 @@ def cmd_build():
 
     # 2) ricerche KB (esclude _prompts e file con prefisso _)
     n_kb = 0
-    for md in sorted(KB_DIR.rglob("*.md")):
-        if any(p.startswith("_") for p in md.relative_to(KB_DIR).parts):
-            continue
+    for md in kb_metadata.iter_studies(KB_DIR):
         n_kb += 1
         theme, subthemes, dates, body = harvest_kb(md)
         for d in dates:
@@ -523,10 +532,18 @@ def cmd_build():
                          "subthemes_local": sorted(e["subthemes_local"]),
                          "n_sources": len(e["sources"])})
 
-    LIB_PATH.write_text(yaml.safe_dump(
-        {"generated_at": datetime.now().isoformat(timespec="seconds"),
-         "num_episodes": len(episodes), "episodes": episodes},
-        sort_keys=False, allow_unicode=True), encoding="utf-8")
+    # Pubblicazione atomica: si scrive accanto e si sostituisce in un colpo solo.
+    # Senza, un'interruzione a metà scrittura lascia una libreria troncata che
+    # `find` legge come se fosse completa — pool silenziosamente dimezzati.
+    tmp = LIB_PATH.with_suffix(".yaml.tmp")
+    try:
+        tmp.write_text(yaml.safe_dump(
+            {"generated_at": datetime.now().isoformat(timespec="seconds"),
+             "num_episodes": len(episodes), "episodes": episodes},
+            sort_keys=False, allow_unicode=True), encoding="utf-8")
+        os.replace(tmp, LIB_PATH)
+    finally:
+        tmp.unlink(missing_ok=True)
     print(f"[analogues] {len(episodes)} episodi unici (date×tema) da {n_cards} schede "
           f"+ {n_kb} file KB → {LIB_PATH}")
 

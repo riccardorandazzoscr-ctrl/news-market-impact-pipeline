@@ -115,7 +115,14 @@ primary_theme: monetary_policy
 sub_themes: [boj, yen, jpy, carry_trade, carry_unwind, ycc, nirp, fx_intervention, risk_off, safe_haven, japan]
 relevant_assets: [JPY=X, ^N225, ^NDX, ^GSPC, ^VIX, ^TNX, IEF, GC=F, CHF=X, DX-Y.NYB]
 external_assets_mentioned: JGB (titoli di stato giapponesi 10Y) — non in DB; TOPIX / indici bancari giapponesi — non in DB; coppie di carry AUD/JPY, MXN/JPY — non in DB
-time_window: start 1998-01-01, end present
-regime_phases: zirp_deflation_pre_2013 (1998-01-01 to 2012-12-31); abenomics_qqe_2013_2015 (2013-01-01 to 2015-12-31); nirp_ycc_2016_2022 (2016-01-01 to 2022-11-30); normalization_exit_2022_2024 (2022-12-01 to 2024-03-31); post_ycc_2024_2026 (2024-04-01 to present)
+time_window:
+  start: 1998-01-01
+  end: present
+regime_phases:
+  - zirp_deflation_pre_2013: 1998-01-01 to 2012-12-31
+  - abenomics_qqe_2013_2015: 2013-01-01 to 2015-12-31
+  - nirp_ycc_2016_2022: 2016-01-01 to 2022-11-30
+  - normalization_exit_2022_2024: 2022-12-01 to 2024-03-31
+  - post_ycc_2024_2026: 2024-04-01 to present
 keywords: [giappone, japan, bank of japan, boj, yen, jpy, usd/jpy, carry trade, carry unwind, ycc, yield curve control, nirp, negative rates, fx intervention, mof, ministry of finance, abenomics, qqe, nikkei, risk-off, safe haven, august 2024, deleveraging, crash risk]
 ```

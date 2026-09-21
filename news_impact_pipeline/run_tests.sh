@@ -72,6 +72,10 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
   run "parse_briefing/render_report — corpo multi-paragrafo, fonti con URL, link interni" \
       tests/test_parse_briefing.py
 
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "kb" ] && \
+  run "kb — parser unico dei metadati, schema validato, scanner dell'indice" \
+      tests/test_kb_index.py
+
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "analisi" ] && \
   run "analisi — guardiano contro il run interrotto a metà" \
       tests/test_index_incompleto.sh

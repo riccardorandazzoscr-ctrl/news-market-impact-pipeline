@@ -18,36 +18,19 @@ Come si usa:
     venv/bin/python build_catalog.py
 """
 
-import re
+import os
 import sqlite3
-from datetime import datetime, date
+from datetime import datetime
 from pathlib import Path
 
 import yaml
 
-from bootstrap_market_data import DB_PATH
+import kb_metadata
+from diagnosi_serie import DB_PATH
 
 
 KB_DIR = Path.home() / "Claude" / "mercati_finanza" / "knowledge_base"
 CATALOG_PATH = KB_DIR / "catalog.yaml"
-
-
-# Ontologia (Design Document §6.1) — i nove temi ammessi per primary_theme.
-ONTOLOGY = {
-    "monetary_policy",
-    "fiscal_policy",
-    "geopolitical",
-    "macro_data",
-    "corporate_idiosyncratic",
-    "regulatory",
-    "commodity_energy",
-    "financial_stability",
-    "structural_themes",
-}
-
-REQUIRED_FIELDS = ["title", "date_compiled", "primary_theme",
-                   "sub_themes", "relevant_assets", "time_window",
-                   "regime_phases", "keywords"]
 
 
 def get_known_tickers(conn) -> set[str]:
@@ -56,101 +39,62 @@ def get_known_tickers(conn) -> set[str]:
     return {r[0] for r in rows}
 
 
-def extract_yaml_block(md_text: str) -> dict | None:
+def scan():
+    """Risponde allo scanner: cosa manca all'indice e se il catalogo è stale.
+
+    Esiste perché `index_studies.sh` aveva una PROPRIA nozione di «indicizzato»
+    che divergeva dal builder su tre punti: marcava indicizzata un'intera
+    cartella se un qualsiasi .md conteneva un fence ```yaml (anche invalido, e
+    anche se un secondo studio nella stessa cartella non ne aveva); cercava a un
+    solo livello di profondità mentre il builder è ricorsivo; e rilevava lo
+    staleness per sola mtime, quindi una research RIMOSSA o RINOMINATA lasciava
+    la sua voce nel catalogo per sempre.
+
+    Qui la domanda la risponde chi possiede la regola. Output per lo shell:
+        STALE=0|1
+        UNINDEXED=<nome cartella>
     """
-    Estrae il blocco YAML di metadata dalla fine di un file markdown.
+    studies = kb_metadata.iter_studies(KB_DIR)
+    con_meta = {str(f.relative_to(KB_DIR)) for f in studies
+                if kb_metadata.extract(f.read_text(encoding="utf-8")) is not None}
 
-    Cerca prima un fenced code block ```yaml ... ``` (preferito per leggibilita');
-    se non lo trova, prova un blocco diretto --- ... --- alla fine del file.
-    Restituisce un dizionario, o None se non trova nulla di parsabile.
-    """
-    fenced_blocks = re.findall(
-        r"```yaml\s*\n(.*?)\n```", md_text, flags=re.DOTALL
-    )
-    if fenced_blocks:
-        # Prendiamo l'ultimo: la convenzione e' "il blocco metadata sta in fondo".
-        raw = fenced_blocks[-1].strip()
-        # Rimuovi eventuali --- di apertura/chiusura YAML frontmatter style.
-        raw = re.sub(r"^---\s*\n", "", raw)
-        raw = re.sub(r"\n---\s*$", "", raw)
-        try:
-            return yaml.safe_load(raw)
-        except yaml.YAMLError as e:
-            print(f"  [!] Errore parsing YAML fenced block: {e}")
-            return None
+    # Cartelle di primo livello che hanno materiale .md ma nessun blocco leggibile.
+    cartelle = {}
+    for f in studies:
+        cartelle.setdefault(f.relative_to(KB_DIR).parts[0], []).append(
+            str(f.relative_to(KB_DIR)))
+    non_indicizzate = sorted(nome for nome, rels in cartelle.items()
+                             if not any(r in con_meta for r in rels))
 
-    # Fallback: cerca l'ultimo blocco --- ... --- nel file.
-    matches = list(re.finditer(r"\n---\s*\n(.*?)\n---\s*(?:\n|$)",
-                                md_text, flags=re.DOTALL))
-    if matches:
-        raw = matches[-1].group(1).strip()
-        try:
-            return yaml.safe_load(raw)
-        except yaml.YAMLError as e:
-            print(f"  [!] Errore parsing YAML --- block: {e}")
-            return None
+    # Staleness per CONTENUTO (cattura aggiunte, rimozioni e rinomine) più mtime
+    # (cattura le modifiche a un file già indicizzato).
+    if not CATALOG_PATH.exists():
+        stale = True
+    else:
+        catalogo = yaml.safe_load(CATALOG_PATH.read_text(encoding="utf-8")) or {}
+        indicizzati = {e.get("source_file") for e in catalogo.get("entries", [])}
+        stale = indicizzati != con_meta or any(
+            (KB_DIR / r).stat().st_mtime > CATALOG_PATH.stat().st_mtime
+            for r in con_meta)
 
-    return None
-
-
-def validate(meta: dict, file_name: str, known_tickers: set[str]) -> list[str]:
-    """
-    Controlla i metadata di una research. Restituisce una lista di warning
-    (stringa vuota se tutto OK).
-    """
-    warnings = []
-
-    # Campi obbligatori
-    for f in REQUIRED_FIELDS:
-        if f not in meta:
-            warnings.append(f"campo mancante: '{f}'")
-
-    # primary_theme deve essere nell'ontologia
-    pt = meta.get("primary_theme")
-    if pt and pt not in ONTOLOGY:
-        warnings.append(
-            f"primary_theme '{pt}' non e' nell'ontologia §6.1 "
-            f"(temi ammessi: {sorted(ONTOLOGY)})"
-        )
-
-    # Asset rilevanti: warning per ogni ticker non nel DB
-    assets = meta.get("relevant_assets", []) or []
-    for a in assets:
-        if a not in known_tickers:
-            warnings.append(
-                f"asset '{a}' non e' presente nella tabella 'assets' del DB"
-            )
-
-    # date_compiled deve essere una data interpretabile
-    dc = meta.get("date_compiled")
-    if dc and not isinstance(dc, (date, datetime)):
-        warnings.append(
-            f"date_compiled '{dc}' non e' una data YAML valida (usa formato YYYY-MM-DD)"
-        )
-
-    return warnings
+    print(f"STALE={int(stale)}")
+    for nome in non_indicizzate:
+        print(f"UNINDEXED={nome}")
 
 
 def main():
     if not KB_DIR.exists():
         raise SystemExit(f"Cartella Knowledge Base non trovata: {KB_DIR}")
 
-    # Scansione ricorsiva: ogni studio vive in una propria sottocartella
-    # (es. knowledge_base/sovereign_debt/sovereign_debt_crisis.md). I file
-    # senza blocco YAML (PDF sorgente esclusi, raw export, ecc.) vengono
-    # saltati da extract_yaml_block → nessun falso positivo.
-    # Le cartelle/file con prefisso "_" (es. _prompts/) NON sono studi: i prompt
-    # template contengono un blocco ```yaml di esempio e altrimenti finirebbero
-    # nel catalogo come voci spurie. Convenzione: "_" = non indicizzare.
-    md_files = sorted(
-        f for f in KB_DIR.rglob("*.md")
-        if not any(part.startswith("_") for part in f.relative_to(KB_DIR).parts)
-    )
+    # Scoperta condivisa con l'estrattore della libreria: la regola «_ = non
+    # indicizzare» vive in kb_metadata, così scanner e builder non possono
+    # divergere su QUALI file sono studi.
+    md_files = kb_metadata.iter_studies(KB_DIR)
     if not md_files:
         print(f"Nessun file .md trovato in {KB_DIR}")
         return
 
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(f"file:{DB_PATH}?mode=ro", uri=True)
     try:
         known_tickers = get_known_tickers(conn)
     finally:
@@ -161,29 +105,46 @@ def main():
     print(f"Asset registrati nel DB: {len(known_tickers)}\n")
 
     entries = []
-    total_warnings = 0
+    n_warn = 0
+    failed: list[tuple[str, list[str]]] = []
 
     for f in md_files:
         rel = str(f.relative_to(KB_DIR))  # es. "sovereign_debt/sovereign_debt_crisis.md"
-        text = f.read_text(encoding="utf-8")
-        meta = extract_yaml_block(text)
+        meta = kb_metadata.extract(f.read_text(encoding="utf-8"))
 
         if meta is None:
+            # File senza blocco (PDF riesportati, note, raw export): non è uno
+            # studio, non è un errore.
             print(f"  [SKIP]  {rel}: nessun blocco YAML trovato")
             continue
 
-        warns = validate(meta, rel, known_tickers)
-        if warns:
-            total_warnings += len(warns)
-            print(f"  [WARN]  {rel}:")
-            for w in warns:
-                print(f"            - {w}")
+        findings = kb_metadata.validate(meta, known_tickers)
+        errs = kb_metadata.errors(findings)
+        for lvl, msg in findings:
+            print(f"  [{lvl:7s}] {rel}: {msg}")
+        if errs:
+            failed.append((rel, errs))
         else:
-            print(f"  [OK]    {rel}")
+            n_warn += len(findings)
+            if not findings:
+                print(f"  [OK]     {rel}")
 
         # Path relativo alla KB come riferimento sorgente (tracciabilita').
-        meta_with_source = {"source_file": rel, **meta}
-        entries.append(meta_with_source)
+        entries.append({"source_file": rel, **meta})
+
+    # Un errore NON pubblica. Prima un catalogo degradato veniva scritto lo
+    # stesso e i consumatori a valle ci sbattevano contro molto più tardi:
+    # `monthly_digest.kb_regimes` leggeva ')' come fase corrente da un
+    # regime_phases scritto a stringa, senza che nulla avesse segnalato niente.
+    if failed:
+        print(f"\n--- NON PUBBLICATO: {len(failed)} file con errori di schema ---")
+        for rel, errs in failed:
+            print(f"  {rel}")
+            for e in errs:
+                print(f"    - {e}")
+        print(f"\n{CATALOG_PATH.name} resta alla versione precedente. "
+              f"Correggi i file elencati e rilancia.")
+        raise SystemExit(1)
 
     catalog = {
         "generated_at": datetime.now().isoformat(timespec="seconds"),
@@ -191,15 +152,27 @@ def main():
         "entries": entries,
     }
 
-    with CATALOG_PATH.open("w", encoding="utf-8") as fp:
-        yaml.safe_dump(catalog, fp, sort_keys=False, allow_unicode=True,
-                       default_flow_style=False)
+    # Pubblicazione atomica: si scrive accanto e si sostituisce in un colpo solo.
+    # Senza, un'interruzione a metà scrittura lascia un catalogo troncato che il
+    # resto della pipeline legge come se fosse valido.
+    tmp = CATALOG_PATH.with_suffix(".yaml.tmp")
+    try:
+        with tmp.open("w", encoding="utf-8") as fp:
+            yaml.safe_dump(catalog, fp, sort_keys=False, allow_unicode=True,
+                           default_flow_style=False)
+        os.replace(tmp, CATALOG_PATH)
+    finally:
+        tmp.unlink(missing_ok=True)
 
     print(f"\n--- Riepilogo ---")
     print(f"Research indicizzate: {len(entries)}")
-    print(f"Warning totali:       {total_warnings}")
+    print(f"Avvisi totali:        {n_warn}")
     print(f"Catalog scritto in:   {CATALOG_PATH}")
 
 
 if __name__ == "__main__":
-    main()
+    import sys
+    if "--scan" in sys.argv:
+        scan()
+    else:
+        main()

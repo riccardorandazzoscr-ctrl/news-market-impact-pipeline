@@ -38,47 +38,31 @@ if [[ ! -d "$KB" ]]; then
 fi
 
 # --- Scoperta studi non indicizzati ----------------------------------------
-# Uno studio è "indicizzato" se almeno un .md nella sua cartella contiene un
-# fence ```yaml (la convenzione: blocco metadata canonico in fondo al file).
-# Candidati = sottocartelle con materiale sorgente (pdf/md/html/txt/docx) ma
-# senza alcun .md indicizzato.
-# NULL_GLOB: un pattern senza match si espande a nulla invece di abortire
-# (nomatch). Iteriamo file per file e NON passiamo mai un glob direttamente a
-# grep (che, espanso a vuoto, leggerebbe da stdin e si bloccherebbe).
+# La domanda «cosa manca all'indice, e il catalogo è stale?» la risponde
+# build_catalog --scan, cioè chi possiede la regola. Prima la rispondeva questo
+# script per conto suo, e divergeva dal builder su tre punti: marcava
+# indicizzata un'INTERA cartella se un qualsiasi .md conteneva un fence ```yaml
+# (anche invalido, e anche con un secondo studio non indicizzato accanto);
+# cercava a un solo livello mentre il builder è ricorsivo; e rilevava lo
+# staleness per sola mtime, quindi una research RIMOSSA o RINOMINATA lasciava
+# la sua voce nel catalogo per sempre. Ora lo staleness è per contenuto.
+#
+# build_catalog riscrive catalog.yaml (che diventa il più recente e allineato)
+# → al ri-trigger del WatchPath nulla risulta stale → no-op → nessun loop.
 setopt NULL_GLOB
-UNINDEXED=()
-for d in "$KB"/*/; do
-  d="${d%/}"
-  name="$(basename "$d")"
-  [[ "$name" == _* ]] && continue
-  # già indicizzato? un .md con blocco ```yaml in fondo
-  indexed=0
-  for md in "$d"/*.md; do
-    if grep -lq '```yaml' "$md" 2>/dev/null; then indexed=1; break; fi
-  done
-  (( indexed )) && continue
-  # contiene materiale sorgente da cui indicizzare?
-  # Senza ricerca .md del maintainer non c'è nulla che l'agente possa indicizzare.
-  src=("$d"/*.md)
-  (( ${#src[@]} )) && UNINDEXED+=("$name")
-done
-
-# Anche senza studi DA generare, il catalog può essere stale: uno studio può
-# arrivare con il blocco YAML già scritto (es. export di ricerca che lo include
-# in fondo al .md). In quel caso non c'è nulla da generare con Claude, ma il
-# catalog va comunque ricostruito. Rileviamo lo staleness per mtime: se un .md
-# è più recente di catalog.yaml ricostruiamo. build_catalog riscrive
-# catalog.yaml (che diventa il più recente) → al ri-trigger del WatchPath nessun
-# .md risulta più nuovo → no-op → nessun loop.
-CATALOG="$KB/catalog.yaml"
+SCAN_OUT="$( cd "$PIPE" && "$PY" build_catalog.py --scan )" || {
+  log "ERROR: build_catalog --scan fallito."
+  exit 1
+}
 stale=0
-if [[ ! -f "$CATALOG" ]]; then
-  stale=1
-else
-  for md in "$KB"/*/*.md; do
-    [[ "$md" -nt "$CATALOG" ]] && { stale=1; break; }
-  done
-fi
+UNINDEXED=()
+while IFS= read -r riga; do
+  case "$riga" in
+    STALE=1)     stale=1 ;;
+    UNINDEXED=*) UNINDEXED+=("${riga#UNINDEXED=}") ;;
+  esac
+done <<< "$SCAN_OUT"
+CATALOG="$KB/catalog.yaml"
 
 if (( ${#UNINDEXED[@]} == 0 )); then
   if (( stale )); then
