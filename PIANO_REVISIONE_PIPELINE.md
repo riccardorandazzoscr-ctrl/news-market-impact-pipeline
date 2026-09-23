@@ -381,9 +381,15 @@ Stesso conflitto sul 2025-07-31. La risposta va scritta **in entrambi i template
 research): oggi entrambi dicono «pressione attesa» e ammettono tutte e due le letture.
 
 - [x] Decidere la regola del verso (sorpresa) e scriverla nei due template.
-- [ ] Rivedere e promuovere il pilota BoJ (`recupero.py promuovi`).
+- [x] Rivedere e promuovere il pilota BoJ (`recupero.py promuovi`) — 2026-09-23.
+      Promosse 32 righe: gli 11 versi già scritti dalle schede sono tutti concordi, nessuna coppia delle schede è cambiata. 2016-09-21 JPY=X **non** escluso:
+      un veto nel registro spegne anche il `pos` delle schede. Il 2024-08-05 è escluso come riga di esito, come l'08-06.
+      I tre Nikkei il cui verso la riga non scrive (2016-01-29, 2024-03-19, 2024-07-31) restano aperti: riempirli sarebbe look-ahead.
 - [ ] Le altre research con tabella, in ordine di valore: prima quelle sugli asset che le
       schede usano davvero come `direction_reference` (comando per vederli in §9 della spec).
+      Pesando le righe post-2011 per quante schede usano i loro ticker, il 2026-09-23 venivano
+      prima **Dazi e guerra commerciale USA** e poi **Russia-Ucraina attrito energetico** (i più usati sono `BZ=F` e `^GSPC`).
+      ⚠ Prima di preparare: confrontare ogni esclusione con i versi delle schede sulla stessa coppia.
 - [ ] Le schede senza `direction_reference` (agosto e prima metà di settembre): `recupero.py
       prepara` oggi gestisce solo le research, serve il ramo per le schede. Per una scheda
       l'asset non è nella riga: va scelto fra i ticker del suo event study.

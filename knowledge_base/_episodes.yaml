@@ -1,4 +1,4 @@
-generated_at: '2026-09-23T10:51:08'
+generated_at: '2026-09-23T11:15:54'
 num_episodes: 1168
 episodes:
 - date: '1984-01-01'
@@ -27201,10 +27201,17 @@ episodes:
   directions_by_reference:
     JPY=X:
     - pos
+    ^N225:
+    - pos
   direction_sources:
     JPY=X:
     - card:2026-09-14/news_04.md
     - card:2026-09-18/news_02.md
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
+    ^N225:
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local:
   - pos
   declared: true
@@ -27651,6 +27658,8 @@ episodes:
     JPY=X:
     - card:2026-09-14/news_04.md
     - card:2026-09-18/news_02.md
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local:
   - pos
   declared: true
@@ -28004,6 +28013,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    JPY=X:
+    - neutral
+  direction_sources:
+    JPY=X:
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local: []
   declared: false
   subthemes:
@@ -28021,6 +28037,7 @@ episodes:
   subthemes_local:
   - boj
   - jpy
+  - ycc
   n_sources: 1
 - date: '2018-08-06'
   theme: monetary_policy
@@ -29484,6 +29501,8 @@ episodes:
   direction_sources:
     JPY=X:
     - card:2026-09-19/news_05.md
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local:
   - neg
   - pos
@@ -29640,6 +29659,8 @@ episodes:
   direction_sources:
     JPY=X:
     - card:2026-09-19/news_05.md
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local:
   - neg
   - pos
@@ -29955,9 +29976,19 @@ episodes:
   directions_by_reference:
     CNY=X:
     - pos
+    JPY=X:
+    - neg
+    ^N225:
+    - neg
   direction_sources:
     CNY=X:
     - card:2026-09-20/news_03.md
+    JPY=X:
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
+    ^N225:
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local:
   - neg
   - pos
@@ -30018,6 +30049,7 @@ episodes:
   - cny
   - fx_intervention
   - guidance_pivot
+  - hawkish
   - japan
   - japan_release
   - jpy
@@ -30655,6 +30687,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    JPY=X: 'Riga: ''JPY volatile'' — volatilità non è una direzione. Nessun verso
+      dichiarato.'
   directions_local:
   - neg
   declared: true
@@ -31082,6 +31117,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    JPY=X: 'La colonna ''JPY debole'' sembra riportare l''esito (''yen restò debole
+      nonostante''): nessuno dei due versi è certo. Revisione maintainer 2026-09-23.'
   directions_local:
   - neg
   declared: true
@@ -31222,6 +31260,8 @@ episodes:
     JPY=X:
     - card:2026-09-14/news_04.md
     - card:2026-09-18/news_02.md
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local:
   - neg
   - pos
@@ -31288,6 +31328,7 @@ episodes:
   - yen_carry
   subthemes_local:
   - boj
+  - boj_normalization
   - fx_intervention
   - guidance_pivot
   - japan_release
@@ -31509,6 +31550,8 @@ episodes:
   direction_sources:
     JPY=X:
     - card:2026-09-19/news_05.md
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local:
   - neg
   - pos
@@ -31565,6 +31608,8 @@ episodes:
   direction_sources:
     JPY=X:
     - card:2026-09-19/news_05.md
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local:
   - neg
   - pos
@@ -31815,6 +31860,8 @@ episodes:
   direction_sources:
     JPY=X:
     - card:2026-09-19/news_05.md
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local:
   - neg
   - pos
@@ -31863,6 +31910,13 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  directions_by_reference:
+    JPY=X:
+    - neg
+  direction_sources:
+    JPY=X:
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local: []
   declared: false
   subthemes:
@@ -31893,6 +31947,7 @@ episodes:
   - yen
   - yen_weakness
   subthemes_local:
+  - fx_intervention
   - jpy
   n_sources: 13
 - date: '2024-07-17'
@@ -31945,6 +32000,13 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    JPY=X:
+    - neg
+  direction_sources:
+    JPY=X:
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local:
   - neg
   - pos
@@ -32048,6 +32110,23 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    JPY=X:
+    - neg
+    ^GSPC:
+    - neg
+    ^NDX:
+    - neg
+  direction_sources:
+    JPY=X:
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
+    ^GSPC:
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
+    ^NDX:
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local:
   - neg
   declared: true
@@ -32079,7 +32158,9 @@ episodes:
   - yen
   subthemes_local:
   - boj
+  - carry_unwind
   - jpy
+  - labour_market
   - risk_off
   n_sources: 14
 - date: '2024-08-05'
@@ -32090,6 +32171,22 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^N225: 'Nessuna notizia nuova quel giorno: è la propagazione del 31/7 (BoJ) e
+      del 2/8 (payroll). Riga di esito, come il 2024-08-06: usarla selezionerebbe
+      l''episodio per il suo risultato. Revisione maintainer 2026-09-23.'
+    ^NDX: 'Nessuna notizia nuova quel giorno: è la propagazione del 31/7 (BoJ) e del
+      2/8 (payroll). Riga di esito, come il 2024-08-06: usarla selezionerebbe l''episodio
+      per il suo risultato. Revisione maintainer 2026-09-23.'
+    ^GSPC: 'Nessuna notizia nuova quel giorno: è la propagazione del 31/7 (BoJ) e
+      del 2/8 (payroll). Riga di esito, come il 2024-08-06: usarla selezionerebbe
+      l''episodio per il suo risultato. Revisione maintainer 2026-09-23.'
+    ^VIX: 'Nessuna notizia nuova quel giorno: è la propagazione del 31/7 (BoJ) e del
+      2/8 (payroll). Riga di esito, come il 2024-08-06: usarla selezionerebbe l''episodio
+      per il suo risultato. Revisione maintainer 2026-09-23.'
+    JPY=X: 'Nessuna notizia nuova quel giorno: è la propagazione del 31/7 (BoJ) e
+      del 2/8 (payroll). Riga di esito, come il 2024-08-06: usarla selezionerebbe
+      l''episodio per il suo risultato. Revisione maintainer 2026-09-23.'
   directions_local:
   - neg
   declared: true
@@ -32145,6 +32242,11 @@ episodes:
   direction_sources:
     AUD=X:
     - card:2026-09-22/news_03.md
+  direction_review_excluded:
+    ^N225: La riga descrive il movimento di prezzo stesso ('rimbalzo tecnico'), non
+      un evento con un'attesa prima della seduta. Usarla significherebbe selezionare
+      un episodio per il suo esito.
+    ^VIX: 'Stesso motivo: riga di esito, non di evento.'
   directions_local:
   - neg
   - pos
@@ -32191,10 +32293,17 @@ episodes:
   directions_by_reference:
     JPY=X:
     - pos
+    ^N225:
+    - pos
   direction_sources:
     JPY=X:
     - card:2026-09-14/news_04.md
     - card:2026-09-18/news_02.md
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
+    ^N225:
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local:
   - neg
   - pos
@@ -32810,6 +32919,13 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    JPY=X: 'Rialzo ''ampiamente atteso/ben anticipato'': ''JPY forte'' è il meccanismo.
+      Con la regola della sorpresa serve sapere se l''annuncio è stato più o meno
+      restrittivo del prezzato, e la riga non lo dice. Revisione maintainer 2026-09-23.'
+    ^N225: 'Rialzo ''ampiamente atteso/ben anticipato'': ''JPY forte'' è il meccanismo.
+      Con la regola della sorpresa serve sapere se l''annuncio è stato più o meno
+      restrittivo del prezzato, e la riga non lo dice. Revisione maintainer 2026-09-23.'
   directions_local:
   - neg
   declared: true
@@ -33244,6 +33360,8 @@ episodes:
     JPY=X:
     - card:2026-09-14/news_04.md
     - card:2026-09-18/news_02.md
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local:
   - neg
   - pos
@@ -33510,6 +33628,10 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    JPY=X: 'Rialzo ''ampiamente atteso/ben anticipato'': ''JPY forte'' è il meccanismo.
+      Con la regola della sorpresa serve sapere se l''annuncio è stato più o meno
+      restrittivo del prezzato, e la riga non lo dice. Revisione maintainer 2026-09-23.'
   directions_local:
   - neg
   declared: true

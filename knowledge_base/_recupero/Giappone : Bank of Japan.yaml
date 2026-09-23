@@ -1,24 +1,3 @@
-# PROPOSTA DI RECUPERO — research BoJ (pilota del Run 5c, 2026-09-23)
-#
-# REGOLA DEL VERSO (maintainer, 2026-09-23): conta la SORPRESA rispetto al già
-# prezzato, non il meccanismo in astratto.
-#
-# Compilata dall'agente leggendo SOLO la riga, senza aprire il DB prezzi: il verso
-# è la pressione ATTESA all'epoca sul prezzo del ticker, non il movimento osservato.
-#
-# Gruppi:  1 = verso scritto per quell'asset · 2 = verso narrativo tradotto con la
-#          convenzione del ticker (yen forte → JPY=X neg; risk-off → ^VIX pos,
-#          azionario neg) · 3 = domanda aperta, NESSUNA dichiarazione finché non
-#          rispondi · 4 = escluso con motivo, o nessuna azione (stato nessuna_azione).
-#
-# Come si approva:
-#   - voce giusta → cambia `stato: da_rivedere` in `stato: approvata`;
-#   - voce sbagliata → correggi `verso`/`perché`, poi approva;
-#   - gruppo 3 → sostituisci domanda/suggerimento con `verso:` e `perché:`, oppure
-#     lascialo com'è: le coppie senza verso non entrano, la voce può essere
-#     approvata lo stesso per le altre;
-#   - poi: news_impact_pipeline/venv/bin/python news_impact_pipeline/recupero.py promuovi "<questo file>"
-#
 research: 'Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC e interventi FX
   — regime ed episodi storici (1998–2026).md'
 voci:
@@ -137,7 +116,7 @@ voci:
   - boj
   - jpy
   evento: Kuroda lancia il QQE
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2016-01-29 | Introduzione NIRP: tasso -0,1% (voto 5-4), a sorpresa (Kuroda aveva negato una
     settimana prima) | BoJ/POLICY | JPY debole atteso, ma reazione "contraria" | JPY=X, ^N225 | **Sorpresa.**
     Reazione insolita: yen più forte e azioni giù nei giorni successivi nonostante lo stimolo. TOPIX +3%
@@ -167,7 +146,7 @@ voci:
   - rate_decision
   - nirp
   evento: BoJ introduce il tasso negativo (NIRP), a sorpresa
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2016-09-21 | Introduzione YCC (QQE with Yield Curve Control): target 10Y JGB ~0%, tasso breve
     -0,1% | BoJ/POLICY | JPY neutrale/debole | JPY=X, (JGB esterno) | Passaggio da target di quantità
     a target di prezzo |'
@@ -177,17 +156,15 @@ voci:
     — regime ed episodi storici (1998–2026).md'
   candidati:
   - JPY=X
-  dichiarazioni:
-  - asset: JPY=X
-    gruppo: 4
-    verso: escluso
-    perché: 'Riga: ''JPY neutrale/debole'' — l''autore dichiara due versi possibili. Ambiguità dichiarata:
-      la coppia esce dai pool invece di sceglierne uno.'
+  dichiarazioni: []
   meccanismo:
   - boj
   - ycc
   evento: BoJ introduce lo YCC
-  stato: da_rivedere
+  stato: nessuna_azione
+  nota: 'Due schede (2026-09-14/news_04, 2026-09-18/news_02) dichiarano JPY=X pos. La research dice ''neutrale/debole'':
+    un''esclusione nel registro spegnerebbe anche le schede. Il maintainer (2026-09-23) tiene il pos delle
+    schede.'
 - riga: '| 2018-07-31 | Allargamento banda 10Y a ±0,2% | BoJ | JPY marginale | JPY=X | Aggiustamento minore;
     volatilità JGB salì |'
   data: '2018-07-31'
@@ -199,13 +176,14 @@ voci:
   dichiarazioni:
   - asset: JPY=X
     gruppo: 3
-    domanda: 'Riga: ''JPY marginale''. Marginale vuol dire effetto piccolo, non dice la direzione.'
-    suggerimento: neutral — aggiustamento minore, nessuna pressione direzionale attesa
+    verso: neutral
+    perché: 'Riga: ''JPY marginale'', aggiustamento minore: nessuna pressione direzionale attesa. Revisione
+      maintainer 2026-09-23.'
   meccanismo:
   - boj
   - ycc
   evento: BoJ allarga la banda del 10Y a ±0,2%
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2022-09-22 | Primo intervento MoF di acquisto yen dal 1998: ¥2.838,2 mld | FX | JPY forte (temporaneo)
     | JPY=X | Effetto di breve durata (studi SCM). USD/JPY ~145 |'
   data: '2022-09-22'
@@ -226,7 +204,7 @@ voci:
   - fx_intervention
   - jpy
   evento: Primo intervento MoF di acquisto yen dal 1998
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2022-10-21/24 | Interventi MoF: ¥6.349,9 mld nel periodo (record mensile ottobre ¥6,3 trilioni)
     | FX | JPY forte | JPY=X | Effetto durato >10 giorni lavorativi (SCM). USD/JPY vicino a 152 |'
   data: '2022-10-21'
@@ -238,14 +216,14 @@ voci:
   dichiarazioni:
   - asset: JPY=X
     gruppo: 3
-    domanda: 'La cella data è ''2022-10-21/24'': un periodo, non un giorno. La libreria l''ha letto come
-      21 ottobre. L''episodio è il 21?'
-    suggerimento: neg se confermi il 21 — acquisto di yen, USD/JPY in discesa
+    verso: neg
+    perché: 'Acquisto di yen: USD/JPY in discesa. L''episodio è il 21, come nella scheda 2026-09-19/news_05
+      che lo dichiara già neg. Revisione maintainer 2026-09-23.'
   meccanismo:
   - fx_intervention
   - jpy
   evento: Interventi MoF di acquisto yen (21 e 24 ottobre)
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2022-12-20 | Sorpresa: allargamento banda YCC 10Y da ±0,25% a ±0,50% | BoJ/POLICY | JPY forte,
     ^N225 giù | JPY=X, ^N225, (JGB est.) | **Grande sorpresa.** Nikkei -2,5%, USD/JPY -2,7% a ~133; 10Y
     JGB a ~0,46% |'
@@ -270,7 +248,7 @@ voci:
   - ycc
   - hawkish
   evento: BoJ allarga a sorpresa la banda YCC a ±0,50%
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2023-07-28 | YCC "più flessibile": cap 10Y portato di fatto all''1% (0,5% diventa riferimento)
     | BoJ/POLICY | JPY volatile | JPY=X, (JGB est.) | Voto 8-1. Aumento outlook inflazione |'
   data: '2023-07-28'
@@ -288,7 +266,7 @@ voci:
   - boj
   - ycc
   evento: YCC 'più flessibile', cap 10Y di fatto all'1%
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2023-10-31 | Cap 1% reso "riferimento" (non più tetto rigido): termine effettivo dello YCC
     | BoJ/POLICY | JPY debole | JPY=X, (JGB est.) | Yen restò debole nonostante l''hawkishness (differenziale
     ancora ampio) |'
@@ -301,17 +279,14 @@ voci:
   dichiarazioni:
   - asset: JPY=X
     gruppo: 3
-    domanda: 'La colonna dice ''JPY debole'' ma la nota dice ''yen restò debole NONOSTANTE l''hawkishness'':
-      sembra l''esito finito nella colonna dell''attesa. Una mossa restrittiva spingerebbe lo yen più
-      forte (neg); se invece il mercato si aspettava di più e la mossa ha deluso, l''attesa era yen più
-      debole (pos).'
-    suggerimento: 'nessuno: è il caso in cui solo tu sai quale delle due letture intendevi. Se non lo
-      sai, escludila'
+    verso: escluso
+    perché: 'La colonna ''JPY debole'' sembra riportare l''esito (''yen restò debole nonostante''): nessuno
+      dei due versi è certo. Revisione maintainer 2026-09-23.'
   meccanismo:
   - boj
   - ycc
   evento: 'Il cap dell''1% diventa ''riferimento'': fine di fatto dello YCC'
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2024-03-19 | **Uscita da NIRP e YCC**: primo rialzo dal 2007, tasso a 0-0,1%; stop acquisti
     ETF/J-REIT | BoJ/POLICY | JPY forte atteso, ma "contraria" | JPY=X, ^N225 | **Ben telegrafato.** Reazione
     contraria: yen sotto 150 (più debole), Nikkei su, per guidance accomodante ("accommodative conditions
@@ -341,7 +316,7 @@ voci:
   - boj
   - rate_decision
   evento: 'BoJ esce da NIRP e YCC: primo rialzo dal 2007'
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2024-04-29 | Intervento MoF: ¥5.918,5 mld (acquisto yen) dopo USD/JPY a 160,03 (minimo di 34
     anni) | FX | JPY forte | JPY=X | Parte del round aprile-maggio |'
   data: '2024-04-29'
@@ -361,7 +336,7 @@ voci:
   - fx_intervention
   - jpy
   evento: 'Intervento MoF: acquisto yen dopo USD/JPY a 160'
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2024-05-01 | Intervento MoF: ¥3.870,0 mld | FX | JPY forte | JPY=X | Totale round aprile-maggio
     ¥9.788,5 mld (¥9,79 trilioni, ~$62,25 mld); MoF disclose solo 29/4 e 1/5 |'
   data: '2024-05-01'
@@ -381,7 +356,7 @@ voci:
   - fx_intervention
   - jpy
   evento: 'Intervento MoF: acquisto yen'
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2024-07-11 | Intervento MoF: ¥3.167,8 mld, con USD/JPY che scende da ~161,8 verso 157,3 | FX
     | JPY forte | JPY=X | Coincidente con CPI USA debole |'
   data: '2024-07-11'
@@ -402,7 +377,7 @@ voci:
   - fx_intervention
   - jpy
   evento: 'Intervento MoF: acquisto yen, lo stesso giorno del CPI USA debole'
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2024-07-12 | Intervento MoF: ¥2.367,0 mld | FX | JPY forte | JPY=X | Totale luglio ¥5.534,8
     mld (¥5,53 trilioni, ~$36,8 mld) |'
   data: '2024-07-12'
@@ -420,7 +395,7 @@ voci:
   - fx_intervention
   - jpy
   evento: 'Intervento MoF: acquisto yen'
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2024-07-31 | Rialzo BoJ a 0,25% (+15 pb) + piano di riduzione acquisti JGB; tono hawkish |
     BoJ | JPY forte | JPY=X, ^N225 | Innesco prossimale dell''unwind di agosto. A sorpresa nel timing
     |'
@@ -445,7 +420,7 @@ voci:
   - rate_decision
   - hawkish
   evento: BoJ alza a 0,25% e riduce gli acquisti di JGB, tono restrittivo
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2024-08-02 | Payroll USA debole: +114k (vs consenso Dow Jones 185k), disoccupazione al 4,3%
     (massimo da ott-2021) → timori recessione + attese tagli Fed | EXT | risk-off, JPY forte | ^GSPC,
     ^NDX, JPY=X | Amplificatore esterno. Nikkei -5,81% a 35.909,7 (peggior giorno dal marzo 2020), TOPIX
@@ -475,7 +450,7 @@ voci:
   - carry_unwind
   - labour_market
   evento: 'Payroll USA debole: timori di recessione, amplifica l''unwind del carry'
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2024-08-05 | **Grande carry unwind**: Nikkei -12,4% (-4.451,28 pt a 31.458,42), maggior calo
     in punti di sempre; VIX picco pre-market ~65,73, chiusura 38,57; S&P 500 -3,0%, Nasdaq -3,4% a 16.200,08
     | UNWIND | risk-off globale violento | ^N225, ^NDX, ^GSPC, ^VIX, JPY=X | **Evento chiave del DB.**
@@ -494,30 +469,38 @@ voci:
   dichiarazioni:
   - asset: ^N225
     gruppo: 3
-    domanda: 'Il 5 agosto non c''è una notizia nuova: è la propagazione del 31/7 (BoJ) e del 2/8 (payroll).
-      La riga descrive i movimenti di prezzo. È un episodio o un esito? È però l''ancora dichiarata della
-      research.'
-    suggerimento: 'tenerlo come episodio, con i versi del risk-off: neg'
+    verso: escluso
+    perché: 'Nessuna notizia nuova quel giorno: è la propagazione del 31/7 (BoJ) e del 2/8 (payroll).
+      Riga di esito, come il 2024-08-06: usarla selezionerebbe l''episodio per il suo risultato. Revisione
+      maintainer 2026-09-23.'
   - asset: ^NDX
     gruppo: 3
-    domanda: 'Vedi ^N225: episodio o esito?'
-    suggerimento: neg se lo tieni
+    verso: escluso
+    perché: 'Nessuna notizia nuova quel giorno: è la propagazione del 31/7 (BoJ) e del 2/8 (payroll).
+      Riga di esito, come il 2024-08-06: usarla selezionerebbe l''episodio per il suo risultato. Revisione
+      maintainer 2026-09-23.'
   - asset: ^GSPC
     gruppo: 3
-    domanda: 'Vedi ^N225: episodio o esito?'
-    suggerimento: neg se lo tieni
+    verso: escluso
+    perché: 'Nessuna notizia nuova quel giorno: è la propagazione del 31/7 (BoJ) e del 2/8 (payroll).
+      Riga di esito, come il 2024-08-06: usarla selezionerebbe l''episodio per il suo risultato. Revisione
+      maintainer 2026-09-23.'
   - asset: ^VIX
     gruppo: 3
-    domanda: 'Vedi ^N225: episodio o esito?'
-    suggerimento: pos se lo tieni
+    verso: escluso
+    perché: 'Nessuna notizia nuova quel giorno: è la propagazione del 31/7 (BoJ) e del 2/8 (payroll).
+      Riga di esito, come il 2024-08-06: usarla selezionerebbe l''episodio per il suo risultato. Revisione
+      maintainer 2026-09-23.'
   - asset: JPY=X
     gruppo: 3
-    domanda: 'Oltre alla domanda sopra: la riga dice ''risk-off'' ma non nomina lo yen.'
-    suggerimento: neg se lo tieni — la tesi della research (§2) è unwind del carry → yen più forte
+    verso: escluso
+    perché: 'Nessuna notizia nuova quel giorno: è la propagazione del 31/7 (BoJ) e del 2/8 (payroll).
+      Riga di esito, come il 2024-08-06: usarla selezionerebbe l''episodio per il suo risultato. Revisione
+      maintainer 2026-09-23.'
   meccanismo:
   - carry_unwind
   evento: 'Grande unwind del carry: il Nikkei perde il 12,4%'
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2024-08-06 | Rimbalzo: Nikkei +10,2% (recupera quasi tutte le perdite) | UNWIND (rev.) | risk-on
     parziale | ^N225, ^VIX | Rimbalzo tecnico |'
   data: '2024-08-06'
@@ -540,7 +523,7 @@ voci:
   meccanismo:
   - carry_unwind
   evento: Rimbalzo del Nikkei (+10,2%)
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2024-08-07 | Uchida (vice-governatore BoJ): "niente rialzi in periodi di instabilità" → USD/JPY
     +2% a ~147,8 | BoJ (verbale) | risk-on, JPY debole | JPY=X, ^N225 | Walk-back dovish che spense l''incendio
     |'
@@ -567,7 +550,7 @@ voci:
   - boj
   - guidance_pivot
   evento: 'Uchida (BoJ): niente rialzi in periodi di instabilità'
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2025-01-24 | Rialzo BoJ a 0,50% (massimo in 17 anni) | BoJ | JPY forte | JPY=X, ^N225 | Ampiamente
     atteso |'
   data: '2025-01-24'
@@ -580,19 +563,21 @@ voci:
   dichiarazioni:
   - asset: JPY=X
     gruppo: 3
-    domanda: 'La research scrive ''JPY forte'' ma anche che il rialzo era ''ampiamente atteso'': ''JPY
-      forte'' è il meccanismo. Con la regola della sorpresa serve sapere se l''annuncio è stato più o
-      meno restrittivo del prezzato, e la riga non lo dice.'
-    suggerimento: escluderla, salvo che tu ricordi una sorpresa nella guidance
+    verso: escluso
+    perché: 'Rialzo ''ampiamente atteso/ben anticipato'': ''JPY forte'' è il meccanismo. Con la regola
+      della sorpresa serve sapere se l''annuncio è stato più o meno restrittivo del prezzato, e la riga
+      non lo dice. Revisione maintainer 2026-09-23.'
   - asset: ^N225
     gruppo: 3
-    domanda: Il verso atteso sul Nikkei non è scritto, e la nota dice 'ampiamente atteso'.
-    suggerimento: neutral — una mossa già scontata non porta pressione nuova
+    verso: escluso
+    perché: 'Rialzo ''ampiamente atteso/ben anticipato'': ''JPY forte'' è il meccanismo. Con la regola
+      della sorpresa serve sapere se l''annuncio è stato più o meno restrittivo del prezzato, e la riga
+      non lo dice. Revisione maintainer 2026-09-23.'
   meccanismo:
   - boj
   - rate_decision
   evento: BoJ alza a 0,50%, massimo in 17 anni
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2025-07-31 | BoJ ferma a 0,50%; alza outlook inflazione FY2025 a 2,7% | BoJ | JPY neutrale
     | JPY=X | Pausa; incertezza dazi USA |'
   data: '2025-07-31'
@@ -612,7 +597,7 @@ voci:
   - boj
   - rate_decision
   evento: BoJ ferma a 0,50%, alza l'outlook d'inflazione
-  stato: da_rivedere
+  stato: promossa
 - riga: '| 2025-12-19 | Rialzo BoJ a 0,75% (massimo dal 1995); 10Y JGB oltre il 2% (massimo dal 1999)
     | BoJ | JPY forte atteso, reazione muta | JPY=X, (JGB est.) | Ben anticipato; reazione muta, yen leggermente
     più debole. Prima volta dal 1998 (formato 2 giorni) che BoJ e Fed muovono in direzioni opposte nello
@@ -626,12 +611,12 @@ voci:
   dichiarazioni:
   - asset: JPY=X
     gruppo: 3
-    domanda: 'La research scrive ''JPY forte'' ma anche che il rialzo era ''ben anticipato'', con ''reazione
-      muta'': ''JPY forte'' è il meccanismo. Con la regola della sorpresa serve sapere se l''annuncio
-      è stato più o meno restrittivo del prezzato, e la riga non lo dice.'
-    suggerimento: escluderla, salvo che tu ricordi una sorpresa nella guidance
+    verso: escluso
+    perché: 'Rialzo ''ampiamente atteso/ben anticipato'': ''JPY forte'' è il meccanismo. Con la regola
+      della sorpresa serve sapere se l''annuncio è stato più o meno restrittivo del prezzato, e la riga
+      non lo dice. Revisione maintainer 2026-09-23.'
   meccanismo:
   - boj
   - rate_decision
   evento: BoJ alza a 0,75%, massimo dal 1995
-  stato: da_rivedere
+  stato: promossa
