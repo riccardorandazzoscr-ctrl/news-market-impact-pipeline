@@ -408,9 +408,13 @@ research): oggi entrambi dicono «pressione attesa» e ammettono tutte e due le 
         Gran parte delle righe sono giornate scelte per il movimento di prezzo («rout», «10Y al 5%»):
         escluse dai pool direzionali. ⚠ Fuori scope ma da sapere: restano in libreria come episodi
         senza verso, e tre schede usano come analogo ^GSPC date di esito (2016-11-09, 2021-02-25, 2023-10-19).
-- [ ] Le schede senza `direction_reference` (agosto e prima metà di settembre): `recupero.py
-      prepara` oggi gestisce solo le research, serve il ramo per le schede. Per una scheda
-      l'asset non è nella riga: va scelto fra i ticker del suo event study.
+- [x] Le schede senza `direction_reference` (agosto e prima metà di settembre) — **DECISO dal
+      maintainer il 2026-09-23: non si recuperano.** Il template di allora definiva il Verso come
+      «il verso di quell'episodio», senza asset e senza distinguere attesa ed esito: era l'etichetta
+      del pool copiata riga per riga, e schede diverse danno versi opposti alla stessa coppia
+      (data, tema). Assegnare un asset per scheda attaccherebbe un asset a segni che non ne avevano
+      uno. I versi restano al livello «dichiarato»; i pool per asset crescono dalle schede nuove e
+      dalle research. Nessun ramo schede in `recupero.py`. Misura: comando §9 della spec.
 - [ ] Le date spurie delle research in formato libero (note tecniche, date di scrittura):
       durante il recupero di ciascuna, con esclusione motivata.
 

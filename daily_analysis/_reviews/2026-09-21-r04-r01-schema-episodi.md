@@ -195,6 +195,10 @@ Il maintainer ha chiesto esplicitamente che il recupero copra **sia le research 
 schede senza asset di riferimento**. Il contratto e le regole sono gli stessi per
 entrambe.
 
+> **Aggiornamento 2026-09-23 (Run 5d):** il maintainer ha deciso di **non** recuperare le
+> schede. Il loro Verso non aveva un asset né distingueva attesa ed esito (template di agosto:
+> «il verso di quell'episodio»); vedi la nota nel Run 5d del piano. Il recupero copre solo le research.
+
 ### 7.1 Chi scrive la dichiarazione
 
 La conversione la fa **l'agente in sessione, leggendo**, non una regex. Motivo misurato:
