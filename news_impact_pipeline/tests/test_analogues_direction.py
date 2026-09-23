@@ -22,7 +22,10 @@ class DirectionTests(unittest.TestCase):
         return {'date': day, 'theme': 'commodity_energy', 'direction': 'mixed',
                 'directions': ['pos', 'neg'], 'directions_local': ['pos', 'neg'],
                 'directions_declared': ['pos', 'neg'],
-                'directions_by_reference': scoped or {}}
+                'directions_by_reference': scoped or {},
+                'events': [{'event_id': f'{day}:commodity_energy:-', 'geo': '',
+                            'subthemes_local': [],
+                            'directions_by_reference': scoped or {}, 'sources': []}]}
 
     def test_legacy_never_claims_strong_or_returns_ambiguous_dates(self):
         dates, note = self.run_find([self.episode('2015-07-14')])

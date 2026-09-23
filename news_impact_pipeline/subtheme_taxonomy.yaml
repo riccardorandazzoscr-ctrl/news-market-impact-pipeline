@@ -332,7 +332,7 @@ macro_data:
   # Gli episodi europei c'erano già in libreria — dalla research del 22/08 —
   # ma senza etichetta geografica erano indistinguibili da quelli americani.
   # NB: i nomi sono `eurozone_release`/`britain_release` e NON `eu_release`/
-  # `uk_release`: in `local_labels` le parole di <=2 caratteri vengono scartate,
+  # `uk_release`: in `labels_from_context` le parole di <=2 caratteri vengono scartate,
   # quindi entrambi i nomi brevi si riducevano alla sola parola "release" e
   # qualunque contesto che la contenesse attivava tutt'e due le etichette.
   # NB2: non esiste `us_release` di proposito. Marcare gli USA richiederebbe

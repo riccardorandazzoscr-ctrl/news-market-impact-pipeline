@@ -50,6 +50,7 @@ Origine: `2026-09-15-revisione-pipeline.md` (copia identica in
 cd /Users/riccardo/Claude/mercati_finanza
 PYTHONDONTWRITEBYTECODE=1 news_impact_pipeline/venv/bin/python news_impact_pipeline/tests/test_analogues_direction.py
 PYTHONDONTWRITEBYTECODE=1 news_impact_pipeline/venv/bin/python news_impact_pipeline/tests/test_analogues_match_all.py
+PYTHONDONTWRITEBYTECODE=1 news_impact_pipeline/venv/bin/python news_impact_pipeline/tests/test_analogues_events.py
 sqlite3 -readonly market_data/market_data.db 'PRAGMA quick_check;'
 sqlite3 -readonly market_data/market_data.db 'SELECT ticker, MAX(date), SUM(close IS NULL AND adj_close IS NULL) FROM prices GROUP BY ticker;'
 ```
@@ -439,21 +440,29 @@ research): oggi entrambi dicono «pressione attesa» e ammettono tutte e due le 
 
 ---
 
-## [ ] Run 6 — `event_id`
+## [x] Run 6 — `event_id` — FATTO — 2026-09-23
 **ID report:** R02
-**Modello:** Opus 5 · effort high
+**Modello:** Opus 5 · effort high (eseguito su Opus 5.5)
 **Precondizione:** Run 5b chiuso.
 
 Il più invasivo: chiavi, matching e migrazione dati.
 
-- [ ] Oggi la chiave è `(date, theme)` (`analogues.py` riga ~392): Tankan giapponese e ISM
+- [x] Oggi la chiave è `(date, theme)` (`analogues.py` riga ~392): Tankan giapponese e ISM
       statunitense dello stesso giorno vengono **fusi**, e la query `japan_release AND ism`
       recupera il 1 aprile 2024 pur non esistendo alcun evento che soddisfi entrambi.
-- [ ] `event_id` distinto dalla data, che tiene insieme attributi e provenienza dello stesso evento.
-- [ ] Selezionare prima gli **eventi** pertinenti, deduplicare le **date di mercato** solo dopo,
+- [x] `event_id` distinto dalla data, che tiene insieme attributi e provenienza dello stesso evento.
+- [x] Selezionare prima gli **eventi** pertinenti, deduplicare le **date di mercato** solo dopo,
       per il calcolo dei rendimenti. La deduplicazione degli anchor già nell'event study **si conserva**.
-- [ ] Query di regressione con risultati attesi e **casi negativi**: un Tankan non deve diventare
+- [x] Query di regressione con risultati attesi e **casi negativi**: un Tankan non deve diventare
       un ISM americano per unione delle fonti.
+
+**Note di chiusura:**
+- Il record resta `(data, tema)`, cioè la data di mercato (conflitti, veti, rendimenti); dentro ci sono gli `events`, con
+  `event_id` = data:tema:geografia. **Un evento per fonte è stato misurato e scartato**: sulle coppie dei 10 token più frequenti perdeva 1067 date,
+  quasi tutte lo stesso evento etichettato a metà da due fonti (giorni BoJ, embargo Iran 2012). Le fusioni sbagliate vere erano tutte fra paesi diversi.
+- AND date-locale e verso devono venire da **un solo** evento. Sulle 230 query reali eseguibili delle schede i risultati sono identici; il 2024-04-01
+  non passa più `japan_release AND ism`. ⚠ Limite: USA e Cina (nessun token) sono la stessa geografia «non detta». Suite nuova: `test_analogues_events.py`.
+- Libreria rigenerata: aggregati identici alla baseline, file 818 KB → 1,5 MB; `find` passa al loader YAML in C (da 1,0 s a 0,28 s).
 
 ---
 

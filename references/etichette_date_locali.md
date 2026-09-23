@@ -95,7 +95,7 @@ tabelle e bullet: lì tutte le frasi descrivono lo stesso episodio. Il marcatore
 richiede lo spazio dopo, altrimenti un `**Grassetto**` a inizio paragrafo passa per bullet.
 
 **3. Nomi di etichetta troppo corti**
-In `local_labels` un'etichetta dichiarata dal documento vale localmente se **tutte** le
+In `labels_from_context` un'etichetta dichiarata dal documento vale localmente se **tutte** le
 sue parole compaiono nel contesto, ma quelle di ≤2 caratteri vengono scartate.
 `eu_release` e `uk_release` si riducevano quindi entrambi alla sola parola "release":
 qualunque contesto la contenesse li attivava tutt'e due.
@@ -124,6 +124,16 @@ europeo debole.
 **Rimedio:** `analogues.py find ... --match-all` (l'episodio deve portare *tutti* i
 token). Non è il default: costa N, e fuori dai token geografici l'unione resta la
 scelta giusta.
+
+**Eventi, non date (Run 6, 2026-09-23).** Ogni record `(data, tema)` contiene
+`events`, con `event_id` = `data:tema:geografia`. La geografia di una fonte è il token
+`_release` che il suo contesto nomina o che la fonte dichiara; `-` = nessuno (USA,
+Cina e ogni paese senza token). L'AND date-locale e il verso vanno soddisfatti da
+**un solo evento**: il 2024-04-01 non passa più `japan_release AND ism`, perché Tankan
+e ISM erano stati fusi solo per data. Fonti diverse con la stessa geografia restano un
+evento: un giorno BoJ descritto da una scheda con `rate_decision` e da un'altra con
+`yen` passa `rate_decision AND yen`. Conflitti e veti restano sulla data di mercato.
+⚠ Due eventi dello stesso paese nello stesso giorno restano fusi.
 
 ⚠ **Il degrado può annullarlo in silenzio.** Se l'intersezione date-locale sta sotto
 `--min-n`, `find` scende al livello **documento**, dove i token sono quelli dell'intero

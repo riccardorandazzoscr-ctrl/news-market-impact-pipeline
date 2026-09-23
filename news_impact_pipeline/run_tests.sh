@@ -45,6 +45,9 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "analogues" ] && \
   run "analogues.py — verso e riferimento" tests/test_analogues_direction.py
 
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "analogues" ] && \
+  run "analogues.py — eventi distinti nella stessa data (R02)" tests/test_analogues_events.py
+
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "stato" ] && \
   run "stato giornata — le sei fasi, il riuso delle schede, la ricevuta di consegna" \
       tests/test_stato_giornata.py

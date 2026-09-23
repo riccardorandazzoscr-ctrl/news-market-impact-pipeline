@@ -160,16 +160,12 @@ def declared_episodes(text: str) -> dict[str, tuple[set[str], set[str]]]:
     return out
 
 
-def local_direction(text: str, d: str) -> set[str]:
-    """Direzioni desumibili dal testo attorno alla data `d`.
+def direction_from_context(ctx: str) -> set[str]:
+    """Direzioni desumibili dal contesto di una data.
 
     Può restituire l'insieme vuoto (nessun marcatore: l'episodio resta senza
     direzione locale e il filtro ricade sul livello di scheda) oppure entrambe le
     direzioni (riga genuinamente ambivalente: la teniamo, non la forziamo)."""
-    return direction_from_context(_contexts(text, d))
-
-
-def direction_from_context(ctx: str) -> set[str]:
     if not ctx.strip():
         return set()
     return {sign for sign, pats in DIRECTION_PATTERNS.items()
@@ -319,11 +315,6 @@ def _contexts(text: str, d: str) -> str:
     return "\n".join(out)
 
 
-def local_labels(text: str, d: str, theme: str, declared: set[str],
-                 taxonomy: dict) -> set[str]:
-    return labels_from_context(_contexts(text, d), theme, declared, taxonomy)
-
-
 def labels_from_context(ctx: str, theme: str, declared: set[str],
                         taxonomy: dict) -> set[str]:
     """Etichette da un contesto già delimitato. Serve quando il contesto è la RIGA
@@ -423,15 +414,54 @@ def harvest_kb(path: Path) -> tuple[str, set[str], set[str], str]:
     return theme, subthemes, dates, body
 
 
+def geo_patterns(taxonomy: dict) -> dict[str, list[re.Pattern]]:
+    """Le etichette geografiche della tassonomia: per convenzione quelle che
+    finiscono in `_release` (`japan_release`, `eurozone_release`...). Non esiste
+    `us_release` di proposito (vedi la tassonomia): gli USA sono la geografia
+    «non detta», ed è anche la più frequente."""
+    return {lbl: pats for lbl, pats in (taxonomy.get("macro_data") or {}).items()
+            if lbl.endswith("_release")}
+
+
+def geo_of(ctx: str, labels: set[str], geo: dict) -> str:
+    """Geografia di UNA fonte su una data: token `_release` separati da virgola,
+    '' se non ne nomina nessuna. Due strade, entrambe necessarie: il contesto, su
+    ogni tema (la research BoJ sta sotto `monetary_policy` e non porta
+    `japan_release` fra le etichette, ma il suo contesto dice «BoJ»); e i token
+    che la fonte DICHIARA (una scheda scrive `japan_release` nel meccanismo di un
+    PMI giapponese, e la riga non nomina né BoJ né Tankan)."""
+    return ",".join(sorted({lbl for lbl, pats in geo.items()
+                            if any(p.search(ctx) for p in pats)}
+                           | {lbl for lbl in labels if lbl.endswith("_release")}))
+
+
 def cmd_build():
-    # chiave episodio = (date, theme); accumuliamo direzioni e fonti
+    # Chiave del record = (date, theme): la DATA DI MERCATO, su cui si calcolano i
+    # rendimenti e si giudicano conflitti e veti. Dentro, gli EVENTI (Run 6, R02),
+    # con identità `event_id` = data:tema:geografia. Prima le etichette di tutte le
+    # fonti si fondevano nel record, e `japan_release AND ism` prendeva il
+    # 2024-04-01 unendo il Tankan di una research all'ISM di una scheda, senza
+    # alcun evento che fosse entrambe le cose.
+    #
+    # Perché la geografia e non la fonte (misurato il 2026-09-23 sulle coppie dei
+    # 10 token più frequenti per tema). Un evento per fonte faceva perdere 1067
+    # date in 240 coppie su 336, e quasi tutte in `monetary_policy` e
+    # `commodity_energy` erano LO STESSO evento etichettato a metà da due fonti
+    # (giorni BoJ: una scheda scrive `japan_release`, la research `yen`; embargo
+    # Iran 2012: una scheda `shipping_chokepoint`, un'altra `oil_supply_shock`).
+    # Le fusioni sbagliate vere erano invece fra paesi diversi: Tankan e ISM, NFP
+    # USA e dato europeo, attività cinese e lavoro britannico. Quindi fonti con la
+    # stessa geografia = stesso evento; geografie diverse = eventi diversi.
+    # ⚠ Limite noto: gli USA e i paesi senza token (Cina) sono la stessa geografia
+    # «non detta», e due eventi dello stesso paese nello stesso giorno restano fusi.
     lib: dict = {}
     taxonomy = load_taxonomy()
+    geo = geo_patterns(taxonomy)
 
     today = date.today().isoformat()
 
     def add(d, theme, direction, subthemes, local, source, dir_local=(),
-            declared=False, dir_declared=(), direction_reference=""):
+            declared=False, dir_declared=(), direction_reference="", where=""):
         if not theme or not DATE_RE.fullmatch(d):
             return
         if d > today:
@@ -443,7 +473,15 @@ def cmd_build():
                                  "directions_by_reference": {},
                                  "direction_sources": {},
                                  "subthemes": set(), "subthemes_local": set(),
-                                 "sources": set(), "declared": False})
+                                 "sources": set(), "declared": False,
+                                 "events": {}})
+        ev = e["events"].setdefault(where, {"subthemes_local": set(),
+                                            "directions_by_reference": {},
+                                            "sources": set()})
+        ev["sources"].add(source)
+        ev["subthemes_local"].update(local)
+        if direction_reference and dir_declared:
+            ev["directions_by_reference"].setdefault(direction_reference, set()).update(dir_declared)
         if direction:
             e["directions"].add(direction)
         # Le due fonti restano SEPARATE (2026-08-29). Vedi il commento in cmd_find:
@@ -476,13 +514,15 @@ def cmd_build():
                 # sono date-locali per costruzione e non per inferenza. L'euristica
                 # resta per le schede scritte prima del 2026-08-19.
                 dec_v, dec_t = decl.get(d, (set(), set()))
-                add(d, theme, direction, subthemes,
-                    dec_t or local_labels(text, d, theme, subthemes, taxonomy),
+                ctx = _contexts(text, d)
+                labels = dec_t or labels_from_context(ctx, theme, subthemes, taxonomy)
+                add(d, theme, direction, subthemes, labels,
                     f"card:{day.name}/{card.name}",
-                    dec_v or local_direction(text, d),
+                    dec_v or direction_from_context(ctx),
                     declared=bool(dec_v),
                     dir_declared=dec_v,
-                    direction_reference=_field(text, "direction_reference").strip("` "))
+                    direction_reference=_field(text, "direction_reference").strip("` "),
+                    where=geo_of(ctx, labels, geo))
 
     # 2) ricerche KB (esclude _prompts e file con prefisso _)
     n_kb = 0
@@ -490,8 +530,11 @@ def cmd_build():
     for md in kb_metadata.iter_studies(KB_DIR):
         n_kb += 1
         theme, subthemes, dates, body = harvest_kb(md)
-        kb_dates[str(md.relative_to(KB_DIR))] = dates
-        source = f"kb:{md.parent.name}"
+        rel = str(md.relative_to(KB_DIR))
+        kb_dates[rel] = dates
+        # Percorso, non cartella: è la stessa forma della fonte nel registro,
+        # così una revisione si aggancia all'evento della sua research.
+        source = f"kb:{rel}"
         rows, declared = kb_metadata.kb_tables(body)
         if declared:
             # Tabella canonica: una riga = una coppia (data, asset) dichiarata.
@@ -501,18 +544,19 @@ def cmd_build():
                 versi = kb_metadata.declared_versi(r["verso"])
                 if r["date"] not in dates or versi is None or not r["asset"]:
                     continue
-                add(r["date"], theme, "", subthemes, _split_subthemes(r["mechanism"]),
+                labels = _split_subthemes(r["mechanism"])
+                add(r["date"], theme, "", subthemes, labels,
                     source, declared=True, dir_declared=versi,
-                    direction_reference=r["asset"])
+                    direction_reference=r["asset"], where=geo_of(r["line"], labels, geo))
             continue
         for d in dates:
             # Contesto della data: la sua RIGA nella tabella di episodi, se c'è.
             # Solo altrimenti le occorrenze nel testo, che possono parlare d'altro
             # (il Tankan del 2024-04-01 e il confine di regime con la stessa data).
             ctx = "\n".join(rows[d]) if d in rows else _contexts(body, d)
-            add(d, theme, "", subthemes,
-                labels_from_context(ctx, theme, subthemes, taxonomy),
-                source, direction_from_context(ctx))
+            labels = labels_from_context(ctx, theme, subthemes, taxonomy)
+            add(d, theme, "", subthemes, labels,
+                source, direction_from_context(ctx), where=geo_of(ctx, labels, geo))
 
     # Le etichette legacy non hanno un asset. Il registro è una revisione
     # esplicita, con fonte e motivazione, oppure un veto per date con eventi
@@ -566,10 +610,17 @@ def cmd_build():
             raise ValueError(f"Revisione {key} in conflitto con scheda esplicita: {existing}")
         e["directions_by_reference"].setdefault(ref, set()).add(sign)
         e["direction_sources"].setdefault(ref, set()).add(tag)
+        # Il verso rivisto va all'evento della sua fonte, non alla data. La fonte
+        # contiene la data (controllo sopra), ma può averla sotto un altro tema.
+        ev = next((v for v in e["events"].values() if tag in v["sources"]), None)
+        if ev is None:
+            raise ValueError(f"Fonte della revisione senza la data {d} sotto il tema {theme}: {source}")
+        ev["directions_by_reference"].setdefault(ref, set()).add(sign)
         if mech:
-            e["subthemes_local"].update(
-                _split_subthemes(mech) if isinstance(mech, str)
-                else {lbl for t in mech if (lbl := _norm_label(str(t)))})
+            labels = (_split_subthemes(mech) if isinstance(mech, str)
+                      else {lbl for t in mech if (lbl := _norm_label(str(t)))})
+            e["subthemes_local"].update(labels)
+            ev["subthemes_local"].update(labels)
 
     episodes = []
     for e in sorted(lib.values(), key=lambda x: (x["theme"], x["date"])):
@@ -596,7 +647,15 @@ def cmd_build():
                          "declared": bool(e.get("declared")),
                          "subthemes": sorted(e["subthemes"]),
                          "subthemes_local": sorted(e["subthemes_local"]),
-                         "n_sources": len(e["sources"])})
+                         "n_sources": len(e["sources"]),
+                         "events": [
+                             {"event_id": f"{e['date']}:{e['theme']}:{g or '-'}",
+                              "geo": g,
+                              "subthemes_local": sorted(ev["subthemes_local"]),
+                              **({"directions_by_reference": {k: sorted(v) for k, v in sorted(ev["directions_by_reference"].items())}}
+                                 if ev["directions_by_reference"] else {}),
+                              "sources": sorted(ev["sources"])}
+                             for g, ev in sorted(e["events"].items())]})
 
     # Pubblicazione atomica: si scrive accanto e si sostituisce in un colpo solo.
     # Senza, un'interruzione a metà scrittura lascia una libreria troncata che
@@ -610,14 +669,22 @@ def cmd_build():
         os.replace(tmp, LIB_PATH)
     finally:
         tmp.unlink(missing_ok=True)
-    print(f"[analogues] {len(episodes)} episodi unici (date×tema) da {n_cards} schede "
+    print(f"[analogues] {len(episodes)} episodi unici (date×tema), "
+          f"{sum(len(e['events']) for e in episodes)} eventi, da {n_cards} schede "
           f"+ {n_kb} file KB → {LIB_PATH}")
 
 
 def _load() -> list[dict]:
     if not LIB_PATH.exists():
         raise SystemExit("Libreria assente: lancia prima `analogues.py build`.")
-    return yaml.safe_load(LIB_PATH.read_text(encoding="utf-8"))["episodes"]
+    # Loader in C: con gli eventi il file è quasi raddoppiato, e `find` si lancia
+    # decine di volte a run (1,66 s → 0,28 s, misurato il 2026-09-23).
+    eps = yaml.load(LIB_PATH.read_text(encoding="utf-8"), Loader=yaml.CSafeLoader)["episodes"]
+    # Una libreria di prima del Run 6 non ha eventi: il filtro date-locale non
+    # troverebbe nulla e degraderebbe in silenzio al pool del tema.
+    if eps and "events" not in eps[0]:
+        raise SystemExit("Libreria nel formato senza eventi: rilancia `analogues.py build`.")
+    return eps
 
 
 def cmd_find(theme: str, direction: str | None, before: str | None,
@@ -643,11 +710,22 @@ def cmd_find(theme: str, direction: str | None, before: str | None,
         # Con `--match-all` l'episodio deve portare TUTTI i token richiesti.
         # Non è il default: costa N, e su token non geografici l'unione resta la
         # scelta giusta. Vedi `references/etichette_date_locali.md`.
+        # Sul livello date-locale il predicato si valuta EVENTO per evento (R02): i
+        # token di un AND devono stare nella stessa descrizione. Il record esce con
+        # i soli eventi che hanno fatto match, così anche il verso (sotto) deve
+        # venire da uno di loro. In unione è indifferente: qualche evento porta il
+        # token ⇔ il record lo porta. Il livello documento resta sul record: è già
+        # dichiarato come intersezione non garantita.
         def _match(field, test=None):
             test = test or (all if match_all else any)
-            return [e for e in eps
-                    if test(any(w in st for st in (e.get(field) or []))
-                            for w in wanted)]
+            out = []
+            for e in eps:
+                units = (e.get("events") or []) if field == "subthemes_local" else [e]
+                hit = [u for u in units
+                       if test(any(w in st for st in (u.get(field) or [])) for w in wanted)]
+                if hit:
+                    out.append({**e, "events": hit} if field == "subthemes_local" else e)
+            return out
 
         # Degrado a tre livelli. `subthemes_local` sono etichette ricavate dal
         # contesto della singola data: discriminano davvero, ma esistono solo dove
@@ -762,12 +840,21 @@ def cmd_find(theme: str, direction: str | None, before: str | None,
             missing = sum(not e.get("directions_by_reference", {}).get(reference) for e in eps)
             conflicts = sum(len(set(e.get("directions_by_reference", {}).get(reference, []))) > 1 for e in eps)
             vetoed = sum(reference in e.get("direction_review_excluded", {}) for e in eps)
-            eps = [e for e in eps
-                   if set(e.get("directions_by_reference", {}).get(reference, [])) == {direction}
-                   and reference not in e.get("direction_review_excluded", {})]
+            # Conflitti e veti restano sulla DATA DI MERCATO (tutti gli eventi del
+            # giorno): il rendimento di quell'asset li mescola comunque. Ma il verso
+            # deve dichiararlo un evento selezionato, non un altro evento della
+            # stessa data (R02: il Tankan non prende il segno dall'ISM).
+            ok = [e for e in eps
+                  if set(e.get("directions_by_reference", {}).get(reference, [])) == {direction}
+                  and reference not in e.get("direction_review_excluded", {})]
+            eps = [e for e in ok
+                   if any(direction in ev.get("directions_by_reference", {}).get(reference, [])
+                          for ev in e.get("events") or [])]
+            other = len(ok) - len(eps)
             note += (f" [direzione '{direction}' riferita a {reference}: {len(eps)} episodi; "
-                     f"esclusi {missing} senza riferimento, {conflicts} con versi in conflitto "
-                     f"e {vetoed} dalla revisione; nessun fallback direzionale]")
+                     f"esclusi {missing} senza riferimento, {conflicts} con versi in conflitto, "
+                     f"{vetoed} dalla revisione e {other} col verso dato da un altro evento "
+                     f"della stessa data; nessun fallback direzionale]")
             if len(eps) < min_n:
                 note += f" [⚠ N={len(eps)} < {min_n}: campione insufficiente, non ampliato con etichette ambigue]"
     dates = sorted({e["date"] for e in eps})
@@ -864,7 +951,7 @@ def main():
                         "se lascia <--min-n episodi ricade sul tema.")
     f.add_argument("--match-all", action="store_true",
                    help="Più --subtheme in INTERSEZIONE invece che in unione: "
-                        "l'episodio deve portarli tutti. Da usare quando uno dei "
+                        "UN evento (data, tema, geografia) deve portarli tutti. Da usare quando uno dei "
                         "token è geografico (eurozone_release, japan_release...), "
                         "altrimenti l'unione lo annulla riempiendo il pool di "
                         "release di altre aree. Costa N: verifica la nota.")

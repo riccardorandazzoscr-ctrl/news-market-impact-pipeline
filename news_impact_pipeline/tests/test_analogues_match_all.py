@@ -57,17 +57,22 @@ def oracle(theme, tokens, mode, before=None, field="subthemes_local"):
             continue
         if before and e["date"] >= before:
             continue
-        labels = e.get(field) or []
-        hits = []
-        for w in wanted:
-            found = False
-            for st in labels:
-                if w in st:
-                    found = True
-                    break
-            hits.append(found)
-        if (all(hits) if mode == "and" else any(hits)):
-            dates.add(e["date"])
+        # L'OR si verifica sull'unione del record: deve coincidere con l'OR per
+        # evento del SUT. L'AND sulle etichette date-locali va soddisfatto da UN
+        # evento (R02); a livello documento resta sul record.
+        per_event = mode == "and" and field == "subthemes_local"
+        units = [ev.get(field) or [] for ev in e["events"]] if per_event else [e.get(field) or []]
+        for labels in units:
+            hits = []
+            for w in wanted:
+                found = False
+                for st in labels:
+                    if w in st:
+                        found = True
+                        break
+                hits.append(found)
+            if (all(hits) if mode == "and" else any(hits)):
+                dates.add(e["date"])
     return sorted(dates)
 
 
