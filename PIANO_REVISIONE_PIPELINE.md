@@ -348,9 +348,10 @@ richiede più sessioni e prima una decisione di metodo del maintainer (vedi 5d).
   recuperabili con `mechanism` nel registro. Le `AC` seguono il template (data = prima
   seduta di reazione), perché l'event study ancora T=0 alla chiusura del primo giorno ≥ data.
 - Nuovo `recupero.py` (prepara / promuovi) e **pilota sulla research BoJ** in
-  `knowledge_base/_recupero/Giappone : Bank of Japan.yaml`, **non ancora promosso**: 11
-  dichiarazioni nuove, 7 concordi con schede già esistenti (verifica indipendente delle
-  regole, inversioni comprese), 4 escluse con motivo, 14 domande, 6 senza azione. Simulazione
+  `knowledge_base/_recupero/Giappone : Bank of Japan.yaml`, **non ancora promosso**: 9
+  dichiarazioni nuove, 9 concordi con schede già esistenti (verifica indipendente delle
+  regole, inversioni comprese — conteggi dopo la regola della sorpresa), 4 escluse con
+  motivo, 14 domande, 6 senza azione. Simulazione
   di promozione su copia del registro: tutto valido. Template delle research nuove aggiornato
   alla tabella canonica. Suite `kb` a 71 asserzioni più il check di `recupero.py`.
 
