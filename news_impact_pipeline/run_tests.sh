@@ -62,7 +62,10 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
       tests/test_monthly_digest.py
 
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "usage" ] && \
-  run "consumi — parser del grezzo di claude -p" tests/test_record_usage.py
+  run "consumi — parser del grezzo di claude -p (registro unico, R14)" tests/test_record_usage.py
+
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "usage" ] && \
+  run "consumi — $/scheda utile e $/giornata completata (R14)" tests/test_usage_report.py
 
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "prezzi" ] && \
   run "prezzi — finestra sovrapposta, barra provvisoria, freschezza e buchi" \

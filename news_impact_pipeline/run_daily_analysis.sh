@@ -168,7 +168,17 @@ PID_GUARDIANO=""
 pulisci() {
   [[ -n "$PID_GUARDIANO" ]] && kill "$PID_GUARDIANO" 2>/dev/null
   [[ -n "$PID_HEADLESS" ]]  && kill "$PID_HEADLESS" 2>/dev/null
-  [[ -n "${RAW:-}" ]]          && /bin/rm -f "$RAW"
+  # R14: prima il grezzo veniva buttato via qui senza essere mai passato a
+  # record_claude_usage.py — un run interrotto da segnale esterno (non il
+  # timeout: quello arriva già registrato, sotto) aveva consumo reale ma
+  # nessuna riga nel CSV (incidente del 14/09, run delle 09:19). Se il file
+  # esiste ancora è perché non ci siamo mai arrivati: registriamo un tentativo
+  # fallito prima di toglierlo di mezzo, invece di farlo sparire in silenzio.
+  if [[ -n "${RAW:-}" && -f "${RAW:-}" ]]; then
+    "$PY" "$PIPE/record_claude_usage.py" "$RAW" "$LOG" "$LOGDIR/usage.csv" \
+      "$TODAY" daily "$MODEL" interrotto 2>/dev/null
+    /bin/rm -f "$RAW"
+  fi
   [[ -n "${SCADUTO:-}" ]]      && /bin/rm -f "$SCADUTO"
   /bin/rm -f "$LOCK/pid" 2>/dev/null
   rmdir "$LOCK" 2>/dev/null
@@ -504,7 +514,7 @@ fi
 log "Claude exit code $RC."
 
 # Estrae il testo finale (nel log, come prima) e accoda una riga al CSV dei consumi.
-"$PY" "$PIPE/record_claude_usage.py" "$RAW" "$LOG" "$LOGDIR/usage.csv" "$TODAY" \
+"$PY" "$PIPE/record_claude_usage.py" "$RAW" "$LOG" "$LOGDIR/usage.csv" "$TODAY" daily "$MODEL" \
   || log "WARN: parsing usage fallito."
 rm -f "$RAW"
 

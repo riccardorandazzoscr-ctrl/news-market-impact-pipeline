@@ -629,22 +629,60 @@ Stessa regola del Run 9: **le scelte le fa Riccardo**, questo run presenta e asp
 
 ---
 
-## [ ] Run 10 — Telemetria
+## [x] Run 10 — Telemetria — FATTO — 2026-09-23
 **ID report:** R14
 **Modello:** Sonnet 5 · effort medium
 
-- [ ] Registro unico per esecuzione e fase: identità run, modello, fase, inizio/fine, stato,
+- [x] Registro unico per esecuzione e fase: identità run, modello, fase, inizio/fine, stato,
       tentativo, token input/cache/output, chiamate agli strumenti, artefatti validati.
       Oggi `record_claude_usage.py` copre giornaliero e briefing; indicizzazione e mensile no.
-- [ ] I campi mancanti non devono diventare zero; un JSON malformato deve produrre una riga
+- [x] I campi mancanti non devono diventare zero; un JSON malformato deve produrre una riga
       di tentativo fallito, non sparire.
-- [ ] Nel giornaliero il trap può rimuovere il grezzo prima della registrazione: registrare
+- [x] Nel giornaliero il trap può rimuovere il grezzo prima della registrazione: registrare
       anche i run interrotti, o almeno uno stato esplicito «consumo sconosciuto».
       «Nessun dato di usage» ≠ «nessun consumo».
-- [ ] Misurare consumo **per scheda utile** e **per giornata completata**, includendo
+- [x] Misurare consumo **per scheda utile** e **per giornata completata**, includendo
       coordinamento, recuperi e ricerche.
-- [ ] Non spacciare per costo: i costi riportati dal client, i token e la quota abbonamento
+- [x] Non spacciare per costo: i costi riportati dal client, i token e la quota abbonamento
       sono grandezze diverse. Niente medie storiche riciclate come fattura.
+
+**Note di chiusura:**
+- **Registro unico**: uno schema (`record_claude_usage.py`), un CSV per job —
+  `usage.csv`/`usage_brief.csv`/nuovo `usage_monthly.csv`, prima assente per il
+  mensile (unico dei tre job col modello a non registrare nulla). Indicizzazione e
+  scorecard non usano un modello: niente da registrare lì, nessun buco reale.
+  `fase` = il job (daily/brief/monthly), non le sei fasi di `stato_giornata.py`,
+  che tracciano già lo stato per-giorno sul disco: aggiungerne una seconda copia nel
+  registro sarebbe stata duplicazione, non un buco.
+- **Campi mancanti**: un grezzo non-JSON o senza blocco `usage` ora produce sempre
+  una riga (stato `errore`/`incompleto`), con i campi ignoti **vuoti**, non `0` —
+  prima un grezzo non-JSON produceva zero righe (spariva) e uno senza `usage`
+  produceva una riga a zero (indistinguibile da un run gratis). Test aggiornato:
+  la vecchia asserzione che bloccava proprio questo comportamento è stata sostituita,
+  non solo rilassata.
+- **Run interrotti**: nei tre wrapper, se il grezzo esiste ancora quando il trap di
+  pulizia scatta, viene registrato con stato `interrotto` (via l'override esplicito
+  di `record_claude_usage.py`) prima di essere rimosso — chiude sia "il trap lo
+  butta via prima della registrazione" (era un bug reale in `run_daily_analysis.sh`)
+  sia "run interrotto = nessuna riga" per tutti e tre i job.
+- **$/scheda e $/giornata**: nuovo `usage_report.py`, unisce il registro con
+  `daily_analysis/` (conteggio schede, `_state.json.consegna.esito` per la
+  consegna). Un giorno con soli tentativi falliti pesa comunque sul totale — non
+  solo il run finito bene. Comando, non un numero scritto in un file.
+- **Non spacciare per costo**: `references/economia_del_run.md` non presenta più
+  la media dell'8/21 e la tabella turni→costo come dati correnti (erano già una
+  fotografia di un giorno) né "il costo cresce col quadrato dei turni" come legge
+  universale — sono lo storico di quella misura, con un avviso esplicito a non
+  riciclarli come fattura. Punta al registro/`usage_report.py` per il dato di oggi.
+- **Non fatto, deliberatamente**: "chiamate agli strumenti" e "artefatti validati"
+  come campi propri del registro. `num_turns` (già registrato) è un proxy
+  ragionevole delle chiamate; un conteggio esatto per-tool e un collegamento agli
+  artefatti validati richiederebbero integrare `record_claude_usage.py` con
+  `stato_giornata.py`/i transcript — nessun problema concreto osservato lo
+  richiede oggi (YAGNI); se serve, è un run a sé.
+- Storico pre-R14 (schema a 8 colonne) archiviato in `usage.csv.pre-r14` /
+  `usage_brief.csv.pre-r14`, non cancellato né riscritto.
+- Nuova suite `run_tests.sh usage` (2 file, 29 asserzioni) + verifica standard verde.
 
 ---
 

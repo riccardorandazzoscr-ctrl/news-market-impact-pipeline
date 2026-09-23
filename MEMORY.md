@@ -52,9 +52,13 @@ Aggiornato: 2026-09-16
 - **Da verificare** — l'effetto sul costo si vede solo al prossimo run reale
   (`logs/usage.csv`): la scommessa è che l'agente smetta di riscrivere definizioni
   già note, ma non è stato ancora osservato su un run vero.
+- **Deciso (23/09, Run 10/R14)** — registro unico per schema (non più file): un CSV
+  per job (`usage.csv`/`usage_brief.csv`/`usage_monthly.csv`, prima assente per il
+  mensile) con identità, stato e tentativo; un run fallito produce sempre una riga,
+  mai zero. `usage_report.py` per $/scheda e $/giornata completata.
 
 Metodo e misure: [references/economia_del_run.md](references/economia_del_run.md)
-Aggiornato: 2026-09-11
+Aggiornato: 2026-09-23
 
 ---
 

@@ -72,9 +72,17 @@ if ! mkdir "$LOCK" 2>/dev/null; then
 fi
 PID_HEADLESS=""; PID_GUARDIANO=""
 # Il trap ripulisce anche i figli: un kill dello script non deve lasciare in giro
-# né il lock né un processo headless orfano.
+# né il lock né un processo headless orfano. R14: se il grezzo esiste ancora, un
+# run interrotto ha comunque un consumo reale — registriamo un tentativo fallito
+# prima di toglierlo di mezzo, invece di lasciarlo lì per sempre senza traccia
+# nel CSV (stesso difetto già corretto in run_daily_analysis.sh).
 trap '[[ -n "$PID_GUARDIANO" ]] && kill "$PID_GUARDIANO" 2>/dev/null
       [[ -n "$PID_HEADLESS" ]] && kill "$PID_HEADLESS" 2>/dev/null
+      if [[ -n "${RAW:-}" && -f "${RAW:-}" ]]; then
+        "$PY" "$PIPE/record_claude_usage.py" "$RAW" "$LOG" "$LOGDIR/usage_brief.csv" \
+          "$TODAY" brief "$MODEL" interrotto 2>/dev/null
+        /bin/rm -f "$RAW"
+      fi
       rmdir "$LOCK" 2>/dev/null' EXIT INT TERM
 
 log "START briefing $TODAY."
@@ -130,7 +138,7 @@ if [[ -f "$SCADUTO" ]]; then
 fi
 log "Claude exit code $RC."
 
-"$PY" "$PIPE/record_claude_usage.py" "$RAW" "$LOG" "$LOGDIR/usage_brief.csv" "$TODAY" \
+"$PY" "$PIPE/record_claude_usage.py" "$RAW" "$LOG" "$LOGDIR/usage_brief.csv" "$TODAY" brief "$MODEL" \
   || log "WARN: parsing usage fallito."
 rm -f "$RAW"
 

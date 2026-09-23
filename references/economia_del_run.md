@@ -10,20 +10,38 @@ e `forecast_tracking.py` sono Python puro (zero chiamate al modello), il report 
 è un run al mese.
 
 Misurato il 2026-08-21 sui transcript in `~/.claude/projects/`: media **$27,9 a run**,
-intervallo da $12 a $53.
+intervallo da $12 a $53. ⚠ **È una fotografia di quel giorno, non il costo attuale**:
+gli interventi sotto sono nati per abbassarla, e il numero non si aggiorna da solo —
+non riciclarlo come fattura. Il costo di oggi si legge dal registro (sotto), mai da
+questo file.
 
 **Il costo dipende quasi solo dal numero di turni**, perché a ogni chiamata di tool
 l'intero contesto accumulato viene riletto: il cache-read è l'**85% della spesa** e
-cresce col **quadrato** dei turni.
+cresceva col **quadrato** dei turni sul campione dell'8/21 (tabella sotto). ⚠ È un
+modello semplificato di come si accumula il contesto in QUEL campione, non una legge
+universale — non trattarlo come un vincolo da imporre in un prompt.
 
-| turni | costo |
+| turni | costo (8/21) |
 |---|---|
 | 55 | $23 |
 | 96 | $36 |
 | 134 | $53 |
 
-Consumo corrente: `news_impact_pipeline/logs/usage.csv` (una riga per run: turni,
-token, costo).
+**Registro dei consumi** — uno schema unico, un file per job (R14, 2026-09-23):
+`news_impact_pipeline/logs/usage.csv` (giornaliero), `usage_brief.csv` (briefing),
+`usage_monthly.csv` (mensile). Ogni riga: identità (data, job, modello, tentativo),
+stato (`ok` / `incompleto` / `errore` / `interrotto` — mai assente: un tentativo
+fallito produce comunque una riga, i campi che non si conoscono restano **vuoti**,
+non `0`), turni, token, costo riportato dal client. Storico pre-R14 (schema a 8
+colonne, senza job/stato) archiviato in `usage.csv.pre-r14` / `usage_brief.csv.pre-r14`.
+Costo per **scheda utile** e per **giornata completata** (join col conteggio schede
+e la ricevuta di consegna, non un numero scritto qui):
+```bash
+news_impact_pipeline/venv/bin/python news_impact_pipeline/usage_report.py
+```
+⚠ Il costo riportato dal client (`total_cost_usd`), i token e la quota
+dell'abbonamento sono **grandezze diverse**: un cache-read alto mostra rilettura di
+contesto, non da solo il costo monetario o quanta quota è stata consumata.
 
 ## Interventi applicati il 2026-08-21
 
@@ -65,9 +83,30 @@ link (`#doc-glossario`) e un'istruzione: aggiungere un termine al file condiviso
 (6 schede su 20, limite di sessione) aveva già speso quanto un giorno intero, in parte
 perché ogni scheda riscriveva da zero glossari quasi identici.
 
-⚠ **Non ancora verificato su un run reale** — l'effetto si legge su
-`news_impact_pipeline/logs/usage.csv` al prossimo run, confrontando byte/turno con la
-tabella di riferimento sopra.
+⚠ **Non ancora verificato su un run reale** — l'effetto si legge sul registro
+(sopra) al prossimo run, confrontando byte/turno con la tabella di riferimento sopra.
+
+## Interventi applicati il 2026-09-23 (R14 — telemetria)
+
+Il mensile era l'unico dei tre job col modello a non registrare nulla — zero righe,
+mai. Indicizzazione e scorecard non usano un modello (Python puro): non gli manca
+un registratore, non ne serve uno.
+
+1. **`record_claude_usage.py` riscritto**: uno schema con identità (`job`, `model`,
+   `attempt` — contato dal registro stesso, nessun contatore esterno) e `status`.
+   Un grezzo non-JSON o senza blocco `usage` **produceva zero righe o una riga a
+   zero**: ora produce sempre una riga (`errore`/`incompleto`), con i campi ignoti
+   **vuoti**, non `0` — uno zero è indistinguibile da un run davvero gratis.
+2. **`run_monthly_report.sh`** ora chiama `claude` con `--output-format json` e
+   registra su `usage_monthly.csv`, come gli altri due job.
+3. **Run interrotto da segnale esterno**: in tutti e tre i wrapper, se il grezzo
+   esiste ancora quando il trap di pulizia scatta (il run non è mai arrivato alla
+   registrazione), viene registrato con stato `interrotto` prima di essere tolto di
+   mezzo — non più buttato via in silenzio (era il buco del run delle 09:19 del
+   14/09, con consumo reale nei transcript ma nessuna riga nel CSV).
+4. **`usage_report.py`** (nuovo): unisce il registro con `daily_analysis/` per il
+   costo per scheda utile e per giornata completata — comando, non un numero da
+   tenere aggiornato a mano.
 
 ## Proposte aperte
 

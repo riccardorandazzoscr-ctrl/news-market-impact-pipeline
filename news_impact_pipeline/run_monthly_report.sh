@@ -33,7 +33,15 @@ if ! mkdir "$LOCK" 2>/dev/null; then
   log "SKIP: altro run mensile in corso (lock presente)."
   exit 0
 fi
-trap 'rmdir "$LOCK" 2>/dev/null' EXIT
+# R14: prima il mensile non lasciava traccia di consumo (unico dei tre job col
+# modello a non usare record_claude_usage.py). Se il grezzo esiste ancora quando
+# il trap scatta, un'interruzione ha comunque un consumo reale da registrare.
+trap 'if [[ -n "${RAW:-}" && -f "${RAW:-}" ]]; then
+        "$PY" "$PIPE/record_claude_usage.py" "$RAW" "$LOG" "$LOGDIR/usage_monthly.csv" \
+          "$MONTH" monthly "$MODEL" interrotto 2>/dev/null
+        /bin/rm -f "$RAW"
+      fi
+      rmdir "$LOCK" 2>/dev/null' EXIT
 
 log "START report mensile $MONTH."
 
@@ -60,10 +68,17 @@ falsificabili.
 EOF
 
 cd "$NEWSDIR"
+RAW="$LOGDIR/.raw_monthly_${MONTH}.json"
 "$CLAUDE" -p "$PROMPT" --model "$MODEL" --permission-mode bypassPermissions \
-  </dev/null >> "$LOG" 2>&1
+  --output-format json </dev/null > "$RAW" 2>>"$LOG"
 RC=$?
 log "Claude exit code $RC."
+
+# Estrae il testo finale (nel log, come prima) e accoda una riga al CSV dei consumi.
+"$PY" "$PIPE/record_claude_usage.py" "$RAW" "$LOG" "$LOGDIR/usage_monthly.csv" "$MONTH" monthly "$MODEL" \
+  || log "WARN: parsing usage fallito."
+rm -f "$RAW"
+
 if (( RC != 0 )); then
   log "ERROR: report mensile non compilato."
   exit "$RC"
