@@ -768,8 +768,10 @@ def cmd_scorecard(open_browser: bool = False) -> None:
              "(politica monetaria, energia/commodity, dati macro, ecc.). Rivela **dove "
              "il sistema ha un vantaggio e dove no**: un tema con hit-rate alto e IC "
              "positivo è terreno solido; uno vicino al 50% / IC≈0 va trattato con "
-             "cautela. Ordinato per numerosità (N).\n")
-    L.append("| Tema | Copertura | Hit-rate | IC | N |")
+             "cautela. L'IC è calcolato **dentro ciascun asset** del tema e poi mediato "
+             "(come nella sez. 3): mescolare asset diversi nello stesso ranking "
+             "sovrastimerebbe la correlazione (vedi 5-bis). Ordinato per numerosità (N).\n")
+    L.append("| Tema | Copertura | Hit-rate | IC (per-asset) | N |")
     L.append("|---|---|---|---|---|")
     by_theme: dict = {}
     for r in rows:
@@ -780,7 +782,7 @@ def cmd_scorecard(open_browser: bool = False) -> None:
         med_sub = [r for r in sub if r["_med"] is not None]
         cov = (sum(r["_iqr"] for r in cov_sub) / len(cov_sub)) if cov_sub else None
         hit = (sum(r["_hit"] for r in hit_sub) / len(hit_sub)) if hit_sub else None
-        ic = _spearman([r["_med"] for r in med_sub], [r["_real"] for r in med_sub])
+        ic, _, _ = _ic_within_assets(med_sub)
         ic_s = "n/a" if ic is None else f"{ic:+.2f}"
         L.append(f"| {theme} | {_pct(cov)} | {_pct(hit)} | {ic_s} | {len(sub)} |")
     L.append("")

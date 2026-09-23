@@ -53,9 +53,10 @@ catalizzatori 4) scenari condizionali 5) lettura pesata dalla scorecard 6) 3-4
 previsioni falsificabili (tabella). Apri con un breve consuntivo delle previsioni
 falsificabili del mese precedente se esiste. Rispetta lo stile (espandi le sigle,
 spiega i meccanismi, interpreta i numeri a parole) e la disciplina della scorecard:
-dai peso ai temi con edge e NIENTE magnitudo sui temi a IC negativo (es. AI/
-structural_themes → lettura qualitativa). Output in chat: regimi dominanti + le
-previsioni falsificabili.
+dai peso ai temi/asset con IC positivo nell'estratto scorecard della bozza (sez.
+5/5-bis) e NIENTE magnitudo su quelli a IC ≈0 o negativo — leggi l'estratto, non
+un elenco fisso di temi. Output in chat: regimi dominanti + le previsioni
+falsificabili.
 EOF
 
 cd "$NEWSDIR"

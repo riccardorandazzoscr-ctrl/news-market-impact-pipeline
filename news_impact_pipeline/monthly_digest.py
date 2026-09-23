@@ -20,7 +20,7 @@ Uso:
 import argparse
 import re
 from collections import Counter
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 import yaml
@@ -66,21 +66,53 @@ def discover_cards(month: str) -> list[dict]:
     return cards
 
 
-def latest_scorecard_excerpt() -> tuple[str, str]:
-    """Restituisce (nome_file, estratto markdown) dell'ultima scorecard: 'In sintesi' +
-    la tabella per-tema (sez. 5), che dicono DOVE abbiamo edge."""
+def month_end(month: str) -> date:
+    """'YYYY-MM' -> ultimo giorno del mese, la data di riferimento del report."""
+    year, mon = (int(x) for x in month.split("-"))
+    if mon == 12:
+        return date(year, 12, 31)
+    return date(year, mon + 1, 1) - timedelta(days=1)
+
+
+def latest_scorecard_excerpt(ref: date) -> tuple[str, str]:
+    """Restituisce (nome_file, estratto markdown) della scorecard **coerente con `ref`**
+    (non sempre l'ultima: un report per un mese passato non deve citare dati che allora
+    non esistevano): 'In sintesi' + tabella per-tema (sez. 5) + tabella per-asset (sez.
+    5-bis), che dicono DOVE abbiamo edge."""
     files = sorted(SCORECARD_DIR.glob("20*-W*.md")) if SCORECARD_DIR.exists() else []
-    if not files:
+    candidates = []
+    for f in files:
+        m = re.match(r"(\d{4})-W(\d{2})\.md$", f.name)
+        if not m:
+            continue
+        wk_date = date.fromisocalendar(int(m.group(1)), int(m.group(2)), 1)
+        if wk_date <= ref:
+            candidates.append((wk_date, f))
+    if not candidates:
         return ("(nessuna)", "_Scorecard non ancora disponibile._")
-    text = files[-1].read_text(encoding="utf-8")
+    chosen = max(candidates)[1]
+    text = chosen.read_text(encoding="utf-8")
     def _section(header_regex):
         m = re.search(rf"(##\s+{header_regex}.*?)(?=\n##\s|\Z)", text, re.DOTALL)
         return m.group(1).strip() if m else ""
-    parts = [p for p in (_section(r"In sintesi"), _section(r"\d+\.\s*Quali temi")) if p]
-    return (files[-1].name, "\n\n".join(parts) or "_(sezioni non trovate)_")
+    parts = [p for p in (_section(r"In sintesi"), _section(r"\d+\.\s*Quali temi"),
+                         _section(r"\d+-bis\.\s*Su quali ASSET")) if p]
+    return (chosen.name, "\n\n".join(parts) or "_(sezioni non trovate)_")
 
 
-def kb_regimes() -> list[str]:
+def _phase_covers(range_str: str, ref: date) -> bool:
+    m = re.match(r"(\d{4}-\d{2}-\d{2})\s+to\s+(present|\d{4}-\d{2}-\d{2})", range_str)
+    if not m:
+        return False
+    start = date.fromisoformat(m.group(1))
+    end = date.max if m.group(2) == "present" else date.fromisoformat(m.group(2))
+    return start <= ref <= end
+
+
+def kb_regimes(ref: date) -> list[str]:
+    """Fase attiva **alla data `ref`** (fine mese del report), non l'ultima elencata:
+    un catalogo con fasi future o un report per un mese passato sceglierebbe altrimenti
+    la fase sbagliata."""
     if not CATALOG.exists():
         return []
     data = yaml.safe_load(CATALOG.read_text(encoding="utf-8")) or {}
@@ -88,7 +120,13 @@ def kb_regimes() -> list[str]:
     for e in data.get("entries", []):
         phases = e.get("regime_phases") or []
         current = ""
-        if phases:
+        for p in phases:
+            if not isinstance(p, dict):
+                continue
+            name, rng = next(iter(p.items()))
+            if _phase_covers(str(rng), ref):
+                current = name
+        if not current and phases:
             last = phases[-1]
             current = list(last.keys())[0] if isinstance(last, dict) else str(last)
         out.append(f"**{e.get('primary_theme','?')}** — {e.get('title','?')[:70]} "
@@ -97,13 +135,14 @@ def kb_regimes() -> list[str]:
 
 
 def build_scaffold(month: str) -> str:
+    ref = month_end(month)
     cards = discover_cards(month)
     n = len(cards)
     days = sorted({c["date"] for c in cards})
     themes = Counter(c["primary_theme"] for c in cards if c["primary_theme"])
     sentiments = Counter(c["sentiment"] for c in cards if c["sentiment"])
     assets = Counter(a for c in cards for a in c["assets"])
-    sc_name, sc_excerpt = latest_scorecard_excerpt()
+    sc_name, sc_excerpt = latest_scorecard_excerpt(ref)
 
     L = []
     L.append(f"# 📅 Report Strategico Mensile — {month}\n")
@@ -123,11 +162,11 @@ def build_scaffold(month: str) -> str:
              (", ".join(f"{a} ({c})" for a, c in assets.most_common(10)) or "—") + ".\n")
 
     L.append("### Regimi attivi dalla Knowledge Base\n")
-    for r in kb_regimes():
+    for r in kb_regimes(ref):
         L.append(f"- {r}")
     L.append("")
 
-    L.append(f"### Dove abbiamo edge — estratto dall'ultima scorecard ({sc_name})\n")
+    L.append(f"### Dove abbiamo edge — estratto dalla scorecard ({sc_name})\n")
     L.append(sc_excerpt)
     L.append("")
 
@@ -158,10 +197,10 @@ def build_scaffold(month: str) -> str:
              "previsione singola. Es: 'se Hormuz de-escala → … ; se la BCE è puramente "
              "restrittiva come nel 2011 → …'. -->\n")
     L.append("## 5. Lettura pesata dalla scorecard (dove fidarsi, dove no)\n")
-    L.append("<!-- Usa l'estratto scorecard sopra: dai peso ai temi con edge "
-             "(es. geopolitico/monetario/macro) e DECLASSA esplicitamente quelli senza "
-             "(es. structural_themes/AI: IC negativo → lettura qualitativa, non "
-             "magnitudo). Ricorda: l'edge è a orizzonte breve. -->\n")
+    L.append("<!-- Usa l'estratto scorecard sopra (mai una lista di temi fissa): dai "
+             "peso ai temi/asset con IC positivo nella sez. 5/5-bis e DECLASSA "
+             "esplicitamente quelli a IC ≈0 o negativo (lettura qualitativa, non "
+             "magnitudo). Ricorda: l'edge è a orizzonte breve, guarda la sez. 3. -->\n")
     L.append("## 6. Previsioni falsificabili del mese\n")
     L.append("<!-- 3-4 affermazioni VERIFICABILI tra ~1 mese, ognuna con condizione e "
              "data di verifica. Alimentano la scorecard a lungo raggio. Sii specifico e "

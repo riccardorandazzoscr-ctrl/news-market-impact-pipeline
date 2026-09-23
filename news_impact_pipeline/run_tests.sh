@@ -57,6 +57,10 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
   run "forecast — uso dichiarato, scenario, correzioni e valutazione congelata (R09)" \
       tests/test_forecast_tracking.py
 
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "monthly" ] && \
+  run "mensile — regimi e scorecard scelti per data del report, non ultimi in assoluto (R12)" \
+      tests/test_monthly_digest.py
+
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "usage" ] && \
   run "consumi — parser del grezzo di claude -p" tests/test_record_usage.py
 

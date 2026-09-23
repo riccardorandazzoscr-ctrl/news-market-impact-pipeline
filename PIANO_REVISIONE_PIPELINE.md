@@ -489,21 +489,37 @@ Logica chiara, vincolo delicato: **non riscrivere il track record già registrat
 
 ---
 
-## [ ] Run 8 — Mensile allineato
+## [x] Run 8 — Mensile allineato — FATTO — 2026-09-23
 **ID report:** R12
 **Modello:** Sonnet 5 · effort medium
 **Precondizione:** Run 7 chiuso (riusa il codice di estrazione scorecard).
 
-- [ ] `monthly_digest.latest_scorecard_excerpt` (riga ~69): includere la tabella per asset 5-bis,
+- [x] `monthly_digest.latest_scorecard_excerpt` (riga ~69): includere la tabella per asset 5-bis,
       non solo sintesi e sezione per tema.
-- [ ] `forecast_tracking.py` (riga ~657): la tabella per tema usa ancora una correlazione
+- [x] `forecast_tracking.py` (riga ~657): la tabella per tema usa ancora una correlazione
       aggregata fra asset — proprio l'aggregazione che il giornaliero ha abbandonato.
-- [ ] Regimi selezionati **per data del report**, non «ultima fase elencata».
-- [ ] `PHASE6_RUNBOOK.md` (riga ~9): togliere le affermazioni numeriche e direzionali fisse
+- [x] Regimi selezionati **per data del report**, non «ultima fase elencata».
+- [x] `PHASE6_RUNBOOK.md` (riga ~9): togliere le affermazioni numeriche e direzionali fisse
       sull'edge per tema.
-- [ ] Il validatore mensile attuale **respinge già** i report incompleti di giugno e agosto:
+- [x] Il validatore mensile attuale **respinge già** i report incompleti di giugno e agosto:
       non è un buco da tappare. Resta da completare il consuntivo delle previsioni mensili,
       da non confondere col ledger giornaliero.
+
+**Note di chiusura:**
+- `latest_scorecard_excerpt`/`kb_regimes` ora prendono un `ref` (fine mese del report) invece
+  di "l'ultima in assoluto": una scorecard futura rispetto al mese o una fase KB non ancora
+  iniziata non vengono più citate. Nuovo `month_end()`; scorecard scelta = la più recente con
+  lunedì ISO ≤ `ref`; fase KB = quella il cui intervallo `YYYY-MM-DD to (YYYY-MM-DD|present)`
+  copre `ref`, fallback sull'ultima elencata solo se nessuna fa match (dato non parsabile).
+- Tabella per tema: IC ora per-asset-poi-mediato (`_ic_within_assets`, la stessa funzione già
+  usata da "In sintesi" e sez. 3), non più Spearman aggregato fra asset diversi.
+- `PHASE6_RUNBOOK.md` e il prompt del wrapper `run_monthly_report.sh` non citano più
+  "geopolitico/monetario/macro" / "AI-structural_themes" come esempi fissi di edge: rimandano
+  all'estratto scorecard vivo (sez. 3/5/5-bis), stessa disciplina già in vigore per il
+  giornaliero (`references/leggere_lo_scorecard.md`).
+- Nuovo `tests/test_monthly_digest.py` (7 assert, `run_tests.sh monthly`): `month_end`,
+  `_phase_covers` (intervallo chiuso e "to present"), selezione fase per data non ultima,
+  scorecard futura esclusa. Verifica standard + `run_tests.sh forecast` verdi.
 
 ---
 

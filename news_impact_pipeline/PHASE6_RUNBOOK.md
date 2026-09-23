@@ -6,14 +6,15 @@ del mese (schede giornaliere + scorecard + Knowledge Base).
 
 ## Principio (decisivo)
 
-NON è un oracolo a lungo raggio. La scorecard mostra che l'edge predittivo **decade
-con l'orizzonte** (forte a T+1, quasi nullo a T+5) e che alcuni temi hanno IC
-negativo. Quindi questo report:
+NON è un oracolo a lungo raggio. La scorecard **coerente con la data del report**
+(mai una fissa nel prompt) dice, sezione 3, se e quanto l'edge predittivo decade
+con l'orizzonte, e sezione 5/5-bis quali temi/asset hanno IC negativo — cambia nel
+tempo, non fissarlo qui. Quindi questo report:
 - descrive i **regimi attivi** e il **bilancio dei rischi**, non dà prezzi-obiettivo;
 - propone **scenari condizionali** ("se X → Y"), non una previsione singola;
-- è **pesato dalla scorecard**: dà peso ai temi dove abbiamo edge (storicamente
-  geopolitico/monetario/macro) e **declassa** quelli dove non l'abbiamo
-  (structural_themes/AI → lettura qualitativa, mai magnitudo);
+- è **pesato dalla scorecard**: dà peso ai temi/asset con IC positivo nell'estratto
+  (sez. 5/5-bis) e **declassa** esplicitamente quelli a IC ≈0 o negativo, chiunque
+  siano quel mese → lettura qualitativa, mai magnitudo;
 - chiude con **3-4 previsioni falsificabili**, che il mese dopo verranno verificate
   (scorecard a lungo raggio — vedi §"Verifica").
 
@@ -23,8 +24,11 @@ sistema (riportare N, dispersione, "indicative only").
 ## Input
 
 - Schede del mese in `~/Claude/mercati_finanza/daily_analysis/YYYY-MM-*/news_*.md`.
-- Ultima scorecard in `~/Claude/mercati_finanza/daily_analysis/_scorecard/`.
-- Catalogo KB (`knowledge_base/catalog.yaml`) per i regimi attivi.
+- Scorecard **coerente con il mese del report** (la più recente non successiva a
+  fine mese, non sempre l'ultima in assoluto) in
+  `~/Claude/mercati_finanza/daily_analysis/_scorecard/`.
+- Catalogo KB (`knowledge_base/catalog.yaml`) per i regimi attivi **alla data del
+  report** (fine mese), non l'ultima fase elencata nel file.
 
 ## Output
 
@@ -37,8 +41,10 @@ sistema (riportare N, dispersione, "indicative only").
    venv/bin/python monthly_digest.py --month YYYY-MM
    ```
    Crea `daily_analysis/_monthly/YYYY-MM.md` con: schede aggregate (temi, sentiment,
-   asset), regimi KB attivi, **estratto della scorecard (dove abbiamo edge)**, ed
-   elenco schede per tema. La sezione "Materiale aggregato" NON va modificata.
+   asset), regimi KB attivi alla data del report, **estratto della scorecard
+   coerente con quella data** (sintesi + tabella per tema + tabella per asset,
+   5-bis), ed elenco schede per tema. La sezione "Materiale aggregato" NON va
+   modificata.
 
 2. **Compila le 6 sezioni** del report via Edit, leggendo il materiale aggregato (e,
    se serve dettaglio, le singole schede del mese):
