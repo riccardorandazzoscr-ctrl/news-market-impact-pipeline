@@ -18,6 +18,7 @@ $V news_impact_pipeline/update_market_data.py      # incrementale: finestra sovr
 $V news_impact_pipeline/update_market_data.py --check   # freschezza/buchi, senza scaricare
 $V news_impact_pipeline/stato_giornata.py --date AAAA-MM-GG  # a che punto e' la giornata
 $V news_impact_pipeline/forecast_tracking.py run   # feedback loop settimanale (= job lun 09:00)
+$V news_impact_pipeline/forecast_tracking.py recheck  # valutazioni congelate vs DB di oggi (sola lettura)
 cd news_impact_pipeline && ./run_tests.sh          # tutte le suite; con un filtro ne lancia una
 # setup venv:
 cd news_impact_pipeline && python3 -m venv venv && venv/bin/pip install -r requirements.txt

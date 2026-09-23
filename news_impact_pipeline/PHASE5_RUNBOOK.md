@@ -254,6 +254,9 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
   numeri dell'asset che ti serve; se appaiono deboli o incoerenti fra loro, riporta
   pure la tabella dell'event study ma **dichiara esplicitamente che il segno
   storico è inaffidabile** su quell'asset invece di costruirci sopra una previsione.
+  La stessa scelta va **marcata nel titolo di ogni tabella**: `[previsione]`,
+  `[descrittiva]` o `[scenario: nome]` (dettagli nel template, sezione Risultati).
+  Il ledger delle previsioni registra solo ciò che è dichiarato lì, non la prosa.
   ⚠ NON dare per scontato un elenco a memoria: cambia ogni settimana, i numeri vanno
   riletti dalla scorecard corrente.
 - Selezione analoghi: solo info disponibile alla data dell'episodio (no look-ahead).

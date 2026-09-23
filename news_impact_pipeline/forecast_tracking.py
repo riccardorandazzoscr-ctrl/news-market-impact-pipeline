@@ -19,10 +19,26 @@ estraiamo due segnali falsificabili:
     (la scheda non si e' sbilanciata su una direzione), ma restano valide per
     la copertura.
 
+Dal 2026-09-23 (R09) ogni tabella DICHIARA nel titolo che uso ne fa la scheda:
+  ### Event study — `BZ=F` [previsione]        la scheda ci costruisce una lettura
+  ### Event study — `^GSPC` [descrittiva]      riportata, ma segno dichiarato inaffidabile
+  ### Event study — `^TNX` [scenario: pool-b]  tabella alternativa dello stesso asset
+Senza dichiarazione: `uso` vuoto = "non dichiarata" (tutte le righe precedenti).
+Lo scenario entra nel `forecast_id`: due tabelle dello stesso asset/orizzonte non
+collidono piu'.
+
+VALUTAZIONE CONGELATA vs RICALCOLO
+  evaluate  scrive una volta sola il realizzato con ancora/target (date e prezzi):
+            e' il track record, non si riscrive.
+  recheck   ricalcola dal DB attuale e mostra le differenze, in sola lettura.
+Una scheda corretta dopo la registrazione (sha diverso): le righe ancora pendenti
+si aggiornano (o diventano `ritirata`), quelle gia' valutate restano e prendono
+`revised_at`.
+
 ARCHITETTURA
 ------------
 Un unico artefatto append-only: `daily_analysis/forecast_ledger.csv`. Una riga
-per (scheda × asset × orizzonte):
+per (scheda × asset × scenario × orizzonte), chiave `forecast_id`:
   - colonne "made"  scritte al momento del backfill/scrittura scheda;
   - colonne "eval"  riempite quando la previsione e' MATURA (il DB ha abbastanza
     giorni di borsa dopo l'ancora) — riusa event_study.compute_returns.
@@ -32,6 +48,7 @@ Sottocomandi:
   evaluate   riempie le righe mature con realizzato / in_iqr / hit_dir / abs_error
   scorecard  aggrega le metriche e scrive daily_analysis/_scorecard/AAAA-Www.md
   run        backfill + evaluate + scorecard (usato dal job settimanale)
+  recheck    ricalcola le righe valutate sul DB attuale (sola lettura)
 
 Convenzioni metodologiche: identiche a event_study.py (anchor = primo trading
 day >= data; T+N = N-esimo trading day dopo l'anchor; prezzo = COALESCE(adj_close,
@@ -41,6 +58,7 @@ misura cosa e' successo DOPO che la chiamata e' stata fatta (no look-ahead).
 
 import argparse
 import csv
+import hashlib
 import math
 import re
 import sqlite3
@@ -84,14 +102,21 @@ IC_ASSET_MIN_N = 15
 DAY_DIR_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
 
 FIELDS = [
-    "made_date", "slug", "card_path", "asset", "horizon",
+    "forecast_id", "made_date", "slug", "card_path", "asset", "horizon",
+    "scenario", "uso",
     "expected_median", "expected_mean", "hist_p25", "hist_p75",
     "n_analogues", "sentiment", "confidence", "directional",
-    # colonne riempite in evaluate:
-    "anchor_date", "realized_return", "in_iqr", "hit_dir", "abs_error", "eval_date",
+    "card_sha", "recorded_at", "revised_at",
+    # colonne riempite in evaluate (congelate):
+    "anchor_date", "anchor_price", "target_date", "target_price",
+    "realized_return", "in_iqr", "hit_dir", "abs_error", "eval_date",
 ]
 
-KEY = ("made_date", "slug", "asset", "horizon")
+# Colonne che una correzione della scheda puo' aggiornare finche' la riga e' pendente.
+MADE_FIELDS = ["uso", "expected_median", "expected_mean", "hist_p25", "hist_p75",
+               "n_analogues", "sentiment", "confidence", "directional"]
+
+DECL_RE = re.compile(r"\[\s*(previsione|descrittiva|scenario\s*:\s*([^\]]+?))\s*\]", re.I)
 
 
 # --- Parsing delle schede --------------------------------------------------
@@ -145,6 +170,14 @@ def parse_card(path: Path) -> list[dict]:
         if not mt:
             continue
         ticker = mt.group(1).strip()
+        heading = blk.strip().splitlines()[0]
+        md = DECL_RE.search(heading)
+        if not md:
+            uso, scenario = "", "base"
+        elif md.group(2):
+            uso, scenario = "scenario", re.sub(r"\s+", "-", md.group(2).strip().lower())
+        else:
+            uso, scenario = md.group(1).lower(), "base"
 
         lines = blk.splitlines()
         # header con gli orizzonti
@@ -181,6 +214,8 @@ def parse_card(path: Path) -> list[dict]:
                 "card_path": rel_path,
                 "asset": ticker,
                 "horizon": hz,
+                "scenario": scenario,
+                "uso": uso,
                 "expected_median": median,
                 "expected_mean": mean,
                 "hist_p25": p25,
@@ -190,6 +225,8 @@ def parse_card(path: Path) -> list[dict]:
                 "confidence": confidence,
                 "directional": 1 if abs(median) >= FLAT_THRESHOLD else 0,
             })
+    for e in entries:
+        e["forecast_id"] = _key(e)
     return entries
 
 
@@ -210,13 +247,19 @@ def load_ledger() -> list[dict]:
     if not LEDGER_PATH.exists():
         return []
     with LEDGER_PATH.open(newline="", encoding="utf-8") as fp:
-        return list(csv.DictReader(fp))
+        rows = list(csv.DictReader(fp))
+    # Righe precedenti a R09: nessuno scenario = tabella principale. Cosi' la
+    # loro chiave coincide con quella che la stessa scheda produce oggi.
+    for r in rows:
+        r["scenario"] = r.get("scenario") or "base"
+        r["forecast_id"] = r.get("forecast_id") or _key(r)
+    return rows
 
 
 def write_ledger(rows: list[dict]) -> None:
     LEDGER_PATH.parent.mkdir(parents=True, exist_ok=True)
     def sort_key(r):
-        return (r["made_date"], r["slug"], r["asset"], int(r["horizon"]))
+        return (r["made_date"], r["slug"], r["asset"], r["scenario"], int(r["horizon"]))
     rows = sorted(rows, key=sort_key)
     with LEDGER_PATH.open("w", newline="", encoding="utf-8") as fp:
         w = csv.DictWriter(fp, fieldnames=FIELDS)
@@ -225,27 +268,80 @@ def write_ledger(rows: list[dict]) -> None:
             w.writerow({k: r.get(k, "") for k in FIELDS})
 
 
-def _key(r: dict) -> tuple:
-    return (str(r["made_date"]), str(r["slug"]), str(r["asset"]), str(r["horizon"]))
+def _key(r: dict) -> str:
+    """forecast_id: una previsione = scheda × asset × scenario × orizzonte."""
+    return (f"{r['made_date']}/{r['slug']}/{r['asset']}/"
+            f"{r.get('scenario') or 'base'}/T+{r['horizon']}")
+
+
+def _sha(path: Path) -> str:
+    return hashlib.sha256(path.read_bytes()).hexdigest()[:12]
 
 
 # --- Sottocomandi ----------------------------------------------------------
 
 def cmd_backfill() -> None:
     existing = load_ledger()
-    seen = {_key(r) for r in existing}
-    added = 0
+    by_card: dict = {}
+    for r in existing:
+        by_card.setdefault(r["card_path"], []).append(r)
+    seen = {r["forecast_id"] for r in existing}
+    today = date.today().isoformat()
+    added = updated = frozen = withdrawn = undeclared = 0
+
     for card in discover_cards():
-        for e in parse_card(card):
+        entries = parse_card(card)
+        sha = _sha(card)
+        new = {}
+        for e in entries:
+            if e["forecast_id"] in new:
+                # Stesso asset/scenario due volte: vince la prima (come prima di
+                # R09). Nelle schede nuove va dichiarato lo scenario.
+                if e["uso"]:
+                    print(f"[backfill] ⚠ {e['card_path']}: tabella {e['asset']} "
+                          f"ripetuta senza scenario distinto → tenuta la prima")
+                continue
+            new[e["forecast_id"]] = e
+
+        # Righe gia' registrate di questa scheda: correzione o no?
+        for r in by_card.get(str(card.relative_to(DAILY_DIR)), []):
+            if not r.get("card_sha"):
+                r["card_sha"] = sha      # riga pre-R09: questa e' la versione di riferimento
+                continue
+            if r["card_sha"] == sha:
+                continue
+            if r.get("realized_return"):
+                # Gia' valutata: il track record non si riscrive, si marca.
+                if not r.get("revised_at"):
+                    r["revised_at"] = today
+                    frozen += 1
+                continue
+            e = new.get(r["forecast_id"])
+            if e is None:
+                r["uso"] = "ritirata"
+                withdrawn += 1
+            else:
+                for k in MADE_FIELDS:
+                    r[k] = e[k]
+                updated += 1
+            r["card_sha"], r["revised_at"] = sha, today
+
+        for fid, e in new.items():
+            if fid in seen:
+                continue
             for k in FIELDS:
                 e.setdefault(k, "")
-            if _key(e) not in seen:
-                existing.append(e)
-                seen.add(_key(e))
-                added += 1
+            e["card_sha"], e["recorded_at"] = sha, today
+            existing.append(e)
+            seen.add(fid)
+            added += 1
+            undeclared += not e["uso"]
+
     write_ledger(existing)
-    print(f"[backfill] schede scansionate, righe nel ledger: {len(existing)} "
-          f"(+{added} nuove). File: {LEDGER_PATH}")
+    print(f"[backfill] righe nel ledger: {len(existing)} (+{added} nuove, di cui "
+          f"{undeclared} senza dichiarazione d'uso). Schede corrette: {updated} righe "
+          f"pendenti aggiornate, {withdrawn} ritirate, {frozen} gia' valutate "
+          f"lasciate congelate. File: {LEDGER_PATH}")
 
 
 def cmd_evaluate() -> None:
@@ -293,7 +389,11 @@ def cmd_evaluate() -> None:
             p75 = float(r["hist_p75"]) if r.get("hist_p75") not in ("", None) else None
             med = float(r["expected_median"]) if r.get("expected_median") not in ("", None) else None
 
+            t = pe["targets"][hz]
             r["anchor_date"] = pe["anchor_date"].isoformat()
+            r["anchor_price"] = f"{pe['anchor_price']:.6g}"
+            r["target_date"] = t["target_date"].isoformat()
+            r["target_price"] = f"{t['target_price']:.6g}"
             r["realized_return"] = f"{realized:.4f}"
             if p25 is not None and p75 is not None:
                 lo, hi = min(p25, p75), max(p25, p75)
@@ -464,7 +564,10 @@ def _write_scorecard_html(md_text: str, md_path: Path, label: str) -> Path:
 
 
 def cmd_scorecard(open_browser: bool = False) -> None:
-    rows = [r for r in load_ledger() if r.get("realized_return")]
+    matured = [r for r in load_ledger()
+               if r.get("realized_return") and r.get("uso") != "ritirata"]
+    # Sezioni 1–6: una tabella principale per asset e scheda, come prima di R09.
+    rows = [r for r in matured if r.get("uso") != "scenario"]
     SCORECARD_DIR.mkdir(parents=True, exist_ok=True)
     iso_year, iso_week, _ = date.today().isocalendar()
     out_path = SCORECARD_DIR / f"{iso_year}-W{iso_week:02d}.md"
@@ -541,6 +644,29 @@ def cmd_scorecard(open_browser: bool = False) -> None:
     L.append("")
     L.append("> Legenda semaforo: ✅ buono · ⚠️ da monitorare · ❌ scarso. "
              "Le tabelle sotto spaccano gli stessi numeri per orizzonte temporale.\n")
+
+    # 0-bis) Cosa la scheda dichiarava di prevedere (R09). Tutte le tabelle mature,
+    # scenari inclusi, divise per uso dichiarato nel titolo.
+    L.append("## 0-bis. Previsioni attive e tabelle descrittive _(uso dichiarato)_\n")
+    L.append("**Come si legge:** dal 2026-09-23 ogni tabella dichiara se la scheda ci "
+             "costruisce una previsione, la riporta solo come descrizione (segno "
+             "dichiarato inaffidabile) o è uno scenario alternativo. Se dichiarare "
+             "funziona, le **previsioni attive** devono andare meglio delle descrittive. "
+             "Le righe precedenti sono «non dichiarate». Le sezioni 1–6 restano su "
+             "tutte le tabelle principali, scenari esclusi.\n")
+    L.append("| Uso | Copertura | Hit-rate | N |")
+    L.append("|---|---|---|---|")
+    for uso, label in [("previsione", "previsione attiva"), ("descrittiva", "descrittiva"),
+                       ("scenario", "scenario alternativo"), ("", "non dichiarata")]:
+        sub = [r for r in matured if (r.get("uso") or "") == uso]
+        if not sub:
+            continue
+        cov_sub = [int(r["in_iqr"]) for r in sub if r.get("in_iqr") not in ("", None)]
+        hit_sub = [int(r["hit_dir"]) for r in sub if r.get("hit_dir") not in ("", None)]
+        cov = sum(cov_sub) / len(cov_sub) if cov_sub else None
+        hit = sum(hit_sub) / len(hit_sub) if hit_sub else None
+        L.append(f"| {label} | {_pct(cov)} | {_pct(hit)} | {len(sub)} |")
+    L.append("")
 
     # 1) COPERTURA (faro): % di realizzati dentro [p25, p75]; ideale ~50%.
     L.append("## 1. Quanto spesso il risultato è caduto nella banda storica "
@@ -758,6 +884,44 @@ def cmd_scorecard(open_browser: bool = False) -> None:
         subprocess.run(["open", str(html_path)], check=False)
 
 
+def cmd_recheck() -> None:
+    """Ricalcolo su dati revisionati: confronta il realizzato congelato con quello
+    che il DB darebbe oggi. Non scrive nulla: il ledger resta il track record."""
+    rows = [r for r in load_ledger() if r.get("realized_return")]
+    conn = sqlite3.connect(DB_PATH)
+    cache: dict = {}
+    diffs, n = [], 0
+    try:
+        for r in rows:
+            ckey = (r["asset"], r["made_date"])
+            if ckey not in cache:
+                try:
+                    res = compute_returns(conn, r["asset"],
+                                          [date.fromisoformat(r["made_date"])], [1, 3, 5, 10])
+                    cache[ckey] = res["per_event"][0] if res["per_event"] else None
+                except ValueError:
+                    cache[ckey] = None
+            pe = cache[ckey]
+            now = pe["returns"].get(int(r["horizon"])) if pe else None
+            if now is None:
+                continue
+            n += 1
+            d = now - float(r["realized_return"])
+            if abs(d) >= 0.01:
+                t = pe["targets"][int(r["horizon"])]
+                diffs.append((abs(d), r, now, pe["anchor_date"].isoformat(),
+                              t["target_date"].isoformat()))
+    finally:
+        conn.close()
+    print(f"[recheck] ricalcolate {n} righe valutate: {len(diffs)} differiscono "
+          f"di almeno 0,01 punti dal valore congelato.")
+    for _, r, now, anc, tgt in sorted(diffs, key=lambda x: -x[0])[:15]:
+        congelate = (f"ancora {r['anchor_date']} → {r.get('target_date') or '?'}"
+                     if r.get("target_date") else "date non registrate (pre-R09)")
+        print(f"  {r['forecast_id']}: congelato {float(r['realized_return']):+.2f}% "
+              f"({congelate}) · oggi {now:+.2f}% (ancora {anc} → {tgt})")
+
+
 def cmd_run() -> None:
     cmd_backfill()
     cmd_evaluate()
@@ -773,13 +937,14 @@ def main():
     sc.add_argument("--open", action="store_true",
                     help="Apre la scorecard HTML nel browser (macOS)")
     sub.add_parser("run", help="backfill + evaluate + scorecard (job settimanale)")
+    sub.add_parser("recheck", help="ricalcola le righe valutate sul DB attuale (sola lettura)")
     args = p.parse_args()
 
     if args.cmd == "scorecard":
         cmd_scorecard(open_browser=args.open)
     else:
         {"backfill": cmd_backfill, "evaluate": cmd_evaluate,
-         "run": cmd_run}[args.cmd]()
+         "run": cmd_run, "recheck": cmd_recheck}[args.cmd]()
 
 
 if __name__ == "__main__":

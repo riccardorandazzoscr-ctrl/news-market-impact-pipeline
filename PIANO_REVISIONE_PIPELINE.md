@@ -466,21 +466,26 @@ Il più invasivo: chiavi, matching e migrazione dati.
 
 ---
 
-## [ ] Run 7 — Forecast identificate
+## [x] Run 7 — Forecast identificate — FATTO — 2026-09-23
 **ID report:** R09
-**Modello:** Opus 5 · effort medium
+**Modello:** Opus 5 · effort medium (eseguito su Opus 5.5)
 
 Logica chiara, vincolo delicato: **non riscrivere il track record già registrato.**
 
-- [ ] `forecast_tracking.parse_card` (riga ~119): acquisire una dichiarazione esplicita
+- [x] `forecast_tracking.parse_card` (riga ~119): acquisire una dichiarazione esplicita
       «previsione attiva» / «solo statistica descrittiva» / «scenario alternativo».
       Oggi ogni mediana di tabella diventa una previsione, anche quando il runbook dice di no.
-- [ ] Chiave del ledger (riga ~228): aggiungere **scenario** e `forecast_id`. Oggi due tabelle
+- [x] Chiave del ledger (riga ~228): aggiungere **scenario** e `forecast_id`. Oggi due tabelle
       dello stesso asset/orizzonte con mediane opposte collidono e vince la prima.
-- [ ] Salvare prezzi e date target usati, più la versione della scheda: oggi le valutazioni
+- [x] Salvare prezzi e date target usati, più la versione della scheda: oggi le valutazioni
       non sono riproducibili.
-- [ ] Separare valutazione **congelata** al momento e **ricalcolo** su dati revisionati.
-- [ ] Una correzione della scheda deve aggiornare la registrazione, non essere ignorata.
+- [x] Separare valutazione **congelata** al momento e **ricalcolo** su dati revisionati.
+- [x] Una correzione della scheda deve aggiornare la registrazione, non essere ignorata.
+
+**Note di chiusura:**
+- L'uso si dichiara nel titolo della tabella: `[previsione]` / `[descrittiva]` / `[scenario: nome]`; `forecast_id` = data/slug/asset/scenario/T+h. Le righe vecchie restano
+  «non dichiarate», scenario `base`: su una copia del ledger nessuna delle righe esistenti cambia, stesse righe aggiunte, scorecard identica salvo la nuova sezione 0-bis.
+- Correzione della scheda (sha diverso): riga pendente aggiornata o `ritirata`, riga valutata congelata con `revised_at`. ⚠ La registrazione avviene al backfill del lunedì, non quando la scheda viene scritta. Suite: `test_forecast_tracking.py`.
 
 ---
 
@@ -546,6 +551,10 @@ divergenze e aspetta, non decide da solo.
 ---
 
 ## Non pianificati — da rivalutare, NON da anticipare
+
+- **Valutazioni congelate che il DB di oggi non riproduce** (emerso nel Run 7): `forecast_tracking.py recheck` trova una parte consistente delle righe
+  valutate con uno scarto di almeno 0,5 punti, con cambio di segno, concentrate sui futures (GC=F, BZ=F, HO=F, CRACK_321). Prima capire se ha ragione
+  il valore congelato o il DB (roll dei continui? correzioni del Run 2?), poi eventualmente decidere. Il ledger non va riscritto.
 
 - **Episodi senza evento in libreria** (emerso nel Run 5d): date citate in prosa dalle research libere
   (note tecniche, date di scrittura) e date scelte per il movimento di prezzo («rout», «10Y al 5%»,

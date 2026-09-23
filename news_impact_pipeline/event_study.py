@@ -173,7 +173,8 @@ def compute_returns(conn, ticker: str, event_dates: list[date],
         "warnings":     list[str],
         "is_monthly":   bool,
         "per_event":    [ {event_date, anchor_date, anchor_price,
-                            returns: {N: pct, ...}, skipped_windows: [N, ...]},
+                            returns: {N: pct, ...}, targets: {N: {target_date,
+                            target_price}}, skipped_windows: [N, ...]},
                            ...],
         "skipped_events": [ {event_date, reason}, ... ],
       }
@@ -226,6 +227,7 @@ def compute_returns(conn, ticker: str, event_dates: list[date],
             "anchor_date":    info["anchor_date"],
             "anchor_price":   info["anchor_price"],
             "returns":        returns,
+            "targets":        info["windows"],   # {N: {target_date, target_price}}
             "skipped_windows": skipped_windows,
         })
 

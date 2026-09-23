@@ -8,6 +8,7 @@
 #   ./run_tests.sh stato        # solo le sei fasi di completamento della giornata
 #   ./run_tests.sh watchdog     # solo il tetto di durata e il lock
 #   ./run_tests.sh analogues    # solo il filtro sotto-tema di analogues.py
+#   ./run_tests.sh forecast     # solo ledger delle previsioni (R09)
 #   ./run_tests.sh usage        # solo il parser dei consumi del run headless
 #   ./run_tests.sh prezzi       # solo finestra, stato della barra e diagnosi serie
 #   ./run_tests.sh brief        # solo il job che produce il briefing (07:40)
@@ -51,6 +52,10 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "stato" ] && \
   run "stato giornata — le sei fasi, il riuso delle schede, la ricevuta di consegna" \
       tests/test_stato_giornata.py
+
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "forecast" ] && \
+  run "forecast — uso dichiarato, scenario, correzioni e valutazione congelata (R09)" \
+      tests/test_forecast_tracking.py
 
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "usage" ] && \
   run "consumi — parser del grezzo di claude -p" tests/test_record_usage.py

@@ -122,6 +122,17 @@ venv/bin/python event_study.py \
 <!-- Incolla qui l'output --markdown di event_study.py.
      Il sistema flagga automaticamente "INDICATIVE ONLY" se N<10. -->
 
+**Dichiara l'uso di ogni tabella** (obbligatorio dal 2026-09-23): in fondo al titolo
+`### Event study — `TICKER`` aggiungi **una** di queste marche. Le legge
+`forecast_tracking.py`: senza marca la tabella resta «non dichiarata» nella scorecard.
+
+- `[previsione]` — ci costruisci sopra la lettura direzionale della scheda.
+- `[descrittiva]` — la riporti, ma dichiari il segno storico inaffidabile (sezione
+  5-bis della scorecard) o non ne trai una direzione.
+- `[scenario: nome-breve]` — tabella alternativa dello stesso asset (secondo pool,
+  sotto-campione). Obbligatoria quando un asset compare in più tabelle: il nome
+  distingue le previsioni, altrimenti la seconda tabella viene ignorata.
+
 _Incolla qui le tabelle generate._
 
 ---
