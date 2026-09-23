@@ -33,26 +33,23 @@ processare il morning briefing del giorno e produrre le schede di analisi.
 
 ## Economia del run (VINCOLANTE — leggi prima di iniziare)
 
-Misurato il 2026-08-21 sui transcript delle sessioni: **il costo di un run cresce
-col quadrato del numero di turni**, perché a ogni chiamata di tool l'intero
-contesto accumulato viene riletto. Un blocco da 20 KB scritto al turno 20 viene
-ripagato su tutti i turni successivi. Dati reali: 55 turni → $23; 96 turni → $36;
-115 turni → $44; 134 turni → $53. Il cache-read è l'85% della spesa.
+Il costo di un run cresce **col quadrato del numero di turni**: ogni chiamata di
+tool rilegge l'intero contesto accumulato, e il cache-read è l'85% della spesa.
+Non si risparmia scrivendo di meno o peggio, si risparmia **facendo meno giri**.
+Misure, cronologia degli interventi e proposte aperte:
+[references/economia_del_run.md](../references/economia_del_run.md).
 
-Non si risparmia scrivendo di meno o peggio. Si risparmia **facendo meno giri**.
 Tre regole, in ordine di impatto:
 
 1. **Il CONTENUTO di ogni file lo scrivi UNA VOLTA SOLA, in un unico passaggio.**
    Questo non vieta lo scaffold deterministico (`new-card` crea `news_NN.md`
    pre-popolato di placeholder in un proprio passaggio, separato): vieta di
-   rigenerare il corpo a pezzi, sezione per sezione, turno dopo turno. Il 21/08 sono
-   servite 43 chiamate di scrittura per 9 file (`_index.md` riscritto 7 volte,
-   `news_01.md` 7 volte, `news_03.md` 7 volte), ognuna rigenerando il corpo intero
-   via heredoc. Prima di scrivere una scheda, **raccogli tutto**: pool di episodi
-   potato, event study, research KB, sezione 5-bis della scorecard. Poi riempi lo
-   scaffold con un solo Edit che sostituisce tutti i placeholder in blocco. Se dopo
-   devi correggere, altro Edit chirurgico sulla stringa da cambiare — mai un heredoc
-   che rigenera il corpo.
+   rigenerare il corpo a pezzi, sezione per sezione, turno dopo turno. Prima di
+   scrivere una scheda, **raccogli tutto**: pool di episodi potato, event study,
+   research KB, sezione 5-bis della scorecard. Poi riempi lo scaffold con un solo
+   Edit che sostituisce tutti i placeholder in blocco. Se dopo devi correggere,
+   altro Edit chirurgico sulla stringa da cambiare — mai un heredoc che rigenera
+   il corpo.
 2. **Non rileggere ciò che hai appena scritto per certificarla tu.** Niente
    `cat`/`sed -n` sulla scheda che hai appena generato: se la scrittura non fosse
    riuscita avresti avuto un errore. Questo non vuol dire "nessuna verifica di
@@ -60,8 +57,7 @@ Tre regole, in ordine di impatto:
    strutturali a valle (`run_daily_analysis.sh`, le sei fasi di `stato_giornata.py`)
    controllano corrispondenza con le notizie in ingresso, esistenza delle schede e
    link, dopo che il run è finito.
-3. **Non lanciare `--help`.** I flag che servono sono documentati sotto. Il 21/08 se
-   ne sono andati 10 KB di contesto in `--help` di comandi usati ogni giorno.
+3. **Non lanciare `--help`.** I flag che servono sono documentati sotto.
 
 Nessuna di queste regole tocca il contenuto delle schede: stesso output, meno giri.
 
@@ -152,25 +148,18 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
 
    **Scegli il token guardando la copertura, non l'intuito**: `analogues.py labels
    --theme <theme>` stampa, per tema, quanti episodi ha ciascuna etichetta a livello date-locale
-   (filtro forte) e a livello di documento (debole). Serve perché il token
-   *concettualmente* ovvio non è sempre quello con copertura: su `monetary_policy`
-   il canale primario è `rate_decision`, ma fino al 2026-08-16 quel token restituiva
-   **0** episodi date-locali mentre `guidance_pivot` ne aveva 31. Se un token che ti
-   serve ha copertura zero o quasi, il rimedio è aggiungere pattern in
-   `subtheme_taxonomy.yaml` e rilanciare `build` — **ricalibrandoli sui contesti
-   reali**, non a memoria: le schede scrivono in inglese tecnico (`FOMC`, `75bp`,
-   `dot plot`), non in italiano.
+   (filtro forte) e a livello di documento (debole). Il token *concettualmente* ovvio
+   non è sempre quello con copertura. Se un token che ti serve ha copertura zero o
+   quasi, il rimedio è aggiungere pattern in `subtheme_taxonomy.yaml` e rilanciare
+   `build` — **ricalibrandoli sui contesti reali**, non a memoria: le schede scrivono
+   in inglese tecnico (`FOMC`, `75bp`, `dot plot`), non in italiano.
 
-   ⚠ **Distingui «copertura assente» da «copertura sotto soglia»** (regola aggiunta
-   il 2026-08-27). Il degrado al pool del tema ha due cause diverse e il rimedio
-   non è lo stesso. La riga di diagnostica ora stampa entrambi i conteggi: se dice
-   «N episodi date-locali … <`--min-n`» con N>0, la tassonomia **funziona** e il
-   pool stretto esiste — rilancia con `--min-n N` e dichiara nel caveat che il
-   campione è piccolo, invece di riclassificare la notizia sotto un altro tema per
-   trovare episodi. Il 26/08 `macro_data + tariff_escalation` aveva **11** episodi
-   date-locali contro una soglia di 12: il vecchio messaggio mostrava solo lo zero
-   del livello documento, la notizia sui dazi è finita sotto `geopolitical` e
-   l'analisi ha registrato una lacuna di tassonomia inesistente. Aggiungere pattern
+   ⚠ **Distingui «copertura assente» da «copertura sotto soglia»**: hanno rimedi
+   diversi (dettaglio e caso reale: [references/etichette_date_locali.md](../references/etichette_date_locali.md)).
+   Se la diagnostica dice «N episodi date-locali … <`--min-n`» con N>0, la
+   tassonomia **funziona** e il pool stretto esiste — rilancia con `--min-n N` più
+   basso e dichiara nel caveat che il campione è piccolo, invece di riclassificare
+   la notizia sotto un altro tema. Aggiungere pattern in `subtheme_taxonomy.yaml`
    serve solo quando il conteggio date-locale è davvero **0**.
    Usa quel pool come set di analoghi (puoi **potare** gli episodi palesemente non
    pertinenti). Se il pool è troppo piccolo, integra a mano (Opzione A). Poi calcola
@@ -199,28 +188,26 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
    automaticamente le etichette legacy. Il registro
    `knowledge_base/_direction_reviews.yaml` conserva scheda d'origine, asset e
    motivazione. Il `build` incorpora anche i veti: una data dubbia resta esclusa
-   pur se una scheda recente le attribuiva un verso. Al 13/09 sono stati esaminati
-   gli episodi dichiarati di energia per `BZ=F` e quelli regolatori per `^GSPC`;
-   gli altri temi restano privi di verso verificato per asset.
+   pur se una scheda recente le attribuiva un verso. Quali temi hanno già una
+   revisione (cresce col recupero delle research): comando in
+   [references/etichette_date_locali.md](../references/etichette_date_locali.md), non
+   un elenco fisso qui — è già stato sbagliato una volta.
    Per confrontare altri asset puoi usare lo stesso evento, ma non attribuire loro
    il verso del riferimento senza una classificazione separata.
 
-   ⚠ **Dichiara la geografia sulle release non americane** (dal 2026-08-26): se
-   l'episodio è un dato o una decisione dell'**area euro** o del **Regno Unito**,
-   metti `eurozone_release` / `britain_release` fra i meccanismi. I due token esistono in
-   tassonomia, ma l'euristica sul testo produce falsi positivi (le righe corte
-   assorbono le righe vicine, così un payroll USA che cita la reazione del cambio
-   può risultare europeo): **solo il campo dichiarato è affidabile**. Il costo del
-   non farlo è misurato: il 25/08 il pool `pmi` era in larga parte americano e su
-   EURUSD=X dava il segno **sbagliato** dopo un dato europeo debole.
+   ⚠ **Dichiara la geografia sulle release non americane**: se l'episodio è un dato
+   o una decisione dell'**area euro** o del **Regno Unito**, metti
+   `eurozone_release` / `britain_release` fra i meccanismi. L'euristica sul testo
+   produce falsi positivi (dettaglio e caso reale:
+   [references/etichette_date_locali.md](../references/etichette_date_locali.md)):
+   **solo il campo dichiarato è affidabile**.
 
    **Nella prosa, nomina comunque il VERSO e il MECCANISMO, non solo il fatto.** La
    libreria costruisce le etichette date-locali dal testo *attorno alla data*: se
    la riga dice solo «2017-12-22 — Trump firma il TCJA», l'episodio nasce senza
    etichetta di canale. Scrivendo «…TCJA: espansione fiscale non finanziata →
-   premio a termine» l'episodio diventa pescabile. Misurato il 2026-08-18: il
-   vocabolario del premio a termine compare 144 volte nelle schede ma solo 5 volte
-   vicino a una data, ed è il motivo per cui `term_premium` è inutilizzabile.
+   premio a termine» l'episodio diventa pescabile (caso reale — `term_premium`:
+   [references/etichette_date_locali.md](../references/etichette_date_locali.md)).
 
    ⚠ **Segno misto sui bond.** `^TNX` e `^TYX` sono **rendimenti** (salgono nel
    selloff); `IGLT.L`, `1482.T`, `VGB.AX`, `EXX6.DE`, `IEF` sono **prezzi** (scendono

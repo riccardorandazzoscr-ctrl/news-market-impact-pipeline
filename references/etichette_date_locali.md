@@ -9,10 +9,17 @@ sono esclusi, così come etichette senza riferimento. Nessun fallback direzional
 per raggiungere min_n. Per i sotto-temi rimangono le regole di fallback descritte sotto.
 Il registro `knowledge_base/_direction_reviews.yaml` conserva decisioni, scheda
 d'origine e motivazione. `direction_review_excluded` è un veto per date con eventi
-incompatibili, datazione dubbia o trasmissione non univoca all'asset. Sono stati
-esaminati gli episodi dichiarati `commodity_energy` per Brent (`BZ=F`) e
-`regulatory` per S&P 500 (`^GSPC`); gli altri temi restano senza classificazione
-direzionale per asset finché non vengono esaminati allo stesso modo.
+incompatibili, datazione dubbia o trasmissione non univoca all'asset. Quali temi
+hanno già una revisione (cresce col recupero delle research, vedi Run 5c/5d in
+`PIANO_REVISIONE_PIPELINE.md`) — non fidarti di un elenco scritto qui, è già stato
+sbagliato una volta:
+```bash
+news_impact_pipeline/venv/bin/python -c "
+import yaml
+from collections import Counter
+d = yaml.safe_load(open('knowledge_base/_direction_reviews.yaml'))
+print(Counter(r.get('theme') for r in d['reviews']).most_common())"
+```
 
 **Il seguito documenta il comportamento storico, superato per la direzione.**
 
@@ -167,6 +174,32 @@ passa da mediana 2024-09-23 a 2022-10-31; `iran + sanctions` da 2025-01-15 a 202
 **regime**, che è esattamente ciò contro cui il cap è stato introdotto. Con `--match-all`
 controlla sempre l'estensione temporale del pool, e se scavalca un cambio di regime
 dichiaralo nel caveat o stringi con `--before`.
+
+## Copertura dei sotto-temi: tre difetti misurati
+
+**Il token concettualmente ovvio non è sempre quello con copertura** (misurato il
+2026-08-16). Su `monetary_policy` il canale primario sembra `rate_decision`, ma
+quel token restituiva **0** episodi date-locali mentre `guidance_pivot` ne aveva
+**31**. Controlla sempre con `analogues.py labels --theme <t>` prima di scegliere,
+non a intuito.
+
+**«Copertura assente» e «copertura sotto soglia» hanno rimedi diversi** (regola
+aggiunta il 2026-08-27). Se la diagnostica dice «N episodi date-locali … <`--min-n`»
+con N>0, la tassonomia **funziona** e il pool stretto esiste davvero: si rilancia
+con `--min-n N` più basso e si dichiara nel caveat che il campione è piccolo. Il
+vecchio messaggio mostrava solo lo zero a livello documento — così il 26/08
+`macro_data + tariff_escalation`, che aveva **11** episodi date-locali contro una
+soglia di 12, è finito riclassificato sotto `geopolitical`, registrando una lacuna
+di tassonomia che non esisteva. Aggiungere pattern in `subtheme_taxonomy.yaml`
+serve solo quando il conteggio date-locale è davvero **0**.
+
+**Nominare VERSO e MECCANISMO vicino alla data, non solo il fatto** (misurato il
+2026-08-18). Le etichette date-locali si costruiscono dal testo *attorno alla
+data*: «2017-12-22 — Trump firma il TCJA» non produce etichetta di canale, mentre
+«…TCJA: espansione fiscale non finanziata → premio a termine» la rende pescabile.
+Il vocabolario del premio a termine compariva 144 volte nelle schede ma solo 5
+volte vicino a una data — per questo `term_premium` era inutilizzabile prima
+della correzione.
 
 ## Trappole note
 

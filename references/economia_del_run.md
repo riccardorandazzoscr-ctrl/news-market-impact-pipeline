@@ -39,8 +39,11 @@ Nessuno tocca il contenuto delle schede.
    funzionare.
 3. **Sezione "Economia del run" vincolante nel runbook**: scrivi ogni file in un
    passaggio solo; Edit chirurgico per le correzioni; niente riletture di ciò che hai
-   appena scritto; niente `--help`. Più una **"Riferimento comandi"** che documenta i
-   flag — il 21/08 se ne andavano 10 KB di contesto in `--help` di comandi quotidiani.
+   appena scritto; niente `--help`. Il 21/08 sono servite 43 chiamate di scrittura per
+   9 file (`_index.md` riscritto 7 volte, `news_01.md` 7 volte, `news_03.md` 7 volte),
+   ognuna rigenerando il corpo intero via heredoc; nello stesso run se ne andavano 10 KB
+   di contesto in `--help` di comandi usati ogni giorno. Più una **"Riferimento
+   comandi"** che documenta i flag, per non doverli più chiedere.
 4. **Elenco asset rimosso** dal runbook e dal prompt del wrapper, dov'era duplicato e
    stale (diceva "46 asset" con 66 in DB). Fonte unica: `category_asset_map.yaml`.
    Era proprio la copia stale a costringere l'agente a rileggere lo YAML ogni mattina.

@@ -577,7 +577,7 @@ al **Run 9b**, sotto: dimensione diversa, Riccardo ha chiesto di non allargare q
   la riscrive nel DB da lì a ogni run, una patch diretta sul DB non sarebbe durata.
 - Verifica standard verde; `bash -n`/`py_compile` sui file shell/Python toccati.
 
-## [ ] Run 9b — Istruzioni canoniche (parte 2/2: ristrutturazione)
+## [x] Run 9b — Istruzioni canoniche (parte 2/2: ristrutturazione) — FATTO — 2026-09-23
 **ID report:** R13 (resto)
 **Modello:** Sonnet 5 · effort medium
 **Precondizione:** nessuna, ma è la parte grossa che il Run 9 ha scelto di non affrontare
@@ -585,11 +585,47 @@ nella stessa sessione (decisione di Riccardo il 2026-09-23).
 
 Stessa regola del Run 9: **le scelte le fa Riccardo**, questo run presenta e aspetta.
 
-- [ ] Una specifica operativa canonica; prompt dei task brevi che la referenziano; template
+- [x] Una specifica operativa canonica; prompt dei task brevi che la referenziano; template
       compatibili; controlli generati dallo stesso contratto.
-- [ ] Spostare cronologie e post-mortem **fuori** dai file caricati a ogni run (es. i numeri
+- [x] Spostare cronologie e post-mortem **fuori** dai file caricati a ogni run (es. i numeri
       del 21/08 dentro "Economia del run" in `PHASE5_RUNBOOK.md`, riletti ogni mattina).
-- [ ] Separare regole editoriali, parametri e spiegazioni storiche.
+- [x] Separare regole editoriali, parametri e spiegazioni storiche.
+
+**Note di chiusura:**
+- **Ampiezza** (decisione di Riccardo): **solo il cleanup meccanico**, niente nuova
+  infrastruttura di "contratto comune" con generatori di prompt/controlli — nessun
+  problema concreto residuo lo richiedeva dopo il Run 9, e sarebbe stata speculativa
+  (YAGNI). L'unica voce del checklist di questo tipo si chiude constatandolo, non
+  costruendo.
+- **Cronologie fuori dai file caricati ogni run**: `PHASE5_RUNBOOK.md` "Economia del
+  run" non ripete più tabella costi e aneddoti (43 scritture/9 file, 10 KB di `--help`
+  il 21/08) — restano solo in `references/economia_del_run.md`, dove l'intervento che
+  li giustifica era già documentato (li ho aggiunti lì per non perderli). Tre aneddoti
+  esistevano **solo** dentro il runbook (guidance_pivot vs rate_decision 16/08,
+  soglia copertura tariff_escalation 27/08, vocabolario term_premium 18/08): spostati
+  in una nuova sezione di `references/etichette_date_locali.md` ("Copertura dei
+  sotto-temi: tre difetti misurati"), che tratta già esattamente questo genere di
+  calibrazione. Un quarto aneddoto (pool `pmi`/EURUSD del 25/08) era **triplicato**
+  verbatim in `PHASE5_RUNBOOK.md`, `news_card_template.md` e già in
+  `etichette_date_locali.md`: le prime due copie ridotte a un rimando, la terza
+  (in `etichette_date_locali.md`) resta l'unica fonte.
+- **Dato che cambia scritto a mano invece del comando** (scoperto durante il
+  riordino, stessa classe di difetto già corretta nel Run 9 per la descrizione
+  `ASSETS`): sia `PHASE5_RUNBOOK.md` sia `references/etichette_date_locali.md`
+  affermavano "sono stati esaminati gli episodi di energia per BZ=F e regolatori
+  per ^GSPC, gli altri temi restano privi" — falso da tempo: il Run 5d ha recuperato
+  6 temi (`macro_data` 186, `geopolitical` 143, `monetary_policy` 109,
+  `commodity_energy` 99, `fiscal_policy` 48, `regulatory` 19 revisioni). Sostituito
+  in entrambi i file con il comando che lo legge dal registro vivo, invece di un
+  secondo elenco da tenere sincronizzato a mano.
+- **Non toccato**: gli aneddoti rimasti (elenco asset "46 vs 66", correzione
+  `_prompts/` del 18/08, W28→W30) sono un inciso di una riga ciascuno — già al livello
+  di sintesi che il resto del runbook usa, spostarli avrebbe reso il riordino stesso
+  un costo senza guadagno leggibile. `PHASE6_RUNBOOK.md` non aveva narrazioni datate:
+  nessuna modifica.
+- Verifica standard verde; comando sostitutivo dello stato stale testato
+  (`_direction_reviews.yaml` → 6 temi, non 2); link relativi ai due file di
+  reference verificati (`test -f`).
 
 ---
 
