@@ -1,0 +1,1024 @@
+research: 'Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+  geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+  mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+  Unito (2007–2026).md'
+voci:
+- riga: '|2008-10-08|Taglio coordinato 50 pb (Fed, BCE, BoE, BoC, Riksbank, SNB)            |sincronizzato|easing_prezzato    |equity
+    su atteso, realizzato debole|^GSPC, ^STOXX50E, DX-Y.NYB, EXX6.DE      |Crisi acuta; equity europee
+    su poi giù, Wall Street aprì in calo malgrado il taglio                                                                  |'
+  data: '2008-10-08'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - DX-Y.NYB
+  - EXX6.DE
+  - ^GSPC
+  - ^STOXX50E
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: 'Prima del 2011: il DB prezzi non copre la data, l''event study non è calcolabile.'
+- riga: '|2008-12-05|Payroll novembre −533k (peggiore dal 1974)                             |USA          |easing_prezzato    |equity
+    giù, rendimenti giù         |^GSPC, ^TNX                              |Fed vicina allo ZLB; reazione
+    intraday non verificata puntualmente (INCERTA)                                                                         |'
+  data: '2008-12-05'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - ^GSPC
+  - ^TNX
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: 'Prima del 2011: il DB prezzi non copre la data, l''event study non è calcolabile.'
+- riga: '|2013-05-22|Testimonianza Bernanke sul tapering (taper tantrum)                    |USA          |easing_non_prezzato|rendimenti
+    su, equity giù          |^TNX, ^GSPC, DX-Y.NYB                    |Evento di segnale, non dato macro;
+    ^TNX 1,94%→2,03%,  poi 2,96% il 10-set  (Brookings)                                                               |'
+  data: '2013-05-22'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - DX-Y.NYB
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  - asset: ^GSPC
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''equity giù''.'
+  - asset: DX-Y.NYB
+    gruppo: 3
+    domanda: L'asset è elencato fra quelli coinvolti, ma la riga non ne scrive il verso.
+    suggerimento: 'lasciare aperto (stessa scelta dei Nikkei BoJ): dichiararlo sarebbe riempire per completezza'
+  meccanismo:
+  - balance_sheet
+  - guidance_pivot
+  evento: Bernanke apre al tapering
+  stato: promossa
+- riga: '|2018-03-09|Payroll febbraio +313k, salari tenui (+0,1% m/m)                       |USA          |hiking             |equity
+    su, rendimenti su           |^GSPC, ^NDX, ^TNX                        |Fed in rialzo; salari deboli
+    → equity su malgrado forza occupazione                                                                                  |'
+  data: '2018-03-09'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - ^GSPC
+  - ^NDX
+  - ^TNX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''equity su''.'
+  - asset: ^NDX
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''equity su''.'
+  - asset: ^TNX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  meccanismo:
+  - nfp
+  - labour_market
+  evento: Payroll forte (+313k) ma salari tenui
+  stato: promossa
+- riga: '|2019-09-12|Pacchetto BCE: depo −10 pb a −0,50%, riavvio QE, tiering               |area_euro    |easing_prezzato    |euro
+    giù, rendimenti euro giù      |EURUSD=X, EXX6.DE, ^GDAXI                |EUR/USD spike a ~1,1070 poi
+    crollo a ~1,0957 (−0,5%)                                                                                                 |'
+  data: '2019-09-12'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - EURUSD=X
+  - EXX6.DE
+  - ^GDAXI
+  dichiarazioni:
+  - asset: EURUSD=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''euro giù''. EURUSD=X quota dollari per euro.'
+  - asset: EXX6.DE
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''rendimenti euro giù''. EXX6.DE è un ETF di Bund lunghi: quota il PREZZO, inverso
+      ai rendimenti.'
+  - asset: ^GDAXI
+    gruppo: 3
+    domanda: L'asset è elencato fra quelli coinvolti, ma la riga non ne scrive il verso.
+    suggerimento: 'lasciare aperto (stessa scelta dei Nikkei BoJ): dichiararlo sarebbe riempire per completezza'
+  meccanismo:
+  - ecb
+  - rate_decision
+  evento: 'Pacchetto BCE: taglio del depo e riavvio del QE'
+  stato: promossa
+- riga: '|2019-10-03|ISM servizi 52,6 (minimo 3 anni)                                       |USA          |easing_prezzato    |equity
+    giù (giorno), rendimenti giù|^GSPC, ^TNX                              |“Insurance cuts”; odds taglio
+    ottobre da ~40% a >85% (Danske); il 4-ott equity su                                                                    |'
+  data: '2019-10-03'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''equity giù (giorno)''.'
+  - asset: ^TNX
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''rendimenti giù''. ^TNX quota il rendimento.'
+  meccanismo:
+  - ism
+  - activity_growth
+  evento: ISM servizi al minimo da 3 anni
+  stato: promossa
+- riga: '|2020-03-03|Taglio Fed d’emergenza 50 pb (a 1,00–1,25%)                            |USA          |easing_prezzato    |equity
+    su atteso, realizzato giù   |^GSPC, ^VIX, ^TNX                        |Shock COVID; equity scesero
+    malgrado il taglio                                                                                                       |'
+  data: '2020-03-03'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - ^GSPC
+  - ^TNX
+  - ^VIX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''equity su atteso, realizzato giù''.'
+  - asset: ^VIX
+    gruppo: 3
+    domanda: L'asset è elencato fra quelli coinvolti, ma la riga non ne scrive il verso.
+    suggerimento: 'lasciare aperto (stessa scelta dei Nikkei BoJ): dichiararlo sarebbe riempire per completezza'
+  - asset: ^TNX
+    gruppo: 3
+    domanda: L'asset è elencato fra quelli coinvolti, ma la riga non ne scrive il verso.
+    suggerimento: 'lasciare aperto (stessa scelta dei Nikkei BoJ): dichiararlo sarebbe riempire per completezza'
+  meccanismo:
+  - rate_decision
+  evento: Taglio d'emergenza della Fed di 50 pb
+  stato: promossa
+- riga: '|2020-03-16|“Black Monday II”, crollo globale post taglio Fed a zero (15-mar)      |sincronizzato|easing_prezzato    |equity
+    giù, ^VIX su                |^GSPC, ^STOXX50E, ^VIX                   |Cali −12/13% su gran parte
+    dei mercati globali                                                                                                       |'
+  data: '2020-03-16'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - ^GSPC
+  - ^STOXX50E
+  - ^VIX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 3
+    verso: escluso
+    perché: Titolo di esito ('Black Monday II, crollo globale'); per il taglio del 3/3 la stessa research
+      scrive 'equity su atteso'. Revisione maintainer 2026-09-23.
+  - asset: ^STOXX50E
+    gruppo: 3
+    verso: escluso
+    perché: Titolo di esito ('Black Monday II, crollo globale'); per il taglio del 3/3 la stessa research
+      scrive 'equity su atteso'. Revisione maintainer 2026-09-23.
+  - asset: ^VIX
+    gruppo: 3
+    verso: escluso
+    perché: Titolo di esito ('Black Monday II, crollo globale'); per il taglio del 3/3 la stessa research
+      scrive 'equity su atteso'. Revisione maintainer 2026-09-23.
+  meccanismo:
+  - rate_decision
+  evento: Crollo globale dopo il taglio Fed a zero del 15 marzo
+  stato: promossa
+- riga: '|2022-09-13|CPI USA agosto +8,3% (sopra atteso)                                    |sincronizzato|hiking             |equity
+    giù, rendimenti su, USD su  |^GSPC, ^TNX, DX-Y.NYB, EURUSD=X, GBPUSD=X|^GSPC −4,3%, Dow −1.276 pt
+    (−3,9%), Nasdaq −5,2% (peggior giorno dall’11-giu-2020, CNN); euro e sterlina giù vs USD                                  |'
+  data: '2022-09-13'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - DX-Y.NYB
+  - EURUSD=X
+  - GBPUSD=X
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''equity giù''.'
+  - asset: ^TNX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  - asset: DX-Y.NYB
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''USD su''. DX-Y.NYB è l''indice del dollaro.'
+  - asset: EURUSD=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''USD su''. EURUSD=X quota dollari per euro.'
+  - asset: GBPUSD=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''USD su''. GBPUSD=X quota dollari per sterlina.'
+  meccanismo:
+  - inflation_print
+  - inflation_upside
+  evento: CPI USA di agosto sopra le attese
+  stato: promossa
+- riga: '|2022-09-23|Mini-budget Kwarteng (£45mld tagli non finanziati)                     |UK           |hiking             |gilt
+    yields su, GBP giù            |IGLT.L, GBPUSD=X, FTSEMIB.MI             |Evento fiscale, non dato
+    macro; GBP/USD 1,1255→1,0850, poi 1,035 il 26-set                                                                           |'
+  data: '2022-09-23'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - FTSEMIB.MI
+  - GBPUSD=X
+  - IGLT.L
+  dichiarazioni:
+  - asset: IGLT.L
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''gilt yields su''. IGLT.L è un ETF di gilt: quota il PREZZO, inverso ai rendimenti.'
+  - asset: GBPUSD=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''GBP giù''. GBPUSD=X quota dollari per sterlina.'
+  - asset: FTSEMIB.MI
+    gruppo: 3
+    domanda: L'asset è elencato fra quelli coinvolti, ma la riga non ne scrive il verso.
+    suggerimento: 'lasciare aperto (stessa scelta dei Nikkei BoJ): dichiararlo sarebbe riempire per completezza'
+  meccanismo:
+  - fiscal_expansion
+  - britain_release
+  evento: Mini-budget Kwarteng
+  stato: promossa
+- riga: '|2023-06-21|CPI UK maggio 8,7%, core 7,1% (max da mar-1992)                        |UK           |hiking             |gilt
+    yields su, GBP su             |IGLT.L, GBPUSD=X                         |Gilt 2Y >5% (max da lug-2008);
+    BoE +50 pb il giorno dopo                                                                                             |'
+  data: '2023-06-21'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - GBPUSD=X
+  - IGLT.L
+  dichiarazioni:
+  - asset: IGLT.L
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''gilt yields su''. IGLT.L è un ETF di gilt: quota il PREZZO, inverso ai rendimenti.'
+  - asset: GBPUSD=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''GBP su''. GBPUSD=X quota dollari per sterlina.'
+  meccanismo:
+  - inflation_print
+  - inflation_upside
+  - britain_release
+  evento: 'CPI UK di maggio: core al massimo dal 1992'
+  stato: promossa
+- riga: '|2023-06-23|Flash PMI eurozona giugno debole (Comp. ~50,3; mfg 43,6)               |area_euro    |hiking             |euro
+    giù, DAX giù                  |EURUSD=X, ^GDAXI, ^STOXX50E              |EUR/USD −110 pip a 1,0844;  stessa
+    seduta USA per ^TNX (Europa aperta pre-NY)                                                                        |'
+  data: '2023-06-23'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - EURUSD=X
+  - ^GDAXI
+  - ^STOXX50E
+  - ^TNX
+  dichiarazioni:
+  - asset: EURUSD=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''euro giù''. EURUSD=X quota dollari per euro.'
+  - asset: ^GDAXI
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''DAX giù''.'
+  - asset: ^STOXX50E
+    gruppo: 3
+    domanda: L'asset è elencato fra quelli coinvolti, ma la riga non ne scrive il verso.
+    suggerimento: 'lasciare aperto (stessa scelta dei Nikkei BoJ): dichiararlo sarebbe riempire per completezza'
+  meccanismo:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  evento: Flash PMI eurozona debole
+  stato: promossa
+- riga: '|2023-08-15|Retribuzioni UK apr-giu +7,8% (regular pay, tra i massimi storici)     |UK           |hiking             |gilt
+    yields su, GBP su             |IGLT.L, GBPUSD=X                         |Rafforza attese di rialzo
+    BoE (ONS)                                                                                                                  |'
+  data: '2023-08-15'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - GBPUSD=X
+  - IGLT.L
+  dichiarazioni:
+  - asset: IGLT.L
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''gilt yields su''. IGLT.L è un ETF di gilt: quota il PREZZO, inverso ai rendimenti.'
+  - asset: GBPUSD=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''GBP su''. GBPUSD=X quota dollari per sterlina.'
+  meccanismo:
+  - labour_market
+  - britain_release
+  evento: Retribuzioni UK +7,8%
+  stato: promossa
+- riga: '|2023-08-29|JOLTS USA sotto attese + fiducia consumatori giù                       |USA          |easing_non_prezzato|equity
+    su, rendimenti giù          |^GSPC, ^TNX                              |Regime “higher for longer”:
+    dato debole letto come pro-Fed-dovish  → equity su                                                                       |'
+  data: '2023-08-29'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''equity su''.'
+  - asset: ^TNX
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''rendimenti giù''. ^TNX quota il rendimento.'
+  meccanismo:
+  - labour_market
+  evento: JOLTS sotto le attese
+  stato: promossa
+- riga: '|2023-10-06|Payroll settembre +336k (quasi doppio delle attese)                    |USA          |easing_non_prezzato|rendimenti
+    su, equity mista        |^TNX, ^GSPC                              |^TNX verso 5% (max da 2007);  nessun
+    taglio prezzato (HFL)                                                                                           |'
+  data: '2023-10-06'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  - asset: ^GSPC
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''equity mista'' — non è una direzione.'
+  meccanismo:
+  - nfp
+  - labour_market
+  evento: Payroll di settembre quasi doppio delle attese
+  stato: promossa
+- riga: '|2023-12-13|FOMC: pivot dovish, dot plot 3 tagli 2024                              |USA          |easing_prezzato    |equity
+    su, rendimenti giù, USD giù |^GSPC, ^TNX, DX-Y.NYB                    |^GSPC +~1,4% in giornata (+2,5%
+    sulla settimana); 2Y −28 pb, 10Y −31 pb sulla settimana, 10Y <4% per la prima volta da fine luglio;
+    DXY 103,9→102,56 |'
+  data: '2023-12-13'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - DX-Y.NYB
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''equity su''.'
+  - asset: ^TNX
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''rendimenti giù''. ^TNX quota il rendimento.'
+  - asset: DX-Y.NYB
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''USD giù''. DX-Y.NYB è l''indice del dollaro.'
+  meccanismo:
+  - guidance_pivot
+  evento: 'FOMC: pivot dovish, tre tagli nel dot plot'
+  stato: promossa
+- riga: '|2024-02-02|Payroll gennaio +353k (blowout)                                        |USA          |easing_prezzato    |rendimenti
+    su, equity mista/su     |^TNX, ^GSPC, ^NDX                        |Odds “no taglio a marzo” >80% (CME);
+    ^GSPC/^NDX su, Dow giù                                                                                          |'
+  data: '2024-02-02'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - ^GSPC
+  - ^NDX
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  - asset: ^GSPC
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''equity mista/su'' — non è una direzione.'
+  - asset: ^NDX
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''equity mista/su'' — non è una direzione.'
+  meccanismo:
+  - nfp
+  - labour_market
+  evento: Payroll di gennaio +353k
+  stato: promossa
+- riga: '|2024-06-06|Primo taglio BCE dal 2019 (−25 pb, depo a 3,75%)                       |area_euro    |easing_prezzato    |euro
+    giù lieve, bourses su         |EURUSD=X, ^GDAXI, FTSEMIB.MI             |“Hawkish cut”;  Milano +~1%;
+    EUR giù vs USD e GBP                                                                                                    |'
+  data: '2024-06-06'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - EURUSD=X
+  - FTSEMIB.MI
+  - ^GDAXI
+  dichiarazioni:
+  - asset: EURUSD=X
+    gruppo: 3
+    verso: escluso
+    perché: '''Hawkish cut'': il taglio era scontato e la notizia era il tono restrittivo; la riga scrive
+      il verso del taglio, non quello della sorpresa. Revisione maintainer 2026-09-23.'
+  - asset: ^GDAXI
+    gruppo: 3
+    verso: escluso
+    perché: '''Hawkish cut'': il taglio era scontato e la notizia era il tono restrittivo; la riga scrive
+      il verso del taglio, non quello della sorpresa. Revisione maintainer 2026-09-23.'
+  - asset: FTSEMIB.MI
+    gruppo: 3
+    verso: escluso
+    perché: '''Hawkish cut'': il taglio era scontato e la notizia era il tono restrittivo; la riga scrive
+      il verso del taglio, non quello della sorpresa. Revisione maintainer 2026-09-23.'
+  meccanismo:
+  - ecb
+  - rate_decision
+  evento: Primo taglio BCE dal 2019, con tono restrittivo
+  stato: promossa
+- riga: '|2024-08-05|Selloff globale da timore recessivo USA (payroll 2-ago +114k) + BoJ    |sincronizzato|easing_prezzato    |equity
+    giù, rendimenti giù, ^VIX su|^GSPC, ^NDX, ^VIX, ^STOXX50E             |^VIX picco intraday 65,70 (massimo
+    dal 2020, Fortune); disoccupazione USA 4,3% da 4,1% → regola Sahm                                                 |'
+  data: '2024-08-05'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - ^GSPC
+  - ^NDX
+  - ^STOXX50E
+  - ^VIX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 4
+    verso: escluso
+    perché: Il titolo della riga descrive l'esito ('Selloff globale'), non un evento con un'attesa prima
+      della seduta. Come il 2024-08-05/06 BoJ.
+  - asset: ^NDX
+    gruppo: 4
+    verso: escluso
+    perché: Il titolo della riga descrive l'esito ('Selloff globale'), non un evento con un'attesa prima
+      della seduta. Come il 2024-08-05/06 BoJ.
+  - asset: ^VIX
+    gruppo: 4
+    verso: escluso
+    perché: Il titolo della riga descrive l'esito ('Selloff globale'), non un evento con un'attesa prima
+      della seduta. Come il 2024-08-05/06 BoJ.
+  - asset: ^STOXX50E
+    gruppo: 4
+    verso: escluso
+    perché: Il titolo della riga descrive l'esito ('Selloff globale'), non un evento con un'attesa prima
+      della seduta. Come il 2024-08-05/06 BoJ.
+  meccanismo:
+  - labour_market
+  - synchronized_selloff
+  evento: Selloff globale da timore di recessione USA
+  stato: promossa
+- riga: '|2024-08-22|Flash PMI eurozona agosto beat (Comp. 51,2, spinta Olimpiadi)          |area_euro    |easing_prezzato    |euro/DAX
+    reazione mista            |EURUSD=X, ^GDAXI, ^STOXX50E              |Beat quasi tutto da servizi francesi
+    (Olimpiadi); manifattura ancora <50                                                                             |'
+  data: '2024-08-22'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - EURUSD=X
+  - ^GDAXI
+  - ^STOXX50E
+  dichiarazioni:
+  - asset: EURUSD=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''euro/DAX reazione mista'' — non è una direzione.'
+  - asset: ^GDAXI
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''euro/DAX reazione mista'' — non è una direzione.'
+  - asset: ^STOXX50E
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''euro/DAX reazione mista'' — non è una direzione.'
+  meccanismo:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  evento: Flash PMI eurozona di agosto sopra le attese
+  stato: promossa
+- riga: '|2024-09-18|FOMC taglio 50 pb (primo dal 2020)                                     |USA          |easing_prezzato    |equity
+    volatile, curva più ripida  |^GSPC, ^TNX, ^FVX                        |Indici saliti in seduta poi
+    rientrati; Russell +2,4% al picco, chiusura +0,04%                                                                       |'
+  data: '2024-09-18'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - ^FVX
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''equity volatile'' — non è una direzione.'
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''curva più ripida'' — dice la pendenza, non il verso del livello.'
+  - asset: ^FVX
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''curva più ripida'' — dice la pendenza, non il verso del livello.'
+  meccanismo:
+  - rate_decision
+  evento: La Fed taglia di 50 pb
+  stato: promossa
+- riga: '|2024-09-23|Flash PMI eurozona settembre miss (Comp. 50,5; mfg 44,8)               |area_euro    |easing_prezzato    |euro
+    giù, DAX giù                  |EURUSD=X, ^GDAXI                         |EUR/USD −0,5% a 1,1103; supporta
+    ulteriori tagli BCE                                                                                                 |'
+  data: '2024-09-23'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - EURUSD=X
+  - ^GDAXI
+  dichiarazioni:
+  - asset: EURUSD=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''euro giù''. EURUSD=X quota dollari per euro.'
+  - asset: ^GDAXI
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''DAX giù''.'
+  meccanismo:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  evento: Flash PMI eurozona di settembre sotto le attese
+  stato: promossa
+- riga: '|2025-01-10|Payroll dicembre +256k, disoccupazione 4,1%                            |USA          |easing_prezzato    |rendimenti
+    su, equity giù          |^TNX, ^NDX, ^GSPC                        |^NDX −1%, ^TNX +~10 pb a 4,785%
+    (max da nov-2023, Forbes); “good news is bad news”                                                                   |'
+  data: '2025-01-10'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - ^GSPC
+  - ^NDX
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  - asset: ^NDX
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''equity giù''.'
+  - asset: ^GSPC
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''equity giù''.'
+  meccanismo:
+  - nfp
+  - labour_market
+  evento: Payroll di dicembre +256k
+  stato: promossa
+- riga: '|2025-02-06|BoE taglia a 4,5%; FTSE record, sterlina giù                           |UK           |easing_prezzato    |FTSE
+    su, GBP giù                   |GBPUSD=X, IGLT.L                         |Reazione classica taglio
+    prezzato                                                                                                                    |'
+  data: '2025-02-06'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - GBPUSD=X
+  - IGLT.L
+  dichiarazioni:
+  - asset: GBPUSD=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''taglio prezzato''. ''GBP giù'' è il verso del meccanismo; con la regola della sorpresa
+      la riga non dice se la BoE fu più o meno accomodante del prezzato.'
+  - asset: IGLT.L
+    gruppo: 3
+    domanda: L'asset è elencato fra quelli coinvolti, ma la riga non ne scrive il verso.
+    suggerimento: 'lasciare aperto (stessa scelta dei Nikkei BoJ): dichiararlo sarebbe riempire per completezza'
+  meccanismo:
+  - boe
+  - rate_decision
+  - britain_release
+  evento: La BoE taglia al 4,5%
+  stato: promossa
+- riga: '|2025-08-12|ZEW Germania agosto 34,7 (calo −18 pt, miss)                           |area_euro    |pausa_prolungata   |euro
+    debole/muto                   |^GDAXI, EURUSD=X                         |Delusione su accordo commerciale
+    UE-USA; PIL Q2 debole                                                                                               |'
+  data: '2025-08-12'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - EURUSD=X
+  - ^GDAXI
+  dichiarazioni:
+  - asset: EURUSD=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''euro debole/muto'' — due letture, come ''JPY neutrale/debole'' del 2016-09-21 BoJ.'
+  - asset: ^GDAXI
+    gruppo: 3
+    domanda: L'asset è elencato fra quelli coinvolti, ma la riga non ne scrive il verso.
+    suggerimento: 'lasciare aperto (stessa scelta dei Nikkei BoJ): dichiararlo sarebbe riempire per completezza'
+  meccanismo:
+  - eurozone_release
+  - activity_growth
+  evento: ZEW di agosto in calo di 18 punti
+  stato: promossa
+- riga: '|2025-08-21|Flash PMI eurozona agosto beat (Comp. 51,1, max da mag-2024)           |area_euro    |easing_non_prezzato|euro
+    su, DAX su                    |EURUSD=X, ^GDAXI, ^STOXX50E              |Manifattura >50 per la prima
+    volta da giu-2022;  EUR/USD +~0,3%                                                                                      |'
+  data: '2025-08-21'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - EURUSD=X
+  - ^GDAXI
+  - ^STOXX50E
+  dichiarazioni:
+  - asset: EURUSD=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''euro su''. EURUSD=X quota dollari per euro.'
+  - asset: ^GDAXI
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''DAX su''.'
+  - asset: ^STOXX50E
+    gruppo: 3
+    domanda: L'asset è elencato fra quelli coinvolti, ma la riga non ne scrive il verso.
+    suggerimento: 'lasciare aperto (stessa scelta dei Nikkei BoJ): dichiararlo sarebbe riempire per completezza'
+  meccanismo:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  evento: Flash PMI eurozona di agosto sopra le attese
+  stato: promossa
+- riga: '|2025-11-11|Dati lavoro UK deboli (disoccupazione 5,0%)                            |UK           |easing_prezzato    |gilt
+    yields giù, GBP giù           |IGLT.L, GBPUSD=X                         |Gilt 10Y a 4,4% (min da dic-2024);  rafforza
+    taglio BoE dicembre                                                                                     |'
+  data: '2025-11-11'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - GBPUSD=X
+  - IGLT.L
+  dichiarazioni:
+  - asset: IGLT.L
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''gilt yields giù''. IGLT.L è un ETF di gilt: quota il PREZZO, inverso ai rendimenti.'
+  - asset: GBPUSD=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''GBP giù''. GBPUSD=X quota dollari per sterlina.'
+  meccanismo:
+  - labour_market
+  - britain_release
+  evento: Dati sul lavoro UK deboli
+  stato: promossa
+- riga: '|2025-12-09|JOLTS USA sopra attese (offerte 7,67M)                                 |USA          |easing_prezzato    |rendimenti
+    su                      |^TNX, ^FVX                               |^TNX verso 4,2% (max >2 mesi);
+    taglio dicembre comunque prezzato all’87%                                                                             |'
+  data: '2025-12-09'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - ^FVX
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  - asset: ^FVX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''rendimenti su''. ^FVX quota il rendimento.'
+  meccanismo:
+  - labour_market
+  evento: JOLTS sopra le attese
+  stato: promossa
+- riga: '|2025-12-12|PIL UK ottobre −0,1% (sotto attese)                                    |UK           |easing_prezzato    |gilt
+    yields giù, GBP giù           |IGLT.L, GBPUSD=X                         |Gilt 10Y <4,5%; aumenta attese
+    tagli BoE 2026                                                                                                        |'
+  data: '2025-12-12'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - GBPUSD=X
+  - IGLT.L
+  dichiarazioni:
+  - asset: IGLT.L
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''gilt yields giù''. IGLT.L è un ETF di gilt: quota il PREZZO, inverso ai rendimenti.'
+  - asset: GBPUSD=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''GBP giù''. GBPUSD=X quota dollari per sterlina.'
+  meccanismo:
+  - activity_growth
+  - britain_release
+  evento: PIL UK di ottobre sotto le attese
+  stato: promossa
+- riga: '|2026-02-05|Dati lavoro USA deboli (Challenger, claims)                            |USA          |easing_prezzato    |rendimenti
+    giù                     |^TNX, ^GSPC                              |^TNX −4 pb a 4,24%; rafforza bet
+    primo taglio giugno                                                                                                 |'
+  data: '2026-02-05'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''rendimenti giù''. ^TNX quota il rendimento.'
+  - asset: ^GSPC
+    gruppo: 3
+    domanda: L'asset è elencato fra quelli coinvolti, ma la riga non ne scrive il verso.
+    suggerimento: 'lasciare aperto (stessa scelta dei Nikkei BoJ): dichiararlo sarebbe riempire per completezza'
+  meccanismo:
+  - labour_market
+  evento: Dati sul lavoro USA deboli
+  stato: promossa
+- riga: '|2026-02-17|Retribuzioni UK deboli, disoccupazione 5,2%                            |UK           |easing_prezzato    |gilt
+    yields giù                    |IGLT.L, GBPUSD=X                         |Gilt 10Y <4,4% (min da 14-gen);  taglio
+    aprile prezzato pieno                                                                                        |'
+  data: '2026-02-17'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - GBPUSD=X
+  - IGLT.L
+  dichiarazioni:
+  - asset: IGLT.L
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''gilt yields giù''. IGLT.L è un ETF di gilt: quota il PREZZO, inverso ai rendimenti.'
+  - asset: GBPUSD=X
+    gruppo: 3
+    domanda: L'asset è elencato fra quelli coinvolti, ma la riga non ne scrive il verso.
+    suggerimento: 'lasciare aperto (stessa scelta dei Nikkei BoJ): dichiararlo sarebbe riempire per completezza'
+  meccanismo:
+  - labour_market
+  - britain_release
+  evento: Retribuzioni UK deboli, disoccupazione al 5,2%
+  stato: promossa
+- riga: '|2026-06-05|Payroll USA maggio +172k (sopra attese)                                |USA          |pausa_prolungata   |rendimenti
+    su, equity giù          |^TNX, ^FVX, ^GSPC                        |Fed ferma a 3,75% dal taglio dell’11-dic-2025;
+    ^TNX +6 pb a 4,54%  (max da 21-mag)                                                                   |'
+  data: '2026-06-05'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - ^FVX
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  - asset: ^FVX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''rendimenti su''. ^FVX quota il rendimento.'
+  - asset: ^GSPC
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''equity giù''.'
+  meccanismo:
+  - nfp
+  - labour_market
+  evento: Payroll di maggio sopra le attese
+  stato: promossa
+- riga: '|2026-06-11|Rialzo tassi BCE (giugno 2026)                                         |area_euro    |hiking             |rendimenti
+    euro su                 |EXX6.DE, ^GDAXI, EURUSD=X                |Anchor di regime (shock energetico
+    Medio Oriente)                                                                                                    |'
+  data: '2026-06-11'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - EURUSD=X
+  - EXX6.DE
+  - ^GDAXI
+  dichiarazioni:
+  - asset: EXX6.DE
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''rendimenti euro su''. EXX6.DE è un ETF di Bund lunghi: quota il PREZZO, inverso ai
+      rendimenti.'
+  - asset: ^GDAXI
+    gruppo: 3
+    domanda: L'asset è elencato fra quelli coinvolti, ma la riga non ne scrive il verso.
+    suggerimento: 'lasciare aperto (stessa scelta dei Nikkei BoJ): dichiararlo sarebbe riempire per completezza'
+  - asset: EURUSD=X
+    gruppo: 3
+    domanda: L'asset è elencato fra quelli coinvolti, ma la riga non ne scrive il verso.
+    suggerimento: 'lasciare aperto (stessa scelta dei Nikkei BoJ): dichiararlo sarebbe riempire per completezza'
+  meccanismo:
+  - ecb
+  - rate_decision
+  evento: La BCE alza i tassi
+  stato: promossa
+- riga: '|2026-07-24|Flash PMI eurozona luglio beat (Comp. 51,9, prima espansione in 4 mesi)|area_euro    |hiking             |euro
+    su, DAX su, rendimenti su     |EURUSD=X, ^GDAXI, EXX6.DE                |Nuovi ordini al massimo da
+    apr-2023                                                                                                                  |'
+  data: '2026-07-24'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - EURUSD=X
+  - EXX6.DE
+  - ^GDAXI
+  dichiarazioni:
+  - asset: EURUSD=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''euro su''. EURUSD=X quota dollari per euro.'
+  - asset: ^GDAXI
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''DAX su''.'
+  - asset: EXX6.DE
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''rendimenti su''. EXX6.DE è un ETF di Bund lunghi: quota il PREZZO, inverso ai rendimenti.'
+  meccanismo:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  evento: Flash PMI eurozona di luglio sopra le attese
+  stato: promossa
+- riga: '|2026-08-18|ZEW Germania agosto 34,2 (beat, +7,9 pt)                               |area_euro    |hiking             |euro
+    su modesto                    |^GDAXI, EURUSD=X                         |EUR/GBP a ~0,8555; sostiene
+    il dibattito su rialzo BCE                                                                                               |'
+  data: '2026-08-18'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  candidati:
+  - EURUSD=X
+  - ^GDAXI
+  dichiarazioni:
+  - asset: EURUSD=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''euro su modesto''. EURUSD=X quota dollari per euro.'
+  - asset: ^GDAXI
+    gruppo: 3
+    domanda: L'asset è elencato fra quelli coinvolti, ma la riga non ne scrive il verso.
+    suggerimento: 'lasciare aperto (stessa scelta dei Nikkei BoJ): dichiararlo sarebbe riempire per completezza'
+  meccanismo:
+  - eurozone_release
+  - activity_growth
+  evento: ZEW di agosto sopra le attese
+  stato: promossa

@@ -1,4 +1,4 @@
-generated_at: '2026-09-23T11:30:05'
+generated_at: '2026-09-23T11:33:15'
 num_episodes: 1168
 episodes:
 - date: '1984-01-01'
@@ -17971,6 +17971,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+    ^TNX:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^TNX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local: []
   declared: false
   subthemes:
@@ -17983,7 +17999,9 @@ episodes:
   - pmi
   - policy_cycle_phase
   - reaction_function
-  subthemes_local: []
+  subthemes_local:
+  - balance_sheet
+  - guidance_pivot
   n_sources: 1
 - date: '2013-08-01'
   theme: macro_data
@@ -18459,6 +18477,29 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - pos
+    ^NDX:
+    - pos
+    ^TNX:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^NDX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^TNX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local: []
   declared: false
   subthemes:
@@ -18473,6 +18514,7 @@ episodes:
   - reaction_function
   subthemes_local:
   - labour_market
+  - nfp
   n_sources: 1
 - date: '2018-10-05'
   theme: macro_data
@@ -18848,6 +18890,22 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    EURUSD=X:
+    - neg
+    EXX6.DE:
+    - pos
+  direction_sources:
+    EURUSD=X:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    EXX6.DE:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - neg
   - pos
@@ -18867,6 +18925,7 @@ episodes:
   - ecb
   - eurozone_release
   - guidance_pivot
+  - rate_decision
   n_sources: 3
 - date: '2019-10-01'
   theme: macro_data
@@ -18967,6 +19026,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+    ^TNX:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^TNX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local: []
   declared: false
   subthemes:
@@ -19018,6 +19093,15 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - neg
   declared: false
@@ -19031,13 +19115,21 @@ episodes:
   - pmi
   - policy_cycle_phase
   - reaction_function
-  subthemes_local: []
+  subthemes_local:
+  - rate_decision
   n_sources: 1
 - date: '2020-03-16'
   theme: macro_data
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    ^GSPC: Titolo di esito ('Black Monday II, crollo globale'); per il taglio del
+      3/3 la stessa research scrive 'equity su atteso'. Revisione maintainer 2026-09-23.
+    ^STOXX50E: Titolo di esito ('Black Monday II, crollo globale'); per il taglio
+      del 3/3 la stessa research scrive 'equity su atteso'. Revisione maintainer 2026-09-23.
+    ^VIX: Titolo di esito ('Black Monday II, crollo globale'); per il taglio del 3/3
+      la stessa research scrive 'equity su atteso'. Revisione maintainer 2026-09-23.
   directions_local:
   - neg
   declared: false
@@ -20412,6 +20504,43 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    DX-Y.NYB:
+    - pos
+    EURUSD=X:
+    - neg
+    GBPUSD=X:
+    - neg
+    ^GSPC:
+    - neg
+    ^TNX:
+    - pos
+  direction_sources:
+    DX-Y.NYB:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    EURUSD=X:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    GBPUSD=X:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^GSPC:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^TNX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - neg
   - pos
@@ -20497,6 +20626,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+    IGLT.L:
+    - neg
+  direction_sources:
+    GBPUSD=X:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    IGLT.L:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local: []
   declared: false
   subthemes:
@@ -20509,7 +20654,9 @@ episodes:
   - pmi
   - policy_cycle_phase
   - reaction_function
-  subthemes_local: []
+  subthemes_local:
+  - britain_release
+  - fiscal_expansion
   n_sources: 1
 - date: '2022-09-28'
   theme: macro_data
@@ -21574,6 +21721,22 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    GBPUSD=X:
+    - pos
+    IGLT.L:
+    - neg
+  direction_sources:
+    GBPUSD=X:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    IGLT.L:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - neg
   declared: true
@@ -21591,6 +21754,7 @@ episodes:
   subthemes_local:
   - britain_release
   - inflation_print
+  - inflation_upside
   n_sources: 2
 - date: '2023-06-23'
   theme: macro_data
@@ -21601,6 +21765,22 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    EURUSD=X:
+    - neg
+    ^GDAXI:
+    - neg
+  direction_sources:
+    EURUSD=X:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^GDAXI:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - pos
   declared: true
@@ -21961,11 +22141,25 @@ episodes:
   directions_declared:
   - neg
   directions_by_reference:
+    GBPUSD=X:
+    - pos
     HG=F:
     - neg
+    IGLT.L:
+    - neg
   direction_sources:
+    GBPUSD=X:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
     HG=F:
     - card:2026-09-15/news_05.md
+    IGLT.L:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - neg
   declared: true
@@ -22004,6 +22198,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - pos
+    ^TNX:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^TNX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - pos
   declared: false
@@ -22017,7 +22227,8 @@ episodes:
   - pmi
   - policy_cycle_phase
   - reaction_function
-  subthemes_local: []
+  subthemes_local:
+  - labour_market
   n_sources: 1
 - date: '2023-08-30'
   theme: macro_data
@@ -22088,6 +22299,17 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ^TNX:
+    - pos
+  direction_sources:
+    ^TNX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+  direction_review_excluded:
+    ^GSPC: 'Riga: ''equity mista'' — non è una direzione.'
   directions_local: []
   declared: false
   subthemes:
@@ -22102,6 +22324,7 @@ episodes:
   - reaction_function
   subthemes_local:
   - labour_market
+  - nfp
   n_sources: 1
 - date: '2023-10-17'
   theme: macro_data
@@ -22342,6 +22565,29 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    DX-Y.NYB:
+    - neg
+    ^GSPC:
+    - pos
+    ^TNX:
+    - neg
+  direction_sources:
+    DX-Y.NYB:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^GSPC:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^TNX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - pos
   declared: false
@@ -22355,7 +22601,8 @@ episodes:
   - pmi
   - policy_cycle_phase
   - reaction_function
-  subthemes_local: []
+  subthemes_local:
+  - guidance_pivot
   n_sources: 1
 - date: '2023-12-14'
   theme: macro_data
@@ -22624,6 +22871,18 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    ^TNX:
+    - pos
+  direction_sources:
+    ^TNX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+  direction_review_excluded:
+    ^GSPC: 'Riga: ''equity mista/su'' — non è una direzione.'
+    ^NDX: 'Riga: ''equity mista/su'' — non è una direzione.'
   directions_local:
   - pos
   declared: true
@@ -23224,6 +23483,16 @@ episodes:
   - pos
   directions_declared:
   - pos
+  direction_review_excluded:
+    EURUSD=X: '''Hawkish cut'': il taglio era scontato e la notizia era il tono restrittivo;
+      la riga scrive il verso del taglio, non quello della sorpresa. Revisione maintainer
+      2026-09-23.'
+    ^GDAXI: '''Hawkish cut'': il taglio era scontato e la notizia era il tono restrittivo;
+      la riga scrive il verso del taglio, non quello della sorpresa. Revisione maintainer
+      2026-09-23.'
+    FTSEMIB.MI: '''Hawkish cut'': il taglio era scontato e la notizia era il tono
+      restrittivo; la riga scrive il verso del taglio, non quello della sorpresa.
+      Revisione maintainer 2026-09-23.'
   directions_local:
   - neg
   - pos
@@ -23616,6 +23885,15 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^GSPC: Il titolo della riga descrive l'esito ('Selloff globale'), non un evento
+      con un'attesa prima della seduta. Come il 2024-08-05/06 BoJ.
+    ^NDX: Il titolo della riga descrive l'esito ('Selloff globale'), non un evento
+      con un'attesa prima della seduta. Come il 2024-08-05/06 BoJ.
+    ^VIX: Il titolo della riga descrive l'esito ('Selloff globale'), non un evento
+      con un'attesa prima della seduta. Come il 2024-08-05/06 BoJ.
+    ^STOXX50E: Il titolo della riga descrive l'esito ('Selloff globale'), non un evento
+      con un'attesa prima della seduta. Come il 2024-08-05/06 BoJ.
   directions_local:
   - neg
   declared: true
@@ -23691,6 +23969,10 @@ episodes:
   - pos
   directions_declared:
   - pos
+  direction_review_excluded:
+    EURUSD=X: 'Riga: ''euro/DAX reazione mista'' — non è una direzione.'
+    ^GDAXI: 'Riga: ''euro/DAX reazione mista'' — non è una direzione.'
+    ^STOXX50E: 'Riga: ''euro/DAX reazione mista'' — non è una direzione.'
   directions_local:
   - pos
   declared: true
@@ -23972,6 +24254,10 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^GSPC: 'Riga: ''equity volatile'' — non è una direzione.'
+    ^TNX: 'Riga: ''curva più ripida'' — dice la pendenza, non il verso del livello.'
+    ^FVX: 'Riga: ''curva più ripida'' — dice la pendenza, non il verso del livello.'
   directions_local:
   - neg
   declared: true
@@ -24002,6 +24288,22 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    EURUSD=X:
+    - neg
+    ^GDAXI:
+    - neg
+  direction_sources:
+    EURUSD=X:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^GDAXI:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - neg
   declared: true
@@ -24946,6 +25248,29 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    ^GSPC:
+    - neg
+    ^NDX:
+    - neg
+    ^TNX:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^NDX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^TNX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - neg
   - pos
@@ -25113,6 +25438,10 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    GBPUSD=X: 'Nota: ''taglio prezzato''. ''GBP giù'' è il verso del meccanismo; con
+      la regola della sorpresa la riga non dice se la BoE fu più o meno accomodante
+      del prezzato.'
   directions_local:
   - neg
   declared: true
@@ -25979,6 +26308,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    EURUSD=X: 'Riga: ''euro debole/muto'' — due letture, come ''JPY neutrale/debole''
+      del 2016-09-21 BoJ.'
   directions_local:
   - neg
   - pos
@@ -26034,6 +26366,22 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    EURUSD=X:
+    - pos
+    ^GDAXI:
+    - pos
+  direction_sources:
+    EURUSD=X:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^GDAXI:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - pos
   declared: true
@@ -26277,6 +26625,22 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+    IGLT.L:
+    - pos
+  direction_sources:
+    GBPUSD=X:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    IGLT.L:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - neg
   declared: true
@@ -26362,6 +26726,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ^FVX:
+    - pos
+    ^TNX:
+    - pos
+  direction_sources:
+    ^FVX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^TNX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local: []
   declared: false
   subthemes:
@@ -26374,7 +26754,8 @@ episodes:
   - pmi
   - policy_cycle_phase
   - reaction_function
-  subthemes_local: []
+  subthemes_local:
+  - labour_market
   n_sources: 1
 - date: '2025-12-10'
   theme: macro_data
@@ -26441,6 +26822,22 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+    IGLT.L:
+    - pos
+  direction_sources:
+    GBPUSD=X:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    IGLT.L:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - neg
   declared: true
@@ -26664,25 +27061,15 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
-  directions_local: []
-  declared: false
-  subthemes:
-  - activity_growth
-  - britain_release
-  - eurozone_release
-  - good_news_bad_news
-  - ism
-  - labour_market
-  - pmi
-  - policy_cycle_phase
-  - reaction_function
-  subthemes_local: []
-  n_sources: 1
-- date: '2026-02-17'
-  theme: macro_data
-  direction: ''
-  directions: []
-  directions_declared: []
+  directions_by_reference:
+    ^TNX:
+    - neg
+  direction_sources:
+    ^TNX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local: []
   declared: false
   subthemes:
@@ -26696,6 +27083,36 @@ episodes:
   - policy_cycle_phase
   - reaction_function
   subthemes_local:
+  - labour_market
+  n_sources: 1
+- date: '2026-02-17'
+  theme: macro_data
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    IGLT.L:
+    - pos
+  direction_sources:
+    IGLT.L:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+  directions_local: []
+  declared: false
+  subthemes:
+  - activity_growth
+  - britain_release
+  - eurozone_release
+  - good_news_bad_news
+  - ism
+  - labour_market
+  - pmi
+  - policy_cycle_phase
+  - reaction_function
+  subthemes_local:
+  - britain_release
   - labour_market
   n_sources: 1
 - date: '2026-04-10'
@@ -26908,6 +27325,29 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  directions_by_reference:
+    ^FVX:
+    - pos
+    ^GSPC:
+    - neg
+    ^TNX:
+    - pos
+  direction_sources:
+    ^FVX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^GSPC:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^TNX:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local: []
   declared: false
   subthemes:
@@ -27000,6 +27440,7 @@ episodes:
   - yield_curve
   subthemes_local:
   - labour_market
+  - nfp
   - usa
   n_sources: 47
 - date: '2026-06-11'
@@ -27013,6 +27454,15 @@ episodes:
   - neg
   - neutral
   - pos
+  directions_by_reference:
+    EXX6.DE:
+    - neg
+  direction_sources:
+    EXX6.DE:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - neg
   - neutral
@@ -27110,6 +27560,29 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    EURUSD=X:
+    - pos
+    EXX6.DE:
+    - neg
+    ^GDAXI:
+    - pos
+  direction_sources:
+    EURUSD=X:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    EXX6.DE:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^GDAXI:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - neg
   - pos
@@ -27227,6 +27700,15 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    EURUSD=X:
+    - pos
+  direction_sources:
+    EURUSD=X:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   directions_local:
   - pos
   declared: false

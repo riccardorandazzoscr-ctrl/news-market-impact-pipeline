@@ -1982,3 +1982,978 @@ reviews:
   - iran
   - hormuz
   description: Operazione USA-Israele contro l'Iran (Epic Fury)
+- date: '2013-05-22'
+  theme: macro_data
+  reference: ^TNX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - balance_sheet
+  - guidance_pivot
+  description: Bernanke apre al tapering
+- date: '2013-05-22'
+  theme: macro_data
+  reference: ^GSPC
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''equity giù''.'
+  direction: neg
+  mechanism:
+  - balance_sheet
+  - guidance_pivot
+  description: Bernanke apre al tapering
+- date: '2018-03-09'
+  theme: macro_data
+  reference: ^GSPC
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''equity su''.'
+  direction: pos
+  mechanism:
+  - nfp
+  - labour_market
+  description: Payroll forte (+313k) ma salari tenui
+- date: '2018-03-09'
+  theme: macro_data
+  reference: ^NDX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''equity su''.'
+  direction: pos
+  mechanism:
+  - nfp
+  - labour_market
+  description: Payroll forte (+313k) ma salari tenui
+- date: '2018-03-09'
+  theme: macro_data
+  reference: ^TNX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - nfp
+  - labour_market
+  description: Payroll forte (+313k) ma salari tenui
+- date: '2019-09-12'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''euro giù''. EURUSD=X quota dollari per euro.'
+  direction: neg
+  mechanism:
+  - ecb
+  - rate_decision
+  description: 'Pacchetto BCE: taglio del depo e riavvio del QE'
+- date: '2019-09-12'
+  theme: macro_data
+  reference: EXX6.DE
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti euro giù''. EXX6.DE è un ETF di Bund lunghi: quota il PREZZO, inverso ai
+    rendimenti.'
+  direction: pos
+  mechanism:
+  - ecb
+  - rate_decision
+  description: 'Pacchetto BCE: taglio del depo e riavvio del QE'
+- date: '2019-10-03'
+  theme: macro_data
+  reference: ^GSPC
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''equity giù (giorno)''.'
+  direction: neg
+  mechanism:
+  - ism
+  - activity_growth
+  description: ISM servizi al minimo da 3 anni
+- date: '2019-10-03'
+  theme: macro_data
+  reference: ^TNX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti giù''. ^TNX quota il rendimento.'
+  direction: neg
+  mechanism:
+  - ism
+  - activity_growth
+  description: ISM servizi al minimo da 3 anni
+- date: '2020-03-03'
+  theme: macro_data
+  reference: ^GSPC
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''equity su atteso, realizzato giù''.'
+  direction: pos
+  mechanism:
+  - rate_decision
+  description: Taglio d'emergenza della Fed di 50 pb
+- date: '2020-03-16'
+  theme: macro_data
+  reference: ^GSPC
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: Titolo di esito ('Black Monday II, crollo globale'); per il taglio del 3/3 la stessa research
+    scrive 'equity su atteso'. Revisione maintainer 2026-09-23.
+  status: excluded
+  mechanism:
+  - rate_decision
+  description: Crollo globale dopo il taglio Fed a zero del 15 marzo
+- date: '2020-03-16'
+  theme: macro_data
+  reference: ^STOXX50E
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: Titolo di esito ('Black Monday II, crollo globale'); per il taglio del 3/3 la stessa research
+    scrive 'equity su atteso'. Revisione maintainer 2026-09-23.
+  status: excluded
+  mechanism:
+  - rate_decision
+  description: Crollo globale dopo il taglio Fed a zero del 15 marzo
+- date: '2020-03-16'
+  theme: macro_data
+  reference: ^VIX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: Titolo di esito ('Black Monday II, crollo globale'); per il taglio del 3/3 la stessa research
+    scrive 'equity su atteso'. Revisione maintainer 2026-09-23.
+  status: excluded
+  mechanism:
+  - rate_decision
+  description: Crollo globale dopo il taglio Fed a zero del 15 marzo
+- date: '2022-09-13'
+  theme: macro_data
+  reference: ^GSPC
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''equity giù''.'
+  direction: neg
+  mechanism:
+  - inflation_print
+  - inflation_upside
+  description: CPI USA di agosto sopra le attese
+- date: '2022-09-13'
+  theme: macro_data
+  reference: ^TNX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - inflation_print
+  - inflation_upside
+  description: CPI USA di agosto sopra le attese
+- date: '2022-09-13'
+  theme: macro_data
+  reference: DX-Y.NYB
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''USD su''. DX-Y.NYB è l''indice del dollaro.'
+  direction: pos
+  mechanism:
+  - inflation_print
+  - inflation_upside
+  description: CPI USA di agosto sopra le attese
+- date: '2022-09-13'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''USD su''. EURUSD=X quota dollari per euro.'
+  direction: neg
+  mechanism:
+  - inflation_print
+  - inflation_upside
+  description: CPI USA di agosto sopra le attese
+- date: '2022-09-13'
+  theme: macro_data
+  reference: GBPUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''USD su''. GBPUSD=X quota dollari per sterlina.'
+  direction: neg
+  mechanism:
+  - inflation_print
+  - inflation_upside
+  description: CPI USA di agosto sopra le attese
+- date: '2022-09-23'
+  theme: macro_data
+  reference: IGLT.L
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''gilt yields su''. IGLT.L è un ETF di gilt: quota il PREZZO, inverso ai rendimenti.'
+  direction: neg
+  mechanism:
+  - fiscal_expansion
+  - britain_release
+  description: Mini-budget Kwarteng
+- date: '2022-09-23'
+  theme: macro_data
+  reference: GBPUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''GBP giù''. GBPUSD=X quota dollari per sterlina.'
+  direction: neg
+  mechanism:
+  - fiscal_expansion
+  - britain_release
+  description: Mini-budget Kwarteng
+- date: '2023-06-21'
+  theme: macro_data
+  reference: IGLT.L
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''gilt yields su''. IGLT.L è un ETF di gilt: quota il PREZZO, inverso ai rendimenti.'
+  direction: neg
+  mechanism:
+  - inflation_print
+  - inflation_upside
+  - britain_release
+  description: 'CPI UK di maggio: core al massimo dal 1992'
+- date: '2023-06-21'
+  theme: macro_data
+  reference: GBPUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''GBP su''. GBPUSD=X quota dollari per sterlina.'
+  direction: pos
+  mechanism:
+  - inflation_print
+  - inflation_upside
+  - britain_release
+  description: 'CPI UK di maggio: core al massimo dal 1992'
+- date: '2023-06-23'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''euro giù''. EURUSD=X quota dollari per euro.'
+  direction: neg
+  mechanism:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  description: Flash PMI eurozona debole
+- date: '2023-06-23'
+  theme: macro_data
+  reference: ^GDAXI
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''DAX giù''.'
+  direction: neg
+  mechanism:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  description: Flash PMI eurozona debole
+- date: '2023-08-15'
+  theme: macro_data
+  reference: IGLT.L
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''gilt yields su''. IGLT.L è un ETF di gilt: quota il PREZZO, inverso ai rendimenti.'
+  direction: neg
+  mechanism:
+  - labour_market
+  - britain_release
+  description: Retribuzioni UK +7,8%
+- date: '2023-08-15'
+  theme: macro_data
+  reference: GBPUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''GBP su''. GBPUSD=X quota dollari per sterlina.'
+  direction: pos
+  mechanism:
+  - labour_market
+  - britain_release
+  description: Retribuzioni UK +7,8%
+- date: '2023-08-29'
+  theme: macro_data
+  reference: ^GSPC
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''equity su''.'
+  direction: pos
+  mechanism:
+  - labour_market
+  description: JOLTS sotto le attese
+- date: '2023-08-29'
+  theme: macro_data
+  reference: ^TNX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti giù''. ^TNX quota il rendimento.'
+  direction: neg
+  mechanism:
+  - labour_market
+  description: JOLTS sotto le attese
+- date: '2023-10-06'
+  theme: macro_data
+  reference: ^TNX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - nfp
+  - labour_market
+  description: Payroll di settembre quasi doppio delle attese
+- date: '2023-10-06'
+  theme: macro_data
+  reference: ^GSPC
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''equity mista'' — non è una direzione.'
+  status: excluded
+  mechanism:
+  - nfp
+  - labour_market
+  description: Payroll di settembre quasi doppio delle attese
+- date: '2023-12-13'
+  theme: macro_data
+  reference: ^GSPC
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''equity su''.'
+  direction: pos
+  mechanism:
+  - guidance_pivot
+  description: 'FOMC: pivot dovish, tre tagli nel dot plot'
+- date: '2023-12-13'
+  theme: macro_data
+  reference: ^TNX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti giù''. ^TNX quota il rendimento.'
+  direction: neg
+  mechanism:
+  - guidance_pivot
+  description: 'FOMC: pivot dovish, tre tagli nel dot plot'
+- date: '2023-12-13'
+  theme: macro_data
+  reference: DX-Y.NYB
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''USD giù''. DX-Y.NYB è l''indice del dollaro.'
+  direction: neg
+  mechanism:
+  - guidance_pivot
+  description: 'FOMC: pivot dovish, tre tagli nel dot plot'
+- date: '2024-02-02'
+  theme: macro_data
+  reference: ^TNX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - nfp
+  - labour_market
+  description: Payroll di gennaio +353k
+- date: '2024-02-02'
+  theme: macro_data
+  reference: ^GSPC
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''equity mista/su'' — non è una direzione.'
+  status: excluded
+  mechanism:
+  - nfp
+  - labour_market
+  description: Payroll di gennaio +353k
+- date: '2024-02-02'
+  theme: macro_data
+  reference: ^NDX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''equity mista/su'' — non è una direzione.'
+  status: excluded
+  mechanism:
+  - nfp
+  - labour_market
+  description: Payroll di gennaio +353k
+- date: '2024-06-06'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: '''Hawkish cut'': il taglio era scontato e la notizia era il tono restrittivo; la riga scrive
+    il verso del taglio, non quello della sorpresa. Revisione maintainer 2026-09-23.'
+  status: excluded
+  mechanism:
+  - ecb
+  - rate_decision
+  description: Primo taglio BCE dal 2019, con tono restrittivo
+- date: '2024-06-06'
+  theme: macro_data
+  reference: ^GDAXI
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: '''Hawkish cut'': il taglio era scontato e la notizia era il tono restrittivo; la riga scrive
+    il verso del taglio, non quello della sorpresa. Revisione maintainer 2026-09-23.'
+  status: excluded
+  mechanism:
+  - ecb
+  - rate_decision
+  description: Primo taglio BCE dal 2019, con tono restrittivo
+- date: '2024-06-06'
+  theme: macro_data
+  reference: FTSEMIB.MI
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: '''Hawkish cut'': il taglio era scontato e la notizia era il tono restrittivo; la riga scrive
+    il verso del taglio, non quello della sorpresa. Revisione maintainer 2026-09-23.'
+  status: excluded
+  mechanism:
+  - ecb
+  - rate_decision
+  description: Primo taglio BCE dal 2019, con tono restrittivo
+- date: '2024-08-05'
+  theme: macro_data
+  reference: ^GSPC
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: Il titolo della riga descrive l'esito ('Selloff globale'), non un evento con un'attesa prima
+    della seduta. Come il 2024-08-05/06 BoJ.
+  status: excluded
+  mechanism:
+  - labour_market
+  - synchronized_selloff
+  description: Selloff globale da timore di recessione USA
+- date: '2024-08-05'
+  theme: macro_data
+  reference: ^NDX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: Il titolo della riga descrive l'esito ('Selloff globale'), non un evento con un'attesa prima
+    della seduta. Come il 2024-08-05/06 BoJ.
+  status: excluded
+  mechanism:
+  - labour_market
+  - synchronized_selloff
+  description: Selloff globale da timore di recessione USA
+- date: '2024-08-05'
+  theme: macro_data
+  reference: ^VIX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: Il titolo della riga descrive l'esito ('Selloff globale'), non un evento con un'attesa prima
+    della seduta. Come il 2024-08-05/06 BoJ.
+  status: excluded
+  mechanism:
+  - labour_market
+  - synchronized_selloff
+  description: Selloff globale da timore di recessione USA
+- date: '2024-08-05'
+  theme: macro_data
+  reference: ^STOXX50E
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: Il titolo della riga descrive l'esito ('Selloff globale'), non un evento con un'attesa prima
+    della seduta. Come il 2024-08-05/06 BoJ.
+  status: excluded
+  mechanism:
+  - labour_market
+  - synchronized_selloff
+  description: Selloff globale da timore di recessione USA
+- date: '2024-08-22'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''euro/DAX reazione mista'' — non è una direzione.'
+  status: excluded
+  mechanism:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  description: Flash PMI eurozona di agosto sopra le attese
+- date: '2024-08-22'
+  theme: macro_data
+  reference: ^GDAXI
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''euro/DAX reazione mista'' — non è una direzione.'
+  status: excluded
+  mechanism:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  description: Flash PMI eurozona di agosto sopra le attese
+- date: '2024-08-22'
+  theme: macro_data
+  reference: ^STOXX50E
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''euro/DAX reazione mista'' — non è una direzione.'
+  status: excluded
+  mechanism:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  description: Flash PMI eurozona di agosto sopra le attese
+- date: '2024-09-18'
+  theme: macro_data
+  reference: ^GSPC
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''equity volatile'' — non è una direzione.'
+  status: excluded
+  mechanism:
+  - rate_decision
+  description: La Fed taglia di 50 pb
+- date: '2024-09-18'
+  theme: macro_data
+  reference: ^TNX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''curva più ripida'' — dice la pendenza, non il verso del livello.'
+  status: excluded
+  mechanism:
+  - rate_decision
+  description: La Fed taglia di 50 pb
+- date: '2024-09-18'
+  theme: macro_data
+  reference: ^FVX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''curva più ripida'' — dice la pendenza, non il verso del livello.'
+  status: excluded
+  mechanism:
+  - rate_decision
+  description: La Fed taglia di 50 pb
+- date: '2024-09-23'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''euro giù''. EURUSD=X quota dollari per euro.'
+  direction: neg
+  mechanism:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  description: Flash PMI eurozona di settembre sotto le attese
+- date: '2024-09-23'
+  theme: macro_data
+  reference: ^GDAXI
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''DAX giù''.'
+  direction: neg
+  mechanism:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  description: Flash PMI eurozona di settembre sotto le attese
+- date: '2025-01-10'
+  theme: macro_data
+  reference: ^TNX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - nfp
+  - labour_market
+  description: Payroll di dicembre +256k
+- date: '2025-01-10'
+  theme: macro_data
+  reference: ^NDX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''equity giù''.'
+  direction: neg
+  mechanism:
+  - nfp
+  - labour_market
+  description: Payroll di dicembre +256k
+- date: '2025-01-10'
+  theme: macro_data
+  reference: ^GSPC
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''equity giù''.'
+  direction: neg
+  mechanism:
+  - nfp
+  - labour_market
+  description: Payroll di dicembre +256k
+- date: '2025-02-06'
+  theme: macro_data
+  reference: GBPUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Nota: ''taglio prezzato''. ''GBP giù'' è il verso del meccanismo; con la regola della sorpresa
+    la riga non dice se la BoE fu più o meno accomodante del prezzato.'
+  status: excluded
+  mechanism:
+  - boe
+  - rate_decision
+  - britain_release
+  description: La BoE taglia al 4,5%
+- date: '2025-08-12'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''euro debole/muto'' — due letture, come ''JPY neutrale/debole'' del 2016-09-21 BoJ.'
+  status: excluded
+  mechanism:
+  - eurozone_release
+  - activity_growth
+  description: ZEW di agosto in calo di 18 punti
+- date: '2025-08-21'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''euro su''. EURUSD=X quota dollari per euro.'
+  direction: pos
+  mechanism:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  description: Flash PMI eurozona di agosto sopra le attese
+- date: '2025-08-21'
+  theme: macro_data
+  reference: ^GDAXI
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''DAX su''.'
+  direction: pos
+  mechanism:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  description: Flash PMI eurozona di agosto sopra le attese
+- date: '2025-11-11'
+  theme: macro_data
+  reference: IGLT.L
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''gilt yields giù''. IGLT.L è un ETF di gilt: quota il PREZZO, inverso ai rendimenti.'
+  direction: pos
+  mechanism:
+  - labour_market
+  - britain_release
+  description: Dati sul lavoro UK deboli
+- date: '2025-11-11'
+  theme: macro_data
+  reference: GBPUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''GBP giù''. GBPUSD=X quota dollari per sterlina.'
+  direction: neg
+  mechanism:
+  - labour_market
+  - britain_release
+  description: Dati sul lavoro UK deboli
+- date: '2025-12-09'
+  theme: macro_data
+  reference: ^TNX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - labour_market
+  description: JOLTS sopra le attese
+- date: '2025-12-09'
+  theme: macro_data
+  reference: ^FVX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti su''. ^FVX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - labour_market
+  description: JOLTS sopra le attese
+- date: '2025-12-12'
+  theme: macro_data
+  reference: IGLT.L
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''gilt yields giù''. IGLT.L è un ETF di gilt: quota il PREZZO, inverso ai rendimenti.'
+  direction: pos
+  mechanism:
+  - activity_growth
+  - britain_release
+  description: PIL UK di ottobre sotto le attese
+- date: '2025-12-12'
+  theme: macro_data
+  reference: GBPUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''GBP giù''. GBPUSD=X quota dollari per sterlina.'
+  direction: neg
+  mechanism:
+  - activity_growth
+  - britain_release
+  description: PIL UK di ottobre sotto le attese
+- date: '2026-02-05'
+  theme: macro_data
+  reference: ^TNX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti giù''. ^TNX quota il rendimento.'
+  direction: neg
+  mechanism:
+  - labour_market
+  description: Dati sul lavoro USA deboli
+- date: '2026-02-17'
+  theme: macro_data
+  reference: IGLT.L
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''gilt yields giù''. IGLT.L è un ETF di gilt: quota il PREZZO, inverso ai rendimenti.'
+  direction: pos
+  mechanism:
+  - labour_market
+  - britain_release
+  description: Retribuzioni UK deboli, disoccupazione al 5,2%
+- date: '2026-06-05'
+  theme: macro_data
+  reference: ^TNX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - nfp
+  - labour_market
+  description: Payroll di maggio sopra le attese
+- date: '2026-06-05'
+  theme: macro_data
+  reference: ^FVX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti su''. ^FVX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - nfp
+  - labour_market
+  description: Payroll di maggio sopra le attese
+- date: '2026-06-05'
+  theme: macro_data
+  reference: ^GSPC
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''equity giù''.'
+  direction: neg
+  mechanism:
+  - nfp
+  - labour_market
+  description: Payroll di maggio sopra le attese
+- date: '2026-06-11'
+  theme: macro_data
+  reference: EXX6.DE
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti euro su''. EXX6.DE è un ETF di Bund lunghi: quota il PREZZO, inverso ai
+    rendimenti.'
+  direction: neg
+  mechanism:
+  - ecb
+  - rate_decision
+  description: La BCE alza i tassi
+- date: '2026-07-24'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''euro su''. EURUSD=X quota dollari per euro.'
+  direction: pos
+  mechanism:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  description: Flash PMI eurozona di luglio sopra le attese
+- date: '2026-07-24'
+  theme: macro_data
+  reference: ^GDAXI
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''DAX su''.'
+  direction: pos
+  mechanism:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  description: Flash PMI eurozona di luglio sopra le attese
+- date: '2026-07-24'
+  theme: macro_data
+  reference: EXX6.DE
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''rendimenti su''. EXX6.DE è un ETF di Bund lunghi: quota il PREZZO, inverso ai rendimenti.'
+  direction: neg
+  mechanism:
+  - pmi
+  - activity_growth
+  - eurozone_release
+  description: Flash PMI eurozona di luglio sopra le attese
+- date: '2026-08-18'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Riga: ''euro su modesto''. EURUSD=X quota dollari per euro.'
+  direction: pos
+  mechanism:
+  - eurozone_release
+  - activity_growth
+  description: ZEW di agosto sopra le attese

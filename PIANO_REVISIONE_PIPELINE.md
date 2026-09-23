@@ -396,7 +396,10 @@ research): oggi entrambi dicono «pressione attesa» e ammettono tutte e due le 
       - [x] **Russia-Ucraina attrito energetico** — 2026-09-23, 46 righe promosse, nessuna aperta.
         «Marginale» + «Atteso» → `neutral` (6 pacchetti UE); un picco di prezzo come data d'ancora
         (Brent 2022-03-08, TTF 2022-08-22) → escluso. Etichette di meccanismo prese da quelle in libreria.
-      - [ ] **Sorprese macro e reaction function** — prossima (poi raffinerie russe, Brasile fiscale).
+      - [x] **Sorprese macro e reaction function** — 2026-09-23, 74 righe promosse; 14 coppie aperte
+        (asset nel canale senza verso scritto). Qui la colonna «attesa» a volte riporta l'esito: «mista»,
+        «volatile» e i titoli di esito esclusi; «Hawkish cut» (BCE 2024-06-06) escluso per la regola della sorpresa.
+      - [ ] **Raffinerie russe** — prossima (poi Brasile fiscale, premio a termine).
 - [ ] Le schede senza `direction_reference` (agosto e prima metà di settembre): `recupero.py
       prepara` oggi gestisce solo le research, serve il ramo per le schede. Per una scheda
       l'asset non è nella riga: va scelto fra i ticker del suo event study.
