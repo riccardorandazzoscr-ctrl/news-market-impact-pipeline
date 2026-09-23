@@ -310,36 +310,88 @@ passano al **Run 5c**, sotto.
 
 ---
 
-## [ ] Run 5c — Ramo KB di `analogues` e recupero delle righe
+## [x] Run 5c — Ramo KB di `analogues` e strumento di recupero — FATTO — 2026-09-23
 **ID report:** R01 + resto di R03
-**Modello:** Opus 5 · effort high
+**Modello:** Opus 5 · effort high (eseguito su Opus 5.5)
 **Precondizione:** Run 5b parte 1 chiuso. Contratto in
 `daily_analysis/_reviews/2026-09-21-r04-r01-schema-episodi.md` — **già approvato, non
 rinegoziare**: la research non si riscrive, le dichiarazioni vivono nel registro.
 
-- [ ] `analogues.py` ramo KB (riga ~453): leggere i **blocchi dichiarati** come già fa per le
-      schede giornaliere, e produrre `directions_by_reference`. Oggi le research catalogate non
-      soddisfano il filtro `--direction` + `--direction-reference` e vengono scartate.
-- [ ] Ammettere revisioni provenienti direttamente dalle ricerche (oggi solo da scheda
-      giornaliera, riga ~480).
-- [ ] **Non** convertire automaticamente i versi legacy in dichiarazioni affidabili.
-- [ ] R03 resto: distinguere data incerta / alternativa / editoriale / data evento. Oggi
-      `harvest_kb` (riga ~378) cerca date ISO in tutto il corpo e ha indicizzato una data
-      citata in una nota tecnica come episodio. Etichette applicate ai campi della **singola riga**,
-      non al paragrafo (il Tankan 1 apr 2024 prende «inflazione» dal paragrafo sul regime successivo).
-- [ ] Normalizzare le tabelle di eventi già esistenti (es. `24 mag 2023 AC` nella research
-      semiconduttori, oggi estrae zero date).
-- [ ] **Recupero delle righe già scritte** (deciso col maintainer il 2026-09-21): copre
-      research **e** schede senza `direction_reference` — quelle di agosto e i due terzi di
-      settembre precedenti al giorno 14. Quattro gruppi e tavola delle inversioni in §7.3
-      della spec. Regola non negoziabile: **quando si decide il verso non si apre il DB
-      prezzi.** Una riga non approvata non viene usata.
-- [ ] Aggiungere `mechanism` e `description` a `_direction_reviews.yaml` (opzionali, per non
-      invalidare le righe già compilate a mano) e togliere il vincolo che la fonte sia una
-      scheda, conservando il controllo equivalente sulle research.
+⚠ **Run spezzato di nuovo.** Il codice è chiuso; il recupero vero passa al **Run 5d**, perché
+richiede più sessioni e prima una decisione di metodo del maintainer (vedi 5d).
 
-> **Finché il Run 5c non è chiuso: non commissionare nuove research.** Finirebbero nello
-> stesso imbuto rotto.
+- [x] `analogues.py` ramo KB: legge la **tabella canonica** `| Data | Asset | Verso |
+      Meccanismo | Evento |` e produce `directions_by_reference`. Se presente è l'autorità
+      del file: la prosa si spegne.
+- [x] Revisioni con fonte research (`source: kb:<percorso>`), con controllo equivalente:
+      la research deve contenere quella data.
+- [x] **Non** convertire automaticamente i versi legacy: il recupero passa da una proposta
+      che il maintainer approva.
+- [x] R03 resto, parte deterministica: etichette dalla **riga** della tabella (Tankan);
+      date di solo mese e intervalli nella cella rifiutati.
+- [x] Normalizzare le tabelle esistenti: date italiane lette, `AC` → seduta di reazione.
+- [x] `mechanism` e `description` nel registro, opzionali.
+
+**Note di chiusura:**
+- Due regole che sembravano ovvie **misurate e scartate prima di scriverle**. (1) «Tabella =
+  autorità» anche sulle research in formato libero: avrebbe cancellato episodi veri scritti
+  in prosa (Bolsonaro, Boric, controlli all'export sui chip, bando su Micron). Vale quindi
+  solo per la tabella canonica. (2) «Data successiva alla compilazione = spuria»: prende una
+  sola data, ed è un evento vero in calendario; le spurie vere sono *anteriori*. Separare una
+  nota editoriale da un episodio in prosa è un giudizio, non una regola: le date spurie delle
+  research vecchie si chiudono research per research, nel recupero.
+- Effetto sulla libreria: **+13 episodi, 0 rimossi** — 6 dalla research semiconduttori (che
+  prima non contribuiva nessuno dei suoi 12 eventi: date italiane) e 7 dalla bitcoin (date
+  italiane in grassetto); gli altri eventi erano già in libreria da schede. Etichette dalla riga:
+  +34 guadagnate, 5 perse — 2 contaminazioni vere tolte (Tankan; `fixing` preso da una
+  frase che lo *nega*), 2 legittime perse (Ryazan, `boj_normalization` sul 19/03/2024),
+  recuperabili con `mechanism` nel registro. Le `AC` seguono il template (data = prima
+  seduta di reazione), perché l'event study ancora T=0 alla chiusura del primo giorno ≥ data.
+- Nuovo `recupero.py` (prepara / promuovi) e **pilota sulla research BoJ** in
+  `knowledge_base/_recupero/Giappone : Bank of Japan.yaml`, **non ancora promosso**: 11
+  dichiarazioni nuove, 7 concordi con schede già esistenti (verifica indipendente delle
+  regole, inversioni comprese), 4 escluse con motivo, 14 domande, 6 senza azione. Simulazione
+  di promozione su copia del registro: tutto valido. Template delle research nuove aggiornato
+  alla tabella canonica. Suite `kb` a 71 asserzioni più il check di `recupero.py`.
+
+---
+
+## [ ] Run 5d — Recupero delle righe già scritte
+**ID report:** R01
+**Modello:** Opus 5.5 · effort high
+**Precondizione:** il maintainer ha **rivisto il pilota BoJ**.
+
+✅ **DECISO dal maintainer il 2026-09-23: il verso è la SORPRESA rispetto al già prezzato**,
+non il meccanismo in astratto. Scritto in entrambi i template (scheda e research) e applicato
+al pilota: i due conflitti si chiudono a `pos` come le schede, e due righe BoJ su rialzi
+«ampiamente attesi» tornano domande. Da non rinegoziare. Conseguenza per il recupero: il
+verso narrativo di una research vecchia vale solo se la riga dice che l'evento era una
+sorpresa o non dice che era scontato; «atteso/telegrafato» + verso del meccanismo → domanda.
+
+⚠ **Questione di metodo emersa dal pilota, da decidere prima di tutto.** Cosa significa
+«verso atteso»? Il pilota ha trovato due letture incompatibili già presenti nei dati:
+- **pressione del meccanismo in sé** — un rialzo spinge lo yen su → `JPY=X neg`. È quella
+  che scrivono le research;
+- **sorpresa rispetto a quanto già prezzato** — il rialzo del 19/03/2024 era scontato,
+  l'informazione nuova era la guidance accomodante → yen più debole → `pos`. È quella che
+  hanno usato le schede di settembre (14/09 e 18/09), e il registro rifiuta giustamente una
+  revisione che contraddica una scheda.
+Stesso conflitto sul 2025-07-31. La risposta va scritta **in entrambi i template** (scheda e
+research): oggi entrambi dicono «pressione attesa» e ammettono tutte e due le letture.
+
+- [x] Decidere la regola del verso (sorpresa) e scriverla nei due template.
+- [ ] Rivedere e promuovere il pilota BoJ (`recupero.py promuovi`).
+- [ ] Le altre research con tabella, in ordine di valore: prima quelle sugli asset che le
+      schede usano davvero come `direction_reference` (comando per vederli in §9 della spec).
+- [ ] Le schede senza `direction_reference` (agosto e prima metà di settembre): `recupero.py
+      prepara` oggi gestisce solo le research, serve il ramo per le schede. Per una scheda
+      l'asset non è nella riga: va scelto fra i ticker del suo event study.
+- [ ] Le date spurie delle research in formato libero (note tecniche, date di scrittura):
+      durante il recupero di ciascuna, con esclusione motivata.
+
+> **Finché il Run 5d non è chiuso: non commissionare nuove research.** Oggi però una research
+> nuova scritta col template aggiornato entra già pulita (tabella canonica, prosa spenta):
+> il divieto resta per prudenza finché il metodo del verso non è deciso.
 
 ---
 

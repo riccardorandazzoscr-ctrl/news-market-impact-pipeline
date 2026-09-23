@@ -227,6 +227,11 @@ La sterlina crollò. La dichiarazione corretta è **`pos`**, cioè il contrario 
 Le research distinguono già le due cose da sole. Riga reale da «Sorprese macro»:
 `equity su atteso, realizzato debole` → si prende `pos`, il resto della frase si ignora.
 
+**Regola del verso (DECISA dal maintainer il 2026-09-23):** l'attesa è la **sorpresa
+rispetto a quanto il mercato aveva già prezzato**, non il meccanismo in astratto. Emersa dal
+pilota BoJ, dove research («un rialzo rafforza lo yen») e schede («il rialzo era scontato, la
+guidance accomodante ha indebolito lo yen») dichiaravano versi opposti per lo stesso giorno.
+
 ### 7.3 I quattro gruppi
 
 Ogni riga ricade in uno dei quattro, e il Run 5b deve trattarli diversamente.

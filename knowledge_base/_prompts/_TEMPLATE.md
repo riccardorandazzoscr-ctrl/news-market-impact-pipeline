@@ -48,7 +48,38 @@ Distingui i canali *direzionali* da quelli *redistributivi* (che muovono due ass
 in direzioni opposte) e dagli *amplificatori* (che cambiano l'ampiezza ma non il segno).
 
 **§3 Catalogo di episodi-ancora datati.** Il cuore dello studio. Una tabella con
-colonne: `Data (ISO) | Evento | Tipo | Direzione attesa | Asset-canale | Note no-look-ahead`.
+**esattamente** queste intestazioni, in quest'ordine (la pipeline la legge per nome
+delle colonne):
+
+`| Data | Asset | Verso | Meccanismo | Evento | Note |`
+
+**Una riga per ogni coppia (data, asset).** Se lo stesso evento spinge due asset in
+direzioni diverse, sono due righe con la stessa data. Regole delle colonne:
+
+- `Asset`: **un solo** ticker, preso da questa lista e da nessun'altra: <lista asset in DB>.
+  Uno strumento non in lista si nomina solo in `Note`.
+- `Verso`: la pressione **attesa all'epoca** sul **prezzo del ticker**, con l'informazione
+  disponibile quel giorno — `pos` (al rialzo), `neg` (al ribasso), `neutral`. Non è un
+  giudizio sull'evento e **non è il movimento poi osservato**: se il mercato si aspettava
+  una cosa ed è successa l'opposta, si scrive l'attesa. L'attesa è la **sorpresa rispetto a
+  quanto il mercato aveva già prezzato**, non il meccanismo in astratto: un rialzo dei tassi
+  interamente scontato, annunciato con una guidance accomodante, spinge la valuta al
+  ribasso, non al rialzo. Se non sai ricostruire cosa era prezzato, scrivi `pos, neg`.
+  Convenzioni del ticker, da non
+  sbagliare: sulle valute è la quotazione così com'è (`JPY=X` è USD/JPY: yen forte =
+  `neg`); `^TNX`, `^FVX`, `^TYX` quotano il **rendimento**, `IEF` e gli ETF obbligazionari il
+  **prezzo**; uno spread (`BTP_BUND_SPREAD`) che si allarga è `pos`. Se l'attesa era
+  genuinamente ambigua scrivi `pos, neg`: la riga resta documentata ma esce dai calcoli
+  direzionali, ed è meglio così che un verso indovinato.
+- `Meccanismo`: uno o più token fra questi, separati da virgola: <token canonici del tema,
+  da `analogues.py labels --theme <tema>`>. Per una release dell'area euro o del Regno
+  Unito aggiungi `eurozone_release` o `britain_release`.
+- `Evento`: una riga, cosa è successo quel giorno.
+- `Note`: fonte, incertezze, controlli no-look-ahead, strumenti non in lista.
+
+La tabella è l'elenco **completo** degli episodi dello studio: le date scritte nel resto
+del testo non vengono raccolte. Un episodio che non sta in tabella per la pipeline non
+esiste.
 
 Requisiti sulle date, **critici**:
 - almeno **<N, tipicamente 15-25>** episodi;
@@ -57,10 +88,9 @@ Requisiti sulle date, **critici**:
   quella dell'annuncio: se la notizia esce a mercato chiuso, a mercato locale
   disallineato dal proxy (ETF USA su sottostante asiatico/europeo) o in un
   festivo, usa la prima seduta utile del proxy e **spiegalo nella colonna Note**;
-- se una data è incerta fra due fonti, riportale entrambe e dichiaralo;
-- **una data che NON deve diventare un episodio** (picco di una serie di prezzo,
-  inizio di una fase, riferimento generico) va scritta in forma **non-ISO**
-  ("inizio 2018", "primavera 2022") — la pipeline raccoglie ogni YYYY-MM-DD che trova.
+- se una data è incerta fra due fonti, **non metterla in tabella**: scrivi le due
+  candidate in prosa e spiega perché — un episodio con la data sbagliata di un giorno
+  misura la cosa sbagliata.
 
 **§4 Statistiche indicative.** Cosa è successo mediamente agli asset dopo gli
 episodi del §3, per canale. Riporta **sempre N** accanto a ogni statistica;
@@ -107,9 +137,12 @@ formato esatto:
 ## Dopo l'esecuzione (checklist per Claude)
 
 - [ ] research salvata in `knowledge_base/<Titolo>/<Titolo>.md`
-- [ ] `venv/bin/python build_catalog.py` → lo studio compare in `catalog.yaml`
+- [ ] `venv/bin/python build_catalog.py` → lo studio compare in `catalog.yaml`; un ERRORE
+      sulla tabella episodi (ticker fuori lista, verso fuori vocabolario, data non ISO)
+      blocca la pubblicazione e va corretto nel .md
 - [ ] `venv/bin/python analogues.py build` → controllare il delta di episodi
 - [ ] `venv/bin/python analogues.py labels --theme <tema>` → la copertura è migliorata?
+- [ ] `venv/bin/python analogues.py find --theme <tema> --direction <verso> --direction-reference <ticker>`
+      → le righe della tabella entrano nel pool direzionale
 - [ ] `venv/bin/python pipeline_tools.py match "<notizia tipo>"` → lo studio esce primo
-- [ ] date spurie? (confini di regime, `date_compiled`, date in prosa) → correggere il .md
 - [ ] questo prompt cancellato da `_prompts/`
