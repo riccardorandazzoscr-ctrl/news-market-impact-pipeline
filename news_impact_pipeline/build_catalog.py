@@ -110,7 +110,8 @@ def main():
 
     for f in md_files:
         rel = str(f.relative_to(KB_DIR))  # es. "sovereign_debt/sovereign_debt_crisis.md"
-        meta = kb_metadata.extract(f.read_text(encoding="utf-8"))
+        text = f.read_text(encoding="utf-8")
+        meta = kb_metadata.extract(text)
 
         if meta is None:
             # File senza blocco (PDF riesportati, note, raw export): non è uno
@@ -118,7 +119,12 @@ def main():
             print(f"  [SKIP]  {rel}: nessun blocco YAML trovato")
             continue
 
-        findings = kb_metadata.validate(meta, known_tickers)
+        # Metadati e, se la research la usa, la tabella canonica degli episodi:
+        # un ticker inesistente o un verso fuori vocabolario sono errori, perché
+        # la libreria scarterebbe quella riga senza dirlo a nessuno.
+        _, declared = kb_metadata.kb_tables(kb_metadata.strip(text))
+        findings = (kb_metadata.validate(meta, known_tickers)
+                    + kb_metadata.validate_declared(declared, known_tickers))
         errs = kb_metadata.errors(findings)
         for lvl, msg in findings:
             print(f"  [{lvl:7s}] {rel}: {msg}")

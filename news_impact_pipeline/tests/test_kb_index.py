@@ -222,6 +222,180 @@ stale, unind = scan_su(kb, cat)
 check(not stale and unind == [], "i percorsi con prefisso _ non sono studi")
 print("   _prompts ignorato                      → coerente  ✓")
 
+# --------------------------------------------------------------------------
+print("\n4. COLONNA DATA — date italiane, after close, date incerte")
+# --------------------------------------------------------------------------
+cd = kb_metadata.cell_date
+casi_data = {
+    "2016-06-23": "2016-06-23",             # ISO: presa com'è
+    "7 ott 2022": "2022-10-07",             # italiana
+    "**17 gen 2017**": None,                # (il grassetto lo toglie _cell, non cell_date)
+    "24 mag 2023 AC": "2023-05-25",         # mercoledì AC → giovedì
+    "29 set 2022 AC": "2022-09-30",         # giovedì AC → venerdì
+    "30 set 2022 AC": "2022-10-03",         # venerdì AC → lunedì, non sabato
+    "5 lug 2024 → ago 2024": None,          # intervallo: nessuna data puntuale
+    "2006-05": None,                        # solo mese: data incerta
+    "ott 2023": None,                       # solo mese: data incerta
+    "31 feb 2023": None,                    # data impossibile
+    "15 nov 2018 AC": "2018-11-16",
+}
+for cella, atteso in casi_data.items():
+    check(cd(cella) == atteso, f"cell_date({cella!r}) = {cd(cella)!r}, atteso {atteso!r}")
+check(cd(kb_metadata._cell("**17 gen 2017**")) == "2017-01-17", "grassetto nella cella")
+print(f"   {len(casi_data) + 1} celle interpretate come atteso (AC → seduta di reazione)  ✓")
+
+
+# --------------------------------------------------------------------------
+# Libreria end-to-end su directory temporanee: cmd_build legge costanti di
+# modulo, qui le si punta a una KB, a un archivio di schede e a un registro finti.
+# --------------------------------------------------------------------------
+import contextlib  # noqa: E402
+import io  # noqa: E402
+
+import analogues  # noqa: E402
+
+
+def costruisci(kb_files: dict[str, str], reviews: list | None = None):
+    """Esegue analogues.build su una KB temporanea; restituisce (episodi, errore)."""
+    kb = kb_temporanea(kb_files)
+    daily = kb / "_daily"
+    daily.mkdir()
+    orig = (analogues.DAILY_DIR, analogues.KB_DIR, analogues.LIB_PATH, analogues.REVIEW_PATH)
+    analogues.DAILY_DIR, analogues.KB_DIR = daily, kb
+    analogues.LIB_PATH, analogues.REVIEW_PATH = kb / "_episodes.yaml", kb / "_reviews.yaml"
+    if reviews is not None:
+        analogues.REVIEW_PATH.write_text(yaml.safe_dump({"reviews": reviews}), encoding="utf-8")
+    try:
+        with contextlib.redirect_stdout(io.StringIO()):
+            analogues.cmd_build()
+        lib = yaml.safe_load(analogues.LIB_PATH.read_text(encoding="utf-8"))["episodes"]
+        return {(e["date"], e["theme"]): e for e in lib}, None
+    except ValueError as exc:
+        return None, str(exc)
+    finally:
+        (analogues.DAILY_DIR, analogues.KB_DIR,
+         analogues.LIB_PATH, analogues.REVIEW_PATH) = orig
+
+
+def find_su(lib_path: Path, theme, direction, ref):
+    orig = analogues.LIB_PATH
+    analogues.LIB_PATH = lib_path
+    try:
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(io.StringIO()):
+            analogues.cmd_find(theme, direction, None, None, 1, 0, direction_reference=ref)
+        return [d for d in buf.getvalue().strip().split(",") if d]
+    finally:
+        analogues.LIB_PATH = orig
+
+
+# --------------------------------------------------------------------------
+print("\n5. ETICHETTE DELLA SINGOLA RIGA — il caso Tankan")
+# --------------------------------------------------------------------------
+# La stessa data è l'episodio di una riga di tabella E il confine di una fase di
+# regime nel testo. Prima le etichette arrivavano da entrambi: il Tankan prendeva
+# `inflation_print` da un paragrafo che parla di CPI e di un regime successivo.
+tankan = studio(subs="[tankan, cpi]", corpo=(
+    "| Data (ISO) | Evento | Tipo |\n|---|---|---|\n"
+    "| 2024-04-01 | Tankan Q1: grandi manifatturieri +11 | indagine Tankan |\n\n"
+    "- **`post_ycc` (2024-04-01 → presente).** Rialzi dei tassi, CPI core sopra il 2%, "
+    "inflazione persistente.\n"))
+lib, err = costruisci({"giappone/s.md": tankan})
+check(err is None, f"build fallito: {err}")
+loc = set(lib[("2024-04-01", "macro_data")]["subthemes_local"])
+check("tankan" in loc, f"l'etichetta della riga deve restare: {loc}")
+check("inflation_print" not in loc, f"inflation_print arriva dal paragrafo di regime: {loc}")
+check("cpi" not in loc, f"anche il sotto-tema dichiarato 'cpi' viene dal paragrafo: {loc}")
+print(f"   2024-04-01 → {sorted(loc)}  (niente inflation_print)  ✓")
+
+# Una data italiana della colonna Data diventa episodio, con le etichette della riga.
+semis = studio(theme="structural_themes", corpo=(
+    "| # | Data evento | Catalizzatore |\n|---|---|---|\n"
+    "| 4 | 24 mag 2023 AC | NVDA guidance Q2: domanda AI e capex dei data center |\n"))
+lib, err = costruisci({"semis/s.md": semis})
+check(err is None and ("2023-05-25", "structural_themes") in lib,
+      f"la data italiana AC deve diventare la seduta di reazione: {err or sorted(lib)}")
+print("   «24 mag 2023 AC» → episodio 2023-05-25                   ✓")
+
+# --------------------------------------------------------------------------
+print("\n6. TABELLA CANONICA — direzioni per asset, prosa spenta")
+# --------------------------------------------------------------------------
+canonica = studio(theme="monetary_policy", corpo=(
+    "Nota tecnica: la scorecard del 2026-09-12 lo conferma.\n\n"
+    "| Data | Asset | Verso | Meccanismo | Evento | Note |\n|---|---|---|---|---|---|\n"
+    "| `2024-08-05` | `^VIX` | pos | carry_unwind | unwind del carry sullo yen | |\n"
+    "| `2024-08-05` | `JPY=X` | neg | carry_unwind | lo yen si rafforza | |\n"
+    "| `2016-06-24` | `EURUSD=X` | pos, neg | risk_off | Brexit: euro ambiguo | |\n"))
+lib, err = costruisci({"boj/s.md": canonica})
+check(err is None, f"build fallito: {err}")
+ep = lib[("2024-08-05", "monetary_policy")]
+check(ep["directions_by_reference"] == {"^VIX": ["pos"], "JPY=X": ["neg"]},
+      f"una riga = una coppia (data, asset): {ep.get('directions_by_reference')}")
+check("carry_unwind" in ep["subthemes_local"], "il meccanismo della riga è un'etichetta locale")
+check(ep["declared"] is True, "la riga canonica è una dichiarazione")
+# La prosa è spenta: la data della nota tecnica NON diventa un episodio (R03).
+check(("2026-09-12", "monetary_policy") not in lib,
+      "con la tabella canonica la data di una nota tecnica non deve diventare episodio")
+lib_path = kb_temporanea({}) / "lib.yaml"
+lib_path.write_text(yaml.safe_dump({"episodes": list(lib.values())}), encoding="utf-8")
+check(find_su(lib_path, "monetary_policy", "neg", "JPY=X") == ["2024-08-05"], "find su JPY=X neg")
+check(find_su(lib_path, "monetary_policy", "pos", "^VIX") == ["2024-08-05"], "find su ^VIX pos")
+check(find_su(lib_path, "monetary_policy", "pos", "JPY=X") == [], "il verso non si trasferisce fra asset")
+check(find_su(lib_path, "monetary_policy", "pos", "EURUSD=X") == [] and
+      find_su(lib_path, "monetary_policy", "neg", "EURUSD=X") == [],
+      "`pos, neg` dichiara l'ambiguità: fuori da entrambi i pool")
+print("   una riga per coppia (data, asset) → directions_by_reference  ✓")
+print("   `pos, neg` escluso da entrambi i pool                        ✓")
+print("   data in nota tecnica non diventa episodio (prosa spenta)     ✓")
+
+# Validazione della tabella canonica: ogni campo sbagliato è un ERRORE.
+_, dichiarate = kb_metadata.kb_tables(kb_metadata.strip(studio(corpo=(
+    "| Data | Asset | Verso | Meccanismo | Evento |\n|---|---|---|---|---|\n"
+    "| 5 ago 2024 | ^VIX | pos | carry_unwind | data non ISO |\n"
+    "| 2024-08-05 | JGB | pos | carry_unwind | ticker non in DB |\n"
+    "| 2024-08-05 | ^VIX | rialzo | carry_unwind | verso fuori vocabolario |\n"
+    "| 2024-08-05 | ^VIX | pos |  | meccanismo vuoto |\n"
+    "| 2024-08-05 | ^VIX | pos, neg | carry_unwind | ambiguo ma VALIDO |\n"))))
+errs = kb_metadata.errors(kb_metadata.validate_declared(dichiarate, {"^VIX"}))
+check(len(errs) == 4, f"attesi 4 errori, uno per riga rotta: {errs}")
+print("   righe canoniche malformate → 4 errori, `pos, neg` valido     ✓")
+
+# --------------------------------------------------------------------------
+print("\n7. REGISTRO — revisioni con fonte research")
+# --------------------------------------------------------------------------
+legacy = studio(theme="geopolitical", corpo=(
+    "| Data (ISO) | Evento | Direzione attesa | Asset-canale |\n|---|---|---|---|\n"
+    "| 2016-06-23 | Referendum Brexit | GBP ↑ se Remain (atteso) | GBPUSD=X |\n"))
+rev = {"date": "2016-06-23", "theme": "geopolitical", "reference": "GBPUSD=X",
+       "source": "uk/s.md", "reason": "Il mercato prezzava Remain alla chiusura.",
+       "direction": "pos"}
+
+lib, err = costruisci({"uk/s.md": legacy}, [{**rev, "source": "kb:uk/s.md",
+                                             "mechanism": ["referendum"],
+                                             "description": "Referendum Brexit, voto"}])
+check(err is None, f"una revisione con fonte research deve essere ammessa: {err}")
+ep = lib[("2016-06-23", "geopolitical")]
+check(ep["directions_by_reference"] == {"GBPUSD=X": ["pos"]}, "direzione dalla revisione")
+check(ep["direction_sources"] == {"GBPUSD=X": ["kb:uk/s.md"]}, "provenienza tracciata")
+check("referendum" in ep["subthemes_local"], "il mechanism della revisione è un'etichetta locale")
+print("   fonte kb: ammessa, provenienza e meccanismo registrati        ✓")
+
+_, err = costruisci({"uk/s.md": legacy}, [{**rev, "source": "kb:uk/s.md",
+                                           "date": "2016-06-24"}])
+check(err is not None, "una revisione su una data che la research non contiene va rifiutata")
+_, err = costruisci({"uk/s.md": legacy}, [{**rev, "source": "kb:uk/inesistente.md"}])
+check(err is not None, "una revisione con fonte KB inesistente va rifiutata")
+_, err = costruisci({"uk/s.md": legacy}, [{**rev, "source": "kb:uk/s.md",
+                                           "description": ["non", "testo"]}])
+check(err is not None, "description deve essere testo")
+print("   data assente, fonte inesistente, campi malformati → rifiutati ✓")
+
+# Le righe compilate a mano prima del 2026-09-23 non hanno mechanism/description
+# e non devono diventare invalide.
+lib, err = costruisci({"uk/s.md": legacy}, [{**rev, "source": "kb:uk/s.md"}])
+check(err is None, f"una revisione senza i campi nuovi deve restare valida: {err}")
+print("   revisione senza mechanism/description → ancora valida         ✓")
+
 print("\n" + "=" * 78)
 print(f"ASSERZIONI: {OK}   ·   FALLITE: 0")
 print("=" * 78)

@@ -76,6 +76,10 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
   run "kb — parser unico dei metadati, schema validato, scanner dell'indice" \
       tests/test_kb_index.py
 
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "kb" ] && \
+  run "kb — recupero: dalle proposte approvate alle righe del registro" \
+      recupero.py --check
+
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "analisi" ] && \
   run "analisi — guardiano contro il run interrotto a metà" \
       tests/test_index_incompleto.sh

@@ -166,7 +166,10 @@ def local_direction(text: str, d: str) -> set[str]:
     Può restituire l'insieme vuoto (nessun marcatore: l'episodio resta senza
     direzione locale e il filtro ricade sul livello di scheda) oppure entrambe le
     direzioni (riga genuinamente ambivalente: la teniamo, non la forziamo)."""
-    ctx = _contexts(text, d)
+    return direction_from_context(_contexts(text, d))
+
+
+def direction_from_context(ctx: str) -> set[str]:
     if not ctx.strip():
         return set()
     return {sign for sign, pats in DIRECTION_PATTERNS.items()
@@ -318,7 +321,15 @@ def _contexts(text: str, d: str) -> str:
 
 def local_labels(text: str, d: str, theme: str, declared: set[str],
                  taxonomy: dict) -> set[str]:
-    ctx = _contexts(text, d)
+    return labels_from_context(_contexts(text, d), theme, declared, taxonomy)
+
+
+def labels_from_context(ctx: str, theme: str, declared: set[str],
+                        taxonomy: dict) -> set[str]:
+    """Etichette da un contesto già delimitato. Serve quando il contesto è la RIGA
+    di una tabella di episodi, non le occorrenze della data nel testo: una data
+    italiana («24 mag 2023») non compare in forma ISO nella propria riga, e una
+    data ISO può ricomparire in un paragrafo che parla d'altro."""
     if not ctx.strip():
         return set()
     found = set()
@@ -396,7 +407,19 @@ def harvest_kb(path: Path) -> tuple[str, set[str], set[str], str]:
         raw_subs = [raw_subs]
     subthemes = {lbl for s in raw_subs if (lbl := _norm_label(str(s)))}
     body = kb_metadata.strip(text)
-    dates = set(DATE_RE.findall(body)) - _range_only_dates(body)
+    rows, declared = kb_metadata.kb_tables(body)
+    if declared:
+        # Tabella canonica: l'autore dichiara l'elenco COMPLETO degli episodi,
+        # quindi la pesca delle date in prosa si spegne per questo file — è lì
+        # che nascevano gli episodi fasulli da note tecniche (R03). Stessa regola
+        # delle schede: se il documento dichiara, i campi vincono sull'euristica.
+        dates = {r["date"] for r in declared if kb_metadata.cell_date(r["date"]) == r["date"]}
+    else:
+        # Research in formato libero: la prosa resta, perché molte scrivono in
+        # prosa anche episodi veri (misurato il 2026-09-23: Bolsonaro, Boric, i
+        # controlli all'export sui chip). In più, le date della colonna Data delle
+        # tabelle, anche quando non sono ISO.
+        dates = (set(DATE_RE.findall(body)) - _range_only_dates(body)) | set(rows)
     return theme, subthemes, dates, body
 
 
@@ -463,18 +486,44 @@ def cmd_build():
 
     # 2) ricerche KB (esclude _prompts e file con prefisso _)
     n_kb = 0
+    kb_dates: dict[str, set[str]] = {}      # per validare le revisioni con fonte KB
     for md in kb_metadata.iter_studies(KB_DIR):
         n_kb += 1
         theme, subthemes, dates, body = harvest_kb(md)
+        kb_dates[str(md.relative_to(KB_DIR))] = dates
+        source = f"kb:{md.parent.name}"
+        rows, declared = kb_metadata.kb_tables(body)
+        if declared:
+            # Tabella canonica: una riga = una coppia (data, asset) dichiarata.
+            # Una riga con un campo illeggibile non entra: build_catalog la
+            # segnala come ERRORE e non pubblica, qui non si indovina.
+            for r in declared:
+                versi = kb_metadata.declared_versi(r["verso"])
+                if r["date"] not in dates or versi is None or not r["asset"]:
+                    continue
+                add(r["date"], theme, "", subthemes, _split_subthemes(r["mechanism"]),
+                    source, declared=True, dir_declared=versi,
+                    direction_reference=r["asset"])
+            continue
         for d in dates:
+            # Contesto della data: la sua RIGA nella tabella di episodi, se c'è.
+            # Solo altrimenti le occorrenze nel testo, che possono parlare d'altro
+            # (il Tankan del 2024-04-01 e il confine di regime con la stessa data).
+            ctx = "\n".join(rows[d]) if d in rows else _contexts(body, d)
             add(d, theme, "", subthemes,
-                local_labels(body, d, theme, subthemes, taxonomy),
-                f"kb:{md.parent.name}",
-                local_direction(body, d))
+                labels_from_context(ctx, theme, subthemes, taxonomy),
+                source, direction_from_context(ctx))
 
     # Le etichette legacy non hanno un asset. Il registro è una revisione
-    # esplicita, con scheda di origine e motivazione, oppure un veto per date
-    # con eventi simultanei o attribuzione temporale incerta.
+    # esplicita, con fonte e motivazione, oppure un veto per date con eventi
+    # simultanei o attribuzione temporale incerta.
+    #
+    # La fonte può essere una scheda (`AAAA-MM-GG/news_NN.md`) oppure, dal
+    # 2026-09-23, una research (`kb:<percorso relativo alla KB>`): è così che si
+    # recuperano le direzioni che le research scrivono in prosa, senza riscrivere
+    # i loro file. Il controllo di integrità resta lo stesso nella forma
+    # equivalente — la fonte deve CONTENERE quella data come episodio —, così una
+    # revisione non può inventare un episodio che nessun documento descrive.
     seen_reviews = set()
     reviews = yaml.safe_load(REVIEW_PATH.read_text(encoding="utf-8")) if REVIEW_PATH.exists() else {}
     for row in (reviews or {}).get("reviews", []):
@@ -485,13 +534,26 @@ def cmd_build():
         if key in seen_reviews or key[:2] not in lib or not ref or not reason or not source:
             raise ValueError(f"Revisione direzionale incompleta o duplicata: {key}")
         seen_reviews.add(key)
-        source_parts = Path(source).parts
-        source_file = DAILY_DIR / source
-        if (len(source_parts) != 2 or not DAY_DIR_RE.fullmatch(source_parts[0])
-                or not re.fullmatch(r"news_\d+\.md", source_parts[1])
-                or not source_file.is_file()
-                or d not in declared_episodes(source_file.read_text(encoding="utf-8"))):
-            raise ValueError(f"Fonte della revisione assente o senza data {d}: {source}")
+        if source.startswith("kb:"):
+            if d not in kb_dates.get(source[3:], set()):
+                raise ValueError(f"Fonte KB della revisione assente o senza data {d}: {source}")
+            tag = source
+        else:
+            source_parts = Path(source).parts
+            source_file = DAILY_DIR / source
+            if (len(source_parts) != 2 or not DAY_DIR_RE.fullmatch(source_parts[0])
+                    or not re.fullmatch(r"news_\d+\.md", source_parts[1])
+                    or not source_file.is_file()
+                    or d not in declared_episodes(source_file.read_text(encoding="utf-8"))):
+                raise ValueError(f"Fonte della revisione assente o senza data {d}: {source}")
+            tag = f"card:{source}"
+        # `mechanism` e `description` sono opzionali: le righe compilate a mano
+        # prima del 2026-09-23 non li hanno, e non devono diventare invalide.
+        mech = row.get("mechanism")
+        if mech is not None and not isinstance(mech, (str, list)):
+            raise ValueError(f"mechanism della revisione {key}: lista o stringa di token")
+        if row.get("description") is not None and not isinstance(row["description"], str):
+            raise ValueError(f"description della revisione {key}: deve essere testo")
         e = lib[key[:2]]
         if row.get("status") == "excluded":
             e.setdefault("direction_review_excluded", {})[ref] = reason
@@ -503,7 +565,11 @@ def cmd_build():
         if existing and existing != {sign}:
             raise ValueError(f"Revisione {key} in conflitto con scheda esplicita: {existing}")
         e["directions_by_reference"].setdefault(ref, set()).add(sign)
-        e["direction_sources"].setdefault(ref, set()).add(f"card:{source}")
+        e["direction_sources"].setdefault(ref, set()).add(tag)
+        if mech:
+            e["subthemes_local"].update(
+                _split_subthemes(mech) if isinstance(mech, str)
+                else {lbl for t in mech if (lbl := _norm_label(str(t)))})
 
     episodes = []
     for e in sorted(lib.values(), key=lambda x: (x["theme"], x["date"])):
