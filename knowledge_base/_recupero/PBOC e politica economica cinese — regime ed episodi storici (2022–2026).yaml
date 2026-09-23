@@ -1,0 +1,987 @@
+research: PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+  cinese — regime ed episodi storici (2022–2026).md
+voci:
+- riga: '| 2022-01-17 | PBOC taglia MLF 1y di 10bp (a 2.85%) e reverse repo 7g | taglio tassi MLF | easing
+    → CNY debole, HG=F su | CNY=X, HG=F | Primo taglio del ciclo; controcorrente vs Fed hawkish |'
+  data: '2022-01-17'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - CNY=X
+  - HG=F
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''easing → CNY debole''. CNY=X quota yuan per dollaro: yuan debole = pos.'
+  - asset: HG=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HG=F su''.'
+  meccanismo:
+  - china
+  - china_stimulus
+  - rate_decision
+  evento: La PBoC taglia MLF e reverse repo
+  stato: promossa
+- riga: '| 2022-01-20 | Taglio LPR 1y (-10bp) e 5y (-5bp) | taglio tassi LPR | easing → risk-on EM | EEM,
+    HG=F | Serie di easing per property e crescita |'
+  data: '2022-01-20'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''easing → risk-on EM''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  - asset: HG=F
+    gruppo: 3
+    domanda: 'Riga: ''easing → risk-on EM'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - china_stimulus
+  - rate_decision
+  evento: Taglio della LPR
+  stato: promossa
+- riga: '| 2022-08-15 | Surprise cut MLF 1y (-10bp a 2.75%) + reverse repo, dopo dati luglio deboli |
+    taglio tassi a sorpresa | easing sorpresa → CNY debole, commodity giù | CNY=X, HG=F, ^NDX | Sorpresa;
+    petrolio -4,6%, yuan a minimo 3 mesi (segnale di debolezza = risk-off) |'
+  data: '2022-08-15'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - CNY=X
+  - HG=F
+  - ^NDX
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''CNY debole''. CNY=X quota yuan per dollaro: yuan debole = pos.'
+  - asset: HG=F
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''commodity giù''.'
+  - asset: ^NDX
+    gruppo: 3
+    domanda: 'Riga: ''easing sorpresa → CNY debole, commodity giù'' — il verso scritto non riguarda questo
+      asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - china_stimulus
+  - rate_decision
+  evento: Taglio a sorpresa della MLF dopo dati deboli
+  stato: promossa
+- riga: '| 2022-08-22 | Taglio LPR 5y (-15bp a 4.30%), 1y (-5bp) | taglio tassi LPR | easing → property
+    support | EEM, EWZ | 5y > 1y per mutui; yuan già sotto pressione |'
+  data: '2022-08-22'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - EWZ
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''easing → property support'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: EWZ
+    gruppo: 3
+    domanda: 'Riga: ''easing → property support'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - property_wealth
+  - rate_decision
+  evento: Taglio della LPR a 5 anni
+  stato: promossa
+- riga: '| 2022-09-28 | Yuan onshore a 7.2458 (minimo dal 2008), CNH a record; PBOC dichiara stabilità
+    FX "priorità assoluta" | intervento valutario verbale | difesa CNY → freno depr. | CNY=X, DX-Y.NYB
+    | Intervento verbale vs dollaro forte; soglia 7.20+ superata |'
+  data: '2022-09-28'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - CNY=X
+  - DX-Y.NYB
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è ancorata a un livello di prezzo (''Yuan onshore a 7,2458, minimo dal 2008''): selezionerebbe
+      l''episodio per il suo esito. Come il picco del Brent del 2022-03-08.'
+  - asset: DX-Y.NYB
+    gruppo: 3
+    domanda: 'Riga: ''difesa CNY → freno depr.'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - cny
+  evento: Yuan al minimo dal 2008, la PBoC difende il cambio
+  stato: promossa
+- riga: '| 2022-12-07 | "10 misure" National Health Commission: smantellamento zero-COVID | pivot politico/riapertura
+    | riapertura → risk-on EM, HG=F su | EEM, HG=F, EWZ | Pivot improvviso post-proteste; effetto economico
+    immediato negativo (ondata contagi) |'
+  data: '2022-12-07'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - EWZ
+  - HG=F
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''risk-on EM''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  - asset: HG=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HG=F su''.'
+  - asset: EWZ
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''risk-on EM''. EWZ è azionario emergente (Brasile): ''EM'' lo comprende.'
+  meccanismo:
+  - china
+  - confidence_rebound
+  evento: 'Le "10 misure": fine dello zero-COVID'
+  stato: promossa
+- riga: '| 2022-12-15/16 | Central Economic Work Conference: focus su ripresa economica 2023 | readout
+    CEWC | pro-crescita → risk-on | EEM, ^NDX | Pubblicità inusuale; priorità all''economia |'
+  data: '2022-12-15'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - ^NDX
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 4
+    verso: escluso
+    perché: 'Cella ''2022-12-15/16'': la riunione dura due giorni e il comunicato esce il secondo; con
+      la prima data l''event study parte prima della notizia.'
+  - asset: ^NDX
+    gruppo: 4
+    verso: escluso
+    perché: 'Cella ''2022-12-15/16'': la riunione dura due giorni e il comunicato esce il secondo; con
+      la prima data l''event study parte prima della notizia.'
+  meccanismo:
+  - china
+  - china_stimulus
+  evento: Central Economic Work Conference 2022
+  stato: promossa
+- riga: '| 2023-06-13 | Taglio reverse repo 7g (-10bp a 1.9%) | taglio tassi | easing → CNY debole | CNY=X,
+    HG=F | Primo taglio 2023; ripresa post-riapertura in stallo |'
+  data: '2023-06-13'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - CNY=X
+  - HG=F
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''easing → CNY debole''. CNY=X quota yuan per dollaro: yuan debole = pos.'
+  - asset: HG=F
+    gruppo: 3
+    domanda: 'Riga: ''easing → CNY debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - china_stimulus
+  - rate_decision
+  evento: Taglio del reverse repo a 7 giorni
+  stato: promossa
+- riga: '| 2023-06-15 | Taglio MLF 1y (-10bp a 2.65%); disoccupazione giovanile record 20.8% | taglio
+    tassi + dato macro | easing → EM misto | EEM, EWZ | Crescente preoccupazione policymaker |'
+  data: '2023-06-15'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - EWZ
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''easing → EM misto'' — nessun verso.'
+  - asset: EWZ
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''easing → EM misto'' — nessun verso.'
+  meccanismo:
+  - china
+  - china_stimulus
+  - rate_decision
+  evento: Taglio della MLF, disoccupazione giovanile record
+  stato: promossa
+- riga: '| 2023-08-15 | Surprise cut MLF 1y (-15bp a 2.50%); dati luglio deboli; yuan rompe 7.30 | taglio
+    a sorpresa + dato macro | easing sorpresa → CNY debole | CNY=X, HG=F, EEM | Yuan sotto 7.30 per la
+    prima volta da nov 2022 |'
+  data: '2023-08-15'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - CNY=X
+  - EEM
+  - HG=F
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''easing sorpresa → CNY debole''. CNY=X quota yuan per dollaro: yuan debole = pos.'
+  - asset: HG=F
+    gruppo: 3
+    domanda: 'Riga: ''easing sorpresa → CNY debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''easing sorpresa → CNY debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - china_stimulus
+  - rate_decision
+  evento: Taglio a sorpresa della MLF
+  stato: promossa
+- riga: '| 2023-08-30 | Country Garden riporta perdita netta H1 ~45 mld yuan | crisi immobiliare | risk-off
+    property → HG=F giù | HG=F, EEM | Deterioramento del "better child" del settore |'
+  data: '2023-08-30'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  dichiarazioni:
+  - asset: HG=F
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''risk-off property → HG=F giù''.'
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''risk-off property → HG=F giù'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - property_wealth
+  - credit_stress
+  evento: 'Country Garden: perdita semestrale di 45 miliardi'
+  stato: promossa
+- riga: '| 2023-09-25/26 | Evergrande manca pagamento, sospende emissione note; indagine su Hengda | crisi
+    immobiliare | risk-off → EM giù | EEM, HG=F | Azioni Evergrande -22% poi -7%; Hang Seng ai minimi
+    10 mesi |'
+  data: '2023-09-25'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''risk-off → EM giù''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  - asset: HG=F
+    gruppo: 3
+    domanda: 'Riga: ''risk-off → EM giù'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - property_wealth
+  - credit_stress
+  evento: Evergrande manca un pagamento
+  stato: promossa
+- riga: '| 2023-10-25 | Country Garden dichiarata in default su dollar bond per la prima volta | crisi
+    immobiliare | risk-off credito developer | EEM, HG=F | Mancato pagamento di $15,4mln di interessi
+    su bond da $500mln (scad. 2025) dopo grace period di 30 giorni (trustee Citicorp International); il
+    panel CDS aveva già rilevato il "failure to pay" alla deadline del 18 ott |'
+  data: '2023-10-25'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: il panel CDS aveva già rilevato il ''failure to pay'' il 18 ottobre: il default formale
+      era scontato.'
+  - asset: HG=F
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: il panel CDS aveva già rilevato il ''failure to pay'' il 18 ottobre: il default formale
+      era scontato.'
+  meccanismo:
+  - china
+  - property_wealth
+  - credit_stress
+  evento: Country Garden in default sui bond in dollari
+  stato: promossa
+- riga: '| 2024-01-24 | PBOC annuncia taglio RRR -50bp (dal 5 feb), ~1 trilione yuan liquidità | stimolo
+    monetario | easing → risk-on | EEM, HG=F | Annuncio anticipato inusuale, in mezzo a rout azionario
+    |'
+  data: '2024-01-24'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''easing → risk-on''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  - asset: HG=F
+    gruppo: 3
+    domanda: 'Riga: ''easing → risk-on'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - china_stimulus
+  evento: La PBoC annuncia il taglio della riserva obbligatoria
+  stato: promossa
+- riga: '| 2024-01-29 | Corte di Hong Kong ordina liquidazione di Evergrande | crisi immobiliare | risk-off
+    atteso → impatto limitato | EEM, HG=F | Azioni Evergrande -21% poi sospese; Hang Seng **+0,8%** (già
+    scontato) |'
+  data: '2024-01-29'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''risk-off atteso → impatto limitato'', nota ''già scontato''.'
+  - asset: HG=F
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''risk-off atteso → impatto limitato'', nota ''già scontato''.'
+  meccanismo:
+  - china
+  - property_wealth
+  - credit_stress
+  evento: Ordine di liquidazione di Evergrande
+  stato: promossa
+- riga: '| 2024-02-20 | Taglio record LPR 5y (-25bp a 3.95%), 1y invariata | taglio tassi | easing mirato
+    property → HG=F su | HG=F, EEM | Primo taglio 5y da giu 2023, il più grande dal 2019 |'
+  data: '2024-02-20'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  dichiarazioni:
+  - asset: HG=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HG=F su''.'
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''easing mirato property → HG=F su'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - property_wealth
+  - rate_decision
+  evento: Taglio record della LPR a 5 anni
+  stato: promossa
+- riga: '| 2024-05-17 | Pacchetto "storico" property: 300 mld yuan relending SOE per invenduto, abolito
+    floor mutui, giù acconti | stimolo property coordinato | easing property → HG=F, EEM su | HG=F, EEM,
+    EWZ | Il piano property più ambizioso fino ad allora; scetticismo sulla dimensione (molti stimavano
+    servisse ≥1 trilione) |'
+  data: '2024-05-17'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - EWZ
+  - HG=F
+  dichiarazioni:
+  - asset: HG=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HG=F, EEM su''.'
+  - asset: EEM
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HG=F, EEM su''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  - asset: EWZ
+    gruppo: 3
+    domanda: 'Riga: ''easing property → HG=F, EEM su'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - property_wealth
+  - china_stimulus
+  evento: Pacchetto per il settore immobiliare
+  stato: promossa
+- riga: '| 2024-07-30 | Politburo luglio: enfasi su consumi ma pochi dettagli | readout Politburo | deludente
+    → EM giù | EEM, ^NDX | Citi: nessun major shift; sentiment negativo |'
+  data: '2024-07-30'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - ^NDX
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''deludente → EM giù''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  - asset: ^NDX
+    gruppo: 3
+    domanda: 'Riga: ''deludente → EM giù'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - politburo
+  evento: 'Politburo di luglio 2024: pochi dettagli'
+  stato: promossa
+- riga: '| 2024-09-24 | Pacchetto stimolo PBOC (Pan Gongsheng): reverse repo 7g da 1,7% a 1,5%, RRR -50bp,
+    taglio mutui esistenti -50bp, swap facility ~US$71mld per l''azionario | stimolo monetario aggressivo
+    | easing forte sorpresa → risk-on globale | CNY=X, HG=F, EEM, ^NDX | **Il più aggressivo del periodo**;
+    rara conferenza stampa TV; CSI 300 e commodity balzano |'
+  data: '2024-09-24'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - CNY=X
+  - EEM
+  - HG=F
+  - ^NDX
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''risk-on globale''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  - asset: ^NDX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''risk-on globale''. Convenzione: risk-on = azionario al rialzo.'
+  - asset: HG=F
+    gruppo: 3
+    domanda: 'Riga: ''easing forte sorpresa → risk-on globale'' — il verso scritto non riguarda questo
+      asset.'
+    suggerimento: lasciare aperto
+  - asset: CNY=X
+    gruppo: 3
+    domanda: 'Riga: ''easing forte sorpresa → risk-on globale'' — il verso scritto non riguarda questo
+      asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - china_stimulus
+  evento: Pacchetto di stimolo della PBoC
+  stato: promossa
+- riga: '| 2024-09-26 | Politburo (riunione economica inusuale a settembre): impegno a stabilizzare property
+    e mercato | readout Politburo | pro-crescita forte → risk-on | EEM, HG=F, EWZ | **CSI 300 +15,7% nella
+    settimana (miglior settimana dal 2008)**; rame LME +6% |'
+  data: '2024-09-26'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - EWZ
+  - HG=F
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''pro-crescita forte → risk-on''. Convenzione: risk-on EM = azionario emergente al
+      rialzo.'
+  - asset: EWZ
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''pro-crescita forte → risk-on''. EWZ è azionario emergente (Brasile): ''EM'' lo comprende.'
+  - asset: HG=F
+    gruppo: 3
+    domanda: 'Riga: ''pro-crescita forte → risk-on'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - china_stimulus
+  - politburo
+  evento: 'Politburo di settembre 2024: stabilizzare immobiliare e mercato'
+  stato: promossa
+- riga: '| 2024-10-21 | Banche tagliano LPR -25bp (1y a 3.10%, 5y a 3.60%), il taglio più grande di sempre
+    | taglio tassi | easing → conferma stimolo | EEM, HG=F | Follow-through del pacchetto di settembre
+    |'
+  data: '2024-10-21'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''Follow-through del pacchetto di settembre''. Per la riga il taglio prosegue un annuncio
+      precedente: scontato (regola della sorpresa).'
+  - asset: HG=F
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''Follow-through del pacchetto di settembre''. Per la riga il taglio prosegue un annuncio
+      precedente: scontato (regola della sorpresa).'
+  meccanismo:
+  - china
+  - china_stimulus
+  - rate_decision
+  evento: Taglio record della LPR
+  stato: promossa
+- riga: '| 2024-11-07 | PBOC fissa il fixing al minimo dal 2023 (~7.1659), "greenlighting" depr. | intervento
+    valutario | tolleranza yuan debole | CNY=X, DX-Y.NYB | Post-elezione USA; tolleranza a depr. in vista
+    dazi |'
+  data: '2024-11-07'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - CNY=X
+  - DX-Y.NYB
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''tolleranza yuan debole''. CNY=X quota yuan per dollaro: yuan debole = pos.'
+  - asset: DX-Y.NYB
+    gruppo: 3
+    domanda: 'Riga: ''tolleranza yuan debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - cny
+  evento: Fixing al minimo dal 2023
+  stato: promossa
+- riga: '| 2024-12-09 | Politburo: prima adozione di politica monetaria "moderatamente accomodante" dal
+    2011 | readout Politburo | segnale stimolo forte → risk-on | EEM, HG=F | Linguaggio più diretto su
+    stimolo in ~14 anni; anticipa CEWC |'
+  data: '2024-12-09'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''segnale stimolo forte → risk-on''. Convenzione: risk-on EM = azionario emergente
+      al rialzo.'
+  - asset: HG=F
+    gruppo: 3
+    domanda: 'Riga: ''segnale stimolo forte → risk-on'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - china_stimulus
+  - politburo
+  evento: 'Politburo: politica monetaria moderatamente accomodante'
+  stato: promossa
+- riga: '| 2024-12-11/12 | Central Economic Work Conference: "politica fiscale più proattiva", aumento
+    deficit | readout CEWC | pro-crescita → risk-on | EEM, ^NDX | Conferma easing monetario e fiscale
+    per 2025 |'
+  data: '2024-12-11'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - ^NDX
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 4
+    verso: escluso
+    perché: 'Cella ''2024-12-11/12'': la riunione dura due giorni e il comunicato esce il secondo; con
+      la prima data l''event study parte prima della notizia.'
+  - asset: ^NDX
+    gruppo: 4
+    verso: escluso
+    perché: 'Cella ''2024-12-11/12'': la riunione dura due giorni e il comunicato esce il secondo; con
+      la prima data l''event study parte prima della notizia.'
+  meccanismo:
+  - china
+  - china_stimulus
+  evento: Central Economic Work Conference 2024
+  stato: promossa
+- riga: '| 2024-12-31 | Yuan offshore ai minimi dal 2022; onshore tocca 7.3698 | pressione valutaria |
+    yuan debole → EM pressione | CNY=X, DX-Y.NYB | Trading sottile; front-running dei dazi |'
+  data: '2024-12-31'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - CNY=X
+  - DX-Y.NYB
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è ancorata a un livello di prezzo (''Yuan offshore ai minimi dal 2022; onshore tocca
+      7,3698''): selezionerebbe l''episodio per il suo esito.'
+  - asset: DX-Y.NYB
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è ancorata a un livello di prezzo (''Yuan offshore ai minimi dal 2022; onshore tocca
+      7,3698''): selezionerebbe l''episodio per il suo esito.'
+  meccanismo:
+  - china
+  - cny
+  evento: Yuan ai minimi dal 2022
+  stato: promossa
+- riga: '| 2025-02-09 | CPI gennaio +0.2% a/a (poi feb -0.7% a/a): deflazione persistente | dato macro
+    (deflazione) | debole → risk-off EM/commodity | HG=F, EEM | Deflazione da domanda debole |'
+  data: '2025-02-09'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  dichiarazioni:
+  - asset: HG=F
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga descrive una fase (''deflazione persistente'') usando anche il dato di febbraio,
+      uscito dopo: non è una sorpresa isolabile alla data.'
+  - asset: EEM
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga descrive una fase (''deflazione persistente'') usando anche il dato di febbraio,
+      uscito dopo: non è una sorpresa isolabile alla data.'
+  meccanismo:
+  - china
+  - china_inflation
+  evento: CPI cinese di gennaio 2025
+  stato: promossa
+- riga: '| 2025-04-08 | PBOC fissa fixing oltre 7.20 (7.2038); yuan offshore a record 7.4290 dopo dazi
+    USA 104% | intervento valutario + dazi | tolleranza depr. controllata | CNY=X, DX-Y.NYB, EEM | Reazione
+    a "Liberation Day" (2 apr) ed escalation dazi |'
+  data: '2025-04-08'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - CNY=X
+  - DX-Y.NYB
+  - EEM
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''tolleranza depr. controllata''; la research sul cambio PBoC legge lo stesso fixing
+      come ''difesa camuffata'': due letture.'
+  - asset: DX-Y.NYB
+    gruppo: 3
+    domanda: 'Riga: ''tolleranza depr. controllata'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''tolleranza depr. controllata'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - cny
+  - tariff_escalation
+  evento: Fixing oltre 7,20 durante lo shock dei dazi
+  stato: promossa
+- riga: '| 2025-05-07 | Pacchetto PBOC 10-punti: RRR -50bp, reverse repo -10bp a 1.40% | stimolo monetario
+    | easing pre-negoziati → risk-on | CNY=X, HG=F, EEM | Primo taglio dal set 2024; poco prima dei colloqui
+    di Ginevra |'
+  data: '2025-05-07'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - CNY=X
+  - EEM
+  - HG=F
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''easing pre-negoziati → risk-on''. Convenzione: risk-on EM = azionario emergente al
+      rialzo.'
+  - asset: CNY=X
+    gruppo: 3
+    domanda: 'Riga: ''easing pre-negoziati → risk-on'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: HG=F
+    gruppo: 3
+    domanda: 'Riga: ''easing pre-negoziati → risk-on'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - china_stimulus
+  evento: Pacchetto PBoC in 10 punti
+  stato: promossa
+- riga: '| 2025-05-12 | Tregua commerciale USA-Cina (Ginevra): dazi USA 145%→30%, Cina 125%→10%, 90 giorni
+    | de-escalation dazi | risk-on globale | ^NDX, EEM, HG=F | **S&P 500 +3,3% a 5.844,19 (miglior seduta
+    dal 9 apr), Nasdaq +4,3% a 18.708,34**; yuan +0,2% |'
+  data: '2025-05-12'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  - ^NDX
+  dichiarazioni:
+  - asset: ^NDX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''risk-on globale''. Convenzione: risk-on = azionario al rialzo.'
+  - asset: EEM
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''risk-on globale''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  - asset: HG=F
+    gruppo: 3
+    domanda: 'Riga: ''risk-on globale'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - negotiation_track
+  evento: Tregua di Ginevra USA-Cina
+  stato: promossa
+- riga: '| 2025-05-20 | Taglio LPR -10bp (1y a 3.0%, 5y a 3.5%) | taglio tassi | easing → EM su | EEM,
+    HG=F | Trasmissione del taglio reverse repo di maggio |'
+  data: '2025-05-20'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''Trasmissione del taglio reverse repo di maggio''. Per la riga il taglio prosegue
+      un annuncio precedente: scontato (regola della sorpresa).'
+  - asset: HG=F
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''Trasmissione del taglio reverse repo di maggio''. Per la riga il taglio prosegue
+      un annuncio precedente: scontato (regola della sorpresa).'
+  meccanismo:
+  - china
+  - china_stimulus
+  - rate_decision
+  evento: Taglio della LPR
+  stato: promossa
+- riga: '| 2025-07-30 | Politburo luglio: priorità a contrastare "involution" (内卷)/guerre di prezzo |
+    readout Politburo | anti-deflazione → commodity su | HG=F, EEM | "防止''内卷式''恶性竞争" — focus su eccesso
+    di capacità e concorrenza distruttiva |'
+  data: '2025-07-30'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  dichiarazioni:
+  - asset: HG=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''anti-deflazione → commodity su''.'
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''anti-deflazione → commodity su'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china
+  - politburo
+  evento: 'Politburo di luglio 2025: contro la "involution"'
+  stato: promossa
+- riga: '| 2025-09-30 | PMI manifatturiero NBS 49.8 (6° mese sotto 50 ma minimo declino) | dato macro
+    PMI | debole ma in miglioramento | HG=F, EEM | Attesa di supporto policy pre-plenum ottobre |'
+  data: '2025-09-30'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  dichiarazioni:
+  - asset: HG=F
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''debole ma in miglioramento'' — nessun verso.'
+  - asset: EEM
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''debole ma in miglioramento'' — nessun verso.'
+  meccanismo:
+  - china
+  - pmi
+  evento: PMI manifatturiero di settembre 2025
+  stato: promossa
+- riga: '| 2025-10-20 | LPR invariata per 5° mese (1y 3.0%, 5y 3.5%) | tassi invariati | neutro/atteso
+    | CNY=X | Preferenza per stabilità; poco segnale |'
+  data: '2025-10-20'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - CNY=X
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: ''neutro/atteso''. CNY=X quota yuan per dollaro: yuan debole = pos. Decisione attesa:
+      nessuna pressione nuova.'
+  meccanismo:
+  - china
+  - rate_decision
+  evento: LPR invariata per il quinto mese
+  stato: promossa
+- riga: '| 2025-10-30 | Accordo Trump-Xi (Busan, APEC): dazio fentanyl 20%→10%, dazio USA complessivo
+    ~57%→47% | de-escalation dazi | risk-on → EM/commodity su | ^NDX, EEM, HG=F | Cina riprende acquisti
+    soia (25 mln t/anno) e mantiene flusso rare earth; tregua "poco profonda" |'
+  data: '2025-10-30'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  - ^NDX
+  dichiarazioni:
+  - asset: ^NDX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''risk-on → EM/commodity su''. Convenzione: risk-on = azionario al rialzo.'
+  - asset: EEM
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''risk-on → EM/commodity su''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  - asset: HG=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''risk-on → EM/commodity su''.'
+  meccanismo:
+  - china
+  - negotiation_track
+  evento: Accordo Trump-Xi a Busan
+  stato: promossa
+- riga: '| 2025-12-24/25 | Yuan offshore rompe 7.00 per la prima volta da settembre 2024 (6.9964) | apprezzamento
+    valutario | yuan forte → EM su | CNY=X, DX-Y.NYB | Dollaro debole + surplus record + conversioni esportatori
+    |'
+  data: '2025-12-24'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - CNY=X
+  - DX-Y.NYB
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è ancorata a un livello di prezzo (''Yuan offshore rompe 7,00''): selezionerebbe
+      l''episodio per il suo esito. E la cella è un intervallo (24/25).'
+  - asset: DX-Y.NYB
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è ancorata a un livello di prezzo (''Yuan offshore rompe 7,00''): selezionerebbe
+      l''episodio per il suo esito. E la cella è un intervallo (24/25).'
+  meccanismo:
+  - china
+  - cny
+  evento: Lo yuan offshore rompe quota 7
+  stato: promossa
+- riga: '| 2025-12-30 | Yuan onshore (CNY=CFXS) rompe 7.00 (6.9969), massimo da maggio 2023 | apprezzamento
+    valutario | yuan forte | CNY=X | Nonostante midpoint PBOC più debole (7.0348); +~5% da aprile |'
+  data: '2025-12-30'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - CNY=X
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è ancorata a un livello di prezzo (''Yuan onshore rompe 7,00, massimo da maggio 2023''):
+      selezionerebbe l''episodio per il suo esito.'
+  meccanismo:
+  - china
+  - cny
+  evento: Lo yuan onshore rompe quota 7
+  stato: promossa
+- riga: '| 2026-01-14 | Surplus commerciale 2025 record US$1,189 trilioni (+19,9% a/a); export +5,5% a
+    US$3,77 trilioni | dato macro (trade) | forte → EM/commodity su | EEM, HG=F, EWZ | Primo Paese nella
+    storia a superare $1 trilione di surplus annuale |'
+  data: '2026-01-14'
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - EWZ
+  - HG=F
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''forte → EM/commodity su''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  - asset: HG=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''forte → EM/commodity su''.'
+  - asset: EWZ
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''forte → EM/commodity su''. EWZ è azionario emergente (Brasile): ''EM'' lo comprende.'
+  meccanismo:
+  - china
+  - activity_growth
+  evento: Surplus commerciale cinese record nel 2025
+  stato: promossa
+- riga: '| 2026-02 | PMI manifatturiero NBS 49.0 (feb), 2° mese contrazione; poi 50.4 a marzo | dato macro
+    PMI | misto → volatilità | HG=F, EEM | Disruption festività + poi rimbalzo domanda AI/export |'
+  data: null
+  tema: macro_data
+  fonte: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica
+    cinese — regime ed episodi storici (2022–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: Data non puntuale o prima del 2011 (fuori dal DB prezzi).

@@ -1,4 +1,4 @@
-generated_at: '2026-09-23T11:52:27'
+generated_at: '2026-09-23T12:11:15'
 num_episodes: 1168
 episodes:
 - date: '1984-01-01'
@@ -7593,6 +7593,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ZC=F:
+    - pos
+    ZW=F:
+    - pos
+  direction_sources:
+    ZC=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    ZW=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
   directions_local:
   - neg
   declared: false
@@ -7601,7 +7617,9 @@ episodes:
   - export_ban
   - grain_corridor
   - shipping_chokepoint
-  subthemes_local: []
+  subthemes_local:
+  - black_sea
+  - military_escalation
   n_sources: 1
 - date: '2014-03-16'
   theme: geopolitical
@@ -10457,6 +10475,29 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - neg
+    TTF=F:
+    - neg
+    ZW=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    TTF=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    ZW=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
   directions_local:
   - neg
   declared: false
@@ -10466,6 +10507,7 @@ episodes:
   - grain_corridor
   - shipping_chokepoint
   subthemes_local:
+  - de_escalation
   - military_escalation
   n_sources: 1
 - date: '2022-02-21'
@@ -10534,6 +10576,12 @@ episodes:
     - neg
     GC=F:
     - pos
+    TTF=F:
+    - pos
+    ZC=F:
+    - pos
+    ZW=F:
+    - pos
     ^GDAXI:
     - neg
     ^STOXX50E:
@@ -10557,6 +10605,21 @@ episodes:
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
       — mappa di episodi datati per event study (2022–2026).md
+    TTF=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    ZC=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    ZW=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
     ^GDAXI:
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
@@ -10632,6 +10695,7 @@ episodes:
   - ukraine_war
   - zeitenwende
   subthemes_local:
+  - black_sea
   - difesa
   - gas
   - gas_europe
@@ -10675,6 +10739,8 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    ZW=F: 'Riga: ''Data del picco, non di un annuncio''. Come il 2007-06-22 BoJ.'
   directions_local: []
   declared: false
   subthemes:
@@ -10947,6 +11013,36 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - neutral
+    TTF=F:
+    - neutral
+    ZC=F:
+    - neg
+    ZW=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    TTF=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    ZC=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    ZW=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
   directions_local:
   - pos
   declared: false
@@ -10957,6 +11053,7 @@ episodes:
   - shipping_chokepoint
   subthemes_local:
   - black_sea
+  - negotiation_track
   n_sources: 1
 - date: '2022-07-25'
   theme: geopolitical
@@ -11008,6 +11105,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ZC=F:
+    - neg
+    ZW=F:
+    - neg
+  direction_sources:
+    ZC=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    ZW=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
   directions_local:
   - pos
   declared: false
@@ -11016,7 +11129,8 @@ episodes:
   - export_ban
   - grain_corridor
   - shipping_chokepoint
-  subthemes_local: []
+  subthemes_local:
+  - black_sea
   n_sources: 1
 - date: '2022-08-15'
   theme: geopolitical
@@ -11532,6 +11646,22 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ZC=F:
+    - neutral
+    ZW=F:
+    - pos
+  direction_sources:
+    ZC=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    ZW=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
   directions_local:
   - neg
   declared: false
@@ -11554,6 +11684,7 @@ episodes:
   - shipping_chokepoint
   - supply_chain
   subthemes_local:
+  - black_sea
   - election_risk
   - military_escalation
   n_sources: 7
@@ -11562,6 +11693,15 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ZW=F:
+    - neg
+  direction_sources:
+    ZW=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
   directions_local:
   - pos
   declared: false
@@ -11570,7 +11710,9 @@ episodes:
   - export_ban
   - grain_corridor
   - shipping_chokepoint
-  subthemes_local: []
+  subthemes_local:
+  - black_sea
+  - negotiation_track
   n_sources: 1
 - date: '2022-11-15'
   theme: geopolitical
@@ -11616,6 +11758,11 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    ZW=F: 'Nota: ''Attesa/conferma''. Con la regola della sorpresa il rinnovo atteso
+      non porta un verso.'
+    TTF=F: 'Nota: ''Attesa/conferma''. Con la regola della sorpresa il rinnovo atteso
+      non porta un verso.'
   directions_local:
   - pos
   declared: false
@@ -11823,6 +11970,15 @@ episodes:
   - neg
   directions_declared:
   - pos
+  directions_by_reference:
+    ZW=F:
+    - neg
+  direction_sources:
+    ZW=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
   directions_local:
   - pos
   declared: true
@@ -11847,6 +12003,7 @@ episodes:
   - black_sea
   - difesa
   - nato
+  - negotiation_track
   n_sources: 4
 - date: '2023-04-20'
   theme: geopolitical
@@ -11931,6 +12088,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ZC=F:
+    - neg
+    ZW=F:
+    - neg
+  direction_sources:
+    ZC=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    ZW=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
   directions_local:
   - pos
   declared: false
@@ -11939,7 +12112,9 @@ episodes:
   - export_ban
   - grain_corridor
   - shipping_chokepoint
-  subthemes_local: []
+  subthemes_local:
+  - black_sea
+  - negotiation_track
   n_sources: 1
 - date: '2023-06-23'
   theme: geopolitical
@@ -12034,6 +12209,29 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    TTF=F:
+    - neutral
+    ZC=F:
+    - pos
+    ZW=F:
+    - pos
+  direction_sources:
+    TTF=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    ZC=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    ZW=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
   directions_local:
   - neg
   declared: true
@@ -12054,6 +12252,22 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    ZC=F:
+    - pos
+    ZW=F:
+    - pos
+  direction_sources:
+    ZC=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    ZW=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
   directions_local:
   - neg
   declared: true
@@ -12066,12 +12280,22 @@ episodes:
   subthemes_local:
   - black_sea
   - infrastructure_attack
+  - military_escalation
   n_sources: 2
 - date: '2023-08-02'
   theme: geopolitical
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ZW=F:
+    - pos
+  direction_sources:
+    ZW=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
   directions_local:
   - neg
   declared: false
@@ -12081,6 +12305,8 @@ episodes:
   - grain_corridor
   - shipping_chokepoint
   subthemes_local:
+  - black_sea
+  - infrastructure_attack
   - military_escalation
   n_sources: 1
 - date: '2023-08-05'
@@ -12140,6 +12366,9 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    ZW=F: 'Riga: ''ZW=F: pos (attacco) / ZW=F: neg (corridoio)'' — due segnali opposti
+      lo stesso giorno.'
   directions_local:
   - neg
   - pos
@@ -14249,6 +14478,36 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - neg
+    TTF=F:
+    - neg
+    ZC=F:
+    - neg
+    ZW=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    TTF=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    ZC=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    ZW=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
   directions_local:
   - neg
   - pos
@@ -14259,6 +14518,7 @@ episodes:
   - grain_corridor
   - shipping_chokepoint
   subthemes_local:
+  - black_sea
   - negotiation_track
   n_sources: 1
 - date: '2025-03-26'
@@ -16362,6 +16622,15 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ZW=F:
+    - pos
+  direction_sources:
+    ZW=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
   directions_local:
   - neg
   - pos
@@ -16372,6 +16641,8 @@ episodes:
   - grain_corridor
   - shipping_chokepoint
   subthemes_local:
+  - black_sea
+  - infrastructure_attack
   - military_escalation
   n_sources: 1
 - date: '2025-12-27'
@@ -18102,6 +18373,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - neg
+    ZW=F:
+    - neutral
+  direction_sources:
+    BZ=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
+    ZW=F:
+    - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
+      ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
+      del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
+      episodi storici (2013–presente).md
   directions_local:
   - pos
   declared: false
@@ -18110,7 +18397,8 @@ episodes:
   - export_ban
   - grain_corridor
   - shipping_chokepoint
-  subthemes_local: []
+  subthemes_local:
+  - negotiation_track
   n_sources: 1
 - date: '2003-05-30'
   theme: macro_data
@@ -18363,6 +18651,15 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ^VIX:
+    - pos
+  direction_sources:
+    ^VIX:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
   directions_local:
   - neg
   declared: false
@@ -18379,6 +18676,7 @@ episodes:
   - soft_data
   subthemes_local:
   - conference_board
+  - consumer
   - expectations_collapse
   n_sources: 1
 - date: '2012-06-01'
@@ -18408,6 +18706,15 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ^VIX:
+    - pos
+  direction_sources:
+    ^VIX:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
   directions_local:
   - neg
   declared: false
@@ -18424,6 +18731,7 @@ episodes:
   - soft_data
   subthemes_local:
   - conference_board
+  - consumer
   - expectations_collapse
   n_sources: 1
 - date: '2013-01-01'
@@ -18502,6 +18810,15 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    XLP:
+    - pos
+  direction_sources:
+    XLP:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
   directions_local:
   - neg
   declared: false
@@ -18518,6 +18835,7 @@ episodes:
   - soft_data
   subthemes_local:
   - conference_board
+  - consumer
   - expectations_collapse
   n_sources: 1
 - date: '2014-11-04'
@@ -19982,6 +20300,18 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    CNY=X:
+    - pos
+    HG=F:
+    - pos
+  direction_sources:
+    CNY=X:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
+    HG=F:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   declared: true
@@ -20000,14 +20330,23 @@ episodes:
   subthemes_local:
   - activity_growth
   - china
+  - china_stimulus
   - cny
   - pboc
+  - rate_decision
   n_sources: 8
 - date: '2022-01-20'
   theme: macro_data
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    EEM:
+    - pos
+  direction_sources:
+    EEM:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - pos
   declared: false
@@ -20021,7 +20360,10 @@ episodes:
   - pboc
   - politburo
   - property_crisis
-  subthemes_local: []
+  subthemes_local:
+  - china
+  - china_stimulus
+  - rate_decision
   n_sources: 1
 - date: '2022-02-04'
   theme: macro_data
@@ -20585,6 +20927,15 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    XLP:
+    - pos
+  direction_sources:
+    XLP:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -20869,6 +21220,18 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    CNY=X:
+    - pos
+    HG=F:
+    - neg
+  direction_sources:
+    CNY=X:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
+    HG=F:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   declared: true
@@ -20887,8 +21250,10 @@ episodes:
   subthemes_local:
   - activity_growth
   - china
+  - china_stimulus
   - cny
   - pboc
+  - rate_decision
   n_sources: 8
 - date: '2022-08-17'
   theme: macro_data
@@ -21142,6 +21507,10 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    CNY=X: 'La riga è ancorata a un livello di prezzo (''Yuan onshore a 7,2458, minimo
+      dal 2008''): selezionerebbe l''episodio per il suo esito. Come il picco del
+      Brent del 2022-03-08.'
   directions_local:
   - neg
   declared: true
@@ -21296,6 +21665,15 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    XLP:
+    - pos
+  direction_sources:
+    XLP:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -21312,6 +21690,7 @@ episodes:
   subthemes_local:
   - conference_board
   - confidence_broad_drop
+  - consumer
   n_sources: 1
 - date: '2022-10-31'
   theme: macro_data
@@ -21610,6 +21989,23 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    EEM:
+    - pos
+    EWZ:
+    - pos
+    HG=F:
+    - pos
+  direction_sources:
+    EEM:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
+    EWZ:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
+    HG=F:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - pos
   declared: false
@@ -21623,7 +22019,9 @@ episodes:
   - pboc
   - politburo
   - property_crisis
-  subthemes_local: []
+  subthemes_local:
+  - china
+  - confidence_rebound
   n_sources: 1
 - date: '2022-12-13'
   theme: macro_data
@@ -21686,6 +22084,11 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    EEM: 'Cella ''2022-12-15/16'': la riunione dura due giorni e il comunicato esce
+      il secondo; con la prima data l''event study parte prima della notizia.'
+    ^NDX: 'Cella ''2022-12-15/16'': la riunione dura due giorni e il comunicato esce
+      il secondo; con la prima data l''event study parte prima della notizia.'
   directions_local:
   - pos
   declared: false
@@ -22117,6 +22520,13 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    CNY=X:
+    - pos
+  direction_sources:
+    CNY=X:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -22133,14 +22543,20 @@ episodes:
   - politburo
   - property_crisis
   subthemes_local:
+  - china
+  - china_stimulus
   - cny
   - pboc
+  - rate_decision
   n_sources: 3
 - date: '2023-06-15'
   theme: macro_data
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    EEM: 'Riga: ''easing → EM misto'' — nessun verso.'
+    EWZ: 'Riga: ''easing → EM misto'' — nessun verso.'
   directions_local: []
   declared: false
   subthemes:
@@ -22618,6 +23034,8 @@ episodes:
   directions_declared:
   - neg
   directions_by_reference:
+    CNY=X:
+    - pos
     GBPUSD=X:
     - pos
     HG=F:
@@ -22625,6 +23043,9 @@ episodes:
     IGLT.L:
     - neg
   direction_sources:
+    CNY=X:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
     GBPUSD=X:
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
@@ -22665,10 +23086,12 @@ episodes:
   - activity_growth
   - britain_release
   - china
+  - china_stimulus
   - cny
   - consumer
   - labour_market
   - pboc
+  - rate_decision
   n_sources: 9
 - date: '2023-08-29'
   theme: macro_data
@@ -22712,6 +23135,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    HG=F:
+    - neg
+  direction_sources:
+    HG=F:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   declared: false
@@ -22725,7 +23155,10 @@ episodes:
   - pboc
   - politburo
   - property_crisis
-  subthemes_local: []
+  subthemes_local:
+  - china
+  - credit_stress
+  - property_wealth
   n_sources: 1
 - date: '2023-09-13'
   theme: macro_data
@@ -22756,6 +23189,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    EEM:
+    - neg
+  direction_sources:
+    EEM:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   declared: false
@@ -22769,7 +23209,10 @@ episodes:
   - pboc
   - politburo
   - property_crisis
-  subthemes_local: []
+  subthemes_local:
+  - china
+  - credit_stress
+  - property_wealth
   n_sources: 1
 - date: '2023-10-06'
   theme: macro_data
@@ -22833,6 +23276,11 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    EEM: 'Nota: il panel CDS aveva già rilevato il ''failure to pay'' il 18 ottobre:
+      il default formale era scontato.'
+    HG=F: 'Nota: il panel CDS aveva già rilevato il ''failure to pay'' il 18 ottobre:
+      il default formale era scontato.'
   directions_local:
   - neg
   declared: false
@@ -23302,6 +23750,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    EEM:
+    - pos
+  direction_sources:
+    EEM:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - pos
   declared: false
@@ -23316,6 +23771,8 @@ episodes:
   - politburo
   - property_crisis
   subthemes_local:
+  - china
+  - china_stimulus
   - pboc
   n_sources: 1
 - date: '2024-01-29'
@@ -23323,6 +23780,9 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    EEM: 'Riga: ''risk-off atteso → impatto limitato'', nota ''già scontato''.'
+    HG=F: 'Riga: ''risk-off atteso → impatto limitato'', nota ''già scontato''.'
   directions_local:
   - neg
   declared: false
@@ -23498,6 +23958,25 @@ episodes:
   - neg
   directions_declared:
   - neutral
+  directions_by_reference:
+    1482.T:
+    - neutral
+    JPY=X:
+    - pos
+  direction_sources:
+    1482.T:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
+    JPY=X:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
+  direction_review_excluded:
+    ^N225: 'Nota: ''Nikkei salì >1% nonostante il dato debole'' — il ''pos'' della
+      colonna è l''esito, contrario all''attesa.'
   directions_local:
   - neg
   - neutral
@@ -23540,6 +24019,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    HG=F:
+    - pos
+  direction_sources:
+    HG=F:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -23552,7 +24038,10 @@ episodes:
   - pboc
   - politburo
   - property_crisis
-  subthemes_local: []
+  subthemes_local:
+  - china
+  - property_wealth
+  - rate_decision
   n_sources: 1
 - date: '2024-03-19'
   theme: macro_data
@@ -23575,6 +24064,9 @@ episodes:
   - neg
   directions_declared:
   - pos
+  direction_review_excluded:
+    JPY=X: 'Nota: ''Contaminato'': tre giorni dopo l''uscita dalla NIRP del 19/3.'
+    ^N225: 'Nota: ''Contaminato'': tre giorni dopo l''uscita dalla NIRP del 19/3.'
   directions_local:
   - pos
   declared: true
@@ -23608,6 +24100,22 @@ episodes:
   directions_declared:
   - neg
   - neutral
+  directions_by_reference:
+    JPY=X:
+    - neutral
+    ^N225:
+    - neutral
+  direction_sources:
+    JPY=X:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
+    ^N225:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
   directions_local:
   - neg
   - neutral
@@ -23896,6 +24404,18 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    EEM:
+    - pos
+    HG=F:
+    - pos
+  direction_sources:
+    EEM:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
+    HG=F:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -23908,7 +24428,10 @@ episodes:
   - pboc
   - politburo
   - property_crisis
-  subthemes_local: []
+  subthemes_local:
+  - china
+  - china_stimulus
+  - property_wealth
   n_sources: 1
 - date: '2024-05-31'
   theme: macro_data
@@ -24180,6 +24703,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    EEM:
+    - neg
+  direction_sources:
+    EEM:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -24193,6 +24723,7 @@ episodes:
   - politburo
   - property_crisis
   subthemes_local:
+  - china
   - politburo
   n_sources: 1
 - date: '2024-07-31'
@@ -24810,6 +25341,18 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    EEM:
+    - pos
+    ^NDX:
+    - pos
+  direction_sources:
+    EEM:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
+    ^NDX:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - pos
   declared: true
@@ -24853,6 +25396,18 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    EEM:
+    - pos
+    EWZ:
+    - pos
+  direction_sources:
+    EEM:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
+    EWZ:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - pos
   declared: false
@@ -24874,6 +25429,8 @@ episodes:
   - property_crisis
   - us
   subthemes_local:
+  - china
+  - china_stimulus
   - politburo
   n_sources: 5
 - date: '2024-10-01'
@@ -25114,6 +25671,11 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  direction_review_excluded:
+    EEM: 'Nota: ''Follow-through del pacchetto di settembre''. Per la riga il taglio
+      prosegue un annuncio precedente: scontato (regola della sorpresa).'
+    HG=F: 'Nota: ''Follow-through del pacchetto di settembre''. Per la riga il taglio
+      prosegue un annuncio precedente: scontato (regola della sorpresa).'
   directions_local: []
   declared: false
   subthemes:
@@ -25180,6 +25742,13 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    CNY=X:
+    - pos
+  direction_sources:
+    CNY=X:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   declared: true
@@ -25223,6 +25792,7 @@ episodes:
   - us_cpi
   subthemes_local:
   - activity_growth
+  - china
   - cny
   - election_risk
   - pboc
@@ -25234,6 +25804,15 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    JPY=X:
+    - neg
+  direction_sources:
+    JPY=X:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
   directions_local: []
   declared: false
   subthemes:
@@ -25247,6 +25826,7 @@ episodes:
   - trade_balance
   subthemes_local:
   - household_spending
+  - japan_release
   n_sources: 1
 - date: '2024-11-15'
   theme: macro_data
@@ -25255,6 +25835,16 @@ episodes:
   - neg
   directions_declared:
   - neutral
+  direction_review_excluded:
+    JPY=X: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide
+      con l''esito riportato nella nota (''Nikkei +1,28%, yen −0,29%''): in questa
+      research la colonna a volte è l''esito (2026-09-04 lo dichiara).'
+    ^N225: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide
+      con l''esito riportato nella nota (''Nikkei +1,28%, yen −0,29%''): in questa
+      research la colonna a volte è l''esito (2026-09-04 lo dichiara).'
+    1482.T: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide
+      con l''esito riportato nella nota (''Nikkei +1,28%, yen −0,29%''): in questa
+      research la colonna a volte è l''esito (2026-09-04 lo dichiara).'
   directions_local:
   - neutral
   declared: true
@@ -25305,6 +25895,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    1482.T:
+    - neg
+    JPY=X:
+    - neg
+  direction_sources:
+    1482.T:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
+    JPY=X:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
   directions_local: []
   declared: false
   subthemes:
@@ -25320,12 +25926,29 @@ episodes:
   - inflation_print
   - inflation_upside
   - japan_cpi
+  - japan_release
   n_sources: 1
 - date: '2024-11-29'
   theme: macro_data
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    1482.T:
+    - neg
+    JPY=X:
+    - neg
+  direction_sources:
+    1482.T:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
+    JPY=X:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
   directions_local: []
   declared: false
   subthemes:
@@ -25339,6 +25962,8 @@ episodes:
   - trade_balance
   subthemes_local:
   - inflation_print
+  - inflation_upside
+  - japan_release
   n_sources: 1
 - date: '2024-12-06'
   theme: macro_data
@@ -25475,6 +26100,13 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  directions_by_reference:
+    EEM:
+    - pos
+  direction_sources:
+    EEM:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - pos
   declared: false
@@ -25511,6 +26143,8 @@ episodes:
   - us
   - us_cpi
   subthemes_local:
+  - china
+  - china_stimulus
   - politburo
   n_sources: 13
 - date: '2024-12-11'
@@ -25521,6 +26155,11 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  direction_review_excluded:
+    EEM: 'Cella ''2024-12-11/12'': la riunione dura due giorni e il comunicato esce
+      il secondo; con la prima data l''event study parte prima della notizia.'
+    ^NDX: 'Cella ''2024-12-11/12'': la riunione dura due giorni e il comunicato esce
+      il secondo; con la prima data l''event study parte prima della notizia.'
   directions_local:
   - pos
   declared: false
@@ -25565,6 +26204,22 @@ episodes:
   - neg
   directions_declared:
   - neutral
+  directions_by_reference:
+    JPY=X:
+    - neutral
+    ^N225:
+    - neutral
+  direction_sources:
+    JPY=X:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
+    ^N225:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
   directions_local:
   - neutral
   declared: true
@@ -25611,6 +26266,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    JPY=X: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide
+      con l''esito riportato nella nota (''yen si rafforzò, hike gennaio atteso''):
+      in questa research la colonna a volte è l''esito (2026-09-04 lo dichiara).'
+    1482.T: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide
+      con l''esito riportato nella nota (''yen si rafforzò, hike gennaio atteso''):
+      in questa research la colonna a volte è l''esito (2026-09-04 lo dichiara).'
   directions_local: []
   declared: false
   subthemes:
@@ -25634,6 +26296,11 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    CNY=X: 'La riga è ancorata a un livello di prezzo (''Yuan offshore ai minimi dal
+      2022; onshore tocca 7,3698''): selezionerebbe l''episodio per il suo esito.'
+    DX-Y.NYB: 'La riga è ancorata a un livello di prezzo (''Yuan offshore ai minimi
+      dal 2022; onshore tocca 7,3698''): selezionerebbe l''episodio per il suo esito.'
   directions_local:
   - neg
   declared: true
@@ -25946,6 +26613,11 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    HG=F: 'La riga descrive una fase (''deflazione persistente'') usando anche il
+      dato di febbraio, uscito dopo: non è una sorpresa isolabile alla data.'
+    EEM: 'La riga descrive una fase (''deflazione persistente'') usando anche il dato
+      di febbraio, uscito dopo: non è una sorpresa isolabile alla data.'
   directions_local:
   - neg
   declared: true
@@ -26219,6 +26891,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    GC=F:
+    - pos
+    ^FVX:
+    - pos
+  direction_sources:
+    GC=F:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    ^FVX:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
   directions_local:
   - neg
   declared: false
@@ -26332,6 +27020,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    CNY=X: 'Riga: ''tolleranza depr. controllata''; la research sul cambio PBoC legge
+      lo stesso fixing come ''difesa camuffata'': due letture.'
   directions_local:
   - neg
   - pos
@@ -26381,6 +27072,15 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    JPY=X:
+    - neg
+  direction_sources:
+    JPY=X:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
   directions_local: []
   declared: false
   subthemes:
@@ -26394,6 +27094,8 @@ episodes:
   - trade_balance
   subthemes_local:
   - inflation_print
+  - inflation_upside
+  - japan_release
   - tariff_escalation
   n_sources: 1
 - date: '2025-04-29'
@@ -26430,6 +27132,13 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    EEM:
+    - pos
+  direction_sources:
+    EEM:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - pos
   declared: true
@@ -26469,7 +27178,9 @@ episodes:
   - us_cpi
   subthemes_local:
   - activity_growth
+  - china
   - china_inflation
+  - china_stimulus
   - cny
   - deflation_risk
   - dovish_repricing
@@ -26483,6 +27194,18 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  directions_by_reference:
+    EEM:
+    - pos
+    ^NDX:
+    - pos
+  direction_sources:
+    EEM:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
+    ^NDX:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -26522,6 +27245,8 @@ episodes:
   - us
   - us_cpi
   subthemes_local:
+  - china
+  - negotiation_track
   - tariff_escalation
   n_sources: 14
 - date: '2025-05-16'
@@ -26531,6 +27256,22 @@ episodes:
   - neg
   directions_declared:
   - neutral
+  directions_by_reference:
+    JPY=X:
+    - pos
+    ^N225:
+    - neg
+  direction_sources:
+    JPY=X:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
+    ^N225:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
   directions_local:
   - neutral
   declared: true
@@ -26557,6 +27298,11 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  direction_review_excluded:
+    EEM: 'Nota: ''Trasmissione del taglio reverse repo di maggio''. Per la riga il
+      taglio prosegue un annuncio precedente: scontato (regola della sorpresa).'
+    HG=F: 'Nota: ''Trasmissione del taglio reverse repo di maggio''. Per la riga il
+      taglio prosegue un annuncio precedente: scontato (regola della sorpresa).'
   directions_local: []
   declared: false
   subthemes:
@@ -26598,6 +27344,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    1482.T:
+    - neg
+    JPY=X:
+    - neg
+  direction_sources:
+    1482.T:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
+    JPY=X:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
   directions_local: []
   declared: false
   subthemes:
@@ -26611,7 +27373,9 @@ episodes:
   - trade_balance
   subthemes_local:
   - inflation_print
+  - inflation_upside
   - japan_cpi
+  - japan_release
   n_sources: 1
 - date: '2025-05-27'
   theme: macro_data
@@ -26723,6 +27487,13 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  directions_by_reference:
+    HG=F:
+    - pos
+  direction_sources:
+    HG=F:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -26758,6 +27529,7 @@ episodes:
   - us
   - us_cpi
   subthemes_local:
+  - china
   - politburo
   - tariff_escalation
   n_sources: 13
@@ -26912,6 +27684,25 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  directions_by_reference:
+    IYT:
+    - neg
+    XLP:
+    - pos
+  direction_sources:
+    IYT:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    XLP:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+  direction_review_excluded:
+    HG=F: 'Riga: ''debole ma in miglioramento'' — nessun verso.'
+    EEM: 'Riga: ''debole ma in miglioramento'' — nessun verso.'
   directions_local:
   - neg
   declared: false
@@ -26965,6 +27756,7 @@ episodes:
   subthemes_local:
   - activity_growth
   - conference_board
+  - consumer
   - labour_differential_break
   - labour_market
   n_sources: 18
@@ -26975,6 +27767,19 @@ episodes:
   - neg
   directions_declared:
   - neutral
+  directions_by_reference:
+    JPY=X:
+    - neutral
+  direction_sources:
+    JPY=X:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
+  direction_review_excluded:
+    ^N225: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide
+      con l''esito riportato nella nota (''Sollievo su accordo dazi USA''): in questa
+      research la colonna a volte è l''esito (2026-09-04 lo dichiara).'
   directions_local:
   - neutral
   - pos
@@ -27005,6 +27810,13 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    CNY=X:
+    - neutral
+  direction_sources:
+    CNY=X:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   declared: true
@@ -27043,7 +27855,9 @@ episodes:
   - us_cpi
   subthemes_local:
   - activity_growth
+  - china
   - cny
+  - rate_decision
   n_sources: 18
 - date: '2025-10-30'
   theme: macro_data
@@ -27053,6 +27867,23 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  directions_by_reference:
+    EEM:
+    - pos
+    HG=F:
+    - pos
+    ^NDX:
+    - pos
+  direction_sources:
+    EEM:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
+    HG=F:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
+    ^NDX:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -27093,6 +27924,8 @@ episodes:
   - us_cpi
   subthemes_local:
   - administrative_retaliation
+  - china
+  - negotiation_track
   - tariff_escalation
   n_sources: 14
 - date: '2025-11-11'
@@ -27161,6 +27994,19 @@ episodes:
   - neg
   directions_declared:
   - neutral
+  directions_by_reference:
+    ^N225:
+    - pos
+  direction_sources:
+    ^N225:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
+  direction_review_excluded:
+    JPY=X: 'La colonna (''JPY neg'') contraddice il segno della sorpresa scritta nella
+      riga (''PIL meglio del previsto'') e coincide con l''esito della nota: è l''esito,
+      non l''attesa.'
   directions_local:
   - neutral
   declared: true
@@ -27184,6 +28030,15 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    JPY=X:
+    - pos
+  direction_sources:
+    JPY=X:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
   directions_local: []
   declared: false
   subthemes:
@@ -27197,6 +28052,7 @@ episodes:
   - trade_balance
   subthemes_local:
   - household_spending
+  - japan_release
   n_sources: 1
 - date: '2025-12-09'
   theme: macro_data
@@ -27340,6 +28196,11 @@ episodes:
   - neg
   directions_declared:
   - neutral
+  direction_review_excluded:
+    JPY=X: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide
+      con l''esito riportato nella nota (''USD/JPY −0,5%; conferma il rialzo poi deciso
+      il 19/12''): in questa research la colonna a volte è l''esito (2026-09-04 lo
+      dichiara).'
   directions_local:
   - neutral
   declared: true
@@ -27381,6 +28242,11 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    CNY=X: 'La riga è ancorata a un livello di prezzo (''Yuan offshore rompe 7,00''):
+      selezionerebbe l''episodio per il suo esito. E la cella è un intervallo (24/25).'
+    DX-Y.NYB: 'La riga è ancorata a un livello di prezzo (''Yuan offshore rompe 7,00''):
+      selezionerebbe l''episodio per il suo esito. E la cella è un intervallo (24/25).'
   directions_local:
   - neg
   declared: true
@@ -27430,6 +28296,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    CNY=X: 'La riga è ancorata a un livello di prezzo (''Yuan onshore rompe 7,00,
+      massimo da maggio 2023''): selezionerebbe l''episodio per il suo esito.'
   directions_local:
   - neg
   declared: true
@@ -27478,6 +28347,23 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  directions_by_reference:
+    EEM:
+    - pos
+    EWZ:
+    - pos
+    HG=F:
+    - pos
+  direction_sources:
+    EEM:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
+    EWZ:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
+    HG=F:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -27512,7 +28398,9 @@ episodes:
   - trade_surplus
   - us
   - us_cpi
-  subthemes_local: []
+  subthemes_local:
+  - activity_growth
+  - china
   n_sources: 13
 - date: '2026-01-19'
   theme: macro_data
@@ -27597,6 +28485,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    GC=F:
+    - pos
+    ^FVX:
+    - pos
+  direction_sources:
+    GC=F:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    ^FVX:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
   directions_local:
   - neg
   declared: false
@@ -27985,6 +28889,15 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    IYT:
+    - neg
+  direction_sources:
+    IYT:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
   directions_local:
   - neg
   declared: false
@@ -28001,6 +28914,7 @@ episodes:
   - soft_data
   subthemes_local:
   - conference_board
+  - consumer
   - labour_differential_break
   - labour_market
   n_sources: 1
@@ -28144,6 +29058,16 @@ episodes:
   - neg
   directions_declared:
   - neutral
+  direction_review_excluded:
+    JPY=X: 'La colonna (''JPY pos; ^N225 pos; 1482.T neg'') contraddice il segno della
+      sorpresa scritta nella riga (''PIL +1,1%, atteso ~2%'') e coincide con l''esito
+      della nota: è l''esito, non l''attesa.'
+    ^N225: 'La colonna (''JPY pos; ^N225 pos; 1482.T neg'') contraddice il segno della
+      sorpresa scritta nella riga (''PIL +1,1%, atteso ~2%'') e coincide con l''esito
+      della nota: è l''esito, non l''attesa.'
+    1482.T: 'La colonna (''JPY pos; ^N225 pos; 1482.T neg'') contraddice il segno
+      della sorpresa scritta nella riga (''PIL +1,1%, atteso ~2%'') e coincide con
+      l''esito della nota: è l''esito, non l''attesa.'
   directions_local:
   - neutral
   declared: true
@@ -28229,6 +29153,15 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ^FVX:
+    - neg
+  direction_sources:
+    ^FVX:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -28244,12 +29177,35 @@ episodes:
   - soft_data
   subthemes_local:
   - conference_board
+  - consumer
+  - divergence_present_up_expectations_down
   n_sources: 1
 - date: '2026-08-28'
   theme: macro_data
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    1482.T:
+    - neg
+    JPY=X:
+    - neg
+  direction_sources:
+    1482.T:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
+    JPY=X:
+    - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
+      Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
+      come canale distinto dalla politica della Bank of Japan — regime ed episodi
+      storici (2013–presente).md
+  direction_review_excluded:
+    ^FVX: 'Michigan FINALE: la riga stessa cita il preliminare già noto (51,0 → 51,7),
+      quindi è scontato; e la nota segnala una discrepanza di date.'
+    GC=F: 'Michigan FINALE: la riga stessa cita il preliminare già noto (51,0 → 51,7),
+      quindi è scontato; e la nota segnala una discrepanza di date.'
   directions_local: []
   declared: false
   subthemes:
@@ -28274,6 +29230,8 @@ episodes:
   subthemes_local:
   - consumer
   - inflation_print
+  - inflation_upside
+  - japan_release
   - michigan_inflation_expectations
   n_sources: 2
 - date: '2026-08-29'
@@ -28301,6 +29259,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    JPY=X: 'Riga: ''JPY pos (realizzato)'' — la colonna è l''esito, dichiaratamente;
+      e la nota segnala la contaminazione del payroll USA lo stesso giorno.'
+    ^N225: 'Riga: ''JPY pos (realizzato)'' — la colonna è l''esito, dichiaratamente;
+      e la nota segnala la contaminazione del payroll USA lo stesso giorno.'
+    1482.T: 'Riga: ''JPY pos (realizzato)'' — la colonna è l''esito, dichiaratamente;
+      e la nota segnala la contaminazione del payroll USA lo stesso giorno.'
   directions_local: []
   declared: false
   subthemes:
@@ -28729,6 +29694,9 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    CNY=X: 'Riga: ''CNY forte (due vie)'' — ''due vie'' dichiara flessibilità nei
+      due sensi: nessun verso univoco.'
   directions_local: []
   declared: false
   subthemes:
@@ -28929,6 +29897,9 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    CNY=X: 'Riga: ''CNY debole (due vie)'' — ''due vie'' dichiara flessibilità nei
+      due sensi: nessun verso univoco.'
   directions_local: []
   declared: false
   subthemes:
@@ -29100,6 +30071,14 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    CNY=X:
+    - pos
+  direction_sources:
+    CNY=X:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   directions_local:
   - neg
   declared: true
@@ -29123,6 +30102,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    CNY=X:
+    - pos
+  direction_sources:
+    CNY=X:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -29136,12 +30123,21 @@ episodes:
   - pboc
   subthemes_local:
   - cny
+  - pboc
   n_sources: 1
 - date: '2015-10-15'
   theme: monetary_policy
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    CNY=X:
+    - neg
+  direction_sources:
+    CNY=X:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -29155,12 +30151,16 @@ episodes:
   - pboc
   subthemes_local:
   - cny
+  - pboc
   n_sources: 1
 - date: '2015-12-11'
   theme: monetary_policy
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    CNY=X: 'Riga: ''CNY debole vs paniere'' — il verso è sul paniere CFETS, CNY=X
+      è contro il solo dollaro.'
   directions_local: []
   declared: false
   subthemes:
@@ -29216,6 +30216,15 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    EEM: 'Riga definita dall''esito (''Crollo yuan/CNH... la seduta del massimo stress''):
+      selezionerebbe l''episodio per il risultato.'
+    ^GSPC: 'Riga definita dall''esito (''Crollo yuan/CNH... la seduta del massimo
+      stress''): selezionerebbe l''episodio per il risultato.'
+    ^VIX: 'Riga definita dall''esito (''Crollo yuan/CNH... la seduta del massimo stress''):
+      selezionerebbe l''episodio per il risultato.'
+    HG=F: 'Riga definita dall''esito (''Crollo yuan/CNH... la seduta del massimo stress''):
+      selezionerebbe l''episodio per il risultato.'
   directions_local:
   - neg
   declared: true
@@ -29392,6 +30401,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    CNY=X:
+    - neg
+  direction_sources:
+    CNY=X:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -29406,6 +30423,7 @@ episodes:
   subthemes_local:
   - cny
   - fixing
+  - pboc
   n_sources: 1
 - date: '2017-06-14'
   theme: monetary_policy
@@ -29654,6 +30672,9 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    CNY=X: 'Nota: ''Contaminato dai dazi''. I dazi spingono lo yuan più debole, cioè
+      contro la difesa della riga: pressioni opposte sulla stessa seduta.'
   directions_local: []
   declared: false
   subthemes:
@@ -29674,6 +30695,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    CNY=X:
+    - neg
+  direction_sources:
+    CNY=X:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -29689,6 +30718,7 @@ episodes:
   - cny
   - fixing
   - guidance_pivot
+  - pboc
   n_sources: 1
 - date: '2018-09-26'
   theme: monetary_policy
@@ -29756,6 +30786,9 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    CNY=X: 'Annuncio il 31 ottobre, emissione in questa data: per la riga è scontata
+      (regola delle entrate in vigore).'
   directions_local: []
   declared: false
   subthemes:
@@ -29896,6 +30929,8 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    CNY=X: 'Nota: ''Data da verificare'', ricostruita da un''unica fonte.'
   directions_local: []
   declared: false
   subthemes:
@@ -29917,6 +30952,14 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    CNY=X:
+    - pos
+  direction_sources:
+    CNY=X:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   directions_local:
   - neg
   declared: true
@@ -29994,6 +31037,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    CNY=X:
+    - pos
+  direction_sources:
+    CNY=X:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -30005,7 +31056,9 @@ episodes:
   - fx_intervention
   - managed_float
   - pboc
-  subthemes_local: []
+  subthemes_local:
+  - cny
+  - pboc
   n_sources: 1
 - date: '2021-02-25'
   theme: monetary_policy
@@ -30083,6 +31136,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    CNY=X:
+    - pos
+  direction_sources:
+    CNY=X:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -30094,7 +31155,9 @@ episodes:
   - fx_intervention
   - managed_float
   - pboc
-  subthemes_local: []
+  subthemes_local:
+  - cny
+  - pboc
   n_sources: 1
 - date: '2021-09-22'
   theme: monetary_policy
@@ -30147,6 +31210,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    CNY=X:
+    - pos
+  direction_sources:
+    CNY=X:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -30158,7 +31229,9 @@ episodes:
   - fx_intervention
   - managed_float
   - pboc
-  subthemes_local: []
+  subthemes_local:
+  - cny
+  - pboc
   n_sources: 1
 - date: '2021-12-15'
   theme: monetary_policy
@@ -30836,6 +31909,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    CNY=X:
+    - neg
+  direction_sources:
+    CNY=X:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -30849,6 +31930,7 @@ episodes:
   - pboc
   subthemes_local:
   - cny
+  - pboc
   n_sources: 1
 - date: '2022-09-08'
   theme: monetary_policy
@@ -31197,6 +32279,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    CNY=X:
+    - neg
+  direction_sources:
+    CNY=X:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   direction_review_excluded:
     GBPUSD=X: 'La riga è definita dal movimento di prezzo (''Minimo storico sterlina
       1,0350''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
@@ -31225,6 +32315,7 @@ episodes:
   subthemes_local:
   - cny
   - credibility_shock
+  - pboc
   n_sources: 2
 - date: '2022-09-28'
   theme: monetary_policy
@@ -34100,6 +35191,14 @@ episodes:
   - neutral
   directions_declared:
   - pos
+  directions_by_reference:
+    HG=F:
+    - pos
+  direction_sources:
+    HG=F:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   directions_local:
   - pos
   declared: true
@@ -34114,6 +35213,7 @@ episodes:
   - pboc
   subthemes_local:
   - balance_sheet
+  - china_stimulus
   - pboc
   n_sources: 2
 - date: '2024-10-23'
@@ -34241,6 +35341,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    HG=F:
+    - pos
+  direction_sources:
+    HG=F:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -34252,13 +35360,23 @@ episodes:
   - fx_intervention
   - managed_float
   - pboc
-  subthemes_local: []
+  subthemes_local:
+  - china_stimulus
+  - fiscal_expansion
   n_sources: 1
 - date: '2024-12-09'
   theme: monetary_policy
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    HG=F:
+    - pos
+  direction_sources:
+    HG=F:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -34270,7 +35388,9 @@ episodes:
   - fx_intervention
   - managed_float
   - pboc
-  subthemes_local: []
+  subthemes_local:
+  - china_stimulus
+  - guidance_pivot
   n_sources: 1
 - date: '2024-12-18'
   theme: monetary_policy
@@ -34423,6 +35543,9 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    CNY=X: 'Nota: ''Contaminato dalle attese dazi Trump''. Le attese di dazi spingono
+      lo yuan più debole, contro la difesa della riga.'
   directions_local: []
   declared: false
   subthemes:
@@ -34497,6 +35620,9 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    CNY=X: 'Annuncio il ~9 gennaio, emissione in questa data: per la riga è scontata
+      (regola delle entrate in vigore).'
   directions_local: []
   declared: false
   subthemes:
@@ -34759,6 +35885,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    CNY=X: 'Riga: ''CNY debole (controllata)'' e nota ''difesa camuffata'': due letture,
+      in piena escalation dei dazi.'
   directions_local:
   - neg
   declared: true
@@ -35537,6 +36666,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    CNY=X:
+    - pos
+  direction_sources:
+    CNY=X:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   directions_local:
   - neg
   declared: false
@@ -35549,7 +36686,9 @@ episodes:
   - fx_intervention
   - managed_float
   - pboc
-  subthemes_local: []
+  subthemes_local:
+  - cny
+  - pboc
   n_sources: 1
 - date: '2026-04-30'
   theme: monetary_policy
@@ -35970,6 +37109,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    CNY=X:
+    - pos
+  direction_sources:
+    CNY=X:
+    - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
+      regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
+      Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -35984,6 +37131,7 @@ episodes:
   subthemes_local:
   - cny
   - fixing
+  - pboc
   n_sources: 1
 - date: '2016-06-23'
   theme: regulatory

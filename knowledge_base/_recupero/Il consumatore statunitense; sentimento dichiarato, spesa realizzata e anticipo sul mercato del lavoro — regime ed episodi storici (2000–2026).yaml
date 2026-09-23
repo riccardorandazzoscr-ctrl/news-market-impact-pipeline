@@ -1,0 +1,662 @@
+research: Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+  del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+  spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+voci:
+- riga: '| 2003-05-30 | pos | confidence_rebound | Michigan finale maggio 2003: sentiment 92,1, Expectations
+    91,4 da 79,3 (aprile), recupero post-incertezza guerra Iraq, guidato dalle sole attese (Current Conditions
+    in calo). Meccanismo: attese in forte recupero → risk-on ciclici | XLY/XLP su, IWM/^GSPC su | Rilascio
+    Michigan finale, venerdì ore 10:00 ET. Recupero di breve: il Conference Board ricadde a luglio 2003
+    |'
+  data: '2003-05-30'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - IWM
+  - XLP
+  - XLY
+  - ^GSPC
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: Data non puntuale o prima del 2011 (fuori dal DB prezzi).
+- riga: '| 2004-01-27 | pos | confidence_rebound | Conference Board gennaio 2004: indice 96,8 da 91,7
+    rivisto (dic 2003), Expectations 108,1 da 103,3, massimo da luglio 2002. Meccanismo: attese in salita
+    → rotazione verso ciclici | XLY/XLP su | Rilascio CB ultimo martedì, ore 10:00 ET. Il rialzo fu «sizable»
+    ma sotto il consenso di 99,0: sorpresa positiva parziale |'
+  data: '2004-01-27'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - XLP
+  - XLY
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: Data non puntuale o prima del 2011 (fuori dal DB prezzi).
+- riga: '| 2005-09-27 | neg | confidence_broad_drop | Conference Board settembre 2005: crollo −18,9 punti
+    a 86,6 (massimo calo dal 1990), Present Situation 108,9 e Expectations 71,7 entrambi giù; uragano
+    Katrina e prezzo benzina. Meccanismo: shock su prezzo *visibile* → attesa taglio spesa discrezionale
+    | XLY/XLP giù, IYT giù | Rilascio CB ultimo martedì. Multi-causa (Katrina + benzina): usare GC=F/energia
+    come controllo per isolare il canale prezzo |'
+  data: '2005-09-27'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - GC=F
+  - IYT
+  - XLP
+  - XLY
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: Data non puntuale o prima del 2011 (fuori dal DB prezzi).
+- riga: '| 2005-10-25 | neg | confidence_broad_drop | Conference Board ottobre 2005: −2,5 a 85,0, Expectations
+    72,3→69,5, pump shock e mercato del lavoro più debole post-uragani. Meccanismo: prezzo benzina visibile
+    → fiducia giù → rotazione difensiva | XLY/XLP giù, XLP su | Rilascio CB ultimo martedì. Contesto benzina:
+    controllo su GC=F/prezzo carburante |'
+  data: '2005-10-25'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - GC=F
+  - XLP
+  - XLY
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: Data non puntuale o prima del 2011 (fuori dal DB prezzi).
+- riga: '| 2008-10-28 | pos | confidence_broad_drop | Conference Board ottobre 2008: minimo storico allora
+    a 38,0 da 61,4. Meccanismo: dato pessimo *ignorato* dall''azionario perché sovrastato dall''attesa
+    di taglio Fed | ^GSPC su, ^TNX giù | Episodio CONTAMINATO (crisi post-Lehman, FOMC del giorno dopo):
+    il Dow salì ~2% sull''attesa di taglio. Controllo: usare ^VIX/^MOVE, non il livello di ^GSPC |'
+  data: '2008-10-28'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - ^GSPC
+  - ^MOVE
+  - ^TNX
+  - ^VIX
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: Data non puntuale o prima del 2011 (fuori dal DB prezzi).
+- riga: '| 2009-04-28 | pos | confidence_rebound | Conference Board aprile 2009: +12,3 a 39,2 da 26,9
+    rivisto (marzo). Meccanismo: primo recupero delle attese dal minimo di crisi → risk-on ciclici | XLY/XLP
+    su, HYG su | Rilascio CB ultimo martedì. Fase di rimbalzo di mercato: possibile drift rialzista di
+    fondo (vedi §6) |'
+  data: '2009-04-28'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - HYG
+  - XLP
+  - XLY
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: Data non puntuale o prima del 2011 (fuori dal DB prezzi).
+- riga: '| 2009-05-26 | pos | confidence_rebound | Conference Board maggio 2009: +14,1 a 54,9, Expectations
+    +21,3 a 72,3 (rimbalzo più forte del ciclo). Meccanismo: attese in forte recupero → rotazione verso
+    ciclici e credito | XLY/XLP su, HYG su | Rilascio CB martedì dopo il Memorial Day (25 mag). Drift
+    rialzista di fondo del 2009: controllare vs ^GSPC |'
+  data: '2009-05-26'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - HYG
+  - XLP
+  - XLY
+  - ^GSPC
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: Data non puntuale o prima del 2011 (fuori dal DB prezzi).
+- riga: '| 2011-08-30 | neg | expectations_collapse | Conference Board agosto 2011: crollo a 44,5 da 59,2,
+    Expectations −23 punti a 51,9 (massimo calo dalla Grande Recessione), Present Situation 33,3. Debt
+    ceiling + downgrade S&P. Meccanismo: shock fiscale → attese crollano → risk-off. FALSO ALLARME (nessuna
+    recessione seguì) | XLY/XLP giù, ^VIX su | Rilascio CB ultimo martedì. Mese contaminato dal downgrade
+    S&P del 5 ago e dalla volatilità: usare ^VIX/^MOVE come controllo |'
+  data: '2011-08-30'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - XLP
+  - XLY
+  - ^MOVE
+  - ^VIX
+  dichiarazioni:
+  - asset: ^VIX
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna direzione: ''^VIX su''.'
+  - asset: XLY
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP giù'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP su''
+      del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: XLP
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP giù'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP su''
+      del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - expectations_collapse
+  - consumer
+  evento: 'Conference Board di agosto 2011: crollo delle attese'
+  stato: promossa
+- riga: '| 2012-12-27 | neg | expectations_collapse | Conference Board dicembre 2012: −6,4 a 65,1, Expectations
+    80,9→66,5, timori «fiscal cliff». Meccanismo: incertezza fiscale → attese crollano → risk-off ciclici
+    | XLY/XLP giù, ^VIX su | Rilasciato GIOVEDÌ 27 dic perché l''ultimo martedì (25 dic) era Natale: prima
+    seduta utile |'
+  data: '2012-12-27'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - XLP
+  - XLY
+  - ^VIX
+  dichiarazioni:
+  - asset: ^VIX
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna direzione: ''^VIX su''.'
+  - asset: XLY
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP giù'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP su''
+      del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: XLP
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP giù'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP su''
+      del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - expectations_collapse
+  - consumer
+  evento: 'Conference Board di dicembre 2012: fiscal cliff'
+  stato: promossa
+- riga: '| 2013-10-29 | neg | expectations_collapse | Conference Board ottobre 2013: −11,2% a 71,2, attese
+    in forte calo per lo shutdown federale e la crisi del debt ceiling. Meccanismo: shutdown → attese
+    crollano → rotazione difensiva | XLY/XLP giù, XLP su | Rilascio CB ultimo martedì. Shutdown come co-driver:
+    usare l''evento shutdown come controllo comune |'
+  data: '2013-10-29'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - XLP
+  - XLY
+  dichiarazioni:
+  - asset: XLP
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna direzione: ''XLP su''.'
+  - asset: XLY
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP giù'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP su''
+      del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - expectations_collapse
+  - consumer
+  evento: 'Conference Board di ottobre 2013: shutdown'
+  stato: promossa
+- riga: '| 2016-11-23 | pos | confidence_rebound | Michigan finale novembre 2016: 93,8 da 87,2 (ottobre),
+    balzo post-elezioni (+8,2 punti fra intervistati pre e post-voto). Meccanismo: salto di aspettative
+    post-elettorale → risk-on | XLY/XLP su, IWM/^GSPC su | Rilascio Michigan finale mercoledì 23 (vigilia
+    del Thanksgiving, 24 nov). Componente partigiana forte |'
+  data: '2016-11-23'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - IWM
+  - XLP
+  - XLY
+  - ^GSPC
+  dichiarazioni:
+  - asset: XLY
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP su, IWM/^GSPC su'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù,
+      XLP su'' del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: XLP
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP su, IWM/^GSPC su'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù,
+      XLP su'' del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: IWM
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP su, IWM/^GSPC su'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù,
+      XLP su'' del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: ^GSPC
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP su, IWM/^GSPC su'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù,
+      XLP su'' del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - confidence_rebound
+  - consumer
+  evento: 'Michigan finale di novembre 2016: balzo post-elettorale'
+  stato: promossa
+- riga: '| 2016-12-27 | pos | confidence_rebound | Conference Board dicembre 2016: +4,3 a 113,7, Expectations
+    94,4→105,5 (massimo da 13 anni), massimo dell''indice da 15 anni. Meccanismo: euforia post-elettorale
+    sulle attese → risk-on ciclici | XLY/XLP su | Rilascio CB ultimo martedì. Guidato *solo* dalle attese;
+    Present Situation in calo (126,1 da 132,0): rimbalzo redistributivo |'
+  data: '2016-12-27'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - XLP
+  - XLY
+  dichiarazioni:
+  - asset: XLY
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP su'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP su'' del
+      2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: XLP
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP su'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP su'' del
+      2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - confidence_rebound
+  - consumer
+  evento: 'Conference Board di dicembre 2016: attese al massimo da 13 anni'
+  stato: promossa
+- riga: '| 2022-06-24 | neg | sentiment_spending_divergence | Michigan finale giugno 2022: minimo storico
+    50,0 (dal 1952) mentre la spesa reale continuava a crescere. Meccanismo: sondaggio in caduta per inflazione
+    visibile ma spesa che tiene → segnale di prezzo con basso contenuto predittivo | XLY/XLP debole, XLP
+    su | Rilascio Michigan finale ultimo venerdì. Dentro il bear market 2022: drift ribassista di fondo,
+    controllare vs ^GSPC |'
+  data: '2022-06-24'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - XLP
+  - XLY
+  - ^GSPC
+  dichiarazioni:
+  - asset: XLP
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna direzione: ''XLP su''.'
+  - asset: XLY
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP debole'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP su''
+      del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: ^GSPC
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP debole, XLP su'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - sentiment_spending_divergence
+  - consumer
+  evento: 'Michigan finale di giugno 2022: minimo storico'
+  stato: promossa
+- riga: '| 2022-10-25 | neg | confidence_broad_drop | Conference Board ottobre 2022: −5,3 a 102,5, Present
+    Situation 150,2→138,9 ed Expectations 79,5→78,1 (entrambi giù). Meccanismo: calo generalizzato → rotazione
+    difensiva | XLY/XLP giù, XLP su | Rilascio CB ultimo martedì. Regime di rialzi Fed: canale tassi con
+    segno invertito (attese deboli non implicavano tagli) |'
+  data: '2022-10-25'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - XLP
+  - XLY
+  dichiarazioni:
+  - asset: XLP
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna direzione: ''XLP su''.'
+  - asset: XLY
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP giù'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP su''
+      del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - confidence_broad_drop
+  - consumer
+  evento: Conference Board di ottobre 2022
+  stato: promossa
+- riga: '| 2025-03-28 | neg | michigan_inflation_expectations | Michigan finale marzo 2025: sentiment
+    57,0, attese di inflazione a un anno oltre il 5% (massimo da nov 2022), long-run 4,1%. Meccanismo:
+    shock su aspettative di inflazione → attese di Fed più restrittiva → ^TNX/^FVX su | ^FVX su, GC=F
+    su | Rilascio Michigan finale venerdì. Guidato dall''inflazione attesa, non dalla fiducia: episodio
+    a canale tassi |'
+  data: '2025-03-28'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - GC=F
+  - ^FVX
+  - ^TNX
+  dichiarazioni:
+  - asset: ^FVX
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna direzione: ''^FVX su''. ^FVX quota il rendimento.'
+  - asset: GC=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna direzione: ''GC=F su''.'
+  - asset: ^TNX
+    gruppo: 3
+    domanda: 'Riga: ''^FVX su, GC=F su'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - michigan_inflation_expectations
+  - consumer
+  evento: 'Michigan finale di marzo 2025: attese di inflazione oltre il 5%'
+  stato: promossa
+- riga: '| 2025-04-29 | neg | expectations_collapse | Conference Board aprile 2025: −7,9 a 86,0, Expectations
+    −12,5 a 54,4 (minimo da ott 2011), Present Situation quasi fermo (−0,9 a 133,5). Dazi «Liberation
+    Day». Meccanismo: shock commerciale → solo le attese crollano → risk-off ciclici | XLY/XLP giù, IWM/^GSPC
+    giù | Rilascio CB ultimo martedì. Volatilità dazi diffusa: usare ^VIX come controllo. Attese inflazione
+    12m al 7% |'
+  data: '2025-04-29'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - IWM
+  - XLP
+  - XLY
+  - ^GSPC
+  - ^VIX
+  dichiarazioni:
+  - asset: XLY
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP giù, IWM/^GSPC giù'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP
+      giù, XLP su'' del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: XLP
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP giù, IWM/^GSPC giù'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP
+      giù, XLP su'' del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: IWM
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP giù, IWM/^GSPC giù'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP
+      giù, XLP su'' del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: ^GSPC
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP giù, IWM/^GSPC giù'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP
+      giù, XLP su'' del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: ^VIX
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP giù, IWM/^GSPC giù'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - expectations_collapse
+  - consumer
+  evento: 'Conference Board di aprile 2025: attese al minimo dal 2011'
+  stato: promossa
+- riga: '| 2025-05-27 | pos | confidence_rebound | Conference Board maggio 2025: +12,3 a 98,0, Expectations
+    +17,4 a 72,8 dopo la tregua tariffaria USA-Cina del 12 mag. Meccanismo: sollievo commerciale → attese
+    in recupero → risk-on | XLY/XLP su, IWM su | Rilascio CB martedì dopo il Memorial Day (26 mag). Cutoff
+    19 mag: metà risposte post-tregua |'
+  data: '2025-05-27'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - IWM
+  - XLP
+  - XLY
+  dichiarazioni:
+  - asset: XLY
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP su, IWM su'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP
+      su'' del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: XLP
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP su, IWM su'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP
+      su'' del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: IWM
+    gruppo: 3
+    domanda: 'Riga: ''IWM su'' — scritto da solo, ma nella stessa research ''IWM/^GSPC'' è un rapporto:
+      qui è il livello o il rapporto?'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - confidence_rebound
+  - consumer
+  evento: Conference Board di maggio 2025 dopo la tregua sui dazi
+  stato: promossa
+- riga: '| 2025-09-30 | neg | labour_differential_break | Conference Board settembre 2025: indice 94,2
+    da 97,8, Present Situation −7,0 a 125,4, labour differential in restringimento da nove mesi (minimo
+    da marzo 2021). Meccanismo: percezione lavoro in deterioramento → segnale anticipatore su occupazione
+    → risk-off | IYT giù, XLP su | Rilascio CB ultimo martedì, alla vigilia dello shutdown federale del
+    1° ott: possibile contaminazione da blackout dati |'
+  data: '2025-09-30'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - IYT
+  - XLP
+  dichiarazioni:
+  - asset: IYT
+    gruppo: 1
+    verso: neg
+    perché: 'Riga, colonna direzione: ''IYT giù''.'
+  - asset: XLP
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna direzione: ''XLP su''.'
+  meccanismo:
+  - labour_differential_break
+  - consumer
+  evento: 'Conference Board di settembre 2025: differenziale del lavoro in calo'
+  stato: promossa
+- riga: '| 2026-04-10 | neg | michigan_inflation_expectations | Michigan preliminare aprile 2026: minimo
+    storico 47,6 (−10,7% su marzo), attese di inflazione a un anno al 6,5%, benzina oltre 4$ e conflitto
+    con l''Iran. Meccanismo: shock prezzo benzina + inflazione attesa → ^TNX/^FVX su, difensivi su | ^FVX
+    su, GC=F su | Rilascio Michigan preliminare venerdì ore 10:00 ET. Co-driver geopolitico (Iran): controllo
+    su GC=F/energia |'
+  data: '2026-04-10'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - GC=F
+  - ^FVX
+  - ^TNX
+  dichiarazioni:
+  - asset: ^FVX
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna direzione: ''^FVX su''. ^FVX quota il rendimento.'
+  - asset: GC=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna direzione: ''GC=F su''.'
+  - asset: ^TNX
+    gruppo: 3
+    domanda: 'Riga: ''^FVX su, GC=F su'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - michigan_inflation_expectations
+  - consumer
+  evento: 'Michigan preliminare di aprile 2026: minimo storico'
+  stato: promossa
+- riga: '| 2026-06-30 | neg | labour_differential_break | Conference Board giugno 2026: indice 91,2, ma
+    labour differential crollato a 2,4 (da ~45 nel 2022, 24/7 Wall St.: «crashed from 45 points in 2022
+    to just 2.4… With an 85% historical track record»), Present Situation più debole per mercato del lavoro
+    percepito in deterioramento. Meccanismo: differenziale lavoro in rottura → anticipo di disoccupazione
+    in salita → risk-off ciclici | IYT giù, IWM/^GSPC giù | Rilascio CB ultimo martedì. Headline in salita
+    ma la rottura è nel differenziale: leggere il sotto-indice lavoro, non il titolo |'
+  data: '2026-06-30'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - IWM
+  - IYT
+  - ^GSPC
+  dichiarazioni:
+  - asset: IYT
+    gruppo: 1
+    verso: neg
+    perché: 'Riga, colonna direzione: ''IYT giù''.'
+  - asset: IWM
+    gruppo: 3
+    domanda: 'Riga: ''IWM/^GSPC giù'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP su''
+      del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: ^GSPC
+    gruppo: 3
+    domanda: 'Riga: ''IWM/^GSPC giù'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP su''
+      del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - labour_differential_break
+  - consumer
+  evento: 'Conference Board di giugno 2026: differenziale del lavoro crollato'
+  stato: promossa
+- riga: '| 2026-07-17 | pos | confidence_rebound | Michigan preliminare luglio 2026: 54,4 da 49,5 (giugno),
+    +~9,9%, massimo da febbraio, su benzina in calo. Meccanismo: sollievo su prezzi → attese in recupero
+    → risk-on di breve | XLY/XLP su, IWM su | Rilascio Michigan preliminare venerdì. Rimbalzo effimero:
+    già ad agosto 2026 il preliminare ricadde a 51,0 |'
+  data: '2026-07-17'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - IWM
+  - XLP
+  - XLY
+  dichiarazioni:
+  - asset: XLY
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP su, IWM su'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP
+      su'' del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: XLP
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP su, IWM su'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP
+      su'' del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: IWM
+    gruppo: 3
+    domanda: 'Riga: ''IWM su'' — livello o rapporto?'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - confidence_rebound
+  - consumer
+  evento: Michigan preliminare di luglio 2026
+  stato: promossa
+- riga: '| 2026-08-25 | pos, neg | divergence_present_up_expectations_down | Conference Board agosto 2026:
+    Present Situation +6,8 a 121,2 (primo miglioramento in 4 mesi) ed Expectations −5,8 a 68,2 (headline
+    −0,8 a 89,4). Meccanismo: forbice — presente meglio, futuro peggio → reazione azionaria ambivalente,
+    curva breve giù sulle attese | XLY/XLP misto, ^FVX giù | Rilascio CB ultimo martedì. Le fonti (InvestingLive)
+    notano «rarely a market mover» e indici più alti: verso ambivalente, isolare come tipo forbice |'
+  data: '2026-08-25'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - XLP
+  - XLY
+  - ^FVX
+  dichiarazioni:
+  - asset: ^FVX
+    gruppo: 1
+    verso: neg
+    perché: 'Riga, colonna direzione: ''^FVX giù''. ^FVX quota il rendimento.'
+  - asset: XLY
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP misto'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP su''
+      del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  - asset: XLP
+    gruppo: 3
+    domanda: 'Riga: ''XLY/XLP misto'' — è il RAPPORTO fra due ticker (lo mostra ''XLY/XLP giù, XLP su''
+      del 2005-10-25), non il verso di un asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - divergence_present_up_expectations_down
+  - consumer
+  evento: 'Conference Board di agosto 2026: presente su, attese giù'
+  stato: promossa
+- riga: '| 2026-08-28 | neg | michigan_inflation_expectations | Michigan finale agosto 2026: 51,7 (rivisto
+    al rialzo da 51,0 preliminare), attese di inflazione a un anno al 4,0% (finale) da 4,3% (preliminare),
+    long-run 3,3%. Meccanismo: inflazione attesa elevata con Fed vincolata → segnale neutrale-restrittivo,
+    ^FVX resta alto | ^FVX su, GC=F su | Rilascio Michigan finale venerdì. DISCREPANZA di date: il prompt
+    data il preliminare 51,0 al 2026-08-28 e il finale 51,7 al 2026-08-29; la stampa (Detroit News, Advisor
+    Perspectives) data il *finale* 51,7 a venerdì 2026-08-28 e il preliminare 51,0 a metà agosto (~2026-08-14/15).
+    Riportate entrambe le versioni |'
+  data: '2026-08-28'
+  tema: macro_data
+  fonte: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  candidati:
+  - GC=F
+  - ^FVX
+  dichiarazioni:
+  - asset: ^FVX
+    gruppo: 4
+    verso: escluso
+    perché: 'Michigan FINALE: la riga stessa cita il preliminare già noto (51,0 → 51,7), quindi è scontato;
+      e la nota segnala una discrepanza di date.'
+  - asset: GC=F
+    gruppo: 4
+    verso: escluso
+    perché: 'Michigan FINALE: la riga stessa cita il preliminare già noto (51,0 → 51,7), quindi è scontato;
+      e la nota segnala una discrepanza di date.'
+  meccanismo:
+  - michigan_inflation_expectations
+  - consumer
+  evento: Michigan finale di agosto 2026
+  stato: promossa

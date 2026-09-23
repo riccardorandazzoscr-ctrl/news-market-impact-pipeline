@@ -107,9 +107,12 @@ Aggiornato: 2026-08-30
   revocare una sanzione" **non erano problemi di vocabolario**. Per il verso del *dato*
   macro (diverso dal verso della *reazione*) si usa un sotto-tema regex date-locale, non
   si tocca il formato dichiarato — che resta sulla reazione, per costruzione.
+- **Deciso (23/09, Run 5d)** — il verso è la **sorpresa** rispetto al già prezzato. I versi
+  delle research stanno nel registro `_direction_reviews.yaml` (11 research, approvate riga per
+  riga); le schede di agosto **non** si recuperano (il loro Verso non aveva un asset).
 - **Prossimo passo** — le prossime schede su `inflation_print` usano `--subtheme
   inflation_upside`/`inflation_downside` invece di `--direction` quando la domanda è sul
   dato. Ricontrollare fra un mese se la mediana di `macro_data` si allontana da zero.
 
 Meccanica e post-mortem: [references/etichette_date_locali.md](references/etichette_date_locali.md)
-Aggiornato: 2026-09-10
+Aggiornato: 2026-09-23

@@ -1,0 +1,463 @@
+research: Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati —
+  regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi sul
+  grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+voci:
+- riga: '| 2014-03-03 | Ingresso truppe russe in Crimea; prima seduta CBOT dopo il weekend | escalation
+    (controllo minore) | ZW=F: pos / ZC=F: pos (debole) | Canale 1 | Impatto storicamente contenuto: nessun
+    blocco dei porti di Odessa. Mais a massimi di 6 mesi, grano a massimi di 3 mesi, poi rientro. |'
+  data: '2014-03-03'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - ZC=F
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''ZW=F: pos'', scritto per l''asset.'
+  - asset: ZC=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''ZC=F: pos (debole)'', scritto per l''asset.'
+  meccanismo:
+  - black_sea
+  - military_escalation
+  evento: Truppe russe in Crimea
+  stato: promossa
+- riga: '| 2022-02-15 | Russia annuncia ritiro parziale truppe (de-escalation poi smentita) | de-escalation
+    (head-fake) | BZ=F: neg / TTF=F: neg / ZW=F: neg (debole) | Canale 2 dominante | Dated Brent −2,06
+    $ a 97,655 $/b; TTF DA in rientro dal record di dicembre. Controllo di de-escalation pre-invasione.
+    |'
+  data: '2022-02-15'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - BZ=F
+  - TTF=F
+  - ZW=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''BZ=F: neg'', scritto per l''asset.'
+  - asset: TTF=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''TTF=F: neg'', scritto per l''asset.'
+  - asset: ZW=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''ZW=F: neg (debole)'', scritto per l''asset.'
+  meccanismo:
+  - de_escalation
+  evento: La Russia annuncia un ritiro parziale di truppe
+  stato: promossa
+- riga: '| 2022-02-24 | Invasione russa; blocco dei porti del Mar Nero | escalation estrema | ZW=F: pos
+    / ZC=F: pos / TTF=F: pos / BZ=F: pos | Canali 1 e 2 insieme | **Unico caso di segno allineato.** TTF
+    marzo +33% intraday (a circa 117 €/MWh); Brent intraday da 97,56 a 105,79 $/b, settle +2,3% a 99,08
+    $; gas naturale +6,5%; grano limit-up. |'
+  data: '2022-02-24'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - BZ=F
+  - TTF=F
+  - ZC=F
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''ZW=F: pos'', scritto per l''asset.'
+  - asset: ZC=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''ZC=F: pos'', scritto per l''asset.'
+  - asset: TTF=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''TTF=F: pos'', scritto per l''asset.'
+  meccanismo:
+  - black_sea
+  - military_escalation
+  evento: Invasione russa, blocco dei porti del Mar Nero
+  stato: promossa
+  nota: 'BZ=F già nel registro dalla research Russia-Ucraina (pos, concorde): non ripetuto.'
+- riga: '| 2022-03-07 | Grano CBOT tocca il record storico | picco di regime | ZW=F: pos (esaurimento)
+    | Canale 1 | Future maggio a 13,63½ $/bu; ridiscende sotto 11 $ entro il 10 marzo. Data del picco,
+    non di un annuncio. |'
+  data: '2022-03-07'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''Data del picco, non di un annuncio''. Come il 2007-06-22 BoJ.'
+  meccanismo:
+  - black_sea
+  evento: Record storico del grano CBOT
+  stato: promossa
+- riga: '| 2022-07-22 | Firma della Black Sea Grain Initiative (Istanbul, venerdì) | riapertura (accordo)
+    | ZW=F: neg / ZC=F: neg / TTF=F: neutral / BZ=F: neutral | Canale 1; energia ferma | Il grano è sceso
+    poche ore dopo la firma; l''energia non ha reagito (evento non energetico). Disallineamento di segno
+    da manuale. |'
+  data: '2022-07-22'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - BZ=F
+  - TTF=F
+  - ZC=F
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''ZW=F: neg'', scritto per l''asset.'
+  - asset: ZC=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''ZC=F: neg'', scritto per l''asset.'
+  - asset: TTF=F
+    gruppo: 1
+    verso: neutral
+    perché: 'Riga: ''TTF=F: neutral'', scritto per l''asset.'
+  - asset: BZ=F
+    gruppo: 1
+    verso: neutral
+    perché: 'Riga: ''BZ=F: neutral'', scritto per l''asset.'
+  meccanismo:
+  - black_sea
+  - negotiation_track
+  evento: Firma della Black Sea Grain Initiative
+  stato: promossa
+- riga: '| 2022-08-01 | Primo carico (MV Razoni, 26.527 t di mais) salpa da Odessa (lunedì) | conferma
+    operativa | ZW=F: neg / ZC=F: neg | Canale 1 | Mais e grano in calo nel mercato dei future dopo la
+    partenza; conferma che l''accordo è operativo, non solo annunciato. |'
+  data: '2022-08-01'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - ZC=F
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''ZW=F: neg'', scritto per l''asset.'
+  - asset: ZC=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''ZC=F: neg'', scritto per l''asset.'
+  meccanismo:
+  - black_sea
+  evento: Primo carico da Odessa
+  stato: promossa
+- riga: '| 2022-10-31 | Sospensione russa dopo l''attacco a Sebastopoli; prima seduta utile (lunedì) |
+    escalation | ZW=F: pos / ZC=F: neutral | Canale 1 | Grano +6,4% a Chicago il 31/10; le navi continuano
+    a transitare, poi −0,9% il giorno dopo (mais pressoché invariato). |'
+  data: '2022-10-31'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - ZC=F
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''ZW=F: pos'', scritto per l''asset.'
+  - asset: ZC=F
+    gruppo: 1
+    verso: neutral
+    perché: 'Riga: ''ZC=F: neutral'', scritto per l''asset.'
+  meccanismo:
+  - black_sea
+  - military_escalation
+  evento: La Russia sospende l'accordo dopo Sebastopoli
+  stato: promossa
+- riga: '| 2022-11-02 | Russia rientra nell''accordo | riapertura | ZW=F: neg | Canale 1 | Rientro dopo
+    garanzie ucraine; riassorbe lo spike del 31/10. |'
+  data: '2022-11-02'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''ZW=F: neg'', scritto per l''asset.'
+  meccanismo:
+  - black_sea
+  - negotiation_track
+  evento: La Russia rientra nell'accordo
+  stato: promossa
+- riga: '| 2022-11-17 | Rinnovo BSGI per 120 giorni (giovedì) | riapertura (rinnovo) | ZW=F: neg / TTF=F:
+    neutral | Canale 1 | Attesa/conferma; allenta la pressione sui prezzi alimentari. Decorrenza 19 novembre
+    2022. |'
+  data: '2022-11-17'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - TTF=F
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''Attesa/conferma''. Con la regola della sorpresa il rinnovo atteso non porta un verso.'
+  - asset: TTF=F
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''Attesa/conferma''. Con la regola della sorpresa il rinnovo atteso non porta un verso.'
+  meccanismo:
+  - black_sea
+  - negotiation_track
+  evento: Rinnovo della BSGI per 120 giorni
+  stato: promossa
+- riga: '| 2023-03-20 | Rinnovo BSGI annunciato sabato 18/03 → prima seduta utile lunedì | riapertura
+    (rinnovo) | ZW=F: neg | Canale 1 | Annuncio nel weekend: reazione datata a lunedì 20/03. "Following
+    Black Sea grain deal extension, wheat falls" (Farm Policy News). |'
+  data: '2023-03-20'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''ZW=F: neg'', scritto per l''asset.'
+  meccanismo:
+  - black_sea
+  - negotiation_track
+  evento: Rinnovo della BSGI annunciato nel weekend
+  stato: promossa
+- riga: '| 2023-05-17 | Rinnovo BSGI per 60 giorni (mercoledì) | riapertura (rinnovo) | ZW=F: neg / ZC=F:
+    neg | Canale 1 | "Confirmation… put pressure on the CBOT grains complex, with wheat catching most
+    of the selling" (Dow Jones). Disallineamento con energia ferma. |'
+  data: '2023-05-17'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - ZC=F
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''ZW=F: neg'', scritto per l''asset.'
+  - asset: ZC=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''ZC=F: neg'', scritto per l''asset.'
+  meccanismo:
+  - black_sea
+  - negotiation_track
+  evento: Rinnovo della BSGI per 60 giorni
+  stato: promossa
+- riga: '| 2023-07-17 | Russia sospende la BSGI (lunedì) | rottura (blocco) | ZW=F: pos / ZC=F: pos (debole)
+    / TTF=F: neutral | Canale 1 | Grano +circa 3% a 6,81 $/bu, mais +0,94% a 5,11 $; parte del rialzo
+    poi rientrato in giornata. |'
+  data: '2023-07-17'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - TTF=F
+  - ZC=F
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''ZW=F: pos'', scritto per l''asset.'
+  - asset: ZC=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''ZC=F: pos (debole)'', scritto per l''asset.'
+  - asset: TTF=F
+    gruppo: 1
+    verso: neutral
+    perché: 'Riga: ''TTF=F: neutral'', scritto per l''asset.'
+  meccanismo:
+  - black_sea
+  evento: La Russia sospende la BSGI
+  stato: promossa
+- riga: '| 2023-07-19 | Russia dichiara le navi verso l''Ucraina possibili obiettivi militari; attacchi
+    a Odessa | escalation (blocco de facto) | ZW=F: pos / ZC=F: pos | Canale 1 | CBOT >+8% mercoledì 19/07;
+    grano fisico Euronext +8,2%, mais +5,4% il 20/07; +1,6% ulteriore a 7,39 $/bu il 20/07. |'
+  data: '2023-07-19'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - ZC=F
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''ZW=F: pos'', scritto per l''asset.'
+  - asset: ZC=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''ZC=F: pos'', scritto per l''asset.'
+  meccanismo:
+  - black_sea
+  - military_escalation
+  evento: Navi verso l'Ucraina dichiarate obiettivi militari
+  stato: promossa
+- riga: '| 2023-08-02 | Attacco russo al porto danubiano di Izmail (mercoledì) | attacco portuale | ZW=F:
+    pos | Canale 1 | Prezzi alimentari globali in rialzo; 180.000 t di grano distrutte dal ritiro russo,
+    secondo Kyiv. |'
+  data: '2023-08-02'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''ZW=F: pos'', scritto per l''asset.'
+  meccanismo:
+  - black_sea
+  - infrastructure_attack
+  evento: Attacco al porto di Izmail
+  stato: promossa
+- riga: '| 2023-08-16 | Nuovi attacchi ai porti del Danubio (Izmail); primo mercantile (Joseph Schulte)
+    lascia Odessa via corridoio unilaterale | attacco + riapertura di fatto | ZW=F: pos (attacco) / ZW=F:
+    neg (corridoio) | Canale 1 (segnali opposti in giornata) | Data con doppio segnale: danno ai silos
+    vs partenza della prima nave. Reazione netta ambigua — da trattare con cautela. |'
+  data: '2023-08-16'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''ZW=F: pos (attacco) / ZW=F: neg (corridoio)'' — due segnali opposti lo stesso giorno.'
+  meccanismo:
+  - black_sea
+  - infrastructure_attack
+  evento: Attacchi a Izmail e prima nave dal corridoio unilaterale
+  stato: promossa
+- riga: '| 2025-03-25 | Cessate-il-fuoco sul Mar Nero mediato dagli USA (martedì) | de-escalation/riapertura
+    | ZW=F: neg / ZC=F: neg / TTF=F: neg-muted / BZ=F: neg-muted | Canale 1 (grano) + Canale 2 (energia)
+    | Grano maggio settle −5¢ a 5,43¼ $ (−0,9%, minimo da 5/3); mais settle −6¾¢ a 4,57¾ $ (−1,4%). Energia
+    reazione muta (l''accordo non ripristina il transito gas russo). Suderman (StoneX): *"The ceasefire
+    agreement is perceived as a bearish influence on wheat."* |'
+  data: '2025-03-25'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - BZ=F
+  - TTF=F
+  - ZC=F
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''ZW=F: neg'', scritto per l''asset.'
+  - asset: ZC=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''ZC=F: neg'', scritto per l''asset.'
+  - asset: TTF=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''TTF=F: neg-muted'', scritto per l''asset.'
+  - asset: BZ=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''BZ=F: neg-muted'', scritto per l''asset.'
+  meccanismo:
+  - black_sea
+  - negotiation_track
+  evento: Cessate il fuoco sul Mar Nero mediato dagli USA
+  stato: promossa
+- riga: '| 2025-12-22 | Rimbalzo del grano su nuovi attacchi ai porti (Odessa/Pivdennyi, terminal Allseeds;
+    Taman lato russo); seduta di lunedì | attacco portuale | ZW=F: pos | Canale 1 | Grano a 5,15 $/bu
+    rimbalzando dal minimo di quasi due mesi (5,04 $ il 17/12); guadagni limitati da ampia offerta globale
+    attesa. |'
+  data: '2025-12-22'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''ZW=F: pos'', scritto per l''asset.'
+  meccanismo:
+  - black_sea
+  - infrastructure_attack
+  evento: Nuovi attacchi ai porti di Odessa
+  stato: promossa
+- riga: '| 2026-09-06 | Visita degli inviati USA (Witkoff, Kushner) a Kyiv dopo Mosca | annuncio di trattativa
+    (NON accordo) | ZW=F: neutral / BZ=F: neg (debole) | Canale 2 | **Annuncio di trattativa, non accordo
+    operativo**: nessun cessate-il-fuoco raggiunto ("the war will continue", Kyiv Independent). Da non
+    trattare come riapertura. |'
+  data: '2026-09-06'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  candidati:
+  - BZ=F
+  - ZW=F
+  dichiarazioni:
+  - asset: ZW=F
+    gruppo: 1
+    verso: neutral
+    perché: 'Riga: ''ZW=F: neutral'', scritto per l''asset.'
+  - asset: BZ=F
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''BZ=F: neg (debole)'', scritto per l''asset.'
+  meccanismo:
+  - negotiation_track
+  evento: Inviati USA a Kyiv dopo Mosca
+  stato: promossa

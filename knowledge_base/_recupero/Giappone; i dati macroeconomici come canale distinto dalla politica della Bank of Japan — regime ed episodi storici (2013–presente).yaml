@@ -1,0 +1,523 @@
+research: Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan — regime
+  ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla politica
+  della Bank of Japan — regime ed episodi storici (2013–presente).md
+voci:
+- riga: '| 2024-02-15 | Q4 2023: −0,4% annualizzato, recessione tecnica, atteso +1,4% | PIL giapponese
+    / GDP Japan | ~4,5 settimane (prima del 19/3) | JPY neg; ^N225 pos; 1482.T neutral | ^N225 (diretto-attività)
+    | Release 08:50 JST, reazione stessa seduta Tokyo; Nikkei salì >1% oltre 38.000 nonostante il dato
+    debole |'
+  data: '2024-02-15'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - 1482.T
+  - ^N225
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''JPY neg'' (PIL sotto le attese). Nella research ''JPY'' è lo yen (2024-11-08: ''JPY
+      pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  - asset: ^N225
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''Nikkei salì >1% nonostante il dato debole'' — il ''pos'' della colonna è l''esito,
+      contrario all''attesa.'
+  - asset: 1482.T
+    gruppo: 1
+    verso: neutral
+    perché: 'Riga: ''1482.T neutral'' (PIL sotto le attese). 1482.T è un ETF di JGB: quota il prezzo.'
+  meccanismo:
+  - japan_release
+  - activity_growth
+  evento: 'PIL giapponese Q4 2023: recessione tecnica'
+  stato: promossa
+- riga: '| 2024-03-22 | CPI nazionale febbraio +2,8%, core +2,8% | CPI nazionale giapponese / Japan CPI
+    | ~5 settimane (prima del 26/4) | JPY neutral; ^N225 pos | ^N225 + JPY=X | **Contaminato**: 3 giorni
+    dopo l''uscita dalla NIRP (19/3); vedi studio BoJ. Nikkei record 40.888,43; yen 151,43/USD |'
+  data: '2024-03-22'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - JPY=X
+  - ^N225
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''Contaminato'': tre giorni dopo l''uscita dalla NIRP del 19/3.'
+  - asset: ^N225
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''Contaminato'': tre giorni dopo l''uscita dalla NIRP del 19/3.'
+  meccanismo:
+  - japan_release
+  - inflation_print
+  evento: CPI nazionale di febbraio 2024
+  stato: promossa
+- riga: '| 2024-04-01 | Tankan Q1: grandi manifatturieri +11 (da +13), atteso ~+9 | indagine Tankan /
+    Tankan survey | ~3,5 settimane (prima del 26/4) | JPY neutral; ^N225 neutral | ^N225 (diretto-attività)
+    | Release 08:50 JST; USD/JPY ~152,3 poco mosso |'
+  data: '2024-04-01'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - ^N225
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: ''JPY neutral'' (Tankan +11, atteso ~+9). Nella research ''JPY'' è lo yen (2024-11-08:
+      ''JPY pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  - asset: ^N225
+    gruppo: 1
+    verso: neutral
+    perché: 'Riga: ''^N225 neutral'' (Tankan +11, atteso ~+9).'
+  meccanismo:
+  - japan_release
+  - tankan
+  evento: Tankan Q1 2024
+  stato: promossa
+- riga: '| 2024-11-08 | Spesa famiglie settembre −1,1% a/a (atteso −2,1%) | spesa delle famiglie giapponese
+    / household spending | ~6 settimane (prima del 19/12) | JPY pos | JPY=X (aspettative) | Yen guadagnò,
+    USD/JPY 152,38 (−0,36%); dato "meno peggio" del previsto |'
+  data: '2024-11-08'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - JPY=X
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''JPY pos'' (spesa −1,1%, atteso −2,1%: meno peggio del previsto). Nella research ''JPY''
+      è lo yen (2024-11-08: ''JPY pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  meccanismo:
+  - japan_release
+  - household_spending
+  evento: Spesa delle famiglie di settembre 2024 meno debole del previsto
+  stato: promossa
+- riga: '| 2024-11-15 | Q3 2024: +0,3% t/t (+0,9% annualizzato) | PIL giapponese / GDP Japan | ~5 settimane
+    (prima del 19/12) | JPY neg; ^N225 pos; 1482.T neutral | ^N225 (diretto-attività) | Release 08:50
+    JST; Nikkei +1,28%, Topix +0,96%, yen −0,29% a 156,71 |'
+  data: '2024-11-15'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - 1482.T
+  - ^N225
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide con l''esito riportato
+      nella nota (''Nikkei +1,28%, yen −0,29%''): in questa research la colonna a volte è l''esito (2026-09-04
+      lo dichiara).'
+  - asset: ^N225
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide con l''esito riportato
+      nella nota (''Nikkei +1,28%, yen −0,29%''): in questa research la colonna a volte è l''esito (2026-09-04
+      lo dichiara).'
+  - asset: 1482.T
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide con l''esito riportato
+      nella nota (''Nikkei +1,28%, yen −0,29%''): in questa research la colonna a volte è l''esito (2026-09-04
+      lo dichiara).'
+  meccanismo:
+  - japan_release
+  - activity_growth
+  evento: PIL giapponese Q3 2024
+  stato: promossa
+- riga: '| 2024-11-22 | CPI nazionale ottobre core +2,3% (sopra attese) | CPI nazionale giapponese / Japan
+    CPI | ~4 settimane (prima del 19/12) | JPY pos; 1482.T neg | JPY=X (aspettative) | Uscita 08:30 JST
+    venerdì; USD/JPY −0,15% a 154,27 |'
+  data: '2024-11-22'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - 1482.T
+  - JPY=X
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''JPY pos'' (core CPI sopra le attese). Nella research ''JPY'' è lo yen (2024-11-08:
+      ''JPY pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  - asset: 1482.T
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''1482.T neg'' (core CPI sopra le attese). 1482.T è un ETF di JGB: quota il prezzo.'
+  meccanismo:
+  - japan_release
+  - inflation_print
+  - inflation_upside
+  evento: CPI nazionale di ottobre 2024 sopra le attese
+  stato: promossa
+- riga: '| 2024-11-29 | Tokyo CPI novembre core +2,2% (atteso +2,1%) | CPI Tokyo / Tokyo CPI | ~3 settimane
+    (prima del 19/12) | JPY pos; 1482.T neg | JPY=X (aspettative) | Venerdì; yen balzò ~1% a 150,09/USD
+    su bet rialzo dicembre |'
+  data: '2024-11-29'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - 1482.T
+  - JPY=X
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''JPY pos'' (Tokyo core 2,2%, atteso 2,1%). Nella research ''JPY'' è lo yen (2024-11-08:
+      ''JPY pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  - asset: 1482.T
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''1482.T neg'' (Tokyo core 2,2%, atteso 2,1%). 1482.T è un ETF di JGB: quota il prezzo.'
+  meccanismo:
+  - japan_release
+  - inflation_print
+  - inflation_upside
+  evento: Tokyo CPI di novembre 2024 sopra le attese
+  stato: promossa
+- riga: '| 2024-12-13 | Tankan Q4: grandi manifatturieri +14 (da +13) | indagine Tankan / Tankan survey
+    | ~5 giorni (prima del 19/12) | JPY neutral; ^N225 neutral | ^N225 + JPY=X | USD/JPY +0,05% a 152,55;
+    riunione "live" ma reazione modesta |'
+  data: '2024-12-13'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - JPY=X
+  - ^N225
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: ''JPY neutral'' (Tankan +14 da +13). Nella research ''JPY'' è lo yen (2024-11-08: ''JPY
+      pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  - asset: ^N225
+    gruppo: 1
+    verso: neutral
+    perché: 'Riga: ''^N225 neutral'' (Tankan +14 da +13).'
+  meccanismo:
+  - japan_release
+  - tankan
+  evento: Tankan Q4 2024
+  stato: promossa
+- riga: '| 2024-12-27 | Tokyo CPI dicembre +3,0% a/a (core-core +2,4%) | CPI Tokyo / Tokyo CPI | ~4 settimane
+    (prima del 24/1/2025) | JPY pos; 1482.T neg | JPY=X (aspettative) | Venerdì; yen si rafforzò, hike
+    gennaio atteso |'
+  data: '2024-12-27'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - 1482.T
+  - JPY=X
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide con l''esito riportato
+      nella nota (''yen si rafforzò, hike gennaio atteso''): in questa research la colonna a volte è l''esito
+      (2026-09-04 lo dichiara).'
+  - asset: 1482.T
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide con l''esito riportato
+      nella nota (''yen si rafforzò, hike gennaio atteso''): in questa research la colonna a volte è l''esito
+      (2026-09-04 lo dichiara).'
+  meccanismo:
+  - japan_release
+  - inflation_print
+  evento: Tokyo CPI di dicembre 2024
+  stato: promossa
+- riga: '| 2025-04-25 | Tokyo core CPI aprile +3,4% (massimo da 2 anni, atteso +3,2%) | CPI Tokyo / Tokyo
+    CPI | ~5 giorni (prima del 1/5) | JPY pos "atteso" ma realizzato neg | JPY=X (aspettative) | **Contraddizione/rumore**:
+    dato forte ma yen si indebolì, USD/JPY +0,59% a 143,45 (incertezza dazi USA dominante) |'
+  data: '2025-04-25'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - JPY=X
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''JPY pos ''atteso'' ma realizzato neg'' (core 3,4%, atteso 3,2%; si prende l''attesa).
+      Nella research ''JPY'' è lo yen (2024-11-08: ''JPY pos'', yen guadagnò); JPY=X è USD/JPY, quindi
+      il segno si inverte.'
+  meccanismo:
+  - japan_release
+  - inflation_print
+  - inflation_upside
+  evento: Tokyo core CPI di aprile 2025 sopra le attese
+  stato: promossa
+- riga: '| 2025-05-16 | Q1 2025: −0,2% t/t (−0,7% annualizzato), peggio del previsto | PIL giapponese
+    / GDP Japan | ~4,5 settimane (prima del 17/6) | JPY neg; ^N225 neg | ^N225 (diretto-attività) | Release
+    08:50 JST; USD/JPY verso 142 su dati deboli |'
+  data: '2025-05-16'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - ^N225
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''JPY neg'' (PIL peggio del previsto). Nella research ''JPY'' è lo yen (2024-11-08:
+      ''JPY pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  - asset: ^N225
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''^N225 neg'' (PIL peggio del previsto).'
+  meccanismo:
+  - japan_release
+  - activity_growth
+  evento: PIL giapponese Q1 2025 sotto le attese
+  stato: promossa
+- riga: '| 2025-05-23 | CPI nazionale aprile core +3,5% (massimo ~2 anni, atteso +3,4%) | CPI nazionale
+    giapponese / Japan CPI | ~3,5 settimane (prima del 17/6) | JPY pos; 1482.T neg | JPY=X (aspettative)
+    | Venerdì 08:30 JST; per FXStreet USD/JPY *"near 143.00... down over 0.50% on the day"* (CNBC: yen
+    +0,15% a 143,80) |'
+  data: '2025-05-23'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - 1482.T
+  - JPY=X
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''JPY pos'' (core 3,5%, atteso 3,4%). Nella research ''JPY'' è lo yen (2024-11-08:
+      ''JPY pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  - asset: 1482.T
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''1482.T neg'' (core 3,5%, atteso 3,4%). 1482.T è un ETF di JGB: quota il prezzo.'
+  meccanismo:
+  - japan_release
+  - inflation_print
+  - inflation_upside
+  evento: CPI nazionale di aprile 2025 sopra le attese
+  stato: promossa
+- riga: '| 2025-10-01 | Tankan Q3: grandi manifatturieri +14 (+1 da giugno) | indagine Tankan / Tankan
+    survey | ~4 settimane (prima del 30/10) | JPY neutral; ^N225 pos | ^N225 (diretto-attività) | Sollievo
+    su accordo dazi USA; reazione FX modesta |'
+  data: '2025-10-01'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - ^N225
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: ''JPY neutral'' (Tankan +14, +1). Nella research ''JPY'' è lo yen (2024-11-08: ''JPY
+      pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  - asset: ^N225
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide con l''esito riportato
+      nella nota (''Sollievo su accordo dazi USA''): in questa research la colonna a volte è l''esito
+      (2026-09-04 lo dichiara).'
+  meccanismo:
+  - japan_release
+  - tankan
+  evento: Tankan Q3 2025
+  stato: promossa
+- riga: '| 2025-11-17 | Q3 2025: −0,4% t/t, meglio del previsto (−0,6% atteso) | PIL giapponese / GDP
+    Japan | ~4,5 settimane (prima del 19/12) | JPY neg; ^N225 pos | ^N225 (diretto-attività) | Release
+    08:50 JST lunedì; yen debole marginale, Nikkei −0,29%, 10Y JGB +3bp a 1,73% |'
+  data: '2025-11-17'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - ^N225
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'La colonna (''JPY neg'') contraddice il segno della sorpresa scritta nella riga (''PIL meglio
+      del previsto'') e coincide con l''esito della nota: è l''esito, non l''attesa.'
+  - asset: ^N225
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''^N225 pos'' (PIL meglio del previsto).'
+  meccanismo:
+  - japan_release
+  - activity_growth
+  evento: PIL giapponese Q3 2025 meglio del previsto
+  stato: promossa
+- riga: '| 2025-12-05 | Spesa famiglie ottobre −3,0% a/a (atteso +1,0%) | spesa delle famiglie giapponese
+    / household spending | ~2 settimane (prima del 19/12) | JPY neg | JPY=X (aspettative) | Reazione FX
+    isolata non documentata con precisione; INCERTA |'
+  data: '2025-12-05'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - JPY=X
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''JPY neg'' (spesa −3,0%, atteso +1,0%). Nella research ''JPY'' è lo yen (2024-11-08:
+      ''JPY pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  meccanismo:
+  - japan_release
+  - household_spending
+  evento: Spesa delle famiglie di ottobre 2025 molto sotto le attese
+  stato: promossa
+- riga: '| 2025-12-15 | Tankan Q4: outlook grandi manifatturieri +15 (massimo 4 anni) | indagine Tankan
+    / Tankan survey | ~4 giorni (prima del 19/12) | JPY pos | JPY=X + ^N225 | USD/JPY −0,5% a ~155; conferma
+    il rialzo poi deciso il 19/12 (a 0,75%) — vedi studio BoJ |'
+  data: '2025-12-15'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - JPY=X
+  - ^N225
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide con l''esito riportato
+      nella nota (''USD/JPY −0,5%; conferma il rialzo poi deciso il 19/12''): in questa research la colonna
+      a volte è l''esito (2026-09-04 lo dichiara).'
+  - asset: ^N225
+    gruppo: 3
+    domanda: 'Riga: ''JPY pos'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - japan_release
+  - tankan
+  evento: 'Tankan Q4 2025: outlook al massimo da 4 anni'
+  stato: promossa
+- riga: '| 2026-08-17 | Q2 2026: +1,1% annualizzato (atteso ~2%), export forte, domanda interna debole
+    | PIL giapponese / GDP Japan | ~4,5 settimane (prima del 18/9) | JPY pos; ^N225 pos; 1482.T neg |
+    ^N225 (diretto-attività) | Release 08:50 JST lunedì. Per CNBC (17 ago 2026): *"the Nikkei 225 rose
+    0.43%, while the yield on the benchmark 10-year Japanese Government Bonds was at 2.88%. The yen strengthened
+    slightly against the dollar, trading at 159.1"* |'
+  data: '2026-08-17'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - 1482.T
+  - ^N225
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'La colonna (''JPY pos; ^N225 pos; 1482.T neg'') contraddice il segno della sorpresa scritta
+      nella riga (''PIL +1,1%, atteso ~2%'') e coincide con l''esito della nota: è l''esito, non l''attesa.'
+  - asset: ^N225
+    gruppo: 4
+    verso: escluso
+    perché: 'La colonna (''JPY pos; ^N225 pos; 1482.T neg'') contraddice il segno della sorpresa scritta
+      nella riga (''PIL +1,1%, atteso ~2%'') e coincide con l''esito della nota: è l''esito, non l''attesa.'
+  - asset: 1482.T
+    gruppo: 4
+    verso: escluso
+    perché: 'La colonna (''JPY pos; ^N225 pos; 1482.T neg'') contraddice il segno della sorpresa scritta
+      nella riga (''PIL +1,1%, atteso ~2%'') e coincide con l''esito della nota: è l''esito, non l''attesa.'
+  meccanismo:
+  - japan_release
+  - activity_growth
+  evento: PIL giapponese Q2 2026 sotto le attese
+  stato: promossa
+- riga: '| 2026-08-28 | Tokyo CPI agosto core +1,8% (atteso +1,7%), core-core +2,0% | CPI Tokyo / Tokyo
+    CPI | ~3 settimane (prima del 18/9) | JPY pos; 1482.T neg | JPY=X (aspettative) | Venerdì. Per FXStreet:
+    core *"climbed to 1.8% YoY in August... above the market consensus of 1.7%"* e core-core *"jumped
+    2.0% YoY"*; USD/JPY calò verso 159,30 su bet rialzo settembre |'
+  data: '2026-08-28'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - 1482.T
+  - JPY=X
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''JPY pos'' (core 1,8%, atteso 1,7%). Nella research ''JPY'' è lo yen (2024-11-08:
+      ''JPY pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  - asset: 1482.T
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''1482.T neg'' (core 1,8%, atteso 1,7%). 1482.T è un ETF di JGB: quota il prezzo.'
+  meccanismo:
+  - japan_release
+  - inflation_print
+  - inflation_upside
+  evento: Tokyo CPI di agosto 2026 sopra le attese
+  stato: promossa
+- riga: '| 2026-09-04 | **Spesa famiglie luglio −3,6% a/a (atteso −1,6%), 8° calo di fila, il più profondo
+    da gen 2024** | spesa delle famiglie giapponese / household spending | ~2 settimane (prima del 18/9)
+    | JPY pos (realizzato); ^N225 pos; 1482.T pos | tutti e tre (caso-ancora) | **Caso di contraddizione**:
+    dato debole ma yen apprezzato (fino a +3% in due sedute, USD/JPY ~155,85), Nikkei +1,26% a 65.020,94,
+    10Y JGB 2,91% (−6bp). Contaminato da NFP USA forte (+162K vs +56K atteso) lo stesso giorno |'
+  data: '2026-09-04'
+  tema: macro_data
+  fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  candidati:
+  - 1482.T
+  - ^N225
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''JPY pos (realizzato)'' — la colonna è l''esito, dichiaratamente; e la nota segnala
+      la contaminazione del payroll USA lo stesso giorno.'
+  - asset: ^N225
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''JPY pos (realizzato)'' — la colonna è l''esito, dichiaratamente; e la nota segnala
+      la contaminazione del payroll USA lo stesso giorno.'
+  - asset: 1482.T
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''JPY pos (realizzato)'' — la colonna è l''esito, dichiaratamente; e la nota segnala
+      la contaminazione del payroll USA lo stesso giorno.'
+  meccanismo:
+  - japan_release
+  - household_spending
+  evento: Spesa delle famiglie di luglio 2026 molto sotto le attese
+  stato: promossa

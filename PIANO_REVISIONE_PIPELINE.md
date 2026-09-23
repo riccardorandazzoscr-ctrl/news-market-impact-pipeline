@@ -357,7 +357,7 @@ richiede più sessioni e prima una decisione di metodo del maintainer (vedi 5d).
 
 ---
 
-## [ ] Run 5d — Recupero delle righe già scritte
+## [x] Run 5d — Recupero delle righe già scritte — FATTO — 2026-09-23
 **ID report:** R01
 **Modello:** Opus 5.5 · effort high
 **Precondizione:** il maintainer ha **rivisto il pilota BoJ**.
@@ -385,7 +385,7 @@ research): oggi entrambi dicono «pressione attesa» e ammettono tutte e due le 
       Promosse 32 righe: gli 11 versi già scritti dalle schede sono tutti concordi, nessuna coppia delle schede è cambiata. 2016-09-21 JPY=X **non** escluso:
       un veto nel registro spegne anche il `pos` delle schede. Il 2024-08-05 è escluso come riga di esito, come l'08-06.
       I tre Nikkei il cui verso la riga non scrive (2016-01-29, 2024-03-19, 2024-07-31) restano aperti: riempirli sarebbe look-ahead.
-- [ ] Le altre research con tabella, in ordine di valore: prima quelle sugli asset che le
+- [x] Le altre research con tabella, in ordine di valore: prima quelle sugli asset che le
       schede usano davvero come `direction_reference` (comando per vederli in §9 della spec).
       Pesando le righe post-2011 per quante schede usano i loro ticker, il 2026-09-23 venivano
       prima **Dazi e guerra commerciale USA** e poi **Russia-Ucraina attrito energetico** (i più usati sono `BZ=F` e `^GSPC`).
@@ -408,6 +408,13 @@ research): oggi entrambi dicono «pressione attesa» e ammettono tutte e due le 
         Gran parte delle righe sono giornate scelte per il movimento di prezzo («rout», «10Y al 5%»):
         escluse dai pool direzionali. ⚠ Fuori scope ma da sapere: restano in libreria come episodi
         senza verso, e tre schede usano come analogo ^GSPC date di esito (2016-11-09, 2021-02-25, 2023-10-19).
+      - [x] **Research minori** — 2026-09-23: Mar Nero, PBoC cambio, consumatore USA, Giappone macro,
+        PBoC politica (178 righe). Tre convenzioni nuove: CNH (non in DB) → CNY=X come proxy onshore;
+        «XLY/XLP», «IWM/^GSPC» sono rapporti → aperti; nel Giappone macro «JPY» è lo yen (segno invertito
+        su JPY=X) e la colonna è spesso l'esito → verso accettato solo se coerente con la sorpresa scritta.
+      - [x] **Non recuperate, peso nullo** (DECISO dal maintainer il 2026-09-23): Regno Unito, difesa
+        europea, consumatore cinese, DRAM/Corea, LatAm, ASEAN, vincolo elettrico AI, semiconduttori,
+        bitcoin, auto-limitazione dell'offerta. I loro ticker non sono usati dalle schede come riferimento.
 - [x] Le schede senza `direction_reference` (agosto e prima metà di settembre) — **DECISO dal
       maintainer il 2026-09-23: non si recuperano.** Il template di allora definiva il Verso come
       «il verso di quell'episodio», senza asset e senza distinguere attesa ed esito: era l'etichetta
@@ -415,12 +422,20 @@ research): oggi entrambi dicono «pressione attesa» e ammettono tutte e due le 
       (data, tema). Assegnare un asset per scheda attaccherebbe un asset a segni che non ne avevano
       uno. I versi restano al livello «dichiarato»; i pool per asset crescono dalle schede nuove e
       dalle research. Nessun ramo schede in `recupero.py`. Misura: comando §9 della spec.
-- [ ] Le date spurie delle research in formato libero (note tecniche, date di scrittura):
-      durante il recupero di ciascuna, con esclusione motivata.
+- [x] Le date spurie delle research in formato libero (note tecniche, date di scrittura) —
+      **chiuso solo in parte.** Il recupero legge le righe delle tabelle: lì le date non-evento
+      (picchi, livelli, esiti, intervalli) sono escluse con motivo. Le date citate nella **prosa**
+      delle research libere restano in libreria come episodi senza verso: spostato fra i Non pianificati.
 
-> **Finché il Run 5d non è chiuso: non commissionare nuove research.** Oggi però una research
-> nuova scritta col template aggiornato entra già pulita (tabella canonica, prosa spenta):
-> il divieto resta per prudenza finché il metodo del verso non è deciso.
+> ~~Finché il Run 5d non è chiuso: non commissionare nuove research.~~ **Sbloccato il 2026-09-23**:
+> il metodo del verso è deciso e una research nuova col template aggiornato entra già pulita
+> (tabella canonica, prosa spenta).
+
+**Note di chiusura:**
+- 11 research recuperate in `_direction_reviews.yaml` (pilota BoJ compreso), sempre su proposta approvata
+  riga per riga; nessuna coppia già dichiarata da una scheda è cambiata. Schede di agosto: non si recuperano.
+- Regola ricorrente emersa: molte research scrivono nella colonna «attesa» l'esito o una data scelta per il
+  movimento di prezzo. Esclusi dai pool direzionali; restano però episodi senza verso (vedi Non pianificati).
 
 ---
 
@@ -522,6 +537,12 @@ divergenze e aspetta, non decide da solo.
 ---
 
 ## Non pianificati — da rivalutare, NON da anticipare
+
+- **Episodi senza evento in libreria** (emerso nel Run 5d): date citate in prosa dalle research libere
+  (note tecniche, date di scrittura) e date scelte per il movimento di prezzo («rout», «10Y al 5%»,
+  picchi). Il Run 5d le ha tolte dai pool **direzionali**, non dalla libreria: entrano ancora nei pool
+  senza filtro di verso. Tre schede le usano anche come analoghi su ^GSPC (2016-11-09, 2021-02-25,
+  2023-10-19). Prima di intervenire misurare quante sono e quanto pesano nei pool non direzionali.
 
 - **R10 statistica seria** (Opus 5 · high): indipendenza delle osservazioni, accuratezza del
   segno vs ordinamento delle magnitudini vs copertura degli intervalli, raggruppamento per

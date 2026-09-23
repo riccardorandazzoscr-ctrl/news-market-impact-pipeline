@@ -1,0 +1,805 @@
+research: La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed episodi
+  datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+  regimi ed episodi datati (2005–2026).md
+voci:
+- riga: '| 2005-07-21 | Rivalutazione 2,1% (8,2765→8,11) e passaggio a managed float con paniere | riforma_regime
+    | CNY forte | CNY=X, KRW=X, EEM | Annuncio serale 21 lug; reazione piena il 22. Regime pre-2010: non
+    confrontabile col corrente. |'
+  data: '2005-07-21'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - CNY=X
+  - EEM
+  - KRW=X
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: Data non puntuale o prima del 2011 (fuori dal DB prezzi).
+- riga: '| 2007-05-21 | Banda allargata da ±0,3% a ±0,5% | riforma_regime | CNY forte | CNY=X | Fase di
+    apprezzamento amministrato. |'
+  data: '2007-05-21'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - CNY=X
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: Data non puntuale o prima del 2011 (fuori dal DB prezzi).
+- riga: '| 2010-06-21 | Uscita dal peg di crisi, ripresa della flessibilità | riforma_regime | CNY forte
+    | CNY=X, KRW=X, HG=F, EEM | Annuncio sabato 19 giu; prima seduta utile lun 21 giu. |'
+  data: '2010-06-21'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - CNY=X
+  - EEM
+  - HG=F
+  - KRW=X
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: Data non puntuale o prima del 2011 (fuori dal DB prezzi).
+- riga: '| 2012-04-16 | Banda allargata da ±0,5% a ±1% | riforma_regime | CNY forte (due vie) | CNY=X
+    | Contesto di freno all''apprezzamento: la banda serve a gestire la salita. |'
+  data: '2012-04-16'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - CNY=X
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''CNY forte (due vie)'' — ''due vie'' dichiara flessibilità nei due sensi: nessun verso
+      univoco.'
+  meccanismo:
+  - cny
+  - pboc
+  evento: Banda del cambio allargata a ±1%
+  stato: promossa
+- riga: '| 2014-03-17 | Banda allargata da ±1% a ±2% | riforma_regime | CNY debole (due vie) | CNY=X,
+    KRW=X | Annuncio sab 15 mar; effettiva e reazione lun 17 mar. Contesto: freno all''apprezzamento 2010-14.
+    |'
+  data: '2014-03-17'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - CNY=X
+  - KRW=X
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''CNY debole (due vie)'' — ''due vie'' dichiara flessibilità nei due sensi: nessun
+      verso univoco.'
+  - asset: KRW=X
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole (due vie)'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - cny
+  - pboc
+  evento: Banda del cambio allargata a ±2%
+  stato: promossa
+- riga: '| 2015-08-11 | Riforma "811": taglio del fix di 1,9% (da 6,1162 a 6,2298, −1.136 pip), nuovo
+    meccanismo | svalutazione_disordinata | CNY debole | CNY=X, CNH, KRW=X, EEM, HG=F, ^VIX | Il più grande
+    calo giornaliero del fix dal 1994. Innesco di risk-off globale; CNH si stacca dal CNY. |'
+  data: '2015-08-11'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - CNY=X
+  - EEM
+  - HG=F
+  - KRW=X
+  - ^VIX
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''CNY debole''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole = pos.'
+  - asset: KRW=X
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: HG=F
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: ^VIX
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - cny
+  - pboc
+  evento: 'Riforma del fixing: svalutazione dell''1,9%'
+  stato: promossa
+- riga: '| 2015-08-12 | Secondo taglio consecutivo del fix (cumulato ~4,4% in 3 sedute) | svalutazione_disordinata
+    | CNY debole | CNH, EEM, ^GSPC, ^VIX, HG=F | Seconda seduta consecutiva → conferma posizione, non
+    caso isolato. |'
+  data: '2015-08-12'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  - ^GSPC
+  - ^VIX
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''CNY debole''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole = pos.
+      La colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: ^GSPC
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: ^VIX
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: HG=F
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - cny
+  - pboc
+  evento: Secondo taglio consecutivo del fixing
+  stato: promossa
+- riga: '| 2015-10-15 | Introduzione riserva di rischio 20% sui forward (prima volta) | strumento_amministrativo
+    | difesa (CNY forte) | CNH, punti a termine | Difesa dal deprezzamento post-811. |'
+  data: '2015-10-15'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati: []
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''difesa (CNY forte)''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole
+      = pos. La colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  meccanismo:
+  - cny
+  - pboc
+  evento: Riserva di rischio del 20% sui forward
+  stato: promossa
+- riga: '| 2015-12-11 | Pubblicazione indice paniere CFETS RMB (13 valute; USD 26,40%, EUR 21,39%, JPY
+    14,68%) | riforma_regime | CNY debole vs paniere | CNY=X, indice CFETS | Sposta il focus dal solo
+    USD al paniere; consente deprezzamento vs USD "stabile vs paniere". |'
+  data: '2015-12-11'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - CNY=X
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''CNY debole vs paniere'' — il verso è sul paniere CFETS, CNY=X è contro il solo dollaro.'
+  meccanismo:
+  - cny
+  - pboc
+  evento: Pubblicazione dell'indice CFETS
+  stato: promossa
+- riga: '| 2016-01-07 | Crollo yuan/CNH inizio 2016, fix più debole, risk-off globale | svalutazione_disordinata
+    | CNY debole | CNH, EEM, ^GSPC, ^VIX, HG=F | La seduta del 7 gen è quella del massimo stress; CNH
+    ai minimi, ~−8,5% azionario in pochi giorni. |'
+  data: '2016-01-07'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  - ^GSPC
+  - ^VIX
+  dichiarazioni:
+  - asset: EEM
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga definita dall''esito (''Crollo yuan/CNH... la seduta del massimo stress''): selezionerebbe
+      l''episodio per il risultato.'
+  - asset: ^GSPC
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga definita dall''esito (''Crollo yuan/CNH... la seduta del massimo stress''): selezionerebbe
+      l''episodio per il risultato.'
+  - asset: ^VIX
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga definita dall''esito (''Crollo yuan/CNH... la seduta del massimo stress''): selezionerebbe
+      l''episodio per il risultato.'
+  - asset: HG=F
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga definita dall''esito (''Crollo yuan/CNH... la seduta del massimo stress''): selezionerebbe
+      l''episodio per il risultato.'
+  meccanismo:
+  - cny
+  - pboc
+  evento: Crollo dello yuan a inizio 2016
+  stato: promossa
+- riga: '| 2017-05-26 | Introduzione del fattore controciclico nel fixing | strumento_amministrativo |
+    difesa (CNY forte) | CNY=X, CNH | Annuncio ven 26 mag (confermato nel Rapporto di Policy Q2 2017);
+    frena il deprezzamento. |'
+  data: '2017-05-26'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - CNY=X
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''difesa (CNY forte)''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole
+      = pos.'
+  meccanismo:
+  - cny
+  - pboc
+  evento: Fattore controciclico nel fixing
+  stato: promossa
+- riga: '| 2018-08-06 | Riserva di rischio 20% sui forward re-imposta (da 0%) | strumento_amministrativo
+    | difesa (CNY forte) | CNH, punti a termine | Annuncio ven 3 ago sera; effettiva e reazione lun 6
+    ago. Contaminato dai dazi. |'
+  data: '2018-08-06'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati: []
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''Contaminato dai dazi''. I dazi spingono lo yuan più debole, cioè contro la difesa
+      della riga: pressioni opposte sulla stessa seduta.'
+  meccanismo:
+  - cny
+  - pboc
+  evento: Riserva di rischio del 20% re-imposta
+  stato: promossa
+- riga: '| 2018-08-24 | Fattore controciclico reintrodotto nel fixing | strumento_amministrativo | difesa
+    (CNY forte) | CNY=X, CNH | Statement CFETS ven 24 ago; Reuters stesso giorno. Ripristino dopo la sospensione
+    di gennaio 2018. |'
+  data: '2018-08-24'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - CNY=X
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''difesa (CNY forte)''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole
+      = pos.'
+  meccanismo:
+  - cny
+  - pboc
+  evento: Fattore controciclico reintrodotto
+  stato: promossa
+- riga: '| 2018-11-07 | Prima emissione di titoli PBoC in yuan a Hong Kong (20 mld RMB: 10 a 3 mesi +
+    10 a 1 anno) | strumento_amministrativo | difesa (CNY forte) | CNH, punti a termine | Annuncio 31
+    ott; emissione 7 nov. Drena liquidità CNH offshore. |'
+  data: '2018-11-07'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati: []
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Annuncio il 31 ottobre, emissione in questa data: per la riga è scontata (regola delle entrate
+      in vigore).'
+  meccanismo:
+  - cny
+  - pboc
+  evento: Prima emissione di titoli PBoC a Hong Kong
+  stato: promossa
+- riga: '| 2019-08-05 | Rottura di 7,00 per la prima volta dal 2008 (fix a 6,9225); designazione USA "manipolatore"
+    | svalutazione_disordinata | CNY debole | CNY=X, CNH, EEM, ^GSPC (Dow −767 pt, −2,9%), ^VIX, HG=F
+    | Contaminato dai dazi. Innesco di risk-off. Fix la mattina di Pechino; Dow reagisce stessa data USA.
+    |'
+  data: '2019-08-05'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - CNY=X
+  - EEM
+  - HG=F
+  - ^GSPC
+  - ^VIX
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''CNY debole''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole = pos.'
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: ^GSPC
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: ^VIX
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: HG=F
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - cny
+  - pboc
+  - tariff_escalation
+  evento: Lo yuan rompe quota 7
+  stato: promossa
+- riga: '| 2019-06-25 | Fix più forte del consenso (record dallo storico agosto 2017) + annuncio bond
+    a HK | strumento_amministrativo | difesa (CNY forte) | CNY=X, CNH | **Data da verificare:** ricostruita
+    da un''unica fonte (gulfnews, "martedì" di giugno 2019); usare con cautela. |'
+  data: '2019-06-25'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - CNY=X
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''Data da verificare'', ricostruita da un''unica fonte.'
+  meccanismo:
+  - cny
+  - pboc
+  evento: Fixing più forte del consenso
+  stato: promossa
+- riga: '| 2020-10-12 | Azzeramento riserva di rischio forward (da 20% a 0%) | strumento_amministrativo
+    | freno all''apprezzamento | CNH, KRW=X, EEM | Annuncio 10 ott (sabato); prima seduta utile lun 12
+    ott. Yuan al massimo da 2 anni. |'
+  data: '2020-10-12'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - EEM
+  - KRW=X
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''freno all''apprezzamento''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan
+      debole = pos. La colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  - asset: KRW=X
+    gruppo: 3
+    domanda: 'Riga: ''freno all''apprezzamento'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''freno all''apprezzamento'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - cny
+  - pboc
+  evento: Azzerata la riserva di rischio sui forward
+  stato: promossa
+- riga: '| 2021-05-31 | Primo rialzo FX deposit RRR in 14 anni (5%→7%) | strumento_amministrativo | freno
+    all''apprezzamento | CNH, KRW=X, MYR=X, EEM | Annuncio lun 31 mag; effettivo 15 giu. Prima revisione
+    dal maggio 2007 (allora 4%→5%). |'
+  data: '2021-05-31'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - EEM
+  - KRW=X
+  - MYR=X
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''freno all''apprezzamento''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan
+      debole = pos. La colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  - asset: KRW=X
+    gruppo: 3
+    domanda: 'Riga: ''freno all''apprezzamento'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: MYR=X
+    gruppo: 3
+    domanda: 'Riga: ''freno all''apprezzamento'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''freno all''apprezzamento'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - cny
+  - pboc
+  evento: Primo rialzo della riserva obbligatoria in valuta in 14 anni
+  stato: promossa
+- riga: '| 2021-12-09 | Secondo rialzo FX deposit RRR 2021 (7%→9%) | strumento_amministrativo | freno
+    all''apprezzamento | CNH, KRW=X, EEM | Annuncio giovedì sera 9 dic; effettivo 15 dic. CNH ai minimi
+    del mese sull''annuncio. |'
+  data: '2021-12-09'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - EEM
+  - KRW=X
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''freno all''apprezzamento''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan
+      debole = pos. La colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  - asset: KRW=X
+    gruppo: 3
+    domanda: 'Riga: ''freno all''apprezzamento'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''freno all''apprezzamento'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - cny
+  - pboc
+  evento: Secondo rialzo della riserva obbligatoria in valuta
+  stato: promossa
+- riga: '| 2022-09-05 | Taglio FX deposit RRR (8%→6%) per frenare il deprezzamento | strumento_amministrativo
+    | difesa (CNY forte) | CNH, KRW=X, EEM | Effettivo 15 set. Yuan a 6,94; "segnale forte di difesa"
+    (Pinpoint). |'
+  data: '2022-09-05'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - EEM
+  - KRW=X
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''difesa (CNY forte)''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole
+      = pos. La colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  - asset: KRW=X
+    gruppo: 3
+    domanda: 'Riga: ''difesa (CNY forte)'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''difesa (CNY forte)'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - cny
+  - pboc
+  evento: Taglio della riserva obbligatoria in valuta
+  stato: promossa
+- riga: '| 2022-09-26 | Riserva di rischio forward rialzata (0%→20%) | strumento_amministrativo | difesa
+    (CNY forte) | CNH, punti a termine | Annuncio lun 26 set; effettivo 28 set. Yuan verso 7,2. CNH rimbalza
+    ~300 pip. |'
+  data: '2022-09-26'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati: []
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''difesa (CNY forte)''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole
+      = pos. La colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  meccanismo:
+  - cny
+  - pboc
+  evento: Riserva di rischio sui forward rialzata al 20%
+  stato: promossa
+- riga: '| 2025-01-02 | Fix 1.323 pip più forte del consenso (gap max da luglio) | fixing_anomalo_forte
+    | difesa (CNY forte) | CNY=X, CNH | Difesa contro il tumble di fine 2024. Contaminato dalle attese
+    dazi Trump. |'
+  data: '2025-01-02'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - CNY=X
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''Contaminato dalle attese dazi Trump''. Le attese di dazi spingono lo yuan più debole,
+      contro la difesa della riga.'
+  meccanismo:
+  - cny
+  - pboc
+  evento: Fixing molto più forte del consenso
+  stato: promossa
+- riga: '| 2025-01-15 | Emissione record di titoli PBoC a HK (60 mld RMB, 6 mesi) | strumento_amministrativo
+    | difesa (CNY forte) | CNH, punti a termine | Annuncio ~9 gen; emissione 15 gen. Più grande emissione
+    singola offshore e prima a gennaio. |'
+  data: '2025-01-15'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati: []
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Annuncio il ~9 gennaio, emissione in questa data: per la riga è scontata (regola delle entrate
+      in vigore).'
+  meccanismo:
+  - cny
+  - pboc
+  evento: Emissione record di titoli PBoC a Hong Kong
+  stato: promossa
+- riga: '| 2025-04-08 | Fix oltre 7,20 per la prima volta dal 2023 (7,2038) durante shock dazi; CNH a
+    minimo record 7,4287 | fixing_anomalo_debole | CNY debole (controllata) | CNY=X, CNH, EEM, KRW=X,
+    ^VIX | Contaminato dai dazi (145%). Fix comunque molto più forte del consenso 7,3321 → difesa camuffata.
+    |'
+  data: '2025-04-08'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - CNY=X
+  - EEM
+  - KRW=X
+  - ^VIX
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''CNY debole (controllata)'' e nota ''difesa camuffata'': due letture, in piena escalation
+      dei dazi.'
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole (controllata)'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: KRW=X
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole (controllata)'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: ^VIX
+    gruppo: 3
+    domanda: 'Riga: ''CNY debole (controllata)'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - cny
+  - pboc
+  - tariff_escalation
+  evento: Fixing oltre 7,20 durante lo shock dei dazi
+  stato: promossa
+- riga: '| 2024-09-24 | Pacchetto di stimolo monetario/creditizio (taglio RRR 0,5pp ≈ 1 trilione RMB;
+    2×800 mld facility azionarie; pacchetto totale stimato ~7,5 trilioni RMB da Deutsche Bank) | stimolo_fiscale_o_creditizio
+    | reflazione (HG=F su) | HG=F, REMX, LIT, EEM, ^GSPC | Conferenza stampa PBoC/regolatori 24 set; Politburo
+    26 set. |'
+  data: '2024-09-24'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  - LIT
+  - REMX
+  - ^GSPC
+  dichiarazioni:
+  - asset: HG=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''reflazione (HG=F su)''. La research fissa la convenzione nella riga del 2024-09-24:
+      ''reflazione (HG=F su)''.'
+  - asset: REMX
+    gruppo: 3
+    domanda: 'Riga: ''reflazione (HG=F su)'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: LIT
+    gruppo: 3
+    domanda: 'Riga: ''reflazione (HG=F su)'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''reflazione (HG=F su)'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: ^GSPC
+    gruppo: 3
+    domanda: 'Riga: ''reflazione (HG=F su)'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china_stimulus
+  - pboc
+  evento: Pacchetto di stimolo PBoC e regolatori
+  stato: promossa
+- riga: '| 2024-11-08 | Swap del debito degli enti locali: +6 trilioni RMB al tetto, totale 10 trilioni
+    RMB (~1,4 trln USD) fino al 2028 | stimolo_fiscale_o_creditizio | reflazione | HG=F, EEM, LIT | Approvato
+    dal Comitato Permanente NPC l''8 nov (Min. Finanze Lan Fo''an). |'
+  data: '2024-11-08'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  - LIT
+  dichiarazioni:
+  - asset: HG=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''reflazione''. La research fissa la convenzione nella riga del 2024-09-24: ''reflazione
+      (HG=F su)''.'
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''reflazione'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: LIT
+    gruppo: 3
+    domanda: 'Riga: ''reflazione'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china_stimulus
+  - fiscal_expansion
+  evento: Swap del debito degli enti locali da 10 trilioni
+  stato: promossa
+- riga: '| 2024-12-09 | Politburo: svolta a politica monetaria "moderatamente accomodante" (prima dal
+    2010) | stimolo_fiscale_o_creditizio | reflazione | EEM, ^GSPC, HG=F | Cambio di stance verbale, senza
+    importo puntuale; Hang Seng +2,8%. |'
+  data: '2024-12-09'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  - ^GSPC
+  dichiarazioni:
+  - asset: HG=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''reflazione''. La research fissa la convenzione nella riga del 2024-09-24: ''reflazione
+      (HG=F su)''.'
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''reflazione'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: ^GSPC
+    gruppo: 3
+    domanda: 'Riga: ''reflazione'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - china_stimulus
+  - guidance_pivot
+  evento: 'Politburo: politica monetaria moderatamente accomodante'
+  stato: promossa
+- riga: '| 2008-11-09 | Pacchetto di stimolo post-crisi (4 trilioni RMB) | stimolo_fiscale_o_creditizio
+    | reflazione | HG=F, EEM | Regime pre-2010: usare come analogo con cautela. |'
+  data: '2008-11-09'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - EEM
+  - HG=F
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: Data non puntuale o prima del 2011 (fuori dal DB prezzi).
+- riga: '| 2026-02-27 | Azzeramento riserva di rischio forward (20%→0%) per frenare l''apprezzamento |
+    strumento_amministrativo | freno all''apprezzamento | CNH, KRW=X, MYR=X, EEM | Annuncio ven 27 feb;
+    effettivo 2 mar. Yuan al massimo da ~3 anni; fix contestuale più debole del consenso. CNH crolla >1%
+    sotto 6,85 (annuncio precedente del 2015, stesso strumento). |'
+  data: '2026-02-27'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - EEM
+  - KRW=X
+  - MYR=X
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''freno all''apprezzamento''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan
+      debole = pos. La colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  - asset: KRW=X
+    gruppo: 3
+    domanda: 'Riga: ''freno all''apprezzamento'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: MYR=X
+    gruppo: 3
+    domanda: 'Riga: ''freno all''apprezzamento'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: EEM
+    gruppo: 3
+    domanda: 'Riga: ''freno all''apprezzamento'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - cny
+  - pboc
+  evento: Azzerata la riserva di rischio sui forward
+  stato: promossa
+- riga: '| 2026-08-20 | Fix 598 pip più debole del consenso (fix 6,7808 vs previsione superiore; gap max
+    da febbraio) | fixing_anomalo_debole | freno all''apprezzamento | CNY=X, CNH, KRW=X | Configurazione
+    corrente. Da nov 2025 pattern persistente di fix debole. |'
+  data: '2026-08-20'
+  tema: monetary_policy
+  fonte: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  candidati:
+  - CNY=X
+  - KRW=X
+  dichiarazioni:
+  - asset: CNY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''freno all''apprezzamento''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan
+      debole = pos.'
+  - asset: KRW=X
+    gruppo: 3
+    domanda: 'Riga: ''freno all''apprezzamento'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - cny
+  - pboc
+  evento: Fixing molto più debole del consenso
+  stato: promossa

@@ -4608,3 +4608,2190 @@ reviews:
   mechanism:
   - term_premium
   description: Rout globale della parte lunga
+- date: '2014-03-03'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: pos'', scritto per l''asset.'
+  direction: pos
+  mechanism:
+  - black_sea
+  - military_escalation
+  description: Truppe russe in Crimea
+- date: '2014-03-03'
+  theme: geopolitical
+  reference: ZC=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZC=F: pos (debole)'', scritto per l''asset.'
+  direction: pos
+  mechanism:
+  - black_sea
+  - military_escalation
+  description: Truppe russe in Crimea
+- date: '2022-02-15'
+  theme: geopolitical
+  reference: BZ=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''BZ=F: neg'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - de_escalation
+  description: La Russia annuncia un ritiro parziale di truppe
+- date: '2022-02-15'
+  theme: geopolitical
+  reference: TTF=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''TTF=F: neg'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - de_escalation
+  description: La Russia annuncia un ritiro parziale di truppe
+- date: '2022-02-15'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: neg (debole)'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - de_escalation
+  description: La Russia annuncia un ritiro parziale di truppe
+- date: '2022-02-24'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: pos'', scritto per l''asset.'
+  direction: pos
+  mechanism:
+  - black_sea
+  - military_escalation
+  description: Invasione russa, blocco dei porti del Mar Nero
+- date: '2022-02-24'
+  theme: geopolitical
+  reference: ZC=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZC=F: pos'', scritto per l''asset.'
+  direction: pos
+  mechanism:
+  - black_sea
+  - military_escalation
+  description: Invasione russa, blocco dei porti del Mar Nero
+- date: '2022-02-24'
+  theme: geopolitical
+  reference: TTF=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''TTF=F: pos'', scritto per l''asset.'
+  direction: pos
+  mechanism:
+  - black_sea
+  - military_escalation
+  description: Invasione russa, blocco dei porti del Mar Nero
+- date: '2022-03-07'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''Data del picco, non di un annuncio''. Come il 2007-06-22 BoJ.'
+  status: excluded
+  mechanism:
+  - black_sea
+  description: Record storico del grano CBOT
+- date: '2022-07-22'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: neg'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - black_sea
+  - negotiation_track
+  description: Firma della Black Sea Grain Initiative
+- date: '2022-07-22'
+  theme: geopolitical
+  reference: ZC=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZC=F: neg'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - black_sea
+  - negotiation_track
+  description: Firma della Black Sea Grain Initiative
+- date: '2022-07-22'
+  theme: geopolitical
+  reference: TTF=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''TTF=F: neutral'', scritto per l''asset.'
+  direction: neutral
+  mechanism:
+  - black_sea
+  - negotiation_track
+  description: Firma della Black Sea Grain Initiative
+- date: '2022-07-22'
+  theme: geopolitical
+  reference: BZ=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''BZ=F: neutral'', scritto per l''asset.'
+  direction: neutral
+  mechanism:
+  - black_sea
+  - negotiation_track
+  description: Firma della Black Sea Grain Initiative
+- date: '2022-08-01'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: neg'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - black_sea
+  description: Primo carico da Odessa
+- date: '2022-08-01'
+  theme: geopolitical
+  reference: ZC=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZC=F: neg'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - black_sea
+  description: Primo carico da Odessa
+- date: '2022-10-31'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: pos'', scritto per l''asset.'
+  direction: pos
+  mechanism:
+  - black_sea
+  - military_escalation
+  description: La Russia sospende l'accordo dopo Sebastopoli
+- date: '2022-10-31'
+  theme: geopolitical
+  reference: ZC=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZC=F: neutral'', scritto per l''asset.'
+  direction: neutral
+  mechanism:
+  - black_sea
+  - military_escalation
+  description: La Russia sospende l'accordo dopo Sebastopoli
+- date: '2022-11-02'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: neg'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - black_sea
+  - negotiation_track
+  description: La Russia rientra nell'accordo
+- date: '2022-11-17'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Nota: ''Attesa/conferma''. Con la regola della sorpresa il rinnovo atteso non porta un verso.'
+  status: excluded
+  mechanism:
+  - black_sea
+  - negotiation_track
+  description: Rinnovo della BSGI per 120 giorni
+- date: '2022-11-17'
+  theme: geopolitical
+  reference: TTF=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Nota: ''Attesa/conferma''. Con la regola della sorpresa il rinnovo atteso non porta un verso.'
+  status: excluded
+  mechanism:
+  - black_sea
+  - negotiation_track
+  description: Rinnovo della BSGI per 120 giorni
+- date: '2023-03-20'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: neg'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - black_sea
+  - negotiation_track
+  description: Rinnovo della BSGI annunciato nel weekend
+- date: '2023-05-17'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: neg'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - black_sea
+  - negotiation_track
+  description: Rinnovo della BSGI per 60 giorni
+- date: '2023-05-17'
+  theme: geopolitical
+  reference: ZC=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZC=F: neg'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - black_sea
+  - negotiation_track
+  description: Rinnovo della BSGI per 60 giorni
+- date: '2023-07-17'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: pos'', scritto per l''asset.'
+  direction: pos
+  mechanism:
+  - black_sea
+  description: La Russia sospende la BSGI
+- date: '2023-07-17'
+  theme: geopolitical
+  reference: ZC=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZC=F: pos (debole)'', scritto per l''asset.'
+  direction: pos
+  mechanism:
+  - black_sea
+  description: La Russia sospende la BSGI
+- date: '2023-07-17'
+  theme: geopolitical
+  reference: TTF=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''TTF=F: neutral'', scritto per l''asset.'
+  direction: neutral
+  mechanism:
+  - black_sea
+  description: La Russia sospende la BSGI
+- date: '2023-07-19'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: pos'', scritto per l''asset.'
+  direction: pos
+  mechanism:
+  - black_sea
+  - military_escalation
+  description: Navi verso l'Ucraina dichiarate obiettivi militari
+- date: '2023-07-19'
+  theme: geopolitical
+  reference: ZC=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZC=F: pos'', scritto per l''asset.'
+  direction: pos
+  mechanism:
+  - black_sea
+  - military_escalation
+  description: Navi verso l'Ucraina dichiarate obiettivi militari
+- date: '2023-08-02'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: pos'', scritto per l''asset.'
+  direction: pos
+  mechanism:
+  - black_sea
+  - infrastructure_attack
+  description: Attacco al porto di Izmail
+- date: '2023-08-16'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: pos (attacco) / ZW=F: neg (corridoio)'' — due segnali opposti lo stesso giorno.'
+  status: excluded
+  mechanism:
+  - black_sea
+  - infrastructure_attack
+  description: Attacchi a Izmail e prima nave dal corridoio unilaterale
+- date: '2025-03-25'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: neg'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - black_sea
+  - negotiation_track
+  description: Cessate il fuoco sul Mar Nero mediato dagli USA
+- date: '2025-03-25'
+  theme: geopolitical
+  reference: ZC=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZC=F: neg'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - black_sea
+  - negotiation_track
+  description: Cessate il fuoco sul Mar Nero mediato dagli USA
+- date: '2025-03-25'
+  theme: geopolitical
+  reference: TTF=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''TTF=F: neg-muted'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - black_sea
+  - negotiation_track
+  description: Cessate il fuoco sul Mar Nero mediato dagli USA
+- date: '2025-03-25'
+  theme: geopolitical
+  reference: BZ=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''BZ=F: neg-muted'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - black_sea
+  - negotiation_track
+  description: Cessate il fuoco sul Mar Nero mediato dagli USA
+- date: '2025-12-22'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: pos'', scritto per l''asset.'
+  direction: pos
+  mechanism:
+  - black_sea
+  - infrastructure_attack
+  description: Nuovi attacchi ai porti di Odessa
+- date: '2026-09-06'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''ZW=F: neutral'', scritto per l''asset.'
+  direction: neutral
+  mechanism:
+  - negotiation_track
+  description: Inviati USA a Kyiv dopo Mosca
+- date: '2026-09-06'
+  theme: geopolitical
+  reference: BZ=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''BZ=F: neg (debole)'', scritto per l''asset.'
+  direction: neg
+  mechanism:
+  - negotiation_track
+  description: Inviati USA a Kyiv dopo Mosca
+- date: '2012-04-16'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''CNY forte (due vie)'' — ''due vie'' dichiara flessibilità nei due sensi: nessun verso
+    univoco.'
+  status: excluded
+  mechanism:
+  - cny
+  - pboc
+  description: Banda del cambio allargata a ±1%
+- date: '2014-03-17'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''CNY debole (due vie)'' — ''due vie'' dichiara flessibilità nei due sensi: nessun verso
+    univoco.'
+  status: excluded
+  mechanism:
+  - cny
+  - pboc
+  description: Banda del cambio allargata a ±2%
+- date: '2015-08-11'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''CNY debole''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole = pos.'
+  direction: pos
+  mechanism:
+  - cny
+  - pboc
+  description: 'Riforma del fixing: svalutazione dell''1,9%'
+- date: '2015-08-12'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''CNY debole''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole = pos. La
+    colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  direction: pos
+  mechanism:
+  - cny
+  - pboc
+  description: Secondo taglio consecutivo del fixing
+- date: '2015-10-15'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''difesa (CNY forte)''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole =
+    pos. La colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  direction: neg
+  mechanism:
+  - cny
+  - pboc
+  description: Riserva di rischio del 20% sui forward
+- date: '2015-12-11'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''CNY debole vs paniere'' — il verso è sul paniere CFETS, CNY=X è contro il solo dollaro.'
+  status: excluded
+  mechanism:
+  - cny
+  - pboc
+  description: Pubblicazione dell'indice CFETS
+- date: '2016-01-07'
+  theme: monetary_policy
+  reference: EEM
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga definita dall''esito (''Crollo yuan/CNH... la seduta del massimo stress''): selezionerebbe
+    l''episodio per il risultato.'
+  status: excluded
+  mechanism:
+  - cny
+  - pboc
+  description: Crollo dello yuan a inizio 2016
+- date: '2016-01-07'
+  theme: monetary_policy
+  reference: ^GSPC
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga definita dall''esito (''Crollo yuan/CNH... la seduta del massimo stress''): selezionerebbe
+    l''episodio per il risultato.'
+  status: excluded
+  mechanism:
+  - cny
+  - pboc
+  description: Crollo dello yuan a inizio 2016
+- date: '2016-01-07'
+  theme: monetary_policy
+  reference: ^VIX
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga definita dall''esito (''Crollo yuan/CNH... la seduta del massimo stress''): selezionerebbe
+    l''episodio per il risultato.'
+  status: excluded
+  mechanism:
+  - cny
+  - pboc
+  description: Crollo dello yuan a inizio 2016
+- date: '2016-01-07'
+  theme: monetary_policy
+  reference: HG=F
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga definita dall''esito (''Crollo yuan/CNH... la seduta del massimo stress''): selezionerebbe
+    l''episodio per il risultato.'
+  status: excluded
+  mechanism:
+  - cny
+  - pboc
+  description: Crollo dello yuan a inizio 2016
+- date: '2017-05-26'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''difesa (CNY forte)''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole =
+    pos.'
+  direction: neg
+  mechanism:
+  - cny
+  - pboc
+  description: Fattore controciclico nel fixing
+- date: '2018-08-06'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Nota: ''Contaminato dai dazi''. I dazi spingono lo yuan più debole, cioè contro la difesa della
+    riga: pressioni opposte sulla stessa seduta.'
+  status: excluded
+  mechanism:
+  - cny
+  - pboc
+  description: Riserva di rischio del 20% re-imposta
+- date: '2018-08-24'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''difesa (CNY forte)''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole =
+    pos.'
+  direction: neg
+  mechanism:
+  - cny
+  - pboc
+  description: Fattore controciclico reintrodotto
+- date: '2018-11-07'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Annuncio il 31 ottobre, emissione in questa data: per la riga è scontata (regola delle entrate
+    in vigore).'
+  status: excluded
+  mechanism:
+  - cny
+  - pboc
+  description: Prima emissione di titoli PBoC a Hong Kong
+- date: '2019-08-05'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''CNY debole''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole = pos.'
+  direction: pos
+  mechanism:
+  - cny
+  - pboc
+  - tariff_escalation
+  description: Lo yuan rompe quota 7
+- date: '2019-06-25'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Nota: ''Data da verificare'', ricostruita da un''unica fonte.'
+  status: excluded
+  mechanism:
+  - cny
+  - pboc
+  description: Fixing più forte del consenso
+- date: '2020-10-12'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''freno all''apprezzamento''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole
+    = pos. La colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  direction: pos
+  mechanism:
+  - cny
+  - pboc
+  description: Azzerata la riserva di rischio sui forward
+- date: '2021-05-31'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''freno all''apprezzamento''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole
+    = pos. La colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  direction: pos
+  mechanism:
+  - cny
+  - pboc
+  description: Primo rialzo della riserva obbligatoria in valuta in 14 anni
+- date: '2021-12-09'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''freno all''apprezzamento''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole
+    = pos. La colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  direction: pos
+  mechanism:
+  - cny
+  - pboc
+  description: Secondo rialzo della riserva obbligatoria in valuta
+- date: '2022-09-05'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''difesa (CNY forte)''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole =
+    pos. La colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  direction: neg
+  mechanism:
+  - cny
+  - pboc
+  description: Taglio della riserva obbligatoria in valuta
+- date: '2022-09-26'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''difesa (CNY forte)''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole =
+    pos. La colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  direction: neg
+  mechanism:
+  - cny
+  - pboc
+  description: Riserva di rischio sui forward rialzata al 20%
+- date: '2025-01-02'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Nota: ''Contaminato dalle attese dazi Trump''. Le attese di dazi spingono lo yuan più debole,
+    contro la difesa della riga.'
+  status: excluded
+  mechanism:
+  - cny
+  - pboc
+  description: Fixing molto più forte del consenso
+- date: '2025-01-15'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Annuncio il ~9 gennaio, emissione in questa data: per la riga è scontata (regola delle entrate
+    in vigore).'
+  status: excluded
+  mechanism:
+  - cny
+  - pboc
+  description: Emissione record di titoli PBoC a Hong Kong
+- date: '2025-04-08'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''CNY debole (controllata)'' e nota ''difesa camuffata'': due letture, in piena escalation
+    dei dazi.'
+  status: excluded
+  mechanism:
+  - cny
+  - pboc
+  - tariff_escalation
+  description: Fixing oltre 7,20 durante lo shock dei dazi
+- date: '2024-09-24'
+  theme: monetary_policy
+  reference: HG=F
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''reflazione (HG=F su)''. La research fissa la convenzione nella riga del 2024-09-24:
+    ''reflazione (HG=F su)''.'
+  direction: pos
+  mechanism:
+  - china_stimulus
+  - pboc
+  description: Pacchetto di stimolo PBoC e regolatori
+- date: '2024-11-08'
+  theme: monetary_policy
+  reference: HG=F
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''reflazione''. La research fissa la convenzione nella riga del 2024-09-24: ''reflazione
+    (HG=F su)''.'
+  direction: pos
+  mechanism:
+  - china_stimulus
+  - fiscal_expansion
+  description: Swap del debito degli enti locali da 10 trilioni
+- date: '2024-12-09'
+  theme: monetary_policy
+  reference: HG=F
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''reflazione''. La research fissa la convenzione nella riga del 2024-09-24: ''reflazione
+    (HG=F su)''.'
+  direction: pos
+  mechanism:
+  - china_stimulus
+  - guidance_pivot
+  description: 'Politburo: politica monetaria moderatamente accomodante'
+- date: '2026-02-27'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''freno all''apprezzamento''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole
+    = pos. La colonna nomina CNH, assente dal DB: CNY=X è il proxy onshore, stesso verso atteso.'
+  direction: pos
+  mechanism:
+  - cny
+  - pboc
+  description: Azzerata la riserva di rischio sui forward
+- date: '2026-08-20'
+  theme: monetary_policy
+  reference: CNY=X
+  source: kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti, regimi ed
+    episodi datati (2005–2026)/La gestione del cambio da parte della People's Bank of China- fixing, strumenti,
+    regimi ed episodi datati (2005–2026).md
+  reason: 'Riga: ''freno all''apprezzamento''. CNY=X quota yuan per dollaro: yuan forte = neg, yuan debole
+    = pos.'
+  direction: pos
+  mechanism:
+  - cny
+  - pboc
+  description: Fixing molto più debole del consenso
+- date: '2011-08-30'
+  theme: macro_data
+  reference: ^VIX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Riga, colonna direzione: ''^VIX su''.'
+  direction: pos
+  mechanism:
+  - expectations_collapse
+  - consumer
+  description: 'Conference Board di agosto 2011: crollo delle attese'
+- date: '2012-12-27'
+  theme: macro_data
+  reference: ^VIX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Riga, colonna direzione: ''^VIX su''.'
+  direction: pos
+  mechanism:
+  - expectations_collapse
+  - consumer
+  description: 'Conference Board di dicembre 2012: fiscal cliff'
+- date: '2013-10-29'
+  theme: macro_data
+  reference: XLP
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Riga, colonna direzione: ''XLP su''.'
+  direction: pos
+  mechanism:
+  - expectations_collapse
+  - consumer
+  description: 'Conference Board di ottobre 2013: shutdown'
+- date: '2022-06-24'
+  theme: macro_data
+  reference: XLP
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Riga, colonna direzione: ''XLP su''.'
+  direction: pos
+  mechanism:
+  - sentiment_spending_divergence
+  - consumer
+  description: 'Michigan finale di giugno 2022: minimo storico'
+- date: '2022-10-25'
+  theme: macro_data
+  reference: XLP
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Riga, colonna direzione: ''XLP su''.'
+  direction: pos
+  mechanism:
+  - confidence_broad_drop
+  - consumer
+  description: Conference Board di ottobre 2022
+- date: '2025-03-28'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Riga, colonna direzione: ''^FVX su''. ^FVX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - michigan_inflation_expectations
+  - consumer
+  description: 'Michigan finale di marzo 2025: attese di inflazione oltre il 5%'
+- date: '2025-03-28'
+  theme: macro_data
+  reference: GC=F
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Riga, colonna direzione: ''GC=F su''.'
+  direction: pos
+  mechanism:
+  - michigan_inflation_expectations
+  - consumer
+  description: 'Michigan finale di marzo 2025: attese di inflazione oltre il 5%'
+- date: '2025-09-30'
+  theme: macro_data
+  reference: IYT
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Riga, colonna direzione: ''IYT giù''.'
+  direction: neg
+  mechanism:
+  - labour_differential_break
+  - consumer
+  description: 'Conference Board di settembre 2025: differenziale del lavoro in calo'
+- date: '2025-09-30'
+  theme: macro_data
+  reference: XLP
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Riga, colonna direzione: ''XLP su''.'
+  direction: pos
+  mechanism:
+  - labour_differential_break
+  - consumer
+  description: 'Conference Board di settembre 2025: differenziale del lavoro in calo'
+- date: '2026-04-10'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Riga, colonna direzione: ''^FVX su''. ^FVX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - michigan_inflation_expectations
+  - consumer
+  description: 'Michigan preliminare di aprile 2026: minimo storico'
+- date: '2026-04-10'
+  theme: macro_data
+  reference: GC=F
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Riga, colonna direzione: ''GC=F su''.'
+  direction: pos
+  mechanism:
+  - michigan_inflation_expectations
+  - consumer
+  description: 'Michigan preliminare di aprile 2026: minimo storico'
+- date: '2026-06-30'
+  theme: macro_data
+  reference: IYT
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Riga, colonna direzione: ''IYT giù''.'
+  direction: neg
+  mechanism:
+  - labour_differential_break
+  - consumer
+  description: 'Conference Board di giugno 2026: differenziale del lavoro crollato'
+- date: '2026-08-25'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Riga, colonna direzione: ''^FVX giù''. ^FVX quota il rendimento.'
+  direction: neg
+  mechanism:
+  - divergence_present_up_expectations_down
+  - consumer
+  description: 'Conference Board di agosto 2026: presente su, attese giù'
+- date: '2026-08-28'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Michigan FINALE: la riga stessa cita il preliminare già noto (51,0 → 51,7), quindi è scontato;
+    e la nota segnala una discrepanza di date.'
+  status: excluded
+  mechanism:
+  - michigan_inflation_expectations
+  - consumer
+  description: Michigan finale di agosto 2026
+- date: '2026-08-28'
+  theme: macro_data
+  reference: GC=F
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Michigan FINALE: la riga stessa cita il preliminare già noto (51,0 → 51,7), quindi è scontato;
+    e la nota segnala una discrepanza di date.'
+  status: excluded
+  mechanism:
+  - michigan_inflation_expectations
+  - consumer
+  description: Michigan finale di agosto 2026
+- date: '2024-02-15'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''JPY neg'' (PIL sotto le attese). Nella research ''JPY'' è lo yen (2024-11-08: ''JPY
+    pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  direction: pos
+  mechanism:
+  - japan_release
+  - activity_growth
+  description: 'PIL giapponese Q4 2023: recessione tecnica'
+- date: '2024-02-15'
+  theme: macro_data
+  reference: ^N225
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Nota: ''Nikkei salì >1% nonostante il dato debole'' — il ''pos'' della colonna è l''esito,
+    contrario all''attesa.'
+  status: excluded
+  mechanism:
+  - japan_release
+  - activity_growth
+  description: 'PIL giapponese Q4 2023: recessione tecnica'
+- date: '2024-02-15'
+  theme: macro_data
+  reference: 1482.T
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''1482.T neutral'' (PIL sotto le attese). 1482.T è un ETF di JGB: quota il prezzo.'
+  direction: neutral
+  mechanism:
+  - japan_release
+  - activity_growth
+  description: 'PIL giapponese Q4 2023: recessione tecnica'
+- date: '2024-03-22'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Nota: ''Contaminato'': tre giorni dopo l''uscita dalla NIRP del 19/3.'
+  status: excluded
+  mechanism:
+  - japan_release
+  - inflation_print
+  description: CPI nazionale di febbraio 2024
+- date: '2024-03-22'
+  theme: macro_data
+  reference: ^N225
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Nota: ''Contaminato'': tre giorni dopo l''uscita dalla NIRP del 19/3.'
+  status: excluded
+  mechanism:
+  - japan_release
+  - inflation_print
+  description: CPI nazionale di febbraio 2024
+- date: '2024-04-01'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''JPY neutral'' (Tankan +11, atteso ~+9). Nella research ''JPY'' è lo yen (2024-11-08:
+    ''JPY pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  direction: neutral
+  mechanism:
+  - japan_release
+  - tankan
+  description: Tankan Q1 2024
+- date: '2024-04-01'
+  theme: macro_data
+  reference: ^N225
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''^N225 neutral'' (Tankan +11, atteso ~+9).'
+  direction: neutral
+  mechanism:
+  - japan_release
+  - tankan
+  description: Tankan Q1 2024
+- date: '2024-11-08'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''JPY pos'' (spesa −1,1%, atteso −2,1%: meno peggio del previsto). Nella research ''JPY''
+    è lo yen (2024-11-08: ''JPY pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  direction: neg
+  mechanism:
+  - japan_release
+  - household_spending
+  description: Spesa delle famiglie di settembre 2024 meno debole del previsto
+- date: '2024-11-15'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide con l''esito riportato
+    nella nota (''Nikkei +1,28%, yen −0,29%''): in questa research la colonna a volte è l''esito (2026-09-04
+    lo dichiara).'
+  status: excluded
+  mechanism:
+  - japan_release
+  - activity_growth
+  description: PIL giapponese Q3 2024
+- date: '2024-11-15'
+  theme: macro_data
+  reference: ^N225
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide con l''esito riportato
+    nella nota (''Nikkei +1,28%, yen −0,29%''): in questa research la colonna a volte è l''esito (2026-09-04
+    lo dichiara).'
+  status: excluded
+  mechanism:
+  - japan_release
+  - activity_growth
+  description: PIL giapponese Q3 2024
+- date: '2024-11-15'
+  theme: macro_data
+  reference: 1482.T
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide con l''esito riportato
+    nella nota (''Nikkei +1,28%, yen −0,29%''): in questa research la colonna a volte è l''esito (2026-09-04
+    lo dichiara).'
+  status: excluded
+  mechanism:
+  - japan_release
+  - activity_growth
+  description: PIL giapponese Q3 2024
+- date: '2024-11-22'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''JPY pos'' (core CPI sopra le attese). Nella research ''JPY'' è lo yen (2024-11-08:
+    ''JPY pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  direction: neg
+  mechanism:
+  - japan_release
+  - inflation_print
+  - inflation_upside
+  description: CPI nazionale di ottobre 2024 sopra le attese
+- date: '2024-11-22'
+  theme: macro_data
+  reference: 1482.T
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''1482.T neg'' (core CPI sopra le attese). 1482.T è un ETF di JGB: quota il prezzo.'
+  direction: neg
+  mechanism:
+  - japan_release
+  - inflation_print
+  - inflation_upside
+  description: CPI nazionale di ottobre 2024 sopra le attese
+- date: '2024-11-29'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''JPY pos'' (Tokyo core 2,2%, atteso 2,1%). Nella research ''JPY'' è lo yen (2024-11-08:
+    ''JPY pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  direction: neg
+  mechanism:
+  - japan_release
+  - inflation_print
+  - inflation_upside
+  description: Tokyo CPI di novembre 2024 sopra le attese
+- date: '2024-11-29'
+  theme: macro_data
+  reference: 1482.T
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''1482.T neg'' (Tokyo core 2,2%, atteso 2,1%). 1482.T è un ETF di JGB: quota il prezzo.'
+  direction: neg
+  mechanism:
+  - japan_release
+  - inflation_print
+  - inflation_upside
+  description: Tokyo CPI di novembre 2024 sopra le attese
+- date: '2024-12-13'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''JPY neutral'' (Tankan +14 da +13). Nella research ''JPY'' è lo yen (2024-11-08: ''JPY
+    pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  direction: neutral
+  mechanism:
+  - japan_release
+  - tankan
+  description: Tankan Q4 2024
+- date: '2024-12-13'
+  theme: macro_data
+  reference: ^N225
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''^N225 neutral'' (Tankan +14 da +13).'
+  direction: neutral
+  mechanism:
+  - japan_release
+  - tankan
+  description: Tankan Q4 2024
+- date: '2024-12-27'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide con l''esito riportato
+    nella nota (''yen si rafforzò, hike gennaio atteso''): in questa research la colonna a volte è l''esito
+    (2026-09-04 lo dichiara).'
+  status: excluded
+  mechanism:
+  - japan_release
+  - inflation_print
+  description: Tokyo CPI di dicembre 2024
+- date: '2024-12-27'
+  theme: macro_data
+  reference: 1482.T
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide con l''esito riportato
+    nella nota (''yen si rafforzò, hike gennaio atteso''): in questa research la colonna a volte è l''esito
+    (2026-09-04 lo dichiara).'
+  status: excluded
+  mechanism:
+  - japan_release
+  - inflation_print
+  description: Tokyo CPI di dicembre 2024
+- date: '2025-04-25'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''JPY pos ''atteso'' ma realizzato neg'' (core 3,4%, atteso 3,2%; si prende l''attesa).
+    Nella research ''JPY'' è lo yen (2024-11-08: ''JPY pos'', yen guadagnò); JPY=X è USD/JPY, quindi il
+    segno si inverte.'
+  direction: neg
+  mechanism:
+  - japan_release
+  - inflation_print
+  - inflation_upside
+  description: Tokyo core CPI di aprile 2025 sopra le attese
+- date: '2025-05-16'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''JPY neg'' (PIL peggio del previsto). Nella research ''JPY'' è lo yen (2024-11-08: ''JPY
+    pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  direction: pos
+  mechanism:
+  - japan_release
+  - activity_growth
+  description: PIL giapponese Q1 2025 sotto le attese
+- date: '2025-05-16'
+  theme: macro_data
+  reference: ^N225
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''^N225 neg'' (PIL peggio del previsto).'
+  direction: neg
+  mechanism:
+  - japan_release
+  - activity_growth
+  description: PIL giapponese Q1 2025 sotto le attese
+- date: '2025-05-23'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''JPY pos'' (core 3,5%, atteso 3,4%). Nella research ''JPY'' è lo yen (2024-11-08: ''JPY
+    pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  direction: neg
+  mechanism:
+  - japan_release
+  - inflation_print
+  - inflation_upside
+  description: CPI nazionale di aprile 2025 sopra le attese
+- date: '2025-05-23'
+  theme: macro_data
+  reference: 1482.T
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''1482.T neg'' (core 3,5%, atteso 3,4%). 1482.T è un ETF di JGB: quota il prezzo.'
+  direction: neg
+  mechanism:
+  - japan_release
+  - inflation_print
+  - inflation_upside
+  description: CPI nazionale di aprile 2025 sopra le attese
+- date: '2025-10-01'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''JPY neutral'' (Tankan +14, +1). Nella research ''JPY'' è lo yen (2024-11-08: ''JPY
+    pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  direction: neutral
+  mechanism:
+  - japan_release
+  - tankan
+  description: Tankan Q3 2025
+- date: '2025-10-01'
+  theme: macro_data
+  reference: ^N225
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide con l''esito riportato
+    nella nota (''Sollievo su accordo dazi USA''): in questa research la colonna a volte è l''esito (2026-09-04
+    lo dichiara).'
+  status: excluded
+  mechanism:
+  - japan_release
+  - tankan
+  description: Tankan Q3 2025
+- date: '2025-11-17'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'La colonna (''JPY neg'') contraddice il segno della sorpresa scritta nella riga (''PIL meglio
+    del previsto'') e coincide con l''esito della nota: è l''esito, non l''attesa.'
+  status: excluded
+  mechanism:
+  - japan_release
+  - activity_growth
+  description: PIL giapponese Q3 2025 meglio del previsto
+- date: '2025-11-17'
+  theme: macro_data
+  reference: ^N225
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''^N225 pos'' (PIL meglio del previsto).'
+  direction: pos
+  mechanism:
+  - japan_release
+  - activity_growth
+  description: PIL giapponese Q3 2025 meglio del previsto
+- date: '2025-12-05'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''JPY neg'' (spesa −3,0%, atteso +1,0%). Nella research ''JPY'' è lo yen (2024-11-08:
+    ''JPY pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  direction: pos
+  mechanism:
+  - japan_release
+  - household_spending
+  description: Spesa delle famiglie di ottobre 2025 molto sotto le attese
+- date: '2025-12-15'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide con l''esito riportato
+    nella nota (''USD/JPY −0,5%; conferma il rialzo poi deciso il 19/12''): in questa research la colonna
+    a volte è l''esito (2026-09-04 lo dichiara).'
+  status: excluded
+  mechanism:
+  - japan_release
+  - tankan
+  description: 'Tankan Q4 2025: outlook al massimo da 4 anni'
+- date: '2026-08-17'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'La colonna (''JPY pos; ^N225 pos; 1482.T neg'') contraddice il segno della sorpresa scritta
+    nella riga (''PIL +1,1%, atteso ~2%'') e coincide con l''esito della nota: è l''esito, non l''attesa.'
+  status: excluded
+  mechanism:
+  - japan_release
+  - activity_growth
+  description: PIL giapponese Q2 2026 sotto le attese
+- date: '2026-08-17'
+  theme: macro_data
+  reference: ^N225
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'La colonna (''JPY pos; ^N225 pos; 1482.T neg'') contraddice il segno della sorpresa scritta
+    nella riga (''PIL +1,1%, atteso ~2%'') e coincide con l''esito della nota: è l''esito, non l''attesa.'
+  status: excluded
+  mechanism:
+  - japan_release
+  - activity_growth
+  description: PIL giapponese Q2 2026 sotto le attese
+- date: '2026-08-17'
+  theme: macro_data
+  reference: 1482.T
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'La colonna (''JPY pos; ^N225 pos; 1482.T neg'') contraddice il segno della sorpresa scritta
+    nella riga (''PIL +1,1%, atteso ~2%'') e coincide con l''esito della nota: è l''esito, non l''attesa.'
+  status: excluded
+  mechanism:
+  - japan_release
+  - activity_growth
+  description: PIL giapponese Q2 2026 sotto le attese
+- date: '2026-08-28'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''JPY pos'' (core 1,8%, atteso 1,7%). Nella research ''JPY'' è lo yen (2024-11-08: ''JPY
+    pos'', yen guadagnò); JPY=X è USD/JPY, quindi il segno si inverte.'
+  direction: neg
+  mechanism:
+  - japan_release
+  - inflation_print
+  - inflation_upside
+  description: Tokyo CPI di agosto 2026 sopra le attese
+- date: '2026-08-28'
+  theme: macro_data
+  reference: 1482.T
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''1482.T neg'' (core 1,8%, atteso 1,7%). 1482.T è un ETF di JGB: quota il prezzo.'
+  direction: neg
+  mechanism:
+  - japan_release
+  - inflation_print
+  - inflation_upside
+  description: Tokyo CPI di agosto 2026 sopra le attese
+- date: '2026-09-04'
+  theme: macro_data
+  reference: JPY=X
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''JPY pos (realizzato)'' — la colonna è l''esito, dichiaratamente; e la nota segnala
+    la contaminazione del payroll USA lo stesso giorno.'
+  status: excluded
+  mechanism:
+  - japan_release
+  - household_spending
+  description: Spesa delle famiglie di luglio 2026 molto sotto le attese
+- date: '2026-09-04'
+  theme: macro_data
+  reference: ^N225
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''JPY pos (realizzato)'' — la colonna è l''esito, dichiaratamente; e la nota segnala
+    la contaminazione del payroll USA lo stesso giorno.'
+  status: excluded
+  mechanism:
+  - japan_release
+  - household_spending
+  description: Spesa delle famiglie di luglio 2026 molto sotto le attese
+- date: '2026-09-04'
+  theme: macro_data
+  reference: 1482.T
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Riga: ''JPY pos (realizzato)'' — la colonna è l''esito, dichiaratamente; e la nota segnala
+    la contaminazione del payroll USA lo stesso giorno.'
+  status: excluded
+  mechanism:
+  - japan_release
+  - household_spending
+  description: Spesa delle famiglie di luglio 2026 molto sotto le attese
+- date: '2022-01-17'
+  theme: macro_data
+  reference: CNY=X
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''easing → CNY debole''. CNY=X quota yuan per dollaro: yuan debole = pos.'
+  direction: pos
+  mechanism:
+  - china
+  - china_stimulus
+  - rate_decision
+  description: La PBoC taglia MLF e reverse repo
+- date: '2022-01-17'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HG=F su''.'
+  direction: pos
+  mechanism:
+  - china
+  - china_stimulus
+  - rate_decision
+  description: La PBoC taglia MLF e reverse repo
+- date: '2022-01-20'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''easing → risk-on EM''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  direction: pos
+  mechanism:
+  - china
+  - china_stimulus
+  - rate_decision
+  description: Taglio della LPR
+- date: '2022-08-15'
+  theme: macro_data
+  reference: CNY=X
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CNY debole''. CNY=X quota yuan per dollaro: yuan debole = pos.'
+  direction: pos
+  mechanism:
+  - china
+  - china_stimulus
+  - rate_decision
+  description: Taglio a sorpresa della MLF dopo dati deboli
+- date: '2022-08-15'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''commodity giù''.'
+  direction: neg
+  mechanism:
+  - china
+  - china_stimulus
+  - rate_decision
+  description: Taglio a sorpresa della MLF dopo dati deboli
+- date: '2022-09-28'
+  theme: macro_data
+  reference: CNY=X
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'La riga è ancorata a un livello di prezzo (''Yuan onshore a 7,2458, minimo dal 2008''): selezionerebbe
+    l''episodio per il suo esito. Come il picco del Brent del 2022-03-08.'
+  status: excluded
+  mechanism:
+  - china
+  - cny
+  description: Yuan al minimo dal 2008, la PBoC difende il cambio
+- date: '2022-12-07'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''risk-on EM''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  direction: pos
+  mechanism:
+  - china
+  - confidence_rebound
+  description: 'Le "10 misure": fine dello zero-COVID'
+- date: '2022-12-07'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HG=F su''.'
+  direction: pos
+  mechanism:
+  - china
+  - confidence_rebound
+  description: 'Le "10 misure": fine dello zero-COVID'
+- date: '2022-12-07'
+  theme: macro_data
+  reference: EWZ
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''risk-on EM''. EWZ è azionario emergente (Brasile): ''EM'' lo comprende.'
+  direction: pos
+  mechanism:
+  - china
+  - confidence_rebound
+  description: 'Le "10 misure": fine dello zero-COVID'
+- date: '2022-12-15'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Cella ''2022-12-15/16'': la riunione dura due giorni e il comunicato esce il secondo; con la
+    prima data l''event study parte prima della notizia.'
+  status: excluded
+  mechanism:
+  - china
+  - china_stimulus
+  description: Central Economic Work Conference 2022
+- date: '2022-12-15'
+  theme: macro_data
+  reference: ^NDX
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Cella ''2022-12-15/16'': la riunione dura due giorni e il comunicato esce il secondo; con la
+    prima data l''event study parte prima della notizia.'
+  status: excluded
+  mechanism:
+  - china
+  - china_stimulus
+  description: Central Economic Work Conference 2022
+- date: '2023-06-13'
+  theme: macro_data
+  reference: CNY=X
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''easing → CNY debole''. CNY=X quota yuan per dollaro: yuan debole = pos.'
+  direction: pos
+  mechanism:
+  - china
+  - china_stimulus
+  - rate_decision
+  description: Taglio del reverse repo a 7 giorni
+- date: '2023-06-15'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''easing → EM misto'' — nessun verso.'
+  status: excluded
+  mechanism:
+  - china
+  - china_stimulus
+  - rate_decision
+  description: Taglio della MLF, disoccupazione giovanile record
+- date: '2023-06-15'
+  theme: macro_data
+  reference: EWZ
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''easing → EM misto'' — nessun verso.'
+  status: excluded
+  mechanism:
+  - china
+  - china_stimulus
+  - rate_decision
+  description: Taglio della MLF, disoccupazione giovanile record
+- date: '2023-08-15'
+  theme: macro_data
+  reference: CNY=X
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''easing sorpresa → CNY debole''. CNY=X quota yuan per dollaro: yuan debole = pos.'
+  direction: pos
+  mechanism:
+  - china
+  - china_stimulus
+  - rate_decision
+  description: Taglio a sorpresa della MLF
+- date: '2023-08-30'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''risk-off property → HG=F giù''.'
+  direction: neg
+  mechanism:
+  - china
+  - property_wealth
+  - credit_stress
+  description: 'Country Garden: perdita semestrale di 45 miliardi'
+- date: '2023-09-25'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''risk-off → EM giù''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  direction: neg
+  mechanism:
+  - china
+  - property_wealth
+  - credit_stress
+  description: Evergrande manca un pagamento
+- date: '2023-10-25'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Nota: il panel CDS aveva già rilevato il ''failure to pay'' il 18 ottobre: il default formale
+    era scontato.'
+  status: excluded
+  mechanism:
+  - china
+  - property_wealth
+  - credit_stress
+  description: Country Garden in default sui bond in dollari
+- date: '2023-10-25'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Nota: il panel CDS aveva già rilevato il ''failure to pay'' il 18 ottobre: il default formale
+    era scontato.'
+  status: excluded
+  mechanism:
+  - china
+  - property_wealth
+  - credit_stress
+  description: Country Garden in default sui bond in dollari
+- date: '2024-01-24'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''easing → risk-on''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  direction: pos
+  mechanism:
+  - china
+  - china_stimulus
+  description: La PBoC annuncia il taglio della riserva obbligatoria
+- date: '2024-01-29'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''risk-off atteso → impatto limitato'', nota ''già scontato''.'
+  status: excluded
+  mechanism:
+  - china
+  - property_wealth
+  - credit_stress
+  description: Ordine di liquidazione di Evergrande
+- date: '2024-01-29'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''risk-off atteso → impatto limitato'', nota ''già scontato''.'
+  status: excluded
+  mechanism:
+  - china
+  - property_wealth
+  - credit_stress
+  description: Ordine di liquidazione di Evergrande
+- date: '2024-02-20'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HG=F su''.'
+  direction: pos
+  mechanism:
+  - china
+  - property_wealth
+  - rate_decision
+  description: Taglio record della LPR a 5 anni
+- date: '2024-05-17'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HG=F, EEM su''.'
+  direction: pos
+  mechanism:
+  - china
+  - property_wealth
+  - china_stimulus
+  description: Pacchetto per il settore immobiliare
+- date: '2024-05-17'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HG=F, EEM su''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  direction: pos
+  mechanism:
+  - china
+  - property_wealth
+  - china_stimulus
+  description: Pacchetto per il settore immobiliare
+- date: '2024-07-30'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''deludente → EM giù''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  direction: neg
+  mechanism:
+  - china
+  - politburo
+  description: 'Politburo di luglio 2024: pochi dettagli'
+- date: '2024-09-24'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''risk-on globale''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  direction: pos
+  mechanism:
+  - china
+  - china_stimulus
+  description: Pacchetto di stimolo della PBoC
+- date: '2024-09-24'
+  theme: macro_data
+  reference: ^NDX
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''risk-on globale''. Convenzione: risk-on = azionario al rialzo.'
+  direction: pos
+  mechanism:
+  - china
+  - china_stimulus
+  description: Pacchetto di stimolo della PBoC
+- date: '2024-09-26'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''pro-crescita forte → risk-on''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  direction: pos
+  mechanism:
+  - china
+  - china_stimulus
+  - politburo
+  description: 'Politburo di settembre 2024: stabilizzare immobiliare e mercato'
+- date: '2024-09-26'
+  theme: macro_data
+  reference: EWZ
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''pro-crescita forte → risk-on''. EWZ è azionario emergente (Brasile): ''EM'' lo comprende.'
+  direction: pos
+  mechanism:
+  - china
+  - china_stimulus
+  - politburo
+  description: 'Politburo di settembre 2024: stabilizzare immobiliare e mercato'
+- date: '2024-10-21'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Nota: ''Follow-through del pacchetto di settembre''. Per la riga il taglio prosegue un annuncio
+    precedente: scontato (regola della sorpresa).'
+  status: excluded
+  mechanism:
+  - china
+  - china_stimulus
+  - rate_decision
+  description: Taglio record della LPR
+- date: '2024-10-21'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Nota: ''Follow-through del pacchetto di settembre''. Per la riga il taglio prosegue un annuncio
+    precedente: scontato (regola della sorpresa).'
+  status: excluded
+  mechanism:
+  - china
+  - china_stimulus
+  - rate_decision
+  description: Taglio record della LPR
+- date: '2024-11-07'
+  theme: macro_data
+  reference: CNY=X
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''tolleranza yuan debole''. CNY=X quota yuan per dollaro: yuan debole = pos.'
+  direction: pos
+  mechanism:
+  - china
+  - cny
+  description: Fixing al minimo dal 2023
+- date: '2024-12-09'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''segnale stimolo forte → risk-on''. Convenzione: risk-on EM = azionario emergente al
+    rialzo.'
+  direction: pos
+  mechanism:
+  - china
+  - china_stimulus
+  - politburo
+  description: 'Politburo: politica monetaria moderatamente accomodante'
+- date: '2024-12-11'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Cella ''2024-12-11/12'': la riunione dura due giorni e il comunicato esce il secondo; con la
+    prima data l''event study parte prima della notizia.'
+  status: excluded
+  mechanism:
+  - china
+  - china_stimulus
+  description: Central Economic Work Conference 2024
+- date: '2024-12-11'
+  theme: macro_data
+  reference: ^NDX
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Cella ''2024-12-11/12'': la riunione dura due giorni e il comunicato esce il secondo; con la
+    prima data l''event study parte prima della notizia.'
+  status: excluded
+  mechanism:
+  - china
+  - china_stimulus
+  description: Central Economic Work Conference 2024
+- date: '2024-12-31'
+  theme: macro_data
+  reference: CNY=X
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'La riga è ancorata a un livello di prezzo (''Yuan offshore ai minimi dal 2022; onshore tocca
+    7,3698''): selezionerebbe l''episodio per il suo esito.'
+  status: excluded
+  mechanism:
+  - china
+  - cny
+  description: Yuan ai minimi dal 2022
+- date: '2024-12-31'
+  theme: macro_data
+  reference: DX-Y.NYB
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'La riga è ancorata a un livello di prezzo (''Yuan offshore ai minimi dal 2022; onshore tocca
+    7,3698''): selezionerebbe l''episodio per il suo esito.'
+  status: excluded
+  mechanism:
+  - china
+  - cny
+  description: Yuan ai minimi dal 2022
+- date: '2025-02-09'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'La riga descrive una fase (''deflazione persistente'') usando anche il dato di febbraio, uscito
+    dopo: non è una sorpresa isolabile alla data.'
+  status: excluded
+  mechanism:
+  - china
+  - china_inflation
+  description: CPI cinese di gennaio 2025
+- date: '2025-02-09'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'La riga descrive una fase (''deflazione persistente'') usando anche il dato di febbraio, uscito
+    dopo: non è una sorpresa isolabile alla data.'
+  status: excluded
+  mechanism:
+  - china
+  - china_inflation
+  description: CPI cinese di gennaio 2025
+- date: '2025-04-08'
+  theme: macro_data
+  reference: CNY=X
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''tolleranza depr. controllata''; la research sul cambio PBoC legge lo stesso fixing
+    come ''difesa camuffata'': due letture.'
+  status: excluded
+  mechanism:
+  - china
+  - cny
+  - tariff_escalation
+  description: Fixing oltre 7,20 durante lo shock dei dazi
+- date: '2025-05-07'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''easing pre-negoziati → risk-on''. Convenzione: risk-on EM = azionario emergente al
+    rialzo.'
+  direction: pos
+  mechanism:
+  - china
+  - china_stimulus
+  description: Pacchetto PBoC in 10 punti
+- date: '2025-05-12'
+  theme: macro_data
+  reference: ^NDX
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''risk-on globale''. Convenzione: risk-on = azionario al rialzo.'
+  direction: pos
+  mechanism:
+  - china
+  - negotiation_track
+  description: Tregua di Ginevra USA-Cina
+- date: '2025-05-12'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''risk-on globale''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  direction: pos
+  mechanism:
+  - china
+  - negotiation_track
+  description: Tregua di Ginevra USA-Cina
+- date: '2025-05-20'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Nota: ''Trasmissione del taglio reverse repo di maggio''. Per la riga il taglio prosegue un
+    annuncio precedente: scontato (regola della sorpresa).'
+  status: excluded
+  mechanism:
+  - china
+  - china_stimulus
+  - rate_decision
+  description: Taglio della LPR
+- date: '2025-05-20'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Nota: ''Trasmissione del taglio reverse repo di maggio''. Per la riga il taglio prosegue un
+    annuncio precedente: scontato (regola della sorpresa).'
+  status: excluded
+  mechanism:
+  - china
+  - china_stimulus
+  - rate_decision
+  description: Taglio della LPR
+- date: '2025-07-30'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''anti-deflazione → commodity su''.'
+  direction: pos
+  mechanism:
+  - china
+  - politburo
+  description: 'Politburo di luglio 2025: contro la "involution"'
+- date: '2025-09-30'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''debole ma in miglioramento'' — nessun verso.'
+  status: excluded
+  mechanism:
+  - china
+  - pmi
+  description: PMI manifatturiero di settembre 2025
+- date: '2025-09-30'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''debole ma in miglioramento'' — nessun verso.'
+  status: excluded
+  mechanism:
+  - china
+  - pmi
+  description: PMI manifatturiero di settembre 2025
+- date: '2025-10-20'
+  theme: macro_data
+  reference: CNY=X
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''neutro/atteso''. CNY=X quota yuan per dollaro: yuan debole = pos. Decisione attesa:
+    nessuna pressione nuova.'
+  direction: neutral
+  mechanism:
+  - china
+  - rate_decision
+  description: LPR invariata per il quinto mese
+- date: '2025-10-30'
+  theme: macro_data
+  reference: ^NDX
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''risk-on → EM/commodity su''. Convenzione: risk-on = azionario al rialzo.'
+  direction: pos
+  mechanism:
+  - china
+  - negotiation_track
+  description: Accordo Trump-Xi a Busan
+- date: '2025-10-30'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''risk-on → EM/commodity su''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  direction: pos
+  mechanism:
+  - china
+  - negotiation_track
+  description: Accordo Trump-Xi a Busan
+- date: '2025-10-30'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''risk-on → EM/commodity su''.'
+  direction: pos
+  mechanism:
+  - china
+  - negotiation_track
+  description: Accordo Trump-Xi a Busan
+- date: '2025-12-24'
+  theme: macro_data
+  reference: CNY=X
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'La riga è ancorata a un livello di prezzo (''Yuan offshore rompe 7,00''): selezionerebbe l''episodio
+    per il suo esito. E la cella è un intervallo (24/25).'
+  status: excluded
+  mechanism:
+  - china
+  - cny
+  description: Lo yuan offshore rompe quota 7
+- date: '2025-12-24'
+  theme: macro_data
+  reference: DX-Y.NYB
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'La riga è ancorata a un livello di prezzo (''Yuan offshore rompe 7,00''): selezionerebbe l''episodio
+    per il suo esito. E la cella è un intervallo (24/25).'
+  status: excluded
+  mechanism:
+  - china
+  - cny
+  description: Lo yuan offshore rompe quota 7
+- date: '2025-12-30'
+  theme: macro_data
+  reference: CNY=X
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'La riga è ancorata a un livello di prezzo (''Yuan onshore rompe 7,00, massimo da maggio 2023''):
+    selezionerebbe l''episodio per il suo esito.'
+  status: excluded
+  mechanism:
+  - china
+  - cny
+  description: Lo yuan onshore rompe quota 7
+- date: '2026-01-14'
+  theme: macro_data
+  reference: EEM
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''forte → EM/commodity su''. Convenzione: risk-on EM = azionario emergente al rialzo.'
+  direction: pos
+  mechanism:
+  - china
+  - activity_growth
+  description: Surplus commerciale cinese record nel 2025
+- date: '2026-01-14'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''forte → EM/commodity su''.'
+  direction: pos
+  mechanism:
+  - china
+  - activity_growth
+  description: Surplus commerciale cinese record nel 2025
+- date: '2026-01-14'
+  theme: macro_data
+  reference: EWZ
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''forte → EM/commodity su''. EWZ è azionario emergente (Brasile): ''EM'' lo comprende.'
+  direction: pos
+  mechanism:
+  - china
+  - activity_growth
+  description: Surplus commerciale cinese record nel 2025
