@@ -3523,3 +3523,474 @@ reviews:
   mechanism:
   - infrastructure_attack
   description: 'Attacco a Novorossiysk: sospeso l''export di greggio'
+- date: '2011-08-02'
+  theme: fiscal_policy
+  reference: ^GSPC
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+    del 2016-09-21 BoJ. In più: ''Sblocco atteso''.'
+  status: excluded
+  mechanism:
+  - budget_passage
+  - fiscal_deadlock
+  description: 'Budget Control Act: alzato il tetto del debito'
+- date: '2011-08-02'
+  theme: fiscal_policy
+  reference: ^TNX
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+    del 2016-09-21 BoJ. In più: ''Sblocco atteso''.'
+  status: excluded
+  mechanism:
+  - budget_passage
+  - fiscal_deadlock
+  description: 'Budget Control Act: alzato il tetto del debito'
+- date: '2011-08-08'
+  theme: fiscal_policy
+  reference: ^GSPC
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''negativo azionario''.'
+  direction: neg
+  mechanism:
+  - sovereign_rating
+  description: Primo declassamento di S&P sugli USA (AAA → AA+)
+- date: '2011-08-08'
+  theme: fiscal_policy
+  reference: ^TNX
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''rendimenti giù'' coincide con l''esito della nota (fuga verso la qualità); il meccanismo
+    di un declassamento spingerebbe i rendimenti su. Esito finito nella colonna. Revisione maintainer
+    2026-09-23.'
+  status: excluded
+  mechanism:
+  - sovereign_rating
+  description: Primo declassamento di S&P sugli USA (AAA → AA+)
+- date: '2013-10-01'
+  theme: fiscal_policy
+  reference: ^GSPC
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro''.'
+  direction: neutral
+  mechanism:
+  - fiscal_deadlock
+  description: Inizio dello shutdown USA
+- date: '2013-10-01'
+  theme: fiscal_policy
+  reference: ^VIX
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro''.'
+  direction: neutral
+  mechanism:
+  - fiscal_deadlock
+  description: Inizio dello shutdown USA
+- date: '2013-10-17'
+  theme: fiscal_policy
+  reference: ^GSPC
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+    del 2016-09-21 BoJ.'
+  status: excluded
+  mechanism:
+  - budget_passage
+  - fiscal_deadlock
+  description: Riapertura del governo USA
+- date: '2017-12-22'
+  theme: fiscal_policy
+  reference: ^GSPC
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'La riga dice ''positivo (già prezzato)'': con la regola della sorpresa (2026-09-23) il verso
+    non vale e la riga non dice se l''esito fu diverso dal prezzato.'
+  status: excluded
+  mechanism:
+  - fiscal_expansion
+  description: Firma del Tax Cuts and Jobs Act
+- date: '2017-12-22'
+  theme: fiscal_policy
+  reference: ^NDX
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'La riga dice ''positivo (già prezzato)'': con la regola della sorpresa (2026-09-23) il verso
+    non vale e la riga non dice se l''esito fu diverso dal prezzato.'
+  status: excluded
+  mechanism:
+  - fiscal_expansion
+  description: Firma del Tax Cuts and Jobs Act
+- date: '2018-12-24'
+  theme: fiscal_policy
+  reference: ^GSPC
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Nota: ''reazione dominata dalla Fed, non dal fiscale''. La seduta è dominata da un altro evento:
+    il verso della riga non si misura su questa data.'
+  status: excluded
+  mechanism:
+  - fiscal_deadlock
+  description: Inizio dello shutdown di 35 giorni
+- date: '2018-12-24'
+  theme: fiscal_policy
+  reference: ^VIX
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Nota: ''reazione dominata dalla Fed, non dal fiscale''. La seduta è dominata da un altro evento:
+    il verso della riga non si misura su questa data.'
+  status: excluded
+  mechanism:
+  - fiscal_deadlock
+  description: Inizio dello shutdown di 35 giorni
+- date: '2019-01-25'
+  theme: fiscal_policy
+  reference: ^GSPC
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+    del 2016-09-21 BoJ. E la nota attribuisce il movimento alla Fed.'
+  status: excluded
+  mechanism:
+  - budget_passage
+  - fiscal_deadlock
+  description: Fine dello shutdown di 35 giorni
+- date: '2021-03-11'
+  theme: fiscal_policy
+  reference: ^GSPC
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''positivo azionario''.'
+  direction: pos
+  mechanism:
+  - fiscal_expansion
+  description: Firma dell'American Rescue Plan
+- date: '2021-03-11'
+  theme: fiscal_policy
+  reference: ^TNX
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - fiscal_expansion
+  description: Firma dell'American Rescue Plan
+- date: '2023-06-05'
+  theme: fiscal_policy
+  reference: ^GSPC
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro''.'
+  direction: neutral
+  mechanism:
+  - budget_passage
+  - fiscal_deadlock
+  description: Accordo sul tetto del debito operativo
+- date: '2023-06-05'
+  theme: fiscal_policy
+  reference: ^VIX
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro''.'
+  direction: neutral
+  mechanism:
+  - budget_passage
+  - fiscal_deadlock
+  description: Accordo sul tetto del debito operativo
+- date: '2023-08-02'
+  theme: fiscal_policy
+  reference: ^GSPC
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''lieve negativo''.'
+  direction: neg
+  mechanism:
+  - sovereign_rating
+  description: Fitch declassa gli USA (AAA → AA+)
+- date: '2023-08-02'
+  theme: fiscal_policy
+  reference: ^TNX
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''lieve negativo'' — su un rendimento o su un cambio non dice se il negativo è per il
+    prezzo o per il livello.'
+  status: excluded
+  mechanism:
+  - sovereign_rating
+  description: Fitch declassa gli USA (AAA → AA+)
+- date: '2025-05-19'
+  theme: fiscal_policy
+  reference: ^GSPC
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''lieve negativo''.'
+  direction: neg
+  mechanism:
+  - sovereign_rating
+  description: Moody's declassa gli USA (Aaa → Aa1)
+- date: '2025-05-19'
+  theme: fiscal_policy
+  reference: ^TNX
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''lieve negativo'' — su un rendimento o su un cambio non dice se il negativo è per il
+    prezzo o per il livello.'
+  status: excluded
+  mechanism:
+  - sovereign_rating
+  description: Moody's declassa gli USA (Aaa → Aa1)
+- date: '2025-05-19'
+  theme: fiscal_policy
+  reference: DX-Y.NYB
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''lieve negativo'' — su un rendimento o su un cambio non dice se il negativo è per il
+    prezzo o per il livello.'
+  status: excluded
+  mechanism:
+  - sovereign_rating
+  description: Moody's declassa gli USA (Aaa → Aa1)
+- date: '2025-07-03'
+  theme: fiscal_policy
+  reference: ^GSPC
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'La riga dice ''positivo (già prezzato)'': con la regola della sorpresa (2026-09-23) il verso
+    non vale e la riga non dice se l''esito fu diverso dal prezzato. In più la nota cita il dato sull''occupazione
+    lo stesso giorno.'
+  status: excluded
+  mechanism:
+  - fiscal_expansion
+  description: La Camera approva il One Big Beautiful Bill Act
+- date: '2025-07-03'
+  theme: fiscal_policy
+  reference: ^TNX
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'La riga dice ''positivo (già prezzato)'': con la regola della sorpresa (2026-09-23) il verso
+    non vale e la riga non dice se l''esito fu diverso dal prezzato. In più la nota cita il dato sull''occupazione
+    lo stesso giorno.'
+  status: excluded
+  mechanism:
+  - fiscal_expansion
+  description: La Camera approva il One Big Beautiful Bill Act
+- date: '2025-10-01'
+  theme: fiscal_policy
+  reference: ^GSPC
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro''.'
+  direction: neutral
+  mechanism:
+  - fiscal_deadlock
+  description: Inizio dello shutdown record di 43 giorni
+- date: '2025-10-01'
+  theme: fiscal_policy
+  reference: ^VIX
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro''.'
+  direction: neutral
+  mechanism:
+  - fiscal_deadlock
+  description: Inizio dello shutdown record di 43 giorni
+- date: '2025-11-12'
+  theme: fiscal_policy
+  reference: ^GSPC
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+    del 2016-09-21 BoJ.'
+  status: excluded
+  mechanism:
+  - budget_passage
+  - fiscal_deadlock
+  description: Fine dello shutdown record
+- date: '2014-04-01'
+  theme: fiscal_policy
+  reference: ^N225
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'La riga dice ''Anticipato da mesi'': con la regola della sorpresa (2026-09-23) il verso non
+    vale e la riga non dice se l''esito fu diverso dal prezzato.'
+  status: excluded
+  mechanism:
+  - fiscal_consolidation
+  description: Imposta sui consumi giapponese dal 5% all'8%
+- date: '2019-10-01'
+  theme: fiscal_policy
+  reference: ^N225
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'La riga dice ''ampiamente atteso'': con la regola della sorpresa (2026-09-23) il verso non
+    vale e la riga non dice se l''esito fu diverso dal prezzato.'
+  status: excluded
+  mechanism:
+  - fiscal_consolidation
+  description: Imposta sui consumi giapponese dall'8% al 10%
+- date: '2025-11-21'
+  theme: fiscal_policy
+  reference: JPY=X
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''yen giù''. JPY=X è USD/JPY: yen debole = quotazione su.'
+  direction: pos
+  mechanism:
+  - fiscal_expansion
+  description: Pacchetto di stimolo Takaichi
+- date: '2025-11-21'
+  theme: fiscal_policy
+  reference: ^N225
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''azioni giù''.'
+  direction: neg
+  mechanism:
+  - fiscal_expansion
+  description: Pacchetto di stimolo Takaichi
+- date: '2022-09-23'
+  theme: fiscal_policy
+  reference: GBPUSD=X
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''GBP giù E gilt giù (twin)''. GBPUSD=X quota dollari per sterlina.'
+  direction: neg
+  mechanism:
+  - fiscal_expansion
+  description: Mini-budget Kwarteng
+- date: '2022-10-17'
+  theme: fiscal_policy
+  reference: GBPUSD=X
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''GBP su / gilt su''. GBPUSD=X quota dollari per sterlina.'
+  direction: pos
+  mechanism:
+  - fiscal_consolidation
+  description: Hunt ritira il mini-budget
+- date: '2021-11-23'
+  theme: fiscal_policy
+  reference: SHLD.L
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''positivo settoriale''.'
+  direction: pos
+  mechanism:
+  - fiscal_expansion
+  - difesa
+  description: Taiwan approva il bilancio speciale per la difesa
+- date: '2025-01-21'
+  theme: fiscal_policy
+  reference: EWT
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro sul mercato''.'
+  direction: neutral
+  mechanism:
+  - fiscal_consolidation
+  - fiscal_deadlock
+  description: Taiwan taglia e congela il bilancio 2025
+- date: '2026-05-08'
+  theme: fiscal_policy
+  reference: SHLD.L
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''positivo settoriale''.'
+  direction: pos
+  mechanism:
+  - fiscal_expansion
+  - difesa
+  description: Taiwan approva il bilancio speciale per la difesa ridotto
+- date: '2026-05-29'
+  theme: fiscal_policy
+  reference: SHLD.L
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''positivo settoriale''.'
+  direction: pos
+  mechanism:
+  - fiscal_expansion
+  - difesa
+  description: Prima tranche del bilancio della difesa di Taiwan
+- date: '2026-08-14'
+  theme: fiscal_policy
+  reference: EWT
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro''.'
+  direction: neutral
+  mechanism:
+  - budget_passage
+  - fiscal_deadlock
+  description: Taiwan approva il bilancio 2026 dopo 266 giorni di stallo
+- date: '2022-05-30'
+  theme: fiscal_policy
+  reference: EWY
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+    del 2016-09-21 BoJ.'
+  status: excluded
+  mechanism:
+  - fiscal_expansion
+  description: Bilancio supplementare coreano da 62 tn di won
+- date: '2024-12-04'
+  theme: fiscal_policy
+  reference: EWY
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: '§6 della research: EWY ha prezzato la legge marziale nella seduta USA del 3/12; con la data
+    del 4 l''event study parte dopo la reazione. Revisione maintainer 2026-09-23.'
+  status: excluded
+  mechanism:
+  - fiscal_deadlock
+  - election_risk
+  description: Legge marziale in Corea
+- date: '2024-12-10'
+  theme: fiscal_policy
+  reference: EWY
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro''.'
+  direction: neutral
+  mechanism:
+  - fiscal_consolidation
+  - fiscal_deadlock
+  description: L'opposizione taglia il bilancio coreano 2025
+- date: '2025-07-04'
+  theme: fiscal_policy
+  reference: EWY
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+    del 2016-09-21 BoJ.'
+  status: excluded
+  mechanism:
+  - fiscal_expansion
+  description: Bilancio supplementare coreano da 31,8 tn di won
+- date: '2025-12-02'
+  theme: fiscal_policy
+  reference: EWY
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+    del 2016-09-21 BoJ.'
+  status: excluded
+  mechanism:
+  - budget_passage
+  - fiscal_expansion
+  description: Bilancio coreano 2026 approvato nei termini
+- date: '2015-08-11'
+  theme: fiscal_policy
+  reference: BRL=X
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''BRL giù''. BRL=X è USD/BRL: real debole = quotazione su.'
+  direction: pos
+  mechanism:
+  - sovereign_rating
+  description: Moody's porta il Brasile a un gradino dal junk
+- date: '2015-09-10'
+  theme: fiscal_policy
+  reference: BRL=X
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''BRL giù''. BRL=X è USD/BRL: real debole = quotazione su.'
+  direction: pos
+  mechanism:
+  - sovereign_rating
+  description: S&P declassa il Brasile a junk
+- date: '2015-09-10'
+  theme: fiscal_policy
+  reference: EWZ
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''azioni giù''.'
+  direction: neg
+  mechanism:
+  - sovereign_rating
+  description: S&P declassa il Brasile a junk
+- date: '2022-11-17'
+  theme: fiscal_policy
+  reference: BRL=X
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''BRL giù''. BRL=X è USD/BRL: real debole = quotazione su.'
+  direction: pos
+  mechanism:
+  - fiscal_expansion
+  description: Deroga al tetto di spesa brasiliano
+- date: '2022-11-17'
+  theme: fiscal_policy
+  reference: EWZ
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''azioni giù''.'
+  direction: neg
+  mechanism:
+  - fiscal_expansion
+  description: Deroga al tetto di spesa brasiliano
+- date: '2024-07-03'
+  theme: fiscal_policy
+  reference: BRL=X
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Riga: ''BRL su''. BRL=X è USD/BRL: real debole = quotazione su.'
+  direction: neg
+  mechanism:
+  - fiscal_consolidation
+  description: Lula ordina il rispetto del quadro fiscale

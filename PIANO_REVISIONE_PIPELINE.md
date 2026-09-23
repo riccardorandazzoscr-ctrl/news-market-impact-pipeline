@@ -401,7 +401,10 @@ research): oggi entrambi dicono «pressione attesa» e ammettono tutte e due le 
         «volatile» e i titoli di esito esclusi; «Hawkish cut» (BCE 2024-06-06) escluso per la regola della sorpresa.
       - [x] **Raffinerie russe** — 2026-09-23, 47 righe promosse, 2 aperte (TTF=F). I veti manuali
         su BZ=F restano: una revisione sulla stessa chiave sarebbe un duplicato, e il veto è del maintainer.
-      - [ ] **Brasile fiscale** — prossima (poi premio a termine).
+      - [x] **Brasile fiscale** (`Fiscal_Pol_Brazil`, in realtà 6 paesi) — 2026-09-23, 48 righe promosse,
+        16 aperte. «Neutro» → `neutral`, «neutro/positivo» → escluso (due letture). EWY/EWT: la §6 della
+        research avverte che l'ETF USA reagisce il giorno civile prima dell'indice locale.
+      - [ ] **Premio a termine globale** — prossima.
 - [ ] Le schede senza `direction_reference` (agosto e prima metà di settembre): `recupero.py
       prepara` oggi gestisce solo le research, serve il ramo per le schede. Per una scheda
       l'asset non è nella riga: va scelto fra i ticker del suo event study.

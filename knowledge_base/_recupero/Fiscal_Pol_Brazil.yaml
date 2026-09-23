@@ -1,0 +1,811 @@
+research: Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+voci:
+- riga: '|2011-08-02|USA        |Budget Control Act firmato, tetto del debito alzato                               |sblocco                |neutro/positivo                     |^GSPC,
+    ^TNX          |Sblocco atteso; attenzione subito spostata sul rischio rating                                                                                                  |'
+  data: '2011-08-02'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+      del 2016-09-21 BoJ. In più: ''Sblocco atteso''.'
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+      del 2016-09-21 BoJ. In più: ''Sblocco atteso''.'
+  meccanismo:
+  - budget_passage
+  - fiscal_deadlock
+  evento: 'Budget Control Act: alzato il tetto del debito'
+  stato: promossa
+- riga: '|2011-08-08|USA        |Reazione al declassamento S&P AAA→AA+                                             |rating                 |negativo
+    azionario / rendimenti giù |^GSPC, ^TNX, GC=F    |Annuncio ven. 5 ago. a mercati chiusi; prima seduta
+    lun. 8 ago.: S&P −6,7%, 10Y da 2,56% a 2,34% (rifugio, CNN Money), oro +3,7% a $1.713,20                   |'
+  data: '2011-08-08'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - GC=F
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''negativo azionario''.'
+  - asset: ^TNX
+    gruppo: 3
+    verso: escluso
+    perché: 'Riga: ''rendimenti giù'' coincide con l''esito della nota (fuga verso la qualità); il meccanismo
+      di un declassamento spingerebbe i rendimenti su. Esito finito nella colonna. Revisione maintainer
+      2026-09-23.'
+  - asset: GC=F
+    gruppo: 3
+    domanda: 'Riga: ''negativo azionario / rendimenti giù'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - sovereign_rating
+  evento: Primo declassamento di S&P sugli USA (AAA → AA+)
+  stato: promossa
+- riga: '|2013-10-01|USA        |Inizio shutdown (Affordable Care Act)                                             |stallo                 |neutro                              |^GSPC,
+    ^VIX          |Look‑through; S&P +3,1% sull’intero episodio di 16 giorni                                                                                                      |'
+  data: '2013-10-01'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - ^GSPC
+  - ^VIX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: ''neutro''.'
+  - asset: ^VIX
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: ''neutro''.'
+  meccanismo:
+  - fiscal_deadlock
+  evento: Inizio dello shutdown USA
+  stato: promossa
+- riga: '|2013-10-17|USA        |Riapertura del governo                                                            |sblocco                |neutro/positivo                     |^GSPC                |Accordo
+    firmato in nottata il 16, prima seduta piena il 17                                                                                                     |'
+  data: '2013-10-17'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - ^GSPC
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+      del 2016-09-21 BoJ.'
+  meccanismo:
+  - budget_passage
+  - fiscal_deadlock
+  evento: Riapertura del governo USA
+  stato: promossa
+- riga: '|2017-12-22|USA        |Tax Cuts and Jobs Act firmato                                                     |espansione             |positivo
+    (già prezzato)             |^GSPC, ^NDX          |Ampiamente anticipato; reazione del giorno muta                                                                                                                |'
+  data: '2017-12-22'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - ^GSPC
+  - ^NDX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga dice ''positivo (già prezzato)'': con la regola della sorpresa (2026-09-23) il verso
+      non vale e la riga non dice se l''esito fu diverso dal prezzato.'
+  - asset: ^NDX
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga dice ''positivo (già prezzato)'': con la regola della sorpresa (2026-09-23) il verso
+      non vale e la riga non dice se l''esito fu diverso dal prezzato.'
+  meccanismo:
+  - fiscal_expansion
+  evento: Firma del Tax Cuts and Jobs Act
+  stato: promossa
+- riga: '|2018-12-24|USA        |Inizio shutdown (35 giorni)                                                       |stallo                 |neutro                              |^GSPC,
+    ^VIX          |Shutdown dal sab. 22 dic.; reazione dominata dalla Fed, non dal fiscale                                                                                        |'
+  data: '2018-12-24'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - ^GSPC
+  - ^VIX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''reazione dominata dalla Fed, non dal fiscale''. La seduta è dominata da un altro
+      evento: il verso della riga non si misura su questa data.'
+  - asset: ^VIX
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''reazione dominata dalla Fed, non dal fiscale''. La seduta è dominata da un altro
+      evento: il verso della riga non si misura su questa data.'
+  meccanismo:
+  - fiscal_deadlock
+  evento: Inizio dello shutdown di 35 giorni
+  stato: promossa
+- riga: '|2019-01-25|USA        |Fine dello shutdown più lungo (di allora)                                         |sblocco                |neutro/positivo                     |^GSPC                |S&P
+    +10,3% sull’episodio, ma per svolta dovish della Fed                                                                                                       |'
+  data: '2019-01-25'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - ^GSPC
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+      del 2016-09-21 BoJ. E la nota attribuisce il movimento alla Fed.'
+  meccanismo:
+  - budget_passage
+  - fiscal_deadlock
+  evento: Fine dello shutdown di 35 giorni
+  stato: promossa
+- riga: '|2021-03-11|USA        |American Rescue Plan ($1,9 tn) firmato                                            |espansione             |positivo
+    azionario / rendimenti su  |^GSPC, ^TNX          |Perno della dominanza fiscale pandemica                                                                                                                        |'
+  data: '2021-03-11'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''positivo azionario''.'
+  - asset: ^TNX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''rendimenti su''. ^TNX quota il rendimento.'
+  meccanismo:
+  - fiscal_expansion
+  evento: Firma dell'American Rescue Plan
+  stato: promossa
+- riga: '|2023-06-05|USA        |Accordo sul tetto del debito operativo                                            |sblocco                |neutro                              |^GSPC,
+    ^VIX          |Firmato sab. 3 giu.; T‑bill a ridosso della X‑date rendevano >6% prima dell’accordo                                                                            |'
+  data: '2023-06-05'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - ^GSPC
+  - ^VIX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: ''neutro''.'
+  - asset: ^VIX
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: ''neutro''.'
+  meccanismo:
+  - budget_passage
+  - fiscal_deadlock
+  evento: Accordo sul tetto del debito operativo
+  stato: promossa
+- riga: '|2023-08-02|USA        |Reazione al declassamento Fitch AAA→AA+                                           |rating                 |lieve
+    negativo                      |^GSPC, ^TNX          |Annuncio 1 ago. dopo chiusura; il 2 ago. 10Y
+    +7pb a 4,15%, S&P ~−1%; effetto imputato più all’emissione                                                        |'
+  data: '2023-08-02'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''lieve negativo''.'
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''lieve negativo'' — su un rendimento o su un cambio non dice se il negativo è per
+      il prezzo o per il livello.'
+  meccanismo:
+  - sovereign_rating
+  evento: Fitch declassa gli USA (AAA → AA+)
+  stato: promossa
+- riga: '|2025-05-19|USA        |Reazione al declassamento Moody’s Aaa→Aa1                                         |rating                 |lieve
+    negativo                      |^TNX, ^GSPC, DX-Y.NYB|Annuncio ven. 16 mag. dopo chiusura; prima seduta
+    lun. 19: 30Y a max intraday 5,011%, azioni aperte ~−1% poi piatte (TIAA)                                     |'
+  data: '2025-05-19'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - DX-Y.NYB
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''lieve negativo''.'
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''lieve negativo'' — su un rendimento o su un cambio non dice se il negativo è per
+      il prezzo o per il livello.'
+  - asset: DX-Y.NYB
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''lieve negativo'' — su un rendimento o su un cambio non dice se il negativo è per
+      il prezzo o per il livello.'
+  meccanismo:
+  - sovereign_rating
+  evento: Moody's declassa gli USA (Aaa → Aa1)
+  stato: promossa
+- riga: '|2025-07-03|USA        |One Big Beautiful Bill Act (passaggio Camera)                                     |espansione             |positivo
+    (già prezzato)             |^GSPC, ^TNX          |Camera 3 lug., firma 4 lug.  (mercati chiusi); 3
+    lug. S&P +0,8%, 10Y +7pb,  anche per dato occupazione                                                         |'
+  data: '2025-07-03'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga dice ''positivo (già prezzato)'': con la regola della sorpresa (2026-09-23) il verso
+      non vale e la riga non dice se l''esito fu diverso dal prezzato. In più la nota cita il dato sull''occupazione
+      lo stesso giorno.'
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga dice ''positivo (già prezzato)'': con la regola della sorpresa (2026-09-23) il verso
+      non vale e la riga non dice se l''esito fu diverso dal prezzato. In più la nota cita il dato sull''occupazione
+      lo stesso giorno.'
+  meccanismo:
+  - fiscal_expansion
+  evento: La Camera approva il One Big Beautiful Bill Act
+  stato: promossa
+- riga: '|2025-10-01|USA        |Inizio shutdown record (43 giorni)                                                |stallo                 |neutro                              |^GSPC,
+    ^VIX          |Look‑through; rischio principale = ritardo dei dati macro                                                                                                      |'
+  data: '2025-10-01'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - ^GSPC
+  - ^VIX
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: ''neutro''.'
+  - asset: ^VIX
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: ''neutro''.'
+  meccanismo:
+  - fiscal_deadlock
+  evento: Inizio dello shutdown record di 43 giorni
+  stato: promossa
+- riga: '|2025-11-12|USA        |Fine shutdown record                                                              |sblocco                |neutro/positivo                     |^GSPC                |Firma
+    legge di riapertura, fondi fino al 30 gen. 2026                                                                                                          |'
+  data: '2025-11-12'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - ^GSPC
+  dichiarazioni:
+  - asset: ^GSPC
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+      del 2016-09-21 BoJ.'
+  meccanismo:
+  - budget_passage
+  - fiscal_deadlock
+  evento: Fine dello shutdown record
+  stato: promossa
+- riga: '|2014-04-01|Giappone   |Aumento imposta consumi 5%→8%                                                     |consolidamento         |negativo
+    su consumi/azioni          |^N225                |Anticipato da mesi; forte front‑loading dei consumi                                                                                                            |'
+  data: '2014-04-01'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - ^N225
+  dichiarazioni:
+  - asset: ^N225
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga dice ''Anticipato da mesi'': con la regola della sorpresa (2026-09-23) il verso non
+      vale e la riga non dice se l''esito fu diverso dal prezzato.'
+  meccanismo:
+  - fiscal_consolidation
+  evento: Imposta sui consumi giapponese dal 5% all'8%
+  stato: promossa
+- riga: '|2019-10-01|Giappone   |Aumento imposta consumi 8%→10%                                                    |consolidamento         |negativo
+    attenuato                  |^N225                |Con aliquota ridotta e misure di mitigazione; ampiamente
+    atteso                                                                                                |'
+  data: '2019-10-01'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - ^N225
+  dichiarazioni:
+  - asset: ^N225
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga dice ''ampiamente atteso'': con la regola della sorpresa (2026-09-23) il verso non
+      vale e la riga non dice se l''esito fu diverso dal prezzato.'
+  meccanismo:
+  - fiscal_consolidation
+  evento: Imposta sui consumi giapponese dall'8% al 10%
+  stato: promossa
+- riga: '|2025-05-20|Giappone   |Asta 20Y JGB molto debole                                                         |stallo
+    (domanda)       |rendimenti lunghi su                |^N225, JPY=X         |Domanda ai minimi pluriennali;
+    catalizzatore del sell‑off super‑long                                                                                           |'
+  data: '2025-05-20'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - JPY=X
+  - ^N225
+  dichiarazioni:
+  - asset: ^N225
+    gruppo: 3
+    domanda: 'Riga: ''rendimenti lunghi su'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: JPY=X
+    gruppo: 3
+    domanda: 'Riga: ''rendimenti lunghi su'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - sovereign_auction
+  evento: Asta JGB a 20 anni molto debole
+  stato: promossa
+- riga: '|2025-05-28|Giappone   |Asta 40Y JGB debole (bid‑to‑cover 2,21)                                           |stallo
+    (domanda)       |rendimenti lunghi su                |^N225, JPY=X         |30Y +11pb intraday poi
+    rientro; 40Y a 3,135%                                                                                                                   |'
+  data: '2025-05-28'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - JPY=X
+  - ^N225
+  dichiarazioni:
+  - asset: ^N225
+    gruppo: 3
+    domanda: 'Riga: ''rendimenti lunghi su'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: JPY=X
+    gruppo: 3
+    domanda: 'Riga: ''rendimenti lunghi su'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - sovereign_auction
+  evento: Asta JGB a 40 anni debole
+  stato: promossa
+- riga: '|2025-11-21|Giappone   |Pacchetto stimolo Takaichi (¥21,3 tn)                                             |espansione             |rendimenti
+    su / yen giù / azioni giù|^N225, JPY=X         |Nikkei −2,4%; 10Y JGB a 1,817% (max dal 2008); emissione
+    extra ¥11,696 tn                                                                                      |'
+  data: '2025-11-21'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - JPY=X
+  - ^N225
+  dichiarazioni:
+  - asset: JPY=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''yen giù''. JPY=X è USD/JPY: yen debole = quotazione su.'
+  - asset: ^N225
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''azioni giù''.'
+  meccanismo:
+  - fiscal_expansion
+  evento: Pacchetto di stimolo Takaichi
+  stato: promossa
+- riga: '|2026-01-28|Giappone   |Asta 40Y JGB forte (bid‑to‑cover 2,76)                                            |sblocco
+    (domanda)      |rendimenti lunghi giù               |^N225, JPY=X         |40Y −3,5pb a 3,9%; sollievo
+    dopo picco ~4,215%                                                                                                                 |'
+  data: '2026-01-28'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - JPY=X
+  - ^N225
+  dichiarazioni:
+  - asset: ^N225
+    gruppo: 3
+    domanda: 'Riga: ''rendimenti lunghi giù'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: JPY=X
+    gruppo: 3
+    domanda: 'Riga: ''rendimenti lunghi giù'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - sovereign_auction
+  evento: Asta JGB a 40 anni forte
+  stato: promossa
+- riga: '|2022-09-23|Regno Unito|Mini‑budget Kwarteng (£45 mld non finanziati)                                     |espansione             |GBP
+    giù E gilt giù (twin)           |GBPUSD=X             |Archetipo di perdita di credibilità; nessuna
+    previsione OBR allegata                                                                                           |'
+  data: '2022-09-23'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''GBP giù E gilt giù (twin)''. GBPUSD=X quota dollari per sterlina.'
+  meccanismo:
+  - fiscal_expansion
+  evento: Mini-budget Kwarteng
+  stato: promossa
+- riga: '|2022-09-28|Regno Unito|Intervento d’emergenza BoE sui gilt                                               |sblocco/stabilizzazione|rendimenti
+    lunghi giù               |GBPUSD=X             |Acquisti “su qualsiasi scala necessaria” per rompere
+    il doom loop LDI                                                                                          |'
+  data: '2022-09-28'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    gruppo: 3
+    domanda: 'Riga: ''rendimenti lunghi giù'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - liquidity_event
+  evento: Intervento d'emergenza della BoE sui gilt
+  stato: promossa
+- riga: '|2022-10-17|Regno Unito|Hunt reverte il mini‑budget                                                       |consolidamento         |GBP
+    su / gilt su                    |GBPUSD=X             |Ripristino della cornice di credibilità fiscale                                                                                                                |'
+  data: '2022-10-17'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''GBP su / gilt su''. GBPUSD=X quota dollari per sterlina.'
+  meccanismo:
+  - fiscal_consolidation
+  evento: Hunt ritira il mini-budget
+  stato: promossa
+- riga: '|2024-10-30|Regno Unito|Autumn Budget Reeves                                                              |espansione             |rendimenti
+    su moderati              |GBPUSD=X             |Spesa +~2% PIL/anno; reazione ordinata, con OBR                                                                                                                |'
+  data: '2024-10-30'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    gruppo: 3
+    domanda: 'Riga: ''rendimenti su moderati'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - fiscal_expansion
+  - budget_passage
+  evento: Autumn Budget di Reeves (2024)
+  stato: promossa
+- riga: '|2025-11-26|Regno Unito|Autumn Budget Reeves                                                              |consolidamento         |neutro/rendimenti
+    giù               |GBPUSD=X             |Margine fiscale a £21,7 mld; ampio “kite flying” pre‑annuncio                                                                                                  |'
+  data: '2025-11-26'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    gruppo: 3
+    domanda: 'Riga: ''neutro/rendimenti giù'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - fiscal_consolidation
+  - budget_passage
+  evento: Autumn Budget di Reeves (2025)
+  stato: promossa
+- riga: '|2021-11-23|Taiwan     |Bilancio speciale difesa NT$240 mld autorizzato                                   |espansione
+    (difesa)    |positivo settoriale                 |EWT, SHLD.L          |Approvazione LY; canale settoriale,
+    non macro                                                                                                                  |'
+  data: '2021-11-23'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - EWT
+  - SHLD.L
+  dichiarazioni:
+  - asset: SHLD.L
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''positivo settoriale''.'
+  - asset: EWT
+    gruppo: 3
+    domanda: 'Riga: ''positivo settoriale (canale settoriale, non macro)'' — il verso scritto non riguarda
+      questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - fiscal_expansion
+  - difesa
+  evento: Taiwan approva il bilancio speciale per la difesa
+  stato: promossa
+- riga: '|2025-01-21|Taiwan     |Tagli/congelamenti record al bilancio 2025 (NT$207,5 mld)                         |consolidamento/stallo  |neutro
+    sul mercato                  |EWT                  |Nessuna reazione di mercato attribuibile; storia
+    politico‑costituzionale                                                                                       |'
+  data: '2025-01-21'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - EWT
+  dichiarazioni:
+  - asset: EWT
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: ''neutro sul mercato''.'
+  meccanismo:
+  - fiscal_consolidation
+  - fiscal_deadlock
+  evento: Taiwan taglia e congela il bilancio 2025
+  stato: promossa
+- riga: '|2026-05-08|Taiwan     |Bilancio speciale difesa NT$780 mld approvato                                     |espansione
+    (difesa)    |positivo settoriale                 |EWT, SHLD.L          |Versione ridotta (da NT$1,25
+    tn); nessuna reazione di mercato documentata                                                                                      |'
+  data: '2026-05-08'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - EWT
+  - SHLD.L
+  dichiarazioni:
+  - asset: SHLD.L
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''positivo settoriale''.'
+  - asset: EWT
+    gruppo: 3
+    domanda: 'Riga: ''positivo settoriale'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - fiscal_expansion
+  - difesa
+  evento: Taiwan approva il bilancio speciale per la difesa ridotto
+  stato: promossa
+- riga: '|2026-05-29|Taiwan     |Prima tranche annuale del bilancio difesa                                         |espansione
+    (difesa)    |positivo settoriale                 |EWT, SHLD.L          |Sblocco operativo di 5 sistemi
+    d’arma USA                                                                                                                      |'
+  data: '2026-05-29'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - EWT
+  - SHLD.L
+  dichiarazioni:
+  - asset: SHLD.L
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''positivo settoriale''.'
+  - asset: EWT
+    gruppo: 3
+    domanda: 'Riga: ''positivo settoriale'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - fiscal_expansion
+  - difesa
+  evento: Prima tranche del bilancio della difesa di Taiwan
+  stato: promossa
+- riga: '|2026-08-14|Taiwan     |Bilancio generale 2026 (NT$2,987 tn / ~US$93 mld) dopo stallo record
+    di 266 giorni|sblocco                |neutro                              |EWT                  |TAIEX
+    −0,46% quel venerdì ma per presa di beneficio su TSMC, non per il bilancio; **caso originante**                                                          |'
+  data: '2026-08-14'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - EWT
+  dichiarazioni:
+  - asset: EWT
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: ''neutro''.'
+  meccanismo:
+  - budget_passage
+  - fiscal_deadlock
+  evento: Taiwan approva il bilancio 2026 dopo 266 giorni di stallo
+  stato: promossa
+- riga: '|2022-05-30|Corea      |Bilancio supplementare 62 tn won (pandemia)                                       |espansione             |neutro/positivo                     |EWY                  |Prima
+    seduta dopo l’approvazione di dom. 29 mag.                                                                                                               |'
+  data: '2022-05-30'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - EWY
+  dichiarazioni:
+  - asset: EWY
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+      del 2016-09-21 BoJ.'
+  meccanismo:
+  - fiscal_expansion
+  evento: Bilancio supplementare coreano da 62 tn di won
+  stato: promossa
+- riga: '|2024-12-04|Corea      |Legge marziale Yoon (innescata anche dal bilancio)                                |stallo/crisi           |KRW
+    giù, azioni giù                 |EWY, ^VIX            |Dichiarazione notte 3 dic.; EWY (seduta USA
+    3 dic.) −1,6% a chiusura dopo ~−7% intraday; KOSPI −1,44% a 2.464 il 4 dic.; won ~−3% a 1.443 (minimo
+    da ott. 2022)|'
+  data: '2024-12-04'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - EWY
+  - ^VIX
+  dichiarazioni:
+  - asset: EWY
+    gruppo: 3
+    verso: escluso
+    perché: '§6 della research: EWY ha prezzato la legge marziale nella seduta USA del 3/12; con la data
+      del 4 l''event study parte dopo la reazione. Revisione maintainer 2026-09-23.'
+  - asset: ^VIX
+    gruppo: 3
+    domanda: 'Riga: ''KRW giù, azioni giù'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - fiscal_deadlock
+  - election_risk
+  evento: Legge marziale in Corea
+  stato: promossa
+- riga: '|2024-12-10|Corea      |Bilancio 2025 tagliato dall’opposizione (673,3 tn won)                            |consolidamento/stallo  |neutro                              |EWY                  |Futures
+    TGB 3Y −0,10; nessuna reazione azionaria pulita                                                                                                        |'
+  data: '2024-12-10'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - EWY
+  dichiarazioni:
+  - asset: EWY
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: ''neutro''.'
+  meccanismo:
+  - fiscal_consolidation
+  - fiscal_deadlock
+  evento: L'opposizione taglia il bilancio coreano 2025
+  stato: promossa
+- riga: '|2025-07-04|Corea      |Bilancio supplementare 31,8 tn won                                                |espansione             |neutro/positivo                     |EWY                  |Governo
+    Lee; stimolo alla domanda interna                                                                                                                      |'
+  data: '2025-07-04'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - EWY
+  dichiarazioni:
+  - asset: EWY
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+      del 2016-09-21 BoJ.'
+  meccanismo:
+  - fiscal_expansion
+  evento: Bilancio supplementare coreano da 31,8 tn di won
+  stato: promossa
+- riga: '|2025-12-02|Corea      |Bilancio 2026 (727,9 tn won) approvato nei termini                                |sblocco/espansione     |neutro/positivo                     |EWY                  |+8,1%
+    sul 2025;  primo bilancio nei termini in 5 anni                                                                                                          |'
+  data: '2025-12-02'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - EWY
+  dichiarazioni:
+  - asset: EWY
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come ''JPY neutrale/debole''
+      del 2016-09-21 BoJ.'
+  meccanismo:
+  - budget_passage
+  - fiscal_expansion
+  evento: Bilancio coreano 2026 approvato nei termini
+  stato: promossa
+- riga: '|2015-08-11|Brasile    |Moody’s taglia a un gradino sopra il junk                                         |rating                 |BRL
+    giù                             |BRL=X, EWZ           |Outlook portato a stabile; anticipa il taglio
+    S&P                                                                                                              |'
+  data: '2015-08-11'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - BRL=X
+  - EWZ
+  dichiarazioni:
+  - asset: BRL=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''BRL giù''. BRL=X è USD/BRL: real debole = quotazione su.'
+  - asset: EWZ
+    gruppo: 3
+    domanda: 'Riga: ''BRL giù'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - sovereign_rating
+  evento: Moody's porta il Brasile a un gradino dal junk
+  stato: promossa
+- riga: '|2015-09-10|Brasile    |S&P declassa a junk (BB+)                                                         |rating                 |BRL
+    giù, azioni giù                 |BRL=X, EWZ           |Annuncio 9 set. dopo chiusura USA (EWZ −6,6%
+    after‑hours); 10 set. real −1,34%, EWZ −1,45%                                                                     |'
+  data: '2015-09-10'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - BRL=X
+  - EWZ
+  dichiarazioni:
+  - asset: BRL=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''BRL giù''. BRL=X è USD/BRL: real debole = quotazione su.'
+  - asset: EWZ
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''azioni giù''.'
+  meccanismo:
+  - sovereign_rating
+  evento: S&P declassa il Brasile a junk
+  stato: promossa
+- riga: '|2022-11-17|Brasile    |Deroga al tetto di spesa (PEC di transizione, R$175 mld)                          |espansione             |BRL
+    giù, azioni giù                 |BRL=X, EWZ           |Real −2%, Bovespa −2,4%                                                                                                                                        |'
+  data: '2022-11-17'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - BRL=X
+  - EWZ
+  dichiarazioni:
+  - asset: BRL=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''BRL giù''. BRL=X è USD/BRL: real debole = quotazione su.'
+  - asset: EWZ
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''azioni giù''.'
+  meccanismo:
+  - fiscal_expansion
+  evento: Deroga al tetto di spesa brasiliano
+  stato: promossa
+- riga: '|2024-07-03|Brasile    |Lula ordina il rispetto del quadro fiscale, tagli R$25,9 mld                      |consolidamento         |BRL
+    su                              |BRL=X, EWZ           |Real +~2% dopo settimane di stress                                                                                                                             |'
+  data: '2024-07-03'
+  tema: fiscal_policy
+  fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  candidati:
+  - BRL=X
+  - EWZ
+  dichiarazioni:
+  - asset: BRL=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''BRL su''. BRL=X è USD/BRL: real debole = quotazione su.'
+  - asset: EWZ
+    gruppo: 3
+    domanda: 'Riga: ''BRL su'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - fiscal_consolidation
+  evento: Lula ordina il rispetto del quadro fiscale
+  stato: promossa

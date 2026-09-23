@@ -1,4 +1,4 @@
-generated_at: '2026-09-23T11:38:31'
+generated_at: '2026-09-23T11:46:17'
 num_episodes: 1168
 episodes:
 - date: '1984-01-01'
@@ -5926,6 +5926,11 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    ^GSPC: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come
+      ''JPY neutrale/debole'' del 2016-09-21 BoJ. In più: ''Sblocco atteso''.'
+    ^TNX: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come
+      ''JPY neutrale/debole'' del 2016-09-21 BoJ. In più: ''Sblocco atteso''.'
   directions_local: []
   declared: false
   subthemes:
@@ -5947,6 +5952,16 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  direction_review_excluded:
+    ^TNX: 'Riga: ''rendimenti giù'' coincide con l''esito della nota (fuga verso la
+      qualità); il meccanismo di un declassamento spingerebbe i rendimenti su. Esito
+      finito nella colonna. Revisione maintainer 2026-09-23.'
   directions_local: []
   declared: false
   subthemes:
@@ -5960,13 +5975,24 @@ episodes:
   - government_shutdown
   - sovereign_rating
   - term_premium
-  subthemes_local: []
+  subthemes_local:
+  - sovereign_rating
   n_sources: 1
 - date: '2013-10-01'
   theme: fiscal_policy
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neutral
+    ^VIX:
+    - neutral
+  direction_sources:
+    ^GSPC:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+    ^VIX:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local: []
   declared: false
   subthemes:
@@ -5988,6 +6014,9 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    ^GSPC: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come
+      ''JPY neutrale/debole'' del 2016-09-21 BoJ.'
   directions_local:
   - pos
   declared: false
@@ -6030,6 +6059,9 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    ^N225: 'La riga dice ''Anticipato da mesi'': con la regola della sorpresa (2026-09-23)
+      il verso non vale e la riga non dice se l''esito fu diverso dal prezzato.'
   directions_local: []
   declared: false
   subthemes:
@@ -6050,6 +6082,12 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    BRL=X:
+    - pos
+  direction_sources:
+    BRL=X:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local: []
   declared: false
   subthemes:
@@ -6063,13 +6101,24 @@ episodes:
   - government_shutdown
   - sovereign_rating
   - term_premium
-  subthemes_local: []
+  subthemes_local:
+  - sovereign_rating
   n_sources: 1
 - date: '2015-09-10'
   theme: fiscal_policy
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    BRL=X:
+    - pos
+    EWZ:
+    - neg
+  direction_sources:
+    BRL=X:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+    EWZ:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local: []
   declared: false
   subthemes:
@@ -6083,7 +6132,8 @@ episodes:
   - government_shutdown
   - sovereign_rating
   - term_premium
-  subthemes_local: []
+  subthemes_local:
+  - sovereign_rating
   n_sources: 1
 - date: '2017-12-22'
   theme: fiscal_policy
@@ -6092,6 +6142,13 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^GSPC: 'La riga dice ''positivo (già prezzato)'': con la regola della sorpresa
+      (2026-09-23) il verso non vale e la riga non dice se l''esito fu diverso dal
+      prezzato.'
+    ^NDX: 'La riga dice ''positivo (già prezzato)'': con la regola della sorpresa
+      (2026-09-23) il verso non vale e la riga non dice se l''esito fu diverso dal
+      prezzato.'
   directions_local:
   - neg
   - pos
@@ -6176,6 +6233,11 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    ^GSPC: 'Nota: ''reazione dominata dalla Fed, non dal fiscale''. La seduta è dominata
+      da un altro evento: il verso della riga non si misura su questa data.'
+    ^VIX: 'Nota: ''reazione dominata dalla Fed, non dal fiscale''. La seduta è dominata
+      da un altro evento: il verso della riga non si misura su questa data.'
   directions_local: []
   declared: false
   subthemes:
@@ -6199,6 +6261,10 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^GSPC: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come
+      ''JPY neutrale/debole'' del 2016-09-21 BoJ. E la nota attribuisce il movimento
+      alla Fed.'
   directions_local:
   - neg
   - pos
@@ -6224,6 +6290,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^N225: 'La riga dice ''ampiamente atteso'': con la regola della sorpresa (2026-09-23)
+      il verso non vale e la riga non dice se l''esito fu diverso dal prezzato.'
   directions_local:
   - neg
   declared: true
@@ -6297,6 +6366,16 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    ^GSPC:
+    - pos
+    ^TNX:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+    ^TNX:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local:
   - neg
   declared: true
@@ -6341,6 +6420,12 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    SHLD.L:
+    - pos
+  direction_sources:
+    SHLD.L:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local:
   - neg
   declared: true
@@ -6356,7 +6441,9 @@ episodes:
   - sovereign_rating
   - term_premium
   subthemes_local:
+  - difesa
   - fiscal_deadlock
+  - fiscal_expansion
   n_sources: 2
 - date: '2022-05-30'
   theme: fiscal_policy
@@ -6365,6 +6452,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    EWY: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come
+      ''JPY neutrale/debole'' del 2016-09-21 BoJ.'
   directions_local:
   - neg
   declared: true
@@ -6410,6 +6500,12 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+  direction_sources:
+    GBPUSD=X:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local:
   - neg
   declared: true
@@ -6426,6 +6522,7 @@ episodes:
   - term_premium
   subthemes_local:
   - fiscal_deadlock
+  - fiscal_expansion
   n_sources: 2
 - date: '2022-09-28'
   theme: fiscal_policy
@@ -6458,6 +6555,12 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    GBPUSD=X:
+    - pos
+  direction_sources:
+    GBPUSD=X:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local:
   - neg
   declared: true
@@ -6482,6 +6585,16 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    BRL=X:
+    - pos
+    EWZ:
+    - neg
+  direction_sources:
+    BRL=X:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+    EWZ:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local:
   - neg
   declared: true
@@ -6498,6 +6611,7 @@ episodes:
   - term_premium
   subthemes_local:
   - fiscal_consolidation
+  - fiscal_expansion
   n_sources: 2
 - date: '2022-12-20'
   theme: fiscal_policy
@@ -6556,6 +6670,16 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    ^GSPC:
+    - neutral
+    ^VIX:
+    - neutral
+  direction_sources:
+    ^GSPC:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+    ^VIX:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local:
   - neg
   - pos
@@ -6572,6 +6696,7 @@ episodes:
   - sovereign_rating
   - term_premium
   subthemes_local:
+  - budget_passage
   - fiscal_deadlock
   n_sources: 2
 - date: '2023-08-02'
@@ -6581,6 +6706,15 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  direction_review_excluded:
+    ^TNX: 'Riga: ''lieve negativo'' — su un rendimento o su un cambio non dice se
+      il negativo è per il prezzo o per il livello.'
   directions_local:
   - neg
   declared: true
@@ -6641,6 +6775,12 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    BRL=X:
+    - neg
+  direction_sources:
+    BRL=X:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local:
   - neg
   declared: true
@@ -6657,6 +6797,7 @@ episodes:
   - term_premium
   subthemes_local:
   - election_risk
+  - fiscal_consolidation
   - fiscal_deadlock
   n_sources: 2
 - date: '2024-07-31'
@@ -6730,6 +6871,10 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    EWY: '§6 della research: EWY ha prezzato la legge marziale nella seduta USA del
+      3/12; con la data del 4 l''event study parte dopo la reazione. Revisione maintainer
+      2026-09-23.'
   directions_local:
   - neg
   declared: true
@@ -6759,6 +6904,12 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    EWY:
+    - neutral
+  direction_sources:
+    EWY:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local:
   - neg
   declared: true
@@ -6774,6 +6925,8 @@ episodes:
   - sovereign_rating
   - term_premium
   subthemes_local:
+  - fiscal_consolidation
+  - fiscal_deadlock
   - sovereign_rating
   n_sources: 2
 - date: '2025-01-21'
@@ -6783,6 +6936,12 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    EWT:
+    - neutral
+  direction_sources:
+    EWT:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local:
   - neg
   declared: true
@@ -6798,6 +6957,7 @@ episodes:
   - sovereign_rating
   - term_premium
   subthemes_local:
+  - fiscal_consolidation
   - fiscal_deadlock
   n_sources: 2
 - date: '2025-04-04'
@@ -6829,6 +6989,17 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  direction_review_excluded:
+    ^TNX: 'Riga: ''lieve negativo'' — su un rendimento o su un cambio non dice se
+      il negativo è per il prezzo o per il livello.'
+    DX-Y.NYB: 'Riga: ''lieve negativo'' — su un rendimento o su un cambio non dice
+      se il negativo è per il prezzo o per il livello.'
   directions_local:
   - neg
   declared: true
@@ -6904,6 +7075,13 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^GSPC: 'La riga dice ''positivo (già prezzato)'': con la regola della sorpresa
+      (2026-09-23) il verso non vale e la riga non dice se l''esito fu diverso dal
+      prezzato. In più la nota cita il dato sull''occupazione lo stesso giorno.'
+    ^TNX: 'La riga dice ''positivo (già prezzato)'': con la regola della sorpresa
+      (2026-09-23) il verso non vale e la riga non dice se l''esito fu diverso dal
+      prezzato. In più la nota cita il dato sull''occupazione lo stesso giorno.'
   directions_local:
   - neg
   declared: true
@@ -6928,6 +7106,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    EWY: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come
+      ''JPY neutrale/debole'' del 2016-09-21 BoJ.'
   directions_local:
   - neg
   declared: true
@@ -6974,6 +7155,16 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    ^GSPC:
+    - neutral
+    ^VIX:
+    - neutral
+  direction_sources:
+    ^GSPC:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+    ^VIX:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local:
   - neg
   declared: true
@@ -6998,6 +7189,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^GSPC: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come
+      ''JPY neutrale/debole'' del 2016-09-21 BoJ.'
   directions_local:
   - neg
   - pos
@@ -7023,6 +7217,16 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    JPY=X:
+    - pos
+    ^N225:
+    - neg
+  direction_sources:
+    JPY=X:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+    ^N225:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local:
   - neg
   declared: true
@@ -7039,6 +7243,7 @@ episodes:
   - term_premium
   subthemes_local:
   - fiscal_deadlock
+  - fiscal_expansion
   n_sources: 2
 - date: '2025-11-26'
   theme: fiscal_policy
@@ -7071,6 +7276,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    EWY: 'Riga: ''neutro/positivo'' — l''autore dichiara due versi possibili. Come
+      ''JPY neutrale/debole'' del 2016-09-21 BoJ.'
   directions_local:
   - neg
   declared: true
@@ -7120,6 +7328,12 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    SHLD.L:
+    - pos
+  direction_sources:
+    SHLD.L:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local:
   - neg
   declared: true
@@ -7135,7 +7349,9 @@ episodes:
   - sovereign_rating
   - term_premium
   subthemes_local:
+  - difesa
   - fiscal_deadlock
+  - fiscal_expansion
   n_sources: 2
 - date: '2026-05-29'
   theme: fiscal_policy
@@ -7144,6 +7360,12 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    SHLD.L:
+    - pos
+  direction_sources:
+    SHLD.L:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local:
   - neg
   declared: true
@@ -7159,6 +7381,8 @@ episodes:
   - sovereign_rating
   - term_premium
   subthemes_local:
+  - difesa
+  - fiscal_expansion
   - sovereign_rating
   n_sources: 2
 - date: '2026-08-14'
@@ -7168,6 +7392,12 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    EWT:
+    - neutral
+  direction_sources:
+    EWT:
+    - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   directions_local:
   - neg
   declared: true
@@ -7184,6 +7414,7 @@ episodes:
   - sovereign_rating
   - term_premium
   subthemes_local:
+  - budget_passage
   - fiscal_deadlock
   - fiscal_expansion
   - term_premium
