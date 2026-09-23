@@ -821,3 +821,621 @@ reviews:
   - boj
   - rate_decision
   description: BoJ alza a 0,75%, massimo dal 1995
+- date: '2018-01-22'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'La riga dice ''atteso'': primo atto protezionista annunciato, impatto modesto. Con la regola
+    della sorpresa (2026-09-23) il verso del meccanismo non vale, e la riga non dice se l''evento fu più
+    o meno duro del prezzato. Stesso trattamento dei rialzi BoJ scontati.'
+  status: excluded
+  mechanism:
+  - tariff_escalation
+  description: Dazi Section 201 su pannelli solari e lavatrici
+- date: '2018-03-01'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ equity'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Annuncio a sorpresa dei dazi 232 su acciaio e alluminio
+- date: '2018-03-01'
+  theme: geopolitical
+  reference: ^VIX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑VIX'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - tariff_escalation
+  description: Annuncio a sorpresa dei dazi 232 su acciaio e alluminio
+- date: '2018-03-22'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓↓ equity'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Memorandum Section 301 contro la Cina, non anticipato
+- date: '2018-03-22'
+  theme: geopolitical
+  reference: ^NDX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓↓ equity'' sull''asset-canale ^NDX.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Memorandum Section 301 contro la Cina, non anticipato
+- date: '2018-03-23'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Entrata in vigore di una misura il cui annuncio è già in questa tabella (2018-03-01): per la
+    riga è un evento scontato, e non dice se fu più o meno duro del prezzato. Regola della sorpresa.'
+  status: excluded
+  mechanism:
+  - tariff_escalation
+  description: Entrata in vigore dei dazi 232 su acciaio e alluminio
+- date: '2018-06-01'
+  theme: geopolitical
+  reference: ^STOXX50E
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ Europa'' sull''asset-canale ^STOXX50E.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Fine delle esenzioni 232 per UE, Canada e Messico
+- date: '2018-06-01'
+  theme: geopolitical
+  reference: ^GDAXI
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ Europa'' sull''asset-canale ^GDAXI.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Fine delle esenzioni 232 per UE, Canada e Messico
+- date: '2018-06-22'
+  theme: geopolitical
+  reference: ^STOXX50E
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ Europa'' sull''asset-canale ^STOXX50E.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Ritorsioni UE sui dazi 232
+- date: '2018-07-06'
+  theme: geopolitical
+  reference: ^NDX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ equity/tech'' sull''asset-canale ^NDX.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Primo round Section 301 (List 1) e ritorsione cinese
+- date: '2018-07-06'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ equity/tech'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Primo round Section 301 (List 1) e ritorsione cinese
+- date: '2018-08-23'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'La riga dice ''atteso'': List 2, completa i $50bn già annunciati. Con la regola della sorpresa
+    (2026-09-23) il verso del meccanismo non vale, e la riga non dice se l''evento fu più o meno duro
+    del prezzato. Stesso trattamento dei rialzi BoJ scontati.'
+  status: excluded
+  mechanism:
+  - tariff_escalation
+  description: List 2 e ritorsione cinese speculare
+- date: '2018-09-24'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ equity'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: 'List 3: 10% su $200bn di import cinese'
+- date: '2018-09-24'
+  theme: geopolitical
+  reference: ^NDX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ equity'' sull''asset-canale ^NDX.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: 'List 3: 10% su $200bn di import cinese'
+- date: '2018-12-01'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ equity'' sull''asset-canale ^GSPC.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  description: Tregua Trump-Xi al G20 di Buenos Aires
+- date: '2019-05-05'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ equity'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: 'Tweet di Trump: List 3 al 25%'
+- date: '2019-05-05'
+  theme: geopolitical
+  reference: ^VIX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑VIX'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - tariff_escalation
+  description: 'Tweet di Trump: List 3 al 25%'
+- date: '2019-05-10'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Entrata in vigore di una misura il cui annuncio è già in questa tabella (2019-05-05): per la
+    riga è un evento scontato, e non dice se fu più o meno duro del prezzato. Regola della sorpresa.'
+  status: excluded
+  mechanism:
+  - tariff_escalation
+  description: Aumento formale della List 3 al 25%
+- date: '2019-05-13'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ equity'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Ritorsione cinese su $60bn
+- date: '2019-06-29'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ equity'' sull''asset-canale ^GSPC.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  description: Tregua Trump-Xi al G20 di Osaka
+- date: '2019-08-01'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ equity'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Minaccia di dazi del 10% su $300bn (List 4)
+- date: '2019-08-01'
+  theme: geopolitical
+  reference: ^VIX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑VIX'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - tariff_escalation
+  description: Minaccia di dazi del 10% su $300bn (List 4)
+- date: '2019-08-05'
+  theme: geopolitical
+  reference: CNY=X
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ USD/CNY''. CNY=X quota yuan per dollaro: yuan più debole = quotazione in salita.'
+  direction: pos
+  mechanism:
+  - tariff_escalation
+  - cny
+  description: Lo yuan rompe quota 7, stop agli acquisti agricoli cinesi
+- date: '2019-08-05'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ equity'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  - cny
+  description: Lo yuan rompe quota 7, stop agli acquisti agricoli cinesi
+- date: '2019-08-05'
+  theme: geopolitical
+  reference: ^VIX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑VIX'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - tariff_escalation
+  - cny
+  description: Lo yuan rompe quota 7, stop agli acquisti agricoli cinesi
+- date: '2019-08-13'
+  theme: geopolitical
+  reference: ^NDX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ equity (sollievo)'' sull''asset-canale ^NDX.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  description: Rinvio a dicembre di parte della List 4
+- date: '2019-08-23'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ equity'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Ritorsione cinese su $75bn e rilancio di Trump
+- date: '2019-09-01'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'La riga dice ''parzialmente atteso'': entrata in vigore della List 4A annunciata l''1/8. Con
+    la regola della sorpresa (2026-09-23) il verso del meccanismo non vale, e la riga non dice se l''evento
+    fu più o meno duro del prezzato. Stesso trattamento dei rialzi BoJ scontati.'
+  status: excluded
+  mechanism:
+  - tariff_escalation
+  description: Entrata in vigore della List 4A
+- date: '2019-10-11'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ equity'' sull''asset-canale ^GSPC.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  description: Annuncio verbale della Phase One
+- date: '2019-12-13'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ equity'' sull''asset-canale ^GSPC.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  description: Accordo Phase One, cancellato il dazio del 15 dicembre
+- date: '2019-12-13'
+  theme: geopolitical
+  reference: ^NDX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ equity'' sull''asset-canale ^NDX.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  description: Accordo Phase One, cancellato il dazio del 15 dicembre
+- date: '2020-02-14'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''neutro/↑'', l''autore dichiara due versi; e l''entrata in vigore della Phase One firmata
+    il 2020-01-15 (in tabella) è scontata. Come il 2016-09-21 BoJ.'
+  status: excluded
+  mechanism:
+  - negotiation_track
+  description: Entrata in vigore della Phase One
+- date: '2025-02-01'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ equity'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: 'Ordine esecutivo IEEPA: dazi su Cina, Canada e Messico'
+- date: '2025-02-10'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ equity (lieve)'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Dazi 232 su acciaio e alluminio al 25%, fine delle esenzioni
+- date: '2025-03-04'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ equity'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Dazi sulla Cina al 20%, dazi pieni sul Canada
+- date: '2025-03-26'
+  theme: geopolitical
+  reference: ^GDAXI
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ Europa/auto'' sull''asset-canale ^GDAXI.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Dazi 232 del 25% su auto e componenti
+- date: '2025-03-26'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ Europa/auto'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Dazi 232 del 25% su auto e componenti
+- date: '2025-04-02'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓↓ equity'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: 'Liberation Day: dazio base e reciproci'
+- date: '2025-04-02'
+  theme: geopolitical
+  reference: ^NDX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓↓ equity'' sull''asset-canale ^NDX.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: 'Liberation Day: dazio base e reciproci'
+- date: '2025-04-02'
+  theme: geopolitical
+  reference: ^VIX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑VIX'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - tariff_escalation
+  description: 'Liberation Day: dazio base e reciproci'
+- date: '2025-04-04'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓↓ equity'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Ritorsione cinese del 34%
+- date: '2025-04-04'
+  theme: geopolitical
+  reference: EEM
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓↓ equity'' sull''asset-canale EEM.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Ritorsione cinese del 34%
+- date: '2025-04-08'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ equity'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  description: Dazio aggiuntivo sulla Cina, totale 104%
+- date: '2025-04-09'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑↑ equity'' sull''asset-canale ^GSPC.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  description: Pausa di 90 giorni sui dazi reciproci, tranne la Cina
+- date: '2025-04-09'
+  theme: geopolitical
+  reference: ^NDX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑↑ equity'' sull''asset-canale ^NDX.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  description: Pausa di 90 giorni sui dazi reciproci, tranne la Cina
+- date: '2025-04-11'
+  theme: geopolitical
+  reference: ^NDX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ tech'' sull''asset-canale ^NDX.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  - export_controls
+  description: Esenzione di smartphone e semiconduttori
+- date: '2025-04-11'
+  theme: geopolitical
+  reference: SOXX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ tech'' sull''asset-canale SOXX.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  - export_controls
+  description: Esenzione di smartphone e semiconduttori
+- date: '2025-04-15'
+  theme: geopolitical
+  reference: SOXX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓↓ semi'' sull''asset-canale SOXX.'
+  direction: neg
+  mechanism:
+  - export_controls
+  description: Licenza richiesta per i chip H20 verso la Cina
+- date: '2025-04-15'
+  theme: geopolitical
+  reference: ^NDX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓↓ semi'' sull''asset-canale ^NDX.'
+  direction: neg
+  mechanism:
+  - export_controls
+  description: Licenza richiesta per i chip H20 verso la Cina
+- date: '2025-05-12'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ equity'' sull''asset-canale ^GSPC.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  description: Tregua di Ginevra USA-Cina
+- date: '2025-05-12'
+  theme: geopolitical
+  reference: EEM
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ equity'' sull''asset-canale EEM.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  description: Tregua di Ginevra USA-Cina
+- date: '2025-07-14'
+  theme: geopolitical
+  reference: SOXX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ semi'' sull''asset-canale SOXX.'
+  direction: pos
+  mechanism:
+  - export_controls
+  - negotiation_track
+  description: Riammesse le licenze H20/MI308
+- date: '2025-07-14'
+  theme: geopolitical
+  reference: ^NDX
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ semi'' sull''asset-canale ^NDX.'
+  direction: pos
+  mechanism:
+  - export_controls
+  - negotiation_track
+  description: Riammesse le licenze H20/MI308
+- date: '2025-07-30'
+  theme: geopolitical
+  reference: HG=F
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''volatilità rame'' — volatilità non è una direzione. Come il 2023-07-28 BoJ.'
+  status: excluded
+  mechanism:
+  - tariff_escalation
+  description: Dazio 232 del 50% sui semilavorati di rame
+- date: '2025-08-12'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ equity'' sull''asset-canale ^GSPC.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  description: Estensione della tregua con la Cina
+- date: '2025-10-09'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↓ equity'' sull''asset-canale ^GSPC.'
+  direction: neg
+  mechanism:
+  - administrative_retaliation
+  - export_controls
+  description: La Cina annuncia controlli export sulle terre rare
+- date: '2025-10-09'
+  theme: geopolitical
+  reference: GC=F
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ oro'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - administrative_retaliation
+  - export_controls
+  description: La Cina annuncia controlli export sulle terre rare
+- date: '2025-10-30'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ equity'' sull''asset-canale ^GSPC.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  description: 'Vertice Trump-Xi a Busan: tregua di un anno'
+- date: '2025-10-30'
+  theme: geopolitical
+  reference: EEM
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ equity'' sull''asset-canale EEM.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  description: 'Vertice Trump-Xi a Busan: tregua di un anno'
+- date: '2025-11-10'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Riga: ''↑ equity'' sull''asset-canale ^GSPC.'
+  direction: pos
+  mechanism:
+  - negotiation_track
+  description: Attuazione dell'accordo di Busan

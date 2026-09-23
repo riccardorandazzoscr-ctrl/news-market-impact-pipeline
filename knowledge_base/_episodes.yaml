@@ -1,4 +1,4 @@
-generated_at: '2026-09-23T11:15:54'
+generated_at: '2026-09-23T11:22:49'
 num_episodes: 1168
 episodes:
 - date: '1984-01-01'
@@ -7858,6 +7858,11 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    ^GSPC: 'La riga dice ''atteso'': primo atto protezionista annunciato, impatto
+      modesto. Con la regola della sorpresa (2026-09-23) il verso del meccanismo non
+      vale, e la riga non dice se l''evento fu più o meno duro del prezzato. Stesso
+      trattamento dei rialzi BoJ scontati.'
   directions_local: []
   declared: false
   subthemes:
@@ -7879,6 +7884,18 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+    ^VIX:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^VIX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -7902,6 +7919,18 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+    ^NDX:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^NDX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -7925,6 +7954,10 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    ^GSPC: 'Entrata in vigore di una misura il cui annuncio è già in questa tabella
+      (2018-03-01): per la riga è un evento scontato, e non dice se fu più o meno
+      duro del prezzato. Regola della sorpresa.'
   directions_local: []
   declared: false
   subthemes:
@@ -7977,6 +8010,18 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GDAXI:
+    - neg
+    ^STOXX50E:
+    - neg
+  direction_sources:
+    ^GDAXI:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^STOXX50E:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -7989,7 +8034,8 @@ episodes:
   - trade_policy_uncertainty
   - trade_war
   - us_china
-  subthemes_local: []
+  subthemes_local:
+  - tariff_escalation
   n_sources: 2
 - date: '2018-06-15'
   theme: geopolitical
@@ -8012,6 +8058,13 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^STOXX50E:
+    - neg
+  direction_sources:
+    ^STOXX50E:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -8024,7 +8077,8 @@ episodes:
   - trade_policy_uncertainty
   - trade_war
   - us_china
-  subthemes_local: []
+  subthemes_local:
+  - tariff_escalation
   n_sources: 2
 - date: '2018-07-02'
   theme: geopolitical
@@ -8066,6 +8120,18 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+    ^NDX:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^NDX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -8088,6 +8154,11 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    ^GSPC: 'La riga dice ''atteso'': List 2, completa i $50bn già annunciati. Con
+      la regola della sorpresa (2026-09-23) il verso del meccanismo non vale, e la
+      riga non dice se l''evento fu più o meno duro del prezzato. Stesso trattamento
+      dei rialzi BoJ scontati.'
   directions_local: []
   declared: false
   subthemes:
@@ -8108,6 +8179,18 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+    ^NDX:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^NDX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -8122,7 +8205,8 @@ episodes:
   - trade_war
   - us_china
   - us_tariffs_regime_shift_section_122_lapse_→_301
-  subthemes_local: []
+  subthemes_local:
+  - tariff_escalation
   n_sources: 3
 - date: '2018-10-10'
   theme: geopolitical
@@ -8236,6 +8320,13 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - pos
   declared: false
@@ -8485,6 +8576,18 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+    ^VIX:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^VIX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - neg
   declared: false
@@ -8500,7 +8603,8 @@ episodes:
   - trade_war
   - us_china
   - us_tariffs_regime_shift_section_122_lapse_→_301
-  subthemes_local: []
+  subthemes_local:
+  - tariff_escalation
   n_sources: 3
 - date: '2019-05-10'
   theme: geopolitical
@@ -8508,6 +8612,10 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    ^GSPC: 'Entrata in vigore di una misura il cui annuncio è già in questa tabella
+      (2019-05-05): per la riga è un evento scontato, e non dice se fu più o meno
+      duro del prezzato. Regola della sorpresa.'
   directions_local: []
   declared: false
   subthemes:
@@ -8570,9 +8678,14 @@ episodes:
   directions_by_reference:
     BZ=F:
     - pos
+    ^GSPC:
+    - neg
   direction_sources:
     BZ=F:
     - card:2026-09-21/news_05.md
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - neg
   - pos
@@ -8721,6 +8834,13 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - pos
   declared: false
@@ -8860,6 +8980,18 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+    ^VIX:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^VIX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - pos
   declared: false
@@ -8886,6 +9018,23 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    CNY=X:
+    - pos
+    ^GSPC:
+    - neg
+    ^VIX:
+    - pos
+  direction_sources:
+    CNY=X:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^VIX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -8900,6 +9049,7 @@ episodes:
   - us_china
   subthemes_local:
   - cny
+  - tariff_escalation
   n_sources: 2
 - date: '2019-08-12'
   theme: geopolitical
@@ -8943,6 +9093,13 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^NDX:
+    - pos
+  direction_sources:
+    ^NDX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - pos
   declared: false
@@ -8956,7 +9113,8 @@ episodes:
   - trade_policy_uncertainty
   - trade_war
   - us_china
-  subthemes_local: []
+  subthemes_local:
+  - negotiation_track
   n_sources: 2
 - date: '2019-08-23'
   theme: geopolitical
@@ -8964,6 +9122,13 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -8978,7 +9143,8 @@ episodes:
   - trade_war
   - us_china
   - us_tariffs_regime_shift_section_122_lapse_→_301
-  subthemes_local: []
+  subthemes_local:
+  - tariff_escalation
   n_sources: 3
 - date: '2019-09-01'
   theme: geopolitical
@@ -8986,6 +9152,11 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    ^GSPC: 'La riga dice ''parzialmente atteso'': entrata in vigore della List 4A
+      annunciata l''1/8. Con la regola della sorpresa (2026-09-23) il verso del meccanismo
+      non vale, e la riga non dice se l''evento fu più o meno duro del prezzato. Stesso
+      trattamento dei rialzi BoJ scontati.'
   directions_local: []
   declared: false
   subthemes:
@@ -9185,6 +9356,8 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - pos
   declared: true
@@ -9271,9 +9444,16 @@ episodes:
   directions_by_reference:
     ^GSPC:
     - pos
+    ^NDX:
+    - pos
   direction_sources:
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^NDX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - pos
   declared: true
@@ -9543,6 +9723,10 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    ^GSPC: 'Riga: ''neutro/↑'', l''autore dichiara due versi; e l''entrata in vigore
+      della Phase One firmata il 2020-01-15 (in tabella) è scontata. Come il 2016-09-21
+      BoJ.'
   directions_local: []
   declared: false
   subthemes:
@@ -12924,6 +13108,13 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -12980,6 +13171,13 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -13230,6 +13428,13 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -13393,6 +13598,18 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GDAXI:
+    - neg
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GDAXI:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -13423,6 +13640,23 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+    ^NDX:
+    - neg
+    ^VIX:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^NDX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^VIX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - neg
   declared: false
@@ -13472,6 +13706,18 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    EEM:
+    - neg
+    ^GSPC:
+    - neg
+  direction_sources:
+    EEM:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - neg
   - pos
@@ -13522,6 +13768,13 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - neg
   declared: false
@@ -13549,6 +13802,18 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - pos
+    ^NDX:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^NDX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - pos
   declared: false
@@ -13581,6 +13846,7 @@ episodes:
   - us_china
   - us_tariffs_regime_shift_section_122_lapse_→_301
   subthemes_local:
+  - negotiation_track
   - tariff_escalation
   n_sources: 7
 - date: '2025-04-11'
@@ -13589,6 +13855,18 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - pos
+    ^NDX:
+    - pos
+  direction_sources:
+    SOXX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^NDX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - pos
   declared: false
@@ -13606,7 +13884,9 @@ episodes:
   - trade_policy_uncertainty
   - trade_war
   - us_china
-  subthemes_local: []
+  subthemes_local:
+  - export_controls
+  - negotiation_track
   n_sources: 5
 - date: '2025-04-15'
   theme: geopolitical
@@ -13614,6 +13894,18 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neg
+    ^NDX:
+    - neg
+  direction_sources:
+    SOXX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^NDX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -13630,7 +13922,8 @@ episodes:
   - trade_policy_uncertainty
   - trade_war
   - us_china
-  subthemes_local: []
+  subthemes_local:
+  - export_controls
   n_sources: 5
 - date: '2025-04-30'
   theme: geopolitical
@@ -13703,11 +13996,18 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    EEM:
+    - pos
     ^GSPC:
     - pos
   direction_sources:
+    EEM:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - neg
   - pos
@@ -14397,6 +14697,18 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - pos
+    ^NDX:
+    - pos
+  direction_sources:
+    SOXX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^NDX:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -14417,7 +14729,9 @@ episodes:
   - trade_war
   - us_china
   - us_tariffs_regime_shift_section_122_lapse_→_301
-  subthemes_local: []
+  subthemes_local:
+  - export_controls
+  - negotiation_track
   n_sources: 7
 - date: '2025-07-18'
   theme: geopolitical
@@ -14575,6 +14889,9 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    HG=F: 'Riga: ''volatilità rame'' — volatilità non è una direzione. Come il 2023-07-28
+      BoJ.'
   directions_local: []
   declared: false
   subthemes:
@@ -14691,6 +15008,8 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - pos
   declared: true
@@ -14897,6 +15216,18 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    GC=F:
+    - pos
+    ^GSPC:
+    - neg
+  direction_sources:
+    GC=F:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^GSPC:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -15081,11 +15412,18 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    EEM:
+    - pos
     ^GSPC:
     - pos
   direction_sources:
+    EEM:
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - pos
   declared: true
@@ -15134,6 +15472,8 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
+      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - neg
   - pos
