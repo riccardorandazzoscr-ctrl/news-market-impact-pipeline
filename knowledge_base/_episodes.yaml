@@ -1,4 +1,4 @@
-generated_at: '2026-09-23T11:22:49'
+generated_at: '2026-09-23T11:30:05'
 num_episodes: 1168
 episodes:
 - date: '1984-01-01'
@@ -9998,6 +9998,26 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    GC=F:
+    - pos
+    ^STOXX50E:
+    - neg
+    ^VIX:
+    - pos
+  direction_sources:
+    GC=F:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
+    ^STOXX50E:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
+    ^VIX:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   declared: true
@@ -10033,6 +10053,14 @@ episodes:
   directions_by_reference:
     BZ=F:
     - pos
+    FTSEMIB.MI:
+    - neg
+    GC=F:
+    - pos
+    ^GDAXI:
+    - neg
+    ^STOXX50E:
+    - neg
     ^VIX:
     - pos
   direction_sources:
@@ -10041,8 +10069,30 @@ episodes:
     - card:2026-09-19/news_01.md
     - card:2026-09-21/news_01.md
     - card:2026-09-21/news_05.md
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
+    FTSEMIB.MI:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
+    GC=F:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
+    ^GDAXI:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
+    ^STOXX50E:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
     ^VIX:
     - card:2026-09-14/news_02.md
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -10167,6 +10217,11 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    BZ=F: 'Riga ancorata al ''Picco Brent'': un massimo di prezzo, non un evento.
+      Come il 2007-06-22 BoJ. Revisione maintainer 2026-09-23.'
+    GC=F: 'Riga ancorata al ''Picco Brent'': un massimo di prezzo, non un evento.
+      Come il 2007-06-22 BoJ. Revisione maintainer 2026-09-23.'
   directions_local:
   - neg
   - pos
@@ -10241,6 +10296,9 @@ episodes:
   - pos
   directions_declared:
   - pos
+  direction_review_excluded:
+    BZ=F: 'Nota: ''Brent >$120 a fine maggio/giugno su prospettiva embargo'': per
+      la riga l''embargo era già nei prezzi. Revisione maintainer 2026-09-23.'
   directions_local:
   - neg
   - pos
@@ -10292,6 +10350,20 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  directions_by_reference:
+    EURUSD=X:
+    - neg
+    ^GDAXI:
+    - neg
+  direction_sources:
+    EURUSD=X:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
+    ^GDAXI:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   declared: false
@@ -10327,7 +10399,8 @@ episodes:
   - sanctions_regime
   - shadow_fleet
   - ukraine
-  subthemes_local: []
+  subthemes_local:
+  - supply_disruption
   n_sources: 14
 - date: '2022-06-20'
   theme: geopolitical
@@ -10415,6 +10488,20 @@ episodes:
   - neg
   - pos
   directions_declared: []
+  directions_by_reference:
+    ^GDAXI:
+    - neg
+    ^STOXX50E:
+    - neg
+  direction_sources:
+    ^GDAXI:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
+    ^STOXX50E:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   declared: false
@@ -10436,7 +10523,8 @@ episodes:
   - sanctions_regime
   - shadow_fleet
   - ukraine
-  subthemes_local: []
+  subthemes_local:
+  - supply_disruption
   n_sources: 4
 - date: '2022-08-01'
   theme: geopolitical
@@ -10501,6 +10589,11 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  direction_review_excluded:
+    ^GDAXI: 'Cella ''2022-08-22/26'', ''Picco TTF'': è il massimo di un prezzo, non
+      un evento, e su un intervallo. Come il 2007-06-22 BoJ.'
+    EURUSD=X: 'Cella ''2022-08-22/26'', ''Picco TTF'': è il massimo di un prezzo,
+      non un evento, e su un intervallo. Come il 2007-06-22 BoJ.'
   directions_local:
   - neg
   declared: false
@@ -10544,6 +10637,11 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  direction_review_excluded:
+    ^GDAXI: 'Nota: ''Annuncio 19-08''. La chiusura era annunciata da 12 giorni: per
+      la riga è scontata (regola delle entrate in vigore, Dazi).'
+    ^STOXX50E: 'Nota: ''Annuncio 19-08''. La chiusura era annunciata da 12 giorni:
+      per la riga è scontata (regola delle entrate in vigore, Dazi).'
   directions_local:
   - neg
   declared: false
@@ -10652,6 +10750,26 @@ episodes:
   - neg
   - pos
   directions_declared: []
+  directions_by_reference:
+    EURUSD=X:
+    - neg
+    GC=F:
+    - pos
+    ^VIX:
+    - pos
+  direction_sources:
+    EURUSD=X:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
+    GC=F:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
+    ^VIX:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   declared: false
@@ -10686,6 +10804,8 @@ episodes:
   subthemes_local:
   - gas_supply_shock
   - gbp
+  - infrastructure_attack
+  - military_escalation
   - risk_off
   n_sources: 4
 - date: '2022-09-28'
@@ -10721,6 +10841,9 @@ episodes:
   - neg
   - pos
   directions_declared: []
+  direction_review_excluded:
+    BZ=F: 'Nota: ''rally anticipato nei giorni precedenti'': per la riga il taglio
+      era già nei prezzi.'
   directions_local:
   - neg
   - pos
@@ -10754,6 +10877,10 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    BZ=F: 'La riga dice ''anticipato'': con la regola della sorpresa (2026-09-23)
+      il verso del meccanismo non vale e la riga non dice se l''esito fu più o meno
+      duro del prezzato.'
   directions_local:
   - neg
   - pos
@@ -11032,6 +11159,10 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    BZ=F: 'La riga dice ''Ampiamente atteso (annunciato da ~6 mesi)'': con la regola
+      della sorpresa (2026-09-23) il verso del meccanismo non vale e la riga non dice
+      se l''esito fu più o meno duro del prezzato.'
   directions_local:
   - neg
   - pos
@@ -11119,6 +11250,10 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    BZ=F: 'La riga dice ''Atteso'': con la regola della sorpresa (2026-09-23) il verso
+      del meccanismo non vale e la riga non dice se l''esito fu più o meno duro del
+      prezzato. In più il canale (diesel) non è in DB.'
   directions_local:
   - neg
   - pos
@@ -11337,6 +11472,20 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - pos
+    ^VIX:
+    - pos
+  direction_sources:
+    BZ=F:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
+    ^VIX:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   declared: false
@@ -11371,6 +11520,7 @@ episodes:
   - shadow_fleet
   - ukraine
   subthemes_local:
+  - military_escalation
   - risk_off
   n_sources: 12
 - date: '2023-07-11'
@@ -11873,6 +12023,14 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - neutral
+  direction_sources:
+    BZ=F:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -12281,6 +12439,14 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - neutral
+  direction_sources:
+    BZ=F:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   declared: false
@@ -12796,6 +12962,14 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - neutral
+  direction_sources:
+    BZ=F:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -12889,6 +13063,13 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    EURUSD=X: 'La riga dice ''Atteso (contratto in scadenza)'': con la regola della
+      sorpresa (2026-09-23) il verso del meccanismo non vale e la riga non dice se
+      l''esito fu più o meno duro del prezzato.'
+    ^GDAXI: 'La riga dice ''Atteso (contratto in scadenza)'': con la regola della
+      sorpresa (2026-09-23) il verso del meccanismo non vale e la riga non dice se
+      l''esito fu più o meno duro del prezzato.'
   directions_local:
   - neg
   declared: true
@@ -12951,6 +13132,9 @@ episodes:
     BZ=F:
     - card:2026-09-17/news_02.md
     - card:2026-09-19/news_01.md
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -13269,6 +13453,14 @@ episodes:
   - neg
   - neutral
   - pos
+  directions_by_reference:
+    BZ=F:
+    - neutral
+  direction_sources:
+    BZ=F:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   - neutral
@@ -14141,6 +14333,14 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    BZ=F:
+    - neutral
+  direction_sources:
+    BZ=F:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   declared: true
@@ -14221,11 +14421,26 @@ episodes:
   directions_by_reference:
     BZ=F:
     - pos
+    GC=F:
+    - pos
+    ^VIX:
+    - pos
   direction_sources:
     BZ=F:
     - card:2026-09-17/news_02.md
     - card:2026-09-21/news_01.md
     - card:2026-09-21/news_05.md
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
+    GC=F:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
+    ^VIX:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -14744,6 +14959,14 @@ episodes:
   - neg
   - neutral
   - pos
+  directions_by_reference:
+    BZ=F:
+    - neutral
+  direction_sources:
+    BZ=F:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   - neutral
@@ -15269,6 +15492,9 @@ episodes:
     BZ=F:
     - card:2026-09-17/news_02.md
     - card:2026-09-19/news_01.md
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -15326,6 +15552,14 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -15921,6 +16155,26 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+    GC=F:
+    - pos
+    ^VIX:
+    - pos
+  direction_sources:
+    BZ=F:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
+    GC=F:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
+    ^VIX:
+    - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
+      per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
+      — mappa di episodi datati per event study (2022–2026).md
   directions_local:
   - neg
   - pos

@@ -1,0 +1,656 @@
+research: Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+  (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+  study (2022–2026).md
+voci:
+- riga: '| 2022-02-21 | Russia riconosce Donetsk e Luhansk; sospensione certificazione Nord Stream 2 (22-02)
+    | escalation militare | risk-off; Brent ↑ | ^VIX↑, GC=F↑, ^STOXX50E↓ | Pre-invasione; mercati prezzavano
+    rischio ma non invasione su vasta scala |'
+  data: '2022-02-21'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - GC=F
+  - ^STOXX50E
+  - ^VIX
+  dichiarazioni:
+  - asset: ^VIX
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''^VIX↑'', scritto esplicitamente.'
+  - asset: GC=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''GC=F↑'', scritto esplicitamente.'
+  - asset: ^STOXX50E
+    gruppo: 1
+    verso: neg
+    perché: 'Riga, colonna asset-canale: ''^STOXX50E↓'', scritto esplicitamente.'
+  meccanismo:
+  - military_escalation
+  evento: La Russia riconosce Donetsk e Luhansk
+  stato: promossa
+- riga: '| 2022-02-24 | Invasione su vasta scala dell''Ucraina | escalation militare | risk-off acuto;
+    Brent ↑; oro ↑ | BZ=F↑, GC=F↑, ^VIX↑, ^GDAXI↓, FTSEMIB.MI↓, ^STOXX50E↓ | Shock a sorpresa nella portata.
+    Brent >$100 prima volta dal 2014; oro ai massimi da oltre un anno |'
+  data: '2022-02-24'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  - FTSEMIB.MI
+  - GC=F
+  - ^GDAXI
+  - ^STOXX50E
+  - ^VIX
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''BZ=F↑'', scritto esplicitamente.'
+  - asset: GC=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''GC=F↑'', scritto esplicitamente.'
+  - asset: ^VIX
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''^VIX↑'', scritto esplicitamente.'
+  - asset: ^GDAXI
+    gruppo: 1
+    verso: neg
+    perché: 'Riga, colonna asset-canale: ''^GDAXI↓'', scritto esplicitamente.'
+  - asset: FTSEMIB.MI
+    gruppo: 1
+    verso: neg
+    perché: 'Riga, colonna asset-canale: ''FTSEMIB.MI↓'', scritto esplicitamente.'
+  - asset: ^STOXX50E
+    gruppo: 1
+    verso: neg
+    perché: 'Riga, colonna asset-canale: ''^STOXX50E↓'', scritto esplicitamente.'
+  meccanismo:
+  - military_escalation
+  evento: Invasione su vasta scala dell'Ucraina
+  stato: promossa
+- riga: '| 2022-03-08 | Picco Brent; annuncio ban USA su import energia russa | supply-shock/sanzione
+    | Brent picco | BZ=F↑↑, GC=F↑ | Brent intraday $139,13 (futures, massimo dal 2008); chiusura +4,3%
+    a $123,21; massimo aggiustato per inflazione dal 2014 (EIA) |'
+  data: '2022-03-08'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  - GC=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 3
+    verso: escluso
+    perché: 'Riga ancorata al ''Picco Brent'': un massimo di prezzo, non un evento. Come il 2007-06-22
+      BoJ. Revisione maintainer 2026-09-23.'
+  - asset: GC=F
+    gruppo: 3
+    verso: escluso
+    perché: 'Riga ancorata al ''Picco Brent'': un massimo di prezzo, non un evento. Come il 2007-06-22
+      BoJ. Revisione maintainer 2026-09-23.'
+  meccanismo:
+  - sanctions
+  - oil_supply_shock
+  evento: Bando USA sull'import di energia russa, picco del Brent
+  stato: promossa
+- riga: '| 2022-06-03 | UE adotta 6° pacchetto (Reg. 2022/879): embargo greggio seaborne russo | sanzione
+    | Brent ↑ | BZ=F↑ | Annuncio; effetto legale differito (crude 05-12-2022, prodotti 05-02-2023). Brent
+    >$120 a fine maggio/giugno su prospettiva embargo |'
+  data: '2022-06-03'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 3
+    verso: escluso
+    perché: 'Nota: ''Brent >$120 a fine maggio/giugno su prospettiva embargo'': per la riga l''embargo
+      era già nei prezzi. Revisione maintainer 2026-09-23.'
+  meccanismo:
+  - sanctions
+  evento: 'Sesto pacchetto UE: embargo sul greggio russo via mare'
+  stato: promossa
+- riga: '| 2022-06-14 | Gazprom taglia Nord Stream 1 al 40% | supply-shock | TTF↑ → EZ equity↓, EUR↓ |
+    ^GDAXI↓, EURUSD=X↓ | Motivazione "turbina Siemens"; UE parla di weaponizzazione |'
+  data: '2022-06-14'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - EURUSD=X
+  - ^GDAXI
+  dichiarazioni:
+  - asset: ^GDAXI
+    gruppo: 1
+    verso: neg
+    perché: 'Riga, colonna asset-canale: ''^GDAXI↓'', scritto esplicitamente.'
+  - asset: EURUSD=X
+    gruppo: 1
+    verso: neg
+    perché: 'Riga, colonna asset-canale: ''EURUSD=X↓'', scritto esplicitamente.'
+  meccanismo:
+  - supply_disruption
+  evento: Gazprom taglia Nord Stream 1 al 40%
+  stato: promossa
+- riga: '| 2022-07-25 | Gazprom taglia NS1 al 20% | supply-shock | TTF↑ → EZ equity↓ | ^GDAXI↓, ^STOXX50E↓
+    | Ulteriore restrizione |'
+  data: '2022-07-25'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - ^GDAXI
+  - ^STOXX50E
+  dichiarazioni:
+  - asset: ^GDAXI
+    gruppo: 1
+    verso: neg
+    perché: 'Riga, colonna asset-canale: ''^GDAXI↓'', scritto esplicitamente.'
+  - asset: ^STOXX50E
+    gruppo: 1
+    verso: neg
+    perché: 'Riga, colonna asset-canale: ''^STOXX50E↓'', scritto esplicitamente.'
+  meccanismo:
+  - supply_disruption
+  evento: Gazprom taglia Nord Stream 1 al 20%
+  stato: promossa
+- riga: '| 2022-08-22/26 | Picco TTF (>€300/MWh il 26-08) | supply-shock | TTF picco → EZ equity↓, EUR↓
+    | ^GDAXI↓, EURUSD=X↓ | TTF massimo storico; cinque giorni consecutivi sopra €265/MWh (Consilium);
+    domanda anelastica (ESMA) |'
+  data: '2022-08-22'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - EURUSD=X
+  - ^GDAXI
+  dichiarazioni:
+  - asset: ^GDAXI
+    gruppo: 4
+    verso: escluso
+    perché: 'Cella ''2022-08-22/26'', ''Picco TTF'': è il massimo di un prezzo, non un evento, e su un
+      intervallo. Come il 2007-06-22 BoJ.'
+  - asset: EURUSD=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Cella ''2022-08-22/26'', ''Picco TTF'': è il massimo di un prezzo, non un evento, e su un
+      intervallo. Come il 2007-06-22 BoJ.'
+  meccanismo:
+  - supply_disruption
+  evento: Picco del TTF
+  stato: promossa
+- riga: '| 2022-08-31 | Gazprom chiude NS1 "per manutenzione"; non riapre più | supply-shock | TTF↑ |
+    ^GDAXI↓, ^STOXX50E↓ | Annuncio 19-08; il 02-09 Gazprom comunica stop indefinito; chiusura di fatto
+    definitiva |'
+  data: '2022-08-31'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - ^GDAXI
+  - ^STOXX50E
+  dichiarazioni:
+  - asset: ^GDAXI
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''Annuncio 19-08''. La chiusura era annunciata da 12 giorni: per la riga è scontata
+      (regola delle entrate in vigore, Dazi).'
+  - asset: ^STOXX50E
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''Annuncio 19-08''. La chiusura era annunciata da 12 giorni: per la riga è scontata
+      (regola delle entrate in vigore, Dazi).'
+  meccanismo:
+  - supply_disruption
+  evento: Gazprom chiude Nord Stream 1 per manutenzione
+  stato: promossa
+- riga: '| 2022-09-26 | Sabotaggio Nord Stream (esplosioni) | escalation/supply-shock | risk-off; gas↑
+    | ^VIX↑, GC=F↑, EURUSD=X↓ | NS1 già fermo; NS2 mai operativo. Effetto più simbolico/strutturale che
+    di flusso |'
+  data: '2022-09-26'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - EURUSD=X
+  - GC=F
+  - ^VIX
+  dichiarazioni:
+  - asset: ^VIX
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''^VIX↑'', scritto esplicitamente.'
+  - asset: GC=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''GC=F↑'', scritto esplicitamente.'
+  - asset: EURUSD=X
+    gruppo: 1
+    verso: neg
+    perché: 'Riga, colonna asset-canale: ''EURUSD=X↓'', scritto esplicitamente.'
+  meccanismo:
+  - military_escalation
+  - infrastructure_attack
+  evento: Sabotaggio dei gasdotti Nord Stream
+  stato: promossa
+- riga: '| 2022-10-05 | OPEC+ annuncia taglio 2 mln bpd | supply-shock | Brent ↑ | BZ=F↑ | Reazione muta:
+    rally anticipato nei giorni precedenti (~$83→$93); cut formalizza in parte sotto-produzione esistente
+    |'
+  data: '2022-10-05'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 4
+    verso: escluso
+    perché: 'Nota: ''rally anticipato nei giorni precedenti'': per la riga il taglio era già nei prezzi.'
+  meccanismo:
+  - oil_supply_shock
+  evento: OPEC+ annuncia un taglio di 2 milioni di barili al giorno
+  stato: promossa
+- riga: '| 2022-10-06 | UE adotta 8° pacchetto (base legale price cap) | sanzione | Brent ↑ (limitato)
+    | BZ=F | Risposta ad annessioni; anticipato |'
+  data: '2022-10-06'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga dice ''anticipato'': con la regola della sorpresa (2026-09-23) il verso del meccanismo
+      non vale e la riga non dice se l''esito fu più o meno duro del prezzato.'
+  meccanismo:
+  - sanctions
+  evento: 'Ottavo pacchetto UE: base legale del price cap'
+  stato: promossa
+- riga: '| 2022-12-05 | Entrata in vigore embargo UE greggio seaborne + price cap G7 $60 | sanzione |
+    Brent ↑ (limitato) | BZ=F↑ | Ampiamente atteso (annunciato da ~6 mesi); prezzi salirono fino a ~2%
+    sul giorno, effetto modesto |'
+  data: '2022-12-05'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga dice ''Ampiamente atteso (annunciato da ~6 mesi)'': con la regola della sorpresa
+      (2026-09-23) il verso del meccanismo non vale e la riga non dice se l''esito fu più o meno duro
+      del prezzato.'
+  meccanismo:
+  - sanctions
+  evento: Entrano in vigore embargo UE e price cap G7 sul greggio
+  stato: promossa
+- riga: '| 2023-02-05 | Price cap G7 sui prodotti ($100 premium/$45 discount); embargo prodotti UE | sanzione
+    | diesel↑ (esterno) | BZ=F | Atteso; canale prodotti non in DB |'
+  data: '2023-02-05'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga dice ''Atteso'': con la regola della sorpresa (2026-09-23) il verso del meccanismo
+      non vale e la riga non dice se l''esito fu più o meno duro del prezzato. In più il canale (diesel)
+      non è in DB.'
+  meccanismo:
+  - sanctions
+  evento: Price cap G7 ed embargo UE sui prodotti raffinati
+  stato: promossa
+- riga: '| 2023-06-23/24 | Ammutinamento Wagner (Prigozhin) | escalation interna | risk-off breve; Brent
+    ↑ | BZ=F↑, ^VIX↑ | A sorpresa; rientrato in <48h; il 26-06 Brent ~+0,8% a ~$74,5 poi reversione ("sigh
+    of relief") |'
+  data: '2023-06-23'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  - ^VIX
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''BZ=F↑'', scritto esplicitamente.'
+  - asset: ^VIX
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''^VIX↑'', scritto esplicitamente.'
+  meccanismo:
+  - military_escalation
+  evento: Ammutinamento Wagner
+  stato: promossa
+- riga: '| 2023 (vari) | Pacchetti UE successivi e prime designazioni shadow fleet | sanzione | marginale
+    | BZ=F | Effetti marginali, enforcement debole |'
+  data: null
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: 'Data non puntuale (solo mese o periodo): non isolabile come episodio.'
+- riga: '| 2024-01/03 | Intensificazione attacchi droni ucraini a raffinerie russe | supply-shock (prodotti)
+    | diesel↑ (esterno); Brent ↑ moderato | BZ=F↑ | Campagna progressiva, non evento puntuale; Brent sopra
+    $80; 0,4-0,9 mln bpd di capacità raffinazione colpita (stime FP) |'
+  data: null
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: 'Data non puntuale (solo mese o periodo): non isolabile come episodio.'
+- riga: '| 2024-02-23 | UE 13° pacchetto (2° anniversario): ban LPG, "no-Russia clause" | sanzione | marginale
+    | BZ=F | Atteso |'
+  data: '2024-02-23'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: direzione ''marginale'' e nota ''Atteso'': nessuna pressione nuova. Come ''JPY marginale''
+      del 2018-07-31 BoJ.'
+  meccanismo:
+  - sanctions
+  evento: Tredicesimo pacchetto UE
+  stato: promossa
+- riga: '| 2024-06-24 | UE 14° pacchetto: misure energia, anti-circumvention | sanzione | marginale |
+    BZ=F | Atteso |'
+  data: '2024-06-24'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: direzione ''marginale'' e nota ''Atteso'': nessuna pressione nuova. Come ''JPY marginale''
+      del 2018-07-31 BoJ.'
+  meccanismo:
+  - sanctions
+  evento: Quattordicesimo pacchetto UE
+  stato: promossa
+- riga: '| 2024-12-16 | UE 15° pacchetto: focus shadow fleet (52 navi) | sanzione | marginale | BZ=F |
+    Atteso |'
+  data: '2024-12-16'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: direzione ''marginale'' e nota ''Atteso'': nessuna pressione nuova. Come ''JPY marginale''
+      del 2018-07-31 BoJ.'
+  meccanismo:
+  - sanctions
+  evento: 'Quindicesimo pacchetto UE: flotta ombra'
+  stato: promossa
+- riga: '| 2025-01-01 | Fine transito gas russo via Ucraina (scadenza contratto Gazprom-Naftogaz) | supply-shock
+    | TTF↑ (lieve) | EURUSD=X, ^GDAXI | Atteso (contratto in scadenza); reazione modesta, stoccaggio UE
+    elevato (~72% al 01-01, fonte FREE Network); impatto reale solo su Moldova |'
+  data: '2025-01-01'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - EURUSD=X
+  - ^GDAXI
+  dichiarazioni:
+  - asset: EURUSD=X
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga dice ''Atteso (contratto in scadenza)'': con la regola della sorpresa (2026-09-23)
+      il verso del meccanismo non vale e la riga non dice se l''esito fu più o meno duro del prezzato.'
+  - asset: ^GDAXI
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga dice ''Atteso (contratto in scadenza)'': con la regola della sorpresa (2026-09-23)
+      il verso del meccanismo non vale e la riga non dice se l''esito fu più o meno duro del prezzato.'
+  meccanismo:
+  - supply_disruption
+  evento: Fine del transito del gas russo via Ucraina
+  stato: promossa
+- riga: '| 2025-01-10 | OFAC sanziona Gazprom Neft, Surgutneftegaz, 183 navi | sanzione | Brent ↑ | BZ=F↑
+    | Amministrazione Biden; primo grande colpo a produttori |'
+  data: '2025-01-10'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''BZ=F↑'', scritto esplicitamente.'
+  meccanismo:
+  - sanctions
+  evento: OFAC sanziona Gazprom Neft, Surgutneftegaz e 183 navi
+  stato: promossa
+- riga: '| 2025-02-24 | UE 16° pacchetto (3° anniversario): ban alluminio primario, 52 navi | sanzione
+    | marginale | BZ=F | Atteso |'
+  data: '2025-02-24'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: direzione ''marginale'' e nota ''Atteso'': nessuna pressione nuova. Come ''JPY marginale''
+      del 2018-07-31 BoJ.'
+  meccanismo:
+  - sanctions
+  evento: Sedicesimo pacchetto UE
+  stato: promossa
+- riga: '| 2025-05-20 | UE 17° pacchetto (shadow fleet, +189 navi nel 18°) | sanzione | marginale | BZ=F
+    | Atteso |'
+  data: '2025-05-20'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: direzione ''marginale'' e nota ''Atteso'': nessuna pressione nuova. Come ''JPY marginale''
+      del 2018-07-31 BoJ.'
+  meccanismo:
+  - sanctions
+  evento: Diciassettesimo pacchetto UE
+  stato: promossa
+- riga: '| 2025-06-13/24 | Conflitto Israele-Iran; rischio Hormuz; cessate-il-fuoco | escalation (esterna)
+    | Brent ↑ poi ↓ | BZ=F↑, ^VIX↑, GC=F↑ | Shock esterno alla guerra RU-UA; Brent da ~$65 a low-$80 poi
+    reversione; contamina il segnale petrolio |'
+  data: '2025-06-13'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  - GC=F
+  - ^VIX
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''BZ=F↑''. La cella copre 13-24/06 e ''poi ↓'' è il cessate il fuoco del 24: sul 13,
+      inizio del conflitto, vale ↑.'
+  - asset: ^VIX
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''^VIX↑'', scritto esplicitamente.'
+  - asset: GC=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''GC=F↑'', scritto esplicitamente.'
+  meccanismo:
+  - military_escalation
+  - iran
+  - hormuz
+  evento: Conflitto Israele-Iran, rischio Hormuz
+  stato: promossa
+- riga: '| 2025-07-18 | UE 18° pacchetto: dynamic oil cap, 189 navi shadow fleet | sanzione | marginale
+    | BZ=F | Atteso |'
+  data: '2025-07-18'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 2
+    verso: neutral
+    perché: 'Riga: direzione ''marginale'' e nota ''Atteso'': nessuna pressione nuova. Come ''JPY marginale''
+      del 2018-07-31 BoJ.'
+  meccanismo:
+  - sanctions
+  evento: 'Diciottesimo pacchetto UE: price cap dinamico'
+  stato: promossa
+- riga: '| 2025-10-22 | OFAC sanziona Rosneft e Lukoil (>50% output russo) | sanzione | Brent ↑ | BZ=F↑↑
+    | A sorpresa nella portata; annuncio dopo chiusura USA; Brent ~+5% mattina dopo (confermato Reuters/CNBC/Bloomberg)
+    |'
+  data: '2025-10-22'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''BZ=F↑↑'', scritto esplicitamente.'
+  meccanismo:
+  - sanctions
+  evento: OFAC sanziona Rosneft e Lukoil
+  stato: promossa
+- riga: '| 2025-10-23 | UE 19° pacchetto: ban import LNG russo, 117 navi (totale 557) | sanzione | Brent
+    ↑ | BZ=F↑ | Coordinato con USA/UK |'
+  data: '2025-10-23'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''BZ=F↑'', scritto esplicitamente.'
+  meccanismo:
+  - sanctions
+  evento: 'Diciannovesimo pacchetto UE: bando al GNL russo'
+  stato: promossa
+- riga: '| 2025-11 (fine) | Attacchi SBU a tanker shadow fleet (Virat, Kairos; Mar Nero/Mediterraneo)
+    | escalation | marginale | BZ=F | Nuova fase di enforcement cinetico |'
+  data: null
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: 'Data non puntuale (solo mese o periodo): non isolabile come episodio.'
+- riga: '| 2026-02-28 | Operazione USA-Israele contro Iran ("Epic Fury"); minaccia Hormuz | escalation
+    (esterna) | Brent ↑↑ | BZ=F↑↑, ^VIX↑, GC=F↑ | Shock esterno; Brent oltre $100 per la prima volta dal
+    2022 (single-session move più ampio dall''inizio guerra RU-UA) |'
+  data: '2026-02-28'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  candidati:
+  - BZ=F
+  - GC=F
+  - ^VIX
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''BZ=F↑↑'', scritto esplicitamente.'
+  - asset: ^VIX
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''^VIX↑'', scritto esplicitamente.'
+  - asset: GC=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga, colonna asset-canale: ''GC=F↑'', scritto esplicitamente.'
+  meccanismo:
+  - military_escalation
+  - iran
+  - hormuz
+  evento: Operazione USA-Israele contro l'Iran (Epic Fury)
+  stato: promossa

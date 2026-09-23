@@ -393,7 +393,10 @@ research): oggi entrambi dicono «pressione attesa» e ammettono tutte e due le 
       - [x] **Dazi** — 2026-09-23, 60 righe promosse. Un'entrata in vigore di una misura il cui annuncio
         è nella stessa tabella conta come scontata → esclusa. 2020-01-15 lasciato alla scheda (`pos`,
         benché la riga dica «scontato»); 2025-12-08 SOXX aperto (le contro-restrizioni erano note?).
-      - [ ] **Russia-Ucraina attrito energetico** — prossima.
+      - [x] **Russia-Ucraina attrito energetico** — 2026-09-23, 46 righe promosse, nessuna aperta.
+        «Marginale» + «Atteso» → `neutral` (6 pacchetti UE); un picco di prezzo come data d'ancora
+        (Brent 2022-03-08, TTF 2022-08-22) → escluso. Etichette di meccanismo prese da quelle in libreria.
+      - [ ] **Sorprese macro e reaction function** — prossima (poi raffinerie russe, Brasile fiscale).
 - [ ] Le schede senza `direction_reference` (agosto e prima metà di settembre): `recupero.py
       prepara` oggi gestisce solo le research, serve il ramo per le schede. Per una scheda
       l'asset non è nella riga: va scelto fra i ticker del suo event study.
