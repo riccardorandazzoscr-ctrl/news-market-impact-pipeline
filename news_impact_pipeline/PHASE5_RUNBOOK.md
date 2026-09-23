@@ -42,15 +42,24 @@ ripagato su tutti i turni successivi. Dati reali: 55 turni → $23; 96 turni →
 Non si risparmia scrivendo di meno o peggio. Si risparmia **facendo meno giri**.
 Tre regole, in ordine di impatto:
 
-1. **Ogni file si scrive UNA VOLTA SOLA, in un unico passaggio.** Il 21/08 sono
+1. **Il CONTENUTO di ogni file lo scrivi UNA VOLTA SOLA, in un unico passaggio.**
+   Questo non vieta lo scaffold deterministico (`new-card` crea `news_NN.md`
+   pre-popolato di placeholder in un proprio passaggio, separato): vieta di
+   rigenerare il corpo a pezzi, sezione per sezione, turno dopo turno. Il 21/08 sono
    servite 43 chiamate di scrittura per 9 file (`_index.md` riscritto 7 volte,
    `news_01.md` 7 volte, `news_03.md` 7 volte), ognuna rigenerando il corpo intero
    via heredoc. Prima di scrivere una scheda, **raccogli tutto**: pool di episodi
-   potato, event study, research KB, sezione 5-bis della scorecard. Poi scrivi il
-   file completo in una volta. Se dopo devi correggere, usa **Edit chirurgico** sulla
-   stringa da cambiare — mai un heredoc che rigenera il corpo.
-2. **Non rileggere ciò che hai appena scritto.** Niente `cat`/`sed -n` sulla scheda
-   che hai appena generato: se la scrittura non fosse riuscita avresti avuto un errore.
+   potato, event study, research KB, sezione 5-bis della scorecard. Poi riempi lo
+   scaffold con un solo Edit che sostituisce tutti i placeholder in blocco. Se dopo
+   devi correggere, altro Edit chirurgico sulla stringa da cambiare — mai un heredoc
+   che rigenera il corpo.
+2. **Non rileggere ciò che hai appena scritto per certificarla tu.** Niente
+   `cat`/`sed -n` sulla scheda che hai appena generato: se la scrittura non fosse
+   riuscita avresti avuto un errore. Questo non vuol dire "nessuna verifica di
+   contenuto" — quella esiste, mai a carico dell'agente che scrive: i guardiani
+   strutturali a valle (`run_daily_analysis.sh`, le sei fasi di `stato_giornata.py`)
+   controllano corrispondenza con le notizie in ingresso, esistenza delle schede e
+   link, dopo che il run è finito.
 3. **Non lanciare `--help`.** I flag che servono sono documentati sotto. Il 21/08 se
    ne sono andati 10 KB di contesto in `--help` di comandi usati ogni giorno.
 
@@ -268,21 +277,19 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
 ## Stile e chiarezza (VINCOLANTE — vale per le schede e per la sintesi)
 
 Il lettore è competente di finanza ma **in apprendimento**: non dà per scontate le
-sigle né i meccanismi. Meglio una scheda più lunga e limpida che una corta e criptica.
-La lunghezza non è un problema; l'oscurità sì. Regole:
+sigle né i meccanismi (per le sigle, vedi la regola sul glossario comune sotto).
+Meglio una scheda più lunga e limpida che una corta e criptica. La lunghezza non è
+un problema; l'oscurità sì. Regole:
 
-1. **Espandi OGNI sigla/acronimo alla prima occorrenza**, poi puoi abbreviare. Vale
-   per i dati macro, gli strumenti di policy e i ticker. Esempi:
-   - `CPI` → "CPI (Consumer Price Index — l'indice dei prezzi al consumo, misura
-     l'inflazione)"; `NFP` → "NFP (Non-Farm Payrolls — i nuovi posti di lavoro USA
-     esclusa l'agricoltura)"; `PCE`, `ISM`, `JOLTS`, `PMI`, `GDP/PIL`, `HICP` idem.
-   - Policy: `TPI` → "TPI (Transmission Protection Instrument — lo scudo anti-spread
-     della BCE)"; `OMT`, `PEPP`, `APP`, `QT`, `forward guidance` idem.
-   - Ticker: `^TNX` → "^TNX (rendimento del Treasury USA a 10 anni)"; `BZ=F` →
-     "BZ=F (futures sul petrolio Brent)"; `^STOXX50E` → "^STOXX50E (indice azionario
-     Euro Stoxx 50)"; `BTP_BUND_SPREAD` → "lo spread BTP-Bund (differenziale di
-     rendimento tra titoli di Stato italiani e tedeschi a 10 anni, misura del rischio
-     percepito sull'Italia)".
+1. **Non ridefinire una sigla/ticker/termine dentro la scheda: linka il glossario
+   comune.** Vale per dati macro, strumenti di policy e ticker (`CPI`, `NFP`, `TPI`,
+   `^TNX`, `BTP_BUND_SPREAD`, ecc.). Ogni scheda chiude con
+   `→ [Glossario di sigle e termini](#doc-glossario)`, reso una volta sola in fondo
+   al report da `render_report.py`. **Se il termine che ti serve non c'è ancora nel
+   glossario** (`glossario.md`), aggiungilo lì — una riga, nella sezione più adatta,
+   ordine alfabetico — invece di spiegarlo inline: così la prossima scheda lo trova
+   già pronto e non lo riscrive. Stessa regola già in `news_card_template.md`; tiene
+   bassi i byte riscritti a ogni turno (vedi "Economia del run" sotto).
 
 2. **Spiega il meccanismo, non solo l'esito.** Invece di "ECB hawkish → equity giù",
    scrivi *perché*: "se la banca centrale alza i tassi, indebitarsi costa di più,
@@ -300,7 +307,8 @@ La lunghezza non è un problema; l'oscurità sì. Regole:
    mediana vs media, e perché N piccolo = indicativo.
 
 5. **Tono**: didattico, non accademico. Frasi piane. Va benissimo una parentesi
-   esplicativa in più. Evita il gergo non spiegato e le catene di sigle.
+   esplicativa in più. Evita il gergo non spiegato e le catene di sigle senza link
+   al glossario.
 
 ## Prompt suggerito per la routine `/schedule`
 
@@ -308,8 +316,9 @@ La lunghezza non è un problema; l'oscurità sì. Regole:
 > `~/Claude/mercati_finanza/news_impact_pipeline/PHASE5_RUNBOOK.md`: genera il digest di triage,
 > tria tutte le notizie presenti (subset triato), e produci una scheda di event study completa
 > per ciascuna notizia tenuta in `~/Claude/mercati_finanza/daily_analysis/<oggi>/`. Se il DB mercati
-> è vuoto, ricostruiscilo prima con bootstrap + fetch_fred. **Rispetta la sezione
-> "Stile e chiarezza" del runbook: espandi tutte le sigle alla prima occorrenza,
-> spiega i meccanismi causali, interpreta i numeri a parole — preferisci la chiarezza
-> alla brevità.** Riporta in chat un riepilogo: quante notizie tenute/scartate e i
-> temi delle schede prodotte.
+> è vuoto, ricostruiscilo prima con bootstrap + spread daily (MAI fetch_fred_data.py,
+> vedi `references/quando_si_rompe.md`). **Rispetta la sezione "Stile e chiarezza" del
+> runbook: linka le sigle al glossario comune (aggiungendo lì quelle nuove), spiega i
+> meccanismi causali, interpreta i numeri a parole — preferisci la chiarezza alla
+> brevità.** Riporta in chat un riepilogo: quante notizie tenute/scartate e i temi
+> delle schede prodotte.

@@ -523,14 +523,20 @@ Logica chiara, vincolo delicato: **non riscrivere il track record già registrat
 
 ---
 
-## [ ] Run 9 — Istruzioni canoniche
+## [x] Run 9 — Istruzioni canoniche (parte 1/2: divergenze puntuali) — FATTO — 2026-09-23
 **ID report:** R13
 **Modello:** Sonnet 5 · effort medium
 
 Lavoro editoriale su Markdown. **Le scelte le fa Riccardo:** questo run gli presenta le
 divergenze e aspetta, non decide da solo.
 
-- [ ] Divergenze da risolvere:
+⚠ **Run spezzato in due.** Questa parte chiude i 5 conflitti puntuali (tutti verificati
+sui file reali, non a memoria del report del 15/09 — uno era già risolto dai Run 3/4b) e
+la correzione fattuale sulla fonte ASSETS. La ristrutturazione più grande (specifica
+canonica, spostare cronologie/post-mortem fuori dai runbook caricati ogni giorno) passa
+al **Run 9b**, sotto: dimensione diversa, Riccardo ha chiesto di non allargare questo run.
+
+- [x] Divergenze da risolvere:
       - prompt briefing/wrapper ammettono edizioni parziali, il controllo di salute pretende
         esattamente venti storie;
       - il template glossario dice di non rispiegare le sigle, PHASE5 ne prescrive l'espansione;
@@ -538,11 +544,51 @@ divergenze e aspetta, non decide da solo.
       - «non rileggere ciò che hai appena scritto» confonde risparmio di contesto con verifica;
       - il recupero DB ha un fallback FRED per lo spread che `references/quando_si_rompe.md`
         (riga ~206) **vieta** (produrrebbe una serie mensile al posto della giornaliera).
-- [ ] Anche la descrizione dello spread in `ASSETS` è ancora mensile/FRED e viene riscritta
+- [x] Anche la descrizione dello spread in `ASSETS` è ancora mensile/FRED e viene riscritta
       dall'update: correggere **nella fonte del registro**, non solo nel DB.
+
+**Note di chiusura:**
+- **Venti storie**: già risolto dai Run 3/4b, verificato sui file vivi — non una divergenza
+  aperta. `news_research_prompt.md` ammette edizioni parziali da sempre; `run_morning_brief.sh
+  brief_completo()` richiede `n >= 1`; `run_daily_analysis.sh` usa `MIN_STORIES=1`. Nessuna
+  modifica.
+- **Sigle vs glossario** (decisione di Riccardo: **vince il glossario**): riscritta la regola 1
+  di "Stile e chiarezza" in `PHASE5_RUNBOOK.md` — linka `#doc-glossario`, aggiunge i termini
+  mancanti lì invece di spiegarli inline, stessa regola già in `news_card_template.md`.
+  Allineate anche le altre 3 occorrenze di "espandi le sigle" nel runbook e nel template
+  (sezioni "In breve", "Considerazioni qualitative", prompt `/schedule`). Non toccato
+  `PHASE6_RUNBOOK.md`: il mensile non usa il glossario condiviso (documento a sé), zero
+  conflitto reale lì.
+- **Scrivi una volta sola** (decisione: **chiarisco il testo**): la regola ora dice
+  esplicitamente che lo scaffold (`new-card`, deterministico) e il contenuto (un solo Edit
+  dell'agente dopo aver raccolto tutto) sono due passaggi distinti e leciti — vietato è
+  solo riscrivere il corpo a pezzi con un heredoc ripetuto. Nessun cambio di comportamento.
+- **Non rileggere** (decisione: **aggiungo la nota**): precisato che la verifica di contenuto
+  non è assente, è delegata ai guardiani strutturali a valle (`run_daily_analysis.sh`,
+  `stato_giornata.py`), non all'agente che rilegge la propria scrittura.
+- **Fallback FRED silenzioso** (decisione: **tolto, solo WARN**): `run_daily_analysis.sh`
+  non chiama più `fetch_fred_data.py` se `fetch_daily_spread.py` fallisce durante una
+  ricostruzione automatica del DB — logga un WARN esplicito e rimanda alla procedura manuale
+  (`references/serie_derivate.md`). Corretta anche una terza occorrenza stessa classe: il
+  prompt `/schedule` di PHASE5 diceva ancora "bootstrap + fetch_fred" per il DB vuoto.
+- **Descrizione ASSETS**: `bootstrap_market_data.py` — il commento e la `description` di
+  `BTP_BUND_SPREAD` non dicono più "mensile (via FRED)" ma "giornaliero (fetch_daily_spread.py;
+  ricostruzione manuale se fallisce)". Corretto nella fonte del registro: `update_market_data.py`
+  la riscrive nel DB da lì a ogni run, una patch diretta sul DB non sarebbe durata.
+- Verifica standard verde; `bash -n`/`py_compile` sui file shell/Python toccati.
+
+## [ ] Run 9b — Istruzioni canoniche (parte 2/2: ristrutturazione)
+**ID report:** R13 (resto)
+**Modello:** Sonnet 5 · effort medium
+**Precondizione:** nessuna, ma è la parte grossa che il Run 9 ha scelto di non affrontare
+nella stessa sessione (decisione di Riccardo il 2026-09-23).
+
+Stessa regola del Run 9: **le scelte le fa Riccardo**, questo run presenta e aspetta.
+
 - [ ] Una specifica operativa canonica; prompt dei task brevi che la referenziano; template
       compatibili; controlli generati dallo stesso contratto.
-- [ ] Spostare cronologie e post-mortem **fuori** dai file caricati a ogni run.
+- [ ] Spostare cronologie e post-mortem **fuori** dai file caricati a ogni run (es. i numeri
+      del 21/08 dentro "Economia del run" in `PHASE5_RUNBOOK.md`, riletti ogni mattina).
 - [ ] Separare regole editoriali, parametri e spiegazioni storiche.
 
 ---
@@ -604,7 +650,8 @@ divergenze e aspetta, non decide da solo.
 | 6 | `event_id` R02 | **Opus 5** | high |
 | 7 | Forecast R09 | **Opus 5** | medium |
 | 8 | Mensile R12 | Sonnet 5 | medium |
-| 9 | Istruzioni R13 | Sonnet 5 | medium |
+| 9 | Istruzioni R13 (divergenze) | Sonnet 5 | medium |
+| 9b | Istruzioni R13 (ristrutturazione) | Sonnet 5 | medium |
 | 10 | Telemetria R14 | Sonnet 5 | medium |
 
 **Criterio:** Opus dove un errore corrompe dati o dove serve tenere in testa tutta la catena;

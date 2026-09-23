@@ -15,10 +15,11 @@
 ## In breve (in parole semplici)
 
 <!-- 2-4 frasi PRIMA del gergo: cos'è successo, perché conta per i mercati, e quale
-     domanda ci poniamo. Niente sigle non spiegate qui. Pensa a un lettore sveglio ma
-     non specialista. Es: "La banca centrale europea sta per alzare il costo del
-     denaro mentre l'economia rallenta: una mossa rischiosa. Ci chiediamo come hanno
-     reagito i mercati in situazioni simili del passato." -->
+     domanda ci poniamo. Niente sigle non linkate al glossario qui (vedi in fondo
+     alla scheda). Pensa a un lettore sveglio ma non specialista. Es: "La banca
+     centrale europea sta per alzare il costo del denaro mentre l'economia rallenta:
+     una mossa rischiosa. Ci chiediamo come hanno reagito i mercati in situazioni
+     simili del passato." -->
 
 ---
 
@@ -141,9 +142,10 @@ _Incolla qui le tabelle generate._
 
 <!-- Sintesi narrativa: cosa ci dice questa notizia letta attraverso la lente
      della research correlata e del regime corrente. Tono DIDATTICO e accessibile:
-     spiega i meccanismi causali (non solo gli esiti), espandi le sigle, interpreta
-     i numeri dell'event study a parole (cfr. runbook §"Stile e chiarezza"). Nessun
-     cap di lunghezza: la chiarezza viene prima della brevità. Materia prima per
+     spiega i meccanismi causali (non solo gli esiti), linka le sigle al glossario
+     comune invece di ridefinirle, interpreta i numeri dell'event study a parole
+     (cfr. runbook §"Stile e chiarezza"). Nessun cap di lunghezza: la chiarezza
+     viene prima della brevità. Materia prima per
      post LinkedIn. -->
 
 ---

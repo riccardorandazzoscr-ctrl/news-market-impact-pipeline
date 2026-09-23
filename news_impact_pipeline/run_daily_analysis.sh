@@ -362,8 +362,12 @@ PY
 if [[ "${DBCHECK:-0}" -lt 44 ]]; then
   log "DB incompleto (ticker=$DBCHECK<44). Ricostruisco (bootstrap + spread daily)."
   "$PY" "$PIPE/bootstrap_market_data.py" >> "$LOG" 2>&1
-  "$PY" "$PIPE/fetch_daily_spread.py"     >> "$LOG" 2>&1 || \
-    "$PY" "$PIPE/fetch_fred_data.py"      >> "$LOG" 2>&1
+  # MAI fetch_fred_data.py come fallback qui: è la fonte legacy, darebbe una serie
+  # MENSILE al posto di quella giornaliera senza segnalarlo (references/quando_si_rompe.md).
+  # Se il daily fallisce, si resta senza BTP_BUND_SPREAD aggiornato: procedura manuale
+  # in references/serie_derivate.md, non un fallback automatico degradato.
+  "$PY" "$PIPE/fetch_daily_spread.py" >> "$LOG" 2>&1 || \
+    log "WARN: BTP_BUND_SPREAD non ricostruito (fetch_daily_spread.py fallito). Procedura manuale: references/serie_derivate.md."
 else
   log "DB ok (ticker=$DBCHECK)."
 fi

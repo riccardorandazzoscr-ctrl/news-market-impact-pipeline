@@ -36,8 +36,9 @@ END_DATE = date.today().isoformat()  # oggi, in formato AAAA-MM-GG
 # --- 2. L'universo degli asset ----------------------------------------------
 # Ogni asset e' un dizionario con la sua anagrafica.
 # "download": True  -> scaricabile subito da yfinance.
-# "download": False -> lo riempiremo piu' avanti con la fonte FRED (lo spread
-#                      BTP-Bund non e' scaricabile direttamente da yfinance).
+# "download": False -> serie derivata, popolata da uno script dedicato (lo spread
+#                      BTP-Bund non e' scaricabile direttamente da yfinance). MAI
+#                      FRED: e' mensile, non giornaliero (references/quando_si_rompe.md).
 ASSETS = [
     # --- Indici azionari (equity) ---
     {"ticker": "^GSPC",       "name": "S&P 500",                "asset_class": "equity",       "region": "US",       "currency": "USD", "source": "yfinance", "description": "Benchmark azionario USA",              "download": True},
@@ -50,7 +51,7 @@ ASSETS = [
     {"ticker": "^TNX",        "name": "US Treasury 10Y yield",  "asset_class": "fixed_income", "region": "US",       "currency": "USD", "source": "yfinance", "description": "Rendimento Treasury USA 10 anni",     "download": True},
     {"ticker": "IEF",         "name": "iShares 7-10Y Treasury", "asset_class": "fixed_income", "region": "US",       "currency": "USD", "source": "yfinance", "description": "ETF Treasury USA 7-10 anni",          "download": True},
     {"ticker": "IEAG.AS",     "name": "iShares Euro Aggregate Bond", "asset_class": "fixed_income", "region": "eurozone", "currency": "EUR", "source": "yfinance", "description": "ETF obbligazionario Eurozona (aggregate, EUR, listino Amsterdam)", "download": True},
-    {"ticker": "BTP_BUND_SPREAD", "name": "Spread BTP-Bund 10Y","asset_class": "fixed_income", "region": "eurozone", "currency": "EUR", "source": "computed", "description": "BTP 10Y - Bund 10Y, in bps, mensile (via FRED, popolato)", "download": False},
+    {"ticker": "BTP_BUND_SPREAD", "name": "Spread BTP-Bund 10Y","asset_class": "fixed_income", "region": "eurozone", "currency": "EUR", "source": "computed", "description": "BTP 10Y - Bund 10Y, in bps, giornaliero (fetch_daily_spread.py; ricostruzione manuale se fallisce, vedi references/serie_derivate.md)", "download": False},
 
     # --- Valute (currencies) ---
     {"ticker": "EURUSD=X",    "name": "EUR/USD",                "asset_class": "fx",           "region": "global",   "currency": "USD", "source": "yfinance", "description": "Cambio euro/dollaro",                 "download": True},
