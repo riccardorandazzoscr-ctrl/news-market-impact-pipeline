@@ -1,4 +1,4 @@
-generated_at: '2026-09-23T11:46:17'
+generated_at: '2026-09-23T11:52:27'
 num_episodes: 1168
 episodes:
 - date: '1984-01-01'
@@ -28802,11 +28802,26 @@ episodes:
     - neg
     ^GSPC:
     - neg
+    ^NDX:
+    - neg
+    ^TNX:
+    - pos
   direction_sources:
     IEF:
     - card:2026-09-19/news_03.md
     ^GSPC:
     - card:2026-09-15/news_03.md
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
+    ^NDX:
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
+    ^TNX:
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
   directions_local:
   - neg
   declared: true
@@ -29022,6 +29037,19 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    ^GDAXI: 'La riga è definita dal movimento di prezzo (''Bund tantrum: Bund 10a
+      da 0,59% a 0,78% in seduta''), non da una notizia con un''attesa prima della
+      seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+      BoJ e i picchi di prezzo.'
+    IEAG.AS: 'La riga è definita dal movimento di prezzo (''Bund tantrum: Bund 10a
+      da 0,59% a 0,78% in seduta''), non da una notizia con un''attesa prima della
+      seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+      BoJ e i picchi di prezzo.'
+    ^TNX: 'La riga è definita dal movimento di prezzo (''Bund tantrum: Bund 10a da
+      0,59% a 0,78% in seduta''), non da una notizia con un''attesa prima della seduta:
+      usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06 BoJ
+      e i picchi di prezzo.'
   directions_local: []
   declared: false
   subthemes:
@@ -29041,6 +29069,16 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    IEAG.AS: 'La riga è definita dal movimento di prezzo (''Seconda gamba del Bund
+      tantrum''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
+      l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+    ^TNX: 'La riga è definita dal movimento di prezzo (''Seconda gamba del Bund tantrum''),
+      non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
+      l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+    ^GDAXI: 'La riga è definita dal movimento di prezzo (''Seconda gamba del Bund
+      tantrum''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
+      l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
   directions_local: []
   declared: false
   subthemes:
@@ -29298,9 +29336,15 @@ episodes:
   directions_by_reference:
     ^GSPC:
     - neg
+    ^TNX:
+    - pos
   direction_sources:
     ^GSPC:
     - card:2026-09-15/news_03.md
+    ^TNX:
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
   directions_local:
   - neg
   - pos
@@ -29408,6 +29452,19 @@ episodes:
   - neg
   - neutral
   directions_declared: []
+  direction_review_excluded:
+    ^VIX: 'La riga è definita dal movimento di prezzo (''Volmageddon: impennata VIX;
+      il dato salariale è del 2 febbraio''), non da una notizia con un''attesa prima
+      della seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+      BoJ e i picchi di prezzo.'
+    ^GSPC: 'La riga è definita dal movimento di prezzo (''Volmageddon: impennata VIX;
+      il dato salariale è del 2 febbraio''), non da una notizia con un''attesa prima
+      della seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+      BoJ e i picchi di prezzo.'
+    ^TNX: 'La riga è definita dal movimento di prezzo (''Volmageddon: impennata VIX;
+      il dato salariale è del 2 febbraio''), non da una notizia con un''attesa prima
+      della seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+      BoJ e i picchi di prezzo.'
   directions_local:
   - neg
   declared: false
@@ -29964,6 +30021,15 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-15/news_03.md
+  direction_review_excluded:
+    ^NDX: 'La riga è definita dal movimento di prezzo (''Selloff sui tassi reali,
+      10 anni oltre 1,6%''), non da una notizia con un''attesa prima della seduta:
+      usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06 BoJ
+      e i picchi di prezzo.'
+    ^TNX: 'La riga è definita dal movimento di prezzo (''Selloff sui tassi reali,
+      10 anni oltre 1,6%''), non da una notizia con un''attesa prima della seduta:
+      usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06 BoJ
+      e i picchi di prezzo.'
   directions_local:
   - neg
   - pos
@@ -29990,6 +30056,13 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    ^NDX: 'Reazione al FOMC del 17 marzo (decisione alle 14:00 ET): la seduta di reazione
+      è il 17, il 18 è la coda. La riga è definita dai livelli (''10 anni a 1,74%'').'
+    ^TNX: 'Reazione al FOMC del 17 marzo (decisione alle 14:00 ET): la seduta di reazione
+      è il 17, il 18 è la coda. La riga è definita dai livelli (''10 anni a 1,74%'').'
+    IEF: 'Reazione al FOMC del 17 marzo (decisione alle 14:00 ET): la seduta di reazione
+      è il 17, il 18 è la coda. La riga è definita dai livelli (''10 anni a 1,74%'').'
   directions_local: []
   declared: false
   subthemes:
@@ -31093,6 +31166,14 @@ episodes:
   - neg
   directions_declared:
   - pos
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+  direction_sources:
+    GBPUSD=X:
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
   directions_local:
   - pos
   declared: true
@@ -31108,6 +31189,7 @@ episodes:
   - britain_release
   - budget_passage
   - credibility_shock
+  - fiscal_expansion
   - term_premium
   n_sources: 4
 - date: '2022-09-26'
@@ -31115,6 +31197,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    GBPUSD=X: 'La riga è definita dal movimento di prezzo (''Minimo storico sterlina
+      1,0350''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
+      l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+    DX-Y.NYB: 'La riga è definita dal movimento di prezzo (''Minimo storico sterlina
+      1,0350''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
+      l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
   directions_local:
   - pos
   declared: false
@@ -31146,6 +31235,14 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    GBPUSD=X:
+    - pos
+  direction_sources:
+    GBPUSD=X:
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
   directions_local:
   - neg
   declared: true
@@ -31164,11 +31261,13 @@ episodes:
   - pboc
   - term_premium
   subthemes_local:
+  - balance_sheet
   - boj
   - cny
   - credibility_shock
   - fx_intervention
   - jpy
+  - liquidity_event
   - pboc
   - synchronized_selloff
   n_sources: 7
@@ -32599,6 +32698,13 @@ episodes:
     - card:2026-09-17/news_03.md
     - card:2026-09-18/news_05.md
     - card:2026-09-21/news_04.md
+  direction_review_excluded:
+    ^TNX: 'La riga è definita dal movimento di prezzo (''10 anni USA tocca il 5%''),
+      non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
+      l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+    GC=F: 'La riga è definita dal movimento di prezzo (''10 anni USA tocca il 5%''),
+      non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
+      l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
   directions_local:
   - neg
   - pos
@@ -34071,6 +34177,17 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^TNX:
+    - pos
+  direction_sources:
+    ^TNX:
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
+  direction_review_excluded:
+    ^GSPC: 'Riga: ''azionario ↑ (parziale inversione)'': il qualificatore dice che
+      la colonna riporta il segno realizzato. Revisione maintainer 2026-09-23.'
   directions_local:
   - neg
   declared: false
@@ -34593,6 +34710,19 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    ^TNX: 'La riga è definita dal movimento di prezzo (''Selloff anomalo dei Treasury
+      post-tariffe, marcatore di credibilità''), non da una notizia con un''attesa
+      prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come
+      il 2024-08-05/06 BoJ e i picchi di prezzo.'
+    DX-Y.NYB: 'La riga è definita dal movimento di prezzo (''Selloff anomalo dei Treasury
+      post-tariffe, marcatore di credibilità''), non da una notizia con un''attesa
+      prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come
+      il 2024-08-05/06 BoJ e i picchi di prezzo.'
+    ^GSPC: 'La riga è definita dal movimento di prezzo (''Selloff anomalo dei Treasury
+      post-tariffe, marcatore di credibilità''), non da una notizia con un''attesa
+      prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come
+      il 2024-08-05/06 BoJ e i picchi di prezzo.'
   directions_local:
   - neg
   - pos
@@ -34662,6 +34792,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    ^TNX: 'La riga è definita dal movimento di prezzo (''10 anni +64 pb in due giorni;
+      MOVE >3 dev. std''), non da una notizia con un''attesa prima della seduta: usarla
+      selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi
+      di prezzo. La notizia del giorno (sospensione dei dazi) è già nella research
+      Dazi.'
+    DX-Y.NYB: 'La riga è definita dal movimento di prezzo (''10 anni +64 pb in due
+      giorni; MOVE >3 dev. std''), non da una notizia con un''attesa prima della seduta:
+      usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06 BoJ
+      e i picchi di prezzo. La notizia del giorno (sospensione dei dazi) è già nella
+      research Dazi.'
+    ^VIX: 'La riga è definita dal movimento di prezzo (''10 anni +64 pb in due giorni;
+      MOVE >3 dev. std''), non da una notizia con un''attesa prima della seduta: usarla
+      selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi
+      di prezzo. La notizia del giorno (sospensione dei dazi) è già nella research
+      Dazi.'
   directions_local: []
   declared: false
   subthemes:
@@ -34699,6 +34845,20 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    ^GSPC:
+    - neg
+    ^TNX:
+    - pos
+  direction_sources:
+    ^GSPC:
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
+    ^TNX:
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -34711,6 +34871,7 @@ episodes:
   - term_premium
   subthemes_local:
   - credibility_shock
+  - sovereign_rating
   - term_premium
   n_sources: 2
 - date: '2025-05-21'
@@ -34720,6 +34881,26 @@ episodes:
   - neg
   directions_declared:
   - pos
+  directions_by_reference:
+    IEF:
+    - neg
+    ^GSPC:
+    - neg
+    ^TNX:
+    - pos
+  direction_sources:
+    IEF:
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
+    ^GSPC:
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
+    ^TNX:
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
   directions_local:
   - pos
   declared: true
@@ -34735,6 +34916,7 @@ episodes:
   - auction
   - curve_steepening
   - duration_supply
+  - sovereign_auction
   - synchronized_selloff
   - term_premium
   n_sources: 5
@@ -35014,6 +35196,19 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    GC=F: 'La riga è definita dal movimento di prezzo (''Selloff sincronizzato: gilt,
+      JGB, oro record''), non da una notizia con un''attesa prima della seduta: usarla
+      selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi
+      di prezzo.'
+    ^TNX: 'La riga è definita dal movimento di prezzo (''Selloff sincronizzato: gilt,
+      JGB, oro record''), non da una notizia con un''attesa prima della seduta: usarla
+      selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi
+      di prezzo.'
+    IEAG.AS: 'La riga è definita dal movimento di prezzo (''Selloff sincronizzato:
+      gilt, JGB, oro record''), non da una notizia con un''attesa prima della seduta:
+      usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06 BoJ
+      e i picchi di prezzo.'
   directions_local:
   - neg
   declared: false
@@ -35229,6 +35424,15 @@ episodes:
   - neutral
   directions_declared:
   - pos
+  direction_review_excluded:
+    ^N225: 'La riga è definita dal movimento di prezzo (''JGB super-lunghi a record''),
+      non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
+      l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.
+      Lo stimolo Takaichi è del 21/11.'
+    JPY=X: 'La riga è definita dal movimento di prezzo (''JGB super-lunghi a record''),
+      non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
+      l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.
+      Lo stimolo Takaichi è del 21/11.'
   directions_local:
   - pos
   declared: true
@@ -35566,6 +35770,19 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    ^TNX: 'La riga è definita dal movimento di prezzo (''Intensificazione del rout
+      globale: 30 anni JGB oltre 4%''), non da una notizia con un''attesa prima della
+      seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+      BoJ e i picchi di prezzo.'
+    JPY=X: 'La riga è definita dal movimento di prezzo (''Intensificazione del rout
+      globale: 30 anni JGB oltre 4%''), non da una notizia con un''attesa prima della
+      seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+      BoJ e i picchi di prezzo.'
+    IEAG.AS: 'La riga è definita dal movimento di prezzo (''Intensificazione del rout
+      globale: 30 anni JGB oltre 4%''), non da una notizia con un''attesa prima della
+      seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+      BoJ e i picchi di prezzo.'
   directions_local: []
   declared: false
   subthemes:
@@ -35705,6 +35922,19 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    ^TNX: 'La riga è definita dal movimento di prezzo (''Rout globale; la colonna
+      riporta ''oro ↓ (−1%)'', un esito''), non da una notizia con un''attesa prima
+      della seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+      BoJ e i picchi di prezzo.'
+    IEAG.AS: 'La riga è definita dal movimento di prezzo (''Rout globale; la colonna
+      riporta ''oro ↓ (−1%)'', un esito''), non da una notizia con un''attesa prima
+      della seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+      BoJ e i picchi di prezzo.'
+    GC=F: 'La riga è definita dal movimento di prezzo (''Rout globale; la colonna
+      riporta ''oro ↓ (−1%)'', un esito''), non da una notizia con un''attesa prima
+      della seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+      BoJ e i picchi di prezzo.'
   directions_local:
   - neg
   - pos

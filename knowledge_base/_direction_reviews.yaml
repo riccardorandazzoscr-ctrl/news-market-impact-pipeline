@@ -3994,3 +3994,617 @@ reviews:
   mechanism:
   - fiscal_consolidation
   description: Lula ordina il rispetto del quadro fiscale
+- date: '2013-05-22'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Riga: ''Rendimenti ↑''. ^TNX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - balance_sheet
+  - guidance_pivot
+  description: Bernanke apre al tapering (taper tantrum)
+- date: '2013-05-22'
+  theme: monetary_policy
+  reference: ^GSPC
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Riga: ''azionario ↓''.'
+  direction: neg
+  mechanism:
+  - balance_sheet
+  - guidance_pivot
+  description: Bernanke apre al tapering (taper tantrum)
+- date: '2013-05-22'
+  theme: monetary_policy
+  reference: ^NDX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Riga: ''azionario ↓''.'
+  direction: neg
+  mechanism:
+  - balance_sheet
+  - guidance_pivot
+  description: Bernanke apre al tapering (taper tantrum)
+- date: '2015-05-07'
+  theme: monetary_policy
+  reference: ^GDAXI
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Bund tantrum: Bund 10a da 0,59% a 0,78% in seduta''),
+    non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+    esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Bund tantrum
+- date: '2015-05-07'
+  theme: monetary_policy
+  reference: IEAG.AS
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Bund tantrum: Bund 10a da 0,59% a 0,78% in seduta''),
+    non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+    esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Bund tantrum
+- date: '2015-05-07'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Bund tantrum: Bund 10a da 0,59% a 0,78% in seduta''),
+    non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+    esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Bund tantrum
+- date: '2015-06-04'
+  theme: monetary_policy
+  reference: IEAG.AS
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Seconda gamba del Bund tantrum''), non da una
+    notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come
+    il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Seconda gamba del Bund tantrum
+- date: '2015-06-04'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Seconda gamba del Bund tantrum''), non da una
+    notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come
+    il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Seconda gamba del Bund tantrum
+- date: '2015-06-04'
+  theme: monetary_policy
+  reference: ^GDAXI
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Seconda gamba del Bund tantrum''), non da una
+    notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come
+    il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Seconda gamba del Bund tantrum
+- date: '2016-11-09'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Riga: ''Rendimenti ↑''. ^TNX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - election_risk
+  description: Elezione di Trump (2016)
+- date: '2018-02-05'
+  theme: monetary_policy
+  reference: ^VIX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Volmageddon: impennata VIX; il dato salariale
+    è del 2 febbraio''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+    per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Volmageddon
+- date: '2018-02-05'
+  theme: monetary_policy
+  reference: ^GSPC
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Volmageddon: impennata VIX; il dato salariale
+    è del 2 febbraio''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+    per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Volmageddon
+- date: '2018-02-05'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Volmageddon: impennata VIX; il dato salariale
+    è del 2 febbraio''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+    per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Volmageddon
+- date: '2021-02-25'
+  theme: monetary_policy
+  reference: ^NDX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Selloff sui tassi reali, 10 anni oltre 1,6%''),
+    non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+    esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Selloff sui tassi reali
+- date: '2021-02-25'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Selloff sui tassi reali, 10 anni oltre 1,6%''),
+    non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+    esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Selloff sui tassi reali
+- date: '2021-03-18'
+  theme: monetary_policy
+  reference: ^NDX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Reazione al FOMC del 17 marzo (decisione alle 14:00 ET): la seduta di reazione è il 17, il
+    18 è la coda. La riga è definita dai livelli (''10 anni a 1,74%'').'
+  status: excluded
+  mechanism:
+  - term_premium
+  - rate_decision
+  description: Coda del FOMC di marzo 2021
+- date: '2021-03-18'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Reazione al FOMC del 17 marzo (decisione alle 14:00 ET): la seduta di reazione è il 17, il
+    18 è la coda. La riga è definita dai livelli (''10 anni a 1,74%'').'
+  status: excluded
+  mechanism:
+  - term_premium
+  - rate_decision
+  description: Coda del FOMC di marzo 2021
+- date: '2021-03-18'
+  theme: monetary_policy
+  reference: IEF
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Reazione al FOMC del 17 marzo (decisione alle 14:00 ET): la seduta di reazione è il 17, il
+    18 è la coda. La riga è definita dai livelli (''10 anni a 1,74%'').'
+  status: excluded
+  mechanism:
+  - term_premium
+  - rate_decision
+  description: Coda del FOMC di marzo 2021
+- date: '2022-09-23'
+  theme: monetary_policy
+  reference: GBPUSD=X
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Riga: ''GBP ↓''. GBPUSD=X quota dollari per sterlina.'
+  direction: neg
+  mechanism:
+  - fiscal_expansion
+  - term_premium
+  description: Mini-budget britannico
+- date: '2022-09-26'
+  theme: monetary_policy
+  reference: GBPUSD=X
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Minimo storico sterlina 1,0350''), non da una
+    notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come
+    il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Minimo storico della sterlina, crisi LDI
+- date: '2022-09-26'
+  theme: monetary_policy
+  reference: DX-Y.NYB
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Minimo storico sterlina 1,0350''), non da una
+    notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come
+    il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Minimo storico della sterlina, crisi LDI
+- date: '2022-09-28'
+  theme: monetary_policy
+  reference: GBPUSD=X
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Riga: ''GBP ↑''. GBPUSD=X quota dollari per sterlina.'
+  direction: pos
+  mechanism:
+  - liquidity_event
+  - balance_sheet
+  description: Intervento d'emergenza della BoE sui gilt
+- date: '2023-10-19'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''10 anni USA tocca il 5%''), non da una notizia
+    con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+    BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Il 10 anni USA tocca il 5%
+- date: '2023-10-19'
+  theme: monetary_policy
+  reference: GC=F
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''10 anni USA tocca il 5%''), non da una notizia
+    con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+    BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Il 10 anni USA tocca il 5%
+- date: '2024-11-06'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Riga: ''Rendimenti ↑''. ^TNX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - election_risk
+  description: Elezione di Trump (2024)
+- date: '2024-11-06'
+  theme: monetary_policy
+  reference: ^GSPC
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Riga: ''azionario ↑ (parziale inversione)'': il qualificatore dice che la colonna riporta il
+    segno realizzato. Revisione maintainer 2026-09-23.'
+  status: excluded
+  mechanism:
+  - election_risk
+  description: Elezione di Trump (2024)
+- date: '2025-04-04'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Selloff anomalo dei Treasury post-tariffe, marcatore
+    di credibilità''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+    per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Selloff anomalo dei Treasury dopo il Liberation Day
+- date: '2025-04-04'
+  theme: monetary_policy
+  reference: DX-Y.NYB
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Selloff anomalo dei Treasury post-tariffe, marcatore
+    di credibilità''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+    per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Selloff anomalo dei Treasury dopo il Liberation Day
+- date: '2025-04-04'
+  theme: monetary_policy
+  reference: ^GSPC
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Selloff anomalo dei Treasury post-tariffe, marcatore
+    di credibilità''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+    per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Selloff anomalo dei Treasury dopo il Liberation Day
+- date: '2025-04-09'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''10 anni +64 pb in due giorni; MOVE >3 dev. std''),
+    non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+    esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo. La notizia del giorno (sospensione dei dazi)
+    è già nella research Dazi.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Sospensione dei dazi e selloff dei Treasury
+- date: '2025-04-09'
+  theme: monetary_policy
+  reference: DX-Y.NYB
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''10 anni +64 pb in due giorni; MOVE >3 dev. std''),
+    non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+    esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo. La notizia del giorno (sospensione dei dazi)
+    è già nella research Dazi.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Sospensione dei dazi e selloff dei Treasury
+- date: '2025-04-09'
+  theme: monetary_policy
+  reference: ^VIX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''10 anni +64 pb in due giorni; MOVE >3 dev. std''),
+    non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+    esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo. La notizia del giorno (sospensione dei dazi)
+    è già nella research Dazi.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Sospensione dei dazi e selloff dei Treasury
+- date: '2025-05-19'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Riga: ''Rendimenti lunghi ↑''. ^TNX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - sovereign_rating
+  - term_premium
+  description: Declassamento di Moody's degli USA
+- date: '2025-05-19'
+  theme: monetary_policy
+  reference: ^GSPC
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Riga: ''azionario ↓ poi flat''.'
+  direction: neg
+  mechanism:
+  - sovereign_rating
+  - term_premium
+  description: Declassamento di Moody's degli USA
+- date: '2025-05-21'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Riga: ''Rendimenti lunghi ↑↑''. ^TNX quota il rendimento.'
+  direction: pos
+  mechanism:
+  - sovereign_auction
+  - term_premium
+  description: Asta del Treasury a 20 anni debole
+- date: '2025-05-21'
+  theme: monetary_policy
+  reference: IEF
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Riga: ''Rendimenti lunghi ↑↑''. IEF è un ETF di Treasury: quota il PREZZO, inverso ai rendimenti.'
+  direction: neg
+  mechanism:
+  - sovereign_auction
+  - term_premium
+  description: Asta del Treasury a 20 anni debole
+- date: '2025-05-21'
+  theme: monetary_policy
+  reference: ^GSPC
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'Riga: ''azionario ↓''.'
+  direction: neg
+  mechanism:
+  - sovereign_auction
+  - term_premium
+  description: Asta del Treasury a 20 anni debole
+- date: '2025-09-03'
+  theme: monetary_policy
+  reference: GC=F
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Selloff sincronizzato: gilt, JGB, oro record''),
+    non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+    esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Selloff sincronizzato di gilt e JGB, oro record
+- date: '2025-09-03'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Selloff sincronizzato: gilt, JGB, oro record''),
+    non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+    esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Selloff sincronizzato di gilt e JGB, oro record
+- date: '2025-09-03'
+  theme: monetary_policy
+  reference: IEAG.AS
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Selloff sincronizzato: gilt, JGB, oro record''),
+    non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+    esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Selloff sincronizzato di gilt e JGB, oro record
+- date: '2025-12-24'
+  theme: monetary_policy
+  reference: ^N225
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''JGB super-lunghi a record''), non da una notizia
+    con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+    BoJ e i picchi di prezzo. Lo stimolo Takaichi è del 21/11.'
+  status: excluded
+  mechanism:
+  - term_premium
+  - fiscal_expansion
+  description: JGB super-lunghi a record
+- date: '2025-12-24'
+  theme: monetary_policy
+  reference: JPY=X
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''JGB super-lunghi a record''), non da una notizia
+    con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+    BoJ e i picchi di prezzo. Lo stimolo Takaichi è del 21/11.'
+  status: excluded
+  mechanism:
+  - term_premium
+  - fiscal_expansion
+  description: JGB super-lunghi a record
+- date: '2026-05-19'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Intensificazione del rout globale: 30 anni JGB
+    oltre 4%''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+    per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Il 30 anni JGB supera il 4%
+- date: '2026-05-19'
+  theme: monetary_policy
+  reference: JPY=X
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Intensificazione del rout globale: 30 anni JGB
+    oltre 4%''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+    per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Il 30 anni JGB supera il 4%
+- date: '2026-05-19'
+  theme: monetary_policy
+  reference: IEAG.AS
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Intensificazione del rout globale: 30 anni JGB
+    oltre 4%''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+    per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Il 30 anni JGB supera il 4%
+- date: '2026-08-18'
+  theme: monetary_policy
+  reference: ^TNX
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Rout globale; la colonna riporta ''oro ↓ (−1%)'',
+    un esito''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+    per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Rout globale della parte lunga
+- date: '2026-08-18'
+  theme: monetary_policy
+  reference: IEAG.AS
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Rout globale; la colonna riporta ''oro ↓ (−1%)'',
+    un esito''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+    per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Rout globale della parte lunga
+- date: '2026-08-18'
+  theme: monetary_policy
+  reference: GC=F
+  source: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  reason: 'La riga è definita dal movimento di prezzo (''Rout globale; la colonna riporta ''oro ↓ (−1%)'',
+    un esito''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+    per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  status: excluded
+  mechanism:
+  - term_premium
+  description: Rout globale della parte lunga

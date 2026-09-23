@@ -1,0 +1,746 @@
+research: Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+  (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi storici
+  (1994–2026).md
+voci:
+- riga: '| 1994-02-04 | Primo rialzo Fed a sorpresa, avvio del "bond massacre" | rate_expectations_shock
+    | Rendimenti ↑, azionario ↓, USD ↑ | ^TNX, ^GSPC, DX-Y.NYB | Rialzo annunciato in giornata USA; il
+    30 anni salì poi da ~6,2% a 7,75% a metà settembre (peak = non-ISO) |'
+  data: '1994-02-04'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - DX-Y.NYB
+  - ^GSPC
+  - ^TNX
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: 'Prima del 2011: il DB prezzi non copre la data.'
+- riga: '| 2003-06-25 | FOMC che delude sulle "misure non convenzionali", avvio del selloff estivo da
+    convessità MBS | term_premium_shock | Rendimenti ↑, azionario misto | ^TNX, IEF | Il minimo del 10
+    anni al 3,11% è di metà giugno 2003 (non-ISO, estremo di serie); 10 anni oltre 4,40% a fine luglio
+    |'
+  data: '2003-06-25'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - IEF
+  - ^TNX
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: 'Prima del 2011: il DB prezzi non copre la data.'
+- riga: '| 2013-05-22 | Testimonianza Bernanke, "taper tantrum" | rate_expectations_shock | Rendimenti
+    ↑, azionario ↓, valute EM ↓ | ^TNX, ^GSPC, ^NDX | 10 anni da 1,94% (21 mag) a 2,03% (22 mag); il picco
+    a 2,96% è del 10 settembre 2013 (non-ISO) |'
+  data: '2013-05-22'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - ^GSPC
+  - ^NDX
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''Rendimenti ↑''. ^TNX quota il rendimento.'
+  - asset: ^GSPC
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''azionario ↓''.'
+  - asset: ^NDX
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''azionario ↓''.'
+  meccanismo:
+  - balance_sheet
+  - guidance_pivot
+  evento: Bernanke apre al tapering (taper tantrum)
+  stato: promossa
+- riga: '| 2015-05-07 | "Bund tantrum": Bund 10a da 0,59% a 0,78% in seduta | term_premium_shock | Rendimenti
+    core euro ↑, ^GDAXI ↓ | ^GDAXI, IEAG.AS, ^TNX | La call di Bill Gross ("short of a lifetime") è del
+    21 aprile 2015; il minimo record 0,05% del 17 aprile 2015 è non-ISO |'
+  data: '2015-05-07'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - IEAG.AS
+  - ^GDAXI
+  - ^TNX
+  dichiarazioni:
+  - asset: ^GDAXI
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Bund tantrum: Bund 10a da 0,59% a 0,78% in
+      seduta''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+      per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: IEAG.AS
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Bund tantrum: Bund 10a da 0,59% a 0,78% in
+      seduta''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+      per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Bund tantrum: Bund 10a da 0,59% a 0,78% in
+      seduta''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+      per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  meccanismo:
+  - term_premium
+  evento: Bund tantrum
+  stato: promossa
+- riga: '| 2015-06-04 | Seconda gamba del Bund tantrum, spillover ai Treasury | term_premium_shock | Rendimenti
+    ↑ globali | IEAG.AS, ^TNX, ^GDAXI | Bund da ~0,5% verso 1%; Treasury trascinati da 2,12% verso ~2,50%
+    |'
+  data: '2015-06-04'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - IEAG.AS
+  - ^GDAXI
+  - ^TNX
+  dichiarazioni:
+  - asset: IEAG.AS
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Seconda gamba del Bund tantrum''), non da una
+      notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come
+      il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Seconda gamba del Bund tantrum''), non da una
+      notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come
+      il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: ^GDAXI
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Seconda gamba del Bund tantrum''), non da una
+      notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come
+      il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  meccanismo:
+  - term_premium
+  evento: Seconda gamba del Bund tantrum
+  stato: promossa
+- riga: '| 2016-11-09 | Elezione di Trump, "reflation trade" | rate_expectations_shock | Rendimenti ↑,
+    azionario ↑ (inversione di segno) | ^TNX, ^GSPC, GC=F, DX-Y.NYB | Notte elettorale 8 nov; 10 anni
+    chiuse 2,06% il 9 nov dopo minimo notturno 1,72%; picco ~2,60% il 16 dic (non-ISO) |'
+  data: '2016-11-09'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - DX-Y.NYB
+  - GC=F
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''Rendimenti ↑''. ^TNX quota il rendimento.'
+  - asset: GC=F
+    gruppo: 3
+    domanda: 'Riga: ''Rendimenti ↑, azionario ↑'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: DX-Y.NYB
+    gruppo: 3
+    domanda: 'Riga: ''Rendimenti ↑, azionario ↑'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - election_risk
+  evento: Elezione di Trump (2016)
+  stato: promossa
+  nota: '^GSPC: la riga scrive ''azionario ↑ (inversione di segno)'', la scheda 2026-09-15/news_03 dichiara
+    neg. Nessuna riga nel registro: resta la scheda.'
+- riga: '| 2018-02-05 | "Volmageddon": impennata VIX dopo dati salariali | rate_expectations_shock | Rendimenti
+    ↑, azionario ↓, VIX ↑↑ | ^VIX, ^GSPC, ^TNX | Il report occupazione con salari +2,9% è del 2 febbraio
+    2018; VIX da 17,31 (2 feb) a 37,32 (5 feb) |'
+  data: '2018-02-05'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - ^GSPC
+  - ^TNX
+  - ^VIX
+  dichiarazioni:
+  - asset: ^VIX
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Volmageddon: impennata VIX; il dato salariale
+      è del 2 febbraio''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
+      l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: ^GSPC
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Volmageddon: impennata VIX; il dato salariale
+      è del 2 febbraio''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
+      l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Volmageddon: impennata VIX; il dato salariale
+      è del 2 febbraio''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
+      l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  meccanismo:
+  - term_premium
+  evento: Volmageddon
+  stato: promossa
+- riga: '| 2021-02-25 | Selloff sui tassi reali, 10 anni oltre 1,6% | term_premium_shock | Rendimenti
+    reali ↑, ^NDX ↓ | ^NDX, ^GSPC, ^TNX | Picco Nasdaq del 12 febbraio 2021 è non-ISO; front end ancorato
+    dalla Fed |'
+  data: '2021-02-25'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - ^GSPC
+  - ^NDX
+  - ^TNX
+  dichiarazioni:
+  - asset: ^NDX
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Selloff sui tassi reali, 10 anni oltre 1,6%''),
+      non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+      esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Selloff sui tassi reali, 10 anni oltre 1,6%''),
+      non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+      esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  meccanismo:
+  - term_premium
+  evento: Selloff sui tassi reali
+  stato: promossa
+  nota: '^GSPC: la scheda 2026-09-15/news_03 dichiara neg; un''esclusione la spegnerebbe. Resta la scheda,
+    ma la data è definita dall''esito.'
+- riga: '| 2021-03-18 | Post-FOMC, 10 anni a 1,74%, 30 anni oltre 2,4% | term_premium_shock | Rendimenti
+    lunghi ↑, ^NDX ↓ | ^NDX, ^TNX, IEF | Reazione al FOMC del 17 marzo, sessione USA successiva |'
+  data: '2021-03-18'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - IEF
+  - ^NDX
+  - ^TNX
+  dichiarazioni:
+  - asset: ^NDX
+    gruppo: 4
+    verso: escluso
+    perché: 'Reazione al FOMC del 17 marzo (decisione alle 14:00 ET): la seduta di reazione è il 17, il
+      18 è la coda. La riga è definita dai livelli (''10 anni a 1,74%'').'
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'Reazione al FOMC del 17 marzo (decisione alle 14:00 ET): la seduta di reazione è il 17, il
+      18 è la coda. La riga è definita dai livelli (''10 anni a 1,74%'').'
+  - asset: IEF
+    gruppo: 4
+    verso: escluso
+    perché: 'Reazione al FOMC del 17 marzo (decisione alle 14:00 ET): la seduta di reazione è il 17, il
+      18 è la coda. La riga è definita dai livelli (''10 anni a 1,74%'').'
+  meccanismo:
+  - term_premium
+  - rate_decision
+  evento: Coda del FOMC di marzo 2021
+  stato: promossa
+- riga: '| 2022-09-23 | "Mini-budget" britannico (venerdì) | credibility_shock | Gilt lunghi ↑↑, GBP ↓
+    | GBPUSD=X, ^TNX (spillover) | Annuncio ore 11:30 Londra; gilt 30a +120/140 pb in tre sedute; reazione
+    FX piena il lunedì |'
+  data: '2022-09-23'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - GBPUSD=X
+  - ^TNX
+  dichiarazioni:
+  - asset: GBPUSD=X
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''GBP ↓''. GBPUSD=X quota dollari per sterlina.'
+  - asset: ^TNX
+    gruppo: 3
+    domanda: 'Riga: ''Gilt lunghi ↑↑ (spillover)'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - fiscal_expansion
+  - term_premium
+  evento: Mini-budget britannico
+  stato: promossa
+- riga: '| 2022-09-26 | Minimo storico sterlina 1,0350, crisi LDI acuta | credibility_shock | GBP ↓↓,
+    gilt ↑↑ | GBPUSD=X, DX-Y.NYB | Prima seduta piena dopo il weekend; apertura asiatica domenica sera
+    |'
+  data: '2022-09-26'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - DX-Y.NYB
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Minimo storico sterlina 1,0350''), non da una
+      notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come
+      il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: DX-Y.NYB
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Minimo storico sterlina 1,0350''), non da una
+      notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come
+      il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  meccanismo:
+  - term_premium
+  evento: Minimo storico della sterlina, crisi LDI
+  stato: promossa
+- riga: '| 2022-09-28 | Intervento d''emergenza BoE sul gilt | credibility_shock | Gilt ↓ (reversal),
+    GBP ↑ | GBPUSD=X, IEAG.AS | BoE annuncia acquisti alle 11:00 Londra; reversal della gamba precedente
+    |'
+  data: '2022-09-28'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - GBPUSD=X
+  - IEAG.AS
+  dichiarazioni:
+  - asset: GBPUSD=X
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''GBP ↑''. GBPUSD=X quota dollari per sterlina.'
+  - asset: IEAG.AS
+    gruppo: 3
+    domanda: 'Riga: ''Gilt ↓ (reversal)'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - liquidity_event
+  - balance_sheet
+  evento: Intervento d'emergenza della BoE sui gilt
+  stato: promossa
+- riga: '| 2022-12-20 | BoJ allarga la banda YCC da ±0,25% a ±0,50% | term_premium_shock | JGB ↑, JPY
+    ↑, azionario globale ↓ | JPY=X, ^N225, ^TNX | Annuncio sessione asiatica; JPY +3,3% vs USD; ^N225
+    −2,5%; spillover Treasury stessa data |'
+  data: '2022-12-20'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - JPY=X
+  - ^N225
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 3
+    domanda: 'Riga: ''JGB ↑, JPY ↑ (spillover Treasury nella nota)'' — il verso scritto non riguarda questo
+      asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - ycc
+  - term_premium
+  evento: BoJ allarga la banda YCC a ±0,50%
+  stato: promossa
+  nota: 'JPY=X e ^N225 già nel registro dalla research BoJ (concordi: yen ↑ = neg, azionario ↓ = neg):
+    rifarli sarebbe una chiave duplicata.'
+- riga: '| 2023-10-19 | 10 anni USA tocca il 5% per la prima volta dal 2007 | term_premium_shock | Rendimenti
+    lunghi ↑, azionario ↓ | ^TNX, ^GSPC, GC=F | ACM term premium tornato positivo per la prima volta dal
+    2021 (ottobre 2023) |'
+  data: '2023-10-19'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - GC=F
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''10 anni USA tocca il 5%''), non da una notizia
+      con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+      BoJ e i picchi di prezzo.'
+  - asset: GC=F
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''10 anni USA tocca il 5%''), non da una notizia
+      con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+      BoJ e i picchi di prezzo.'
+  meccanismo:
+  - term_premium
+  evento: Il 10 anni USA tocca il 5%
+  stato: promossa
+  nota: '^GSPC: quattro schede dichiarano neg; un''esclusione le spegnerebbe. Restano le schede, ma la
+    data è definita dall''esito.'
+- riga: '| 2024-03-19 | BoJ esce dai tassi negativi e chiude la YCC | rate_expectations_shock | Reazione
+    muta; JPY ↓ (telegrafato) | JPY=X, ^N225, ^TNX | Annuncio sessione asiatica; mossa ampiamente attesa,
+    JGB contenuti |'
+  data: '2024-03-19'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - JPY=X
+  - ^N225
+  - ^TNX
+  dichiarazioni:
+  - asset: ^N225
+    gruppo: 3
+    domanda: 'Riga: ''Reazione muta; JPY ↓'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  - asset: ^TNX
+    gruppo: 3
+    domanda: 'Riga: ''Reazione muta; JPY ↓'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - boj_normalization
+  - rate_decision
+  evento: BoJ esce dai tassi negativi e dallo YCC
+  stato: promossa
+  nota: JPY=X già nel registro dalla research BoJ (pos, concorde con 'JPY ↓ (telegrafato)').
+- riga: '| 2024-08-05 | "Black Monday" da unwind del carry yen | rate_expectations_shock | ^N225 ↓↓, JPY
+    ↑↑, VIX ↑↑ | ^N225, JPY=X, ^VIX | Rialzo BoJ del 31 luglio 2024; ^N225 −12% circa; VIX intraday 65,7,
+    chiusura 38,57; JPY +~6,15% dal 29 lug |'
+  data: '2024-08-05'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - JPY=X
+  - ^N225
+  - ^VIX
+  dichiarazioni: []
+  meccanismo:
+  - carry_unwind
+  evento: Black Monday da unwind del carry
+  stato: nessuna_azione
+  nota: 'Tutti e tre gli asset già esclusi nel registro come riga di esito (research BoJ): niente da aggiungere.'
+- riga: '| 2024-11-06 | Elezione di Trump 2024, selloff dei Treasury | rate_expectations_shock | Rendimenti
+    ↑, azionario ↑ (parziale inversione) | ^TNX, ^GSPC, DX-Y.NYB | Notte elettorale 5 nov; 10 anni +14
+    pb a 4,433%, massimo da luglio; 30 anni ~4,6% |'
+  data: '2024-11-06'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - DX-Y.NYB
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''Rendimenti ↑''. ^TNX quota il rendimento.'
+  - asset: ^GSPC
+    gruppo: 3
+    verso: escluso
+    perché: 'Riga: ''azionario ↑ (parziale inversione)'': il qualificatore dice che la colonna riporta
+      il segno realizzato. Revisione maintainer 2026-09-23.'
+  - asset: DX-Y.NYB
+    gruppo: 3
+    domanda: 'Riga: ''Rendimenti ↑, azionario ↑'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - election_risk
+  evento: Elezione di Trump (2024)
+  stato: promossa
+- riga: '| 2025-04-04 | Selloff anomalo dei Treasury post-tariffe "Liberation Day" | credibility_shock
+    | Rendimenti lunghi ↑, USD ↓, azionario ↓ | ^TNX, DX-Y.NYB, ^GSPC | Annuncio tariffe 2 aprile; il
+    3 aprile i rendimenti *scesero* (risk-off); dal 4 aprile selloff con USD in calo — marcatore di credibilità
+    |'
+  data: '2025-04-04'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - DX-Y.NYB
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Selloff anomalo dei Treasury post-tariffe,
+      marcatore di credibilità''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
+      l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: DX-Y.NYB
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Selloff anomalo dei Treasury post-tariffe,
+      marcatore di credibilità''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
+      l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: ^GSPC
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Selloff anomalo dei Treasury post-tariffe,
+      marcatore di credibilità''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
+      l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  meccanismo:
+  - term_premium
+  evento: Selloff anomalo dei Treasury dopo il Liberation Day
+  stato: promossa
+- riga: '| 2025-04-09 | Sospensione di parte delle tariffe; 10 anni +64 pb in due giorni | credibility_shock
+    | Rendimenti ↑↑, USD ↓ | ^TNX, DX-Y.NYB, ^VIX | MOVE index >3 dev. std sopra la media recente; indice
+    USD da 104,2 (2 apr) a 103,2 (9 apr) |'
+  data: '2025-04-09'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - DX-Y.NYB
+  - ^TNX
+  - ^VIX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''10 anni +64 pb in due giorni; MOVE >3 dev.
+      std''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+      per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo. La notizia del giorno (sospensione
+      dei dazi) è già nella research Dazi.'
+  - asset: DX-Y.NYB
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''10 anni +64 pb in due giorni; MOVE >3 dev.
+      std''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+      per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo. La notizia del giorno (sospensione
+      dei dazi) è già nella research Dazi.'
+  - asset: ^VIX
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''10 anni +64 pb in due giorni; MOVE >3 dev.
+      std''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+      per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo. La notizia del giorno (sospensione
+      dei dazi) è già nella research Dazi.'
+  meccanismo:
+  - term_premium
+  evento: Sospensione dei dazi e selloff dei Treasury
+  stato: promossa
+- riga: '| 2025-05-19 | Reazione al declassamento Moody''s (Aaa→Aa1) | credibility_shock | Rendimenti
+    lunghi ↑, azionario ↓ poi flat | ^TNX, ^GSPC, GC=F | Declassamento venerdì 16 maggio dopo la chiusura;
+    30 anni tocca 5,03% lunedì, massimo da novembre 2023 |'
+  data: '2025-05-19'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - GC=F
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''Rendimenti lunghi ↑''. ^TNX quota il rendimento.'
+  - asset: ^GSPC
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''azionario ↓ poi flat''.'
+  - asset: GC=F
+    gruppo: 3
+    domanda: 'Riga: ''Rendimenti lunghi ↑, azionario ↓'' — il verso scritto non riguarda questo asset.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - sovereign_rating
+  - term_premium
+  evento: Declassamento di Moody's degli USA
+  stato: promossa
+- riga: '| 2025-05-21 | Rout globale: 30 anni USA chiude 5,089% dopo asta 20a debole | supply_shock_duration
+    | Rendimenti lunghi ↑↑, azionario ↓ | ^TNX, IEF, ^GSPC | 30 anni JGB record intraday 3,1872%; 40 anni
+    JGB record; gilt lunghi ai massimi da metà aprile |'
+  data: '2025-05-21'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - IEF
+  - ^GSPC
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''Rendimenti lunghi ↑↑''. ^TNX quota il rendimento.'
+  - asset: IEF
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''Rendimenti lunghi ↑↑''. IEF è un ETF di Treasury: quota il PREZZO, inverso ai rendimenti.'
+  - asset: ^GSPC
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''azionario ↓''.'
+  meccanismo:
+  - sovereign_auction
+  - term_premium
+  evento: Asta del Treasury a 20 anni debole
+  stato: promossa
+- riga: '| 2025-09-03 | Selloff sincronizzato: gilt, JGB, oro record lo stesso giorno | credibility_shock
+    | Rendimenti lunghi ↑, oro ↑ (co-movimento) | GC=F, ^TNX, IEAG.AS | Gilt 30a a 5,752% (max post-1998);
+    JGB 30a 3,255% record; oro 3.546,99 $. Voto di fiducia Bayrou l''8 settembre 2025 (catalizzatore distinto
+    e successivo) |'
+  data: '2025-09-03'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - GC=F
+  - IEAG.AS
+  - ^TNX
+  dichiarazioni:
+  - asset: GC=F
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Selloff sincronizzato: gilt, JGB, oro record''),
+      non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+      esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Selloff sincronizzato: gilt, JGB, oro record''),
+      non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+      esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: IEAG.AS
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Selloff sincronizzato: gilt, JGB, oro record''),
+      non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo
+      esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  meccanismo:
+  - term_premium
+  evento: Selloff sincronizzato di gilt e JGB, oro record
+  stato: promossa
+- riga: '| 2025-12-24 | JGB super-lunghi a record su stimolo Takaichi | supply_shock_duration | JGB lunghi
+    ↑↑ | ^N225, JPY=X | 30 anni JGB record 3,45% (seduta precedente al 25 dic); poi riduzione emissione
+    annunciata |'
+  data: '2025-12-24'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - JPY=X
+  - ^N225
+  dichiarazioni:
+  - asset: ^N225
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''JGB super-lunghi a record''), non da una notizia
+      con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+      BoJ e i picchi di prezzo. Lo stimolo Takaichi è del 21/11.'
+  - asset: JPY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''JGB super-lunghi a record''), non da una notizia
+      con un''attesa prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
+      BoJ e i picchi di prezzo. Lo stimolo Takaichi è del 21/11.'
+  meccanismo:
+  - term_premium
+  - fiscal_expansion
+  evento: JGB super-lunghi a record
+  stato: promossa
+- riga: '| 2026-05-19 | Intensificazione del rout globale: 30 anni JGB oltre 4% per la prima volta | credibility_shock
+    | Rendimenti lunghi ↑↑ globali | ^TNX, JPY=X, IEAG.AS | 30 anni gilt a 5,85% (max del secolo); 10
+    anni JGB 2,73% max dal 1997; data della seduta di reazione |'
+  data: '2026-05-19'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - IEAG.AS
+  - JPY=X
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Intensificazione del rout globale: 30 anni
+      JGB oltre 4%''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+      per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: JPY=X
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Intensificazione del rout globale: 30 anni
+      JGB oltre 4%''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+      per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: IEAG.AS
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Intensificazione del rout globale: 30 anni
+      JGB oltre 4%''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+      per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  meccanismo:
+  - term_premium
+  evento: Il 30 anni JGB supera il 4%
+  stato: promossa
+- riga: '| 2026-08-18 | Rout globale su offerta, inflazione da petrolio e fine tregua USA-Iran | supply_shock_duration
+    | Rendimenti lunghi ↑↑, oro ↓ (−1%) | ^TNX, IEAG.AS, GC=F | 30 anni USA 5,327% (max da metà 2007);
+    30 anni JGB ~4,14%; OAT 30a francese 4,8558%; Brent >90 $ |'
+  data: '2026-08-18'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  candidati:
+  - GC=F
+  - IEAG.AS
+  - ^TNX
+  dichiarazioni:
+  - asset: ^TNX
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Rout globale; la colonna riporta ''oro ↓ (−1%)'',
+      un esito''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+      per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: IEAG.AS
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Rout globale; la colonna riporta ''oro ↓ (−1%)'',
+      un esito''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+      per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  - asset: GC=F
+    gruppo: 4
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (''Rout globale; la colonna riporta ''oro ↓ (−1%)'',
+      un esito''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe l''episodio
+      per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+  meccanismo:
+  - term_premium
+  evento: Rout globale della parte lunga
+  stato: promossa
