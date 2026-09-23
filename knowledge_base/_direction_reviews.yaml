@@ -2957,3 +2957,569 @@ reviews:
   - eurozone_release
   - activity_growth
   description: ZEW di agosto sopra le attese
+- date: '2022-06-22'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Primo attacco efficace a una raffineria russa (Novoshakhtinsk)
+- date: '2022-06-22'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+    attesa è al rialzo (capacità di raffinazione tolta).'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Primo attacco efficace a una raffineria russa (Novoshakhtinsk)
+- date: '2022-06-22'
+  theme: commodity_energy
+  reference: BZ=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''BZ=F ambiguo'' — nessun verso.'
+  status: excluded
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Primo attacco efficace a una raffineria russa (Novoshakhtinsk)
+- date: '2022-12-05'
+  theme: commodity_energy
+  reference: BZ=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''BZ=F direzionale modesto'' senza segno. Entrata in vigore programmata, per la riga
+    ''nota da settimane'': scontata (regola della sorpresa; come il 2022-12-05 e il 2023-02-05 della research
+    Russia-Ucraina).'
+  status: excluded
+  mechanism:
+  - sanctions
+  description: Embargo UE sul greggio via mare e price cap G7
+- date: '2022-12-05'
+  theme: commodity_energy
+  reference: EURUSD=X
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Entrata in vigore programmata, per la riga ''nota da settimane'': scontata (regola della sorpresa;
+    come il 2022-12-05 e il 2023-02-05 della research Russia-Ucraina).'
+  status: excluded
+  mechanism:
+  - sanctions
+  description: Embargo UE sul greggio via mare e price cap G7
+- date: '2023-02-06'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Entrata in vigore programmata, per la riga ''nota da settimane'': scontata (regola della sorpresa;
+    come il 2022-12-05 e il 2023-02-05 della research Russia-Ucraina).'
+  status: excluded
+  mechanism:
+  - sanctions
+  - refinery_products
+  description: Embargo UE sui prodotti petroliferi russi e price cap
+- date: '2023-02-06'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Entrata in vigore programmata, per la riga ''nota da settimane'': scontata (regola della sorpresa;
+    come il 2022-12-05 e il 2023-02-05 della research Russia-Ucraina).'
+  status: excluded
+  mechanism:
+  - sanctions
+  - refinery_products
+  description: Embargo UE sui prodotti petroliferi russi e price cap
+- date: '2023-02-06'
+  theme: commodity_energy
+  reference: EXV7.DE
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Entrata in vigore programmata, per la riga ''nota da settimane'': scontata (regola della sorpresa;
+    come il 2022-12-05 e il 2023-02-05 della research Russia-Ucraina).'
+  status: excluded
+  mechanism:
+  - sanctions
+  - refinery_products
+  description: Embargo UE sui prodotti petroliferi russi e price cap
+- date: '2024-02-26'
+  theme: commodity_energy
+  reference: BZ=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''BZ=F ↑''.'
+  direction: pos
+  mechanism:
+  - infrastructure_attack
+  description: Attacco a porto e raffineria di Tuapse
+- date: '2024-02-26'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑ minore''.'
+  direction: pos
+  mechanism:
+  - infrastructure_attack
+  description: Attacco a porto e raffineria di Tuapse
+- date: '2024-03-12'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco alla raffineria NORSI di Nizhny Novgorod
+- date: '2024-03-12'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+    attesa è al rialzo (capacità di raffinazione tolta).'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco alla raffineria NORSI di Nizhny Novgorod
+- date: '2024-03-13'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacchi a Ryazan e Novoshakhtinsk
+- date: '2024-03-13'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+    attesa è al rialzo (capacità di raffinazione tolta).'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacchi a Ryazan e Novoshakhtinsk
+- date: '2024-03-01'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  description: La Russia vieta per sei mesi l'export di benzina
+- date: '2024-03-01'
+  theme: commodity_energy
+  reference: RB=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''RB=F ↑ relativo''. Benzina russa tolta dal mercato export.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  description: La Russia vieta per sei mesi l'export di benzina
+- date: '2024-05-11'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco alla raffineria di Volgograd
+- date: '2024-05-11'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+    attesa è al rialzo (capacità di raffinazione tolta).'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco alla raffineria di Volgograd
+- date: '2025-01-04'
+  theme: commodity_energy
+  reference: BZ=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''BZ=F ↑''.'
+  direction: pos
+  mechanism:
+  - infrastructure_attack
+  description: Attacco al porto di export di Ust-Luga
+- date: '2025-01-26'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco a Ryazan
+- date: '2025-01-26'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+    attesa è al rialzo (capacità di raffinazione tolta).'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco a Ryazan
+- date: '2025-01-31'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco alla raffineria di Volgograd
+- date: '2025-01-31'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+    attesa è al rialzo (capacità di raffinazione tolta).'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco alla raffineria di Volgograd
+- date: '2025-05-15'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco a Ryazan
+- date: '2025-05-15'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+    attesa è al rialzo (capacità di raffinazione tolta).'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco a Ryazan
+- date: '2025-08-25'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↓''.'
+  direction: neg
+  mechanism:
+  - refinery_products
+  description: Volgograd torna a piena operatività
+- date: '2025-08-25'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↓ relativo''. Riavvio: verso opposto a un attacco.'
+  direction: neg
+  mechanism:
+  - refinery_products
+  description: Volgograd torna a piena operatività
+- date: '2025-08-27'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco a Ryazan, avvio della crisi carburanti russa
+- date: '2025-08-27'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+    attesa è al rialzo (capacità di raffinazione tolta).'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco a Ryazan, avvio della crisi carburanti russa
+- date: '2025-09-24'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  description: La Russia estende il bando all'export di benzina e limita il diesel
+- date: '2025-09-24'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  description: La Russia estende il bando all'export di benzina e limita il diesel
+- date: '2025-11-14'
+  theme: commodity_energy
+  reference: BZ=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''BZ=F ↑''.'
+  direction: pos
+  mechanism:
+  - infrastructure_attack
+  description: 'Attacco a Novorossiysk: sospeso l''export di greggio'
+- date: '2026-04-16'
+  theme: commodity_energy
+  reference: BZ=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''BZ=F ↑''.'
+  direction: pos
+  mechanism:
+  - infrastructure_attack
+  description: Attacco al terminal export di Tuapse
+- date: '2026-04-18'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco alla raffineria di Novokuibyshevsk
+- date: '2026-04-18'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+    attesa è al rialzo (capacità di raffinazione tolta).'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco alla raffineria di Novokuibyshevsk
+- date: '2026-05-03'
+  theme: commodity_energy
+  reference: BZ=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''BZ=F ↑''.'
+  direction: pos
+  mechanism:
+  - infrastructure_attack
+  description: Attacco al porto petrolifero di Primorsk
+- date: '2026-05-29'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco alla raffineria di Volgograd
+- date: '2026-05-29'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+    attesa è al rialzo (capacità di raffinazione tolta).'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco alla raffineria di Volgograd
+- date: '2026-06-18'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco alla raffineria di Mosca
+- date: '2026-06-18'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+    attesa è al rialzo (capacità di raffinazione tolta).'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco alla raffineria di Mosca
+- date: '2026-07-06'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco alla raffineria di Omsk
+- date: '2026-07-06'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+    attesa è al rialzo (capacità di raffinazione tolta).'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Attacco alla raffineria di Omsk
+- date: '2026-07-08'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  description: La Russia vieta tutto l'export di diesel
+- date: '2026-07-08'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  description: La Russia vieta tutto l'export di diesel
+- date: '2026-07-30'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''CRACK_321 ↑''.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Ryazan ferma la lavorazione dopo il colpo del 29-30 luglio
+- date: '2026-07-30'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+    attesa è al rialzo (capacità di raffinazione tolta).'
+  direction: pos
+  mechanism:
+  - refinery_products
+  - infrastructure_attack
+  description: Ryazan ferma la lavorazione dopo il colpo del 29-30 luglio
+- date: '2026-08-14'
+  theme: commodity_energy
+  reference: BZ=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Riga: ''BZ=F ↑''.'
+  direction: pos
+  mechanism:
+  - infrastructure_attack
+  description: 'Attacco a Novorossiysk: sospeso l''export di greggio'

@@ -1,0 +1,669 @@
+research: Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+  ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+  Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+voci:
+- riga: '| 2022-06-22 | Primo attacco drone efficace a una raffineria russa: Novoshakhtinsk (Rostov),
+    unità di distillazione colpita, produzione sospesa | refinery_strike | CRACK_321 ↑ / HO=F ↑ relativo;
+    BZ=F ambiguo | CRACK_321, HO=F | Attacco che toglie capacità di raffinazione, non greggio. Fase pre-embargo
+    prodotti: effetto teorico diretto sull''offerta europea, ma impianto piccolo (~1,7% capacità) e mercato
+    dominato dallo shock post-invasione; segnale isolato debole. |'
+  data: '2022-06-22'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - BZ=F
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: HO=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+      attesa è al rialzo (capacità di raffinazione tolta).'
+  - asset: BZ=F
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''BZ=F ambiguo'' — nessun verso.'
+  meccanismo:
+  - refinery_products
+  - infrastructure_attack
+  evento: Primo attacco efficace a una raffineria russa (Novoshakhtinsk)
+  stato: promossa
+- riga: '| 2022-12-05 | Embargo UE sul greggio russo seaborne + price cap G7 a $60/bbl | sanctions_product_ban
+    | BZ=F direzionale modesto; Urals-Brent spread ↑ | BZ=F, EURUSD=X | Misura sanzionatoria sul greggio
+    (non prodotti, non cinetica). Entrata in vigore programmata: nessun look-ahead, data nota da settimane.
+    Utile per separare "sanzioni" da "guerra". |'
+  data: '2022-12-05'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - BZ=F
+  - EURUSD=X
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 4
+    verso: escluso
+    perché: 'Riga: ''BZ=F direzionale modesto'' senza segno. Entrata in vigore programmata, per la riga
+      ''nota da settimane'': scontata (regola della sorpresa; come il 2022-12-05 e il 2023-02-05 della
+      research Russia-Ucraina).'
+  - asset: EURUSD=X
+    gruppo: 4
+    verso: escluso
+    perché: 'Entrata in vigore programmata, per la riga ''nota da settimane'': scontata (regola della
+      sorpresa; come il 2022-12-05 e il 2023-02-05 della research Russia-Ucraina).'
+  meccanismo:
+  - sanctions
+  evento: Embargo UE sul greggio via mare e price cap G7
+  stato: promossa
+- riga: '| 2023-02-06 | Embargo UE sui prodotti petroliferi russi + price cap $100 (diesel/premium) e
+    $45 (fuel oil/naphtha), in vigore dal 5 feb (domenica) | sanctions_product_ban | CRACK_321 ↑ europeo;
+    HO=F ↑ | CRACK_321, HO=F, EXV7.DE | Spartiacque di regime: da qui i prodotti russi escono dal mercato
+    UE. Entrata in vigore domenica 5 feb a mercato chiuso: la prima seduta utile di reazione è lunedì
+    2023-02-06. Meccanismo sanzionatorio, non cinetico. |'
+  data: '2023-02-06'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - EXV7.DE
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 4
+    verso: escluso
+    perché: 'Entrata in vigore programmata, per la riga ''nota da settimane'': scontata (regola della
+      sorpresa; come il 2022-12-05 e il 2023-02-05 della research Russia-Ucraina).'
+  - asset: HO=F
+    gruppo: 4
+    verso: escluso
+    perché: 'Entrata in vigore programmata, per la riga ''nota da settimane'': scontata (regola della
+      sorpresa; come il 2022-12-05 e il 2023-02-05 della research Russia-Ucraina).'
+  - asset: EXV7.DE
+    gruppo: 4
+    verso: escluso
+    perché: 'Entrata in vigore programmata, per la riga ''nota da settimane'': scontata (regola della
+      sorpresa; come il 2022-12-05 e il 2023-02-05 della research Russia-Ucraina).'
+  meccanismo:
+  - sanctions
+  - refinery_products
+  evento: Embargo UE sui prodotti petroliferi russi e price cap
+  stato: promossa
+- riga: '| 2024-01-22 | Attacco drone al complesso gas-condensato/export Novatek di Ust-Luga (Baltico);
+    incendio, produzione di prodotti sospesa | upstream_export_strike | BZ=F ↑ modesto; TTF=F possibile
+    | BZ=F, TTF=F | Colpisce nodo export/condensato, non capacità di raffinazione di greggio. Attacco
+    nella notte del 20-21 gen (domenica): prima seduta di reazione lunedì 2024-01-22. Unico episodio 2024
+    che l''OSW segnala come reazione di mercato lato-offerta. |'
+  data: '2024-01-22'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - BZ=F
+  - TTF=F
+  dichiarazioni:
+  - asset: TTF=F
+    gruppo: 3
+    domanda: 'Riga: ''TTF=F possibile'' — nessun verso.'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - infrastructure_attack
+  evento: Attacco al complesso export Novatek di Ust-Luga
+  stato: promossa
+- riga: '| 2024-02-26 | Attacco a porto e raffineria di Tuapse; danneggiati unità ELOU-AVT-12 e un oleodotto
+    di greggio | upstream_export_strike | BZ=F ↑; CRACK_321 ↑ minore | BZ=F | Caso misto ma con oleodotto
+    di greggio e porto colpiti: classificato upstream/export perché tocca il flusso di greggio. Tuapse
+    è impianto export-oriented (naphtha, gasolio, fuel oil). |'
+  data: '2024-02-26'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - BZ=F
+  - CRACK_321
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''BZ=F ↑''.'
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑ minore''.'
+  meccanismo:
+  - infrastructure_attack
+  evento: Attacco a porto e raffineria di Tuapse
+  stato: promossa
+- riga: '| 2024-03-12 | Attacco drone alla raffineria Lukoil di Nizhny Novgorod (NORSI), quarta di Russia;
+    unità danneggiata | refinery_strike | CRACK_321 ↑ / HO=F ↑ relativo | CRACK_321, HO=F | Attacco che
+    toglie capacità di raffinazione, greggio disponibile. Vigilia del salto di prezzo del 13/3. |'
+  data: '2024-03-12'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: HO=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+      attesa è al rialzo (capacità di raffinazione tolta).'
+  meccanismo:
+  - refinery_products
+  - infrastructure_attack
+  evento: Attacco alla raffineria NORSI di Nizhny Novgorod
+  stato: promossa
+- riga: '| 2024-03-13 | Attacchi drone a Ryazan (Rosneft, unità AVT-4) e Novoshakhtinsk; sospensioni operative
+    | refinery_strike | CRACK_321 ↑; HO=F ↑; BZ=F ↑ modesto | CRACK_321, HO=F, BZ=F | Reazione forte ma
+    «guidata dai prodotti» (Lipow): 13/3 WTI +2,78% a $79,72, Brent +2,58% a $84,03 (CNBC). Attacco a
+    capacità di raffinazione; effetto Brent trainato dal rischio-supply, non da barili persi. |'
+  data: '2024-03-13'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - BZ=F
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: HO=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+      attesa è al rialzo (capacità di raffinazione tolta).'
+  meccanismo:
+  - refinery_products
+  - infrastructure_attack
+  evento: Attacchi a Ryazan e Novoshakhtinsk
+  stato: promossa
+- riga: '| 2024-03-01 | Russia impone ban di sei mesi sull''export di benzina | sanctions_product_ban
+    | CRACK_321 ↑; RB=F ↑ relativo | CRACK_321, RB=F | Misura di politica interna russa, non cinetica:
+    toglie benzina russa dal mercato export. Distingue "risposta di policy" da "danno cinetico". Decreto
+    in vigore dal 1 marzo. |'
+  data: '2024-03-01'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - RB=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: RB=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''RB=F ↑ relativo''. Benzina russa tolta dal mercato export.'
+  meccanismo:
+  - refinery_products
+  evento: La Russia vieta per sei mesi l'export di benzina
+  stato: promossa
+- riga: '| 2024-05-11 | Attacco drone alla raffineria Lukoil di Volgograd (Sud Russia, ~5,6% capacità)
+    | refinery_strike | CRACK_321 ↑ / HO=F ↑ relativo | CRACK_321, HO=F | Attacco a capacità di raffinazione;
+    export greggio intatto. Volgograd colpita due volte nel 2024 (3 feb e 11 mag, Ukrainska Pravda). |'
+  data: '2024-05-11'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: HO=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+      attesa è al rialzo (capacità di raffinazione tolta).'
+  meccanismo:
+  - refinery_products
+  - infrastructure_attack
+  evento: Attacco alla raffineria di Volgograd
+  stato: promossa
+- riga: '| 2025-01-04 | Attacco al porto di Ust-Luga (Leningrado), uno dei principali punti di export
+    del greggio russo | upstream_export_strike | BZ=F ↑ | BZ=F | Colpisce infrastruttura di export greggio,
+    non capacità di raffinazione. |'
+  data: '2025-01-04'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''BZ=F ↑''.'
+  meccanismo:
+  - infrastructure_attack
+  evento: Attacco al porto di export di Ust-Luga
+  stato: promossa
+- riga: '| 2025-01-26 | Attacco drone a Ryazan: incendio unità AVT-4 (distillati benzina/kerosene/diesel/fuel
+    oil), sospensione | refinery_strike | CRACK_321 ↑ / HO=F ↑ relativo | CRACK_321, HO=F | Attacco a
+    capacità di raffinazione; greggio disponibile per l''export. Attacco nella notte del 26/1 (~1:30).
+    |'
+  data: '2025-01-26'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: HO=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+      attesa è al rialzo (capacità di raffinazione tolta).'
+  meccanismo:
+  - refinery_products
+  - infrastructure_attack
+  evento: Attacco a Ryazan
+  stato: promossa
+- riga: '| 2025-01-31 | Attacco drone alla raffineria Lukoil di Volgograd, tra le 10 maggiori di Russia
+    | refinery_strike | CRACK_321 ↑ / HO=F ↑ relativo | CRACK_321, HO=F | Attacco a capacità di raffinazione,
+    ~14 Mt/anno; export greggio non toccato. |'
+  data: '2025-01-31'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: HO=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+      attesa è al rialzo (capacità di raffinazione tolta).'
+  meccanismo:
+  - refinery_products
+  - infrastructure_attack
+  evento: Attacco alla raffineria di Volgograd
+  stato: promossa
+- riga: '| 2025-05-15 | Attacco drone alla raffineria di Ryazan (Rosneft, ~17 Mt/anno); incendio, sospensione
+    | refinery_strike | CRACK_321 ↑ / HO=F ↑ relativo | CRACK_321, HO=F | Attacco a capacità di raffinazione;
+    effetto sul crack, non sul Brent. |'
+  data: '2025-05-15'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: HO=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+      attesa è al rialzo (capacità di raffinazione tolta).'
+  meccanismo:
+  - refinery_products
+  - infrastructure_attack
+  evento: Attacco a Ryazan
+  stato: promossa
+- riga: '| 2025-08-25 | Volgograd: ripristino confermato della piena operatività dopo i colpi del 13-14
+    agosto (Carnegie) | refinery_repair_restart | CRACK_321 ↓ / HO=F ↓ relativo | CRACK_321, HO=F | Riavvio
+    confermato: verso *opposto* a un refinery_strike. Serve per non lasciare il pool tutto nello stesso
+    segno. Recupero pieno in ~11 giorni. |'
+  data: '2025-08-25'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: neg
+    perché: 'Riga: ''CRACK_321 ↓''.'
+  - asset: HO=F
+    gruppo: 2
+    verso: neg
+    perché: 'Riga: ''HO=F ↓ relativo''. Riavvio: verso opposto a un attacco.'
+  meccanismo:
+  - refinery_products
+  evento: Volgograd torna a piena operatività
+  stato: promossa
+- riga: '| 2025-08-27 | Attacco drone a Ryazan (arteria di carburante di Mosca); esplosione, «crisi più
+    grave degli ultimi anni» (Aronstein) | refinery_strike | CRACK_321 ↑ / HO=F ↑ relativo | CRACK_321,
+    HO=F | Attacco a capacità di raffinazione; avvio della fase acuta della crisi carburanti russa. Greggio
+    resta disponibile per l''export. |'
+  data: '2025-08-27'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: HO=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+      attesa è al rialzo (capacità di raffinazione tolta).'
+  meccanismo:
+  - refinery_products
+  - infrastructure_attack
+  evento: Attacco a Ryazan, avvio della crisi carburanti russa
+  stato: promossa
+- riga: '| 2025-09-24 | Russia estende il ban sull''export di benzina a fine 2025 e vieta l''export di
+    diesel a trader e piccoli raffinatori | sanctions_product_ban | CRACK_321 ↑; HO=F ↑ | CRACK_321, HO=F
+    | Restrizione di policy in risposta agli attacchi: toglie prodotti russi dal mercato export. Non cinetica.
+    Annuncio del 24/9 (S&P Global). |'
+  data: '2025-09-24'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: HO=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''HO=F ↑''.'
+  meccanismo:
+  - refinery_products
+  evento: La Russia estende il bando all'export di benzina e limita il diesel
+  stato: promossa
+- riga: '| 2025-11-14 | Attacco a Novorossiysk/Sheskharis (Mar Nero); Transneft sospende i flussi di greggio,
+    export fermato (~761 kb/d) | upstream_export_strike | BZ=F ↑; crack ↑ con il Brent | BZ=F | Caso *pulito*
+    del canale greggio: Brent al settlement +2,19% a $64,39, WTI +2,39% a $60,09 (Reuters). Toglie barili
+    fisici (~2% dell''offerta globale); crack e greggio si muovono insieme, non si separano. |'
+  data: '2025-11-14'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''BZ=F ↑''.'
+  meccanismo:
+  - infrastructure_attack
+  evento: 'Attacco a Novorossiysk: sospeso l''export di greggio'
+  stato: promossa
+- riga: '| 2026-04-16 | Attacco al terminal/raffineria export di Tuapse (Rosneft); danni a porto e stoccaggi,
+    export impossibile, impianto fermo | upstream_export_strike | BZ=F ↑; TTF=F no | BZ=F | Classificato
+    export perché la firma è l''impossibilità di *spedire* (danno a porto e stoccaggi), non la sola distillazione.
+    Prima ondata di una serie (16 e 20 aprile). |'
+  data: '2026-04-16'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - BZ=F
+  - TTF=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''BZ=F ↑''.'
+  - asset: TTF=F
+    gruppo: 3
+    domanda: 'Riga: ''TTF=F no'', ma TTF non è fra gli asset-canale: è ''nessun effetto'' o ''non pertinente''?'
+    suggerimento: lasciare aperto
+  meccanismo:
+  - infrastructure_attack
+  evento: Attacco al terminal export di Tuapse
+  stato: promossa
+- riga: '| 2026-04-18 | Attacco drone alla raffineria di Novokuibyshevsk (Samara); lavorazione primaria
+    di greggio ferma | refinery_strike | CRACK_321 ↑ / HO=F ↑ relativo | CRACK_321, HO=F | Attacco a capacità
+    di raffinazione (~5,7 Mt lavorati nel 2024); greggio disponibile. |'
+  data: '2026-04-18'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: HO=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+      attesa è al rialzo (capacità di raffinazione tolta).'
+  meccanismo:
+  - refinery_products
+  - infrastructure_attack
+  evento: Attacco alla raffineria di Novokuibyshevsk
+  stato: promossa
+- riga: '| 2026-05-03 | Attacco drone al porto petrolifero di Primorsk (Leningrado), terminal di export
+    di Urals e diesel | upstream_export_strike | BZ=F ↑ | BZ=F | Colpisce terminal di export (Primorsk
+    + Ust-Luga = 44% dell''export petrolifero russo). Attacco nella notte del 3/5. |'
+  data: '2026-05-03'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''BZ=F ↑''.'
+  meccanismo:
+  - infrastructure_attack
+  evento: Attacco al porto petrolifero di Primorsk
+  stato: promossa
+- riga: '| 2026-05-29 | Attacco drone alla raffineria di Volgograd (Lukoil); danni a unità AVT-1/3/5/6,
+    produzione fermata | refinery_strike | CRACK_321 ↑ / HO=F ↑ relativo | CRACK_321, HO=F | Attacco a
+    capacità di raffinazione; export greggio intatto. |'
+  data: '2026-05-29'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: HO=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+      attesa è al rialzo (capacità di raffinazione tolta).'
+  meccanismo:
+  - refinery_products
+  - infrastructure_attack
+  evento: Attacco alla raffineria di Volgograd
+  stato: promossa
+- riga: '| 2026-06-18 | Attacco alla raffineria di Mosca (Gazprom Neft, ~40% del mercato carburanti della
+    capitale); danni gravi | refinery_strike | CRACK_321 ↑ / HO=F ↑ relativo | CRACK_321, HO=F | Attacco
+    a capacità di raffinazione; fonti di settore stimano fermo fino a inizio 2027. Colpi 16 e 18 giugno;
+    il 18/6 uno dei più intensi su Mosca. |'
+  data: '2026-06-18'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: HO=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+      attesa è al rialzo (capacità di raffinazione tolta).'
+  meccanismo:
+  - refinery_products
+  - infrastructure_attack
+  evento: Attacco alla raffineria di Mosca
+  stato: promossa
+- riga: '| 2026-07-06 | Attacco alla raffineria di Omsk (Gazprom Neft), la più grande di Russia; unità
+    primaria ELOU-AVT-11 danneggiata | refinery_strike | CRACK_321 ↑ / HO=F ↑ relativo | CRACK_321, HO=F
+    | Attacco a capacità di raffinazione a >2.000 km dal fronte: rimuove l''ultimo "santuario" geografico.
+    Greggio disponibile per l''export. |'
+  data: '2026-07-06'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: HO=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+      attesa è al rialzo (capacità di raffinazione tolta).'
+  meccanismo:
+  - refinery_products
+  - infrastructure_attack
+  evento: Attacco alla raffineria di Omsk
+  stato: promossa
+- riga: '| 2026-07-08 | Russia vieta tutto l''export di diesel (chiusura della scappatoia per gli auto-produttori)
+    | sanctions_product_ban | CRACK_321 ↑; HO=F ↑ | CRACK_321, HO=F | Ban di policy in risposta al danno
+    cinetico cumulato. Stesso giorno del record NYMEX 3-2-1 a $64,58/bbl. Toglie diesel russo dal mercato
+    export. Non cinetica. |'
+  data: '2026-07-08'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: HO=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''HO=F ↑''.'
+  meccanismo:
+  - refinery_products
+  evento: La Russia vieta tutto l'export di diesel
+  stato: promossa
+- riga: '| 2026-07-30 | Ryazan ferma la lavorazione dopo il colpo del 29-30 luglio: unità AVT-3 e AVT-4
+    (~41% capacità primaria) offline | refinery_strike | CRACK_321 ↑ / HO=F ↑ relativo | CRACK_321, HO=F
+    | Attacco a capacità di raffinazione; l''impianto continua a *vendere* prodotti da stock mentre la
+    distillazione è ferma → conferma che il greggio non è il canale. |'
+  data: '2026-07-30'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - CRACK_321
+  - HO=F
+  dichiarazioni:
+  - asset: CRACK_321
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''CRACK_321 ↑''.'
+  - asset: HO=F
+    gruppo: 2
+    verso: pos
+    perché: 'Riga: ''HO=F ↑ relativo''. ''↑ relativo'' = più forte del greggio: anche in assoluto la pressione
+      attesa è al rialzo (capacità di raffinazione tolta).'
+  meccanismo:
+  - refinery_products
+  - infrastructure_attack
+  evento: Ryazan ferma la lavorazione dopo il colpo del 29-30 luglio
+  stato: promossa
+- riga: '| 2026-08-14 | Attacco a Novorossiysk/Sheskharis (Mar Nero); export di greggio sospeso (~700
+    kb/d, principale hub export Mar Nero) | upstream_export_strike | BZ=F ↑ | BZ=F | Canale greggio puro:
+    toglie barili seaborne. Distinto dal colpo su Ryazan di due settimane prima, che era capacità di raffinazione.
+    |'
+  data: '2026-08-14'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  candidati:
+  - BZ=F
+  dichiarazioni:
+  - asset: BZ=F
+    gruppo: 1
+    verso: pos
+    perché: 'Riga: ''BZ=F ↑''.'
+  meccanismo:
+  - infrastructure_attack
+  evento: 'Attacco a Novorossiysk: sospeso l''export di greggio'
+  stato: promossa

@@ -1,4 +1,4 @@
-generated_at: '2026-09-23T11:33:15'
+generated_at: '2026-09-23T11:38:31'
 num_episodes: 1168
 episodes:
 - date: '1984-01-01'
@@ -1642,11 +1642,22 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    CRACK_321:
+    - pos
     HO=F:
     - pos
   direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     HO=F:
     - card:2026-09-23/news_02.md
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  direction_review_excluded:
+    BZ=F: 'Riga: ''BZ=F ambiguo'' — nessun verso.'
   directions_local:
   - neg
   - pos
@@ -1799,6 +1810,12 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    BZ=F: 'Riga: ''BZ=F direzionale modesto'' senza segno. Entrata in vigore programmata,
+      per la riga ''nota da settimane'': scontata (regola della sorpresa; come il
+      2022-12-05 e il 2023-02-05 della research Russia-Ucraina).'
+    EURUSD=X: 'Entrata in vigore programmata, per la riga ''nota da settimane'': scontata
+      (regola della sorpresa; come il 2022-12-05 e il 2023-02-05 della research Russia-Ucraina).'
   directions_local:
   - neg
   declared: false
@@ -1852,6 +1869,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    CRACK_321: 'Entrata in vigore programmata, per la riga ''nota da settimane'':
+      scontata (regola della sorpresa; come il 2022-12-05 e il 2023-02-05 della research
+      Russia-Ucraina).'
+    HO=F: 'Entrata in vigore programmata, per la riga ''nota da settimane'': scontata
+      (regola della sorpresa; come il 2022-12-05 e il 2023-02-05 della research Russia-Ucraina).'
+    EXV7.DE: 'Entrata in vigore programmata, per la riga ''nota da settimane'': scontata
+      (regola della sorpresa; come il 2022-12-05 e il 2023-02-05 della research Russia-Ucraina).'
   directions_local:
   - neg
   declared: false
@@ -2239,6 +2264,20 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - pos
+    CRACK_321:
+    - pos
+  direction_sources:
+    BZ=F:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   declared: false
@@ -2260,6 +2299,20 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    CRACK_321:
+    - pos
+    RB=F:
+    - pos
+  direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+    RB=F:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -2283,11 +2336,20 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    CRACK_321:
+    - pos
     HO=F:
     - pos
   direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     HO=F:
     - card:2026-09-23/news_02.md
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -2315,11 +2377,20 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    CRACK_321:
+    - pos
     HO=F:
     - pos
   direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     HO=F:
     - card:2026-09-23/news_02.md
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   direction_review_excluded:
     BZ=F: 'Attacchi a raffinerie russe: canale prodotti e crack, non greggio univoco.'
   directions_local:
@@ -2605,11 +2676,20 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    CRACK_321:
+    - pos
     HO=F:
     - pos
   direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     HO=F:
     - card:2026-09-23/news_02.md
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -2920,6 +3000,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   declared: false
@@ -3058,11 +3146,20 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    CRACK_321:
+    - pos
     HO=F:
     - pos
   direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     HO=F:
     - card:2026-09-23/news_02.md
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -3089,11 +3186,20 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    CRACK_321:
+    - pos
     HO=F:
     - pos
   direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     HO=F:
     - card:2026-09-23/news_02.md
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -3163,11 +3269,20 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    CRACK_321:
+    - pos
     HO=F:
     - pos
   direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     HO=F:
     - card:2026-09-23/news_02.md
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -3504,6 +3619,20 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    CRACK_321:
+    - neg
+    HO=F:
+    - neg
+  direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+    HO=F:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -3527,11 +3656,20 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    CRACK_321:
+    - pos
     HO=F:
     - pos
   direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     HO=F:
     - card:2026-09-23/news_02.md
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -3555,6 +3693,20 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    CRACK_321:
+    - pos
+    HO=F:
+    - pos
+  direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+    HO=F:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   declared: false
@@ -3635,6 +3787,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   declared: false
@@ -3647,6 +3807,7 @@ episodes:
   - sanctions_product_ban
   - upstream_export_strike
   subthemes_local:
+  - infrastructure_attack
   - refinery_products
   - upstream_export_strike
   n_sources: 1
@@ -4362,6 +4523,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   declared: false
@@ -4475,11 +4644,20 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    CRACK_321:
+    - pos
     HO=F:
     - pos
   direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     HO=F:
     - card:2026-09-23/news_02.md
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -4527,6 +4705,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   declared: false
@@ -4670,11 +4856,20 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    CRACK_321:
+    - pos
     HO=F:
     - pos
   direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     HO=F:
     - card:2026-09-23/news_02.md
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -4772,13 +4967,22 @@ episodes:
   directions_by_reference:
     BZ=F:
     - pos
+    CRACK_321:
+    - pos
     HO=F:
     - pos
   direction_sources:
     BZ=F:
     - card:2026-09-13/news_01.md
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     HO=F:
     - card:2026-09-23/news_02.md
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   direction_review_excluded:
     BZ=F: Minaccia su Pickaxe Mountain senza corroborazione in un’altra scheda.
   directions_local:
@@ -4817,11 +5021,20 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    CRACK_321:
+    - pos
     HO=F:
     - pos
   direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     HO=F:
     - card:2026-09-23/news_02.md
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -4846,6 +5059,20 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    CRACK_321:
+    - pos
+    HO=F:
+    - pos
+  direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+    HO=F:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -4869,11 +5096,20 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    CRACK_321:
+    - pos
     HO=F:
     - pos
   direction_sources:
+    CRACK_321:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     HO=F:
     - card:2026-09-23/news_02.md
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   - pos
@@ -4888,6 +5124,7 @@ episodes:
   - sanctions_product_ban
   - upstream_export_strike
   subthemes_local:
+  - infrastructure_attack
   - refinery_products
   - refinery_strike
   n_sources: 2
@@ -4896,6 +5133,14 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
+      regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
+      di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
   directions_local:
   - neg
   declared: false
@@ -4908,6 +5153,7 @@ episodes:
   - sanctions_product_ban
   - upstream_export_strike
   subthemes_local:
+  - infrastructure_attack
   - upstream_export_strike
   n_sources: 1
 - date: '2026-08-18'
