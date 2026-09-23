@@ -7,7 +7,7 @@
 set -u
 export PATH="/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
-MODEL="claude-opus-5"
+MODEL="claude-opus-5-5"
 PROJECT="$HOME/Claude"
 NEWSDIR="$PROJECT/mercati_finanza"
 PIPE="$NEWSDIR/news_impact_pipeline"

@@ -18,7 +18,7 @@ set -u
 export PATH="/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # --- Configurazione --------------------------------------------------------
-MODEL="claude-opus-5"   # stesso modello del run giornaliero
+MODEL="claude-opus-5-5"   # stesso modello del run giornaliero
 PROJECT="$HOME/Claude"
 NEWSDIR="$PROJECT/mercati_finanza"
 PIPE="$NEWSDIR/news_impact_pipeline"

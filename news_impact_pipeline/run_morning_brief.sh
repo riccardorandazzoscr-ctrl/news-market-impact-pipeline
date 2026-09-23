@@ -19,7 +19,7 @@ set -u
 export PATH="/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # --- Configurazione --------------------------------------------------------
-MODEL="claude-opus-5"   # ricerca web + sintesi: stesso modello del run giornaliero
+MODEL="claude-opus-5-5"   # ricerca web + sintesi: stesso modello del run giornaliero
 
 # Tetto di durata. Il brief è una ricerca web, non un'analisi su molte schede:
 # i 138 briefing in archivio (partiti dalle 07:30) sono usciti in 15-21 minuti.

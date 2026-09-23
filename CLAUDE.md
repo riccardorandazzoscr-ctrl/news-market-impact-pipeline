@@ -68,7 +68,7 @@ study (rendimenti cumulati a T+1, T+3, T+5, T+10) → scheda in `daily_analysis/
 Automazione: 6 job launchd `com.riccardo.newsimpact.*` — brief 07:40, marketdata-update
 08:00, daily 08:15 con ritentativi 09:15/10:15 (+ WatchPaths sul briefing), scorecard
 lunedì 09:00, monthly 1° del mese 09:30, indexkb (WatchPaths sulla KB). I tre job che
-usano un modello lanciano `claude -p` headless su Opus 5; gli altri sono Python puro.
+usano un modello lanciano `claude -p` headless su Opus 5.5; gli altri sono Python puro.
 Orari, verifica e ripristino: [references/routine_giornaliera.md](references/routine_giornaliera.md).
 
 ## Reference

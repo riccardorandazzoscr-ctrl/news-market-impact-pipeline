@@ -16,7 +16,7 @@ set -u
 export PATH="/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # --- Configurazione --------------------------------------------------------
-MODEL="claude-opus-5"   # analisi giornaliera: qualità elevata su molte schede
+MODEL="claude-opus-5-5"   # analisi giornaliera: qualità elevata su molte schede
 
 # Integrità del briefing (guasto del 2026-09-07, vedi la fase input_validato).
 # Un briefing pubblicato può essere parziale: contiene tutte e sole le notizie nuove

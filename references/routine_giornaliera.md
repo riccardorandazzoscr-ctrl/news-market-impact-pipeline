@@ -11,12 +11,12 @@ dell'abbonamento Claude, la stessa della CLI interattiva.
 
 | Fase | Orario Europe/Rome | Job launchd | Script | Modello |
 |---|---|---|---|---|
-| Morning briefing | 07:40 ogni giorno | `…newsimpact.brief` | `run_morning_brief.sh` | Opus 5 (ricerca web) |
+| Morning briefing | 07:40 ogni giorno | `…newsimpact.brief` | `run_morning_brief.sh` | Opus 5.5 (ricerca web) |
 | Prezzi | 08:00 ogni giorno | `…newsimpact.marketdata-update` | `update_market_data.py` | Nessuno: Python deterministico |
-| Analisi | 08:15, ritentativi 09:15 e 10:15 | `…newsimpact.daily` | `run_daily_analysis.sh` | Opus 5 |
-| Indicizzazione KB | a ogni modifica di `knowledge_base/` | `…newsimpact.indexkb` | `index_studies.sh` | Opus 5 |
+| Analisi | 08:15, ritentativi 09:15 e 10:15 | `…newsimpact.daily` | `run_daily_analysis.sh` | Opus 5.5 |
+| Indicizzazione KB | a ogni modifica di `knowledge_base/` | `…newsimpact.indexkb` | `index_studies.sh` | Opus 5.5 |
 | Scorecard | Lunedì 09:00 | `…newsimpact.scorecard` | `run_scorecard.sh` | Nessuno: Python deterministico |
-| Strategia mensile | Giorno 1, 09:30 | `…newsimpact.monthly` | `run_monthly_report.sh` | Opus 5 |
+| Strategia mensile | Giorno 1, 09:30 | `…newsimpact.monthly` | `run_monthly_report.sh` | Opus 5.5 |
 
 Il job `daily` ha anche `WatchPaths` sulla cartella dei briefing: se il brief
 arriva in ritardo, l'analisi parte appena il file atterra. I ritentativi delle

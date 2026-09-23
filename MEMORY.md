@@ -11,7 +11,7 @@ Stato per filone. Max 10 righe a filone. Ciò che resta vero per sempre va in
   dell'agente, event study "Opzione B", analisi giornaliera, report mensile e scorecard.
   Il 15/09/2026 l'orchestrazione è **rientrata su Claude Code** (era passata ai task
   ChatGPT il 13/09): 6 job launchd, i tre che usano un modello lanciano `claude -p`
-  headless su Opus 5. ⚠ Non descrivere fasi come "da fare".
+  headless su Opus 5.5. ⚠ Non descrivere fasi come "da fare".
 - **Deciso** — niente API key Anthropic; l'Opzione B ha sostituito le ~5 analogie scelte
   a mano; le research le scrive il maintainer. Il morning brief, che non aveva uno
   script locale, ora è un job come gli altri: niente dipende più da un'app aperta.
@@ -20,13 +20,17 @@ Stato per filone. Max 10 righe a filone. Ciò che resta vero per sempre va in
   richiama l'agente se mancano solo render o consegna. La verità è il disco;
   `_state.json` tiene solo impronta dell'input e ricevuta dell'invio. I prezzi sono
   un cancello bloccante senza scavalco: si ripara il dato.
-- **Prossimo passo** — osservare il primo ciclo completo del 16/09 (brief 07:40 →
-  analisi 08:15 → Telegram) e la prima riga di `logs/usage.csv` su Opus 5: il costo
-  per run va riconfrontato con i $27,9 misurati ad agosto, che erano su un altro
-  modello e un altro formato di scheda. Al primo ritentativo vero, verificare che il
+- **Osservato (16/09)** — primo ciclo completo dopo i Run 1–4b: brief 07:40 → dati
+  08:00 → analisi 08:15 → Telegram 08:26:49, tutte e sei le fasi ✔ al primo colpo
+  (nessun ritentativo, riuso schede non ancora testato su un caso vero). Costo
+  $3,10 (contro $27,9 di agosto, altro modello/formato — confronto non ancora
+  solido su un solo run). Nessun buco/riga senza prezzo, link interni al report ok,
+  ricevuta Telegram ok.
+- **Prossimo passo** — confermare il costo su altri giorni (non solo 20 notizie/2
+  schede come il 16/09) e osservare il primo ritentativo vero per verificare che il
   riuso delle schede scatti davvero. Vedi `references/routine_giornaliera.md`.
 
-Aggiornato: 2026-09-15
+Aggiornato: 2026-09-16
 
 ---
 
