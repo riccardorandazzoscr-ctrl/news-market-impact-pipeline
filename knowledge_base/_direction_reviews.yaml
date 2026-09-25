@@ -6795,3 +6795,442 @@ reviews:
   - china
   - activity_growth
   description: Surplus commerciale cinese record nel 2025
+- date: '2018-11-16'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  reason: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: guidance NVDA −21%
+    sotto il consenso.'
+  direction: neg
+  mechanism:
+  - earnings_shock
+  description: Guidance Q4 Nvidia sotto il consenso
+- date: '2018-11-16'
+  theme: structural_themes
+  reference: ^NDX
+  source: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  reason: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: guidance NVDA −21%
+    sotto il consenso.'
+  direction: neg
+  mechanism:
+  - earnings_shock
+  description: Guidance Q4 Nvidia sotto il consenso
+- date: '2019-06-14'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  reason: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: guidance FY19 Broadcom
+    tagliata da $24,5 a $22,5 mld.'
+  direction: neg
+  mechanism:
+  - earnings_shock
+  - export_controls
+  description: Broadcom taglia la guidance FY19 (Huawei)
+- date: '2022-09-30'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  reason: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: taglio capex Micron
+    −50%, forte downside vs guida precedente.'
+  direction: neg
+  mechanism:
+  - memory_cycle
+  - earnings_shock
+  description: Micron taglia il capex e l'offerta
+- date: '2023-05-25'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  reason: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: guidance NVDA +54%
+    sopra il consenso.'
+  direction: pos
+  mechanism:
+  - earnings_shock
+  - ai_capex_spending
+  description: Guidance Q2 FY24 Nvidia +54% sopra il consenso
+- date: '2023-05-25'
+  theme: structural_themes
+  reference: ^NDX
+  source: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  reason: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: guidance NVDA +54%
+    sopra il consenso.'
+  direction: pos
+  mechanism:
+  - earnings_shock
+  - ai_capex_spending
+  description: Guidance Q2 FY24 Nvidia +54% sopra il consenso
+- date: '2022-10-07'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  reason: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: embargo de facto
+    su AI/SME verso la Cina.'
+  direction: neg
+  mechanism:
+  - export_controls
+  description: Export controls BIS su chip AI e macchinari
+- date: '2023-10-17'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  reason: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: chiusura del loophole
+    H800.'
+  direction: neg
+  mechanism:
+  - export_controls
+  description: Aggiornamento export controls (bando H800)
+- date: '2024-10-15'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  reason: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: bookings ASML €2,6
+    mld contro €5,6 mld attesi.'
+  direction: neg
+  mechanism:
+  - earnings_shock
+  description: 'ASML: leak Q3 e taglio guida FY25'
+- date: '2025-04-16'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  reason: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: perdita ~$8 mld di
+    ricavi FY26 da export curb H20.'
+  direction: neg
+  mechanism:
+  - export_controls
+  description: 'Nvidia: charge $5,5 mld per il blocco H20'
+- date: '2024-09-20'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''SOXX: neutral'', scritto esplicitamente.'
+  direction: neutral
+  mechanism:
+  - ai_capex_spending
+  description: 'Constellation–Microsoft: riavvio di Three Mile Island per data center'
+- date: '2024-09-20'
+  theme: structural_themes
+  reference: XLU
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''XLU: pos'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - ai_capex_spending
+  description: 'Constellation–Microsoft: riavvio di Three Mile Island per data center'
+- date: '2024-09-20'
+  theme: structural_themes
+  reference: ^NDX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''^NDX: neutral'', scritto esplicitamente.'
+  direction: neutral
+  mechanism:
+  - ai_capex_spending
+  description: 'Constellation–Microsoft: riavvio di Three Mile Island per data center'
+- date: '2024-10-14'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''SOXX: neutral'', scritto esplicitamente.'
+  direction: neutral
+  mechanism:
+  - ai_capex_spending
+  description: 'Google–Kairos Power: primo PPA aziendale su SMR'
+- date: '2024-10-14'
+  theme: structural_themes
+  reference: XLU
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''XLU: pos'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - ai_capex_spending
+  description: 'Google–Kairos Power: primo PPA aziendale su SMR'
+- date: '2024-10-16'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''SOXX: neutral'', scritto esplicitamente.'
+  direction: neutral
+  mechanism:
+  - ai_capex_spending
+  description: 'Amazon–X-energy: investimento SMR'
+- date: '2024-10-16'
+  theme: structural_themes
+  reference: XLU
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''XLU: pos'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - ai_capex_spending
+  description: 'Amazon–X-energy: investimento SMR'
+- date: '2024-11-04'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''SOXX: neutral'', scritto esplicitamente.'
+  direction: neutral
+  mechanism:
+  - ai_capex_spending
+  description: FERC boccia l'espansione co-location Talen–Amazon
+- date: '2024-11-04'
+  theme: structural_themes
+  reference: XLU
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''XLU: neg'', scritto esplicitamente.'
+  direction: neg
+  mechanism:
+  - ai_capex_spending
+  description: FERC boccia l'espansione co-location Talen–Amazon
+- date: '2024-12-03'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''SOXX: neutral'', scritto esplicitamente.'
+  direction: neutral
+  mechanism:
+  - ai_capex_spending
+  description: Meta lancia RFP nucleare 1–4 GW
+- date: '2024-12-03'
+  theme: structural_themes
+  reference: XLU
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''XLU: pos'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - ai_capex_spending
+  description: Meta lancia RFP nucleare 1–4 GW
+- date: '2025-01-27'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''SOXX: neg'', scritto esplicitamente.'
+  direction: neg
+  mechanism:
+  - model_capability_shock
+  - ai_capex_spending
+  description: 'Selloff DeepSeek: dubbi sull''intensità di potenza dell''AI'
+- date: '2025-01-27'
+  theme: structural_themes
+  reference: XLU
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''XLU: neg'', scritto esplicitamente.'
+  direction: neg
+  mechanism:
+  - model_capability_shock
+  - ai_capex_spending
+  description: 'Selloff DeepSeek: dubbi sull''intensità di potenza dell''AI'
+- date: '2025-06-03'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''SOXX: neutral'', scritto esplicitamente.'
+  direction: neutral
+  mechanism:
+  - ai_capex_spending
+  description: 'Constellation–Meta: PPA nucleare ventennale'
+- date: '2025-06-03'
+  theme: structural_themes
+  reference: XLU
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''XLU: pos'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - ai_capex_spending
+  description: 'Constellation–Meta: PPA nucleare ventennale'
+- date: '2025-06-11'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''SOXX: neutral'', scritto esplicitamente.'
+  direction: neutral
+  mechanism:
+  - ai_capex_spending
+  description: 'Talen–Amazon: PPA ampliato a 1.920 MW'
+- date: '2025-06-11'
+  theme: structural_themes
+  reference: XLU
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''XLU: pos'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - ai_capex_spending
+  description: 'Talen–Amazon: PPA ampliato a 1.920 MW'
+- date: '2025-07-15'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''SOXX: pos'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - export_controls
+  description: USA autorizzano la ripresa delle vendite H20 in Cina
+- date: '2025-07-15'
+  theme: structural_themes
+  reference: XLU
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''XLU: neutral'', scritto esplicitamente.'
+  direction: neutral
+  mechanism:
+  - export_controls
+  description: USA autorizzano la ripresa delle vendite H20 in Cina
+- date: '2025-10-16'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''SOXX: pos'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - foundry_logic
+  - earnings_shock
+  description: 'TSMC Q3: ricavi +40%'
+- date: '2025-10-16'
+  theme: structural_themes
+  reference: EWT
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''EWT: pos'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - foundry_logic
+  - earnings_shock
+  description: 'TSMC Q3: ricavi +40%'
+- date: '2025-10-16'
+  theme: structural_themes
+  reference: XLU
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''XLU: neutral'', scritto esplicitamente.'
+  direction: neutral
+  mechanism:
+  - foundry_logic
+  - earnings_shock
+  description: 'TSMC Q3: ricavi +40%'
+- date: '2025-12-09'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''SOXX: neutral'', scritto esplicitamente.'
+  direction: neutral
+  mechanism:
+  - ai_capex_spending
+  description: 'GE Vernova: backlog turbine gas sold-out verso il 2030'
+- date: '2025-12-09'
+  theme: structural_themes
+  reference: XLU
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''XLU: pos'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - ai_capex_spending
+  description: 'GE Vernova: backlog turbine gas sold-out verso il 2030'
+- date: '2026-05-06'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''SOXX: neutral'', scritto esplicitamente.'
+  direction: neutral
+  mechanism:
+  - ai_capex_spending
+  description: NRC approva i criteri di progetto dell'Aurora di Oklo
+- date: '2026-05-06'
+  theme: structural_themes
+  reference: XLU
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''XLU: pos'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - ai_capex_spending
+  description: NRC approva i criteri di progetto dell'Aurora di Oklo
+- date: '2026-07-22'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''SOXX: neutral'', scritto esplicitamente.'
+  direction: neutral
+  mechanism:
+  - ai_capex_spending
+  description: 'GE Vernova Q2: backlog $176 mld, ordini Power +134%'
+- date: '2026-07-22'
+  theme: structural_themes
+  reference: XLU
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''XLU: pos'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - ai_capex_spending
+  description: 'GE Vernova Q2: backlog $176 mld, ordini Power +134%'
+- date: '2026-08-24'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''SOXX: neutral'', scritto esplicitamente.'
+  direction: neutral
+  mechanism:
+  - ai_capex_spending
+  description: Aggreko deposita F-1 per IPO NYSE trainata dai data center
+- date: '2026-08-24'
+  theme: structural_themes
+  reference: XLU
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'Riga, colonna «Direzione attesa»: ''XLU: pos'', scritto esplicitamente.'
+  direction: pos
+  mechanism:
+  - ai_capex_spending
+  description: Aggreko deposita F-1 per IPO NYSE trainata dai data center

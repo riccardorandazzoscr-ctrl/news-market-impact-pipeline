@@ -1,0 +1,188 @@
+research: Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+voci:
+- riga: '| 1 | 15 nov 2018 AC | NVDA guidance Q4 | Guid $2.70 mld vs cons $3.40 mld (−21%) | NVDA −18.8%
+    | neg [NV] | neg [NV] | neg [NV] | neg | neg | neg (sell-off Q4''18) |'
+  data: '2018-11-16'
+  tema: structural_themes
+  fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  candidati: []
+  dichiarazioni:
+  - asset: SOXX
+    gruppo: 2
+    verso: neg
+    perché: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: guidance NVDA −21%
+      sotto il consenso.'
+  - asset: ^NDX
+    gruppo: 2
+    verso: neg
+    perché: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: guidance NVDA −21%
+      sotto il consenso.'
+  meccanismo:
+  - earnings_shock
+  evento: Guidance Q4 Nvidia sotto il consenso
+  stato: promossa
+- riga: '| 2 | 13 giu 2019 AC | AVGO guidance FY19 | $22.5 mld vs prec $24.5 mld (Huawei) | AVGO −8% intraday
+    | −2/−3% [NV] | −1% [NV] | −0.5% [NV] | parz. recup. | recup. | recup. |'
+  data: '2019-06-14'
+  tema: structural_themes
+  fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  candidati: []
+  dichiarazioni:
+  - asset: SOXX
+    gruppo: 2
+    verso: neg
+    perché: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: guidance FY19 Broadcom
+      tagliata da $24,5 a $22,5 mld.'
+  meccanismo:
+  - earnings_shock
+  - export_controls
+  evento: Broadcom taglia la guidance FY19 (Huawei)
+  stato: promossa
+- riga: '| 3 | 29 set 2022 AC | MU capex −50% wafer FE; supply cuts | Forte downside vs precedente guida
+    | MU −2 a −3% [NV] | neg [NV] | neg [NV] | neg [NV] | neg | neg | neg (macro bear) |'
+  data: '2022-09-30'
+  tema: structural_themes
+  fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  candidati: []
+  dichiarazioni:
+  - asset: SOXX
+    gruppo: 2
+    verso: neg
+    perché: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: taglio capex Micron
+      −50%, forte downside vs guida precedente.'
+  meccanismo:
+  - memory_cycle
+  - earnings_shock
+  evento: Micron taglia il capex e l'offerta
+  stato: promossa
+- riga: '| 4 | 24 mag 2023 AC | NVDA guidance Q2 FY24 | $11 mld vs cons $7.15 mld (+54%) | NVDA +24–26%
+    | +5/+8% [NV] | +1.5/+2.5% [NV] | +0.5/+1% [NV] | pos | pos | pos (rally AI) |'
+  data: '2023-05-25'
+  tema: structural_themes
+  fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  candidati: []
+  dichiarazioni:
+  - asset: SOXX
+    gruppo: 2
+    verso: pos
+    perché: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: guidance NVDA +54%
+      sopra il consenso.'
+  - asset: ^NDX
+    gruppo: 2
+    verso: pos
+    perché: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: guidance NVDA +54%
+      sopra il consenso.'
+  meccanismo:
+  - earnings_shock
+  - ai_capex_spending
+  evento: Guidance Q2 FY24 Nvidia +54% sopra il consenso
+  stato: promossa
+- riga: '| 5 | 7 ott 2022 | Export controls BIS | Embargo de facto su AI/SME → Cina | Diffuso negativo
+    [NV] | −3/−5% sett.ma [NV] | neg [NV] | neg [NV] | neg | misto | misto |'
+  data: '2022-10-07'
+  tema: structural_themes
+  fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  candidati: []
+  dichiarazioni:
+  - asset: SOXX
+    gruppo: 2
+    verso: neg
+    perché: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: embargo de facto
+      su AI/SME verso la Cina.'
+  meccanismo:
+  - export_controls
+  evento: Export controls BIS su chip AI e macchinari
+  stato: promossa
+- riga: '| 6 | 17 ott 2023 | Export controls update (H800 ban) | Chiusura loophole | NVDA −4.7% | −3/−4%
+    [NV] | −1.5% [NV] | −0.5/−1% [NV] | neg | neg | neg |'
+  data: '2023-10-17'
+  tema: structural_themes
+  fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  candidati: []
+  dichiarazioni:
+  - asset: SOXX
+    gruppo: 2
+    verso: neg
+    perché: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: chiusura del loophole
+      H800.'
+  meccanismo:
+  - export_controls
+  evento: Aggiornamento export controls (bando H800)
+  stato: promossa
+- riga: '| 7 | 15 ott 2024 | ASML Q3 leak, FY25 guide cut | Bookings €2.6 mld vs €5.6 mld | ASML −15.7%
+    | −3.7% intraday | neg [NV] | neg [NV] | neg | parz. | parz. |'
+  data: '2024-10-15'
+  tema: structural_themes
+  fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  candidati: []
+  dichiarazioni:
+  - asset: SOXX
+    gruppo: 2
+    verso: neg
+    perché: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: bookings ASML €2,6
+      mld contro €5,6 mld attesi.'
+  meccanismo:
+  - earnings_shock
+  evento: 'ASML: leak Q3 e taglio guida FY25'
+  stato: promossa
+- riga: '| 8 | 27 gen 2025 | DeepSeek R1 demand shock | Curva costi AI training spostata in basso | NVDA
+    −16.97%, AVGO −17.4% | **~−9%** (SMH −8.68% verif.) | **−2.97%** | **−1.46%** | rimb. (NVDA +8.9%
+    T+1) | recup. quasi integ. | recup. integ. (SOX gen +0.7% MoM) |'
+  data: '2025-01-27'
+  tema: structural_themes
+  fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  candidati: []
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 9 | 29 gen 2025 AC | Meta capex $60–65 mld FY25 | Up-shift capex hyperscaler | META +rialzo
+    [NV] | pos [NV] | pos [NV] | pos [NV] | pos | pos | pos |'
+  data: '2025-01-30'
+  tema: structural_themes
+  fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  candidati: []
+  dichiarazioni: []
+  meccanismo:
+  - ai_capex_spending
+  evento: Meta alza il capex FY25 a $60–65 mld
+  stato: da_rivedere
+- riga: '| 10 | 15 apr 2025 AC | NVDA H20 export curb / $5.5 mld charge | Perdita ~$8 mld revenue FY26
+    | NVDA −6.5% AH; AMD −7.1% AH | neg [NV] | neg [NV] | neg [NV] | confounded da tariffe | confounded
+    | confounded |'
+  data: '2025-04-16'
+  tema: structural_themes
+  fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  candidati: []
+  dichiarazioni:
+  - asset: SOXX
+    gruppo: 2
+    verso: neg
+    perché: 'Colonna «Atteso vs realizzato» (la sorpresa), non le colonne di reazione: perdita ~$8 mld
+      di ricavi FY26 da export curb H20.'
+  meccanismo:
+  - export_controls
+  evento: 'Nvidia: charge $5,5 mld per il blocco H20'
+  stato: promossa
+- riga: '| 11 | 28 gen 2026 | ASML FY25 + guida FY26 | Bookings Q4 €13.2 mld vs cons €6.32 mld (+109%);
+    guid FY26 €34–39 mld | ASML AMS −1.9% (intraday +7% poi reverse) | misto [NV] | misto [NV] | misto
+    [NV] | misto | misto | misto |'
+  data: '2026-01-28'
+  tema: structural_themes
+  fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  candidati: []
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 12 | 3 giu 2026 AC | AVGO Q2 FY26 | AI rev $10.8 mld (+143% YoY) vs guidance; software miss
+    | AVGO −3% AH | neg lieve [NV] | neg lieve [NV] | neg lieve [NV] | parz. | recup. parz. | **finestra
+    parziale** (T+5 = 10 giu 2026; T+10 = 17 giu 2026: oltre data compilazione 8/6/2026) |'
+  data: '2026-06-04'
+  tema: structural_themes
+  fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  candidati: []
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere

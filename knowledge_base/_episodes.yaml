@@ -1,5 +1,5 @@
-generated_at: '2026-09-23T13:11:07'
-num_episodes: 1168
+generated_at: '2026-09-25T09:52:27'
+num_episodes: 1175
 episodes:
 - date: '1984-01-01'
   theme: commodity_energy
@@ -134,6 +134,7 @@ episodes:
     - card:2026-09-14/news_01.md
     - card:2026-09-15/news_01.md
     - card:2026-09-18/news_01.md
+    - card:2026-09-25/news_02.md
   directions_local:
   - neg
   - pos
@@ -166,7 +167,7 @@ episodes:
   - military_escalation
   - sanctions
   - shipping_chokepoint
-  n_sources: 16
+  n_sources: 17
   events:
   - event_id: 2011-12-27:commodity_energy:-
     geo: ''
@@ -195,6 +196,7 @@ episodes:
     - card:2026-09-14/news_01.md
     - card:2026-09-15/news_01.md
     - card:2026-09-18/news_01.md
+    - card:2026-09-25/news_02.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
 - date: '2012-01-03'
   theme: commodity_energy
@@ -333,6 +335,7 @@ episodes:
     - card:2026-09-15/news_02.md
     - card:2026-09-16/news_01.md
     - card:2026-09-18/news_01.md
+    - card:2026-09-25/news_02.md
   directions_local:
   - neg
   - pos
@@ -380,7 +383,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 22
+  n_sources: 23
   events:
   - event_id: 2012-01-23:commodity_energy:-
     geo: ''
@@ -418,6 +421,7 @@ episodes:
     - card:2026-09-15/news_02.md
     - card:2026-09-16/news_01.md
     - card:2026-09-18/news_01.md
+    - card:2026-09-25/news_02.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
   - event_id: 2012-01-23:commodity_energy:eurozone_release
     geo: eurozone_release
@@ -924,6 +928,7 @@ episodes:
     - card:2026-09-14/news_01.md
     - card:2026-09-15/news_02.md
     - card:2026-09-16/news_01.md
+    - card:2026-09-25/news_02.md
   directions_local:
   - neg
   - pos
@@ -965,7 +970,7 @@ episodes:
   - oil_supply_shock
   - sanctions
   - supply_disruption
-  n_sources: 24
+  n_sources: 25
   events:
   - event_id: 2018-05-08:commodity_energy:-
     geo: ''
@@ -1004,6 +1009,7 @@ episodes:
     - card:2026-09-14/news_01.md
     - card:2026-09-15/news_02.md
     - card:2026-09-16/news_01.md
+    - card:2026-09-25/news_02.md
 - date: '2018-11-13'
   theme: commodity_energy
   direction: neg
@@ -1209,6 +1215,7 @@ episodes:
     - card:2026-09-18/news_01.md
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
+    - card:2026-09-25/news_02.md
   directions_local:
   - neg
   - pos
@@ -1247,7 +1254,7 @@ episodes:
   - shipping_chokepoint
   - supply_disruption
   - upstream_export_strike
-  n_sources: 33
+  n_sources: 34
   events:
   - event_id: 2019-05-13:commodity_energy:-
     geo: ''
@@ -1297,6 +1304,7 @@ episodes:
     - card:2026-09-18/news_01.md
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
+    - card:2026-09-25/news_02.md
 - date: '2019-06-13'
   theme: commodity_energy
   direction: mixed
@@ -1320,6 +1328,7 @@ episodes:
     - card:2026-09-18/news_01.md
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
+    - card:2026-09-25/news_02.md
   directions_local:
   - neg
   - pos
@@ -1363,13 +1372,14 @@ episodes:
   - iran
   - military_escalation
   - shipping_chokepoint
-  n_sources: 29
+  n_sources: 30
   events:
   - event_id: 2019-06-13:commodity_energy:-
     geo: ''
     subthemes_local:
     - hormuz
     - infrastructure_attack
+    - iran
     - military_escalation
     - shipping_chokepoint
     directions_by_reference:
@@ -1403,6 +1413,7 @@ episodes:
     - card:2026-09-18/news_01.md
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
+    - card:2026-09-25/news_02.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
   - event_id: 2019-06-13:commodity_energy:britain_release
     geo: britain_release
@@ -1411,6 +1422,42 @@ episodes:
     - shipping_chokepoint
     sources:
     - card:2026-09-06/news_02.md
+- date: '2019-06-20'
+  theme: commodity_energy
+  direction: pos
+  directions:
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-25/news_02.md
+  directions_local:
+  - pos
+  declared: true
+  subthemes:
+  - hormuz
+  - iran
+  subthemes_local:
+  - hormuz
+  - iran
+  - military_escalation
+  n_sources: 1
+  events:
+  - event_id: 2019-06-20:commodity_energy:-
+    geo: ''
+    subthemes_local:
+    - hormuz
+    - iran
+    - military_escalation
+    directions_by_reference:
+      BZ=F:
+      - pos
+    sources:
+    - card:2026-09-25/news_02.md
 - date: '2019-07-01'
   theme: commodity_energy
   direction: mixed
@@ -1432,6 +1479,7 @@ episodes:
     - card:2026-09-15/news_02.md
     - card:2026-09-16/news_01.md
     - card:2026-09-18/news_01.md
+    - card:2026-09-25/news_02.md
   directions_local:
   - neg
   - pos
@@ -1473,7 +1521,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 30
+  n_sources: 31
   events:
   - event_id: 2019-07-01:commodity_energy:-
     geo: ''
@@ -1522,6 +1570,7 @@ episodes:
     - card:2026-09-15/news_02.md
     - card:2026-09-16/news_01.md
     - card:2026-09-18/news_01.md
+    - card:2026-09-25/news_02.md
 - date: '2019-08-01'
   theme: commodity_energy
   direction: neg
@@ -1599,6 +1648,7 @@ episodes:
     - card:2026-09-18/news_01.md
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
+    - card:2026-09-25/news_02.md
   directions_local:
   - neg
   - pos
@@ -1643,7 +1693,7 @@ episodes:
   - shipping_chokepoint
   - supply_disruption
   - upstream_export_strike
-  n_sources: 35
+  n_sources: 36
   events:
   - event_id: 2019-09-14:commodity_energy:-
     geo: ''
@@ -1694,6 +1744,7 @@ episodes:
     - card:2026-09-18/news_01.md
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
+    - card:2026-09-25/news_02.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
 - date: '2019-09-16'
   theme: commodity_energy
@@ -1997,6 +2048,7 @@ episodes:
     - card:2026-09-16/news_01.md
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
+    - card:2026-09-25/news_02.md
   directions_local:
   - neg
   - pos
@@ -2045,7 +2097,7 @@ episodes:
   - iran
   - military_escalation
   - supply_disruption
-  n_sources: 32
+  n_sources: 33
   events:
   - event_id: 2020-01-03:commodity_energy:-
     geo: ''
@@ -2089,6 +2141,7 @@ episodes:
     - card:2026-09-16/news_01.md
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
+    - card:2026-09-25/news_02.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
 - date: '2020-01-08'
   theme: commodity_energy
@@ -3794,6 +3847,40 @@ episodes:
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+- date: '2024-04-01'
+  theme: commodity_energy
+  direction: pos
+  directions:
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-25/news_02.md
+  directions_local:
+  - pos
+  declared: true
+  subthemes:
+  - hormuz
+  - iran
+  subthemes_local:
+  - iran
+  - military_escalation
+  n_sources: 1
+  events:
+  - event_id: 2024-04-01:commodity_energy:-
+    geo: ''
+    subthemes_local:
+    - iran
+    - military_escalation
+    directions_by_reference:
+      BZ=F:
+      - pos
+    sources:
+    - card:2026-09-25/news_02.md
 - date: '2024-04-12'
   theme: commodity_energy
   direction: mixed
@@ -4384,10 +4471,18 @@ episodes:
   - neg
   - neutral
   - pos
-  directions_declared: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-25/news_02.md
   directions_local:
   - neg
-  declared: false
+  - pos
+  declared: true
   subthemes:
   - black_sea
   - brent
@@ -4426,12 +4521,19 @@ episodes:
   - supply_hike
   - tariff_room
   - war_premium_unwind
-  subthemes_local: []
-  n_sources: 24
+  subthemes_local:
+  - iran
+  - military_escalation
+  n_sources: 25
   events:
   - event_id: 2024-10-01:commodity_energy:-
     geo: ''
-    subthemes_local: []
+    subthemes_local:
+    - iran
+    - military_escalation
+    directions_by_reference:
+      BZ=F:
+      - pos
     sources:
     - card:2026-05-30/news_01.md
     - card:2026-05-31/news_01.md
@@ -4457,6 +4559,7 @@ episodes:
     - card:2026-08-10/news_02.md
     - card:2026-08-11/news_02.md
     - card:2026-08-13/news_03.md
+    - card:2026-09-25/news_02.md
 - date: '2024-10-26'
   theme: commodity_energy
   direction: mixed
@@ -5216,6 +5319,7 @@ episodes:
     - card:2026-09-14/news_01.md
     - card:2026-09-15/news_01.md
     - card:2026-09-18/news_01.md
+    - card:2026-09-25/news_02.md
   directions_local:
   - neg
   - pos
@@ -5270,7 +5374,7 @@ episodes:
   - military_escalation
   - oil_supply_shock
   - shipping_chokepoint
-  n_sources: 39
+  n_sources: 40
   events:
   - event_id: 2025-06-13:commodity_energy:-
     geo: ''
@@ -5322,6 +5426,7 @@ episodes:
     - card:2026-09-14/news_01.md
     - card:2026-09-15/news_01.md
     - card:2026-09-18/news_01.md
+    - card:2026-09-25/news_02.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
 - date: '2025-06-22'
   theme: commodity_energy
@@ -10450,6 +10555,40 @@ episodes:
     subthemes_local: []
     sources:
     - card:2026-06-05/news_05.md
+- date: '2024-06-10'
+  theme: fiscal_policy
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - neg
+  directions_by_reference:
+    ^STOXX50E:
+    - neg
+  direction_sources:
+    ^STOXX50E:
+    - card:2026-09-24/news_03.md
+  directions_local:
+  - neg
+  declared: true
+  subthemes:
+  - fiscal_deadlock
+  - sovereign_rating
+  subthemes_local:
+  - election_risk
+  - fiscal_deadlock
+  n_sources: 1
+  events:
+  - event_id: 2024-06-10:fiscal_policy:-
+    geo: ''
+    subthemes_local:
+    - election_risk
+    - fiscal_deadlock
+    directions_by_reference:
+      ^STOXX50E:
+      - neg
+    sources:
+    - card:2026-09-24/news_03.md
 - date: '2024-07-03'
   theme: fiscal_policy
   direction: neg
@@ -10594,6 +10733,38 @@ episodes:
     - card:2026-08-24/news_04.md
     - card:2026-09-06/news_05.md
     - card:2026-09-10/news_05.md
+- date: '2024-12-02'
+  theme: fiscal_policy
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - neg
+  directions_by_reference:
+    ^STOXX50E:
+    - neg
+  direction_sources:
+    ^STOXX50E:
+    - card:2026-09-24/news_03.md
+  directions_local:
+  - neg
+  declared: true
+  subthemes:
+  - fiscal_deadlock
+  - sovereign_rating
+  subthemes_local:
+  - fiscal_deadlock
+  n_sources: 1
+  events:
+  - event_id: 2024-12-02:fiscal_policy:-
+    geo: ''
+    subthemes_local:
+    - fiscal_deadlock
+    directions_by_reference:
+      ^STOXX50E:
+      - neg
+    sources:
+    - card:2026-09-24/news_03.md
 - date: '2024-12-04'
   theme: fiscal_policy
   direction: neg
@@ -10953,6 +11124,40 @@ episodes:
     sources:
     - card:2026-08-24/news_05.md
     - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+- date: '2025-08-26'
+  theme: fiscal_policy
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - neg
+  directions_by_reference:
+    ^STOXX50E:
+    - neg
+  direction_sources:
+    ^STOXX50E:
+    - card:2026-09-24/news_03.md
+  directions_local:
+  - neg
+  declared: true
+  subthemes:
+  - fiscal_deadlock
+  - sovereign_rating
+  subthemes_local:
+  - fiscal_consolidation
+  - fiscal_deadlock
+  n_sources: 1
+  events:
+  - event_id: 2025-08-26:fiscal_policy:-
+    geo: ''
+    subthemes_local:
+    - fiscal_consolidation
+    - fiscal_deadlock
+    directions_by_reference:
+      ^STOXX50E:
+      - neg
+    sources:
+    - card:2026-09-24/news_03.md
 - date: '2025-09-03'
   theme: fiscal_policy
   direction: neg
@@ -10989,6 +11194,38 @@ episodes:
     - card:2026-08-24/news_04.md
     - card:2026-09-06/news_05.md
     - card:2026-09-10/news_05.md
+- date: '2025-09-15'
+  theme: fiscal_policy
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - neg
+  directions_by_reference:
+    ^STOXX50E:
+    - neg
+  direction_sources:
+    ^STOXX50E:
+    - card:2026-09-24/news_03.md
+  directions_local:
+  - neg
+  declared: true
+  subthemes:
+  - fiscal_deadlock
+  - sovereign_rating
+  subthemes_local:
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2025-09-15:fiscal_policy:-
+    geo: ''
+    subthemes_local:
+    - sovereign_rating
+    directions_by_reference:
+      ^STOXX50E:
+      - neg
+    sources:
+    - card:2026-09-24/news_03.md
 - date: '2025-10-01'
   theme: fiscal_policy
   direction: neg
@@ -11036,6 +11273,38 @@ episodes:
     sources:
     - card:2026-08-24/news_05.md
     - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+- date: '2025-10-06'
+  theme: fiscal_policy
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - neg
+  directions_by_reference:
+    ^STOXX50E:
+    - neg
+  direction_sources:
+    ^STOXX50E:
+    - card:2026-09-24/news_03.md
+  directions_local:
+  - neg
+  declared: true
+  subthemes:
+  - fiscal_deadlock
+  - sovereign_rating
+  subthemes_local:
+  - fiscal_deadlock
+  n_sources: 1
+  events:
+  - event_id: 2025-10-06:fiscal_policy:-
+    geo: ''
+    subthemes_local:
+    - fiscal_deadlock
+    directions_by_reference:
+      ^STOXX50E:
+      - neg
+    sources:
+    - card:2026-09-24/news_03.md
 - date: '2025-11-12'
   theme: fiscal_policy
   direction: neg
@@ -11416,11 +11685,13 @@ episodes:
     - card:2026-09-19/news_01.md
     - card:2026-09-21/news_01.md
     - card:2026-09-21/news_05.md
+    - card:2026-09-24/news_02.md
   directions_local:
   - pos
   declared: true
   subthemes:
   - financial_warfare
+  - hormuz
   - iran
   - military_escalation
   - sanctions
@@ -11431,7 +11702,7 @@ episodes:
   - military_escalation
   - sanctions
   - shipping_chokepoint
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2011-12-27:geopolitical:-
     geo: ''
@@ -11449,6 +11720,7 @@ episodes:
     - card:2026-09-19/news_01.md
     - card:2026-09-21/news_01.md
     - card:2026-09-21/news_05.md
+    - card:2026-09-24/news_02.md
 - date: '2012-01-23'
   theme: geopolitical
   direction: mixed
@@ -11466,11 +11738,13 @@ episodes:
     - card:2026-09-19/news_01.md
     - card:2026-09-21/news_01.md
     - card:2026-09-21/news_05.md
+    - card:2026-09-24/news_02.md
   directions_local:
   - pos
   declared: true
   subthemes:
   - financial_warfare
+  - hormuz
   - iran
   - military_escalation
   - sanctions
@@ -11480,7 +11754,7 @@ episodes:
   - oil_supply_shock
   - sanctions
   - shipping_chokepoint
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2012-01-23:geopolitical:-
     geo: ''
@@ -11497,6 +11771,7 @@ episodes:
     - card:2026-09-19/news_01.md
     - card:2026-09-21/news_01.md
     - card:2026-09-21/news_05.md
+    - card:2026-09-24/news_02.md
 - date: '2012-04-10'
   theme: geopolitical
   direction: ''
@@ -12606,8 +12881,9 @@ episodes:
       Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
 - date: '2017-11-08'
   theme: geopolitical
-  direction: pos
+  direction: mixed
   directions:
+  - neutral
   - pos
   directions_declared:
   - pos
@@ -12617,15 +12893,17 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
   directions_local:
   - pos
   declared: true
   subthemes:
+  - export_controls
   - negotiation_track
   - tariff_escalation
   subthemes_local:
   - negotiation_track
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2017-11-08:geopolitical:-
     geo: ''
@@ -12636,6 +12914,7 @@ episodes:
       - pos
     sources:
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
 - date: '2018-01-01'
   theme: geopolitical
   direction: neg
@@ -12849,11 +13128,13 @@ episodes:
     - card:2026-09-17/news_02.md
     - card:2026-09-19/news_01.md
     - card:2026-09-21/news_01.md
+    - card:2026-09-24/news_02.md
   directions_local:
   - pos
   declared: true
   subthemes:
   - financial_warfare
+  - hormuz
   - iran
   - military_escalation
   - sanctions
@@ -12862,7 +13143,7 @@ episodes:
   - iran
   - negotiation_track
   - sanctions
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2018-05-08:geopolitical:-
     geo: ''
@@ -12878,6 +13159,7 @@ episodes:
     - card:2026-09-17/news_02.md
     - card:2026-09-19/news_01.md
     - card:2026-09-21/news_01.md
+    - card:2026-09-24/news_02.md
 - date: '2018-06-01'
   theme: geopolitical
   direction: neg
@@ -13363,8 +13645,9 @@ episodes:
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
 - date: '2018-12-03'
   theme: geopolitical
-  direction: pos
+  direction: mixed
   directions:
+  - neutral
   - pos
   directions_declared:
   - pos
@@ -13374,20 +13657,24 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
   directions_local:
   - pos
   declared: true
   subthemes:
+  - export_controls
   - negotiation_track
   - tariff_escalation
   subthemes_local:
+  - de_escalation
   - negotiation_track
   - tariff_escalation
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2018-12-03:geopolitical:-
     geo: ''
     subthemes_local:
+    - de_escalation
     - negotiation_track
     - tariff_escalation
     directions_by_reference:
@@ -13395,6 +13682,7 @@ episodes:
       - pos
     sources:
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
 - date: '2018-12-04'
   theme: geopolitical
   direction: ''
@@ -13974,6 +14262,7 @@ episodes:
     - card:2026-09-17/news_02.md
     - card:2026-09-21/news_01.md
     - card:2026-09-21/news_05.md
+    - card:2026-09-24/news_02.md
   directions_local:
   - neg
   - pos
@@ -14012,7 +14301,7 @@ episodes:
   - military_escalation
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 27
+  n_sources: 28
   events:
   - event_id: 2019-06-13:geopolitical:-
     geo: ''
@@ -14055,6 +14344,7 @@ episodes:
     - card:2026-09-17/news_02.md
     - card:2026-09-21/news_01.md
     - card:2026-09-21/news_05.md
+    - card:2026-09-24/news_02.md
 - date: '2019-06-29'
   theme: geopolitical
   direction: neg
@@ -14115,8 +14405,10 @@ episodes:
     - card:2026-09-17/news_02.md
     - card:2026-09-19/news_01.md
     - card:2026-09-21/news_05.md
+    - card:2026-09-24/news_02.md
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
   directions_local:
   - neg
   - pos
@@ -14125,6 +14417,7 @@ episodes:
   - ceasefire
   - commodity_energy_oil
   - de_escalation
+  - export_controls
   - fed_hawkish_impulse
   - financial_warfare
   - gas
@@ -14150,6 +14443,7 @@ episodes:
   - tariff_escalation
   - war_premium_unwind
   subthemes_local:
+  - de_escalation
   - hormuz
   - iran
   - negotiation_track
@@ -14157,11 +14451,12 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - tariff_escalation
-  n_sources: 16
+  n_sources: 18
   events:
   - event_id: 2019-07-01:geopolitical:-
     geo: ''
     subthemes_local:
+    - de_escalation
     - hormuz
     - iran
     - negotiation_track
@@ -14191,6 +14486,8 @@ episodes:
     - card:2026-09-19/news_01.md
     - card:2026-09-21/news_05.md
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_02.md
+    - card:2026-09-24/news_04.md
 - date: '2019-07-03'
   theme: geopolitical
   direction: ''
@@ -14807,6 +15104,7 @@ episodes:
   direction: mixed
   directions:
   - neg
+  - neutral
   - pos
   directions_declared:
   - pos
@@ -14816,6 +15114,7 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
@@ -14834,13 +15133,15 @@ episodes:
   - trade_war
   - us_china
   subthemes_local:
+  - de_escalation
   - negotiation_track
   - tariff_escalation
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2019-10-11:geopolitical:-
     geo: ''
     subthemes_local:
+    - de_escalation
     - negotiation_track
     - tariff_escalation
     directions_by_reference:
@@ -14850,6 +15151,7 @@ episodes:
     - card:2026-07-22/news_02.md
     - card:2026-07-26/news_05.md
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
 - date: '2019-10-28'
@@ -14940,6 +15242,7 @@ episodes:
   direction: mixed
   directions:
   - neg
+  - neutral
   - pos
   directions_declared:
   - pos
@@ -14951,6 +15254,7 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     ^NDX:
@@ -14972,13 +15276,15 @@ episodes:
   - trade_war
   - us_china
   subthemes_local:
+  - de_escalation
   - negotiation_track
   - tariff_escalation
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2019-12-13:geopolitical:-
     geo: ''
     subthemes_local:
+    - de_escalation
     - negotiation_track
     - tariff_escalation
     directions_by_reference:
@@ -14991,6 +15297,7 @@ episodes:
     - card:2026-07-26/news_05.md
     - card:2026-08-16/news_03.md
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
 - date: '2019-12-31'
@@ -15056,6 +15363,7 @@ episodes:
     BZ=F:
     - card:2026-09-17/news_02.md
     - card:2026-09-21/news_01.md
+    - card:2026-09-24/news_02.md
   directions_local:
   - neg
   - pos
@@ -15089,7 +15397,7 @@ episodes:
   subthemes_local:
   - iran
   - military_escalation
-  n_sources: 26
+  n_sources: 27
   events:
   - event_id: 2020-01-03:geopolitical:-
     geo: ''
@@ -15126,6 +15434,7 @@ episodes:
     - card:2026-09-10/news_01.md
     - card:2026-09-17/news_02.md
     - card:2026-09-21/news_01.md
+    - card:2026-09-24/news_02.md
 - date: '2020-01-08'
   theme: geopolitical
   direction: mixed
@@ -15245,6 +15554,7 @@ episodes:
   direction: mixed
   directions:
   - neg
+  - neutral
   - pos
   directions_declared:
   - pos
@@ -15254,6 +15564,7 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
   directions_local:
   - neg
   - pos
@@ -15275,7 +15586,7 @@ episodes:
   - us_tariffs_regime_shift_section_122_lapse_→_301
   subthemes_local:
   - negotiation_track
-  n_sources: 6
+  n_sources: 7
   events:
   - event_id: 2020-01-15:geopolitical:-
     geo: ''
@@ -15290,6 +15601,7 @@ episodes:
     - card:2026-07-25/news_05.md
     - card:2026-07-26/news_05.md
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
 - date: '2020-01-31'
@@ -18562,8 +18874,9 @@ episodes:
       della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
 - date: '2023-11-15'
   theme: geopolitical
-  direction: pos
+  direction: mixed
   directions:
+  - neutral
   - pos
   directions_declared:
   - pos
@@ -18573,25 +18886,30 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
   directions_local:
   - pos
   declared: true
   subthemes:
+  - export_controls
   - negotiation_track
   - tariff_escalation
   subthemes_local:
+  - de_escalation
   - negotiation_track
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2023-11-15:geopolitical:-
     geo: ''
     subthemes_local:
+    - de_escalation
     - negotiation_track
     directions_by_reference:
       ^GSPC:
       - pos
     sources:
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
 - date: '2023-11-28'
   theme: geopolitical
   direction: neg
@@ -20577,6 +20895,7 @@ episodes:
     BZ=F:
     - card:2026-09-17/news_02.md
     - card:2026-09-19/news_01.md
+    - card:2026-09-24/news_02.md
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
       — mappa di episodi datati per event study (2022–2026).md
@@ -20626,7 +20945,7 @@ episodes:
   - oil_supply_shock
   - sanctions
   - shadow_fleet
-  n_sources: 23
+  n_sources: 24
   events:
   - event_id: 2025-01-10:geopolitical:-
     geo: ''
@@ -20661,6 +20980,7 @@ episodes:
     - card:2026-08-25/news_01.md
     - card:2026-09-17/news_02.md
     - card:2026-09-19/news_01.md
+    - card:2026-09-24/news_02.md
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
       — mappa di episodi datati per event study (2022–2026).md
@@ -22186,6 +22506,7 @@ episodes:
   direction: mixed
   directions:
   - neg
+  - neutral
   - pos
   directions_declared:
   - pos
@@ -22200,6 +22521,7 @@ episodes:
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
@@ -22225,13 +22547,15 @@ episodes:
   - trade_war
   - us_china
   subthemes_local:
+  - de_escalation
   - negotiation_track
   - tariff_escalation
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2025-05-12:geopolitical:-
     geo: ''
     subthemes_local:
+    - de_escalation
     - negotiation_track
     - tariff_escalation
     directions_by_reference:
@@ -22246,6 +22570,7 @@ episodes:
     - card:2026-08-08/news_05.md
     - card:2026-08-14/news_07.md
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
 - date: '2025-05-16'
@@ -22536,6 +22861,7 @@ episodes:
     - card:2026-09-17/news_02.md
     - card:2026-09-21/news_01.md
     - card:2026-09-21/news_05.md
+    - card:2026-09-24/news_02.md
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
       — mappa di episodi datati per event study (2022–2026).md
@@ -22609,7 +22935,7 @@ episodes:
   - iran
   - military_escalation
   - oil_supply_shock
-  n_sources: 40
+  n_sources: 41
   events:
   - event_id: 2025-06-13:geopolitical:-
     geo: ''
@@ -22665,6 +22991,7 @@ episodes:
     - card:2026-09-17/news_02.md
     - card:2026-09-21/news_01.md
     - card:2026-09-21/news_05.md
+    - card:2026-09-24/news_02.md
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
       — mappa di episodi datati per event study (2022–2026).md
@@ -23763,6 +24090,7 @@ episodes:
   direction: mixed
   directions:
   - neg
+  - neutral
   - pos
   directions_declared:
   - pos
@@ -23772,6 +24100,7 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
@@ -23798,7 +24127,7 @@ episodes:
   subthemes_local:
   - negotiation_track
   - tariff_escalation
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2025-08-12:geopolitical:-
     geo: ''
@@ -23815,6 +24144,7 @@ episodes:
     - card:2026-08-08/news_05.md
     - card:2026-08-14/news_07.md
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
 - date: '2025-08-15'
@@ -24163,6 +24493,7 @@ episodes:
     BZ=F:
     - card:2026-09-17/news_02.md
     - card:2026-09-19/news_01.md
+    - card:2026-09-24/news_02.md
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
       — mappa di episodi datati per event study (2022–2026).md
@@ -24212,7 +24543,7 @@ episodes:
   - refinery_products
   - refinery_strike
   - sanctions
-  n_sources: 23
+  n_sources: 24
   events:
   - event_id: 2025-10-22:geopolitical:-
     geo: ''
@@ -24247,6 +24578,7 @@ episodes:
     - card:2026-08-25/news_01.md
     - card:2026-09-17/news_02.md
     - card:2026-09-19/news_01.md
+    - card:2026-09-24/news_02.md
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
       — mappa di episodi datati per event study (2022–2026).md
@@ -24402,6 +24734,7 @@ episodes:
   direction: mixed
   directions:
   - neg
+  - neutral
   - pos
   directions_declared:
   - pos
@@ -24416,6 +24749,7 @@ episodes:
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
@@ -24449,14 +24783,16 @@ episodes:
   - us_china
   subthemes_local:
   - administrative_retaliation
+  - de_escalation
   - negotiation_track
   - tariff_escalation
-  n_sources: 15
+  n_sources: 16
   events:
   - event_id: 2025-10-30:geopolitical:-
     geo: ''
     subthemes_local:
     - administrative_retaliation
+    - de_escalation
     - negotiation_track
     - tariff_escalation
     directions_by_reference:
@@ -24479,6 +24815,7 @@ episodes:
     - card:2026-08-14/news_07.md
     - card:2026-08-16/news_03.md
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
 - date: '2025-11-10'
@@ -24486,6 +24823,7 @@ episodes:
   direction: mixed
   directions:
   - neg
+  - neutral
   - pos
   directions_declared:
   - pos
@@ -24495,6 +24833,7 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
@@ -24533,14 +24872,16 @@ episodes:
   - trade_war
   - us_china
   subthemes_local:
+  - de_escalation
   - export_controls
   - negotiation_track
   - tariff_escalation
-  n_sources: 18
+  n_sources: 19
   events:
   - event_id: 2025-11-10:geopolitical:-
     geo: ''
     subthemes_local:
+    - de_escalation
     - export_controls
     - negotiation_track
     - tariff_escalation
@@ -24565,6 +24906,7 @@ episodes:
     - card:2026-08-15/news_01.md
     - card:2026-08-16/news_03.md
     - card:2026-09-23/news_03.md
+    - card:2026-09-24/news_04.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
 - date: '2025-11-24'
@@ -25235,6 +25577,7 @@ episodes:
     - pos
   direction_sources:
     BZ=F:
+    - card:2026-09-24/news_02.md
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
       — mappa di episodi datati per event study (2022–2026).md
@@ -25305,7 +25648,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - ukraine
-  n_sources: 43
+  n_sources: 44
   events:
   - event_id: 2026-02-28:geopolitical:-
     geo: ''
@@ -25368,6 +25711,7 @@ episodes:
     - card:2026-09-05/news_02.md
     - card:2026-09-10/news_01.md
     - card:2026-09-12/news_01.md
+    - card:2026-09-24/news_02.md
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
       — mappa di episodi datati per event study (2022–2026).md
@@ -28193,9 +28537,11 @@ episodes:
     - card:2026-07-08/news_04.md
 - date: '2013-05-22'
   theme: macro_data
-  direction: ''
-  directions: []
-  directions_declared: []
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - pos
   directions_by_reference:
     ^GSPC:
     - neg
@@ -28208,17 +28554,20 @@ episodes:
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
     ^TNX:
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
-  directions_local: []
-  declared: false
+  directions_local:
+  - pos
+  declared: true
   subthemes:
   - activity_growth
   - britain_release
   - eurozone_release
   - good_news_bad_news
+  - hawkish
   - ism
   - labour_market
   - pmi
@@ -28227,19 +28576,22 @@ episodes:
   subthemes_local:
   - balance_sheet
   - guidance_pivot
-  n_sources: 1
+  - hawkish
+  n_sources: 2
   events:
   - event_id: 2013-05-22:macro_data:-
     geo: ''
     subthemes_local:
     - balance_sheet
     - guidance_pivot
+    - hawkish
     directions_by_reference:
       ^GSPC:
       - neg
       ^TNX:
       - pos
     sources:
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -28993,9 +29345,11 @@ episodes:
     - card:2026-09-07/news_04.md
 - date: '2018-03-09'
   theme: macro_data
-  direction: ''
-  directions: []
-  directions_declared: []
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - pos
   directions_by_reference:
     ^GSPC:
     - pos
@@ -29015,17 +29369,20 @@ episodes:
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
     ^TNX:
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
-  directions_local: []
-  declared: false
+  directions_local:
+  - pos
+  declared: true
   subthemes:
   - activity_growth
   - britain_release
   - eurozone_release
   - good_news_bad_news
+  - hawkish
   - ism
   - labour_market
   - pmi
@@ -29034,7 +29391,7 @@ episodes:
   subthemes_local:
   - labour_market
   - nfp
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2018-03-09:macro_data:-
     geo: ''
@@ -29049,6 +29406,7 @@ episodes:
       ^TNX:
       - pos
     sources:
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -30076,17 +30434,20 @@ episodes:
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
+    - card:2026-09-24/news_01.md
   directions_local:
   - pos
   declared: true
   subthemes:
   - activity_growth
   - consumer
+  - hawkish
   - labour_market
+  - pmi
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2021-04-15:macro_data:-
     geo: ''
@@ -30099,6 +30460,7 @@ episodes:
     sources:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
+    - card:2026-09-24/news_01.md
 - date: '2021-05-07'
   theme: macro_data
   direction: mixed
@@ -31196,6 +31558,7 @@ episodes:
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
+    - card:2026-09-24/news_01.md
   directions_local:
   - pos
   declared: true
@@ -31205,22 +31568,26 @@ episodes:
   - cny
   - consumer
   - deflation_risk
+  - hawkish
   - holiday_spending
   - labour_market
   - platform_earnings
+  - pmi
   - property_wealth
   - retail_sales
   subthemes_local:
   - activity_growth
   - consumer
+  - hawkish
   - platform_earnings
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2022-05-17:macro_data:-
     geo: ''
     subthemes_local:
     - activity_growth
     - consumer
+    - hawkish
     - platform_earnings
     directions_by_reference:
       ^TNX:
@@ -31228,6 +31595,7 @@ episodes:
     sources:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
+    - card:2026-09-24/news_01.md
     - kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati
       (2011–2026)/ Il consumatore cinese- domanda interna, e-commerce e trasmissione
       ai mercati (2011–2026).md
@@ -32220,6 +32588,7 @@ episodes:
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
     ^TNX:
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -32241,6 +32610,7 @@ episodes:
   - fed_pre_meeting
   - fiscal_stimulus
   - good_news_bad_news
+  - hawkish
   - headline_cpi
   - headline_vs_core
   - hot_surprise
@@ -32268,7 +32638,7 @@ episodes:
   - inflation_print
   - inflation_upside
   - us_cpi
-  n_sources: 21
+  n_sources: 22
   events:
   - event_id: 2022-09-13:macro_data:-
     geo: ''
@@ -32309,6 +32679,7 @@ episodes:
     - card:2026-09-02/news_05.md
     - card:2026-09-10/news_07.md
     - card:2026-09-12/news_03.md
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -33755,18 +34126,21 @@ episodes:
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
+    - card:2026-09-24/news_01.md
   directions_local:
   - pos
   declared: true
   subthemes:
   - activity_growth
   - consumer
+  - hawkish
   - labour_market
+  - pmi
   subthemes_local:
   - activity_growth
   - consumer
   - labour_market
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2023-02-15:macro_data:-
     geo: ''
@@ -33780,6 +34154,7 @@ episodes:
     sources:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
+    - card:2026-09-24/news_01.md
 - date: '2023-04-03'
   theme: macro_data
   direction: neg
@@ -35120,27 +35495,32 @@ episodes:
       e politica economica cinese — regime ed episodi storici (2022–2026).md
 - date: '2023-10-06'
   theme: macro_data
-  direction: ''
-  directions: []
-  directions_declared: []
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - pos
   directions_by_reference:
     ^TNX:
     - pos
   direction_sources:
     ^TNX:
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
   direction_review_excluded:
     ^GSPC: 'Riga: ''equity mista'' — non è una direzione.'
-  directions_local: []
-  declared: false
+  directions_local:
+  - pos
+  declared: true
   subthemes:
   - activity_growth
   - britain_release
   - eurozone_release
   - good_news_bad_news
+  - hawkish
   - ism
   - labour_market
   - pmi
@@ -35149,7 +35529,7 @@ episodes:
   subthemes_local:
   - labour_market
   - nfp
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2023-10-06:macro_data:-
     geo: ''
@@ -35160,6 +35540,7 @@ episodes:
       ^TNX:
       - pos
     sources:
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -35178,17 +35559,20 @@ episodes:
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
+    - card:2026-09-24/news_01.md
   directions_local:
   - pos
   declared: true
   subthemes:
   - activity_growth
   - consumer
+  - hawkish
   - labour_market
+  - pmi
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2023-10-17:macro_data:-
     geo: ''
@@ -35201,6 +35585,7 @@ episodes:
     sources:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
+    - card:2026-09-24/news_01.md
 - date: '2023-10-25'
   theme: macro_data
   direction: ''
@@ -36028,6 +36413,7 @@ episodes:
     - pos
   direction_sources:
     ^TNX:
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -36073,6 +36459,7 @@ episodes:
   - global_growth
   - good_news_bad_news
   - growth_miss
+  - hawkish
   - hawkish_tilt
   - hicp
   - housing
@@ -36125,7 +36512,7 @@ episodes:
   - ism
   - labour_market
   - nfp
-  n_sources: 45
+  n_sources: 46
   events:
   - event_id: 2024-02-02:macro_data:-
     geo: ''
@@ -36182,6 +36569,7 @@ episodes:
     - card:2026-09-04/news_02.md
     - card:2026-09-05/news_03.md
     - card:2026-09-07/news_04.md
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -36870,17 +37258,20 @@ episodes:
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
+    - card:2026-09-24/news_01.md
   directions_local:
   - pos
   declared: true
   subthemes:
   - activity_growth
   - consumer
+  - hawkish
   - labour_market
+  - pmi
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2024-04-15:macro_data:-
     geo: ''
@@ -36893,6 +37284,7 @@ episodes:
     sources:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
+    - card:2026-09-24/news_01.md
 - date: '2024-04-29'
   theme: macro_data
   direction: neg
@@ -37373,17 +37765,20 @@ episodes:
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
+    - card:2026-09-24/news_01.md
   directions_local:
   - pos
   declared: true
   subthemes:
   - activity_growth
   - consumer
+  - hawkish
   - labour_market
+  - pmi
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2024-07-16:macro_data:-
     geo: ''
@@ -37396,6 +37791,7 @@ episodes:
     sources:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
+    - card:2026-09-24/news_01.md
 - date: '2024-07-30'
   theme: macro_data
   direction: ''
@@ -40047,6 +40443,7 @@ episodes:
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
     ^TNX:
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -40096,6 +40493,7 @@ episodes:
   - good_news_bad_news
   - growth_miss
   - growth_surprise
+  - hawkish
   - hawkish_tilt
   - hicp
   - industrial
@@ -40157,7 +40555,7 @@ episodes:
   - pboc
   - pmi
   - us_cpi
-  n_sources: 64
+  n_sources: 65
   events:
   - event_id: 2025-01-10:macro_data:-
     geo: ''
@@ -40245,6 +40643,7 @@ episodes:
     - card:2026-09-09/news_03.md
     - card:2026-09-10/news_07.md
     - card:2026-09-12/news_03.md
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -42596,9 +42995,11 @@ episodes:
       storici (2013–presente).md
 - date: '2025-12-09'
   theme: macro_data
-  direction: ''
-  directions: []
-  directions_declared: []
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - pos
   directions_by_reference:
     ^FVX:
     - pos
@@ -42611,29 +43012,34 @@ episodes:
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
     ^TNX:
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
-  directions_local: []
-  declared: false
+  directions_local:
+  - pos
+  declared: true
   subthemes:
   - activity_growth
   - britain_release
   - eurozone_release
   - good_news_bad_news
+  - hawkish
   - ism
   - labour_market
   - pmi
   - policy_cycle_phase
   - reaction_function
   subthemes_local:
+  - activity_growth
   - labour_market
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2025-12-09:macro_data:-
     geo: ''
     subthemes_local:
+    - activity_growth
     - labour_market
     directions_by_reference:
       ^FVX:
@@ -42641,6 +43047,7 @@ episodes:
       ^TNX:
       - pos
     sources:
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -43587,7 +43994,8 @@ episodes:
   - neg
   - neutral
   - pos
-  directions_declared: []
+  directions_declared:
+  - pos
   directions_by_reference:
     ^FVX:
     - pos
@@ -43607,12 +44015,14 @@ episodes:
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
     ^TNX:
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
-  directions_local: []
-  declared: false
+  directions_local:
+  - pos
+  declared: true
   subthemes:
   - activity_growth
   - adp
@@ -43649,6 +44059,7 @@ episodes:
   - global_growth
   - good_news_bad_news
   - growth_miss
+  - hawkish
   - hawkish_tilt
   - hicp
   - housing
@@ -43705,7 +44116,7 @@ episodes:
   - labour_market
   - nfp
   - usa
-  n_sources: 47
+  n_sources: 48
   events:
   - event_id: 2026-06-05:macro_data:-
     geo: ''
@@ -43767,6 +44178,7 @@ episodes:
     - card:2026-08-18/news_03.md
     - card:2026-08-19/news_04.md
     - card:2026-08-19/news_06.md
+    - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -45213,6 +45625,7 @@ episodes:
   direction_sources:
     IEF:
     - card:2026-09-19/news_03.md
+    - card:2026-09-25/news_01.md
     ^GSPC:
     - card:2026-09-15/news_03.md
     - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
@@ -45235,19 +45648,22 @@ episodes:
   - curve_steepening
   - duration_supply
   - guidance_pivot
+  - hawkish
   - rate_decision
   - term_premium
   subthemes_local:
   - balance_sheet
   - guidance_pivot
+  - hawkish
   - term_premium
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2013-05-22:monetary_policy:-
     geo: ''
     subthemes_local:
     - balance_sheet
     - guidance_pivot
+    - hawkish
     - term_premium
     directions_by_reference:
       IEF:
@@ -45261,6 +45677,7 @@ episodes:
     sources:
     - card:2026-09-15/news_03.md
     - card:2026-09-19/news_03.md
+    - card:2026-09-25/news_01.md
     - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
       ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
       della parte lunga- regime ed episodi storici (1994–2026).md
@@ -45827,6 +46244,7 @@ episodes:
   direction_sources:
     IEF:
     - card:2026-09-19/news_03.md
+    - card:2026-09-25/news_01.md
     ^GSPC:
     - card:2026-09-16/news_02.md
     - card:2026-09-17/news_03.md
@@ -45841,14 +46259,16 @@ episodes:
   - rate_decision
   - term_premium
   subthemes_local:
+  - dot_plot
   - guidance_pivot
   - hawkish
   - rate_decision
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2015-12-16:monetary_policy:-
     geo: ''
     subthemes_local:
+    - dot_plot
     - guidance_pivot
     - hawkish
     - rate_decision
@@ -45863,6 +46283,7 @@ episodes:
     - card:2026-09-18/news_05.md
     - card:2026-09-19/news_03.md
     - card:2026-09-21/news_04.md
+    - card:2026-09-25/news_01.md
 - date: '2016-01-07'
   theme: monetary_policy
   direction: mixed
@@ -46676,6 +47097,7 @@ episodes:
   direction_sources:
     IEF:
     - card:2026-09-19/news_03.md
+    - card:2026-09-25/news_01.md
     ^GSPC:
     - card:2026-09-15/news_03.md
     - card:2026-09-17/news_03.md
@@ -46692,7 +47114,7 @@ episodes:
   subthemes_local:
   - guidance_pivot
   - hawkish
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2018-10-03:monetary_policy:-
     geo: ''
@@ -46710,6 +47132,7 @@ episodes:
     - card:2026-09-18/news_05.md
     - card:2026-09-19/news_03.md
     - card:2026-09-21/news_04.md
+    - card:2026-09-25/news_01.md
 - date: '2018-11-07'
   theme: monetary_policy
   direction: ''
@@ -47471,6 +47894,7 @@ episodes:
   direction_sources:
     IEF:
     - card:2026-09-19/news_03.md
+    - card:2026-09-25/news_01.md
     ^GSPC:
     - card:2026-09-16/news_02.md
     - card:2026-09-17/news_03.md
@@ -47487,7 +47911,7 @@ episodes:
   subthemes_local:
   - guidance_pivot
   - hawkish
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2022-01-26:monetary_policy:-
     geo: ''
@@ -47505,6 +47929,7 @@ episodes:
     - card:2026-09-18/news_05.md
     - card:2026-09-19/news_03.md
     - card:2026-09-21/news_04.md
+    - card:2026-09-25/news_01.md
 - date: '2022-02-03'
   theme: monetary_policy
   direction: neg
@@ -47927,6 +48352,7 @@ episodes:
   direction_sources:
     IEF:
     - card:2026-09-19/news_03.md
+    - card:2026-09-25/news_01.md
     ^GSPC:
     - card:2026-09-16/news_02.md
     - card:2026-09-17/news_03.md
@@ -47944,7 +48370,7 @@ episodes:
   - guidance_pivot
   - hawkish
   - rate_decision
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2022-06-15:monetary_policy:-
     geo: ''
@@ -47963,6 +48389,7 @@ episodes:
     - card:2026-09-18/news_05.md
     - card:2026-09-19/news_03.md
     - card:2026-09-21/news_04.md
+    - card:2026-09-25/news_01.md
 - date: '2022-06-16'
   theme: monetary_policy
   direction: neg
@@ -48310,6 +48737,7 @@ episodes:
   direction_sources:
     IEF:
     - card:2026-09-19/news_03.md
+    - card:2026-09-25/news_01.md
   directions_local:
   - neg
   - pos
@@ -48373,7 +48801,7 @@ episodes:
   - pboc
   - rate_decision
   - yen
-  n_sources: 32
+  n_sources: 33
   events:
   - event_id: 2022-08-26:monetary_policy:-
     geo: ''
@@ -48419,6 +48847,7 @@ episodes:
     - card:2026-09-04/news_01.md
     - card:2026-09-12/news_04.md
     - card:2026-09-19/news_03.md
+    - card:2026-09-25/news_01.md
   - event_id: 2022-08-26:monetary_policy:japan_release
     geo: japan_release
     subthemes_local:
@@ -48744,11 +49173,15 @@ episodes:
   - neg
   - pos
   directions_by_reference:
+    IEF:
+    - neg
     ^FVX:
     - pos
     ^GSPC:
     - neg
   direction_sources:
+    IEF:
+    - card:2026-09-25/news_01.md
     ^FVX:
     - card:2026-09-14/news_03.md
     - card:2026-09-18/news_03.md
@@ -48821,7 +49254,7 @@ episodes:
   - hawkish
   - hawkish_surprise
   - rate_decision
-  n_sources: 37
+  n_sources: 38
   events:
   - event_id: 2022-09-21:monetary_policy:-
     geo: ''
@@ -48832,6 +49265,8 @@ episodes:
     - hawkish_surprise
     - rate_decision
     directions_by_reference:
+      IEF:
+      - neg
       ^FVX:
       - pos
       ^GSPC:
@@ -48874,6 +49309,7 @@ episodes:
     - card:2026-09-18/news_03.md
     - card:2026-09-18/news_05.md
     - card:2026-09-21/news_04.md
+    - card:2026-09-25/news_01.md
 - date: '2022-09-22'
   theme: monetary_policy
   direction: mixed
@@ -51317,6 +51753,8 @@ episodes:
   directions_by_reference:
     CNY=X:
     - pos
+    IEF:
+    - neg
     ^FVX:
     - pos
     ^GSPC:
@@ -51324,6 +51762,8 @@ episodes:
   direction_sources:
     CNY=X:
     - card:2026-09-20/news_03.md
+    IEF:
+    - card:2026-09-25/news_01.md
     ^FVX:
     - card:2026-09-14/news_03.md
     - card:2026-09-18/news_03.md
@@ -51383,7 +51823,7 @@ episodes:
   - pboc
   - rate_decision
   - term_premium
-  n_sources: 35
+  n_sources: 36
   events:
   - event_id: 2023-09-20:monetary_policy:-
     geo: ''
@@ -51399,6 +51839,8 @@ episodes:
     directions_by_reference:
       CNY=X:
       - pos
+      IEF:
+      - neg
       ^FVX:
       - pos
       ^GSPC:
@@ -51439,6 +51881,7 @@ episodes:
     - card:2026-09-18/news_05.md
     - card:2026-09-20/news_03.md
     - card:2026-09-21/news_04.md
+    - card:2026-09-25/news_01.md
 - date: '2023-10-03'
   theme: monetary_policy
   direction: neg
@@ -52281,25 +52724,31 @@ episodes:
   direction_sources:
     IEF:
     - card:2026-09-19/news_03.md
+    - card:2026-09-25/news_01.md
   directions_local:
   - neg
   declared: true
   subthemes:
   - guidance_pivot
+  - hawkish
   - rate_decision
+  - term_premium
   subthemes_local:
   - guidance_pivot
-  n_sources: 1
+  - hawkish
+  n_sources: 2
   events:
   - event_id: 2024-04-16:monetary_policy:-
     geo: ''
     subthemes_local:
     - guidance_pivot
+    - hawkish
     directions_by_reference:
       IEF:
       - neg
     sources:
     - card:2026-09-19/news_03.md
+    - card:2026-09-25/news_01.md
 - date: '2024-04-29'
   theme: monetary_policy
   direction: mixed
@@ -54154,6 +54603,7 @@ episodes:
   direction_sources:
     IEF:
     - card:2026-09-19/news_03.md
+    - card:2026-09-25/news_01.md
     ^FVX:
     - card:2026-09-14/news_03.md
     - card:2026-09-18/news_03.md
@@ -54261,7 +54711,7 @@ episodes:
   - rate_decision
   - term_premium
   - yen
-  n_sources: 76
+  n_sources: 77
   events:
   - event_id: 2024-12-18:monetary_policy:-
     geo: ''
@@ -54350,6 +54800,7 @@ episodes:
     - card:2026-09-14/news_03.md
     - card:2026-09-18/news_03.md
     - card:2026-09-19/news_03.md
+    - card:2026-09-25/news_01.md
   - event_id: 2024-12-18:monetary_policy:eurozone_release
     geo: eurozone_release
     subthemes_local:
@@ -55130,6 +55581,7 @@ episodes:
   directions:
   - neg
   directions_declared:
+  - neg
   - pos
   directions_by_reference:
     IEF:
@@ -55140,6 +55592,7 @@ episodes:
     - pos
   direction_sources:
     IEF:
+    - card:2026-09-25/news_01.md
     - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
       ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
       della parte lunga- regime ed episodi storici (1994–2026).md
@@ -55152,6 +55605,7 @@ episodes:
       ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
       della parte lunga- regime ed episodi storici (1994–2026).md
   directions_local:
+  - neg
   - pos
   declared: true
   subthemes:
@@ -55161,6 +55615,7 @@ episodes:
   - curve_steepening
   - duration_supply
   - guidance_pivot
+  - hawkish
   - term_premium
   subthemes_local:
   - auction
@@ -55169,7 +55624,7 @@ episodes:
   - sovereign_auction
   - synchronized_selloff
   - term_premium
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2025-05-21:monetary_policy:-
     geo: ''
@@ -55192,6 +55647,7 @@ episodes:
     - card:2026-09-01/news_02.md
     - card:2026-09-03/news_02.md
     - card:2026-09-09/news_02.md
+    - card:2026-09-25/news_01.md
     - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
       ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
       della parte lunga- regime ed episodi storici (1994–2026).md
@@ -59035,6 +59491,18 @@ episodes:
   directions:
   - neutral
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neg
+    ^NDX:
+    - neg
+  direction_sources:
+    SOXX:
+    - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
+      (2023–2026).md
+    ^NDX:
+    - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
+      (2023–2026).md
   directions_local:
   - neg
   declared: false
@@ -59063,6 +59531,11 @@ episodes:
     subthemes_local:
     - earnings_shock
     - valuation_derisking
+    directions_by_reference:
+      SOXX:
+      - neg
+      ^NDX:
+      - neg
     sources:
     - card:2026-08-05/news_02.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
@@ -59281,6 +59754,13 @@ episodes:
   directions:
   - neutral
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neg
+  direction_sources:
+    SOXX:
+    - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
+      (2023–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -59300,12 +59780,17 @@ episodes:
   - valuation_derisking
   subthemes_local:
   - earnings_shock
+  - export_controls
   n_sources: 2
   events:
   - event_id: 2019-06-14:structural_themes:-
     geo: ''
     subthemes_local:
     - earnings_shock
+    - export_controls
+    directions_by_reference:
+      SOXX:
+      - neg
     sources:
     - card:2026-08-05/news_02.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
@@ -59846,6 +60331,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neg
+  direction_sources:
+    SOXX:
+    - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
+      (2023–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -59864,6 +60356,8 @@ episodes:
   subthemes_local:
   - ai_capex
   - ai_capex_spending
+  - earnings_shock
+  - memory_cycle
   n_sources: 1
   events:
   - event_id: 2022-09-30:structural_themes:-
@@ -59871,6 +60365,11 @@ episodes:
     subthemes_local:
     - ai_capex
     - ai_capex_spending
+    - earnings_shock
+    - memory_cycle
+    directions_by_reference:
+      SOXX:
+      - neg
     sources:
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
@@ -59883,6 +60382,13 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    SOXX:
+    - neg
+  direction_sources:
+    SOXX:
+    - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
+      (2023–2026).md
   directions_local:
   - neg
   declared: true
@@ -59961,6 +60467,9 @@ episodes:
     - labour_market
     - sanctions
     - valuation_derisking
+    directions_by_reference:
+      SOXX:
+      - neg
     sources:
     - card:2026-06-14/news_06.md
     - card:2026-06-17/news_02.md
@@ -60311,6 +60820,18 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    SOXX:
+    - pos
+    ^NDX:
+    - pos
+  direction_sources:
+    SOXX:
+    - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
+      (2023–2026).md
+    ^NDX:
+    - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
+      (2023–2026).md
   directions_local:
   - neg
   - pos
@@ -60390,6 +60911,11 @@ episodes:
     - hyperscaler_capex
     - memory_cycle
     - valuation_derisking
+    directions_by_reference:
+      SOXX:
+      - pos
+      ^NDX:
+      - pos
     sources:
     - card:2026-05-30/news_04.md
     - card:2026-06-01/news_02.md
@@ -60704,6 +61230,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neg
+  direction_sources:
+    SOXX:
+    - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
+      (2023–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -60727,6 +61260,9 @@ episodes:
     geo: ''
     subthemes_local:
     - export_controls
+    directions_by_reference:
+      SOXX:
+      - neg
     sources:
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
@@ -61866,6 +62402,29 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neutral
+    XLU:
+    - pos
+    ^NDX:
+    - neutral
+  direction_sources:
+    SOXX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    XLU:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    ^NDX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
   directions_local: []
   declared: false
   subthemes:
@@ -61880,6 +62439,13 @@ episodes:
     geo: ''
     subthemes_local:
     - ai_capex_spending
+    directions_by_reference:
+      SOXX:
+      - neutral
+      XLU:
+      - pos
+      ^NDX:
+      - neutral
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
@@ -61890,18 +62456,41 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neutral
+    XLU:
+    - pos
+  direction_sources:
+    SOXX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    XLU:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
   directions_local: []
   declared: false
   subthemes:
   - ai_capex
   - grid_capacity
   - power_bottleneck
-  subthemes_local: []
+  subthemes_local:
+  - ai_capex_spending
   n_sources: 1
   events:
   - event_id: 2024-10-14:structural_themes:-
     geo: ''
-    subthemes_local: []
+    subthemes_local:
+    - ai_capex_spending
+    directions_by_reference:
+      SOXX:
+      - neutral
+      XLU:
+      - pos
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
@@ -61912,6 +62501,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neg
+  direction_sources:
+    SOXX:
+    - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
+      (2023–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -61928,13 +62524,18 @@ episodes:
   - semiconductors
   - semis
   subthemes_local:
+  - earnings_shock
   - foundry_logic
   n_sources: 1
   events:
   - event_id: 2024-10-15:structural_themes:-
     geo: ''
     subthemes_local:
+    - earnings_shock
     - foundry_logic
+    directions_by_reference:
+      SOXX:
+      - neg
     sources:
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
@@ -61943,6 +62544,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neutral
+    XLU:
+    - pos
+  direction_sources:
+    SOXX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    XLU:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
   directions_local: []
   declared: false
   subthemes:
@@ -61957,6 +62574,11 @@ episodes:
     geo: ''
     subthemes_local:
     - ai_capex_spending
+    directions_by_reference:
+      SOXX:
+      - neutral
+      XLU:
+      - pos
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
@@ -61967,6 +62589,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neutral
+    XLU:
+    - neg
+  direction_sources:
+    SOXX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    XLU:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
   directions_local: []
   declared: false
   subthemes:
@@ -61974,13 +62612,20 @@ episodes:
   - grid_capacity
   - power_bottleneck
   subthemes_local:
+  - ai_capex_spending
   - election_risk
   n_sources: 1
   events:
   - event_id: 2024-11-04:structural_themes:-
     geo: ''
     subthemes_local:
+    - ai_capex_spending
     - election_risk
+    directions_by_reference:
+      SOXX:
+      - neutral
+      XLU:
+      - neg
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
@@ -62098,18 +62743,41 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neutral
+    XLU:
+    - pos
+  direction_sources:
+    SOXX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    XLU:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
   directions_local: []
   declared: false
   subthemes:
   - ai_capex
   - grid_capacity
   - power_bottleneck
-  subthemes_local: []
+  subthemes_local:
+  - ai_capex_spending
   n_sources: 1
   events:
   - event_id: 2024-12-03:structural_themes:-
     geo: ''
-    subthemes_local: []
+    subthemes_local:
+    - ai_capex_spending
+    directions_by_reference:
+      SOXX:
+      - neutral
+      XLU:
+      - pos
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
@@ -62301,9 +62969,23 @@ episodes:
   directions_declared:
   - neg
   directions_by_reference:
+    SOXX:
+    - neg
+    XLU:
+    - neg
     ^GSPC:
     - neg
   direction_sources:
+    SOXX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    XLU:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
     ^GSPC:
     - card:2026-09-15/news_04.md
   directions_local:
@@ -62392,6 +63074,10 @@ episodes:
     - model_capability_shock
     - valuation_derisking
     directions_by_reference:
+      SOXX:
+      - neg
+      XLU:
+      - neg
       ^GSPC:
       - neg
     sources:
@@ -63022,9 +63708,14 @@ episodes:
   directions_declared:
   - neg
   directions_by_reference:
+    SOXX:
+    - neg
     ^GSPC:
     - neg
   direction_sources:
+    SOXX:
+    - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
+      (2023–2026).md
     ^GSPC:
     - card:2026-09-15/news_04.md
   directions_local:
@@ -63063,6 +63754,8 @@ episodes:
     - export_controls
     - tariff_escalation
     directions_by_reference:
+      SOXX:
+      - neg
       ^GSPC:
       - neg
     sources:
@@ -63100,18 +63793,41 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neutral
+    XLU:
+    - pos
+  direction_sources:
+    SOXX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    XLU:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
   directions_local: []
   declared: false
   subthemes:
   - ai_capex
   - grid_capacity
   - power_bottleneck
-  subthemes_local: []
+  subthemes_local:
+  - ai_capex_spending
   n_sources: 1
   events:
   - event_id: 2025-06-03:structural_themes:-
     geo: ''
-    subthemes_local: []
+    subthemes_local:
+    - ai_capex_spending
+    directions_by_reference:
+      SOXX:
+      - neutral
+      XLU:
+      - pos
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
@@ -63122,18 +63838,41 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neutral
+    XLU:
+    - pos
+  direction_sources:
+    SOXX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    XLU:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
   directions_local: []
   declared: false
   subthemes:
   - ai_capex
   - grid_capacity
   - power_bottleneck
-  subthemes_local: []
+  subthemes_local:
+  - ai_capex_spending
   n_sources: 1
   events:
   - event_id: 2025-06-11:structural_themes:-
     geo: ''
-    subthemes_local: []
+    subthemes_local:
+    - ai_capex_spending
+    directions_by_reference:
+      SOXX:
+      - neutral
+      XLU:
+      - pos
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
@@ -63144,18 +63883,41 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - pos
+    XLU:
+    - neutral
+  direction_sources:
+    SOXX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    XLU:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
   directions_local: []
   declared: false
   subthemes:
   - ai_capex
   - grid_capacity
   - power_bottleneck
-  subthemes_local: []
+  subthemes_local:
+  - export_controls
   n_sources: 1
   events:
   - event_id: 2025-07-15:structural_themes:-
     geo: ''
-    subthemes_local: []
+    subthemes_local:
+    - export_controls
+    directions_by_reference:
+      SOXX:
+      - pos
+      XLU:
+      - neutral
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
@@ -63413,6 +64175,29 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    EWT:
+    - pos
+    SOXX:
+    - pos
+    XLU:
+    - neutral
+  direction_sources:
+    EWT:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    SOXX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    XLU:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
   directions_local: []
   declared: false
   subthemes:
@@ -63429,6 +64214,13 @@ episodes:
     subthemes_local:
     - earnings_shock
     - foundry_logic
+    directions_by_reference:
+      EWT:
+      - pos
+      SOXX:
+      - pos
+      XLU:
+      - neutral
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
@@ -63463,18 +64255,41 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neutral
+    XLU:
+    - pos
+  direction_sources:
+    SOXX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    XLU:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
   directions_local: []
   declared: false
   subthemes:
   - ai_capex
   - grid_capacity
   - power_bottleneck
-  subthemes_local: []
+  subthemes_local:
+  - ai_capex_spending
   n_sources: 1
   events:
   - event_id: 2025-12-09:structural_themes:-
     geo: ''
-    subthemes_local: []
+    subthemes_local:
+    - ai_capex_spending
+    directions_by_reference:
+      SOXX:
+      - neutral
+      XLU:
+      - pos
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
@@ -63540,18 +64355,41 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neutral
+    XLU:
+    - pos
+  direction_sources:
+    SOXX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    XLU:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
   directions_local: []
   declared: false
   subthemes:
   - ai_capex
   - grid_capacity
   - power_bottleneck
-  subthemes_local: []
+  subthemes_local:
+  - ai_capex_spending
   n_sources: 1
   events:
   - event_id: 2026-05-06:structural_themes:-
     geo: ''
-    subthemes_local: []
+    subthemes_local:
+    - ai_capex_spending
+    directions_by_reference:
+      SOXX:
+      - neutral
+      XLU:
+      - pos
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
@@ -63916,18 +64754,41 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neutral
+    XLU:
+    - pos
+  direction_sources:
+    SOXX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    XLU:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
   directions_local: []
   declared: false
   subthemes:
   - ai_capex
   - grid_capacity
   - power_bottleneck
-  subthemes_local: []
+  subthemes_local:
+  - ai_capex_spending
   n_sources: 1
   events:
   - event_id: 2026-07-22:structural_themes:-
     geo: ''
-    subthemes_local: []
+    subthemes_local:
+    - ai_capex_spending
+    directions_by_reference:
+      SOXX:
+      - neutral
+      XLU:
+      - pos
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
@@ -64220,6 +65081,22 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neutral
+    XLU:
+    - pos
+  direction_sources:
+    SOXX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
+    XLU:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
   directions_local: []
   declared: false
   subthemes:
@@ -64236,6 +65113,11 @@ episodes:
     subthemes_local:
     - ai_capex_spending
     - valuation_derisking
+    directions_by_reference:
+      SOXX:
+      - neutral
+      XLU:
+      - pos
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
