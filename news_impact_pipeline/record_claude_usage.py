@@ -103,7 +103,10 @@ def main() -> None:
         log.write(f"[usage] turni={turns} input={tok_in} cache_write={cache_write} "
                   f"cache_read={cache_read} output={tok_out} costo=${cost:.2f}\n")
 
-    _write_row(csv_path, {**base, "status": stato_override or "ok",
+    # is_error: JSON ben formato ma run fallito (es. 25/09, "OAuth session expired"
+    # con exit 1): prima finiva nel CSV come "ok" con zero turni.
+    esito = "errore" if data.get("is_error") else "ok"
+    _write_row(csv_path, {**base, "status": stato_override or esito,
                            "started_at": started_at, "turns": turns, "input": tok_in,
                            "cache_write": cache_write, "cache_read": cache_read,
                            "output": tok_out, "cost_usd": f"{cost:.4f}",
