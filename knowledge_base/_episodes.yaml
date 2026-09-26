@@ -1,5 +1,5 @@
-generated_at: '2026-09-25T09:52:27'
-num_episodes: 1175
+generated_at: '2026-09-26T11:04:42'
+num_episodes: 1179
 episodes:
 - date: '1984-01-01'
   theme: commodity_energy
@@ -600,6 +600,7 @@ episodes:
     - card:2026-09-20/news_02.md
     - card:2026-09-22/news_01.md
     - card:2026-09-23/news_01.md
+    - card:2026-09-26/news_01.md
   directions_local:
   - neg
   - pos
@@ -643,7 +644,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 34
+  n_sources: 35
   events:
   - event_id: 2015-07-14:commodity_energy:-
     geo: ''
@@ -693,6 +694,7 @@ episodes:
     - card:2026-09-20/news_02.md
     - card:2026-09-22/news_01.md
     - card:2026-09-23/news_01.md
+    - card:2026-09-26/news_01.md
 - date: '2015-08-24'
   theme: commodity_energy
   direction: mixed
@@ -2437,6 +2439,41 @@ episodes:
     subthemes_local: []
     sources:
     - card:2026-08-13/news_02.md
+- date: '2022-02-15'
+  theme: commodity_energy
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - neg
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-26/news_01.md
+  directions_local:
+  - neg
+  declared: true
+  subthemes:
+  - de_escalation
+  - hormuz
+  - negotiation_track
+  subthemes_local:
+  - de_escalation
+  - negotiation_track
+  n_sources: 1
+  events:
+  - event_id: 2022-02-15:commodity_energy:-
+    geo: ''
+    subthemes_local:
+    - de_escalation
+    - negotiation_track
+    directions_by_reference:
+      BZ=F:
+      - neg
+    sources:
+    - card:2026-09-26/news_01.md
 - date: '2022-02-24'
   theme: commodity_energy
   direction: mixed
@@ -3060,6 +3097,7 @@ episodes:
     - card:2026-09-20/news_02.md
     - card:2026-09-22/news_01.md
     - card:2026-09-23/news_01.md
+    - card:2026-09-26/news_01.md
   directions_local:
   - neg
   - pos
@@ -3090,7 +3128,7 @@ episodes:
   - iran
   - negotiation_track
   - shipping_chokepoint
-  n_sources: 29
+  n_sources: 30
   events:
   - event_id: 2023-03-10:commodity_energy:-
     geo: ''
@@ -3132,6 +3170,7 @@ episodes:
     - card:2026-09-20/news_02.md
     - card:2026-09-22/news_01.md
     - card:2026-09-23/news_01.md
+    - card:2026-09-26/news_01.md
 - date: '2023-03-13'
   theme: commodity_energy
   direction: neg
@@ -4172,6 +4211,7 @@ episodes:
     - card:2026-09-20/news_02.md
     - card:2026-09-22/news_01.md
     - card:2026-09-23/news_01.md
+    - card:2026-09-26/news_01.md
   directions_local:
   - neg
   - pos
@@ -4226,7 +4266,7 @@ episodes:
   - iran
   - military_escalation
   - sanctions
-  n_sources: 42
+  n_sources: 43
   events:
   - event_id: 2024-04-22:commodity_energy:-
     geo: ''
@@ -4283,6 +4323,7 @@ episodes:
     - card:2026-09-20/news_02.md
     - card:2026-09-22/news_01.md
     - card:2026-09-23/news_01.md
+    - card:2026-09-26/news_01.md
 - date: '2024-05-11'
   theme: commodity_energy
   direction: pos
@@ -4581,6 +4622,7 @@ episodes:
     - card:2026-09-20/news_02.md
     - card:2026-09-22/news_01.md
     - card:2026-09-23/news_01.md
+    - card:2026-09-26/news_01.md
   directions_local:
   - neg
   - pos
@@ -4638,7 +4680,7 @@ episodes:
   - oil_supply_shock
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 53
+  n_sources: 54
   events:
   - event_id: 2024-10-26:commodity_energy:-
     geo: ''
@@ -4710,6 +4752,7 @@ episodes:
     - card:2026-09-20/news_02.md
     - card:2026-09-22/news_01.md
     - card:2026-09-23/news_01.md
+    - card:2026-09-26/news_01.md
 - date: '2024-11-27'
   theme: commodity_energy
   direction: pos
@@ -5183,6 +5226,41 @@ episodes:
     subthemes_local: []
     sources:
     - card:2026-07-18/news_03.md
+- date: '2025-03-25'
+  theme: commodity_energy
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - neg
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - card:2026-09-26/news_01.md
+  directions_local:
+  - neg
+  declared: true
+  subthemes:
+  - de_escalation
+  - hormuz
+  - negotiation_track
+  subthemes_local:
+  - de_escalation
+  - negotiation_track
+  n_sources: 1
+  events:
+  - event_id: 2025-03-25:commodity_energy:-
+    geo: ''
+    subthemes_local:
+    - de_escalation
+    - negotiation_track
+    directions_by_reference:
+      BZ=F:
+      - neg
+    sources:
+    - card:2026-09-26/news_01.md
 - date: '2025-04-03'
   theme: commodity_energy
   direction: mixed
@@ -5591,6 +5669,7 @@ episodes:
     - card:2026-09-20/news_02.md
     - card:2026-09-22/news_01.md
     - card:2026-09-23/news_01.md
+    - card:2026-09-26/news_01.md
   directions_local:
   - neg
   - pos
@@ -5647,7 +5726,7 @@ episodes:
   - military_escalation
   - negotiation_track
   - shipping_chokepoint
-  n_sources: 51
+  n_sources: 52
   events:
   - event_id: 2025-06-23:commodity_energy:-
     geo: ''
@@ -5715,6 +5794,7 @@ episodes:
     - card:2026-09-20/news_02.md
     - card:2026-09-22/news_01.md
     - card:2026-09-23/news_01.md
+    - card:2026-09-26/news_01.md
 - date: '2025-06-24'
   theme: commodity_energy
   direction: mixed
@@ -5735,6 +5815,7 @@ episodes:
     - card:2026-09-20/news_02.md
     - card:2026-09-22/news_01.md
     - card:2026-09-23/news_01.md
+    - card:2026-09-26/news_01.md
   directions_local:
   - neg
   declared: true
@@ -5763,7 +5844,7 @@ episodes:
   - negotiation_track
   - oil_supply_shock
   - refinery_products
-  n_sources: 18
+  n_sources: 19
   events:
   - event_id: 2025-06-24:commodity_energy:-
     geo: ''
@@ -5797,6 +5878,7 @@ episodes:
     - card:2026-09-20/news_02.md
     - card:2026-09-22/news_01.md
     - card:2026-09-23/news_01.md
+    - card:2026-09-26/news_01.md
 - date: '2025-07-18'
   theme: commodity_energy
   direction: neg
@@ -7360,6 +7442,7 @@ episodes:
     - card:2026-09-20/news_02.md
     - card:2026-09-22/news_01.md
     - card:2026-09-23/news_01.md
+    - card:2026-09-26/news_01.md
   directions_local:
   - neg
   - pos
@@ -7424,7 +7507,7 @@ episodes:
   - shipping_chokepoint
   - supply_disruption
   - upstream_export_strike
-  n_sources: 47
+  n_sources: 48
   events:
   - event_id: 2026-04-17:commodity_energy:-
     geo: ''
@@ -7495,6 +7578,7 @@ episodes:
     - card:2026-09-20/news_02.md
     - card:2026-09-22/news_01.md
     - card:2026-09-23/news_01.md
+    - card:2026-09-26/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
 - date: '2026-04-18'
   theme: commodity_energy
@@ -8299,6 +8383,26 @@ episodes:
     - supply_disruption
     sources:
     - card:2026-08-18/news_05.md
+- date: '2026-09-06'
+  theme: commodity_energy
+  direction: neg
+  directions:
+  - neg
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - de_escalation
+  - hormuz
+  - negotiation_track
+  subthemes_local: []
+  n_sources: 1
+  events:
+  - event_id: 2026-09-06:commodity_energy:-
+    geo: ''
+    subthemes_local: []
+    sources:
+    - card:2026-09-26/news_01.md
 - date: '2012-05-18'
   theme: corporate_idiosyncratic
   direction: mixed
@@ -16185,6 +16289,8 @@ episodes:
     - neg
     GC=F:
     - pos
+    SHLD.L:
+    - pos
     TTF=F:
     - pos
     ZC=F:
@@ -16214,6 +16320,8 @@ episodes:
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
       — mappa di episodi datati per event study (2022–2026).md
+    SHLD.L:
+    - card:2026-09-26/news_03.md
     TTF=F:
     - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
       ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
@@ -16314,7 +16422,7 @@ episodes:
   - risk_off
   - sanctions
   - supply_disruption
-  n_sources: 32
+  n_sources: 33
   events:
   - event_id: 2022-02-24:geopolitical:-
     geo: ''
@@ -16335,6 +16443,8 @@ episodes:
       FTSEMIB.MI:
       - neg
       GC=F:
+      - pos
+      SHLD.L:
       - pos
       TTF=F:
       - pos
@@ -16378,6 +16488,7 @@ episodes:
     - card:2026-09-19/news_01.md
     - card:2026-09-21/news_01.md
     - card:2026-09-21/news_05.md
+    - card:2026-09-26/news_03.md
     - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
       ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
       del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
@@ -16427,6 +16538,38 @@ episodes:
     - card:2026-09-12/news_06.md
     - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
       della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+- date: '2022-02-28'
+  theme: geopolitical
+  direction: pos
+  directions:
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    SHLD.L:
+    - pos
+  direction_sources:
+    SHLD.L:
+    - card:2026-09-26/news_03.md
+  directions_local:
+  - pos
+  declared: true
+  subthemes:
+  - difesa
+  - nato
+  subthemes_local:
+  - difesa
+  n_sources: 1
+  events:
+  - event_id: 2022-02-28:geopolitical:-
+    geo: ''
+    subthemes_local:
+    - difesa
+    directions_by_reference:
+      SHLD.L:
+      - pos
+    sources:
+    - card:2026-09-26/news_03.md
 - date: '2022-03-07'
   theme: geopolitical
   direction: ''
@@ -16767,11 +16910,18 @@ episodes:
     - card:2026-08-15/news_05.md
 - date: '2022-06-29'
   theme: geopolitical
-  direction: neg
+  direction: mixed
   directions:
   - neg
+  - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    SHLD.L:
+    - pos
+  direction_sources:
+    SHLD.L:
+    - card:2026-09-26/news_03.md
   directions_local:
   - pos
   declared: true
@@ -16791,16 +16941,20 @@ episodes:
   subthemes_local:
   - difesa
   - nato
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2022-06-29:geopolitical:-
     geo: ''
     subthemes_local:
     - difesa
     - nato
+    directions_by_reference:
+      SHLD.L:
+      - pos
     sources:
     - card:2026-08-25/news_03.md
     - card:2026-09-12/news_06.md
+    - card:2026-09-26/news_03.md
     - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
       della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
 - date: '2022-07-07'
@@ -18154,15 +18308,20 @@ episodes:
     - card:2026-08-05/news_01.md
 - date: '2023-03-20'
   theme: geopolitical
-  direction: neg
+  direction: mixed
   directions:
   - neg
+  - pos
   directions_declared:
   - pos
   directions_by_reference:
+    SHLD.L:
+    - pos
     ZW=F:
     - neg
   direction_sources:
+    SHLD.L:
+    - card:2026-09-26/news_03.md
     ZW=F:
     - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
       ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
@@ -18193,7 +18352,7 @@ episodes:
   - difesa
   - nato
   - negotiation_track
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2023-03-20:geopolitical:-
     geo: ''
@@ -18203,11 +18362,14 @@ episodes:
     - nato
     - negotiation_track
     directions_by_reference:
+      SHLD.L:
+      - pos
       ZW=F:
       - neg
     sources:
     - card:2026-08-25/news_03.md
     - card:2026-09-12/news_06.md
+    - card:2026-09-26/news_03.md
     - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
       ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
       del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
@@ -18290,11 +18452,18 @@ episodes:
       LatAm e nazionalismo delle risorse- rame e litio (2018–2026).md
 - date: '2023-05-05'
   theme: geopolitical
-  direction: neg
+  direction: mixed
   directions:
   - neg
+  - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    SHLD.L:
+    - pos
+  direction_sources:
+    SHLD.L:
+    - card:2026-09-26/news_03.md
   directions_local:
   - pos
   declared: true
@@ -18314,16 +18483,20 @@ episodes:
   subthemes_local:
   - difesa
   - military_escalation
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2023-05-05:geopolitical:-
     geo: ''
     subthemes_local:
     - difesa
     - military_escalation
+    directions_by_reference:
+      SHLD.L:
+      - pos
     sources:
     - card:2026-08-25/news_03.md
     - card:2026-09-12/news_06.md
+    - card:2026-09-26/news_03.md
     - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
       della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
 - date: '2023-05-17'
@@ -18462,11 +18635,18 @@ episodes:
       — mappa di episodi datati per event study (2022–2026).md
 - date: '2023-07-11'
   theme: geopolitical
-  direction: neg
+  direction: mixed
   directions:
   - neg
+  - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    SHLD.L:
+    - pos
+  direction_sources:
+    SHLD.L:
+    - card:2026-09-26/news_03.md
   directions_local:
   - pos
   declared: true
@@ -18486,16 +18666,20 @@ episodes:
   subthemes_local:
   - difesa
   - nato
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2023-07-11:geopolitical:-
     geo: ''
     subthemes_local:
     - difesa
     - nato
+    directions_by_reference:
+      SHLD.L:
+      - pos
     sources:
     - card:2026-08-25/news_03.md
     - card:2026-09-12/news_06.md
+    - card:2026-09-26/news_03.md
     - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
       della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
 - date: '2023-07-17'
@@ -19728,6 +19912,13 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    SHLD.L:
+    - neutral
+  direction_sources:
+    SHLD.L:
+    - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+      della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
   directions_local:
   - neg
   - pos
@@ -19784,6 +19975,9 @@ episodes:
     - military_escalation
     - risk_off
     - sanctions
+    directions_by_reference:
+      SHLD.L:
+      - neutral
     sources:
     - card:2026-06-29/news_01.md
     - card:2026-07-09/news_01.md
@@ -20076,6 +20270,13 @@ episodes:
   - neg
   directions_declared:
   - pos
+  directions_by_reference:
+    SHLD.L:
+    - neutral
+  direction_sources:
+    SHLD.L:
+    - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+      della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
   directions_local:
   - pos
   declared: true
@@ -20102,6 +20303,9 @@ episodes:
     subthemes_local:
     - difesa
     - nato
+    directions_by_reference:
+      SHLD.L:
+      - neutral
     sources:
     - card:2026-08-25/news_03.md
     - card:2026-09-12/news_06.md
@@ -21560,8 +21764,16 @@ episodes:
   - pos
   directions_declared:
   - neg
+  - pos
+  directions_by_reference:
+    SHLD.L:
+    - pos
+  direction_sources:
+    SHLD.L:
+    - card:2026-09-26/news_03.md
   directions_local:
   - neg
+  - pos
   declared: true
   subthemes:
   - article_5
@@ -21584,7 +21796,7 @@ episodes:
   - nato
   - negotiation_track
   - riarmo
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2025-02-28:geopolitical:-
     geo: ''
@@ -21594,19 +21806,30 @@ episodes:
     - nato
     - negotiation_track
     - riarmo
+    directions_by_reference:
+      SHLD.L:
+      - pos
     sources:
     - card:2026-08-25/news_03.md
     - card:2026-09-02/news_06.md
     - card:2026-09-07/news_06.md
+    - card:2026-09-26/news_03.md
     - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
       della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
 - date: '2025-03-03'
   theme: geopolitical
-  direction: neg
+  direction: mixed
   directions:
   - neg
+  - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    SHLD.L:
+    - pos
+  direction_sources:
+    SHLD.L:
+    - card:2026-09-26/news_03.md
   directions_local:
   - pos
   declared: true
@@ -21626,33 +21849,44 @@ episodes:
   subthemes_local:
   - difesa
   - nato
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2025-03-03:geopolitical:-
     geo: ''
     subthemes_local:
     - difesa
     - nato
+    directions_by_reference:
+      SHLD.L:
+      - pos
     sources:
     - card:2026-08-25/news_03.md
     - card:2026-09-12/news_06.md
+    - card:2026-09-26/news_03.md
     - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
       della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
 - date: '2025-03-04'
   theme: geopolitical
-  direction: neg
+  direction: mixed
   directions:
   - neg
-  directions_declared: []
+  - pos
+  directions_declared:
+  - pos
   directions_by_reference:
+    SHLD.L:
+    - pos
     ^GSPC:
     - neg
   direction_sources:
+    SHLD.L:
+    - card:2026-09-26/news_03.md
     ^GSPC:
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
-  directions_local: []
-  declared: false
+  directions_local:
+  - pos
+  declared: true
   subthemes:
   - air_defense_gap
   - article_5
@@ -21690,7 +21924,7 @@ episodes:
   - difesa
   - rearm_europe
   - tariff_escalation
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2025-03-04:geopolitical:-
     geo: ''
@@ -21699,6 +21933,8 @@ episodes:
     - rearm_europe
     - tariff_escalation
     directions_by_reference:
+      SHLD.L:
+      - pos
       ^GSPC:
       - neg
     sources:
@@ -21709,6 +21945,7 @@ episodes:
     - card:2026-08-12/news_06.md
     - card:2026-08-14/news_06.md
     - card:2026-08-16/news_03.md
+    - card:2026-09-26/news_03.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
@@ -21821,11 +22058,18 @@ episodes:
       della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
 - date: '2025-03-19'
   theme: geopolitical
-  direction: neg
+  direction: mixed
   directions:
   - neg
+  - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    SHLD.L:
+    - pos
+  direction_sources:
+    SHLD.L:
+    - card:2026-09-26/news_03.md
   directions_local:
   - pos
   declared: true
@@ -21845,16 +22089,20 @@ episodes:
   subthemes_local:
   - difesa
   - nato
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2025-03-19:geopolitical:-
     geo: ''
     subthemes_local:
     - difesa
     - nato
+    directions_by_reference:
+      SHLD.L:
+      - pos
     sources:
     - card:2026-08-25/news_03.md
     - card:2026-09-12/news_06.md
+    - card:2026-09-26/news_03.md
     - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
       della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
 - date: '2025-03-25'
@@ -23326,6 +23574,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    SHLD.L:
+    - pos
+  direction_sources:
+    SHLD.L:
+    - card:2026-09-26/news_03.md
   directions_local:
   - neg
   - pos
@@ -23407,7 +23661,7 @@ episodes:
   - nato
   - negotiation_track
   - risk_off
-  n_sources: 32
+  n_sources: 33
   events:
   - event_id: 2025-06-25:geopolitical:-
     geo: ''
@@ -23420,6 +23674,9 @@ episodes:
     - nato
     - negotiation_track
     - risk_off
+    directions_by_reference:
+      SHLD.L:
+      - pos
     sources:
     - card:2026-06-16/news_02.md
     - card:2026-06-20/news_01.md
@@ -23451,6 +23708,7 @@ episodes:
     - card:2026-09-09/news_06.md
     - card:2026-09-10/news_01.md
     - card:2026-09-12/news_06.md
+    - card:2026-09-26/news_03.md
     - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
       della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
     - kb:brexit/brexit_dynamics.md
@@ -23488,13 +23746,22 @@ episodes:
       storici (2010–2026).md'
 - date: '2025-07-02'
   theme: geopolitical
-  direction: neutral
+  direction: mixed
   directions:
   - neutral
-  directions_declared: []
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    SHLD.L:
+    - pos
+  direction_sources:
+    SHLD.L:
+    - card:2026-09-26/news_03.md
   directions_local:
   - neg
-  declared: false
+  - pos
+  declared: true
   subthemes:
   - article_5
   - boe
@@ -23526,15 +23793,19 @@ episodes:
   subthemes_local:
   - difesa
   - gbp
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2025-07-02:geopolitical:-
     geo: ''
     subthemes_local:
     - difesa
     - gbp
+    directions_by_reference:
+      SHLD.L:
+      - pos
     sources:
     - card:2026-07-26/news_03.md
+    - card:2026-09-26/news_03.md
     - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
       della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
     - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
@@ -23581,11 +23852,18 @@ episodes:
       storici (2010–2026).md'
 - date: '2025-07-08'
   theme: geopolitical
-  direction: neg
+  direction: mixed
   directions:
   - neg
+  - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    SHLD.L:
+    - pos
+  direction_sources:
+    SHLD.L:
+    - card:2026-09-26/news_03.md
   directions_local:
   - neg
   - pos
@@ -23606,16 +23884,20 @@ episodes:
   subthemes_local:
   - difesa
   - military_escalation
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2025-07-08:geopolitical:-
     geo: ''
     subthemes_local:
     - difesa
     - military_escalation
+    directions_by_reference:
+      SHLD.L:
+      - pos
     sources:
     - card:2026-08-25/news_03.md
     - card:2026-09-12/news_06.md
+    - card:2026-09-26/news_03.md
     - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
       della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
 - date: '2025-07-14'
@@ -24291,16 +24573,26 @@ episodes:
   directions:
   - neg
   - neutral
-  directions_declared: []
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    SHLD.L:
+    - pos
+  direction_sources:
+    SHLD.L:
+    - card:2026-09-26/news_03.md
   directions_local:
   - neg
-  declared: false
+  - pos
+  declared: true
   subthemes:
   - air_defense_gap
   - article_4_risk
   - deescalation
   - defence
   - defense
+  - difesa
   - energy_channel
   - energy_supply_shock
   - escalation
@@ -24321,12 +24613,21 @@ episodes:
   - tariff
   - trade
   - ukraine
-  subthemes_local: []
-  n_sources: 15
+  subthemes_local:
+  - difesa
+  - military_escalation
+  - nato
+  n_sources: 16
   events:
   - event_id: 2025-09-10:geopolitical:-
     geo: ''
-    subthemes_local: []
+    subthemes_local:
+    - difesa
+    - military_escalation
+    - nato
+    directions_by_reference:
+      SHLD.L:
+      - pos
     sources:
     - card:2026-05-30/news_03.md
     - card:2026-06-20/news_02.md
@@ -24343,6 +24644,7 @@ episodes:
     - card:2026-08-12/news_06.md
     - card:2026-08-14/news_06.md
     - card:2026-08-14/news_07.md
+    - card:2026-09-26/news_03.md
 - date: '2025-09-19'
   theme: geopolitical
   direction: mixed
@@ -26669,6 +26971,13 @@ episodes:
   - neg
   directions_declared:
   - pos
+  directions_by_reference:
+    SHLD.L:
+    - neutral
+  direction_sources:
+    SHLD.L:
+    - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+      della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
   directions_local:
   - pos
   declared: true
@@ -26697,6 +27006,9 @@ episodes:
     - difesa
     - military_escalation
     - nato
+    directions_by_reference:
+      SHLD.L:
+      - neutral
     sources:
     - card:2026-08-25/news_03.md
     - card:2026-09-12/news_06.md
@@ -27649,11 +27961,18 @@ episodes:
       Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
 - date: '2026-07-08'
   theme: geopolitical
-  direction: neg
+  direction: mixed
   directions:
   - neg
+  - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    SHLD.L:
+    - pos
+  direction_sources:
+    SHLD.L:
+    - card:2026-09-26/news_03.md
   directions_local:
   - pos
   declared: true
@@ -27673,16 +27992,22 @@ episodes:
   subthemes_local:
   - difesa
   - military_escalation
-  n_sources: 3
+  - nato
+  n_sources: 4
   events:
   - event_id: 2026-07-08:geopolitical:-
     geo: ''
     subthemes_local:
     - difesa
     - military_escalation
+    - nato
+    directions_by_reference:
+      SHLD.L:
+      - pos
     sources:
     - card:2026-08-25/news_03.md
     - card:2026-09-12/news_06.md
+    - card:2026-09-26/news_03.md
     - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
       della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
 - date: '2026-07-09'
@@ -27868,16 +28193,21 @@ episodes:
       della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
 - date: '2026-08-07'
   theme: geopolitical
-  direction: neg
+  direction: mixed
   directions:
   - neg
+  - pos
   directions_declared:
   - neg
   - pos
   directions_by_reference:
+    SHLD.L:
+    - pos
     ^VIX:
     - pos
   direction_sources:
+    SHLD.L:
+    - card:2026-09-26/news_03.md
     ^VIX:
     - card:2026-09-14/news_02.md
   directions_local:
@@ -27904,7 +28234,7 @@ episodes:
   - difesa
   - military_escalation
   - nato
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2026-08-07:geopolitical:-
     geo: ''
@@ -27913,6 +28243,8 @@ episodes:
     - military_escalation
     - nato
     directions_by_reference:
+      SHLD.L:
+      - pos
       ^VIX:
       - pos
     sources:
@@ -27922,6 +28254,7 @@ episodes:
     - card:2026-09-02/news_06.md
     - card:2026-09-03/news_01.md
     - card:2026-09-14/news_02.md
+    - card:2026-09-26/news_03.md
     - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
       della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
 - date: '2026-08-10'
@@ -28565,9 +28898,11 @@ episodes:
   subthemes:
   - activity_growth
   - britain_release
+  - consumer
   - eurozone_release
   - good_news_bad_news
   - hawkish
+  - inflation_upside
   - ism
   - labour_market
   - pmi
@@ -28577,7 +28912,7 @@ episodes:
   - balance_sheet
   - guidance_pivot
   - hawkish
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2013-05-22:macro_data:-
     geo: ''
@@ -28592,6 +28927,7 @@ episodes:
       - pos
     sources:
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -29380,9 +29716,11 @@ episodes:
   subthemes:
   - activity_growth
   - britain_release
+  - consumer
   - eurozone_release
   - good_news_bad_news
   - hawkish
+  - inflation_upside
   - ism
   - labour_market
   - pmi
@@ -29391,7 +29729,7 @@ episodes:
   subthemes_local:
   - labour_market
   - nfp
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2018-03-09:macro_data:-
     geo: ''
@@ -29407,6 +29745,7 @@ episodes:
       - pos
     sources:
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -30435,6 +30774,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
   directions_local:
   - pos
   declared: true
@@ -30442,12 +30782,13 @@ episodes:
   - activity_growth
   - consumer
   - hawkish
+  - inflation_upside
   - labour_market
   - pmi
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2021-04-15:macro_data:-
     geo: ''
@@ -30461,6 +30802,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
 - date: '2021-05-07'
   theme: macro_data
   direction: mixed
@@ -31559,6 +31901,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
   directions_local:
   - pos
   declared: true
@@ -31570,6 +31913,7 @@ episodes:
   - deflation_risk
   - hawkish
   - holiday_spending
+  - inflation_upside
   - labour_market
   - platform_earnings
   - pmi
@@ -31580,7 +31924,7 @@ episodes:
   - consumer
   - hawkish
   - platform_earnings
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2022-05-17:macro_data:-
     geo: ''
@@ -31596,6 +31940,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
     - kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati
       (2011–2026)/ Il consumatore cinese- domanda interna, e-commerce e trasmissione
       ai mercati (2011–2026).md
@@ -31789,14 +32134,23 @@ episodes:
   - pos
   directions_declared:
   - neg
+  - pos
+  directions_by_reference:
+    ^TNX:
+    - pos
+  direction_sources:
+    ^TNX:
+    - card:2026-09-26/news_02.md
   directions_local:
   - neg
+  - pos
   declared: true
   subthemes:
   - activity_growth
   - china
   - china_gdp
   - china_inflation
+  - consumer
   - cpi
   - deflation_risk
   - demand_weakness
@@ -31816,6 +32170,7 @@ episodes:
   - inflation_release
   - inflation_surprise
   - inflation_surprises
+  - inflation_upside
   - inflation_upside_surprise
   - pce_release
   - ppi
@@ -31828,17 +32183,22 @@ episodes:
   - uk_political_transition
   - us_cpi
   subthemes_local:
+  - consumer
   - inflation_print
   - inflation_upside
   - us_cpi
-  n_sources: 20
+  n_sources: 21
   events:
   - event_id: 2022-06-10:macro_data:-
     geo: ''
     subthemes_local:
+    - consumer
     - inflation_print
     - inflation_upside
     - us_cpi
+    directions_by_reference:
+      ^TNX:
+      - pos
     sources:
     - card:2026-05-29/news_02.md
     - card:2026-06-03/news_02.md
@@ -31860,6 +32220,7 @@ episodes:
     - card:2026-08-23/news_04.md
     - card:2026-08-31/news_06.md
     - card:2026-09-02/news_05.md
+    - card:2026-09-26/news_02.md
 - date: '2022-06-16'
   theme: macro_data
   direction: neg
@@ -32589,6 +32950,7 @@ episodes:
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
     ^TNX:
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -32600,6 +32962,7 @@ episodes:
   subthemes:
   - activity_growth
   - britain_release
+  - consumer
   - consumer_sentiment
   - cpi
   - cpi_surprise
@@ -32620,6 +32983,7 @@ episodes:
   - inflation_release
   - inflation_surprise
   - inflation_surprises
+  - inflation_upside
   - inflation_upside_surprise
   - ism
   - labour_market
@@ -32638,7 +33002,7 @@ episodes:
   - inflation_print
   - inflation_upside
   - us_cpi
-  n_sources: 22
+  n_sources: 23
   events:
   - event_id: 2022-09-13:macro_data:-
     geo: ''
@@ -32680,6 +33044,7 @@ episodes:
     - card:2026-09-10/news_07.md
     - card:2026-09-12/news_03.md
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -34127,6 +34492,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
   directions_local:
   - pos
   declared: true
@@ -34134,13 +34500,14 @@ episodes:
   - activity_growth
   - consumer
   - hawkish
+  - inflation_upside
   - labour_market
   - pmi
   subthemes_local:
   - activity_growth
   - consumer
   - labour_market
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2023-02-15:macro_data:-
     geo: ''
@@ -34155,6 +34522,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
 - date: '2023-04-03'
   theme: macro_data
   direction: neg
@@ -35506,6 +35874,7 @@ episodes:
   direction_sources:
     ^TNX:
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -35518,9 +35887,11 @@ episodes:
   subthemes:
   - activity_growth
   - britain_release
+  - consumer
   - eurozone_release
   - good_news_bad_news
   - hawkish
+  - inflation_upside
   - ism
   - labour_market
   - pmi
@@ -35529,7 +35900,7 @@ episodes:
   subthemes_local:
   - labour_market
   - nfp
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2023-10-06:macro_data:-
     geo: ''
@@ -35541,6 +35912,7 @@ episodes:
       - pos
     sources:
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -35560,6 +35932,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
   directions_local:
   - pos
   declared: true
@@ -35567,12 +35940,13 @@ episodes:
   - activity_growth
   - consumer
   - hawkish
+  - inflation_upside
   - labour_market
   - pmi
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2023-10-17:macro_data:-
     geo: ''
@@ -35586,6 +35960,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
 - date: '2023-10-25'
   theme: macro_data
   direction: ''
@@ -37259,6 +37634,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
   directions_local:
   - pos
   declared: true
@@ -37266,12 +37642,13 @@ episodes:
   - activity_growth
   - consumer
   - hawkish
+  - inflation_upside
   - labour_market
   - pmi
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2024-04-15:macro_data:-
     geo: ''
@@ -37285,6 +37662,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
 - date: '2024-04-29'
   theme: macro_data
   direction: neg
@@ -37766,6 +38144,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
   directions_local:
   - pos
   declared: true
@@ -37773,12 +38152,13 @@ episodes:
   - activity_growth
   - consumer
   - hawkish
+  - inflation_upside
   - labour_market
   - pmi
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2024-07-16:macro_data:-
     geo: ''
@@ -37792,6 +38172,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
 - date: '2024-07-30'
   theme: macro_data
   direction: ''
@@ -40444,6 +40825,7 @@ episodes:
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
     ^TNX:
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -40502,6 +40884,7 @@ episodes:
   - inflation_print
   - inflation_surprise
   - inflation_surprises
+  - inflation_upside
   - inflation_upside_surprise
   - investment
   - ism
@@ -40546,16 +40929,18 @@ episodes:
   - activity_growth
   - china_inflation
   - cny
+  - consumer
   - cpi_downside
   - good_news_bad_news
   - inflation_print
+  - inflation_upside
   - ism
   - labour_market
   - nfp
   - pboc
   - pmi
   - us_cpi
-  n_sources: 65
+  n_sources: 66
   events:
   - event_id: 2025-01-10:macro_data:-
     geo: ''
@@ -40563,9 +40948,11 @@ episodes:
     - activity_growth
     - china_inflation
     - cny
+    - consumer
     - cpi_downside
     - good_news_bad_news
     - inflation_print
+    - inflation_upside
     - ism
     - labour_market
     - nfp
@@ -40644,6 +41031,7 @@ episodes:
     - card:2026-09-10/news_07.md
     - card:2026-09-12/news_03.md
     - card:2026-09-24/news_01.md
+    - card:2026-09-26/news_02.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria

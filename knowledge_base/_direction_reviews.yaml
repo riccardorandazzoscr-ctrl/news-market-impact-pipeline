@@ -7234,3 +7234,37 @@ reviews:
   mechanism:
   - ai_capex_spending
   description: Aggreko deposita F-1 per IPO NYSE trainata dai data center
+- date: '2024-04-22'
+  theme: geopolitical
+  reference: SHLD.L
+  source: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  reason: 'Research: «conferma trend, poco shock». Evento atteso/marginale → neutral (stessa convenzione
+    dei pacchetti UE, Run 5d).'
+  direction: neutral
+  mechanism:
+  - difesa
+  description: 'SIPRI: spesa militare mondiale 2023'
+- date: '2024-07-09'
+  theme: geopolitical
+  reference: SHLD.L
+  source: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  reason: 'Research: «Continuità». Evento atteso/marginale → neutral (stessa convenzione dei pacchetti
+    UE, Run 5d).'
+  direction: neutral
+  mechanism:
+  - difesa
+  - nato
+  description: Vertice NATO di Washington
+- date: '2026-04-27'
+  theme: geopolitical
+  reference: SHLD.L
+  source: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  reason: 'Research: «undicesimo anno consecutivo di rialzo». Evento atteso/marginale → neutral (stessa
+    convenzione dei pacchetti UE, Run 5d).'
+  direction: neutral
+  mechanism:
+  - difesa
+  description: 'SIPRI: spesa militare mondiale 2025'

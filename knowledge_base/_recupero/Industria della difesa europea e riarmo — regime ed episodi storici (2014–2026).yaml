@@ -1,0 +1,451 @@
+research: Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria della
+  difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+voci:
+- riga: '| 2014-02-27 | Uomini armati senza insegne prendono il Supremo Consiglio di Crimea | escalation
+    militare | risk-off lieve | ^STOXX50E, ^GDAXI, GC=F | SHLD.L non esiste ancora (proxy non misurabile).
+    Alla data non era noto che fosse annessione formale |'
+  data: '2014-02-27'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - GC=F
+  - SHLD.L
+  - ^GDAXI
+  - ^STOXX50E
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2014-03-16 | Referendum di Crimea | escalation militare | risk-off | ^STOXX50E, GC=F | Esito
+    atteso ma non riconosciuto da UE/USA; escalation, non riarmo |'
+  data: '2014-03-16'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - GC=F
+  - ^STOXX50E
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2014-03-18 | Putin firma il trattato di annessione della Crimea | escalation militare | risk-off
+    | ^STOXX50E, ^GDAXI, GC=F, EURUSD=X | Avvio del ciclo di riarmo NATO letto ex-post; alla data è shock
+    geopolitico |'
+  data: '2014-03-18'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - EURUSD=X
+  - GC=F
+  - ^GDAXI
+  - ^STOXX50E
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2014-09-05 | Wales Summit: Defence Investment Pledge, target 2% del PIL entro un decennio |
+    target NATO | positivo lento (difesa) | ^STOXX50E, ^GDAXI | Impegno non vincolante; effetto graduale,
+    non misurabile su SHLD.L |'
+  data: '2014-09-05'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  - ^GDAXI
+  - ^STOXX50E
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2022-02-24 | Invasione russa su vasta scala dell''Ucraina | escalation militare | risk-off
+    forte + difesa↑ | ^GDAXI, ^VIX, GC=F, SHLD.L | Doppio segno: equity ampio giù, VIX/oro su, titoli
+    difesa su. DAX −4% ca. |'
+  data: '2022-02-24'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - GC=F
+  - SHLD.L
+  - ^GDAXI
+  - ^VIX
+  dichiarazioni: []
+  meccanismo:
+  - difesa
+  - military_escalation
+  evento: Invasione russa su vasta scala dell'Ucraina
+  stato: nessuna_azione
+- riga: '| 2022-02-27 | Discorso "Zeitenwende" di Scholz: Sondervermögen €100 mld | annuncio spesa | positivo
+    forte (difesa) | ^GDAXI, SHLD.L | Annuncio domenicale; entrata in vigore (Grundgesetz) 3-giu-2022
+    |'
+  data: '2022-02-27'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  - ^GDAXI
+  dichiarazioni: []
+  meccanismo:
+  - difesa
+  - riarmo
+  evento: 'Zeitenwende di Scholz: fondo speciale da €100 mld'
+  stato: nessuna_azione
+- riga: '| 2022-06-03 | Bundestag approva il Sondervermögen €100 mld in Grundgesetz | annuncio spesa |
+    positivo (difesa) | ^GDAXI, SHLD.L | Data di ratifica; l''informazione-shock era già del 27-feb |'
+  data: '2022-06-03'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  - ^GDAXI
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2022-06-29 | Madrid Summit: nuovo Strategic Concept, postura di difesa rafforzata | revisione
+    postura strategica | positivo lento (difesa) | ^STOXX50E, SHLD.L | Russia definita minaccia "più significativa
+    e diretta" |'
+  data: '2022-06-29'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  - ^STOXX50E
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2023-03-20 | Consiglio UE: piano 1 milione di proiettili d''artiglieria per l''Ucraina | fondo
+    UE / munizionamento | positivo (difesa) | SHLD.L, ^STOXX50E | Richiesta Ucraina 2-mar; target di consegna
+    entro mar-2024 (poi mancato) |'
+  data: '2023-03-20'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  - ^STOXX50E
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2023-05-05 | Consiglio UE: €1 mld per approvvigionamento congiunto munizioni (EPF) | fondo
+    UE | positivo (difesa) | SHLD.L | Implementa il track 2 del piano del 20-mar-2023 |'
+  data: '2023-05-05'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2023-07-11 | Vilnius Summit | target NATO / postura | positivo lento (difesa) | ^STOXX50E,
+    SHLD.L | Conferma traiettoria di Madrid; nessun invito formale all''Ucraina |'
+  data: '2023-07-11'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  - ^STOXX50E
+  dichiarazioni: []
+  meccanismo:
+  - difesa
+  - nato
+  evento: Vertice NATO di Vilnius
+  stato: nessuna_azione
+- riga: '| 2023-11-14 | UE ammette che mancherà il target di 1 mln proiettili entro mar-2024 | shortage
+    munizionamento | ambiguo | SHLD.L | Solo ~30% raggiunto; potenziale positivo per capacità futura |'
+  data: '2023-11-14'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2024-01-30 | UE conferma: solo ~524.000 proiettili entro mar-2024 (52% del target) | shortage
+    munizionamento | ambiguo | SHLD.L | Capacità produttiva UE ~1 mln/anno raggiunta con ritardo |'
+  data: '2024-01-30'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2024-04-22 | SIPRI: spesa militare mondiale 2023 = $2.443 mld (+6,8%) | dato spesa | positivo
+    lento (difesa) | SHLD.L, ^STOXX50E | Pubblicazione annuale; conferma trend, poco "shock" |'
+  data: '2024-04-22'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  - ^STOXX50E
+  dichiarazioni:
+  - asset: SHLD.L
+    gruppo: 2
+    verso: neutral
+    perché: 'Research: «conferma trend, poco shock». Evento atteso/marginale → neutral (stessa convenzione
+      dei pacchetti UE, Run 5d).'
+  meccanismo:
+  - difesa
+  evento: 'SIPRI: spesa militare mondiale 2023'
+  stato: promossa
+- riga: '| 2024-07-09 | Washington Summit | target NATO / postura | positivo lento | ^STOXX50E, SHLD.L
+    | Continuità; molti membri al 2% |'
+  data: '2024-07-09'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  - ^STOXX50E
+  dichiarazioni:
+  - asset: SHLD.L
+    gruppo: 2
+    verso: neutral
+    perché: 'Research: «Continuità». Evento atteso/marginale → neutral (stessa convenzione dei pacchetti
+      UE, Run 5d).'
+  meccanismo:
+  - difesa
+  - nato
+  evento: Vertice NATO di Washington
+  stato: promossa
+- riga: '| 2025-02-28 | Scontro Trump-Zelensky nello Studio Ovale | revisione postura strategica USA |
+    risk-off + difesa EU↑ | ^GDAXI, SHLD.L, EURUSD=X | Segnale di disimpegno USA → catalizzatore del riarmo
+    UE autonomo |'
+  data: '2025-02-28'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - EURUSD=X
+  - SHLD.L
+  - ^GDAXI
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2025-03-03 | Trump ordina la sospensione degli aiuti militari USA all''Ucraina | revisione
+    postura strategica USA | difesa EU↑ | SHLD.L, ^STOXX50E, ^GDAXI | Indice STOXX difesa a massimo pluriennale
+    (+8%) il giorno prima (3-mar seduta) |'
+  data: '2025-03-03'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  - ^GDAXI
+  - ^STOXX50E
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2025-03-04 | von der Leyen presenta "ReArm Europe"/Readiness 2030 (fino a €800 mld) | fondo
+    UE | positivo forte (difesa) | SHLD.L, ^STOXX50E, ^GDAXI, EURUSD=X | Lettera ai leader; pacchetto
+    attuativo (SAFE €150 mld) il 19-mar-2025 |'
+  data: '2025-03-04'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - EURUSD=X
+  - SHLD.L
+  - ^GDAXI
+  - ^STOXX50E
+  dichiarazioni: []
+  meccanismo:
+  - difesa
+  - rearm_europe
+  evento: von der Leyen presenta ReArm Europe (fino a €800 mld)
+  stato: nessuna_azione
+- riga: '| 2025-03-04 | CDU/CSU-SPD annunciano la riforma del freno al debito + fondo €500 mld | annuncio
+    spesa | positivo forte (difesa) + euro↑ | ^GDAXI, EURUSD=X, BTP_BUND_SPREAD | Euro +1% a $1,0589;
+    Bund decennale in forte rialzo |'
+  data: '2025-03-04'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - BTP_BUND_SPREAD
+  - EURUSD=X
+  - ^GDAXI
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2025-03-18 | Bundestag approva la riforma costituzionale del freno al debito | annuncio spesa
+    | positivo (difesa) | ^GDAXI, EURUSD=X | 513 voti a favore; spesa difesa >1% PIL esente dal limite
+    |'
+  data: '2025-03-18'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - EURUSD=X
+  - ^GDAXI
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2025-03-19 | Commissione UE svela il pacchetto attuativo ReArm + White Paper | fondo UE | positivo
+    (difesa) | SHLD.L, ^STOXX50E | Regolamento SAFE su base art. 122 TFUE |'
+  data: '2025-03-19'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  - ^STOXX50E
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2025-05 | Consiglio UE adotta SAFE (€150 mld prestiti) | fondo UE | positivo (difesa) | SHLD.L
+    | Entrata in vigore dello strumento; shock informativo minore |'
+  data: null
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2025-06-25 | Hague Summit: target 5% del PIL entro il 2035 (3,5% core + 1,5%) | target NATO
+    | positivo (difesa) | SHLD.L, ^STOXX50E, ^GDAXI | 31 su 32 membri; eccezione Spagna; revisione nel
+    2029 |'
+  data: '2025-06-25'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  - ^GDAXI
+  - ^STOXX50E
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2025-07-02 | Pentagono sospende alcune consegne di armi all''Ucraina (scorte basse) | shortage
+    munizionamento | risk-off (Ucraina) + difesa↑ | SHLD.L, ^VIX | Decisione di E. Colby; Patriot, 155mm,
+    GMLRS bloccati |'
+  data: '2025-07-02'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  - ^VIX
+  dichiarazioni: []
+  meccanismo:
+  - difesa
+  evento: Il Pentagono sospende alcune consegne di armi all'Ucraina
+  stato: nessuna_azione
+- riga: '| 2025-07-08 | Guardian: USA hanno solo ~25% degli intercettori Patriot necessari | shortage
+    munizionamento | difesa↑ | SHLD.L | Pentagono contesta la cifra; escalation della domanda di intercettori
+    |'
+  data: '2025-07-08'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  dichiarazioni: []
+  meccanismo:
+  - difesa
+  evento: USA con ~25% degli intercettori Patriot necessari
+  stato: nessuna_azione
+- riga: '| 2026-02-06 | Trump: "America First Arms Transfer Strategy" (ordine esecutivo) | revisione postura
+    strategica USA | ambiguo | SHLD.L, EWY, EWT | Priorità export a partner che investono in autodifesa
+    |'
+  data: '2026-02-06'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - EWT
+  - EWY
+  - SHLD.L
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2026-04-27 | SIPRI: spesa militare mondiale 2025 = $2.887 mld; Europa +14% | dato spesa | positivo
+    lento (difesa) | SHLD.L, ^STOXX50E | Undicesimo anno consecutivo di rialzo |'
+  data: '2026-04-27'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  - ^STOXX50E
+  dichiarazioni:
+  - asset: SHLD.L
+    gruppo: 2
+    verso: neutral
+    perché: 'Research: «undicesimo anno consecutivo di rialzo». Evento atteso/marginale → neutral (stessa
+      convenzione dei pacchetti UE, Run 5d).'
+  meccanismo:
+  - difesa
+  evento: 'SIPRI: spesa militare mondiale 2025'
+  stato: promossa
+- riga: '| 2026-07-08 | Ankara Summit: Trump promette a Zelensky licenza per produrre Patriot | revisione
+    postura strategica | difesa↑ | SHLD.L | Poi si arena: nessuna licenza operativa nel 2026 |'
+  data: '2026-07-08'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2026-08-04 | Whitaker (USA): nessun accordo di produzione a lungo termine prima dell''inverno
+    | revisione postura strategica USA | ambiguo/difesa↓ | SHLD.L | Marcia indietro sulla licenza di produzione
+    Patriot |'
+  data: '2026-08-04'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - SHLD.L
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: da_rivedere
+- riga: '| 2026-08-07 | WSJ/CNN: intelligence USA valuta possibile test russo dell''Art. 5 | revisione
+    postura strategica | risk-off + difesa↑ | ^VIX, GC=F, SHLD.L, ^STOXX50E | Scenari da cyberattacco
+    a incursione limitata su Baltici/Polonia tra autunno 2026 e 2029 |'
+  data: '2026-08-07'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  candidati:
+  - GC=F
+  - SHLD.L
+  - ^STOXX50E
+  - ^VIX
+  dichiarazioni: []
+  meccanismo:
+  - difesa
+  - nato
+  evento: Intelligence USA valuta un possibile test russo dell'Art. 5
+  stato: nessuna_azione
