@@ -1,4 +1,4 @@
-generated_at: '2026-09-26T11:04:42'
+generated_at: '2026-09-26T11:09:52'
 num_episodes: 1179
 episodes:
 - date: '1984-01-01'
@@ -16922,6 +16922,9 @@ episodes:
   direction_sources:
     SHLD.L:
     - card:2026-09-26/news_03.md
+  direction_review_excluded:
+    SHLD.L: 'Vertice NATO di Madrid: evento programmato, postura attesa; atteso +
+      verso del meccanismo non è una sorpresa (regola del 2026-09-23).'
   directions_local:
   - pos
   declared: true
@@ -18647,6 +18650,9 @@ episodes:
   direction_sources:
     SHLD.L:
     - card:2026-09-26/news_03.md
+  direction_review_excluded:
+    SHLD.L: 'Vertice NATO di Vilnius: conferma della traiettoria di Madrid, nessuna
+      sorpresa (regola del 2026-09-23).'
   directions_local:
   - pos
   declared: true
@@ -21771,6 +21777,9 @@ episodes:
   direction_sources:
     SHLD.L:
     - card:2026-09-26/news_03.md
+  direction_review_excluded:
+    SHLD.L: 'Scontro nello Studio Ovale dopo la chiusura di Londra (11:30 ET): per
+      SHLD.L la prima seduta che reagisce è il 2025-03-03, non questa data.'
   directions_local:
   - neg
   - pos
@@ -21830,6 +21839,9 @@ episodes:
   direction_sources:
     SHLD.L:
     - card:2026-09-26/news_03.md
+  direction_review_excluded:
+    SHLD.L: 'Sospensione degli aiuti USA uscita la sera del 3 marzo: per SHLD.L la
+      prima seduta che reagisce è il 2025-03-04.'
   directions_local:
   - pos
   declared: true
@@ -22070,6 +22082,9 @@ episodes:
   direction_sources:
     SHLD.L:
     - card:2026-09-26/news_03.md
+  direction_review_excluded:
+    SHLD.L: 'Pacchetto attuativo ReArm già annunciato il 2025-03-04: atteso, non una
+      sorpresa (regola del 2026-09-23).'
   directions_local:
   - pos
   declared: true
@@ -23580,6 +23595,9 @@ episodes:
   direction_sources:
     SHLD.L:
     - card:2026-09-26/news_03.md
+  direction_review_excluded:
+    SHLD.L: 'Vertice NATO dell''Aia: target del 5% concordato prima del vertice, atteso
+      (regola del 2026-09-23).'
   directions_local:
   - neg
   - pos

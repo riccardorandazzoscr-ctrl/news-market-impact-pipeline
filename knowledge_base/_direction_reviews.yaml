@@ -7268,3 +7268,39 @@ reviews:
   mechanism:
   - difesa
   description: 'SIPRI: spesa militare mondiale 2025'
+- date: '2022-06-29'
+  theme: geopolitical
+  reference: SHLD.L
+  source: 2026-09-26/news_03.md
+  reason: 'Vertice NATO di Madrid: evento programmato, postura attesa; atteso + verso del meccanismo non è una sorpresa (regola del 2026-09-23).'
+  status: excluded
+- date: '2023-07-11'
+  theme: geopolitical
+  reference: SHLD.L
+  source: 2026-09-26/news_03.md
+  reason: 'Vertice NATO di Vilnius: conferma della traiettoria di Madrid, nessuna sorpresa (regola del 2026-09-23).'
+  status: excluded
+- date: '2025-02-28'
+  theme: geopolitical
+  reference: SHLD.L
+  source: 2026-09-26/news_03.md
+  reason: 'Scontro nello Studio Ovale dopo la chiusura di Londra (11:30 ET): per SHLD.L la prima seduta che reagisce è il 2025-03-03, non questa data.'
+  status: excluded
+- date: '2025-03-03'
+  theme: geopolitical
+  reference: SHLD.L
+  source: 2026-09-26/news_03.md
+  reason: 'Sospensione degli aiuti USA uscita la sera del 3 marzo: per SHLD.L la prima seduta che reagisce è il 2025-03-04.'
+  status: excluded
+- date: '2025-03-19'
+  theme: geopolitical
+  reference: SHLD.L
+  source: 2026-09-26/news_03.md
+  reason: 'Pacchetto attuativo ReArm già annunciato il 2025-03-04: atteso, non una sorpresa (regola del 2026-09-23).'
+  status: excluded
+- date: '2025-06-25'
+  theme: geopolitical
+  reference: SHLD.L
+  source: 2026-09-26/news_03.md
+  reason: 'Vertice NATO dell''Aia: target del 5% concordato prima del vertice, atteso (regola del 2026-09-23).'
+  status: excluded
