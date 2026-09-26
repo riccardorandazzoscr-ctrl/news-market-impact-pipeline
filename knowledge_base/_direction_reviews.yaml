@@ -7290,8 +7290,8 @@ reviews:
   theme: geopolitical
   reference: SHLD.L
   source: 2026-09-26/news_03.md
-  reason: 'Sospensione degli aiuti USA uscita la sera del 3 marzo: per SHLD.L la prima seduta che reagisce è il 2025-03-04.'
-  status: excluded
+  reason: 'Data corretta dello scontro nello Studio Ovale (28/02, dopo la chiusura di Londra) e del vertice di Londra del 2/3: prima seduta di SHLD.L che reagisce → disimpegno USA, riarmo europeo atteso. La sospensione degli aiuti (sera del 3/3) cade invece sul 2025-03-04, già pos nella scheda.'
+  direction: pos
 - date: '2025-03-19'
   theme: geopolitical
   reference: SHLD.L

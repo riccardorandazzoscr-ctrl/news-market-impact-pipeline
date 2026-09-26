@@ -1,4 +1,4 @@
-generated_at: '2026-09-26T11:09:52'
+generated_at: '2026-09-26T11:13:09'
 num_episodes: 1179
 episodes:
 - date: '1984-01-01'
@@ -21839,9 +21839,6 @@ episodes:
   direction_sources:
     SHLD.L:
     - card:2026-09-26/news_03.md
-  direction_review_excluded:
-    SHLD.L: 'Sospensione degli aiuti USA uscita la sera del 3 marzo: per SHLD.L la
-      prima seduta che reagisce è il 2025-03-04.'
   directions_local:
   - pos
   declared: true
