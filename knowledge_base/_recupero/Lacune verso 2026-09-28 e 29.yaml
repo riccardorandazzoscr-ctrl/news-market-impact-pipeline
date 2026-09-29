@@ -1,0 +1,1148 @@
+research: lacune di verso del 2026-09-28 e 2026-09-29 (BZ=F, IEF, SOXX)
+voci:
+- data: '2026-03-01'
+  tema: commodity_energy
+  fonte: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    verso: escluso
+    perché: La data è un livello dell'oro citato in §2, non un evento; domenica, dentro il fine settimana
+      di Epic Fury.
+  stato: promossa
+- data: '2026-03-02'
+  tema: commodity_energy
+  fonte: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+  evento: IRGC conferma la chiusura di Hormuz; force majeure QatarEnergy sul GNL
+  meccanismo:
+  - hormuz
+  - iran
+  - military_escalation
+  - shipping_chokepoint
+  - oil_supply_shock
+  dichiarazioni:
+  - asset: BZ=F
+    verso: pos
+    perché: 'Prima seduta dopo gli attacchi USA-Israele di sabato 28/02 (veto sul 28 per datazione) e
+      l''IRGC conferma la chiusura dello Stretto: interruzione di offerta non prezzata.'
+  stato: promossa
+- data: '2026-03-03'
+  tema: commodity_energy
+  fonte: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    verso: escluso
+    perché: Data di una nota Goldman Sachs citata in §1, non un evento; dentro la finestra del 2 marzo.
+  stato: promossa
+- data: '2026-03-04'
+  tema: commodity_energy
+  fonte: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    verso: escluso
+    perché: 'Dichiarazione formale di chiusura di una chiusura già confermata il 2 marzo: scontata (regola
+      del Run 5d sulle entrate in vigore).'
+  stato: promossa
+- data: '2026-03-08'
+  tema: commodity_energy
+  fonte: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    verso: escluso
+    perché: 'Livello di prezzo (Brent sopra 100$) e domenica: data d''ancora scelta per il prezzo.'
+  stato: promossa
+- data: '2026-03-11'
+  tema: commodity_energy
+  fonte: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+  evento: 'IEA: 32 paesi rilasciano 400 mb dalle riserve'
+  meccanismo:
+  - strategic_reserve_release
+  - supply_disruption
+  dichiarazioni:
+  - asset: BZ=F
+    verso: neg
+    perché: 'Rilascio coordinato IEA di 400 milioni di barili dalle scorte d''emergenza: offerta aggiuntiva;
+      la riga non lo dice atteso.'
+  stato: promossa
+- data: '2026-03-19'
+  tema: commodity_energy
+  fonte: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    verso: escluso
+    perché: 'Intervallo 19-27/03 (campagna aerea USA per riaprire lo Stretto): due letture opposte, escalation
+      militare e prospettiva di riapertura.'
+  stato: promossa
+- data: '2026-03-27'
+  tema: commodity_energy
+  fonte: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+  evento: IRGC vieta il transito alle navi legate a USA, Israele e alleati
+  meccanismo:
+  - hormuz
+  - iran
+  - shipping_chokepoint
+  - military_escalation
+  dichiarazioni:
+  - asset: BZ=F
+    verso: pos
+    perché: 'L''IRGC vieta il transito alle navi da e verso porti di USA, Israele e alleati: stretta ulteriore
+      sui flussi.'
+  stato: promossa
+- data: '2026-04-08'
+  tema: commodity_energy
+  fonte: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+  evento: Tregua USA-Iran di due settimane
+  meccanismo:
+  - hormuz
+  - iran
+  - de_escalation
+  - ceasefire
+  - negotiation_track
+  dichiarazioni:
+  - asset: BZ=F
+    verso: neg
+    perché: 'Cessate il fuoco temporaneo USA-Iran di due settimane: de-escalation, premio atteso in calo.'
+  stato: promossa
+- data: '2026-04-13'
+  tema: commodity_energy
+  fonte: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+  evento: Blocco navale USA dei porti iraniani dopo il fallimento dei colloqui
+  meccanismo:
+  - hormuz
+  - iran
+  - military_escalation
+  - negotiation_track
+  - sanctions
+  dichiarazioni:
+  - asset: BZ=F
+    verso: pos
+    perché: 'Prima seduta dopo il fallimento dei colloqui di Islamabad (11-12/04, fine settimana) e blocco
+      navale USA dei porti iraniani: due notizie con la stessa pressione rialzista.'
+  stato: promossa
+- data: '2026-04-18'
+  tema: commodity_energy
+  fonte: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+  evento: L'Iran richiude Hormuz dopo il rifiuto USA di togliere il blocco
+  meccanismo:
+  - hormuz
+  - iran
+  - shipping_chokepoint
+  - military_escalation
+  dichiarazioni:
+  - asset: BZ=F
+    verso: pos
+    perché: 'L''Iran richiude lo Stretto il giorno dopo averlo riaperto (17/04, neg): inversione non prezzata.
+      Sabato: la seduta di reazione è il 20.'
+  stato: promossa
+- data: '2026-05-19'
+  tema: commodity_energy
+  fonte: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    verso: escluso
+    perché: Data di un articolo CNN sui rendimenti USA citato in §2, non un evento su Hormuz.
+  stato: promossa
+- data: '2026-05-27'
+  tema: commodity_energy
+  fonte: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    verso: escluso
+    perché: 'Bozza di MOU annunciata dalla TV iraniana e smentita in parte dalla Casa Bianca lo stesso
+      giorno: verso non univoco.'
+  stato: promossa
+- data: '2026-05-31'
+  tema: commodity_energy
+  fonte: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    verso: escluso
+    perché: Data di compilazione della research ('stato al 2026-05-31'), non un evento.
+  stato: promossa
+- data: '1994-02-04'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'IEF quota dal 2002 e il DB prezzi parte dal 2011: nessuna reazione misurabile.'
+  stato: promossa
+- data: '2003-06-25'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'Riga: ''Rendimenti ↑'' con IEF fra gli asset-canale; FOMC che delude sulle misure non convenzionali.
+      IEF quota il prezzo.'
+  stato: promossa
+- data: '2013-06-19'
+  tema: monetary_policy
+  fonte: 2026-09-16/news_02.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'Bernanke dà il calendario del tapering in conferenza stampa: ritiro di stimolo non prezzato,
+      rendimenti attesi in rialzo.'
+  stato: promossa
+- data: '2013-09-16'
+  tema: monetary_policy
+  fonte: 2026-09-09/news_02.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Le schede descrivono taper tantrum e settimana pre-FOMC; la notizia del giorno fu il ritiro
+      di Summers dalla corsa alla presidenza Fed, di segno opposto: datazione incoerente.'
+  stato: promossa
+- data: '2014-03-19'
+  tema: monetary_policy
+  fonte: 2026-08-27/news_03.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'Yellen: ''circa sei mesi'' fra fine degli acquisti e primo rialzo, guidance restrittiva non
+      attesa.'
+  stato: promossa
+- data: '2015-05-07'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa prima della seduta:
+      come il veto già approvato su ^TNX per la stessa riga.'
+  stato: promossa
+- data: '2015-06-04'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa prima della seduta:
+      come il veto già approvato su ^TNX per la stessa riga.'
+  stato: promossa
+- data: '2016-11-09'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'Riga: ''Rendimenti ↑'' (già dichiarato ^TNX pos). Elezione di Trump inattesa: IEF quota il
+      prezzo, inverso ai rendimenti.'
+  stato: promossa
+- data: '2018-09-26'
+  tema: monetary_policy
+  fonte: 2026-09-21/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Rialzo interamente scontato; la rimozione di ''accomodante'' fu letta in entrambi i sensi:
+      sorpresa di segno incerto.'
+  stato: promossa
+- data: '2018-12-19'
+  tema: monetary_policy
+  fonte: 2026-09-21/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'Rialzo con dot plot ancora su due rialzi e bilancio ''in pilota automatico'', contro un mercato
+      che voleva una pausa: sorpresa restrittiva.'
+  stato: promossa
+- data: '2021-02-25'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa prima della seduta:
+      come il veto già approvato su ^TNX per la stessa riga.'
+  stato: promossa
+- data: '2022-03-16'
+  tema: monetary_policy
+  fonte: 2026-09-21/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'Primo rialzo scontato, ma proiezioni 2023 sopra il percorso prezzato: pressione sulla parte
+      intermedia.'
+  stato: promossa
+- data: '2022-06-13'
+  tema: monetary_policy
+  fonte: 2026-09-21/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Il CPI è di venerdì 10 giugno: il 13 è la seconda seduta di riprezzamento, senza una notizia
+      propria certa prima della chiusura.'
+  stato: promossa
+- data: '2022-08-15'
+  tema: monetary_policy
+  fonte: 2026-09-12/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Le schede attribuiscono alla data eventi diversi o una descrizione generica, senza una notizia
+      datata: datazione incoerente.'
+  stato: promossa
+- data: '2022-09-08'
+  tema: monetary_policy
+  fonte: 2026-09-12/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Evento di politica monetaria non americana: la trasmissione ai Treasury 7-10 anni è di secondo
+      ordine e di segno non univoco.'
+  stato: promossa
+- data: '2022-09-13'
+  tema: monetary_policy
+  fonte: 2026-09-21/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'CPI di agosto sopra le attese: il mercato riprezza la stretta, rendimenti attesi in rialzo.'
+  stato: promossa
+- data: '2022-09-23'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Mini-budget britannico: la riga scrive lo spillover sui Treasury senza verso; trasmissione
+      a IEF non univoca (fuga verso la qualità possibile).'
+  stato: promossa
+- data: '2022-11-02'
+  tema: monetary_policy
+  fonte: 2026-09-21/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'Powell: ''molto prematuro pensare a una pausa'', tasso terminale più alto, dopo un comunicato
+      letto come più morbido.'
+  stato: promossa
+- data: '2022-12-14'
+  tema: monetary_policy
+  fonte: 2026-09-18/news_03.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: Passo rallentato a 50 pb ma tasso terminale previsto più alto del prezzato; concorde con ^FVX
+      pos della scheda.
+  stato: promossa
+- data: '2022-12-15'
+  tema: monetary_policy
+  fonte: 2026-09-12/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Evento di politica monetaria non americana: la trasmissione ai Treasury 7-10 anni è di secondo
+      ordine e di segno non univoco.'
+  stato: promossa
+- data: '2022-12-20'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Allargamento YCC della BoJ: la riga cita lo spillover sui Treasury senza verso. Evento di
+      politica monetaria non americana: la trasmissione ai Treasury 7-10 anni è di secondo ordine e di
+      segno non univoco.'
+  stato: promossa
+- data: '2023-02-02'
+  tema: monetary_policy
+  fonte: 2026-09-10/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Evento di politica monetaria non americana: la trasmissione ai Treasury 7-10 anni è di secondo
+      ordine e di segno non univoco.'
+  stato: promossa
+- data: '2023-03-16'
+  tema: monetary_policy
+  fonte: 2026-09-06/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Evento di politica monetaria non americana: la trasmissione ai Treasury 7-10 anni è di secondo
+      ordine e di segno non univoco.'
+  stato: promossa
+- data: '2023-05-04'
+  tema: monetary_policy
+  fonte: 2026-09-12/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Evento di politica monetaria non americana: la trasmissione ai Treasury 7-10 anni è di secondo
+      ordine e di segno non univoco.'
+  stato: promossa
+- data: '2023-06-13'
+  tema: monetary_policy
+  fonte: 2026-09-12/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Le schede attribuiscono alla data eventi diversi o una descrizione generica, senza una notizia
+      datata: datazione incoerente.'
+  stato: promossa
+- data: '2023-06-15'
+  tema: monetary_policy
+  fonte: 2026-09-18/news_03.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Il FOMC della ''pausa da falco'' decide il 14 giugno: il 15 è la coda per un asset USA (stesso
+      giorno rialzo BCE).'
+  stato: promossa
+- data: '2023-07-27'
+  tema: monetary_policy
+  fonte: 2026-09-06/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Il FOMC è del 26 luglio; il 27 portano insieme BCE che apre a una pausa, PIL USA forte e
+      indiscrezioni BoJ: eventi incompatibili.'
+  stato: promossa
+- data: '2023-08-01'
+  tema: monetary_policy
+  fonte: 2026-09-15/news_03.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Il declassamento Fitch arriva dopo la chiusura del 1° agosto: la seduta di reazione è il
+      2.'
+  stato: promossa
+- data: '2023-09-14'
+  tema: monetary_policy
+  fonte: 2026-09-12/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Evento di politica monetaria non americana: la trasmissione ai Treasury 7-10 anni è di secondo
+      ordine e di segno non univoco.'
+  stato: promossa
+- data: '2023-10-03'
+  tema: monetary_policy
+  fonte: 2026-09-15/news_03.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'JOLTS molto sopra le attese: mercato del lavoro più forte del prezzato, rendimenti attesi
+      in rialzo.'
+  stato: promossa
+- data: '2023-10-19'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa prima della seduta:
+      come il veto già approvato su ^TNX per la stessa riga.'
+  stato: promossa
+- data: '2024-03-20'
+  tema: monetary_policy
+  fonte: 2026-09-12/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: pos
+    perché: 'Il dot plot conferma tre tagli nel 2024 contro il timore di una riduzione a due: sorpresa
+      accomodante. Etichetta ''hawkish'' della libreria errata.'
+  stato: promossa
+- data: '2024-04-10'
+  tema: monetary_policy
+  fonte: 2026-09-21/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'Terzo CPI consecutivo sopra le attese: tagli estivi tolti dai prezzi.'
+  stato: promossa
+- data: '2024-05-01'
+  tema: monetary_policy
+  fonte: 2026-09-12/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: pos
+    perché: 'FOMC: Powell esclude un rialzo come prossima mossa e il tetto al QT sui Treasury scende più
+      del previsto: sorpresa accomodante (l''intervento sullo yen è secondario per IEF).'
+  stato: promossa
+- data: '2024-06-12'
+  tema: monetary_policy
+  fonte: 2026-09-18/news_03.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Stesso giorno CPI sotto le attese (mattina) e dot plot da tre a un taglio (pomeriggio): pressioni
+      opposte.'
+  stato: promossa
+- data: '2024-07-31'
+  tema: monetary_policy
+  fonte: 2026-09-13/news_02.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Rialzo BoJ e FOMC che apre a settembre lo stesso giorno: pressioni opposte su IEF.'
+  stato: promossa
+- data: '2024-09-18'
+  tema: monetary_policy
+  fonte: 2026-09-12/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Taglio da 50 pb in larga parte prezzato, proiezioni in linea: sorpresa di segno incerto.'
+  stato: promossa
+- data: '2024-10-23'
+  tema: monetary_policy
+  fonte: 2026-08-31/news_03.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: La riga descrive un movimento di rendimenti in due settimane, non una notizia del giorno.
+  stato: promossa
+- data: '2024-11-06'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'Riga: ''Rendimenti ↑'' (già dichiarato ^TNX pos). IEF quota il prezzo, inverso ai rendimenti.'
+  stato: promossa
+- data: '2024-11-07'
+  tema: monetary_policy
+  fonte: 2026-08-31/news_03.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Taglio FOMC atteso e coda del riprezzamento elettorale: nessuna sorpresa propria della data.'
+  stato: promossa
+- data: '2025-01-10'
+  tema: monetary_policy
+  fonte: 2026-09-21/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'Payroll di dicembre molto sopra le attese: tagli 2025 tolti dai prezzi.'
+  stato: promossa
+- data: '2025-04-04'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa prima della seduta:
+      come il veto già approvato su ^TNX per la stessa riga.'
+  stato: promossa
+- data: '2025-05-19'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'Riga: ''Rendimenti lunghi ↑'' (già dichiarato ^TNX pos). Prima seduta dopo il declassamento
+      Moody''s di venerdì sera.'
+  stato: promossa
+- data: '2025-06-18'
+  tema: monetary_policy
+  fonte: 2026-09-02/news_01.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neutral
+    perché: 'Pausa attesa e mediana dei tagli 2025 invariata; solo le proiezioni d''inflazione salgono:
+      sorpresa marginale.'
+  stato: promossa
+- data: '2025-07-31'
+  tema: monetary_policy
+  fonte: 2026-09-02/news_01.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Il FOMC con due dissensi è del 30 luglio: il 31 è la coda, con BoJ e PCE nella stessa data.'
+  stato: promossa
+- data: '2025-08-25'
+  tema: monetary_policy
+  fonte: 2026-09-12/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Le schede attribuiscono alla data eventi diversi o una descrizione generica, senza una notizia
+      datata: datazione incoerente.'
+  stato: promossa
+- data: '2025-09-03'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa prima della seduta:
+      come il veto già approvato su ^TNX per la stessa riga.'
+  stato: promossa
+- data: '2025-10-01'
+  tema: monetary_policy
+  fonte: 2026-09-02/news_01.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Le schede attribuiscono alla data eventi diversi o una descrizione generica, senza una notizia
+      datata: datazione incoerente.'
+  stato: promossa
+- data: '2025-12-10'
+  tema: monetary_policy
+  fonte: 2026-09-18/news_03.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Taglio atteso con tre dissensi e un solo taglio nel 2026, ma acquisti di T-bill e Powell
+      che esclude rialzi: sorpresa di segno incerto.'
+  stato: promossa
+- data: '2025-12-24'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa prima della seduta:
+      come il veto già approvato su ^TNX per la stessa riga.'
+  stato: promossa
+- data: '2026-01-21'
+  tema: monetary_policy
+  fonte: 2026-09-12/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Nessuna riunione FOMC alla data (gennaio: 27-28); schede con descrizioni generiche.'
+  stato: promossa
+- data: '2026-04-30'
+  tema: monetary_policy
+  fonte: 2026-09-18/news_03.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Il FOMC decide alle 14:00 ET: la seduta di reazione è quella della decisione, questa data
+      è la coda (come il veto 2021-03-18 su IEF).'
+  stato: promossa
+- data: '2026-05-13'
+  tema: monetary_policy
+  fonte: 2026-09-12/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: Nessuna riunione FOMC a maggio 2026; le due schede danno letture opposte (restrittiva, accomodante).
+  stato: promossa
+- data: '2026-05-19'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa prima della seduta:
+      come il veto già approvato su ^TNX per la stessa riga.'
+  stato: promossa
+- data: '2026-06-11'
+  tema: monetary_policy
+  fonte: 2026-09-06/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Evento di politica monetaria non americana: la trasmissione ai Treasury 7-10 anni è di secondo
+      ordine e di segno non univoco.'
+  stato: promossa
+- data: '2026-08-18'
+  tema: monetary_policy
+  fonte: kb:Premio a termine globale e selloff sincronizzati della parte lunga regime ed episodi storici
+    (1994–2026)/Premio a termine globale e selloff sincronizzati della parte lunga- regime ed episodi
+    storici (1994–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa prima della seduta:
+      come il veto già approvato su ^TNX per la stessa riga.'
+  stato: promossa
+- data: '2018-10-10'
+  tema: structural_themes
+  fonte: 2026-08-29/news_05.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: La riga descrive un movimento di prezzo (crollo, minimo, rimbalzo, rotazione), non una notizia
+      con un'attesa prima della seduta.
+  stato: promossa
+- data: '2018-12-26'
+  tema: structural_themes
+  fonte: 2026-08-29/news_05.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: La riga descrive un movimento di prezzo (crollo, minimo, rimbalzo, rotazione), non una notizia
+      con un'attesa prima della seduta.
+  stato: promossa
+- data: '2019-05-15'
+  tema: structural_themes
+  fonte: 2026-09-09/news_05.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Huawei in Entity List: ordine esecutivo anticipato dalla stampa e annuncio di Commercio a
+      mercati chiusi; datazione dubbia.'
+  stato: promossa
+- data: '2019-06-25'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Risultati Micron pubblicati dopo la chiusura del 25: la seduta di reazione è il 26.'
+  stato: promossa
+- data: '2020-09-03'
+  tema: structural_themes
+  fonte: 2026-09-15/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: La riga descrive un movimento di prezzo (crollo, minimo, rimbalzo, rotazione), non una notizia
+      con un'attesa prima della seduta.
+  stato: promossa
+- data: '2021-11-30'
+  tema: structural_themes
+  fonte: 2026-08-29/news_05.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: neg
+    perché: 'Powell ritira ''transitoria'' in audizione, lo stesso giorno dei dubbi sui vaccini con Omicron:
+      tasso di sconto più alto per il growth.'
+  stato: promossa
+- data: '2022-01-05'
+  tema: structural_themes
+  fonte: 2026-09-15/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: neg
+    perché: 'Verbali FOMC più restrittivi del previsto (QT anticipato): de-rating via tasso di sconto.'
+  stato: promossa
+- data: '2022-04-26'
+  tema: structural_themes
+  fonte: 2026-09-06/news_06.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Le trimestrali Microsoft e Alphabet escono dopo la chiusura del 26: il calo del giorno le
+      precede.'
+  stato: promossa
+- data: '2022-09-13'
+  tema: structural_themes
+  fonte: 2026-09-15/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: neg
+    perché: 'CPI di agosto sopra le attese: stretta riprezzata, de-rating del complesso a lunga duration.'
+  stato: promossa
+- data: '2023-07-03'
+  tema: structural_themes
+  fonte: 2026-09-09/news_05.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: neg
+    perché: 'Controlli cinesi all''export di gallio e germanio: rischio sugli input della filiera.'
+  stato: promossa
+- data: '2023-07-27'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: pos
+    perché: 'Riga: ''positivo'', SOXX fra gli asset. Samsung estende il taglio di produzione e sposta
+      il mix su HBM.'
+  stato: promossa
+- data: '2023-10-19'
+  tema: structural_themes
+  fonte: 2026-09-15/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Livello del decennale al 5%: La riga descrive un movimento di prezzo (crollo, minimo, rimbalzo,
+      rotazione), non una notizia con un''attesa prima della seduta.'
+  stato: promossa
+- data: '2023-11-09'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: neutral
+    perché: 'Riga: ''Conferma di traiettoria, non sorpresa''. Regola della sorpresa: nessuna pressione.'
+  stato: promossa
+- data: '2024-05-23'
+  tema: structural_themes
+  fonte: 2026-09-12/news_05.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: pos
+    perché: 'Prima seduta dopo la trimestrale Nvidia del 22 sera: risultati e guidance sopra le attese.'
+  stato: promossa
+- data: '2024-08-05'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Smontamento del carry sullo yen: evento di liquidità, la riga dice di usarlo solo come controllo
+      (escluso anche nel pilota BoJ).'
+  stato: promossa
+- data: '2024-08-29'
+  tema: structural_themes
+  fonte: 2026-09-12/news_05.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Trimestrale Nvidia sopra le attese con guidance appena sopra: le schede descrivono l''esito,
+      la sorpresa ha segno incerto.'
+  stato: promossa
+- data: '2025-01-29'
+  tema: structural_themes
+  fonte: 2026-09-12/news_05.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Le trimestrali Microsoft e Meta escono dopo la chiusura del 29: la seduta di reazione è il
+      30.'
+  stato: promossa
+- data: '2025-02-27'
+  tema: structural_themes
+  fonte: 2026-09-12/news_05.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Trimestrale Nvidia: le due schede danno versi opposti e una descrive l''esito; sorpresa di
+      segno incerto.'
+  stato: promossa
+- data: '2025-03-31'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Riga: fine del divieto di scoperto in Corea, verso ''ambiguo'', asset EWY: nessuna trasmissione
+      scritta a SOXX.'
+  stato: promossa
+- data: '2025-04-02'
+  tema: structural_themes
+  fonte: 2026-09-09/news_05.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'I dazi ''Liberation Day'' sono annunciati alle 16:00 ET, dopo la chiusura: la seduta di reazione
+      è il 3 aprile.'
+  stato: promossa
+- data: '2025-04-04'
+  tema: structural_themes
+  fonte: 2026-08-29/news_05.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: neg
+    perché: 'Ritorsione cinese (dazi del 34%) annunciata prima dell''apertura USA: escalation sulla filiera
+      hardware.'
+  stato: promossa
+- data: '2025-08-19'
+  tema: structural_themes
+  fonte: 2026-09-15/news_04.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Timori sulle valutazioni AI senza una notizia datata: La riga descrive un movimento di prezzo
+      (crollo, minimo, rimbalzo, rotazione), non una notizia con un''attesa prima della seduta.'
+  stato: promossa
+- data: '2025-09-19'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Riga: ''positivo (Samsung), negativo relativo (SK Hynix, Micron)'': canale redistributivo,
+      verso non univoco su SOXX.'
+  stato: promossa
+- data: '2026-06-08'
+  tema: structural_themes
+  fonte: 2026-09-12/news_05.md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Le schede attribuiscono alla data un annuncio di spesa e controlli all''export: pressioni
+      opposte.'
+  stato: promossa
+- data: '2026-06-19'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Riga: KOSPI al massimo storico, livello di prezzo; borse USA chiuse (Juneteenth).'
+  stato: promossa
+- data: '2026-07-02'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Riga: ''Crollo dell''ETF tematico DRAM''. La riga descrive un movimento di prezzo (crollo,
+      minimo, rimbalzo, rotazione), non una notizia con un''attesa prima della seduta.'
+  stato: promossa
+- data: '2026-07-29'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: neg
+    perché: 'Riga: ''negativo'', SOXX fra gli asset. SK Hynix: ricavi e spedizioni HBM4 sotto le attese,
+      pubblicati nella mattina coreana.'
+  stato: promossa
+- data: '2026-07-30'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Riga: ''Rimbalzo record''. La riga descrive un movimento di prezzo (crollo, minimo, rimbalzo,
+      rotazione), non una notizia con un''attesa prima della seduta.'
+  stato: promossa
+- data: '2026-08-13'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Riga: KOSPI di nuovo in mercato toro. La riga descrive un movimento di prezzo (crollo, minimo,
+      rimbalzo, rotazione), non una notizia con un''attesa prima della seduta.'
+  stato: promossa
+- data: '2026-08-14'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Nota Citi di commento e speculazione su Intel nell''HBM: pressione redistributiva, non univoca
+      su SOXX.'
+  stato: promossa

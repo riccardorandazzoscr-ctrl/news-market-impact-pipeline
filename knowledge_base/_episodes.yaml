@@ -1,4 +1,4 @@
-generated_at: '2026-09-26T11:13:09'
+generated_at: '2026-09-29T15:54:46'
 num_episodes: 1179
 episodes:
 - date: '1984-01-01'
@@ -135,6 +135,9 @@ episodes:
     - card:2026-09-15/news_01.md
     - card:2026-09-18/news_01.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
   directions_local:
   - neg
   - pos
@@ -153,6 +156,7 @@ episodes:
   - iran
   - iran_sanctions
   - military_escalation
+  - negotiation_track
   - oil_supply_shock
   - russia_refinery
   - safe_haven_flows
@@ -167,7 +171,7 @@ episodes:
   - military_escalation
   - sanctions
   - shipping_chokepoint
-  n_sources: 17
+  n_sources: 20
   events:
   - event_id: 2011-12-27:commodity_energy:-
     geo: ''
@@ -197,6 +201,9 @@ episodes:
     - card:2026-09-15/news_01.md
     - card:2026-09-18/news_01.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
 - date: '2012-01-03'
   theme: commodity_energy
@@ -336,6 +343,9 @@ episodes:
     - card:2026-09-16/news_01.md
     - card:2026-09-18/news_01.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
   directions_local:
   - neg
   - pos
@@ -358,6 +368,7 @@ episodes:
   - iran_sanctions
   - middle_east_war
   - military_escalation
+  - negotiation_track
   - oil_supply
   - oil_supply_shock
   - opec
@@ -383,7 +394,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 23
+  n_sources: 26
   events:
   - event_id: 2012-01-23:commodity_energy:-
     geo: ''
@@ -422,6 +433,9 @@ episodes:
     - card:2026-09-16/news_01.md
     - card:2026-09-18/news_01.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
   - event_id: 2012-01-23:commodity_energy:eurozone_release
     geo: eurozone_release
@@ -931,6 +945,9 @@ episodes:
     - card:2026-09-15/news_02.md
     - card:2026-09-16/news_01.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
   directions_local:
   - neg
   - pos
@@ -972,7 +989,7 @@ episodes:
   - oil_supply_shock
   - sanctions
   - supply_disruption
-  n_sources: 25
+  n_sources: 28
   events:
   - event_id: 2018-05-08:commodity_energy:-
     geo: ''
@@ -1012,6 +1029,9 @@ episodes:
     - card:2026-09-15/news_02.md
     - card:2026-09-16/news_01.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
 - date: '2018-11-13'
   theme: commodity_energy
   direction: neg
@@ -1218,6 +1238,9 @@ episodes:
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
   directions_local:
   - neg
   - pos
@@ -1256,7 +1279,7 @@ episodes:
   - shipping_chokepoint
   - supply_disruption
   - upstream_export_strike
-  n_sources: 34
+  n_sources: 37
   events:
   - event_id: 2019-05-13:commodity_energy:-
     geo: ''
@@ -1307,6 +1330,9 @@ episodes:
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
 - date: '2019-06-13'
   theme: commodity_energy
   direction: mixed
@@ -1331,6 +1357,9 @@ episodes:
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
   directions_local:
   - neg
   - pos
@@ -1353,6 +1382,7 @@ episodes:
   - middle_east
   - middle_east_war
   - military_escalation
+  - negotiation_track
   - oil_supply
   - oil_supply_shock
   - refinery_products
@@ -1374,7 +1404,7 @@ episodes:
   - iran
   - military_escalation
   - shipping_chokepoint
-  n_sources: 30
+  n_sources: 33
   events:
   - event_id: 2019-06-13:commodity_energy:-
     geo: ''
@@ -1416,6 +1446,9 @@ episodes:
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
   - event_id: 2019-06-13:commodity_energy:britain_release
     geo: britain_release
@@ -1426,8 +1459,9 @@ episodes:
     - card:2026-09-06/news_02.md
 - date: '2019-06-20'
   theme: commodity_energy
-  direction: pos
+  direction: mixed
   directions:
+  - neg
   - pos
   directions_declared:
   - pos
@@ -1437,17 +1471,23 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
   directions_local:
   - pos
   declared: true
   subthemes:
   - hormuz
   - iran
+  - military_escalation
+  - negotiation_track
+  - sanctions
   subthemes_local:
   - hormuz
   - iran
   - military_escalation
-  n_sources: 1
+  n_sources: 4
   events:
   - event_id: 2019-06-20:commodity_energy:-
     geo: ''
@@ -1460,6 +1500,9 @@ episodes:
       - pos
     sources:
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
 - date: '2019-07-01'
   theme: commodity_energy
   direction: mixed
@@ -1482,6 +1525,9 @@ episodes:
     - card:2026-09-16/news_01.md
     - card:2026-09-18/news_01.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
   directions_local:
   - neg
   - pos
@@ -1523,7 +1569,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 31
+  n_sources: 34
   events:
   - event_id: 2019-07-01:commodity_energy:-
     geo: ''
@@ -1573,6 +1619,9 @@ episodes:
     - card:2026-09-16/news_01.md
     - card:2026-09-18/news_01.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
 - date: '2019-08-01'
   theme: commodity_energy
   direction: neg
@@ -1651,6 +1700,8 @@ episodes:
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
   directions_local:
   - neg
   - pos
@@ -1695,7 +1746,7 @@ episodes:
   - shipping_chokepoint
   - supply_disruption
   - upstream_export_strike
-  n_sources: 36
+  n_sources: 39
   events:
   - event_id: 2019-09-14:commodity_energy:-
     geo: ''
@@ -1747,6 +1798,9 @@ episodes:
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
 - date: '2019-09-16'
   theme: commodity_energy
@@ -2051,6 +2105,9 @@ episodes:
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
   directions_local:
   - neg
   - pos
@@ -2075,6 +2132,7 @@ episodes:
   - middle_east
   - middle_east_war
   - military_escalation
+  - negotiation_track
   - nuclear_proliferation_signal
   - oil_de_escalation
   - oil_geopolitical_premium
@@ -2099,7 +2157,7 @@ episodes:
   - iran
   - military_escalation
   - supply_disruption
-  n_sources: 33
+  n_sources: 36
   events:
   - event_id: 2020-01-03:commodity_energy:-
     geo: ''
@@ -2144,6 +2202,9 @@ episodes:
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
 - date: '2020-01-08'
   theme: commodity_energy
@@ -3888,8 +3949,9 @@ episodes:
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
 - date: '2024-04-01'
   theme: commodity_energy
-  direction: pos
+  direction: mixed
   directions:
+  - neg
   - pos
   directions_declared:
   - pos
@@ -3899,16 +3961,22 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
   directions_local:
   - pos
   declared: true
   subthemes:
   - hormuz
   - iran
+  - military_escalation
+  - negotiation_track
+  - sanctions
   subthemes_local:
   - iran
   - military_escalation
-  n_sources: 1
+  n_sources: 4
   events:
   - event_id: 2024-04-01:commodity_energy:-
     geo: ''
@@ -3920,6 +3988,9 @@ episodes:
       - pos
     sources:
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
 - date: '2024-04-12'
   theme: commodity_energy
   direction: mixed
@@ -4520,6 +4591,9 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
   directions_local:
   - neg
   - pos
@@ -4539,6 +4613,8 @@ episodes:
   - iran
   - iran_sanctions
   - iran_us_diplomacy
+  - military_escalation
+  - negotiation_track
   - nuclear_proliferation_signal
   - oil
   - oil_de_escalation
@@ -4565,7 +4641,7 @@ episodes:
   subthemes_local:
   - iran
   - military_escalation
-  n_sources: 25
+  n_sources: 28
   events:
   - event_id: 2024-10-01:commodity_energy:-
     geo: ''
@@ -4601,6 +4677,9 @@ episodes:
     - card:2026-08-11/news_02.md
     - card:2026-08-13/news_03.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
 - date: '2024-10-26'
   theme: commodity_energy
   direction: mixed
@@ -5398,6 +5477,9 @@ episodes:
     - card:2026-09-15/news_01.md
     - card:2026-09-18/news_01.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
   directions_local:
   - neg
   - pos
@@ -5424,6 +5506,7 @@ episodes:
   - middle_east
   - middle_east_war
   - military_escalation
+  - negotiation_track
   - oil
   - oil_de_escalation
   - oil_supply
@@ -5452,7 +5535,7 @@ episodes:
   - military_escalation
   - oil_supply_shock
   - shipping_chokepoint
-  n_sources: 40
+  n_sources: 43
   events:
   - event_id: 2025-06-13:commodity_energy:-
     geo: ''
@@ -5505,6 +5588,9 @@ episodes:
     - card:2026-09-15/news_01.md
     - card:2026-09-18/news_01.md
     - card:2026-09-25/news_02.md
+    - card:2026-09-27/news_01.md
+    - card:2026-09-28/news_01.md
+    - card:2026-09-29/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
 - date: '2025-06-22'
   theme: commodity_energy
@@ -6653,6 +6739,9 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    BZ=F: La data è un livello dell'oro citato in §2, non un evento; domenica, dentro
+      il fine settimana di Epic Fury.
   directions_local: []
   declared: false
   subthemes:
@@ -6692,6 +6781,12 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
   directions_local: []
   declared: false
   subthemes:
@@ -6723,12 +6818,25 @@ episodes:
   - strait_of_hormuz
   - tariff_room
   - war_premium_unwind
-  subthemes_local: []
+  subthemes_local:
+  - hormuz
+  - iran
+  - military_escalation
+  - oil_supply_shock
+  - shipping_chokepoint
   n_sources: 18
   events:
   - event_id: 2026-03-02:commodity_energy:-
     geo: ''
-    subthemes_local: []
+    subthemes_local:
+    - hormuz
+    - iran
+    - military_escalation
+    - oil_supply_shock
+    - shipping_chokepoint
+    directions_by_reference:
+      BZ=F:
+      - pos
     sources:
     - card:2026-06-25/news_05.md
     - card:2026-07-03/news_04.md
@@ -6754,6 +6862,9 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    BZ=F: Data di una nota Goldman Sachs citata in §1, non un evento; dentro la finestra
+      del 2 marzo.
   directions_local: []
   declared: false
   subthemes:
@@ -6791,6 +6902,9 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  direction_review_excluded:
+    BZ=F: 'Dichiarazione formale di chiusura di una chiusura già confermata il 2 marzo:
+      scontata (regola del Run 5d sulle entrate in vigore).'
   directions_local: []
   declared: false
   subthemes:
@@ -6841,6 +6955,9 @@ episodes:
   - neg
   - pos
   directions_declared: []
+  direction_review_excluded:
+    BZ=F: 'Livello di prezzo (Brent sopra 100$) e domenica: data d''ancora scelta
+      per il prezzo.'
   directions_local: []
   declared: false
   subthemes:
@@ -6888,6 +7005,12 @@ episodes:
   - neg
   - pos
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
   directions_local: []
   declared: false
   subthemes:
@@ -6917,12 +7040,19 @@ episodes:
   - sanctions
   - strait_of_hormuz
   - war_premium_unwind
-  subthemes_local: []
+  subthemes_local:
+  - strategic_reserve_release
+  - supply_disruption
   n_sources: 18
   events:
   - event_id: 2026-03-11:commodity_energy:-
     geo: ''
-    subthemes_local: []
+    subthemes_local:
+    - strategic_reserve_release
+    - supply_disruption
+    directions_by_reference:
+      BZ=F:
+      - neg
     sources:
     - card:2026-06-23/news_01.md
     - card:2026-07-04/news_02.md
@@ -7073,6 +7203,9 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  direction_review_excluded:
+    BZ=F: 'Intervallo 19-27/03 (campagna aerea USA per riaprire lo Stretto): due letture
+      opposte, escalation militare e prospettiva di riapertura.'
   directions_local: []
   declared: false
   subthemes:
@@ -7130,6 +7263,12 @@ episodes:
   - neg
   - pos
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
   directions_local:
   - neg
   declared: false
@@ -7151,12 +7290,23 @@ episodes:
   - safe_haven_flows
   - strait_of_hormuz
   - war_premium_unwind
-  subthemes_local: []
+  subthemes_local:
+  - hormuz
+  - iran
+  - military_escalation
+  - shipping_chokepoint
   n_sources: 11
   events:
   - event_id: 2026-03-27:commodity_energy:-
     geo: ''
-    subthemes_local: []
+    subthemes_local:
+    - hormuz
+    - iran
+    - military_escalation
+    - shipping_chokepoint
+    directions_by_reference:
+      BZ=F:
+      - pos
     sources:
     - card:2026-06-23/news_01.md
     - card:2026-07-18/news_02.md
@@ -7177,6 +7327,12 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - neg
+  direction_sources:
+    BZ=F:
+    - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
   directions_local:
   - neg
   - pos
@@ -7204,12 +7360,25 @@ episodes:
   - strait_of_hormuz
   - supply
   - war_premium_unwind
-  subthemes_local: []
+  subthemes_local:
+  - ceasefire
+  - de_escalation
+  - hormuz
+  - iran
+  - negotiation_track
   n_sources: 13
   events:
   - event_id: 2026-04-08:commodity_energy:-
     geo: ''
-    subthemes_local: []
+    subthemes_local:
+    - ceasefire
+    - de_escalation
+    - hormuz
+    - iran
+    - negotiation_track
+    directions_by_reference:
+      BZ=F:
+      - neg
     sources:
     - card:2026-06-20/news_05.md
     - card:2026-06-23/news_01.md
@@ -7332,6 +7501,12 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
   directions_local: []
   declared: false
   subthemes:
@@ -7357,12 +7532,25 @@ episodes:
   - strait_of_hormuz
   - supply
   - war_premium_unwind
-  subthemes_local: []
+  subthemes_local:
+  - hormuz
+  - iran
+  - military_escalation
+  - negotiation_track
+  - sanctions
   n_sources: 12
   events:
   - event_id: 2026-04-13:commodity_energy:-
     geo: ''
-    subthemes_local: []
+    subthemes_local:
+    - hormuz
+    - iran
+    - military_escalation
+    - negotiation_track
+    - sanctions
+    directions_by_reference:
+      BZ=F:
+      - pos
     sources:
     - card:2026-06-19/news_01.md
     - card:2026-06-20/news_05.md
@@ -7590,11 +7778,15 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    BZ=F:
+    - pos
     CRACK_321:
     - pos
     HO=F:
     - pos
   direction_sources:
+    BZ=F:
+    - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     CRACK_321:
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
@@ -7642,18 +7834,28 @@ episodes:
   - upstream_export_strike
   - war_premium_unwind
   subthemes_local:
+  - hormuz
   - infrastructure_attack
+  - iran
+  - military_escalation
   - refinery_products
   - refinery_strike
+  - shipping_chokepoint
   n_sources: 18
   events:
   - event_id: 2026-04-18:commodity_energy:-
     geo: ''
     subthemes_local:
+    - hormuz
     - infrastructure_attack
+    - iran
+    - military_escalation
     - refinery_products
     - refinery_strike
+    - shipping_chokepoint
     directions_by_reference:
+      BZ=F:
+      - pos
       CRACK_321:
       - pos
       HO=F:
@@ -7730,6 +7932,9 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  direction_review_excluded:
+    BZ=F: Data di un articolo CNN sui rendimenti USA citato in §2, non un evento su
+      Hormuz.
   directions_local:
   - neg
   - pos
@@ -7847,6 +8052,9 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  direction_review_excluded:
+    BZ=F: 'Bozza di MOU annunciata dalla TV iraniana e smentita in parte dalla Casa
+      Bianca lo stesso giorno: verso non univoco.'
   directions_local:
   - pos
   declared: false
@@ -8007,6 +8215,8 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  direction_review_excluded:
+    BZ=F: Data di compilazione della research ('stato al 2026-05-31'), non un evento.
   directions_local: []
   declared: false
   subthemes:
@@ -45312,6 +45522,8 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    IEF: 'IEF quota dal 2002 e il DB prezzi parte dal 2011: nessuna reazione misurabile.'
   directions_local: []
   declared: false
   subthemes:
@@ -45444,6 +45656,14 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    IEF:
+    - neg
+  direction_sources:
+    IEF:
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
   directions_local:
   - neg
   declared: false
@@ -45465,6 +45685,9 @@ episodes:
     subthemes_local:
     - rate_decision
     - term_premium
+    directions_by_reference:
+      IEF:
+      - neg
     sources:
     - card:2026-08-19/news_03.md
     - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
@@ -46029,6 +46252,8 @@ episodes:
     IEF:
     - card:2026-09-19/news_03.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
     ^GSPC:
     - card:2026-09-15/news_03.md
     - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
@@ -46059,7 +46284,7 @@ episodes:
   - guidance_pivot
   - hawkish
   - term_premium
-  n_sources: 4
+  n_sources: 6
   events:
   - event_id: 2013-05-22:monetary_policy:-
     geo: ''
@@ -46081,6 +46306,8 @@ episodes:
     - card:2026-09-15/news_03.md
     - card:2026-09-19/news_03.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
     - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
       ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
       della parte lunga- regime ed episodi storici (1994–2026).md
@@ -46093,9 +46320,13 @@ episodes:
   - neg
   - pos
   directions_by_reference:
+    IEF:
+    - neg
     ^GSPC:
     - neg
   direction_sources:
+    IEF:
+    - card:2026-09-16/news_02.md
     ^GSPC:
     - card:2026-09-16/news_02.md
   directions_local:
@@ -46117,6 +46348,8 @@ episodes:
     - guidance_pivot
     - term_premium
     directions_by_reference:
+      IEF:
+      - neg
       ^GSPC:
       - neg
     sources:
@@ -46132,6 +46365,10 @@ episodes:
   - neutral
   directions_declared:
   - pos
+  direction_review_excluded:
+    IEF: 'Le schede descrivono taper tantrum e settimana pre-FOMC; la notizia del
+      giorno fu il ritiro di Summers dalla corsa alla presidenza Fed, di segno opposto:
+      datazione incoerente.'
   directions_local:
   - pos
   declared: true
@@ -46257,6 +46494,12 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    IEF:
+    - neg
+  direction_sources:
+    IEF:
+    - card:2026-08-27/news_03.md
   directions_local:
   - neg
   - pos
@@ -46320,6 +46563,9 @@ episodes:
     - hawkish
     - hawkish_repricing
     - rate_decision
+    directions_by_reference:
+      IEF:
+      - neg
     sources:
     - card:2026-05-29/news_04.md
     - card:2026-06-01/news_03.md
@@ -46406,6 +46652,8 @@ episodes:
       0,59% a 0,78% in seduta''), non da una notizia con un''attesa prima della seduta:
       usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06 BoJ
       e i picchi di prezzo.'
+    IEF: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa
+      prima della seduta: come il veto già approvato su ^TNX per la stessa riga.'
   directions_local: []
   declared: false
   subthemes:
@@ -46445,6 +46693,8 @@ episodes:
     ^GDAXI: 'La riga è definita dal movimento di prezzo (''Seconda gamba del Bund
       tantrum''), non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
       l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+    IEF: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa
+      prima della seduta: come il veto già approvato su ^TNX per la stessa riga.'
   directions_local: []
   declared: false
   subthemes:
@@ -46648,6 +46898,8 @@ episodes:
     IEF:
     - card:2026-09-19/news_03.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
     ^GSPC:
     - card:2026-09-16/news_02.md
     - card:2026-09-17/news_03.md
@@ -46666,7 +46918,7 @@ episodes:
   - guidance_pivot
   - hawkish
   - rate_decision
-  n_sources: 6
+  n_sources: 8
   events:
   - event_id: 2015-12-16:monetary_policy:-
     geo: ''
@@ -46687,6 +46939,8 @@ episodes:
     - card:2026-09-19/news_03.md
     - card:2026-09-21/news_04.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
 - date: '2016-01-07'
   theme: monetary_policy
   direction: mixed
@@ -46880,11 +47134,17 @@ episodes:
   - neg
   - pos
   directions_by_reference:
+    IEF:
+    - neg
     ^GSPC:
     - neg
     ^TNX:
     - pos
   direction_sources:
+    IEF:
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
     ^GSPC:
     - card:2026-09-15/news_03.md
     ^TNX:
@@ -46920,6 +47180,8 @@ episodes:
     - guidance_pivot
     - term_premium
     directions_by_reference:
+      IEF:
+      - neg
       ^GSPC:
       - neg
       ^TNX:
@@ -47457,6 +47719,9 @@ episodes:
     - card:2026-09-17/news_03.md
     - card:2026-09-18/news_05.md
     - card:2026-09-21/news_04.md
+  direction_review_excluded:
+    IEF: 'Rialzo interamente scontato; la rimozione di ''accomodante'' fu letta in
+      entrambi i sensi: sorpresa di segno incerto.'
   directions_local:
   - neg
   declared: true
@@ -47501,6 +47766,8 @@ episodes:
     IEF:
     - card:2026-09-19/news_03.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
     ^GSPC:
     - card:2026-09-15/news_03.md
     - card:2026-09-17/news_03.md
@@ -47517,13 +47784,15 @@ episodes:
   subthemes_local:
   - guidance_pivot
   - hawkish
-  n_sources: 6
+  - term_premium
+  n_sources: 8
   events:
   - event_id: 2018-10-03:monetary_policy:-
     geo: ''
     subthemes_local:
     - guidance_pivot
     - hawkish
+    - term_premium
     directions_by_reference:
       IEF:
       - neg
@@ -47536,6 +47805,8 @@ episodes:
     - card:2026-09-19/news_03.md
     - card:2026-09-21/news_04.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
 - date: '2018-11-07'
   theme: monetary_policy
   direction: ''
@@ -47580,9 +47851,13 @@ episodes:
   - neg
   - pos
   directions_by_reference:
+    IEF:
+    - neg
     ^GSPC:
     - neg
   direction_sources:
+    IEF:
+    - card:2026-09-21/news_04.md
     ^GSPC:
     - card:2026-09-16/news_02.md
     - card:2026-09-17/news_03.md
@@ -47665,6 +47940,8 @@ episodes:
     - hawkish
     - rate_decision
     directions_by_reference:
+      IEF:
+      - neg
       ^GSPC:
       - neg
     sources:
@@ -47979,6 +48256,8 @@ episodes:
       10 anni oltre 1,6%''), non da una notizia con un''attesa prima della seduta:
       usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06 BoJ
       e i picchi di prezzo.'
+    IEF: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa
+      prima della seduta: come il veto già approvato su ^TNX per la stessa riga.'
   directions_local:
   - neg
   - pos
@@ -48298,6 +48577,8 @@ episodes:
     IEF:
     - card:2026-09-19/news_03.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
     ^GSPC:
     - card:2026-09-16/news_02.md
     - card:2026-09-17/news_03.md
@@ -48314,7 +48595,7 @@ episodes:
   subthemes_local:
   - guidance_pivot
   - hawkish
-  n_sources: 6
+  n_sources: 8
   events:
   - event_id: 2022-01-26:monetary_policy:-
     geo: ''
@@ -48333,6 +48614,8 @@ episodes:
     - card:2026-09-19/news_03.md
     - card:2026-09-21/news_04.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
 - date: '2022-02-03'
   theme: monetary_policy
   direction: neg
@@ -48370,9 +48653,13 @@ episodes:
   directions_declared:
   - neg
   directions_by_reference:
+    IEF:
+    - neg
     ^GSPC:
     - neg
   direction_sources:
+    IEF:
+    - card:2026-09-21/news_04.md
     ^GSPC:
     - card:2026-09-16/news_02.md
     - card:2026-09-17/news_03.md
@@ -48397,6 +48684,8 @@ episodes:
     - hawkish
     - rate_decision
     directions_by_reference:
+      IEF:
+      - neg
       ^GSPC:
       - neg
     sources:
@@ -48676,6 +48965,9 @@ episodes:
     - card:2026-09-17/news_03.md
     - card:2026-09-18/news_05.md
     - card:2026-09-21/news_04.md
+  direction_review_excluded:
+    IEF: 'Il CPI è di venerdì 10 giugno: il 13 è la seconda seduta di riprezzamento,
+      senza una notizia propria certa prima della chiusura.'
   directions_local:
   - neg
   declared: true
@@ -48756,6 +49048,8 @@ episodes:
     IEF:
     - card:2026-09-19/news_03.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
     ^GSPC:
     - card:2026-09-16/news_02.md
     - card:2026-09-17/news_03.md
@@ -48773,7 +49067,7 @@ episodes:
   - guidance_pivot
   - hawkish
   - rate_decision
-  n_sources: 6
+  n_sources: 8
   events:
   - event_id: 2022-06-15:monetary_policy:-
     geo: ''
@@ -48793,6 +49087,8 @@ episodes:
     - card:2026-09-19/news_03.md
     - card:2026-09-21/news_04.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
 - date: '2022-06-16'
   theme: monetary_policy
   direction: neg
@@ -49058,6 +49354,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    IEF: 'Le schede attribuiscono alla data eventi diversi o una descrizione generica,
+      senza una notizia datata: datazione incoerente.'
   directions_local:
   - neg
   - pos
@@ -49141,6 +49440,8 @@ episodes:
     IEF:
     - card:2026-09-19/news_03.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
   directions_local:
   - neg
   - pos
@@ -49204,7 +49505,7 @@ episodes:
   - pboc
   - rate_decision
   - yen
-  n_sources: 33
+  n_sources: 35
   events:
   - event_id: 2022-08-26:monetary_policy:-
     geo: ''
@@ -49251,6 +49552,8 @@ episodes:
     - card:2026-09-12/news_04.md
     - card:2026-09-19/news_03.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
   - event_id: 2022-08-26:monetary_policy:japan_release
     geo: japan_release
     subthemes_local:
@@ -49308,6 +49611,9 @@ episodes:
   - pos
   directions_declared:
   - pos
+  direction_review_excluded:
+    IEF: 'Evento di politica monetaria non americana: la trasmissione ai Treasury
+      7-10 anni è di secondo ordine e di segno non univoco.'
   directions_local:
   - neg
   - pos
@@ -49425,9 +49731,13 @@ episodes:
   directions_declared:
   - neg
   directions_by_reference:
+    IEF:
+    - neg
     ^GSPC:
     - neg
   direction_sources:
+    IEF:
+    - card:2026-09-21/news_04.md
     ^GSPC:
     - card:2026-09-15/news_03.md
     - card:2026-09-17/news_03.md
@@ -49454,6 +49764,8 @@ episodes:
     - inflation_print
     - term_premium
     directions_by_reference:
+      IEF:
+      - neg
       ^GSPC:
       - neg
     sources:
@@ -49585,6 +49897,8 @@ episodes:
   direction_sources:
     IEF:
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
     ^FVX:
     - card:2026-09-14/news_03.md
     - card:2026-09-18/news_03.md
@@ -49657,7 +49971,7 @@ episodes:
   - hawkish
   - hawkish_surprise
   - rate_decision
-  n_sources: 38
+  n_sources: 40
   events:
   - event_id: 2022-09-21:monetary_policy:-
     geo: ''
@@ -49713,6 +50027,8 @@ episodes:
     - card:2026-09-18/news_05.md
     - card:2026-09-21/news_04.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
 - date: '2022-09-22'
   theme: monetary_policy
   direction: mixed
@@ -49810,6 +50126,9 @@ episodes:
     - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
       ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
       della parte lunga- regime ed episodi storici (1994–2026).md
+  direction_review_excluded:
+    IEF: 'Mini-budget britannico: la riga scrive lo spillover sui Treasury senza verso;
+      trasmissione a IEF non univoca (fuga verso la qualità possibile).'
   directions_local:
   - pos
   declared: true
@@ -50225,9 +50544,13 @@ episodes:
   directions_declared:
   - neg
   directions_by_reference:
+    IEF:
+    - neg
     ^GSPC:
     - neg
   direction_sources:
+    IEF:
+    - card:2026-09-21/news_04.md
     ^GSPC:
     - card:2026-09-16/news_02.md
     - card:2026-09-17/news_03.md
@@ -50254,6 +50577,8 @@ episodes:
     - hawkish
     - rate_decision
     directions_by_reference:
+      IEF:
+      - neg
       ^GSPC:
       - neg
     sources:
@@ -50308,9 +50633,13 @@ episodes:
   - neg
   - pos
   directions_by_reference:
+    IEF:
+    - neg
     ^FVX:
     - pos
   direction_sources:
+    IEF:
+    - card:2026-09-18/news_03.md
     ^FVX:
     - card:2026-09-14/news_03.md
     - card:2026-09-18/news_03.md
@@ -50392,6 +50721,8 @@ episodes:
     - hawkish_hold
     - rate_decision
     directions_by_reference:
+      IEF:
+      - neg
       ^FVX:
       - pos
     sources:
@@ -50442,6 +50773,9 @@ episodes:
   - pos
   directions_declared:
   - pos
+  direction_review_excluded:
+    IEF: 'Evento di politica monetaria non americana: la trasmissione ai Treasury
+      7-10 anni è di secondo ordine e di segno non univoco.'
   directions_local:
   - neg
   - pos
@@ -50562,6 +50896,10 @@ episodes:
     ^N225:
     - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
       e interventi FX — regime ed episodi storici (1998–2026).md'
+  direction_review_excluded:
+    IEF: 'Allargamento YCC della BoJ: la riga cita lo spillover sui Treasury senza
+      verso. Evento di politica monetaria non americana: la trasmissione ai Treasury
+      7-10 anni è di secondo ordine e di segno non univoco.'
   directions_local:
   - neg
   - pos
@@ -50823,6 +51161,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    IEF: 'Evento di politica monetaria non americana: la trasmissione ai Treasury
+      7-10 anni è di secondo ordine e di segno non univoco.'
   directions_local:
   - neg
   - pos
@@ -51014,6 +51355,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: 'Evento di politica monetaria non americana: la trasmissione ai Treasury
+      7-10 anni è di secondo ordine e di segno non univoco.'
   directions_local:
   - neg
   declared: true
@@ -51235,6 +51579,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    IEF: 'Evento di politica monetaria non americana: la trasmissione ai Treasury
+      7-10 anni è di secondo ordine e di segno non univoco.'
   directions_local:
   - neg
   - pos
@@ -51371,6 +51718,9 @@ episodes:
   - neutral
   directions_declared:
   - pos
+  direction_review_excluded:
+    IEF: 'Le schede attribuiscono alla data eventi diversi o una descrizione generica,
+      senza una notizia datata: datazione incoerente.'
   directions_local:
   - pos
   declared: true
@@ -51413,6 +51763,9 @@ episodes:
     ^FVX:
     - card:2026-09-14/news_03.md
     - card:2026-09-18/news_03.md
+  direction_review_excluded:
+    IEF: 'Il FOMC della ''pausa da falco'' decide il 14 giugno: il 15 è la coda per
+      un asset USA (stesso giorno rialzo BCE).'
   directions_local:
   - neg
   - pos
@@ -51605,6 +51958,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: 'Il FOMC è del 26 luglio; il 27 portano insieme BCE che apre a una pausa,
+      PIL USA forte e indiscrezioni BoJ: eventi incompatibili.'
   directions_local:
   - neg
   declared: true
@@ -51850,6 +52206,9 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-15/news_03.md
+  direction_review_excluded:
+    IEF: 'Il declassamento Fitch arriva dopo la chiusura del 1° agosto: la seduta
+      di reazione è il 2.'
   directions_local:
   - neg
   - pos
@@ -52042,6 +52401,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    IEF: 'Evento di politica monetaria non americana: la trasmissione ai Treasury
+      7-10 anni è di secondo ordine e di segno non univoco.'
   directions_local:
   - neg
   - pos
@@ -52167,6 +52529,8 @@ episodes:
     - card:2026-09-20/news_03.md
     IEF:
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
     ^FVX:
     - card:2026-09-14/news_03.md
     - card:2026-09-18/news_03.md
@@ -52226,7 +52590,7 @@ episodes:
   - pboc
   - rate_decision
   - term_premium
-  n_sources: 36
+  n_sources: 38
   events:
   - event_id: 2023-09-20:monetary_policy:-
     geo: ''
@@ -52285,6 +52649,8 @@ episodes:
     - card:2026-09-20/news_03.md
     - card:2026-09-21/news_04.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
 - date: '2023-10-03'
   theme: monetary_policy
   direction: neg
@@ -52293,9 +52659,13 @@ episodes:
   directions_declared:
   - neg
   directions_by_reference:
+    IEF:
+    - neg
     ^GSPC:
     - neg
   direction_sources:
+    IEF:
+    - card:2026-09-15/news_03.md
     ^GSPC:
     - card:2026-09-15/news_03.md
   directions_local:
@@ -52313,6 +52683,8 @@ episodes:
     subthemes_local:
     - term_premium
     directions_by_reference:
+      IEF:
+      - neg
       ^GSPC:
       - neg
     sources:
@@ -52343,6 +52715,8 @@ episodes:
     GC=F: 'La riga è definita dal movimento di prezzo (''10 anni USA tocca il 5%''),
       non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
       l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
+    IEF: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa
+      prima della seduta: come il veto già approvato su ^TNX per la stessa riga.'
   directions_local:
   - neg
   - pos
@@ -52857,6 +53231,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    IEF:
+    - pos
+  direction_sources:
+    IEF:
+    - card:2026-09-12/news_04.md
   directions_local:
   - neg
   - pos
@@ -52913,6 +53293,9 @@ episodes:
     - guidance_pivot
     - hawkish
     - rate_decision
+    directions_by_reference:
+      IEF:
+      - pos
     sources:
     - card:2026-06-15/news_03.md
     - card:2026-06-16/news_01.md
@@ -53010,9 +53393,13 @@ episodes:
   directions_declared:
   - neg
   directions_by_reference:
+    IEF:
+    - neg
     ^GSPC:
     - neg
   direction_sources:
+    IEF:
+    - card:2026-09-21/news_04.md
     ^GSPC:
     - card:2026-09-15/news_03.md
     - card:2026-09-17/news_03.md
@@ -53039,6 +53426,8 @@ episodes:
     - inflation_print
     - term_premium
     directions_by_reference:
+      IEF:
+      - neg
       ^GSPC:
       - neg
     sources:
@@ -53128,6 +53517,8 @@ episodes:
     IEF:
     - card:2026-09-19/news_03.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
   directions_local:
   - neg
   declared: true
@@ -53139,7 +53530,7 @@ episodes:
   subthemes_local:
   - guidance_pivot
   - hawkish
-  n_sources: 2
+  n_sources: 4
   events:
   - event_id: 2024-04-16:monetary_policy:-
     geo: ''
@@ -53152,6 +53543,8 @@ episodes:
     sources:
     - card:2026-09-19/news_03.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
 - date: '2024-04-29'
   theme: monetary_policy
   direction: mixed
@@ -53265,9 +53658,13 @@ episodes:
   - neg
   - pos
   directions_by_reference:
+    IEF:
+    - pos
     JPY=X:
     - neg
   direction_sources:
+    IEF:
+    - card:2026-09-12/news_04.md
     JPY=X:
     - card:2026-09-19/news_05.md
     - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
@@ -53359,6 +53756,8 @@ episodes:
     - rate_decision
     - yen
     directions_by_reference:
+      IEF:
+      - pos
       JPY=X:
       - neg
     sources:
@@ -53443,6 +53842,9 @@ episodes:
     ^FVX:
     - card:2026-09-14/news_03.md
     - card:2026-09-18/news_03.md
+  direction_review_excluded:
+    IEF: 'Stesso giorno CPI sotto le attese (mattina) e dot plot da tre a un taglio
+      (pomeriggio): pressioni opposte.'
   directions_local:
   - neg
   - pos
@@ -53924,6 +54326,9 @@ episodes:
     JPY=X:
     - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
       e interventi FX — regime ed episodi storici (1998–2026).md'
+  direction_review_excluded:
+    IEF: 'Rialzo BoJ e FOMC che apre a settembre lo stesso giorno: pressioni opposte
+      su IEF.'
   directions_local:
   - neg
   - pos
@@ -54517,6 +54922,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    IEF: 'Taglio da 50 pb in larga parte prezzato, proiezioni in linea: sorpresa di
+      segno incerto.'
   directions_local:
   - neg
   - pos
@@ -54717,6 +55125,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: La riga descrive un movimento di rendimenti in due settimane, non una notizia
+      del giorno.
   directions_local:
   - neg
   declared: true
@@ -54809,9 +55220,15 @@ episodes:
   - neg
   directions_declared: []
   directions_by_reference:
+    IEF:
+    - neg
     ^TNX:
     - pos
   direction_sources:
+    IEF:
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
     ^TNX:
     - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
       ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
@@ -54841,6 +55258,8 @@ episodes:
     - election_risk
     - term_premium
     directions_by_reference:
+      IEF:
+      - neg
       ^TNX:
       - pos
     sources:
@@ -54857,6 +55276,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: 'Taglio FOMC atteso e coda del riprezzamento elettorale: nessuna sorpresa
+      propria della data.'
   directions_local:
   - neg
   declared: true
@@ -55007,6 +55429,8 @@ episodes:
     IEF:
     - card:2026-09-19/news_03.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
     ^FVX:
     - card:2026-09-14/news_03.md
     - card:2026-09-18/news_03.md
@@ -55114,7 +55538,7 @@ episodes:
   - rate_decision
   - term_premium
   - yen
-  n_sources: 77
+  n_sources: 79
   events:
   - event_id: 2024-12-18:monetary_policy:-
     geo: ''
@@ -55204,6 +55628,8 @@ episodes:
     - card:2026-09-18/news_03.md
     - card:2026-09-19/news_03.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
   - event_id: 2024-12-18:monetary_policy:eurozone_release
     geo: eurozone_release
     subthemes_local:
@@ -55306,9 +55732,13 @@ episodes:
   directions_declared:
   - neg
   directions_by_reference:
+    IEF:
+    - neg
     ^GSPC:
     - neg
   direction_sources:
+    IEF:
+    - card:2026-09-21/news_04.md
     ^GSPC:
     - card:2026-09-15/news_03.md
     - card:2026-09-17/news_03.md
@@ -55335,6 +55765,8 @@ episodes:
     - labour_market
     - term_premium
     directions_by_reference:
+      IEF:
+      - neg
       ^GSPC:
       - neg
     sources:
@@ -55744,6 +56176,8 @@ episodes:
       post-tariffe, marcatore di credibilità''), non da una notizia con un''attesa
       prima della seduta: usarla selezionerebbe l''episodio per il suo esito. Come
       il 2024-08-05/06 BoJ e i picchi di prezzo.'
+    IEF: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa
+      prima della seduta: come il veto già approvato su ^TNX per la stessa riga.'
   directions_local:
   - neg
   - pos
@@ -55933,11 +56367,17 @@ episodes:
   - neg
   directions_declared: []
   directions_by_reference:
+    IEF:
+    - neg
     ^GSPC:
     - neg
     ^TNX:
     - pos
   direction_sources:
+    IEF:
+    - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
+      ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
+      della parte lunga- regime ed episodi storici (1994–2026).md
     ^GSPC:
     - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
       ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
@@ -55969,6 +56409,8 @@ episodes:
     - sovereign_rating
     - term_premium
     directions_by_reference:
+      IEF:
+      - neg
       ^GSPC:
       - neg
       ^TNX:
@@ -55996,6 +56438,8 @@ episodes:
   direction_sources:
     IEF:
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
     - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
       ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
       della parte lunga- regime ed episodi storici (1994–2026).md
@@ -56027,7 +56471,7 @@ episodes:
   - sovereign_auction
   - synchronized_selloff
   - term_premium
-  n_sources: 6
+  n_sources: 8
   events:
   - event_id: 2025-05-21:monetary_policy:-
     geo: ''
@@ -56051,6 +56495,8 @@ episodes:
     - card:2026-09-03/news_02.md
     - card:2026-09-09/news_02.md
     - card:2026-09-25/news_01.md
+    - card:2026-09-28/news_02.md
+    - card:2026-09-29/news_02.md
     - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
       ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
       della parte lunga- regime ed episodi storici (1994–2026).md
@@ -56063,6 +56509,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    IEF:
+    - neutral
+  direction_sources:
+    IEF:
+    - card:2026-09-02/news_01.md
   directions_local:
   - neg
   declared: true
@@ -56134,6 +56586,9 @@ episodes:
     - hawkish_hold
     - rate_decision
     - tariff_escalation
+    directions_by_reference:
+      IEF:
+      - neutral
     sources:
     - card:2026-06-01/news_03.md
     - card:2026-06-15/news_03.md
@@ -56321,6 +56776,9 @@ episodes:
     - card:2026-09-18/news_02.md
     - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
       e interventi FX — regime ed episodi storici (1998–2026).md'
+  direction_review_excluded:
+    IEF: 'Il FOMC con due dissensi è del 30 luglio: il 31 è la coda, con BoJ e PCE
+      nella stessa data.'
   directions_local:
   - neg
   - pos
@@ -56415,6 +56873,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    IEF: 'Le schede attribuiscono alla data eventi diversi o una descrizione generica,
+      senza una notizia datata: datazione incoerente.'
   directions_local:
   - neg
   - pos
@@ -56506,6 +56967,8 @@ episodes:
       gilt, JGB, oro record''), non da una notizia con un''attesa prima della seduta:
       usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06 BoJ
       e i picchi di prezzo.'
+    IEF: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa
+      prima della seduta: come il veto già approvato su ^TNX per la stessa riga.'
   directions_local:
   - neg
   declared: false
@@ -56542,6 +57005,9 @@ episodes:
   - neutral
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: 'Le schede attribuiscono alla data eventi diversi o una descrizione generica,
+      senza una notizia datata: datazione incoerente.'
   directions_local:
   - neg
   declared: true
@@ -56632,6 +57098,9 @@ episodes:
     ^FVX:
     - card:2026-09-14/news_03.md
     - card:2026-09-18/news_03.md
+  direction_review_excluded:
+    IEF: 'Taglio atteso con tre dissensi e un solo taglio nel 2026, ma acquisti di
+      T-bill e Powell che esclude rialzi: sorpresa di segno incerto.'
   directions_local:
   - neg
   - pos
@@ -56876,6 +57345,8 @@ episodes:
       non da una notizia con un''attesa prima della seduta: usarla selezionerebbe
       l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.
       Lo stimolo Takaichi è del 21/11.'
+    IEF: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa
+      prima della seduta: come il veto già approvato su ^TNX per la stessa riga.'
   directions_local:
   - pos
   declared: true
@@ -56972,6 +57443,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    IEF: 'Nessuna riunione FOMC alla data (gennaio: 27-28); schede con descrizioni
+      generiche.'
   directions_local:
   - neg
   - pos
@@ -57104,6 +57578,9 @@ episodes:
     ^FVX:
     - card:2026-09-14/news_03.md
     - card:2026-09-18/news_03.md
+  direction_review_excluded:
+    IEF: 'Il FOMC decide alle 14:00 ET: la seduta di reazione è quella della decisione,
+      questa data è la coda (come il veto 2021-03-18 su IEF).'
   directions_local:
   - neg
   - pos
@@ -57346,6 +57823,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    IEF: Nessuna riunione FOMC a maggio 2026; le due schede danno letture opposte
+      (restrittiva, accomodante).
   directions_local:
   - neg
   - pos
@@ -57461,6 +57941,8 @@ episodes:
       globale: 30 anni JGB oltre 4%''), non da una notizia con un''attesa prima della
       seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
       BoJ e i picchi di prezzo.'
+    IEF: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa
+      prima della seduta: come il veto già approvato su ^TNX per la stessa riga.'
   directions_local: []
   declared: false
   subthemes:
@@ -57497,6 +57979,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: 'Evento di politica monetaria non americana: la trasmissione ai Treasury
+      7-10 anni è di secondo ordine e di segno non univoco.'
   directions_local:
   - neg
   declared: true
@@ -57717,6 +58202,8 @@ episodes:
       riporta ''oro ↓ (−1%)'', un esito''), non da una notizia con un''attesa prima
       della seduta: usarla selezionerebbe l''episodio per il suo esito. Come il 2024-08-05/06
       BoJ e i picchi di prezzo.'
+    IEF: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa
+      prima della seduta: come il veto già approvato su ^TNX per la stessa riga.'
   directions_local:
   - neg
   - pos
@@ -59810,6 +60297,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    SOXX: La riga descrive un movimento di prezzo (crollo, minimo, rimbalzo, rotazione),
+      non una notizia con un'attesa prima della seduta.
   directions_local:
   - neg
   - pos
@@ -59890,10 +60380,12 @@ episodes:
     - card:2026-08-29/news_05.md
 - date: '2018-11-16'
   theme: structural_themes
-  direction: neutral
+  direction: mixed
   directions:
+  - neg
   - neutral
-  directions_declared: []
+  directions_declared:
+  - neg
   directions_by_reference:
     SOXX:
     - neg
@@ -59901,6 +60393,7 @@ episodes:
     - neg
   direction_sources:
     SOXX:
+    - card:2026-09-29/news_03.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
     ^NDX:
@@ -59908,7 +60401,7 @@ episodes:
       (2023–2026).md
   directions_local:
   - neg
-  declared: false
+  declared: true
   subthemes:
   - ai
   - ai_capex
@@ -59921,13 +60414,15 @@ episodes:
   - market_concentration
   - megacap_earnings
   - nvidia
+  - regulatory_anticipation
+  - safety_pause
   - semiconductors
   - semis
   - valuation_derisking
   subthemes_local:
   - earnings_shock
   - valuation_derisking
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2018-11-16:structural_themes:-
     geo: ''
@@ -59941,6 +60436,7 @@ episodes:
       - neg
     sources:
     - card:2026-08-05/news_02.md
+    - card:2026-09-29/news_03.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
 - date: '2018-11-19'
@@ -59986,6 +60482,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    SOXX: La riga descrive un movimento di prezzo (crollo, minimo, rimbalzo, rotazione),
+      non una notizia con un'attesa prima della seduta.
   directions_local:
   - neg
   - pos
@@ -60088,6 +60587,9 @@ episodes:
   - neutral
   directions_declared:
   - neg
+  direction_review_excluded:
+    SOXX: 'Huawei in Entity List: ordine esecutivo anticipato dalla stampa e annuncio
+      di Commercio a mercati chiusi; datazione dubbia.'
   directions_local:
   - neg
   declared: true
@@ -60208,6 +60710,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    SOXX: 'Risultati Micron pubblicati dopo la chiusura del 25: la seduta di reazione
+      è il 26.'
   directions_local:
   - neg
   - pos
@@ -60302,6 +60807,9 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-15/news_04.md
+  direction_review_excluded:
+    SOXX: La riga descrive un movimento di prezzo (crollo, minimo, rimbalzo, rotazione),
+      non una notizia con un'attesa prima della seduta.
   directions_local:
   - neg
   - pos
@@ -60466,6 +60974,12 @@ episodes:
   - neutral
   directions_declared:
   - neg
+  directions_by_reference:
+    SOXX:
+    - neg
+  direction_sources:
+    SOXX:
+    - card:2026-08-29/news_05.md
   directions_local:
   - neg
   declared: true
@@ -60498,6 +61012,9 @@ episodes:
     subthemes_local:
     - memory_cycle
     - valuation_derisking
+    directions_by_reference:
+      SOXX:
+      - neg
     sources:
     - card:2026-07-23/news_03.md
     - card:2026-07-25/news_03.md
@@ -60562,9 +61079,13 @@ episodes:
   directions_declared:
   - neg
   directions_by_reference:
+    SOXX:
+    - neg
     ^GSPC:
     - neg
   direction_sources:
+    SOXX:
+    - card:2026-09-15/news_04.md
     ^GSPC:
     - card:2026-09-15/news_04.md
   directions_local:
@@ -60582,6 +61103,8 @@ episodes:
     subthemes_local:
     - valuation_derisking
     directions_by_reference:
+      SOXX:
+      - neg
       ^GSPC:
       - neg
     sources:
@@ -60595,6 +61118,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    SOXX: 'Le trimestrali Microsoft e Alphabet escono dopo la chiusura del 26: il
+      calo del giorno le precede.'
   directions_local:
   - neg
   declared: true
@@ -60684,9 +61210,13 @@ episodes:
   directions_declared:
   - neg
   directions_by_reference:
+    SOXX:
+    - neg
     ^GSPC:
     - neg
   direction_sources:
+    SOXX:
+    - card:2026-09-15/news_04.md
     ^GSPC:
     - card:2026-09-15/news_04.md
   directions_local:
@@ -60704,6 +61234,8 @@ episodes:
     subthemes_local:
     - valuation_derisking
     directions_by_reference:
+      SOXX:
+      - neg
       ^GSPC:
       - neg
     sources:
@@ -60790,6 +61322,7 @@ episodes:
     - neg
   direction_sources:
     SOXX:
+    - card:2026-09-29/news_03.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
   directions_local:
@@ -60835,8 +61368,10 @@ episodes:
   - nand
   - nvidia
   - profit_taking
+  - regulatory_anticipation
   - retail_leverage
   - rotation
+  - safety_pause
   - semiconductor
   - semiconductor_cycle
   - semiconductors
@@ -60857,7 +61392,7 @@ episodes:
   - labour_market
   - sanctions
   - valuation_derisking
-  n_sources: 36
+  n_sources: 37
   events:
   - event_id: 2022-10-07:structural_themes:-
     geo: ''
@@ -60908,6 +61443,7 @@ episodes:
     - card:2026-08-26/news_04.md
     - card:2026-08-29/news_05.md
     - card:2026-09-09/news_05.md
+    - card:2026-09-29/news_03.md
     - kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo
       della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
@@ -61383,6 +61919,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    SOXX:
+    - neg
+  direction_sources:
+    SOXX:
+    - card:2026-09-09/news_05.md
   directions_local:
   - neg
   declared: true
@@ -61446,6 +61988,9 @@ episodes:
     - critical_minerals
     - export_controls
     - valuation_derisking
+    directions_by_reference:
+      SOXX:
+      - neg
     sources:
     - card:2026-06-14/news_06.md
     - card:2026-06-23/news_04.md
@@ -61509,6 +62054,13 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    SOXX:
+    - pos
+  direction_sources:
+    SOXX:
+    - kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo
+      della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
   directions_local:
   - neg
   - pos
@@ -61546,6 +62098,9 @@ episodes:
     - hyperscaler_capex
     - memory_cycle
     - valuation_derisking
+    directions_by_reference:
+      SOXX:
+      - pos
     sources:
     - card:2026-08-16/news_05.md
     - card:2026-08-19/news_02.md
@@ -61682,6 +62237,9 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-15/news_04.md
+  direction_review_excluded:
+    SOXX: 'Livello del decennale al 5%: La riga descrive un movimento di prezzo (crollo,
+      minimo, rimbalzo, rotazione), non una notizia con un''attesa prima della seduta.'
   directions_local:
   - neg
   declared: true
@@ -61772,6 +62330,13 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    SOXX:
+    - neutral
+  direction_sources:
+    SOXX:
+    - kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo
+      della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
   directions_local:
   - neg
   - pos
@@ -61817,6 +62382,9 @@ episodes:
     - memory_cycle
     - nand
     - valuation_derisking
+    directions_by_reference:
+      SOXX:
+      - neutral
     sources:
     - card:2026-08-16/news_05.md
     - card:2026-08-19/news_02.md
@@ -62124,6 +62692,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    SOXX:
+    - pos
+  direction_sources:
+    SOXX:
+    - card:2026-09-12/news_05.md
   directions_local:
   - neg
   - pos
@@ -62186,6 +62760,9 @@ episodes:
     - hbm
     - hyperscaler_capex
     - valuation_derisking
+    directions_by_reference:
+      SOXX:
+      - pos
     sources:
     - card:2026-05-30/news_04.md
     - card:2026-06-01/news_02.md
@@ -62428,6 +63005,9 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-15/news_04.md
+  direction_review_excluded:
+    SOXX: 'Smontamento del carry sullo yen: evento di liquidità, la riga dice di usarlo
+      solo come controllo (escluso anche nel pilota BoJ).'
   directions_local:
   - neg
   - pos
@@ -62681,6 +63261,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    SOXX: 'Trimestrale Nvidia sopra le attese con guidance appena sopra: le schede
+      descrivono l''esito, la sorpresa ha segno incerto.'
   directions_local:
   - neg
   - pos
@@ -63380,6 +63963,7 @@ episodes:
     - neg
   direction_sources:
     SOXX:
+    - card:2026-09-29/news_03.md
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
       capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
@@ -63442,8 +64026,10 @@ episodes:
   - nvidia
   - power_bottleneck
   - profit_taking
+  - regulatory_anticipation
   - retail_leverage
   - rotation
+  - safety_pause
   - semi
   - semiconductor
   - semiconductor_cycle
@@ -63464,7 +64050,7 @@ episodes:
   - hyperscaler_capex
   - model_capability_shock
   - valuation_derisking
-  n_sources: 51
+  n_sources: 52
   events:
   - event_id: 2025-01-27:structural_themes:-
     geo: ''
@@ -63532,6 +64118,7 @@ episodes:
     - card:2026-08-29/news_05.md
     - card:2026-09-06/news_06.md
     - card:2026-09-15/news_04.md
+    - card:2026-09-29/news_03.md
     - kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo
       della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
@@ -63550,6 +64137,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    SOXX: 'Le trimestrali Microsoft e Meta escono dopo la chiusura del 29: la seduta
+      di reazione è il 30.'
   directions_local:
   - neg
   - pos
@@ -63719,6 +64309,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    SOXX: 'Trimestrale Nvidia: le due schede danno versi opposti e una descrive l''esito;
+      sorpresa di segno incerto.'
   directions_local:
   - neg
   - pos
@@ -63847,6 +64440,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    SOXX: 'Riga: fine del divieto di scoperto in Corea, verso ''ambiguo'', asset EWY:
+      nessuna trasmissione scritta a SOXX.'
   directions_local:
   - neg
   declared: true
@@ -63892,6 +64488,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    SOXX: 'I dazi ''Liberation Day'' sono annunciati alle 16:00 ET, dopo la chiusura:
+      la seduta di reazione è il 3 aprile.'
   directions_local:
   - neg
   - pos
@@ -64015,6 +64614,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    SOXX:
+    - neg
+  direction_sources:
+    SOXX:
+    - card:2026-08-29/news_05.md
   directions_local:
   - neg
   - pos
@@ -64068,6 +64673,9 @@ episodes:
     subthemes_local:
     - tariff_escalation
     - valuation_derisking
+    directions_by_reference:
+      SOXX:
+      - neg
     sources:
     - card:2026-06-06/news_02.md
     - card:2026-06-17/news_02.md
@@ -64363,6 +64971,10 @@ episodes:
   direction_sources:
     ^GSPC:
     - card:2026-09-15/news_04.md
+  direction_review_excluded:
+    SOXX: 'Timori sulle valutazioni AI senza una notizia datata: La riga descrive
+      un movimento di prezzo (crollo, minimo, rimbalzo, rotazione), non una notizia
+      con un''attesa prima della seduta.'
   directions_local:
   - neg
   declared: true
@@ -64532,6 +65144,9 @@ episodes:
   - pos
   directions_declared:
   - pos
+  direction_review_excluded:
+    SOXX: 'Riga: ''positivo (Samsung), negativo relativo (SK Hynix, Micron)'': canale
+      redistributivo, verso non univoco su SOXX.'
   directions_local:
   - pos
   declared: true
@@ -64896,6 +65511,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    SOXX: 'Le schede attribuiscono alla data un annuncio di spesa e controlli all''export:
+      pressioni opposte.'
   directions_local:
   - neg
   - pos
@@ -65025,6 +65643,8 @@ episodes:
   directions:
   - pos
   directions_declared: []
+  direction_review_excluded:
+    SOXX: 'Riga: KOSPI al massimo storico, livello di prezzo; borse USA chiuse (Juneteenth).'
   directions_local: []
   declared: false
   subthemes:
@@ -65064,6 +65684,10 @@ episodes:
   - neutral
   directions_declared:
   - neg
+  direction_review_excluded:
+    SOXX: 'Riga: ''Crollo dell''ETF tematico DRAM''. La riga descrive un movimento
+      di prezzo (crollo, minimo, rimbalzo, rotazione), non una notizia con un''attesa
+      prima della seduta.'
   directions_local:
   - neg
   declared: true
@@ -65244,6 +65868,13 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    SOXX:
+    - neg
+  direction_sources:
+    SOXX:
+    - kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo
+      della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
   directions_local:
   - neg
   - pos
@@ -65288,6 +65919,9 @@ episodes:
     - hyperscaler_capex
     - memory_cycle
     - valuation_derisking
+    directions_by_reference:
+      SOXX:
+      - neg
     sources:
     - card:2026-08-16/news_05.md
     - card:2026-08-19/news_02.md
@@ -65312,6 +65946,9 @@ episodes:
   - pos
   directions_declared:
   - pos
+  direction_review_excluded:
+    SOXX: 'Riga: ''Rimbalzo record''. La riga descrive un movimento di prezzo (crollo,
+      minimo, rimbalzo, rotazione), non una notizia con un''attesa prima della seduta.'
   directions_local:
   - pos
   declared: true
@@ -65354,6 +65991,10 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    SOXX: 'Riga: KOSPI di nuovo in mercato toro. La riga descrive un movimento di
+      prezzo (crollo, minimo, rimbalzo, rotazione), non una notizia con un''attesa
+      prima della seduta.'
   directions_local:
   - neg
   - pos
@@ -65416,6 +66057,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    SOXX: 'Nota Citi di commento e speculazione su Intel nell''HBM: pressione redistributiva,
+      non univoca su SOXX.'
   directions_local:
   - neg
   - pos
