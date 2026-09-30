@@ -80,20 +80,13 @@ Aggiornato: 2026-08-30
 
 ## Qualità delle previsioni
 
-- **Stato** — audit del 2026-08-10: l'edge **non è mediocre ovunque, è spaccato per
-  asset**. Bene su rischio/equity (`^VIX` IC +0,27), male su rifugio/tassi/dollaro
-  (`IEF` −0,33, `DX-Y.NYB` hit 31%). L'IC ora si calcola dentro ciascun asset: il
-  metodo vecchio sovrastimava ~3 volte.
-- **Deciso** — la lettura direzionale si scrive **dopo** aver letto la sezione 5-bis
-  della scorecard corrente, e sugli asset ❌ si dichiara inaffidabile il segno storico.
-  Sempre con rimando alla scorecard viva, **mai a una lista fissa**.
-- **Prossimo passo** — verificare sulle prossime scorecard che `monetary_policy` (IC 0,00
-  con N=558, il più alto) e `DX-Y.NYB` migliorino, ora che il bug sulla direzione è
-  corretto. ⚠ Da rivedere: ogni conclusione passata basata sull'IC alto a T+10, che era
-  in gran parte artefatto di scala.
+- **Stato** — revisione precisione applicata il 30/09/2026; verifica con `news_impact_pipeline/run_tests.sh precisione` e `forecast_tracking.py audit`.
+- **Deciso** — registrazione giornaliera prima della consegna; valori congelati anche pendenti, copie delle schede e versione del metodo. Recuperi storici separati dal flusso live.
+- **Deciso** — analoghi stretti per default, senza ampliamento per raggiungere N; conflitti direzionali esclusi. `--as-of` limita gli esiti osservabili.
+- **Deciso** — scorecard per uso/provenienza e asset/orizzonte, con benchmark sugli stessi casi; niente semafori basati sul 50%.
+- **Prossimo passo** — osservare le coorti live mature prima di giudicare il miglioramento. Regimi strutturati e identità univoca delle release restano da implementare.
 
-Dettaglio: [references/leggere_lo_scorecard.md](references/leggere_lo_scorecard.md)
-Aggiornato: 2026-08-30
+Metodo: [references/leggere_lo_scorecard.md](references/leggere_lo_scorecard.md)
 
 ---
 

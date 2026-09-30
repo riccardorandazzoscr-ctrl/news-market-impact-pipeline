@@ -112,7 +112,7 @@ i campi qui sono presi come sono, senza che `analogues.py` debba dedurli dalla p
 venv/bin/python event_study.py \
   --ticker 'TICKER1,TICKER2' \
   --events YYYY-MM-DD,YYYY-MM-DD,... \
-  --windows 1,3,5,10 \
+  --windows 1,3,5,10 --as-of {{DATE}} \
   --markdown
 ```
 
@@ -123,16 +123,19 @@ venv/bin/python event_study.py \
 
 **Dichiara l'uso di ogni tabella** (obbligatorio dal 2026-09-23): in fondo al titolo
 `### Event study — `TICKER`` aggiungi **una** di queste marche. Le legge
-`forecast_tracking.py`: senza marca la tabella resta «non dichiarata» nella scorecard.
+`forecast_tracking.py`: senza marca la scheda resta fuori dalla registrazione giornaliera (lo storico resta «non dichiarato»).
 
 - `[previsione]` — ci costruisci sopra la lettura direzionale della scheda.
 - `[descrittiva]` — la riporti, ma dichiari il segno storico inaffidabile (sezione
   5-bis della scorecard) o non ne trai una direzione.
 - `[scenario: nome-breve]` — tabella alternativa dello stesso asset (secondo pool,
   sotto-campione). Obbligatoria quando un asset compare in più tabelle: il nome
-  distingue le previsioni, altrimenti la seconda tabella viene ignorata.
+  distingue le previsioni, altrimenti la scheda viene segnalata come ambigua e non registrata.
 
-_Incolla qui le tabelle generate._
+_Incolla qui le tabelle generate, una per ticker: non accorpare più asset o
+p25/p75 in una cella nelle nuove schede. Il parser di registrazione controlla
+completezza, valori finiti, quartili e duplicati. Usa [descrittiva] con regime
+incompatibile, sorpresa non documentata o N<10. La soglia non è una prova di edge._
 
 ---
 
@@ -171,3 +174,5 @@ _Incolla qui le tabelle generate._
      spiegarlo in questa scheda. -->
 
 → [Glossario di sigle e termini](#doc-glossario) (in fondo al report)
+
+Se non esiste alcun pool utilizzabile, ometti le tabelle e scrivi `**Motivo astensione**: <ragione concreta>`. Una tabella malformata resta un errore anche con questo campo.

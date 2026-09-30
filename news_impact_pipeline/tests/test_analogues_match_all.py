@@ -19,7 +19,7 @@ from collections import defaultdict
 from contextlib import redirect_stdout, redirect_stderr
 from pathlib import Path
 
-PIPE = Path.home() / "Claude/mercati_finanza/news_impact_pipeline"
+PIPE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(PIPE))
 import analogues  # noqa: E402
 
@@ -48,7 +48,7 @@ def run(theme, tokens=None, match_all=False, direction=None, before=None,
     return dates, err.getvalue()
 
 
-def oracle(theme, tokens, mode, before=None, field="subthemes_local"):
+def oracle(theme, tokens, mode, before=None, field="subthemes_local", strict=False):
     """Oracolo indipendente: hit per token, poi all/any. Forma diversa dal SUT."""
     wanted = [analogues._norm_label(t) for t in tokens]
     dates = set()
@@ -62,6 +62,8 @@ def oracle(theme, tokens, mode, before=None, field="subthemes_local"):
         # evento (R02); a livello documento resta sul record.
         per_event = mode == "and" and field == "subthemes_local"
         units = [ev.get(field) or [] for ev in e["events"]] if per_event else [e.get(field) or []]
+        if strict:
+            units = [v.get(field) or [] for ev in e["events"] for v in ev["evidence"]]
         for labels in units:
             hits = []
             for w in wanted:
@@ -255,7 +257,7 @@ print(f"  4.5 degrado → pool del tema  avviso + conteggio dell'unione presenti
 print("\n" + "-" * 78)
 print("5. CLI END-TO-END (subprocess: parsing argomenti, exit code)")
 print("-" * 78)
-PY = str(PIPE / "venv/bin/python")
+PY = sys.executable
 
 
 def cli(*args):
@@ -270,8 +272,8 @@ c2 = cli("--theme", th, "--subtheme", pair[0], "--subtheme", pair[1],
 check(c1.returncode == 0 and c2.returncode == 0, "CLI1 exit code non zero")
 cli_or = [d for d in c1.stdout.strip().split(",") if d]
 cli_and = [d for d in c2.stdout.strip().split(",") if d]
-check(cli_or == oracle(th, list(pair), "or"), "CLI2 OR da CLI ≠ oracolo")
-check(cli_and == oracle(th, list(pair), "and"), "CLI3 AND da CLI ≠ oracolo")
+check(cli_or == oracle(th, list(pair), "or", strict=True), "CLI2 OR da CLI ≠ oracolo")
+check(cli_and == oracle(th, list(pair), "and", strict=True), "CLI3 AND da CLI ≠ oracolo")
 print(f"  5.1 exit code 0 · OR={len(cli_or)} AND={len(cli_and)} coerenti con l'oracolo  ✓")
 
 c3 = cli("--theme", th, "--match-all")          # flag senza --subtheme
@@ -291,7 +293,7 @@ print(f"  5.3 --match-all documentato in --help  ✓")
 
 # ==================================================== 6. REGRESSIONE GLOBALE
 print("\n" + "-" * 78)
-print("6. REGRESSIONE — il default deve replicare la semantica PRE-modifica")
+print("6. REGRESSIONE — API legacy senza strict conserva la semantica precedente")
 print("-" * 78)
 
 

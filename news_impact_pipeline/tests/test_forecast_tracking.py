@@ -86,7 +86,7 @@ class ForecastTests(unittest.TestCase):
         self.assertEqual((r["expected_median"], r["realized_return"]), ("9.99", "1.2345"))
         self.assertEqual(len(self.by_id()), 8)
 
-    def test_correzione_aggiorna_pendenti_e_congela_valutate(self):
+    def test_correzione_congela_anche_pendenti(self):
         self.run_quiet(ft.cmd_backfill)
         rows = ft.load_ledger()
         for r in rows:   # T+1 di BZ=F gia' valutata
@@ -99,10 +99,10 @@ class ForecastTests(unittest.TestCase):
         frozen = ids["2026-01-05/test-slug/BZ=F/base/T+1"]
         self.assertEqual(float(frozen["expected_median"]), 0.50)     # track record intatto
         self.assertTrue(frozen["revised_at"])
-        self.assertEqual(ids["2026-01-05/test-slug/^GSPC/base/T+3"]["uso"], "ritirata")
-        self.assertEqual(float(ids["2026-01-05/test-slug/BZ=F/base/T+3"]["expected_median"]), -0.90)   # pendente: aggiornata
+        self.assertEqual(ids["2026-01-05/test-slug/^GSPC/base/T+3"]["uso"], "descrittiva")
+        self.assertEqual(float(ids["2026-01-05/test-slug/BZ=F/base/T+3"]["expected_median"]), 0.50)   # pendente: aggiornata
         self.assertEqual(float(ids["2026-01-05/test-slug/BZ=F/base/T+1"]["expected_median"]), 0.50)
-        self.assertIn("2 ritirate, 1 gia' valutate", out)
+        self.assertIn("lasciate congelate", out)
         # Rilanciare non cambia nulla: idempotente.
         before = ft.LEDGER_PATH.read_text()
         self.run_quiet(ft.cmd_backfill)

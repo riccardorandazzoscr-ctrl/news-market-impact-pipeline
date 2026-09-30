@@ -78,6 +78,7 @@ STUB
   cat > "$FPIPE/venv/bin/python" <<'PYSTUB'
 #!/bin/zsh
 case "$*" in
+  *forecast_tracking.py*) exit "${STUB_REGISTER_RC:-0}" ;;
   *render_report.py*)
     R="$HOME/Claude/mercati_finanza/daily_analysis/$3"
     mkdir -p "$R"; print -r -- "<html>report finto $3</html>" > "$R/report.html" ;;
@@ -283,6 +284,19 @@ check "[[ $RC -eq 0 ]]" "esce con 0" "rc=$RC"
 check "grep -q 'DONE' '$LOG'" "logga DONE"
 check "! grep -q 'ERROR\|INCOMPLETA' '$LOG'" "nessun allarme"
 check "grep -q 'TELEGRAM $GIORNO$' '$TELEGRAM'" "Telegram con la didascalia normale"
+teardown
+
+# Registrazione fallita: avviso, ma la consegna parte comunque (30/09/2026).
+setup
+scrivi_index completo
+cp "$GIORNODIR/_index.md" "$SANDBOX/completo.md"
+rm -rf "$GIORNODIR"
+export STUB_REGISTER_RC=1
+RC=$(run_finale 0 "$SANDBOX/completo.md" 3)
+unset STUB_REGISTER_RC
+check "[[ $RC -eq 0 ]]" "registrazione fallita non blocca il run" "rc=$RC"
+check "grep -q 'WARN: registrazione previsioni' '$LOG'" "l'avviso finisce nel log"
+check "grep -q 'TELEGRAM $GIORNO$' '$TELEGRAM'" "report consegnato comunque"
 teardown
 
 # --------------------------- 7. ramo finale: exit≠0 ma lavoro finito (10/07/2026)

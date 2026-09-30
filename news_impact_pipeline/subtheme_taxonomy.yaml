@@ -422,16 +422,13 @@ macro_data:
   # quando la domanda è "il dato ha sorpreso al rialzo o al ribasso" e non "come
   # ha reagito l'asset".
   inflation_upside:
-    - '(cpi|pce|deflatore|inflazione|inflation).{0,60}(sopra|superiore|accelera|sale|risale|batte|beats?|above|higher|hot(ter)?)'
-    - '(sopra|superiore|accelera|batte|beats?|above|higher|hot(ter)?).{0,60}(cpi|pce|deflatore|inflazione|inflation)'
+    - '(cpi|pce|deflatore|inflazione|inflation).{0,100}(sopra|superiore|above|higher than).{0,20}(attes|consens|forecast|expect)'
     - 'sorpresa (di )?inflazione al rialzo'
     - 'inflation (surprises? )?(to the )?upside'
   inflation_downside:
-    - '(cpi|pce|deflatore|inflazione|inflation).{0,60}(sotto|inferiore|rallenta|scende|delude|miss(es)?|below|lower|cool(er)?)'
-    - '(sotto|inferiore|rallenta|delude|miss(es)?|below|lower|cool(er)?).{0,60}(cpi|pce|deflatore|inflazione|inflation)'
+    - '(cpi|pce|deflatore|inflazione|inflation).{0,100}(sotto|inferiore|below|lower than).{0,20}(attes|consens|forecast|expect)'
     - 'sorpresa (di )?inflazione al ribasso'
     - 'inflation (surprises? )?(to the )?downside'
-    - 'disinflazion\w*'
   activity_growth:
     - '\bpil\b'
     - '\bgdp\b'

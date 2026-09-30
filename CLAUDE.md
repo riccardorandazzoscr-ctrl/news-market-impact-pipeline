@@ -18,6 +18,7 @@ $V news_impact_pipeline/update_market_data.py      # incrementale: finestra sovr
 $V news_impact_pipeline/update_market_data.py --check   # freschezza/buchi, senza scaricare
 $V news_impact_pipeline/stato_giornata.py --date AAAA-MM-GG  # a che punto e' la giornata
 $V news_impact_pipeline/forecast_tracking.py run   # feedback loop settimanale (= job lun 09:00)
+$V news_impact_pipeline/forecast_tracking.py audit # tabelle non acquisite o ambigue
 $V news_impact_pipeline/forecast_tracking.py recheck  # valutazioni congelate vs DB di oggi (sola lettura)
 cd news_impact_pipeline && ./run_tests.sh          # tutte le suite; con un filtro ne lancia una
 # setup venv:
@@ -75,8 +76,8 @@ Orari, verifica e ripristino: [references/routine_giornaliera.md](references/rou
 ## Reference
 
 - [leggere_lo_scorecard.md](references/leggere_lo_scorecard.md) — **prima di scrivere una
-  lettura direzionale.** L'edge è spaccato per asset: su alcuni il segno storico è
-  inaffidabile. Come si calcola l'IC, e perché.
+  lettura direzionale.** Uso/provenienza, benchmark sugli stessi casi e IC per
+  asset/orizzonte; nessuna promozione automatica a affidabile.
 - [esperimenti_scartati.md](references/esperimenti_scartati.md) — stai per proporre un
   miglioramento al metodo: controlla se è già stato provato e misurato.
 - [copertura_asset.md](references/copertura_asset.md) — valuti se aggiungere un asset, o

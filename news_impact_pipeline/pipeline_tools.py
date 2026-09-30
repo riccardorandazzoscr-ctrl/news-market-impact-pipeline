@@ -394,7 +394,7 @@ def cmd_digest(args):
         "Triage del briefing del giorno. Per ogni notizia: decisione "
         "(✅ = scheda prodotta, ✖ = scartata), tema/motivazione, e link alla "
         "scheda `news_NN.md` quando prodotta. Scope: subset triato — scheda "
-        "completa solo per notizie che mappano sui 17 asset in DB e hanno un "
+        "completa solo per notizie che mappano sugli asset dell’universo corrente in DB e hanno un "
         "analogo storico plausibile.",
         "",
         "## Triage",

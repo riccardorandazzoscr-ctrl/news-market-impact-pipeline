@@ -18,6 +18,7 @@ Sottocomandi:
 """
 
 import argparse
+import sys
 import os
 import re
 from collections import defaultdict
@@ -477,7 +478,11 @@ def cmd_build():
                                  "events": {}})
         ev = e["events"].setdefault(where, {"subthemes_local": set(),
                                             "directions_by_reference": {},
-                                            "sources": set()})
+                                            "sources": set(), "evidence": []})
+        evidence = {"source": source, "subthemes_local": set(local),
+                    "directions_by_reference": {direction_reference: set(dir_declared)}
+                    if direction_reference and dir_declared else {}}
+        ev["evidence"].append(evidence)
         ev["sources"].add(source)
         ev["subthemes_local"].update(local)
         if direction_reference and dir_declared:
@@ -607,7 +612,7 @@ def cmd_build():
             raise ValueError(f"Verso della revisione non valido: {key}")
         existing = e["directions_by_reference"].get(ref, set())
         if existing and existing != {sign}:
-            raise ValueError(f"Revisione {key} in conflitto con scheda esplicita: {existing}")
+            print(f"[analogues] conflitto {key}: {sorted(existing)} vs {sign}; escluso dai pool direzionali", file=sys.stderr)
         e["directions_by_reference"].setdefault(ref, set()).add(sign)
         e["direction_sources"].setdefault(ref, set()).add(tag)
         # Il verso rivisto va all'evento della sua fonte, non alla data. La fonte
@@ -616,11 +621,16 @@ def cmd_build():
         if ev is None:
             raise ValueError(f"Fonte della revisione senza la data {d} sotto il tema {theme}: {source}")
         ev["directions_by_reference"].setdefault(ref, set()).add(sign)
+        witnesses = [v for v in ev["evidence"] if v["source"] == tag]
+        for witness in witnesses:
+            witness["directions_by_reference"].setdefault(ref, set()).add(sign)
         if mech:
             labels = (_split_subthemes(mech) if isinstance(mech, str)
                       else {lbl for t in mech if (lbl := _norm_label(str(t)))})
             e["subthemes_local"].update(labels)
             ev["subthemes_local"].update(labels)
+            for witness in witnesses:
+                witness["subthemes_local"].update(labels)
 
     episodes = []
     for e in sorted(lib.values(), key=lambda x: (x["theme"], x["date"])):
@@ -654,7 +664,11 @@ def cmd_build():
                               "subthemes_local": sorted(ev["subthemes_local"]),
                               **({"directions_by_reference": {k: sorted(v) for k, v in sorted(ev["directions_by_reference"].items())}}
                                  if ev["directions_by_reference"] else {}),
-                              "sources": sorted(ev["sources"])}
+                              "sources": sorted(ev["sources"]),
+                              "evidence": [{"source": v["source"],
+                                            "subthemes_local": sorted(v["subthemes_local"]),
+                                            "directions_by_reference": {k: sorted(ds) for k, ds in v["directions_by_reference"].items()}}
+                                           for v in ev["evidence"]]}
                              for g, ev in sorted(e["events"].items())]})
 
     # Pubblicazione atomica: si scrive accanto e si sostituisce in un colpo solo.
@@ -689,10 +703,14 @@ def _load() -> list[dict]:
 
 def cmd_find(theme: str, direction: str | None, before: str | None,
              subtheme: list[str] | None, min_n: int, max_pool: int,
-             match_all: bool = False, direction_reference: str | None = None):
+             match_all: bool = False, direction_reference: str | None = None,
+             strict: bool = False, since: str | None = None):
+    require_strict = strict
     eps = [e for e in _load() if e["theme"] == theme]
     if before:
         eps = [e for e in eps if e["date"] < before]   # no look-ahead
+    if since:
+        eps = [e for e in eps if e["date"] >= since]
     note = ""
     if subtheme:
         wanted = [_norm_label(s) for s in subtheme]
@@ -721,6 +739,12 @@ def cmd_find(theme: str, direction: str | None, before: str | None,
             out = []
             for e in eps:
                 units = (e.get("events") or []) if field == "subthemes_local" else [e]
+                if require_strict and field == "subthemes_local":
+                    if any("evidence" not in u for u in units):
+                        raise SystemExit("Libreria senza provenienza dei filtri: esegui analogues.py build")
+                    # ponytail: source-local evidence prevents cross-source ANDs;
+                    # explicit release IDs are needed to merge separate descriptions safely.
+                    units = [v for u in units for v in u["evidence"]]
                 hit = [u for u in units
                        if test(any(w in st for st in (u.get(field) or [])) for w in wanted)]
                 if hit:
@@ -779,7 +803,7 @@ def cmd_find(theme: str, direction: str | None, before: str | None,
                            f"Il match è per sottostringa, quindi questo AND equivale "
                            f"esattamente a `--subtheme {longest}` da solo: usalo, "
                            f"è più leggibile nel caveat]")
-        if len(strict) >= min_n:
+        if require_strict or len(strict) >= min_n:
             eps = strict
             note = f" [sotto-tema '{lbl}' su etichette date-locali: {len(strict)} episodi]"
         elif len(loose) >= min_n:
@@ -961,6 +985,8 @@ def main():
                    help="Tetto di recency: se il pool supera questo numero, tiene solo gli "
                         "episodi più recenti (≈ regime corrente). Riduce diluizione e "
                         "regime-mixing sui temi larghi. 0 = nessun tetto.")
+    f.add_argument("--allow-fallback", action="store_true", help="Solo descrizione: consenti allargamento del sotto-tema")
+    f.add_argument("--since", help="Inizio incluso della fase di regime scelta, YYYY-MM-DD")
     f.add_argument("--before", default=None, metavar="YYYY-MM-DD")
     lb = sub.add_parser("labels", help="Copertura dei token di sotto-tema per livello.")
     lb.add_argument("--theme", default=None)
@@ -974,7 +1000,8 @@ def main():
         cmd_labels(args.theme, args.min_n)
     elif args.cmd == "find":
         cmd_find(args.theme, args.direction, args.before, args.subtheme,
-                 args.min_n, args.max_pool, args.match_all, args.direction_reference)
+                 args.min_n, args.max_pool, args.match_all, args.direction_reference,
+                 strict=not args.allow_fallback, since=args.since)
     elif args.cmd == "stats":
         cmd_stats()
 

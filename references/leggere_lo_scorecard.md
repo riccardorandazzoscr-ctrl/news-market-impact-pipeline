@@ -1,3 +1,19 @@
+# Lettura corrente della scorecard
+
+Dal 30 settembre 2026 il riepilogo separa registrazioni giornaliere, recuperi
+retrospettivi e legacy. La sezione 5-bis contiene soltanto previsioni attive,
+separate per asset e orizzonte. I benchmark sempre-su/sempre-giù usano gli stessi
+casi direzionali: superarli nel campione non certifica un vantaggio futuro.
+Nessun asset è promosso a affidabile dal solo hit-rate >50% o IC positivo.
+I campioni sono correlati: N righe non significa N osservazioni indipendenti.
+Copertura delle bande va letta insieme all'ampiezza, non come giudizio direzionale.
+
+Controllo di completezza: `news_impact_pipeline/venv/bin/python
+news_impact_pipeline/forecast_tracking.py audit` dalla root del progetto.
+Non usare le conclusioni e le liste storiche sotto come regole attuali.
+
+---
+
 # Leggere la scorecard senza ingannarsi
 
 **Quando aprire questo file:** stai leggendo o interpretando la scorecard settimanale, o

@@ -163,7 +163,7 @@ def find_anchor_and_targets(prices: pd.Series,
 # --- Calcolo rendimenti + stats -------------------------------------------
 
 def compute_returns(conn, ticker: str, event_dates: list[date],
-                    windows: list[int], use_adj: bool = True) -> dict:
+                    windows: list[int], use_adj: bool = True, as_of: date | None = None) -> dict:
     """
     Per un singolo asset, calcola rendimenti cumulati per ogni evento.
 
@@ -180,6 +180,12 @@ def compute_returns(conn, ticker: str, event_dates: list[date],
       }
     """
     prices = load_price_series(conn, ticker, use_adj=use_adj)
+    if as_of is not None:
+        prices = prices[prices.index < pd.Timestamp(as_of)]
+    if prices.empty:
+        return {"ticker": ticker, "warnings": ["Nessun prezzo anteriore al cutoff"],
+                "is_monthly": False, "per_event": [],
+                "skipped_events": [{"event_date": d, "reason": "cutoff"} for d in event_dates]}
     is_monthly = detect_monthly_data(prices)
     warnings = []
     if is_monthly:
@@ -268,7 +274,7 @@ def aggregate_stats(per_event: list[dict], windows: list[int]) -> dict:
 
 def run_event_study(tickers: list[str], event_dates: list[date],
                     windows: list[int] = None,
-                    use_adj: bool = True) -> dict:
+                    use_adj: bool = True, as_of: date | None = None) -> dict:
     """
     Esegue lo studio per multipli ticker. Restituisce dict per-ticker.
     """
@@ -279,7 +285,7 @@ def run_event_study(tickers: list[str], event_dates: list[date],
     out = {}
     try:
         for t in tickers:
-            computed = compute_returns(conn, t, event_dates, windows, use_adj=use_adj)
+            computed = compute_returns(conn, t, event_dates, windows, use_adj=use_adj, as_of=as_of)
             computed["stats"] = aggregate_stats(computed["per_event"], windows)
             out[t] = computed
     finally:
@@ -467,6 +473,8 @@ def main():
                         "dell'output e nelle schede non si incolla mai. Chiedilo "
                         "solo per ispezionare i singoli episodi (potatura, outlier).")
 
+    p.add_argument("--as-of", type=date.fromisoformat, default=date.today(),
+                   help="Usa solo prezzi anteriori a questa data (default oggi)")
     args = p.parse_args()
 
     tickers     = _parse_tickers(args.ticker)
@@ -480,7 +488,7 @@ def main():
     if not windows:
         sys.exit("Errore: nessuna finestra valida.")
 
-    study = run_event_study(tickers, event_dates, windows, use_adj=not args.no_adj)
+    study = run_event_study(tickers, event_dates, windows, use_adj=not args.no_adj, as_of=args.as_of)
 
     if args.markdown:
         print(format_markdown(study, windows, detail=args.detail))

@@ -32,8 +32,8 @@ VALUTAZIONE CONGELATA vs RICALCOLO
             e' il track record, non si riscrive.
   recheck   ricalcola dal DB attuale e mostra le differenze, in sola lettura.
 Una scheda corretta dopo la registrazione (sha diverso): le righe ancora pendenti
-si aggiornano (o diventano `ritirata`), quelle gia' valutate restano e prendono
-`revised_at`.
+restano congelate, come quelle gia' valutate. La revisione è segnalata con
+`revised_at`, senza sostituire la chiamata originale.
 
 ARCHITETTURA
 ------------
@@ -53,7 +53,8 @@ Sottocomandi:
 Convenzioni metodologiche: identiche a event_study.py (anchor = primo trading
 day >= data; T+N = N-esimo trading day dopo l'anchor; prezzo = COALESCE(adj_close,
 close)). Il realizzato di una previsione fatta il giorno D usa D come evento:
-misura cosa e' successo DOPO che la chiamata e' stata fatta (no look-ahead).
+l'orario di registrazione va confrontato con la chiusura dell'asset: la sola
+data non certifica assenza di look-ahead.
 """
 
 import argparse
@@ -63,6 +64,11 @@ import math
 import re
 import sqlite3
 import subprocess
+import sys
+import os
+import json
+import tempfile
+import fcntl
 from datetime import date, datetime
 from pathlib import Path
 
@@ -70,9 +76,8 @@ import pandas as pd
 import markdown
 
 from bootstrap_market_data import DB_PATH
-from event_study import compute_returns
+from event_study import compute_returns, load_price_series
 from render_report import CSS, MD_EXTENSIONS
-from analogues import _norm_theme
 
 
 # --- Percorsi --------------------------------------------------------------
@@ -84,19 +89,6 @@ SCORECARD_DIR = DAILY_DIR / "_scorecard"
 # una direzione → esclusa dall'hit-rate direzionale, inclusa nella copertura.
 FLAT_THRESHOLD = 0.10
 
-# Sotto questo N le metriche sono "indicative only" (coerente con CLAUDE.md).
-SAMPLE_SIZE_WARNING_THRESHOLD = 20
-
-# N minimo di previsioni mature perché un ASSET compaia nella tabella per-ticker
-# (sotto questa soglia l'IC per-asset è troppo rumoroso per dire qualcosa).
-ASSET_MIN_N = 50
-
-# N minimo per includere un asset nel calcolo dell'IC per-asset (soglia più bassa
-# di ASSET_MIN_N: qui non mostriamo il singolo asset, lo aggreghiamo — serve solo
-# che il suo IC non sia puro rumore. Usata anche per-orizzonte, dove gli N si
-# dividono per 4).
-IC_ASSET_MIN_N = 15
-
 # Cartella-giorno valida = nome strettamente AAAA-MM-GG (esclude _scorecard,
 # *_manual_backup, ecc.).
 DAY_DIR_RE = re.compile(r"^\d{4}-\d{2}-\d{2}$")
@@ -106,15 +98,11 @@ FIELDS = [
     "scenario", "uso",
     "expected_median", "expected_mean", "hist_p25", "hist_p75",
     "n_analogues", "sentiment", "confidence", "directional",
-    "card_sha", "recorded_at", "revised_at",
+    "card_sha", "recorded_at", "revised_at", "registration", "method_version", "ingestion_status",
     # colonne riempite in evaluate (congelate):
     "anchor_date", "anchor_price", "target_date", "target_price",
     "realized_return", "in_iqr", "hit_dir", "abs_error", "eval_date",
 ]
-
-# Colonne che una correzione della scheda puo' aggiornare finche' la riga e' pendente.
-MADE_FIELDS = ["uso", "expected_median", "expected_mean", "hist_p25", "hist_p75",
-               "n_analogues", "sentiment", "confidence", "directional"]
 
 DECL_RE = re.compile(r"\[\s*(previsione|descrittiva|scenario\s*:\s*([^\]]+?))\s*\]", re.I)
 
@@ -126,7 +114,7 @@ def _parse_pct(cell: str):
     if cell is None:
         return None
     c = cell.strip().strip("*").strip()
-    c = c.replace("%", "").replace("+", "").strip()
+    c = c.replace("%", "").replace("+", "").replace("−", "-").replace(",", ".").strip()
     if not c or c.lower() == "n/a":
         return None
     try:
@@ -141,7 +129,7 @@ def _table_row_cells(line: str) -> list[str]:
     return parts
 
 
-def parse_card(path: Path) -> list[dict]:
+def parse_card(path: Path, issues: list | None = None) -> list[dict]:
     """
     Estrae le previsioni (made-side) da una scheda. Una entry per
     (asset × orizzonte). Lista vuota se la scheda non ha tabelle event-study.
@@ -162,69 +150,118 @@ def parse_card(path: Path) -> list[dict]:
     rel_path = str(path.relative_to(DAILY_DIR))
     entries = []
 
-    # Ogni blocco event-study inizia con "### Event study — `TICKER`" e arriva
-    # fino al prossimo heading "### " (o fine file).
-    blocks = re.split(r"\n###\s+", text)
+    problems = []
+    # Parse contiguous Markdown tables, never let a later table overwrite a prior one.
+    table_text = re.sub(r"(?m)^\*\*(`[^`]+`[^\n]*)\*\*\s*$", r"### \1", text)
+    table_text = re.sub(r"(?m)^\*\*([^\n]*\([A-Z0-9^][A-Z0-9^=._-]*\)[^\n]*)\*\*\s*$", r"### \1", table_text)
+    blocks = re.split(r"(?m)^#{2,6}\s+", table_text)
     for blk in blocks:
-        mt = re.match(r"Event study\s+—\s+`([^`]+)`", blk.strip())
-        if not mt:
-            continue
-        ticker = mt.group(1).strip()
-        heading = blk.strip().splitlines()[0]
+        heading = blk.splitlines()[0] if blk.splitlines() else ""
+        tickers = re.findall(r"`([A-Z0-9^][A-Z0-9^=._-]*)`", heading)
+        if not tickers:
+            tickers = re.findall(r"\(([A-Z0-9^][A-Z0-9^=._-]*)\)", heading)
         md = DECL_RE.search(heading)
-        if not md:
-            uso, scenario = "", "base"
-        elif md.group(2):
-            uso, scenario = "scenario", re.sub(r"\s+", "-", md.group(2).strip().lower())
-        else:
-            uso, scenario = md.group(1).lower(), "base"
-
-        lines = blk.splitlines()
-        # header con gli orizzonti
-        horizons = None
-        rows = {}
-        for ln in lines:
-            if horizons is None and re.search(r"\bStat\b", ln) and "T+" in ln:
-                horizons = [int(h) for h in re.findall(r"T\+(\d+)", ln)]
+        uso, scenario = "", "base"
+        if md:
+            if md.group(2):
+                uso, scenario = "scenario", re.sub(r"\s+", "-", md.group(2).strip().lower())
+            else:
+                uso = md.group(1).lower()
+        for table in re.findall(r"(?m)(?:^\|[^\n]*\n?)+", blk):
+            lines = table.splitlines()
+            if not any("T+" in ln for ln in lines) or ("T+" not in lines[0] and "mediana" not in table.lower()):
                 continue
-            if horizons is None:
-                continue
-            cells = _table_row_cells(ln)
-            if not cells:
-                continue
-            label = cells[0].strip().strip("*").lower()
-            if label in ("media", "mediana", "p25", "p75") or label == "n":
-                vals = [_parse_pct(c) for c in cells[1:1 + len(horizons)]]
-                rows[label] = vals
-
-        if horizons is None or "mediana" not in rows:
-            continue
-
-        for i, hz in enumerate(horizons):
-            median = rows.get("mediana", [None] * len(horizons))[i]
-            if median is None:
-                continue
-            p25  = rows.get("p25",  [None] * len(horizons))[i]
-            p75  = rows.get("p75",  [None] * len(horizons))[i]
-            mean = rows.get("media", [None] * len(horizons))[i]
-            nval = rows.get("n",     [None] * len(horizons))[i]
-            entries.append({
-                "made_date": made_date,
-                "slug": slug,
-                "card_path": rel_path,
-                "asset": ticker,
-                "horizon": hz,
-                "scenario": scenario,
-                "uso": uso,
-                "expected_median": median,
-                "expected_mean": mean,
-                "hist_p25": p25,
-                "hist_p75": p75,
-                "n_analogues": int(nval) if nval is not None else "",
-                "sentiment": sentiment,
-                "confidence": confidence,
-                "directional": 1 if abs(median) >= FLAT_THRESHOLD else 0,
-            })
+            if _table_row_cells(lines[0])[0].lower() in ("event", "event date", "data evento", "evento", "data"):
+                continue  # per-event detail is not a forecast summary
+            horizons = [int(h) for h in re.findall(r"T\+(\d+)", lines[0])]
+            error = ""
+            rows = {tk: {} for tk in tickers}
+            if not horizons or not tickers or len(horizons) != len(set(horizons)):
+                error = "asset/orizzonti non identificabili"
+            else:
+                for ln in lines[1:]:
+                    cells = _table_row_cells(ln)
+                    label = cells[0].replace("*", "").replace("`", "").strip()
+                    targets = tickers
+                    for tk in sorted(tickers, key=len, reverse=True):
+                        if label.startswith(tk + " "):
+                            targets, label = [tk], label[len(tk):].strip()
+                            break
+                    label = label.lower()
+                    if label not in ("media", "mediana", "p25", "p75", "p25 / p75", "n"):
+                        if "mediana" in label:
+                            error = "mediana con asset non identificabile"
+                        continue
+                    if len(targets) > 1 and label != "n":
+                        error = "statistica ambigua fra più asset"
+                        break
+                    if len(cells) != len(horizons) + 1:
+                        error = "numero celle diverso dagli orizzonti"
+                        break
+                    labels = ["p25", "p75"] if label == "p25 / p75" else [label]
+                    for j, name in enumerate(labels):
+                        vals = []
+                        for cell in cells[1:]:
+                            parts = cell.split("/") if len(labels) == 2 else [cell]
+                            if len(parts) != len(labels):
+                                error = "quartili accorpati non validi"
+                                break
+                            raw = parts[j].strip().strip("*").strip()
+                            v = _parse_pct(raw)
+                            if ((v is None and raw.lower().rstrip("%") not in ("n/a", "—", "-", ""))
+                                    or (v is not None and not math.isfinite(v))):
+                                error = "valore non numerico o non finito"
+                            vals.append(v)
+                        for tk in targets:
+                            if name in rows[tk]:
+                                error = "statistica duplicata"
+                            rows[tk][name] = vals
+            table_entries = []
+            if not error:
+                for ticker, stats in rows.items():
+                    if "mediana" not in stats:
+                        error = "mediana assente per " + ticker
+                        break
+                    for i, hz in enumerate(horizons):
+                        values = {k: v[i] for k, v in stats.items()}
+                        med = values.get("mediana")
+                        if med is None and values.get("n") == 0:
+                            continue
+                        if med is None:
+                            error = "mediana mancante"
+                            break
+                        lo, hi, n = values.get("p25"), values.get("p75"), values.get("n")
+                        if ((lo is None) != (hi is None) or
+                                (lo is not None and not lo <= med <= hi) or
+                                (n is not None and (n < 1 or n != int(n)))):
+                            error = "quartili/N incoerenti"
+                            break
+                        table_entries.append({
+                            "made_date": made_date, "slug": slug, "card_path": rel_path,
+                            "asset": ticker, "horizon": hz, "scenario": scenario, "uso": uso,
+                            "expected_median": med, "expected_mean": values.get("media"),
+                            "hist_p25": lo, "hist_p75": hi,
+                            "n_analogues": int(n) if n is not None else "",
+                            "sentiment": sentiment, "confidence": confidence,
+                            "directional": int(abs(med) >= FLAT_THRESHOLD),
+                        })
+            if error:
+                problems.append(f"{rel_path}: {heading}: {error}")
+            else:
+                entries.extend(table_entries)
+    # An ambiguous duplicate is not a second independent forecast.
+    counts = {}
+    for e in entries:
+        counts[_key(e)] = counts.get(_key(e), 0) + 1
+    duplicate = {k for k, n in counts.items() if n > 1}
+    if duplicate:
+        problems.append(f"{rel_path}: asset/orizzonte ripetuto senza scenario distinto")
+        entries = [e for e in entries if _key(e) not in duplicate]
+    if issues is not None:
+        issues.extend(problems)
+    else:
+        for problem in problems:
+            print("[quarantena] " + problem, file=sys.stderr)
     for e in entries:
         e["forecast_id"] = _key(e)
     return entries
@@ -261,11 +298,14 @@ def write_ledger(rows: list[dict]) -> None:
     def sort_key(r):
         return (r["made_date"], r["slug"], r["asset"], r["scenario"], int(r["horizon"]))
     rows = sorted(rows, key=sort_key)
-    with LEDGER_PATH.open("w", newline="", encoding="utf-8") as fp:
+    with tempfile.NamedTemporaryFile(mode="w", newline="", encoding="utf-8",
+                                     dir=LEDGER_PATH.parent, delete=False) as fp:
         w = csv.DictWriter(fp, fieldnames=FIELDS)
         w.writeheader()
         for r in rows:
             w.writerow({k: r.get(k, "") for k in FIELDS})
+        tmp = fp.name
+    os.replace(tmp, LEDGER_PATH)
 
 
 def _key(r: dict) -> str:
@@ -280,17 +320,34 @@ def _sha(path: Path) -> str:
 
 # --- Sottocomandi ----------------------------------------------------------
 
-def cmd_backfill() -> None:
+def cmd_backfill(day=None, live=False, skip=()) -> None:
     existing = load_ledger()
     by_card: dict = {}
     for r in existing:
         by_card.setdefault(r["card_path"], []).append(r)
     seen = {r["forecast_id"] for r in existing}
     today = date.today().isoformat()
-    added = updated = frozen = withdrawn = undeclared = 0
+    added = frozen = undeclared = 0
+    version_files = [Path(__file__), Path(__file__).with_name('analogues.py'),
+                     Path(__file__).with_name('event_study.py'),
+                     Path(__file__).with_name('PHASE5_RUNBOOK.md'),
+                     Path(__file__).with_name('subtheme_taxonomy.yaml'),
+                     Path(__file__).with_name('news_card_template.md'),
+                     Path(__file__).with_name('run_daily_analysis.sh')]
+    version = hashlib.sha256(b''.join(p.read_bytes() for p in version_files)).hexdigest()[:12] if live else 'unknown'
 
     for card in discover_cards():
-        entries = parse_card(card)
+        if (day and card.parent.name != day) or card in skip:
+            continue
+        issues = []
+        entries = parse_card(card, issues=issues)
+        for old in by_card.get(str(card.relative_to(DAILY_DIR)), []):
+            if old.get("registration") != "live":
+                old["ingestion_status"] = "quarantine" if issues else "ok"
+        if issues:
+            for issue in issues:
+                print("[quarantena] " + issue, file=sys.stderr)
+            continue
         sha = _sha(card)
         new = {}
         for e in entries:
@@ -310,28 +367,32 @@ def cmd_backfill() -> None:
                 continue
             if r["card_sha"] == sha:
                 continue
-            if r.get("realized_return"):
-                # Gia' valutata: il track record non si riscrive, si marca.
-                if not r.get("revised_at"):
-                    r["revised_at"] = today
-                    frozen += 1
-                continue
-            e = new.get(r["forecast_id"])
-            if e is None:
-                r["uso"] = "ritirata"
-                withdrawn += 1
-            else:
-                for k in MADE_FIELDS:
-                    r[k] = e[k]
-                updated += 1
-            r["card_sha"], r["revised_at"] = sha, today
+            # First registered forecast stays immutable even before evaluation.
+            if not r.get("revised_at"):
+                r["revised_at"] = datetime.now().astimezone().isoformat()
+                frozen += 1
 
         for fid, e in new.items():
             if fid in seen:
                 continue
             for k in FIELDS:
                 e.setdefault(k, "")
-            e["card_sha"], e["recorded_at"] = sha, today
+            e["card_sha"] = sha
+            e["recorded_at"] = datetime.now().astimezone().isoformat()
+            e["registration"] = "live" if live and card.parent.name == today else "recovered"
+            e["ingestion_status"] = "ok"
+            e["method_version"] = version if e["registration"] == "live" else "unknown"
+            if e["registration"] == "live":
+                methods = DAILY_DIR / '_forecast_methods'
+                methods.mkdir(exist_ok=True)
+                method = methods / f'{version}.json'
+                if not method.exists():
+                    method.write_text(json.dumps({p.name: p.read_text() for p in version_files}, ensure_ascii=False))
+            snapshots = card.parent / "_forecast_sources"
+            snapshots.mkdir(exist_ok=True)
+            snapshot = snapshots / f"{card.stem}-{sha}.md"
+            if not snapshot.exists():
+                snapshot.write_bytes(card.read_bytes())
             existing.append(e)
             seen.add(fid)
             added += 1
@@ -339,8 +400,7 @@ def cmd_backfill() -> None:
 
     write_ledger(existing)
     print(f"[backfill] righe nel ledger: {len(existing)} (+{added} nuove, di cui "
-          f"{undeclared} senza dichiarazione d'uso). Schede corrette: {updated} righe "
-          f"pendenti aggiornate, {withdrawn} ritirate, {frozen} gia' valutate "
+          f"{undeclared} senza dichiarazione d'uso). Schede corrette: {frozen} righe "
           f"lasciate congelate. File: {LEDGER_PATH}")
 
 
@@ -351,13 +411,13 @@ def cmd_evaluate() -> None:
         return
 
     # Raggruppa per (asset, made_date) le righe non ancora valutate.
-    pending = [r for r in rows if not r.get("realized_return")]
+    pending = [r for r in rows if not r.get("realized_return") and r.get("uso") != "ritirata" and r.get("ingestion_status") != "quarantine"]
     if not pending:
         print("[evaluate] nessuna previsione in attesa di valutazione.")
         return
 
     today = date.today().isoformat()
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(f"file:{DB_PATH}?mode=ro", uri=True)
     filled = 0
     try:
         # cache per (asset, made_date) → compute_returns
@@ -374,7 +434,7 @@ def cmd_evaluate() -> None:
                     cache[ckey] = None
                     continue
                 try:
-                    res = compute_returns(conn, asset, [ed], [1, 3, 5, 10])
+                    res = compute_returns(conn, asset, [ed], [1, 3, 5, 10], as_of=date.today())
                 except ValueError:
                     cache[ckey] = None
                     continue
@@ -398,7 +458,7 @@ def cmd_evaluate() -> None:
             if p25 is not None and p75 is not None:
                 lo, hi = min(p25, p75), max(p25, p75)
                 r["in_iqr"] = 1 if lo <= realized <= hi else 0
-            if med is not None and abs(med) >= FLAT_THRESHOLD:
+            if med is not None and abs(med) >= FLAT_THRESHOLD and realized != 0:
                 r["hit_dir"] = 1 if (realized > 0) == (med > 0) else 0
             else:
                 r["hit_dir"] = ""  # no-call
@@ -416,15 +476,6 @@ def cmd_evaluate() -> None:
 
 # --- Metriche --------------------------------------------------------------
 
-def _wilson_ci(k: int, n: int, z: float = 1.96):
-    if n == 0:
-        return (None, None)
-    p = k / n
-    denom = 1 + z * z / n
-    centre = (p + z * z / (2 * n)) / denom
-    half = (z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n))) / denom
-    return (max(0.0, centre - half), min(1.0, centre + half))
-
 
 def _spearman(xs: list[float], ys: list[float]):
     # Spearman = Pearson sui ranghi (evita la dipendenza da scipy che pandas
@@ -437,96 +488,8 @@ def _spearman(xs: list[float], ys: list[float]):
     return None if pd.isna(s) else float(s)
 
 
-def _ic_within_assets(rows: list[dict], min_n: int = IC_ASSET_MIN_N):
-    """IC calcolato DENTRO ciascun asset, poi media pesata per numerosità.
-
-    Perché non basta lo Spearman su tutte le righe insieme (versione precedente):
-    mettere nello stesso ranking ^VIX (che si muove del 3%) ed EURUSD=X (0,15%),
-    e insieme T+1 con T+10, fa sì che la correlazione catturi in buona parte le
-    differenze di SCALA fra asset invece dell'abilità predittiva. Misurato sul
-    ledger al 2026-08-10: pooled +0.072 contro **+0.024** per-asset → il pooled
-    sovrastimava di ~3x. Qui confrontiamo ogni previsione solo con altre previsioni
-    sullo STESSO asset, che è la domanda vera ("quando la storia si sbilancia di
-    più su questo asset, il movimento reale è davvero maggiore?").
-
-    Restituisce (ic_pesato, n_righe_usate, n_asset_usati) — (None, 0, 0) se nessun
-    asset raggiunge min_n.
-    """
-    by_asset: dict = {}
-    for r in rows:
-        if r.get("_med") is not None:
-            by_asset.setdefault(r["asset"], []).append(r)
-    num = den = 0.0
-    n_assets = 0
-    for sub in by_asset.values():
-        if len(sub) < min_n:
-            continue
-        ic = _spearman([r["_med"] for r in sub], [r["_real"] for r in sub])
-        if ic is None:
-            continue
-        num += ic * len(sub)
-        den += len(sub)
-        n_assets += 1
-    return (num / den if den else None), int(den), n_assets
-
-
 def _pct(x):
     return "n/a" if x is None else f"{x * 100:.0f}%"
-
-
-def _verdict(kind: str, value):
-    """Semaforo ✅/⚠️/❌ per una metrica. `value` e' una frazione 0–1 (copertura,
-    hit-rate) o la correlazione di rango (ic). None → trattino."""
-    if value is None:
-        return "—"
-    if kind == "coverage":          # ideale ~50%: basso = intervalli stretti, alto = larghi
-        if 0.40 <= value <= 0.70:
-            return "✅"
-        if 0.25 <= value < 0.40 or 0.70 < value <= 0.85:
-            return "⚠️"
-        return "❌"
-    if kind == "hit":               # baseline monetina = 50%
-        if value >= 0.60:
-            return "✅"
-        if value >= 0.45:
-            return "⚠️"
-        return "❌"
-    if kind == "ic":                # correlazione di rango atteso vs realizzato
-        if value >= 0.20:
-            return "✅"
-        if value >= 0.0:
-            return "⚠️"
-        return "❌"
-    return "—"
-
-
-def _volte_su_10(frac):
-    """0.73 → '7 volte su 10'. Per rendere le percentuali leggibili a colpo d'occhio."""
-    return "n/a" if frac is None else f"{round(frac * 10)} volte su 10"
-
-
-_THEME_CACHE: dict = {}
-
-def _theme_of_card(rel_path: str) -> str:
-    """Estrae `primary_theme` dalla scheda (path relativo a DAILY_DIR), con cache.
-    Il ledger non memorizza il tema → lo rileggiamo dalla scheda referenziata."""
-    if rel_path in _THEME_CACHE:
-        return _THEME_CACHE[rel_path]
-    theme = ""
-    try:
-        text = (DAILY_DIR / rel_path).read_text(encoding="utf-8")
-        m = re.search(r"\|\s*`primary_theme`\s*\|\s*([^\|<\n]+)", text)
-        if m:
-            # Normalizza come in analogues.py: alcune schede annotano il tema tra
-            # parentesi ('monetary_policy (sub: china / pboc)') — senza normalizzare
-            # diventa un tema-fantasma distinto nella tabella per-tema della
-            # scorecard (visto in W32: "structural_themes (AI/semis)", N=9 isolato
-            # dal vero structural_themes, N=201). Stesso fix, stesso bug, file diverso.
-            theme = _norm_theme(m.group(1))
-    except Exception:
-        pass
-    _THEME_CACHE[rel_path] = theme
-    return theme
 
 
 def _write_scorecard_html(md_text: str, md_path: Path, label: str) -> Path:
@@ -563,334 +526,217 @@ def _write_scorecard_html(md_text: str, md_path: Path, label: str) -> Path:
     return out
 
 
+def metric_summary(rows):
+    """Same denominator for system and fixed-sign diagnostics; zero is not down."""
+    h = [r for r in rows if abs(float(r["expected_median"])) >= FLAT_THRESHOLD
+         and float(r["realized_return"]) != 0]
+    bands = [r for r in rows if r.get("hist_p25") not in ("", None)
+             and r.get("hist_p75") not in ("", None)]
+    avg = lambda xs: sum(xs) / len(xs) if xs else None
+    return {
+        "n_hit": len(h), "n_band": len(bands),
+        "hit": avg([(float(r["expected_median"]) > 0) ==
+                    (float(r["realized_return"]) > 0) for r in h]),
+        "up": avg([float(r["realized_return"]) > 0 for r in h]),
+        "down": avg([float(r["realized_return"]) < 0 for r in h]),
+        "coverage": avg([float(r["hist_p25"]) <= float(r["realized_return"]) <=
+                         float(r["hist_p75"]) for r in bands]),
+        "width": avg([float(r["hist_p75"]) - float(r["hist_p25"]) for r in bands]),
+    }
+
+
+def historical_baseline(prices, cutoff, horizon):
+    """Last 252 complete daily outcomes ending before emission; at least 60."""
+    past = prices[prices.index < pd.Timestamp(cutoff)].tail(252 + horizon)
+    returns = ((past.shift(-horizon) / past - 1) * 100).replace(
+        [float('inf'), float('-inf')], float('nan')).dropna()
+    if len(returns) < 60:
+        return None
+    return dict(expected_median=float(returns.median()),
+                hist_p25=float(returns.quantile(.25)), hist_p75=float(returns.quantile(.75)))
+
+
+def cmd_audit(day=None, require_declared=False, bad=None):
+    """Read-only ingestion inventory; malformed/ambiguous tables stay explicit."""
+    failed = 0
+    for card in discover_cards():
+        if day and card.parent.name != day:
+            continue
+        issues = []
+        entries = parse_card(card, issues=issues)
+        if require_declared:
+            if any(e['made_date'] != card.parent.name for e in entries):
+                issues.append(f"{card.name}: Data analisi diversa dalla cartella-giorno")
+            if any(not e['uso'] for e in entries):
+                issues.append(f"{card.name}: dichiara l'uso di ogni tabella")
+            if any(e['uso'] == 'previsione' and (not e['n_analogues'] or e['n_analogues'] < 10) for e in entries):
+                issues.append(f"{card.name}: N<10 o assente; usa [descrittiva]")
+        abstention = re.search(r"(?mi)^\*\*Motivo astensione\*\*:\s*\S[^\n]*", card.read_text())
+        if not entries and not issues and not abstention:
+            issues.append(f"{card.relative_to(DAILY_DIR)}: nessun risultato acquisibile")
+        for issue in issues:
+            print("QUARANTENA " + issue)
+        failed += bool(issues)
+        if issues and bad is not None:
+            bad.append(card)
+        if day and not issues:
+            print(f"OK {card.name}: {len(entries)} righe")
+    print(f"[audit] schede da verificare: {failed}")
+    return failed
+
+
 def cmd_scorecard(open_browser: bool = False) -> None:
-    matured = [r for r in load_ledger()
-               if r.get("realized_return") and r.get("uso") != "ritirata"]
-    # Sezioni 1–6: una tabella principale per asset e scheda, come prima di R09.
-    rows = [r for r in matured if r.get("uso") != "scenario"]
+    all_rows = load_ledger()
+    matured = [r for r in all_rows if r.get("realized_return")
+               and r.get("uso") not in ("ritirata", "scenario")
+               and r.get("ingestion_status") != "quarantine"]
+    active = [r for r in matured if r.get("uso") == "previsione"]
+    L = [f"# Scorecard previsioni — {date.today().isocalendar().year}-W{date.today().isocalendar().week:02d}",
+         f"\n_Generata: {datetime.now().isoformat(timespec='seconds')}_\n",
+         "## In sintesi\n",
+         "Il riepilogo distingue previsioni attive, descrizioni e recupero storico. "
+         "Nessun asset è promosso automaticamente a affidabile. Sempre-su/sempre-giù "
+         "sono controlli sullo stesso campione, non strategie validate. "
+         "Copertura della banda e precisione direzionale misurano cose diverse.\n"]
+    live = [r for r in active if r.get("registration") == "live"]
+    sm = metric_summary(live)
+    L.append(f"**Previsioni attive registrate dal flusso giornaliero:** {len(live)} mature, "
+             f"{len({r['made_date'] for r in live})} giornate. "
+             f"Hit-rate {_pct(sm['hit'])} su N={sm['n_hit']}; "
+             f"sempre-su {_pct(sm['up'])}, sempre-giù {_pct(sm['down'])}. "
+             "La registrazione prova l'ora di acquisizione, non da sola l'assenza di "
+             "look-ahead: confrontare l'orario di emissione con la chiusura dell'asset.\n")
+    L.append(f"Righe escluse per ingestione ambigua: {sum(r.get('ingestion_status') == 'quarantine' for r in all_rows)}. "
+             "Dettaglio: `forecast_tracking.py audit`.\n")
+    L.append("Campioni piccoli, righe correlate e selezione dei casi impediscono di "
+             "interpretare differenze di pochi punti come un vantaggio dimostrato.\n")
+    L.append("## 0-bis. Uso e provenienza\n")
+    L.append("| Uso / provenienza | Righe mature | Giorni | Hit-rate | N hit | Sempre su | Sempre giù | Copertura | N bande |")
+    L.append("|---|---:|---:|---:|---:|---:|---:|---:|---:|")
+    groups = {}
+    for r in matured:
+        key = (r.get("uso") or "non dichiarata", r.get("registration") or "legacy")
+        groups.setdefault(key, []).append(r)
+    def group_line(label, sub):
+        m = metric_summary(sub)
+        return (f"| {label} | {len(sub)} | {len({r['made_date'] for r in sub})} | "
+                f"{_pct(m['hit'])} | {m['n_hit']} | {_pct(m['up'])} | {_pct(m['down'])} | "
+                f"{_pct(m['coverage'])} | {m['n_band']} |")
+    for key, sub in sorted(groups.items()):
+        L.append(group_line(' / '.join(key), sub))
+    L.extend(["", "## 1. Coorti di emissione e versione\n",
+              "Le date separano i periodi, non ricostruiscono versioni mancanti. "
+              "Le tabelle recuperate oggi restano retrospettive.\n",
+              "| Settimana / versione | Righe mature | Giorni | Hit-rate | N hit | Sempre su | Sempre giù | Copertura | N bande |",
+              "|---|---:|---:|---:|---:|---:|---:|---:|---:|"])
+    cohorts = {}
+    for r in active:
+        iso = date.fromisoformat(r['made_date']).isocalendar()
+        key = f"{iso.year}-W{iso.week:02d} / {r.get('method_version') or 'non registrata'}"
+        cohorts.setdefault(key, []).append(r)
+    for key, sub in sorted(cohorts.items()):
+        L.append(group_line(key, sub))
+    L.extend(["", "## 2. Maturazione delle previsioni attive\n",
+              "| Orizzonte | Registrate | Mature | Astensioni sul segno fra le mature |",
+              "|---|---:|---:|---:|"])
+    for hz in sorted({int(r['horizon']) for r in all_rows}):
+        sub = [r for r in all_rows if r.get('uso') == 'previsione' and r.get('ingestion_status') != 'quarantine' and int(r['horizon']) == hz]
+        mature = [r for r in sub if r.get('realized_return')]
+        L.append(f"| T+{hz} | {len(sub)} | {len(mature)} | "
+                 f"{sum(abs(float(r['expected_median'])) < FLAT_THRESHOLD for r in mature)} |")
+    L.extend(["", "## 5. Confronto per asset e orizzonte — previsioni attive\n",
+              "## 5-bis. Su quali ASSET prevediamo meglio?\n",
+              "Solo tabelle attive; descrittive e legacy senza uso sono sopra. "
+              "IC misurato separatamente per ticker e orizzonte. "
+              "N unici conta giorni-ancora per asset/orizzonte: resta dipendenza fra "
+              "finestre sovrapposte. Nessun intervallo Wilson o semaforo di affidabilità.\n",
+              "| Asset | Orizzonte | N righe | N unici | Hit-rate | N hit | Sempre su | Sempre giù | IC | Copertura | N bande | Ampiezza banda (pp) |",
+              "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|"])
+    grouped = {}
+    for r in active:
+        grouped.setdefault((r['asset'], int(r['horizon'])), []).append(r)
+    for (asset, hz), sub in sorted(grouped.items()):
+        m = metric_summary(sub)
+        ic = _spearman([float(r['expected_median']) for r in sub],
+                       [float(r['realized_return']) for r in sub])
+        uniques = len({r.get('anchor_date') or r['made_date'] for r in sub})
+        L.append(f"| {asset} | T+{hz} | {len(sub)} | {uniques} | {_pct(m['hit'])} | "
+                 f"{m['n_hit']} | {_pct(m['up'])} | {_pct(m['down'])} | "
+                 f"{ic if ic is not None else 'n/a'} | {_pct(m['coverage'])} | "
+                 f"{m['n_band']} | {m['width'] if m['width'] is not None else 'n/a'} |")
+    L.extend(["", "## 6. Riferimento storico senza selezione di notizie\n",
+              "Ultime 252 finestre disponibili del medesimo asset/orizzonte, tutte concluse "
+              "prima del giorno di emissione; minimo 60. Ricostruito dal DB attuale: "
+              "rispetta il cutoff dei prezzi, ma non certifica le vintage originarie. "
+              "Confronto su identiche righe attive; hit-rate solo dove entrambi i metodi "
+              "sono direzionali. Nessuna ottimizzazione o promozione automatica.\n",
+              "| Asset | T+ | N coppie | N segno | Hit sistema / rif. | MAE sistema / rif. (pp) | Copertura sistema / rif. | Ampiezza sistema / rif. (pp) | N bande |",
+              "|---|---|---:|---:|---|---|---|---|---:|"])
+    with sqlite3.connect(f"file:{DB_PATH}?mode=ro", uri=True) as conn:
+        prices_by_asset = {}
+        cache = {}
+        for (asset, hz), sub in sorted(grouped.items()):
+            if asset not in prices_by_asset:
+                try:
+                    prices_by_asset[asset] = load_price_series(conn, asset)
+                except ValueError:
+                    prices_by_asset[asset] = None
+            prices = prices_by_asset[asset]
+            if prices is None:
+                L.append(f"| {asset} | {hz} | 0 | 0 | serie assente | — | — | — | 0 |")
+                continue
+            pairs = []
+            for r in sub:
+                key = (asset, hz, r['made_date'])
+                if key not in cache:
+                    cache[key] = historical_baseline(prices, date.fromisoformat(r['made_date']), hz)
+                if cache[key] is not None:
+                    pairs.append((r, dict(cache[key], realized_return=r['realized_return'])))
+            if not pairs:
+                L.append(f"| {asset} | {hz} | 0 | 0 | storico insufficiente | — | — | — | 0 |")
+                continue
+            directional = [(r, b) for r, b in pairs if float(r['realized_return']) != 0
+                           and abs(float(r['expected_median'])) >= FLAT_THRESHOLD
+                           and abs(b['expected_median']) >= FLAT_THRESHOLD]
+            band_pairs = [(r, b) for r, b in pairs if r.get('hist_p25') not in ('', None)
+                          and r.get('hist_p75') not in ('', None)]
+            h = [metric_summary([pair[i] for pair in directional])['hit'] for i in (0, 1)]
+            m = [metric_summary([pair[i] for pair in band_pairs]) for i in (0, 1)]
+            mae = [sum(abs(float(pair[i]['expected_median']) - float(pair[i]['realized_return']))
+                       for pair in pairs) / len(pairs) for i in (0, 1)]
+            width = ' / '.join('n/a' if x['width'] is None else f"{x['width']:.2f}" for x in m)
+            L.append(f"| {asset} | {hz} | {len(pairs)} | {len(directional)} | "
+                     f"{_pct(h[0])} / {_pct(h[1])} | {mae[0]:.2f} / {mae[1]:.2f} | "
+                     f"{_pct(m[0]['coverage'])} / {_pct(m[1]['coverage'])} | {width} | {len(band_pairs)} |")
+    L.extend(["", "## Caveat\n",
+              "- Le bande p25–p75 sono distribuzioni storiche, non intervalli di confidenza della mediana.",
+              "- Sempre-su/sempre-giù sono confronti descrittivi; scegliere il migliore dopo gli esiti è retrospettivo.",
+              "- Le osservazioni sono correlate; nessuna numerosità di righe certifica indipendenza.",
+              "- L'ancora è la prima chiusura alla data dell'analisi o dopo, non la chiusura precedente all'annuncio.",
+              "- Il movimento incorpora tutte le notizie della finestra, non soltanto quella della scheda.",
+              "- Audit ingestione: `forecast_tracking.py audit` elenca tabelle ambigue o non lette."])
     SCORECARD_DIR.mkdir(parents=True, exist_ok=True)
-    iso_year, iso_week, _ = date.today().isocalendar()
-    out_path = SCORECARD_DIR / f"{iso_year}-W{iso_week:02d}.md"
-
-    L = []
-    L.append(f"# Scorecard previsioni — {iso_year}-W{iso_week:02d}\n")
-    L.append(f"_Generata: {datetime.now().isoformat(timespec='seconds')}_\n")
-
-    if not rows:
-        L.append("Nessuna previsione ancora matura. Riprova quando il DB avra' "
-                 "abbastanza giorni di borsa dopo le schede.\n")
-        text = "\n".join(L)
-        out_path.write_text(text, encoding="utf-8")
-        html_path = _write_scorecard_html(text, out_path, f"{iso_year}-W{iso_week:02d}")
-        print(f"[scorecard] nessuna previsione matura. Scritti stub: {out_path} + {html_path.name}")
-        if open_browser:
-            subprocess.run(["open", str(html_path)], check=False)
-        return
-
-    # Tipizza
-    for r in rows:
-        r["_hz"] = int(r["horizon"])
-        r["_real"] = float(r["realized_return"])
-        r["_med"] = float(r["expected_median"]) if r["expected_median"] not in ("", None) else None
-        r["_iqr"] = int(r["in_iqr"]) if r.get("in_iqr") not in ("", None) else None
-        r["_hit"] = int(r["hit_dir"]) if r.get("hit_dir") not in ("", None) else None
-
-    horizons = sorted({r["_hz"] for r in rows})
-    n_total = len(rows)
-    n_cards = len({(r["made_date"], r["slug"]) for r in rows})
-    L.append(f"**Previsioni mature**: {n_total} (da {n_cards} schede) — "
-             f"orizzonti {', '.join('T+'+str(h) for h in horizons)}.\n")
-    if n_total < SAMPLE_SIZE_WARNING_THRESHOLD:
-        L.append(f"> ⚠ **INDICATIVE ONLY** — N={n_total} < "
-                 f"{SAMPLE_SIZE_WARNING_THRESHOLD}. Questa scorecard costruisce un "
-                 f"track record; non e' ancora un verdetto sulla metodologia.\n")
-
-    # --- Metriche complessive (riusate sia in "In sintesi" che nelle tabelle) ---
-    cov_all = [r for r in rows if r["_iqr"] is not None]
-    overall_cov = (sum(r["_iqr"] for r in cov_all) / len(cov_all)) if cov_all else None
-    hit_all = [r for r in rows if r["_hit"] is not None]
-    overall_hit = (sum(r["_hit"] for r in hit_all) / len(hit_all)) if hit_all else None
-    med_all = [r for r in rows if r["_med"] is not None]
-    # IC "onesto": calcolato dentro ogni asset e poi mediato (vedi _ic_within_assets).
-    # Il pooled resta calcolato solo per il confronto trasparente nella sezione 3.
-    overall_ic, _, _ = _ic_within_assets(med_all)
-    overall_ic_pooled = _spearman([r["_med"] for r in med_all], [r["_real"] for r in med_all])
-
-    # 0) IN SINTESI — lettura in parole povere, auto-generata dai numeri sopra.
-    L.append("## In sintesi\n")
-    L.append(f"Su **{n_total} previsioni** ormai verificabili, il sistema:\n")
-    if overall_hit is not None:
-        L.append(f"- ha **azzeccato la direzione {_volte_su_10(overall_hit)}** "
-                 f"({_pct(overall_hit)} dei casi) — tirare una monetina darebbe 50% "
-                 f"{_verdict('hit', overall_hit)}")
-    if overall_cov is not None:
-        taratura = ("un filo larghi" if overall_cov > 0.55
-                    else "un filo stretti" if overall_cov < 0.45 else "ben tarati")
-        L.append(f"- i suoi **intervalli storici hanno contenuto il risultato reale "
-                 f"{_volte_su_10(overall_cov)}** ({_pct(overall_cov)}; l'ideale è ~50% "
-                 f"→ gli intervalli sono {taratura}) {_verdict('coverage', overall_cov)}")
-    if overall_ic is not None:
-        senso = ("ciò che la storia suggeriva tende ad avverarsi" if overall_ic >= 0.10
-                 else "in aggregato lo storico non anticipa il realizzato"
-                 if overall_ic > -0.05
-                 else "in aggregato lo storico punta nella direzione sbagliata")
-        L.append(f"- correlazione di rango **{overall_ic:+.2f}** tra atteso e "
-                 f"realizzato, misurata a parità di asset: {senso} "
-                 f"{_verdict('ic', overall_ic)}")
-        L.append(f"  <br>⚠️ Non leggerlo come «mediocri ovunque»: è la media di due "
-                 f"gruppi opposti che si annullano — alcuni ticker hanno un vantaggio "
-                 f"reale, altri sono sistematicamente rovesciati. La **sezione 5-bis** "
-                 f"dice quali sono.")
-    L.append("")
-    L.append("> Legenda semaforo: ✅ buono · ⚠️ da monitorare · ❌ scarso. "
-             "Le tabelle sotto spaccano gli stessi numeri per orizzonte temporale.\n")
-
-    # 0-bis) Cosa la scheda dichiarava di prevedere (R09). Tutte le tabelle mature,
-    # scenari inclusi, divise per uso dichiarato nel titolo.
-    L.append("## 0-bis. Previsioni attive e tabelle descrittive _(uso dichiarato)_\n")
-    L.append("**Come si legge:** dal 2026-09-23 ogni tabella dichiara se la scheda ci "
-             "costruisce una previsione, la riporta solo come descrizione (segno "
-             "dichiarato inaffidabile) o è uno scenario alternativo. Se dichiarare "
-             "funziona, le **previsioni attive** devono andare meglio delle descrittive. "
-             "Le righe precedenti sono «non dichiarate». Le sezioni 1–6 restano su "
-             "tutte le tabelle principali, scenari esclusi.\n")
-    L.append("| Uso | Copertura | Hit-rate | N |")
-    L.append("|---|---|---|---|")
-    for uso, label in [("previsione", "previsione attiva"), ("descrittiva", "descrittiva"),
-                       ("scenario", "scenario alternativo"), ("", "non dichiarata")]:
-        sub = [r for r in matured if (r.get("uso") or "") == uso]
-        if not sub:
-            continue
-        cov_sub = [int(r["in_iqr"]) for r in sub if r.get("in_iqr") not in ("", None)]
-        hit_sub = [int(r["hit_dir"]) for r in sub if r.get("hit_dir") not in ("", None)]
-        cov = sum(cov_sub) / len(cov_sub) if cov_sub else None
-        hit = sum(hit_sub) / len(hit_sub) if hit_sub else None
-        L.append(f"| {label} | {_pct(cov)} | {_pct(hit)} | {len(sub)} |")
-    L.append("")
-
-    # 1) COPERTURA (faro): % di realizzati dentro [p25, p75]; ideale ~50%.
-    L.append("## 1. Quanto spesso il risultato è caduto nella banda storica "
-             "_(copertura; banda p25–p75)_\n")
-    L.append("**Come si legge:** ogni scheda dà un intervallo storico (il 50% centrale "
-             "degli episodi analoghi). Se è ben tarato, ~**50%** dei risultati reali ci "
-             "cade dentro. Molto sopra = intervalli troppo larghi (poco utili); molto "
-             "sotto = troppo stretti (sovra-sicuri).\n")
-    L.append("| Orizzonte | Copertura | N | Esito |")
-    L.append("|---|---|---|---|")
-    for h in horizons + ["overall"]:
-        sub = [r for r in rows if (h == "overall" or r["_hz"] == h) and r["_iqr"] is not None]
-        if not sub:
-            continue
-        cov = sum(r["_iqr"] for r in sub) / len(sub)
-        label = "**overall**" if h == "overall" else f"T+{h}"
-        L.append(f"| {label} | {_pct(cov)} | {len(sub)} | {_verdict('coverage', cov)} |")
-    L.append("")
-    # Flag automatico: orizzonti con bande troppo strette (copertura << 50%).
-    narrow = []
-    for h in horizons:
-        sub = [r for r in rows if r["_hz"] == h and r["_iqr"] is not None]
-        if sub and (sum(r["_iqr"] for r in sub) / len(sub)) < 0.35:
-            narrow.append(f"T+{h}")
-    if narrow:
-        L.append(f"> ⚠️ **Ampiezza inaffidabile a {', '.join(narrow)}**: la copertura è "
-                 "ben sotto il 50%, cioè gli intervalli storici sono troppo stretti e i "
-                 "movimenti reali ne escono spesso. A questi orizzonti **fidati della "
-                 "direzione, non dell'ampiezza** della banda (la dispersione vera è "
-                 "maggiore di quella stimata dagli analoghi).\n")
-
-    # 2) DIREZIONE (secondaria): hit-rate sul segno della mediana; baseline 50%.
-    L.append("## 2. Quanto spesso ha azzeccato la direzione _(hit-rate: su/giù)_\n")
-    L.append("**Come si legge:** la scheda dice se l'asset, storicamente, tendeva a "
-             "salire o scendere. Qui contiamo quante volte il segno reale ha coinciso. "
-             f"Tirare una monetina darebbe **50%**. Escluse le previsioni 'piatte' "
-             f"(|mediana| < {FLAT_THRESHOLD}%: la scheda non si è sbilanciata). "
-             "L'IC 95% è il margine di incertezza statistica (Wilson).\n")
-    L.append("| Orizzonte | Hit-rate | N | margine 95% | Esito |")
-    L.append("|---|---|---|---|---|")
-    for h in horizons + ["overall"]:
-        sub = [r for r in rows if (h == "overall" or r["_hz"] == h) and r["_hit"] is not None]
-        if not sub:
-            continue
-        k = sum(r["_hit"] for r in sub)
-        hit = k / len(sub)
-        lo, hi = _wilson_ci(k, len(sub))
-        label = "**overall**" if h == "overall" else f"T+{h}"
-        L.append(f"| {label} | {_pct(hit)} | {len(sub)} | {_pct(lo)}–{_pct(hi)} | "
-                 f"{_verdict('hit', hit)} |")
-    L.append("")
-
-    # 3) Information Coefficient (Spearman mediana attesa vs realizzato)
-    L.append("## 3. C'è correlazione tra atteso e realizzato? "
-             "_(Information Coefficient, Spearman)_\n")
-    L.append("**Come si legge:** misura se, **a parità di asset**, le previsioni più "
-             "sbilanciate corrispondono davvero a movimenti reali più grandi "
-             "(correlazione di rango, da −1 a +1). **>0** = lo storico ha contenuto "
-             "informativo; **~0** = nessun legame; **<0** = controproducente.\n")
-    L.append("La colonna **IC (per-asset)** è quella da guardare: confronta ogni "
-             "previsione solo con altre sullo stesso ticker. La colonna *IC (pooled)* "
-             "è il vecchio calcolo che mescolava tutti gli asset insieme — la teniamo "
-             "per trasparenza, ma **sovrastima**, perché gran parte della correlazione "
-             "veniva dal fatto ovvio che asset volatili (^VIX) hanno numeri più grandi "
-             "di asset tranquilli (EURUSD=X), non da capacità predittiva.\n")
-    L.append("| Orizzonte | IC (per-asset) | N | Esito | _IC (pooled)_ |")
-    L.append("|---|---|---|---|---|")
-    for h in horizons + ["overall"]:
-        sub = [r for r in rows if (h == "overall" or r["_hz"] == h) and r["_med"] is not None]
-        ic_w, n_used, _ = _ic_within_assets(sub)
-        ic_pool = _spearman([r["_med"] for r in sub], [r["_real"] for r in sub])
-        label = "**overall**" if h == "overall" else f"T+{h}"
-        ic_s = "n/a" if ic_w is None else f"{ic_w:+.2f}"
-        pool_s = "n/a" if ic_pool is None else f"_{ic_pool:+.2f}_"
-        L.append(f"| {label} | {ic_s} | {n_used} | {_verdict('ic', ic_w)} | {pool_s} |")
-    L.append("")
-
-    # 4) Stratificazione per confidence
-    L.append("## 4. Le previsioni 'sicure' vanno davvero meglio? _(per confidence)_\n")
-    L.append("**Come si legge:** il classificatore si auto-assegna una confidence "
-             "(high/medium/low). Se è onesto con sé stesso, le 'high' dovrebbero avere "
-             "copertura e hit-rate migliori delle 'low'.\n")
-    L.append("| Confidence | Copertura | Hit-rate | N |")
-    L.append("|---|---|---|---|")
-    for conf in ["high", "medium", "low"]:
-        sub = [r for r in rows if (r.get("confidence") or "").lower() == conf]
-        if not sub:
-            continue
-        cov_sub = [r for r in sub if r["_iqr"] is not None]
-        hit_sub = [r for r in sub if r["_hit"] is not None]
-        cov = (sum(r["_iqr"] for r in cov_sub) / len(cov_sub)) if cov_sub else None
-        hit = (sum(r["_hit"] for r in hit_sub) / len(hit_sub)) if hit_sub else None
-        L.append(f"| {conf} | {_pct(cov)} | {_pct(hit)} | {len(sub)} |")
-    L.append("")
-
-    # 5) Stratificazione per TEMA (primary_theme della scheda, riletto dal file)
-    L.append("## 5. Quali temi prevediamo meglio? _(per primary_theme)_\n")
-    L.append("**Come si legge:** raggruppa le previsioni per tema della notizia "
-             "(politica monetaria, energia/commodity, dati macro, ecc.). Rivela **dove "
-             "il sistema ha un vantaggio e dove no**: un tema con hit-rate alto e IC "
-             "positivo è terreno solido; uno vicino al 50% / IC≈0 va trattato con "
-             "cautela. L'IC è calcolato **dentro ciascun asset** del tema e poi mediato "
-             "(come nella sez. 3): mescolare asset diversi nello stesso ranking "
-             "sovrastimerebbe la correlazione (vedi 5-bis). Ordinato per numerosità (N).\n")
-    L.append("| Tema | Copertura | Hit-rate | IC (per-asset) | N |")
-    L.append("|---|---|---|---|---|")
-    by_theme: dict = {}
-    for r in rows:
-        by_theme.setdefault(_theme_of_card(r["card_path"]) or "(non determinato)", []).append(r)
-    for theme, sub in sorted(by_theme.items(), key=lambda kv: -len(kv[1])):
-        cov_sub = [r for r in sub if r["_iqr"] is not None]
-        hit_sub = [r for r in sub if r["_hit"] is not None]
-        med_sub = [r for r in sub if r["_med"] is not None]
-        cov = (sum(r["_iqr"] for r in cov_sub) / len(cov_sub)) if cov_sub else None
-        hit = (sum(r["_hit"] for r in hit_sub) / len(hit_sub)) if hit_sub else None
-        ic, _, _ = _ic_within_assets(med_sub)
-        ic_s = "n/a" if ic is None else f"{ic:+.2f}"
-        L.append(f"| {theme} | {_pct(cov)} | {_pct(hit)} | {ic_s} | {len(sub)} |")
-    L.append("")
-
-    # 5-bis) Stratificazione per ASSET.
-    # Aggiunta 2026-08-10 dopo un audit: era il punto cieco della scorecard. L'IC
-    # aggregato (~+0.07) nasconde una spaccatura netta e STABILE nel tempo: forte
-    # sugli asset di rischio (^VIX +0.27, EEM/^NDX/^STOXX50E ~+0.16), ma
-    # sistematicamente NEGATIVO su rifugio/tassi/dollaro (IEF -0.33, DX-Y.NYB
-    # -0.12 con hit-rate 31% = 3.4 sigma sotto il caso, GC=F -0.09). Senza questa
-    # tabella il difetto è rimasto invisibile per mesi.
-    L.append("## 5-bis. Su quali ASSET prevediamo meglio? _(per ticker)_\n")
-    L.append("**Come si legge:** copertura, hit-rate e IC per asset, solo con almeno "
-             f"{ASSET_MIN_N} previsioni mature. Sono metriche diverse: **hit-rate** è "
-             "la quota di segni corretti, **IC** (Spearman) è se l'*ordine* delle "
-             "magnitudini realizzate rispecchia quello previsto — possono divergere "
-             "(un IC negativo non implica un hit-rate basso). Nessun giudizio "
-             "automatico qui sotto: leggi i due numeri insieme prima di fidarti o "
-             "scartare un asset. Statistica più seria (indipendenza delle "
-             "osservazioni, segno vs magnitudine vs copertura) resta da fare. "
-             "Ordinato per numerosità.\n")
-    L.append("| Asset | Copertura | Hit-rate | IC | N |")
-    L.append("|---|---|---|---|---|")
-    by_asset: dict = {}
-    for r in rows:
-        by_asset.setdefault(r["asset"], []).append(r)
-    for asset, sub in sorted(by_asset.items(), key=lambda kv: -len(kv[1])):
-        if len(sub) < ASSET_MIN_N:
-            continue
-        cov_sub = [r for r in sub if r["_iqr"] is not None]
-        hit_sub = [r for r in sub if r["_hit"] is not None]
-        med_sub = [r for r in sub if r["_med"] is not None]
-        cov = (sum(r["_iqr"] for r in cov_sub) / len(cov_sub)) if cov_sub else None
-        hit = (sum(r["_hit"] for r in hit_sub) / len(hit_sub)) if hit_sub else None
-        ic = _spearman([r["_med"] for r in med_sub], [r["_real"] for r in med_sub])
-        ic_s = "n/a" if ic is None else f"{ic:+.2f}"
-        L.append(f"| {asset} | {_pct(cov)} | {_pct(hit)} | {ic_s} | {len(sub)} |")
-    L.append("")
-
-    # 6) Magnitudine (de-enfatizzata: le schede disconoscono la trasferibilita')
-    L.append("## 6. Errore tipico di grandezza _(MAE)_ — secondario\n")
-    L.append("**Come si legge:** di quanto, in media, il movimento reale si è "
-             "discostato dalla mediana storica (in punti percentuali). ⚠ Le schede "
-             "stesse avvertono che la *grandezza* storica non è trasferibile: tienilo "
-             "come riferimento, non come metrica di qualità.\n")
-    L.append("| Orizzonte | MAE | N |")
-    L.append("|---|---|---|")
-    for h in horizons + ["overall"]:
-        sub = [r for r in rows if (h == "overall" or r["_hz"] == h)
-               and r.get("abs_error") not in ("", None)]
-        if not sub:
-            continue
-        mae = sum(float(r["abs_error"]) for r in sub) / len(sub)
-        label = "**overall**" if h == "overall" else f"T+{h}"
-        L.append(f"| {label} | {mae:.2f}% | {len(sub)} |")
-    L.append("")
-
-    # Glossario (termini tecnici in parole povere)
-    L.append("## Glossario\n")
-    L.append("- **Previsione matura**: scheda per cui il DB ha ormai abbastanza giorni "
-             "di borsa dopo la notizia per misurare cosa è successo.")
-    L.append("- **Orizzonte T+N**: N giorni di borsa dopo l'evento (T+1 = giorno dopo).")
-    L.append("- **Banda p25–p75**: l'intervallo che racchiude il 50% centrale degli "
-             "episodi storici analoghi; il resto (25% sotto, 25% sopra) è la coda.")
-    L.append("- **Mediana storica**: il movimento 'tipico' (valore centrale) degli "
-             "episodi analoghi; ne usiamo il *segno* per la direzione.")
-    L.append("- **No-call**: previsione troppo piatta per dire su/giù "
-             f"(|mediana| < {FLAT_THRESHOLD}%) → conta per la copertura, non per l'hit-rate.")
-    L.append("- **Hit-rate**: % di volte in cui la direzione prevista era giusta.")
-    L.append("- **IC (Information Coefficient)**: correlazione di rango tra atteso e "
-             "realizzato (Spearman); >0 = lo storico informa.")
-    L.append("- **IC per-asset vs pooled**: il *per-asset* confronta ogni previsione "
-             "solo con altre sullo stesso ticker, poi fa la media — è la misura "
-             "onesta dell'abilità. Il *pooled* mette tutti gli asset in un'unica "
-             "classifica e perciò premia il fatto ovvio che ^VIX si muove più di "
-             "EURUSD=X: gonfia il risultato (al 2026-08-10: +0.07 pooled contro "
-             "+0.02 reale). Usiamo il per-asset come numero ufficiale.")
-    L.append("- **Margine 95% (Wilson)**: con così pochi dati il vero hit-rate sta "
-             "verosimilmente in questo intervallo, non esattamente sul numero mostrato.\n")
-
-    # Caveat fissi
-    L.append("## Caveat\n")
-    L.append("- **N piccolo**: poche schede/giorno × pochi asset. Le metriche si "
-             "stabilizzano solo su orizzonte di mesi.")
-    L.append("- **Finestre sovrapposte**: osservazioni non indipendenti → gli "
-             "intervalli di confidenza (Wilson) sono ottimistici.")
-    L.append("- **Attribuzione single-news**: il realizzato riflette *tutte* le "
-             "notizie della finestra, non solo quella classificata. Per questo la "
-             "copertura distribuzionale (§1) e' piu' onesta dell'hit-rate puntuale.")
-    L.append(f"- **No-call**: le previsioni con |mediana| < {FLAT_THRESHOLD}% sono "
-             "escluse dall'hit-rate ma incluse nella copertura.")
-    L.append("- **No look-ahead**: il realizzato di una scheda del giorno D e' "
-             "misurato da D in avanti (cosa e' successo dopo la chiamata).\n")
-
-    text = "\n".join(L)
-    out_path.write_text(text, encoding="utf-8")
-    html_path = _write_scorecard_html(text, out_path, f"{iso_year}-W{iso_week:02d}")
-    print(f"[scorecard] scritta {out_path.name} + {html_path.name} "
-          f"({n_total} previsioni mature, {n_cards} schede).")
+    iso = date.today().isocalendar()
+    out_path = SCORECARD_DIR / f"{iso.year}-W{iso.week:02d}.md"
+    text = '\n'.join(L) + '\n'
+    # Preserve an earlier scorecard before publishing a revised methodology.
+    if out_path.exists() and out_path.read_text() != text:
+        archive = SCORECARD_DIR / '_history'
+        archive.mkdir(exist_ok=True)
+        old = out_path.read_bytes()
+        (archive / f"{out_path.stem}-{hashlib.sha256(old).hexdigest()[:12]}.md").write_bytes(old)
+    out_path.write_text(text, encoding='utf-8')
+    html = _write_scorecard_html(text, out_path, out_path.stem)
+    print(f"[scorecard] {out_path}")
     if open_browser:
-        subprocess.run(["open", str(html_path)], check=False)
+        subprocess.run(['open', str(html)], check=False)
 
 
 def cmd_recheck() -> None:
     """Ricalcolo su dati revisionati: confronta il realizzato congelato con quello
     che il DB darebbe oggi. Non scrive nulla: il ledger resta il track record."""
     rows = [r for r in load_ledger() if r.get("realized_return")]
-    conn = sqlite3.connect(DB_PATH)
+    conn = sqlite3.connect(f"file:{DB_PATH}?mode=ro", uri=True)
     cache: dict = {}
     diffs, n = [], 0
     try:
@@ -931,23 +777,38 @@ def cmd_run() -> None:
 
 
 def main():
-    p = argparse.ArgumentParser(description=__doc__.split("\n\n")[0])
-    sub = p.add_subparsers(dest="cmd", required=True)
-    sub.add_parser("backfill", help="accoda al ledger le previsioni delle schede")
-    sub.add_parser("evaluate", help="riempie le righe mature col realizzato dal DB")
-    sc = sub.add_parser("scorecard", help="aggrega le metriche e scrive la scorecard")
-    sc.add_argument("--open", action="store_true",
-                    help="Apre la scorecard HTML nel browser (macOS)")
-    sub.add_parser("run", help="backfill + evaluate + scorecard (job settimanale)")
-    sub.add_parser("recheck", help="ricalcola le righe valutate sul DB attuale (sola lettura)")
-    args = p.parse_args()
+    parser = argparse.ArgumentParser(description=__doc__)
+    sub = parser.add_subparsers(dest="cmd", required=True)
+    for name in ("backfill", "evaluate", "run", "recheck", "scorecard", "audit", "register"):
+        cmd = sub.add_parser(name)
+        if name in ("register", "audit"):
+            cmd.add_argument("--date", type=date.fromisoformat, required=name == "register")
+        if name == "scorecard":
+            cmd.add_argument("--open", action="store_true")
+    args = parser.parse_args()
+    if args.cmd == 'audit':
+        raise SystemExit(bool(cmd_audit(str(args.date) if args.date else None)))
+    if args.cmd == 'recheck':
+        cmd_recheck()
+        return
+    DAILY_DIR.mkdir(parents=True, exist_ok=True)
+    with (DAILY_DIR / '_forecast.lock').open('a') as lock:
+        fcntl.flock(lock, fcntl.LOCK_EX)
+        if args.cmd == 'register':
+            day = str(args.date)
+            # Le schede ambigue restano fuori dal ledger, le altre si registrano:
+            # una tabella malformata non deve fermare la consegna del giorno.
+            bad = []
+            cmd_audit(day, require_declared=True, bad=bad)
+            cmd_backfill(day=day, live=True, skip=set(bad))
+            if bad:
+                raise SystemExit(f"Registrazione parziale: {len(bad)} schede escluse, "
+                                 "correggerle e rilanciare 'register'")
+        elif args.cmd == 'scorecard':
+            cmd_scorecard(open_browser=args.open)
+        else:
+            {'backfill': cmd_backfill, 'evaluate': cmd_evaluate, 'run': cmd_run}[args.cmd]()
 
-    if args.cmd == "scorecard":
-        cmd_scorecard(open_browser=args.open)
-    else:
-        {"backfill": cmd_backfill, "evaluate": cmd_evaluate,
-         "run": cmd_run, "recheck": cmd_recheck}[args.cmd]()
 
-
-if __name__ == "__main__":
+if __name__ == '__main__':
     main()

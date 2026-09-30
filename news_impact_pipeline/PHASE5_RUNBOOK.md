@@ -83,9 +83,9 @@ venv/bin/python pipeline_tools.py new-card --date AAAA-MM-GG --slug <slug> \
 venv/bin/python analogues.py find --theme <t> [--subtheme <tok>]... \
   [--direction pos|neg|neutral --direction-reference TICKER] \
   [--before AAAA-MM-GG] [--min-n N] [--max-pool N] \
-  [--match-all]
+  [--match-all] [--since AAAA-MM-GG] [--allow-fallback]
 #   --subtheme ripetibile · --max-pool default 30 (0 = nessun tetto)
-#   --min-n = soglia sotto cui il filtro sotto-tema NON viene applicato
+#   --min-n = avviso di campione piccolo; filtro stretto salvo --allow-fallback
 #   --match-all = più --subtheme in INTERSEZIONE (default: unione). Obbligatorio
 #     quando uno dei token è GEOGRAFICO (eurozone_release, japan_release,
 #     britain_release): in unione il token geografico non filtra nulla e il pool
@@ -96,7 +96,7 @@ venv/bin/python analogues.py stats                 # adozione blocchi dichiarati
 
 # 5. event study
 venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
-  --windows 1,3,5,10 --markdown [--detail] [--no-adj]
+  --windows 1,3,5,10 --as-of AAAA-MM-GG --markdown [--detail] [--no-adj]
 #   --detail aggiunge la tabella per-episodio: pesa l'80% dell'output e nelle
 #   schede non si incolla mai. Chiedilo SOLO per potare il pool o cacciare outlier.
 ```
@@ -133,37 +133,31 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
    **Passa SEMPRE `--direction` e `--direction-reference TICKER`** e, sui temi a pool largo (`geopolitical`,
    `commodity_energy`), **anche `--subtheme`**: senza filtri il pool si gonfia e
    diluisce il segnale (scorecard W28→W30: IC eroso proprio su quei temi). La libreria
-   applica già un **tetto di recency** (default: 30 episodi più recenti = regime
-   corrente; regolabile con `--max-pool`), ma i filtri restano la prima difesa.
+   applica già un **tetto di recency** (default: 30 episodi più recenti, non una garanzia di regime
+   confrontabile; regolabile con `--max-pool`), ma i filtri restano la prima difesa.
 
-   I token di `--subtheme` da preferire sono quelli **canonici** di
-   `subtheme_taxonomy.yaml` (es. `ai_capex_financing` vs `memory_cycle` vs
-   `valuation_derisking`): il `find` li cerca prima nelle etichette **date-locali**
-   — ricavate dal contesto in cui la data compare, non dall'intestazione del
-   documento — e solo se restano <`--min-n` ricade sui sotto-temi di documento e
-   poi sul tema. La riga di diagnostica dice sempre quale livello è stato usato:
-   se leggi «uso i sotto-temi a livello di documento» il filtro è **debole** e va
-   dichiarato nel caveat della scheda. Un token non in tassonomia funziona ancora
-   (match per sottostringa), ma quasi sempre solo al livello debole.
+   I token di `--subtheme` sono quelli canonici di `subtheme_taxonomy.yaml`.
+   Il CLI usa soltanto etichette date-locali: un sotto-tema richiesto resta un
+   vincolo anche sotto `--min-n`. Più token sono in unione salvo `--match-all`:
+   usa l'intersezione per famiglia + geografia e per requisiti tutti necessari.
+   `--min-n` segnala campione piccolo, non impone di raggiungerlo. Non rimuovere
+   un vincolo e non aggiungere date soltanto per aumentare N. Eventi manuali
+   sono ammessi solo con fonte e motivazione verificabili, stessi vincoli.
+   `--allow-fallback` abilita il vecchio allargamento solo per un confronto
+   **descrittivo**, mai per una previsione attiva. Annota il motivo del vuoto:
+   famiglia, geografia, sorpresa, riferimento, regime o prezzi mancanti.
 
-   **Scegli il token guardando la copertura, non l'intuito**: `analogues.py labels
-   --theme <theme>` stampa, per tema, quanti episodi ha ciascuna etichetta a livello date-locale
-   (filtro forte) e a livello di documento (debole). Il token *concettualmente* ovvio
-   non è sempre quello con copertura. Se un token che ti serve ha copertura zero o
-   quasi, il rimedio è aggiungere pattern in `subtheme_taxonomy.yaml` e rilanciare
-   `build` — **ricalibrandoli sui contesti reali**, non a memoria: le schede scrivono
-   in inglese tecnico (`FOMC`, `75bp`, `dot plot`), non in italiano.
+   Il regime deve influire sulla selezione: controlla i singoli episodi prima
+   del calcolo, escludi quelli incompatibili e documenta la regola usata.
+   `--since AAAA-MM-GG` permette di limitare alla fase temporale scelta dalla KB;
+   un intervallo di date o i 30 eventi più recenti non provano equivalenza economica.
+   Se non resta un campione confrontabile, la tabella è `[descrittiva]` oppure
+   si dichiara astensione. Non inventare etichette di regime dai rendimenti.
 
-   ⚠ **Distingui «copertura assente» da «copertura sotto soglia»**: hanno rimedi
-   diversi (dettaglio e caso reale: [references/etichette_date_locali.md](../references/etichette_date_locali.md)).
-   Se la diagnostica dice «N episodi date-locali … <`--min-n`» con N>0, la
-   tassonomia **funziona** e il pool stretto esiste — rilancia con `--min-n N` più
-   basso e dichiara nel caveat che il campione è piccolo, invece di riclassificare
-   la notizia sotto un altro tema. Aggiungere pattern in `subtheme_taxonomy.yaml`
-   serve solo quando il conteggio date-locale è davvero **0**.
-   Usa quel pool come set di analoghi (puoi **potare** gli episodi palesemente non
-   pertinenti). Se il pool è troppo piccolo, integra a mano (Opzione A). Poi calcola
-   l'event study (`event_study.py`, sintassi nel riferimento comandi).
+   Passa **sempre `--as-of DATA_ANALISI` a `event_study.py`**, anche nei rilanci
+   storici: usa solo chiusure anteriori a quel giorno ed esclude per ogni
+   orizzonte gli esiti ancora immaturi. Non prova la disponibilità all'epoca
+   delle etichette: anche le fonti degli episodi devono essere contemporanee.
 
    L'output di default è **compatto**: solo le tabelle di statistiche, che sono le
    uniche che finiscono nella scheda. Se devi potare il pool o capire un outlier,
@@ -228,7 +222,18 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
    la versione precedente lo rendeva un passo automatico del run giornaliero e la
    cartella si riempiva da sola. Convenzioni: `_prompts/README.md`.
 
-5. **Render HTML.** Genera la versione sfogliabile nel browser:
+5. **Audit e registrazione.** Prima della consegna:
+   ```bash
+   venv/bin/python forecast_tracking.py register --date YYYY-MM-DD
+   ```
+   Il wrapper lo esegue dopo Claude, senza un altro turno del modello. In sessione
+   manuale eseguilo dopo aver completato le schede. Una tabella ambigua esclude
+   la sua scheda dal ledger (le altre si registrano, il report parte comunque con
+   un avviso): correggi il formato, senza modificare statistiche per superare il
+   controllo, poi rilancia `register`. I risultati registrati restano congelati anche prima della
+   maturazione; correzioni successive sono segnalate, non sostituiscono l'originale.
+
+6. **Render HTML.** Genera la versione sfogliabile nel browser:
    ```bash
    venv/bin/python render_report.py --date YYYY-MM-DD
    ```
@@ -253,6 +258,10 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
   La stessa scelta va **marcata nel titolo di ogni tabella**: `[previsione]`,
   `[descrittiva]` o `[scenario: nome]` (dettagli nel template, sezione Risultati).
   Il ledger delle previsioni registra solo ciò che è dichiarato lì, non la prosa.
+  Hit-rate >50% e IC positivo non sono una prova di vantaggio: confronta le
+  baseline sugli stessi casi e sullo stesso orizzonte; niente promozione automatica.
+  Regime incompatibile, sorpresa non documentata o N<10 → `[descrittiva]`.
+  Conserva anche le astensioni nella sintesi con il motivo, per misurare la copertura.
   ⚠ NON dare per scontato un elenco a memoria: cambia ogni settimana, i numeri vanno
   riletti dalla scorecard corrente.
 - Selezione analoghi: solo info disponibile alla data dell'episodio (no look-ahead).
@@ -309,3 +318,5 @@ un problema; l'oscurità sì. Regole:
 > meccanismi causali, interpreta i numeri a parole — preferisci la chiarezza alla
 > brevità.** Riporta in chat un riepilogo: quante notizie tenute/scartate e i temi
 > delle schede prodotte.
+
+Se non esiste alcun pool utilizzabile, ometti le tabelle e scrivi `**Motivo astensione**: <ragione concreta>`. Una tabella malformata resta un errore anche con questo campo.

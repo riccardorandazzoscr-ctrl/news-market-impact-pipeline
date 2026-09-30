@@ -28,6 +28,8 @@ già pronto.
 
 - **ADP** — indagine mensile sull'occupazione privata USA; anticipa di due giorni l'NFP ufficiale.
 - **BCE (Banca Centrale Europea)** — fissa i tassi per i venti paesi dell'area euro. Il tasso sui depositi è quello che riconosce alle banche sui fondi depositati presso di essa.
+- **Beni durevoli (durable goods orders)** — ordini mensili USA di beni destinati a durare oltre tre anni (aerei, macchinari, auto). Il dato "esclusi trasporti" toglie gli aerei, molto volatili, ed è la lettura più pulita della spesa per investimenti delle imprese.
+- **Conference Board (Consumer Confidence Index)** — indice mensile USA della fiducia dei consumatori, costruito da un'associazione privata di imprese; pesa molto la valutazione del mercato del lavoro. Sotto 80 nella componente aspettative è storicamente associato a rischio di recessione.
 - **Consenso** — media delle previsioni degli analisti prima di una release; la "sorpresa" è la differenza fra dato pubblicato e consenso. Fornitori diversi (Reuters, Bloomberg, Wind) pubblicano consensi diversi.
 - **Core (inflazione di fondo)** — l'inflazione esclusi energia e alimentari freschi, perché quelle voci sono volatili e guidate da fattori esterni; il core misura meglio la pressione generata dall'economia interna.
 - **CPI (Consumer Price Index)** — indice dei prezzi al consumo, la misura di inflazione percepita dalle famiglie.
@@ -39,12 +41,15 @@ già pronto.
 - **Forward guidance** — l'indicazione che una banca centrale dà sul percorso futuro dei tassi, per orientare le aspettative del mercato senza agire subito.
 - **Funzione di reazione** — il modo sistematico in cui una banca centrale risponde ai dati in arrivo.
 - **GDP / PIL** — prodotto interno lordo: il valore di tutti i beni e servizi prodotti. "Annualizzato" = il tasso di crescita che si otterrebbe se il ritmo del trimestre proseguisse per un anno intero.
+- **Hawkish / dovish** — "da falco" / "da colomba": una banca centrale (o un suo membro) è hawkish quando segnala tassi più alti o più a lungo per combattere l'inflazione, dovish quando apre a tagli o pause.
 - **Headline** — l'inflazione totale, energia e alimentari inclusi (si contrappone al **core**).
 - **HICP (Harmonised Index of Consumer Prices)** — l'indice armonizzato dei prezzi al consumo usato dalla BCE, costruito con la stessa metodologia in tutti i paesi dell'area euro.
+- **Initial jobless claims** — richieste settimanali di sussidio di disoccupazione negli USA (dato del giovedì). Poche richieste = mercato del lavoro solido; è il dato ad alta frequenza più tempestivo sull'occupazione.
 - **ISM (Institute for Supply Management)** — indice USA di diffusione su manifattura/servizi da sondaggio ai responsabili acquisti. Sopra 50 = espansione, sotto 50 = contrazione; misura **quanti** rispondono che l'attività cresce, non **di quanto**.
 - **JOLTS (Job Openings and Labor Turnover Survey)** — indagine mensile USA sui posti di lavoro vacanti e sul turnover, complementare all'NFP.
 - **NFP (Non-Farm Payrolls)** — nuovi posti di lavoro creati negli USA, esclusa l'agricoltura; il dato macro più seguito al mondo.
 - **PBOC (People's Bank of China)** — la banca centrale cinese.
+- **PCE (Personal Consumption Expenditures)** — indice dei prezzi della spesa per consumi delle famiglie USA; la sua versione *core* è la misura d'inflazione che la Fed usa come obiettivo (2%), per questo pesa sulle attese di tassi più del CPI.
 - **PMI (Purchasing Managers' Index)** — indice da sondaggio ai responsabili acquisti; sopra 50 = espansione, sotto 50 = contrazione. Indicatore anticipatore.
 - **PPI (Producer Price Index)** — indice dei prezzi alla produzione.
 - **Produzione industriale** — indice del volume fisico prodotto da industria, costruzioni ed energia; volatile e pubblicato con oltre un mese di ritardo.
@@ -52,6 +57,7 @@ già pronto.
 - **RBNZ (Reserve Bank of New Zealand)** — la banca centrale neozelandese; storicamente la prima al mondo ad adottare un obiettivo d'inflazione esplicito (1990) e spesso in anticipo sul ciclo delle banche centrali maggiori.
 - **Sorpresa macro** — la differenza fra il dato pubblicato e il consenso degli analisti; è la sorpresa, non il livello, a muovere i prezzi.
 - **TPI (Transmission Protection Instrument)** — lo "scudo anti-spread" della BCE contro un allargamento ingiustificato dei differenziali sovrani nell'area euro.
+- **UMich (University of Michigan Consumer Sentiment)** — indagine mensile sulla fiducia dei consumatori USA, con stima preliminare a metà mese e finale a fine mese. Include le aspettative d'inflazione delle famiglie a 1 anno e a 5-10 anni, seguite dalla Fed. Dal 2024 si raccoglie online: i livelli non sono confrontabili con quelli precedenti.
 - **YCC (Yield Curve Control)** — controllo della curva dei rendimenti: politica con cui una banca centrale (tipicamente la BoJ) fissa un tetto al rendimento di un titolo di Stato comprandone quantità illimitate per difenderlo.
 
 ## Mercati e meccanismi
@@ -78,22 +84,31 @@ già pronto.
 - **Rendimento (yield)** — quanto rende un titolo di Stato tenuto fino a scadenza; si muove in direzione **opposta** al prezzo.
 - **Shock di offerta** — un rincaro che nasce da una riduzione della disponibilità di un bene, non da un eccesso di domanda. Alzare i tassi non lo corregge: riduce solo la crescita.
 - **Spare capacity (capacità inutilizzata)** — capacità produttiva che i produttori (soprattutto OPEC+) possono attivare in poche settimane; l'ammortizzatore che storicamente drena il premio di rischio sul petrolio.
+- **Spread OAT-Bund** — differenza fra il rendimento del titolo di Stato francese a 10 anni (OAT, Obligation Assimilable du Trésor) e quello del Bund tedesco: il premio chiesto per il rischio Francia. Non è nel DB (solo BTP_BUND_SPREAD).
+- **Stagflazione** — crescita debole (o recessione) insieme a inflazione alta. È lo scenario più scomodo per una banca centrale: alzare i tassi frena ancora l'economia, tagliarli alimenta i prezzi. Sui mercati si vede quando i dati deboli non fanno scendere i rendimenti.
 - **State-dependence** — il fatto che la reazione del mercato allo stesso dato dipenda dallo stato del sistema (fase del ciclo monetario, posizionamento, regime inflazionistico).
 - **Surplus commerciale** — l'eccedenza delle esportazioni sulle importazioni di un paese. Per identità contabile, il surplus di uno è il deficit di altri.
+- **Taper tantrum** — il balzo dei rendimenti USA di maggio-settembre 2013, quando Bernanke annunciò che la Fed avrebbe ridotto gli acquisti di titoli (QE): esempio di scuola di premio a termine che sale per un cambio di guidance, senza un rialzo dei tassi.
 - **Tasso di sconto** — il tasso usato per attualizzare gli utili futuri di un'azienda: se sale, gli utili lontani nel tempo valgono meno oggi.
 - **Tasso reale / tassi reali** — il tasso d'interesse al netto dell'inflazione attesa; è il costo-opportunità di detenere oro, che non produce reddito.
 - **Vol crush** — il calo brusco della volatilità implicita subito dopo un evento atteso (una decisione di banca centrale, una pubblicazione di dati): l'incertezza si risolve e il premio pagato per proteggersi si sgonfia, a prescindere dall'esito.
 
 ## Geopolitica e istituzioni
 
+- **Articolo 49.3** — norma della Costituzione francese che consente al governo di far approvare un testo (tipicamente il bilancio) senza voto dell'Assemblea; in cambio l'opposizione può presentare una mozione di sfiducia, che se passa fa cadere il governo.
 - **CENTCOM** — United States Central Command, il comando militare USA competente per Medio Oriente e Asia centrale.
 - **Corridoio del Mar Nero** — la rotta marittima per l'export cerealicolo ucraino; oggetto di accordi e sospensioni dal 2022.
+- **EPF (European Peace Facility)** — fondo fuori dal bilancio UE con cui l'Unione rimborsa agli Stati membri le armi inviate a paesi terzi (soprattutto l'Ucraina) e finanzia acquisti congiunti. Le decisioni richiedono l'unanimità, da cui il potere di veto dell'Ungheria.
 - **Flotta ombra** — petroliere anziane, con proprietà opaca e assicurazioni non occidentali, usate per trasportare greggio russo aggirando il tetto al prezzo.
 - **G20** — foro dei ministri delle finanze e governatori delle banche centrali delle venti maggiori economie.
 - **Guerra ibrida** — azioni ostili sotto la soglia del conflitto aperto (sabotaggi, droni, attacchi informatici), tipicamente non rivendicate.
+- **IRGC (Islamic Revolutionary Guard Corps, Pasdaran)** — il corpo militare d'élite iraniano, distinto dall'esercito regolare; controlla le operazioni navali nello Stretto di Hormuz.
 - **JCPOA (Joint Comprehensive Plan of Action)** — l'accordo del 2015 sul programma nucleare iraniano, da cui gli USA uscirono nel 2018.
+- **MoU (Memorandum of Understanding)** — memorandum d'intesa: accordo politico preliminare, meno vincolante di un trattato. Nel 2026 è il formato della trattativa USA-Iran su Hormuz.
 - **NATO** — North Atlantic Treaty Organization, l'alleanza militare atlantica.
+- **OFAC (Office of Foreign Assets Control)** — l'ufficio del Tesoro USA che emette e applica le sanzioni economiche (liste di persone ed entità, licenze di deroga).
 - **Patriot** — sistema americano di difesa antiaerea e antimissile.
+- **Preemption federale** — principio per cui una legge federale USA prevale su quelle dei singoli Stati; nel dibattito sull'AI significa sostituire le leggi statali (es. California) con un'unica regola nazionale, di solito più leggera.
 - **Sezione 301** — norma del diritto commerciale USA usata dal 2018 per imporre dazi sulla base di pratiche commerciali giudicate sleali.
 - **Stretto di Hormuz** — braccio di mare fra Iran e Oman da cui transita circa il 20% del petrolio scambiato via mare; il principale chokepoint energetico mondiale.
 - **Tagli volontari (OPEC+)** — riduzioni di produzione annunciate da singoli membri (soprattutto Arabia Saudita) oltre le quote formali del gruppo, e quindi revocabili unilateralmente.

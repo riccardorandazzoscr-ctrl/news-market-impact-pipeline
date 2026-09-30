@@ -441,13 +441,13 @@ Passi:
 3) Per ogni notizia tenuta esegui il flusso completo (assets, match, new-card).
    Per gli episodi analoghi usa la LIBRERIA (Opzione B): analogues.py find --theme
    <theme> --subtheme <tok> --direction <pos|neg|neutral> --direction-reference <ticker> --before <data notizia> →
-   usa quel pool per --events di event_study.py. Verso indica pressione sul prezzo
+   usa quel pool per --events di event_study.py, con --as-of $TODAY. Verso indica pressione sul prezzo
    del ticker (non evento buono/cattivo né rendimento ex post). Compila nella scheda
    direction_reference come da template. Legacy e conflitti sono esclusi: se N è
-   piccolo integra a mano, non forzare il segno. Passa SEMPRE --direction e --direction-reference e, sui temi
+   piccolo mantienilo indicativo o astieniti, non forzare il segno. Passa SEMPRE --direction e --direction-reference e, sui temi
    larghi (geopolitical, commodity_energy), anche --subtheme (senza filtri il pool
    diluisce il segnale). La libreria applica già un tetto di recency (30 più recenti).
-   Puoi potare i non pertinenti; integra a mano solo se il pool è piccolo. Poi compila
+   Puoi potare i non pertinenti; non aggiungere episodi soltanto per raggiungere N. Poi compila
    via Edit tutte le sezioni qualitative. Se min(N)<10 la scheda riporta "INDICATIVE ONLY".
    PRIMA di scrivere la lettura direzionale leggi la scorecard più recente in
    $DAILY/_scorecard/ sezione "5-bis" (per-asset): hit-rate e IC sono metriche
@@ -455,7 +455,11 @@ Passi:
    leggi i due numeri dell'asset toccato dalla scheda e giudica tu; se appaiono
    deboli o incoerenti fra loro riporta l'event study ma dichiara esplicitamente
    che il segno storico è inaffidabile, invece di trarne una direzione attesa.
-   Rileggi i numeri lì, non a memoria.
+   Rileggi i numeri lì, non a memoria. Confronta anche sempre-su/sempre-giù:
+   hit-rate sopra 50% e IC positivo non autorizzano da soli una previsione.
+   Il filtro sotto-tema ora è stretto: --allow-fallback è solo per descrizione.
+   Regime incompatibile, sorpresa non documentata o N<10 → [descrittiva].
+   Mantieni ogni tabella nel formato del template: il parser blocca le ambiguità.
 4) Compila la "Sintesi di sessione" in _index.md.
 
 ECONOMIA DEL RUN (vincolante, sezione omonima del runbook): il costo cresce col
@@ -573,6 +577,19 @@ fi
 fi   # ⬆⬆ fine del tratto con l'agente (SERVE_AGENTE) ⬆⬆
 if (( ! SERVE_AGENTE )); then
   log "RIPARAZIONE: giornata $TODAY ferma su $FASE. Triage e schede sono a posto: riprendo da lì senza richiamare l'agente."
+fi
+
+# Congela le tabelle appena prodotte: lo stesso parser alimenta audit e ledger.
+# La registrazione non valuta prezzi, non invia messaggi e non richiama Claude.
+# Un fallimento NON ferma la consegna (30/09/2026): i ritentativi ripartono senza
+# agente, quindi nessuno correggerebbe la tabella e la giornata resterebbe muta.
+# Le schede ambigue restano fuori dal ledger; le altre sono già registrate.
+if (( ! INCOMPLETA )); then
+  if ! "$PY" "$PIPE/forecast_tracking.py" register --date "$TODAY" >> "$LOG" 2>&1; then
+    MSG="registrazione previsioni $TODAY parziale o fallita: report inviato comunque. Correggi le schede in QUARANTENA nel log, poi: forecast_tracking.py register --date $TODAY"
+    log "WARN: $MSG"
+    /usr/bin/osascript -e "display notification \"$MSG\" with title \"News-Impact Pipeline\" sound name \"Basso\"" 2>/dev/null
+  fi
 fi
 
 # Render HTML del report (apribile con doppio clic nel browser).
