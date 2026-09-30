@@ -1,5 +1,5 @@
-generated_at: '2026-09-23T10:51:06'
-num_entries: 29
+generated_at: '2026-09-29T21:35:17'
+num_entries: 30
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -700,6 +700,84 @@ entries:
   - aspettative BoJ
   - yen
   - nikkei
+- source_file: Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
+    2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
+    blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
+    già elevato — episodi in tabella canonica (2026-02-01–presente).md
+  title: 'Hormuz, blocco navale e trattativa MoU USA-Iran: il regime di offerta 2026
+    con premio già elevato — episodi in tabella canonica (2026-02-01–presente)'
+  date_compiled: 2026-09-29
+  primary_theme: commodity_energy
+  sub_themes:
+  - hormuz_closure
+  - naval_blockade
+  - negotiation_track
+  - de_escalation_asymmetry
+  - priced_in_surprise
+  - strategic_reserve_release
+  - refined_products
+  - lng_supply_shock
+  - inflation_rates_channel
+  - safe_haven_vs_supply_regime
+  relevant_assets:
+  - BZ=F
+  - HO=F
+  - RB=F
+  - CRACK_321
+  - TTF=F
+  - XLE
+  - GC=F
+  - ^TNX
+  - ^TYX
+  - IEF
+  - DX-Y.NYB
+  - ^GSPC
+  - INDA
+  - EURUSD=X
+  external_assets_mentioned:
+  - CL=F (WTI) — lo spread Brent-WTI è stato un canale redistributivo (oltre 12$ a
+    marzo, inversione ad aprile)
+  - Dated Brent / Forties fisico — premio fisico fino a 27$ sul futures ad aprile,
+    misura la scarsità reale
+  - Differenziale Dubai/Oman-Brent — riflette direttamente la perdita di greggio mediorientale
+  - Transiti giornalieri dello Stretto (Kpler, MarineTraffic, Vortexa) — variabile
+    di stato che distingue regime di offerta da regime di premio
+  - Premi assicurativi war-risk — costo marginale del transito, determina la chiusura
+    di fatto
+  - Noli VLCC (TD3C) — trasmettono lo shock logistico ai prezzi CIF
+  - Struttura a termine del Brent M1-M2 (backwardation) — misura la scarsità immediata
+    e distorce la serie continua ai rinnovi
+  - Crack del diesel NY Harbor / ULSD — canale distillati, record sopra 106$/bbl il
+    2026-09-01
+  - JKM LNG — controparte asiatica del TTF per lo shock Qatar
+  - US 2Y Treasury yield — separa la componente Fed dal premio a termine in ^TNX/^TYX
+  - Sensex/Nifty — reazione indiana anticipata rispetto a INDA
+  time_window:
+    start: 2026-02-01
+    end: present
+  regime_phases:
+  - hormuz_closure_mou_2026: 2026-02-01 to present
+  - premium_buildup_2026: 2026-02-01 to 2026-02-27
+  - war_closure_2026: 2026-02-28 to 2026-04-07
+  - ceasefire_blockade_2026: 2026-04-08 to 2026-06-11
+  - mou_window_2026: 2026-06-12 to 2026-07-07
+  - mou_collapse_blockade_2026: 2026-07-08 to 2026-08-31
+  - stalemate_escalation_2026: 2026-09-01 to present
+  keywords:
+  - Hormuz
+  - Strait of Hormuz
+  - Iran
+  - MoU
+  - memorandum d'intesa
+  - blocco navale
+  - naval blockade
+  - cessate il fuoco
+  - ceasefire
+  - Brent
+  - Epic Fury
+  - tregua
+  - de-escalation
+  - escalation
 - source_file: Il consumatore cinese, domanda interna, e-commerce e trasmissione ai
     mercati (2011–2026)/ Il consumatore cinese- domanda interna, e-commerce e trasmissione
     ai mercati (2011–2026).md
