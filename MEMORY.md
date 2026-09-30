@@ -107,6 +107,8 @@ Metodo: [references/leggere_lo_scorecard.md](references/leggere_lo_scorecard.md)
 - **Deciso (23/09, Run 5d)** — il verso è la **sorpresa** rispetto al già prezzato. I versi
   delle research stanno nel registro `_direction_reviews.yaml` (11 research, approvate riga per
   riga); le schede di agosto **non** si recuperano (il loro Verso non aveva un asset).
+  (30/09) Rivisti a mano su `IEF` gli episodi `macro_data` USA lavoro/fiducia: dato debole →
+  `pos`, forte → `neg`, esclusi i casi con segnali opposti o eventi simultanei.
 - **Prossimo passo** — le prossime schede su `inflation_print` usano `--subtheme
   inflation_upside`/`inflation_downside` invece di `--direction` quando la domanda è sul
   dato. Ricontrollare fra un mese se la mediana di `macro_data` si allontana da zero.
