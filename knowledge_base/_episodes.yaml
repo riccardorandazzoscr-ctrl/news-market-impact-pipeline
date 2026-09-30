@@ -1,4 +1,4 @@
-generated_at: '2026-09-30T17:22:28'
+generated_at: '2026-09-30T21:51:26'
 num_episodes: 1206
 episodes:
 - date: '1984-01-01'
@@ -49832,6 +49832,9 @@ episodes:
   direction_review_excluded:
     IEF: 'Michigan finale: il salto delle attese era già nel preliminare; la fonte
       non riporta la sorpresa della release finale rispetto al consenso.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Michigan finale: il salto
+      delle attese era già nel preliminare; la fonte non riporta la sorpresa della
+      release finale rispetto al consenso.'
   directions_local:
   - pos
   declared: false
@@ -49881,6 +49884,9 @@ episodes:
   direction_review_excluded:
     IEF: 'Conference Board in rialzo ma sotto il consenso di 99,0: variazione e sorpresa
       di segno opposto, verso non univoco sui Treasury.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board in rialzo
+      ma sotto il consenso di 99,0: variazione e sorpresa di segno opposto, verso
+      non univoco sui Treasury.'
   directions_local:
   - pos
   declared: false
@@ -49927,8 +49933,15 @@ episodes:
   directions_by_reference:
     IEF:
     - pos
+    ^FVX:
+    - neg
   direction_sources:
     IEF:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    ^FVX:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
@@ -49960,6 +49973,8 @@ episodes:
     directions_by_reference:
       IEF:
       - pos
+      ^FVX:
+      - neg
     sources:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
@@ -49976,6 +49991,8 @@ episodes:
       directions_by_reference:
         IEF:
         - pos
+        ^FVX:
+        - neg
 - date: '2005-10-25'
   theme: macro_data
   direction: ''
@@ -49984,6 +50001,8 @@ episodes:
   direction_review_excluded:
     IEF: 'Conference Board −2,5 punti: calo modesto, la fonte non riporta il consenso;
       segno della sorpresa incerto.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board −2,5 punti:
+      calo modesto, la fonte non riporta il consenso; segno della sorpresa incerto.'
   directions_local:
   - neg
   declared: false
@@ -50093,8 +50112,15 @@ episodes:
   directions_by_reference:
     IEF:
     - pos
+    ^FVX:
+    - neg
   direction_sources:
     IEF:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    ^FVX:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
@@ -50125,6 +50151,8 @@ episodes:
     directions_by_reference:
       IEF:
       - pos
+      ^FVX:
+      - neg
     sources:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
@@ -50141,6 +50169,8 @@ episodes:
       directions_by_reference:
         IEF:
         - pos
+        ^FVX:
+        - neg
 - date: '2008-12-05'
   theme: macro_data
   direction: ''
@@ -50149,8 +50179,15 @@ episodes:
   directions_by_reference:
     IEF:
     - pos
+    ^FVX:
+    - neg
   direction_sources:
     IEF:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    ^FVX:
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -50178,6 +50215,8 @@ episodes:
     directions_by_reference:
       IEF:
       - pos
+      ^FVX:
+      - neg
     sources:
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
@@ -50194,6 +50233,8 @@ episodes:
       directions_by_reference:
         IEF:
         - pos
+        ^FVX:
+        - neg
 - date: '2009-04-28'
   theme: macro_data
   direction: ''
@@ -50202,8 +50243,15 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
   direction_sources:
     IEF:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    ^FVX:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
@@ -50235,6 +50283,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
@@ -50251,6 +50301,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
 - date: '2009-05-26'
   theme: macro_data
   direction: ''
@@ -50259,8 +50311,15 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
   direction_sources:
     IEF:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    ^FVX:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
@@ -50292,6 +50351,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
@@ -50308,6 +50369,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
 - date: '2011-01-03'
   theme: macro_data
   direction: ''
@@ -50392,10 +50455,17 @@ episodes:
   directions_by_reference:
     IEF:
     - pos
+    ^FVX:
+    - neg
     ^VIX:
     - pos
   direction_sources:
     IEF:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    ^FVX:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
@@ -50434,6 +50504,8 @@ episodes:
     directions_by_reference:
       IEF:
       - pos
+      ^FVX:
+      - neg
       ^VIX:
       - pos
     sources:
@@ -50455,6 +50527,8 @@ episodes:
         - pos
         IEF:
         - pos
+        ^FVX:
+        - neg
 - date: '2012-06-01'
   theme: macro_data
   direction: mixed
@@ -50517,10 +50591,17 @@ episodes:
   directions_by_reference:
     IEF:
     - pos
+    ^FVX:
+    - neg
     ^VIX:
     - pos
   direction_sources:
     IEF:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    ^FVX:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
@@ -50559,6 +50640,8 @@ episodes:
     directions_by_reference:
       IEF:
       - pos
+      ^FVX:
+      - neg
       ^VIX:
       - pos
     sources:
@@ -50580,6 +50663,8 @@ episodes:
         - pos
         IEF:
         - pos
+        ^FVX:
+        - neg
 - date: '2013-01-01'
   theme: macro_data
   direction: mixed
@@ -50740,6 +50825,8 @@ episodes:
     - pos
     XLP:
     - pos
+    ^FVX:
+    - neg
   direction_sources:
     IEF:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
@@ -50747,6 +50834,11 @@ episodes:
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
       del lavoro — regime ed episodi storici (2000–2026).md
     XLP:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    ^FVX:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
@@ -50782,6 +50874,8 @@ episodes:
       - pos
       XLP:
       - pos
+      ^FVX:
+      - neg
     sources:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
@@ -50801,6 +50895,8 @@ episodes:
         - pos
         IEF:
         - pos
+        ^FVX:
+        - neg
 - date: '2014-11-04'
   theme: macro_data
   direction: ''
@@ -51553,8 +51649,15 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
   direction_sources:
     IEF:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    ^FVX:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
@@ -51588,6 +51691,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
@@ -51605,6 +51710,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
 - date: '2016-12-27'
   theme: macro_data
   direction: ''
@@ -51613,8 +51720,15 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
   direction_sources:
     IEF:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    ^FVX:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
@@ -51646,6 +51760,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
@@ -51662,6 +51778,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
 - date: '2018-02-02'
   theme: macro_data
   direction: mixed
@@ -51675,8 +51793,12 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
   direction_sources:
     IEF:
+    - card:2026-08-21/news_02.md
+    ^FVX:
     - card:2026-08-21/news_02.md
   directions_local:
   - neg
@@ -51777,6 +51899,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - card:2026-06-03/news_02.md
     - card:2026-06-04/news_02.md
@@ -51937,6 +52061,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-08-22/news_03.md
       subthemes_local:
       - activity_growth
@@ -52017,6 +52143,8 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - pos
     ^NDX:
@@ -52025,6 +52153,8 @@ episodes:
     - pos
   direction_sources:
     IEF:
+    - card:2026-09-24/news_01.md
+    ^FVX:
     - card:2026-09-24/news_01.md
     ^GSPC:
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
@@ -52071,6 +52201,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - pos
       ^NDX:
@@ -52094,6 +52226,8 @@ episodes:
         - pos
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-09-26/news_02.md
       subthemes_local: []
       directions_by_reference: {}
@@ -52445,6 +52579,9 @@ episodes:
   direction_review_excluded:
     IEF: 'ISM in decelerazione e nuovi dazi sulla Cina annunciati in seduta: la fonte
       non isola la release; eventi simultanei.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: ISM in decelerazione e
+      nuovi dazi sulla Cina annunciati in seduta: la fonte non isola la release; eventi
+      simultanei.'
   directions_local:
   - neg
   - pos
@@ -53802,10 +53939,14 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^TNX:
     - pos
   direction_sources:
     IEF:
+    - card:2026-09-17/news_04.md
+    ^FVX:
     - card:2026-09-17/news_04.md
     ^TNX:
     - card:2026-09-17/news_04.md
@@ -53835,6 +53976,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^TNX:
       - pos
     sources:
@@ -53852,6 +53995,8 @@ episodes:
         - pos
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-09-18/news_04.md
       subthemes_local:
       - activity_growth
@@ -54716,8 +54861,12 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
   direction_sources:
     IEF:
+    - card:2026-08-21/news_02.md
+    ^FVX:
     - card:2026-08-21/news_02.md
   directions_local:
   - neg
@@ -54811,6 +54960,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - card:2026-06-04/news_02.md
     - card:2026-06-05/news_02.md
@@ -54962,6 +55113,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-08-22/news_03.md
       subthemes_local:
       - labour_market
@@ -55231,6 +55384,9 @@ episodes:
   direction_review_excluded:
     IEF: 'Payroll di marzo sotto il consenso nel titolo ma disoccupazione e salari
       sopra, con l''HICP dell''area euro nello stesso giorno: verso non univoco.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di marzo sotto
+      il consenso nel titolo ma disoccupazione e salari sopra, con l''HICP dell''area
+      euro nello stesso giorno: verso non univoco.'
   directions_local:
   - neg
   - pos
@@ -55676,10 +55832,14 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^TNX:
     - pos
   direction_sources:
     IEF:
+    - card:2026-09-17/news_04.md
+    ^FVX:
     - card:2026-09-17/news_04.md
     ^TNX:
     - card:2026-09-17/news_04.md
@@ -55720,6 +55880,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^TNX:
       - pos
     sources:
@@ -55740,6 +55902,8 @@ episodes:
         - pos
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-09-18/news_04.md
       subthemes_local:
       - activity_growth
@@ -55874,8 +56038,12 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
   direction_sources:
     IEF:
+    - card:2026-08-27/news_01.md
+    ^FVX:
     - card:2026-08-27/news_01.md
   directions_local:
   - neg
@@ -55952,6 +56120,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - card:2026-06-06/news_01.md
     - card:2026-06-19/news_04.md
@@ -56062,6 +56232,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-08-31/news_06.md
       subthemes_local:
       - inflation_print
@@ -56147,10 +56319,14 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^TNX:
     - pos
   direction_sources:
     IEF:
+    - card:2026-08-31/news_06.md
+    ^FVX:
     - card:2026-08-31/news_06.md
     ^TNX:
     - card:2026-09-26/news_02.md
@@ -56212,6 +56388,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^TNX:
       - pos
     sources:
@@ -56307,6 +56485,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-09-02/news_05.md
       subthemes_local:
       - inflation_print
@@ -56371,6 +56551,8 @@ episodes:
     - pos
     XLP:
     - pos
+    ^FVX:
+    - neg
   direction_sources:
     IEF:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
@@ -56378,6 +56560,11 @@ episodes:
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
       del lavoro — regime ed episodi storici (2000–2026).md
     XLP:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    ^FVX:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
@@ -56414,6 +56601,8 @@ episodes:
       - pos
       XLP:
       - pos
+      ^FVX:
+      - neg
     sources:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
@@ -56434,6 +56623,8 @@ episodes:
         - pos
         IEF:
         - pos
+        ^FVX:
+        - neg
 - date: '2022-06-28'
   theme: macro_data
   direction: pos
@@ -56587,8 +56778,12 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
   direction_sources:
     IEF:
+    - card:2026-08-27/news_01.md
+    ^FVX:
     - card:2026-08-27/news_01.md
   directions_local:
   - neg
@@ -56640,6 +56835,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - card:2026-06-05/news_02.md
     - card:2026-06-19/news_04.md
@@ -56694,6 +56891,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-08-31/news_06.md
       subthemes_local:
       - labour_market
@@ -58386,6 +58585,8 @@ episodes:
     - pos
     XLP:
     - pos
+    ^FVX:
+    - neg
   direction_sources:
     IEF:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
@@ -58393,6 +58594,11 @@ episodes:
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
       del lavoro — regime ed episodi storici (2000–2026).md
     XLP:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    ^FVX:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
@@ -58427,6 +58633,8 @@ episodes:
       - pos
       XLP:
       - pos
+      ^FVX:
+      - neg
     sources:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
@@ -58446,6 +58654,8 @@ episodes:
         - pos
         IEF:
         - pos
+        ^FVX:
+        - neg
 - date: '2022-10-31'
   theme: macro_data
   direction: mixed
@@ -58593,8 +58803,12 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
   direction_sources:
     IEF:
+    - card:2026-08-22/news_03.md
+    ^FVX:
     - card:2026-08-22/news_03.md
   directions_local:
   - neg
@@ -58660,6 +58874,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - card:2026-06-16/news_03.md
     - card:2026-06-25/news_06.md
@@ -58749,6 +58965,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-08-24/news_06.md
       subthemes_local:
       - pmi
@@ -59138,8 +59356,12 @@ episodes:
   directions_by_reference:
     IEF:
     - pos
+    ^FVX:
+    - neg
   direction_sources:
     IEF:
+    - card:2026-08-21/news_02.md
+    ^FVX:
     - card:2026-08-21/news_02.md
   directions_local:
   - neg
@@ -59243,6 +59465,8 @@ episodes:
     directions_by_reference:
       IEF:
       - pos
+      ^FVX:
+      - neg
     sources:
     - card:2026-06-01/news_04.md
     - card:2026-06-23/news_06.md
@@ -59403,6 +59627,8 @@ episodes:
       directions_by_reference:
         IEF:
         - pos
+        ^FVX:
+        - neg
     - source: card:2026-08-22/news_03.md
       subthemes_local:
       - activity_growth
@@ -59616,8 +59842,12 @@ episodes:
   directions_by_reference:
     IEF:
     - pos
+    ^FVX:
+    - neg
   direction_sources:
     IEF:
+    - card:2026-08-21/news_04.md
+    ^FVX:
     - card:2026-08-21/news_04.md
   directions_local:
   - neg
@@ -59676,6 +59906,8 @@ episodes:
     directions_by_reference:
       IEF:
       - pos
+      ^FVX:
+      - neg
     sources:
     - card:2026-06-11/news_02.md
     - card:2026-06-17/news_04.md
@@ -59746,6 +59978,8 @@ episodes:
       directions_by_reference:
         IEF:
         - pos
+        ^FVX:
+        - neg
     - source: card:2026-08-23/news_04.md
       subthemes_local:
       - cpi_downside
@@ -60018,8 +60252,12 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
   direction_sources:
     IEF:
+    - card:2026-08-21/news_02.md
+    ^FVX:
     - card:2026-08-21/news_02.md
   directions_local:
   - neg
@@ -60111,6 +60349,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - card:2026-06-04/news_02.md
     - card:2026-06-05/news_02.md
@@ -60276,6 +60516,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-08-22/news_03.md
       subthemes_local:
       - labour_market
@@ -60525,10 +60767,14 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^TNX:
     - pos
   direction_sources:
     IEF:
+    - card:2026-09-17/news_04.md
+    ^FVX:
     - card:2026-09-17/news_04.md
     ^TNX:
     - card:2026-09-17/news_04.md
@@ -60560,6 +60806,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^TNX:
       - pos
     sources:
@@ -60577,6 +60825,8 @@ episodes:
         - pos
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-09-18/news_04.md
       subthemes_local:
       - activity_growth
@@ -61189,6 +61439,9 @@ episodes:
   direction_review_excluded:
     IEF: 'Michigan sopra attese ma attese d''inflazione a un anno in forte calo: fiducia
       (Treasury giù) e inflazione attesa (Treasury su) in senso opposto.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Michigan sopra attese ma
+      attese d''inflazione a un anno in forte calo: fiducia (Treasury giù) e inflazione
+      attesa (Treasury su) in senso opposto.'
   directions_local:
   - neg
   - pos
@@ -62837,10 +63090,14 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^TNX:
     - pos
   direction_sources:
     IEF:
+    - card:2026-09-26/news_02.md
+    ^FVX:
     - card:2026-09-26/news_02.md
     ^TNX:
     - card:2026-09-24/news_01.md
@@ -62880,6 +63137,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^TNX:
       - pos
     sources:
@@ -62906,6 +63165,8 @@ episodes:
         - pos
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di
         politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito
         (2007–2026)/Sorprese macro e reaction function dei mercati: fase del ciclo
@@ -62927,10 +63188,14 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^TNX:
     - pos
   direction_sources:
     IEF:
+    - card:2026-09-17/news_04.md
+    ^FVX:
     - card:2026-09-17/news_04.md
     ^TNX:
     - card:2026-09-17/news_04.md
@@ -62960,6 +63225,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^TNX:
       - pos
     sources:
@@ -62977,6 +63244,8 @@ episodes:
         - pos
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-09-18/news_04.md
       subthemes_local:
       - activity_growth
@@ -63294,8 +63563,12 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
   direction_sources:
     IEF:
+    - card:2026-08-22/news_03.md
+    ^FVX:
     - card:2026-08-22/news_03.md
   directions_local:
   - neg
@@ -63406,6 +63679,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - card:2026-06-07/news_03.md
     - card:2026-06-13/news_03.md
@@ -63590,6 +63865,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-08-23/news_04.md
       subthemes_local:
       - labour_market
@@ -63926,8 +64203,12 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
   direction_sources:
     IEF:
+    - card:2026-08-21/news_04.md
+    ^FVX:
     - card:2026-08-21/news_04.md
   directions_local:
   - neg
@@ -64024,6 +64305,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - card:2026-06-04/news_02.md
     - card:2026-06-06/news_01.md
@@ -64179,6 +64462,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-08-23/news_04.md
       subthemes_local:
       - labour_market
@@ -64508,10 +64793,14 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^TNX:
     - pos
   direction_sources:
     IEF:
+    - card:2026-08-22/news_03.md
+    ^FVX:
     - card:2026-08-22/news_03.md
     ^TNX:
     - card:2026-09-24/news_01.md
@@ -64625,6 +64914,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^TNX:
       - pos
     sources:
@@ -64803,6 +65094,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-09-01/news_05.md
       subthemes_local:
       - labour_market
@@ -65221,6 +65514,8 @@ episodes:
     - neg
     JPY=X:
     - neutral
+    ^FVX:
+    - pos
     ^N225:
     - neutral
   direction_sources:
@@ -65231,6 +65526,8 @@ episodes:
       Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
       come canale distinto dalla politica della Bank of Japan — regime ed episodi
       storici (2013–presente).md
+    ^FVX:
+    - card:2026-08-25/news_05.md
     ^N225:
     - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
       Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
@@ -65349,6 +65646,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - card:2026-06-01/news_04.md
     - card:2026-06-23/news_06.md
@@ -65531,6 +65830,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-08-25/news_06.md
       subthemes_local:
       - ism
@@ -65611,8 +65912,12 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
   direction_sources:
     IEF:
+    - card:2026-08-26/news_02.md
+    ^FVX:
     - card:2026-08-26/news_02.md
   directions_local:
   - neg
@@ -65694,6 +65999,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - card:2026-06-04/news_02.md
     - card:2026-06-05/news_02.md
@@ -65817,6 +66124,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-08-27/news_01.md
       subthemes_local:
       - inflation_print
@@ -66018,10 +66327,14 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^TNX:
     - pos
   direction_sources:
     IEF:
+    - card:2026-09-17/news_04.md
+    ^FVX:
     - card:2026-09-17/news_04.md
     ^TNX:
     - card:2026-09-17/news_04.md
@@ -66051,6 +66364,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^TNX:
       - pos
     sources:
@@ -66068,6 +66383,8 @@ episodes:
         - pos
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-09-18/news_04.md
       subthemes_local:
       - activity_growth
@@ -66880,10 +67197,14 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^TNX:
     - pos
   direction_sources:
     IEF:
+    - card:2026-09-17/news_04.md
+    ^FVX:
     - card:2026-09-17/news_04.md
     ^TNX:
     - card:2026-09-17/news_04.md
@@ -66913,6 +67234,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^TNX:
       - pos
     sources:
@@ -66930,6 +67253,8 @@ episodes:
         - pos
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-09-18/news_04.md
       subthemes_local:
       - activity_growth
@@ -68950,6 +69275,9 @@ episodes:
   direction_review_excluded:
     IEF: 'JOLTS sopra attese e ISM in contrazione nello stesso giorno del lancio missilistico
       iraniano su Israele: eventi simultanei di verso opposto.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: JOLTS sopra attese e ISM
+      in contrazione nello stesso giorno del lancio missilistico iraniano su Israele:
+      eventi simultanei di verso opposto.'
   directions_local:
   - neg
   - pos
@@ -69402,8 +69730,12 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
   direction_sources:
     IEF:
+    - card:2026-09-05/news_03.md
+    ^FVX:
     - card:2026-09-05/news_03.md
   directions_local:
   - neg
@@ -69468,6 +69800,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - card:2026-06-05/news_02.md
     - card:2026-06-09/news_04.md
@@ -69570,6 +69904,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-09-07/news_04.md
       subthemes_local:
       - labour_market
@@ -70333,6 +70669,8 @@ episodes:
   direction_review_excluded:
     IEF: 'Payroll di poco sopra attese ma disoccupazione in salita: beat modesto e
       segnali opposti nello stesso rapporto.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di poco sopra attese
+      ma disoccupazione in salita: beat modesto e segnali opposti nello stesso rapporto.'
   directions_local:
   - neg
   - pos
@@ -71480,6 +71818,8 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - neg
     ^NDX:
@@ -71488,6 +71828,8 @@ episodes:
     - pos
   direction_sources:
     IEF:
+    - card:2026-08-25/news_05.md
+    ^FVX:
     - card:2026-08-25/news_05.md
     ^GSPC:
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
@@ -71638,6 +71980,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - neg
       ^NDX:
@@ -71869,6 +72213,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: card:2026-08-25/news_06.md
       subthemes_local:
       - labour_market
@@ -73265,6 +73611,9 @@ episodes:
   direction_review_excluded:
     IEF: 'Payroll sopra attese dentro lo shock tariffario del Liberation Day e della
       ritorsione cinese: la release non è separabile.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll sopra attese dentro
+      lo shock tariffario del Liberation Day e della ritorsione cinese: la release
+      non è separabile.'
   directions_local:
   - neg
   - pos
@@ -74436,8 +74785,15 @@ episodes:
   directions_by_reference:
     IEF:
     - neg
+    ^FVX:
+    - pos
   direction_sources:
     IEF:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    ^FVX:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
@@ -74471,6 +74827,8 @@ episodes:
     directions_by_reference:
       IEF:
       - neg
+      ^FVX:
+      - pos
     sources:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
@@ -74488,6 +74846,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
 - date: '2025-06-30'
   theme: macro_data
   direction: mixed
@@ -75249,6 +75609,8 @@ episodes:
     - neg
     XLP:
     - pos
+    ^FVX:
+    - neg
   direction_sources:
     IEF:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
@@ -75261,6 +75623,11 @@ episodes:
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
       del lavoro — regime ed episodi storici (2000–2026).md
     XLP:
+    - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
+      sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
+      statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
+      del lavoro — regime ed episodi storici (2000–2026).md
+    ^FVX:
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
@@ -75341,6 +75708,8 @@ episodes:
       - neg
       XLP:
       - pos
+      ^FVX:
+      - neg
     sources:
     - card:2026-07-31/news_07.md
     - card:2026-08-02/news_03.md
@@ -75429,6 +75798,8 @@ episodes:
         - pos
         IEF:
         - pos
+        ^FVX:
+        - neg
     - source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
         e politica economica cinese — regime ed episodi storici (2022–2026).md
       subthemes_local:
@@ -77282,6 +77653,8 @@ episodes:
   direction_review_excluded:
     IEF: 'Release non identificata con certezza nelle schede (una la dichiara non
       ricostruita): verso non attribuibile.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Release non identificata
+      con certezza nelle schede (una la dichiara non ricostruita): verso non attribuibile.'
   directions_local:
   - neg
   - pos
@@ -78269,6 +78642,8 @@ episodes:
   direction_review_excluded:
     IEF: 'Conference Board con titolo in salita ma differenziale del lavoro crollato:
       segnali opposti sui Treasury.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board con titolo
+      in salita ma differenziale del lavoro crollato: segnali opposti sui Treasury.'
   directions_local:
   - neg
   declared: false
@@ -78326,6 +78701,9 @@ episodes:
   direction_review_excluded:
     IEF: 'Rimbalzo del Michigan trainato dal calo della benzina: fiducia più alta
       (Treasury giù) e inflazione attesa più bassa (Treasury su) insieme.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Rimbalzo del Michigan trainato
+      dal calo della benzina: fiducia più alta (Treasury giù) e inflazione attesa
+      più bassa (Treasury su) insieme.'
   directions_local:
   - pos
   declared: false

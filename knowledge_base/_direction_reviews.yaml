@@ -8472,3 +8472,393 @@ reviews:
   reason: Datazione discordante fra preliminare e finale nella research, e ^FVX già escluso per la stessa
     data.
   status: excluded
+- date: '2003-05-30'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Michigan finale: il salto delle attese era
+    già nel preliminare; la fonte non riporta la sorpresa della release finale rispetto al consenso.'
+  status: excluded
+- date: '2004-01-27'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board in rialzo ma sotto il consenso
+    di 99,0: variazione e sorpresa di segno opposto, verso non univoco sui Treasury.'
+  status: excluded
+- date: '2005-09-27'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board −18,9 punti, il calo più ampio
+    dal 1990 (Katrina e benzina): sorpresa negativa netta sulla domanda.'
+  direction: neg
+- date: '2005-10-25'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board −2,5 punti: calo modesto,
+    la fonte non riporta il consenso; segno della sorpresa incerto.'
+  status: excluded
+- date: '2008-10-28'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board al minimo storico (38,0 da
+    61,4) alla vigilia di un FOMC atteso in taglio: dato debole e attesa di allentamento nello stesso
+    verso sui Treasury.'
+  direction: neg
+- date: '2008-12-05'
+  theme: macro_data
+  reference: ^FVX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di novembre −533k, il peggiore dal
+    1974, ben sotto le attese: più allentamento atteso.'
+  direction: neg
+- date: '2009-04-28'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board +12,3 punti dal minimo di
+    crisi: sorpresa positiva netta sulle attese di domanda.'
+  direction: pos
+- date: '2009-05-26'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board +14,1 punti, attese +21,3:
+    il rimbalzo più forte del ciclo, sorpresa positiva netta.'
+  direction: pos
+- date: '2011-08-30'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board crollato a 44,5 da 59,2 (debt
+    ceiling e downgrade): sorpresa negativa netta sulla domanda.'
+  direction: neg
+- date: '2012-12-27'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board −6,4 punti per il fiscal cliff:
+    sorpresa negativa sulla domanda attesa.'
+  direction: neg
+- date: '2013-10-29'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board −11% per shutdown e debt ceiling:
+    sorpresa negativa sulla domanda attesa.'
+  direction: neg
+- date: '2016-11-23'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Michigan finale in balzo post-elettorale (93,8
+    da 87,2): fiducia sopra le attese.'
+  direction: pos
+- date: '2016-12-27'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board al massimo da 15 anni, attese
+    al massimo da 13: sorpresa positiva netta.'
+  direction: pos
+- date: '2018-02-02'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_02.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di gennaio con salari orari +2,9% annuo,
+    sopra attese: più strette Fed prezzate.'
+  direction: pos
+- date: '2018-03-09'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-24/news_01.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di febbraio +313k contro ~200k attesi:
+    lavoro forte, più rialzi prezzati (salari tenui ma titolo dominante).'
+  direction: pos
+- date: '2019-08-01'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_02.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: ISM in decelerazione e nuovi dazi sulla Cina
+    annunciati in seduta: la fonte non isola la release; eventi simultanei.'
+  status: excluded
+- date: '2021-04-15'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-17/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Vendite al dettaglio +9,8% contro +5,9% attese:
+    crescita nominale molto sopra il consenso.'
+  direction: pos
+- date: '2022-02-04'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_02.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll +467k contro 150k attesi: sorpresa
+    di crescita che anticipa la stretta.'
+  direction: pos
+- date: '2022-04-01'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-23/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di marzo sotto il consenso nel titolo
+    ma disoccupazione e salari sopra, con l''HICP dell''area euro nello stesso giorno: verso non univoco.'
+  status: excluded
+- date: '2022-05-17'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-17/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Vendite di aprile con control group sopra attese
+    e Powell pronto a stringere: dato forte e Fed hawkish.'
+  direction: pos
+- date: '2022-06-03'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-27/news_01.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di maggio +390k sopra attese: allontana
+    la pausa Fed.'
+  direction: pos
+- date: '2022-06-10'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-31/news_06.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: CPI di maggio sopra attese (8,6%), con attese
+    d''inflazione del Michigan in rialzo: più stretta prezzata.'
+  direction: pos
+- date: '2022-06-24'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Michigan finale al minimo storico (50,0), con
+    le attese d''inflazione di lungo periodo riviste al ribasso rispetto al preliminare: meno pressione
+    sulla stretta.'
+  direction: neg
+- date: '2022-07-08'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-27/news_01.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di giugno +372k contro ~265k attesi:
+    consolida il rialzo da 75 pb.'
+  direction: pos
+- date: '2022-10-25'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board −5,3 punti, sotto attese,
+    con presente e attese entrambi in calo: sorpresa negativa sulla domanda.'
+  direction: neg
+- date: '2022-11-01'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-22/news_03.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: ISM manifatturiero e aperture di posti (JOLTS)
+    sopra attese alla vigilia del FOMC: attività e lavoro resilienti.'
+  direction: pos
+- date: '2022-12-01'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_02.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: ISM a 49,0, prima contrazione del ciclo e sotto
+    attese, con core PCE più morbido: sorpresa debole su attività e prezzi.'
+  direction: neg
+- date: '2022-12-13'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: CPI di novembre sotto attese alla vigilia del
+    FOMC: raffreddamento dei prezzi.'
+  direction: neg
+- date: '2023-02-03'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_02.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll +517k contro 188k attesi: sorpresa
+    record, cancella il pivot prezzato.'
+  direction: pos
+- date: '2023-02-15'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-17/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Vendite di gennaio +3,0% contro +1,9% attese:
+    cancellano i tagli attesi.'
+  direction: pos
+- date: '2023-06-16'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Michigan sopra attese ma attese d''inflazione
+    a un anno in forte calo: fiducia (Treasury giù) e inflazione attesa (Treasury su) in senso opposto.'
+  status: excluded
+- date: '2023-10-06'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-26/news_02.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di settembre +336k, quasi il doppio
+    del consenso.'
+  direction: pos
+- date: '2023-10-17'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-17/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Vendite di settembre +0,7% contro +0,3% attese.'
+  direction: pos
+- date: '2023-12-08'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-22/news_03.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di novembre sopra attese con disoccupazione
+    in calo e fiducia in netto rialzo: resilienza a fine stretta.'
+  direction: pos
+- date: '2024-01-05'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di dicembre +216k contro 175k attesi:
+    rinvia i tagli.'
+  direction: pos
+- date: '2024-02-02'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-22/news_03.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di gennaio +353k, più del doppio del
+    consenso.'
+  direction: pos
+- date: '2024-04-01'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-25/news_05.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: ISM manifatturiero sopra 50 per la prima volta
+    da oltre un anno, sopra attese: meno tagli prezzati.'
+  direction: pos
+- date: '2024-04-05'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-26/news_02.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di marzo +303k, molto sopra il consenso:
+    rinvio dei tagli.'
+  direction: pos
+- date: '2024-04-15'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-17/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Vendite di marzo +0,7% contro +0,4%, control
+    group +1,1%.'
+  direction: pos
+- date: '2024-07-16'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-17/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Vendite di giugno con control group +0,9% contro
+    +0,2% atteso.'
+  direction: pos
+- date: '2024-10-01'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-22/news_03.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: JOLTS sopra attese e ISM in contrazione nello
+    stesso giorno del lancio missilistico iraniano su Israele: eventi simultanei di verso opposto.'
+  status: excluded
+- date: '2024-10-04'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-05/news_03.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di settembre +254k contro ~150k attesi,
+    revisioni al rialzo.'
+  direction: pos
+- date: '2024-12-06'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_02.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di poco sopra attese ma disoccupazione
+    in salita: beat modesto e segnali opposti nello stesso rapporto.'
+  status: excluded
+- date: '2025-01-10'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-25/news_05.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di dicembre +256k contro ~160k attesi:
+    il mercato cancella i tagli.'
+  direction: pos
+- date: '2025-04-04'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-27/news_01.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll sopra attese dentro lo shock tariffario
+    del Liberation Day e della ritorsione cinese: la release non è separabile.'
+  status: excluded
+- date: '2025-05-27'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board +12,3 punti dopo la tregua
+    USA-Cina, ben sopra attese.'
+  direction: pos
+- date: '2025-09-30'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board in calo e sotto attese, differenziale
+    del lavoro al minimo da marzo 2021: segnale di lavoro in deterioramento.'
+  direction: neg
+- date: '2026-06-04'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-27/news_01.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Release non identificata con certezza nelle
+    schede (una la dichiara non ricostruita): verso non attribuibile.'
+  status: excluded
+- date: '2026-06-30'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Conference Board con titolo in salita ma differenziale
+    del lavoro crollato: segnali opposti sui Treasury.'
+  status: excluded
+- date: '2026-07-17'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo sul mercato
+    del lavoro — regime ed episodi storici (2000–2026)/Il consumatore statunitense- sentimento dichiarato,
+    spesa realizzata e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026).md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Rimbalzo del Michigan trainato dal calo della
+    benzina: fiducia più alta (Treasury giù) e inflazione attesa più bassa (Treasury su) insieme.'
+  status: excluded
