@@ -341,14 +341,17 @@ def cmd_backfill(day=None, live=False, skip=()) -> None:
             continue
         issues = []
         entries = parse_card(card, issues=issues)
+        sha = _sha(card)
+        # Lo stato di acquisizione giudica la versione che ha prodotto la riga:
+        # una correzione successiva e ambigua non toglie dal track record una
+        # previsione già registrata (la segnala solo revised_at, più sotto).
         for old in by_card.get(str(card.relative_to(DAILY_DIR)), []):
-            if old.get("registration") != "live":
+            if old.get("registration") != "live" and old.get("card_sha", "") in ("", sha):
                 old["ingestion_status"] = "quarantine" if issues else "ok"
         if issues:
             for issue in issues:
                 print("[quarantena] " + issue, file=sys.stderr)
             continue
-        sha = _sha(card)
         new = {}
         for e in entries:
             if e["forecast_id"] in new:

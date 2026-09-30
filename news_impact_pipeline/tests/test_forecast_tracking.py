@@ -108,6 +108,17 @@ class ForecastTests(unittest.TestCase):
         self.run_quiet(ft.cmd_backfill)
         self.assertEqual(before, ft.LEDGER_PATH.read_text())
 
+    def test_correzione_ambigua_non_mette_in_quarantena_il_registrato(self):
+        self.run_quiet(ft.cmd_backfill)
+        # Mediana fuori da p25-p75: la revisione è ambigua, la versione registrata no.
+        self.card.write_text(card(bz="+5.00%"), encoding="utf-8")
+        with contextlib.redirect_stderr(io.StringIO()):
+            self.run_quiet(ft.cmd_backfill)
+        rows = [r for r in ft.load_ledger() if r["asset"] == "BZ=F"]
+        self.assertTrue(rows)
+        self.assertEqual({r["ingestion_status"] for r in rows}, {"ok"})
+        self.assertEqual({float(r["expected_median"]) for r in rows}, {0.50})
+
     def test_evaluate_salva_ancora_e_target_e_recheck_torna(self):
         self.run_quiet(ft.cmd_backfill)
         self.run_quiet(ft.cmd_evaluate)
