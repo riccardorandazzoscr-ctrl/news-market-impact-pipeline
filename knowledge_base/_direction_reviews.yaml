@@ -8862,3 +8862,454 @@ reviews:
   reason: 'Rendimento a 5 anni, specchio del verso su IEF: Rimbalzo del Michigan trainato dal calo della
     benzina: fiducia più alta (Treasury giù) e inflazione attesa più bassa (Treasury su) insieme.'
   status: excluded
+- date: '2021-12-09'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-26/news_02.md
+  reason: 'Vigilia del CPI di novembre (uscito il 10): nessuna release d''inflazione USA in quella data.'
+  status: excluded
+- date: '2021-12-09'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-26/news_02.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: Vigilia del CPI di novembre (uscito il 10):
+    nessuna release d''inflazione USA in quella data.'
+  status: excluded
+- date: '2021-12-09'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-26/news_02.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Vigilia del CPI di novembre (uscito il 10):
+    nessuna release d''inflazione USA in quella data.'
+  status: excluded
+- date: '2022-06-30'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-23/news_04.md
+  reason: Core PCE di maggio 2022 al 4,7% contro 4,8% atteso, con spesa reale rivista al ribasso.
+  direction: pos
+  mechanism:
+  - inflation_print
+- date: '2022-06-30'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-23/news_04.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: Core PCE di maggio 2022 al 4,7% contro 4,8%
+    atteso, con spesa reale rivista al ribasso.'
+  direction: neg
+  mechanism:
+  - inflation_print
+- date: '2022-06-30'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-23/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Core PCE di maggio 2022 al 4,7% contro 4,8%
+    atteso, con spesa reale rivista al ribasso.'
+  direction: neg
+  mechanism:
+  - inflation_print
+- date: '2022-07-29'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-23/news_04.md
+  reason: 'Employment cost index del secondo trimestre e core PCE di giugno sopra attese: costo del lavoro
+    persistente.'
+  direction: neg
+  mechanism:
+  - inflation_print
+- date: '2022-07-29'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-23/news_04.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: Employment cost index del secondo trimestre
+    e core PCE di giugno sopra attese: costo del lavoro persistente.'
+  direction: pos
+  mechanism:
+  - inflation_print
+- date: '2022-07-29'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-23/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Employment cost index del secondo trimestre
+    e core PCE di giugno sopra attese: costo del lavoro persistente.'
+  direction: pos
+  mechanism:
+  - inflation_print
+- date: '2022-09-13'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-21/news_04.md
+  reason: CPI di agosto 2022 all'8,3% contro 8,1%, core 6,3% contro 6,1%.
+  direction: neg
+  mechanism:
+  - inflation_print
+- date: '2022-09-13'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: CPI di agosto 2022 all''8,3% contro 8,1%, core
+    6,3% contro 6,1%.'
+  direction: pos
+  mechanism:
+  - inflation_print
+- date: '2022-09-30'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-23/news_04.md
+  reason: Core PCE di agosto 2022 al 4,9% contro 4,7% atteso.
+  direction: neg
+  mechanism:
+  - inflation_print
+- date: '2022-09-30'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-23/news_04.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: Core PCE di agosto 2022 al 4,9% contro 4,7%
+    atteso.'
+  direction: pos
+  mechanism:
+  - inflation_print
+- date: '2022-09-30'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-23/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Core PCE di agosto 2022 al 4,9% contro 4,7%
+    atteso.'
+  direction: pos
+  mechanism:
+  - inflation_print
+- date: '2022-10-13'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-21/news_02.md
+  reason: 'CPI di settembre 2022 con core al 6,6% contro 6,5%: sorpresa al rialzo (la reazione intraday
+    invertita non conta per il verso).'
+  direction: neg
+  mechanism:
+  - inflation_print
+- date: '2022-10-13'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-21/news_02.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: CPI di settembre 2022 con core al 6,6% contro
+    6,5%: sorpresa al rialzo (la reazione intraday invertita non conta per il verso).'
+  direction: pos
+  mechanism:
+  - inflation_print
+- date: '2022-10-13'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_02.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: CPI di settembre 2022 con core al 6,6% contro
+    6,5%: sorpresa al rialzo (la reazione intraday invertita non conta per il verso).'
+  direction: pos
+  mechanism:
+  - inflation_print
+- date: '2022-11-10'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-21/news_04.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: CPI di ottobre 2022 al 7,7% contro 8,0% atteso:
+    prima sorpresa disinflazionistica netta.'
+  direction: neg
+  mechanism:
+  - inflation_print
+- date: '2022-11-10'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: CPI di ottobre 2022 al 7,7% contro 8,0% atteso:
+    prima sorpresa disinflazionistica netta.'
+  direction: neg
+  mechanism:
+  - inflation_print
+- date: '2022-11-30'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-26/news_02.md
+  reason: 'Nessun dato d''inflazione USA: discorso di Powell e dati misti (PIL rivisto su, ADP debole)
+    nella stessa giornata.'
+  status: excluded
+- date: '2022-11-30'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-26/news_02.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: Nessun dato d''inflazione USA: discorso di
+    Powell e dati misti (PIL rivisto su, ADP debole) nella stessa giornata.'
+  status: excluded
+- date: '2022-11-30'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-26/news_02.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Nessun dato d''inflazione USA: discorso di
+    Powell e dati misti (PIL rivisto su, ADP debole) nella stessa giornata.'
+  status: excluded
+- date: '2023-02-14'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-21/news_04.md
+  reason: CPI di gennaio 2023 al 6,4% contro 6,2% atteso.
+  direction: neg
+  mechanism:
+  - inflation_print
+- date: '2023-02-14'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-21/news_04.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: CPI di gennaio 2023 al 6,4% contro 6,2% atteso.'
+  direction: pos
+  mechanism:
+  - inflation_print
+- date: '2023-02-14'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: CPI di gennaio 2023 al 6,4% contro 6,2% atteso.'
+  direction: pos
+  mechanism:
+  - inflation_print
+- date: '2023-06-01'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-23/news_04.md
+  reason: 'Release non identificata: la scheda parla genericamente di dati d''inflazione in fase di pausa
+    Fed.'
+  status: excluded
+- date: '2023-06-01'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-23/news_04.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: Release non identificata: la scheda parla
+    genericamente di dati d''inflazione in fase di pausa Fed.'
+  status: excluded
+- date: '2023-06-01'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-23/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Release non identificata: la scheda parla genericamente
+    di dati d''inflazione in fase di pausa Fed.'
+  status: excluded
+- date: '2023-07-12'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-21/news_02.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: CPI di giugno 2023 al 3,0% contro 3,1%, core
+    4,8% contro 5,0%.'
+  direction: neg
+  mechanism:
+  - inflation_print
+- date: '2023-07-12'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_02.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: CPI di giugno 2023 al 3,0% contro 3,1%, core
+    4,8% contro 5,0%.'
+  direction: neg
+  mechanism:
+  - inflation_print
+- date: '2023-11-14'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-26/news_02.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: CPI di ottobre 2023 piatto sul mese, headline
+    e core sotto attese.'
+  direction: neg
+  mechanism:
+  - inflation_print
+- date: '2023-11-14'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-26/news_02.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: CPI di ottobre 2023 piatto sul mese, headline
+    e core sotto attese.'
+  direction: neg
+  mechanism:
+  - inflation_print
+- date: '2024-07-11'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-21/news_02.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: CPI di giugno 2024 negativo sul mese, sotto
+    attese.'
+  direction: neg
+  mechanism:
+  - inflation_print
+- date: '2024-07-11'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_02.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: CPI di giugno 2024 negativo sul mese, sotto
+    attese.'
+  direction: neg
+  mechanism:
+  - inflation_print
+- date: '2024-09-11'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-21/news_04.md
+  reason: 'CPI di agosto 2024 con headline sotto attese (2,5% contro 2,6%) ma core mensile sopra (0,3%
+    contro 0,2%): segnali opposti, e le schede lo leggono in versi diversi.'
+  status: excluded
+- date: '2024-09-11'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-21/news_04.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: CPI di agosto 2024 con headline sotto attese
+    (2,5% contro 2,6%) ma core mensile sopra (0,3% contro 0,2%): segnali opposti, e le schede lo leggono
+    in versi diversi.'
+  status: excluded
+- date: '2024-09-11'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: CPI di agosto 2024 con headline sotto attese
+    (2,5% contro 2,6%) ma core mensile sopra (0,3% contro 0,2%): segnali opposti, e le schede lo leggono
+    in versi diversi.'
+  status: excluded
+- date: '2025-02-09'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-31/news_06.md
+  reason: 'Domenica: nessun CPI USA; la release di quel giorno era cinese. Data incoerente con la descrizione.'
+  status: excluded
+- date: '2025-02-09'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-31/news_06.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: Domenica: nessun CPI USA; la release di quel
+    giorno era cinese. Data incoerente con la descrizione.'
+  status: excluded
+- date: '2025-02-09'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-31/news_06.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Domenica: nessun CPI USA; la release di quel
+    giorno era cinese. Data incoerente con la descrizione.'
+  status: excluded
+- date: '2025-08-12'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-26/news_02.md
+  reason: 'CPI di luglio 2025 con headline sotto attese (2,7% contro 2,8%) e core sopra (3,1% contro 3,0%):
+    segnali opposti.'
+  status: excluded
+- date: '2025-08-12'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-26/news_02.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: CPI di luglio 2025 con headline sotto attese
+    (2,7% contro 2,8%) e core sopra (3,1% contro 3,0%): segnali opposti.'
+  status: excluded
+- date: '2025-08-12'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-26/news_02.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: CPI di luglio 2025 con headline sotto attese
+    (2,7% contro 2,8%) e core sopra (3,1% contro 3,0%): segnali opposti.'
+  status: excluded
+- date: '2025-12-10'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-23/news_04.md
+  reason: 'Giornata del FOMC (taglio con dot plot più restrittivo): nessuna release d''inflazione separabile.'
+  status: excluded
+- date: '2025-12-10'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-23/news_04.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: Giornata del FOMC (taglio con dot plot più
+    restrittivo): nessuna release d''inflazione separabile.'
+  status: excluded
+- date: '2025-12-10'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-23/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Giornata del FOMC (taglio con dot plot più
+    restrittivo): nessuna release d''inflazione separabile.'
+  status: excluded
+- date: '2026-04-30'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-23/news_04.md
+  reason: Release non identificata con certezza e decisione di policy ravvicinata nella stessa finestra.
+  status: excluded
+- date: '2026-04-30'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-23/news_04.md
+  reason: 'Rendimento a 10 anni, specchio del verso su IEF: Release non identificata con certezza e decisione
+    di policy ravvicinata nella stessa finestra.'
+  status: excluded
+- date: '2026-04-30'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-23/news_04.md
+  reason: 'Rendimento a 5 anni, specchio del verso su IEF: Release non identificata con certezza e decisione
+    di policy ravvicinata nella stessa finestra.'
+  status: excluded
+- date: '2022-03-02'
+  theme: macro_data
+  reference: IEAG.AS
+  source: 2026-08-20/news_03.md
+  reason: Flash HICP di febbraio 2022 al 5,8% contro 5,5-5,6% atteso.
+  direction: neg
+  mechanism:
+  - inflation_print
+  - eurozone_release
+- date: '2022-04-01'
+  theme: macro_data
+  reference: IEAG.AS
+  source: 2026-08-20/news_03.md
+  reason: Flash HICP di marzo 2022 al 7,5% contro ~6,6% atteso.
+  direction: neg
+  mechanism:
+  - inflation_print
+  - eurozone_release
+- date: '2022-06-30'
+  theme: macro_data
+  reference: IEAG.AS
+  source: 2026-08-20/news_03.md
+  reason: 'La flash HICP di giugno 2022 uscì il 1° luglio, non il 30 giugno: data incoerente con la descrizione.'
+  status: excluded
+- date: '2022-07-29'
+  theme: macro_data
+  reference: IEAG.AS
+  source: 2026-08-20/news_03.md
+  reason: Flash HICP di luglio 2022 all'8,9% contro 8,6% atteso.
+  direction: neg
+  mechanism:
+  - inflation_print
+  - eurozone_release
+- date: '2022-08-31'
+  theme: macro_data
+  reference: IEAG.AS
+  source: 2026-08-20/news_03.md
+  reason: Flash HICP di agosto 2022 al 9,1% contro 9,0% atteso.
+  direction: neg
+  mechanism:
+  - inflation_print
+  - eurozone_release
+- date: '2022-09-30'
+  theme: macro_data
+  reference: IEAG.AS
+  source: 2026-08-20/news_03.md
+  reason: Flash HICP di settembre 2022 al 10,0% contro 9,7% atteso.
+  direction: neg
+  mechanism:
+  - inflation_print
+  - eurozone_release
+- date: '2022-11-30'
+  theme: macro_data
+  reference: IEAG.AS
+  source: 2026-08-20/news_03.md
+  reason: 'Flash HICP di novembre 2022 al 10,0% contro 10,4% atteso: prima discesa dal picco.'
+  direction: pos
+  mechanism:
+  - inflation_print
+  - eurozone_release
+- date: '2023-01-04'
+  theme: macro_data
+  reference: IEAG.AS
+  source: 2026-08-20/news_03.md
+  reason: 'La flash HICP di dicembre 2022 uscì il 6 gennaio 2023: data incoerente con la descrizione.'
+  status: excluded

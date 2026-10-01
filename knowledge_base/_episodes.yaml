@@ -1,5 +1,5 @@
-generated_at: '2026-09-30T21:51:26'
-num_episodes: 1206
+generated_at: '2026-10-01T16:08:48'
+num_episodes: 1228
 episodes:
 - date: '1984-01-01'
   theme: commodity_energy
@@ -166,6 +166,7 @@ episodes:
     - card:2026-09-28/news_01.md
     - card:2026-09-29/news_01.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
   directions_local:
   - neg
   - pos
@@ -199,7 +200,7 @@ episodes:
   - military_escalation
   - sanctions
   - shipping_chokepoint
-  n_sources: 21
+  n_sources: 22
   events:
   - event_id: 2011-12-27:commodity_energy:-
     geo: ''
@@ -233,6 +234,7 @@ episodes:
     - card:2026-09-28/news_01.md
     - card:2026-09-29/news_01.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-05/news_01.md
@@ -346,6 +348,13 @@ episodes:
       subthemes_local:
       - hormuz
       - iran
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-01/news_03.md
+      subthemes_local:
+      - hormuz
       - shipping_chokepoint
       directions_by_reference:
         BZ=F:
@@ -558,6 +567,7 @@ episodes:
     - card:2026-09-28/news_01.md
     - card:2026-09-29/news_01.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
   directions_local:
   - neg
   - pos
@@ -606,7 +616,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 27
+  n_sources: 28
   events:
   - event_id: 2012-01-23:commodity_energy:-
     geo: ''
@@ -649,6 +659,7 @@ episodes:
     - card:2026-09-28/news_01.md
     - card:2026-09-29/news_01.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-08/news_01.md
@@ -784,6 +795,13 @@ episodes:
       subthemes_local:
       - iran
       - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-01/news_03.md
+      subthemes_local:
+      - hormuz
+      - supply_disruption
       directions_by_reference:
         BZ=F:
         - pos
@@ -2136,7 +2154,7 @@ episodes:
   - infrastructure_attack
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 31
+  n_sources: 32
   events:
   - event_id: 2019-05-12:commodity_energy:-
     geo: ''
@@ -2178,6 +2196,7 @@ episodes:
     - card:2026-09-18/news_01.md
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
+    - card:2026-10-01/news_03.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-05/news_01.md
@@ -2329,6 +2348,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-10-01/news_03.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
       subthemes_local: []
       directions_by_reference: {}
@@ -2360,6 +2382,7 @@ episodes:
     - card:2026-09-28/news_01.md
     - card:2026-09-29/news_01.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
   directions_local:
   - neg
   - pos
@@ -2398,7 +2421,7 @@ episodes:
   - shipping_chokepoint
   - supply_disruption
   - upstream_export_strike
-  n_sources: 38
+  n_sources: 39
   events:
   - event_id: 2019-05-13:commodity_energy:-
     geo: ''
@@ -2453,6 +2476,7 @@ episodes:
     - card:2026-09-28/news_01.md
     - card:2026-09-29/news_01.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
     evidence:
     - source: card:2026-06-01/news_01.md
       subthemes_local: []
@@ -2646,6 +2670,13 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-10-01/news_03.md
+      subthemes_local:
+      - infrastructure_attack
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
 - date: '2019-06-13'
   theme: commodity_energy
   direction: mixed
@@ -2674,6 +2705,7 @@ episodes:
     - card:2026-09-28/news_01.md
     - card:2026-09-29/news_01.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
   directions_local:
   - neg
   - pos
@@ -2718,7 +2750,7 @@ episodes:
   - iran
   - military_escalation
   - shipping_chokepoint
-  n_sources: 34
+  n_sources: 35
   events:
   - event_id: 2019-06-13:commodity_energy:-
     geo: ''
@@ -2764,6 +2796,7 @@ episodes:
     - card:2026-09-28/news_01.md
     - card:2026-09-29/news_01.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-01/news_01.md
@@ -2928,6 +2961,13 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-10-01/news_03.md
+      subthemes_local:
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
       subthemes_local: []
       directions_by_reference: {}
@@ -2963,6 +3003,7 @@ episodes:
     - card:2026-09-28/news_01.md
     - card:2026-09-29/news_01.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
   directions_local:
   - pos
   declared: true
@@ -2973,11 +3014,12 @@ episodes:
   - military_escalation
   - negotiation_track
   - sanctions
+  - shipping_chokepoint
   subthemes_local:
   - hormuz
   - iran
   - military_escalation
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2019-06-20:commodity_energy:-
     geo: ''
@@ -2994,6 +3036,7 @@ episodes:
     - card:2026-09-28/news_01.md
     - card:2026-09-29/news_01.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
     evidence:
     - source: card:2026-09-25/news_02.md
       subthemes_local:
@@ -3027,6 +3070,14 @@ episodes:
         - pos
     - source: card:2026-09-30/news_01.md
       subthemes_local:
+      - iran
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-01/news_03.md
+      subthemes_local:
+      - hormuz
       - iran
       - military_escalation
       directions_by_reference:
@@ -10285,6 +10336,7 @@ episodes:
     - card:2026-09-28/news_01.md
     - card:2026-09-29/news_01.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
   directions_local:
   - neg
   - pos
@@ -10340,7 +10392,7 @@ episodes:
   - military_escalation
   - oil_supply_shock
   - shipping_chokepoint
-  n_sources: 44
+  n_sources: 45
   events:
   - event_id: 2025-06-13:commodity_energy:-
     geo: ''
@@ -10397,6 +10449,7 @@ episodes:
     - card:2026-09-28/news_01.md
     - card:2026-09-29/news_01.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-01/news_01.md
@@ -10575,6 +10628,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-09-30/news_01.md
+      subthemes_local:
+      - iran
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-01/news_03.md
       subthemes_local:
       - iran
       - military_escalation
@@ -13158,6 +13218,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -13236,6 +13297,7 @@ episodes:
   - safe_haven_unwind
   - safe_haven_vs_supply_regime
   - sanctions
+  - shipping_chokepoint
   - strait_of_hormuz
   - strategic_reserve_release
   - tariff_room
@@ -13248,7 +13310,7 @@ episodes:
   - oil_supply_shock
   - safe_haven_flows
   - shipping_chokepoint
-  n_sources: 20
+  n_sources: 21
   events:
   - event_id: 2026-03-02:commodity_energy:-
     geo: ''
@@ -13295,6 +13357,7 @@ episodes:
     - card:2026-08-13/news_03.md
     - card:2026-08-15/news_02.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -13353,6 +13416,15 @@ episodes:
       subthemes_local: []
       directions_by_reference: {}
     - source: card:2026-09-30/news_01.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - oil_supply_shock
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-01/news_03.md
       subthemes_local:
       - hormuz
       - iran
@@ -14486,8 +14558,9 @@ episodes:
         - pos
 - date: '2026-03-23'
   theme: commodity_energy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - pos
   directions_by_reference:
@@ -14495,14 +14568,17 @@ episodes:
     - pos
   direction_sources:
     BZ=F:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation_asymmetry
+  - hormuz
   - hormuz_closure
   - inflation_rates_channel
   - lng_supply_shock
@@ -14511,11 +14587,13 @@ episodes:
   - priced_in_surprise
   - refined_products
   - safe_haven_vs_supply_regime
+  - sanctions
+  - shipping_chokepoint
   - strategic_reserve_release
   subthemes_local:
   - hormuz
   - military_escalation
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-03-23:commodity_energy:-
     geo: ''
@@ -14526,11 +14604,19 @@ episodes:
       BZ=F:
       - pos
     sources:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
     evidence:
+    - source: card:2026-10-01/news_03.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -14556,6 +14642,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
   directions_local:
   - neg
@@ -14580,6 +14667,7 @@ episodes:
   - russia_refinery
   - safe_haven_flows
   - sanctions
+  - shipping_chokepoint
   - strait_of_hormuz
   - war_premium_unwind
   subthemes_local:
@@ -14587,7 +14675,7 @@ episodes:
   - iran
   - military_escalation
   - shipping_chokepoint
-  n_sources: 12
+  n_sources: 13
   events:
   - event_id: 2026-03-27:commodity_energy:-
     geo: ''
@@ -14611,6 +14699,7 @@ episodes:
     - card:2026-08-13/news_03.md
     - card:2026-08-15/news_02.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-23/news_01.md
@@ -14644,6 +14733,14 @@ episodes:
       subthemes_local: []
       directions_by_reference: {}
     - source: card:2026-09-30/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-01/news_03.md
       subthemes_local:
       - hormuz
       - military_escalation
@@ -15193,6 +15290,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -15242,6 +15340,7 @@ episodes:
   - safe_haven_unwind
   - safe_haven_vs_supply_regime
   - sanctions
+  - shipping_chokepoint
   - strait_of_hormuz
   - strategic_reserve_release
   - supply
@@ -15253,7 +15352,7 @@ episodes:
   - negotiation_track
   - oil_supply_shock
   - sanctions
-  n_sources: 14
+  n_sources: 15
   events:
   - event_id: 2026-04-13:commodity_energy:-
     geo: ''
@@ -15284,6 +15383,7 @@ episodes:
     - card:2026-08-13/news_03.md
     - card:2026-08-15/news_02.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -15324,6 +15424,14 @@ episodes:
       subthemes_local: []
       directions_by_reference: {}
     - source: card:2026-09-30/news_01.md
+      subthemes_local:
+      - hormuz
+      - negotiation_track
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-01/news_03.md
       subthemes_local:
       - hormuz
       - negotiation_track
@@ -15909,6 +16017,7 @@ episodes:
   - safe_haven_unwind
   - sanctions
   - sanctions_product_ban
+  - shipping_chokepoint
   - strait_of_hormuz
   - supply
   - tariff_room
@@ -15922,7 +16031,7 @@ episodes:
   - refinery_products
   - refinery_strike
   - shipping_chokepoint
-  n_sources: 19
+  n_sources: 20
   events:
   - event_id: 2026-04-18:commodity_energy:-
     geo: ''
@@ -15959,6 +16068,7 @@ episodes:
     - card:2026-08-15/news_02.md
     - card:2026-09-23/news_02.md
     - card:2026-09-30/news_01.md
+    - card:2026-10-01/news_03.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -16023,6 +16133,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-10-01/news_03.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -16047,8 +16160,9 @@ episodes:
         - pos
 - date: '2026-04-20'
   theme: commodity_energy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - pos
   directions_by_reference:
@@ -16056,14 +16170,17 @@ episodes:
     - pos
   direction_sources:
     BZ=F:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation_asymmetry
+  - hormuz
   - hormuz_closure
   - inflation_rates_channel
   - lng_supply_shock
@@ -16072,11 +16189,13 @@ episodes:
   - priced_in_surprise
   - refined_products
   - safe_haven_vs_supply_regime
+  - sanctions
+  - shipping_chokepoint
   - strategic_reserve_release
   subthemes_local:
   - hormuz
   - military_escalation
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-04-20:commodity_energy:-
     geo: ''
@@ -16087,11 +16206,19 @@ episodes:
       BZ=F:
       - pos
     sources:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
     evidence:
+    - source: card:2026-10-01/news_03.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -16104,8 +16231,9 @@ episodes:
         - pos
 - date: '2026-04-29'
   theme: commodity_energy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - pos
   directions_by_reference:
@@ -16113,14 +16241,17 @@ episodes:
     - pos
   direction_sources:
     BZ=F:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation_asymmetry
+  - hormuz
   - hormuz_closure
   - inflation_rates_channel
   - lng_supply_shock
@@ -16129,12 +16260,14 @@ episodes:
   - priced_in_surprise
   - refined_products
   - safe_haven_vs_supply_regime
+  - sanctions
+  - shipping_chokepoint
   - strategic_reserve_release
   subthemes_local:
   - hormuz
   - negotiation_track
   - sanctions
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-04-29:commodity_energy:-
     geo: ''
@@ -16146,11 +16279,20 @@ episodes:
       BZ=F:
       - pos
     sources:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
     evidence:
+    - source: card:2026-10-01/news_03.md
+      subthemes_local:
+      - hormuz
+      - negotiation_track
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -17386,8 +17528,9 @@ episodes:
         - pos
 - date: '2026-06-22'
   theme: commodity_energy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - pos
   directions_by_reference:
@@ -17395,14 +17538,17 @@ episodes:
     - pos
   direction_sources:
     BZ=F:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation_asymmetry
+  - hormuz
   - hormuz_closure
   - inflation_rates_channel
   - lng_supply_shock
@@ -17411,11 +17557,13 @@ episodes:
   - priced_in_surprise
   - refined_products
   - safe_haven_vs_supply_regime
+  - sanctions
+  - shipping_chokepoint
   - strategic_reserve_release
   subthemes_local:
   - hormuz
   - military_escalation
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-06-22:commodity_energy:-
     geo: ''
@@ -17426,11 +17574,19 @@ episodes:
       BZ=F:
       - pos
     sources:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
     evidence:
+    - source: card:2026-10-01/news_03.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -17642,8 +17798,9 @@ episodes:
         - neutral
 - date: '2026-07-07'
   theme: commodity_energy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - pos
   directions_by_reference:
@@ -17653,6 +17810,7 @@ episodes:
     - pos
   direction_sources:
     BZ=F:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -17662,10 +17820,12 @@ episodes:
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation_asymmetry
+  - hormuz
   - hormuz_closure
   - inflation_rates_channel
   - lng_supply_shock
@@ -17674,13 +17834,15 @@ episodes:
   - priced_in_surprise
   - refined_products
   - safe_haven_vs_supply_regime
+  - sanctions
+  - shipping_chokepoint
   - strategic_reserve_release
   subthemes_local:
   - gas_supply_shock
   - hormuz
   - military_escalation
   - shipping_chokepoint
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-07-07:commodity_energy:-
     geo: ''
@@ -17695,11 +17857,20 @@ episodes:
       TTF=F:
       - pos
     sources:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
     evidence:
+    - source: card:2026-10-01/news_03.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -17826,8 +17997,9 @@ episodes:
         - pos
 - date: '2026-07-13'
   theme: commodity_energy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - pos
   directions_by_reference:
@@ -17843,6 +18015,7 @@ episodes:
   declared: true
   subthemes:
   - de_escalation_asymmetry
+  - hormuz
   - hormuz_closure
   - inflation_rates_channel
   - lng_supply_shock
@@ -17851,12 +18024,14 @@ episodes:
   - priced_in_surprise
   - refined_products
   - safe_haven_vs_supply_regime
+  - sanctions
+  - shipping_chokepoint
   - strategic_reserve_release
   subthemes_local:
   - hormuz
   - military_escalation
   - sanctions
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-07-13:commodity_energy:-
     geo: ''
@@ -17868,11 +18043,15 @@ episodes:
       BZ=F:
       - pos
     sources:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
     evidence:
+    - source: card:2026-10-01/news_03.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -18199,8 +18378,9 @@ episodes:
       directions_by_reference: {}
 - date: '2026-09-01'
   theme: commodity_energy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - pos
   directions_by_reference:
@@ -18208,14 +18388,17 @@ episodes:
     - pos
   direction_sources:
     BZ=F:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation_asymmetry
+  - hormuz
   - hormuz_closure
   - inflation_rates_channel
   - lng_supply_shock
@@ -18224,11 +18407,13 @@ episodes:
   - priced_in_surprise
   - refined_products
   - safe_haven_vs_supply_regime
+  - sanctions
+  - shipping_chokepoint
   - strategic_reserve_release
   subthemes_local:
   - hormuz
   - military_escalation
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-09-01:commodity_energy:-
     geo: ''
@@ -18239,11 +18424,19 @@ episodes:
       BZ=F:
       - pos
     sources:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
     evidence:
+    - source: card:2026-10-01/news_03.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -18280,8 +18473,9 @@ episodes:
       directions_by_reference: {}
 - date: '2026-09-09'
   theme: commodity_energy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - pos
   directions_by_reference:
@@ -18291,6 +18485,7 @@ episodes:
     - pos
   direction_sources:
     BZ=F:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -18300,10 +18495,12 @@ episodes:
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation_asymmetry
+  - hormuz
   - hormuz_closure
   - inflation_rates_channel
   - lng_supply_shock
@@ -18312,12 +18509,14 @@ episodes:
   - priced_in_surprise
   - refined_products
   - safe_haven_vs_supply_regime
+  - sanctions
+  - shipping_chokepoint
   - strategic_reserve_release
   subthemes_local:
   - military_escalation
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-09-09:commodity_energy:-
     geo: ''
@@ -18331,11 +18530,20 @@ episodes:
       HO=F:
       - pos
     sources:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
     evidence:
+    - source: card:2026-10-01/news_03.md
+      subthemes_local:
+      - military_escalation
+      - shipping_chokepoint
+      - supply_disruption
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -18416,8 +18624,9 @@ episodes:
         - pos
 - date: '2026-09-28'
   theme: commodity_energy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - pos
@@ -18439,6 +18648,7 @@ episodes:
     - pos
   direction_sources:
     BZ=F:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -18473,10 +18683,12 @@ episodes:
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation_asymmetry
+  - hormuz
   - hormuz_closure
   - inflation_rates_channel
   - lng_supply_shock
@@ -18485,6 +18697,8 @@ episodes:
   - priced_in_surprise
   - refined_products
   - safe_haven_vs_supply_regime
+  - sanctions
+  - shipping_chokepoint
   - strategic_reserve_release
   subthemes_local:
   - hormuz
@@ -18493,7 +18707,7 @@ episodes:
   - safe_haven_flows
   - sanctions
   - supply_disruption
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-09-28:commodity_energy:-
     geo: ''
@@ -18521,11 +18735,20 @@ episodes:
       ^TYX:
       - pos
     sources:
+    - card:2026-10-01/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
     evidence:
+    - source: card:2026-10-01/news_03.md
+      subthemes_local:
+      - hormuz
+      - negotiation_track
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -54311,6 +54534,48 @@ episodes:
     - source: card:2026-07-31/news_05.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2021-10-29'
+  theme: macro_data
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - neg
+  directions_by_reference:
+    IEAG.AS:
+    - neg
+  direction_sources:
+    IEAG.AS:
+    - card:2026-10-01/news_02.md
+  directions_local:
+  - neg
+  declared: true
+  subthemes:
+  - eurozone_release
+  - inflation_print
+  subthemes_local:
+  - eurozone_release
+  - inflation_print
+  n_sources: 1
+  events:
+  - event_id: 2021-10-29:macro_data:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - eurozone_release
+    - inflation_print
+    directions_by_reference:
+      IEAG.AS:
+      - neg
+    sources:
+    - card:2026-10-01/news_02.md
+    evidence:
+    - source: card:2026-10-01/news_02.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      directions_by_reference:
+        IEAG.AS:
+        - neg
 - date: '2021-11-10'
   theme: macro_data
   direction: mixed
@@ -54537,6 +54802,48 @@ episodes:
         e trasmissione ai mercati (2011–2026).md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2021-11-29'
+  theme: macro_data
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - neg
+  directions_by_reference:
+    IEAG.AS:
+    - neg
+  direction_sources:
+    IEAG.AS:
+    - card:2026-10-01/news_02.md
+  directions_local:
+  - neg
+  declared: true
+  subthemes:
+  - eurozone_release
+  - inflation_print
+  subthemes_local:
+  - eurozone_release
+  - inflation_print
+  n_sources: 1
+  events:
+  - event_id: 2021-11-29:macro_data:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - eurozone_release
+    - inflation_print
+    directions_by_reference:
+      IEAG.AS:
+      - neg
+    sources:
+    - card:2026-10-01/news_02.md
+    evidence:
+    - source: card:2026-10-01/news_02.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      directions_by_reference:
+        IEAG.AS:
+        - neg
 - date: '2021-12-09'
   theme: macro_data
   direction: mixed
@@ -54546,6 +54853,13 @@ episodes:
   - pos
   directions_declared:
   - pos
+  direction_review_excluded:
+    IEF: 'Vigilia del CPI di novembre (uscito il 10): nessuna release d''inflazione
+      USA in quella data.'
+    ^TNX: 'Rendimento a 10 anni, specchio del verso su IEF: Vigilia del CPI di novembre
+      (uscito il 10): nessuna release d''inflazione USA in quella data.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Vigilia del CPI di novembre
+      (uscito il 10): nessuna release d''inflazione USA in quella data.'
   directions_local:
   - pos
   declared: true
@@ -55332,6 +55646,12 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    IEAG.AS:
+    - neg
+  direction_sources:
+    IEAG.AS:
+    - card:2026-08-20/news_03.md
   directions_local:
   - neg
   declared: true
@@ -55344,6 +55664,7 @@ episodes:
   - services
   subthemes_local:
   - energy_passthrough
+  - eurozone_release
   - inflation_print
   n_sources: 2
   events:
@@ -55362,15 +55683,64 @@ episodes:
     geo: eurozone_release
     subthemes_local:
     - energy_passthrough
+    - eurozone_release
     - inflation_print
+    directions_by_reference:
+      IEAG.AS:
+      - neg
     sources:
     - card:2026-08-20/news_03.md
     evidence:
     - source: card:2026-08-20/news_03.md
       subthemes_local:
       - energy_passthrough
+      - eurozone_release
       - inflation_print
-      directions_by_reference: {}
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+- date: '2022-03-30'
+  theme: macro_data
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - neg
+  directions_by_reference:
+    IEAG.AS:
+    - neg
+  direction_sources:
+    IEAG.AS:
+    - card:2026-10-01/news_02.md
+  directions_local:
+  - neg
+  declared: true
+  subthemes:
+  - eurozone_release
+  - inflation_print
+  subthemes_local:
+  - eurozone_release
+  - inflation_print
+  n_sources: 1
+  events:
+  - event_id: 2022-03-30:macro_data:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - eurozone_release
+    - inflation_print
+    directions_by_reference:
+      IEAG.AS:
+      - neg
+    sources:
+    - card:2026-10-01/news_02.md
+    evidence:
+    - source: card:2026-10-01/news_02.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      directions_by_reference:
+        IEAG.AS:
+        - neg
 - date: '2022-04-01'
   theme: macro_data
   direction: mixed
@@ -55381,6 +55751,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    IEAG.AS:
+    - neg
+  direction_sources:
+    IEAG.AS:
+    - card:2026-08-20/news_03.md
   direction_review_excluded:
     IEF: 'Payroll di marzo sotto il consenso nel titolo ma disoccupazione e salari
       sopra, con l''HICP dell''area euro nello stesso giorno: verso non univoco.'
@@ -55501,6 +55877,9 @@ episodes:
     - eurozone_release
     - hicp
     - inflation_print
+    directions_by_reference:
+      IEAG.AS:
+      - neg
     sources:
     - card:2026-06-30/news_05.md
     - card:2026-08-20/news_03.md
@@ -55519,8 +55898,11 @@ episodes:
     - source: card:2026-08-20/news_03.md
       subthemes_local:
       - energy_passthrough
+      - eurozone_release
       - inflation_print
-      directions_by_reference: {}
+      directions_by_reference:
+        IEAG.AS:
+        - neg
     - source: card:2026-08-26/news_03.md
       subthemes_local:
       - eurozone_release
@@ -55931,6 +56313,48 @@ episodes:
       subthemes_local:
       - platform_earnings
       directions_by_reference: {}
+- date: '2022-05-30'
+  theme: macro_data
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - neg
+  directions_by_reference:
+    IEAG.AS:
+    - neg
+  direction_sources:
+    IEAG.AS:
+    - card:2026-10-01/news_02.md
+  directions_local:
+  - neg
+  declared: true
+  subthemes:
+  - eurozone_release
+  - inflation_print
+  subthemes_local:
+  - eurozone_release
+  - inflation_print
+  n_sources: 1
+  events:
+  - event_id: 2022-05-30:macro_data:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - eurozone_release
+    - inflation_print
+    directions_by_reference:
+      IEAG.AS:
+      - neg
+    sources:
+    - card:2026-10-01/news_02.md
+    evidence:
+    - source: card:2026-10-01/news_02.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      directions_by_reference:
+        IEAG.AS:
+        - neg
 - date: '2022-05-31'
   theme: macro_data
   direction: mixed
@@ -55940,6 +56364,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    IEAG.AS:
+    - neg
+  direction_sources:
+    IEAG.AS:
+    - card:2026-10-01/news_02.md
   directions_local:
   - neg
   declared: true
@@ -55951,6 +56381,7 @@ episodes:
   - ecb_policy
   - energy_passthrough
   - eurozone
+  - eurozone_release
   - ez_inflation
   - fiscal_stimulus
   - hicp
@@ -55965,7 +56396,7 @@ episodes:
   - energy_passthrough
   - eurozone_release
   - inflation_print
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2022-05-31:macro_data:-
     geo: ''
@@ -56000,11 +56431,15 @@ episodes:
     - energy_passthrough
     - eurozone_release
     - inflation_print
+    directions_by_reference:
+      IEAG.AS:
+      - neg
     sources:
     - card:2026-08-20/news_03.md
     - card:2026-08-23/news_04.md
     - card:2026-08-31/news_06.md
     - card:2026-09-02/news_05.md
+    - card:2026-10-01/news_02.md
     evidence:
     - source: card:2026-08-20/news_03.md
       subthemes_local:
@@ -56025,6 +56460,13 @@ episodes:
       - eurozone_release
       - inflation_print
       directions_by_reference: {}
+    - source: card:2026-10-01/news_02.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      directions_by_reference:
+        IEAG.AS:
+        - neg
 - date: '2022-06-03'
   theme: macro_data
   direction: mixed
@@ -56543,9 +56985,11 @@ episodes:
         - pos
 - date: '2022-06-24'
   theme: macro_data
-  direction: ''
-  directions: []
-  directions_declared: []
+  direction: pos
+  directions:
+  - pos
+  directions_declared:
+  - pos
   directions_by_reference:
     IEF:
     - pos
@@ -56555,6 +56999,7 @@ episodes:
     - neg
   direction_sources:
     IEF:
+    - card:2026-10-01/news_01.md
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
@@ -56569,16 +57014,20 @@ episodes:
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
       del lavoro — regime ed episodi storici (2000–2026).md
-  directions_local: []
-  declared: false
+  directions_local:
+  - pos
+  declared: true
   subthemes:
+  - activity_growth
   - conference_board
   - confidence_broad_drop
   - confidence_rebound
   - consumer
   - consumer_expectations
   - expectations_collapse
+  - inflation_print
   - labour_differential_break
+  - labour_market
   - michigan_inflation_expectations
   - sentiment_spending_divergence
   - soft_data
@@ -56587,7 +57036,7 @@ episodes:
   - election_risk
   - inflation_print
   - sentiment_spending_divergence
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2022-06-24:macro_data:-
     geo: ''
@@ -56604,11 +57053,19 @@ episodes:
       ^FVX:
       - neg
     sources:
+    - card:2026-10-01/news_01.md
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
       del lavoro — regime ed episodi storici (2000–2026).md
     evidence:
+    - source: card:2026-10-01/news_01.md
+      subthemes_local:
+      - consumer
+      - inflation_print
+      directions_by_reference:
+        IEF:
+        - pos
     - source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata
         e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il
         consumatore statunitense- sentimento dichiarato, spesa realizzata e anticipo
@@ -56677,6 +57134,23 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    IEF:
+    - pos
+    ^FVX:
+    - neg
+    ^TNX:
+    - neg
+  direction_sources:
+    IEF:
+    - card:2026-08-23/news_04.md
+    ^FVX:
+    - card:2026-08-23/news_04.md
+    ^TNX:
+    - card:2026-08-23/news_04.md
+  direction_review_excluded:
+    IEAG.AS: 'La flash HICP di giugno 2022 uscì il 1° luglio, non il 30 giugno: data
+      incoerente con la descrizione.'
   directions_local:
   - neg
   declared: true
@@ -56709,6 +57183,13 @@ episodes:
     geo: ''
     subthemes_local:
     - inflation_print
+    directions_by_reference:
+      IEF:
+      - pos
+      ^FVX:
+      - neg
+      ^TNX:
+      - neg
     sources:
     - card:2026-06-02/news_02.md
     - card:2026-06-30/news_05.md
@@ -56740,7 +57221,13 @@ episodes:
     - source: card:2026-08-23/news_04.md
       subthemes_local:
       - inflation_print
-      directions_by_reference: {}
+      directions_by_reference:
+        IEF:
+        - pos
+        ^TNX:
+        - neg
+        ^FVX:
+        - neg
   - event_id: 2022-06-30:macro_data:eurozone_release
     geo: eurozone_release
     subthemes_local:
@@ -57072,6 +57559,24 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    IEAG.AS:
+    - neg
+    IEF:
+    - neg
+    ^FVX:
+    - pos
+    ^TNX:
+    - pos
+  direction_sources:
+    IEAG.AS:
+    - card:2026-08-20/news_03.md
+    IEF:
+    - card:2026-08-23/news_04.md
+    ^FVX:
+    - card:2026-08-23/news_04.md
+    ^TNX:
+    - card:2026-08-23/news_04.md
   directions_local:
   - neg
   declared: true
@@ -57094,6 +57599,13 @@ episodes:
     subthemes_local:
     - energy_passthrough
     - inflation_print
+    directions_by_reference:
+      IEF:
+      - neg
+      ^FVX:
+      - pos
+      ^TNX:
+      - pos
     sources:
     - card:2026-06-02/news_02.md
     - card:2026-08-23/news_04.md
@@ -57107,7 +57619,13 @@ episodes:
       subthemes_local:
       - energy_passthrough
       - inflation_print
-      directions_by_reference: {}
+      directions_by_reference:
+        IEF:
+        - neg
+        ^TNX:
+        - pos
+        ^FVX:
+        - pos
     - source: card:2026-09-02/news_05.md
       subthemes_local:
       - inflation_print
@@ -57117,14 +57635,20 @@ episodes:
     subthemes_local:
     - eurozone_release
     - inflation_print
+    directions_by_reference:
+      IEAG.AS:
+      - neg
     sources:
     - card:2026-08-20/news_03.md
     - card:2026-08-31/news_06.md
     evidence:
     - source: card:2026-08-20/news_03.md
       subthemes_local:
+      - eurozone_release
       - inflation_print
-      directions_by_reference: {}
+      directions_by_reference:
+        IEAG.AS:
+        - neg
     - source: card:2026-08-31/news_06.md
       subthemes_local:
       - eurozone_release
@@ -57603,6 +58127,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    IEAG.AS:
+    - neg
+  direction_sources:
+    IEAG.AS:
+    - card:2026-08-20/news_03.md
   directions_local:
   - neg
   declared: true
@@ -57676,6 +58206,9 @@ episodes:
     - energy_passthrough
     - eurozone_release
     - inflation_print
+    directions_by_reference:
+      IEAG.AS:
+      - neg
     sources:
     - card:2026-08-20/news_03.md
     - card:2026-08-21/news_04.md
@@ -57686,8 +58219,11 @@ episodes:
     - source: card:2026-08-20/news_03.md
       subthemes_local:
       - energy_passthrough
+      - eurozone_release
       - inflation_print
-      directions_by_reference: {}
+      directions_by_reference:
+        IEAG.AS:
+        - neg
     - source: card:2026-08-21/news_04.md
       subthemes_local:
       - energy_passthrough
@@ -57724,6 +58260,10 @@ episodes:
     - neg
     GBPUSD=X:
     - neg
+    IEF:
+    - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - neg
     ^TNX:
@@ -57744,6 +58284,10 @@ episodes:
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+    IEF:
+    - card:2026-08-21/news_04.md
+    ^FVX:
+    - card:2026-08-21/news_04.md
     ^GSPC:
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
@@ -57819,6 +58363,10 @@ episodes:
       - neg
       GBPUSD=X:
       - neg
+      IEF:
+      - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - neg
       ^TNX:
@@ -57891,7 +58439,11 @@ episodes:
       subthemes_local:
       - inflation_print
       - us_cpi
-      directions_by_reference: {}
+      directions_by_reference:
+        IEF:
+        - neg
+        ^FVX:
+        - pos
     - source: card:2026-08-23/news_04.md
       subthemes_local:
       - inflation_print
@@ -58155,6 +58707,48 @@ episodes:
       - cny
       - pboc
       directions_by_reference: {}
+- date: '2022-09-29'
+  theme: macro_data
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - neg
+  directions_by_reference:
+    IEAG.AS:
+    - neg
+  direction_sources:
+    IEAG.AS:
+    - card:2026-10-01/news_02.md
+  directions_local:
+  - neg
+  declared: true
+  subthemes:
+  - eurozone_release
+  - inflation_print
+  subthemes_local:
+  - eurozone_release
+  - inflation_print
+  n_sources: 1
+  events:
+  - event_id: 2022-09-29:macro_data:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - eurozone_release
+    - inflation_print
+    directions_by_reference:
+      IEAG.AS:
+      - neg
+    sources:
+    - card:2026-10-01/news_02.md
+    evidence:
+    - source: card:2026-10-01/news_02.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      directions_by_reference:
+        IEAG.AS:
+        - neg
 - date: '2022-09-30'
   theme: macro_data
   direction: mixed
@@ -58164,6 +58758,24 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    IEAG.AS:
+    - neg
+    IEF:
+    - neg
+    ^FVX:
+    - pos
+    ^TNX:
+    - pos
+  direction_sources:
+    IEAG.AS:
+    - card:2026-08-20/news_03.md
+    IEF:
+    - card:2026-08-23/news_04.md
+    ^FVX:
+    - card:2026-08-23/news_04.md
+    ^TNX:
+    - card:2026-08-23/news_04.md
   directions_local:
   - neg
   declared: true
@@ -58197,6 +58809,13 @@ episodes:
     geo: ''
     subthemes_local:
     - inflation_print
+    directions_by_reference:
+      IEF:
+      - neg
+      ^FVX:
+      - pos
+      ^TNX:
+      - pos
     sources:
     - card:2026-06-02/news_02.md
     - card:2026-06-30/news_05.md
@@ -58224,13 +58843,22 @@ episodes:
     - source: card:2026-08-23/news_04.md
       subthemes_local:
       - inflation_print
-      directions_by_reference: {}
+      directions_by_reference:
+        IEF:
+        - neg
+        ^TNX:
+        - pos
+        ^FVX:
+        - pos
   - event_id: 2022-09-30:macro_data:eurozone_release
     geo: eurozone_release
     subthemes_local:
     - energy_passthrough
     - eurozone_release
     - inflation_print
+    directions_by_reference:
+      IEAG.AS:
+      - neg
     sources:
     - card:2026-08-20/news_03.md
     - card:2026-08-21/news_04.md
@@ -58239,8 +58867,11 @@ episodes:
     evidence:
     - source: card:2026-08-20/news_03.md
       subthemes_local:
+      - eurozone_release
       - inflation_print
-      directions_by_reference: {}
+      directions_by_reference:
+        IEAG.AS:
+        - neg
     - source: card:2026-08-21/news_04.md
       subthemes_local:
       - energy_passthrough
@@ -58334,6 +58965,20 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    IEF:
+    - neg
+    ^FVX:
+    - pos
+    ^TNX:
+    - pos
+  direction_sources:
+    IEF:
+    - card:2026-08-21/news_02.md
+    ^FVX:
+    - card:2026-08-21/news_02.md
+    ^TNX:
+    - card:2026-08-21/news_02.md
   directions_local:
   - neg
   - pos
@@ -58393,6 +59038,13 @@ episodes:
     - activity_growth
     - inflation_print
     - us_cpi
+    directions_by_reference:
+      IEF:
+      - neg
+      ^FVX:
+      - pos
+      ^TNX:
+      - pos
     sources:
     - card:2026-05-29/news_02.md
     - card:2026-06-10/news_01.md
@@ -58495,7 +59147,13 @@ episodes:
       subthemes_local:
       - inflation_print
       - us_cpi
-      directions_by_reference: {}
+      directions_by_reference:
+        IEF:
+        - neg
+        ^TNX:
+        - pos
+        ^FVX:
+        - pos
     - source: card:2026-08-21/news_04.md
       subthemes_local:
       - inflation_print
@@ -58665,6 +59323,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    IEAG.AS:
+    - neg
+  direction_sources:
+    IEAG.AS:
+    - card:2026-10-01/news_02.md
   directions_local:
   - neg
   declared: true
@@ -58682,6 +59346,7 @@ episodes:
   - dovish
   - ecb_policy
   - energy_passthrough
+  - eurozone_release
   - fiscal_stimulus
   - gdp
   - growth_miss
@@ -58701,7 +59366,7 @@ episodes:
   - energy_passthrough
   - eurozone_release
   - inflation_print
-  n_sources: 16
+  n_sources: 17
   events:
   - event_id: 2022-10-31:macro_data:-
     geo: ''
@@ -58760,12 +59425,16 @@ episodes:
     - energy_passthrough
     - eurozone_release
     - inflation_print
+    directions_by_reference:
+      IEAG.AS:
+      - neg
     sources:
     - card:2026-08-20/news_03.md
     - card:2026-08-21/news_04.md
     - card:2026-08-23/news_04.md
     - card:2026-08-31/news_06.md
     - card:2026-09-02/news_05.md
+    - card:2026-10-01/news_02.md
     evidence:
     - source: card:2026-08-20/news_03.md
       subthemes_local:
@@ -58790,6 +59459,13 @@ episodes:
       - eurozone_release
       - inflation_print
       directions_by_reference: {}
+    - source: card:2026-10-01/news_02.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      directions_by_reference:
+        IEAG.AS:
+        - neg
 - date: '2022-11-01'
   theme: macro_data
   direction: mixed
@@ -59039,6 +59715,20 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    IEF:
+    - pos
+    ^FVX:
+    - neg
+    ^TNX:
+    - neg
+  direction_sources:
+    IEF:
+    - card:2026-10-01/news_01.md
+    ^FVX:
+    - card:2026-08-21/news_04.md
+    ^TNX:
+    - card:2026-08-21/news_04.md
   directions_local:
   - neg
   - pos
@@ -59062,6 +59752,7 @@ episodes:
   - inflation_surprise
   - inflation_surprises
   - inflation_upside_surprise
+  - labour_market
   - ppi
   - retail
   - retail_sales
@@ -59079,7 +59770,7 @@ episodes:
   - inflation_print
   - us_cpi
   - us_inflation
-  n_sources: 20
+  n_sources: 21
   events:
   - event_id: 2022-11-10:macro_data:-
     geo: ''
@@ -59091,6 +59782,13 @@ episodes:
     - inflation_print
     - us_cpi
     - us_inflation
+    directions_by_reference:
+      IEF:
+      - pos
+      ^FVX:
+      - neg
+      ^TNX:
+      - neg
     sources:
     - card:2026-06-11/news_02.md
     - card:2026-06-17/news_04.md
@@ -59112,6 +59810,7 @@ episodes:
     - card:2026-09-02/news_05.md
     - card:2026-09-10/news_07.md
     - card:2026-09-12/news_03.md
+    - card:2026-10-01/news_01.md
     evidence:
     - source: card:2026-06-11/news_02.md
       subthemes_local:
@@ -59156,8 +59855,13 @@ episodes:
     - source: card:2026-08-21/news_04.md
       subthemes_local:
       - cpi_downside
+      - inflation_print
       - us_cpi
-      directions_by_reference: {}
+      directions_by_reference:
+        ^TNX:
+        - neg
+        ^FVX:
+        - neg
     - source: card:2026-08-23/news_04.md
       subthemes_local:
       - cpi_downside
@@ -59202,6 +59906,13 @@ episodes:
       - inflation_print
       - us_cpi
       directions_by_reference: {}
+    - source: card:2026-10-01/news_01.md
+      subthemes_local:
+      - inflation_print
+      - us_cpi
+      directions_by_reference:
+        IEF:
+        - pos
 - date: '2022-11-30'
   theme: macro_data
   direction: mixed
@@ -59211,6 +59922,21 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    IEAG.AS:
+    - pos
+  direction_sources:
+    IEAG.AS:
+    - card:2026-08-20/news_03.md
+  direction_review_excluded:
+    IEF: 'Nessun dato d''inflazione USA: discorso di Powell e dati misti (PIL rivisto
+      su, ADP debole) nella stessa giornata.'
+    ^TNX: 'Rendimento a 10 anni, specchio del verso su IEF: Nessun dato d''inflazione
+      USA: discorso di Powell e dati misti (PIL rivisto su, ADP debole) nella stessa
+      giornata.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Nessun dato d''inflazione
+      USA: discorso di Powell e dati misti (PIL rivisto su, ADP debole) nella stessa
+      giornata.'
   directions_local:
   - pos
   declared: true
@@ -59298,6 +60024,9 @@ episodes:
     - disinflation
     - eurozone_release
     - inflation_print
+    directions_by_reference:
+      IEAG.AS:
+      - pos
     sources:
     - card:2026-08-20/news_03.md
     - card:2026-09-01/news_03.md
@@ -59310,8 +60039,11 @@ episodes:
     - source: card:2026-08-20/news_03.md
       subthemes_local:
       - disinflation
+      - eurozone_release
       - inflation_print
-      directions_by_reference: {}
+      directions_by_reference:
+        IEAG.AS:
+        - pos
     - source: card:2026-09-01/news_03.md
       subthemes_local:
       - eurozone_release
@@ -59847,6 +60579,7 @@ episodes:
   direction_sources:
     IEF:
     - card:2026-08-21/news_04.md
+    - card:2026-10-01/news_01.md
     ^FVX:
     - card:2026-08-21/news_04.md
   directions_local:
@@ -59877,6 +60610,7 @@ episodes:
   - inflation_surprise
   - inflation_surprises
   - inflation_upside_surprise
+  - labour_market
   - ppi
   - retail
   - retail_sales
@@ -59894,7 +60628,7 @@ episodes:
   - inflation_print
   - labour_market
   - us_cpi
-  n_sources: 23
+  n_sources: 24
   events:
   - event_id: 2022-12-13:macro_data:-
     geo: ''
@@ -59930,6 +60664,7 @@ episodes:
     - card:2026-09-02/news_05.md
     - card:2026-09-10/news_07.md
     - card:2026-09-12/news_03.md
+    - card:2026-10-01/news_01.md
     evidence:
     - source: card:2026-06-11/news_02.md
       subthemes_local:
@@ -60023,6 +60758,13 @@ episodes:
       - inflation_print
       - us_cpi
       directions_by_reference: {}
+    - source: card:2026-10-01/news_01.md
+      subthemes_local:
+      - inflation_print
+      - us_cpi
+      directions_by_reference:
+        IEF:
+        - pos
   - event_id: 2022-12-13:macro_data:britain_release
     geo: britain_release
     subthemes_local:
@@ -60133,6 +60875,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEAG.AS: 'La flash HICP di dicembre 2022 uscì il 6 gennaio 2023: data incoerente
+      con la descrizione.'
   directions_local:
   - neg
   declared: true
@@ -60589,6 +61334,20 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    IEF:
+    - neg
+    ^FVX:
+    - pos
+    ^TNX:
+    - pos
+  direction_sources:
+    IEF:
+    - card:2026-08-21/news_04.md
+    ^FVX:
+    - card:2026-08-21/news_04.md
+    ^TNX:
+    - card:2026-08-21/news_04.md
   directions_local:
   - neg
   - pos
@@ -60638,6 +61397,13 @@ episodes:
     - inflation_print
     - inflation_upside
     - us_cpi
+    directions_by_reference:
+      IEF:
+      - neg
+      ^FVX:
+      - pos
+      ^TNX:
+      - pos
     sources:
     - card:2026-05-29/news_02.md
     - card:2026-06-03/news_02.md
@@ -60711,7 +61477,13 @@ episodes:
       subthemes_local:
       - inflation_print
       - us_cpi
-      directions_by_reference: {}
+      directions_by_reference:
+        IEF:
+        - neg
+        ^TNX:
+        - pos
+        ^FVX:
+        - pos
     - source: card:2026-08-23/news_04.md
       subthemes_local:
       - inflation_print
@@ -60934,6 +61706,13 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: 'Release non identificata: la scheda parla genericamente di dati d''inflazione
+      in fase di pausa Fed.'
+    ^TNX: 'Rendimento a 10 anni, specchio del verso su IEF: Release non identificata:
+      la scheda parla genericamente di dati d''inflazione in fase di pausa Fed.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Release non identificata:
+      la scheda parla genericamente di dati d''inflazione in fase di pausa Fed.'
   directions_local:
   - neg
   declared: true
@@ -61767,6 +62546,20 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    IEF:
+    - pos
+    ^FVX:
+    - neg
+    ^TNX:
+    - neg
+  direction_sources:
+    IEF:
+    - card:2026-10-01/news_01.md
+    ^FVX:
+    - card:2026-08-21/news_02.md
+    ^TNX:
+    - card:2026-08-21/news_02.md
   directions_local:
   - neg
   - pos
@@ -61827,7 +62620,7 @@ episodes:
   - inflation_downside
   - inflation_print
   - us_cpi
-  n_sources: 37
+  n_sources: 38
   events:
   - event_id: 2023-07-12:macro_data:-
     geo: ''
@@ -61839,6 +62632,13 @@ episodes:
     - inflation_downside
     - inflation_print
     - us_cpi
+    directions_by_reference:
+      IEF:
+      - pos
+      ^FVX:
+      - neg
+      ^TNX:
+      - neg
     sources:
     - card:2026-06-11/news_02.md
     - card:2026-06-17/news_04.md
@@ -61875,6 +62675,7 @@ episodes:
     - card:2026-09-02/news_05.md
     - card:2026-09-10/news_07.md
     - card:2026-09-12/news_03.md
+    - card:2026-10-01/news_01.md
     evidence:
     - source: card:2026-06-11/news_02.md
       subthemes_local:
@@ -61939,8 +62740,13 @@ episodes:
     - source: card:2026-08-21/news_02.md
       subthemes_local:
       - cpi_downside
+      - inflation_print
       - us_cpi
-      directions_by_reference: {}
+      directions_by_reference:
+        ^TNX:
+        - neg
+        ^FVX:
+        - neg
     - source: card:2026-08-21/news_04.md
       subthemes_local: []
       directions_by_reference: {}
@@ -62016,6 +62822,13 @@ episodes:
       - inflation_print
       - us_cpi
       directions_by_reference: {}
+    - source: card:2026-10-01/news_01.md
+      subthemes_local:
+      - inflation_print
+      - us_cpi
+      directions_by_reference:
+        IEF:
+        - pos
   - event_id: 2023-07-12:macro_data:britain_release
     geo: britain_release
     subthemes_local:
@@ -62984,6 +63797,48 @@ episodes:
       directions_by_reference:
         HG=F:
         - neg
+- date: '2023-08-31'
+  theme: macro_data
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - neg
+  directions_by_reference:
+    IEAG.AS:
+    - neg
+  direction_sources:
+    IEAG.AS:
+    - card:2026-10-01/news_02.md
+  directions_local:
+  - neg
+  declared: true
+  subthemes:
+  - eurozone_release
+  - inflation_print
+  subthemes_local:
+  - eurozone_release
+  - inflation_print
+  n_sources: 1
+  events:
+  - event_id: 2023-08-31:macro_data:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - eurozone_release
+    - inflation_print
+    directions_by_reference:
+      IEAG.AS:
+      - neg
+    sources:
+    - card:2026-10-01/news_02.md
+    evidence:
+    - source: card:2026-10-01/news_02.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      directions_by_reference:
+        IEAG.AS:
+        - neg
 - date: '2023-09-13'
   theme: macro_data
   direction: neg
@@ -63355,6 +64210,20 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    IEF:
+    - pos
+    ^FVX:
+    - neg
+    ^TNX:
+    - neg
+  direction_sources:
+    IEF:
+    - card:2026-10-01/news_01.md
+    ^FVX:
+    - card:2026-08-26/news_02.md
+    ^TNX:
+    - card:2026-08-26/news_02.md
   directions_local:
   - pos
   declared: true
@@ -63392,6 +64261,7 @@ episodes:
   - inflation_surprises
   - inflation_upside_surprise
   - investment
+  - labour_market
   - long_end_rates
   - ppi
   - retail
@@ -63410,7 +64280,7 @@ episodes:
   - inflation_downside
   - inflation_print
   - us_cpi
-  n_sources: 28
+  n_sources: 29
   events:
   - event_id: 2023-11-14:macro_data:-
     geo: ''
@@ -63418,6 +64288,13 @@ episodes:
     - inflation_downside
     - inflation_print
     - us_cpi
+    directions_by_reference:
+      IEF:
+      - pos
+      ^FVX:
+      - neg
+      ^TNX:
+      - neg
     sources:
     - card:2026-06-11/news_02.md
     - card:2026-06-17/news_04.md
@@ -63447,6 +64324,7 @@ episodes:
     - card:2026-09-02/news_03.md
     - card:2026-09-10/news_07.md
     - card:2026-09-12/news_03.md
+    - card:2026-10-01/news_01.md
     evidence:
     - source: card:2026-06-11/news_02.md
       subthemes_local:
@@ -63525,7 +64403,11 @@ episodes:
       subthemes_local:
       - inflation_print
       - us_cpi
-      directions_by_reference: {}
+      directions_by_reference:
+        ^TNX:
+        - neg
+        ^FVX:
+        - neg
     - source: card:2026-08-27/news_01.md
       subthemes_local:
       - inflation_print
@@ -63550,6 +64432,13 @@ episodes:
       - inflation_print
       - us_cpi
       directions_by_reference: {}
+    - source: card:2026-10-01/news_01.md
+      subthemes_local:
+      - inflation_print
+      - us_cpi
+      directions_by_reference:
+        IEF:
+        - pos
 - date: '2023-12-08'
   theme: macro_data
   direction: mixed
@@ -64083,6 +64972,46 @@ episodes:
         Unito (2007–2026).md'
       subthemes_local: []
       directions_by_reference: {}
+- date: '2023-12-22'
+  theme: macro_data
+  direction: pos
+  directions:
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    IEF:
+    - pos
+  direction_sources:
+    IEF:
+    - card:2026-10-01/news_01.md
+  directions_local:
+  - pos
+  declared: true
+  subthemes:
+  - activity_growth
+  - inflation_print
+  - labour_market
+  subthemes_local:
+  - inflation_print
+  n_sources: 1
+  events:
+  - event_id: 2023-12-22:macro_data:-
+    geo: ''
+    subthemes_local:
+    - inflation_print
+    directions_by_reference:
+      IEF:
+      - pos
+    sources:
+    - card:2026-10-01/news_01.md
+    evidence:
+    - source: card:2026-10-01/news_01.md
+      subthemes_local:
+      - inflation_print
+      directions_by_reference:
+        IEF:
+        - pos
 - date: '2023-12-31'
   theme: macro_data
   direction: mixed
@@ -66914,6 +67843,20 @@ episodes:
   - pos
   directions_declared:
   - pos
+  directions_by_reference:
+    IEF:
+    - pos
+    ^FVX:
+    - neg
+    ^TNX:
+    - neg
+  direction_sources:
+    IEF:
+    - card:2026-10-01/news_01.md
+    ^FVX:
+    - card:2026-08-21/news_02.md
+    ^TNX:
+    - card:2026-08-21/news_02.md
   directions_local:
   - pos
   declared: true
@@ -66973,7 +67916,7 @@ episodes:
   - inflation_downside
   - inflation_print
   - us_cpi
-  n_sources: 33
+  n_sources: 34
   events:
   - event_id: 2024-07-11:macro_data:-
     geo: ''
@@ -66984,6 +67927,13 @@ episodes:
     - inflation_downside
     - inflation_print
     - us_cpi
+    directions_by_reference:
+      IEF:
+      - pos
+      ^FVX:
+      - neg
+      ^TNX:
+      - neg
     sources:
     - card:2026-06-11/news_02.md
     - card:2026-06-17/news_04.md
@@ -67018,6 +67968,7 @@ episodes:
     - card:2026-09-02/news_05.md
     - card:2026-09-10/news_07.md
     - card:2026-09-12/news_03.md
+    - card:2026-10-01/news_01.md
     evidence:
     - source: card:2026-06-11/news_02.md
       subthemes_local:
@@ -67099,8 +68050,13 @@ episodes:
     - source: card:2026-08-21/news_02.md
       subthemes_local:
       - cpi_downside
+      - inflation_print
       - us_cpi
-      directions_by_reference: {}
+      directions_by_reference:
+        ^TNX:
+        - neg
+        ^FVX:
+        - neg
     - source: card:2026-08-22/news_03.md
       subthemes_local:
       - activity_growth
@@ -67145,6 +68101,13 @@ episodes:
       - inflation_print
       - us_cpi
       directions_by_reference: {}
+    - source: card:2026-10-01/news_01.md
+      subthemes_local:
+      - inflation_print
+      - us_cpi
+      directions_by_reference:
+        IEF:
+        - pos
 - date: '2024-07-15'
   theme: macro_data
   direction: neg
@@ -68544,6 +69507,16 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    IEF: 'CPI di agosto 2024 con headline sotto attese (2,5% contro 2,6%) ma core
+      mensile sopra (0,3% contro 0,2%): segnali opposti, e le schede lo leggono in
+      versi diversi.'
+    ^TNX: 'Rendimento a 10 anni, specchio del verso su IEF: CPI di agosto 2024 con
+      headline sotto attese (2,5% contro 2,6%) ma core mensile sopra (0,3% contro
+      0,2%): segnali opposti, e le schede lo leggono in versi diversi.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: CPI di agosto 2024 con
+      headline sotto attese (2,5% contro 2,6%) ma core mensile sopra (0,3% contro
+      0,2%): segnali opposti, e le schede lo leggono in versi diversi.'
   directions_local:
   - neg
   - pos
@@ -71506,6 +72479,46 @@ episodes:
       - japan_release
       - rate_decision
       directions_by_reference: {}
+- date: '2024-12-20'
+  theme: macro_data
+  direction: pos
+  directions:
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    IEF:
+    - pos
+  direction_sources:
+    IEF:
+    - card:2026-10-01/news_01.md
+  directions_local:
+  - pos
+  declared: true
+  subthemes:
+  - activity_growth
+  - inflation_print
+  - labour_market
+  subthemes_local:
+  - inflation_print
+  n_sources: 1
+  events:
+  - event_id: 2024-12-20:macro_data:-
+    geo: ''
+    subthemes_local:
+    - inflation_print
+    directions_by_reference:
+      IEF:
+      - pos
+    sources:
+    - card:2026-10-01/news_01.md
+    evidence:
+    - source: card:2026-10-01/news_01.md
+      subthemes_local:
+      - inflation_print
+      directions_by_reference:
+        IEF:
+        - pos
 - date: '2024-12-27'
   theme: macro_data
   direction: ''
@@ -72329,6 +73342,49 @@ episodes:
         - neg
         ^GSPC:
         - neg
+- date: '2025-01-15'
+  theme: macro_data
+  direction: pos
+  directions:
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    IEF:
+    - pos
+  direction_sources:
+    IEF:
+    - card:2026-10-01/news_01.md
+  directions_local:
+  - pos
+  declared: true
+  subthemes:
+  - activity_growth
+  - inflation_print
+  - labour_market
+  subthemes_local:
+  - inflation_print
+  - us_cpi
+  n_sources: 1
+  events:
+  - event_id: 2025-01-15:macro_data:-
+    geo: ''
+    subthemes_local:
+    - inflation_print
+    - us_cpi
+    directions_by_reference:
+      IEF:
+      - pos
+    sources:
+    - card:2026-10-01/news_01.md
+    evidence:
+    - source: card:2026-10-01/news_01.md
+      subthemes_local:
+      - inflation_print
+      - us_cpi
+      directions_by_reference:
+        IEF:
+        - pos
 - date: '2025-01-23'
   theme: macro_data
   direction: neg
@@ -72507,6 +73563,12 @@ episodes:
       dato di febbraio, uscito dopo: non è una sorpresa isolabile alla data.'
     EEM: 'La riga descrive una fase (''deflazione persistente'') usando anche il dato
       di febbraio, uscito dopo: non è una sorpresa isolabile alla data.'
+    IEF: 'Domenica: nessun CPI USA; la release di quel giorno era cinese. Data incoerente
+      con la descrizione.'
+    ^TNX: 'Rendimento a 10 anni, specchio del verso su IEF: Domenica: nessun CPI USA;
+      la release di quel giorno era cinese. Data incoerente con la descrizione.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Domenica: nessun CPI USA;
+      la release di quel giorno era cinese. Data incoerente con la descrizione.'
   directions_local:
   - neg
   declared: true
@@ -75198,6 +76260,14 @@ episodes:
   direction_review_excluded:
     EURUSD=X: 'Riga: ''euro debole/muto'' — due letture, come ''JPY neutrale/debole''
       del 2016-09-21 BoJ.'
+    IEF: 'CPI di luglio 2025 con headline sotto attese (2,7% contro 2,8%) e core sopra
+      (3,1% contro 3,0%): segnali opposti.'
+    ^TNX: 'Rendimento a 10 anni, specchio del verso su IEF: CPI di luglio 2025 con
+      headline sotto attese (2,7% contro 2,8%) e core sopra (3,1% contro 3,0%): segnali
+      opposti.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: CPI di luglio 2025 con
+      headline sotto attese (2,7% contro 2,8%) e core sopra (3,1% contro 3,0%): segnali
+      opposti.'
   directions_local:
   - neg
   - pos
@@ -76035,6 +77105,49 @@ episodes:
       directions_by_reference:
         CNY=X:
         - neutral
+- date: '2025-10-24'
+  theme: macro_data
+  direction: pos
+  directions:
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    IEF:
+    - pos
+  direction_sources:
+    IEF:
+    - card:2026-10-01/news_01.md
+  directions_local:
+  - pos
+  declared: true
+  subthemes:
+  - activity_growth
+  - inflation_print
+  - labour_market
+  subthemes_local:
+  - inflation_print
+  - us_cpi
+  n_sources: 1
+  events:
+  - event_id: 2025-10-24:macro_data:-
+    geo: ''
+    subthemes_local:
+    - inflation_print
+    - us_cpi
+    directions_by_reference:
+      IEF:
+      - pos
+    sources:
+    - card:2026-10-01/news_01.md
+    evidence:
+    - source: card:2026-10-01/news_01.md
+      subthemes_local:
+      - inflation_print
+      - us_cpi
+      directions_by_reference:
+        IEF:
+        - pos
 - date: '2025-10-30'
   theme: macro_data
   direction: mixed
@@ -76519,6 +77632,13 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: 'Giornata del FOMC (taglio con dot plot più restrittivo): nessuna release
+      d''inflazione separabile.'
+    ^TNX: 'Rendimento a 10 anni, specchio del verso su IEF: Giornata del FOMC (taglio
+      con dot plot più restrittivo): nessuna release d''inflazione separabile.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Giornata del FOMC (taglio
+      con dot plot più restrittivo): nessuna release d''inflazione separabile.'
   directions_local:
   - neg
   declared: true
@@ -76806,6 +77926,49 @@ episodes:
       - japan_release
       - tankan
       directions_by_reference: {}
+- date: '2025-12-18'
+  theme: macro_data
+  direction: pos
+  directions:
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    IEF:
+    - pos
+  direction_sources:
+    IEF:
+    - card:2026-10-01/news_01.md
+  directions_local:
+  - pos
+  declared: true
+  subthemes:
+  - activity_growth
+  - inflation_print
+  - labour_market
+  subthemes_local:
+  - inflation_print
+  - us_cpi
+  n_sources: 1
+  events:
+  - event_id: 2025-12-18:macro_data:-
+    geo: ''
+    subthemes_local:
+    - inflation_print
+    - us_cpi
+    directions_by_reference:
+      IEF:
+      - pos
+    sources:
+    - card:2026-10-01/news_01.md
+    evidence:
+    - source: card:2026-10-01/news_01.md
+      subthemes_local:
+      - inflation_print
+      - us_cpi
+      directions_by_reference:
+        IEF:
+        - pos
 - date: '2025-12-19'
   theme: macro_data
   direction: neg
@@ -77491,6 +78654,13 @@ episodes:
   directions_declared:
   - neg
   - neutral
+  direction_review_excluded:
+    IEF: Release non identificata con certezza e decisione di policy ravvicinata nella
+      stessa finestra.
+    ^TNX: 'Rendimento a 10 anni, specchio del verso su IEF: Release non identificata
+      con certezza e decisione di policy ravvicinata nella stessa finestra.'
+    ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Release non identificata
+      con certezza e decisione di policy ravvicinata nella stessa finestra.'
   directions_local:
   - neg
   - neutral
@@ -107596,6 +108766,108 @@ episodes:
     - source: card:2026-08-15/news_04.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2023-03-29'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    SOXX:
+    - neg
+  direction_sources:
+    SOXX:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - compute_demand
+  - eu_ai_act
+  - federal_preemption
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_commitments
+  subthemes_local:
+  - safety_pause
+  n_sources: 1
+  events:
+  - event_id: 2023-03-29:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - safety_pause
+    directions_by_reference:
+      SOXX:
+      - neg
+    sources:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    evidence:
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - safety_pause
+      directions_by_reference:
+        SOXX:
+        - neg
+- date: '2023-03-31'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    IGV:
+    - neg
+  direction_sources:
+    IGV:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - compute_demand
+  - eu_ai_act
+  - federal_preemption
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_commitments
+  subthemes_local:
+  - regulatory_anticipation
+  n_sources: 1
+  events:
+  - event_id: 2023-03-31:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - regulatory_anticipation
+    directions_by_reference:
+      IGV:
+      - neg
+    sources:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    evidence:
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - regulatory_anticipation
+      directions_by_reference:
+        IGV:
+        - neg
 - date: '2023-04-06'
   theme: structural_themes
   direction: mixed
@@ -108750,6 +110022,79 @@ episodes:
       subthemes_local:
       - earnings_shock
       directions_by_reference: {}
+- date: '2023-10-30'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    IGV:
+    - neutral
+    SOXX:
+    - neutral
+  direction_sources:
+    IGV:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    SOXX:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - compute_demand
+  - eu_ai_act
+  - federal_preemption
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_commitments
+  subthemes_local:
+  - ai_semis
+  - regulatory_anticipation
+  n_sources: 1
+  events:
+  - event_id: 2023-10-30:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_semis
+    - regulatory_anticipation
+    directions_by_reference:
+      IGV:
+      - neutral
+      SOXX:
+      - neutral
+    sources:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    evidence:
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - regulatory_anticipation
+      directions_by_reference:
+        IGV:
+        - neutral
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - ai_semis
+      - regulatory_anticipation
+      directions_by_reference:
+        SOXX:
+        - neutral
 - date: '2023-11-06'
   theme: structural_themes
   direction: pos
@@ -109447,6 +110792,57 @@ episodes:
       - ai_capex
       - earnings_shock
       directions_by_reference: {}
+- date: '2024-03-13'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    IGV:
+    - neutral
+  direction_sources:
+    IGV:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - compute_demand
+  - eu_ai_act
+  - federal_preemption
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_commitments
+  subthemes_local:
+  - regulatory_anticipation
+  n_sources: 1
+  events:
+  - event_id: 2024-03-13:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - regulatory_anticipation
+    directions_by_reference:
+      IGV:
+      - neutral
+    sources:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    evidence:
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - regulatory_anticipation
+      directions_by_reference:
+        IGV:
+        - neutral
 - date: '2024-05-22'
   theme: structural_themes
   direction: neutral
@@ -110910,6 +112306,57 @@ episodes:
         - pos
         ^NDX:
         - neutral
+- date: '2024-09-30'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    IGV:
+    - pos
+  direction_sources:
+    IGV:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - compute_demand
+  - eu_ai_act
+  - federal_preemption
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_commitments
+  subthemes_local:
+  - regulatory_anticipation
+  n_sources: 1
+  events:
+  - event_id: 2024-09-30:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - regulatory_anticipation
+    directions_by_reference:
+      IGV:
+      - pos
+    sources:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    evidence:
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - regulatory_anticipation
+      directions_by_reference:
+        IGV:
+        - pos
 - date: '2024-10-14'
   theme: structural_themes
   direction: ''
@@ -111601,28 +113048,53 @@ episodes:
   theme: structural_themes
   direction: ''
   directions: []
-  directions_declared: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    IGV:
+    - neutral
+  direction_sources:
+    IGV:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
   directions_local: []
-  declared: false
+  declared: true
   subthemes:
   - ai_capex
+  - compute_demand
+  - eu_ai_act
+  - federal_preemption
   - grid_capacity
   - power_bottleneck
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_commitments
   subthemes_local:
   - ai_capex
   - ai_capex_spending
-  n_sources: 1
+  - regulatory_anticipation
+  n_sources: 2
   events:
   - event_id: 2025-01-21:structural_themes:-
     geo: ''
     subthemes_local:
     - ai_capex
     - ai_capex_spending
+    - regulatory_anticipation
+    directions_by_reference:
+      IGV:
+      - neutral
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
       capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
       storici (2021–presente).md
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
     evidence:
     - source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo
         di bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico
@@ -111632,6 +113104,16 @@ episodes:
       - ai_capex
       - ai_capex_spending
       directions_by_reference: {}
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - regulatory_anticipation
+      directions_by_reference:
+        IGV:
+        - neutral
 - date: '2025-01-26'
   theme: structural_themes
   direction: neg
@@ -113566,6 +115048,57 @@ episodes:
         - neutral
         XLU:
         - pos
+- date: '2025-07-01'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    IGV:
+    - neg
+  direction_sources:
+    IGV:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - compute_demand
+  - eu_ai_act
+  - federal_preemption
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_commitments
+  subthemes_local:
+  - regulatory_anticipation
+  n_sources: 1
+  events:
+  - event_id: 2025-07-01:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - regulatory_anticipation
+    directions_by_reference:
+      IGV:
+      - neg
+    sources:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    evidence:
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - regulatory_anticipation
+      directions_by_reference:
+        IGV:
+        - neg
 - date: '2025-07-15'
   theme: structural_themes
   direction: ''
@@ -113655,6 +115188,60 @@ episodes:
       subthemes_local:
       - ai_capex_spending
       directions_by_reference: {}
+- date: '2025-07-23'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    SOXX:
+    - neutral
+  direction_sources:
+    SOXX:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - compute_demand
+  - eu_ai_act
+  - federal_preemption
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_commitments
+  subthemes_local:
+  - ai_capex
+  - regulatory_anticipation
+  n_sources: 1
+  events:
+  - event_id: 2025-07-23:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex
+    - regulatory_anticipation
+    directions_by_reference:
+      SOXX:
+      - neutral
+    sources:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    evidence:
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - ai_capex
+      - regulatory_anticipation
+      directions_by_reference:
+        SOXX:
+        - neutral
 - date: '2025-08-19'
   theme: structural_themes
   direction: neg
@@ -114091,6 +115678,57 @@ episodes:
       - hbm
       - memory_cycle
       directions_by_reference: {}
+- date: '2025-09-29'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    IGV:
+    - neutral
+  direction_sources:
+    IGV:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - compute_demand
+  - eu_ai_act
+  - federal_preemption
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_commitments
+  subthemes_local:
+  - regulatory_anticipation
+  n_sources: 1
+  events:
+  - event_id: 2025-09-29:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - regulatory_anticipation
+    directions_by_reference:
+      IGV:
+      - neutral
+    sources:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    evidence:
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - regulatory_anticipation
+      directions_by_reference:
+        IGV:
+        - neutral
 - date: '2025-10-16'
   theme: structural_themes
   direction: ''
@@ -114251,6 +115889,57 @@ episodes:
         - neutral
         XLU:
         - pos
+- date: '2025-12-12'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    IGV:
+    - neutral
+  direction_sources:
+    IGV:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - compute_demand
+  - eu_ai_act
+  - federal_preemption
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_commitments
+  subthemes_local:
+  - regulatory_anticipation
+  n_sources: 1
+  events:
+  - event_id: 2025-12-12:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - regulatory_anticipation
+    directions_by_reference:
+      IGV:
+      - neutral
+    sources:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    evidence:
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - regulatory_anticipation
+      directions_by_reference:
+        IGV:
+        - neutral
 - date: '2025-12-17'
   theme: structural_themes
   direction: ''
@@ -115674,3 +117363,285 @@ episodes:
         e trasmissione ai mercati (1975–presente).md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2026-09-14'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    IGV:
+    - neg
+    - pos
+    SOXX:
+    - neg
+    XLU:
+    - neg
+    ^NDX:
+    - neg
+    ^VIX:
+    - pos
+  direction_sources:
+    IGV:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    SOXX:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    XLU:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    ^NDX:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    ^VIX:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - compute_demand
+  - eu_ai_act
+  - federal_preemption
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_commitments
+  subthemes_local:
+  - ai_capex
+  - concentration_risk
+  - safety_pause
+  - valuation_derisking
+  n_sources: 1
+  events:
+  - event_id: 2026-09-14:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex
+    - concentration_risk
+    - safety_pause
+    - valuation_derisking
+    directions_by_reference:
+      IGV:
+      - neg
+      - pos
+      SOXX:
+      - neg
+      XLU:
+      - neg
+      ^NDX:
+      - neg
+      ^VIX:
+      - pos
+    sources:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    evidence:
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - ai_capex
+      - safety_pause
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - concentration_risk
+      - safety_pause
+      directions_by_reference:
+        ^NDX:
+        - neg
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - safety_pause
+      - valuation_derisking
+      directions_by_reference:
+        IGV:
+        - neg
+        - pos
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - ai_capex
+      - safety_pause
+      directions_by_reference:
+        XLU:
+        - neg
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - safety_pause
+      directions_by_reference:
+        ^VIX:
+        - pos
+- date: '2026-09-28'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    IGV:
+    - neg
+    - pos
+    SOXX:
+    - neg
+    XLU:
+    - neg
+    ^NDX:
+    - neg
+    ^VIX:
+    - pos
+  direction_sources:
+    IGV:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    SOXX:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    XLU:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    ^NDX:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    ^VIX:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - compute_demand
+  - eu_ai_act
+  - federal_preemption
+  - regulatory_anticipation
+  - safety_pause
+  - voluntary_commitments
+  subthemes_local:
+  - ai_capex
+  - concentration_risk
+  - safety_pause
+  - valuation_derisking
+  n_sources: 1
+  events:
+  - event_id: 2026-09-28:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex
+    - concentration_risk
+    - safety_pause
+    - valuation_derisking
+    directions_by_reference:
+      IGV:
+      - neg
+      - pos
+      SOXX:
+      - neg
+      XLU:
+      - neg
+      ^NDX:
+      - neg
+      ^VIX:
+      - pos
+    sources:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    evidence:
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - ai_capex
+      - safety_pause
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - concentration_risk
+      - safety_pause
+      directions_by_reference:
+        ^NDX:
+        - neg
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - safety_pause
+      - valuation_derisking
+      directions_by_reference:
+        IGV:
+        - neg
+        - pos
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - ai_capex
+      - safety_pause
+      directions_by_reference:
+        XLU:
+        - neg
+    - source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli;
+        trasmissione ai semiconduttori, al software e alle utility — regime ed episodi
+        storici (2018–presente)/Regolazione anticipata dell'AI e pause di sicurezza
+        dei modelli- trasmissione ai semiconduttori, al software e alle utility —
+        regime ed episodi storici (2018–presente).md
+      subthemes_local:
+      - safety_pause
+      directions_by_reference:
+        ^VIX:
+        - pos
