@@ -1,5 +1,5 @@
-generated_at: '2026-09-29T21:35:17'
-num_entries: 30
+generated_at: '2026-09-30T22:09:06'
+num_entries: 31
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -1401,6 +1401,65 @@ entries:
   - obr
   - risk-off
   - safe haven
+- source_file: Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+    ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+    anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+    al software e alle utility — regime ed episodi storici (2018–presente).md
+  title: 'Regolazione anticipata dell''AI e pause di sicurezza dei modelli: trasmissione
+    ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)'
+  date_compiled: 2026-09-30
+  primary_theme: structural_themes
+  sub_themes:
+  - safety_pause
+  - regulatory_anticipation
+  - federal_preemption
+  - eu_ai_act
+  - voluntary_commitments
+  - compute_demand
+  relevant_assets:
+  - SOXX
+  - ^NDX
+  - IGV
+  - XLU
+  - ^GSPC
+  - ^VIX
+  - ^TNX
+  external_assets_mentioned:
+  - ^SOX (PHLX Semiconductor Index) — è l'indice citato dalla stampa per tutte le
+    reazioni del 2026; SOXX lo approssima ma con pesi diversi
+  - SMH — ETF semiconduttori alternativo, utile come verifica di robustezza su SOXX
+  - NVDA — il 2026-09-28 si è mosso in senso opposto al settore (buyback da 150 mld
+    $), distorce ^NDX e SOXX
+  - MSFT, GOOGL — controparte redistributiva del canale domanda di calcolo (in rialzo
+    il 2026-09-14)
+  - MU, INTC, AMD — titoli più colpiti dalle pause (HBM e CPU per agenti), misurano
+    il canale capex puro
+  - SK Hynix, Samsung Electronics, Kospi — prima reazione in Asia il lunedì mattina
+    dopo annunci nel fine settimana
+  - Futures Nasdaq-100 (NQ) — incorporano la reazione pre-apertura agli annunci del
+    fine settimana
+  - OpenAI, Anthropic (private) — soggetti diretti delle pause e dei provvedimenti,
+    non quotati
+  - CRWV, ORCL — esposizione diretta alla domanda di calcolo dei laboratori di frontiera
+  time_window:
+    start: 2018-01-01
+    end: present
+  regime_phases:
+  - pre_chatgpt_soft_law: 2018-01-01 to 2022-11-29
+  - first_measures_2023_2024: 2022-11-30 to 2025-01-19
+  - preemption_deregulation: 2025-01-20 to 2026-07-20
+  - voluntary_pause_era: 2026-07-21 to present
+  keywords:
+  - AI regulation
+  - AI Act
+  - executive order
+  - pausa di sicurezza
+  - safety pause
+  - preemption
+  - moratoria
+  - frontier model
+  - model training pause
+  - regolazione dell'intelligenza artificiale
 - source_file: Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi
     datati per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime
     sanzioni — mappa di episodi datati per event study (2022–2026).md
