@@ -74,3 +74,7 @@ news_impact_pipeline/tests/.baseline_assets.json
 knowledge_base/_prompts/*
 !knowledge_base/_prompts/README.md
 !knowledge_base/_prompts/_TEMPLATE.md
+
+# Ricevute CPI congelate: dati locali, mai aggiunti al repository.
+/experiments/cpi_lab/runs/*
+!/experiments/cpi_lab/runs/.gitkeep

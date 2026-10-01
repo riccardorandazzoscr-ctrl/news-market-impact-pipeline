@@ -77,8 +77,8 @@ headless su Opus 5.5. Orari e ripristino: [routine_giornaliera.md](references/ro
 - [quando_si_rompe.md](references/quando_si_rompe.md) — report non uscito, DB vuoto, guasti muti.
 - [routine_giornaliera.md](references/routine_giornaliera.md) — orari, modelli, verifica e
   ricarica dei job.
-- [implementazione_pilota_cpi.md](references/implementazione_pilota_cpi.md) — il laboratorio
-  CPI (pilota separato dalla pipeline quotidiana).
+- [laboratorio_cpi.md](references/laboratorio_cpi.md) — il laboratorio CPI; mandato in
+  [implementazione_pilota_cpi.md](references/implementazione_pilota_cpi.md).
 
 ## Vincoli non negoziabili
 

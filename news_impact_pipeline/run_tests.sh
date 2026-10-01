@@ -53,6 +53,9 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
   run "stato giornata — le sei fasi, il riuso delle schede, la ricevuta di consegna" \
       tests/test_stato_giornata.py
 
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "cpi" ] && \
+  run "CPI lab — protocollo, calendario, replay e ricevuta" tests/test_cpi_lab.py
+
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "forecast" ] && \
   run "forecast — uso dichiarato, scenario, correzioni e valutazione congelata (R09)" \
       tests/test_forecast_tracking.py
