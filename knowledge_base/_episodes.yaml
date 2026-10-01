@@ -1,5 +1,5 @@
-generated_at: '2026-10-01T16:08:48'
-num_episodes: 1228
+generated_at: '2026-10-01T17:21:33'
+num_episodes: 1274
 episodes:
 - date: '1984-01-01'
   theme: commodity_energy
@@ -84749,6 +84749,104 @@ episodes:
     - source: card:2026-08-17/news_04.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2020-03-16'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - neutral
+    KRW=X:
+    - pos
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - pos
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - guidance_pivot
+  - korea_release
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2020-03-16:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - guidance_pivot
+    - korea_release
+    - rate_decision
+    - rba
+    directions_by_reference:
+      EWY:
+      - neutral
+      KRW=X:
+      - pos
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - guidance_pivot
+      - korea_release
+      - rate_decision
+      - rba
+      directions_by_reference:
+        KRW=X:
+        - pos
+        EWY:
+        - neutral
+- date: '2020-03-17'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  direction_review_excluded:
+    KRW=X: 'La research la dichiara data alternativa al 2020-03-16 per lo stesso taglio
+      («usarne una sola»): tenuta solo la prima.'
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2020-03-17:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - rba
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - rba
+      directions_by_reference: {}
 - date: '2020-10-10'
   theme: monetary_policy
   direction: ''
@@ -85039,6 +85137,69 @@ episodes:
       directions_by_reference:
         CNY=X:
         - pos
+- date: '2021-08-26'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - neutral
+    KRW=X:
+    - neg
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - guidance_pivot
+  - korea_release
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2021-08-26:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - guidance_pivot
+    - korea_release
+    - rate_decision
+    - rba
+    directions_by_reference:
+      EWY:
+      - neutral
+      KRW=X:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - guidance_pivot
+      - korea_release
+      - rate_decision
+      - rba
+      directions_by_reference:
+        KRW=X:
+        - neg
+        EWY:
+        - neutral
 - date: '2021-09-22'
   theme: monetary_policy
   direction: neg
@@ -86195,6 +86356,69 @@ episodes:
       directions_by_reference:
         CNY=X:
         - pos
+- date: '2022-07-13'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - neutral
+    KRW=X:
+    - neg
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - guidance_pivot
+  - korea_release
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2022-07-13:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - guidance_pivot
+    - korea_release
+    - rate_decision
+    - rba
+    directions_by_reference:
+      EWY:
+      - neutral
+      KRW=X:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - guidance_pivot
+      - korea_release
+      - rate_decision
+      - rba
+      directions_by_reference:
+        KRW=X:
+        - neg
+        EWY:
+        - neutral
 - date: '2022-07-20'
   theme: monetary_policy
   direction: neutral
@@ -89665,6 +89889,69 @@ episodes:
     - source: card:2026-07-25/news_06.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2023-01-13'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - neutral
+    KRW=X:
+    - neg
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - guidance_pivot
+  - korea_release
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2023-01-13:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - guidance_pivot
+    - korea_release
+    - rate_decision
+    - rba
+    directions_by_reference:
+      EWY:
+      - neutral
+      KRW=X:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - guidance_pivot
+      - korea_release
+      - rate_decision
+      - rba
+      directions_by_reference:
+        KRW=X:
+        - neg
+        EWY:
+        - neutral
 - date: '2023-01-19'
   theme: monetary_policy
   direction: neg
@@ -90049,6 +90336,78 @@ episodes:
       - eurozone_release
       - guidance_pivot
       directions_by_reference: {}
+- date: '2023-02-07'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - neg
+    VGB.AX:
+    - neg
+    ^AXJO:
+    - neg
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - guidance_pivot
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2023-02-07:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - guidance_pivot
+    - rate_decision
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - neg
+      VGB.AX:
+      - neg
+      ^AXJO:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - guidance_pivot
+      - rate_decision
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - neg
+        VGB.AX:
+        - neg
+        ^AXJO:
+        - neg
 - date: '2023-02-09'
   theme: monetary_policy
   direction: mixed
@@ -90766,6 +91125,78 @@ episodes:
       directions_by_reference:
         CNY=X:
         - pos
+- date: '2023-06-06'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - neg
+    VGB.AX:
+    - neg
+    ^AXJO:
+    - neg
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - guidance_pivot
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2023-06-06:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - guidance_pivot
+    - rate_decision
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - neg
+      VGB.AX:
+      - neg
+      ^AXJO:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - guidance_pivot
+      - rate_decision
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - neg
+        VGB.AX:
+        - neg
+        ^AXJO:
+        - neg
 - date: '2023-06-13'
   theme: monetary_policy
   direction: mixed
@@ -91180,6 +91611,78 @@ episodes:
       - eurozone_release
       - rate_decision
       directions_by_reference: {}
+- date: '2023-07-04'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - pos
+    VGB.AX:
+    - pos
+    ^AXJO:
+    - pos
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - pos
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - guidance_pivot
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2023-07-04:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - guidance_pivot
+    - rate_decision
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - pos
+      VGB.AX:
+      - pos
+      ^AXJO:
+      - pos
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - guidance_pivot
+      - rate_decision
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - pos
+        VGB.AX:
+        - pos
+        ^AXJO:
+        - pos
 - date: '2023-07-20'
   theme: monetary_policy
   direction: neutral
@@ -93197,6 +93700,62 @@ episodes:
       directions_by_reference:
         CNY=X:
         - pos
+- date: '2023-12-01'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - pos
+    KRW=X:
+    - neg
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - korea_release
+  - memory_cycle
+  n_sources: 1
+  events:
+  - event_id: 2023-12-01:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - korea_release
+    - memory_cycle
+    directions_by_reference:
+      EWY:
+      - pos
+      KRW=X:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - korea_release
+      - memory_cycle
+      directions_by_reference:
+        EWY:
+        - pos
+        KRW=X:
+        - neg
 - date: '2023-12-20'
   theme: monetary_policy
   direction: neutral
@@ -97311,6 +97870,128 @@ episodes:
       directions_by_reference:
         HG=F:
         - pos
+- date: '2024-10-11'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - neutral
+    KRW=X:
+    - pos
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - pos
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - election_risk
+  - guidance_pivot
+  - korea_release
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2024-10-11:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - election_risk
+    - guidance_pivot
+    - korea_release
+    - rate_decision
+    - rba
+    directions_by_reference:
+      EWY:
+      - neutral
+      KRW=X:
+      - pos
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - election_risk
+      - guidance_pivot
+      - korea_release
+      - rate_decision
+      - rba
+      directions_by_reference:
+        KRW=X:
+        - pos
+        EWY:
+        - neutral
+- date: '2024-10-21'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - pos
+    KRW=X:
+    - neutral
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - korea_release
+  - memory_cycle
+  n_sources: 1
+  events:
+  - event_id: 2024-10-21:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - korea_release
+    - memory_cycle
+    directions_by_reference:
+      EWY:
+      - pos
+      KRW=X:
+      - neutral
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - korea_release
+      - memory_cycle
+      directions_by_reference:
+        EWY:
+        - pos
+        KRW=X:
+        - neutral
 - date: '2024-10-23'
   theme: monetary_policy
   direction: mixed
@@ -97706,6 +98387,199 @@ episodes:
       - fiscal_expansion
       directions_by_reference:
         HG=F:
+        - pos
+- date: '2024-11-28'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    KRW=X:
+    - pos
+  direction_sources:
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  direction_review_excluded:
+    EWY: 'NYSE chiusa per il Thanksgiving: EWY non ha seduta quel giorno, la research
+      usa il 2024-11-29 come data proxy.'
+  directions_local:
+  - pos
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - guidance_pivot
+  - korea_release
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2024-11-28:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - guidance_pivot
+    - korea_release
+    - rate_decision
+    - rba
+    directions_by_reference:
+      KRW=X:
+      - pos
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - guidance_pivot
+      - korea_release
+      - rate_decision
+      - rba
+      directions_by_reference:
+        KRW=X:
+        - pos
+- date: '2024-11-29'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - neutral
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - korea_release
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2024-11-29:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - korea_release
+    - rate_decision
+    - rba
+    directions_by_reference:
+      EWY:
+      - neutral
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - korea_release
+      - rate_decision
+      - rba
+      directions_by_reference:
+        EWY:
+        - neutral
+- date: '2024-12-03'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local: []
+  n_sources: 1
+  events:
+  - event_id: 2024-12-03:monetary_policy:-
+    geo: ''
+    subthemes_local: []
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local: []
+      directions_by_reference: {}
+- date: '2024-12-04'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - pos
+    KRW=X:
+    - neg
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - fx_intervention
+  - korea_release
+  n_sources: 1
+  events:
+  - event_id: 2024-12-04:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - fx_intervention
+    - korea_release
+    directions_by_reference:
+      EWY:
+      - pos
+      KRW=X:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - fx_intervention
+      - korea_release
+      directions_by_reference:
+        KRW=X:
+        - neg
+        EWY:
         - pos
 - date: '2024-12-09'
   theme: monetary_policy
@@ -98648,11 +99522,19 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    EWY:
+    - neg
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
   directions_local:
   - neg
   declared: true
   subthemes:
   - auction
+  - australia_release
   - boj
   - boj_divergence
   - boj_intervention
@@ -98689,7 +99571,9 @@ episodes:
   - japan
   - jpy
   - jpy_intervention_zone
+  - korea_release
   - long_end_rates
+  - memory_cycle
   - minutes
   - non_projection_meeting
   - policy_divergence
@@ -98697,6 +99581,7 @@ episodes:
   - rate_hike_expected
   - rates
   - rates_atipico
+  - rba
   - term_premium
   - thin_liquidity
   - warsh
@@ -98705,8 +99590,10 @@ episodes:
   subthemes_local:
   - boj
   - jpy
+  - korea_release
+  - memory_cycle
   - rate_decision
-  n_sources: 36
+  n_sources: 37
   events:
   - event_id: 2025-01-23:monetary_policy:-
     geo: ''
@@ -98874,6 +99761,27 @@ episodes:
       - jpy
       - rate_decision
       directions_by_reference: {}
+  - event_id: 2025-01-23:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - korea_release
+    - memory_cycle
+    directions_by_reference:
+      EWY:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - korea_release
+      - memory_cycle
+      directions_by_reference:
+        EWY:
+        - neg
 - date: '2025-01-24'
   theme: monetary_policy
   direction: mixed
@@ -100226,6 +101134,81 @@ episodes:
     - source: card:2026-08-12/news_04.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2025-07-08'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - neg
+    VGB.AX:
+    - neg
+    ^AXJO:
+    - neg
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - guidance_pivot
+  - rate_decision
+  - rba
+  - tariff_escalation
+  n_sources: 1
+  events:
+  - event_id: 2025-07-08:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - guidance_pivot
+    - rate_decision
+    - rba
+    - tariff_escalation
+    directions_by_reference:
+      AUD=X:
+      - neg
+      VGB.AX:
+      - neg
+      ^AXJO:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - guidance_pivot
+      - rate_decision
+      - rba
+      - tariff_escalation
+      directions_by_reference:
+        AUD=X:
+        - neg
+        VGB.AX:
+        - neg
+        ^AXJO:
+        - neg
 - date: '2025-07-31'
   theme: monetary_policy
   direction: mixed
@@ -101290,6 +102273,56 @@ episodes:
       - jpy
       - yen
       directions_by_reference: {}
+- date: '2025-12-23'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    KRW=X:
+    - neg
+  direction_sources:
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - fx_intervention
+  - korea_release
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2025-12-23:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - fx_intervention
+    - korea_release
+    - rba
+    directions_by_reference:
+      KRW=X:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - fx_intervention
+      - korea_release
+      - rba
+      directions_by_reference:
+        KRW=X:
+        - neg
 - date: '2025-12-24'
   theme: monetary_policy
   direction: mixed
@@ -101441,6 +102474,73 @@ episodes:
       subthemes_local:
       - cny
       directions_by_reference: {}
+- date: '2026-01-15'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - neutral
+    KRW=X:
+    - neg
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  - pos
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - fx_intervention
+  - guidance_pivot
+  - korea_release
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-01-15:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - fx_intervention
+    - guidance_pivot
+    - korea_release
+    - rate_decision
+    - rba
+    directions_by_reference:
+      EWY:
+      - neutral
+      KRW=X:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - fx_intervention
+      - guidance_pivot
+      - korea_release
+      - rate_decision
+      - rba
+      directions_by_reference:
+        KRW=X:
+        - neg
+        EWY:
+        - neutral
 - date: '2026-01-21'
   theme: monetary_policy
   direction: mixed
@@ -101612,6 +102712,256 @@ episodes:
       - hawkish
       - rate_decision
       directions_by_reference: {}
+- date: '2026-01-28'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - pos
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - korea_release
+  - memory_cycle
+  n_sources: 1
+  events:
+  - event_id: 2026-01-28:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - korea_release
+    - memory_cycle
+    directions_by_reference:
+      EWY:
+      - pos
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - korea_release
+      - memory_cycle
+      directions_by_reference:
+        EWY:
+        - pos
+- date: '2026-02-03'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - neg
+    VGB.AX:
+    - neg
+    ^AXJO:
+    - neg
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - guidance_pivot
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-02-03:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - guidance_pivot
+    - rate_decision
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - neg
+      VGB.AX:
+      - neg
+      ^AXJO:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - guidance_pivot
+      - rate_decision
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - neg
+        VGB.AX:
+        - neg
+        ^AXJO:
+        - neg
+- date: '2026-02-25'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - neg
+    VGB.AX:
+    - neg
+    ^AXJO:
+    - neg
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - guidance_pivot
+  - inflation_print
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-02-25:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - guidance_pivot
+    - inflation_print
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - neg
+      VGB.AX:
+      - neg
+      ^AXJO:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - guidance_pivot
+      - inflation_print
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - neg
+        VGB.AX:
+        - neg
+        ^AXJO:
+        - neg
+- date: '2026-02-26'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - neutral
+    KRW=X:
+    - neutral
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - korea_release
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-02-26:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - korea_release
+    - rate_decision
+    - rba
+    directions_by_reference:
+      EWY:
+      - neutral
+      KRW=X:
+      - neutral
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - korea_release
+      - rate_decision
+      - rba
+      directions_by_reference:
+        KRW=X:
+        - neutral
+        EWY:
+        - neutral
 - date: '2026-02-27'
   theme: monetary_policy
   direction: ''
@@ -101665,6 +103015,329 @@ episodes:
       directions_by_reference:
         CNY=X:
         - pos
+- date: '2026-03-17'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - neg
+    VGB.AX:
+    - neg
+    ^AXJO:
+    - neg
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - guidance_pivot
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-03-17:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - guidance_pivot
+    - rate_decision
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - neg
+      VGB.AX:
+      - neg
+      ^AXJO:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - guidance_pivot
+      - rate_decision
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - neg
+        VGB.AX:
+        - neg
+        ^AXJO:
+        - neg
+- date: '2026-03-25'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - pos
+    VGB.AX:
+    - pos
+    ^AXJO:
+    - pos
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - pos
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - guidance_pivot
+  - inflation_print
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-03-25:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - guidance_pivot
+    - inflation_print
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - pos
+      VGB.AX:
+      - pos
+      ^AXJO:
+      - pos
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - guidance_pivot
+      - inflation_print
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - pos
+        VGB.AX:
+        - pos
+        ^AXJO:
+        - pos
+- date: '2026-04-10'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - neutral
+    KRW=X:
+    - neutral
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - korea_release
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-04-10:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - korea_release
+    - rate_decision
+    - rba
+    directions_by_reference:
+      EWY:
+      - neutral
+      KRW=X:
+      - neutral
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - korea_release
+      - rate_decision
+      - rba
+      directions_by_reference:
+        KRW=X:
+        - neutral
+        EWY:
+        - neutral
+- date: '2026-04-23'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - neutral
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - korea_release
+  - memory_cycle
+  n_sources: 1
+  events:
+  - event_id: 2026-04-23:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - korea_release
+    - memory_cycle
+    directions_by_reference:
+      EWY:
+      - neutral
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - korea_release
+      - memory_cycle
+      directions_by_reference:
+        EWY:
+        - neutral
+- date: '2026-04-29'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - neg
+    VGB.AX:
+    - neg
+    ^AXJO:
+    - neg
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - guidance_pivot
+  - inflation_print
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-04-29:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - guidance_pivot
+    - inflation_print
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - neg
+      VGB.AX:
+      - neg
+      ^AXJO:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - guidance_pivot
+      - inflation_print
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - neg
+        VGB.AX:
+        - neg
+        ^AXJO:
+        - neg
 - date: '2026-04-30'
   theme: monetary_policy
   direction: mixed
@@ -102174,6 +103847,78 @@ episodes:
     - source: card:2026-08-14/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2026-05-05'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - neg
+    VGB.AX:
+    - neg
+    ^AXJO:
+    - neg
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - guidance_pivot
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-05-05:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - guidance_pivot
+    - rate_decision
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - neg
+      VGB.AX:
+      - neg
+      ^AXJO:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - guidance_pivot
+      - rate_decision
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - neg
+        VGB.AX:
+        - neg
+        ^AXJO:
+        - neg
 - date: '2026-05-13'
   theme: monetary_policy
   direction: mixed
@@ -102450,6 +104195,189 @@ episodes:
       - synchronized_selloff
       - term_premium
       directions_by_reference: {}
+- date: '2026-05-21'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - pos
+    KRW=X:
+    - neg
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - korea_release
+  - memory_cycle
+  n_sources: 1
+  events:
+  - event_id: 2026-05-21:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - korea_release
+    - memory_cycle
+    directions_by_reference:
+      EWY:
+      - pos
+      KRW=X:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - korea_release
+      - memory_cycle
+      directions_by_reference:
+        EWY:
+        - pos
+        KRW=X:
+        - neg
+- date: '2026-05-27'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - pos
+    VGB.AX:
+    - neutral
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  - pos
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - guidance_pivot
+  - inflation_print
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-05-27:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - guidance_pivot
+    - inflation_print
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - pos
+      VGB.AX:
+      - neutral
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - guidance_pivot
+      - inflation_print
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - pos
+        VGB.AX:
+        - neutral
+- date: '2026-05-28'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - neutral
+    KRW=X:
+    - neg
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - guidance_pivot
+  - korea_release
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-05-28:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - guidance_pivot
+    - korea_release
+    - rate_decision
+    - rba
+    directions_by_reference:
+      EWY:
+      - neutral
+      KRW=X:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - guidance_pivot
+      - korea_release
+      - rate_decision
+      - rba
+      directions_by_reference:
+        KRW=X:
+        - neg
+        EWY:
+        - neutral
 - date: '2026-06-11'
   theme: monetary_policy
   direction: mixed
@@ -102796,6 +104724,193 @@ episodes:
       - jpy
       - term_premium
       directions_by_reference: {}
+- date: '2026-06-16'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - neutral
+    VGB.AX:
+    - neutral
+    ^AXJO:
+    - neutral
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-06-16:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - rate_decision
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - neutral
+      VGB.AX:
+      - neutral
+      ^AXJO:
+      - neutral
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - rate_decision
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - neutral
+        VGB.AX:
+        - neutral
+        ^AXJO:
+        - neutral
+- date: '2026-06-22'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - pos
+    KRW=X:
+    - neg
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - korea_release
+  - memory_cycle
+  n_sources: 1
+  events:
+  - event_id: 2026-06-22:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - korea_release
+    - memory_cycle
+    directions_by_reference:
+      EWY:
+      - pos
+      KRW=X:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - korea_release
+      - memory_cycle
+      directions_by_reference:
+        EWY:
+        - pos
+        KRW=X:
+        - neg
+- date: '2026-07-16'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - neutral
+    KRW=X:
+    - neg
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - guidance_pivot
+  - korea_release
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-07-16:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - guidance_pivot
+    - korea_release
+    - rate_decision
+    - rba
+    directions_by_reference:
+      EWY:
+      - neutral
+      KRW=X:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - guidance_pivot
+      - korea_release
+      - rate_decision
+      - rba
+      directions_by_reference:
+        KRW=X:
+        - neg
+        EWY:
+        - neutral
 - date: '2026-07-19'
   theme: monetary_policy
   direction: mixed
@@ -102872,6 +104987,222 @@ episodes:
     - source: card:2026-08-14/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2026-07-21'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local: []
+  n_sources: 1
+  events:
+  - event_id: 2026-07-21:monetary_policy:-
+    geo: ''
+    subthemes_local: []
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local: []
+      directions_by_reference: {}
+- date: '2026-07-22'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  direction_review_excluded:
+    EWY: Data incerta fra il 21 e il 22 luglio secondo la research stessa.
+    KRW=X: Data incerta fra il 21 e il 22 luglio secondo la research stessa.
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - korea_release
+  n_sources: 1
+  events:
+  - event_id: 2026-07-22:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - korea_release
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - korea_release
+      directions_by_reference: {}
+- date: '2026-07-29'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - pos
+    EWY:
+    - neg
+    VGB.AX:
+    - pos
+    ^AXJO:
+    - pos
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - pos
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - guidance_pivot
+  - inflation_print
+  - korea_release
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-07-29:monetary_policy:australia_release,korea_release
+    geo: australia_release,korea_release
+    subthemes_local:
+    - australia_release
+    - guidance_pivot
+    - inflation_print
+    - korea_release
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - pos
+      EWY:
+      - neg
+      VGB.AX:
+      - pos
+      ^AXJO:
+      - pos
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - guidance_pivot
+      - inflation_print
+      - korea_release
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - pos
+        VGB.AX:
+        - pos
+        ^AXJO:
+        - pos
+        EWY:
+        - neg
+- date: '2026-08-11'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - neutral
+    VGB.AX:
+    - neutral
+    ^AXJO:
+    - neutral
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-08-11:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - rate_decision
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - neutral
+      VGB.AX:
+      - neutral
+      ^AXJO:
+      - neutral
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - rate_decision
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - neutral
+        VGB.AX:
+        - neutral
+        ^AXJO:
+        - neutral
 - date: '2026-08-18'
   theme: monetary_policy
   direction: mixed
@@ -103084,6 +105415,510 @@ episodes:
       directions_by_reference:
         CNY=X:
         - pos
+- date: '2026-08-26'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - neg
+    VGB.AX:
+    - neg
+    ^AXJO:
+    - neg
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - guidance_pivot
+  - inflation_print
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-08-26:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - guidance_pivot
+    - inflation_print
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - neg
+      VGB.AX:
+      - neg
+      ^AXJO:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - guidance_pivot
+      - inflation_print
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - neg
+        VGB.AX:
+        - neg
+        ^AXJO:
+        - neg
+- date: '2026-08-27'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - neutral
+    KRW=X:
+    - neg
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  - pos
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - guidance_pivot
+  - korea_release
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-08-27:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - guidance_pivot
+    - korea_release
+    - rate_decision
+    - rba
+    directions_by_reference:
+      EWY:
+      - neutral
+      KRW=X:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - guidance_pivot
+      - korea_release
+      - rate_decision
+      - rba
+      directions_by_reference:
+        KRW=X:
+        - neg
+        EWY:
+        - neutral
+- date: '2026-09-11'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - pos
+    KRW=X:
+    - neg
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - korea_release
+  - memory_cycle
+  n_sources: 1
+  events:
+  - event_id: 2026-09-11:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - korea_release
+    - memory_cycle
+    directions_by_reference:
+      EWY:
+      - pos
+      KRW=X:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - korea_release
+      - memory_cycle
+      directions_by_reference:
+        EWY:
+        - pos
+        KRW=X:
+        - neg
+- date: '2026-09-21'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - pos
+    KRW=X:
+    - neg
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - korea_release
+  - memory_cycle
+  n_sources: 1
+  events:
+  - event_id: 2026-09-21:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - korea_release
+    - memory_cycle
+    directions_by_reference:
+      EWY:
+      - pos
+      KRW=X:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - korea_release
+      - memory_cycle
+      directions_by_reference:
+        EWY:
+        - pos
+        KRW=X:
+        - neg
+- date: '2026-09-28'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - neg
+    KRW=X:
+    - neutral
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - korea_release
+  - memory_cycle
+  n_sources: 1
+  events:
+  - event_id: 2026-09-28:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - korea_release
+    - memory_cycle
+    directions_by_reference:
+      EWY:
+      - neg
+      KRW=X:
+      - neutral
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - korea_release
+      - memory_cycle
+      directions_by_reference:
+        EWY:
+        - neg
+        KRW=X:
+        - neutral
+- date: '2026-09-29'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - neg
+    VGB.AX:
+    - neg
+    ^AXJO:
+    - neg
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - neg
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - guidance_pivot
+  - rate_decision
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-09-29:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - guidance_pivot
+    - rate_decision
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - neg
+      VGB.AX:
+      - neg
+      ^AXJO:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - guidance_pivot
+      - rate_decision
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - neg
+        VGB.AX:
+        - neg
+        ^AXJO:
+        - neg
+- date: '2026-09-30'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    AUD=X:
+    - pos
+    VGB.AX:
+    - pos
+    ^AXJO:
+    - pos
+  direction_sources:
+    AUD=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    VGB.AX:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^AXJO:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local:
+  - pos
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - australia_release
+  - guidance_pivot
+  - inflation_print
+  - rba
+  n_sources: 1
+  events:
+  - event_id: 2026-09-30:monetary_policy:australia_release
+    geo: australia_release
+    subthemes_local:
+    - australia_release
+    - guidance_pivot
+    - inflation_print
+    - rba
+    directions_by_reference:
+      AUD=X:
+      - pos
+      VGB.AX:
+      - pos
+      ^AXJO:
+      - pos
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - australia_release
+      - guidance_pivot
+      - inflation_print
+      - rba
+      directions_by_reference:
+        AUD=X:
+        - pos
+        VGB.AX:
+        - pos
+        ^AXJO:
+        - pos
+- date: '2026-10-01'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared: []
+  directions_by_reference:
+    EWY:
+    - pos
+    KRW=X:
+    - neg
+  direction_sources:
+    EWY:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    KRW=X:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  directions_local: []
+  declared: false
+  subthemes:
+  - australia_release
+  - boj_divergence
+  - fx_intervention
+  - korea_release
+  - memory_cycle
+  - rba
+  subthemes_local:
+  - korea_release
+  - memory_cycle
+  n_sources: 1
+  events:
+  - event_id: 2026-10-01:monetary_policy:korea_release
+    geo: korea_release
+    subthemes_local:
+    - korea_release
+    - memory_cycle
+    directions_by_reference:
+      EWY:
+      - pos
+      KRW=X:
+      - neg
+    sources:
+    - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+      Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    evidence:
+    - source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+        (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi
+        storici (1999–presente).md
+      subthemes_local:
+      - korea_release
+      - memory_cycle
+      directions_by_reference:
+        EWY:
+        - pos
+        KRW=X:
+        - neg
 - date: '2016-06-23'
   theme: regulatory
   direction: neg

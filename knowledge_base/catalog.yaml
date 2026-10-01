@@ -1,5 +1,5 @@
-generated_at: '2026-09-30T22:09:06'
-num_entries: 31
+generated_at: '2026-10-01T16:54:41'
+num_entries: 32
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -1460,6 +1460,58 @@ entries:
   - frontier model
   - model training pause
   - regolazione dell'intelligenza artificiale
+- source_file: Reserve Bank of Australia e Bank of Korea; regime ed episodi storici
+    (1999–presente)/Reserve Bank of Australia e Bank of Korea- regime ed episodi storici
+    (1999–presente).md
+  title: 'Reserve Bank of Australia e Bank of Korea: regime ed episodi storici (1999–presente)'
+  date_compiled: 2026-10-01
+  primary_theme: monetary_policy
+  sub_themes:
+  - australia_release
+  - korea_release
+  - rba
+  - boj_divergence
+  - memory_cycle
+  - fx_intervention
+  relevant_assets:
+  - AUD=X
+  - ^AXJO
+  - VGB.AX
+  - KRW=X
+  - EWY
+  external_assets_mentioned:
+  - 'KRX 3-Year e 10-Year KTB Futures (Korea Exchange): proxy più liquido del canale
+    tassi BOK; Reuters ne riporta i tick nei giorni di decisione (es. +8 tick il 2023-01-13)'
+  - 'Kiwoom KOSEF 10Y KTB ETF (148070.KS): ETF sui titoli di stato coreani a 10 anni
+    dal 2011, equivalente funzionale di VGB.AX per la Corea; volumi sottili (~18k
+    azioni/giorno), non in database'
+  time_window:
+    start: 1999-01-01
+    end: present
+  regime_phases:
+  - asia_post_crisis_targeting: 1999-01-01 to 2010-12-31
+  - china_commodity_low_rates: 2011-01-01 to 2020-03-15
+  - pandemic_inflation_shock: 2020-03-16 to 2023-01-13
+  - plateau_easing_ai_upcycle: 2023-01-14 to 2026-02-02
+  - hormuz_retightening_memory_supercycle: 2026-02-03 to present
+  keywords:
+  - RBA
+  - Reserve Bank of Australia
+  - Bank of Korea
+  - BOK
+  - banca centrale australiana
+  - banca centrale coreana
+  - dollaro australiano
+  - won coreano
+  - trimmed mean
+  - CPI australiano
+  - CPI coreano
+  - ASX 200
+  - Samsung
+  - SK Hynix
+  - ciclo memoria
+  - export semiconduttori Corea
+  - prior settimanale
 - source_file: Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi
     datati per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime
     sanzioni — mappa di episodi datati per event study (2022–2026).md

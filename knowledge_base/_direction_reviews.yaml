@@ -9313,3 +9313,1079 @@ reviews:
   source: 2026-08-20/news_03.md
   reason: 'La flash HICP di dicembre 2022 uscì il 6 gennaio 2023: data incoerente con la descrizione.'
   status: excluded
+- date: '2020-03-16'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (emergenza,
+    dovish)).
+  direction: pos
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2020-03-16'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (emergenza,
+    dovish)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2020-03-17'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'La research la dichiara data alternativa al 2020-03-16 per lo stesso taglio («usarne una sola»):
+    tenuta solo la prima.'
+  status: excluded
+- date: '2021-08-26'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish,
+    atteso a metà)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2021-08-26'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish,
+    atteso a metà)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2022-07-13'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2022-07-13'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2023-01-13'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish,
+    atteso)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2023-01-13'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish,
+    atteso)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2023-02-07'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    su guidance)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2023-02-07'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    su guidance)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2023-02-07'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    su guidance)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2023-06-06'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (sorpresa
+    hawkish)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2023-06-06'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (sorpresa
+    hawkish)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2023-06-06'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (sorpresa
+    hawkish)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2023-07-04'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (sorpresa
+    dovish)).
+  direction: pos
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2023-07-04'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (sorpresa
+    dovish)).
+  direction: pos
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2023-07-04'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (sorpresa
+    dovish)).
+  direction: pos
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2023-12-01'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_export).
+  direction: pos
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2023-12-01'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_export).
+  direction: neg
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2024-10-11'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (dovish,
+    atteso)).
+  direction: pos
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2024-10-11'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (dovish,
+    atteso)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2024-10-21'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_export (divergenza
+    interna)).
+  direction: pos
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2024-10-21'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_export (divergenza
+    interna)).
+  direction: neutral
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2024-11-28'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (sorpresa
+    dovish)).
+  direction: pos
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2024-11-28'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'NYSE chiusa per il Thanksgiving: EWY non ha seduta quel giorno, la research usa il 2024-11-29
+    come data proxy.'
+  status: excluded
+- date: '2024-11-29'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (reazione
+    EWY)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2024-12-04'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo fx_intervention).
+  direction: neg
+  mechanism:
+  - fx_intervention
+  - korea_release
+- date: '2024-12-04'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo fx_intervention).
+  direction: pos
+  mechanism:
+  - fx_intervention
+  - korea_release
+- date: '2025-01-23'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_earnings).
+  direction: neg
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2025-07-08'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (sorpresa
+    hawkish)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2025-07-08'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (sorpresa
+    hawkish)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2025-07-08'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (sorpresa
+    hawkish)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2025-12-23'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo fx_intervention (verbale)).
+  direction: neg
+  mechanism:
+  - fx_intervention
+  - korea_release
+- date: '2026-01-15'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    su guidance) + fx_intervention).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2026-01-15'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    su guidance) + fx_intervention).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2026-01-28'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_earnings (positivo)).
+  direction: pos
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2026-02-03'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso, statement hawkish)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-02-03'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso, statement hawkish)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-02-03'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso, statement hawkish)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-02-25'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (hawkish)).
+  direction: neg
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-02-25'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (hawkish)).
+  direction: neg
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-02-25'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (hawkish)).
+  direction: neg
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-02-26'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (in
+    linea)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2026-02-26'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (in
+    linea)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2026-03-17'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-03-17'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-03-17'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-03-25'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (dovish)).
+  direction: pos
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-03-25'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (dovish)).
+  direction: pos
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-03-25'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (dovish)).
+  direction: pos
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-04-10'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (in
+    linea)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2026-04-10'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (in
+    linea)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2026-04-23'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_earnings (in
+    linea)).
+  direction: neutral
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2026-04-29'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (hawkish headline)).
+  direction: neg
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-04-29'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (hawkish headline)).
+  direction: neg
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-04-29'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (hawkish headline)).
+  direction: neg
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-05-05'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso circa all'80%)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-05-05'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso circa all'80%)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-05-05'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso circa all'80%)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-05-21'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_export (positivo)).
+  direction: pos
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2026-05-21'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_export (positivo)).
+  direction: neg
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2026-05-27'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (misto: headline dovish, core hawkish)).'
+  direction: pos
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-05-27'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (misto: headline dovish, core hawkish)).'
+  direction: neutral
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-05-28'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    su guidance)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2026-05-28'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    su guidance)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2026-06-16'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (in
+    linea)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-06-16'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (in
+    linea)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-06-16'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (in
+    linea)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-06-22'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_export (positivo)).
+  direction: pos
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2026-06-22'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_export (positivo)).
+  direction: neg
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2026-07-16'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2026-07-16'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2026-07-22'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Data incerta fra il 21 e il 22 luglio secondo la research stessa.
+  status: excluded
+- date: '2026-07-22'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Data incerta fra il 21 e il 22 luglio secondo la research stessa.
+  status: excluded
+- date: '2026-07-29'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (dovish) + memory_earnings (negativo)).
+  direction: pos
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-07-29'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (dovish) + memory_earnings (negativo)).
+  direction: pos
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-07-29'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (dovish) + memory_earnings (negativo)).
+  direction: pos
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-07-29'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (dovish) + memory_earnings (negativo)).
+  direction: neg
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-08-11'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (in
+    linea)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-08-11'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (in
+    linea)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-08-11'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (in
+    linea)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-08-26'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (hawkish)).
+  direction: neg
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-08-26'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (hawkish)).
+  direction: neg
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-08-26'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (hawkish)).
+  direction: neg
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-08-27'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso a metà, tono letto come dovish)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2026-08-27'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso a metà, tono letto come dovish)).
+  direction: neutral
+  mechanism:
+  - rate_decision
+  - korea_release
+- date: '2026-09-11'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_export (positivo)).
+  direction: pos
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2026-09-11'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_export (positivo)).
+  direction: neg
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2026-09-21'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_export (positivo)).
+  direction: pos
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2026-09-21'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_export (positivo)).
+  direction: neg
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2026-09-28'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_news (negativo)).
+  direction: neg
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2026-09-28'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_news (negativo)).
+  direction: neutral
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2026-09-29'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso al 92%)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-09-29'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso al 92%)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-09-29'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo rba_bok_policy (hawkish
+    atteso al 92%)).
+  direction: neg
+  mechanism:
+  - rate_decision
+  - australia_release
+- date: '2026-09-30'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (dovish sul core)).
+  direction: pos
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-09-30'
+  theme: monetary_policy
+  reference: VGB.AX
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (dovish sul core)).
+  direction: pos
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-09-30'
+  theme: monetary_policy
+  reference: ^AXJO
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo australia_release
+    (dovish sul core)).
+  direction: pos
+  mechanism:
+  - australia_release
+  - inflation_print
+- date: '2026-10-01'
+  theme: monetary_policy
+  reference: EWY
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_export (positivo)).
+  direction: pos
+  mechanism:
+  - memory_cycle
+  - korea_release
+- date: '2026-10-01'
+  theme: monetary_policy
+  reference: KRW=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: Verso dichiarato dalla research RBA/BoK (colonna «Direzione attesa», tipo memory_export (positivo)).
+  direction: neg
+  mechanism:
+  - memory_cycle
+  - korea_release
