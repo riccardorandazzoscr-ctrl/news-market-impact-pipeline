@@ -212,3 +212,10 @@ della correzione.
   `analogues.py labels --theme <t>`.
 - Aggiungere un'etichetta canonica = modificare `subtheme_taxonomy.yaml`, poi
   `analogues.py build`.
+- **Il tema di un episodio è quello dello studio, non del dato.** Una research mette
+  tutti i suoi episodi sotto il proprio `primary_theme`. Esempio: l'export coreano e
+  il ciclo della memoria stanno in `monetary_policy` (research RBA/BoK), non in
+  `macro_data`. Si interrogano con `--theme monetary_policy --subtheme memory_cycle
+  --subtheme korea_release --match-all`. Se il pool del tema naturale è vuoto, cerca
+  il token su tutti i temi con `analogues.py labels` prima di dichiarare la lacuna
+  (2026-10-02).
