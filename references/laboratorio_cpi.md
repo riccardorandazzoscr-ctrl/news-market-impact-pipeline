@@ -12,7 +12,7 @@ I tre pool sono: tutte le release CPI precedenti mature; release dal filtro attu
 
 ## Dati da inserire
 
-`events.jsonl` contiene un oggetto JSON per riga. L'archivio iniziale non contiene eventi reali: nelle ricerche locali non ho trovato una serie completa di headline mensili con consenso verificabile e istante di rilevazione. Non riempire i campi deducendoli da etichette come “sopra le attese”. Le fixture sintetiche stanno solo nel test e non vengono conteggiate come evidenza.
+`events.jsonl` contiene un oggetto JSON per riga. Contiene i rilasci reali dal 2015 al 2025 (conteggi: `cpi_lab.py validate`). Fonti: valore iniziale dal comunicato BLS archiviato; consenso = colonna «Median forecast» del calendario economico MarketWatch, letta dall'ultimo snapshot Wayback prima delle 08:30 ET. Il calendario ha cambiato indirizzo: `/economy-politics/calendars/economic` fino al 2019, `/tools/calendars/economic` nel 2019-20, `/economy-politics/calendar` dopo; gli snapshot recenti sono archiviati compressi (gzip). Un rilascio senza mediana pre-rilascio leggibile è `excluded` col motivo; `previous_as_reported` è null tranne nel 2023. Il 2026 non è ancora raccolto. Non riempire i campi deducendoli da etichette come “sopra le attese”. Le fixture sintetiche stanno solo nel test e non vengono conteggiate come evidenza.
 
 Record verificato minimo:
 
