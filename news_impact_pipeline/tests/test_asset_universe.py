@@ -277,7 +277,7 @@ else:
     BASELINE.write_text(json.dumps(conteggi, indent=1))
     print(f"  baseline creata ({len(conteggi)} ticker) — rilancia per il confronto")
 
-check(len(conteggi) == 80, "6.3 numero di asset inatteso", f"{len(conteggi)}")
+check(len(conteggi) == 81, "6.3 numero di asset inatteso", f"{len(conteggi)}")
 print(f"  asset con prezzi in DB: {len(conteggi)} (78 preesistenti + 2 nuovi)  ✓")
 
 # i moduli del progetto continuano a importare

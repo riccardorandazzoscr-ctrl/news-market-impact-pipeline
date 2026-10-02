@@ -68,7 +68,7 @@ headless su Opus 5.5. Orari e ripristino: [routine_giornaliera.md](references/ro
 - [copertura_asset.md](references/copertura_asset.md) — aggiungere un asset, o perché c'è/non c'è.
 - [convenzioni_lettura_asset.md](references/convenzioni_lettura_asset.md) — bond, small cap,
   oro/minatori, spesa AI, consumo USA: il livello da solo dice la cosa sbagliata.
-- [serie_derivate.md](references/serie_derivate.md) — aggiornare `BTP_BUND_SPREAD` (procedura
+- [serie_derivate.md](references/serie_derivate.md) — aggiornare `BTP_BUND_SPREAD`/`OAT_BUND_SPREAD` (procedura
   manuale), spread sovrano italiano o margini di raffinazione.
 - [etichette_date_locali.md](references/etichette_date_locali.md) — aggiungi un'etichetta
   canonica, calibri un pattern in `analogues.py`, o un pool dà risultati che non tornano.
@@ -97,4 +97,4 @@ headless su Opus 5.5. Orari e ripristino: [routine_giornaliera.md](references/ro
 - La segmentazione per regime (`regime_phases` nei metadati KB) è la difesa primaria contro
   il mescolare ambienti macro strutturalmente diversi nello stesso campione.
 - Gli indicatori calcolati **non si persistono mai**: si calcolano al volo. Uniche eccezioni
-  `BTP_BUND_SPREAD` e `CRACK_321`, *serie derivate* salvate come ticker.
+  `BTP_BUND_SPREAD`, `OAT_BUND_SPREAD` e `CRACK_321`, *serie derivate* salvate come ticker.

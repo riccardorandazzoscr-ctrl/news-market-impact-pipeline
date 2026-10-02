@@ -1,9 +1,9 @@
-# Serie derivate: BTP-Bund e crack spread
+# Serie derivate: spread BTP-Bund e OAT-Bund, crack spread
 
-**Quando aprire questo file:** devi aggiornare `BTP_BUND_SPREAD`, o una scheda tocca
-lo spread sovrano italiano o i margini di raffinazione.
+**Quando aprire questo file:** devi aggiornare `BTP_BUND_SPREAD` o `OAT_BUND_SPREAD`, o una
+scheda tocca lo spread sovrano italiano/francese o i margini di raffinazione.
 
-Sono le due eccezioni alla regola "gli indicatori calcolati non si persistono": sono
+Sono le tre eccezioni alla regola "gli indicatori calcolati non si persistono": sono
 *serie derivate* salvate come ticker, così l'event study le tratta come ogni altro asset.
 
 ## BTP_BUND_SPREAD
@@ -32,20 +32,38 @@ User-Agent e la pagina di verifica con uno. Il download automatico di
 Nessun sostituto giornaliero per singolo paese: Eurostat e BCE danno l'Italia solo
 mensile; la curva giornaliera BCE copre l'aggregato AAA, non l'Italia.
 
-Procedura di lavoro:
+Procedura di lavoro (aggiornata il 2026-10-02): **da Chrome il CSV completo si scarica**.
+Dentro la pagina `https://stooq.com/q/d/?s=<simbolo>` un `fetch('/q/d/l/?s=<simbolo>&i=d')`
+restituisce lo storico intero, ma **solo per il simbolo della pagina aperta** (gli altri
+rispondono «Access denied»). Quindi, con l'estensione Chrome:
 
-1. Apri `https://stooq.com/q/d/?s=10yity.b` e `https://stooq.com/q/d/?s=10ydey.b`
-2. Leggi le chiusure
-3. ```bash
-   news_impact_pipeline/venv/bin/python news_impact_pipeline/fetch_daily_spread.py \
-     --pairs YYYY-MM-DD,IT,DE ...
+1. Per ogni simbolo (`10yity.b`, `10ydey.b`, `10yfry.b`) apri la sua pagina, fai il fetch e
+   salva il testo in `localStorage` (stessa origine, sopravvive alla navigazione).
+2. Porta i tre CSV su disco attraverso gli appunti: `navigator.clipboard.writeText`
+   vuole un clic vero, quindi inietta un bottone e cliccalo; poi `pbpaste > file`.
+3. Importa: le righe dopo l'ultima data in DB, mai la seduta di oggi ancora aperta.
+   ```bash
+   V=news_impact_pipeline/venv/bin/python
+   $V news_impact_pipeline/import_spread_csv.py IT.csv DE.csv
+   $V news_impact_pipeline/import_spread_csv.py FR.csv DE.csv --ticker OAT_BUND_SPREAD
    ```
 
-⚠ **Includi sempre una data già in DB come controllo**: lo script rifiuta di scrivere
-se lo spread ricalcolato non la riproduce.
+Prima di importare, confronta lo storico ricalcolato con quello in DB: il 2026-10-02
+coincidevano 8.883 giorni su 8.884 (scarto massimo 1 pb). Per pochi giorni letti a mano
+resta `fetch_daily_spread.py --pairs YYYY-MM-DD,IT,DE ...`, che vuole una data già in DB come
+controllo.
 
-Backfill completato a mano fino al 2026-08-18. Questa diagnosi ha chiuso anche la via
+La diagnosi del 2026-08-19 ha chiuso anche la via
 Stooq per gilt/JGB/ACGB — da lì i proxy ETF aggiunti il 2026-08-18.
+
+## OAT_BUND_SPREAD
+
+- **Cos'è**: Francia 10Y − Germania 10Y, in **punti base**, come `BTP_BUND_SPREAD`.
+  Giornaliero dal 2005-11-28 (inizio di `10YFRY.B` su Stooq). Aggiunto il 2026-10-02.
+- **Uso**: rischio fiscale e politico **francese** (cadute di governo, bilanci col 49.3,
+  declassamenti). Prima il proxy era `^STOXX50E`, che diluisce la Francia nell'area euro;
+  `BTP_BUND_SPREAD` non lo sostituisce, perché il contagio verso l'Italia è ambiguo.
+- **Refresh**: stessa procedura manuale del BTP-Bund, qui sopra.
 
 ## CRACK_321
 

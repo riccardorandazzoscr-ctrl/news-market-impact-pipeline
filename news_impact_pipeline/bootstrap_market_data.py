@@ -52,6 +52,7 @@ ASSETS = [
     {"ticker": "IEF",         "name": "iShares 7-10Y Treasury", "asset_class": "fixed_income", "region": "US",       "currency": "USD", "source": "yfinance", "description": "ETF Treasury USA 7-10 anni",          "download": True},
     {"ticker": "IEAG.AS",     "name": "iShares Euro Aggregate Bond", "asset_class": "fixed_income", "region": "eurozone", "currency": "EUR", "source": "yfinance", "description": "ETF obbligazionario Eurozona (aggregate, EUR, listino Amsterdam)", "download": True},
     {"ticker": "BTP_BUND_SPREAD", "name": "Spread BTP-Bund 10Y","asset_class": "fixed_income", "region": "eurozone", "currency": "EUR", "source": "computed", "description": "BTP 10Y - Bund 10Y, in bps, giornaliero (fetch_daily_spread.py; ricostruzione manuale se fallisce, vedi references/serie_derivate.md)", "download": False},
+    {"ticker": "OAT_BUND_SPREAD", "name": "Spread OAT-Bund 10Y","asset_class": "fixed_income", "region": "eurozone", "currency": "EUR", "source": "computed", "description": "OAT 10Y - Bund 10Y, in bps, giornaliero dal 2005-11 (import_spread_csv.py --ticker OAT_BUND_SPREAD da CSV Stooq 10YFRY.B/10YDEY.B, vedi references/serie_derivate.md)", "download": False},
 
     # --- Valute (currencies) ---
     {"ticker": "EURUSD=X",    "name": "EUR/USD",                "asset_class": "fx",           "region": "global",   "currency": "USD", "source": "yfinance", "description": "Cambio euro/dollaro",                 "download": True},

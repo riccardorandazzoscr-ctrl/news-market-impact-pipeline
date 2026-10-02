@@ -66,6 +66,7 @@ fiscal_policy:
   horizon: "1-10 giorni di trading"
   primary:
     - BTP_BUND_SPREAD # spread sovrano = misura diretta del rischio fiscale eurozona
+    - OAT_BUND_SPREAD # spread francese: rischio fiscale/politico della Francia (dal 2026-10-02)
     - FTSEMIB.MI      # equity domestico Italia
     - ^GDAXI          # equity domestico Germania
     - ^STOXX50E       # equity area euro aggregato

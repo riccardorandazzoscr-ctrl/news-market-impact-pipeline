@@ -46,6 +46,7 @@ già pronto.
 - **HICP (Harmonised Index of Consumer Prices)** — l'indice armonizzato dei prezzi al consumo usato dalla BCE, costruito con la stessa metodologia in tutti i paesi dell'area euro.
 - **Initial jobless claims** — richieste settimanali di sussidio di disoccupazione negli USA (dato del giovedì). Poche richieste = mercato del lavoro solido; è il dato ad alta frequenza più tempestivo sull'occupazione.
 - **ISM (Institute for Supply Management)** — indice USA di diffusione su manifattura/servizi da sondaggio ai responsabili acquisti. Sopra 50 = espansione, sotto 50 = contrazione; misura **quanti** rispondono che l'attività cresce, non **di quanto**.
+- **ISM prezzi pagati (prices paid)** — sotto-indice dell'ISM: quota di responsabili acquisti che pagano di più gli input. È un'inflazione «a monte», arriva prima del CPI; sopra 70 = rincari diffusi a quasi tutte le categorie.
 - **JOLTS (Job Openings and Labor Turnover Survey)** — indagine mensile USA sui posti di lavoro vacanti e sul turnover, complementare all'NFP.
 - **NFP (Non-Farm Payrolls)** — nuovi posti di lavoro creati negli USA, esclusa l'agricoltura; il dato macro più seguito al mondo.
 - **PBOC (People's Bank of China)** — la banca centrale cinese.
@@ -113,6 +114,7 @@ già pronto.
 - **Stretto di Hormuz** — braccio di mare fra Iran e Oman da cui transita circa il 20% del petrolio scambiato via mare; il principale chokepoint energetico mondiale.
 - **Tagli volontari (OPEC+)** — riduzioni di produzione annunciate da singoli membri (soprattutto Arabia Saudita) oltre le quote formali del gruppo, e quindi revocabili unilateralmente.
 - **Terre rare** — 17 elementi indispensabili a magneti permanenti, motori elettrici, ottiche militari e semiconduttori. La Cina non ha il monopolio dell'estrazione ma sì, di fatto, quello della raffinazione.
+- **UKMTO (UK Maritime Trade Operations)** — centro della Marina britannica che raccoglie e diffonde le segnalazioni di attacchi e incidenti alle navi mercantili fra Golfo, Mar Rosso e Oceano Indiano; è la fonte primaria sugli attacchi nello Stretto.
 
 ## Materie prime, dazi e unità
 
@@ -131,6 +133,7 @@ già pronto.
 - **BRL=X** — cambio dollaro/real brasiliano. Sale quando il real si indebolisce.
 - **BTC-USD / ETH-USD** — Bitcoin ed Ethereum; usati nel progetto come proxy del tema "digital gold" (risk-off) e del tema digitale/AI.
 - **BTP_BUND_SPREAD** — differenziale di rendimento fra BTP italiano e Bund tedesco a 10 anni; misura diretta del rischio sovrano periferico. Serie *derivata*, salvata come ticker.
+- **OAT_BUND_SPREAD** — differenziale di rendimento fra OAT francese e Bund tedesco a 10 anni, in punti base; misura diretta del rischio fiscale e politico francese. Serie *derivata*, salvata come ticker (dal 2005-11).
 - **BZ=F** — futures sul Brent, il contratto di riferimento mondiale sul petrolio greggio (quotato a Londra).
 - **CAD=X** — cambio USD/CAD. ⚠ Sale quando il **dollaro canadese si indebolisce**.
 - **CHF=X** — cambio USD/CHF. Sale quando il franco svizzero si indebolisce. Il franco è un safe haven monetario.
