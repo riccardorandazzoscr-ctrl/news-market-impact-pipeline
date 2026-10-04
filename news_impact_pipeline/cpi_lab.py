@@ -208,6 +208,15 @@ def validate_events(records):
     return errors
 
 
+MW_MEDIAN = "MarketWatch, colonna Median Forecast del calendario economico USA"
+
+
+def consensus_providers(protocol):
+    """Un replay non mescola fornitori di consenso: lo stesso dato può dare fasce di sorpresa diverse.
+    Senza il campo vale la mediana MarketWatch, l'unico fornitore fino ad agosto 2026."""
+    return protocol.get("consensus_providers") or [MW_MEDIAN]
+
+
 def verified_events(records):
     return [r for r in records if r.get("verification_status") == "verified"]
 
@@ -461,6 +470,9 @@ def create_replay(runs_dir, conn, protocol, records, cal, episodes,
         raise ValueError("\n".join(errors))
     validate_calendar(cal)
     active = verified_events(records)
+    allowed = consensus_providers(protocol)
+    off_provider = [r for r in active if r["consensus"]["provider"] not in allowed]
+    active = [r for r in active if r["consensus"]["provider"] in allowed]
     if active and not cal.get("complete"):
         raise DataUnavailable("record CPI verificati presenti ma manca un calendario XNYS completo e citato")
     asset = protocol["asset"]
@@ -512,6 +524,10 @@ def create_replay(runs_dir, conn, protocol, records, cal, episodes,
                 methods[name] = {"status": "selected", "reason": None, "selected_event_ids": ids}
         decisions.append({"event_id": eid, "cutoff": rec["release_at"], "status": "evaluated", "realized_available": True,
                           "surprise_band": surprise_band(rec, protocol), "fed_regime": fed_regime(rec), "methods": methods})
+    for rec in off_provider:
+        if date.fromisoformat(_date_of(rec)) >= eval_start:
+            decisions.append({"event_id": rec["event_id"], "cutoff": rec["release_at"], "status": "excluded",
+                              "reason": "fornitore del consenso fuori protocollo", "methods": {}})
     # All prices and facts used by this run are copied into one immutable input file.
     input_data = {"protocol": protocol, "events": records, "calendar": cal, "price_ticker": asset,
                   "price_column": "adj_close", "price_observations": prices, "windows": windows,

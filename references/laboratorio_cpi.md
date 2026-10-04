@@ -20,6 +20,16 @@ Esito del 2026-10-04 (12 confronti, quindi soglia di Bonferroni ≈0,004: nessun
 
 Ipotesi fissata il 2026-10-04: la continuazione a 5 sedute di `IEF` ha verso opposto alla reazione del giorno. Non usa il consenso. Si verifica su due campioni mai guardati, i rilasci 2011–2014 (servono solo le date) e i primi 30 rilasci da ottobre 2026, con un binomiale unilaterale ciascuno. Si esegue con `cpi_lab.py reversal --protocol experiments/cpi_lab/protocols/3.0.0-ief-inversione.json --releases experiments/cpi_lab/inversione_campione_A.json --db market_data/market_data.db`. **Campione A (2011–2014), 2026-10-04: 27/48 opposti, p unilaterale 0,235: non sostenuta.** Per regola il campione B si esegue comunque, a 30 rilasci maturi da ottobre 2026, con l'ipotesi già sfavorita.
 
+### Regola sul fornitore del consenso (decisa il 2026-10-04)
+
+**Un fornitore per serie, dichiarato nel protocollo.** Lo stesso CPI può avere consensi diversi di 0,1 punti fra fornitori (gennaio 2023: MarketWatch 0,4, Reuters/Bloomberg 0,5), e con la soglia di ±0,05 la fascia di sorpresa cambia. Quindi:
+
+1. L'archivio registra ogni consenso col suo fornitore in `consensus.provider`. Da settembre 2026 il calendario MarketWatch è Onclusive/Dow Jones, colonna «Forecast»: è un fornitore diverso, registrato come tale.
+2. Un replay usa solo i consensi dei fornitori elencati in `consensus_providers` del protocollo. Gli altri risultano esclusi con motivo «fornitore del consenso fuori protocollo». Un protocollo senza il campo usa la mediana MarketWatch (`MW_MEDIAN` nel codice): così i protocolli 1.x e 2.x danno sempre gli stessi esiti.
+3. Onclusive entra in un protocollo come serie a sé, che riparte da zero (servono almeno `minimum_pool` eventi). Può unirsi alla mediana storica solo con un raccordo fissato prima: su 12 rilasci, Onclusive e un consenso indipendente catturato prima delle 08:30 (FactSet/Dow Jones dal briefing, o altro) devono dare la stessa fascia di sorpresa almeno 11 volte.
+
+La Wayback Machine non garantisce snapshot futuri. Per costruire la serie Onclusive o il raccordo serve catturare la pagina prima di ogni rilascio. Non è ancora automatizzato. Il protocollo 3.0.0 non usa consensi e non ne è toccato.
+
 ## Dati da inserire
 
 `events.jsonl` contiene un oggetto JSON per riga. Contiene i rilasci reali dal 2015 al 2025 (conteggi: `cpi_lab.py validate`). Fonti: valore iniziale dal comunicato BLS archiviato; consenso = colonna «Median forecast» del calendario economico MarketWatch, letta dall'ultimo snapshot Wayback prima delle 08:30 ET. Il calendario ha cambiato indirizzo: `/economy-politics/calendars/economic` fino al 2019, `/tools/calendars/economic` nel 2019-20, `/economy-politics/calendar` dopo; gli snapshot recenti sono archiviati compressi (gzip). Un rilascio senza mediana pre-rilascio leggibile è `excluded` col motivo; `previous_as_reported` è null tranne nel 2023. Il 2026 non è ancora raccolto. Non riempire i campi deducendoli da etichette come “sopra le attese”. Le fixture sintetiche stanno solo nel test e non vengono conteggiate come evidenza.

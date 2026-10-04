@@ -135,6 +135,19 @@ class CpiLabTests(unittest.TestCase):
         self.assertEqual(res["p_one_sided"], 0.5)
         db.close()
 
+    def test_replay_never_mixes_consensus_providers(self):
+        sessions = ["2020-02-12", "2020-02-13", "2020-02-14", "2020-02-18", "2020-02-19", "2020-02-20", "2020-02-21"]
+        record = event()
+        record["consensus"]["provider"] = "Altro fornitore"
+        db = sqlite3.connect(":memory:")
+        db.execute("create table prices(ticker text,date text,adj_close real,close real)")
+        protocol = dict(lab.DEFAULT_PROTOCOL, evaluation_start="2020-01-01")
+        with tempfile.TemporaryDirectory() as td:
+            run_dir = lab.create_replay(Path(td), db, protocol, [record], calendar(sessions), [], code_sha="t", input_sha="t")
+            decision = json.loads((run_dir / "decisions.jsonl").read_text())
+        self.assertEqual((decision["status"], decision["reason"]), ("excluded", "fornitore del consenso fuori protocollo"))
+        db.close()
+
     def test_prior_horizon_maturing_on_cutoff_is_not_eligible(self):
         older = event("2020-01", "2020-02-01T08:30:00-05:00")
         target = event("2020-02", "2020-02-13T08:30:00-05:00")
@@ -156,6 +169,7 @@ class CpiLabTests(unittest.TestCase):
         protocol = lab.DEFAULT_PROTOCOL.copy()
         protocol["minimum_pool"] = 1
         protocol["evaluation_start"] = "2020-02-01"
+        protocol["consensus_providers"] = ["Fixture only"]
         episode_rows = [{"date": "2020-01-14", "theme": "macro_data", "events": [{"subthemes_local": ["inflation_print"], "evidence": [{"subthemes_local": ["inflation_print"]}]}]}]
         with tempfile.TemporaryDirectory() as td:
             root = Path(td); run_dir = lab.create_replay(root / "runs", db, protocol, records, cal, episode_rows,
@@ -166,6 +180,7 @@ class CpiLabTests(unittest.TestCase):
             self.assertEqual(first, second)
             self.assertIn("retrospettivo", first.lower())
             self.assertIn("dati insufficienti", first.lower())
+            self.assertIn("Riferimento CPI: selezioni 1/2", first)
             self.assertTrue((run_dir / "input.json").exists())
             self.assertTrue((run_dir / "decisions.jsonl").exists())
             self.assertEqual({x.name for x in run_dir.iterdir()}, {"input.json", "decisions.jsonl", "meta.json"})

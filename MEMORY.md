@@ -126,6 +126,7 @@ Aggiornato: 2026-09-23
 - **Deciso** — (04/10) versione 2.0 (reazione del giorno, `IEF`, «solo sorpresa»): la sorpresa indica il verso del giorno nel 59–66% dei casi, l'ampiezza no; nessun confronto regge la correzione per 12 test.
 - **Deciso** — (04/10) protocollo 3.0.0: inversione della reazione di `IEF` a 5 sedute, da verificare sui rilasci 2011–2014 e sui primi 30 da ottobre 2026; sui dati già visti è 54%, aspettativa bassa.
 - **Deciso** — (04/10) campione A del 3.0.0 (2011–2014): 27/48 opposti, p=0,235, inversione non sostenuta.
-- **Prossimo passo** — campione B a 30 rilasci maturi da ottobre 2026 (circa fine 2028); per i consensi futuri serve una regola sul fornitore Onclusive.
+- **Deciso** — (04/10) un fornitore di consenso per serie, dichiarato nel protocollo (`consensus_providers`); Onclusive è serie a sé, unibile alla mediana MarketWatch solo con raccordo 11/12.
+- **Prossimo passo** — campione B del 3.0.0 a 30 rilasci (circa fine 2028); per la serie Onclusive serve catturare la pagina prima di ogni CPI, non automatizzato.
 
 Metodo: [references/laboratorio_cpi.md](references/laboratorio_cpi.md)
