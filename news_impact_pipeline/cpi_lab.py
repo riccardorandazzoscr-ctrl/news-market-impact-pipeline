@@ -672,6 +672,26 @@ def _load_protocol(path):
     return protocol
 
 
+def reversal_test(protocol, release_times, cal, conn):
+    """Protocollo 3.0.0: quota di rilasci in cui la continuazione ha verso opposto alla reazione del giorno.
+    Binomiale esatto unilaterale contro p=0,5. Niente consensi: servono solo date, calendario e prezzi."""
+    rw, cw = protocol["reaction_window"], protocol["continuation_window"]
+    rows, excluded = [], []
+    for release in release_times:
+        try:
+            r_win = market_window(cal, release, int(rw["horizon_sessions"]), int(rw["anchor_offset_sessions"]))
+            c_win = market_window(cal, release, int(cw["horizon_sessions"]), int(cw["anchor_offset_sessions"]))
+            prices = _load_prices(conn, protocol["asset"], r_win + c_win)
+            rows.append((release, window_return(prices, r_win, len(r_win) - 1), window_return(prices, c_win, len(c_win) - 1)))
+        except DataUnavailable as exc:
+            excluded.append((release, str(exc)))
+    signed = [(r, c) for _, r, c in rows if r != 0 and c != 0]
+    n = len(signed)
+    hits = sum((r > 0) != (c > 0) for r, c in signed)
+    p = sum(math.comb(n, k) for k in range(hits, n + 1)) / 2 ** n if n else None
+    return {"n": n, "opposite": hits, "zeros": len(rows) - n, "p_one_sided": p, "excluded": excluded, "rows": rows}
+
+
 def _read_episodes(path):
     if not path.exists():
         return []
@@ -710,6 +730,11 @@ def main(argv=None):
     replay.add_argument("--runs", type=Path, default=DEFAULT_RUNS_PATH)
     report = sub.add_parser("report", help="ricalcola e stampa report dalla ricevuta congelata")
     report.add_argument("--run", type=Path, required=True)
+    rev = sub.add_parser("reversal", help="test del protocollo di inversione (3.0.0) su un elenco di rilasci")
+    rev.add_argument("--protocol", type=Path, required=True)
+    rev.add_argument("--releases", type=Path, required=True)
+    rev.add_argument("--calendar", type=Path, default=DEFAULT_CALENDAR_PATH)
+    rev.add_argument("--db", type=Path, required=True)
     args = parser.parse_args(argv)
     try:
         if args.command == "validate":
@@ -718,6 +743,18 @@ def main(argv=None):
             return 0
         if args.command == "report":
             print(render_report(args.run), end="")
+            return 0
+        if args.command == "reversal":
+            protocol = _json(args.protocol)
+            releases = [r["release_at"] for r in _json(args.releases)["releases"]]
+            with _readonly_db(args.db) as conn:
+                res = reversal_test(protocol, releases, _json(args.calendar), conn)
+            print(f"Protocollo {protocol['protocol_version']} · {protocol['asset']} · rilasci {len(releases)} · "
+                  f"esclusi {len(res['excluded'])} · con reazione o continuazione zero {res['zeros']}")
+            for release, reason in res["excluded"]:
+                print(f"  escluso {release}: {reason}")
+            verdict = "SOSTENUTA" if res["p_one_sided"] is not None and res["p_one_sided"] < 0.05 else "NON sostenuta"
+            print(f"Continuazione opposta alla reazione: {res['opposite']}/{res['n']} · p unilaterale {_fmt(res['p_one_sided'], 3)} · ipotesi {verdict} (alfa 0,05)")
             return 0
         protocol = _load_protocol(args.protocol)
         records = load_events(args.events)

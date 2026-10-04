@@ -123,6 +123,18 @@ class CpiLabTests(unittest.TestCase):
         self.assertEqual([e["event_id"] for e in pools["surprise_only"]], [older["event_id"]])
         self.assertEqual(pools["conditioned"], [])
 
+    def test_reversal_counts_opposite_signs_and_skips_missing_sessions(self):
+        days = ["2020-02-12", "2020-02-13", "2020-02-14", "2020-02-18"]
+        protocol = {"asset": "IEF", "reaction_window": {"anchor_offset_sessions": -1, "horizon_sessions": 0},
+                    "continuation_window": {"anchor_offset_sessions": 0, "horizon_sessions": 2}}
+        db = sqlite3.connect(":memory:")
+        db.execute("create table prices(ticker text,date text,adj_close real)")
+        db.executemany("insert into prices values('IEF',?,?)", zip(days, [100, 99, 99.5, 100]))
+        res = lab.reversal_test(protocol, ["2020-02-13T08:30:00-05:00", "2020-02-15T08:30:00-05:00"], calendar(days), db)
+        self.assertEqual((res["opposite"], res["n"], len(res["excluded"])), (1, 1, 1))   # giù il giorno, su dopo
+        self.assertEqual(res["p_one_sided"], 0.5)
+        db.close()
+
     def test_prior_horizon_maturing_on_cutoff_is_not_eligible(self):
         older = event("2020-01", "2020-02-01T08:30:00-05:00")
         target = event("2020-02", "2020-02-13T08:30:00-05:00")
