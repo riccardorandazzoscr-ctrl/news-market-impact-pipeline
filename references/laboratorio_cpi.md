@@ -10,6 +10,12 @@ La sorpresa è la differenza decimale fra valore iniziale e consenso: `above` ol
 
 I tre pool sono: tutte le release CPI precedenti mature; release dal filtro attuale `macro_data` + `inflation_print`, tenute alle 30 più recenti e limitate all'archivio CPI verificato; release con uguale fascia di sorpresa e uguale categoria Fed. Quest'ultimo si astiene se la categoria è unknown o il pool ha meno di 10 eventi. Nessun pool si allarga in silenzio. Il confronto degli analoghi correnti è retrospettivo non valido per inferire capacità predittiva: la data di pubblicazione delle etichette e delle fonti nell'indice storico non prova quando fossero note.
 
+### Versione 2.0.0 (`protocols/`)
+
+Tre protocolli fissati e committati prima di eseguirli, dopo il risultato nullo della 1.1.0: `2.0.0-gspc-reazione`, `2.0.0-ief-reazione` (ancora alla chiusura della seduta **prima** del rilascio, fine alla chiusura del giorno: `anchor_offset_sessions: -1`, `horizon_sessions: 0`) e `2.0.0-ief-continuazione` (come la 1.1.0, ma su `IEF`). Ai metodi si aggiunge «solo sorpresa» (`conditioned_methods`). Asset ammessi: `^GSPC` e `IEF`, cioè prezzi; `^TNX` è un rendimento e andrebbe misurato in differenze. Un protocollo nuovo = un file nuovo, mai modificare uno già eseguito.
+
+Esito del 2026-10-04 (12 confronti, quindi soglia di Bonferroni ≈0,004: nessuno la supera). Nel giorno del dato la sorpresa indica il verso più spesso del riferimento (59–66% contro ~51%, migliore `IEF` con sorpresa + Fed: 31/47, p=0,04), ma l'errore sull'ampiezza resta quasi uguale. Su `IEF` a 5 sedute il condizionato sbaglia il verso 32 volte su 47 (p=0,02): possibile **inversione** della reazione, da trattare come ipotesi per un protocollo futuro, non come risultato.
+
 ## Dati da inserire
 
 `events.jsonl` contiene un oggetto JSON per riga. Contiene i rilasci reali dal 2015 al 2025 (conteggi: `cpi_lab.py validate`). Fonti: valore iniziale dal comunicato BLS archiviato; consenso = colonna «Median forecast» del calendario economico MarketWatch, letta dall'ultimo snapshot Wayback prima delle 08:30 ET. Il calendario ha cambiato indirizzo: `/economy-politics/calendars/economic` fino al 2019, `/tools/calendars/economic` nel 2019-20, `/economy-politics/calendar` dopo; gli snapshot recenti sono archiviati compressi (gzip). Un rilascio senza mediana pre-rilascio leggibile è `excluded` col motivo; `previous_as_reported` è null tranne nel 2023. Il 2026 non è ancora raccolto. Non riempire i campi deducendoli da etichette come “sopra le attese”. Le fixture sintetiche stanno solo nel test e non vengono conteggiate come evidenza.
@@ -52,6 +58,7 @@ V=news_impact_pipeline/venv/bin/python
 $V news_impact_pipeline/cpi_lab.py validate --events experiments/cpi_lab/events.jsonl
 $V news_impact_pipeline/cpi_lab.py replay --protocol experiments/cpi_lab/protocol.json --events experiments/cpi_lab/events.jsonl --calendar experiments/cpi_lab/calendar.json --episodes knowledge_base/_episodes.yaml --db market_data/market_data.db --runs experiments/cpi_lab/runs
 $V news_impact_pipeline/cpi_lab.py report --run experiments/cpi_lab/runs/ID_ESECUZIONE
+# versione 2.0: stesso comando replay con --protocol experiments/cpi_lab/protocols/2.0.0-<nome>.json
 $V -m unittest discover -s news_impact_pipeline/tests -p 'test_cpi_lab.py'
 ```
 
