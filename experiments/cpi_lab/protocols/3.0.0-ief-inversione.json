@@ -1,0 +1,41 @@
+{
+  "protocol_version": "3.0.0",
+  "experiment": "IEF: inversione della reazione al CPI USA nelle 5 sedute successive",
+  "registered_at": "2026-10-04",
+  "hypothesis": "Dopo un rilascio CPI mensile, il rendimento di IEF dalla chiusura del giorno del rilascio alla quinta seduta XNYS successiva ha verso OPPOSTO alla reazione del giorno (chiusura della seduta precedente il rilascio → chiusura del giorno del rilascio).",
+  "asset": "IEF",
+  "price_column": "adj_close",
+  "reaction_window": {
+    "anchor_offset_sessions": -1,
+    "horizon_sessions": 0
+  },
+  "continuation_window": {
+    "anchor_offset_sessions": 0,
+    "horizon_sessions": 5
+  },
+  "calendar_file": "experiments/cpi_lab/calendar.json",
+  "consensus_required": false,
+  "event_definition": "ogni rilascio BLS del CPI mensile alle 08:30 ET in una seduta XNYS; data dal comunicato BLS archiviato",
+  "exclusions": [
+    "giorno del rilascio non è una seduta XNYS",
+    "rilascio che copre due mesi",
+    "prezzo adj_close mancante in una delle sedute",
+    "reazione o continuazione esattamente zero (escluse dal conteggio, riportate)"
+  ],
+  "statistic": "quota di eventi con verso della continuazione opposto a quello della reazione",
+  "test": "binomiale esatto unilaterale, H0 p=0,5, H1 p>0,5, alfa 0,05, un test per campione",
+  "samples": {
+    "A_retrospettivo_non_visto": {
+      "releases": "2011-01-01 / 2014-12-31",
+      "state_at_registration": "date di rilascio non ancora raccolte; nessun esito guardato"
+    },
+    "B_prospettico": {
+      "releases": "dal 2026-10-01",
+      "min_events": 30,
+      "rule": "si valuta una sola volta, a 30 eventi maturi; nessuna analisi intermedia"
+    }
+  },
+  "decision_rule": "Ipotesi sostenuta solo se A e B superano il test ciascuno per conto suo. Se A fallisce, B si esegue comunque ma l'ipotesi parte sfavorita. Il protocollo non si modifica dopo aver visto un esito: una variante è un protocollo nuovo.",
+  "evidence_at_registration": "Campioni già visti, NON validi come prova: 2019-2026-08 43/79 (54%) opposti; 2015-2018 13/27 (48%). Il 15/47 del metodo condizionato in 2.0.0-ief-continuazione è un'altra ipotesi (verso del pool storico) e anno per anno non mostra un andamento coerente: probabile rumore. Aspettativa a priori: bassa.",
+  "vintages": "prezzi adj_close correnti congelati al momento della valutazione; vintage storiche non disponibili"
+}

@@ -14,7 +14,11 @@ I tre pool sono: tutte le release CPI precedenti mature; release dal filtro attu
 
 Tre protocolli fissati e committati prima di eseguirli, dopo il risultato nullo della 1.1.0: `2.0.0-gspc-reazione`, `2.0.0-ief-reazione` (ancora alla chiusura della seduta **prima** del rilascio, fine alla chiusura del giorno: `anchor_offset_sessions: -1`, `horizon_sessions: 0`) e `2.0.0-ief-continuazione` (come la 1.1.0, ma su `IEF`). Ai metodi si aggiunge «solo sorpresa» (`conditioned_methods`). Asset ammessi: `^GSPC` e `IEF`, cioè prezzi; `^TNX` è un rendimento e andrebbe misurato in differenze. Un protocollo nuovo = un file nuovo, mai modificare uno già eseguito.
 
-Esito del 2026-10-04 (12 confronti, quindi soglia di Bonferroni ≈0,004: nessuno la supera). Nel giorno del dato la sorpresa indica il verso più spesso del riferimento (59–66% contro ~51%, migliore `IEF` con sorpresa + Fed: 31/47, p=0,04), ma l'errore sull'ampiezza resta quasi uguale. Su `IEF` a 5 sedute il condizionato sbaglia il verso 32 volte su 47 (p=0,02): possibile **inversione** della reazione, da trattare come ipotesi per un protocollo futuro, non come risultato.
+Esito del 2026-10-04 (12 confronti, quindi soglia di Bonferroni ≈0,004: nessuno la supera). Nel giorno del dato la sorpresa indica il verso più spesso del riferimento (59–66% contro ~51%, migliore `IEF` con sorpresa + Fed: 31/47, p=0,04), ma l'errore sull'ampiezza resta quasi uguale. Su `IEF` a 5 sedute il condizionato sbaglia il verso 32 volte su 47 (p=0,02), ma non è un'inversione: le formulazioni dirette sugli stessi dati danno 54% (opposto alla reazione) e 42% (opposto alla sorpresa), e anno per anno non c'è un andamento coerente.
+
+### Versione 3.0.0 (`protocols/3.0.0-ief-inversione.json`)
+
+Ipotesi fissata il 2026-10-04: la continuazione a 5 sedute di `IEF` ha verso opposto alla reazione del giorno. Non usa il consenso. Si verifica su due campioni mai guardati, i rilasci 2011–2014 (servono solo le date) e i primi 30 rilasci da ottobre 2026, con un binomiale unilaterale ciascuno. Il motore `cpi_lab.py` non la esegue ancora: è un conteggio di segni, si aggiunge quando c'è il primo campione. Aspettativa a priori bassa, scritta nel protocollo.
 
 ## Dati da inserire
 
