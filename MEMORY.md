@@ -125,6 +125,7 @@ Aggiornato: 2026-09-23
 - **Deciso** — (04/10) primo replay: su `^GSPC` da chiusura del rilascio a T+5 né il condizionato (sorpresa × ultima mossa Fed) né gli analoghi battono il riferimento; segno ~50%.
 - **Deciso** — (04/10) versione 2.0 (reazione del giorno, `IEF`, «solo sorpresa»): la sorpresa indica il verso del giorno nel 59–66% dei casi, l'ampiezza no; nessun confronto regge la correzione per 12 test.
 - **Deciso** — (04/10) protocollo 3.0.0: inversione della reazione di `IEF` a 5 sedute, da verificare sui rilasci 2011–2014 e sui primi 30 da ottobre 2026; sui dati già visti è 54%, aspettativa bassa.
-- **Prossimo passo** — raccogliere le date di rilascio 2011–2014 per il campione A; per i consensi futuri serve una regola sul fornitore Onclusive.
+- **Deciso** — (04/10) campione A del 3.0.0 (2011–2014): 27/48 opposti, p=0,235, inversione non sostenuta.
+- **Prossimo passo** — campione B a 30 rilasci maturi da ottobre 2026 (circa fine 2028); per i consensi futuri serve una regola sul fornitore Onclusive.
 
 Metodo: [references/laboratorio_cpi.md](references/laboratorio_cpi.md)

@@ -18,7 +18,7 @@ Esito del 2026-10-04 (12 confronti, quindi soglia di Bonferroni ≈0,004: nessun
 
 ### Versione 3.0.0 (`protocols/3.0.0-ief-inversione.json`)
 
-Ipotesi fissata il 2026-10-04: la continuazione a 5 sedute di `IEF` ha verso opposto alla reazione del giorno. Non usa il consenso. Si verifica su due campioni mai guardati, i rilasci 2011–2014 (servono solo le date) e i primi 30 rilasci da ottobre 2026, con un binomiale unilaterale ciascuno. Il motore `cpi_lab.py` non la esegue ancora: è un conteggio di segni, si aggiunge quando c'è il primo campione. Aspettativa a priori bassa, scritta nel protocollo.
+Ipotesi fissata il 2026-10-04: la continuazione a 5 sedute di `IEF` ha verso opposto alla reazione del giorno. Non usa il consenso. Si verifica su due campioni mai guardati, i rilasci 2011–2014 (servono solo le date) e i primi 30 rilasci da ottobre 2026, con un binomiale unilaterale ciascuno. Si esegue con `cpi_lab.py reversal --protocol experiments/cpi_lab/protocols/3.0.0-ief-inversione.json --releases experiments/cpi_lab/inversione_campione_A.json --db market_data/market_data.db`. **Campione A (2011–2014), 2026-10-04: 27/48 opposti, p unilaterale 0,235: non sostenuta.** Per regola il campione B si esegue comunque, a 30 rilasci maturi da ottobre 2026, con l'ipotesi già sfavorita.
 
 ## Dati da inserire
 
