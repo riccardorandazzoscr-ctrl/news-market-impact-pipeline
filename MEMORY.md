@@ -115,3 +115,14 @@ Metodo: [references/leggere_lo_scorecard.md](references/leggere_lo_scorecard.md)
 
 Meccanica e post-mortem: [references/etichette_date_locali.md](references/etichette_date_locali.md)
 Aggiornato: 2026-09-23
+
+---
+
+## Laboratorio CPI
+
+- **Stato** — archivio 2015–2026-08 e calendario XNYS completi; conteggi con `cpi_lab.py validate`, esiti con `replay` + `report` (vedi reference).
+- **Deciso** — consenso solo «Median Forecast» MarketWatch da snapshot Wayback pre-rilascio; da settembre 2026 il calendario è Onclusive/Dow Jones («Forecast»): non si mescola. Protocollo 1.1.0 (campione iniziale dal 2015).
+- **Deciso** — (04/10) primo replay: su `^GSPC` da chiusura del rilascio a T+5 né il condizionato (sorpresa × ultima mossa Fed) né gli analoghi battono il riferimento; segno ~50%.
+- **Prossimo passo** — il protocollo misura la continuazione dopo la chiusura, quando la sorpresa è già prezzata: una versione nuova con la reazione del giorno (chiusura T-1 → T) e/o asset obbligazionari decide se il canale CPI vale qualcosa.
+
+Metodo: [references/laboratorio_cpi.md](references/laboratorio_cpi.md)

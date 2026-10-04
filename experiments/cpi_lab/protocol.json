@@ -1,11 +1,11 @@
 {
-  "protocol_version": "1.0.0",
+  "protocol_version": "1.1.0",
   "experiment": "US monthly headline CPI, first release vs same-metric consensus",
   "run_type": "historical_replay",
   "asset": "^GSPC",
   "price_column": "adj_close",
   "horizon_sessions": 5,
-  "initial_period_start": "2011-01-01",
+  "initial_period_start": "2015-01-01",
   "initial_period_end": "2018-12-31",
   "evaluation_start": "2019-01-01",
   "minimum_pool": 10,
@@ -22,5 +22,6 @@
   "price_question": "continuation from release-day close through the fifth following NYSE session; not immediate announcement reaction",
   "calendar_file": "experiments/cpi_lab/calendar.json",
   "calendar_requirement": "complete, explicit XNYS sessions and timezone-aware close timestamp per session, with cited source",
-  "vintages": "current adjusted prices are frozen in each replay; historical provider vintages are unavailable unless separately cited"
+  "vintages": "current adjusted prices are frozen in each replay; historical provider vintages are unavailable unless separately cited",
+  "revision_note": "1.1.0 (2026-10-04, prima di qualunque replay): campione iniziale dal 2015 invece che dal 2011, perché l'archivio dei consensi MarketWatch verificabili parte dal 2015. Nient'altro cambia."
 }
