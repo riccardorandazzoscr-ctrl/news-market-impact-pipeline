@@ -1,0 +1,37 @@
+{
+  "protocol_version": "2.0.0",
+  "experiment": "US monthly headline CPI, first release vs same-metric consensus",
+  "run_type": "historical_replay",
+  "asset": "IEF",
+  "price_column": "adj_close",
+  "horizon_sessions": 0,
+  "initial_period_start": "2015-01-01",
+  "initial_period_end": "2018-12-31",
+  "evaluation_start": "2019-01-01",
+  "minimum_pool": 10,
+  "inline_tolerance_percentage_points": "0.05",
+  "current_analogue_subtheme": "inflation_print",
+  "current_analogue_theme": "macro_data",
+  "current_analogue_max_pool": 30,
+  "current_analogue_filter": "strict date-local source evidence; no fallback",
+  "condition_fields": [
+    "surprise_band",
+    "fed_regime"
+  ],
+  "fed_regime_definition": "sign of latest non-zero Fed target change; proxy for decision direction, not policy restrictiveness",
+  "price_question": "reaction: close of the session before the 08:30 release to release-day close",
+  "calendar_file": "experiments/cpi_lab/calendar.json",
+  "calendar_requirement": "complete, explicit XNYS sessions and timezone-aware close timestamp per session, with cited source",
+  "vintages": "current adjusted prices are frozen in each replay; historical provider vintages are unavailable unless separately cited",
+  "conditioned_methods": {
+    "conditioned": [
+      "surprise_band",
+      "fed_regime"
+    ],
+    "surprise_only": [
+      "surprise_band"
+    ]
+  },
+  "revision_note": "2.0.0 (2026-10-04): definita dopo il risultato nullo della 1.1.0 (continuazione ^GSPC a T+5), prima di qualunque replay su queste finestre. Aggiunge: ancora alla chiusura della seduta precedente il rilascio (reazione del giorno), IEF come asset obbligazionario, il metodo 'solo sorpresa'. Dati, soglie e campioni identici alla 1.1.0.",
+  "anchor_offset_sessions": -1
+}

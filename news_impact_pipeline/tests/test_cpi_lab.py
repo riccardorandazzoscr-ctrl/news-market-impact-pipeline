@@ -104,6 +104,25 @@ class CpiLabTests(unittest.TestCase):
         with self.assertRaises(lab.DataUnavailable):
             lab.window_return(prices, days, 5)
 
+    def test_reaction_window_anchors_on_the_session_before_release(self):
+        days = ["2020-02-12", "2020-02-13", "2020-02-14"]
+        protocol = dict(lab.DEFAULT_PROTOCOL, anchor_offset_sessions=-1, horizon_sessions=0)
+        window = lab.market_window(calendar(days), "2020-02-13T08:30:00-05:00", 0, -1)
+        self.assertEqual(window, days[:2])
+        self.assertEqual(lab.window_return({"2020-02-12": "100", "2020-02-13": "99"}, window, lab.window_span(protocol)), -1)
+        with self.assertRaises(lab.DataUnavailable):
+            lab.market_window(calendar(days[1:]), "2020-02-13T08:30:00-05:00", 0, -1)
+
+    def test_surprise_only_pool_ignores_fed_regime(self):
+        protocol = dict(lab.DEFAULT_PROTOCOL, conditioned_methods={"conditioned": ["surprise_band", "fed_regime"],
+                                                                    "surprise_only": ["surprise_band"]})
+        older = event("2019-12", "2020-01-14T08:30:00-05:00", "0.1", "0.3", move="-0.25")   # sotto, Fed giù
+        target = event("2020-01", "2020-02-13T08:30:00-05:00", "0.2", "0.3")               # sotto, Fed su
+        windows = {older["event_id"]: ["2020-01-14", "2020-01-15"]}
+        pools = lab._methods_for(target, [older, target], {older["event_id"]: 1}, windows, set(), protocol)
+        self.assertEqual([e["event_id"] for e in pools["surprise_only"]], [older["event_id"]])
+        self.assertEqual(pools["conditioned"], [])
+
     def test_prior_horizon_maturing_on_cutoff_is_not_eligible(self):
         older = event("2020-01", "2020-02-01T08:30:00-05:00")
         target = event("2020-02", "2020-02-13T08:30:00-05:00")

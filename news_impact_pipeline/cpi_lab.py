@@ -258,7 +258,7 @@ def validate_calendar(cal):
     return []
 
 
-def market_window(cal, release_at, horizon):
+def market_window(cal, release_at, horizon, anchor_offset=0):
     validate_calendar(cal)
     if not cal["sessions"]:
         raise DataUnavailable("calendario esplicito assente")
@@ -273,10 +273,18 @@ def market_window(cal, release_at, horizon):
         raise DataUnavailable("data rilascio non presente nel calendario XNYS") from None
     if release.astimezone(timezone.utc) >= _timestamp(cal["session_closes"][release_day], f"session_closes.{release_day}").astimezone(timezone.utc):
         raise DataUnavailable("rilascio non precedente alla chiusura XNYS: close dello stesso giorno non è un'ancora valida")
+    start = index + anchor_offset   # -1: chiusura della seduta prima del rilascio, cioè prima della notizia
+    if start < 0:
+        raise DataUnavailable("calendario senza la seduta che precede il rilascio")
     end = index + horizon + 1
     if end > len(sessions):
         raise DataUnavailable("calendario senza le sedute complete dell'orizzonte")
-    return sessions[index:end]
+    return sessions[start:end]
+
+
+def window_span(protocol):
+    """Sedute fra ancora e fine finestra."""
+    return int(protocol["horizon_sessions"]) - int(protocol.get("anchor_offset_sessions", 0))
 
 
 def window_return(prices, window, horizon):
@@ -306,6 +314,15 @@ def fed_regime(record):
         return "unknown"
     last = _decimal(moves[-1].get("change_percentage_points"), "Fed move")
     return "last_move_up" if last > 0 else "last_move_down" if last < 0 else "unknown"
+
+
+CONDITIONS = {"surprise_band": lambda rec, protocol: surprise_band(rec, protocol),
+              "fed_regime": lambda rec, protocol: fed_regime(rec)}
+
+
+def conditioned_methods(protocol):
+    """Nome del metodo → campi su cui il pool deve coincidere con l'evento valutato."""
+    return protocol.get("conditioned_methods") or {"conditioned": protocol["condition_fields"]}
 
 
 def _date_of(record):
@@ -423,16 +440,14 @@ def _methods_for(record, events, returns, windows, current_dates, protocol):
         if not window or window[-1] >= cutoff or prior_id not in returns:
             continue
         eligible.append(prior)
-    surprise = surprise_band(record, protocol)
-    regime = fed_regime(record)
     current = [e for e in eligible if _date_of(e) in current_dates]
     current = sorted(current, key=lambda e: _date_of(e))[-int(protocol["current_analogue_max_pool"]):]
-    conditioned = [e for e in eligible if surprise_band(e, protocol) == surprise and fed_regime(e) == regime and regime != "unknown"]
-    return {
-        "reference": eligible,
-        "current_analogues": current,
-        "conditioned": conditioned,
-    }
+    pools = {"reference": eligible, "current_analogues": current}
+    for name, fields in conditioned_methods(protocol).items():
+        key = [CONDITIONS[f](record, protocol) for f in fields]
+        pools[name] = [] if "unknown" in key else [
+            e for e in eligible if [CONDITIONS[f](e, protocol) for f in fields] == key]
+    return pools
 
 
 def _source_text_sha(path):
@@ -450,6 +465,7 @@ def create_replay(runs_dir, conn, protocol, records, cal, episodes,
         raise DataUnavailable("record CPI verificati presenti ma manca un calendario XNYS completo e citato")
     asset = protocol["asset"]
     horizon = int(protocol["horizon_sessions"])
+    offset = int(protocol.get("anchor_offset_sessions", 0))
     windows, readiness, release_days = {}, {}, {}
     needed_days = []
     for rec in active:
@@ -457,7 +473,7 @@ def create_replay(runs_dir, conn, protocol, records, cal, episodes,
         release = _date_of(rec)
         release_days[event_id] = release
         try:
-            win = market_window(cal, rec["release_at"], horizon)
+            win = market_window(cal, rec["release_at"], horizon, offset)
             windows[event_id] = win
             needed_days.extend(win)
             readiness[event_id] = "ready"
@@ -470,7 +486,7 @@ def create_replay(runs_dir, conn, protocol, records, cal, episodes,
         if readiness[eid] != "ready":
             continue
         try:
-            returns[eid] = window_return(prices, windows[eid], horizon)
+            returns[eid] = window_return(prices, windows[eid], window_span(protocol))
         except DataUnavailable as exc:
             readiness[eid] = str(exc)
 
@@ -549,7 +565,7 @@ def render_report(run_dir):
     returns = {}
     for eid, window in inp["windows"].items():
         try:
-            returns[eid] = window_return(inp["price_observations"], window, int(protocol["horizon_sessions"]))
+            returns[eid] = window_return(inp["price_observations"], window, window_span(protocol))
         except DataUnavailable:
             pass
     eval_start = protocol["evaluation_start"]
@@ -557,7 +573,7 @@ def render_report(run_dir):
     evaluations = [d for d in decisions if d.get("status") == "evaluated" and d["event_id"] in returns]
     excluded = [d for d in decisions if d.get("status") == "excluded"]
     source_excluded = [r for r in inp["events"] if r.get("verification_status") == "excluded" and _date_of(r) >= eval_start]
-    rows = {name: [] for name in ("reference", "current_analogues", "conditioned")}
+    rows = {name: [] for name in ("reference", "current_analogues", *conditioned_methods(protocol))}
     matured_count = len(evaluations)
     for decision in evaluations:
         actual = returns[decision["event_id"]]
@@ -567,9 +583,13 @@ def render_report(run_dir):
             dist = _distribution(detail["selected_event_ids"], returns)
             if dist is not None:
                 rows[name].append((actual, dist))
-    names = {"reference": "Riferimento CPI", "current_analogues": "Analoghi correnti (retrospettivi)", "conditioned": "Condizionato: sorpresa + ultima variazione Fed"}
+    labels = {"surprise_band": "sorpresa", "fed_regime": "ultima variazione Fed"}
+    names = {"reference": "Riferimento CPI", "current_analogues": "Analoghi correnti (retrospettivi)",
+             **{n: "Condizionato: " + " + ".join(labels[f] for f in fields) for n, fields in conditioned_methods(protocol).items()}}
+    anchor = ("chiusura della seduta precedente il rilascio" if int(protocol.get("anchor_offset_sessions", 0)) == -1
+              else "chiusura della seduta del rilascio")
     lines = [f"CPI lab · historical_replay · run {meta['run_id']}",
-             f"Asset/orizzonte: {protocol['asset']} · chiusura release → T+{protocol['horizon_sessions']} sedute XNYS · prezzo {protocol['price_column']}.",
+             f"Protocollo {protocol['protocol_version']} · asset {protocol['asset']} · da {anchor} a T+{protocol['horizon_sessions']} sedute XNYS · prezzo {protocol['price_column']}.",
              "Non misura la reazione intraday. L'archivio prezzi disponibile oggi è congelato; non certifica vintage storiche.",
              "Metodo analoghi correnti: confronto retrospettivo non valido per inferire capacità predittiva, poiché l'ora storica delle etichette/fonti non è provata.",
              f"Eventi verificati nell'input: {len(records)} · release nel periodo: {len(eval_records)} · "
@@ -633,8 +653,15 @@ def _load_protocol(path):
         raise ValueError(f"protocol mancante: {', '.join(sorted(missing))}")
     if protocol["run_type"] != "historical_replay":
         raise ValueError("questa versione esegue solo historical_replay")
-    if protocol["asset"] != "^GSPC" or protocol["price_column"] != "adj_close" or int(protocol["horizon_sessions"]) != 5:
-        raise ValueError("protocol incompatibile con il perimetro CPI lab v1 (^GSPC, adj_close, T+5)")
+    # Solo prezzi: un rendimento (^TNX) andrebbe misurato in differenze, non in variazioni percentuali.
+    if protocol["asset"] not in ("^GSPC", "IEF") or protocol["price_column"] != "adj_close":
+        raise ValueError("asset ammessi: ^GSPC, IEF (prezzo adj_close)")
+    if int(protocol.get("anchor_offset_sessions", 0)) not in (0, -1) or not 0 <= int(protocol["horizon_sessions"]) <= 10 \
+            or window_span(protocol) < 1:
+        raise ValueError("finestra non ammessa: ancora 0 o -1, orizzonte 0-10, almeno una seduta fra ancora e fine")
+    for name, fields in conditioned_methods(protocol).items():
+        if name in ("reference", "current_analogues") or not fields or set(fields) - set(CONDITIONS):
+            raise ValueError(f"metodo condizionato non valido: {name}")
     if int(protocol["minimum_pool"]) < 1 or int(protocol["current_analogue_max_pool"]) < 1:
         raise ValueError("minimum_pool e current_analogue_max_pool devono essere positivi")
     date.fromisoformat(protocol["evaluation_start"] + "-01" if len(protocol["evaluation_start"]) == 7 else protocol["evaluation_start"])
