@@ -202,3 +202,156 @@ def library_pairs(episodes: list[dict], prices, proto: dict) -> list[dict]:
                         "src": "kb" if any(str(x).startswith("kb:") for x in srcs) else "card",
                         **{f"r{h}": (p[a + h] / p[a] - 1) * 100 for h in HORIZONS}})
     return out
+
+
+# --- misure ----------------------------------------------------------------------------------
+
+def sign_hit(pred: pd.Series, real: pd.Series) -> tuple[float, int]:
+    """Quota di segno indovinato, escluse le chiamate piatte (|pred| < FLAT) e i realizzati nulli."""
+    m = (pred.abs() >= FLAT_THRESHOLD) & real.notna() & (real != 0)
+    return float((np.sign(pred[m]) == np.sign(real[m])).mean()), int(m.sum())
+
+
+def ic_within(df: pd.DataFrame, x: str, y: str, min_n: int = 15) -> tuple[float, int]:
+    """Correlazione di rango dentro asset×orizzonte, media pesata per numerosità."""
+    g = [(len(v), spearman(v[x], v[y])) for _, v in df.groupby(["asset", "h"]) if len(v) >= min_n]
+    g = [(n, r) for n, r in g if not math.isnan(r)]
+    if not g:
+        return float("nan"), 0
+    return float(np.average([r for _, r in g], weights=[n for n, _ in g])), len(g)
+
+
+def misura_1(cells: list[dict]) -> list[str]:
+    df = pd.DataFrame(cells)
+    out = ["## 1. Il segno del seguito: mediana del pool contro realizzato",
+           f"celle {len(df)} · schede {df.card.nunique()} · giorni {df.day.nunique()} · asset {df.asset.nunique()}",
+           "", "| Orizzonte | N | segno indovinato | realizzato su | ancora a−1 |", "|---|---|---|---|---|"]
+    for h, g in df.groupby("h"):
+        hit, n = sign_hit(g.med, g.realized)
+        prev, _ = sign_hit(g.med, g.realized_prev.astype(float))
+        up = (g.realized[(g.med.abs() >= FLAT_THRESHOLD) & (g.realized != 0)] > 0).mean()
+        out.append(f"| T+{h} | {n} | {hit:.1%} | {up:.0%} | {prev:.1%} |")
+    ic, k = ic_within(df, "med", "realized")
+    out += ["", f"IC dentro asset×orizzonte (gruppi ≥ 15 celle: {k}): {ic:+.3f}", "",
+            "Per numerosità del pool:"]
+    df["nb"] = pd.cut(df.n, [0, 9, 19, 29, 10_000], labels=["<10", "10-19", "20-29", "30+"])
+    for nb, g in df.groupby("nb", observed=True):
+        hit, n = sign_hit(g.med, g.realized)
+        out.append(f"- N {nb}: {hit:.1%} (celle {n}, giorni {g.day.nunique()})")
+    big = df[df.z_prev.astype(float).abs() >= 1.5]
+    cont = (np.sign(big.z_prev.astype(float)) == np.sign(big.realized))[big.realized != 0].mean()
+    out += ["", f"Mossa già avvenuta (ultima seduta chiusa, |z| ≥ 1,5): il seguito continua nel {cont:.1%} "
+                f"dei casi (celle {len(big)}, giorni {big.day.nunique()})"]
+    return out
+
+
+def misura_2(cells: list[dict]) -> list[str]:
+    b = pd.DataFrame([c for c in cells if c["p25"] is not None and c["normal_median"] is not None])
+    lo, hi = b[["p25", "p75"]].min(axis=1), b[["p25", "p75"]].max(axis=1)
+    b["in_pool"] = (b.realized >= lo) & (b.realized <= hi)
+    b["in_norm"] = (b.realized >= b.normal_p25) & (b.realized <= b.normal_p75)
+    b["w_pool"], b["w_norm"] = hi - lo, b.normal_p75 - b.normal_p25
+    out = ["## 2. Il pool contro il comportamento normale dell'asset (250 sedute prima)",
+           f"celle {len(b)} · giorni {b.day.nunique()} (atteso per una banda p25–p75 tarata: 50%)", "",
+           "| Orizzonte | N | copertura pool | copertura normale | ampiezza pool | ampiezza normale |",
+           "|---|---|---|---|---|---|"]
+    for h, g in b.groupby("h"):
+        out.append(f"| T+{h} | {len(g)} | {g.in_pool.mean():.0%} | {g.in_norm.mean():.0%} | "
+                   f"{g.w_pool.median():.2f} pp | {g.w_norm.median():.2f} pp |")
+    out += ["", "Errore assoluto medio del realizzato contro:"]
+    for lab, ref in (("mediana del pool", b.med), ("mediana normale", b.normal_median), ("zero", 0.0)):
+        out.append(f"- {lab}: {(b.realized - ref).abs().mean():.3f} pp")
+    return out
+
+
+def misura_3(pairs: list[dict], any_day: float) -> list[str]:
+    d = pd.DataFrame(pairs)
+    out = ["## 3. Il giorno della notizia: libreria episodi con verso univoco",
+           f"coppie (data, asset) {len(d)} · date {d.date.nunique()} · asset {d.asset.nunique()}",
+           f"|z0| mediano del giorno-ancora: {d.z0.abs().median():.2f} — giorno qualsiasi: "
+           f"{ANY_DAY_ABS_Z} in teoria, {any_day:.2f} misurato sugli stessi asset", "",
+           "| Fonte del verso | N | giorno-ancora | T+1 | T+3 | T+5 | T+10 |", "|---|---|---|---|---|---|---|"]
+    for lab, g in (("tutte", d), ("research KB", d[d.src == "kb"]), ("schede", d[d.src == "card"])):
+        cols = ["r0"] + [f"r{h}" for h in HORIZONS]
+        rates = [(np.sign(g[c]) == g.verso)[g[c] != 0].mean() for c in cols]
+        out.append(f"| {lab} | {len(g)} | " + " | ".join(f"{x:.0%}" for x in rates) + " |")
+    return out
+
+
+def _votes_line(label: str, cells: list[dict]) -> str:
+    t = vote_test(daily_votes(cells))
+    return (f"- {label}: giorni sopra {t['above']}, sotto {t['below']}, pari {t['ties']} "
+            f"(p unilaterale {t['p']:.3f}; celle {sum(c['hit'] is not None for c in cells)})")
+
+
+def misura_4(cells: list[dict], proto: dict) -> list[str]:
+    gate, hp = proto["gate"], proto["primary_horizon_sessions"]
+    b = [c for c in cells if c["z"] is not None and c["hit"] is not None]
+    exp = [c for c in b if c["n"] >= EXPLORATIVE_N_MIN]
+    out = ["## 4. Il cancello: la mediana del pool lontana dal normale",
+           f"Definizione esplorativa (N ≥ {EXPLORATIVE_N_MIN}, tutti gli orizzonti) — celle {len(exp)}", "",
+           "| abs(z) | celle | giorni | scostamento indovinato | segno della mediana |", "|---|---|---|---|---|"]
+    for lo, hi in ((0, 1), (1, 2), (2, 3), (3, math.inf)):
+        g = pd.DataFrame([c for c in exp if lo <= abs(c["z"]) < hi])
+        if g.empty:
+            continue
+        sh, _ = sign_hit(g.med, g.realized)
+        lab = f"≥ {lo}" if hi == math.inf else f"{lo}–{hi}"
+        out.append(f"| {lab} | {len(g)} | {g.day.nunique()} | {g.hit.mean():.1%} | {sh:.1%} |")
+    hi2 = [c for c in exp if abs(c["z"]) >= 2]
+    out += ["", "Un voto per giorno:", _votes_line("abs(z) ≥ 2", hi2),
+            _votes_line("abs(z) < 1", [c for c in exp if abs(c["z"]) < 1])]
+    for lab, part in (("prima del " + SPLIT_DAY, [c for c in hi2 if c["day"] < SPLIT_DAY]),
+                      ("dal " + SPLIT_DAY, [c for c in hi2 if c["day"] >= SPLIT_DAY])):
+        if part:
+            out.append(f"  - {lab}: {np.mean([c['hit'] for c in part]):.1%} "
+                       f"(celle {len(part)}, giorni {len({c['day'] for c in part})})")
+    prim = [c for c in b if c["h"] == hp]
+    strict = [c for c in prim if passes_gate(c["z"], c["n"], gate)]
+    days_all = len({c["day"] for c in cells if c["h"] == hp})
+    v = daily_votes(strict)
+    out += ["", f"Regola del protocollo {proto['protocol_version']} (abs(z) ≥ {gate['z_min']}, "
+                f"N ≥ {gate['n_min']}, T+{hp}) sui dati già visti:",
+            f"- giorni con almeno una cella sopra cancello: {len(v)} su {days_all}",
+            _votes_line("sopra cancello", strict),
+            f"- autocorrelazione lag-1 dei voti: {lag1_autocorr(v):+.2f}",
+            _votes_line("controllo abs(z) < 1, stessa N", [c for c in prim if abs(c["z"]) < 1 and c["n"] >= gate["n_min"]]),
+            _votes_line("solo tabelle [previsione]", [c for c in strict if c["uso"] == "previsione"])]
+    return out
+
+
+# --- comando ---------------------------------------------------------------------------------
+
+def replay() -> str:
+    proto = load_protocol()
+    conn = sqlite3.connect(f"file:{DB_PATH}?mode=ro", uri=True)
+    try:
+        prices = price_loader(conn)
+        with open(LEDGER_PATH, newline="", encoding="utf-8") as f:
+            cells = ledger_cells(list(csv.DictReader(f)), prices, proto)
+        episodes = yaml.safe_load(LIB_PATH.read_text(encoding="utf-8"))["episodes"]
+        pairs = library_pairs(episodes, prices, proto)
+        assets = sorted({p["asset"] for p in pairs})
+        any_day = float(pd.concat([abs_z_all_sessions(prices(a), proto["sigma_window_sessions"])
+                                   for a in assets]).median())
+        lines = [f"# Replay esplorativo — Run 11 «reazione, non seguito» ({date.today()})",
+                 f"⚠ ESPLORATIVO: dati già visti, non conta come prova. La prova è prospettica "
+                 f"(protocollo {proto['protocol_version']}, Run 11e).", "",
+                 *misura_1(cells), "", *misura_2(cells), "", *misura_3(pairs, any_day), "",
+                 *misura_4(cells, proto)]
+    finally:
+        conn.close()
+    return "\n".join(lines)
+
+
+def main(argv=None) -> int:
+    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    sub = ap.add_subparsers(dest="command", required=True)
+    sub.add_parser("replay", help="misure esplorative 1–4 del Run 11 (sola lettura)")
+    ap.parse_args(argv)
+    print(replay())
+    return 0
+
+
+if __name__ == "__main__":
+    sys.exit(main())

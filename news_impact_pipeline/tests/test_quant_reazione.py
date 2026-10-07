@@ -174,5 +174,20 @@ class Dati(unittest.TestCase):
         self.assertIsNone(prices("NONE"))
 
 
+class Replay(unittest.TestCase):
+    @unittest.skipUnless(Path(q.DB_PATH).exists(), "DB prezzi assente")
+    def test_replay_sui_dati_del_repo_in_sola_lettura(self):
+        prima = hashlib.sha256(q.LEDGER_PATH.read_bytes()).hexdigest()
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf):
+            self.assertEqual(q.main(["replay"]), 0)
+        out = buf.getvalue()
+        self.assertIn("ESPLORATIVO", out)
+        for n in range(1, 5):
+            self.assertIn(f"## {n}.", out)
+        self.assertIsNone(re.search(r"\bnan\b", out))
+        self.assertEqual(hashlib.sha256(q.LEDGER_PATH.read_bytes()).hexdigest(), prima)
+
+
 if __name__ == "__main__":
     unittest.main()

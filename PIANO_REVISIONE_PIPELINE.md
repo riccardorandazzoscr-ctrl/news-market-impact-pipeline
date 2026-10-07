@@ -718,6 +718,11 @@ a mano**: il Run 11a la rende uno script committato e rieseguibile).
    di confidenza è quasi tutto [0,1]. Lo spike del 2026-10-07 mostra anche che il qualitativo copia il
    segno dell'event study nel ~95% dei casi: non è un previsore indipendente (non va trasformato in uno).
 
+**Rieseguibile** (Run 11a, 2026-10-07): `news_impact_pipeline/venv/bin/python news_impact_pipeline/quant_reazione.py replay`
+— misure 1–4 con le definizioni del protocollo 1.0.0 e il realizzato congelato del ledger; esplorativo.
+Rispetto alla fotografia sopra, i punti 1, 3 e 4 sono confermati; sul punto 2 la banda «normale» copre
+il 41% a T+10 (il pool il 51%), quindi sugli orizzonti lunghi il pool è tarato meglio.
+
 ### Obiettivo e criteri di successo
 
 La parte quantitativa risponde a tre domande invece di dare un segno per ogni asset × orizzonte:
@@ -806,9 +811,9 @@ sopra è 0,65, a 60 giorni è 75%).
 
 ### Sequenza dei run
 
-- [ ] **11a — Protocollo + replay esplorativo.** `experiments/quant_reazione/` con `protocol-1.0.0.json`
+- [x] **11a — Protocollo + replay esplorativo.** `experiments/quant_reazione/` con `protocol-1.0.0.json`
       e uno script che riproduce le misure 1–4 sopra in sola lettura. Commit del protocollo **prima**
-      di qualsiasi codice che lo usi. Nessuna modifica alla pipeline.
+      di qualsiasi codice che lo usi. Nessuna modifica alla pipeline. Fatto il 2026-10-07: protocollo nel commit 0813182.
 - [ ] **11b — `event_study.py`.** Flag per reazione (`R0`, `z0`, coerenza del verso), baseline normale
       (z, N effettivo, riga del cancello) e reazione di oggi (`--reaction-session DATA`). Markdown compatto,
       righe di conclusione stampate dal tool. Test con serie sintetiche in `tests/` (look-ahead incluso:
