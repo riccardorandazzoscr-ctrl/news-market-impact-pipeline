@@ -108,5 +108,71 @@ class Definizioni(unittest.TestCase):
                          (2.0, 10, 5))
 
 
+def row(s, pos=300, **kw):
+    d = s.index[pos].date().isoformat()
+    r = {"scenario": "base", "registration": "", "uso": "", "ingestion_status": "ok",
+         "expected_median": "0.8", "hist_p25": "-0.5", "hist_p75": "1.5", "n_analogues": "16",
+         "realized_return": "0.5", "anchor_date": d, "made_date": d, "horizon": "5",
+         "card_path": f"{d}/news_01.md", "asset": "AAA"}
+    r.update(kw)
+    return r
+
+
+class Dati(unittest.TestCase):
+    def setUp(self):
+        self.s = series()
+        self.p = self.s.to_numpy()
+        self.prices = lambda asset: self.s if asset == "AAA" else None
+
+    def test_cella_valida_del_ledger(self):
+        (c,) = q.ledger_cells([row(self.s)], self.prices, PROTO)
+        base = q.baseline(self.p, 300, 5, 250)
+        self.assertAlmostEqual(c["normal_median"], float(np.median(base)))
+        self.assertAlmostEqual(c["z"], q.deviation_z(0.8, -0.5, 1.5, 16, c["normal_median"]))
+        self.assertEqual(c["hit"], q.deviation_hit(0.8, c["normal_median"], 0.5))
+        self.assertAlmostEqual(c["realized_prev"], (self.p[304] / self.p[299] - 1) * 100)
+        self.assertAlmostEqual(c["z_prev"], q.reaction(self.p, 299, 60)[1])
+
+    def test_righe_escluse_dal_ledger(self):
+        sabato = "2021-02-06"   # non è una seduta della serie sintetica
+        rows = [row(self.s, registration="recovered"), row(self.s, scenario="escalation"),
+                row(self.s, realized_return=""), row(self.s, uso="ritirata"),
+                row(self.s, ingestion_status="quarantine"), row(self.s, asset="ZZZ"),
+                row(self.s, anchor_date=sabato)]
+        self.assertEqual(q.ledger_cells(rows, self.prices, PROTO), [])
+
+    def test_storia_corta_o_banda_mancante_restano_solo_per_la_misura_1(self):
+        corta, senza_banda = q.ledger_cells([row(self.s, pos=100), row(self.s, hist_p25="")], self.prices, PROTO)
+        self.assertIsNone(corta["normal_median"]); self.assertIsNone(corta["z"]); self.assertIsNone(corta["hit"])
+        self.assertIsNone(senza_banda["z"]); self.assertIsNotNone(senza_banda["hit"])
+
+    def test_coppie_della_libreria(self):
+        d = self.s.index[300].date().isoformat()
+        ep = lambda date, dirs, src="kb:x/y.md": {"date": date, "theme": "t",
+                                                  "directions_by_reference": {"AAA": dirs},
+                                                  "direction_sources": {"AAA": [src]}}
+        eps = [ep(d, ["pos"]), ep(d, ["pos", "neg"]), ep(d, ["neutral"]),
+               ep(self.s.index[395].date().isoformat(), ["neg"]), ep("2019-06-01", ["pos"])]
+        (c,) = q.library_pairs(eps, self.prices, PROTO)
+        self.assertEqual((c["verso"], c["src"]), (1, "kb"))
+        self.assertAlmostEqual(c["z0"], q.reaction(self.p, 300, 60)[1])
+        self.assertAlmostEqual(c["r5"], (self.p[305] / self.p[300] - 1) * 100)
+        (c,) = q.library_pairs([ep(d, ["neg"], "card:2026-10-03/news_03.md")], self.prices, PROTO)
+        self.assertEqual((c["verso"], c["src"]), (-1, "card"))
+
+    def test_serie_mensili_assenti_o_con_buchi(self):
+        conn = sqlite3.connect(":memory:")
+        conn.execute("CREATE TABLE prices (ticker TEXT, date TEXT, close REAL, adj_close REAL)")
+        for i, d in enumerate(pd.bdate_range("2020-01-01", periods=100)):
+            conn.execute("INSERT INTO prices VALUES ('DAY', ?, ?, ?)", (d.date().isoformat(), 100 + i, None if i == 7 else 100 + i))
+        conn.execute("INSERT INTO prices VALUES ('DAY', '2020-06-01', NULL, NULL)")
+        for d in pd.date_range("2015-01-31", periods=60, freq="ME"):
+            conn.execute("INSERT INTO prices VALUES ('MON', ?, 1.5, NULL)", (d.date().isoformat(),))
+        prices = q.price_loader(conn)
+        self.assertEqual(len(prices("DAY")), 100)      # adj mancante → close; riga tutta NULL esclusa
+        self.assertIsNone(prices("MON"))
+        self.assertIsNone(prices("NONE"))
+
+
 if __name__ == "__main__":
     unittest.main()

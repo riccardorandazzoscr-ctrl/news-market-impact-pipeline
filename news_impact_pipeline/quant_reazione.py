@@ -122,3 +122,83 @@ def lag1_autocorr(votes: pd.Series) -> float:
 
 def spearman(a, b) -> float:
     return pd.Series(list(a)).rank().corr(pd.Series(list(b)).rank())
+
+
+# --- dati (sola lettura) ----------------------------------------------------------------------
+
+def price_loader(conn):
+    """prices(asset) → serie delle sedute con prezzo valido; None se assente o mensile."""
+    @lru_cache(maxsize=None)
+    def prices(asset: str) -> pd.Series | None:
+        try:
+            s = load_price_series(conn, asset).dropna()
+        except ValueError:
+            return None
+        return None if detect_monthly_data(s) else s
+    return prices
+
+
+def _num(x: str) -> float | None:
+    return float(x) if x not in ("", None) else None
+
+
+def ledger_cells(rows: list[dict], prices, proto: dict) -> list[dict]:
+    """Celle del ledger: scenario base, registrazione originale, realizzato congelato e prezzi validi."""
+    sw, bw = proto["sigma_window_sessions"], proto["baseline_window_sessions"]
+    out = []
+    for r in rows:
+        if (r["scenario"] != "base" or r["registration"] == "recovered" or r["uso"] == "ritirata"
+                or r["ingestion_status"] == "quarantine" or not r["expected_median"]
+                or not r["realized_return"] or not r["anchor_date"]):
+            continue
+        s = prices(r["asset"])
+        if s is None:
+            continue
+        anchor = pd.Timestamp(r["anchor_date"])
+        a = int(s.index.searchsorted(anchor))
+        if a >= len(s) or s.index[a] != anchor:
+            continue                                   # ancora congelata assente dalla serie di oggi
+        p, h = s.to_numpy(), int(r["horizon"])
+        base = baseline(p, a, h, bw)
+        prev = reaction(p, a - 1, sw)
+        c = {"day": r["made_date"], "card": r["card_path"], "asset": r["asset"], "h": h,
+             "med": float(r["expected_median"]), "n": int(r["n_analogues"] or 0),
+             "p25": _num(r["hist_p25"]), "p75": _num(r["hist_p75"]), "uso": r["uso"],
+             "realized": float(r["realized_return"]),
+             "realized_prev": (p[a - 1 + h] / p[a - 1] - 1) * 100 if 1 <= a <= len(p) - h and p[a - 1] > 0 else None,
+             "z_prev": prev[1] if prev else None,
+             "normal_median": float(np.median(base)) if base is not None else None,
+             "normal_p25": float(np.percentile(base, 25)) if base is not None else None,
+             "normal_p75": float(np.percentile(base, 75)) if base is not None else None}
+        ok = None not in (c["p25"], c["p75"], c["normal_median"])
+        c["z"] = deviation_z(c["med"], c["p25"], c["p75"], c["n"], c["normal_median"]) if ok else None
+        c["hit"] = deviation_hit(c["med"], c["normal_median"], c["realized"]) if c["normal_median"] is not None else None
+        out.append(c)
+    return out
+
+
+def library_pairs(episodes: list[dict], prices, proto: dict) -> list[dict]:
+    """Coppie (data, asset) con verso univoco pos/neg: reazione del giorno-ancora e seguito T+h."""
+    sw = proto["sigma_window_sessions"]
+    out = []
+    for e in episodes:
+        for asset, dirs in (e.get("directions_by_reference") or {}).items():
+            if len(set(dirs)) != 1 or dirs[0] not in ("pos", "neg"):
+                continue
+            s = prices(asset)
+            if s is None:
+                continue
+            d = pd.Timestamp(e["date"])
+            a = int(s.index.searchsorted(d))
+            if a + max(HORIZONS) >= len(s) or s.index[a] - d > pd.Timedelta(days=4):
+                continue                               # seguito non osservabile o ancora troppo lontana
+            p = s.to_numpy()
+            rz = reaction(p, a, sw)
+            if rz is None:
+                continue
+            srcs = (e.get("direction_sources") or {}).get(asset, [])
+            out.append({"date": e["date"], "theme": e["theme"], "asset": asset,
+                        "verso": 1 if dirs[0] == "pos" else -1, "r0": rz[0], "z0": rz[1],
+                        "src": "kb" if any(str(x).startswith("kb:") for x in srcs) else "card",
+                        **{f"r{h}": (p[a + h] / p[a] - 1) * 100 for h in HORIZONS}})
+    return out
