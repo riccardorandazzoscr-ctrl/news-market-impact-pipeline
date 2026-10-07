@@ -690,7 +690,8 @@ Stessa regola del Run 9: **le scelte le fa Riccardo**, questo run presenta e asp
 
 **Origine:** sessione interattiva del 2026-10-07, **non** il report del 15/09: per i run 11a–11e
 questa sezione sostituisce il passo 1 del Protocollo. Assorbe in parte «R10 statistica seria»
-(giorni unici, intervalli di confidenza, N effettivo).
+(giorni unici, intervalli di confidenza, N effettivo). **Rivista lo stesso giorno dopo l'11a:** niente
+previsioni sul seguito, cancello scartato, 11e annullato (vedi «Rieseguibile»).
 
 ### Il problema, misurato
 
@@ -726,17 +727,17 @@ T+10 (il pool il 51%), quindi sugli orizzonti lunghi il pool è tarato meglio. *
 regola del protocollo il cancello fa 34/11, ma la regola cieca «sempre sotto la mediana normale» sulle
 stesse celle fa 33/11, perché nel periodo il realizzato sta sotto la mediana delle 250 sedute precedenti
 in due celle su tre; permutando i segni del pool dentro ogni giorno p ≈ 0,1. Il test contro il 50% del
-protocollo 1.0.0 non distingue il pool dal regime: **prima del go-live dell'11d serve una decisione**
-(protocollo 1.1.0 contro un benchmark o una permutazione, un voto per seduta-ancora — oppure niente
-previsioni sul seguito).
+protocollo 1.0.0 non distingue il pool dal regime. **Deciso dal maintainer il 2026-10-07: niente
+previsioni sul seguito.** Il cancello è scartato prima del go-live (`references/esperimenti_scartati.md`);
+le parti sotto che lo riguardano sono aggiornate di conseguenza.
 
 ### Obiettivo e criteri di successo
 
 La parte quantitativa risponde a tre domande invece di dare un segno per ogni asset × orizzonte:
 **quanto si muove di solito il mercato il giorno di una notizia così; quanto si è già mosso stavolta;
 c'è un seguito diverso dal normale?** Successo = (a) nessuna scheda cita percentuali di scorecard su
-pochi casi; (b) le previsioni registrate sono poche e vengono giudicate su dati **futuri** con un
-protocollo fissato prima; (c) una scheda senza niente da dire lo dice in una riga, con un numero.
+pochi casi; (b) nessuna previsione sul seguito: la tabella del seguito è sempre `[descrittiva]`
+(deciso il 2026-10-07 dopo l'11a; prima era «poche previsioni giudicate su dati futuri»); (c) una scheda senza niente da dire lo dice in una riga, con un numero.
 
 ### Le tre misure (tutte al volo, nulla persistito)
 
@@ -758,15 +759,12 @@ giornalieri delle 60 sedute che finiscono alla seduta `a−1` (niente look-ahead
      realizzato (la sorpresa), cioè l'archivio dei laboratori per famiglia (approccio C, fuori scope).
 3. **Seguito T+h contro il normale.** Stessi rendimenti di oggi (ancora `a`, T+1/3/5/10). Baseline
    normale = tutti i rendimenti a h sedute dell'asset nelle 250 sedute che finiscono in `a−1` della
-   **data analisi** (non degli episodi). Indice di scostamento
-   `z = (mediana_pool − mediana_normale) / ((p75_pool − p25_pool) / 1,349 / √N)`, con N = episodi
-   dopo il dedup per giorno-ancora già in `compute_returns`. Accanto, solo informativo, **N effettivo**
-   = gruppi di episodi con finestre T+h sovrapposte (ancore a meno di h sedute) contati una volta.
-   - `|z| ≥ 2` **e** N ≥ 10 → il tool stampa «supera il cancello» e la tabella può essere `[previsione]`.
-   - altrimenti → «nessun seguito distinguibile dal normale» e la tabella è `[descrittiva]`.
-   - ⚠ Non è la «correzione per rendimento anomalo» scartata il 2026-08-10
-     (`references/esperimenti_scartati.md`): lì si correggeva la stima, qui si **seleziona quando
-     parlare**. Va scritto nella reference quando si chiude il Run 11e.
+   **data analisi** (non degli episodi), mostrata accanto alla mediana del pool; N = episodi dopo il
+   dedup per giorno-ancora già in `compute_returns` e, solo informativo, **N effettivo** = gruppi di
+   episodi con finestre T+h sovrapposte (ancore a meno di h sedute) contati una volta.
+   - **Sempre `[descrittiva]`**, con la riga fissa «nessuna previsione sul seguito». Il cancello
+     `|z| ≥ 2` e N ≥ 10 che doveva abilitare `[previsione]` è scartato il 2026-10-07: non batteva la regola
+     cieca «sempre sotto il normale» (`references/esperimenti_scartati.md`).
 
 ### La scheda
 
@@ -777,30 +775,28 @@ già pronta (l'agente la copia, non la riscrive):
 ### Reazione degli analoghi — `BZ=F` (N=13, |z| mediano 1,4 contro 0,67 di un giorno qualsiasi)
 | R0 mediana | p25 | p75 | verso coerente |
 ### Reazione di oggi — seduta 2026-10-06: +2,8% (z +1,6), 70° percentile → più forte degli analoghi
-### Seguito — `BZ=F` [descrittiva] — nessun seguito distinguibile dal normale (z +0,7, N=13, N eff 6)
-| Stat | T+1 | T+3 | T+5 | T+10 |   ← mediana pool, mediana normale, p25/p75 pool, z, N
+### Seguito — `BZ=F` [descrittiva] — nessuna previsione sul seguito (N=13, N eff 6)
+| Stat | T+1 | T+3 | T+5 | T+10 |   ← mediana pool, mediana normale, p25/p75 pool, N
 ```
 
 Spariscono il paragrafo «cosa dice la scorecard» e la regola del runbook che obbliga a leggere la
-sezione 5-bis prima di una lettura direzionale: il cancello è calcolato, non argomentato in prosa
+sezione 5-bis prima di una lettura direzionale: sul seguito non c'è niente da argomentare
 (meno turni → meno costo, cfr. `references/economia_del_run.md`). Le Considerazioni qualitative
 restano com'erano: spiegano il meccanismo, non contraddicono la tabella senza dirlo.
 
 ### Ledger e scorecard
 
-- `forecast_tracking.py`: una tabella `[previsione]` è accettata da `register` solo se il cancello è
-  soddisfatto **ricalcolato dai numeri della tabella** (l'audit rifiuta un `[previsione]` senza
-  cancello; il contrario — `[descrittiva]` nonostante il cancello, es. regime incompatibile — è
-  sempre ammesso). Nuova colonna `baseline_median` (vuota sulle righe vecchie, nessuna riscrittura);
-  `method_version` incrementato.
-- Valutazione primaria delle nuove righe: **scostamento indovinato** =
-  `segno(realizzato − baseline_median)` = `segno(mediana_pool − baseline_median)`.
-- Scorecard: nuova sezione «Seguito oltre il normale» aggregata **per giorno** (quota giornaliera di
-  celle corrette), con giorni sopra/sotto il 50% e intervallo di Wilson; le celle sotto cancello come
-  controllo. La 5-bis resta ma ogni percentuale porta N giorni unici e intervallo di Wilson, e le
-  schede non la citano più.
+(Rivisto il 2026-10-07 dopo l'11a: niente cancello, niente `baseline_median`, niente metrica nuova.)
+- `forecast_tracking.py`: le tabelle del seguito nel nuovo formato si registrano come oggi
+  (`[descrittiva]`), così lo scorecard continua a misurarle; `register` e `audit` rifiutano un
+  `[previsione]` su una tabella del seguito. Righe esistenti intatte.
+- Scorecard: la 5-bis resta, ma ogni percentuale porta N giorni unici e intervallo di Wilson, e
+  le schede non la citano più.
 
-### Validazione (protocollo fissato prima dell'uso)
+### Validazione (protocollo fissato prima dell'uso) — RITIRATA il 2026-10-07, prima del go-live
+
+Il protocollo resta nel repo come registrazione e **non si esegue**: sui dati già visti il cancello non
+batteva la regola cieca (vedi «Rieseguibile»), quindi vale già il ramo «Non confermato». Testo originale:
 
 `experiments/quant_reazione/protocol-1.0.0.json`, committato **prima** del go-live, mai modificato
 dopo (una variante = un file nuovo, come nel laboratorio CPI). Fissa: le definizioni sopra, soglie
@@ -821,22 +817,22 @@ sopra è 0,65, a 60 giorni è 75%).
 - [x] **11a — Protocollo + replay esplorativo.** `experiments/quant_reazione/` con `protocol-1.0.0.json`
       e uno script che riproduce le misure 1–4 sopra in sola lettura. Commit del protocollo **prima**
       di qualsiasi codice che lo usi. Nessuna modifica alla pipeline. Fatto il 2026-10-07: protocollo nel commit 0813182.
-      ⚠ Il test della 1.0.0 confonde pool e regime (vedi «Rieseguibile» sopra): decisione prima dell'11b.
+      ⚠ Il test della 1.0.0 confondeva pool e regime: deciso il 2026-10-07, niente previsioni sul seguito.
 - [ ] **11b — `event_study.py`.** Flag per reazione (`R0`, `z0`, coerenza del verso), baseline normale
-      (z, N effettivo, riga del cancello) e reazione di oggi (`--reaction-session DATA`). Markdown compatto,
+      accanto al pool (descrittiva, con N effettivo; niente z né cancello) e reazione di oggi (`--reaction-session DATA`). Markdown compatto,
       righe di conclusione stampate dal tool. Test con serie sintetiche in `tests/` (look-ahead incluso:
       la baseline non deve vedere prezzi ≥ `a`). Nessun cambiamento al comportamento di default.
-- [ ] **11c — Ledger.** Parsing dei nuovi blocchi, colonna `baseline_median`, audit del cancello in
-      `register`, nuova metrica di valutazione; le righe esistenti restano byte per byte.
+- [ ] **11c — Ledger.** Parsing dei nuovi blocchi; `register`/`audit` rifiutano `[previsione]` sul
+      seguito; Wilson e giorni unici nella 5-bis; le righe esistenti restano byte per byte.
 - [ ] **11d — Template, runbook, render.** `news_card_template.md`, `PHASE5_RUNBOOK.md` (via la regola
       5-bis, dentro i nuovi comandi in «Riferimento comandi»), campo `seduta_reazione`,
       `render_report.py` se serve. Una scheda di prova completa in sessione manuale, poi go-live.
-- [ ] **11e — Decisione (dopo 60 giorni validi).** Esegue il protocollo, scrive l'esito qui e nella
-      reference, applica la regola di decisione. Non prima.
+- ~~**11e — Decisione (dopo 60 giorni validi).**~~ Annullato il 2026-10-07: non c'è più niente da
+      decidere (niente previsioni sul seguito; esito già in `references/esperimenti_scartati.md`).
 
 **Fuori da questo run:** correzione di date ed etichette della libreria (sessione dedicata del
 2026-10-07 sulle etichette `eurozone_release`); laboratori per famiglia di evento con archivio dei
-consensi (approccio C, dopo l'11e); briefing, triage e classificazione.
+consensi (approccio C, dopo l'11d); briefing, triage e classificazione.
 
 ---
 
@@ -883,9 +879,9 @@ consensi (approccio C, dopo l'11e); briefing, triage e classificazione.
 | 10 | Telemetria R14 | Sonnet 5 | medium |
 | 11a | Protocollo + replay esplorativo | **Opus 5.5** | high |
 | 11b | `event_study.py` reazione/baseline | **Opus 5.5** | high |
-| 11c | Ledger: cancello e `baseline_median` | **Opus 5.5** | high |
+| 11c | Ledger: nuovi blocchi, niente `[previsione]` sul seguito | **Opus 5.5** | high |
 | 11d | Template, runbook, render | Sonnet 5.5 | medium |
-| 11e | Decisione sul protocollo | **Opus 5.5** | high |
+| 11e | ~~Decisione sul protocollo~~ (annullato) | — | — |
 
 **Criterio:** Opus dove un errore corrompe dati o dove serve tenere in testa tutta la catena;
 Sonnet dove il diff è locale e il file da leggere è uno. L'effort alto serve al ragionamento,

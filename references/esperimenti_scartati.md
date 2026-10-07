@@ -30,6 +30,31 @@ Coerente col fatto che la copertura delle bande è già ~45-50%, cioè ben tarat
 **Conclusione:** complessità non giustificata. Il vero problema era un altro — il bug
 sulla direzione, vedi sotto.
 
+## Cancello sul seguito «|z| ≥ 2 dal normale» — scartato il 2026-10-07, prima del go-live
+
+**L'idea** (Run 11). Il segno del seguito T+h non ha informazione (~50%), ma forse ce l'ha quando la
+mediana del pool si stacca molto dal comportamento normale dell'asset:
+z = (mediana pool − mediana dei rendimenti a h sedute delle 250 sedute prima) / (IQR/1,349/√N).
+Solo con |z| ≥ 2 e N ≥ 10 una tabella poteva diventare `[previsione]`.
+
+**Cosa è successo.** Sui dati già visti (ledger al 2026-10-07, T+5, un voto per giorno) il cancello
+fa 34 giorni sopra il 50% e 11 sotto. La regola cieca «sempre sotto la mediana normale», sulle
+stesse celle, fa 33/11. Permutando i segni del pool dentro il giorno p ≈ 0,1; con «normale» = 0 il
+cancello fa 24/16 (p 0,13).
+
+**Perché.** Nel periodo il realizzato sta sotto la mediana delle 250 sedute precedenti in due celle su
+tre, e il pool (vicino a zero) ci sta sotto nel 75%: la mediana delle 250 sedute incorpora la deriva
+dell'anno prima, e quando la deriva rallenta «sotto il normale» indovina comunque. Stesso difetto di
+fondo della «correzione per rendimento anomalo» qui sopra (lì si correggeva la stima, qui si sceglieva
+quando parlare): la mediana delle 250 sedute non è un riferimento neutro.
+
+**Riproducibile:** `news_impact_pipeline/venv/bin/python news_impact_pipeline/quant_reazione.py replay`
+(righe «benchmark sempre sotto/sopra il normale»). Protocollo `experiments/quant_reazione/protocol-1.0.0.json`
+registrato e mai eseguito.
+
+**Regola che ne esce:** un segnale direzionale si confronta con un benchmark costante sulle stesse
+celle (o con una permutazione), mai solo con il 50%.
+
 ## Ipotesi escluse nell'indagine "perché il rifugio è rovesciato" (2026-08-10)
 
 La causa vera era un **bug** (`cmd_build` collassava le direzioni multiple in "mixed",
