@@ -795,7 +795,9 @@ dopo (una variante = un file nuovo, come nel laboratorio CPI). Fissa: le definiz
 (|z| ≥ 2, N ≥ 10), orizzonte primario T+5 (gli altri secondari), metrica primaria (scostamento
 indovinato, un voto per giorno), test (binomiale unilaterale sui giorni con quota diversa dal 50%,
 i pareggi esclusi, α = 0,05), campione (giorni con almeno una cella sopra cancello matura a T+5, dal
-go-live), decisione a **40 giorni**.
+go-live), decisione a **60 giorni** non pari (soglia 37/60; portata da 40 a 60 dal maintainer il
+2026-10-07, prima di registrare il protocollo: a 40 giorni la potenza era 57% se la quota vera di giorni
+sopra è 0,65, a 60 giorni è 75%).
 - Confermato → il cancello resta la regola per `[previsione]`.
 - Non confermato → nessuna previsione sul seguito: la parte quantitativa resta reazione + già
   prezzato + «seguito non distinguibile»; annotazione in `esperimenti_scartati.md`.
@@ -816,7 +818,7 @@ go-live), decisione a **40 giorni**.
 - [ ] **11d — Template, runbook, render.** `news_card_template.md`, `PHASE5_RUNBOOK.md` (via la regola
       5-bis, dentro i nuovi comandi in «Riferimento comandi»), campo `seduta_reazione`,
       `render_report.py` se serve. Una scheda di prova completa in sessione manuale, poi go-live.
-- [ ] **11e — Decisione (dopo 40 giorni validi).** Esegue il protocollo, scrive l'esito qui e nella
+- [ ] **11e — Decisione (dopo 60 giorni validi).** Esegue il protocollo, scrive l'esito qui e nella
       reference, applica la regola di decisione. Non prima.
 
 **Fuori da questo run:** correzione di date ed etichette della libreria (sessione dedicata del
