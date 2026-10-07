@@ -720,8 +720,15 @@ a mano**: il Run 11a la rende uno script committato e rieseguibile).
 
 **Rieseguibile** (Run 11a, 2026-10-07): `news_impact_pipeline/venv/bin/python news_impact_pipeline/quant_reazione.py replay`
 — misure 1–4 con le definizioni del protocollo 1.0.0 e il realizzato congelato del ledger; esplorativo.
-Rispetto alla fotografia sopra, i punti 1, 3 e 4 sono confermati; sul punto 2 la banda «normale» copre
-il 41% a T+10 (il pool il 51%), quindi sugli orizzonti lunghi il pool è tarato meglio.
+Rispetto alla fotografia sopra: punti 1 e 3 confermati; sul punto 2 la banda «normale» copre il 41% a
+T+10 (il pool il 51%), quindi sugli orizzonti lunghi il pool è tarato meglio. **Punto 4 non confermato**
+(revisione finale dell'11a): il 46/17 contava i giorni pari come «sopra» (il replay dà 38/16/8); con la
+regola del protocollo il cancello fa 34/11, ma la regola cieca «sempre sotto la mediana normale» sulle
+stesse celle fa 33/11, perché nel periodo il realizzato sta sotto la mediana delle 250 sedute precedenti
+in due celle su tre; permutando i segni del pool dentro ogni giorno p ≈ 0,1. Il test contro il 50% del
+protocollo 1.0.0 non distingue il pool dal regime: **prima del go-live dell'11d serve una decisione**
+(protocollo 1.1.0 contro un benchmark o una permutazione, un voto per seduta-ancora — oppure niente
+previsioni sul seguito).
 
 ### Obiettivo e criteri di successo
 
@@ -814,6 +821,7 @@ sopra è 0,65, a 60 giorni è 75%).
 - [x] **11a — Protocollo + replay esplorativo.** `experiments/quant_reazione/` con `protocol-1.0.0.json`
       e uno script che riproduce le misure 1–4 sopra in sola lettura. Commit del protocollo **prima**
       di qualsiasi codice che lo usi. Nessuna modifica alla pipeline. Fatto il 2026-10-07: protocollo nel commit 0813182.
+      ⚠ Il test della 1.0.0 confonde pool e regime (vedi «Rieseguibile» sopra): decisione prima dell'11b.
 - [ ] **11b — `event_study.py`.** Flag per reazione (`R0`, `z0`, coerenza del verso), baseline normale
       (z, N effettivo, riga del cancello) e reazione di oggi (`--reaction-session DATA`). Markdown compatto,
       righe di conclusione stampate dal tool. Test con serie sintetiche in `tests/` (look-ahead incluso:

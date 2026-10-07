@@ -136,7 +136,7 @@ Metodo: [references/laboratorio_cpi.md](references/laboratorio_cpi.md)
 ## Quantitativo «reazione, non seguito» (Run 11)
 
 - **Stato** — 11a chiuso il 2026-10-07: protocollo `experiments/quant_reazione/protocol-1.0.0.json` registrato prima del codice; misure esplorative con `news_impact_pipeline/quant_reazione.py replay`.
-- **Deciso** — (07/10) il segno del seguito T+h non ha informazione (~50%); l'informazione sta nella reazione del giorno della notizia. Unico segnale da confermare: il cancello |z| ≥ 2 e N ≥ 10 sulla distanza fra mediana del pool e mediana normale (T+5, un voto per giorno, decisione a 60 giorni non pari dal go-live).
-- **Prossimo passo** — Run 11b: reazione, baseline e cancello in `event_study.py`, con il comportamento di default invariato. Le definizioni di `quant_reazione.py` sono il riferimento da riusare, non da riscrivere.
+- **Deciso** — (07/10) il segno del seguito T+h non ha informazione (~50%); l'informazione sta nella reazione del giorno della notizia. Il cancello |z| ≥ 2 e N ≥ 10 (protocollo 1.0.0, decisione a 60 giorni) sui dati visti **non** batte la regola cieca «sempre sotto la mediana normale» (34/11 contro 33/11): il test contro il 50% confonde il pool con il regime.
+- **Prossimo passo** — prima dell'11b il maintainer decide: protocollo 1.1.0 (test contro benchmark o permutazione, un voto per seduta-ancora) oppure niente previsioni sul seguito (reazione + già prezzato + «seguito non distinguibile»). Le definizioni di `quant_reazione.py` restano il riferimento per l'11b.
 
 Spec e sequenza: [PIANO_REVISIONE_PIPELINE.md](PIANO_REVISIONE_PIPELINE.md) (Run 11)

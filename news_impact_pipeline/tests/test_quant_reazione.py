@@ -141,6 +141,13 @@ class Dati(unittest.TestCase):
                 row(self.s, anchor_date=sabato)]
         self.assertEqual(q.ledger_cells(rows, self.prices, PROTO), [])
 
+    def test_ancora_congelata_diversa_dalla_prima_seduta_esclusa(self):
+        dopo = self.s.index[301].date().isoformat()     # ancora congelata una seduta più tardi: look-ahead
+        self.assertEqual(q.ledger_cells([row(self.s, anchor_date=dopo)], self.prices, PROTO), [])
+        lun = next(i for i in range(290, 310) if self.s.index[i].weekday() == 0)
+        sab = (self.s.index[lun] - pd.Timedelta(days=2)).date().isoformat()
+        self.assertEqual(len(q.ledger_cells([row(self.s, pos=lun, made_date=sab)], self.prices, PROTO)), 1)
+
     def test_storia_corta_o_banda_mancante_restano_solo_per_la_misura_1(self):
         corta, senza_banda = q.ledger_cells([row(self.s, pos=100), row(self.s, hist_p25="")], self.prices, PROTO)
         self.assertIsNone(corta["normal_median"]); self.assertIsNone(corta["z"]); self.assertIsNone(corta["hit"])
@@ -173,6 +180,29 @@ class Dati(unittest.TestCase):
         self.assertIsNone(prices("MON"))
         self.assertIsNone(prices("NONE"))
 
+
+class Misure(unittest.TestCase):
+    PROTO4 = {"protocol_version": "x", "gate": GATE, "primary_horizon_sessions": 5}
+
+    def celle(self):
+        # pool e realizzato sempre sotto il normale (tre giorni sopra cancello) e un giorno con |z| < 1
+        out = [{"day": d, "h": 5, "n": 12, "z": -3.0, "med": -1.0, "normal_median": 0.5,
+                "realized": -0.2, "hit": 1, "uso": ""} for d in ("2026-06-01", "2026-06-02", "2026-09-01")]
+        out.append({"day": "2026-09-02", "h": 5, "n": 12, "z": 0.5, "med": 0.6, "normal_median": 0.5,
+                    "realized": 0.9, "hit": 1, "uso": ""})
+        return out
+
+    def test_benchmark_costante_sulle_stesse_celle(self):
+        out = "\n".join(q.misura_4(self.celle(), self.PROTO4))
+        self.assertIn("- benchmark sempre sotto il normale (stesse celle): giorni sopra 3, sotto 0", out)
+        self.assertIn("- benchmark sempre sopra il normale (stesse celle): giorni sopra 0, sotto 3", out)
+
+    def test_stabilita_sotto_la_riga_del_cancello(self):
+        lines = q.misura_4(self.celle(), self.PROTO4)
+        i = next(k for k, l in enumerate(lines) if l.startswith("- abs(z) ≥ 2"))
+        self.assertTrue(lines[i + 1].lstrip().startswith("- prima del"))
+        self.assertTrue(lines[i + 2].lstrip().startswith("- dal"))
+        self.assertTrue(lines[i + 3].startswith("- abs(z) < 1"))
 
 class Replay(unittest.TestCase):
     @unittest.skipUnless(Path(q.DB_PATH).exists(), "DB prezzi assente")

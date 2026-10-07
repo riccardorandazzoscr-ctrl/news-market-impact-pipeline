@@ -154,10 +154,9 @@ def ledger_cells(rows: list[dict], prices, proto: dict) -> list[dict]:
         s = prices(r["asset"])
         if s is None:
             continue
-        anchor = pd.Timestamp(r["anchor_date"])
-        a = int(s.index.searchsorted(anchor))
-        if a >= len(s) or s.index[a] != anchor:
-            continue                                   # ancora congelata assente dalla serie di oggi
+        a = int(s.index.searchsorted(pd.Timestamp(r["made_date"])))
+        if a >= len(s) or s.index[a] != pd.Timestamp(r["anchor_date"]):
+            continue    # ancora congelata assente o diversa dalla prima seduta ≥ data di analisi (look-ahead)
         p, h = s.to_numpy(), int(r["horizon"])
         base = baseline(p, a, h, bw)
         prev = reaction(p, a - 1, sw)
@@ -299,13 +298,13 @@ def misura_4(cells: list[dict], proto: dict) -> list[str]:
         lab = f"≥ {lo}" if hi == math.inf else f"{lo}–{hi}"
         out.append(f"| {lab} | {len(g)} | {g.day.nunique()} | {g.hit.mean():.1%} | {sh:.1%} |")
     hi2 = [c for c in exp if abs(c["z"]) >= 2]
-    out += ["", "Un voto per giorno:", _votes_line("abs(z) ≥ 2", hi2),
-            _votes_line("abs(z) < 1", [c for c in exp if abs(c["z"]) < 1])]
+    out += ["", "Un voto per giorno:", _votes_line("abs(z) ≥ 2", hi2)]
     for lab, part in (("prima del " + SPLIT_DAY, [c for c in hi2 if c["day"] < SPLIT_DAY]),
                       ("dal " + SPLIT_DAY, [c for c in hi2 if c["day"] >= SPLIT_DAY])):
         if part:
-            out.append(f"  - {lab}: {np.mean([c['hit'] for c in part]):.1%} "
+            out.append(f"  - {lab}: {np.mean([c['hit'] for c in part]):.1%} delle celle indovinate "
                        f"(celle {len(part)}, giorni {len({c['day'] for c in part})})")
+    out.append(_votes_line("abs(z) < 1", [c for c in exp if abs(c["z"]) < 1]))
     prim = [c for c in b if c["h"] == hp]
     strict = [c for c in prim if passes_gate(c["z"], c["n"], gate)]
     days_all = len({c["day"] for c in cells if c["h"] == hp})
@@ -314,6 +313,12 @@ def misura_4(cells: list[dict], proto: dict) -> list[str]:
                 f"N ≥ {gate['n_min']}, T+{hp}) sui dati già visti:",
             f"- giorni con almeno una cella sopra cancello: {len(v)} su {days_all}",
             _votes_line("sopra cancello", strict),
+            # il voto contro il 50% non basta: se il realizzato sta quasi sempre da una parte del normale
+            # (regime), una regola costante sulle stesse celle fa lo stesso risultato
+            _votes_line("benchmark sempre sotto il normale (stesse celle)",
+                        [dict(c, hit=int(c["realized"] < c["normal_median"])) for c in strict]),
+            _votes_line("benchmark sempre sopra il normale (stesse celle)",
+                        [dict(c, hit=int(c["realized"] > c["normal_median"])) for c in strict]),
             f"- autocorrelazione lag-1 dei voti: {lag1_autocorr(v):+.2f}",
             _votes_line("controllo abs(z) < 1, stessa N", [c for c in prim if abs(c["z"]) < 1 and c["n"] >= gate["n_min"]]),
             _votes_line("solo tabelle [previsione]", [c for c in strict if c["uso"] == "previsione"])]
