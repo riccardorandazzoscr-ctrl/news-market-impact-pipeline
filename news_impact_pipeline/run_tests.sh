@@ -12,6 +12,7 @@
 #   ./run_tests.sh usage        # solo il parser dei consumi del run headless
 #   ./run_tests.sh prezzi       # solo finestra, stato della barra e diagnosi serie
 #   ./run_tests.sh brief        # solo il job che produce il briefing (07:40)
+#   ./run_tests.sh quant        # solo il Run 11: definizioni del protocollo e replay esplorativo
 #
 # I test sono NON distruttivi: leggono il DB e lanciano i tool in sola lettura.
 # L'unica eccezione è `update_market_data.py`, rilanciato per verificare che sia
@@ -55,6 +56,10 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
 
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "cpi" ] && \
   run "CPI lab — protocollo, calendario, replay e ricevuta" tests/test_cpi_lab.py
+
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "quant" ] && \
+  run "quant — Run 11: definizioni del protocollo e replay esplorativo (sola lettura)" \
+      tests/test_quant_reazione.py
 
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "forecast" ] && \
   run "forecast — uso dichiarato, scenario, correzioni e valutazione congelata (R09)" \
