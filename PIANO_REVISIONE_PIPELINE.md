@@ -686,6 +686,145 @@ Stessa regola del Run 9: **le scelte le fa Riccardo**, questo run presenta e asp
 
 ---
 
+## Run 11 — Quantitativo «reazione, non seguito»: SPEC (approvata dal maintainer il 2026-10-07)
+
+**Origine:** sessione interattiva del 2026-10-07, **non** il report del 15/09: per i run 11a–11e
+questa sezione sostituisce il passo 1 del Protocollo. Assorbe in parte «R10 statistica seria»
+(giorni unici, intervalli di confidenza, N effettivo).
+
+### Il problema, misurato
+
+Misura esplorativa del 2026-10-07 sul ledger e sulla libreria (fotografia datata, **non aggiornarla
+a mano**: il Run 11a la rende uno script committato e rieseguibile).
+
+1. **Il segno del seguito non ha informazione.** Sulle previsioni valutate (registrazione originale,
+   scenario base, dal 28/05) la mediana del pool indovina il segno di T+1…T+10 al ~50,5%, con IC
+   dentro asset×orizzonte ≈ 0. Né la numerosità del pool, né la mossa già avvenuta (continuazione o
+   rientro), né l'ancora spostata alla seduta precedente cambiano il risultato.
+2. **Il pool non dice più del comportamento normale dell'asset.** La banda p25–p75 del pool è tarata
+   (~54% contro 50% atteso), ma lo è anche la banda dei rendimenti a h sedute dei 250 giorni
+   precedenti (~51%), più stretta. La mediana del pool ha un errore assoluto maggiore di «zero».
+3. **L'informazione della notizia sta nel giorno della notizia, che l'event study scarta.** Sulle
+   coppie (data, asset) della libreria con verso univoco: |z| mediano della mossa del giorno-ancora
+   ≈ 1,1 contro 0,67 di un giorno qualsiasi; il verso coincide con quella mossa ~73% delle volte
+   (tetto: alcune etichette conoscevano l'esito) e scende al ~55% da T+1. Coerente col laboratorio CPI
+   2.0: la sorpresa orienta il verso del giorno, non il seguito.
+4. **Unico segnale trovato, da confermare:** quando la mediana del pool si stacca dalla mediana
+   normale dell'asset di almeno 2 errori standard (z definito sotto), lo scostamento si ripete nel
+   ~58% dei casi (un voto per giorno: 46 giorni sopra il 50%, 17 sotto; stabile prima e dopo il
+   15/08); sotto |z|<1 è ~50%. **Trovato guardando i dati una volta: è un'ipotesi, non una prova.**
+   (Misurato su pool con N ≥ 5 e su tutti gli orizzonti insieme; il protocollo sotto è più severo.)
+5. Le frasi «hit-rate 0% / 17%» delle schede sono percentuali di scorecard su 4–6 righe: l'intervallo
+   di confidenza è quasi tutto [0,1]. Lo spike del 2026-10-07 mostra anche che il qualitativo copia il
+   segno dell'event study nel ~95% dei casi: non è un previsore indipendente (non va trasformato in uno).
+
+### Obiettivo e criteri di successo
+
+La parte quantitativa risponde a tre domande invece di dare un segno per ogni asset × orizzonte:
+**quanto si muove di solito il mercato il giorno di una notizia così; quanto si è già mosso stavolta;
+c'è un seguito diverso dal normale?** Successo = (a) nessuna scheda cita percentuali di scorecard su
+pochi casi; (b) le previsioni registrate sono poche e vengono giudicate su dati **futuri** con un
+protocollo fissato prima; (c) una scheda senza niente da dire lo dice in una riga, con un numero.
+
+### Le tre misure (tutte al volo, nulla persistito)
+
+Notazione: `a` = giorno-ancora (prima seduta ≥ data dell'episodio, regola attuale; per la libreria la
+data è già «la seduta in cui l'asset reagisce»). `σ60` = deviazione standard dei log-rendimenti
+giornalieri delle 60 sedute che finiscono alla seduta `a−1` (niente look-ahead).
+
+1. **Reazione degli analoghi.** `R0 = P[a]/P[a−1] − 1` (in %) e `z0 = ln(P[a]/P[a−1]) / σ60`. Per
+   asset: N, mediana di `R0`, p25/p75 di `R0`, mediana di `|z0|` contro 0,67 (giorno qualsiasi) e,
+   **solo sul `direction_reference`**, la quota di episodi con `segno(R0)` = verso dichiarato.
+2. **Reazione di oggi («già prezzato»).** La scheda dichiara in Classificazione
+   `seduta_reazione: AAAA-MM-GG`, la seduta in cui i mercati hanno reagito alla notizia.
+   - Se `seduta_reazione` < data analisi (seduta chiusa prima del run): il tool calcola `R0` e `z0` di
+     oggi e il loro percentile fra gli `z0` degli analoghi (con segno e in valore assoluto), e stampa
+     una frase pronta: reazione «più forte / in linea / più debole degli analoghi» (terzili).
+   - Altrimenti (evento in calendario o in corso): stampa la distribuzione attesa della reazione; con
+     due pool (`--direction pos` e `neg`) i due rami «se sopra attese / se sotto attese».
+   - **Solo descrittivo in questa versione**: registrare le reazioni attese richiede il ramo
+     realizzato (la sorpresa), cioè l'archivio dei laboratori per famiglia (approccio C, fuori scope).
+3. **Seguito T+h contro il normale.** Stessi rendimenti di oggi (ancora `a`, T+1/3/5/10). Baseline
+   normale = tutti i rendimenti a h sedute dell'asset nelle 250 sedute che finiscono in `a−1` della
+   **data analisi** (non degli episodi). Indice di scostamento
+   `z = (mediana_pool − mediana_normale) / ((p75_pool − p25_pool) / 1,349 / √N)`, con N = episodi
+   dopo il dedup per giorno-ancora già in `compute_returns`. Accanto, solo informativo, **N effettivo**
+   = gruppi di episodi con finestre T+h sovrapposte (ancore a meno di h sedute) contati una volta.
+   - `|z| ≥ 2` **e** N ≥ 10 → il tool stampa «supera il cancello» e la tabella può essere `[previsione]`.
+   - altrimenti → «nessun seguito distinguibile dal normale» e la tabella è `[descrittiva]`.
+   - ⚠ Non è la «correzione per rendimento anomalo» scartata il 2026-08-10
+     (`references/esperimenti_scartati.md`): lì si correggeva la stima, qui si **seleziona quando
+     parlare**. Va scritto nella reference quando si chiude il Run 11e.
+
+### La scheda
+
+La sezione «Event study» diventa tre blocchi, ognuno con una riga di conclusione che il tool stampa
+già pronta (l'agente la copia, non la riscrive):
+
+```markdown
+### Reazione degli analoghi — `BZ=F` (N=13, |z| mediano 1,4 contro 0,67 di un giorno qualsiasi)
+| R0 mediana | p25 | p75 | verso coerente |
+### Reazione di oggi — seduta 2026-10-06: +2,8% (z +1,6), 70° percentile → più forte degli analoghi
+### Seguito — `BZ=F` [descrittiva] — nessun seguito distinguibile dal normale (z +0,7, N=13, N eff 6)
+| Stat | T+1 | T+3 | T+5 | T+10 |   ← mediana pool, mediana normale, p25/p75 pool, z, N
+```
+
+Spariscono il paragrafo «cosa dice la scorecard» e la regola del runbook che obbliga a leggere la
+sezione 5-bis prima di una lettura direzionale: il cancello è calcolato, non argomentato in prosa
+(meno turni → meno costo, cfr. `references/economia_del_run.md`). Le Considerazioni qualitative
+restano com'erano: spiegano il meccanismo, non contraddicono la tabella senza dirlo.
+
+### Ledger e scorecard
+
+- `forecast_tracking.py`: una tabella `[previsione]` è accettata da `register` solo se il cancello è
+  soddisfatto **ricalcolato dai numeri della tabella** (l'audit rifiuta un `[previsione]` senza
+  cancello; il contrario — `[descrittiva]` nonostante il cancello, es. regime incompatibile — è
+  sempre ammesso). Nuova colonna `baseline_median` (vuota sulle righe vecchie, nessuna riscrittura);
+  `method_version` incrementato.
+- Valutazione primaria delle nuove righe: **scostamento indovinato** =
+  `segno(realizzato − baseline_median)` = `segno(mediana_pool − baseline_median)`.
+- Scorecard: nuova sezione «Seguito oltre il normale» aggregata **per giorno** (quota giornaliera di
+  celle corrette), con giorni sopra/sotto il 50% e intervallo di Wilson; le celle sotto cancello come
+  controllo. La 5-bis resta ma ogni percentuale porta N giorni unici e intervallo di Wilson, e le
+  schede non la citano più.
+
+### Validazione (protocollo fissato prima dell'uso)
+
+`experiments/quant_reazione/protocol-1.0.0.json`, committato **prima** del go-live, mai modificato
+dopo (una variante = un file nuovo, come nel laboratorio CPI). Fissa: le definizioni sopra, soglie
+(|z| ≥ 2, N ≥ 10), orizzonte primario T+5 (gli altri secondari), metrica primaria (scostamento
+indovinato, un voto per giorno), test (binomiale unilaterale sui giorni con quota diversa dal 50%,
+i pareggi esclusi, α = 0,05), campione (giorni con almeno una cella sopra cancello matura a T+5, dal
+go-live), decisione a **40 giorni**.
+- Confermato → il cancello resta la regola per `[previsione]`.
+- Non confermato → nessuna previsione sul seguito: la parte quantitativa resta reazione + già
+  prezzato + «seguito non distinguibile»; annotazione in `esperimenti_scartati.md`.
+- La misura esplorativa del 2026-10-07 entra nel repo come replay rieseguibile marcato
+  «esplorativo, non conta come prova».
+
+### Sequenza dei run
+
+- [ ] **11a — Protocollo + replay esplorativo.** `experiments/quant_reazione/` con `protocol-1.0.0.json`
+      e uno script che riproduce le misure 1–4 sopra in sola lettura. Commit del protocollo **prima**
+      di qualsiasi codice che lo usi. Nessuna modifica alla pipeline.
+- [ ] **11b — `event_study.py`.** Flag per reazione (`R0`, `z0`, coerenza del verso), baseline normale
+      (z, N effettivo, riga del cancello) e reazione di oggi (`--reaction-session DATA`). Markdown compatto,
+      righe di conclusione stampate dal tool. Test con serie sintetiche in `tests/` (look-ahead incluso:
+      la baseline non deve vedere prezzi ≥ `a`). Nessun cambiamento al comportamento di default.
+- [ ] **11c — Ledger.** Parsing dei nuovi blocchi, colonna `baseline_median`, audit del cancello in
+      `register`, nuova metrica di valutazione; le righe esistenti restano byte per byte.
+- [ ] **11d — Template, runbook, render.** `news_card_template.md`, `PHASE5_RUNBOOK.md` (via la regola
+      5-bis, dentro i nuovi comandi in «Riferimento comandi»), campo `seduta_reazione`,
+      `render_report.py` se serve. Una scheda di prova completa in sessione manuale, poi go-live.
+- [ ] **11e — Decisione (dopo 40 giorni validi).** Esegue il protocollo, scrive l'esito qui e nella
+      reference, applica la regola di decisione. Non prima.
+
+**Fuori da questo run:** correzione di date ed etichette della libreria (sessione dedicata del
+2026-10-07 sulle etichette `eurozone_release`); laboratori per famiglia di evento con archivio dei
+consensi (approccio C, dopo l'11e); briefing, triage e classificazione.
+
+---
+
 ## Non pianificati — da rivalutare, NON da anticipare
 
 - **Valutazioni congelate che il DB di oggi non riproduce** (emerso nel Run 7): `forecast_tracking.py recheck` trova una parte consistente delle righe
@@ -727,6 +866,11 @@ Stessa regola del Run 9: **le scelte le fa Riccardo**, questo run presenta e asp
 | 9 | Istruzioni R13 (divergenze) | Sonnet 5 | medium |
 | 9b | Istruzioni R13 (ristrutturazione) | Sonnet 5 | medium |
 | 10 | Telemetria R14 | Sonnet 5 | medium |
+| 11a | Protocollo + replay esplorativo | **Opus 5.5** | high |
+| 11b | `event_study.py` reazione/baseline | **Opus 5.5** | high |
+| 11c | Ledger: cancello e `baseline_median` | **Opus 5.5** | high |
+| 11d | Template, runbook, render | Sonnet 5.5 | medium |
+| 11e | Decisione sul protocollo | **Opus 5.5** | high |
 
 **Criterio:** Opus dove un errore corrompe dati o dove serve tenere in testa tutta la catena;
 Sonnet dove il diff è locale e il file da leggere è uno. L'effort alto serve al ragionamento,
