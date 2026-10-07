@@ -1,0 +1,44 @@
+{
+  "protocol_version": "1.0.0",
+  "experiment": "Run 11 — seguito oltre il normale: il cancello |z| ≥ 2 indica quando la mediana del pool dice qualcosa sul seguito a T+5",
+  "registered_at": "2026-10-07",
+  "spec": "PIANO_REVISIONE_PIPELINE.md, sezione «Run 11 — Quantitativo «reazione, non seguito»» (approvata il 2026-10-07)",
+  "hypothesis": "Nelle celle in cui la mediana del pool di analoghi si stacca dalla mediana normale dell'asset di almeno 2 errori standard, con N ≥ 10, il rendimento realizzato a T+5 si stacca dalla mediana normale nello stesso verso più spesso che nel verso opposto. Unità di prova: il giorno di analisi.",
+  "price_column": "adj_close con fallback su close (event_study.load_price_series); solo sedute con prezzo valido; serie mensili escluse (event_study.detect_monthly_data); prezzi ≤ 0 nella finestra → cella esclusa",
+  "sigma_window_sessions": 60,
+  "baseline_window_sessions": 250,
+  "primary_horizon_sessions": 5,
+  "secondary_horizons_sessions": [1, 3, 10],
+  "gate": {
+    "z_min": 2.0,
+    "n_min": 10,
+    "rule": "|z| ≥ z_min e N ≥ n_min; z non definito → sotto cancello"
+  },
+  "definitions": {
+    "a": "seduta-ancora: prima seduta con prezzo ≥ data di analisi (made_date); coincide con l'anchor_date congelato nel ledger",
+    "sigma60": "deviazione standard campionaria (ddof=1) dei log-rendimenti ln(P[t]/P[t−1]) per t = a−60 … a−1; nessun prezzo ≥ a",
+    "R0_z0": "R0 = (P[a]/P[a−1] − 1)·100; z0 = ln(P[a]/P[a−1]) / sigma60 (solo descrittivi in questa versione)",
+    "mediana_normale": "mediana dei rendimenti (P[t]/P[t−h] − 1)·100 delle 250 finestre di h sedute che terminano in t = a−250 … a−1, calcolata alla data di analisi (non degli episodi); con meno storia la cella è esclusa",
+    "z": "(mediana_pool − mediana_normale) / (|p75_pool − p25_pool| / 1,349 / √N); IQR nullo → z non definito",
+    "N": "n_analogues della tabella: episodi dopo il dedup per giorno-ancora di event_study.compute_returns",
+    "realizzato": "realized_return congelato da forecast_tracking evaluate (ancora a, T+h)",
+    "scostamento_indovinato": "1 se segno(realizzato − mediana_normale) = segno(mediana_pool − mediana_normale), 0 altrimenti; cella esclusa se una delle due differenze è esattamente zero"
+  },
+  "cells": "Righe del ledger con scenario base, registrazione originale (non recovered), uso diverso da ritirata, ingestion_status diverso da quarantine, baseline_median valorizzata, realizzato maturo a T+5 e data di analisi ≥ go-live. Contano tutte le celle sopra cancello, [previsione] o [descrittiva]: il cancello si ricalcola dai numeri della tabella, non dall'etichetta.",
+  "go_live": "Prima data di analisi con baseline_median valorizzata nel ledger; si scrive in PIANO_REVISIONE_PIPELINE.md alla chiusura del Run 11d. Nessuna riga precedente conta.",
+  "metric": "Voto per giorno: quota delle celle sopra cancello a T+5 con scostamento indovinato. Il giorno è «sopra» se la quota è > 0,5, «sotto» se < 0,5, «pari» se = 0,5.",
+  "test": {
+    "kind": "binomiale esatto unilaterale sui giorni sopra contro sotto (pari esclusi), H0 p = 0,5, H1 p > 0,5",
+    "alpha": 0.05
+  },
+  "decision": {
+    "days": 60,
+    "critical_days_above": 37,
+    "when": "Una sola volta, quando almeno 60 giorni non pari hanno tutte le celle T+5 mature; contano i primi 60 in ordine di data. Nessuna analisi intermedia.",
+    "confermato": "Il cancello resta la regola per [previsione].",
+    "non_confermato": "Nessuna previsione sul seguito: la parte quantitativa resta reazione + già prezzato + «seguito non distinguibile»; annotazione in references/esperimenti_scartati.md, distinta dalla «correzione per rendimento anomalo» scartata il 2026-08-10."
+  },
+  "robustness": "Dichiarati qui, riportati accanto all'esito: (1) autocorrelazione lag-1 dei voti in ordine di data; se supera +0,2 il test decisivo si rifà, con lo stesso alfa, sui soli voti fra i primi 60 distanti almeno 5 sedute dal voto tenuto prima (diradamento cronologico) e decide quello; (2) controllo: stesso voto sulle celle con |z| < 1 e N ≥ 10 a T+5, solo descrittivo; (3) orizzonti secondari e sole tabelle [previsione], solo descrittivi.",
+  "evidence_at_registration": "Già visto, NON valido come prova. Misurato il 2026-10-07 col prototipo del replay (stesse definizioni di questo protocollo; committato subito dopo come news_impact_pipeline/quant_reazione.py) sul ledger del 2026-10-07: 63 giorni di analisi con celle mature a T+5, 47 con almeno una cella sopra cancello; giorni sopra 34, sotto 11, pari 2 (76% dei non pari; 269 celle); autocorrelazione lag-1 dei voti −0,06; controllo |z| < 1: sopra 21, sotto 20, pari 9. Prima misura (script usa e getta, N ≥ 5, tutti gli orizzonti): sopra 46, sotto 17. Ritmo atteso: circa 3 giorni di analisi su 4 hanno una cella sopra cancello, quindi 60 giorni non pari in circa 85–90 giorni di analisi. Potenza del test a 60 giorni: 45% se la quota vera di giorni sopra è 0,60; 75% se 0,65; 88% se 0,68; 98% se 0,73 (a 40 giorni sarebbe stata 32/57/72/90%: per questo il maintainer ha portato la decisione da 40 a 60 giorni prima della registrazione). Un effetto trovato guardando i dati di solito si restringe: aspettativa a priori moderata.",
+  "revision_rule": "Il protocollo non si modifica dopo la registrazione: una variante è un file nuovo (protocol-1.1.0.json, …)."
+}
