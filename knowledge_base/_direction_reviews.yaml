@@ -10674,3 +10674,183 @@ reviews:
   reason: 'Rialzo BCE e inflazione area euro sopra attese (euro su), ma nella stessa data il CPI USA di
     maggio con energia in risalita (dollaro su): spinte opposte. Revisione Claude 2026-10-15.'
   status: excluded
+- date: '2018-03-22'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-08-23/news_01.md
+  reason: Memorandum Section 301 su ~50 mld di import cinese, «evento largamente non anticipato» per altre
+    schede; la fonte indica «valute dei partner commerciali in svalutazione». Escalation USA-Cina → yuan
+    debole, USD/CNY su. Revisione Claude 2026-10-15.
+  direction: pos
+  mechanism:
+  - tariff_escalation
+  - china_trade
+- date: '2018-06-15'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-09-13/news_04.md
+  reason: 'Lista definitiva dei dazi al 25% su 50 mld e ritorsione cinese speculare: passaggio da minaccia
+    ad attuazione. Escalation USA-Cina → USD/CNY su. Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - tariff_escalation
+  - china_trade
+- date: '2018-07-02'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-08-31/news_05.md
+  reason: 'Nessun evento discreto: seduta di avvicinamento a un''entrata in vigore già calendarizzata;
+    altre schede vi associano anche il Canada. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2018-09-17'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-08-22/news_01.md
+  reason: 'La fonte: dazi su 200 mld «con aliquota inferiore all''attesa: escalation nominale, sollievo
+    effettivo». Rispetto al prezzato è una distensione → yuan su, USD/CNY giù. Revisione Claude 2026-10-15.'
+  direction: neg
+  mechanism:
+  - tariff_escalation
+  - negotiation_track
+- date: '2018-10-10'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-09-13/news_04.md
+  reason: Selloff multi-causa (tassi e dazi) senza un evento commerciale discreto nella data. Revisione
+    Claude 2026-10-15.
+  status: excluded
+- date: '2018-10-29'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-08-30/news_04.md
+  reason: 'Notizia di dazi su tutto l''import cinese residuo in caso di fallimento del G20: escalation
+    attesa, non ancora annunciata → USD/CNY su. Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - tariff_escalation
+  - china_trade
+- date: '2018-12-26'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-08-22/news_01.md
+  reason: Le schede si contraddicono sul segno (rimbalzo record contro minimo del selloff) e nessuna indica
+    un evento commerciale nella data. Revisione Claude 2026-10-15.
+  status: excluded
+- date: '2019-02-19'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-08-23/news_01.md
+  reason: 'Le schede attribuiscono alla data eventi diversi: rinvio dell''aumento dei dazi sulla Cina
+    (distensione) e rapporto Section 232 sulle auto UE e Giappone (escalation verso altri partner). Revisione
+    Claude 2026-10-15.'
+  status: excluded
+- date: '2019-05-13'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-09-22/news_02.md
+  reason: 'Ritorsione cinese su 60 mld dopo l''aumento americano dal 10% al 25%: rottura del negoziato
+    → yuan debole, USD/CNY su. Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - tariff_escalation
+  - china_trade
+- date: '2019-08-12'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-09-22/news_02.md
+  reason: 'Le schede descrivono la fase di agosto 2019 (dazi sui 300 mld, yuan oltre 7, designazione di
+    manipolatore) senza un evento proprio di questa data: datazione dubbia. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2024-12-15'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-09-13/news_04.md
+  reason: 'Data non di seduta (domenica) e bersaglio prevalente Canada e Messico. Bersaglio non cinese:
+    trasmissione al cambio dello yuan solo indiretta. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2025-01-01'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-08-22/news_01.md
+  reason: 'Data festiva senza evento discreto: «apertura del regime tariffario 2025» è una fase, non un
+    annuncio. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2025-01-14'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-08-22/news_01.md
+  reason: 'La fonte: indiscrezione su un''introduzione graduale dei dazi, «sollievo, dollaro in calo».
+    Distensione generale rispetto al prezzato → USD/CNY giù. Revisione Claude 2026-10-15.'
+  direction: neg
+  mechanism:
+  - negotiation_track
+- date: '2025-02-27'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-09-18/news_06.md
+  reason: 'Conferma dei dazi su Canada e Messico con decorrenza e «un ulteriore 10% sulla Cina»: escalation
+    diretta verso la Cina → USD/CNY su. Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - tariff_escalation
+  - china_trade
+- date: '2025-04-02'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-09-13/news_04.md
+  reason: '«Liberation Day»: l''annuncio dei dazi reciproci è avvenuto dopo la chiusura dei mercati USA
+    del 2 aprile; la seduta di reazione è il 3, non questa data. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2025-04-04'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-09-21/news_03.md
+  reason: 'Ritorsione cinese al 34% sull''annuncio del 2 aprile: escalation USA-Cina → USD/CNY su. Nota:
+    mercato onshore cinese chiuso per festività, la quotazione è comunque continua. Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - tariff_escalation
+  - china_trade
+- date: '2025-04-30'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-08-22/news_01.md
+  reason: 'Deroghe al settore auto: distensione selettiva su un bersaglio non cinese. Bersaglio non cinese:
+    trasmissione al cambio dello yuan solo indiretta. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2025-07-07'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-09-13/news_04.md
+  reason: 'Lettere sui dazi a partner asiatici (Thailandia e altri), non alla Cina. Bersaglio non cinese:
+    trasmissione al cambio dello yuan solo indiretta. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2026-08-18'
+  theme: regulatory
+  reference: CNY=X
+  source: 2026-08-30/news_04.md
+  reason: 'Disputa USA-Canada (dazio del 50% su 20 mld di beni canadesi). Bersaglio non cinese: trasmissione
+    al cambio dello yuan solo indiretta. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2025-05-12'
+  theme: macro_data
+  reference: CNY=X
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'La research PBOC: tregua di Ginevra, dazi USA dal 145% al 30% e cinesi dal 125% al 10% per
+    90 giorni. Distensione USA-Cina → yuan su, USD/CNY giù. Revisione Claude 2026-10-15.'
+  direction: neg
+  mechanism:
+  - negotiation_track
+  - china
+- date: '2025-10-30'
+  theme: macro_data
+  reference: CNY=X
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica
+    economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'La research PBOC: accordo Trump-Xi a Busan, dazio fentanyl dal 20% al 10% e dazio complessivo
+    da ~57% a 47%. Distensione USA-Cina → USD/CNY giù. Revisione Claude 2026-10-15.'
+  direction: neg
+  mechanism:
+  - negotiation_track
+  - china
