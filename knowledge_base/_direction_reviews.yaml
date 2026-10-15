@@ -10389,3 +10389,288 @@ reviews:
   mechanism:
   - memory_cycle
   - korea_release
+- date: '2022-07-21'
+  theme: monetary_policy
+  reference: EURUSD=X
+  source: 2026-09-10/news_04.md
+  reason: 'La fonte: «+50bp invece dei 25 telegrafati, con annuncio del TPI: sorpresa restrittiva sull''entità».
+    Stretta BCE più forte dell''atteso → euro su. Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - ecb
+  - rate_decision
+  - hawkish
+- date: '2022-09-08'
+  theme: monetary_policy
+  reference: EURUSD=X
+  source: 2026-08-27/news_03.md
+  reason: 'La fonte: rialzo di 75 pb, il più ampio della storia BCE, con proiezioni d''inflazione riviste
+    al rialzo; le altre schede la classificano hawkish («accelerazione della stretta»). Nessuna altra
+    banca centrale nella data. Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - ecb
+  - rate_decision
+  - hawkish
+- date: '2022-12-15'
+  theme: monetary_policy
+  reference: EURUSD=X
+  source: 2026-09-10/news_04.md
+  reason: 'Guidance BCE restrittiva (euro su), ma altre schede collocano nella stessa data il riprezzamento
+    post-FOMC («Giorno successivo al FOMC», «stretta coordinata globale»): spinte opposte sul cambio.
+    Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2023-02-02'
+  theme: monetary_policy
+  reference: EURUSD=X
+  source: 2026-09-12/news_04.md
+  reason: Le schede si contraddicono sulla guidance BCE («guidance vincolante» in una, «guidance ammorbidita»
+    in un'altra) e nella stessa data collocano il FOMC letto come non restrittivo e la BoE. Revisione
+    Claude 2026-10-15.
+  status: excluded
+- date: '2023-03-16'
+  theme: monetary_policy
+  reference: EURUSD=X
+  source: 2026-09-06/news_04.md
+  reason: 'Rialzo restrittivo (euro su) dentro la crisi Credit Suisse, con le schede che indicano «premio
+    al rischio su»: trasmissione non univoca al cambio. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2023-05-04'
+  theme: monetary_policy
+  reference: EURUSD=X
+  source: 2026-08-28/news_05.md
+  reason: 'Segnali opposti nella stessa decisione: passo rallentato a 25 pb (accomodante) con guidance
+    restrittiva e fine dei reinvestimenti APP; altre schede mettono nella data anche il FOMC che apre
+    alla pausa. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2023-06-15'
+  theme: monetary_policy
+  reference: EURUSD=X
+  source: 2026-08-21/news_06.md
+  reason: 'Guidance BCE restrittiva («molto probabilmente un altro» rialzo), ma le schede collocano nella
+    stessa data la pausa hawkish della Fed col dot plot (dollaro su) e un taglio PBOC: spinte opposte.
+    Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2023-07-27'
+  theme: monetary_policy
+  reference: EURUSD=X
+  source: 2026-08-29/news_01.md
+  reason: La fonte descrive «ambiguità deliberata» di Lagarde sul passo successivo, senza segno della
+    sorpresa; altre schede mettono nella data il FOMC +25 pb con porta aperta ad altri rialzi. Revisione
+    Claude 2026-10-15.
+  status: excluded
+- date: '2023-09-14'
+  theme: monetary_policy
+  reference: EURUSD=X
+  source: 2026-08-27/news_03.md
+  reason: 'Segnali opposti: rialzo contro attese divise (restrittivo) presentato come probabile ultimo
+    del ciclo (accomodante); le schede non concordano su quale prevalga. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2024-07-31'
+  theme: monetary_policy
+  reference: EURUSD=X
+  source: 2026-09-10/news_04.md
+  reason: 'Datazione dubbia: unica fonte che descrive una riunione BCE in questa data; le altre schede
+    della stessa data descrivono il rialzo BoJ e il FOMC. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2026-06-11'
+  theme: monetary_policy
+  reference: EURUSD=X
+  source: 2026-09-06/news_04.md
+  reason: 'Rialzo BCE di giugno 2026 (euro su), ma nella stessa data le schede mettono il CPI USA di maggio
+    con energia in risalita e un dot plot Fed restrittivo (dollaro su): spinte opposte. Revisione Claude
+    2026-10-15.'
+  status: excluded
+- date: '2015-09-03'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-08-26/news_03.md
+  reason: 'Le schede si contraddicono: per una la riunione BCE apre ad ampliare gli acquisti (euro giù),
+    per altre i dati di attività sono sopra le attese, per un''altra la fiducia è in calo. Revisione Claude
+    2026-10-15.'
+  status: excluded
+- date: '2021-10-29'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-10-03/news_02.md
+  reason: 'La fonte: flash HICP 4,1% contro 3,7% atteso → «il mercato anticipa la fine dei tassi negativi».
+    Sorpresa al rialzo con canale tassi BCE, prima del regime di guerra → euro su. Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - eurozone_release
+  - inflation_print
+- date: '2021-11-29'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-10-01/news_02.md
+  reason: 'La fonte: CPI preliminare tedesco 5,2% contro 5,0% → «pressione sulla BCE»; l''altra scheda:
+    «più stretta prezzata». Sorpresa al rialzo con canale tassi → euro su. Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - eurozone_release
+  - inflation_print
+- date: '2022-02-04'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-09-01/news_03.md
+  reason: 'Svolta hawkish di Lagarde (euro su), ma nella stessa data le schede mettono gli occupati USA
+    a +467.000 contro 150.000 attesi (dollaro su): spinte opposte. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-03-02'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-10-03/news_02.md
+  reason: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione dell''area euro spinge
+    il cambio in due versi, su per il canale dei tassi BCE e giù per le ragioni di scambio; trasmissione
+    non univoca a EURUSD. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-03-30'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-10-01/news_02.md
+  reason: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione dell''area euro spinge
+    il cambio in due versi, su per il canale dei tassi BCE e giù per le ragioni di scambio; trasmissione
+    non univoca a EURUSD. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-04-01'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-08-20/news_03.md
+  reason: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione dell''area euro spinge
+    il cambio in due versi, su per il canale dei tassi BCE e giù per le ragioni di scambio; trasmissione
+    non univoca a EURUSD. Nella stessa data anche gli occupati USA di marzo. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-05-30'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-10-01/news_02.md
+  reason: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione dell''area euro spinge
+    il cambio in due versi, su per il canale dei tassi BCE e giù per le ragioni di scambio; trasmissione
+    non univoca a EURUSD. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-05-31'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-10-01/news_02.md
+  reason: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione dell''area euro spinge
+    il cambio in due versi, su per il canale dei tassi BCE e giù per le ragioni di scambio; trasmissione
+    non univoca a EURUSD. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-06-03'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-09-01/news_03.md
+  reason: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione dell''area euro spinge
+    il cambio in due versi, su per il canale dei tassi BCE e giù per le ragioni di scambio; trasmissione
+    non univoca a EURUSD. Nella stessa data anche gli occupati USA di maggio. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-06-30'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-08-20/news_03.md
+  reason: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione dell''area euro spinge
+    il cambio in due versi, su per il canale dei tassi BCE e giù per le ragioni di scambio; trasmissione
+    non univoca a EURUSD. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-07-08'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-09-01/news_03.md
+  reason: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione dell''area euro spinge
+    il cambio in due versi, su per il canale dei tassi BCE e giù per le ragioni di scambio; trasmissione
+    non univoca a EURUSD. Nella stessa data anche gli occupati USA di giugno. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-07-29'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-10-03/news_02.md
+  reason: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione dell''area euro spinge
+    il cambio in due versi, su per il canale dei tassi BCE e giù per le ragioni di scambio; trasmissione
+    non univoca a EURUSD. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-08-31'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-08-20/news_03.md
+  reason: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione dell''area euro spinge
+    il cambio in due versi, su per il canale dei tassi BCE e giù per le ragioni di scambio; trasmissione
+    non univoca a EURUSD. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-09-29'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-10-01/news_02.md
+  reason: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione dell''area euro spinge
+    il cambio in due versi, su per il canale dei tassi BCE e giù per le ragioni di scambio; trasmissione
+    non univoca a EURUSD. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-09-30'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-10-03/news_02.md
+  reason: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione dell''area euro spinge
+    il cambio in due versi, su per il canale dei tassi BCE e giù per le ragioni di scambio; trasmissione
+    non univoca a EURUSD. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-10-31'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-08-31/news_06.md
+  reason: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione dell''area euro spinge
+    il cambio in due versi, su per il canale dei tassi BCE e giù per le ragioni di scambio; trasmissione
+    non univoca a EURUSD. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-12-01'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-09-01/news_03.md
+  reason: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione dell''area euro spinge
+    il cambio in due versi, su per il canale dei tassi BCE e giù per le ragioni di scambio; trasmissione
+    non univoca a EURUSD. Le schede inoltre non concordano sul segno (rallentamento dei prezzi contro
+    core ostinato). Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2023-01-04'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-08-20/news_03.md
+  reason: Sorpresa rispetto alle attese non documentata dalle fonti («continuazione del passthrough»,
+    «componente di fondo persistente»). Revisione Claude 2026-10-15.
+  status: excluded
+- date: '2023-06-01'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-08-31/news_06.md
+  reason: Sorpresa non documentata («componente di fondo appiccicosa») e indicatori di attività descritti
+    come misti. Revisione Claude 2026-10-15.
+  status: excluded
+- date: '2023-08-31'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-10-03/news_02.md
+  reason: 'La fonte: flash HICP 5,3% contro 5,1% atteso → «ultimo rialzo BCE di settembre prezzato». Sorpresa
+    al rialzo con canale tassi → euro su. Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - eurozone_release
+  - inflation_print
+- date: '2024-01-05'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-09-02/news_03.md
+  reason: Le schede si contraddicono («sopra attese» in una, «in linea/migliore» con core in calo in altre)
+    e nella stessa data mettono gli occupati USA sopra le attese. Revisione Claude 2026-10-15.
+  status: excluded
+- date: '2024-04-05'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-09-02/news_03.md
+  reason: Le schede si contraddicono (core sotto le attese contro sorpresa al rialzo; attività sopra contro
+    sotto le attese) e nella stessa data mettono gli occupati USA a +303.000. Revisione Claude 2026-10-15.
+  status: excluded
+- date: '2026-06-11'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-09-04/news_03.md
+  reason: 'Rialzo BCE e inflazione area euro sopra attese (euro su), ma nella stessa data il CPI USA di
+    maggio con energia in risalita (dollaro su): spinte opposte. Revisione Claude 2026-10-15.'
+  status: excluded
