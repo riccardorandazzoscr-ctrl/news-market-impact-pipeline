@@ -21,6 +21,11 @@ d = yaml.safe_load(open('knowledge_base/_direction_reviews.yaml'))
 print(Counter(r.get('theme') for r in d['reviews']).most_common())"
 ```
 
+Quando è la **scheda** a sbagliare l'evento di una data (non il verso), la data si toglie da
+quella fonte in `knowledge_base/_card_exclusions.yaml`, con un motivo per data: la scheda
+resta intatta perché il ledger ne controlla l'impronta. Primo caso: `2026-08-24/news_05.md`,
+13 date descritte come crisi fiscali europee che la research attribuisce ad altri paesi.
+
 **Il seguito documenta il comportamento storico, superato per la direzione.**
 
 # Etichette date-locali: i quattro livelli e i difetti corretti

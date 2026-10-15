@@ -33,6 +33,7 @@ DAILY_DIR = Path.home() / "Claude" / "mercati_finanza" / "daily_analysis"
 KB_DIR = Path.home() / "Claude" / "mercati_finanza" / "knowledge_base"
 LIB_PATH = KB_DIR / "_episodes.yaml"   # prefisso "_" → build_catalog lo ignora
 REVIEW_PATH = KB_DIR / "_direction_reviews.yaml"
+CARD_EXCLUSIONS_PATH = KB_DIR / "_card_exclusions.yaml"
 TAXONOMY_PATH = Path(__file__).with_name("subtheme_taxonomy.yaml")
 
 DATE_RE = re.compile(r"\b(\d{4}-\d{2}-\d{2})\b")
@@ -505,6 +506,16 @@ def cmd_build():
         e["sources"].add(source)
 
     # 1) schede giornaliere (fonte primaria: episodi + direzione + sotto-temi)
+    # Date di una scheda che non entrano in libreria perché la scheda le descrive
+    # in modo sbagliato. La scheda resta intatta: il ledger ne controlla l'impronta.
+    excluded_dates: dict[str, set[str]] = {}
+    exclusions = (yaml.safe_load(CARD_EXCLUSIONS_PATH.read_text(encoding="utf-8"))
+                  if CARD_EXCLUSIONS_PATH.exists() else {})
+    for row in (exclusions or {}).get("exclusions", []):
+        for d in row.get("dates") or []:
+            if not str(row.get("source", "")).strip() or not str(d.get("reason", "")).strip():
+                raise ValueError(f"Esclusione di scheda senza fonte o motivo: {row.get('source')} {d}")
+            excluded_dates.setdefault(row["source"].strip(), set()).add(str(d["date"]))
     n_cards = 0
     for day in sorted(DAILY_DIR.iterdir()):
         if not (day.is_dir() and DAY_DIR_RE.match(day.name)):
@@ -514,7 +525,10 @@ def cmd_build():
             theme, sentiment, subthemes, dates, text = harvest_card(card)
             direction = normalize_direction(sentiment)
             decl = declared_episodes(text)
+            skip = excluded_dates.get(f"{day.name}/{card.name}", set())
             for d in dates:
+                if d in skip:
+                    continue
                 # Se la scheda dichiara l'episodio, i suoi campi VINCONO sull'euristica:
                 # sono date-locali per costruzione e non per inferenza. L'euristica
                 # resta per le schede scritte prima del 2026-08-19.

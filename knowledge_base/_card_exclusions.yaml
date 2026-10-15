@@ -1,0 +1,48 @@
+# Date di una scheda che NON entrano in libreria episodi (`analogues.py build`).
+# La scheda resta intatta: il ledger ne controlla l'impronta (`card_sha`).
+# Ogni data ha il suo motivo. Il prefisso `_` tiene il file fuori da build_catalog.
+exclusions:
+- source: 2026-08-24/news_05.md
+  note: 'La scheda ha preso 30 date da `analogues.py find` e ne ha scritto la descrizione: per queste
+    13 la descrizione è un evento europeo non verificabile, mentre la data appartiene a un altro paese.
+    Le altre 17 sono corrette. Revisione Claude 2026-10-15.'
+  dates:
+  - date: '2019-01-25'
+    reason: '«Italia in recessione tecnica»: il dato non è di questa data; la research Fiscal_Pol_Brazil
+      colloca nella data la fine dello shutdown USA.'
+  - date: '2019-10-01'
+    reason: «Sessione di bilancio italiana» senza evento; la research Fiscal_Pol_Brazil colloca nella
+      data l'aumento dell'imposta sui consumi in Giappone.
+  - date: '2021-11-23'
+    reason: «Negoziato sul bilancio europeo» senza evento; la research Fiscal_Pol_Brazil colloca nella
+      data il bilancio speciale della difesa di Taiwan.
+  - date: '2022-05-30'
+    reason: «Conti pubblici europei» senza evento; la research Fiscal_Pol_Brazil colloca nella data il
+      bilancio supplementare coreano.
+  - date: '2023-06-05'
+    reason: «Negoziato europeo sulle regole di bilancio»; la research Fiscal_Pol_Brazil colloca nella
+      data l'accordo sul tetto del debito USA.
+  - date: '2024-07-03'
+    reason: «Fase acuta delle legislative francesi» senza evento; la research Fiscal_Pol_Brazil colloca
+      nella data i tagli di Lula in Brasile.
+  - date: '2024-12-10'
+    reason: «Revisione del rating francese» senza agenzia né esito; la research Fiscal_Pol_Brazil colloca
+      nella data il bilancio 2025 coreano.
+  - date: '2025-01-21'
+    reason: «Stallo sul bilancio Bayrou» senza evento; la research Fiscal_Pol_Brazil colloca nella data
+      i tagli al bilancio di Taiwan.
+  - date: '2025-11-21'
+    reason: «Bilancio francese in commissione» senza evento; la research Fiscal_Pol_Brazil colloca nella
+      data lo stimolo Takaichi in Giappone.
+  - date: '2025-12-02'
+    reason: «Voto di fiducia sul deficit francese» senza dettagli; la research Fiscal_Pol_Brazil colloca
+      nella data il bilancio 2026 coreano.
+  - date: '2026-01-28'
+    reason: «Negoziato fiscale europeo» senza evento; la research Fiscal_Pol_Brazil colloca nella data
+      un'asta JGB a 40 anni.
+  - date: '2026-05-08'
+    reason: «Conti pubblici europei» senza evento; la research Fiscal_Pol_Brazil colloca nella data il
+      bilancio della difesa di Taiwan.
+  - date: '2026-05-29'
+    reason: «Revisioni di rating europee» senza evento; la research Fiscal_Pol_Brazil colloca nella data
+      la prima tranche del bilancio della difesa di Taiwan.
