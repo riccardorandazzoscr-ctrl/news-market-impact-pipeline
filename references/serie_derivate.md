@@ -32,13 +32,18 @@ User-Agent e la pagina di verifica con uno. Il download automatico di
 Nessun sostituto giornaliero per singolo paese: Eurostat e BCE danno l'Italia solo
 mensile; la curva giornaliera BCE copre l'aggregato AAA, non l'Italia.
 
-Procedura di lavoro (aggiornata il 2026-10-02): **da Chrome il CSV completo si scarica**.
-Dentro la pagina `https://stooq.com/q/d/?s=<simbolo>` un `fetch('/q/d/l/?s=<simbolo>&i=d')`
-restituisce lo storico intero, ma **solo per il simbolo della pagina aperta** (gli altri
-rispondono «Access denied»). Quindi, con l'estensione Chrome:
+Procedura di lavoro (aggiornata il 2026-10-13): **da Chrome il CSV completo si scarica**,
+ma solo col link della pagina. Un `fetch('/q/d/l/?s=<simbolo>&i=d')` scritto a mano risponde
+«Access denied» (verificato il 2026-10-13, anche a pagina caricata); il `href` del link
+«Download data in csv file…» in fondo alla pagina `https://stooq.com/q/d/?s=<simbolo>`,
+invece, restituisce lo storico intero (e vale per il simbolo della pagina aperta). Quindi,
+con l'estensione Chrome:
 
-1. Per ogni simbolo (`10yity.b`, `10ydey.b`, `10yfry.b`) apri la sua pagina, fai il fetch e
-   salva il testo in `localStorage` (stessa origine, sopravvive alla navigazione).
+1. Per ogni simbolo (`10yity.b`, `10ydey.b`, `10yfry.b`) apri la sua pagina, aspetta ~3 s e
+   fai il fetch del `href` di quel link
+   (`[...document.querySelectorAll('a')].find(a=>/Download data in csv/i.test(a.textContent)).href`;
+   non stamparlo: l'estensione blocca l'output con query string), poi salva il testo in
+   `localStorage` (stessa origine, sopravvive alla navigazione).
 2. Porta i tre CSV su disco attraverso gli appunti: `navigator.clipboard.writeText`
    vuole un clic vero, quindi inietta un bottone e cliccalo; poi `pbpaste > file`.
 3. Importa: le righe dopo l'ultima data in DB, mai la seduta di oggi ancora aperta.
