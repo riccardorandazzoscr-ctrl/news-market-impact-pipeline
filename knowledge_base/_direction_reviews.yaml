@@ -10854,3 +10854,116 @@ reviews:
   mechanism:
   - negotiation_track
   - china
+- date: '2024-06-10'
+  theme: fiscal_policy
+  reference: OAT_BUND_SPREAD
+  source: 2026-09-24/news_03.md
+  reason: 'Macron scioglie l''Assemblea dopo le europee (annuncio la sera del 9 giugno, questa è la prima
+    seduta): rischio di governo con spesa non finanziata → premio sul debito francese, spread OAT-Bund
+    su. Tre schede concordano. Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - election_risk
+  - fiscal_deadlock
+- date: '2024-12-02'
+  theme: fiscal_policy
+  reference: OAT_BUND_SPREAD
+  source: 2026-09-24/news_03.md
+  reason: 'Barnier forza il bilancio della previdenza col 49.3 e le opposizioni depositano la sfiducia:
+    stallo sul bilancio → spread OAT-Bund su. Tre schede concordano. Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - fiscal_deadlock
+- date: '2025-08-26'
+  theme: fiscal_policy
+  reference: OAT_BUND_SPREAD
+  source: 2026-09-24/news_03.md
+  reason: 'Bayrou annuncia la sera del 25 agosto un voto di fiducia sul piano da 44 miliardi (questa è
+    la prima seduta): rischio di caduta del governo e di stop al consolidamento → spread OAT-Bund su.
+    Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - fiscal_deadlock
+  - fiscal_consolidation
+- date: '2025-09-15'
+  theme: fiscal_policy
+  reference: OAT_BUND_SPREAD
+  source: 2026-09-24/news_03.md
+  reason: 'Prima seduta dopo il declassamento di Fitch ad A+ (venerdì 12 sera): rating più basso → premio
+    di rischio sul debito francese, spread OAT-Bund su. Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - sovereign_rating
+- date: '2025-10-06'
+  theme: fiscal_policy
+  reference: OAT_BUND_SPREAD
+  source: 2026-09-24/news_03.md
+  reason: 'Lecornu si dimette poche ore dopo aver nominato il governo: stallo politico senza soluzione
+    → spread OAT-Bund su. Tre schede concordano. Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - fiscal_deadlock
+- date: '2024-07-03'
+  theme: fiscal_policy
+  reference: OAT_BUND_SPREAD
+  source: 2026-08-24/news_05.md
+  reason: Fase fra i due turni delle legislative francesi senza un evento discreto documentato; la sola
+    scheda che la cita è poco affidabile e la research Fiscal_Pol_Brazil colloca nella data un evento
+    brasiliano. Revisione Claude 2026-10-15.
+  status: excluded
+- date: '2024-12-04'
+  theme: fiscal_policy
+  reference: OAT_BUND_SPREAD
+  source: 2026-08-24/news_05.md
+  reason: Sfiducia a Barnier votata la sera, dopo la chiusura europea, e ampiamente attesa dopo il 49.3
+    del 2 dicembre; la research Fiscal_Pol_Brazil colloca nella data anche la legge marziale in Corea.
+    Revisione Claude 2026-10-15.
+  status: excluded
+- date: '2024-12-10'
+  theme: fiscal_policy
+  reference: OAT_BUND_SPREAD
+  source: 2026-08-24/news_05.md
+  reason: '«Revisione del rating francese» senza agenzia né esito documentati: datazione non verificabile.
+    La scheda 2026-08-24/news_05 descrive la data come evento europeo senza dettagli verificabili, mentre
+    la research Fiscal_Pol_Brazil vi colloca un evento di un altro paese (Corea). Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2025-01-21'
+  theme: fiscal_policy
+  reference: OAT_BUND_SPREAD
+  source: 2026-08-24/news_05.md
+  reason: '«Stallo persistente» sul bilancio Bayrou: nessun evento discreto. La scheda 2026-08-24/news_05
+    descrive la data come evento europeo senza dettagli verificabili, mentre la research Fiscal_Pol_Brazil
+    vi colloca un evento di un altro paese (Taiwan). Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2025-11-21'
+  theme: fiscal_policy
+  reference: OAT_BUND_SPREAD
+  source: 2026-08-24/news_05.md
+  reason: «Bilancio francese in commissione» senza evento discreto documentato. La scheda 2026-08-24/news_05
+    descrive la data come evento europeo senza dettagli verificabili, mentre la research Fiscal_Pol_Brazil
+    vi colloca un evento di un altro paese (stimolo Takaichi in Giappone). Revisione Claude 2026-10-15.
+  status: excluded
+- date: '2025-12-02'
+  theme: fiscal_policy
+  reference: OAT_BUND_SPREAD
+  source: 2026-08-24/news_05.md
+  reason: «Voto di fiducia sul deficit» senza dettagli verificabili. La scheda 2026-08-24/news_05 descrive
+    la data come evento europeo senza dettagli verificabili, mentre la research Fiscal_Pol_Brazil vi colloca
+    un evento di un altro paese (bilancio coreano). Revisione Claude 2026-10-15.
+  status: excluded
+- date: '2019-01-25'
+  theme: fiscal_policy
+  reference: BTP_BUND_SPREAD
+  source: 2026-08-24/news_05.md
+  reason: La scheda parla di Italia in recessione tecnica, ma nella data la research Fiscal_Pol_Brazil
+    colloca la fine dello shutdown USA; il dato italiano non è datato con certezza. Revisione Claude 2026-10-15.
+  status: excluded
+- date: '2019-10-01'
+  theme: fiscal_policy
+  reference: BTP_BUND_SPREAD
+  source: 2026-08-24/news_05.md
+  reason: «Avvio della sessione di bilancio italiana» senza evento discreto. La scheda 2026-08-24/news_05
+    descrive la data come evento europeo senza dettagli verificabili, mentre la research Fiscal_Pol_Brazil
+    vi colloca un evento di un altro paese (aumento dell'imposta sui consumi in Giappone). Revisione Claude
+    2026-10-15.
+  status: excluded
