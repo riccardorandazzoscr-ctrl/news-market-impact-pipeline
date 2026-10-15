@@ -29,8 +29,15 @@ Stato per filone. Max 10 righe a filone. Ciò che resta vero per sempre va in
 - **Prossimo passo** — confermare il costo su altri giorni (non solo 20 notizie/2
   schede come il 16/09) e osservare il primo ritentativo vero per verificare che il
   riuso delle schede scatti davvero. Vedi `references/routine_giornaliera.md`.
+- **Deciso (15/10)** — dal 12/10 l'analisi delle 08:15 falliva ogni mattina con `ENOTFOUND`:
+  il Mac non ha ancora la rete a quell'ora (subito dopo il brief invece sì). Ora **catena**:
+  a `DONE` il brief lancia `attendi_rete.sh` → `update_market_data.py` → `run_daily_analysis.sh`
+  (anche l'analisi aspetta la rete prima di `claude -p`); i job di calendario restano rete di
+  sicurezza. Spread BTP/OAT aggiornati al 12/10 (procedura Chrome in `serie_derivate.md`).
+- **Da verificare (16/10)** — primo run vero della catena (righe `CATENA:` in `logs/brief-*.log`):
+  prezzi delle 07:45 uguali a quelli delle 08:00? e perché il Mac perde la rete dopo le 08:00.
 
-Aggiornato: 2026-09-16
+Aggiornato: 2026-10-15
 
 ---
 
