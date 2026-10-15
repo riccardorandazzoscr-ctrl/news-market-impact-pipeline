@@ -13,6 +13,9 @@
 #   3. fallimento — il modello non pubblica nulla → ERROR ad alta voce, exit ≠0
 #   4. briefing scritto a metà → trattato da assente, non accettato per buono
 #   5. il prompt viene estratto dal blocco canonico, senza le note italiane
+#   6. catena — dopo DONE: prezzi, poi analisi, in quest'ordine; mai su brief fallito
+#      o su una data passata
+#   7. attendi_rete.sh — esce 0 se l'host risponde, 1 se non risponde entro il tetto
 #
 # Non distruttivo: tutto dentro una HOME finta in una cartella temporanea.
 
@@ -41,7 +44,7 @@ setup() {
   FAKE_HOME="$SANDBOX/home"
   BDIR="$FAKE_HOME/Claude/mercati_finanza/morning brief"
   FPIPE="$FAKE_HOME/Claude/mercati_finanza/news_impact_pipeline"
-  mkdir -p "$BDIR" "$FPIPE/logs" "$FPIPE/venv/bin"
+  mkdir -p "$BDIR" "$FPIPE/logs" "$FPIPE/venv/bin" "$FAKE_HOME/Claude/mercati_finanza/market_data"
 
   BRIEF="$BDIR/${GIORNO}-morning-briefing.html"
   LOG="$FPIPE/logs/brief-${GIORNO}.log"
@@ -81,8 +84,8 @@ teardown() { [[ -n "${SANDBOX:-}" ]] && rm -rf "$SANDBOX"; }
 esegui() {
   ( HOME="$FAKE_HOME" CLAUDE="$SANDBOX/claude_finto" \
     FAKE_VISTO="$VISTO" FAKE_BRIEF="$BRIEF" \
-    FAKE_PUBBLICA="${1:-}" FAKE_RC="${2:-0}" \
-    /bin/zsh "$FPIPE/run.sh" "$GIORNO" >/dev/null 2>&1 )
+    FAKE_PUBBLICA="${1:-}" FAKE_RC="${2:-0}" CATENA="${CATENA:-0}" \
+    /bin/zsh "$FPIPE/run.sh" "${3:-$GIORNO}" >/dev/null 2>&1 )
   echo $?
 }
 
@@ -142,6 +145,59 @@ check "grep -q '$GIORNO' '$VISTO'" "la data la fissa lo script, non il modello"
 check "! grep -q 'PROMPT START' '$VISTO'" "i marcatori restano fuori"
 check "! grep -q 'Changelog' '$VISTO'" "le note italiane di testata restano fuori"
 teardown
+
+print -- "\n6. Catena: dopo DONE gira l'aggiornamento prezzi, poi l'analisi"
+OGGI=$(date +%Y-%m-%d)
+setup_catena() {
+  setup
+  ORDINE="$SANDBOX/ordine.txt"; : > "$ORDINE"
+  cp "$PIPE/attendi_rete.sh" "$FPIPE/attendi_rete.sh"
+  print -r -- "open('$ORDINE','a').write('prezzi\n')" > "$FPIPE/update_market_data.py"
+  print -r -- "$1" >> "$FPIPE/update_market_data.py"
+  { print -r -- '#!/bin/zsh'; print -r -- "print -r -- \"analisi \$1\" >> '$ORDINE'" } > "$FPIPE/run_daily_analysis.sh"
+  LOG="$FPIPE/logs/brief-${OGGI}.log"; BRIEF="$BDIR/${OGGI}-morning-briefing.html"
+}
+catena() { ( ATTESA_RETE_MAX=2 ATTESA_RETE_STEP=1 RETE_URL=file:///etc/hosts CATENA=1 esegui "$@" ) }
+
+setup_catena ""
+RC=$(catena pubblica 0 "$OGGI")
+check "[[ $RC -eq 0 ]]" "esce 0" "rc=$RC"
+check "[[ \$(tr '\n' ' ' < '$ORDINE') == 'prezzi analisi $OGGI ' ]]" "prima i prezzi, poi l'analisi di oggi" "$(cat $ORDINE)"
+check "grep -q 'CATENA: lancio l.analisi' '$LOG'" "lo logga"
+teardown
+
+setup_catena "raise SystemExit(1)"
+RC=$(catena pubblica 0 "$OGGI")
+check "[[ $RC -eq 0 ]]" "prezzi falliti: il brief esce comunque 0" "rc=$RC"
+check "[[ \$(tr '\n' ' ' < '$ORDINE') == 'prezzi analisi $OGGI ' ]]" "l'analisi parte lo stesso: decide il suo cancello" "$(cat $ORDINE)"
+check "grep -q 'WARN: aggiornamento prezzi' '$LOG'" "il guasto dei prezzi è nel log"
+teardown
+
+setup_catena ""
+RC=$(catena "" 0 "$OGGI")
+check "[[ $RC -ne 0 ]]" "brief non prodotto: esce ≠0" "rc=$RC"
+check "[[ ! -s '$ORDINE' ]]" "nessuna catena su un brief fallito" "$(cat $ORDINE)"
+teardown
+
+setup_catena ""
+RC=$(catena pubblica 0 "2026-09-15")
+check "[[ ! -s '$ORDINE' ]]" "rilancio di una data passata: i prezzi non si toccano" "$(cat $ORDINE)"
+teardown
+
+setup_catena ""
+RC=$( ( ATTESA_RETE_MAX=1 ATTESA_RETE_STEP=1 RETE_URL=http://127.0.0.1:9 CATENA=1 esegui pubblica 0 "$OGGI" ) )
+check "[[ \$(tr '\n' ' ' < '$ORDINE') == 'prezzi analisi $OGGI ' ]]" "rete assente: prosegue comunque (l'errore lo dice il run)" "$(cat $ORDINE)"
+check "grep -q 'WARN: API non raggiungibile' '$LOG'" "e lo scrive nel log"
+teardown
+
+print -- "\n7. attendi_rete.sh"
+R="$PIPE/attendi_rete.sh"
+OUT=$(RETE_URL=file:///etc/hosts ATTESA_RETE_MAX=5 /bin/zsh "$R"); RC=$?
+check "[[ $RC -eq 0 && '$OUT' == 0 ]]" "host raggiungibile: exit 0 senza attese" "rc=$RC out=$OUT"
+INIZIO=$SECONDS
+RETE_URL=http://127.0.0.1:9 ATTESA_RETE_MAX=2 ATTESA_RETE_STEP=1 /bin/zsh "$R" >/dev/null; RC=$?
+check "[[ $RC -eq 1 ]]" "host irraggiungibile: exit 1 allo scadere del tetto" "rc=$RC"
+check "(( SECONDS - INIZIO >= 2 && SECONDS - INIZIO < 10 ))" "ha davvero aspettato, ma non oltre il tetto" "$((SECONDS-INIZIO))s"
 
 print -- "\n$(printf '=%.0s' {1..60})"
 print -r -- "morning brief: $PASS passati, $FAIL falliti"

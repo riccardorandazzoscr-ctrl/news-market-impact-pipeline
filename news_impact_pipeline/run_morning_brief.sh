@@ -165,6 +165,30 @@ fi
 
 STORIE=$(grep -o 'class="story"' "$BRIEF" | wc -l | tr -d ' ')
 log "DONE briefing $TODAY pubblicato ($STORIE notizie): $BRIEF"
-# Non serve avvisare l'analisi: il job daily ha WatchPaths sulla cartella dei
-# briefing e parte da sé appena il file atterra.
+
+# --- Catena: prezzi, poi analisi ---------------------------------------------
+# Il brief ha appena usato la rete con successo: è il momento in cui l'analisi ha più
+# probabilità di trovarla (dal 12/10/2026 alle 08:15 non c'era e il run falliva con
+# ENOTFOUND). Quindi si prosegue qui invece di aspettare l'orologio:
+# aggiornamento prezzi, poi analisi. I job di calendario (08:00, 08:15, 09:15, 10:15)
+# restano come rete di sicurezza: sono idempotenti, escono se il lavoro c'è già.
+# Il WatchPaths del job daily scatta comunque al landing del file, ma prima dei prezzi
+# esce con ATTESA (cancello `dati_pronti`); il lock evita run sovrapposti.
+# Solo per oggi: rilanciare a mano una data passata non deve toccare i prezzi.
+# CATENA=0 la spegne (la suite in tests/ la usa per non lanciare i job veri).
+# Un prezzo non aggiornato non ferma l'analisi da qui: decide il cancello dell'analisi.
+if [[ "${CATENA:-1}" != 0 && "$TODAY" == "$(date +%Y-%m-%d)" ]]; then
+  if RETE_S=$(/bin/zsh "$PIPE/attendi_rete.sh"); then
+    (( ${RETE_S:-0} > 0 )) && log "CATENA: rete tornata dopo ${RETE_S}s."
+  else
+    log "WARN: API non raggiungibile dopo ${ATTESA_RETE_MAX:-900}s: proseguo comunque."
+  fi
+  log "CATENA: aggiorno i prezzi."
+  ( cd "$PIPE" && "$PY" "$PIPE/update_market_data.py" \
+      >> "$NEWSDIR/market_data/update.log" 2>> "$NEWSDIR/market_data/update.error.log" ) \
+    || log "WARN: aggiornamento prezzi uscito con errore: decide il cancello dell'analisi."
+  log "CATENA: lancio l'analisi."
+  /bin/zsh "$PIPE/run_daily_analysis.sh" "$TODAY" >> "$LOGDIR/launchd.out.log" 2>&1 \
+    || log "WARN: analisi uscita con errore (dettaglio in logs/$TODAY.log)."
+fi
 exit 0

@@ -18,6 +18,14 @@ dell'abbonamento Claude, la stessa della CLI interattiva.
 | Scorecard | Lunedì 09:00 | `…newsimpact.scorecard` | `run_scorecard.sh` | Nessuno: Python deterministico |
 | Strategia mensile | Giorno 1, 09:30 | `…newsimpact.monthly` | `run_monthly_report.sh` | Opus 5.5 |
 
+**La catena (dal 2026-10-15).** Appena il brief ha scritto `DONE`, `run_morning_brief.sh` prosegue
+da solo: `attendi_rete.sh` (aspetta che l'API risponda, tetto 900 s), poi `update_market_data.py`, poi
+`run_daily_analysis.sh`. Il motivo: dal 12/10 il Mac non aveva la rete alle 08:15 e il run falliva con
+`ENOTFOUND`; subito dopo il brief la rete c'è. Le righe di calendario della tabella (08:00, 08:15, 09:15,
+10:15) restano come rete di sicurezza e sono idempotenti. La catena si salta se il brief non è stato prodotto
+o se si rilancia una data passata; `CATENA=0` la spegne. Anche `run_daily_analysis.sh` chiama
+`attendi_rete.sh` prima di lanciare Claude. Nel log del brief: righe `CATENA:`.
+
 Il job `daily` ha anche `WatchPaths` sulla cartella dei briefing: se il brief
 arriva in ritardo, l'analisi parte appena il file atterra. I ritentativi delle
 09:15 e 10:15 coprono un caso diverso — il run **fallito a metà** — che i

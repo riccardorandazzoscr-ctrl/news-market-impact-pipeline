@@ -474,6 +474,14 @@ Output finale in chat: riepilogo con quante notizie tenute/scartate e i temi
 delle schede prodotte. Lavora in $DAILY/$TODAY/.
 EOF
 
+# Senza rete `claude -p` muore in 3 minuti con ENOTFOUND e porta con sé il run
+# (12-15/10/2026, ogni mattina alle 08:15). Si aspetta che l'API risponda; se non torna
+# si lancia lo stesso: l'errore, con la sua causa, finisce nel log come prima.
+if RETE_S=$(/bin/zsh "$PIPE/attendi_rete.sh"); then
+  (( ${RETE_S:-0} > 0 )) && log "RETE: API raggiungibile dopo ${RETE_S}s di attesa."
+else
+  log "WARN: API non raggiungibile dopo ${ATTESA_RETE_MAX:-900}s: lancio comunque."
+fi
 log "Lancio Claude Code headless (model=$MODEL, tetto ${RUN_MAX}s)."
 cd "$NEWSDIR"
 # --output-format json: oltre al testo finale restituisce turni, token e costo.
