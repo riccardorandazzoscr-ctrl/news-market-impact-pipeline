@@ -10911,3 +10911,110 @@ reviews:
     del 2 dicembre; la research Fiscal_Pol_Brazil colloca nella data anche la legge marziale in Corea.
     Revisione Claude 2026-10-15.
   status: excluded
+- date: '2015-12-01'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-29/news_04.md
+  reason: 'ISM manifatturiero USA sotto 50 per la prima volta dal 2012 («contrazione industriale su dollaro
+    forte e petrolio a 40 dollari»), concorde in cinque schede: dato debole → rendimenti giù. Coerente
+    col verso già dichiarato su IEF. Revisione Claude 2026-10-15.'
+  direction: neg
+  mechanism:
+  - ism
+  - activity_growth
+- date: '2019-10-01'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-27/news_04.md
+  reason: 'ISM manifatturiero a 47,8, minimo da dieci anni: «la sorpresa negativa più netta del ciclo
+    pre-pandemia», concorde in sei schede → rendimenti giù. Revisione Claude 2026-10-15.'
+  direction: neg
+  mechanism:
+  - ism
+  - activity_growth
+- date: '2024-04-01'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-29/news_04.md
+  reason: 'ISM manifatturiero sopra 50 per la prima volta in 16 mesi: «riaccelerazione che riprezza i
+    tassi al rialzo», concorde in quattro schede (una sola riporta 49,2, in contrasto con le altre). Coerente
+    coi versi già dichiarati su IEF e ^FVX. Revisione Claude 2026-10-15.'
+  direction: pos
+  mechanism:
+  - ism
+  - activity_growth
+- date: '2024-08-01'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-27/news_04.md
+  reason: 'ISM manifatturiero a 46,8 e richieste di sussidi in netto rialzo: il dato che innescò il panico
+    sulla crescita di inizio agosto 2024, concorde in quattro schede → rendimenti giù. Coerente col verso
+    già dichiarato su IEF. Revisione Claude 2026-10-15.'
+  direction: neg
+  mechanism:
+  - ism
+  - activity_growth
+  - labour_market
+- date: '2015-09-03'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-25/news_05.md
+  reason: Giornata dominata da Cina (yuan) e BCE, senza una release ISM/PMI americana identificata; le
+    schede si contraddicono sul segno. Revisione Claude 2026-10-15.
+  status: excluded
+- date: '2019-08-01'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-21/news_02.md
+  reason: 'ISM in decelerazione nella stessa seduta dell''annuncio di nuovi dazi su 300 mld di import
+    cinese: reazione non attribuibile al dato, come già escluso su IEF e ^FVX. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2019-09-04'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-25/news_05.md
+  reason: Le schede si contraddicono (contrazione confermata contro «sorpresa al rialzo») e non identificano
+    la release della data. Revisione Claude 2026-10-15.
+  status: excluded
+- date: '2022-08-03'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-29/news_04.md
+  reason: 'Le schede descrivono i servizi USA come «misti» e «contraddittori»: segno della sorpresa non
+    documentato. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-11-01'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-22/news_03.md
+  reason: 'Le schede si contraddicono: ISM «sopra attese» in una, «ulteriore rallentamento» e «al limite
+    della contrazione» in altre. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2022-12-01'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-21/news_02.md
+  reason: 'ISM a 49,0 ma una scheda descrive la giornata come sorpresa al rialzo su attività e spesa:
+    le schede si contraddicono; nella data anche il PCE. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2023-08-03'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-09-02/news_04.md
+  reason: 'ISM servizi sotto le attese (rendimenti giù) nella stessa fase in cui i rendimenti lunghi salivano
+    per l''offerta di titoli dopo il declassamento Fitch: spinte opposte. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2024-10-01'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-23/news_04.md
+  reason: 'ISM e JOLTS nella stessa seduta del lancio missilistico iraniano su Israele: reazione non attribuibile
+    al dato, come già escluso su IEF e ^FVX. Revisione Claude 2026-10-15.'
+  status: excluded
+- date: '2025-03-03'
+  theme: macro_data
+  reference: ^TNX
+  source: 2026-08-21/news_02.md
+  reason: 'ISM debole con componente prezzi in salita per i dazi: crescita e inflazione spingono i rendimenti
+    in versi opposti; le schede si contraddicono sul segno. Revisione Claude 2026-10-15.'
+  status: excluded
