@@ -11018,3 +11018,59 @@ reviews:
   reason: 'ISM debole con componente prezzi in salita per i dazi: crescita e inflazione spingono i rendimenti
     in versi opposti; le schede si contraddicono sul segno. Revisione Claude 2026-10-15.'
   status: excluded
+- date: '2022-06-28'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-30/news_02.md
+  reason: 'Fiducia Conference Board in calo con componente aspettative al minimo dal 2013: dato debole
+    → rendimenti a breve giù. Coerente col verso già dichiarato su IEF. Revisione Claude 2026-10-15.'
+  direction: neg
+  mechanism:
+  - conference_board
+  - consumer
+- date: '2023-08-29'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-10-03/news_01.md
+  reason: 'JOLTS sotto i 9 milioni e fiducia Conference Board sotto attese nello stesso giorno: «il raffreddamento
+    del lavoro fa prezzare la fine dei rialzi Fed». Concorde la research «Sorprese macro» e i versi già
+    dichiarati su IEF e ^TNX. Revisione Claude 2026-10-15.'
+  direction: neg
+  mechanism:
+  - conference_board
+  - consumer
+  - labour_market
+- date: '2025-02-25'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-30/news_02.md
+  reason: Fiducia Conference Board col calo più ampio da agosto 2021, sotto attese, su timori di dazi
+    e inflazione → domanda attesa più debole, rendimenti a breve giù. Coerente col verso già dichiarato
+    su IEF. Revisione Claude 2026-10-15.
+  direction: neg
+  mechanism:
+  - conference_board
+  - consumer
+- date: '2025-03-25'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-30/news_02.md
+  reason: 'Aspettative Conference Board al minimo da oltre un decennio, sotto la soglia associata alla
+    recessione: dato debole → rendimenti a breve giù. Coerente col verso già dichiarato su IEF. Revisione
+    Claude 2026-10-15.'
+  direction: neg
+  mechanism:
+  - conference_board
+  - consumer
+- date: '2025-04-29'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-10-03/news_01.md
+  reason: Crollo delle aspettative Conference Board (minimo dal 2011) e JOLTS in calo nello stesso giorno,
+    entrambi deboli → «attese di crescita e tassi più bassi». Concorde la research sul consumatore USA.
+    Revisione Claude 2026-10-15.
+  direction: neg
+  mechanism:
+  - conference_board
+  - consumer
+  - labour_market
