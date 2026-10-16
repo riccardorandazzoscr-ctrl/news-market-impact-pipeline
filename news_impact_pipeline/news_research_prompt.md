@@ -1,4 +1,4 @@
-# Prompt di ricerca notizie — Morning Briefing (v3, 2026-10-16)
+# Prompt di ricerca notizie — Morning Briefing (v3.1, 2026-10-16)
 
 > Questo è il prompt che il job `com.riccardo.newsimpact.brief` esegue ogni mattina
 > alle 07:40. Copia canonica e versionabile, **fonte unica**:
@@ -24,6 +24,12 @@
 >   ufficiale, 90–150 parole per notizia invece di 2–3 frasi, fetch del testo intero invece
 >   dei "key facts", finestra "dall'edizione precedente" invece di "pubblicate oggi".
 >   Se un dominio dell'elenco smette di rispondere, va tolto da qui.
+> - v3→v3.1 (10-16): **livello 0 Bigdata.com** (connettore claude.ai, crediti a consumo):
+>   calendario macro per consenso/precedente/rivisto, notizie premium (MT Newswires, CNBC,
+>   Alliance News, Finwire…; Reuters non coperto) con testo intero. Tetto per run: 1
+>   calendario, 8 ricerche, 4 documenti; sotto 150 crediti si salta. La riga finale
+>   `Bigdata credits:` finisce nel log del brief: `grep "Bigdata credits" logs/brief-*.log`.
+>   FMP collegato ma inutile sul piano gratuito (calendario e notizie: ACCESS DENIED).
 
 ---
 
@@ -37,6 +43,19 @@ Associated Press, Financial Times, Wall Street Journal, The Economist, BBC, The 
 New York Times, Politico, MarketWatch, Barron's, Le Monde and El País cannot be fetched
 and do not even appear in search results. Do not search for them or cite them.
 Use these tiers instead:
+0. **Bigdata.com connector — licensed news and the economic calendar (if available).**
+   Load its tools with a tool search for "bigdata". First call `bigdata_help` and note
+   `payg.balance`. Use the connector **only** if the tools load, `outOfCredits` is false
+   and the balance is **at least 150**; otherwise skip it entirely and work from the web
+   tiers below — a missing or empty connector must never stop the briefing.
+   Budget per run (credits are pay-as-you-go): **1** `bigdata_events_calendar` call
+   (`economic_calendar`, yesterday and today, impacts HIGH and MEDIUM, countries US, EMU,
+   DE, FR, IT, GB, JP, CN) — use it for consensus, previous and revised figures;
+   at most **8** `bigdata_search` calls (fast mode, category `news_premium`, timestamp from
+   the previous edition to now, one topic per call); at most **4** `bigdata_fetch_document`
+   calls for the stories you lead with. Prefer the article's public URL when the result
+   carries one; otherwise cite the outlet name with the Bigdata.com link. Bigdata does not
+   cover Reuters: never cite Reuters through it.
 1. **Primary institutional sources — mandatory for every data point.** For any macro
    release or policy decision, open the official release: Eurostat (ec.europa.eu), ECB
    (ecb.europa.eu), Federal Reserve (federalreserve.gov), BLS (bls.gov), BEA (bea.gov),
@@ -117,5 +136,10 @@ published stories and that a closing `</body>` tag is present, then atomically r
 it to the final filename. If the final file already exists and passes these checks,
 do not overwrite it. If no new, verifiable stories are available, do not publish a
 file and report that outcome.
+
+**Final report.** End your final message with one line in exactly this form, so the job
+log can track the cost: `Bigdata credits: start <balance at the start>, end <balance from
+a second bigdata_help call at the end>, searches <n>, fetches <n>` — or `Bigdata credits:
+not used (<reason>)`.
 
 === PROMPT END ===

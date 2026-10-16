@@ -40,8 +40,9 @@ Stato per filone. Max 10 righe a filone. Ciò che resta vero per sempre va in
   routine remota Sonnet dimenticata (spenta, dettagli in `routine_giornaliera.md`), e Reuters,
   AP, FT, WSJ & co. bloccano il crawler. Prompt **v3**: fonti a livelli sui domini raggiungibili,
   90–150 parole a notizia, comunicati ufficiali per i dati. Job su Opus 5.5 effort medium.
-- **Da verificare (17/10)** — primo brief v3: nessun "another run" nel log, parole a notizia,
-  quota di fonti di livello 1–2, durata e costo (`logs/usage_brief.csv`).
+- **Da verificare (17/10)** — primo brief v3.1: nessun "another run" nel log, parole a notizia,
+  quota di fonti di livello 0–2, durata e costo (`logs/usage_brief.csv`), crediti Bigdata
+  consumati (`grep "Bigdata credits" news_impact_pipeline/logs/brief-*.log`; saldo 932 il 16/10).
 
 Aggiornato: 2026-10-16
 
