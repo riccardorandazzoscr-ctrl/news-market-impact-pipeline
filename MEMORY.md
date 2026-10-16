@@ -36,8 +36,14 @@ Stato per filone. Max 10 righe a filone. Ciò che resta vero per sempre va in
   sicurezza. Spread BTP/OAT aggiornati al 12/10 (procedura Chrome in `serie_derivate.md`).
 - **Da verificare (16/10)** — primo run vero della catena (righe `CATENA:` in `logs/brief-*.log`):
   prezzi delle 07:45 uguali a quelli delle 08:00? e perché il Mac perde la rete dopo le 08:00.
+- **Deciso (16/10)** — briefing corti e senza fonti autorevoli: dal 1/10 lo pubblicava una
+  routine remota Sonnet dimenticata (spenta, dettagli in `routine_giornaliera.md`), e Reuters,
+  AP, FT, WSJ & co. bloccano il crawler. Prompt **v3**: fonti a livelli sui domini raggiungibili,
+  90–150 parole a notizia, comunicati ufficiali per i dati. Job su Opus 5.5 effort medium.
+- **Da verificare (17/10)** — primo brief v3: nessun "another run" nel log, parole a notizia,
+  quota di fonti di livello 1–2, durata e costo (`logs/usage_brief.csv`).
 
-Aggiornato: 2026-10-15
+Aggiornato: 2026-10-16
 
 ---
 

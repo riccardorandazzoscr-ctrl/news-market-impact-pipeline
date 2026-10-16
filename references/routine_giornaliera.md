@@ -11,7 +11,7 @@ dell'abbonamento Claude, la stessa della CLI interattiva.
 
 | Fase | Orario Europe/Rome | Job launchd | Script | Modello |
 |---|---|---|---|---|
-| Morning briefing | 07:40 ogni giorno | `…newsimpact.brief` | `run_morning_brief.sh` | Opus 5.5 (ricerca web) |
+| Morning briefing | 07:40 ogni giorno | `…newsimpact.brief` | `run_morning_brief.sh` | Opus 5.5, effort medium (ricerca web) |
 | Prezzi | 08:00 ogni giorno | `…newsimpact.marketdata-update` | `update_market_data.py` | Nessuno: Python deterministico |
 | Analisi | 08:15, ritentativi 09:15 e 10:15 | `…newsimpact.daily` | `run_daily_analysis.sh` | Opus 5.5 |
 | Indicizzazione KB | a ogni modifica di `knowledge_base/` | `…newsimpact.indexkb` | `index_studies.sh` | Opus 5.5 |
@@ -44,6 +44,15 @@ guasto e il run si ferma con un allarme invece di analizzare su dati vecchi.
 Il brief segue `news_impact_pipeline/news_research_prompt.md` (lo script estrae
 il blocco fra `=== PROMPT START/END ===`, non ne tiene una copia propria);
 l'analisi segue `PHASE5_RUNBOOK.md`; il mensile `PHASE6_RUNBOOK.md`.
+
+⚠ **Un solo scrittore del briefing.** Dal 22/09 al 16/10/2026 una seconda routine scriveva
+nella stessa cartella alle 07:40: il vecchio task Cowork `daily-morning-briefing` (Sonnet,
+copia propria e vecchia del prompt), che l'app aveva migrato da sola a routine remota
+(`trig_01QzsVxe7SN16s8qcR7TejJu`, legata a Claude Desktop di questo Mac) mentre Cowork lo
+mostrava "disabilitato". Finiva in ~2 minuti, quindi dal 1/10 pubblicava sempre lei e il job
+scartava la propria bozza ("another run wrote…" nel log del brief). Spenta il 16/10. Se quella
+frase ricompare nel log, cercare un altro produttore fra le routine claude.ai
+(`RemoteTrigger list`) prima di toccare lo script.
 
 ## I plist stanno in due posti
 

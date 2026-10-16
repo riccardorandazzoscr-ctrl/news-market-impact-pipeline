@@ -20,6 +20,9 @@ export PATH="/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # --- Configurazione --------------------------------------------------------
 MODEL="claude-opus-5-5"   # ricerca web + sintesi: stesso modello del run giornaliero
+# Esplicito dal 2026-10-16: era già il default dei run headless, ma un default
+# può cambiare senza avviso e il costo del brief cambierebbe con lui.
+EFFORT="medium"
 
 # Tetto di durata. Il brief è una ricerca web, non un'analisi su molte schede:
 # i 138 briefing in archivio (partiti dalle 07:30) sono usciti in 15-21 minuti.
@@ -106,7 +109,7 @@ title and for the output filename.
 
 $PROMPT"
 
-log "Lancio Claude Code headless (model=$MODEL, tetto ${RUN_MAX}s)."
+log "Lancio Claude Code headless (model=$MODEL, effort=$EFFORT, tetto ${RUN_MAX}s)."
 cd "$NEWSDIR"
 RAW="$LOGDIR/.raw_brief_${TODAY}.json"
 SCADUTO="$LOGDIR/.timeout_brief_${TODAY}"
@@ -115,7 +118,7 @@ SCADUTO="$LOGDIR/.timeout_brief_${TODAY}"
 # Stesso watchdog del run giornaliero (guasto del 2026-08-05): controlla ogni
 # secondo e si spegne da sé appena il figlio finisce, invece di dormire in un
 # colpo solo e restare appeso per mezz'ora dopo ogni run riuscito.
-"$CLAUDE" -p "$PROMPT" --model "$MODEL" --permission-mode bypassPermissions \
+"$CLAUDE" -p "$PROMPT" --model "$MODEL" --effort "$EFFORT" --permission-mode bypassPermissions \
   --output-format json </dev/null > "$RAW" 2>>"$LOG" &
 PID_HEADLESS=$!
 ( trascorso=0
