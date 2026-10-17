@@ -11074,3 +11074,84 @@ reviews:
   - conference_board
   - consumer
   - labour_market
+- date: '2018-12-19'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-23/news_05.md
+  reason: 'Data della FOMC; la BoJ decide il 20. Le schede si contraddicono sul verso (neg e pos) e sull''evento.
+    Revisione Claude 2026-10-17.'
+  status: excluded
+- date: '2022-01-17'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-20/news_07.md
+  reason: 'Primo giorno della riunione BoJ, decisione il 18: nessuna notizia datata al 17 nelle schede.
+    Revisione Claude 2026-10-17.'
+  status: excluded
+- date: '2022-07-21'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-23/news_05.md
+  reason: 'BoJ ferma come atteso e BCE +50 bp a sorpresa nello stesso giorno: spinte opposte sul dollaro,
+    le schede danno neg e pos. Trasmissione non univoca. Revisione Claude 2026-10-17.'
+  status: excluded
+- date: '2023-07-27'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-21/news_05.md
+  reason: 'Vigilia della modifica dello YCC (28): le schede la datano 27/28 senza separare l''indiscrezione
+    dalla decisione, e il 28 è già escluso. Datazione dubbia. Revisione Claude 2026-10-17.'
+  status: excluded
+- date: '2023-08-15'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-20/news_07.md
+  reason: 'La riga è definita dal movimento («pressione sullo yen e speculazioni di intervento»), senza una
+    notizia BoJ con un''attesa. Revisione Claude 2026-10-17.'
+  status: excluded
+- date: '2025-01-23'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-21/news_05.md
+  reason: 'Vigilia del rialzo del 24 (già escluso): le schede scrivono «2025-01-23/24» per la stessa decisione.
+    Revisione Claude 2026-10-17.'
+  status: excluded
+- date: '2026-04-30'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-29/news_01.md
+  reason: 'Rialzo a 0,75% con guidance restrittiva e intervento record del MoF: l''intervento arriva dopo
+    la chiusura della barra del 30 e cade sulla seduta del 1/5; senza sapere cosa era prezzato del rialzo,
+    il verso del 30 non è ricostruibile. Revisione Claude 2026-10-17.'
+  status: excluded
+- date: '2022-12-20'
+  theme: monetary_policy
+  reference: 1482.T
+  source: 2026-09-20/news_03.md
+  reason: 'Banda YCC allargata a ±0,5% a sorpresa, in seduta di Tokyo: rendimenti JGB su, prezzo dell''ETF
+    giù. Revisione Claude 2026-10-17.'
+  direction: neg
+  mechanism:
+  - boj
+  - term_premium
+- date: '2023-07-28'
+  theme: monetary_policy
+  reference: 1482.T
+  source: 2026-08-21/news_05.md
+  reason: 'Tetto sul decennale reso «flessibile»: rendimenti JGB attesi su. Indiscrezione Nikkei la sera
+    del 27 a borsa di Tokyo chiusa, decisione il 28: la prima seduta che reagisce a entrambe è il 28.
+    Revisione Claude 2026-10-17.'
+  direction: neg
+  mechanism:
+  - boj
+  - term_premium
+- date: '2026-04-30'
+  theme: monetary_policy
+  reference: 1482.T
+  source: 2026-08-29/news_01.md
+  reason: 'Rialzo a 0,75% con guidance restrittiva in seduta di Tokyo: rendimenti JGB su, prezzo giù. L''intervento
+    sul cambio della sera non tocca il canale dei tassi. Revisione Claude 2026-10-17.'
+  direction: neg
+  mechanism:
+  - boj
+  - rate_decision

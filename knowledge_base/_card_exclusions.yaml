@@ -46,3 +46,10 @@ exclusions:
   - date: '2026-05-29'
     reason: «Revisioni di rating europee» senza evento; la research Fiscal_Pol_Brazil colloca nella data
       la prima tranche del bilancio della difesa di Taiwan.
+- source: 2026-09-19/news_05.md
+  note: 'Riga di confronto con l''intervento di oggi, non il verso di allora. Revisione Claude 2026-10-17
+    su richiesta del maintainer.'
+  dates:
+  - date: '2011-08-04'
+    reason: 'Dichiara neg su JPY=X, ma il MoF vendeva yen (con allentamento BoJ lo stesso giorno): l''attesa
+      era USD/JPY su. Il «neg» indica la direzione opposta all''intervento di oggi.'
