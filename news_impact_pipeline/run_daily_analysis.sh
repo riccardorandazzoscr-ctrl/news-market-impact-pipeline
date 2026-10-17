@@ -17,6 +17,9 @@ export PATH="/opt/homebrew/bin:/usr/bin:/bin:/usr/sbin:/sbin:$PATH"
 
 # --- Configurazione --------------------------------------------------------
 MODEL="claude-opus-5-5"   # analisi giornaliera: qualità elevata su molte schede
+# High dal 2026-10-16 (richiesta del maintainer; prima il default dei run headless, medium):
+# più ragionamento su classificazione e lettura delle schede. Costo e durata in logs/usage.csv.
+EFFORT="high"
 
 # Integrità del briefing (guasto del 2026-09-07, vedi la fase input_validato).
 # Un briefing pubblicato può essere parziale: contiene tutte e sole le notizie nuove
@@ -482,7 +485,7 @@ if RETE_S=$(/bin/zsh "$PIPE/attendi_rete.sh"); then
 else
   log "WARN: API non raggiungibile dopo ${ATTESA_RETE_MAX:-900}s: lancio comunque."
 fi
-log "Lancio Claude Code headless (model=$MODEL, tetto ${RUN_MAX}s)."
+log "Lancio Claude Code headless (model=$MODEL, effort=$EFFORT, tetto ${RUN_MAX}s)."
 cd "$NEWSDIR"
 # --output-format json: oltre al testo finale restituisce turni, token e costo.
 # Senza questo il consumo del run non è misurabile (diagnosi del 2026-08-21: si
@@ -502,7 +505,7 @@ SCADUTO="$LOGDIR/.timeout_${TODAY}"
 # processo addormentato per un'ora dopo OGNI run riuscito.
 # ⚠ Uccide il processo figlio, non tutto il suo albero: in uno script i job non hanno
 # un process group proprio, quindi un kill di gruppo porterebbe via anche noi.
-"$CLAUDE" -p "$PROMPT" --model "$MODEL" --permission-mode bypassPermissions \
+"$CLAUDE" -p "$PROMPT" --model "$MODEL" --effort "$EFFORT" --permission-mode bypassPermissions \
   --output-format json </dev/null > "$RAW" 2>>"$LOG" &
 PID_HEADLESS=$!
 ( trascorso=0
