@@ -1,0 +1,55 @@
+# Riunioni delle banche centrali per l'anteprima settimanale (weekly_preview.py).
+# Si compila a mano una volta l'anno dalle pagine ufficiali; il job avvisa quando mancano
+# meno di 60 giorni all'ultima riga. `decision` è il giorno dell'annuncio, `reaction_session`
+# la prima seduta in cui reagiscono gli asset di riferimento (qui coincide sempre).
+# Verificato il 2026-10-17.
+meetings:
+  # fonte: https://www.federalreserve.gov/monetarypolicy/fomccalendars.htm (date 2027 provvisorie fino alla riunione precedente)
+  - {bank: fed, decision: 2026-10-28, reaction_session: 2026-10-28, time_local: "14:00 America/New_York"}
+  - {bank: fed, decision: 2026-12-09, reaction_session: 2026-12-09, time_local: "14:00 America/New_York"}
+  - {bank: fed, decision: 2027-01-27, reaction_session: 2027-01-27, time_local: "14:00 America/New_York"}
+  - {bank: fed, decision: 2027-03-17, reaction_session: 2027-03-17, time_local: "14:00 America/New_York"}
+  - {bank: fed, decision: 2027-04-28, reaction_session: 2027-04-28, time_local: "14:00 America/New_York"}
+  - {bank: fed, decision: 2027-06-09, reaction_session: 2027-06-09, time_local: "14:00 America/New_York"}
+  - {bank: fed, decision: 2027-07-28, reaction_session: 2027-07-28, time_local: "14:00 America/New_York"}
+  - {bank: fed, decision: 2027-09-15, reaction_session: 2027-09-15, time_local: "14:00 America/New_York"}
+  - {bank: fed, decision: 2027-10-27, reaction_session: 2027-10-27, time_local: "14:00 America/New_York"}
+  - {bank: fed, decision: 2027-12-08, reaction_session: 2027-12-08, time_local: "14:00 America/New_York"}
+  # fonte: https://www.ecb.europa.eu/press/calendars/mgcgc/html/index.en.html
+  - {bank: ecb, decision: 2026-10-29, reaction_session: 2026-10-29, time_local: "14:15 Europe/Berlin"}
+  - {bank: ecb, decision: 2026-12-17, reaction_session: 2026-12-17, time_local: "14:15 Europe/Berlin"}
+  - {bank: ecb, decision: 2027-02-04, reaction_session: 2027-02-04, time_local: "14:15 Europe/Berlin"}
+  - {bank: ecb, decision: 2027-03-18, reaction_session: 2027-03-18, time_local: "14:15 Europe/Berlin"}
+  - {bank: ecb, decision: 2027-04-29, reaction_session: 2027-04-29, time_local: "14:15 Europe/Berlin"}
+  - {bank: ecb, decision: 2027-06-10, reaction_session: 2027-06-10, time_local: "14:15 Europe/Berlin"}
+  - {bank: ecb, decision: 2027-07-22, reaction_session: 2027-07-22, time_local: "14:15 Europe/Berlin"}
+  - {bank: ecb, decision: 2027-09-09, reaction_session: 2027-09-09, time_local: "14:15 Europe/Berlin"}
+  - {bank: ecb, decision: 2027-10-28, reaction_session: 2027-10-28, time_local: "14:15 Europe/Berlin"}
+  - {bank: ecb, decision: 2027-12-16, reaction_session: 2027-12-16, time_local: "14:15 Europe/Berlin"}
+  # fonte: https://www.boj.or.jp/en/mopo/mpmsche_minu/index.htm (secondo giorno della riunione; annuncio in seduta di Tokyo)
+  - {bank: boj, decision: 2026-10-30, reaction_session: 2026-10-30, time_local: "12:00 Asia/Tokyo"}
+  - {bank: boj, decision: 2026-12-18, reaction_session: 2026-12-18, time_local: "12:00 Asia/Tokyo"}
+  - {bank: boj, decision: 2027-01-22, reaction_session: 2027-01-22, time_local: "12:00 Asia/Tokyo"}
+  - {bank: boj, decision: 2027-03-18, reaction_session: 2027-03-18, time_local: "12:00 Asia/Tokyo"}
+  - {bank: boj, decision: 2027-04-28, reaction_session: 2027-04-28, time_local: "12:00 Asia/Tokyo"}
+  - {bank: boj, decision: 2027-06-11, reaction_session: 2027-06-11, time_local: "12:00 Asia/Tokyo"}
+  - {bank: boj, decision: 2027-07-22, reaction_session: 2027-07-22, time_local: "12:00 Asia/Tokyo"}
+  - {bank: boj, decision: 2027-09-22, reaction_session: 2027-09-22, time_local: "12:00 Asia/Tokyo"}
+  - {bank: boj, decision: 2027-10-29, reaction_session: 2027-10-29, time_local: "12:00 Asia/Tokyo"}
+  - {bank: boj, decision: 2027-12-17, reaction_session: 2027-12-17, time_local: "12:00 Asia/Tokyo"}
+  # fonte: https://www.bankofengland.co.uk/monetary-policy/upcoming-mpc-dates
+  - {bank: boe, decision: 2026-11-05, reaction_session: 2026-11-05, time_local: "12:00 Europe/London"}
+  - {bank: boe, decision: 2026-12-17, reaction_session: 2026-12-17, time_local: "12:00 Europe/London"}
+  - {bank: boe, decision: 2027-02-04, reaction_session: 2027-02-04, time_local: "12:00 Europe/London"}
+  - {bank: boe, decision: 2027-03-18, reaction_session: 2027-03-18, time_local: "12:00 Europe/London"}
+  - {bank: boe, decision: 2027-04-29, reaction_session: 2027-04-29, time_local: "12:00 Europe/London"}
+  - {bank: boe, decision: 2027-06-17, reaction_session: 2027-06-17, time_local: "12:00 Europe/London"}
+  - {bank: boe, decision: 2027-07-29, reaction_session: 2027-07-29, time_local: "12:00 Europe/London"}
+  - {bank: boe, decision: 2027-09-16, reaction_session: 2027-09-16, time_local: "12:00 Europe/London"}
+  - {bank: boe, decision: 2027-11-04, reaction_session: 2027-11-04, time_local: "12:00 Europe/London"}
+  - {bank: boe, decision: 2027-12-16, reaction_session: 2027-12-16, time_local: "12:00 Europe/London"}
+  # fonte: regola (LPR il 20 del mese, o il primo giorno feriale successivo), solo i prossimi 3 mesi.
+  # ponytail: festività cinesi non gestite; verificare su pbc.gov.cn se il 20 cade in una festività
+  - {bank: pboc, decision: 2026-10-20, reaction_session: 2026-10-20, time_local: "09:15 Asia/Shanghai", source: regola}
+  - {bank: pboc, decision: 2026-11-20, reaction_session: 2026-11-20, time_local: "09:15 Asia/Shanghai", source: regola}
+  - {bank: pboc, decision: 2026-12-21, reaction_session: 2026-12-21, time_local: "09:15 Asia/Shanghai", source: regola}

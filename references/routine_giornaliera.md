@@ -17,6 +17,8 @@ dell'abbonamento Claude, la stessa della CLI interattiva.
 | Indicizzazione KB | a ogni modifica di `knowledge_base/` | `…newsimpact.indexkb` | `index_studies.sh` | Opus 5.5 |
 | Scorecard | Lunedì 09:00 | `…newsimpact.scorecard` | `run_scorecard.sh` | Nessuno: Python deterministico |
 | Strategia mensile | Giorno 1, 09:30 | `…newsimpact.monthly` | `run_monthly_report.sh` | Opus 5.5 |
+| Laboratorio CPI | ogni ora e all'accensione, dopo aver atteso la rete (agisce solo se manca un rilascio) | `…newsimpact.cpilab` | `cpi_lab_auto.py run` | Nessuno: Python deterministico |
+| Anteprima settimanale | domenica dalle 18:00 (ripresa lunedì e martedì a Mac spento); gira ogni ora e all'accensione, a vuoto fuori finestra | `…newsimpact.weeklypreview` | `run_weekly_preview.sh` | Opus 5.5, solo per commento e bozze LinkedIn |
 
 **La catena (dal 2026-10-15).** Appena il brief ha scritto `DONE`, `run_morning_brief.sh` prosegue
 da solo: `attendi_rete.sh` (aspetta che l'API risponda, tetto 900 s), poi `update_market_data.py`, poi
@@ -72,7 +74,7 @@ Dalla cartella `/Users/riccardo/Claude/mercati_finanza`:
 
 ```bash
 claude --version                                        # la CLI c'è
-launchctl list | grep newsimpact                        # i 6 job sono caricati
+launchctl list | grep newsimpact                        # gli 8 job sono caricati
 tail -30 news_impact_pipeline/logs/brief-$(date +%F).log # il brief è uscito?
 tail -30 news_impact_pipeline/logs/$(date +%F).log       # l'analisi è uscita?
 ls -l "morning brief/$(date +%F)-morning-briefing.html"

@@ -56,9 +56,9 @@ study (rendimenti cumulati a T+1, T+3, T+5, T+10) → scheda in `daily_analysis/
 → `forecast_tracking.py register` (una scheda ambigua resta fuori, l'invio parte comunque)
 → `render_report.py` → `send_telegram.sh`.
 
-Automazione: 6 job launchd `com.riccardo.newsimpact.*` (brief, marketdata-update, daily con
-ritentativi e WatchPaths, scorecard, monthly, indexkb); i tre con un modello lanciano `claude -p`
-headless su Opus 5.5. Orari e ripristino: [routine_giornaliera.md](references/routine_giornaliera.md).
+Automazione: 8 job launchd `com.riccardo.newsimpact.*` (brief, marketdata-update, daily con
+ritentativi e WatchPaths, scorecard, monthly, indexkb, cpilab, weeklypreview); quelli con un modello lanciano `claude -p`
+headless su Opus 5.5. L'anteprima della domenica scrive in `weekly_preview/AAAA-Www/`. Orari e ripristino: [routine_giornaliera.md](references/routine_giornaliera.md).
 
 ## Reference
 
@@ -89,7 +89,7 @@ headless su Opus 5.5. Orari e ripristino: [routine_giornaliera.md](references/ro
 - ⚠ **Nessuna API key Anthropic** (2026-05-28): il classificatore è l'agente nella sessione
   Claude Code, Python espone solo tool deterministici via Bash. `anthropic` non si usa.
 - ⚠ `update_market_data.py` importa costanti e helper da `bootstrap_market_data.py`: **non separarli**.
-- ⚠ I 6 job launchd girano **da dentro questa cartella**: se viene spostata smettono in
+- ⚠ Gli 8 job launchd girano **da dentro questa cartella**: se viene spostata smettono in
   silenzio. La copia viva dei plist è in `~/Library/LaunchAgents/`, non quella versionata in
   `news_impact_pipeline/launchd/`: va copiata **e ricaricata** (vedi routine_giornaliera.md).
 - Riporta **sempre la numerosità (N)**; con N<10 segnala il risultato come indicativo.

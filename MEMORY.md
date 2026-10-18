@@ -134,14 +134,16 @@ Aggiornato: 2026-09-23
 
 ## Laboratorio CPI
 
-- **Stato** — archivio 2015–2026-08 e calendario XNYS completi; conteggi con `cpi_lab.py validate`, esiti con `replay` + `report` (vedi reference).
+- **Stato** — archivio dal 2015 e calendario XNYS completi, aggiornati dal job `cpilab` (dal 17/10); conteggi con `cpi_lab.py validate`, esiti con `replay` + `report` (vedi reference).
 - **Deciso** — consenso solo «Median Forecast» MarketWatch da snapshot Wayback pre-rilascio; da settembre 2026 il calendario è Onclusive/Dow Jones («Forecast»): non si mescola. Protocollo 1.1.0 (campione iniziale dal 2015).
 - **Deciso** — (04/10) primo replay: su `^GSPC` da chiusura del rilascio a T+5 né il condizionato (sorpresa × ultima mossa Fed) né gli analoghi battono il riferimento; segno ~50%.
 - **Deciso** — (04/10) versione 2.0 (reazione del giorno, `IEF`, «solo sorpresa»): la sorpresa indica il verso del giorno nel 59–66% dei casi, l'ampiezza no; nessun confronto regge la correzione per 12 test.
 - **Deciso** — (04/10) protocollo 3.0.0: inversione della reazione di `IEF` a 5 sedute, da verificare sui rilasci 2011–2014 e sui primi 30 da ottobre 2026; sui dati già visti è 54%, aspettativa bassa.
 - **Deciso** — (04/10) campione A del 3.0.0 (2011–2014): 27/48 opposti, p=0,235, inversione non sostenuta.
 - **Deciso** — (04/10) un fornitore di consenso per serie, dichiarato nel protocollo (`consensus_providers`); Onclusive è serie a sé, unibile alla mediana MarketWatch solo con raccordo 11/12.
-- **Prossimo passo** — campione B del 3.0.0 a 30 rilasci (circa fine 2028); per la serie Onclusive serve catturare la pagina prima di ogni CPI, non automatizzato.
+- **Deciso** — (17/10) automazione completa, record scritti direttamente nell'archivio (scelta del maintainer); "Save Page Now" su MarketWatch fallisce, si usano le copie spontanee della Wayback. Job ogni ora + all'accensione, dopo la rete: recupera da solo i rilasci persi a Mac spento.
+- **Deciso** — (18/10) l'automazione, tenuta locale dal 17/10, è pubblicata su richiesta del maintainer.
+- **Prossimo passo** — nessuno manuale: campione B eseguito dal job a 30 rilasci (circa fine 2028); controllare i messaggi Telegram del giorno del CPI (prossimo: `grep "prossimo rilascio" news_impact_pipeline/logs/cpilab.log | tail -1`).
 
 Metodo: [references/laboratorio_cpi.md](references/laboratorio_cpi.md)
 
@@ -155,3 +157,14 @@ Metodo: [references/laboratorio_cpi.md](references/laboratorio_cpi.md)
 - **Prossimo passo** — Run 11b: reazione degli analoghi, reazione di oggi e seguito descrittivo accanto al normale in `event_study.py`, default invariato. Le definizioni di `quant_reazione.py` sono il riferimento.
 
 Spec e sequenza: [PIANO_REVISIONE_PIPELINE.md](PIANO_REVISIONE_PIPELINE.md) (Run 11)
+
+---
+
+## Sfruttare la knowledge base (dal 17/10)
+
+- **Stato** — la KB si usa solo in modo reattivo: il 17/10, 10 dei 36 studi non erano citati da un mese (4 mai) e 19 degli 81 asset non comparivano nelle ultime 90 schede. Tre strade, obiettivi con lo stesso peso (LinkedIn, studio, letture direzionali).
+- **Deciso** — (17/10) strada 1, **anteprima settimanale dal calendario**: spec `docs/superpowers/specs/2026-10-17-anteprima-settimanale-design.md`, piano `docs/superpowers/plans/2026-10-17-anteprima-settimanale.md` (5 task), approvati; esecuzione **Native** in sessione + una revisione finale con contesto nuovo. Spec e piano non committati.
+- **Deciso** — (17/10) BCE e BoE hanno pool direzionali quasi vuoti: nell'anteprima escono come lacune, da chiudere con la strada 3.
+- **Stato (17/10)** — anteprima implementata, installata e pubblicata (job `weeklypreview`, primo invio domenica 18/10 alle 18:00). Bozza LinkedIn in inglese con campione dichiarato, hashtag e grafico per evento.
+- **Prossimo passo** — controllare il primo invio; poi strada 2 (event study su tutti gli asset di una research in ogni scheda) e strada 3 (le tabelle delle research come fonte di verso per asset), ciascuna col suo design.
+- **Pendente** — research «Spread BTP-Bund e OAT-Bund» già in KB (17/10): restano la checklist del prompt `knowledge_base/_prompts/spread-btp-bund-crisi-italiane-bce.md` e la sua cancellazione. Le revisioni BoJ del 2026-04-30 sono escluse: la BoJ ha deciso il 28/4 a tasso invariato.

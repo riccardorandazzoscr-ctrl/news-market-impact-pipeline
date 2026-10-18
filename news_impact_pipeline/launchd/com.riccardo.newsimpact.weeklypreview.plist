@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.riccardo.newsimpact.weeklypreview</string>
+    <!-- Anteprima settimanale dal calendario. Gira ogni ora e all'accensione perché
+         StartCalendarInterval non recupera i run persi a Mac spento: lo script lavora
+         solo domenica dalle 18:00 (e in ripresa lunedì e martedì), gli altri giri sono a vuoto. -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>news_impact_pipeline/run_weekly_preview.sh</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/riccardo/Claude/mercati_finanza</string>
+    <key>StartInterval</key>
+    <integer>3600</integer>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/logs/weeklypreview.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/logs/weeklypreview.error.log</string>
+</dict>
+</plist>

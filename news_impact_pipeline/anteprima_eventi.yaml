@@ -1,0 +1,180 @@
+# Tipi di evento dell'anteprima settimanale (weekly_preview.py).
+# Ogni voce dice come costruire i due scenari condizionali con `analogues.py find`:
+# tema, sotto-temi, asset di riferimento del verso e cosa vogliono dire `pos`/`neg` a parole.
+# `pos`/`neg` sono la pressione sul PREZZO del riferimento (convenzioni in Design_Document):
+# `^TNX` è un rendimento, `IEF` un prezzo, `JPY=X`/`CNY=X` sono USD/valuta.
+# `label_en`, `chart`, `chart_labels`: grafico in inglese per il post (il primo asset è il
+# riferimento; asset fissati qui, non scelti fra i più vistosi della settimana).
+# `pool` dice a parole cosa contiene il pool (la composizione esatta la calcola build).
+# Sorgente del calendario: `fred_release_id` (API FRED) oppure `bank` (calendario_banche_centrali.yaml).
+# Ogni ticker deve esistere nella tabella `assets` del DB (lo controlla il test).
+
+us_cpi:
+  label: "CPI USA"
+  label_en: "US CPI release"
+  chart: [^TNX, EURUSD=X, ^GSPC]
+  chart_labels: {pos: "Hotter than expected", neg: "Cooler than expected"}
+  pool: "sorprese del CPI USA nella nostra libreria"
+  fred_release_id: 10
+  theme: macro_data
+  subthemes: [us_cpi]
+  match_all: false
+  reference: ^TNX
+  scenarios:
+    pos: "inflazione sopra le attese (rendimenti su)"
+    neg: "inflazione sotto le attese (rendimenti giù)"
+  assets: [^TNX, ^FVX, IEF, DX-Y.NYB, ^GSPC, GC=F, EURUSD=X, JPY=X]
+  match_query: "inflazione USA CPI sorpresa Treasury"
+
+us_nfp:
+  label: "Payroll USA (Employment Situation)"
+  label_en: "US payrolls release"
+  chart: [^TNX, EURUSD=X, ^GSPC]
+  chart_labels: {pos: "Stronger than expected", neg: "Weaker than expected"}
+  pool: "sorprese dei payroll USA nella nostra libreria"
+  fred_release_id: 50
+  theme: macro_data
+  subthemes: [nfp]
+  match_all: false
+  reference: ^TNX
+  scenarios:
+    pos: "lavoro più forte delle attese (rendimenti su)"
+    neg: "lavoro più debole delle attese (rendimenti giù)"
+  assets: [^TNX, ^FVX, IEF, DX-Y.NYB, ^GSPC, GC=F, EURUSD=X, JPY=X]
+  match_query: "payroll occupazione USA sorpresa Treasury"
+
+us_pce:
+  label: "PCE USA (Personal Income and Outlays)"
+  label_en: "US PCE release"
+  chart: [^TNX, EURUSD=X, ^GSPC]
+  chart_labels: {pos: "Hotter than expected", neg: "Cooler than expected"}
+  pool: "sorprese d'inflazione USA nella nostra libreria: CPI e PCE insieme, perché non esiste un'etichetta solo PCE"
+  fred_release_id: 54
+  theme: macro_data
+  subthemes: [inflation_print]
+  match_all: false
+  reference: ^TNX
+  scenarios:
+    pos: "inflazione sopra le attese (rendimenti su)"
+    neg: "inflazione sotto le attese (rendimenti giù)"
+  assets: [^TNX, ^FVX, IEF, DX-Y.NYB, ^GSPC, GC=F, EURUSD=X, JPY=X]
+  match_query: "inflazione USA PCE sorpresa Treasury"
+
+us_gdp:
+  label: "PIL USA"
+  label_en: "US GDP release"
+  chart: [^TNX, EURUSD=X, ^GSPC]
+  chart_labels: {pos: "Stronger than expected", neg: "Weaker than expected"}
+  pool: "sorprese sui dati di attività USA nella nostra libreria: il PIL insieme a ISM e ad altri indicatori"
+  fred_release_id: 53
+  theme: macro_data
+  subthemes: [activity_growth]
+  match_all: false
+  reference: ^TNX
+  scenarios:
+    pos: "crescita sopra le attese (rendimenti su)"
+    neg: "crescita sotto le attese (rendimenti giù)"
+  assets: [^TNX, ^FVX, IEF, DX-Y.NYB, ^GSPC, GC=F, EURUSD=X, JPY=X]
+  match_query: "PIL USA crescita sorpresa Treasury"
+
+us_retail:
+  label: "Vendite al dettaglio USA"
+  label_en: "US retail sales release"
+  chart: [IEF, ^GSPC, XLY]
+  chart_labels: {pos: "Weaker than expected", neg: "Stronger than expected"}
+  pool: "sorprese sui dati del consumatore USA nella nostra libreria: vendite al dettaglio insieme a fiducia e spesa"
+  fred_release_id: 9
+  theme: macro_data
+  subthemes: [consumer]
+  match_all: false
+  reference: IEF
+  scenarios:
+    pos: "consumi sotto le attese (prezzo dei Treasury su)"
+    neg: "consumi sopra le attese (prezzo dei Treasury giù)"
+  assets: [IEF, ^TNX, ^FVX, DX-Y.NYB, ^GSPC, GC=F, EURUSD=X, JPY=X, XLY]
+  match_query: "consumatore USA vendite al dettaglio sorpresa"
+
+fed_decision:
+  label: "Decisione Fed (FOMC)"
+  label_en: "Fed (FOMC) decision"
+  chart: [IEF, DX-Y.NYB, ^GSPC]
+  chart_labels: {pos: "More dovish than expected", neg: "More hawkish than expected"}
+  pool: "decisioni sui tassi con verso su IEF nella nostra libreria: soprattutto Fed, ma l'etichetta può includere altre banche centrali"
+  bank: fed
+  theme: monetary_policy
+  subthemes: [rate_decision]
+  match_all: false
+  reference: IEF
+  scenarios:
+    pos: "più accomodante delle attese (prezzo dei Treasury su)"
+    neg: "più restrittiva delle attese (prezzo dei Treasury giù)"
+  assets: [IEF, ^TNX, ^FVX, DX-Y.NYB, ^GSPC, GC=F, EURUSD=X, JPY=X]
+  match_query: "Fed FOMC decisione tassi dot plot"
+
+ecb_decision:
+  label: "Decisione BCE"
+  label_en: "ECB decision"
+  chart: [EURUSD=X, IEAG.AS, ^STOXX50E]
+  chart_labels: {pos: "More hawkish than expected", neg: "More dovish than expected"}
+  pool: "decisioni e comunicazioni BCE nella nostra libreria"
+  bank: ecb
+  theme: monetary_policy
+  subthemes: [ecb]
+  match_all: false
+  reference: EURUSD=X
+  scenarios:
+    pos: "più restrittiva delle attese (euro su)"
+    neg: "più accomodante delle attese (euro giù)"
+  assets: [EURUSD=X, IEAG.AS, ^STOXX50E, BTP_BUND_SPREAD]
+  match_query: "BCE decisione tassi euro Lagarde"
+
+boj_decision:
+  label: "Decisione Bank of Japan"
+  label_en: "Bank of Japan decision"
+  chart: [JPY=X, 1482.T, ^N225]
+  chart_labels: {pos: "More dovish than expected", neg: "More hawkish than expected"}
+  pool: "decisioni e comunicazioni BoJ nella nostra libreria, compresi giorni con interventi sul cambio"
+  bank: boj
+  theme: monetary_policy
+  subthemes: [boj]
+  match_all: false
+  reference: JPY=X
+  scenarios:
+    pos: "più accomodante delle attese (yen debole, USD/JPY su)"
+    neg: "più restrittiva delle attese (yen forte, USD/JPY giù)"
+  assets: [JPY=X, 1482.T, ^N225, ^TNX]
+  match_query: "Bank of Japan decisione tassi yen"
+
+boe_decision:
+  label: "Decisione Bank of England"
+  label_en: "Bank of England decision"
+  chart: [GBPUSD=X, IGLT.L]
+  chart_labels: {pos: "More hawkish than expected", neg: "More dovish than expected"}
+  pool: "decisioni sui tassi con rilascio britannico nella nostra libreria"
+  bank: boe
+  theme: monetary_policy
+  subthemes: [rate_decision, britain_release]
+  match_all: true
+  reference: GBPUSD=X
+  scenarios:
+    pos: "più restrittiva delle attese (sterlina su)"
+    neg: "più accomodante delle attese (sterlina giù)"
+  assets: [GBPUSD=X, IGLT.L]
+  match_query: "Bank of England decisione tassi sterlina gilt"
+
+pboc_lpr:
+  label: "PBOC: tassi LPR"
+  label_en: "PBOC loan prime rates"
+  chart: [CNY=X, HG=F, EEM]
+  chart_labels: {pos: "Easing (weaker yuan)", neg: "Tightening (stronger yuan)"}
+  pool: "decisioni e operazioni PBOC nella nostra libreria (tassi, fixing, riserve obbligatorie)"
+  bank: pboc
+  theme: monetary_policy
+  subthemes: [pboc]
+  match_all: false
+  reference: CNY=X
+  scenarios:
+    pos: "allentamento (yuan debole, USD/CNY su)"
+    neg: "stretta o tassi fermi contro attese di taglio (yuan forte, USD/CNY giù)"
+  assets: [CNY=X, HG=F, EEM]
+  match_query: "PBOC tassi LPR yuan fixing"

@@ -45,6 +45,8 @@ news_impact_pipeline/logs/
 # This also means the daily automation, which writes into daily_analysis/
 # every morning, cannot silently add new files to a commit.
 # ---------------------------------------------------------------------------
+# Anteprima settimanale (weekly_preview.py): output rigenerabile, come le giornate.
+weekly_preview/
 daily_analysis/*
 !daily_analysis/_scorecard/
 !daily_analysis/2026-08-17/
