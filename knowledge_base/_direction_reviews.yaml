@@ -11120,9 +11120,10 @@ reviews:
   theme: monetary_policy
   reference: JPY=X
   source: 2026-08-29/news_01.md
-  reason: 'Rialzo a 0,75% con guidance restrittiva e intervento record del MoF: l''intervento arriva dopo
-    la chiusura della barra del 30 e cade sulla seduta del 1/5; senza sapere cosa era prezzato del rialzo,
-    il verso del 30 non è ricostruibile. Revisione Claude 2026-10-17.'
+  reason: 'Le schede attribuiscono al 30/4 un rialzo BoJ a 0,75%, ma la BoJ ha deciso il 28/4 senza cambiare
+    il tasso (boj.or.jp, Statement on Monetary Policy del 28/4; le variazioni sono del 16/6 e del 18/9).
+    Il 30/4 resta l''intervento del MoF, che cade sulla seduta del 1/5. Evento mal datato. Revisione Claude
+    2026-10-17.'
   status: excluded
 - date: '2022-12-20'
   theme: monetary_policy
@@ -11149,9 +11150,7 @@ reviews:
   theme: monetary_policy
   reference: 1482.T
   source: 2026-08-29/news_01.md
-  reason: 'Rialzo a 0,75% con guidance restrittiva in seduta di Tokyo: rendimenti JGB su, prezzo giù. L''intervento
-    sul cambio della sera non tocca il canale dei tassi. Revisione Claude 2026-10-17.'
-  direction: neg
-  mechanism:
-  - boj
-  - rate_decision
+  reason: 'Nessun rialzo BoJ il 30/4: la riunione di aprile si è chiusa il 28/4 a tasso invariato (boj.or.jp,
+    Statement on Monetary Policy del 28/4). Il 30/4 c''è solo l''intervento sul cambio, che non tocca il
+    canale dei tassi. Evento mal datato. Revisione Claude 2026-10-17.'
+  status: excluded
