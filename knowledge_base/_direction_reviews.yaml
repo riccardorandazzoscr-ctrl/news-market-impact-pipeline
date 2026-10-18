@@ -10389,6 +10389,36 @@ reviews:
   mechanism:
   - memory_cycle
   - korea_release
+- date: '2021-12-09'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-09-04/news_03.md
+  reason: 'Nessuna release dell''area euro identificabile in quella data (vigilia del CPI USA del 10): le
+    schede la descrivono come dato d''inflazione area euro senza indicarne quale. Revisione maintainer
+    2026-10-07.'
+  status: excluded
+- date: '2022-11-30'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-09-04/news_03.md
+  reason: 'Due spinte opposte nella stessa giornata: HICP flash di novembre sotto le attese (euro giù) e
+    discorso di Powell alla Brookings la sera (dollaro giù). Trasmissione non univoca, come già per IEF.
+    Revisione maintainer 2026-10-07.'
+  status: excluded
+- date: '2025-03-03'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-09-04/news_03.md
+  reason: 'Le schede si contraddicono sul segno della sorpresa (core «sopra attese» in una, «in discesa»
+    in altre; attività «superiore alle attese» e «in deterioramento»). Revisione maintainer 2026-10-07.'
+  status: excluded
+- date: '2026-06-04'
+  theme: macro_data
+  reference: EURUSD=X
+  source: 2026-09-04/news_03.md
+  reason: 'Release non identificata: per una scheda è un dato UK/BoE, per altre l''HICP flash dell''area
+    euro, come già per IEF. Revisione maintainer 2026-10-07.'
+  status: excluded
 - date: '2022-07-21'
   theme: monetary_policy
   reference: EURUSD=X

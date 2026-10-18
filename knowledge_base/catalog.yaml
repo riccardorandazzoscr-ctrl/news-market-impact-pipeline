@@ -1,5 +1,5 @@
-generated_at: '2026-10-01T16:54:41'
-num_entries: 32
+generated_at: '2026-10-17T12:04:14'
+num_entries: 36
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -583,6 +583,102 @@ entries:
   - stimolo fiscale
   - fiscal expansion
   - fiscal consolidation
+- source_file: Gas europeo e shock di offerta di GNL/Gas europeo e shock di offerta
+    di GNL- Qatar e Hormuz, Stati Uniti, Australia, Norvegia, Mediterraneo orientale
+    e rotte marittime — regime ed episodi storici (2017–presente).md
+  title: 'Gas europeo e shock di offerta di GNL: Qatar e Hormuz, Stati Uniti, Australia,
+    Norvegia, Mediterraneo orientale e rotte marittime — regime ed episodi storici
+    (2017–presente)'
+  date_compiled: 2026-10-02
+  primary_theme: commodity_energy
+  sub_themes:
+  - gas_europe
+  - supply_disruption
+  - shipping_chokepoint
+  - infrastructure_attack
+  - military_escalation
+  - negotiation_track
+  - de_escalation
+  - hormuz
+  - iran
+  - lng_labor_strikes
+  - norwegian_outages
+  - east_med_gas
+  relevant_assets:
+  - TTF=F
+  - BZ=F
+  - EXH9.DE
+  - EXV7.DE
+  - ^GDAXI
+  - ^STOXX50E
+  - EURUSD=X
+  - IEAG.AS
+  - EWY
+  - ^N225
+  - JPY=X
+  - KRW=X
+  external_assets_mentioned:
+  - JKM (Platts Japan-Korea Marker) — misura diretta della competizione Europa-Asia
+    sui carichi di GNL e dello spread JKM-TTF
+  - 'Henry Hub (NG=F) — misura il disaccoppiamento USA negli episodi Freeport: gas
+    USA giù mentre il TTF sale'
+  - NBP (gas britannico) — reagisce più del TTF ai fermi Langeled/Easington e Nyhamna
+  - DES Northwest Europe LNG (Platts) — prezzo del GNL consegnato in Europa, premio
+    rispetto al TTF dal 2023
+  - AGSI+ (GIE) — livello giornaliero degli stoccaggi UE, necessario per stratificare
+    gli episodi
+  - Azioni Chevron, Woodside, Equinor, QatarEnergy (non quotata), NewMed — esposizione
+    diretta agli impianti colpiti
+  time_window:
+    start: 2017-10-23
+    end: present
+  regime_phases:
+  - pipeline_dominated_pre_crisis: 2017-10-23 to 2022-02-23
+  - russian_supply_shock_extreme_prices: 2022-02-24 to 2023-03-31
+  - lng_marginal_supplier: 2023-04-01 to 2026-02-27
+  - hormuz_contested_lng_scarcity: 2026-02-28 to present
+  keywords:
+  - gas europeo
+  - GNL
+  - LNG
+  - TTF
+  - Qatar
+  - Hormuz
+  - Stretto di Hormuz
+  - metaniera
+  - LNG carrier
+  - liquefazione
+  - liquefaction
+  - force majeure
+  - stoccaggi
+  - gas storage
+  - Freeport
+  - Ras Laffan
+  - Gorgon
+  - Wheatstone
+  - North West Shelf
+  - Woodside
+  - Chevron
+  - sciopero
+  - strike
+  - Nyhamna
+  - Sleipner
+  - Hammerfest
+  - Melkøya
+  - Troll
+  - Gassco
+  - Tamar
+  - Leviathan
+  - Karish
+  - Egitto
+  - Egypt
+  - Mar Rosso
+  - Red Sea
+  - Houthi
+  - cessate il fuoco
+  - ceasefire
+  - JKM
+  - Henry Hub
 - source_file: 'Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita
     YCC e interventi FX — regime ed episodi storici (1998–2026).md'
   title: 'Giappone / Bank of Japan: carry trade, uscita YCC e interventi FX — regime
@@ -1581,6 +1677,97 @@ entries:
   - defense
   - re-routing
   - india china oil
+- source_file: Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
+    a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
+    d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
+    oro e azionario — regime ed episodi storici (2017–presente).md
+  title: Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
+    dollaro, oro e azionario — regime ed episodi storici (2017–presente)
+  date_compiled: 2026-10-15
+  primary_theme: macro_data
+  sub_themes:
+  - inflation_surprise
+  - us_cpi
+  - us_pce
+  - core_vs_headline
+  - fed_reaction_function
+  - treasury_yields
+  - us_dollar
+  - gold_real_yields
+  - equity_rate_sensitivity
+  - energy_shock
+  - tariff_passthrough
+  - consensus_nowcast
+  relevant_assets:
+  - IEF
+  - ^FVX
+  - ^TNX
+  - ^TYX
+  - DX-Y.NYB
+  - EURUSD=X
+  - JPY=X
+  - GC=F
+  - ^GSPC
+  - ^NDX
+  - IWM
+  - ^MOVE
+  external_assets_mentioned:
+  - Rendimento Treasury a 2 anni — miglior proxy del riprezzamento del percorso Fed,
+    citato in quasi tutte le Note
+  - Breakeven a 10 anni e rendimento reale TIPS — necessari per separare tasso reale
+    e inflazione attesa nel canale oro
+  - Future sui Fed Funds e SOFR (CME FedWatch) — misurano direttamente la sorpresa
+    di policy (es. probabilità di rialzo a ottobre dal 20% al 46% il 2026-10-14)
+  - Swap d'inflazione e fixing CPI — consenso di mercato alternativo al sondaggio
+    degli economisti
+  - TLT — proxy di duration lunga alternativo a ^TYX
+  - Nowcast d'inflazione della Fed di Cleveland — riferimento che rende meno sorprendente
+    un dato formalmente fuori consenso
+  time_window:
+    start: 2017-01-01
+    end: present
+  regime_phases:
+  - low_attention: 2017-01-01 to 2021-03-31
+  - transitory: 2021-04-01 to 2022-03-15
+  - tightening_2022_2023: 2022-03-16 to 2023-12-12
+  - last_mile_and_tariffs: 2023-12-13 to 2026-02-27
+  - energy_shock_2026: 2026-02-28 to present
+  keywords:
+  - CPI
+  - PCE
+  - inflazione core
+  - inflazione headline
+  - consumer price index
+  - personal consumption expenditures
+  - hot print
+  - cool print
+  - sorpresa d'inflazione
+  - inflation surprise
+  - core CPI
+  - supercore
+  - consenso
+  - consensus
+  - Treasury
+  - rendimenti
+  - yields
+  - dollaro
+  - dollar index
+  - oro
+  - gold
+  - tassi reali
+  - real yields
+  - Fed
+  - rialzo dei tassi
+  - rate hike
+  - taglio dei tassi
+  - rate cut
+  - good news is bad news
+  - shock energetico
+  - energy shock
+  - dazi
+  - tariffs
+  - BLS
+  - nowcast Cleveland
 - source_file: 'Sorprese macro e reaction function dei mercati: fase del ciclo di
     politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito
     (2007–2026)/Sorprese macro e reaction function dei mercati: fase del ciclo di
@@ -1656,6 +1843,166 @@ entries:
   - insurance cuts
   - fase del ciclo
   - trasmissione tassi-cambio
+- source_file: Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury,
+    dollaro, oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese
+    su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
+    regimi ed episodi storici (2017–ottobre 2026).md
+  title: 'Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
+    oro e azionario: regimi ed episodi storici (2017–ottobre 2026)'
+  date_compiled: 2026-10-15
+  primary_theme: macro_data
+  sub_themes:
+  - nonfarm_payrolls
+  - ism_manufacturing
+  - ism_services
+  - prices_paid
+  - wage_inflation
+  - fed_path_repricing
+  - good_news_is_bad_news
+  - stagflation_divergence
+  - benchmark_revisions
+  - energy_shock_2026
+  relevant_assets:
+  - IEF
+  - ^FVX
+  - ^TNX
+  - ^TYX
+  - DX-Y.NYB
+  - JPY=X
+  - GC=F
+  - ^GSPC
+  - ^NDX
+  - IWM
+  external_assets_mentioned:
+  - US 2Y Treasury yield — la scadenza più sensibile al percorso Fed; ^FVX è solo
+    un sostituto
+  - Fed Funds futures / SOFR futures (CME FedWatch) — misura diretta della sorpresa
+    di politica monetaria
+  - TIPS breakeven e rendimenti reali — separano il canale inflazione dal canale reale
+    dell'oro
+  - TLT e UUP — ETF citati nelle fonti come proxy di duration lunga e dollaro
+  - Russell 2000 index — citato nelle fonti al posto di IWM
+  - Brent / WTI — necessari per isolare l'energy_passthrough del 2026
+  time_window:
+    start: 2017-01-01
+    end: present
+  regime_phases:
+  - low_rates_pre_covid: 2017-01-01 to 2020-02-29
+  - covid_rebound: 2020-03-01 to 2021-12-31
+  - tightening_good_news_bad: 2022-01-01 to 2023-12-31
+  - easing_and_tariffs: 2024-01-01 to 2026-03-01
+  - energy_shock_tightening: 2026-03-02 to present
+  keywords:
+  - payroll
+  - nonfarm payrolls
+  - occupati non agricoli
+  - disoccupazione
+  - unemployment rate
+  - retribuzioni orarie
+  - average hourly earnings
+  - ISM manifatturiero
+  - ISM manufacturing
+  - ISM servizi
+  - ISM services
+  - prezzi pagati
+  - prices paid
+  - jobs report
+  - revisioni
+  - benchmark revision
+  - good news is bad news
+  - stagflazione
+  - stagflation
+  - Treasury yields
+  - dollaro
+  - oro
+  - gold
+  - small cap
+  - rialzo dei tassi
+  - shock energetico
+- source_file: Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane
+    e francesi, interventi della BCE e contagio fra periferie — regime ed episodi
+    storici (2010–presente)/Spread BTP-Bund e OAT-Bund- crisi politiche e di bilancio
+    italiane e francesi, interventi della BCE e contagio fra periferie — regime ed
+    episodi storici (2010–presente).md
+  title: 'Spread BTP-Bund e OAT-Bund: crisi politiche e di bilancio italiane e francesi,
+    interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)'
+  date_compiled: 2026-10-17
+  primary_theme: fiscal_policy
+  sub_themes:
+  - italy_spread
+  - france_spread
+  - fiscal_deadlock
+  - sovereign_rating
+  - election_risk
+  - ecb_backstop
+  - contagion
+  - fiscal_expansion
+  - fiscal_consolidation
+  - budget_passage
+  - term_premium
+  - sovereign_auction
+  - credit_stress
+  - flight_to_quality
+  - redenomination_risk
+  relevant_assets:
+  - BTP_BUND_SPREAD
+  - OAT_BUND_SPREAD
+  - FTSEMIB.MI
+  - ^STOXX50E
+  - ^GDAXI
+  - EURUSD=X
+  - IEAG.AS
+  - EXX6.DE
+  - ^TNX
+  - ^VIX
+  - GC=F
+  external_assets_mentioned:
+  - CDS Italia 5 anni — separa rischio di credito da rischio di ridenominazione
+  - Futures BTP (FBTP) — canale di copertura che trasmette il contagio francese allo
+    spread italiano
+  - Indice FTSE Italia Banche — misura il nesso banche-sovrano, amplificatore di FTSEMIB.MI
+  - Spread Spagna-Bund, Portogallo-Bund, Grecia-Bund — controlli di contagio periferico
+    e origine degli shock 2010-2012
+  - Swap €STR — separa il premio sovrano dal tasso privo di rischio
+  - Spread BTP-Bund 2 anni — indicatore di rischio di ridenominazione (2018-05-29)
+  - CAC 40 — reazione azionaria francese, citata in Note; proxy in DB è ^STOXX50E
+  time_window:
+    start: 2010-01-01
+    end: present
+  regime_phases:
+  - sovereign_debt_crisis: 2010-01-01 to 2012-07-25
+  - omt_qe_compression: 2012-07-26 to 2020-03-11
+  - pandemic_pepp: 2020-03-12 to 2022-07-20
+  - tpi_tightening: 2022-07-21 to 2024-06-09
+  - french_fiscal_divergence: 2024-06-10 to present
+  keywords:
+  - spread
+  - BTP
+  - Bund
+  - spread BTP-Bund
+  - rischio Italia
+  - BCE
+  - TPI
+  - OMT
+  - PEPP
+  - frammentazione
+  - rating Italia
+  - manovra
+  - governo
+  - elezioni
+  - contagio
+  - periferia
+  - OAT
+  - spread OAT-Bund
+  - Francia
+  - rischio Francia
+  - sfiducia
+  - Assemblée nationale
+  - French spread
+  - OAT-Bund spread
+  - Italian spread
+  - sovereign spread
+  - fragmentation
 - source_file: bitcoin (2014-2026)/bitcoin (2014-2026).md
   title: 'Bitcoin e cripto: regimi, driver e trasmissione (2014–2026)'
   date_compiled: 2026-06-05
