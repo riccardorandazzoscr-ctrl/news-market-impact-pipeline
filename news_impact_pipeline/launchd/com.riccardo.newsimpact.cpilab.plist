@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>com.riccardo.newsimpact.cpilab</string>
+
+    <!-- Aspetta la rete (attendi_rete.sh, tetto 900 s; senza rete esce e riprova al giro dopo),
+         poi il giro idempotente del laboratorio CPI. -->
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>-c</string>
+        <string>RETE_URL=https://api.stlouisfed.org /bin/zsh news_impact_pipeline/attendi_rete.sh &gt;/dev/null &amp;&amp; exec news_impact_pipeline/venv/bin/python news_impact_pipeline/cpi_lab_auto.py run</string>
+    </array>
+    <key>WorkingDirectory</key>
+    <string>/Users/riccardo/Claude/mercati_finanza</string>
+
+    <!-- Ogni ora e al caricamento (login/accensione). Un'ora persa a Mac in stop launchd la
+         esegue al risveglio; a Mac spento la recupera RunAtLoad. Così un CPI uscito a Mac
+         spento entra in archivio al primo giro con la rete. Nei giorni senza novità non fa nulla. -->
+    <key>StartInterval</key>
+    <integer>3600</integer>
+
+    <key>RunAtLoad</key>
+    <true/>
+
+    <key>StandardOutPath</key>
+    <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/logs/cpilab.log</string>
+    <key>StandardErrorPath</key>
+    <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/logs/cpilab.error.log</string>
+</dict>
+</plist>

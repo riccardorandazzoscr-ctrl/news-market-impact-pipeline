@@ -1,6 +1,6 @@
 # Laboratorio CPI USA
 
-Questo esperimento vive in `experiments/cpi_lab/` e nel modulo deterministico `news_impact_pipeline/cpi_lab.py`. Claude Code può raccogliere e normalizzare fonti solo tramite il normale lavoro del maintainer; il motore non usa LLM, servizi o credenziali. Non è collegato ai run giornalieri, a Morning Brief, launchd, scorecard o Telegram.
+Questo esperimento vive in `experiments/cpi_lab/` e nel modulo deterministico `news_impact_pipeline/cpi_lab.py`. Claude Code può raccogliere e normalizzare fonti solo tramite il normale lavoro del maintainer; il motore non usa LLM, servizi o credenziali. Non è collegato ai run giornalieri, a Morning Brief o allo scorecard. Dal 2026-10-17 l'archivio si aggiorna da solo: vedi «Automazione» in fondo.
 
 ## Protocollo fissato
 
@@ -28,7 +28,7 @@ Ipotesi fissata il 2026-10-04: la continuazione a 5 sedute di `IEF` ha verso opp
 2. Un replay usa solo i consensi dei fornitori elencati in `consensus_providers` del protocollo. Gli altri risultano esclusi con motivo «fornitore del consenso fuori protocollo». Un protocollo senza il campo usa la mediana MarketWatch (`MW_MEDIAN` nel codice): così i protocolli 1.x e 2.x danno sempre gli stessi esiti.
 3. Onclusive entra in un protocollo come serie a sé, che riparte da zero (servono almeno `minimum_pool` eventi). Può unirsi alla mediana storica solo con un raccordo fissato prima: su 12 rilasci, Onclusive e un consenso indipendente catturato prima delle 08:30 (FactSet/Dow Jones dal briefing, o altro) devono dare la stessa fascia di sorpresa almeno 11 volte.
 
-La Wayback Machine non garantisce snapshot futuri. Per costruire la serie Onclusive o il raccordo serve catturare la pagina prima di ogni rilascio. Non è ancora automatizzato. Il protocollo 3.0.0 non usa consensi e non ne è toccato.
+La Wayback Machine non garantisce snapshot futuri. Per costruire la serie Onclusive o il raccordo serve una copia della pagina prima di ogni rilascio: dal 2026-10-17 la cerca il job automatico (sotto). Il protocollo 3.0.0 non usa consensi e non ne è toccato.
 
 ## Dati da inserire
 
@@ -85,3 +85,24 @@ Il report misura la continuazione dal close di rilascio: non una reazione immedi
 - Laboratorio funzionante: codice, test sintetici e riproducibilità offline.
 - Valutazione reale eseguibile: dopo aver raccolto e verificato i record CPI con consensi storici, e aver fornito un calendario XNYS completo coperto da ^GSPC.
 - Miglioramento dimostrato: richiede risultati reali prospettici o un replay storico con disponibilità temporale di ogni fatto provata; questo pilota da solo non lo dichiara.
+
+## Automazione (dal 2026-10-17)
+
+Job launchd `com.riccardo.newsimpact.cpilab`, ogni ora e all'accensione dopo aver atteso la rete, lancia `cpi_lab_auto.py run`
+(idempotente: un rilascio perso a Mac spento si recupera al primo giro con la rete; nessun modello; log in `news_impact_pipeline/logs/cpilab.log`, esiti su Telegram).
+
+- **Date dei rilasci**: FRED, release 10 (anche le future). Il sito del BLS risponde 403 agli script.
+- **Valore iniziale**: API pubblica BLS v1, serie `CUSR0000SA0`, variazione dagli indici a tre decimali
+  arrotondata a un decimale. Si legge solo finché l'ultimo mese pubblicato è quello del rilascio: un
+  recupero dopo il CPI successivo diventa `excluded` (le revisioni di febbraio cambiano gli indici).
+- **Consenso**: ultima copia Wayback (HTTP 200) del calendario MarketWatch fra 7 giorni prima e le
+  08:30 ET, riga «CPI» del giorno e del mese giusti, colonna che si chiami esattamente «Forecast»
+  (fornitore Onclusive). MarketWatch risponde 401 agli script e la richiesta «Save Page Now» il
+  2026-10-17 è fallita («Job failed»): il job la tenta prima dell'uscita, ma conta sulle copie che
+  l'archivio fa da sé. Senza copia il record è `excluded` col motivo.
+- **Fed**: FRED `DFEDTARU`; la variazione ha effetto il giorno dopo la decisione, che si conferma
+  aprendo il comunicato `monetaryAAAAMMGGa.htm` sul sito Fed. Non trovato → `excluded`.
+- **Campione B del 3.0.0**: a 30 rilasci maturi dal 2026-10-01 (verificati o esclusi: servono solo le
+  date) scrive `inversione_campione_B.json` ed `inversione_campione_B_esito.json` e si ferma per sempre.
+- **Calendario XNYS**: a meno di 90 giorni dalla fine lo estende di un anno con `exchange_calendars`,
+  dopo aver controllato che riproduca le ultime 60 sedute già salvate.
