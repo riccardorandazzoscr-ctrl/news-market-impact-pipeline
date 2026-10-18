@@ -1,4 +1,4 @@
-generated_at: '2026-10-18T07:48:11'
+generated_at: '2026-10-18T21:44:37'
 num_episodes: 1377
 episodes:
 - date: '1984-01-01'
@@ -1221,6 +1221,7 @@ episodes:
     - card:2026-09-26/news_01.md
     - card:2026-09-30/news_01.md
     - card:2026-10-12/news_02.md
+    - card:2026-10-18/news_02.md
   directions_local:
   - neg
   - pos
@@ -1264,7 +1265,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 37
+  n_sources: 38
   events:
   - event_id: 2015-07-14:commodity_energy:-
     geo: ''
@@ -1317,6 +1318,7 @@ episodes:
     - card:2026-09-26/news_01.md
     - card:2026-09-30/news_01.md
     - card:2026-10-12/news_02.md
+    - card:2026-10-18/news_02.md
     evidence:
     - source: card:2026-05-29/news_01.md
       subthemes_local:
@@ -1494,6 +1496,14 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-10-12/news_02.md
+      subthemes_local:
+      - de_escalation
+      - negotiation_track
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-10-18/news_02.md
       subthemes_local:
       - de_escalation
       - negotiation_track
@@ -5928,6 +5938,7 @@ episodes:
     BZ=F:
     - card:2026-09-26/news_01.md
     - card:2026-10-12/news_02.md
+    - card:2026-10-18/news_02.md
   directions_local:
   - neg
   declared: true
@@ -5936,10 +5947,11 @@ episodes:
   - hormuz
   - negotiation_track
   - refinery_products
+  - sanctions
   subthemes_local:
   - de_escalation
   - negotiation_track
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2022-02-15:commodity_energy:-
     geo: ''
@@ -5952,6 +5964,7 @@ episodes:
     sources:
     - card:2026-09-26/news_01.md
     - card:2026-10-12/news_02.md
+    - card:2026-10-18/news_02.md
     evidence:
     - source: card:2026-09-26/news_01.md
       subthemes_local:
@@ -5961,6 +5974,13 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-10-12/news_02.md
+      subthemes_local:
+      - de_escalation
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-10-18/news_02.md
       subthemes_local:
       - de_escalation
       - negotiation_track
@@ -5979,6 +5999,8 @@ episodes:
   directions_by_reference:
     BZ=F:
     - pos
+    HO=F:
+    - pos
   direction_sources:
     BZ=F:
     - card:2026-08-31/news_01.md
@@ -5986,6 +6008,8 @@ episodes:
     - card:2026-09-15/news_01.md
     - card:2026-09-15/news_02.md
     - card:2026-09-16/news_01.md
+    HO=F:
+    - card:2026-08-20/news_04.md
   directions_local:
   - neg
   - pos
@@ -6030,6 +6054,8 @@ episodes:
     - supply_disruption
     directions_by_reference:
       BZ=F:
+      - pos
+      HO=F:
       - pos
     sources:
     - card:2026-06-07/news_01.md
@@ -6078,7 +6104,9 @@ episodes:
       subthemes_local:
       - sanctions
       - supply_disruption
-      directions_by_reference: {}
+      directions_by_reference:
+        HO=F:
+        - pos
     - source: card:2026-08-20/news_05.md
       subthemes_local:
       - sanctions
@@ -6187,6 +6215,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    HO=F:
+    - pos
+  direction_sources:
+    HO=F:
+    - card:2026-08-20/news_04.md
   direction_review_excluded:
     BZ=F: Picco delle commodity, non evento discreto con pressione ex ante chiara.
   directions_local:
@@ -6225,6 +6259,9 @@ episodes:
     - sanctions
     - shipping_chokepoint
     - supply_disruption
+    directions_by_reference:
+      HO=F:
+      - pos
     sources:
     - card:2026-06-05/news_03.md
     - card:2026-06-25/news_05.md
@@ -6267,7 +6304,9 @@ episodes:
       subthemes_local:
       - oil_supply_shock
       - sanctions
-      directions_by_reference: {}
+      directions_by_reference:
+        HO=F:
+        - pos
     - source: card:2026-08-21/news_03.md
       subthemes_local:
       - military_escalation
@@ -6422,6 +6461,8 @@ episodes:
   direction_review_excluded:
     BZ=F: 'Taglio di Nord Stream 1: canale del gas europeo, non del Brent in modo
       univoco.'
+    HO=F: 'Taglio di Nord Stream 1: canale del gas europeo, nessuna trasmissione univoca
+      al gasolio. Revisione Claude 2026-10-18.'
   directions_local:
   - neg
   declared: true
@@ -7067,6 +7108,9 @@ episodes:
       2022-12-05 e il 2023-02-05 della research Russia-Ucraina).'
     EURUSD=X: 'Entrata in vigore programmata, per la riga ''nota da settimane'': scontata
       (regola della sorpresa; come il 2022-12-05 e il 2023-02-05 della research Russia-Ucraina).'
+    HO=F: 'Entrata in vigore programmata dell''embargo sul greggio e del price cap,
+      nota da mesi: scontata (regola della sorpresa, come il 2023-02-06), e riguarda
+      il greggio, non i prodotti. Revisione Claude 2026-10-18.'
   directions_local:
   - neg
   declared: false
@@ -7125,6 +7169,8 @@ episodes:
   direction_review_excluded:
     BZ=F: 'Embargo sui prodotti raffinati: canale crack, pressione sul greggio non
       univoca.'
+    HO=F: 'Domenica: la prima seduta è il 2023-02-06, già rivista su HO=F (entrata
+      in vigore scontata). Revisione Claude 2026-10-18.'
   directions_local:
   - neg
   - pos
@@ -8843,6 +8889,9 @@ episodes:
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  direction_review_excluded:
+    HO=F: 'Divieto russo di esportare benzina: tocca la benzina (RB=F, CRACK_321),
+      non il gasolio. Revisione Claude 2026-10-18.'
   directions_local: []
   declared: false
   subthemes:
@@ -11540,8 +11589,12 @@ episodes:
   directions_by_reference:
     BZ=F:
     - pos
+    HO=F:
+    - pos
   direction_sources:
     BZ=F:
+    - card:2026-08-20/news_04.md
+    HO=F:
     - card:2026-08-20/news_04.md
   directions_local:
   - neg
@@ -11565,6 +11618,8 @@ episodes:
     directions_by_reference:
       BZ=F:
       - pos
+      HO=F:
+      - pos
     sources:
     - card:2026-07-18/news_03.md
     - card:2026-08-20/news_04.md
@@ -11578,6 +11633,8 @@ episodes:
       - sanctions
       directions_by_reference:
         BZ=F:
+        - pos
+        HO=F:
         - pos
 - date: '2025-01-14'
   theme: commodity_energy
@@ -12169,6 +12226,7 @@ episodes:
     BZ=F:
     - card:2026-09-26/news_01.md
     - card:2026-10-12/news_02.md
+    - card:2026-10-18/news_02.md
   directions_local:
   - neg
   declared: true
@@ -12177,11 +12235,12 @@ episodes:
   - hormuz
   - negotiation_track
   - refinery_products
+  - sanctions
   subthemes_local:
   - black_sea
   - de_escalation
   - negotiation_track
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2025-03-25:commodity_energy:-
     geo: ''
@@ -12195,6 +12254,7 @@ episodes:
     sources:
     - card:2026-09-26/news_01.md
     - card:2026-10-12/news_02.md
+    - card:2026-10-18/news_02.md
     evidence:
     - source: card:2026-09-26/news_01.md
       subthemes_local:
@@ -12204,6 +12264,14 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-10-12/news_02.md
+      subthemes_local:
+      - black_sea
+      - de_escalation
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-10-18/news_02.md
       subthemes_local:
       - black_sea
       - de_escalation
@@ -14401,6 +14469,10 @@ episodes:
     - card:2026-09-15/news_02.md
     - card:2026-09-20/news_01.md
     - card:2026-09-21/news_02.md
+  direction_review_excluded:
+    HO=F: 'Sanzioni USA su Rosneft e Lukoil annunciate a mercato chiuso: la reazione
+      cade sulla seduta del 23/10. Datazione da verificare anche per la revisione
+      su BZ=F. Revisione Claude 2026-10-18.'
   directions_local:
   - neg
   - pos
@@ -15831,6 +15903,7 @@ episodes:
     - card:2026-10-14/news_01.md
     - card:2026-10-15/news_02.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -15926,7 +15999,7 @@ episodes:
   - oil_supply_shock
   - safe_haven_flows
   - shipping_chokepoint
-  n_sources: 34
+  n_sources: 35
   events:
   - event_id: 2026-03-02:commodity_energy:-
     geo: ''
@@ -15987,6 +16060,7 @@ episodes:
     - card:2026-10-14/news_01.md
     - card:2026-10-15/news_02.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -16167,6 +16241,15 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-17/news_01.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - oil_supply_shock
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-18/news_01.md
       subthemes_local:
       - hormuz
       - iran
@@ -17240,6 +17323,7 @@ episodes:
     - card:2026-10-12/news_01.md
     - card:2026-10-14/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -17274,7 +17358,7 @@ episodes:
   - military_escalation
   - oil_supply_shock
   - supply_disruption
-  n_sources: 6
+  n_sources: 7
   events:
   - event_id: 2026-03-20:commodity_energy:-
     geo: ''
@@ -17294,6 +17378,7 @@ episodes:
     - card:2026-10-12/news_01.md
     - card:2026-10-14/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -17331,6 +17416,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-17/news_01.md
+      subthemes_local:
+      - oil_supply_shock
+      - supply_disruption
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-18/news_01.md
       subthemes_local:
       - oil_supply_shock
       - supply_disruption
@@ -17382,6 +17474,7 @@ episodes:
     - card:2026-10-13/news_01.md
     - card:2026-10-14/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -17411,7 +17504,7 @@ episodes:
   subthemes_local:
   - hormuz
   - military_escalation
-  n_sources: 13
+  n_sources: 14
   events:
   - event_id: 2026-03-23:commodity_energy:-
     geo: ''
@@ -17434,6 +17527,7 @@ episodes:
     - card:2026-10-13/news_01.md
     - card:2026-10-14/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -17523,6 +17617,13 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-10-18/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -17563,6 +17664,7 @@ episodes:
     - card:2026-10-14/news_01.md
     - card:2026-10-15/news_02.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
   directions_local:
   - neg
@@ -17599,7 +17701,7 @@ episodes:
   - iran
   - military_escalation
   - shipping_chokepoint
-  n_sources: 27
+  n_sources: 28
   events:
   - event_id: 2026-03-27:commodity_energy:-
     geo: ''
@@ -17638,6 +17740,7 @@ episodes:
     - card:2026-10-14/news_01.md
     - card:2026-10-15/news_02.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-23/news_01.md
@@ -17794,6 +17897,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-17/news_01.md
+      subthemes_local:
+      - hormuz
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-18/news_01.md
       subthemes_local:
       - hormuz
       - shipping_chokepoint
@@ -18631,6 +18741,7 @@ episodes:
     - card:2026-10-12/news_01.md
     - card:2026-10-13/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -18697,7 +18808,7 @@ episodes:
   - negotiation_track
   - oil_supply_shock
   - sanctions
-  n_sources: 25
+  n_sources: 26
   events:
   - event_id: 2026-04-13:commodity_energy:-
     geo: ''
@@ -18739,6 +18850,7 @@ episodes:
     - card:2026-10-13/news_01.md
     - card:2026-10-14/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -18864,6 +18976,14 @@ episodes:
       subthemes_local: []
       directions_by_reference: {}
     - source: card:2026-10-17/news_01.md
+      subthemes_local:
+      - hormuz
+      - negotiation_track
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-18/news_01.md
       subthemes_local:
       - hormuz
       - negotiation_track
@@ -19430,6 +19550,7 @@ episodes:
     - card:2026-10-07/news_01.md
     - card:2026-10-09/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     CRACK_321:
     - card:2026-10-17/news_02.md
@@ -19492,7 +19613,7 @@ episodes:
   - refinery_products
   - refinery_strike
   - shipping_chokepoint
-  n_sources: 33
+  n_sources: 34
   events:
   - event_id: 2026-04-18:commodity_energy:-
     geo: ''
@@ -19543,6 +19664,7 @@ episodes:
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_01.md
     - card:2026-10-17/news_02.md
+    - card:2026-10-18/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -19691,6 +19813,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         CRACK_321:
+        - pos
+    - source: card:2026-10-18/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -19915,6 +20044,7 @@ episodes:
     - card:2026-10-10/news_01.md
     - card:2026-10-14/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -19945,7 +20075,7 @@ episodes:
   - hormuz
   - negotiation_track
   - sanctions
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2026-04-29:commodity_energy:-
     geo: ''
@@ -19964,6 +20094,7 @@ episodes:
     - card:2026-10-10/news_01.md
     - card:2026-10-14/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -20018,6 +20149,14 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-17/news_01.md
+      subthemes_local:
+      - hormuz
+      - negotiation_track
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-18/news_01.md
       subthemes_local:
       - hormuz
       - negotiation_track
@@ -21569,6 +21708,7 @@ episodes:
     - card:2026-10-13/news_01.md
     - card:2026-10-14/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -21598,7 +21738,7 @@ episodes:
   subthemes_local:
   - hormuz
   - military_escalation
-  n_sources: 13
+  n_sources: 14
   events:
   - event_id: 2026-06-22:commodity_energy:-
     geo: ''
@@ -21621,6 +21761,7 @@ episodes:
     - card:2026-10-13/news_01.md
     - card:2026-10-14/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -21704,6 +21845,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-17/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-18/news_01.md
       subthemes_local:
       - hormuz
       - military_escalation
@@ -22007,6 +22155,7 @@ episodes:
     - card:2026-10-14/news_01.md
     - card:2026-10-15/news_02.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22043,7 +22192,7 @@ episodes:
   - hormuz
   - military_escalation
   - shipping_chokepoint
-  n_sources: 15
+  n_sources: 16
   events:
   - event_id: 2026-07-07:commodity_energy:-
     geo: ''
@@ -22072,6 +22221,7 @@ episodes:
     - card:2026-10-14/news_01.md
     - card:2026-10-15/news_02.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22187,6 +22337,14 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-10-18/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22228,6 +22386,7 @@ episodes:
     - card:2026-10-07/news_01.md
     - card:2026-10-14/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22275,7 +22434,7 @@ episodes:
   - sanctions
   - sanctions_product_ban
   - supply_disruption
-  n_sources: 6
+  n_sources: 7
   events:
   - event_id: 2026-07-08:commodity_energy:-
     geo: ''
@@ -22299,6 +22458,7 @@ episodes:
     - card:2026-10-07/news_01.md
     - card:2026-10-14/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -22329,6 +22489,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-17/news_01.md
+      subthemes_local:
+      - military_escalation
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-18/news_01.md
       subthemes_local:
       - military_escalation
       - sanctions
@@ -22383,6 +22550,7 @@ episodes:
     - card:2026-10-14/news_01.md
     - card:2026-10-15/news_02.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22414,7 +22582,7 @@ episodes:
   - military_escalation
   - sanctions
   - shipping_chokepoint
-  n_sources: 14
+  n_sources: 15
   events:
   - event_id: 2026-07-13:commodity_energy:-
     geo: ''
@@ -22440,6 +22608,7 @@ episodes:
     - card:2026-10-14/news_01.md
     - card:2026-10-15/news_02.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22531,6 +22700,14 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-17/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-18/news_01.md
       subthemes_local:
       - hormuz
       - military_escalation
@@ -22960,6 +23137,7 @@ episodes:
     - card:2026-10-13/news_01.md
     - card:2026-10-14/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22989,7 +23167,7 @@ episodes:
   subthemes_local:
   - hormuz
   - military_escalation
-  n_sources: 13
+  n_sources: 14
   events:
   - event_id: 2026-09-01:commodity_energy:-
     geo: ''
@@ -23012,6 +23190,7 @@ episodes:
     - card:2026-10-13/news_01.md
     - card:2026-10-14/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23101,6 +23280,13 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-10-18/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23163,6 +23349,7 @@ episodes:
     - card:2026-10-14/news_01.md
     - card:2026-10-15/news_02.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23198,7 +23385,7 @@ episodes:
   - military_escalation
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 14
+  n_sources: 15
   events:
   - event_id: 2026-09-09:commodity_energy:-
     geo: ''
@@ -23226,6 +23413,7 @@ episodes:
     - card:2026-10-14/news_01.md
     - card:2026-10-15/news_02.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23330,6 +23518,14 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-17/news_01.md
+      subthemes_local:
+      - military_escalation
+      - shipping_chokepoint
+      - supply_disruption
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-18/news_01.md
       subthemes_local:
       - military_escalation
       - shipping_chokepoint
@@ -23474,6 +23670,7 @@ episodes:
     - card:2026-10-10/news_01.md
     - card:2026-10-14/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23537,7 +23734,7 @@ episodes:
   - safe_haven_flows
   - sanctions
   - supply_disruption
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2026-09-28:commodity_energy:-
     geo: ''
@@ -23572,6 +23769,7 @@ episodes:
     - card:2026-10-10/news_01.md
     - card:2026-10-14/news_01.md
     - card:2026-10-17/news_01.md
+    - card:2026-10-18/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23626,6 +23824,14 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-17/news_01.md
+      subthemes_local:
+      - hormuz
+      - negotiation_track
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-18/news_01.md
       subthemes_local:
       - hormuz
       - negotiation_track

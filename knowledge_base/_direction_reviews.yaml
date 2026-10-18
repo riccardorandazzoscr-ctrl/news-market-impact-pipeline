@@ -11184,3 +11184,57 @@ reviews:
     Statement on Monetary Policy del 28/4). Il 30/4 c''è solo l''intervento sul cambio, che non tocca il
     canale dei tassi. Evento mal datato. Revisione Claude 2026-10-17.'
   status: excluded
+- date: '2022-02-24'
+  theme: commodity_energy
+  reference: HO=F
+  source: 2026-08-20/news_04.md
+  reason: 'Invasione su vasta scala dell''Ucraina: rischio immediato sull''export russo di gasolio verso l''Europa, il maggiore fornitore; sorpresa nella portata. Revisione Claude 2026-10-18.'
+  direction: pos
+  mechanism:
+  - sanctions
+- date: '2022-03-08'
+  theme: commodity_energy
+  reference: HO=F
+  source: 2026-08-20/news_04.md
+  reason: 'Bando USA sulle importazioni di energia russa, prodotti compresi: una fonte di prodotti tolta dal mercato occidentale. Revisione Claude 2026-10-18.'
+  direction: pos
+  mechanism:
+  - sanctions
+- date: '2025-01-10'
+  theme: commodity_energy
+  reference: HO=F
+  source: 2026-08-20/news_04.md
+  reason: 'Sanzioni USA su Surgutneftegas, Gazprom Neft e sulla flotta di petroliere: export russo, gasolio compreso, atteso più difficile. Revisione Claude 2026-10-18.'
+  direction: pos
+  mechanism:
+  - sanctions
+- date: '2022-12-05'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Entrata in vigore programmata dell''embargo sul greggio e del price cap, nota da mesi: scontata (regola della sorpresa, come il 2023-02-06), e riguarda il greggio, non i prodotti. Revisione Claude 2026-10-18.'
+  status: excluded
+- date: '2023-02-05'
+  theme: commodity_energy
+  reference: HO=F
+  source: 2026-08-20/news_04.md
+  reason: 'Domenica: la prima seduta è il 2023-02-06, già rivista su HO=F (entrata in vigore scontata). Revisione Claude 2026-10-18.'
+  status: excluded
+- date: '2024-03-01'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Divieto russo di esportare benzina: tocca la benzina (RB=F, CRACK_321), non il gasolio. Revisione Claude 2026-10-18.'
+  status: excluded
+- date: '2022-06-14'
+  theme: commodity_energy
+  reference: HO=F
+  source: 2026-08-20/news_04.md
+  reason: 'Taglio di Nord Stream 1: canale del gas europeo, nessuna trasmissione univoca al gasolio. Revisione Claude 2026-10-18.'
+  status: excluded
+- date: '2025-10-22'
+  theme: commodity_energy
+  reference: HO=F
+  source: 2026-08-20/news_04.md
+  reason: 'Sanzioni USA su Rosneft e Lukoil annunciate a mercato chiuso: la reazione cade sulla seduta del 23/10. Datazione da verificare anche per la revisione su BZ=F. Revisione Claude 2026-10-18.'
+  status: excluded
