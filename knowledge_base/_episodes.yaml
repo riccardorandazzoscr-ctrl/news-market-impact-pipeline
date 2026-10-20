@@ -1,4 +1,4 @@
-generated_at: '2026-10-18T21:44:37'
+generated_at: '2026-10-20T07:47:17'
 num_episodes: 1377
 episodes:
 - date: '1984-01-01'
@@ -6525,6 +6525,7 @@ episodes:
     - card:2026-10-07/news_02.md
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -6549,7 +6550,7 @@ episodes:
   - refinery_products
   - refinery_strike
   - sanctions
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2022-06-22:commodity_energy:-
     geo: ''
@@ -6570,6 +6571,7 @@ episodes:
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -6615,6 +6617,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         CRACK_321:
+        - pos
+    - source: card:2026-10-19/news_01.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        HO=F:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -8807,8 +8816,9 @@ episodes:
       directions_by_reference: {}
 - date: '2024-02-26'
   theme: commodity_energy
-  direction: ''
-  directions: []
+  direction: pos
+  directions:
+  - pos
   directions_declared: []
   directions_by_reference:
     BZ=F:
@@ -8839,7 +8849,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - upstream_export_strike
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2024-02-26:commodity_energy:-
     geo: ''
@@ -8853,10 +8863,14 @@ episodes:
       CRACK_321:
       - pos
     sources:
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     evidence:
+    - source: card:2026-10-19/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -8962,6 +8976,7 @@ episodes:
     - card:2026-10-07/news_02.md
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -8983,7 +8998,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2024-03-12:commodity_energy:-
     geo: ''
@@ -9003,6 +9018,7 @@ episodes:
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -9050,6 +9066,13 @@ episodes:
       directions_by_reference:
         CRACK_321:
         - pos
+    - source: card:2026-10-19/news_01.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        HO=F:
+        - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -9087,6 +9110,7 @@ episodes:
     - card:2026-10-02/news_02.md
     - card:2026-10-07/news_02.md
     - card:2026-10-14/news_03.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -9121,7 +9145,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 15
+  n_sources: 16
   events:
   - event_id: 2024-03-13:commodity_energy:-
     geo: ''
@@ -9152,6 +9176,7 @@ episodes:
     - card:2026-10-07/news_02.md
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -9231,6 +9256,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         CRACK_321:
+        - pos
+    - source: card:2026-10-19/news_01.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        HO=F:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -10230,6 +10262,7 @@ episodes:
     - card:2026-10-07/news_02.md
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -10251,7 +10284,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2024-05-11:commodity_energy:-
     geo: ''
@@ -10271,6 +10304,7 @@ episodes:
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -10316,6 +10350,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         CRACK_321:
+        - pos
+    - source: card:2026-10-19/news_01.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        HO=F:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -11960,6 +12001,7 @@ episodes:
     - card:2026-10-07/news_02.md
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -11981,7 +12023,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2025-01-26:commodity_energy:-
     geo: ''
@@ -12001,6 +12043,7 @@ episodes:
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12046,6 +12089,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         CRACK_321:
+        - pos
+    - source: card:2026-10-19/news_01.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        HO=F:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -12085,6 +12135,7 @@ episodes:
     - card:2026-10-07/news_02.md
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12106,7 +12157,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2025-01-31:commodity_energy:-
     geo: ''
@@ -12126,6 +12177,7 @@ episodes:
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12171,6 +12223,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         CRACK_321:
+        - pos
+    - source: card:2026-10-19/news_01.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        HO=F:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -12355,6 +12414,7 @@ episodes:
     - card:2026-10-07/news_02.md
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12376,7 +12436,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2025-05-15:commodity_energy:-
     geo: ''
@@ -12396,6 +12456,7 @@ episodes:
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12441,6 +12502,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         CRACK_321:
+        - pos
+    - source: card:2026-10-19/news_01.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        HO=F:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -14166,6 +14234,7 @@ episodes:
     - card:2026-10-07/news_02.md
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -14187,7 +14256,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2025-08-27:commodity_energy:-
     geo: ''
@@ -14207,6 +14276,7 @@ episodes:
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -14252,6 +14322,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         CRACK_321:
+        - pos
+    - source: card:2026-10-19/news_01.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        HO=F:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -19613,7 +19690,7 @@ episodes:
   - refinery_products
   - refinery_strike
   - shipping_chokepoint
-  n_sources: 34
+  n_sources: 35
   events:
   - event_id: 2026-04-18:commodity_energy:-
     geo: ''
@@ -19665,6 +19742,7 @@ episodes:
     - card:2026-10-17/news_01.md
     - card:2026-10-17/news_02.md
     - card:2026-10-18/news_01.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -19821,6 +19899,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-10-19/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -20928,7 +21009,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 23
+  n_sources: 24
   events:
   - event_id: 2026-05-29:commodity_energy:-
     geo: ''
@@ -20963,6 +21044,7 @@ episodes:
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -21051,6 +21133,9 @@ episodes:
       directions_by_reference:
         CRACK_321:
         - pos
+    - source: card:2026-10-19/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -21518,7 +21603,7 @@ episodes:
   - negotiation_track
   - refinery_products
   - refinery_strike
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2026-06-18:commodity_energy:-
     geo: ''
@@ -21548,6 +21633,7 @@ episodes:
     - card:2026-10-07/news_02.md
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -21597,6 +21683,9 @@ episodes:
       directions_by_reference:
         CRACK_321:
         - pos
+    - source: card:2026-10-19/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -21988,6 +22077,7 @@ episodes:
     - card:2026-10-07/news_02.md
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -22021,7 +22111,7 @@ episodes:
   - refinery_products
   - refinery_strike
   - strategic_reserve_release
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2026-07-06:commodity_energy:-
     geo: ''
@@ -22042,6 +22132,7 @@ episodes:
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -22087,6 +22178,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         CRACK_321:
+        - pos
+    - source: card:2026-10-19/news_01.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        HO=F:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -22805,6 +22903,7 @@ episodes:
     - card:2026-10-07/news_02.md
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -22826,7 +22925,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2026-07-30:commodity_energy:-
     geo: ''
@@ -22846,6 +22945,7 @@ episodes:
     - card:2026-10-08/news_03.md
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
+    - card:2026-10-19/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -22892,6 +22992,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         CRACK_321:
+        - pos
+    - source: card:2026-10-19/news_01.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        HO=F:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -31448,12 +31555,14 @@ episodes:
     - card:2026-09-21/news_05.md
     - card:2026-09-24/news_02.md
     - card:2026-10-16/news_01.md
+    - card:2026-10-19/news_02.md
   directions_local:
   - pos
   declared: true
   subthemes:
   - financial_warfare
   - hormuz
+  - infrastructure_attack
   - iran
   - military_escalation
   - sanctions
@@ -31464,7 +31573,7 @@ episodes:
   - military_escalation
   - sanctions
   - shipping_chokepoint
-  n_sources: 6
+  n_sources: 7
   events:
   - event_id: 2011-12-27:geopolitical:-
     geo: ''
@@ -31484,6 +31593,7 @@ episodes:
     - card:2026-09-21/news_05.md
     - card:2026-09-24/news_02.md
     - card:2026-10-16/news_01.md
+    - card:2026-10-19/news_02.md
     evidence:
     - source: card:2026-09-17/news_02.md
       subthemes_local:
@@ -31529,6 +31639,15 @@ episodes:
       - hormuz
       - iran
       - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-19/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - sanctions
       directions_by_reference:
         BZ=F:
         - pos
@@ -34770,7 +34889,9 @@ episodes:
   - coup
   - emerging_markets
   - indonesia
+  - infrastructure_attack
   - maritime_dispute
+  - military_escalation
   - myanmar
   - philippines
   - shipping_chokepoint
@@ -34781,7 +34902,7 @@ episodes:
   subthemes_local:
   - infrastructure_attack
   - shipping_chokepoint
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2019-05-12:geopolitical:-
     geo: ''
@@ -34793,6 +34914,7 @@ episodes:
       - pos
     sources:
     - card:2026-09-21/news_05.md
+    - card:2026-10-19/news_02.md
     - 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
       (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi
       storici (2010–2026).md'
@@ -34804,6 +34926,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-10-19/news_02.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi
         storici (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed
         episodi storici (2010–2026).md'
@@ -34827,6 +34952,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-09-21/news_05.md
+    - card:2026-10-19/news_02.md
     ^GSPC:
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
@@ -34848,12 +34974,14 @@ episodes:
   - gas
   - hormuz
   - hormuz_oil_risk
+  - infrastructure_attack
   - iran
   - iran_hormuz
   - iran_hormuz_chokepoint
   - latam_elections
   - middle_east
   - middle_east_oil_premium
+  - military_escalation
   - multilateral_escalation
   - naval_blockade
   - oil_shock
@@ -34880,14 +35008,16 @@ episodes:
   - us_tariffs_regime_shift_section_122_lapse_→_301
   subthemes_local:
   - infrastructure_attack
+  - shipping_chokepoint
   - tariff_escalation
   - upstream_export_strike
-  n_sources: 24
+  n_sources: 25
   events:
   - event_id: 2019-05-13:geopolitical:-
     geo: ''
     subthemes_local:
     - infrastructure_attack
+    - shipping_chokepoint
     - tariff_escalation
     - upstream_export_strike
     directions_by_reference:
@@ -34919,6 +35049,7 @@ episodes:
     - card:2026-08-16/news_03.md
     - card:2026-08-26/news_05.md
     - card:2026-09-21/news_05.md
+    - card:2026-10-19/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     evidence:
@@ -34995,6 +35126,13 @@ episodes:
       subthemes_local:
       - infrastructure_attack
       - upstream_export_strike
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-19/news_02.md
+      subthemes_local:
+      - infrastructure_attack
+      - shipping_chokepoint
       directions_by_reference:
         BZ=F:
         - pos
@@ -35079,6 +35217,7 @@ episodes:
     - card:2026-09-21/news_01.md
     - card:2026-09-21/news_05.md
     - card:2026-09-24/news_02.md
+    - card:2026-10-19/news_02.md
   directions_local:
   - neg
   - pos
@@ -35091,6 +35230,7 @@ episodes:
   - gas
   - hormuz
   - hormuz_oil_risk
+  - infrastructure_attack
   - iran
   - iran_hormuz
   - iran_hormuz_chokepoint
@@ -35117,7 +35257,7 @@ episodes:
   - military_escalation
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 28
+  n_sources: 29
   events:
   - event_id: 2019-06-13:geopolitical:-
     geo: ''
@@ -35161,6 +35301,7 @@ episodes:
     - card:2026-09-21/news_01.md
     - card:2026-09-21/news_05.md
     - card:2026-09-24/news_02.md
+    - card:2026-10-19/news_02.md
     evidence:
     - source: card:2026-06-03/news_01.md
       subthemes_local:
@@ -35285,6 +35426,13 @@ episodes:
     - source: card:2026-09-24/news_02.md
       subthemes_local:
       - hormuz
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-19/news_02.md
+      subthemes_local:
+      - infrastructure_attack
       - shipping_chokepoint
       directions_by_reference:
         BZ=F:
@@ -36045,6 +36193,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-09-21/news_05.md
+    - card:2026-10-19/news_02.md
   directions_local:
   - neg
   - pos
@@ -36054,6 +36203,7 @@ episodes:
   - difesa
   - fed_hawkish_impulse
   - hormuz
+  - infrastructure_attack
   - iran_hormuz
   - iran_hormuz_us_conflict
   - middle_east
@@ -36070,7 +36220,7 @@ episodes:
   - infrastructure_attack
   - military_escalation
   - oil_supply_shock
-  n_sources: 11
+  n_sources: 12
   events:
   - event_id: 2019-09-14:geopolitical:-
     geo: ''
@@ -36093,6 +36243,7 @@ episodes:
     - card:2026-08-28/news_01.md
     - card:2026-09-02/news_06.md
     - card:2026-09-21/news_05.md
+    - card:2026-10-19/news_02.md
     evidence:
     - source: card:2026-07-16/news_01.md
       subthemes_local: []
@@ -36136,6 +36287,13 @@ episodes:
       - military_escalation
       directions_by_reference: {}
     - source: card:2026-09-21/news_05.md
+      subthemes_local:
+      - infrastructure_attack
+      - oil_supply_shock
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-19/news_02.md
       subthemes_local:
       - infrastructure_attack
       - oil_supply_shock
@@ -36791,6 +36949,7 @@ episodes:
     - card:2026-09-21/news_01.md
     - card:2026-09-24/news_02.md
     - card:2026-10-16/news_01.md
+    - card:2026-10-19/news_02.md
   directions_local:
   - neg
   - pos
@@ -36803,6 +36962,7 @@ episodes:
   - gas
   - hormuz
   - hormuz_oil_risk
+  - infrastructure_attack
   - iran
   - iran_hormuz
   - iran_hormuz_chokepoint
@@ -36824,7 +36984,7 @@ episodes:
   subthemes_local:
   - iran
   - military_escalation
-  n_sources: 28
+  n_sources: 29
   events:
   - event_id: 2020-01-03:geopolitical:-
     geo: ''
@@ -36863,6 +37023,7 @@ episodes:
     - card:2026-09-21/news_01.md
     - card:2026-09-24/news_02.md
     - card:2026-10-16/news_01.md
+    - card:2026-10-19/news_02.md
     evidence:
     - source: card:2026-06-03/news_01.md
       subthemes_local: []
@@ -36977,6 +37138,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-16/news_01.md
+      subthemes_local:
+      - iran
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-19/news_02.md
       subthemes_local:
       - iran
       - military_escalation
@@ -38244,7 +38412,7 @@ episodes:
   - risk_off
   - sanctions
   - supply_disruption
-  n_sources: 34
+  n_sources: 35
   events:
   - event_id: 2022-02-24:geopolitical:-
     geo: ''
@@ -38312,6 +38480,7 @@ episodes:
     - card:2026-09-21/news_05.md
     - card:2026-09-26/news_03.md
     - card:2026-10-14/news_02.md
+    - card:2026-10-19/news_02.md
     - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
       ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
       del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
@@ -38472,6 +38641,9 @@ episodes:
       directions_by_reference:
         ZW=F:
         - pos
+    - source: card:2026-10-19/news_02.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano
         e trasmissione ai mercati — regime ed episodi storici (2013–presente)/Il corridoio
         cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
@@ -41551,9 +41723,11 @@ episodes:
   - gas_supply_shock
   - hormuz
   - hormuz_oil_risk
+  - infrastructure_attack
   - iran
   - iran_hormuz_chokepoint
   - middle_east
+  - military_escalation
   - nato
   - oil_shock
   - oil_supply
@@ -41570,7 +41744,7 @@ episodes:
   subthemes_local:
   - military_escalation
   - risk_off
-  n_sources: 12
+  n_sources: 13
   events:
   - event_id: 2023-06-23:geopolitical:-
     geo: ''
@@ -41594,6 +41768,7 @@ episodes:
     - card:2026-07-17/news_01.md
     - card:2026-07-23/news_02.md
     - card:2026-07-28/news_04.md
+    - card:2026-10-19/news_02.md
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
       — mappa di episodi datati per event study (2022–2026).md
@@ -41629,6 +41804,9 @@ episodes:
       subthemes_local: []
       directions_by_reference: {}
     - source: card:2026-07-28/news_04.md
+      subthemes_local: []
+      directions_by_reference: {}
+    - source: card:2026-10-19/news_02.md
       subthemes_local: []
       directions_by_reference: {}
     - source: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi
@@ -48804,6 +48982,7 @@ episodes:
     - card:2026-09-21/news_05.md
     - card:2026-09-24/news_02.md
     - card:2026-10-16/news_01.md
+    - card:2026-10-19/news_02.md
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
       — mappa di episodi datati per event study (2022–2026).md
@@ -48838,6 +49017,7 @@ episodes:
   - gas_supply_shock
   - hormuz
   - hormuz_oil_risk
+  - infrastructure_attack
   - iran
   - iran_hormuz
   - iran_hormuz_chokepoint
@@ -48877,7 +49057,7 @@ episodes:
   - iran
   - military_escalation
   - oil_supply_shock
-  n_sources: 42
+  n_sources: 43
   events:
   - event_id: 2025-06-13:geopolitical:-
     geo: ''
@@ -48935,6 +49115,7 @@ episodes:
     - card:2026-09-21/news_05.md
     - card:2026-09-24/news_02.md
     - card:2026-10-16/news_01.md
+    - card:2026-10-19/news_02.md
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
       — mappa di episodi datati per event study (2022–2026).md
@@ -49094,6 +49275,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-16/news_01.md
+      subthemes_local:
+      - iran
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-19/news_02.md
       subthemes_local:
       - iran
       - military_escalation
@@ -53726,6 +53914,7 @@ episodes:
   - eurozone_fragmentation
   - gas_supply_shock
   - hormuz
+  - infrastructure_attack
   - iran
   - maritime_dispute
   - middle_east
@@ -53767,7 +53956,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - ukraine
-  n_sources: 45
+  n_sources: 46
   events:
   - event_id: 2026-02-28:geopolitical:-
     geo: ''
@@ -53832,6 +54021,7 @@ episodes:
     - card:2026-09-12/news_01.md
     - card:2026-09-24/news_02.md
     - card:2026-10-16/news_01.md
+    - card:2026-10-19/news_02.md
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
       — mappa di episodi datati per event study (2022–2026).md
@@ -54001,6 +54191,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-10-19/news_02.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi
         datati per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime
         sanzioni — mappa di episodi datati per event study (2022–2026).md
@@ -59981,9 +60174,13 @@ episodes:
   directions_declared:
   - neg
   directions_by_reference:
+    CNY=X:
+    - pos
     HG=F:
     - neg
   direction_sources:
+    CNY=X:
+    - card:2026-09-15/news_05.md
     HG=F:
     - card:2026-09-15/news_05.md
   directions_local:
@@ -60003,6 +60200,8 @@ episodes:
     - activity_growth
     - cny
     directions_by_reference:
+      CNY=X:
+      - pos
       HG=F:
       - neg
     sources:
@@ -60015,6 +60214,8 @@ episodes:
       directions_by_reference:
         HG=F:
         - neg
+        CNY=X:
+        - pos
 - date: '2015-11-30'
   theme: macro_data
   direction: neg
@@ -61575,9 +61776,13 @@ episodes:
   directions_declared:
   - neg
   directions_by_reference:
+    CNY=X:
+    - pos
     HG=F:
     - neg
   direction_sources:
+    CNY=X:
+    - card:2026-09-15/news_05.md
     HG=F:
     - card:2026-09-15/news_05.md
   directions_local:
@@ -61597,6 +61802,8 @@ episodes:
     - activity_growth
     - cny
     directions_by_reference:
+      CNY=X:
+      - pos
       HG=F:
       - neg
     sources:
@@ -61609,6 +61816,8 @@ episodes:
       directions_by_reference:
         HG=F:
         - neg
+        CNY=X:
+        - pos
 - date: '2018-12-19'
   theme: macro_data
   direction: neg
@@ -84385,12 +84594,27 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    CNY=X:
+    - neg
     EEM:
+    - pos
+    HG=F:
+    - pos
+    KWEB:
     - pos
     ^NDX:
     - pos
   direction_sources:
+    CNY=X:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
     EEM:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
+    HG=F:
+    - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
+      e politica economica cinese — regime ed episodi storici (2022–2026).md
+    KWEB:
     - kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
       e politica economica cinese — regime ed episodi storici (2022–2026).md
     ^NDX:
@@ -84445,7 +84669,13 @@ episodes:
     - cny
     - pboc
     directions_by_reference:
+      CNY=X:
+      - neg
       EEM:
+      - pos
+      HG=F:
+      - pos
+      KWEB:
       - pos
       ^NDX:
       - pos
@@ -84531,6 +84761,12 @@ episodes:
         EEM:
         - pos
         ^NDX:
+        - pos
+        CNY=X:
+        - neg
+        HG=F:
+        - pos
+        KWEB:
         - pos
 - date: '2024-09-26'
   theme: macro_data
@@ -129632,6 +129868,7 @@ episodes:
     - card:2026-09-29/news_03.md
     - card:2026-10-09/news_03.md
     - card:2026-10-15/news_03.md
+    - card:2026-10-19/news_03.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
     ^NDX:
@@ -129643,6 +129880,7 @@ episodes:
   subthemes:
   - ai
   - ai_capex
+  - ai_semis
   - chips
   - earnings
   - earnings_guidance_shock
@@ -129651,6 +129889,7 @@ episodes:
   - hyperscaler_capex
   - market_concentration
   - megacap_earnings
+  - model_capability_shock
   - nvidia
   - regulatory_anticipation
   - safety_pause
@@ -129660,7 +129899,7 @@ episodes:
   subthemes_local:
   - earnings_shock
   - valuation_derisking
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2018-11-16:structural_themes:-
     geo: ''
@@ -129677,6 +129916,7 @@ episodes:
     - card:2026-09-29/news_03.md
     - card:2026-10-09/news_03.md
     - card:2026-10-15/news_03.md
+    - card:2026-10-19/news_03.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
     evidence:
@@ -129698,6 +129938,13 @@ episodes:
         SOXX:
         - neg
     - source: card:2026-10-15/news_03.md
+      subthemes_local:
+      - earnings_shock
+      - valuation_derisking
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: card:2026-10-19/news_03.md
       subthemes_local:
       - earnings_shock
       - valuation_derisking
@@ -130631,6 +130878,7 @@ episodes:
   - kospi
   - megacap_earnings
   - memory_cycle
+  - model_capability_shock
   - profit_taking
   - semiconductor
   - semis
@@ -130640,7 +130888,7 @@ episodes:
   subthemes_local:
   - memory_cycle
   - valuation_derisking
-  n_sources: 18
+  n_sources: 19
   events:
   - event_id: 2021-11-30:structural_themes:-
     geo: ''
@@ -130669,6 +130917,7 @@ episodes:
     - card:2026-08-29/news_05.md
     - card:2026-10-09/news_03.md
     - card:2026-10-15/news_03.md
+    - card:2026-10-19/news_03.md
     evidence:
     - source: card:2026-07-23/news_03.md
       subthemes_local: []
@@ -130742,6 +130991,9 @@ episodes:
       directions_by_reference:
         SOXX:
         - neg
+    - source: card:2026-10-19/news_03.md
+      subthemes_local: []
+      directions_by_reference: {}
 - date: '2021-12-01'
   theme: structural_themes
   direction: neg
@@ -130829,10 +131081,12 @@ episodes:
   declared: true
   subthemes:
   - ai_capex
+  - ai_semis
+  - model_capability_shock
   - valuation_derisking
   subthemes_local:
   - valuation_derisking
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2022-01-05:structural_themes:-
     geo: ''
@@ -130846,6 +131100,7 @@ episodes:
     sources:
     - card:2026-09-15/news_04.md
     - card:2026-10-15/news_03.md
+    - card:2026-10-19/news_03.md
     evidence:
     - source: card:2026-09-15/news_04.md
       subthemes_local:
@@ -130861,6 +131116,9 @@ episodes:
       directions_by_reference:
         SOXX:
         - neg
+    - source: card:2026-10-19/news_03.md
+      subthemes_local: []
+      directions_by_reference: {}
 - date: '2022-04-26'
   theme: structural_themes
   direction: mixed
@@ -131085,10 +131343,12 @@ episodes:
   declared: true
   subthemes:
   - ai_capex
+  - ai_semis
+  - model_capability_shock
   - valuation_derisking
   subthemes_local:
   - valuation_derisking
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2022-09-13:structural_themes:-
     geo: ''
@@ -131102,6 +131362,7 @@ episodes:
     sources:
     - card:2026-09-15/news_04.md
     - card:2026-10-15/news_03.md
+    - card:2026-10-19/news_03.md
     evidence:
     - source: card:2026-09-15/news_04.md
       subthemes_local:
@@ -131117,6 +131378,9 @@ episodes:
       directions_by_reference:
         SOXX:
         - neg
+    - source: card:2026-10-19/news_03.md
+      subthemes_local: []
+      directions_by_reference: {}
 - date: '2022-09-29'
   theme: structural_themes
   direction: neutral
@@ -136224,6 +136488,7 @@ episodes:
     - card:2026-09-29/news_03.md
     - card:2026-10-09/news_03.md
     - card:2026-10-15/news_03.md
+    - card:2026-10-19/news_03.md
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
       capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
@@ -136282,6 +136547,7 @@ episodes:
   - mega_cap_derisking
   - megacap_earnings
   - memory_cycle
+  - model_capability_shock
   - nand
   - nvidia
   - power_bottleneck
@@ -136310,7 +136576,7 @@ episodes:
   - hyperscaler_capex
   - model_capability_shock
   - valuation_derisking
-  n_sources: 54
+  n_sources: 55
   events:
   - event_id: 2025-01-27:structural_themes:-
     geo: ''
@@ -136381,6 +136647,7 @@ episodes:
     - card:2026-09-29/news_03.md
     - card:2026-10-09/news_03.md
     - card:2026-10-15/news_03.md
+    - card:2026-10-19/news_03.md
     - kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo
       della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
@@ -136605,6 +136872,13 @@ episodes:
     - source: card:2026-10-15/news_03.md
       subthemes_local:
       - ai_capex
+      - model_capability_shock
+      - valuation_derisking
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: card:2026-10-19/news_03.md
+      subthemes_local:
       - model_capability_shock
       - valuation_derisking
       directions_by_reference:
@@ -137669,6 +137943,7 @@ episodes:
   - mega_cap_derisking
   - megacap_earnings
   - memory_cycle
+  - model_capability_shock
   - profit_taking
   - rotation
   - semiconductor
@@ -137684,7 +137959,7 @@ episodes:
   subthemes_local:
   - tariff_escalation
   - valuation_derisking
-  n_sources: 35
+  n_sources: 36
   events:
   - event_id: 2025-04-04:structural_themes:-
     geo: ''
@@ -137730,6 +138005,7 @@ episodes:
     - card:2026-08-26/news_04.md
     - card:2026-08-29/news_05.md
     - card:2026-10-15/news_03.md
+    - card:2026-10-19/news_03.md
     evidence:
     - source: card:2026-06-06/news_02.md
       subthemes_local:
@@ -137858,6 +138134,9 @@ episodes:
       directions_by_reference:
         SOXX:
         - neg
+    - source: card:2026-10-19/news_03.md
+      subthemes_local: []
+      directions_by_reference: {}
 - date: '2025-04-16'
   theme: structural_themes
   direction: neg
@@ -140436,6 +140715,7 @@ episodes:
     SOXX:
     - card:2026-10-09/news_03.md
     - card:2026-10-15/news_03.md
+    - card:2026-10-19/news_03.md
     - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
       ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
       anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
@@ -140460,9 +140740,11 @@ episodes:
   declared: true
   subthemes:
   - ai_capex
+  - ai_semis
   - compute_demand
   - eu_ai_act
   - federal_preemption
+  - model_capability_shock
   - regulatory_anticipation
   - safety_pause
   - valuation_derisking
@@ -140472,7 +140754,7 @@ episodes:
   - concentration_risk
   - safety_pause
   - valuation_derisking
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2026-09-14:structural_themes:-
     geo: ''
@@ -140496,6 +140778,7 @@ episodes:
     sources:
     - card:2026-10-09/news_03.md
     - card:2026-10-15/news_03.md
+    - card:2026-10-19/news_03.md
     - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
       ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
       anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
@@ -140510,6 +140793,14 @@ episodes:
         SOXX:
         - neg
     - source: card:2026-10-15/news_03.md
+      subthemes_local:
+      - ai_capex
+      - concentration_risk
+      - valuation_derisking
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: card:2026-10-19/news_03.md
       subthemes_local:
       - ai_capex
       - concentration_risk
@@ -140601,6 +140892,7 @@ episodes:
     SOXX:
     - card:2026-10-09/news_03.md
     - card:2026-10-15/news_03.md
+    - card:2026-10-19/news_03.md
     - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
       ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
       anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
@@ -140625,9 +140917,11 @@ episodes:
   declared: true
   subthemes:
   - ai_capex
+  - ai_semis
   - compute_demand
   - eu_ai_act
   - federal_preemption
+  - model_capability_shock
   - regulatory_anticipation
   - safety_pause
   - valuation_derisking
@@ -140637,7 +140931,7 @@ episodes:
   - concentration_risk
   - safety_pause
   - valuation_derisking
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2026-09-28:structural_themes:-
     geo: ''
@@ -140661,6 +140955,7 @@ episodes:
     sources:
     - card:2026-10-09/news_03.md
     - card:2026-10-15/news_03.md
+    - card:2026-10-19/news_03.md
     - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
       ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
       anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
@@ -140674,6 +140969,13 @@ episodes:
         SOXX:
         - neg
     - source: card:2026-10-15/news_03.md
+      subthemes_local:
+      - ai_capex
+      - valuation_derisking
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: card:2026-10-19/news_03.md
       subthemes_local:
       - ai_capex
       - valuation_derisking

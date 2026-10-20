@@ -11238,3 +11238,33 @@ reviews:
   source: 2026-08-20/news_04.md
   reason: 'Sanzioni USA su Rosneft e Lukoil annunciate a mercato chiuso: la reazione cade sulla seduta del 23/10. Datazione da verificare anche per la revisione su BZ=F. Revisione Claude 2026-10-18.'
   status: excluded
+- date: '2015-09-13'
+  theme: macro_data
+  reference: CNY=X
+  source: 2026-09-15/news_05.md
+  reason: 'Dati cinesi di agosto 2015 (produzione, vendite al dettaglio) sotto attese, nel pieno della svalutazione: pressione al rialzo su USD/CNY. Revisione Claude 2026-10-19.'
+  direction: pos
+- date: '2018-10-19'
+  theme: macro_data
+  reference: CNY=X
+  source: 2026-09-15/news_05.md
+  reason: 'PIL cinese del terzo trimestre 2018 sotto attese in piena guerra dei dazi: pressione al rialzo su USD/CNY. Revisione Claude 2026-10-19.'
+  direction: pos
+- date: '2024-09-24'
+  theme: macro_data
+  reference: CNY=X
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Pacchetto coordinato PBOC (riserva obbligatoria, tassi, sostegno a immobiliare e azionario): afflussi verso asset cinesi, yuan più forte, pressione al ribasso su USD/CNY. Revisione Claude 2026-10-19.'
+  direction: neg
+- date: '2024-09-24'
+  theme: macro_data
+  reference: HG=F
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Pacchetto di stimolo PBOC: domanda cinese di metalli attesa più alta. Revisione Claude 2026-10-19.'
+  direction: pos
+- date: '2024-09-24'
+  theme: macro_data
+  reference: KWEB
+  source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica cinese — regime ed episodi storici (2022–2026).md
+  reason: 'Pacchetto di stimolo PBOC con sostegno esplicito all''azionario: pressione al rialzo sull''internet cinese. Revisione Claude 2026-10-19.'
+  direction: pos
