@@ -166,6 +166,9 @@ if ! brief_completo; then
   exit 1
 fi
 
+# Stile unico della pipeline (stile.py): sostituisce solo il <style> del modello; tag,
+# classi e testo restano identici, quindi l'impronta del briefing non cambia.
+"$PY" "$PIPE/stile.py" brief "$BRIEF" >> "$LOG" 2>&1 || log "WARN: stile non applicato (brief valido comunque)."
 STORIE=$(grep -o 'class="story"' "$BRIEF" | wc -l | tr -d ' ')
 log "DONE briefing $TODAY pubblicato ($STORIE notizie): $BRIEF"
 

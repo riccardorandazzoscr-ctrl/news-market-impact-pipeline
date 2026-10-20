@@ -512,7 +512,7 @@ def _write_scorecard_html(md_text: str, md_path: Path, label: str) -> Path:
 <body>
   <header class="report-head">
     <div class="date-label">News-to-Market Impact · Feedback loop</div>
-    <h1>🎯 Scorecard previsioni — {label}</h1>
+    <h1>Scorecard previsioni — {label}</h1>
     <p class="subtitle">Verifica a posteriori delle previsioni delle schede contro il realizzato di mercato. Faro = copertura distribuzionale [p25,p75] (ideale ~50%). Statistiche descrittive, non segnali operativi.</p>
   </header>
   <section class="doc">

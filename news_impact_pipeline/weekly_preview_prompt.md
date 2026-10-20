@@ -1,4 +1,4 @@
-# Prompt dell'anteprima settimanale (v1.2, 2026-10-17)
+# Prompt dell'anteprima settimanale (v1.3, 2026-10-19)
 
 > Il job `com.riccardo.newsimpact.weeklypreview` (`run_weekly_preview.sh`) estrae da qui SOLO
 > il blocco fra `=== PROMPT START/END ===` e sostituisce `{{WEEK_DIR}}` con la cartella della
@@ -9,6 +9,8 @@
 > episodi, da dove si misura) e 3–6 hashtag; il commento resta in italiano.
 > v1.1→v1.2 (17/10): il post dice cosa contiene il pool (riga «Pool» e composizione) e scrive
 > i rendimenti dei Treasury in punti base.
+> v1.2→v1.3 (19/10): commento più leggibile — si apre con cos'è l'evento, asset chiamati per
+> nome, pochi numeri, paragrafi brevi (la pagina era troppo densa da leggere).
 
 === PROMPT START ===
 Leggi `{{WEEK_DIR}}/tabelle.md`: è l'anteprima della settimana prossima. Per ogni evento ci
@@ -21,8 +23,14 @@ bozza in inglese):
 
 ## <id dell'evento, copiato dall'intestazione, per esempio 2026-10-29:us_pce>
 ### Commento
-<100–150 parole: cosa distingue i due scenari, su quali asset la differenza è netta e dove
-gli analoghi sono deboli (N piccolo, scenario insufficiente, quota di positivi vicina al 50%).>
+<100–150 parole, in due o tre paragrafi brevi, con il tono di una nota per un lettore curioso
+ma non tecnico. Prima frase: cos'è l'appuntamento e perché conta, senza cifre. Poi, in parole
+semplici, cosa distingue i due scenari: su quali asset la differenza è netta e dove i casi
+passati dicono poco (pochi casi, scenario insufficiente, quota di positivi vicina al 50%).
+Chiama gli asset per nome (il rame, lo yuan, le azioni dei mercati emergenti); il ticker solo
+tra parentesi, e solo la prima volta. Al massimo due o tre cifre per paragrafo, arrotondate a
+una decimale; non elencare tutti gli orizzonti, scegli quello che racconta meglio la differenza.
+Niente formule tipo «T+3» nel testo: scrivi «dopo tre sedute».>
 ### Bozza LinkedIn
 <IN ENGLISH, 120–200 words for a post: a hook on the upcoming event and the comparison between
 the two scenarios with the figures from the table. It must say clearly what the sample is, so a

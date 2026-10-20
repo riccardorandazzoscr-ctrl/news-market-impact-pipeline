@@ -222,7 +222,7 @@ class ReviewFixTests(unittest.TestCase):
     def test_render_shows_gap_lines(self):
         with tempfile.TemporaryDirectory() as tmp:
             html = wp.render(build_fixture(tmp)).read_text()
-        self.assertIn("<code>neg</code>", html.split("Lacune", 1)[1])
+        self.assertIn("verso neg su JPY=X", html.split("Lacune", 1)[1])
 
     def test_status_uses_smallest_cell_n_and_cells_show_it(self):
         stats = {"JPY=X": {str(n): {"median": 0.5, "pos_share": 0.5, "N": 8} for n in wp.WINDOWS}}

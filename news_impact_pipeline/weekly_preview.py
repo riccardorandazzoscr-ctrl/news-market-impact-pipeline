@@ -18,6 +18,8 @@ from zoneinfo import ZoneInfo
 
 import yaml
 
+from stile import BASE
+
 HERE = Path(__file__).resolve().parent
 ROOT = HERE.parent
 EVENTS_MAP = HERE / "anteprima_eventi.yaml"
@@ -360,19 +362,97 @@ def validate(text: str, tables: dict) -> list[str]:
 # --- Report HTML e avviso del calendario ------------------------------------
 
 ALERTS = LOGDIR / "weeklypreview_avvisi.txt"
-CSS = ("body{font-family:-apple-system,Helvetica,Arial,sans-serif;background:#fff;color:#222;"
-       "max-width:860px;margin:auto;padding:16px;line-height:1.5}table{border-collapse:collapse;"
-       "font-size:14px;display:block;overflow-x:auto}td,th{border:1px solid #ddd;padding:4px 8px;"
-       "text-align:right}td:first-child,th:first-child{text-align:left}.nota{color:#a00}"
-       ".bozza{background:#f6f6f6;border-left:4px solid #888;padding:8px 12px;margin:12px 0}")
+CSS = BASE + """
+main{max-width:760px;margin:auto;padding:28px 16px 60px}
+h1,h2,h3,.meta,.badge,table,.cal,summary,.legend{font-family:-apple-system,'Helvetica Neue',Arial,sans-serif}
+h1{font-size:30px;margin:0 0 4px;letter-spacing:-.01em}
+.sub{color:var(--soft);margin:0 0 24px;font-size:15px}
+h2{font-size:23px;margin:0 0 4px}
+h3{font-size:16px;margin:26px 0 6px}
+.legend{font-size:14px;color:var(--soft);background:var(--quote);border-radius:10px;padding:12px 16px;margin:0 0 28px}
+.cal{list-style:none;padding:0;margin:0 0 32px}
+.cal li{display:flex;gap:14px;padding:10px 0;border-bottom:1px solid var(--line);font-size:15px}
+.cal .when{color:var(--soft);min-width:150px}.cal a{color:var(--accent);text-decoration:none;font-weight:600}
+.cal .muted{color:var(--soft)}
+.event{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px 22px;margin:0 0 28px}
+.meta{color:var(--soft);font-size:14px;margin:0 0 18px}
+.brief{border-left:3px solid var(--accent);padding:2px 0 2px 16px;margin:0 0 8px}
+.brief p{margin:0 0 10px}
+.scen-sub{color:var(--soft);font-size:14px;font-family:-apple-system,'Helvetica Neue',Arial,sans-serif;margin:0 0 8px}
+.badge{display:inline-block;font-size:12px;font-weight:600;padding:2px 9px;border-radius:999px;
+background:var(--quote);color:var(--soft);margin-left:8px;vertical-align:2px}
+.badge.warn{background:var(--warn-bg);color:var(--warn)}
+.tw{overflow-x:auto}
+table{border-collapse:collapse;width:100%;font-size:14px;margin:4px 0 6px}
+th{font-weight:600;color:var(--soft);font-size:12px;text-transform:uppercase;letter-spacing:.04em;
+text-align:right;padding:6px 8px;border-bottom:1px solid var(--line)}
+td{text-align:right;padding:8px;border-bottom:1px solid var(--line);white-space:nowrap}
+th:first-child,td:first-child{text-align:left;white-space:normal}
+td .tk{display:block;color:var(--soft);font-size:11px}
+td b{font-weight:600}.up{color:var(--up)}.down{color:var(--down)}
+td small{display:block;color:var(--soft);font-size:11px}
+img{margin:18px 0 4px}
+details{margin:18px 0 0;font-size:15px}
+summary{cursor:pointer;color:var(--accent);font-size:14px;font-weight:600}
+details .inner{padding:8px 0 0;color:var(--soft)}
+.nota{background:var(--warn-bg);color:var(--warn);border-radius:10px;padding:12px 16px;font-size:15px}
+.bozza{background:var(--quote);border-radius:10px;padding:14px 18px;margin:12px 0;font-size:15px}
+.bozza .t{font-family:-apple-system,'Helvetica Neue',Arial,sans-serif;font-size:13px;color:var(--soft)}
+footer{color:var(--soft);font-size:13px;margin-top:36px}
+@media (max-width:520px){body{font-size:16px}.event{padding:18px 14px}td,th{padding:6px 4px}table{font-size:13px}.cal li{flex-direction:column;gap:2px}}
+"""
+# Nome in italiano per la pagina; un ticker che manca qui ricade sul nome del DB.
+NOMI_IT = {"CNY=X": "Dollaro/yuan", "HG=F": "Rame", "EEM": "Azioni emergenti",
+           "^TNX": "Rendimento Treasury 10 anni", "^FVX": "Rendimento Treasury 5 anni",
+           "IEF": "Treasury 7-10 anni (prezzo)", "DX-Y.NYB": "Indice del dollaro",
+           "^GSPC": "S&P 500", "GC=F": "Oro", "EURUSD=X": "Euro/dollaro", "JPY=X": "Dollaro/yen",
+           "GBPUSD=X": "Sterlina/dollaro", "^N225": "Nikkei 225", "1482.T": "Titoli di Stato USA in yen",
+           "^STOXX50E": "Euro Stoxx 50", "BTP_BUND_SPREAD": "Spread BTP-Bund",
+           "IEAG.AS": "Obbligazioni area euro", "IGLT.L": "Gilt britannici", "XLY": "Consumi USA (azioni)"}
+GIORNI = ["lunedì", "martedì", "mercoledì", "giovedì", "venerdì", "sabato", "domenica"]
+MESI = ["gennaio", "febbraio", "marzo", "aprile", "maggio", "giugno", "luglio", "agosto",
+        "settembre", "ottobre", "novembre", "dicembre"]
+
+
+def _giorno(iso: str, weekday: bool = True) -> str:
+    d = date.fromisoformat(iso)
+    return (f"{GIORNI[d.weekday()]} " if weekday else "") + f"{d.day} {MESI[d.month - 1]}"
+
+
+def _html_cell(s: dict | None, n_pool: int) -> str:
+    if not s or s["median"] is None:
+        return "<td>—</td>"
+    m = s["median"]
+    value = f"{m:+.1f} bp" if s.get("unit") == "bp" else f"{m:+.2f}%"
+    n = "" if s["N"] == n_pool else f", su {s['N']}"
+    cls = "up" if m > 0 else "down" if m < 0 else ""
+    return (f"<td><b class='{cls}'>{value.replace('-', '−')}</b>"
+            f"<small>{round(100 * s['pos_share'])}% positivi{n}</small></td>")
+
+
+def _scenario_html(sc: dict, names: dict) -> str:
+    import html
+    head, _, sub = sc["label"].partition(" (")
+    badge = (f"<span class='badge'>{sc['N']} casi</span>" if sc["status"] == "ok" else
+             f"<span class='badge warn'>{sc['N']} casi · solo indicativo</span>" if sc["status"] == "indicativo"
+             else f"<span class='badge warn'>{sc['N']} casi · troppo pochi</span>")
+    out = f"<h3>{html.escape(head[:1].upper() + head[1:])}{badge}</h3>"
+    if sub:
+        out += f"<p class='scen-sub'>{html.escape(sub.rstrip(')'))}</p>"
+    if not sc["stats"]:
+        return out + "<p class='scen-sub'>Troppo pochi casi nella libreria per una tabella.</p>"
+    rows = "".join(f"<tr><td>{html.escape(names.get(tk, tk))}<span class='tk'>{html.escape(tk)}</span></td>"
+                   + "".join(_html_cell(row.get(str(n)), sc["N"]) for n in WINDOWS) + "</tr>"
+                   for tk, row in sc["stats"].items())
+    heads = "".join(f"<th>{n} {'seduta' if n == 1 else 'sedute'}</th>" for n in WINDOWS)
+    return out + f"<div class='tw'><table><tr><th>Asset</th>{heads}</tr>{rows}</table></div>"
 
 
 def render(week_dir: Path) -> Path:
+    import base64
     import html
     import markdown
     tables = json.loads((week_dir / "tabelle.json").read_text())
-    md_sections = {b.partition("\n")[0].partition(" — ")[0].strip(): "## " + b
-                   for b in re.split(r"^## ", (week_dir / "tabelle.md").read_text(), flags=re.M)[1:]}
     text_file = week_dir / "testo.md"
     text, reason = {}, "il testo del modello non c'è"
     if text_file.exists():
@@ -381,38 +461,65 @@ def render(week_dir: Path) -> Path:
             reason = "il testo del modello non ha passato la validazione (" + "; ".join(problems[:3]) + ")"
         else:
             text = parse_text(text_file.read_text())
-    md = lambda s: markdown.markdown(s, extensions=["tables"])
-    parts = [f"<h1>Anteprima {tables['week']}</h1>",
-             f"<p>Dati al {tables['as_of']}. Statistica descrittiva sugli analoghi storici, "
-             "non una previsione. Celle: mediana (quota di casi positivi).</p>"]
+    tickers = sorted({tk for e in tables["events"] for sc in e.get("scenarios", {}).values() for tk in sc["stats"]})
+    names = {**_asset_names(tickers), **{tk: NOMI_IT[tk] for tk in tickers if tk in NOMI_IT}}
+    monday = date.fromisoformat(tables["monday"])
+    sunday = monday + timedelta(days=6)
+    parts = [f"<h1>La settimana dal {_giorno(tables['monday'], False)} al {_giorno(sunday.isoformat(), False)}</h1>",
+             f"<p class='sub'>Anteprima {tables['week']} · dati di mercato al {_giorno(tables['as_of'], False)}</p>",
+             "<p class='legend'>Per ogni appuntamento: cosa hanno fatto i mercati nei casi passati simili, "
+             "divisi per esito. Ogni cella è la variazione mediana dalla chiusura del giorno dell'evento "
+             "a 1, 3, 5 e 10 sedute dopo (la reazione del giorno stesso non è inclusa); sotto, in quale quota dei casi "
+             "è stata positiva. Statistica descrittiva sui casi della nostra libreria, non una previsione.</p>"]
     if not text:
         parts.append(f"<p class='nota'>Commento e bozze non disponibili: {html.escape(reason)}.</p>")
-    rows = "".join(f"<tr><td>{e['reaction_session']}</td><td>{e['time_rome']}</td>"
-                   f"<td>{html.escape(e['label'])}</td><td>{e['status']}</td></tr>" for e in tables["events"])
-    parts.append("<h2>Calendario</h2><table><tr><th>Giorno</th><th>Ora (Roma)</th><th>Evento</th>"
-                 f"<th>Analoghi</th></tr>{rows}</table>")
-    for e in tables["events"]:
+    cal = []
+    for i, e in enumerate(tables["events"]):
+        when = f"{_giorno(e['reaction_session']).capitalize()}, {e['time_rome']}"
+        what = (f"<a href='#ev{i}'>{html.escape(e['label'])}</a>" if e["status"] == "ok" else
+                f"{html.escape(e['label'])} <span class='muted'>· pochi casi passati, nessuna tabella</span>")
+        cal.append(f"<li><span class='when'>{when}</span><span>{what}</span></li>")
+    parts.append("<h3>In calendario</h3><ul class='cal'>" + "".join(cal) + "</ul>")
+    for i, e in enumerate(tables["events"]):
         if e["status"] != "ok":
             continue
-        parts.append(md(md_sections.get(e["id"], f"## {e['id']}")))
+        ev = [f"<section class='event' id='ev{i}'><h2>{html.escape(e['label'])}</h2>",
+              f"<p class='meta'>{_giorno(e['reaction_session']).capitalize()}, ore {e['time_rome']} (Roma)</p>"]
+        if e["id"] in text:
+            ev.append("<div class='brief'>" + markdown.markdown(text[e["id"]]["commento"]) + "</div>")
+        ev += [_scenario_html(sc, names) for sc in e.get("scenarios", {}).values()]
         png = week_dir / f"grafico-{e['event_type']}.png"
         if png.exists():   # incorporato: il report viaggia su Telegram come file unico
-            import base64
-            parts.append(f"<p><img alt='grafico {e['id']}' style='max-width:100%' "
-                         f"src='data:image/png;base64,{base64.b64encode(png.read_bytes()).decode()}'></p>")
-        if e["id"] in text:
-            parts.append("<h3>Commento</h3>" + md(text[e["id"]]["commento"]))
-    parts.append(md(md_sections.get("Lacune", "## Lacune")))
+            ev.append(f"<img alt='grafico {html.escape(e['label'])}' "
+                      f"src='data:image/png;base64,{base64.b64encode(png.read_bytes()).decode()}'>")
+        det = [f"<p>Casi considerati: {html.escape(e.get('pool') or '—')}. Asset che decide l'esito: "
+               f"{html.escape(names.get(e.get('reference'), e.get('reference') or '—'))}.</p>"]
+        for sc in e.get("scenarios", {}).values():
+            if sc["dates"]:
+                comp = ", ".join(f"{lbl} {n}" for lbl, n in sc.get("composition", []))
+                det.append(f"<p>{html.escape(sc['label'].partition(' (')[0].capitalize())}: {sc['N']} casi "
+                           f"dal {_giorno(sc['dates'][0], False)} {sc['dates'][0][:4]} al "
+                           f"{_giorno(sc['dates'][-1], False)} {sc['dates'][-1][:4]}"
+                           + (f" · etichette: {html.escape(comp)}" if comp else "") + ".</p>")
+        if e.get("research"):
+            det.append("<p>Research collegate: " + "; ".join(html.escape(r["title"]) for r in e["research"]) + ".</p>")
+        ev.append("<details><summary>Dettagli sul campione</summary><div class='inner'>" + "".join(det) + "</div></details>")
+        parts.append("".join(ev) + "</section>")
     if text:
-        parts.append("<h2>Bozze LinkedIn</h2>")
-        for eid, sec in text.items():
+        bozze = "".join(
             # Testo semplice, non Markdown: «#Hashtag» a inizio riga diventerebbe un titolo.
-            body = html.escape(sec["bozza"]).replace("\n", "<br>")
-            parts.append(f"<div class='bozza'><p><b>{eid}</b> · bozza da rivedere</p><p>{body}</p></div>")
+            f"<div class='bozza'><p class='t'>{html.escape(eid)} · bozza da rivedere</p>"
+            f"<p>{html.escape(sec['bozza']).replace(chr(10), '<br>')}</p></div>" for eid, sec in text.items())
+        parts.append(f"<details><summary>Bozze LinkedIn ({len(text)})</summary>{bozze}</details>")
+    lac = "".join(f"<li>{html.escape(l['event'])}: tema {l['theme']}, verso {l['direction']} su "
+                  f"{html.escape(l['reference'])}, {l['N']} casi</li>" for l in tables["lacune"])
+    parts.append("<details><summary>Lacune della libreria</summary><div class='inner'>"
+                 + (f"<ul>{lac}</ul>" if lac else "<p>Nessuna.</p>") + "</div></details>")
+    parts.append("<footer>Generata automaticamente da weekly_preview.py. Non è una raccomandazione.</footer>")
     out = week_dir / "anteprima.html"
     out.write_text("<!doctype html><html lang='it'><head><meta charset='utf-8'><meta name='viewport' "
                    f"content='width=device-width,initial-scale=1'><title>Anteprima {tables['week']}</title>"
-                   f"<style>{CSS}</style></head><body>{''.join(parts)}</body></html>")
+                   f"<style>{CSS}</style></head><body><main>{''.join(parts)}</main></body></html>")
     return out
 
 
