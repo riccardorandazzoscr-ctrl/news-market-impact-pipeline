@@ -476,6 +476,19 @@ fiscal_policy:
     - 'tagli di spesa'
     - 'riduzione del deficit'
     - 'aumento delle tasse'
+  # Aggiunta 2026-10-21 (lacuna del 20 e 21/10): disordini in Francia come
+  # innesco del rischio sovrano, finora etichettati col solo `fiscal_deadlock`.
+  social_unrest:
+    - 'gilets? jaunes'
+    - 'gilet gialli'
+    - '\bdisordini'
+    - '\brivolte\b'
+    - 'coprifuoco'
+    - 'sciopero generale'
+    - 'proteste (violente|di piazza|di massa)'
+    - '\briots?\b'
+    - '\bunrest\b'
+    - '\bcurfews?\b'
 
 financial_stability:
   credit_stress:

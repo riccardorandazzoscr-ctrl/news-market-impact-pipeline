@@ -11268,3 +11268,330 @@ reviews:
   source: kb:PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC e politica economica cinese — regime ed episodi storici (2022–2026).md
   reason: 'Pacchetto di stimolo PBOC con sostegno esplicito all''azionario: pressione al rialzo sull''internet cinese. Revisione Claude 2026-10-19.'
   direction: pos
+- date: '2019-06-25'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: Risultati Micron pubblicati a mercato chiuso (la seduta di reazione è il 26/6) e la riga descrive
+    il calo a/a, non la sorpresa sul consenso. Revisione Claude 2026-10-21.
+  status: excluded
+- date: '2023-04-06'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'Taglio Samsung annunciato il 7/4 mattina KST, cioè dopo la chiusura USA del 6/4; il 7/4 era
+    Venerdì Santo: la prima seduta utile di EWY è il 10/4, non il 6/4 della riga. Revisione Claude 2026-10-21.'
+  status: excluded
+- date: '2023-05-22'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'Doppio segno dichiarato dalla research: negativo per il settore, positivo per i concorrenti
+    coreani di Micron. Revisione Claude 2026-10-21.'
+  status: excluded
+- date: '2023-07-27'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'Samsung estende il taglio di produzione e sposta il mix su HBM: offerta di memoria attesa più
+    scarsa, margini attesi in ripresa (colonna verso della research: positivo). Revisione Claude 2026-10-21.'
+  direction: pos
+- date: '2023-11-06'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'La research dichiara il verso ambiguo: shock di struttura di mercato, non di fondamentali.
+    Revisione Claude 2026-10-21.'
+  status: excluded
+- date: '2023-11-09'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'La research la descrive come conferma di traiettoria, non sorpresa: regola della sorpresa (2026-09-23).
+    Revisione Claude 2026-10-21.'
+  status: excluded
+- date: '2024-08-05'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'Evento di liquidità globale non specifico della memoria: la research lo ammette solo come controllo.
+    Revisione Claude 2026-10-21.'
+  status: excluded
+- date: '2024-12-04'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'EWY ha prezzato la legge marziale nella seduta USA del 3/12 (§6 della research): stessa esclusione
+    già nel registro sotto fiscal_policy. Revisione Claude 2026-10-21.'
+  status: excluded
+- date: '2025-01-27'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'Shock DeepSeek: domanda attesa di acceleratori, e quindi di memoria, più bassa (colonna verso:
+    negativo AI-hardware). Revisione Claude 2026-10-21.'
+  direction: neg
+- date: '2025-01-27'
+  theme: structural_themes
+  reference: ^NDX
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'Shock DeepSeek: riprezzamento della domanda attesa di hardware AI, peso dominante di NVDA e
+    dei grandi tecnologici nell''indice. Revisione Claude 2026-10-21.'
+  direction: neg
+- date: '2025-03-31'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: La research dichiara il verso ambiguo (fine del divieto di vendite allo scoperto). Revisione
+    Claude 2026-10-21.
+  status: excluded
+- date: '2025-09-19'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'Canale redistributivo dentro lo stesso indice: positivo per Samsung, negativo relativo per
+    SK Hynix, entrambi in EWY. Revisione Claude 2026-10-21.'
+  status: excluded
+- date: '2026-06-19'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'Borse USA chiuse (Juneteenth): non misurabile su EWY, lo dice la research. Revisione Claude
+    2026-10-21.'
+  status: excluded
+- date: '2026-07-02'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: La riga è definita dal movimento di prezzo (crollo dell'ETF tematico), non da un evento con
+    un'attesa. Revisione Claude 2026-10-21.
+  status: excluded
+- date: '2026-07-16'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'Duplice causa nella stessa seduta (rialzo BoK e ribasso dei chip USA la notte prima): attribuzione
+    ambigua per la research stessa. Revisione Claude 2026-10-21.'
+  status: excluded
+- date: '2026-07-28'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'Produzione cinese di DUV a immersione: contendibilità del duopolio della memoria, margini attesi
+    più bassi (colonna verso: negativo forte). Datazione al 28/7 come da research, alcune fonti dicono
+    27/7. Revisione Claude 2026-10-21.'
+  direction: neg
+- date: '2026-07-28'
+  theme: structural_themes
+  reference: ^NDX
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'Produzione cinese di DUV a immersione: minaccia al complesso dei semiconduttori e alle attrezzature,
+    asset-canale indicato dalla research. Revisione Claude 2026-10-21.'
+  direction: neg
+- date: '2026-07-29'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'SK Hynix Q2 2026: ricavi sotto le attese (79,32 contro 84 mila mld di won) e spedizioni HBM4
+    sotto le attese: sorpresa negativa sugli utili. Revisione Claude 2026-10-21.'
+  direction: neg
+- date: '2026-07-30'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: La riga è definita dal movimento di prezzo (rimbalzo record), non da un evento con un'attesa.
+    Revisione Claude 2026-10-21.
+  status: excluded
+- date: '2026-08-13'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: La riga è definita dal movimento di prezzo (rientro in mercato toro), non da un evento. Revisione
+    Claude 2026-10-21.
+  status: excluded
+- date: '2026-08-14'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'Due righe sulla stessa data: nota Citi sulle valutazioni («negativo lento», opinione e non
+    shock datato) e aumento di capitale Intel con rientro nella memoria «non confermato alla data». Nessuna
+    delle due è una sorpresa attribuibile. Revisione Claude 2026-10-21.'
+  status: excluded
+- date: '2025-11-24'
+  theme: geopolitical
+  reference: ZW=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Trattativa senza accordo operativo: con il corridoio unilaterale che già trasporta volumi quasi
+    pre-bellici il canale dell''offerta fisica non si muove (research Mar Nero §5, regime negotiation_2025_2026;
+    stessa convenzione del 2026-09-06). La research nota il grano muto sul cluster C. Revisione Claude
+    2026-10-21.'
+  direction: neutral
+  mechanism:
+  - negotiation_track
+  - de_escalation
+  description: 'Prospettiva di pace: colloqui di Ginevra sul piano USA (domenica 23/11)'
+- date: '2025-11-24'
+  theme: geopolitical
+  reference: TTF=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Apertura negoziale Russia-Ucraina: la prospettiva di distensione sgonfia il premio di rischio
+    sul gas europeo (research Mar Nero §4, cluster C). Revisione Claude 2026-10-21.'
+  direction: neg
+  mechanism:
+  - negotiation_track
+  - de_escalation
+  description: 'Prospettiva di pace: colloqui di Ginevra sul piano USA (domenica 23/11)'
+- date: '2025-11-24'
+  theme: geopolitical
+  reference: BZ=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: 'Apertura negoziale Russia-Ucraina: premio di rischio in calo e prospettiva di allentamento
+    delle sanzioni sul greggio russo (research Mar Nero §4, cluster C). Revisione Claude 2026-10-21.'
+  direction: neg
+  mechanism:
+  - negotiation_track
+  - de_escalation
+  description: 'Prospettiva di pace: colloqui di Ginevra sul piano USA (domenica 23/11)'
+- date: '2023-05-25'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  reason: 'Colonna «Atteso vs realizzato»: guidance NVDA +54% sul consenso → domanda attesa di HBM più
+    alta, SK Hynix e Samsung in EWY (canale per derivata, come DeepSeek nella research sulla memoria).
+    Revisione Claude 2026-10-21.'
+  direction: pos
+  mechanism:
+  - earnings_shock
+  - ai_semis
+  description: Guidance NVDA Q2 FY24 a 11 mld contro 7,15 di consenso (+54%)
+- date: '2024-02-22'
+  theme: structural_themes
+  reference: ^NDX
+  source: 2026-08-21/news_07.md
+  reason: 'Ricavi e guidance NVDA sopra il consenso (22,1 contro circa 20,6 mld; guida 24 contro circa
+    22 mld): sorpresa positiva sul primo-secondo peso dell''indice. Revisione Claude 2026-10-21.'
+  direction: pos
+  mechanism:
+  - earnings_shock
+  - ai_semis
+  description: NVIDIA Q4 FY24 (pubblicata il 21/2 a mercato chiuso)
+- date: '2024-02-22'
+  theme: structural_themes
+  reference: EWY
+  source: 2026-08-21/news_07.md
+  reason: 'Ricavi e guidance NVDA sopra il consenso: domanda attesa di HBM più alta (canale per derivata).
+    Revisione Claude 2026-10-21.'
+  direction: pos
+  mechanism:
+  - earnings_shock
+  - ai_semis
+  description: NVIDIA Q4 FY24 (pubblicata il 21/2 a mercato chiuso)
+- date: '2024-05-23'
+  theme: structural_themes
+  reference: ^NDX
+  source: 2026-08-21/news_07.md
+  reason: Ricavi e guidance NVDA sopra il consenso (26,0 contro circa 24,7 mld; guida 28 contro circa
+    26,8 mld). Revisione Claude 2026-10-21.
+  direction: pos
+  mechanism:
+  - earnings_shock
+  - ai_semis
+  description: NVIDIA Q1 FY25 e frazionamento 10:1 (pubblicata il 22/5 a mercato chiuso)
+- date: '2024-05-23'
+  theme: structural_themes
+  reference: EWY
+  source: 2026-08-21/news_07.md
+  reason: 'Ricavi e guidance NVDA sopra il consenso: domanda attesa di HBM più alta (canale per derivata).
+    Revisione Claude 2026-10-21.'
+  direction: pos
+  mechanism:
+  - earnings_shock
+  - ai_semis
+  description: NVIDIA Q1 FY25 e frazionamento 10:1 (pubblicata il 22/5 a mercato chiuso)
+- date: '2024-08-29'
+  theme: structural_themes
+  reference: ^NDX
+  source: 2026-08-23/news_06.md
+  reason: 'Beat modesto e guidance appena sopra il consenso: la scheda stessa la legge come «solo» beat
+    modesto. Sorpresa non univoca. Revisione Claude 2026-10-21.'
+  status: excluded
+  mechanism:
+  - earnings_shock
+  description: NVIDIA Q2 FY25
+- date: '2024-08-29'
+  theme: structural_themes
+  reference: EWY
+  source: 2026-08-23/news_06.md
+  reason: 'Beat modesto e guidance appena sopra il consenso: la scheda stessa la legge come «solo» beat
+    modesto. Sorpresa non univoca. Revisione Claude 2026-10-21.'
+  status: excluded
+  mechanism:
+  - earnings_shock
+  description: NVIDIA Q2 FY25
+- date: '2025-02-27'
+  theme: structural_themes
+  reference: ^NDX
+  source: 2026-08-21/news_07.md
+  reason: 'Ricavi e guidance sopra il consenso ma margine lordo guidato in calo: spinte opposte. Revisione
+    Claude 2026-10-21.'
+  status: excluded
+  mechanism:
+  - earnings_shock
+  description: NVIDIA Q4 FY25
+- date: '2025-02-27'
+  theme: structural_themes
+  reference: EWY
+  source: 2026-08-21/news_07.md
+  reason: 'Ricavi e guidance sopra il consenso ma margine lordo guidato in calo: spinte opposte. Revisione
+    Claude 2026-10-21.'
+  status: excluded
+  mechanism:
+  - earnings_shock
+  description: NVIDIA Q4 FY25
+- date: '2025-08-28'
+  theme: structural_themes
+  reference: ^NDX
+  source: 2026-08-21/news_07.md
+  reason: 'Ricavi data center lievemente sotto le stime con guidance sopra, Cina esclusa dalla guida:
+    spinte opposte. Revisione Claude 2026-10-21.'
+  status: excluded
+  mechanism:
+  - earnings_shock
+  description: NVIDIA Q2 FY26
+- date: '2025-08-28'
+  theme: structural_themes
+  reference: EWY
+  source: 2026-08-21/news_07.md
+  reason: 'Ricavi data center lievemente sotto le stime con guidance sopra, Cina esclusa dalla guida:
+    spinte opposte. Revisione Claude 2026-10-21.'
+  status: excluded
+  mechanism:
+  - earnings_shock
+  description: NVIDIA Q2 FY26

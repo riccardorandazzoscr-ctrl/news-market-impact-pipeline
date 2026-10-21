@@ -1,0 +1,123 @@
+research: lacune di verso del 2026-10-20 e 2026-10-21 (ZW=F, TTF=F, BZ=F, EWY, ^NDX)
+voci:
+- data: '2025-11-24'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  evento: 'Prospettiva di pace: colloqui di Ginevra sul piano USA (domenica 23/11)'
+  meccanismo:
+  - negotiation_track
+  - de_escalation
+  dichiarazioni:
+  - asset: ZW=F
+    verso: neutral
+    perché: 'Trattativa senza accordo operativo: con il corridoio unilaterale che già trasporta volumi
+      quasi pre-bellici il canale dell''offerta fisica non si muove (research Mar Nero §5, regime negotiation_2025_2026;
+      stessa convenzione del 2026-09-06). La research nota il grano muto sul cluster C. Revisione Claude
+      2026-10-21.'
+  - asset: TTF=F
+    verso: neg
+    perché: 'Apertura negoziale Russia-Ucraina: la prospettiva di distensione sgonfia il premio di rischio
+      sul gas europeo (research Mar Nero §4, cluster C). Revisione Claude 2026-10-21.'
+  - asset: BZ=F
+    verso: neg
+    perché: 'Apertura negoziale Russia-Ucraina: premio di rischio in calo e prospettiva di allentamento
+      delle sanzioni sul greggio russo (research Mar Nero §4, cluster C). Revisione Claude 2026-10-21.'
+  stato: promossa
+- data: '2023-05-25'
+  tema: structural_themes
+  fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  evento: Guidance NVDA Q2 FY24 a 11 mld contro 7,15 di consenso (+54%)
+  meccanismo:
+  - earnings_shock
+  - ai_semis
+  dichiarazioni:
+  - asset: EWY
+    verso: pos
+    perché: 'Colonna «Atteso vs realizzato»: guidance NVDA +54% sul consenso → domanda attesa di HBM più
+      alta, SK Hynix e Samsung in EWY (canale per derivata, come DeepSeek nella research sulla memoria).
+      Revisione Claude 2026-10-21.'
+  stato: promossa
+- data: '2024-02-22'
+  tema: structural_themes
+  fonte: 2026-08-21/news_07.md
+  evento: NVIDIA Q4 FY24 (pubblicata il 21/2 a mercato chiuso)
+  meccanismo:
+  - earnings_shock
+  - ai_semis
+  dichiarazioni:
+  - asset: ^NDX
+    verso: pos
+    perché: 'Ricavi e guidance NVDA sopra il consenso (22,1 contro circa 20,6 mld; guida 24 contro circa
+      22 mld): sorpresa positiva sul primo-secondo peso dell''indice. Revisione Claude 2026-10-21.'
+  - asset: EWY
+    verso: pos
+    perché: 'Ricavi e guidance NVDA sopra il consenso: domanda attesa di HBM più alta (canale per derivata).
+      Revisione Claude 2026-10-21.'
+  stato: promossa
+- data: '2024-05-23'
+  tema: structural_themes
+  fonte: 2026-08-21/news_07.md
+  evento: NVIDIA Q1 FY25 e frazionamento 10:1 (pubblicata il 22/5 a mercato chiuso)
+  meccanismo:
+  - earnings_shock
+  - ai_semis
+  dichiarazioni:
+  - asset: ^NDX
+    verso: pos
+    perché: Ricavi e guidance NVDA sopra il consenso (26,0 contro circa 24,7 mld; guida 28 contro circa
+      26,8 mld). Revisione Claude 2026-10-21.
+  - asset: EWY
+    verso: pos
+    perché: 'Ricavi e guidance NVDA sopra il consenso: domanda attesa di HBM più alta (canale per derivata).
+      Revisione Claude 2026-10-21.'
+  stato: promossa
+- data: '2024-08-29'
+  tema: structural_themes
+  fonte: 2026-08-23/news_06.md
+  evento: NVIDIA Q2 FY25
+  meccanismo:
+  - earnings_shock
+  dichiarazioni:
+  - asset: ^NDX
+    verso: escluso
+    perché: 'Beat modesto e guidance appena sopra il consenso: la scheda stessa la legge come «solo» beat
+      modesto. Sorpresa non univoca. Revisione Claude 2026-10-21.'
+  - asset: EWY
+    verso: escluso
+    perché: 'Beat modesto e guidance appena sopra il consenso: la scheda stessa la legge come «solo» beat
+      modesto. Sorpresa non univoca. Revisione Claude 2026-10-21.'
+  stato: promossa
+- data: '2025-02-27'
+  tema: structural_themes
+  fonte: 2026-08-21/news_07.md
+  evento: NVIDIA Q4 FY25
+  meccanismo:
+  - earnings_shock
+  dichiarazioni:
+  - asset: ^NDX
+    verso: escluso
+    perché: 'Ricavi e guidance sopra il consenso ma margine lordo guidato in calo: spinte opposte. Revisione
+      Claude 2026-10-21.'
+  - asset: EWY
+    verso: escluso
+    perché: 'Ricavi e guidance sopra il consenso ma margine lordo guidato in calo: spinte opposte. Revisione
+      Claude 2026-10-21.'
+  stato: promossa
+- data: '2025-08-28'
+  tema: structural_themes
+  fonte: 2026-08-21/news_07.md
+  evento: NVIDIA Q2 FY26
+  meccanismo:
+  - earnings_shock
+  dichiarazioni:
+  - asset: ^NDX
+    verso: escluso
+    perché: 'Ricavi data center lievemente sotto le stime con guidance sopra, Cina esclusa dalla guida:
+      spinte opposte. Revisione Claude 2026-10-21.'
+  - asset: EWY
+    verso: escluso
+    perché: 'Ricavi data center lievemente sotto le stime con guidance sopra, Cina esclusa dalla guida:
+      spinte opposte. Revisione Claude 2026-10-21.'
+  stato: promossa

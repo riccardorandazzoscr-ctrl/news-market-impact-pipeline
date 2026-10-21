@@ -1,0 +1,404 @@
+research: Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+  DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+voci:
+- riga: '| inizio 2018 (nessuna data ISO, di proposito) | Picco del ciclo DRAM precedente: prezzo oltre
+    $6/GB | ciclo della memoria / picco prezzi | negativo lento | EWY, SOXX | Massimo di una serie di
+    prezzo, non un annuncio: una data puntuale sarebbe arbitraria. **Non usabile come `--events`**, ed
+    è scritta in forma non-ISO perché la libreria non la raccolga |'
+  data: null
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWY
+  - SOXX
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+- riga: '| 2019-06-25 | Micron: risultati FY19 con ricavi −42% e utile non-GAAP −85% a/a | shock di utili
+    (memoria) | negativo | EWY, SOXX | Fine del *down-cycle* commodity pre-AI; il minimo dei prezzi arriva
+    più tardi |'
+  data: '2019-06-25'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWY
+  - SOXX
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: Risultati Micron pubblicati a mercato chiuso (la seduta di reazione è il 26/6) e la riga descrive
+      il calo a/a, non la sorpresa sul consenso. Revisione Claude 2026-10-21.
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2023-04-06 | Samsung annuncia il taglio della produzione di memoria; utile operativo Q1 atteso
+    −96% a/a | ciclo della memoria / taglio di produzione | positivo (segnale di minimo) | EWY, EWT, SOXX
+    | Annuncio 7-apr KST; il 7-apr-2023 le borse USA erano chiuse (Good Friday) → la seduta di riferimento
+    è il **6-apr**. Stime di taglio 20-25% |'
+  data: '2023-04-06'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWT
+  - EWY
+  - SOXX
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: 'Taglio Samsung annunciato il 7/4 mattina KST, cioè dopo la chiusura USA del 6/4; il 7/4 era
+      Venerdì Santo: la prima seduta utile di EWY è il 10/4, non il 6/4 della riga. Revisione Claude 2026-10-21.'
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2023-05-22 | La Cina vieta i prodotti Micron nelle infrastrutture critiche | controlli all''export
+    / ritorsione | negativo (settore), positivo (concorrenti coreani) | EWY, EWT, SOXX, EEM | Annuncio
+    CAC domenica 21-mag ora cinese → prima seduta USA utile il 22-mag. Doppio segno: penalizza Micron,
+    avvantaggia i coreani |'
+  data: '2023-05-22'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EEM
+  - EWT
+  - EWY
+  - SOXX
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: 'Doppio segno dichiarato dalla research: negativo per il settore, positivo per i concorrenti
+      coreani di Micron. Revisione Claude 2026-10-21.'
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2023-07-27 | Samsung estende il taglio di produzione e sposta il mix sul segmento AI di fascia
+    alta | ciclo della memoria / taglio di produzione | positivo | EWY, SOXX | Prima chiara riallocazione
+    dichiarata verso HBM |'
+  data: '2023-07-27'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWY
+  - SOXX
+  dichiarazioni:
+  - asset: EWY
+    verso: pos
+    perché: 'Samsung estende il taglio di produzione e sposta il mix su HBM: offerta di memoria attesa
+      più scarsa, margini attesi in ripresa (colonna verso della research: positivo). Revisione Claude
+      2026-10-21.'
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2023-11-06 | Entra in vigore il divieto di vendite allo scoperto su KOSPI/KOSDAQ/KONEX | struttura
+    di mercato coreana | ambiguo | EWY | Annuncio 5-nov (domenica). Shock di *struttura*, non di fondamentali:
+    rialzo iniziale, ma peggiora la formazione dei prezzi e pesa sull''accessibilità per gli esteri |'
+  data: '2023-11-06'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWY
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: 'La research dichiara il verso ambiguo: shock di struttura di mercato, non di fondamentali.
+      Revisione Claude 2026-10-21.'
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2023-11-09 | Samsung: taglio DRAM esteso a fine anno, recupero NAND lento | ciclo della memoria
+    / taglio di produzione | positivo | EWY, SOXX | Conferma di traiettoria, non sorpresa |'
+  data: '2023-11-09'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWY
+  - SOXX
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: 'La research la descrive come conferma di traiettoria, non sorpresa: regola della sorpresa
+      (2026-09-23). Revisione Claude 2026-10-21.'
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2024-08-05 | *Yen carry unwind*: vendite forzate su tutto il complesso AI-hardware asiatico
+    | evento di liquidità / deleveraging | negativo acuto | EWY, EWT, SOXX, ^VIX | Episodio **non** specifico
+    della memoria: usarlo solo come controllo di liquidità, non come analogo di ciclo |'
+  data: '2024-08-05'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWT
+  - EWY
+  - SOXX
+  - ^VIX
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: 'Evento di liquidità globale non specifico della memoria: la research lo ammette solo come
+      controllo. Revisione Claude 2026-10-21.'
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2024-12-04 | Ricaduta di mercato della legge marziale dichiarata e revocata a Seul | rischio
+    politico coreano | negativo (Corea), neutro (Taiwan) | EWY | Dichiarazione la sera del 3-dic KST,
+    revocata dall''Assemblea Nazionale dopo tre ore. **L''episodio più pulito per isolare il rischio-paese
+    dal fattore settoriale**: EWT come controllo |'
+  data: '2024-12-04'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWT
+  - EWY
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: 'EWY ha prezzato la legge marziale nella seduta USA del 3/12 (§6 della research): stessa esclusione
+      già nel registro sotto fiscal_policy. Revisione Claude 2026-10-21.'
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2025-01-27 | Shock DeepSeek: riprezzamento dell''efficienza dei modelli di frontiera | shock
+    di capacità dei modelli | negativo (AI-hardware) | EWY, EWT, SOXX, ^NDX | Colpisce la *domanda attesa*
+    di acceleratori, quindi la memoria per derivata. Già in libreria |'
+  data: '2025-01-27'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWT
+  - EWY
+  - SOXX
+  - ^NDX
+  dichiarazioni:
+  - asset: EWY
+    verso: neg
+    perché: 'Shock DeepSeek: domanda attesa di acceleratori, e quindi di memoria, più bassa (colonna verso:
+      negativo AI-hardware). Revisione Claude 2026-10-21.'
+  - asset: ^NDX
+    verso: neg
+    perché: 'Shock DeepSeek: riprezzamento della domanda attesa di hardware AI, peso dominante di NVDA
+      e dei grandi tecnologici nell''indice. Revisione Claude 2026-10-21.'
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2025-03-31 | Fine del divieto di vendite allo scoperto in Corea | struttura di mercato coreana
+    | ambiguo | EWY | Ripristino della piena operatività short; rilevante per la riammissione ai panieri
+    esteri |'
+  data: '2025-03-31'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWY
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: La research dichiara il verso ambiguo (fine del divieto di vendite allo scoperto). Revisione
+      Claude 2026-10-21.
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2025-09-19 | Samsung supera la qualifica Nvidia per l''HBM3E a 12 strati | qualifica HBM /
+    memoria | positivo (Samsung), negativo relativo (SK Hynix, Micron) | EWY, EWT, SOXX | ~18 mesi dopo
+    il completamento dello sviluppo e dopo ripetuti fallimenti. Canale **redistributivo**: quota Samsung
+    dal 17% al 35% nel Q3 2025 |'
+  data: '2025-09-19'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWT
+  - EWY
+  - SOXX
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: 'Canale redistributivo dentro lo stesso indice: positivo per Samsung, negativo relativo per
+      SK Hynix, entrambi in EWY. Revisione Claude 2026-10-21.'
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2026-06-19 | KOSPI al massimo storico di 46 anni: 9.385,59 (+116% dal minimo) | valutazioni
+    / picco di ciclo | negativo lento | EWY | **Non misurabile su EWY**: il 19-giu-2026 le borse USA erano
+    chiuse (Juneteenth). Il massimo di EWY è del 18-giu (219,20) e del 22-giu (219,02) |'
+  data: '2026-06-19'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWY
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: 'Borse USA chiuse (Juneteenth): non misurabile su EWY, lo dice la research. Revisione Claude
+      2026-10-21.'
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2026-07-02 | Crollo dell''ETF tematico DRAM (Micron/SK Hynix/SanDisk) | valutazioni / de-risking
+    | negativo | SOXX, EWY | Primo segnale di rottura del tema *prima* del crollo di indice |'
+  data: '2026-07-02'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWY
+  - SOXX
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: La riga è definita dal movimento di prezzo (crollo dell'ETF tematico), non da un evento con
+      un'attesa. Revisione Claude 2026-10-21.
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2026-07-16 | Bank of Korea alza al 2,75%, primo rialzo dal gennaio 2023; KOSPI −6,37% ed entra
+    in mercato orso (−25% dal picco) | politica monetaria coreana | negativo | EWY | Duplice causa nella
+    stessa seduta (rialzo BoK **e** ribasso dei chip USA la notte prima): attribuzione ambigua. Inflazione
+    a 3,2% in giugno, spinta dallo shock energetico iraniano |'
+  data: '2026-07-16'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWY
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: 'Duplice causa nella stessa seduta (rialzo BoK e ribasso dei chip USA la notte prima): attribuzione
+      ambigua per la research stessa. Revisione Claude 2026-10-21.'
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2026-07-28 | Notizie sulla produzione di massa cinese di macchine DUV a immersione | contendibilità
+    del duopolio / concorrenza | negativo forte | EWY, EWT, SOXX, ^NDX, EEM | Prime consegne attese a
+    SMIC, Hua Hong, CXMT; ~5 unità nel 2026, 20 nel 2027. KOSPI −11% con *circuit breaker*, TAIEX −2.030
+    punti, ASML −7%. **Alcune fonti datano la notizia al 27-lug**: EWY reagisce il 28 (−6,05%) |'
+  data: '2026-07-28'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EEM
+  - EWT
+  - EWY
+  - SOXX
+  - ^NDX
+  dichiarazioni:
+  - asset: EWY
+    verso: neg
+    perché: 'Produzione cinese di DUV a immersione: contendibilità del duopolio della memoria, margini
+      attesi più bassi (colonna verso: negativo forte). Datazione al 28/7 come da research, alcune fonti
+      dicono 27/7. Revisione Claude 2026-10-21.'
+  - asset: ^NDX
+    verso: neg
+    perché: 'Produzione cinese di DUV a immersione: minaccia al complesso dei semiconduttori e alle attrezzature,
+      asset-canale indicato dalla research. Revisione Claude 2026-10-21.'
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2026-07-29 | SK Hynix Q2 2026: utile operativo record (+557% a/a) ma ricavi sotto le attese
+    | shock di utili (memoria) | negativo | EWY, EWT, SOXX | Ricavi 79,32 vs 84 mila mld di won attesi;
+    spedizioni HBM4 sotto le attese con slittamento dei ricavi. EWY −4,78% e **minimo del ciclo** (144,21)
+    |'
+  data: '2026-07-29'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWT
+  - EWY
+  - SOXX
+  dichiarazioni:
+  - asset: EWY
+    verso: neg
+    perché: 'SK Hynix Q2 2026: ricavi sotto le attese (79,32 contro 84 mila mld di won) e spedizioni HBM4
+      sotto le attese: sorpresa negativa sugli utili. Revisione Claude 2026-10-21.'
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2026-07-30 | Rimbalzo record: EWY +11,79% in una seduta | rimbalzo tecnico / liquidità | positivo
+    | EWY, EWT | Corrisponde al +17,91% del KOSPI, il maggior rialzo giornaliero della sua storia, che
+    le fonti datano **31-lug KST** (una fonte lo colloca alla prima seduta di agosto). Sull''ETF USA il
+    movimento è il **30-lug**: v. §6 |'
+  data: '2026-07-30'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWT
+  - EWY
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: La riga è definita dal movimento di prezzo (rimbalzo record), non da un evento con un'attesa.
+      Revisione Claude 2026-10-21.
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2026-08-13 | Il KOSPI rientra in mercato toro: +22% in dieci sedute dal minimo | rimbalzo tecnico
+    / valutazioni | positivo | EWY, EWT | Round-trip completo in circa 60 giorni. Recupero guidato dagli
+    stessi due titoli che avevano guidato il crollo |'
+  data: '2026-08-13'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWT
+  - EWY
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: La riga è definita dal movimento di prezzo (rientro in mercato toro), non da un evento. Revisione
+      Claude 2026-10-21.
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2026-08-14 | Citi: il dibattito sulla bolla si è spostato su KOSPI e indice semiconduttori
+    di Filadelfia | valutazioni / de-risking | negativo lento | EWY, EWT, SOXX, EEM | SOX +88% e KOSPI
+    +84% nel trimestre, entrambi record. Citi osserva che nel crollo di luglio valutazioni e utili non
+    erano il fattore: lo furono tecnici e flussi |'
+  data: '2026-08-14'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EEM
+  - EWT
+  - EWY
+  - SOXX
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: 'Due righe sulla stessa data: nota Citi sulle valutazioni («negativo lento», opinione e non
+      shock datato) e aumento di capitale Intel con rientro nella memoria «non confermato alla data».
+      Nessuna delle due è una sorpresa attribuibile. Revisione Claude 2026-10-21.'
+  meccanismo: []
+  evento: ''
+  stato: promossa
+- riga: '| 2026-08-14 | Intel raccoglie $20 mld di capitale, primo aumento dall''IPO del 1971; speculazione
+    su un rientro nella memoria | contendibilità del duopolio / concorrenza | negativo (margini memoria)
+    | EWY, EWT, SOXX | Minaccia al margine del duopolio HBM, non alla domanda. Tesi **non confermata**
+    alla data: trattarlo come episodio di riprezzamento del rischio, non di fatto |'
+  data: '2026-08-14'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  candidati:
+  - EWT
+  - EWY
+  - SOXX
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
