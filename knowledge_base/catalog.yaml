@@ -1,5 +1,5 @@
-generated_at: '2026-10-17T12:04:14'
-num_entries: 36
+generated_at: '2026-10-22T10:49:02'
+num_entries: 37
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -874,6 +874,89 @@ entries:
   - tregua
   - de-escalation
   - escalation
+- source_file: Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine
+    e crisi del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
+    attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
+    Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente).md
+  title: 'Houthi: attacchi alle infrastrutture energetiche saudite ed emiratine e
+    crisi del Mar Rosso — trasmissione a greggio, prodotti, trasporti e gas (2015–presente)'
+  date_compiled: 2026-10-21
+  primary_theme: geopolitical
+  sub_themes:
+  - houthi
+  - infrastructure_attack
+  - shipping_chokepoint
+  - physical_damage
+  - military_escalation
+  - de_escalation
+  - oil_supply_shock
+  - refinery_products
+  - negotiation_track
+  - iran
+  - freight_rates
+  - lng_rerouting
+  relevant_assets:
+  - BZ=F
+  - HO=F
+  - CRACK_321
+  - IYT
+  - XLE
+  - TTF=F
+  - GC=F
+  - DX-Y.NYB
+  - ^GSPC
+  external_assets_mentioned:
+  - 2222.SR (Saudi Aramco su Tadawul) — controllo diretto del danno ad Aramco; tratta
+    di domenica e anticipa la reazione agli attacchi del weekend
+  - Drewry WCI / SCFI — misura diretta dei noli container, il vero canale della crisi
+    del Mar Rosso
+  - Tariffe di nolo delle petroliere (TD3C, TC2) — costo del trasporto di greggio
+    e prodotti in caso di deviazione
+  - Transiti di Suez e Bab el-Mandeb (Kpler, PortWatch) — variabile fisica intermedia
+    fra attacco e prezzo
+  - Maersk (MAERSK-B.CO) e ZIM — azioni dei vettori, beneficiari dei noli più alti
+  - Premi assicurativi war risk — costo marginale del transito, rifiuti di copertura
+    (Eternity C)
+  - ICE Brent e Dated Brent — riferimenti delle fonti, diversi dal NYMEX BZ=F per
+    orario di settlement e sessioni festive
+  time_window:
+    start: 2015-03-26
+    end: present
+  regime_phases:
+  - saudi_coalition_cross_border_war: 2015-03-26 to 2022-04-01
+  - yemen_truce_dormancy: 2022-04-02 to 2023-11-18
+  - red_sea_shipping_campaign: 2023-11-19 to 2025-10-09
+  - gaza_truce_pause: 2025-10-10 to 2026-07-12
+  - saudi_blockade_dual_chokepoint: 2026-07-13 to present
+  keywords:
+  - Houthi
+  - Yemen
+  - Mar Rosso
+  - Bab el-Mandeb
+  - Aramco
+  - Abqaiq
+  - Jeddah
+  - Ras Tanura
+  - droni
+  - missili
+  - petroliera
+  - nave cargo
+  - noli
+  - Suez
+  - Red Sea
+  - Houthi attack
+  - drone strike
+  - shipping attack
+  - Operation Prosperity Guardian
+  - Ansar Allah
+  - Jizan
+  - Yanbu
+  - Shaybah
+  - Abu Dhabi
+  - Marlin Luanda
+  - Magic Seas
+  - Eternity C
+  - QatarEnergy
 - source_file: Il consumatore cinese, domanda interna, e-commerce e trasmissione ai
     mercati (2011–2026)/ Il consumatore cinese- domanda interna, e-commerce e trasmissione
     ai mercati (2011–2026).md
