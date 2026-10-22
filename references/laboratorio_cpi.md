@@ -90,6 +90,7 @@ Il report misura la continuazione dal close di rilascio: non una reazione immedi
 
 Job launchd `com.riccardo.newsimpact.cpilab`, ogni ora e all'accensione dopo aver atteso la rete, lancia `cpi_lab_auto.py run`
 (idempotente: un rilascio perso a Mac spento si recupera al primo giro con la rete; nessun modello; log in `news_impact_pipeline/logs/cpilab.log`, esiti su Telegram).
+Un errore va su Telegram solo dopo 12 ore senza un giro riuscito (`logs/cpilab_ultimo_ok`): il 2026-10-21 FRED ha risposto vuoto per mezza giornata e il job si è ripreso da solo.
 
 - **Date dei rilasci**: FRED, release 10 (anche le future). Il sito del BLS risponde 403 agli script.
 - **Valore iniziale**: API pubblica BLS v1, serie `CUSR0000SA0`, variazione dagli indici a tre decimali

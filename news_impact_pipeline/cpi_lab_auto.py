@@ -48,6 +48,8 @@ PROVIDER = "MarketWatch (dati Onclusive/Dow Jones), colonna Forecast del calenda
 BLS_SERIES = "CUSR0000SA0"
 UA = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) newsimpact-cpilab"
 ALERTS = Path(__file__).resolve().parent / "logs" / "cpilab_avvisi.txt"
+LAST_OK = ALERTS.with_name("cpilab_ultimo_ok")   # mtime = ultimo giro riuscito
+OUTAGE_GRACE = timedelta(hours=12)   # una fonte giù per qualche ora (FRED il 21/10) non è un guasto: il giro dopo recupera
 SNAPSHOT_MAX_AGE = timedelta(days=7)   # la pagina mostra la settimana: oltre, il consenso può essere vecchio
 
 
@@ -69,6 +71,14 @@ def http_get(url, timeout=60):
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         data = resp.read()
     return gzip.decompress(data) if data[:2] == b"\x1f\x8b" else data
+
+
+def get_json(url, source):
+    data = http_get(url)
+    try:
+        return json.loads(data)
+    except ValueError:
+        raise ValueError(f"{source}: risposta non JSON ({data[:60]!r})") from None
 
 
 def telegram(text):
@@ -112,12 +122,12 @@ def next_month_back(ym):
 def fred_release_dates():
     url = ("https://api.stlouisfed.org/fred/release/dates?release_id=10&file_type=json"
            f"&include_release_dates_with_no_data=true&sort_order=asc&api_key={env('FRED_API_KEY')}")
-    return [date.fromisoformat(r["date"]) for r in json.loads(http_get(url))["release_dates"]]
+    return [date.fromisoformat(r["date"]) for r in get_json(url, "FRED release/dates")["release_dates"]]
 
 
 def bls_indexes():
     """{'2026-09': Decimal('336.298'), ...} e l'ultimo periodo pubblicato."""
-    payload = json.loads(http_get(f"https://api.bls.gov/publicAPI/v1/timeseries/data/{BLS_SERIES}"))
+    payload = get_json(f"https://api.bls.gov/publicAPI/v1/timeseries/data/{BLS_SERIES}", "BLS")
     if payload.get("status") != "REQUEST_SUCCEEDED":
         raise ValueError(f"BLS: {payload.get('status')} {payload.get('message')}")
     rows = payload["Results"]["series"][0]["data"]
@@ -137,7 +147,7 @@ def fed_moves(release):
     giorno in cui hanno effetto, il giorno dopo la decisione: la data si conferma col comunicato Fed."""
     url = ("https://api.stlouisfed.org/fred/series/observations?series_id=DFEDTARU&file_type=json"
            f"&observation_start=2008-12-16&api_key={env('FRED_API_KEY')}")
-    obs = [(date.fromisoformat(o["date"]), Decimal(o["value"])) for o in json.loads(http_get(url))["observations"]
+    obs = [(date.fromisoformat(o["date"]), Decimal(o["value"])) for o in get_json(url, "FRED DFEDTARU")["observations"]
            if o["value"] != "."]
     changes = [(d, v - pv) for (pd, pv), (d, v) in zip(obs, obs[1:]) if v != pv]
     moves = []
@@ -392,10 +402,13 @@ def main(argv=None):
     now = datetime.fromisoformat(args.now) if args.now else datetime.now(timezone.utc)
     try:
         run(now)
+        LAST_OK.touch()
         return 0
     except Exception as exc:
         log(f"ERRORE: {exc}")
-        alert(f"Laboratorio CPI — errore nel giro automatico: {exc}", now)
+        last_ok = datetime.fromtimestamp(LAST_OK.stat().st_mtime, timezone.utc) if LAST_OK.exists() else None
+        if last_ok is None or now - last_ok > OUTAGE_GRACE:
+            alert(f"Laboratorio CPI — errore nel giro automatico da oltre {OUTAGE_GRACE.seconds // 3600} ore: {exc}", now)
         return 1
 
 

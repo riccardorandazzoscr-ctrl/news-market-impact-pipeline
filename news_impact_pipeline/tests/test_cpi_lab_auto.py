@@ -69,5 +69,26 @@ class RecordTests(unittest.TestCase):
         self.assertIsNone(build(idx={"2026-08": Decimal("334.131")}))
 
 
+class OutageTests(unittest.TestCase):
+    def test_non_json_names_the_source(self):
+        with patch.object(auto, "http_get", return_value=b""):
+            with self.assertRaisesRegex(ValueError, "^FRED x: risposta non JSON"):
+                auto.get_json("u", "FRED x")
+
+    def test_alert_only_after_grace(self):
+        import tempfile
+        with tempfile.TemporaryDirectory() as tmp:
+            stamp = Path(tmp) / "ok"
+            stamp.touch()
+            now = datetime.fromtimestamp(stamp.stat().st_mtime, timezone.utc)
+            with patch.object(auto, "LAST_OK", stamp), patch.object(auto, "log"), \
+                    patch.object(auto, "run", side_effect=ValueError("giù")), \
+                    patch.object(auto, "alert") as alert:
+                auto.main(["run", "--now", (now + auto.OUTAGE_GRACE / 2).isoformat()])
+                alert.assert_not_called()
+                auto.main(["run", "--now", (now + auto.OUTAGE_GRACE * 2).isoformat()])
+                alert.assert_called_once()
+
+
 if __name__ == "__main__":
     unittest.main()
