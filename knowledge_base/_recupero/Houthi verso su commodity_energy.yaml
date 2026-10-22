@@ -1,0 +1,84 @@
+research: 'Houthi: versi della research riportati sugli episodi commodity_energy dello stesso evento (fonte:
+  la scheda commodity_energy che ha la data in tabella; versi dalla research Houthi §3, che vale solo
+  sotto geopolitical)'
+voci:
+- data: '2019-09-16'
+  tema: commodity_energy
+  fonte: 2026-10-20/news_01.md
+  evento: 'Prima seduta dopo l''attacco ad Abqaiq e Khurais (sabato 14/9): 5,7 mb/d fermi'
+  meccanismo:
+  - infrastructure_attack
+  - oil_supply_shock
+  - physical_damage
+  - houthi
+  dichiarazioni:
+  - asset: HO=F
+    verso: pos
+    perché: 'Research Houthi §3: il gasolio segue il costo del greggio (Abqaiq stabilizza, non raffina).
+      Revisione Claude 2026-10-22.'
+  - asset: XLE
+    verso: pos
+    perché: 'Research Houthi §3: canale settoriale dello shock d''offerta. Revisione Claude 2026-10-22.'
+  - asset: IYT
+    verso: neg
+    perché: 'Research Houthi §3: prevale il costo del carburante per linee aeree e trucking, non uno shock
+      di noli. Revisione Claude 2026-10-22.'
+  - asset: ^GSPC
+    verso: neg
+    perché: 'Research Houthi §3: shock d''offerta più rischio di ritorsione USA-Iran. Revisione Claude
+      2026-10-22.'
+  - asset: GC=F
+    verso: pos
+    perché: 'Research Houthi §3: canale rifugio sull''escalation. Revisione Claude 2026-10-22.'
+  stato: promossa
+- data: '2023-12-18'
+  tema: commodity_energy
+  fonte: 2026-09-06/news_02.md
+  evento: BP sospende i transiti nel Mar Rosso; attacco a una nave norvegese
+  meccanismo:
+  - shipping_chokepoint
+  - houthi
+  dichiarazioni:
+  - asset: BZ=F
+    verso: pos
+    perché: 'Research Houthi §3: prima major petrolifera a fermarsi, premio di rischio sulla rotta del
+      greggio. Sostituisce l''esclusione precedente («non univoca»), su richiesta del maintainer. Revisione
+      Claude 2026-10-22.'
+  - asset: HO=F
+    verso: pos
+    perché: 'Research Houthi §3: Mar Rosso rotta del diesel e del jet verso l''Europa, il Capo allunga
+      i tempi. Revisione Claude 2026-10-22.'
+  - asset: TTF=F
+    verso: pos
+    perché: 'Research Houthi §3: deviazione delle metaniere, gas in rialzo nelle fonti dell''epoca. Revisione
+      Claude 2026-10-22.'
+  - asset: IYT
+    verso: escluso
+    perché: 'Research Houthi §3 dà «pos, neg»: noli in salita contro costo del carburante, segno netto
+      ambiguo. Revisione Claude 2026-10-22.'
+  stato: promossa
+- data: '2024-01-12'
+  tema: commodity_energy
+  fonte: 2026-09-06/news_02.md
+  evento: Prima seduta dopo i raid USA-UK sugli Houthi (notte fra l'11 e il 12)
+  meccanismo:
+  - military_escalation
+  - shipping_chokepoint
+  - houthi
+  dichiarazioni:
+  - asset: BZ=F
+    verso: pos
+    perché: 'Research Houthi §3: escalation militare sulla rotta, più il sequestro iraniano di una petroliera
+      l''11. Sostituisce l''esclusione precedente («non univoca»), su richiesta del maintainer. Revisione
+      Claude 2026-10-22.'
+  - asset: HO=F
+    verso: pos
+    perché: 'Research Houthi §3: le product tanker fermano le navi dirette al Mar Rosso. Revisione Claude
+      2026-10-22.'
+  - asset: GC=F
+    verso: pos
+    perché: 'Research Houthi §3: canale rifugio sull''escalation. Revisione Claude 2026-10-22.'
+  - asset: IYT
+    verso: escluso
+    perché: 'Research Houthi §3 dà «pos, neg»: segno netto ambiguo. Revisione Claude 2026-10-22.'
+  stato: promossa
