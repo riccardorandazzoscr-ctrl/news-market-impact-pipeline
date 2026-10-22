@@ -1,5 +1,5 @@
-generated_at: '2026-10-22T10:49:02'
-num_entries: 37
+generated_at: '2026-10-22T21:41:51'
+num_entries: 38
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -504,6 +504,91 @@ entries:
   - high-frequency identification
   - fed information effect
   - oil overhang
+- source_file: Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+    e stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+    debito degli hyperscaler, vendor financing e stress di credito della filiera (2023–presente).md
+  title: 'Finanziamento del capex AI: emissioni di debito e azioni degli hyperscaler,
+    veicoli fuori bilancio, vendor financing e stress di credito della filiera, trasmissione
+    a semiconduttori, software, credito e mercati asiatici (2023–presente)'
+  date_compiled: 2026-10-22
+  primary_theme: structural_themes
+  sub_themes:
+  - ai_capex_financing
+  - ai_capex
+  - hyperscaler_capex
+  - valuation_derisking
+  - concentration_risk
+  - ai_semis
+  - memory_cycle
+  - vendor_financing
+  - circular_financing
+  - off_balance_sheet_financing
+  - credit_stress
+  - neocloud_leverage
+  relevant_assets:
+  - SOXX
+  - ^NDX
+  - IGV
+  - HYG
+  - EWY
+  - EWT
+  - ^TNX
+  - ^GSPC
+  - XLU
+  external_assets_mentioned:
+  - NVDA (Nvidia) — fornitore al centro della circolarità e del vendor financing;
+    reazione diretta a 2025-09-22, 2025-11-11, 2026-02-02, 2026-08-28
+  - ORCL (Oracle) — emittente investment grade con la leva più alta, termometro del
+    debito AI; peso in IGV non verificato
+  - META (Meta Platforms) — emissioni record 2025-10-30 e 2026-04-30, azioni di classe
+    C 2026-10-22
+  - MSFT, GOOGL, AMZN — emittenti di maxi-bond (Alphabet 2026-02-09, Amazon 2026-03-10
+    e 2026-07-07)
+  - CRWV (CoreWeave), NBIS (Nebius) — neocloud indebitati; misura diretta dello stress
+    del credito dei costruttori di capacità
+  - CDS a 5 anni di Oracle, CoreWeave, SoftBank e degli hyperscaler — misura diretta
+    del rischio di credito AI, non disponibile in pipeline
+  - Spread IG del settore tecnologico ICE/Bloomberg e LQD — misurerebbero il debito
+    tecnologico investment grade meglio di HYG
+  - Beignet Investor LLC (Meta/Blue Owl, 6,581% 2049) — veicolo fuori bilancio; prezzo
+    secondario non disponibile
+  - Blue Owl (OWL), Apollo, Blackstone — private credit a servizio dei data center
+  - SoftBank (9984.T) — finanziatore di OpenAI, CDS a 424 pb a ottobre 2026
+  - Lucent, Nortel, Global Crossing — precedente 1999-2001 del vendor financing, fuori
+    dalla finestra prezzi della pipeline
+  time_window:
+    start: 2023-01-01
+    end: present
+  regime_phases:
+  - cash_flow_funded_capex: 2023-01-01 to 2025-09-21
+  - debt_funded_buildout: 2025-09-22 to 2026-02-01
+  - hybrid_debt_equity_vendor_financing: 2026-02-02 to 2026-10-13
+  - credit_stress_equity_funding: 2026-10-14 to present
+  keywords:
+  - finanziamento del capex
+  - emissione obbligazionaria
+  - aumento di capitale
+  - azioni senza diritto di voto
+  - veicolo fuori bilancio
+  - SPV
+  - private credit
+  - vendor financing
+  - circolarità
+  - neocloud
+  - CoreWeave
+  - Oracle
+  - Meta
+  - Blue Owl
+  - CDS
+  - spread di credito
+  - debito AI
+  - AI capex financing
+  - bond issuance
+  - equity raise
+  - off-balance-sheet
+  - circular financing
+  - credit spread
+  - data center debt
 - source_file: Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   title: Politica fiscale fuori dall'eurozona e trasmissione ai mercati — regime ed
     episodi storici (2011–2026)

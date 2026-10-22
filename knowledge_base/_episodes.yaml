@@ -1,5 +1,5 @@
-generated_at: '2026-10-22T12:25:32'
-num_episodes: 1396
+generated_at: '2026-10-22T21:41:54'
+num_episodes: 1414
 episodes:
 - date: '1984-01-01'
   theme: commodity_energy
@@ -140914,6 +140914,86 @@ episodes:
       - ai_capex
       - earnings_shock
       directions_by_reference: {}
+- date: '2025-03-28'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    SOXX:
+    - neg
+    ^NDX:
+    - neg
+  direction_sources:
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    ^NDX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - ai_semis
+  - valuation_derisking
+  n_sources: 1
+  events:
+  - event_id: 2025-03-28:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - ai_semis
+    - valuation_derisking
+    directions_by_reference:
+      SOXX:
+      - neg
+      ^NDX:
+      - neg
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - ai_semis
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - valuation_derisking
+      directions_by_reference:
+        ^NDX:
+        - neg
 - date: '2025-03-31'
   theme: structural_themes
   direction: mixed
@@ -141798,6 +141878,65 @@ episodes:
       directions_by_reference:
         IGV:
         - neg
+- date: '2025-07-02'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    IGV:
+    - neg
+  direction_sources:
+    IGV:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - hyperscaler_capex
+  n_sources: 1
+  events:
+  - event_id: 2025-07-02:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - hyperscaler_capex
+    directions_by_reference:
+      IGV:
+      - neg
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        IGV:
+        - neg
 - date: '2025-07-15'
   theme: structural_themes
   direction: ''
@@ -141941,6 +142080,65 @@ episodes:
       directions_by_reference:
         SOXX:
         - neutral
+- date: '2025-07-28'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    IGV:
+    - neg
+  direction_sources:
+    IGV:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - hyperscaler_capex
+  n_sources: 1
+  events:
+  - event_id: 2025-07-28:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - hyperscaler_capex
+    directions_by_reference:
+      IGV:
+      - neg
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        IGV:
+        - neg
 - date: '2025-08-19'
   theme: structural_themes
   direction: neg
@@ -142384,6 +142582,207 @@ episodes:
       - hbm
       - memory_cycle
       directions_by_reference: {}
+- date: '2025-09-22'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    EWT:
+    - pos
+    EWY:
+    - pos
+    SOXX:
+    - pos
+    ^NDX:
+    - pos
+  direction_sources:
+    EWT:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    EWY:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    ^NDX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - ai_semis
+  - concentration_risk
+  - memory_cycle
+  n_sources: 1
+  events:
+  - event_id: 2025-09-22:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - ai_semis
+    - concentration_risk
+    - memory_cycle
+    directions_by_reference:
+      EWT:
+      - pos
+      EWY:
+      - pos
+      SOXX:
+      - pos
+      ^NDX:
+      - pos
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - ai_semis
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - concentration_risk
+      directions_by_reference:
+        ^NDX:
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - ai_semis
+      directions_by_reference:
+        EWT:
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - memory_cycle
+      directions_by_reference:
+        EWY:
+        - pos
+- date: '2025-09-24'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    IGV:
+    - neg
+    SOXX:
+    - pos
+  direction_sources:
+    IGV:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - ai_semis
+  - hyperscaler_capex
+  n_sources: 1
+  events:
+  - event_id: 2025-09-24:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - ai_semis
+    - hyperscaler_capex
+    directions_by_reference:
+      IGV:
+      - neg
+      SOXX:
+      - pos
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        IGV:
+        - neg
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - ai_semis
+      directions_by_reference:
+        SOXX:
+        - pos
 - date: '2025-09-29'
   theme: structural_themes
   direction: ''
@@ -142523,6 +142922,128 @@ episodes:
         - pos
         XLU:
         - neutral
+- date: '2025-10-30'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    HYG:
+    - pos
+    SOXX:
+    - pos
+    ^NDX:
+    - neg
+    - pos
+    ^TNX:
+    - pos
+  direction_sources:
+    HYG:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    ^NDX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    ^TNX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - earnings_shock
+  - hyperscaler_capex
+  n_sources: 1
+  events:
+  - event_id: 2025-10-30:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - earnings_shock
+    - hyperscaler_capex
+    directions_by_reference:
+      HYG:
+      - pos
+      SOXX:
+      - pos
+      ^NDX:
+      - neg
+      - pos
+      ^TNX:
+      - pos
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        HYG:
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      directions_by_reference:
+        ^TNX:
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - earnings_shock
+      - hyperscaler_capex
+      directions_by_reference:
+        ^NDX:
+        - neg
+        - pos
 - date: '2025-10-31'
   theme: structural_themes
   direction: ''
@@ -142555,6 +143076,181 @@ episodes:
       subthemes_local:
       - earnings_shock
       directions_by_reference: {}
+- date: '2025-11-11'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    EWT:
+    - neg
+    SOXX:
+    - neg
+  direction_sources:
+    EWT:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - ai_semis
+  n_sources: 1
+  events:
+  - event_id: 2025-11-11:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - ai_semis
+    directions_by_reference:
+      EWT:
+      - neg
+      SOXX:
+      - neg
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - ai_semis
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - ai_semis
+      directions_by_reference:
+        EWT:
+        - neg
+- date: '2025-11-13'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    HYG:
+    - neg
+    IGV:
+    - neg
+    SOXX:
+    - neg
+  direction_sources:
+    HYG:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    IGV:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - valuation_derisking
+  n_sources: 1
+  events:
+  - event_id: 2025-11-13:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - valuation_derisking
+    directions_by_reference:
+      HYG:
+      - neg
+      IGV:
+      - neg
+      SOXX:
+      - neg
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - valuation_derisking
+      directions_by_reference:
+        HYG:
+        - neg
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - valuation_derisking
+      directions_by_reference:
+        IGV:
+        - neg
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - valuation_derisking
+      directions_by_reference:
+        SOXX:
+        - neg
 - date: '2025-12-09'
   theme: structural_themes
   direction: ''
@@ -142667,27 +143363,128 @@ episodes:
   theme: structural_themes
   direction: ''
   directions: []
-  directions_declared: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    HYG:
+    - neg
+    IGV:
+    - neg
+    SOXX:
+    - neg
+    ^NDX:
+    - neg
+  direction_sources:
+    HYG:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    IGV:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    ^NDX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
   directions_local: []
-  declared: false
+  declared: true
   subthemes:
   - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
   - grid_capacity
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
   - power_bottleneck
+  - valuation_derisking
+  - vendor_financing
   subthemes_local:
+  - ai_capex_financing
   - ai_capex_spending
-  n_sources: 1
+  - hyperscaler_capex
+  - valuation_derisking
+  n_sources: 2
   events:
   - event_id: 2025-12-17:structural_themes:-
     geo: ''
     subthemes_local:
+    - ai_capex_financing
     - ai_capex_spending
+    - hyperscaler_capex
+    - valuation_derisking
+    directions_by_reference:
+      HYG:
+      - neg
+      IGV:
+      - neg
+      SOXX:
+      - neg
+      ^NDX:
+      - neg
     sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
       capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
       storici (2021–presente).md
     evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - valuation_derisking
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        IGV:
+        - neg
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - valuation_derisking
+      directions_by_reference:
+        ^NDX:
+        - neg
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - valuation_derisking
+      directions_by_reference:
+        HYG:
+        - neg
     - source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo
         di bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico
         del capex AI- potenza, reti e turbine come collo di bottiglia — regime ed
@@ -142732,6 +143529,397 @@ episodes:
       subthemes_local:
       - foundry_logic
       directions_by_reference: {}
+- date: '2026-02-02'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    HYG:
+    - pos
+    IGV:
+    - neg
+    - pos
+    SOXX:
+    - neg
+  direction_sources:
+    HYG:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    IGV:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - ai_semis
+  - hyperscaler_capex
+  n_sources: 1
+  events:
+  - event_id: 2026-02-02:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - ai_semis
+    - hyperscaler_capex
+    directions_by_reference:
+      HYG:
+      - pos
+      IGV:
+      - neg
+      - pos
+      SOXX:
+      - neg
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        HYG:
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        IGV:
+        - neg
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - ai_semis
+      directions_by_reference:
+        SOXX:
+        - neg
+- date: '2026-02-09'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    SOXX:
+    - pos
+    ^NDX:
+    - neg
+    - pos
+  direction_sources:
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    ^NDX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - hyperscaler_capex
+  - valuation_derisking
+  n_sources: 1
+  events:
+  - event_id: 2026-02-09:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - hyperscaler_capex
+    - valuation_derisking
+    directions_by_reference:
+      SOXX:
+      - pos
+      ^NDX:
+      - neg
+      - pos
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - valuation_derisking
+      directions_by_reference:
+        ^NDX:
+        - neg
+        - pos
+- date: '2026-03-10'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    HYG:
+    - pos
+    SOXX:
+    - pos
+    ^TNX:
+    - neg
+    - pos
+  direction_sources:
+    HYG:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    ^TNX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - hyperscaler_capex
+  n_sources: 1
+  events:
+  - event_id: 2026-03-10:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - hyperscaler_capex
+    directions_by_reference:
+      HYG:
+      - pos
+      SOXX:
+      - pos
+      ^TNX:
+      - neg
+      - pos
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        HYG:
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      directions_by_reference:
+        ^TNX:
+        - neg
+        - pos
+- date: '2026-04-30'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    HYG:
+    - neg
+    SOXX:
+    - pos
+    ^NDX:
+    - neg
+    - pos
+  direction_sources:
+    HYG:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    ^NDX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - earnings_shock
+  - hyperscaler_capex
+  n_sources: 1
+  events:
+  - event_id: 2026-04-30:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - earnings_shock
+    - hyperscaler_capex
+    directions_by_reference:
+      HYG:
+      - neg
+      SOXX:
+      - pos
+      ^NDX:
+      - neg
+      - pos
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        HYG:
+        - neg
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - earnings_shock
+      - hyperscaler_capex
+      directions_by_reference:
+        ^NDX:
+        - neg
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        SOXX:
+        - pos
 - date: '2026-05-06'
   theme: structural_themes
   direction: ''
@@ -143269,6 +144457,72 @@ episodes:
       - kospi
       - valuation_derisking
       directions_by_reference: {}
+- date: '2026-07-01'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    SOXX:
+    - neg
+    - pos
+  direction_sources:
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - ai_semis
+  - concentration_risk
+  n_sources: 1
+  events:
+  - event_id: 2026-07-01:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - ai_semis
+    - concentration_risk
+    directions_by_reference:
+      SOXX:
+      - neg
+      - pos
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - ai_semis
+      - concentration_risk
+      directions_by_reference:
+        SOXX:
+        - neg
+        - pos
 - date: '2026-07-02'
   theme: structural_themes
   direction: mixed
@@ -143369,6 +144623,84 @@ episodes:
       - memory_cycle
       - valuation_derisking
       directions_by_reference: {}
+- date: '2026-07-07'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    HYG:
+    - pos
+    SOXX:
+    - pos
+  direction_sources:
+    HYG:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - hyperscaler_capex
+  n_sources: 1
+  events:
+  - event_id: 2026-07-07:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - hyperscaler_capex
+    directions_by_reference:
+      HYG:
+      - pos
+      SOXX:
+      - pos
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        HYG:
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        SOXX:
+        - pos
 - date: '2026-07-16'
   theme: structural_themes
   direction: pos
@@ -144114,6 +145446,168 @@ episodes:
         - neutral
         XLU:
         - pos
+- date: '2026-08-27'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    HYG:
+    - neg
+    - pos
+  direction_sources:
+    HYG:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - hyperscaler_capex
+  n_sources: 1
+  events:
+  - event_id: 2026-08-27:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - hyperscaler_capex
+    directions_by_reference:
+      HYG:
+      - neg
+      - pos
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        HYG:
+        - neg
+        - pos
+- date: '2026-08-28'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    EWT:
+    - neg
+    SOXX:
+    - neg
+    ^NDX:
+    - neg
+  direction_sources:
+    EWT:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    ^NDX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - ai_semis
+  - concentration_risk
+  n_sources: 1
+  events:
+  - event_id: 2026-08-28:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - ai_semis
+    - concentration_risk
+    directions_by_reference:
+      EWT:
+      - neg
+      SOXX:
+      - neg
+      ^NDX:
+      - neg
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - ai_semis
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - concentration_risk
+      directions_by_reference:
+        ^NDX:
+        - neg
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - ai_semis
+      directions_by_reference:
+        EWT:
+        - neg
 - date: '2026-09-12'
   theme: structural_themes
   direction: ''
@@ -144514,4 +146008,268 @@ episodes:
       - safety_pause
       directions_by_reference:
         ^VIX:
+        - pos
+- date: '2026-10-14'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    EWT:
+    - neg
+    EWY:
+    - neg
+    HYG:
+    - neg
+    SOXX:
+    - neg
+    ^NDX:
+    - neg
+  direction_sources:
+    EWT:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    EWY:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    HYG:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    ^NDX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - ai_semis
+  - memory_cycle
+  - valuation_derisking
+  n_sources: 1
+  events:
+  - event_id: 2026-10-14:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - ai_semis
+    - memory_cycle
+    - valuation_derisking
+    directions_by_reference:
+      EWT:
+      - neg
+      EWY:
+      - neg
+      HYG:
+      - neg
+      SOXX:
+      - neg
+      ^NDX:
+      - neg
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - valuation_derisking
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - valuation_derisking
+      directions_by_reference:
+        ^NDX:
+        - neg
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - valuation_derisking
+      directions_by_reference:
+        HYG:
+        - neg
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - memory_cycle
+      directions_by_reference:
+        EWY:
+        - neg
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - ai_semis
+      directions_by_reference:
+        EWT:
+        - neg
+- date: '2026-10-22'
+  theme: structural_themes
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    EWY:
+    - pos
+    HYG:
+    - pos
+    SOXX:
+    - pos
+    ^NDX:
+    - neg
+    - pos
+  direction_sources:
+    EWY:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    HYG:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    SOXX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    ^NDX:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - ai_capex
+  - ai_capex_financing
+  - ai_semis
+  - circular_financing
+  - concentration_risk
+  - credit_stress
+  - hyperscaler_capex
+  - memory_cycle
+  - neocloud_leverage
+  - off_balance_sheet_financing
+  - valuation_derisking
+  - vendor_financing
+  subthemes_local:
+  - ai_capex_financing
+  - earnings_shock
+  - hyperscaler_capex
+  - memory_cycle
+  n_sources: 1
+  events:
+  - event_id: 2026-10-22:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - ai_capex_financing
+    - earnings_shock
+    - hyperscaler_capex
+    - memory_cycle
+    directions_by_reference:
+      EWY:
+      - pos
+      HYG:
+      - pos
+      SOXX:
+      - pos
+      ^NDX:
+      - neg
+      - pos
+    sources:
+    - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
+      stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
+      debito degli hyperscaler, vendor financing e stress di credito della filiera
+      (2023–presente).md
+    evidence:
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - earnings_shock
+      - hyperscaler_capex
+      directions_by_reference:
+        ^NDX:
+        - neg
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - hyperscaler_capex
+      directions_by_reference:
+        HYG:
+        - pos
+    - source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+        e stress di credito della filiera (2023–presente)/Finanziamento del capex
+        AI_ debito degli hyperscaler, vendor financing e stress di credito della filiera
+        (2023–presente).md
+      subthemes_local:
+      - ai_capex_financing
+      - memory_cycle
+      directions_by_reference:
+        EWY:
         - pos
