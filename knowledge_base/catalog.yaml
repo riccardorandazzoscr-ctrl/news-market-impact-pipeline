@@ -1,5 +1,5 @@
-generated_at: '2026-10-22T22:22:43'
-num_entries: 39
+generated_at: '2026-10-24T15:35:46'
+num_entries: 40
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -1661,6 +1661,61 @@ entries:
   - 30-year yield
   - trentennale
   - spread BTP-Bund
+- source_file: Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+    sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+    conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  title: 'Decisioni di rating sovrano nell''area euro: conferme contro attese di taglio,
+    tagli meno gravi del temuto e tagli a sorpresa — trasmissione agli spread OAT-Bund
+    e BTP-Bund (2011–presente)'
+  date_compiled: 2026-10-24
+  primary_theme: fiscal_policy
+  sub_themes:
+  - sovereign_rating
+  - france_spread
+  - italy_spread
+  - contagion
+  - eurozone_release
+  relevant_assets:
+  - OAT_BUND_SPREAD
+  - BTP_BUND_SPREAD
+  - FTSEMIB.MI
+  - ^STOXX50E
+  - EURUSD=X
+  - IEAG.AS
+  - EXX6.DE
+  external_assets_mentioned:
+  - CAC 40 (^FCHI) — canale azionario francese più diretto di ^STOXX50E
+  - Indice bancario italiano e banche francesi — canale banca-sovrano
+  - Spread Bonos-Bund e PGB-Bund — misura del contagio verso Spagna e Portogallo
+  - CDS sovrani 5 anni Francia e Italia — prezzo del rischio di credito senza effetto
+    Bund
+  - Future BTP e OAT (Eurex) — reazione intraday al comunicato del venerdì sera, prima
+    della seduta di lunedì
+  time_window:
+    start: 2011-01-01
+    end: present
+  regime_phases:
+  - sovereign_crisis_pre_omt: 2011-01-01 to 2012-07-25
+  - omt_qe_compression: 2012-07-26 to 2020-03-11
+  - pandemic_pepp: 2020-03-12 to 2022-07-20
+  - tpi_rate_hikes: 2022-07-21 to 2024-06-08
+  - french_fiscal_stress: 2024-06-09 to present
+  keywords:
+  - rating sovrano
+  - declassamento
+  - conferma del rating
+  - outlook negativo
+  - Moody's
+  - S&P
+  - Fitch
+  - DBRS
+  - spread OAT-Bund
+  - spread BTP-Bund
+  - sovereign rating
+  - downgrade
+  - rating affirmed
+  - downgrade averted
+  - outlook cut
 - source_file: Regno Unito, shock politici e monetari — regime ed episodi storici
     (2016–2026)/Regno Unito- shock politici e monetari — regime ed episodi storici
     (2016–2026).md

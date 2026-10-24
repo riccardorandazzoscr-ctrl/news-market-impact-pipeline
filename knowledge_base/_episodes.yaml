@@ -1,5 +1,5 @@
-generated_at: '2026-10-24T10:03:38'
-num_episodes: 1426
+generated_at: '2026-10-24T15:35:48'
+num_episodes: 1441
 episodes:
 - date: '1984-01-01'
   theme: commodity_energy
@@ -26806,6 +26806,62 @@ episodes:
       directions_by_reference:
         FTSEMIB.MI:
         - neg
+- date: '2013-07-10'
+  theme: fiscal_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - contagion
+  - eurozone_release
+  - france_spread
+  - italy_spread
+  - sovereign_rating
+  subthemes_local:
+  - auction
+  - eurozone_release
+  - italy_spread
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2013-07-10:fiscal_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - auction
+    - eurozone_release
+    - italy_spread
+    - sovereign_rating
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - pos
+    sources:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    evidence:
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - auction
+      - eurozone_release
+      - italy_spread
+      - sovereign_rating
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - pos
 - date: '2013-10-01'
   theme: fiscal_policy
   direction: ''
@@ -27078,6 +27134,62 @@ episodes:
         - pos
         EWZ:
         - neg
+- date: '2016-10-24'
+  theme: fiscal_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - contagion
+  - eurozone_release
+  - france_spread
+  - italy_spread
+  - sovereign_rating
+  subthemes_local:
+  - election_risk
+  - eurozone_release
+  - italy_spread
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2016-10-24:fiscal_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - election_risk
+    - eurozone_release
+    - italy_spread
+    - sovereign_rating
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - pos
+    sources:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    evidence:
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - election_risk
+      - eurozone_release
+      - italy_spread
+      - sovereign_rating
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - pos
 - date: '2016-12-05'
   theme: fiscal_policy
   direction: ''
@@ -27574,6 +27686,66 @@ episodes:
     - source: card:2026-09-10/news_05.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2018-09-03'
+  theme: fiscal_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - contagion
+  - eurozone_release
+  - france_spread
+  - italy_spread
+  - sovereign_rating
+  subthemes_local:
+  - budget_passage
+  - eurozone_release
+  - italy_spread
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2018-09-03:fiscal_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - budget_passage
+    - eurozone_release
+    - italy_spread
+    - sovereign_rating
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+    sources:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    evidence:
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - budget_passage
+      - eurozone_release
+      - italy_spread
+      - sovereign_rating
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
 - date: '2018-09-28'
   theme: fiscal_policy
   direction: ''
@@ -27728,6 +27900,83 @@ episodes:
       directions_by_reference:
         BTP_BUND_SPREAD:
         - neg
+- date: '2018-10-29'
+  theme: fiscal_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    FTSEMIB.MI:
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    FTSEMIB.MI:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - contagion
+  - eurozone_release
+  - france_spread
+  - italy_spread
+  - sovereign_rating
+  subthemes_local:
+  - eurozone_release
+  - fiscal_deadlock
+  - italy_spread
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2018-10-29:fiscal_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - eurozone_release
+    - fiscal_deadlock
+    - italy_spread
+    - sovereign_rating
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      FTSEMIB.MI:
+      - pos
+    sources:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    evidence:
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - eurozone_release
+      - fiscal_deadlock
+      - italy_spread
+      - sovereign_rating
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - eurozone_release
+      - fiscal_deadlock
+      - italy_spread
+      - sovereign_rating
+      directions_by_reference:
+        FTSEMIB.MI:
+        - pos
 - date: '2018-12-08'
   theme: fiscal_policy
   direction: neg
@@ -28294,6 +28543,118 @@ episodes:
     - source: card:2026-06-10/news_02.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2020-04-27'
+  theme: fiscal_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - contagion
+  - eurozone_release
+  - france_spread
+  - italy_spread
+  - sovereign_rating
+  subthemes_local:
+  - ecb_backstop
+  - eurozone_release
+  - italy_spread
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2020-04-27:fiscal_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb_backstop
+    - eurozone_release
+    - italy_spread
+    - sovereign_rating
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+    sources:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    evidence:
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - ecb_backstop
+      - eurozone_release
+      - italy_spread
+      - sovereign_rating
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+- date: '2020-04-29'
+  theme: fiscal_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - contagion
+  - eurozone_release
+  - france_spread
+  - italy_spread
+  - sovereign_rating
+  subthemes_local:
+  - ecb_backstop
+  - eurozone_release
+  - italy_spread
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2020-04-29:fiscal_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb_backstop
+    - eurozone_release
+    - italy_spread
+    - sovereign_rating
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - pos
+    sources:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    evidence:
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - ecb_backstop
+      - eurozone_release
+      - italy_spread
+      - sovereign_rating
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - pos
 - date: '2021-02-25'
   theme: fiscal_policy
   direction: neg
@@ -28747,6 +29108,65 @@ episodes:
       directions_by_reference:
         OAT_BUND_SPREAD:
         - neg
+        - pos
+- date: '2022-08-08'
+  theme: fiscal_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - contagion
+  - eurozone_release
+  - france_spread
+  - italy_spread
+  - sovereign_rating
+  subthemes_local:
+  - ecb_backstop
+  - election_risk
+  - eurozone_release
+  - italy_spread
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2022-08-08:fiscal_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb_backstop
+    - election_risk
+    - eurozone_release
+    - italy_spread
+    - sovereign_rating
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - pos
+    sources:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    evidence:
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - ecb_backstop
+      - election_risk
+      - eurozone_release
+      - italy_spread
+      - sovereign_rating
+      directions_by_reference:
+        BTP_BUND_SPREAD:
         - pos
 - date: '2022-08-16'
   theme: fiscal_policy
@@ -29419,6 +29839,118 @@ episodes:
       - fiscal_deadlock
       - term_premium
       directions_by_reference: {}
+- date: '2023-11-20'
+  theme: fiscal_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - contagion
+  - eurozone_release
+  - france_spread
+  - italy_spread
+  - sovereign_rating
+  subthemes_local:
+  - budget_passage
+  - eurozone_release
+  - italy_spread
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2023-11-20:fiscal_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - budget_passage
+    - eurozone_release
+    - italy_spread
+    - sovereign_rating
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+    sources:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    evidence:
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - budget_passage
+      - eurozone_release
+      - italy_spread
+      - sovereign_rating
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+- date: '2024-06-03'
+  theme: fiscal_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    OAT_BUND_SPREAD:
+    - neutral
+  direction_sources:
+    OAT_BUND_SPREAD:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - contagion
+  - eurozone_release
+  - france_spread
+  - italy_spread
+  - sovereign_rating
+  subthemes_local:
+  - election_risk
+  - eurozone_release
+  - france_spread
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2024-06-03:fiscal_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - election_risk
+    - eurozone_release
+    - france_spread
+    - sovereign_rating
+    directions_by_reference:
+      OAT_BUND_SPREAD:
+      - neutral
+    sources:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    evidence:
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - election_risk
+      - eurozone_release
+      - france_spread
+      - sovereign_rating
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - neutral
 - date: '2024-06-09'
   theme: fiscal_policy
   direction: neg
@@ -29907,6 +30439,126 @@ episodes:
       - balance_sheet
       - guidance_pivot
       directions_by_reference: {}
+- date: '2024-10-14'
+  theme: fiscal_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    OAT_BUND_SPREAD:
+    - neg
+    - pos
+  direction_sources:
+    OAT_BUND_SPREAD:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - contagion
+  - eurozone_release
+  - france_spread
+  - italy_spread
+  - sovereign_rating
+  subthemes_local:
+  - budget_passage
+  - eurozone_release
+  - france_spread
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2024-10-14:fiscal_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - budget_passage
+    - eurozone_release
+    - france_spread
+    - sovereign_rating
+    directions_by_reference:
+      OAT_BUND_SPREAD:
+      - neg
+      - pos
+    sources:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    evidence:
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - budget_passage
+      - eurozone_release
+      - france_spread
+      - sovereign_rating
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - neg
+        - pos
+- date: '2024-10-28'
+  theme: fiscal_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    OAT_BUND_SPREAD:
+    - neg
+    - pos
+  direction_sources:
+    OAT_BUND_SPREAD:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - contagion
+  - eurozone_release
+  - france_spread
+  - italy_spread
+  - sovereign_rating
+  subthemes_local:
+  - budget_passage
+  - eurozone_release
+  - france_spread
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2024-10-28:fiscal_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - budget_passage
+    - eurozone_release
+    - france_spread
+    - sovereign_rating
+    directions_by_reference:
+      OAT_BUND_SPREAD:
+      - neg
+      - pos
+    sources:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    evidence:
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - budget_passage
+      - eurozone_release
+      - france_spread
+      - sovereign_rating
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - neg
+        - pos
 - date: '2024-10-30'
   theme: fiscal_policy
   direction: neg
@@ -30662,6 +31314,66 @@ episodes:
     - source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2025-05-26'
+  theme: fiscal_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - contagion
+  - eurozone_release
+  - france_spread
+  - italy_spread
+  - sovereign_rating
+  subthemes_local:
+  - eurozone_release
+  - fiscal_consolidation
+  - italy_spread
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2025-05-26:fiscal_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - eurozone_release
+    - fiscal_consolidation
+    - italy_spread
+    - sovereign_rating
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+    sources:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    evidence:
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - eurozone_release
+      - fiscal_consolidation
+      - italy_spread
+      - sovereign_rating
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
 - date: '2025-05-28'
   theme: fiscal_policy
   direction: neg
@@ -31805,6 +32517,69 @@ episodes:
       directions_by_reference:
         BTP_BUND_SPREAD:
         - neg
+- date: '2025-10-27'
+  theme: fiscal_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    OAT_BUND_SPREAD:
+    - neg
+    - pos
+  direction_sources:
+    OAT_BUND_SPREAD:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - contagion
+  - eurozone_release
+  - france_spread
+  - italy_spread
+  - sovereign_rating
+  subthemes_local:
+  - budget_passage
+  - eurozone_release
+  - fiscal_deadlock
+  - france_spread
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2025-10-27:fiscal_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - budget_passage
+    - eurozone_release
+    - fiscal_deadlock
+    - france_spread
+    - sovereign_rating
+    directions_by_reference:
+      OAT_BUND_SPREAD:
+      - neg
+      - pos
+    sources:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    evidence:
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - budget_passage
+      - eurozone_release
+      - fiscal_deadlock
+      - france_spread
+      - sovereign_rating
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - neg
+        - pos
 - date: '2025-11-12'
   theme: fiscal_policy
   direction: neg
@@ -32077,6 +32852,66 @@ episodes:
     - source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2026-02-02'
+  theme: fiscal_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - contagion
+  - eurozone_release
+  - france_spread
+  - italy_spread
+  - sovereign_rating
+  subthemes_local:
+  - eurozone_release
+  - fiscal_consolidation
+  - italy_spread
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2026-02-02:fiscal_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - eurozone_release
+    - fiscal_consolidation
+    - italy_spread
+    - sovereign_rating
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+    sources:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    evidence:
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - eurozone_release
+      - fiscal_consolidation
+      - italy_spread
+      - sovereign_rating
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
 - date: '2026-05-08'
   theme: fiscal_policy
   direction: ''
@@ -32299,6 +33134,62 @@ episodes:
       - fiscal_expansion
       - term_premium
       directions_by_reference: {}
+- date: '2026-08-31'
+  theme: fiscal_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    OAT_BUND_SPREAD:
+    - neg
+  direction_sources:
+    OAT_BUND_SPREAD:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - contagion
+  - eurozone_release
+  - france_spread
+  - italy_spread
+  - sovereign_rating
+  subthemes_local:
+  - eurozone_release
+  - fiscal_deadlock
+  - france_spread
+  - sovereign_rating
+  n_sources: 1
+  events:
+  - event_id: 2026-08-31:fiscal_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - eurozone_release
+    - fiscal_deadlock
+    - france_spread
+    - sovereign_rating
+    directions_by_reference:
+      OAT_BUND_SPREAD:
+      - neg
+    sources:
+    - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+      sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
+      conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+    evidence:
+    - source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+        sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area
+        euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund
+        (2011-presente).md
+      subthemes_local:
+      - eurozone_release
+      - fiscal_deadlock
+      - france_spread
+      - sovereign_rating
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - neg
 - date: '2026-10-01'
   theme: fiscal_policy
   direction: neg
