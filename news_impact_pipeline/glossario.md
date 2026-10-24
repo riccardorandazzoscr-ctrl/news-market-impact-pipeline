@@ -23,6 +23,7 @@ già pronto.
 - **p25 / p75** — 25° e 75° percentile: delimitano la metà centrale degli episodi. Una banda molto più larga della mediana segnala dispersione alta.
 - **Punto base (bp)** — un centesimo di punto percentuale (0,01%).
 - **Regime (storico/macro)** — la fase di mercato (tassi in salita, dollaro forte, ecc.) in cui un episodio è avvenuto. Episodi di regimi diversi non vanno mescolati nello stesso campione.
+- **Rientro verso la media (mean reversion)** — la tendenza di un prezzo a recuperare parte di un movimento brusco nei giorni successivi. Nell'event study si vede quando il segno a T+3/T+10 è opposto alla pressione dichiarata all'evento: il calo (o il rialzo) si è concentrato nel giorno T=0 e poi è stato in parte restituito.
 - **Sempre su / sempre giù (baseline)** — hit rate che si otterrebbe prevedendo sempre un rialzo (o sempre un ribasso) sugli stessi casi e orizzonti della scorecard. Un hit rate che non le supera non dimostra alcun vantaggio, anche se è sopra il 50%.
 - **T+1 / T+3 / T+5 / T+10 (T+N)** — giorni di **borsa** dopo l'evento, non giorni di calendario. I rendimenti sono **cumulati** dal giorno dell'evento, non giornalieri.
 
@@ -63,6 +64,7 @@ già pronto.
 - **RBI (Reserve Bank of India)** — la banca centrale indiana; difende la rupia sia vendendo riserve in dollari sia con misure amministrative (limiti alle coperture a termine, finestre speciali di cambio per gli importatori di petrolio), come nell'estate 2013.
 - **RBNZ (Reserve Bank of New Zealand)** — la banca centrale neozelandese; storicamente la prima al mondo ad adottare un obiettivo d'inflazione esplicito (1990) e spesso in anticipo sul ciclo delle banche centrali maggiori.
 - **Riserva obbligatoria in valuta / riserva di rischio sui forward** — strumenti amministrativi della PBOC sul cambio: alzare la quota di depositi in valuta da tenere in riserva, o azzerare il deposito richiesto sugli acquisti a termine di dollari, rende più facile comprare dollari e quindi frena l'apprezzamento dello yuan.
+- **SONIA (Sterling Overnight Index Average)** — il tasso overnight di riferimento in sterline, calcolato dalla BoE sulle transazioni effettive; i contratti su SONIA dicono quanti rialzi o tagli della BoE il mercato si aspetta.
 - **Sorpresa macro** — la differenza fra il dato pubblicato e il consenso degli analisti; è la sorpresa, non il livello, a muovere i prezzi.
 - **TPI (Transmission Protection Instrument)** — lo "scudo anti-spread" della BCE contro un allargamento ingiustificato dei differenziali sovrani nell'area euro.
 - **UMich (University of Michigan Consumer Sentiment)** — indagine mensile sulla fiducia dei consumatori USA, con stima preliminare a metà mese e finale a fine mese. Include le aspettative d'inflazione delle famiglie a 1 anno e a 5-10 anni, seguite dalla Fed. Dal 2024 si raccoglie online: i livelli non sono confrontabili con quelli precedenti.
@@ -73,26 +75,34 @@ già pronto.
 ## Mercati e meccanismi
 
 - **Asta del Tesoro: coda (tail) e bid-to-cover** — gli indicatori della domanda a un'asta di titoli di Stato. La *coda* è lo scarto fra il rendimento di aggiudicazione e quello trattato sul mercato poco prima: una coda positiva significa che il Tesoro ha dovuto pagare di più per collocare tutto, cioè domanda debole. Il *bid-to-cover* è il rapporto fra domanda e importo offerto: più è basso, più l'asta è "fiacca".
+- **Azioni senza diritto di voto (classe C)** — azioni che danno diritto ai dividendi e al valore dell'azienda ma non al voto in assemblea. Permettono di raccogliere capitale senza diluire il controllo del fondatore (caso Meta, ottobre 2026).
 - **Bear flattening** — appiattimento della curva dei rendimenti causato dai tassi brevi che salgono più dei lunghi; è la firma di una stretta monetaria ritenuta credibile: si stringe ora, quindi l'inflazione di lungo periodo attesa scende.
 - **Bear steepening** — irripidimento della curva dei rendimenti causato dai tassi lunghi che salgono più dei brevi; segnala rischio fiscale o di inflazione, non attese di stretta immediata.
 - **Beta** — la sensibilità di un asset ai movimenti del suo mercato di riferimento. Un beta alto amplifica i movimenti in entrambe le direzioni.
+- **BTP Valore** — titolo di Stato italiano riservato ai risparmiatori retail, collocato in finestre di pochi giorni con premio fedeltà a scadenza; la sua raccolta misura la domanda domestica di debito italiano, un sostegno allo spread che altri paesi (es. la Francia) non hanno.
 - **Capex (Capital Expenditure)** — la spesa in conto capitale: investimenti in beni durevoli (impianti, macchinari, data center).
 - **Carry trade** — indebitarsi in una valuta a basso tasso per investire in attività denominate in valute a tasso più alto. Funziona finché il differenziale resta ampio e il cambio stabile; si smonta violentemente quando una delle due condizioni cade.
+- **CDS (Credit Default Swap)** — contratto che assicura contro il default di un emittente: chi lo compra paga un premio annuo, in punti base del nominale. Se il premio sale, il mercato giudica più probabile il default o chiede più compenso per quel rischio.
 - **Chokepoint** — collo di bottiglia della logistica marittima o energetica (Hormuz, Suez, Malacca, Bab el-Mandeb): un'interruzione locale ha effetti globali.
 - **CME FedWatch** — strumento del CME che ricava dai futures sui Fed Funds la probabilità implicita di ogni decisione Fed alle prossime riunioni.
 - **CNH** — lo yuan scambiato offshore (Hong Kong), libero dalla banda di oscillazione del cambio onshore (CNY): reagisce prima e di più ai segnali della PBOC.
 - **Curva dei rendimenti** — il grafico dei rendimenti per scadenza (2, 5, 10, 30 anni). Si irripidisce quando le scadenze lunghe salgono più delle corte.
 - **De-rating** — calo del multiplo (prezzo/utili) che il mercato è disposto a pagare, a utili invariati: tipico quando salgono i tassi o la fiducia nella crescita futura.
+- **DeepSeek** — laboratorio cinese di intelligenza artificiale; i suoi modelli efficienti (R1 a gennaio 2025, V4.1-Flash a ottobre 2026) mettono in dubbio quanto calcolo serva all'AI e quindi la domanda di chip e memoria.
 - **Differenziale di tasso** — la differenza fra i rendimenti di due aree valutarie; principale motore dei flussi di capitale e quindi dei cambi.
 - **Disinflazione** — rallentamento del *tasso di crescita* dei prezzi, non un calo dei prezzi (quello è deflazione).
 - **Distressed debt (debito in difficoltà)** — obbligazioni che quotano molto sotto la pari, con rendimenti tali da implicare un rischio concreto di insolvenza o ristrutturazione.
 - **Duration** — la sensibilità del prezzo di un'obbligazione a una variazione dei rendimenti. Scadenza più lunga = duration maggiore = movimento di prezzo più violento.
 - **Effetti di secondo round** — il passaggio di uno shock di prezzo (es. energia) a salari e poi di nuovo a prezzi, che rischia di renderlo persistente invece che temporaneo.
 - **Fixing** — il cambio di riferimento che una banca centrale (es. PBOC per lo yuan) pubblica ogni mattina come ancora per le oscillazioni consentite in giornata.
+- **Free cash flow (flusso di cassa libero)** — la cassa generata dall'attività meno gli investimenti (capex). Se è negativo, l'azienda deve finanziare gli investimenti con debito, nuove azioni o riserve.
+- **Gilt** — i titoli di Stato del Regno Unito. In DB li rappresenta l'ETF `IGLT.L`, che è un prezzo: scende quando i rendimenti dei gilt salgono.
 - **Guidance (aziendale)** — la previsione che un'azienda fornisce sui propri risultati futuri.
 - **Hyperscaler** — i grandi operatori cloud (Amazon, Microsoft, Google, Meta) che costruiscono data center su scala mondiale; i principali clienti del capex AI.
+- **Inferenza (AI)** — l'uso di un modello già addestrato per rispondere alle richieste (contrapposta all'addestramento). Un modello più "snello" consuma meno calcolo per risposta: il cosiddetto *shock di efficienza* è il timore che questo riduca i chip necessari per unità di domanda AI.
 - **IPO (Initial Public Offering)** — la prima quotazione in borsa di una società, con vendita di azioni al pubblico. Quando la volatilità sale gli emittenti rinviano o ritirano le IPO: una «finestra chiusa» è un segnale di stress sul finanziamento di un settore.
 - **LDI (Liability-Driven Investment)** — strategia con cui i fondi pensione britannici usano derivati sui Gilt per coprire le passività future; il crollo dei Gilt nel 2022 generò richieste di margine a catena.
+- **Neocloud** — fornitori di potenza di calcolo AI in affitto nati per questo scopo (CoreWeave, Nebius…), finanziati in larga parte a debito garantito dalle GPU; il punto più fragile della filiera del capex AI.
 - **Pass-through** — la quota dell'aumento di un costo (es. dazio, materia prima) che arriva al prezzo finale pagato dal consumatore.
 - **Lock-in (mercato immobiliare)** — l'effetto per cui chi ha un mutuo acceso a tasso basso rinuncia a vendere casa per non perderlo. Prosciuga l'offerta di abitazioni esistenti e sostiene i prezzi e gli affitti, cioè la componente più pesante dell'inflazione core.
 - **Premio a termine (term premium)** — il compenso extra richiesto per detenere un titolo a lunga scadenza invece di rinnovare titoli brevi. Cresce con l'incertezza sull'inflazione, l'offerta di debito e il ritiro dei compratori strutturali.
@@ -114,19 +124,24 @@ già pronto.
 
 ## Geopolitica e istituzioni
 
+- **Aramco (Saudi Aramco)** — la compagnia petrolifera di Stato saudita, primo esportatore di greggio al mondo; gestisce impianti chiave come Abqaiq (stabilizzazione del greggio), Ras Tanura e il terminal di Yanbu sul Mar Rosso.
 - **Articolo 49.3** — norma della Costituzione francese che consente al governo di far approvare un testo (tipicamente il bilancio) senza voto dell'Assemblea; in cambio l'opposizione può presentare una mozione di sfiducia, che se passa fa cadere il governo.
 - **CENTCOM** — United States Central Command, il comando militare USA competente per Medio Oriente e Asia centrale.
 - **Corridoio del Mar Nero** — la rotta marittima per l'export cerealicolo ucraino; oggetto di accordi e sospensioni dal 2022.
+- **EBV (Erdölbevorratungsverband)** — l'agenzia tedesca che detiene le riserve strategiche di greggio e prodotti petroliferi; può metterle in vendita per calmierare i prezzi in una crisi d'offerta.
+- **Elezioni di metà mandato (midterm)** — le elezioni americane a metà del mandato presidenziale, in cui si rinnovano tutta la Camera e un terzo del Senato; nel 2026 si tengono il 3 novembre.
 - **EPF (European Peace Facility)** — fondo fuori dal bilancio UE con cui l'Unione rimborsa agli Stati membri le armi inviate a paesi terzi (soprattutto l'Ucraina) e finanzia acquisti congiunti. Le decisioni richiedono l'unanimità, da cui il potere di veto dell'Ungheria.
 - **Flotta ombra** — petroliere anziane, con proprietà opaca e assicurazioni non occidentali, usate per trasportare greggio russo aggirando il tetto al prezzo.
 - **FMI (Fondo monetario internazionale, in inglese IMF)** — istituzione di Washington che presta ai paesi in crisi di bilancia dei pagamenti e pubblica analisi e raccomandazioni di politica economica (World Economic Outlook, rapporti regionali). Le sue raccomandazioni non sono vincolanti, ma i mercati le leggono come il parere di un osservatore esterno autorevole.
 - **G20** — foro dei ministri delle finanze e governatori delle banche centrali delle venti maggiori economie.
+- **GCC (Gulf Cooperation Council, Consiglio di cooperazione del Golfo)** — blocco di sei monarchie del Golfo (Arabia Saudita, Emirati, Kuwait, Qatar, Bahrein, Oman) con un patto di difesa comune: un attacco a un membro è considerato un attacco a tutti.
 - **Graham Act (Sanctioning Russia Act)** — legge sulle sanzioni alla Russia promossa dal senatore Lindsey Graham, approvata dal Congresso USA nel settembre 2026: dazi sulle merci russe, penalità per chi compra petrolio e gas russo e dazi secondari fino al 100% sui maggiori importatori. Sospesa per 60 giorni da Trump il 2026-10-17.
 - **Guerra ibrida** — azioni ostili sotto la soglia del conflitto aperto (sabotaggi, droni, attacchi informatici), tipicamente non rivendicate.
 - **Houthi** — movimento armato sciita yemenita (Ansar Allah), sostenuto dall'Iran; colpisce con missili e droni il naviglio nel Mar Rosso e le infrastrutture saudite.
 - **IEA (International Energy Agency)** — agenzia dell'OCSE per la sicurezza energetica; coordina i rilasci d'emergenza delle scorte strategiche dei Paesi membri.
 - **IRGC (Islamic Revolutionary Guard Corps, Pasdaran)** — il corpo militare d'élite iraniano, distinto dall'esercito regolare; controlla le operazioni navali nello Stretto di Hormuz.
 - **JCPOA (Joint Comprehensive Plan of Action)** — l'accordo del 2015 sul programma nucleare iraniano, da cui gli USA uscirono nel 2018.
+- **MFF (Multiannual Financial Framework, Quadro finanziario pluriennale)** — il bilancio settennale dell'Unione europea (il prossimo copre il 2028-2034): fissa quanto spende l'UE e per cosa (agricoltura, coesione, difesa, ricerca). Si approva all'unanimità, quindi ogni grande contributore netto, come la Germania, ha di fatto un veto.
 - **MoU (Memorandum of Understanding)** — memorandum d'intesa: accordo politico preliminare, meno vincolante di un trattato. Nel 2026 è il formato della trattativa USA-Iran su Hormuz.
 - **NATO** — North Atlantic Treaty Organization, l'alleanza militare atlantica.
 - **OFAC (Office of Foreign Assets Control)** — l'ufficio del Tesoro USA che emette e applica le sanzioni economiche (liste di persone ed entità, licenze di deroga).
@@ -153,6 +168,7 @@ già pronto.
 - **GPL (gas di petrolio liquefatto, in inglese LPG)** — propano e butano liquefatti sotto pressione, sottoprodotti di estrazione e raffinazione; viaggiano su navi dedicate (gasiere GPL). Da non confondere con il GNL, che è metano.
 - **Kpler** — società di analisi che traccia via satellite e dati AIS i carichi di petrolio, gas e prodotti raffinati nave per nave; le sue stime dei flussi (es. attraverso Hormuz) sono una delle fonti più citate quando i dati ufficiali non ci sono.
 - **Landfall** — il momento in cui l'occhio di un uragano raggiunge la costa. Per i mercati energetici segna il passaggio dalla previsione (rischio sul cono di traiettoria) alla verifica del danno reale su piattaforme e raffinerie.
+- **Nolo (freight rate)** — il prezzo del trasporto marittimo di un carico, per il greggio espresso in dollari al barile. Include carburante, noleggio della nave e premi assicurativi (war-risk): quando sale, il greggio *consegnato* costa di più anche se quello estratto costa uguale, e il rincaro pesa di più su chi è lontano dall'origine.
 - **OPEC+** — l'OPEC (Organization of the Petroleum Exporting Countries) allargata a un gruppo di produttori non-OPEC guidato dalla Russia.
 - **Scorte settimanali EIA** — il dato del mercoledì dell'Energy Information Administration USA sulle scorte di greggio, benzina e distillati; un calo superiore alle attese segnala domanda forte o offerta scarsa.
 - **Scorte strategiche (SPR, Strategic Petroleum Reserve)** — riserve d'emergenza di greggio e prodotti detenute dai governi; un rilascio coordinato aggiunge offerta temporanea e tende a pesare sul prezzo, per lo più nei giorni successivi all'annuncio.
