@@ -1,5 +1,5 @@
-generated_at: '2026-10-22T21:41:51'
-num_entries: 38
+generated_at: '2026-10-22T22:22:43'
+num_entries: 39
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -73,6 +73,75 @@ entries:
   - elezioni
   - border dispute
   - eem
+- source_file: Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar
+    Rosso_ trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
+    Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
+    a greggio, prodotti e trasporti (luglio-ottobre 2026).md
+  title: 'Attacchi Houthi sul territorio dell''Arabia Saudita nel regime della doppia
+    strozzatura (Hormuz chiuso, export saudita dipendente dal Mar Rosso): aeroporti,
+    oleodotto Est-Ovest, impianti e porti, trasmissione a greggio, prodotti e trasporti
+    (luglio 2026–presente)'
+  date_compiled: 2026-10-22
+  primary_theme: geopolitical
+  sub_themes:
+  - houthi
+  - infrastructure_attack
+  - physical_damage
+  - military_escalation
+  - de_escalation
+  - oil_supply_shock
+  - refinery_products
+  - shipping_chokepoint
+  - negotiation_track
+  - risk_premium_saturation
+  - export_bypass_route
+  relevant_assets:
+  - BZ=F
+  - HO=F
+  - CRACK_321
+  - XLE
+  - IYT
+  external_assets_mentioned:
+  - 2222.SR (Saudi Aramco) — misura diretta del danno percepito agli asset Aramco
+    (Dhahran, Khurais, Riad)
+  - TASI (indice Tadawul) — rischio-paese saudita; -2,5% il 2026-10-22 secondo LSEG
+  - CDS sovrano saudita — prezzo del rischio fiscale legato alla perdita di export
+  - TD3C (nolo VLCC Medio Oriente-Cina) — canale dei trasporti e costo del transito
+  - Premi assicurativi war-risk Mar Rosso/Golfo — costo del transito dopo il blocco
+    Houthi del 2026-07-20
+  - Dated Brent — scarsità fisica non catturata dai futures BZ=F
+  time_window:
+    start: 2026-07-13
+    end: present
+  regime_phases:
+  - red_sea_blockade_naval_and_border_strikes: 2026-07-13 to 2026-09-07
+  - bypass_infrastructure_strikes_partial_hormuz_reopening: 2026-09-08 to 2026-10-04
+  - deep_strike_riyadh_eastern_province: 2026-10-05 to present
+  keywords:
+  - Houthi
+  - Arabia Saudita
+  - Riad
+  - aeroporto King Khalid
+  - Dammam
+  - Abha
+  - Jizan
+  - Khamis Mushait
+  - Shaybah
+  - Jubail
+  - Yanbu
+  - oleodotto Est-Ovest
+  - East-West pipeline
+  - Aramco
+  - droni
+  - missili
+  - intercettato
+  - Mar Rosso
+  - Hormuz chiuso
+  - Houthi strike Saudi
+  - airport attack
+  - pipeline attack
+  - drone intercepted
+  - Saudi oil facility
 - source_file: Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
     Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
     e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi
