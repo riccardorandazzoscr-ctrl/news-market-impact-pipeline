@@ -11736,3 +11736,85 @@ reviews:
   - shipping_chokepoint
   - houthi
   description: Prima seduta dopo i raid USA-UK sugli Houthi (notte fra l'11 e il 12)
+- date: '2025-10-30'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e stress di credito
+    della filiera (2023–presente)/Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+    e stress di credito della filiera (2023–presente).md
+  reason: 'La research stessa (§2, «Dove non è affidabile») dichiara che sulle emissioni annunciate il
+    giorno dopo una trimestrale Meta la componente di finanziamento non è separabile dalla sorpresa sugli
+    utili: il verso del canale di finanziamento non è univoco sull''asset. Criterio ex ante, nessun prezzo
+    consultato. Lacuna 2026-10-23. Revisione Claude 2026-10-24.'
+  status: excluded
+  mechanism:
+  - ai_capex_financing
+  - hyperscaler_capex
+  description: Maxi-emissione Meta da 30 miliardi $ il giorno dopo la trimestrale con capex 2026 «notably
+    higher»
+- date: '2026-04-30'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e stress di credito
+    della filiera (2023–presente)/Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+    e stress di credito della filiera (2023–presente).md
+  reason: 'La research stessa (§2, «Dove non è affidabile») dichiara che sulle emissioni annunciate il
+    giorno dopo una trimestrale Meta la componente di finanziamento non è separabile dalla sorpresa sugli
+    utili: il verso del canale di finanziamento non è univoco sull''asset. Criterio ex ante, nessun prezzo
+    consultato. Lacuna 2026-10-23. Revisione Claude 2026-10-24.'
+  status: excluded
+  mechanism:
+  - ai_capex_financing
+  - hyperscaler_capex
+  description: Seconda maxi-emissione Meta da 25 miliardi $ con la trimestrale e il capex alzato a 145
+    miliardi $
+- date: '2026-10-22'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e stress di credito
+    della filiera (2023–presente)/Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+    e stress di credito della filiera (2023–presente).md
+  reason: 'La research stessa (§2, «Dove non è affidabile») dichiara che sulle emissioni annunciate il
+    giorno dopo una trimestrale Meta la componente di finanziamento non è separabile dalla sorpresa sugli
+    utili: il verso del canale di finanziamento non è univoco sull''asset. Criterio ex ante, nessun prezzo
+    consultato. Lacuna 2026-10-23. Revisione Claude 2026-10-24. La riga stessa è citata come caso dalla
+    scheda 2026-10-23/news_02.'
+  status: excluded
+  mechanism:
+  - ai_capex_financing
+  - hyperscaler_capex
+  description: Azioni di classe C senza voto di Meta, annunciate con la trimestrale (FCF −2,12 miliardi
+    $)
+- date: '2026-10-22'
+  theme: structural_themes
+  reference: HYG
+  source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e stress di credito
+    della filiera (2023–presente)/Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+    e stress di credito della filiera (2023–presente).md
+  reason: 'La research stessa (§2, «Dove non è affidabile») dichiara che sulle emissioni annunciate il
+    giorno dopo una trimestrale Meta la componente di finanziamento non è separabile dalla sorpresa sugli
+    utili: il verso del canale di finanziamento non è univoco sull''asset. Criterio ex ante, nessun prezzo
+    consultato. Lacuna 2026-10-23. Revisione Claude 2026-10-24. Il flusso di cassa negativo della stessa
+    trimestrale agisce sul credito in verso opposto al finanziamento azionario.'
+  status: excluded
+  mechanism:
+  - ai_capex_financing
+  - hyperscaler_capex
+  description: Azioni di classe C senza voto di Meta, annunciate con la trimestrale (FCF −2,12 miliardi
+    $)
+- date: '2026-10-22'
+  theme: structural_themes
+  reference: EWY
+  source: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e stress di credito
+    della filiera (2023–presente)/Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
+    e stress di credito della filiera (2023–presente).md
+  reason: 'La research stessa (§2, «Dove non è affidabile») dichiara che sulle emissioni annunciate il
+    giorno dopo una trimestrale Meta la componente di finanziamento non è separabile dalla sorpresa sugli
+    utili: il verso del canale di finanziamento non è univoco sull''asset. Criterio ex ante, nessun prezzo
+    consultato. Lacuna 2026-10-23. Revisione Claude 2026-10-24.'
+  status: excluded
+  mechanism:
+  - ai_capex_financing
+  - hyperscaler_capex
+  description: Azioni di classe C senza voto di Meta, annunciate con la trimestrale (FCF −2,12 miliardi
+    $)

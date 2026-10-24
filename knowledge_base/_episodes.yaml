@@ -1,4 +1,4 @@
-generated_at: '2026-10-24T07:46:52'
+generated_at: '2026-10-24T10:03:38'
 num_episodes: 1426
 episodes:
 - date: '1984-01-01'
@@ -2638,6 +2638,7 @@ episodes:
     - card:2026-10-15/news_02.md
     - card:2026-10-20/news_01.md
     - card:2026-10-21/news_01.md
+    - card:2026-10-24/news_01.md
   directions_local:
   - neg
   - pos
@@ -2650,6 +2651,7 @@ episodes:
   - geopolitical_risk_premium
   - geopolitical_risk_premium_unwind
   - hormuz
+  - houthi
   - infrastructure_attack
   - iran
   - iran_sanctions
@@ -2676,7 +2678,7 @@ episodes:
   - shipping_chokepoint
   - supply_disruption
   - upstream_export_strike
-  n_sources: 47
+  n_sources: 48
   events:
   - event_id: 2019-05-13:commodity_energy:-
     geo: ''
@@ -2740,6 +2742,7 @@ episodes:
     - card:2026-10-15/news_02.md
     - card:2026-10-20/news_01.md
     - card:2026-10-21/news_01.md
+    - card:2026-10-24/news_01.md
     evidence:
     - source: card:2026-06-01/news_01.md
       subthemes_local: []
@@ -2992,6 +2995,13 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-10-24/news_01.md
+      subthemes_local:
+      - infrastructure_attack
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
 - date: '2019-06-13'
   theme: commodity_energy
   direction: mixed
@@ -3029,6 +3039,7 @@ episodes:
     - card:2026-10-15/news_02.md
     - card:2026-10-20/news_01.md
     - card:2026-10-21/news_01.md
+    - card:2026-10-24/news_01.md
   directions_local:
   - neg
   - pos
@@ -3044,6 +3055,7 @@ episodes:
   - geopolitical_risk_premium
   - geopolitical_risk_premium_unwind
   - hormuz
+  - houthi
   - houthi_chokepoint
   - infrastructure_attack
   - iran
@@ -3073,7 +3085,7 @@ episodes:
   - iran
   - military_escalation
   - shipping_chokepoint
-  n_sources: 44
+  n_sources: 45
   events:
   - event_id: 2019-06-13:commodity_energy:-
     geo: ''
@@ -3129,6 +3141,7 @@ episodes:
     - card:2026-10-15/news_02.md
     - card:2026-10-20/news_01.md
     - card:2026-10-21/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-01/news_01.md
@@ -3355,6 +3368,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-21/news_01.md
+      subthemes_local:
+      - infrastructure_attack
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-24/news_01.md
       subthemes_local:
       - infrastructure_attack
       - shipping_chokepoint
@@ -4327,6 +4347,7 @@ episodes:
     - card:2026-10-12/news_01.md
     - card:2026-10-15/news_02.md
     - card:2026-10-20/news_01.md
+    - card:2026-10-24/news_01.md
     GC=F:
     - card:2026-10-20/news_01.md
     HO=F:
@@ -4354,6 +4375,7 @@ episodes:
   - geopolitical_risk_premium
   - geopolitical_risk_premium_unwind
   - hormuz
+  - houthi
   - houthi_chokepoint
   - infrastructure_attack
   - iran
@@ -4391,7 +4413,7 @@ episodes:
   - physical_damage
   - supply_disruption
   - upstream_export_strike
-  n_sources: 41
+  n_sources: 42
   events:
   - event_id: 2019-09-16:commodity_energy:-
     geo: ''
@@ -4457,6 +4479,7 @@ episodes:
     - card:2026-10-12/news_01.md
     - card:2026-10-15/news_02.md
     - card:2026-10-20/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-05-30/news_01.md
@@ -4647,6 +4670,14 @@ episodes:
         ^GSPC:
         - neg
         GC=F:
+        - pos
+    - source: card:2026-10-24/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - oil_supply_shock
+      directions_by_reference:
+        BZ=F:
         - pos
     - source: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
       subthemes_local: []
@@ -9015,8 +9046,9 @@ episodes:
       directions_by_reference: {}
 - date: '2024-02-26'
   theme: commodity_energy
-  direction: pos
+  direction: mixed
   directions:
+  - neg
   - pos
   directions_declared:
   - pos
@@ -9028,6 +9060,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-10-20/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -9041,17 +9074,19 @@ episodes:
   declared: true
   subthemes:
   - crack_spread
+  - houthi
   - infrastructure_attack
   - refinery_products
   - refinery_repair_restart
   - refinery_strike
   - sanctions_product_ban
+  - supply_disruption
   - upstream_export_strike
   subthemes_local:
   - infrastructure_attack
   - refinery_products
   - upstream_export_strike
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2024-02-26:commodity_energy:-
     geo: ''
@@ -9067,6 +9102,7 @@ episodes:
     sources:
     - card:2026-10-19/news_01.md
     - card:2026-10-20/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -9076,6 +9112,13 @@ episodes:
       directions_by_reference: {}
     - source: card:2026-10-20/news_01.md
       subthemes_local:
+      - upstream_export_strike
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-24/news_01.md
+      subthemes_local:
+      - infrastructure_attack
       - upstream_export_strike
       directions_by_reference:
         BZ=F:
@@ -11778,8 +11821,9 @@ episodes:
       directions_by_reference: {}
 - date: '2025-01-04'
   theme: commodity_energy
-  direction: pos
+  direction: mixed
   directions:
+  - neg
   - pos
   directions_declared:
   - pos
@@ -11789,6 +11833,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-10-20/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -11798,16 +11843,18 @@ episodes:
   declared: true
   subthemes:
   - crack_spread
+  - houthi
   - infrastructure_attack
   - refinery_products
   - refinery_repair_restart
   - refinery_strike
   - sanctions_product_ban
+  - supply_disruption
   - upstream_export_strike
   subthemes_local:
   - infrastructure_attack
   - upstream_export_strike
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2025-01-04:commodity_energy:-
     geo: ''
@@ -11819,12 +11866,20 @@ episodes:
       - pos
     sources:
     - card:2026-10-20/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     evidence:
     - source: card:2026-10-20/news_01.md
       subthemes_local:
+      - upstream_export_strike
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-24/news_01.md
+      subthemes_local:
+      - infrastructure_attack
       - upstream_export_strike
       directions_by_reference:
         BZ=F:
@@ -14889,8 +14944,9 @@ episodes:
       directions_by_reference: {}
 - date: '2025-11-14'
   theme: commodity_energy
-  direction: pos
+  direction: mixed
   directions:
+  - neg
   - pos
   directions_declared:
   - pos
@@ -14900,6 +14956,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-10-20/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -14909,17 +14966,19 @@ episodes:
   declared: true
   subthemes:
   - crack_spread
+  - houthi
   - infrastructure_attack
   - refinery_products
   - refinery_repair_restart
   - refinery_strike
   - sanctions_product_ban
+  - supply_disruption
   - upstream_export_strike
   subthemes_local:
   - infrastructure_attack
   - refinery_products
   - upstream_export_strike
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2025-11-14:commodity_energy:-
     geo: ''
@@ -14932,12 +14991,20 @@ episodes:
       - pos
     sources:
     - card:2026-10-20/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     evidence:
     - source: card:2026-10-20/news_01.md
       subthemes_local:
+      - upstream_export_strike
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-24/news_01.md
+      subthemes_local:
+      - infrastructure_attack
       - upstream_export_strike
       directions_by_reference:
         BZ=F:
@@ -19427,8 +19494,9 @@ episodes:
         - pos
 - date: '2026-04-16'
   theme: commodity_energy
-  direction: pos
+  direction: mixed
   directions:
+  - neg
   - pos
   directions_declared:
   - pos
@@ -19438,6 +19506,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-10-20/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -19447,18 +19516,20 @@ episodes:
   declared: true
   subthemes:
   - crack_spread
+  - houthi
   - infrastructure_attack
   - refinery_products
   - refinery_repair_restart
   - refinery_strike
   - sanctions_product_ban
+  - supply_disruption
   - upstream_export_strike
   subthemes_local:
   - gas_europe
   - infrastructure_attack
   - refinery_products
   - upstream_export_strike
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2026-04-16:commodity_energy:-
     geo: ''
@@ -19472,12 +19543,20 @@ episodes:
       - pos
     sources:
     - card:2026-10-20/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     evidence:
     - source: card:2026-10-20/news_01.md
       subthemes_local:
+      - upstream_export_strike
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-24/news_01.md
+      subthemes_local:
+      - infrastructure_attack
       - upstream_export_strike
       directions_by_reference:
         BZ=F:
@@ -20287,6 +20366,7 @@ episodes:
     - card:2026-10-20/news_01.md
     - card:2026-10-21/news_01.md
     - card:2026-10-23/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -20298,6 +20378,7 @@ episodes:
   - de_escalation_asymmetry
   - hormuz
   - hormuz_closure
+  - houthi
   - inflation_rates_channel
   - infrastructure_attack
   - iran
@@ -20317,7 +20398,7 @@ episodes:
   - hormuz
   - infrastructure_attack
   - military_escalation
-  n_sources: 16
+  n_sources: 17
   events:
   - event_id: 2026-04-20:commodity_energy:-
     geo: ''
@@ -20344,6 +20425,7 @@ episodes:
     - card:2026-10-20/news_01.md
     - card:2026-10-21/news_01.md
     - card:2026-10-23/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -20454,6 +20536,14 @@ episodes:
     - source: card:2026-10-23/news_01.md
       subthemes_local:
       - hormuz
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-24/news_01.md
+      subthemes_local:
+      - hormuz
+      - infrastructure_attack
       - military_escalation
       directions_by_reference:
         BZ=F:
@@ -20625,8 +20715,9 @@ episodes:
         - pos
 - date: '2026-05-03'
   theme: commodity_energy
-  direction: pos
+  direction: mixed
   directions:
+  - neg
   - pos
   directions_declared:
   - pos
@@ -20636,6 +20727,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-10-20/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -20645,17 +20737,19 @@ episodes:
   declared: true
   subthemes:
   - crack_spread
+  - houthi
   - infrastructure_attack
   - refinery_products
   - refinery_repair_restart
   - refinery_strike
   - sanctions_product_ban
+  - supply_disruption
   - upstream_export_strike
   subthemes_local:
   - infrastructure_attack
   - refinery_products
   - upstream_export_strike
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2026-05-03:commodity_energy:-
     geo: ''
@@ -20668,12 +20762,20 @@ episodes:
       - pos
     sources:
     - card:2026-10-20/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     evidence:
     - source: card:2026-10-20/news_01.md
       subthemes_local:
+      - upstream_export_strike
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-24/news_01.md
+      subthemes_local:
+      - infrastructure_attack
       - upstream_export_strike
       directions_by_reference:
         BZ=F:
@@ -23587,8 +23689,9 @@ episodes:
         - neg
 - date: '2026-08-14'
   theme: commodity_energy
-  direction: pos
+  direction: mixed
   directions:
+  - neg
   - pos
   directions_declared:
   - pos
@@ -23598,6 +23701,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-10-20/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -23607,16 +23711,18 @@ episodes:
   declared: true
   subthemes:
   - crack_spread
+  - houthi
   - infrastructure_attack
   - refinery_products
   - refinery_repair_restart
   - refinery_strike
   - sanctions_product_ban
+  - supply_disruption
   - upstream_export_strike
   subthemes_local:
   - infrastructure_attack
   - upstream_export_strike
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2026-08-14:commodity_energy:-
     geo: ''
@@ -23628,12 +23734,20 @@ episodes:
       - pos
     sources:
     - card:2026-10-20/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
     evidence:
     - source: card:2026-10-20/news_01.md
       subthemes_local:
+      - upstream_export_strike
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-24/news_01.md
+      subthemes_local:
+      - infrastructure_attack
       - upstream_export_strike
       directions_by_reference:
         BZ=F:
@@ -23933,6 +24047,7 @@ episodes:
     - card:2026-10-18/news_01.md
     - card:2026-10-20/news_01.md
     - card:2026-10-21/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23949,6 +24064,7 @@ episodes:
   - de_escalation_asymmetry
   - hormuz
   - hormuz_closure
+  - houthi
   - inflation_rates_channel
   - infrastructure_attack
   - iran
@@ -23969,7 +24085,7 @@ episodes:
   - military_escalation
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 17
+  n_sources: 18
   events:
   - event_id: 2026-09-09:commodity_energy:-
     geo: ''
@@ -24000,6 +24116,7 @@ episodes:
     - card:2026-10-18/news_01.md
     - card:2026-10-20/news_01.md
     - card:2026-10-21/news_01.md
+    - card:2026-10-24/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -24131,6 +24248,14 @@ episodes:
       subthemes_local:
       - military_escalation
       - shipping_chokepoint
+      - supply_disruption
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-24/news_01.md
+      subthemes_local:
+      - infrastructure_attack
+      - military_escalation
       - supply_disruption
       directions_by_reference:
         BZ=F:
@@ -27025,8 +27150,9 @@ episodes:
         - pos
 - date: '2017-04-24'
   theme: fiscal_policy
-  direction: ''
-  directions: []
+  direction: pos
+  directions:
+  - pos
   directions_declared:
   - neg
   - pos
@@ -27049,11 +27175,13 @@ episodes:
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
       della BCE e contagio fra periferie — regime ed episodi storici (2010–presente).md
     OAT_BUND_SPREAD:
+    - card:2026-10-24/news_02.md
     - kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi,
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
       della BCE e contagio fra periferie — regime ed episodi storici (2010–presente).md
-  directions_local: []
+  directions_local:
+  - neg
   declared: true
   subthemes:
   - budget_passage
@@ -27077,7 +27205,7 @@ episodes:
   - eurozone_release
   - france_spread
   - italy_spread
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2017-04-24:fiscal_policy:eurozone_release
     geo: eurozone_release
@@ -27095,11 +27223,20 @@ episodes:
       OAT_BUND_SPREAD:
       - neg
     sources:
+    - card:2026-10-24/news_02.md
     - kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi,
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
       della BCE e contagio fra periferie — regime ed episodi storici (2010–presente).md
     evidence:
+    - source: card:2026-10-24/news_02.md
+      subthemes_local:
+      - election_risk
+      - eurozone_release
+      - france_spread
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - neg
     - source: kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane
         e francesi, interventi della BCE e contagio fra periferie — regime ed episodi
         storici (2010–presente)/Spread BTP-Bund e OAT-Bund- crisi politiche e di bilancio
@@ -29513,8 +29650,9 @@ episodes:
         - neg
 - date: '2024-07-01'
   theme: fiscal_policy
-  direction: ''
-  directions: []
+  direction: pos
+  directions:
+  - pos
   directions_declared:
   - neg
   directions_by_reference:
@@ -29529,11 +29667,13 @@ episodes:
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
       della BCE e contagio fra periferie — regime ed episodi storici (2010–presente).md
     OAT_BUND_SPREAD:
+    - card:2026-10-24/news_02.md
     - kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi,
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
       della BCE e contagio fra periferie — regime ed episodi storici (2010–presente).md
-  directions_local: []
+  directions_local:
+  - neg
   declared: true
   subthemes:
   - budget_passage
@@ -29557,7 +29697,7 @@ episodes:
   - eurozone_release
   - france_spread
   - italy_spread
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2024-07-01:fiscal_policy:eurozone_release
     geo: eurozone_release
@@ -29573,11 +29713,20 @@ episodes:
       OAT_BUND_SPREAD:
       - neg
     sources:
+    - card:2026-10-24/news_02.md
     - kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi,
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
       della BCE e contagio fra periferie — regime ed episodi storici (2010–presente).md
     evidence:
+    - source: card:2026-10-24/news_02.md
+      subthemes_local:
+      - election_risk
+      - eurozone_release
+      - france_spread
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - neg
     - source: kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane
         e francesi, interventi della BCE e contagio fra periferie — regime ed episodi
         storici (2010–presente)/Spread BTP-Bund e OAT-Bund- crisi politiche e di bilancio
@@ -31376,8 +31525,9 @@ episodes:
         - neg
 - date: '2025-10-14'
   theme: fiscal_policy
-  direction: ''
-  directions: []
+  direction: pos
+  directions:
+  - pos
   directions_declared:
   - neg
   directions_by_reference:
@@ -31385,11 +31535,13 @@ episodes:
     - neg
   direction_sources:
     OAT_BUND_SPREAD:
+    - card:2026-10-24/news_02.md
     - kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi,
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
       della BCE e contagio fra periferie — regime ed episodi storici (2010–presente).md
-  directions_local: []
+  directions_local:
+  - neg
   declared: true
   subthemes:
   - budget_passage
@@ -31412,7 +31564,7 @@ episodes:
   - eurozone_release
   - fiscal_deadlock
   - france_spread
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2025-10-14:fiscal_policy:eurozone_release
     geo: eurozone_release
@@ -31425,11 +31577,21 @@ episodes:
       OAT_BUND_SPREAD:
       - neg
     sources:
+    - card:2026-10-24/news_02.md
     - kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi,
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
       della BCE e contagio fra periferie — regime ed episodi storici (2010–presente).md
     evidence:
+    - source: card:2026-10-24/news_02.md
+      subthemes_local:
+      - budget_passage
+      - eurozone_release
+      - fiscal_deadlock
+      - france_spread
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - neg
     - source: kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane
         e francesi, interventi della BCE e contagio fra periferie — regime ed episodi
         storici (2010–presente)/Spread BTP-Bund e OAT-Bund- crisi politiche e di bilancio
@@ -31445,8 +31607,9 @@ episodes:
         - neg
 - date: '2025-10-16'
   theme: fiscal_policy
-  direction: ''
-  directions: []
+  direction: pos
+  directions:
+  - pos
   directions_declared:
   - neg
   directions_by_reference:
@@ -31454,11 +31617,13 @@ episodes:
     - neg
   direction_sources:
     OAT_BUND_SPREAD:
+    - card:2026-10-24/news_02.md
     - kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi,
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
       della BCE e contagio fra periferie — regime ed episodi storici (2010–presente).md
-  directions_local: []
+  directions_local:
+  - neg
   declared: true
   subthemes:
   - budget_passage
@@ -31480,7 +31645,7 @@ episodes:
   - budget_passage
   - eurozone_release
   - france_spread
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2025-10-16:fiscal_policy:eurozone_release
     geo: eurozone_release
@@ -31492,11 +31657,20 @@ episodes:
       OAT_BUND_SPREAD:
       - neg
     sources:
+    - card:2026-10-24/news_02.md
     - kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi,
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
       della BCE e contagio fra periferie — regime ed episodi storici (2010–presente).md
     evidence:
+    - source: card:2026-10-24/news_02.md
+      subthemes_local:
+      - budget_passage
+      - eurozone_release
+      - france_spread
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - neg
     - source: kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane
         e francesi, interventi della BCE e contagio fra periferie — regime ed episodi
         storici (2010–presente)/Spread BTP-Bund e OAT-Bund- crisi politiche e di bilancio
@@ -144265,6 +144439,12 @@ episodes:
       stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
       debito degli hyperscaler, vendor financing e stress di credito della filiera
       (2023–presente).md
+  direction_review_excluded:
+    SOXX: 'La research stessa (§2, «Dove non è affidabile») dichiara che sulle emissioni
+      annunciate il giorno dopo una trimestrale Meta la componente di finanziamento
+      non è separabile dalla sorpresa sugli utili: il verso del canale di finanziamento
+      non è univoco sull''asset. Criterio ex ante, nessun prezzo consultato. Lacuna
+      2026-10-23. Revisione Claude 2026-10-24.'
   directions_local: []
   declared: true
   subthemes:
@@ -145185,6 +145365,12 @@ episodes:
       stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
       debito degli hyperscaler, vendor financing e stress di credito della filiera
       (2023–presente).md
+  direction_review_excluded:
+    SOXX: 'La research stessa (§2, «Dove non è affidabile») dichiara che sulle emissioni
+      annunciate il giorno dopo una trimestrale Meta la componente di finanziamento
+      non è separabile dalla sorpresa sugli utili: il verso del canale di finanziamento
+      non è univoco sull''asset. Criterio ex ante, nessun prezzo consultato. Lacuna
+      2026-10-23. Revisione Claude 2026-10-24.'
   directions_local: []
   declared: true
   subthemes:
@@ -147546,6 +147732,24 @@ episodes:
       stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
       debito degli hyperscaler, vendor financing e stress di credito della filiera
       (2023–presente).md
+  direction_review_excluded:
+    SOXX: 'La research stessa (§2, «Dove non è affidabile») dichiara che sulle emissioni
+      annunciate il giorno dopo una trimestrale Meta la componente di finanziamento
+      non è separabile dalla sorpresa sugli utili: il verso del canale di finanziamento
+      non è univoco sull''asset. Criterio ex ante, nessun prezzo consultato. Lacuna
+      2026-10-23. Revisione Claude 2026-10-24. La riga stessa è citata come caso dalla
+      scheda 2026-10-23/news_02.'
+    HYG: 'La research stessa (§2, «Dove non è affidabile») dichiara che sulle emissioni
+      annunciate il giorno dopo una trimestrale Meta la componente di finanziamento
+      non è separabile dalla sorpresa sugli utili: il verso del canale di finanziamento
+      non è univoco sull''asset. Criterio ex ante, nessun prezzo consultato. Lacuna
+      2026-10-23. Revisione Claude 2026-10-24. Il flusso di cassa negativo della stessa
+      trimestrale agisce sul credito in verso opposto al finanziamento azionario.'
+    EWY: 'La research stessa (§2, «Dove non è affidabile») dichiara che sulle emissioni
+      annunciate il giorno dopo una trimestrale Meta la componente di finanziamento
+      non è separabile dalla sorpresa sugli utili: il verso del canale di finanziamento
+      non è univoco sull''asset. Criterio ex ante, nessun prezzo consultato. Lacuna
+      2026-10-23. Revisione Claude 2026-10-24.'
   directions_local: []
   declared: true
   subthemes:
