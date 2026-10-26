@@ -1,5 +1,5 @@
-generated_at: '2026-10-26T11:48:06'
-num_entries: 41
+generated_at: '2026-10-26T13:31:57'
+num_entries: 42
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -519,6 +519,53 @@ entries:
   - energy transition
   - country risk
   - capital flight
+- source_file: Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+    a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+    brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+    storici (2002–presente).md
+  title: 'Elezioni presidenziali brasiliane e rischio politico: trasmissione a EWZ
+    e a USD/BRL, regime ed episodi storici (2002–presente)'
+  date_compiled: 2026-10-26
+  primary_theme: geopolitical
+  sub_themes:
+  - election_risk
+  relevant_assets:
+  - EWZ
+  - BRL=X
+  - EEM
+  external_assets_mentioned:
+  - Ibovespa (^BVSP) — indice in real; serve a separare la componente equity da quella
+    cambio contenute in EWZ
+  - CDS Brasile a 5 anni — misura diretta del premio di rischio sovrano, primo anello
+    del canale fiscale
+  - DI futures (curva Depósitos Interfinanceiros) — riprezzamento della traiettoria
+    fiscale e della Selic attesa; reagisce prima e più del cambio
+  - Petrobras (PETR3/PETR4, ADR PBR) — canale delle società a controllo statale; circa
+    14,5% di EWZ al 30/09/2026
+  - Banco do Brasil (BBAS3) — canale delle banche pubbliche; circa 1,5% di EWZ
+  - Nomura NF Ibovespa Link ETF (Tokyo) — primo prezzo disponibile dopo un voto domenicale
+  - Future sul real brasiliano (CME) — reazione del cambio fuori dagli orari locali
+  time_window:
+    start: 2002-01-01
+    end: present
+  regime_phases:
+  - lula_risk_origin: 2002-01-01 to 2010-12-31
+  - new_matrix_fiscal_drift: 2011-01-03 to 2016-12-14
+  - spending_cap_era: 2016-12-15 to 2023-08-30
+  - fiscal_framework_era: 2023-08-31 to present
+  keywords:
+  - elezioni Brasile
+  - ballottaggio
+  - Lula
+  - Bolsonaro
+  - real brasiliano
+  - rischio politico
+  - Brazil election
+  - runoff
+  - Lula risk
+  - Brazilian real
+  - Bovespa
+  - election risk
 - source_file: Fed_ reaction function, indipendenza e divergenza con la BCE (2023–2026)/Fed_
     reaction function, indipendenza e divergenza con la BCE (2023–2026).md
   title: 'Fed: reaction function, indipendenza e divergenza con la BCE (2023–2026)'

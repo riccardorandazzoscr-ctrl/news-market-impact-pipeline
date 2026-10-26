@@ -67,3 +67,28 @@ exclusions:
   - date: '2018-12-08'
     reason: 'Sabato; il verso pos dichiarato descrive le concessioni del 2018-12-11, due sedute dopo.
       Lo studio sulle proteste per il costo della vita data separatamente il 2018-12-10 e il 2018-12-11.'
+- source: 2026-10-05/news_03.md
+  note: 'Date di domenica (giorni di voto in Brasile). Revisione Claude 2026-10-26 dopo lo studio sulle
+    elezioni presidenziali brasiliane, che data la seduta di reazione al lunedì.'
+  dates:
+  - date: '2014-10-05'
+    reason: 'Primo turno 2014, domenica: la seduta è lunedì 2014-10-06, nello studio con il suo verso.'
+  - date: '2018-10-07'
+    reason: 'Primo turno 2018, domenica: la seduta è lunedì 2018-10-08, nello studio con il suo verso.'
+  - date: '2022-10-02'
+    reason: 'Primo turno 2022, domenica: la seduta è lunedì 2022-10-03, nello studio con il suo verso.'
+- source: 2026-10-25/news_03.md
+  note: 'Stesse date di domenica di 2026-10-05/news_03.md. Revisione Claude 2026-10-26.'
+  dates:
+  - date: '2014-10-05'
+    reason: 'Domenica: la seduta è 2014-10-06, nello studio sulle elezioni brasiliane.'
+  - date: '2018-10-07'
+    reason: 'Domenica: la seduta è 2018-10-08, nello studio sulle elezioni brasiliane.'
+  - date: '2022-10-02'
+    reason: 'Domenica: la seduta è 2022-10-03, nello studio sulle elezioni brasiliane.'
+- source: 2026-10-26/news_01.md
+  note: 'Ballottaggio di domenica aggiunto a mano. Revisione Claude 2026-10-26.'
+  dates:
+  - date: '2014-10-26'
+    reason: 'Ballottaggio 2014 (rielezione di Dilma), domenica: la seduta è lunedì 2014-10-27, nello
+      studio sulle elezioni brasiliane con lo stesso verso.'

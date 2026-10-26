@@ -1,5 +1,5 @@
-generated_at: '2026-10-26T11:49:14'
-num_episodes: 1461
+generated_at: '2026-10-26T14:27:20'
+num_episodes: 1468
 episodes:
 - date: '1984-01-01'
   theme: commodity_energy
@@ -35644,6 +35644,76 @@ episodes:
       subthemes_local:
       - election_risk
       directions_by_reference: {}
+- date: '2014-08-13'
+  theme: geopolitical
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BRL=X:
+    - neg
+    - pos
+    EWZ:
+    - neg
+    - pos
+  direction_sources:
+    BRL=X:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EWZ:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - election_risk
+  subthemes_local:
+  - election_risk
+  n_sources: 1
+  events:
+  - event_id: 2014-08-13:geopolitical:-
+    geo: ''
+    subthemes_local:
+    - election_risk
+    directions_by_reference:
+      BRL=X:
+      - neg
+      - pos
+      EWZ:
+      - neg
+      - pos
+    sources:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    evidence:
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EWZ:
+        - neg
+        - pos
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - neg
+        - pos
 - date: '2014-09-05'
   theme: geopolitical
   direction: neg
@@ -35698,92 +35768,281 @@ episodes:
       - difesa
       - nato
       directions_by_reference: {}
-- date: '2014-10-05'
+- date: '2014-10-06'
   theme: geopolitical
-  direction: mixed
-  directions:
-  - neutral
-  - pos
+  direction: ''
+  directions: []
   directions_declared:
+  - neg
   - pos
   directions_by_reference:
+    BRL=X:
+    - neg
     EWZ:
     - pos
   direction_sources:
+    BRL=X:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
     EWZ:
-    - card:2026-10-05/news_03.md
-    - card:2026-10-25/news_03.md
-  directions_local:
-  - pos
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+  directions_local: []
   declared: true
   subthemes:
-  - election_risk
-  subthemes_local:
-  - election_risk
-  n_sources: 2
-  events:
-  - event_id: 2014-10-05:geopolitical:-
-    geo: ''
-    subthemes_local:
-    - election_risk
-    directions_by_reference:
-      EWZ:
-      - pos
-    sources:
-    - card:2026-10-05/news_03.md
-    - card:2026-10-25/news_03.md
-    evidence:
-    - source: card:2026-10-05/news_03.md
-      subthemes_local:
-      - election_risk
-      directions_by_reference:
-        EWZ:
-        - pos
-    - source: card:2026-10-25/news_03.md
-      subthemes_local:
-      - election_risk
-      directions_by_reference:
-        EWZ:
-        - pos
-- date: '2014-10-26'
-  theme: geopolitical
-  direction: neg
-  directions:
-  - neg
-  directions_declared:
-  - neg
-  directions_by_reference:
-    EWZ:
-    - neg
-  direction_sources:
-    EWZ:
-    - card:2026-10-26/news_01.md
-  directions_local:
-  - neg
-  declared: true
-  subthemes:
-  - brazil
   - election_risk
   subthemes_local:
   - election_risk
   n_sources: 1
   events:
-  - event_id: 2014-10-26:geopolitical:-
+  - event_id: 2014-10-06:geopolitical:-
     geo: ''
     subthemes_local:
     - election_risk
     directions_by_reference:
+      BRL=X:
+      - neg
+      EWZ:
+      - pos
+    sources:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    evidence:
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EWZ:
+        - pos
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - neg
+- date: '2014-10-13'
+  theme: geopolitical
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BRL=X:
+    - neg
+    EWZ:
+    - pos
+  direction_sources:
+    BRL=X:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EWZ:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - election_risk
+  subthemes_local:
+  - election_risk
+  n_sources: 1
+  events:
+  - event_id: 2014-10-13:geopolitical:-
+    geo: ''
+    subthemes_local:
+    - election_risk
+    directions_by_reference:
+      BRL=X:
+      - neg
+      EWZ:
+      - pos
+    sources:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    evidence:
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EWZ:
+        - pos
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - neg
+- date: '2014-10-23'
+  theme: geopolitical
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BRL=X:
+    - pos
+    EWZ:
+    - neg
+  direction_sources:
+    BRL=X:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EWZ:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - election_risk
+  subthemes_local:
+  - election_risk
+  n_sources: 1
+  events:
+  - event_id: 2014-10-23:geopolitical:-
+    geo: ''
+    subthemes_local:
+    - election_risk
+    directions_by_reference:
+      BRL=X:
+      - pos
       EWZ:
       - neg
     sources:
-    - card:2026-10-26/news_01.md
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
     evidence:
-    - source: card:2026-10-26/news_01.md
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
       subthemes_local:
       - election_risk
       directions_by_reference:
         EWZ:
         - neg
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - pos
+- date: '2014-10-27'
+  theme: geopolitical
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - neutral
+  - pos
+  directions_by_reference:
+    BRL=X:
+    - pos
+    EEM:
+    - neutral
+    EWZ:
+    - neg
+  direction_sources:
+    BRL=X:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EEM:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EWZ:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - election_risk
+  subthemes_local:
+  - election_risk
+  n_sources: 1
+  events:
+  - event_id: 2014-10-27:geopolitical:-
+    geo: ''
+    subthemes_local:
+    - election_risk
+    directions_by_reference:
+      BRL=X:
+      - pos
+      EEM:
+      - neutral
+      EWZ:
+      - neg
+    sources:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    evidence:
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EWZ:
+        - neg
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - pos
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EEM:
+        - neutral
 - date: '2014-11-27'
   theme: geopolitical
   direction: mixed
@@ -37269,6 +37528,70 @@ episodes:
         e guerra commerciale USA — regime ed episodi storici (2018–2026).md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2018-09-06'
+  theme: geopolitical
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BRL=X:
+    - neg
+    EWZ:
+    - pos
+  direction_sources:
+    BRL=X:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EWZ:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - election_risk
+  subthemes_local:
+  - election_risk
+  n_sources: 1
+  events:
+  - event_id: 2018-09-06:geopolitical:-
+    geo: ''
+    subthemes_local:
+    - election_risk
+    directions_by_reference:
+      BRL=X:
+      - neg
+      EWZ:
+      - pos
+    sources:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    evidence:
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EWZ:
+        - pos
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - neg
 - date: '2018-09-24'
   theme: geopolitical
   direction: neg
@@ -37335,53 +37658,70 @@ episodes:
         - neg
         ^NDX:
         - neg
-- date: '2018-10-07'
+- date: '2018-10-08'
   theme: geopolitical
-  direction: mixed
-  directions:
-  - neutral
-  - pos
+  direction: ''
+  directions: []
   directions_declared:
+  - neg
   - pos
   directions_by_reference:
+    BRL=X:
+    - neg
     EWZ:
     - pos
   direction_sources:
+    BRL=X:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
     EWZ:
-    - card:2026-10-05/news_03.md
-    - card:2026-10-25/news_03.md
-  directions_local:
-  - pos
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+  directions_local: []
   declared: true
   subthemes:
   - election_risk
   subthemes_local:
   - election_risk
-  n_sources: 2
+  n_sources: 1
   events:
-  - event_id: 2018-10-07:geopolitical:-
+  - event_id: 2018-10-08:geopolitical:-
     geo: ''
     subthemes_local:
     - election_risk
     directions_by_reference:
+      BRL=X:
+      - neg
       EWZ:
       - pos
     sources:
-    - card:2026-10-05/news_03.md
-    - card:2026-10-25/news_03.md
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
     evidence:
-    - source: card:2026-10-05/news_03.md
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
       subthemes_local:
       - election_risk
       directions_by_reference:
         EWZ:
         - pos
-    - source: card:2026-10-25/news_03.md
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
       subthemes_local:
       - election_risk
       directions_by_reference:
-        EWZ:
-        - pos
+        BRL=X:
+        - neg
 - date: '2018-10-10'
   theme: geopolitical
   direction: mixed
@@ -37499,7 +37839,31 @@ episodes:
   - neg
   - neutral
   directions_declared:
+  - neutral
   - pos
+  directions_by_reference:
+    BRL=X:
+    - neutral
+    EEM:
+    - neutral
+    EWZ:
+    - neutral
+  direction_sources:
+    BRL=X:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EEM:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EWZ:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
   directions_local:
   - neg
   - pos
@@ -37527,12 +37891,19 @@ episodes:
   - us_brazil
   subthemes_local:
   - election_risk
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2018-10-29:geopolitical:-
     geo: ''
     subthemes_local:
     - election_risk
+    directions_by_reference:
+      BRL=X:
+      - neutral
+      EEM:
+      - neutral
+      EWZ:
+      - neutral
     sources:
     - card:2026-06-08/news_04.md
     - card:2026-06-18/news_03.md
@@ -37543,6 +37914,10 @@ episodes:
     - card:2026-09-13/news_03.md
     - kb:Elezioni LatAm e nazionalismo delle risorse, rame e litio (2018–2026)/Elezioni
       LatAm e nazionalismo delle risorse- rame e litio (2018–2026).md
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
     evidence:
     - source: card:2026-06-08/news_04.md
       subthemes_local:
@@ -37572,6 +37947,33 @@ episodes:
         LatAm e nazionalismo delle risorse- rame e litio (2018–2026).md
       subthemes_local: []
       directions_by_reference: {}
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EWZ:
+        - neutral
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - neutral
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EEM:
+        - neutral
 - date: '2018-11-15'
   theme: geopolitical
   direction: neg
@@ -41473,22 +41875,46 @@ episodes:
   directions:
   - neg
   directions_declared:
+  - neg
+  - neutral
   - pos
   directions_by_reference:
+    BRL=X:
+    - pos
     BZ=F:
     - pos
+    EEM:
+    - neutral
+    EWZ:
+    - neg
   direction_sources:
+    BRL=X:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
     BZ=F:
     - card:2026-10-22/news_01.md
     - kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
       Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente).md
+    EEM:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EWZ:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
   directions_local:
   - pos
   declared: true
   subthemes:
   - de_escalation
+  - election_risk
   - freight_rates
   - houthi
   - infrastructure_attack
@@ -41501,22 +41927,34 @@ episodes:
   - refinery_products
   - shipping_chokepoint
   subthemes_local:
+  - election_risk
   - houthi
   - infrastructure_attack
   - military_escalation
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2021-03-08:geopolitical:-
     geo: ''
     subthemes_local:
+    - election_risk
     - houthi
     - infrastructure_attack
     - military_escalation
     directions_by_reference:
+      BRL=X:
+      - pos
       BZ=F:
       - pos
+      EEM:
+      - neutral
+      EWZ:
+      - neg
     sources:
     - card:2026-10-22/news_01.md
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
     - kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
@@ -41530,6 +41968,33 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EWZ:
+        - neg
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - pos
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EEM:
+        - neutral
     - source: kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine
         e crisi del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
         attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del
@@ -44287,53 +44752,70 @@ episodes:
       - boe
       - gbp
       directions_by_reference: {}
-- date: '2022-10-02'
+- date: '2022-10-03'
   theme: geopolitical
-  direction: mixed
-  directions:
-  - neutral
-  - pos
+  direction: ''
+  directions: []
   directions_declared:
+  - neg
   - pos
   directions_by_reference:
+    BRL=X:
+    - neg
     EWZ:
     - pos
   direction_sources:
+    BRL=X:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
     EWZ:
-    - card:2026-10-05/news_03.md
-    - card:2026-10-25/news_03.md
-  directions_local:
-  - pos
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+  directions_local: []
   declared: true
   subthemes:
   - election_risk
   subthemes_local:
   - election_risk
-  n_sources: 2
+  n_sources: 1
   events:
-  - event_id: 2022-10-02:geopolitical:-
+  - event_id: 2022-10-03:geopolitical:-
     geo: ''
     subthemes_local:
     - election_risk
     directions_by_reference:
+      BRL=X:
+      - neg
       EWZ:
       - pos
     sources:
-    - card:2026-10-05/news_03.md
-    - card:2026-10-25/news_03.md
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
     evidence:
-    - source: card:2026-10-05/news_03.md
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
       subthemes_local:
       - election_risk
       directions_by_reference:
         EWZ:
         - pos
-    - source: card:2026-10-25/news_03.md
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
       subthemes_local:
       - election_risk
       directions_by_reference:
-        EWZ:
-        - pos
+        BRL=X:
+        - neg
 - date: '2022-10-05'
   theme: geopolitical
   direction: mixed
@@ -44764,13 +45246,28 @@ episodes:
   - neg
   - pos
   directions_declared:
+  - neutral
   - pos
   directions_by_reference:
+    BRL=X:
+    - neutral
+    EWZ:
+    - neutral
     ZC=F:
     - neutral
     ZW=F:
     - pos
   direction_sources:
+    BRL=X:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EWZ:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
     ZC=F:
     - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
       ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
@@ -44795,6 +45292,7 @@ episodes:
   - commodity_supply_shock
   - copper
   - critical_minerals
+  - election_risk
   - em_political_risk
   - export_ban
   - grain_corridor
@@ -44811,7 +45309,7 @@ episodes:
   - election_risk
   - military_escalation
   - supply_disruption
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2022-10-31:geopolitical:-
     geo: ''
@@ -44821,6 +45319,10 @@ episodes:
     - military_escalation
     - supply_disruption
     directions_by_reference:
+      BRL=X:
+      - neutral
+      EWZ:
+      - neutral
       ZC=F:
       - neutral
       ZW=F:
@@ -44835,6 +45337,10 @@ episodes:
     - card:2026-10-14/news_02.md
     - kb:Elezioni LatAm e nazionalismo delle risorse, rame e litio (2018–2026)/Elezioni
       LatAm e nazionalismo delle risorse- rame e litio (2018–2026).md
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
     - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
       ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
       del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
@@ -44877,6 +45383,24 @@ episodes:
         LatAm e nazionalismo delle risorse- rame e litio (2018–2026).md
       subthemes_local: []
       directions_by_reference: {}
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EWZ:
+        - neutral
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - neutral
     - source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano
         e trasmissione ai mercati — regime ed episodi storici (2013–presente)/Il corridoio
         cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
@@ -44954,6 +45478,89 @@ episodes:
       directions_by_reference:
         ZW=F:
         - neg
+- date: '2022-11-10'
+  theme: geopolitical
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - neutral
+  - pos
+  directions_by_reference:
+    BRL=X:
+    - pos
+    EEM:
+    - neutral
+    EWZ:
+    - neg
+  direction_sources:
+    BRL=X:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EEM:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EWZ:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - election_risk
+  subthemes_local:
+  - election_risk
+  n_sources: 1
+  events:
+  - event_id: 2022-11-10:geopolitical:-
+    geo: ''
+    subthemes_local:
+    - election_risk
+    directions_by_reference:
+      BRL=X:
+      - pos
+      EEM:
+      - neutral
+      EWZ:
+      - neg
+    sources:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    evidence:
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EWZ:
+        - neg
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - pos
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EEM:
+        - neutral
 - date: '2022-11-15'
   theme: geopolitical
   direction: neg
@@ -57881,6 +58488,89 @@ episodes:
         - neg
         BZ=F:
         - neg
+- date: '2025-12-05'
+  theme: geopolitical
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - neutral
+  - pos
+  directions_by_reference:
+    BRL=X:
+    - pos
+    EEM:
+    - neutral
+    EWZ:
+    - neg
+  direction_sources:
+    BRL=X:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EEM:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EWZ:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - election_risk
+  subthemes_local:
+  - election_risk
+  n_sources: 1
+  events:
+  - event_id: 2025-12-05:geopolitical:-
+    geo: ''
+    subthemes_local:
+    - election_risk
+    directions_by_reference:
+      BRL=X:
+      - pos
+      EEM:
+      - neutral
+      EWZ:
+      - neg
+    sources:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    evidence:
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EWZ:
+        - neg
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - pos
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EEM:
+        - neutral
 - date: '2025-12-08'
   theme: geopolitical
   direction: neg
@@ -64857,14 +65547,23 @@ episodes:
   - neg
   - pos
   directions_by_reference:
+    BRL=X:
+    - neg
     BZ=F:
     - pos
     CRACK_321:
     - neg
     - pos
+    EWZ:
+    - pos
     HO=F:
     - pos
   direction_sources:
+    BRL=X:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
     BZ=F:
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
@@ -64875,6 +65574,11 @@ episodes:
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
+    EWZ:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
     HO=F:
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
@@ -64884,6 +65588,7 @@ episodes:
   declared: true
   subthemes:
   - de_escalation
+  - election_risk
   - export_bypass_route
   - houthi
   - infrastructure_attack
@@ -64895,26 +65600,32 @@ episodes:
   - risk_premium_saturation
   - shipping_chokepoint
   subthemes_local:
+  - election_risk
   - houthi
   - infrastructure_attack
   - military_escalation
   - oil_supply_shock
   - refinery_products
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-10-05:geopolitical:-
     geo: ''
     subthemes_local:
+    - election_risk
     - houthi
     - infrastructure_attack
     - military_escalation
     - oil_supply_shock
     - refinery_products
     directions_by_reference:
+      BRL=X:
+      - neg
       BZ=F:
       - pos
       CRACK_321:
       - neg
+      - pos
+      EWZ:
       - pos
       HO=F:
       - pos
@@ -64923,6 +65634,10 @@ episodes:
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
     evidence:
     - source: kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar
         Rosso_ trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
@@ -64959,6 +65674,24 @@ episodes:
         CRACK_321:
         - neg
         - pos
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EWZ:
+        - pos
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - neg
 - date: '2026-10-08'
   theme: geopolitical
   direction: ''
@@ -65456,6 +66189,89 @@ episodes:
       directions_by_reference:
         IYT:
         - neg
+- date: '2026-10-26'
+  theme: geopolitical
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - neutral
+  - pos
+  directions_by_reference:
+    BRL=X:
+    - pos
+    EEM:
+    - neutral
+    EWZ:
+    - neg
+  direction_sources:
+    BRL=X:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EEM:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    EWZ:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - election_risk
+  subthemes_local:
+  - election_risk
+  n_sources: 1
+  events:
+  - event_id: 2026-10-26:geopolitical:-
+    geo: ''
+    subthemes_local:
+    - election_risk
+    directions_by_reference:
+      BRL=X:
+      - pos
+      EEM:
+      - neutral
+      EWZ:
+      - neg
+    sources:
+    - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
+      e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+      brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+      storici (2002–presente).md
+    evidence:
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EWZ:
+        - neg
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - pos
+    - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
+        a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
+        brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
+        storici (2002–presente).md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        EEM:
+        - neutral
 - date: '2003-05-30'
   theme: macro_data
   direction: ''
