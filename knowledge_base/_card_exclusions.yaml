@@ -53,3 +53,17 @@ exclusions:
   - date: '2011-08-04'
     reason: 'Dichiara neg su JPY=X, ma il MoF vendeva yen (con allentamento BoJ lo stesso giorno): l''attesa
       era USD/JPY su. Il «neg» indica la direzione opposta all''intervento di oggi.'
+- source: 2026-06-05/news_05.md
+  note: 'Data di un sabato. Revisione Claude 2026-10-26 dopo lo studio sulle proteste per il costo
+    della vita, che la sostituisce.'
+  dates:
+  - date: '2018-12-08'
+    reason: 'Atto IV dei gilets jaunes, sabato: la prima seduta utile è lunedì 2018-12-10 (piazza +
+      attesa del discorso, verso ambiguo) e le concessioni di Macron appartengono al 2018-12-11. Entrambe
+      le date sono nello studio con il loro verso.'
+- source: 2026-10-25/news_02.md
+  note: 'Stessa data di un sabato di 2026-06-05/news_05.md. Revisione Claude 2026-10-26.'
+  dates:
+  - date: '2018-12-08'
+    reason: 'Sabato; il verso pos dichiarato descrive le concessioni del 2018-12-11, due sedute dopo.
+      Lo studio sulle proteste per il costo della vita data separatamente il 2018-12-10 e il 2018-12-11.'

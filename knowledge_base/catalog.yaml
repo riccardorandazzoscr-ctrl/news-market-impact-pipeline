@@ -1,5 +1,5 @@
-generated_at: '2026-10-24T15:35:46'
-num_entries: 40
+generated_at: '2026-10-26T11:48:06'
+num_entries: 41
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -1661,6 +1661,69 @@ entries:
   - 30-year yield
   - trentennale
   - spread BTP-Bund
+- source_file: Proteste per il costo della vita e spread OAT-Bund e BTP-Bund_ risposta
+    di bilancio ed episodi storici dal 2010/Proteste per il costo della vita e spread
+    OAT-Bund e BTP-Bund_ risposta di bilancio ed episodi storici dal 2010.md
+  title: 'Proteste per il costo della vita e risposta di bilancio nell''area euro:
+    trasmissione agli spread OAT-Bund e BTP-Bund, regimi ed episodi storici (2010–presente)'
+  date_compiled: 2026-10-25
+  primary_theme: fiscal_policy
+  sub_themes:
+  - social_unrest
+  - france_spread
+  - italy_spread
+  - fiscal_expansion
+  - fiscal_consolidation
+  - eurozone_release
+  relevant_assets:
+  - OAT_BUND_SPREAD
+  - BTP_BUND_SPREAD
+  - FTSEMIB.MI
+  - ^STOXX50E
+  - EURUSD=X
+  - IEAG.AS
+  - EXX6.DE
+  external_assets_mentioned:
+  - CAC 40 — reazione azionaria francese a piazza e concessioni, non in DB
+  - IBEX 35 — controllo del contagio verso la Spagna, non in DB
+  - PSI — controllo del contagio verso il Portogallo, non in DB
+  - Spread Bonos-Bund — separa il contagio periferico dal rischio specifico francese,
+    non in DB
+  - Spread PGB-Bund — idem per il Portogallo, non in DB
+  - Spread OLO-Bund (Belgio) — paese core-periferico con scioperi contro l'austerità,
+    non in DB
+  - CDS sovrani 5 anni Francia e Italia — misura del rischio di credito puro, al netto
+    della liquidità del Bund, non in DB
+  - Spread OAT-Bund 2 anni — separa il premio di breve da quello di lungo periodo,
+    non in DB
+  - Brent, WTI e prezzo del gasolio — misura dell'amplificatore shock energetico,
+    non in DB
+  time_window:
+    start: 2010-01-01
+    end: present
+  regime_phases:
+  - sovereign_debt_crisis: 2010-01-01 to 2012-07-26
+  - greek_programme_tail: 2012-07-27 to 2015-07-13
+  - ecb_qe_compression: 2015-07-14 to 2022-07-20
+  - tpi_tightening: 2022-07-21 to 2024-04-29
+  - new_fiscal_rules_french_fragmentation: 2024-04-30 to present
+  keywords:
+  - proteste
+  - caro vita
+  - costo della vita
+  - gilet gialli
+  - sciopero generale
+  - riforma delle pensioni
+  - concessioni
+  - sussidi carburanti
+  - spread OAT-Bund
+  - spread BTP-Bund
+  - cost of living protests
+  - yellow vests
+  - general strike
+  - pension reform
+  - fuel subsidies
+  - social unrest
 - source_file: Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
     sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
     conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
