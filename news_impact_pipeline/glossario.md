@@ -64,6 +64,7 @@ già pronto.
 - **RBI (Reserve Bank of India)** — la banca centrale indiana; difende la rupia sia vendendo riserve in dollari sia con misure amministrative (limiti alle coperture a termine, finestre speciali di cambio per gli importatori di petrolio), come nell'estate 2013.
 - **RBNZ (Reserve Bank of New Zealand)** — la banca centrale neozelandese; storicamente la prima al mondo ad adottare un obiettivo d'inflazione esplicito (1990) e spesso in anticipo sul ciclo delle banche centrali maggiori.
 - **Riserva obbligatoria in valuta / riserva di rischio sui forward** — strumenti amministrativi della PBOC sul cambio: alzare la quota di depositi in valuta da tenere in riserva, o azzerare il deposito richiesto sugli acquisti a termine di dollari, rende più facile comprare dollari e quindi frena l'apprezzamento dello yuan.
+- **Selic** — il tasso ufficiale della banca centrale brasiliana, fra i più alti al mondo in termini reali; con un debito pubblico elevato, il suo livello pesa direttamente sul costo degli interessi dello Stato.
 - **SONIA (Sterling Overnight Index Average)** — il tasso overnight di riferimento in sterline, calcolato dalla BoE sulle transazioni effettive; i contratti su SONIA dicono quanti rialzi o tagli della BoE il mercato si aspetta.
 - **Sorpresa macro** — la differenza fra il dato pubblicato e il consenso degli analisti; è la sorpresa, non il livello, a muovere i prezzi.
 - **TPI (Transmission Protection Instrument)** — lo "scudo anti-spread" della BCE contro un allargamento ingiustificato dei differenziali sovrani nell'area euro.
@@ -79,6 +80,7 @@ già pronto.
 - **Bear flattening** — appiattimento della curva dei rendimenti causato dai tassi brevi che salgono più dei lunghi; è la firma di una stretta monetaria ritenuta credibile: si stringe ora, quindi l'inflazione di lungo periodo attesa scende.
 - **Bear steepening** — irripidimento della curva dei rendimenti causato dai tassi lunghi che salgono più dei brevi; segnala rischio fiscale o di inflazione, non attese di stretta immediata.
 - **Beta** — la sensibilità di un asset ai movimenti del suo mercato di riferimento. Un beta alto amplifica i movimenti in entrambe le direzioni.
+- **Breakeven d'inflazione** — l'inflazione media implicita nei prezzi di mercato: la differenza fra il rendimento di un titolo di Stato nominale e quello del gemello indicizzato all'inflazione. Sale quando il mercato si aspetta più inflazione (es. con il petrolio in rialzo).
 - **BTP Valore** — titolo di Stato italiano riservato ai risparmiatori retail, collocato in finestre di pochi giorni con premio fedeltà a scadenza; la sua raccolta misura la domanda domestica di debito italiano, un sostegno allo spread che altri paesi (es. la Francia) non hanno.
 - **Capex (Capital Expenditure)** — la spesa in conto capitale: investimenti in beni durevoli (impianti, macchinari, data center).
 - **Carry trade** — indebitarsi in una valuta a basso tasso per investire in attività denominate in valute a tasso più alto. Funziona finché il differenziale resta ampio e il cambio stabile; si smonta violentemente quando una delle due condizioni cade.
@@ -96,9 +98,11 @@ già pronto.
 - **Effetti di secondo round** — il passaggio di uno shock di prezzo (es. energia) a salari e poi di nuovo a prezzi, che rischia di renderlo persistente invece che temporaneo.
 - **Fixing** — il cambio di riferimento che una banca centrale (es. PBOC per lo yuan) pubblica ogni mattina come ancora per le oscillazioni consentite in giornata.
 - **Free cash flow (flusso di cassa libero)** — la cassa generata dall'attività meno gli investimenti (capex). Se è negativo, l'azienda deve finanziare gli investimenti con debito, nuove azioni o riserve.
+- **Futures DI (Depósito Interfinanceiro)** — futures brasiliani sul tasso interbancario medio futuro: dicono dove il mercato vede il costo del denaro in Brasile. Salgono quando cresce il rischio fiscale o l'inflazione attesa.
 - **Gilt** — i titoli di Stato del Regno Unito. In DB li rappresenta l'ETF `IGLT.L`, che è un prezzo: scende quando i rendimenti dei gilt salgono.
 - **Guidance (aziendale)** — la previsione che un'azienda fornisce sui propri risultati futuri.
 - **Hyperscaler** — i grandi operatori cloud (Amazon, Microsoft, Google, Meta) che costruiscono data center su scala mondiale; i principali clienti del capex AI.
+- **Ibovespa (Bovespa)** — l'indice principale della borsa di San Paolo, pesato su Petrobras, Vale e le grandi banche. Non è in DB: lo rappresenta `EWZ`.
 - **Inferenza (AI)** — l'uso di un modello già addestrato per rispondere alle richieste (contrapposta all'addestramento). Un modello più "snello" consuma meno calcolo per risposta: il cosiddetto *shock di efficienza* è il timore che questo riduca i chip necessari per unità di domanda AI.
 - **IPO (Initial Public Offering)** — la prima quotazione in borsa di una società, con vendita di azioni al pubblico. Quando la volatilità sale gli emittenti rinviano o ritirano le IPO: una «finestra chiusa» è un segnale di stress sul finanziamento di un settore.
 - **LDI (Liability-Driven Investment)** — strategia con cui i fondi pensione britannici usano derivati sui Gilt per coprire le passività future; il crollo dei Gilt nel 2022 generò richieste di margine a catena.
@@ -127,6 +131,7 @@ già pronto.
 - **Aramco (Saudi Aramco)** — la compagnia petrolifera di Stato saudita, primo esportatore di greggio al mondo; gestisce impianti chiave come Abqaiq (stabilizzazione del greggio), Ras Tanura e il terminal di Yanbu sul Mar Rosso.
 - **Articolo 49.3** — norma della Costituzione francese che consente al governo di far approvare un testo (tipicamente il bilancio) senza voto dell'Assemblea; in cambio l'opposizione può presentare una mozione di sfiducia, che se passa fa cadere il governo.
 - **CENTCOM** — United States Central Command, il comando militare USA competente per Medio Oriente e Asia centrale.
+- **Centrão** — il blocco di partiti di centro-destra del Congresso brasiliano senza un'ideologia forte, che appoggia il governo di turno in cambio di incarichi e fondi; senza di lui nessun presidente ha una maggioranza.
 - **Corridoio del Mar Nero** — la rotta marittima per l'export cerealicolo ucraino; oggetto di accordi e sospensioni dal 2022.
 - **EBV (Erdölbevorratungsverband)** — l'agenzia tedesca che detiene le riserve strategiche di greggio e prodotti petroliferi; può metterle in vendita per calmierare i prezzi in una crisi d'offerta.
 - **Elezioni di metà mandato (midterm)** — le elezioni americane a metà del mandato presidenziale, in cui si rinnovano tutta la Camera e un terzo del Senato; nel 2026 si tengono il 3 novembre.
