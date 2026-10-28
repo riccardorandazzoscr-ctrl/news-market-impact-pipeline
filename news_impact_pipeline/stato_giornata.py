@@ -400,6 +400,7 @@ def stato_giornata(giorno: str, oggi: date | None = None) -> dict:
         if prima is None and not esito.ok:
             prima = nome
     registrato = (ctx["stato"].get("impronte") or {}).get("briefing")
+    ric = ctx["stato"].get("consegna") or {}
     return {
         "date": giorno,
         "fase": prima,                      # None = giornata completa
@@ -407,6 +408,9 @@ def stato_giornata(giorno: str, oggi: date | None = None) -> dict:
         "impronta_briefing": ctx["impronte"]["briefing"],
         "impronta_registrata": registrato,
         "input_riconosciuto": bool(registrato) and registrato == ctx["impronte"]["briefing"],
+        # Ricevuta ok di un'analisi completa: cio' che resta incompleto dopo e'
+        # una correzione fatta a mano, non un guasto (il wrapper non rispedisce).
+        "consegnato": ric.get("esito") == "ok" and not ric.get("parziale"),
         "schede_riusabili": schede_riusabili(ctx),
         "schede_attese": sorted(ctx["schede_attese"]),
     }

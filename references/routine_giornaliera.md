@@ -38,6 +38,12 @@ non richiamano l'agente. A che punto sia una giornata lo dice
 `stato_giornata.py --date AAAA-MM-GG` (tabella delle sei fasi in
 [quando_si_rompe.md](quando_si_rompe.md)).
 
+Eccezione (dal 2026-10-28): una giornata già consegnata completa, con lo stesso briefing,
+**non si rispedisce** anche se dopo l'invio `_index.md` o il report sono stati corretti a
+mano. `WatchPaths` scatta anche quando si apre un brief (macOS gli scrive la data di ultimo
+uso), quindi senza questa regola ogni correzione partiva su Telegram alla prima apertura.
+Per rispedire apposta: `REINVIA=1 news_impact_pipeline/run_daily_analysis.sh AAAA-MM-GG`.
+
 ⚠ Il brief delle 07:40 può far scattare l'analisi **prima** dell'aggiornamento
 prezzi delle 08:00. Prima delle 08:30 quel run esce in silenzio (`ATTESA:` nel
 log) e lascia fare a quello di calendario; dopo, i prezzi mancanti sono un

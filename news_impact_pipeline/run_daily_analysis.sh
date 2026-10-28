@@ -115,6 +115,7 @@ fase() { "$PY" "$PIPE/stato_giornata.py" --date "$TODAY" --fase 2>>"$LOG"; }
 FASE=""
 RICONOSCIUTO=0
 REGISTRATO=0
+CONSEGNATO=0
 RIUSABILI=()
 leggi_stato() {
   eval "$("$PY" "$PIPE/stato_giornata.py" --date "$TODAY" --json 2>>"$LOG" | "$PY" -c '
@@ -123,6 +124,7 @@ s = json.load(sys.stdin)
 print("FASE=" + shlex.quote(s["fase"] or "completa"))
 print("RICONOSCIUTO=" + ("1" if s["input_riconosciuto"] else "0"))
 print("REGISTRATO=" + ("1" if s["impronta_registrata"] else "0"))
+print("CONSEGNATO=" + ("1" if s.get("consegnato") else "0"))
 print("RIUSABILI=(" + " ".join(shlex.quote(x) for x in s["schede_riusabili"]) + ")")
 ')"
 }
@@ -136,6 +138,17 @@ print("RIUSABILI=(" + " ".join(shlex.quote(x) for x in s["schede_riusabili"]) + 
 leggi_stato
 if [[ "$FASE" == "completa" ]]; then
   log "SKIP: giornata $TODAY già completa (analisi resa e consegnata)."
+  exit 0
+fi
+
+# Già consegnata completa, con lo STESSO briefing: se ora risulta incompleta è
+# perché qualcuno ha corretto `_index.md` o rigenerato il report dopo l'invio.
+# Non si rispedisce. Incidente del 2026-10-28: correzioni a mano alle 13:14, poi
+# l'apertura del brief (macOS scrive `com.apple.lastuseddate` sul file) ha fatto
+# scattare `WatchPaths` alle 13:42 e la "riparazione" ha rimandato tutto su
+# Telegram. Un brief cambiato, un invio fallito o parziale passano come prima.
+if (( RICONOSCIUTO && CONSEGNATO )) && [[ -z "${REINVIA:-}" ]]; then
+  log "SKIP: giornata $TODAY già consegnata; ferma su $FASE per una modifica dopo l'invio. Non rispedisco (per farlo: REINVIA=1 run_daily_analysis.sh $TODAY)."
   exit 0
 fi
 

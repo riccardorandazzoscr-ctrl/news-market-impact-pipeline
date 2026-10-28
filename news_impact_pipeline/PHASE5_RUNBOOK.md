@@ -127,6 +127,17 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
    potatura del pool, poi scrivi la scheda **in un solo passaggio**. Non scrivere
    una sezione per volta: è la causa n.1 del costo del run (vedi "Economia del run").
 
+   ⚠ **Correzioni dei giorni precedenti.** Prima del primo `find`, una sola volta per run:
+   ```bash
+   grep -H "verifica successiva" $(ls ../daily_analysis/20*/_index.md | tail -14)
+   ```
+   Sono le lacune che una sessione successiva ha verificato e trovato **mal diagnosticate**
+   (pool che esisteva con un altro verso o un altro ticker di riferimento). Se una riguarda
+   il tema di una scheda di oggi, usa il pool che indica e non riannotare la stessa lacuna.
+   Regola del 2026-10-28: il 27/10 la correzione sul voto israeliano (`--direction neutral`,
+   non `pos`) era scritta in `_index.md`, ma il run del 28/10 non la leggeva e ha ripetuto
+   l'errore.
+
    Il `find` recupera gli **episodi storici analoghi dalla libreria** (Opzione B —
    pool ampio invece di 5 a mano), filtrando per sotto-tema, **direzione** e con il
    **no-look-ahead** (`--before` = la data della notizia).
@@ -215,7 +226,14 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
    Nel run giornaliero **non** si scrive la research e **non** si scrive nemmeno il
    prompt di deep research. La lacuna va solo annotata in "Lacune emerse", con
    abbastanza dettaglio da poterci tornare (tema canonico, asset coinvolti, perché
-   il pool attuale non basta, quante volte è già ricorsa).
+   il pool attuale non basta, quante volte è già ricorsa). Prima di scrivere «0 episodi»
+   o «senza riferimento», prova il `find` anche con gli altri ticker della stessa classe
+   (es. `^FVX` oltre a `^TNX`) e con `--direction neutral`: le revisioni dichiarano il
+   verso su un solo ticker.
+
+   Una lacuna verificata in seguito, in sessione interattiva, si corregge sotto la riga
+   originale con il marcatore `*Correzione (verifica successiva): …*` (o `*Precisazione
+   (verifica successiva): …*`), **su una sola riga**: è ciò che il `grep` del passo 3 raccoglie.
 
    Il prompt in `knowledge_base/_prompts/` si scrive **solo se il maintainer lo chiede
    esplicitamente**, in una sessione interattiva. Regola corretta il 2026-08-18:

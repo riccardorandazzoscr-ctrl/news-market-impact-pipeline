@@ -109,7 +109,8 @@ case "$*" in
     case "$*" in
       *--json*)
         [[ "$F" == completa ]] && FJ=null || FJ="\"$F\""
-        print -r -- "{\"fase\":$FJ,\"input_riconosciuto\":false,\"impronta_registrata\":null,\"schede_riusabili\":[]}" ;;
+        RIC=false; [[ -n "${STUB_CONSEGNATO:-}" ]] && RIC=true
+        print -r -- "{\"fase\":$FJ,\"input_riconosciuto\":$RIC,\"consegnato\":$RIC,\"impronta_registrata\":null,\"schede_riusabili\":[]}" ;;
       *) print -r -- "$F" ;;
     esac ;;
   # `leggi_stato` passa il JSON dello stato a un python -c: quello e' python VERO,
@@ -214,6 +215,21 @@ check "[[ $RC -eq 0 ]]" "esce con 0" "rc=$RC"
 check "grep -q 'SKIP: giornata' '$LOG'" "logga SKIP"
 check "! grep -q 'RIPRESA\|START' '$LOG'" "non rifà nulla"
 check "[[ -f '$GIORNODIR/_index.md' ]]" "non tocca l'analisi esistente"
+teardown
+
+# ------------------------ 1-bis. modifica a mano dopo un invio riuscito (28/10)
+print -- "\n1-bis. Già consegnata, report rigenerato dopo l'invio → NON si rispedisce"
+setup
+giornata_conclusa
+rm -f "$GIORNODIR/_state.json"          # lo stub ora vede consegna_confermata
+export STUB_CONSEGNATO=1
+RC=$(run_sut)
+check "[[ $RC -eq 0 ]]" "esce con 0" "rc=$RC"
+check "grep -q 'SKIP: giornata $GIORNO già consegnata' '$LOG'" "logga lo SKIP e come rispedire"
+check "[[ ! -f '$TELEGRAM' ]]" "nessun invio su Telegram"
+RC=$(REINVIA=1 run_sut)
+check "grep -q 'START' '$LOG'" "con REINVIA=1 riparte"
+unset STUB_CONSEGNATO
 teardown
 
 # ---------------------------------------------------------------- 2. lo scheletro
