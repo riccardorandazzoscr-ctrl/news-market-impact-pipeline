@@ -1,5 +1,5 @@
-generated_at: '2026-10-26T13:31:57'
-num_entries: 42
+generated_at: '2026-10-28T14:04:31'
+num_entries: 45
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -519,6 +519,77 @@ entries:
   - energy transition
   - country risk
   - capital flight
+- source_file: Elezioni e rischio politico in Israele_ voto, governi, riforma giudiziaria,
+    rating e impatto su USD_ILS (2013–presente)/Elezioni e rischio politico in Israele_
+    voto, governi, riforma giudiziaria, rating e impatto su USD_ILS (2013–presente).md
+  title: 'Elezioni e rischio politico in Israele: voto, formazione dei governi, riforma
+    giudiziaria e rating, trasmissione a USD/ILS — regime ed episodi storici (2013–presente)'
+  date_compiled: 2026-10-26
+  primary_theme: geopolitical
+  sub_themes:
+  - election_risk
+  - israel
+  - military_escalation
+  - de_escalation
+  - negotiation_track
+  - sovereign_rating
+  - fx_intervention
+  relevant_assets:
+  - ILS=X
+  - DX-Y.NYB
+  external_assets_mentioned:
+  - TA-35 — indice azionario blue chip di Tel Aviv, reagisce intraday al voto e alla
+    riforma (es. -2% il 2023-07-24) prima del cambio
+  - TA-125 — indice ampio di Tel Aviv, misura il premio istituzionale sul mercato
+    azionario domestico
+  - EIS — ETF iShares MSCI Israel, prezzo in dollari quotato negli USA, utile per
+    eventi di domenica o fuori orario TASE
+  - CDS sovrano Israele 5 anni — canale principale di trasmissione dei rating (Tooze
+    sul declassamento Moody's 2024)
+  - Shahar e Galil — titoli di Stato nominali e indicizzati, misurano il premio fiscale
+    degli accordi di coalizione
+  - Spread Israele-Treasury — separa il rischio sovrano israeliano dal livello dei
+    tassi USA
+  - Forward NIS — coperture di esportatori e istituzionali, anticipano la pressione
+    su USD/ILS
+  time_window:
+    start: 2013-01-01
+    end: present
+  regime_phases:
+  - stable_netanyahu_era: 2013-01-01 to 2019-04-08
+  - repeated_elections_2019_2022: 2019-04-09 to 2022-12-28
+  - judicial_overhaul_2023: 2022-12-29 to 2023-10-06
+  - war_regime_gaza_lebanon: 2023-10-07 to 2026-02-27
+  - iran_war_and_election_2026: 2026-02-28 to present
+  keywords:
+  - elezioni israeliane
+  - Knesset
+  - Netanyahu
+  - Eisenkot
+  - coalizione
+  - riforma giudiziaria
+  - shekel
+  - scioglimento della Knesset
+  - legge sulla ragionevolezza
+  - Corte suprema
+  - Gallant
+  - Bank of Israel
+  - rating sovrano
+  - Moody's
+  - exit poll
+  - Israeli election
+  - judicial overhaul
+  - coalition talks
+  - reasonableness law
+  - Knesset dissolution
+  - Israeli shekel
+  - USD/ILS
+  - sovereign downgrade
+  - political risk premium
+  - Bennett
+  - Lapid
+  - Gantz
+  - Levin
 - source_file: Elezioni presidenziali brasiliane e rischio politico_ trasmissione
     a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
     brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
@@ -620,6 +691,85 @@ entries:
   - high-frequency identification
   - fed information effect
   - oil overhang
+- source_file: Finanziamento azionario del capex AI_ emissioni degli hyperscaler,
+    IPO della filiera e trasmissione a semiconduttori, indice e credito (2023-presente)/Finanziamento
+    azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
+    a semiconduttori, indice e credito (2023-presente).md
+  title: 'Finanziamento azionario del capex AI: vendite di azioni degli hyperscaler,
+    nuove classi di azioni e IPO della filiera, trasmissione a semiconduttori, indice
+    e credito — regime ed episodi storici (2023–presente)'
+  date_compiled: 2026-10-27
+  primary_theme: structural_themes
+  sub_themes:
+  - ai_capex_financing
+  - equity_financing
+  - ipo_supply
+  - debt_financing
+  - hyperscaler_capex
+  - ai_semis
+  - valuation_derisking
+  - concentration_risk
+  - earnings_shock
+  - circular_financing
+  relevant_assets:
+  - SOXX
+  - ^NDX
+  - ^GSPC
+  - IGV
+  - HYG
+  - ^TNX
+  - EWY
+  - EWT
+  external_assets_mentioned:
+  - META — titolo emittente della vendita da 95 mld $ e della Classe C; misura diretta
+    della diluizione
+  - GOOGL / GOOG — titoli emittenti dell'aumento da 84,75 mld $; peso nel Nasdaq-100
+  - ORCL / ORCL-PRD — titolo e mandatory convertible Oracle; Oracle non è nel Nasdaq-100
+  - CRWV — IPO 2025 e ATM 2026; neocloud con credito sotto stress
+  - NBIS — follow-on Nebius 2025
+  - SPCX — IPO SpaceX; inclusione rapida nel Nasdaq-100
+  - CBRS — IPO Cerebras sopra la forchetta
+  - NVDA — oggetto della vendita secondaria SoftBank e investitore nelle offerte (CoreWeave,
+    Meta)
+  - 9984.T SoftBank Group — venditore secondario; quota in seduta di Tokyo
+  - CDS Oracle e CoreWeave — lettura diretta del canale di sostituzione del debito
+  - QQQ / SMH — alternative ETF ai proxy, non in lista
+  id: ai_equity_financing_capex_2023_present
+  regime_phases:
+  - cash_flow_funded_capex: 2023-01-01 to 2025-09-09
+  - neocloud_equity_and_debt_bridge: 2025-09-10 to 2026-02-01
+  - hyperscaler_equity_onset: 2026-02-02 to 2026-05-13
+  - mega_equity_supply_wave: 2026-05-14 to present
+  time_window:
+    start: 2023-01-01
+    end: present
+  keywords:
+  - vendita di azioni
+  - aumento di capitale
+  - azioni senza diritto di voto
+  - azioni di classe C
+  - IPO
+  - S-1
+  - bozza confidenziale
+  - diluizione
+  - prestito convertibile obbligatorio
+  - programma at-the-market
+  - equity raise
+  - share sale
+  - stock offering
+  - non-voting shares
+  - follow-on
+  - dilution
+  - AI capex
+  - at-the-market offering
+  - mandatory convertible preferred
+  - secondary sale
+  - IPO pricing above range
+  - IPO pricing below range
+  - Nasdaq-100 fast entry
+  - hyperscaler
+  - neocloud
+  - credit substitution
 - source_file: Finanziamento del capex AI_ debito degli hyperscaler, vendor financing
     e stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
     debito degli hyperscaler, vendor financing e stress di credito della filiera (2023–presente).md
@@ -2170,6 +2320,72 @@ entries:
   - tariffs
   - BLS
   - nowcast Cleveland
+- source_file: Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e
+    ASX 200_ episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione
+    ad AUD, titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  title: Release macro australiane contro il consenso (CPI e media troncata, lavoro,
+    PIL e capex) e trasmissione al dollaro australiano, ai titoli di Stato e all'ASX
+    200 — regime ed episodi storici (2011–presente)
+  date_compiled: 2026-10-28
+  primary_theme: macro_data
+  sub_themes:
+  - australia_release
+  - inflation_print
+  - inflation_upside
+  - inflation_downside
+  - labour_market
+  - activity_growth
+  relevant_assets:
+  - AUD=X
+  - VGB.AX
+  - ^AXJO
+  - DX-Y.NYB
+  - HG=F
+  - ^GSPC
+  external_assets_mentioned:
+  - Rendimento ACGB a 3 anni — misura diretta delle attese RBA, più sensibile di VGB.AX
+    alle sorprese
+  - Rendimento ACGB a 10 anni — trasmissione alla parte lunga e contagio dai Treasury
+  - Futures ASX sul 3 anni (YT) — reazione intraday ai dati, citata nelle fonti (es.
+    2024-04-24)
+  - Futures ASX sul cash rate a 30 giorni / swap OIS — probabilità implicita della
+    mossa RBA successiva
+  - Minerale di ferro (SGX/DCE) — principale export verso la Cina, fattore confondente
+    dell'AUD (es. 2024-10-17)
+  - AUD/JPY — proxy del rischio globale, separa il canale dei tassi da quello del
+    rischio
+  - AUD/NZD — isola la componente australiana dal fattore regionale e dal dollaro
+    USA
+  - Brent — guida l'headline CPI nel 2026 (shock energetico in Medio Oriente)
+  time_window:
+    start: 2011-01-01
+    end: present
+  regime_phases:
+  - easing_mining_bust: 2011-01-01 to 2016-08-02
+  - long_pause: 2016-08-03 to 2019-06-03
+  - easing_ycc: 2019-06-04 to 2022-05-02
+  - tightening_and_hold: 2022-05-03 to 2025-02-17
+  - easing_to_retightening: 2025-02-18 to present
+  keywords:
+  - Australia
+  - CPI australiano
+  - inflazione Australia
+  - media troncata
+  - Australian Bureau of Statistics
+  - ABS
+  - Labour Force Survey
+  - occupazione Australia
+  - PIL Australia
+  - Wage Price Index
+  - Reserve Bank of Australia
+  - RBA
+  - dollaro australiano
+  - ASX 200
+  - Australian CPI
+  - Australia inflation
+  - trimmed mean
+  - Australia jobs
+  - Australia GDP
 - source_file: 'Sorprese macro e reaction function dei mercati: fase del ciclo di
     politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito
     (2007–2026)/Sorprese macro e reaction function dei mercati: fase del ciclo di
