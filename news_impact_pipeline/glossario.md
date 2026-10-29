@@ -33,11 +33,13 @@ già pronto.
 - **BCE (Banca Centrale Europea)** — fissa i tassi per i venti paesi dell'area euro. Il tasso sui depositi è quello che riconosce alle banche sui fondi depositati presso di essa.
 - **Beige Book** — rapporto della Fed, otto volte l'anno, che raccoglie testimonianze qualitative dai 12 distretti su attività, occupazione e prezzi.
 - **Beni durevoli (durable goods orders)** — ordini mensili USA di beni destinati a durare oltre tre anni (aerei, macchinari, auto). Il dato "esclusi trasporti" toglie gli aerei, molto volatili, ed è la lettura più pulita della spesa per investimenti delle imprese.
+- **BoC (Bank of Canada)** — la banca centrale del Canada; decide il tasso overnight otto volte l'anno. Una sua stretta rafforza il dollaro canadese, quindi fa **scendere** `CAD=X`.
 - **Conference Board (Consumer Confidence Index)** — indice mensile USA della fiducia dei consumatori, costruito da un'associazione privata di imprese; pesa molto la valutazione del mercato del lavoro. Sotto 80 nella componente aspettative è storicamente associato a rischio di recessione.
 - **Consenso** — media delle previsioni degli analisti prima di una release; la "sorpresa" è la differenza fra dato pubblicato e consenso. Fornitori diversi (Reuters, Bloomberg, Wind) pubblicano consensi diversi.
 - **Core (inflazione di fondo)** — l'inflazione esclusi energia e alimentari freschi, perché quelle voci sono volatili e guidate da fattori esterni; il core misura meglio la pressione generata dall'economia interna.
 - **CPI (Consumer Price Index)** — indice dei prezzi al consumo, la misura di inflazione percepita dalle famiglie.
 - **Destatis** — l'istituto federale di statistica tedesco.
+- **Dissenso (FOMC)** — voto contrario alla decisione della maggioranza, reso pubblico con il comunicato. Due o più dissensi nella stessa direzione sono letti come anticipo della prossima mossa del comitato.
 - **Dot plot** — il grafico a punti in cui ogni membro del comitato Fed indica anonimamente dove vede i tassi negli anni successivi. Non è un impegno, ma è il segnale di guidance più seguito.
 - **Fed / Federal Reserve** — la banca centrale degli Stati Uniti.
 - **Fed regionali (presidenti)** — i dodici presidenti delle Federal Reserve Bank regionali (Cleveland, New York, ecc.). Cinque votano nel FOMC a rotazione (New York sempre): un loro discorso segnala un orientamento, ma pesa meno di una decisione o del presidente della Fed.
@@ -54,6 +56,7 @@ già pronto.
 - **ISM prezzi pagati (prices paid)** — sotto-indice dell'ISM: quota di responsabili acquisti che pagano di più gli input. È un'inflazione «a monte», arriva prima del CPI; sopra 70 = rincari diffusi a quasi tutte le categorie.
 - **JOLTS (Job Openings and Labor Turnover Survey)** — indagine mensile USA sui posti di lavoro vacanti e sul turnover, complementare all'NFP.
 - **LPR (Loan Prime Rate)** — tasso di riferimento mensile dei prestiti in Cina, pubblicato intorno al 20 del mese; è lo strumento con cui la PBOC orienta il costo del credito interno, distinto dalla gestione del cambio.
+- **Media troncata (trimmed mean)** — misura dell'inflazione di fondo preferita dalla RBA: scarta le variazioni di prezzo più estreme in alto e in basso (15% per lato) e fa la media del resto, così uno shock isolato (es. carburanti) pesa meno.
 - **NFP (Non-Farm Payrolls)** — nuovi posti di lavoro creati negli USA, esclusa l'agricoltura; il dato macro più seguito al mondo.
 - **PBOC (People's Bank of China)** — la banca centrale cinese.
 - **PCE (Personal Consumption Expenditures)** — indice dei prezzi della spesa per consumi delle famiglie USA; la sua versione *core* è la misura d'inflazione che la Fed usa come obiettivo (2%), per questo pesa sulle attese di tassi più del CPI.
@@ -92,6 +95,7 @@ già pronto.
 - **De-rating** — calo del multiplo (prezzo/utili) che il mercato è disposto a pagare, a utili invariati: tipico quando salgono i tassi o la fiducia nella crescita futura.
 - **DeepSeek** — laboratorio cinese di intelligenza artificiale; i suoi modelli efficienti (R1 a gennaio 2025, V4.1-Flash a ottobre 2026) mettono in dubbio quanto calcolo serva all'AI e quindi la domanda di chip e memoria.
 - **Differenziale di tasso** — la differenza fra i rendimenti di due aree valutarie; principale motore dei flussi di capitale e quindi dei cambi.
+- **Diluizione** — quando una società emette azioni nuove, ogni azione esistente ha diritto a una quota più piccola degli utili e del valore dell'azienda. È il costo, per gli azionisti attuali, di finanziarsi con l'equity invece che con il debito.
 - **Disinflazione** — rallentamento del *tasso di crescita* dei prezzi, non un calo dei prezzi (quello è deflazione).
 - **Distressed debt (debito in difficoltà)** — obbligazioni che quotano molto sotto la pari, con rendimenti tali da implicare un rischio concreto di insolvenza o ristrutturazione.
 - **Duration** — la sensibilità del prezzo di un'obbligazione a una variazione dei rendimenti. Scadenza più lunga = duration maggiore = movimento di prezzo più violento.
@@ -114,9 +118,12 @@ già pronto.
 - **Rating sovrano** — il giudizio di un'agenzia (Moody's, S&P, Fitch) sulla capacità di uno Stato di ripagare il debito. Un declassamento alza il costo del debito e può costringere fondi vincolati al merito di credito a vendere.
 - **Rendimento (yield)** — quanto rende un titolo di Stato tenuto fino a scadenza; si muove in direzione **opposta** al prezzo.
 - **Ricavi annualizzati (run-rate)** — i ricavi di un periodo breve (un mese, un trimestre) moltiplicati per portarli su base annua. Indicano il ritmo attuale, non un bilancio consuntivo: per le società private non quotate (es. i laboratori AI) sono spesso l'unico dato disponibile e arrivano da fonti indirette.
+- **S-1** — il documento di registrazione che una società deposita presso la SEC per quotarsi negli Stati Uniti: conti, rischi, struttura del capitale. Quando diventa pubblico, l'IPO è in genere a poche settimane.
+- **SAFE (Simple Agreement for Future Equity)** — contratto con cui un investitore versa capitale oggi in cambio di azioni future, a un prezzo fissato al successivo round o alla quotazione. Finché non si converte va rivalutato in bilancio, e le variazioni di valore possono gonfiare la perdita contabile senza muovere la cassa.
 - **Shock di offerta** — un rincaro che nasce da una riduzione della disponibilità di un bene, non da un eccesso di domanda. Alzare i tassi non lo corregge: riduce solo la crescita.
 - **Spare capacity (capacità inutilizzata)** — capacità produttiva che i produttori (soprattutto OPEC+) possono attivare in poche settimane; l'ammortizzatore che storicamente drena il premio di rischio sul petrolio.
 - **Spread OAT-Bund** — differenza fra il rendimento del titolo di Stato francese a 10 anni (OAT, Obligation Assimilable du Trésor) e quello del Bund tedesco: il premio chiesto per il rischio Francia. Nel DB come serie derivata `OAT_BUND_SPREAD` (dal 2026-10-02).
+- **SPV (special purpose vehicle, veicolo fuori bilancio)** — società creata apposta per finanziare un'attività precisa: il debito sta nel veicolo, non nel bilancio di chi usa i beni. Nel capex AI serve a comprare chip per conto di uno sviluppatore senza appesantirne lo stato patrimoniale.
 - **Stagflazione** — crescita debole (o recessione) insieme a inflazione alta. È lo scenario più scomodo per una banca centrale: alzare i tassi frena ancora l'economia, tagliarli alimenta i prezzi. Sui mercati si vede quando i dati deboli non fanno scendere i rendimenti.
 - **State-dependence** — il fatto che la reazione del mercato allo stesso dato dipenda dallo stato del sistema (fase del ciclo monetario, posizionamento, regime inflazionistico).
 - **Surplus commerciale** — l'eccedenza delle esportazioni sulle importazioni di un paese. Per identità contabile, il surplus di uno è il deficit di altri.
@@ -146,6 +153,7 @@ già pronto.
 - **IEA (International Energy Agency)** — agenzia dell'OCSE per la sicurezza energetica; coordina i rilasci d'emergenza delle scorte strategiche dei Paesi membri.
 - **IRGC (Islamic Revolutionary Guard Corps, Pasdaran)** — il corpo militare d'élite iraniano, distinto dall'esercito regolare; controlla le operazioni navali nello Stretto di Hormuz.
 - **JCPOA (Joint Comprehensive Plan of Action)** — l'accordo del 2015 sul programma nucleare iraniano, da cui gli USA uscirono nel 2018.
+- **Knesset** — il parlamento monocamerale di Israele, 120 seggi: per governare serve una coalizione di almeno 61.
 - **MFF (Multiannual Financial Framework, Quadro finanziario pluriennale)** — il bilancio settennale dell'Unione europea (il prossimo copre il 2028-2034): fissa quanto spende l'UE e per cosa (agricoltura, coesione, difesa, ricerca). Si approva all'unanimità, quindi ogni grande contributore netto, come la Germania, ha di fatto un veto.
 - **MoU (Memorandum of Understanding)** — memorandum d'intesa: accordo politico preliminare, meno vincolante di un trattato. Nel 2026 è il formato della trattativa USA-Iran su Hormuz.
 - **NATO** — North Atlantic Treaty Organization, l'alleanza militare atlantica.
