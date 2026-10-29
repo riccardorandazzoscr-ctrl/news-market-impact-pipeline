@@ -1,4 +1,4 @@
-generated_at: '2026-10-29T10:15:07'
+generated_at: '2026-10-29T10:15:27'
 num_episodes: 1537
 episodes:
 - date: '1984-01-01'
@@ -36618,6 +36618,11 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  direction_review_excluded:
+    GBPUSD=X: 'Riga: «GBP ↑ se Remain (atteso)» — verso condizionato a un esito ignoto
+      alla data. GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa»,
+      nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude
+      2026-10-29.'
   directions_local:
   - neg
   declared: false
@@ -36686,6 +36691,13 @@ episodes:
   directions:
   - neg
   directions_declared: []
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local:
   - neg
   declared: false
@@ -36707,13 +36719,18 @@ episodes:
   - uk_cpi
   - uk_political_risk
   subthemes_local:
+  - brexit
   - gbp
   n_sources: 2
   events:
   - event_id: 2016-06-24:geopolitical:-
     geo: ''
     subthemes_local:
+    - brexit
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - neg
     sources:
     - card:2026-06-23/news_03.md
     - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
@@ -36726,8 +36743,11 @@ episodes:
         (2016–2026)/Regno Unito- shock politici e monetari — regime ed episodi storici
         (2016–2026).md
       subthemes_local:
+      - brexit
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - neg
 - date: '2016-07-12'
   theme: geopolitical
   direction: ''
@@ -36805,6 +36825,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -36832,6 +36859,9 @@ episodes:
     subthemes_local:
     - brexit
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - neg
     sources:
     - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
       Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
@@ -36842,12 +36872,19 @@ episodes:
       subthemes_local:
       - brexit
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - neg
 - date: '2016-10-07'
   theme: geopolitical
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    GBPUSD=X: 'La riga lo dice «evento tecnico/algoritmico; non politico puro»: non
+      è uno shock del tema. GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione
+      attesa», nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione
+      Claude 2026-10-29.'
   directions_local: []
   declared: false
   subthemes:
@@ -36888,6 +36925,10 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    GBPUSD=X: 'Riga: «GBP ambiguo». GBPUSD=X quota dollari per sterlina. Solo la colonna
+      «Direzione attesa», nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey).
+      Revisione Claude 2026-10-29.'
   directions_local: []
   declared: false
   subthemes:
@@ -36931,6 +36972,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -36949,13 +36997,18 @@ episodes:
   - uk_cpi
   - uk_political_risk
   subthemes_local:
+  - brexit
   - gbp
   n_sources: 1
   events:
   - event_id: 2017-03-29:geopolitical:-
     geo: ''
     subthemes_local:
+    - brexit
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - neg
     sources:
     - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
       Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
@@ -36964,14 +37017,24 @@ episodes:
         (2016–2026)/Regno Unito- shock politici e monetari — regime ed episodi storici
         (2016–2026).md
       subthemes_local:
+      - brexit
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - neg
 - date: '2017-06-08'
   theme: geopolitical
   direction: neutral
   directions:
   - neutral
   directions_declared: []
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -37002,6 +37065,9 @@ episodes:
     subthemes_local:
     - election_risk
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - neg
     sources:
     - card:2026-07-20/news_02.md
     - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
@@ -37017,7 +37083,9 @@ episodes:
       subthemes_local:
       - election_risk
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - neg
 - date: '2017-11-08'
   theme: geopolitical
   direction: mixed
@@ -38357,6 +38425,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -38375,13 +38450,18 @@ episodes:
   - uk_cpi
   - uk_political_risk
   subthemes_local:
+  - brexit
   - gbp
   n_sources: 1
   events:
   - event_id: 2018-12-10:geopolitical:-
     geo: ''
     subthemes_local:
+    - brexit
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - neg
     sources:
     - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
       Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
@@ -38390,8 +38470,11 @@ episodes:
         (2016–2026)/Regno Unito- shock politici e monetari — regime ed episodi storici
         (2016–2026).md
       subthemes_local:
+      - brexit
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - neg
 - date: '2018-12-26'
   theme: geopolitical
   direction: mixed
@@ -38468,6 +38551,10 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    GBPUSD=X: 'Riga: «GBP ambiguo». GBPUSD=X quota dollari per sterlina. Solo la colonna
+      «Direzione attesa», nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey).
+      Revisione Claude 2026-10-29.'
   directions_local: []
   declared: false
   subthemes:
@@ -38508,6 +38595,10 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    GBPUSD=X: 'Riga: «GBP ambiguo». GBPUSD=X quota dollari per sterlina. Solo la colonna
+      «Direzione attesa», nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey).
+      Revisione Claude 2026-10-29.'
   directions_local: []
   declared: false
   subthemes:
@@ -38548,6 +38639,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -38575,6 +38673,9 @@ episodes:
     subthemes_local:
     - brexit
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - neg
     sources:
     - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
       Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
@@ -38585,7 +38686,9 @@ episodes:
       subthemes_local:
       - brexit
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - neg
 - date: '2019-04-08'
   theme: geopolitical
   direction: ''
@@ -39201,6 +39304,13 @@ episodes:
   - neg
   - neutral
   directions_declared: []
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -39224,13 +39334,18 @@ episodes:
   - uk_political_risk
   - uk_political_transition_—_new_labour_pm_after_starmer_resignation
   subthemes_local:
+  - brexit
   - gbp
   n_sources: 3
   events:
   - event_id: 2019-05-24:geopolitical:-
     geo: ''
     subthemes_local:
+    - brexit
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - neg
     sources:
     - card:2026-06-23/news_03.md
     - card:2026-07-20/news_02.md
@@ -39247,8 +39362,11 @@ episodes:
         (2016–2026)/Regno Unito- shock politici e monetari — regime ed episodi storici
         (2016–2026).md
       subthemes_local:
+      - brexit
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - neg
 - date: '2019-05-30'
   theme: geopolitical
   direction: neg
@@ -39838,6 +39956,13 @@ episodes:
   - neg
   - neutral
   directions_declared: []
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -39861,13 +39986,18 @@ episodes:
   - uk_political_risk
   - uk_political_transition_—_new_labour_pm_after_starmer_resignation
   subthemes_local:
+  - brexit
   - gbp
   n_sources: 3
   events:
   - event_id: 2019-07-24:geopolitical:-
     geo: ''
     subthemes_local:
+    - brexit
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - neg
     sources:
     - card:2026-06-23/news_03.md
     - card:2026-07-20/news_02.md
@@ -39884,8 +40014,11 @@ episodes:
         (2016–2026)/Regno Unito- shock politici e monetari — regime ed episodi storici
         (2016–2026).md
       subthemes_local:
+      - brexit
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - neg
 - date: '2019-08-01'
   theme: geopolitical
   direction: neg
@@ -41137,6 +41270,13 @@ episodes:
   - neutral
   directions_declared:
   - pos
+  directions_by_reference:
+    GBPUSD=X:
+    - pos
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local:
   - pos
   declared: true
@@ -41169,6 +41309,9 @@ episodes:
     subthemes_local:
     - election_risk
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - pos
     sources:
     - card:2026-06-23/news_03.md
     - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
@@ -41184,7 +41327,9 @@ episodes:
       subthemes_local:
       - election_risk
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - pos
   - event_id: 2019-12-12:geopolitical:britain_release
     geo: britain_release
     subthemes_local:
@@ -41931,6 +42076,13 @@ episodes:
   - neutral
   - pos
   directions_declared: []
+  directions_by_reference:
+    GBPUSD=X:
+    - neutral
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local:
   - neg
   - pos
@@ -41987,6 +42139,9 @@ episodes:
     subthemes_local:
     - brexit
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - neutral
     sources:
     - card:2026-06-29/news_01.md
     - card:2026-07-09/news_01.md
@@ -42030,7 +42185,9 @@ episodes:
       subthemes_local:
       - brexit
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - neutral
     - source: kb:brexit/brexit_dynamics.md
       subthemes_local: []
       directions_by_reference: {}
@@ -42168,6 +42325,11 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    GBPUSD=X: 'La riga lo dice «shock pandemia globale, non UK-specifico», ed è una
+      decisione BoE: nel tema geopolitical inquinerebbe i pool di rischio politico.
+      GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa», nessun
+      prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
   directions_local:
   - neg
   declared: false
@@ -45256,6 +45418,13 @@ episodes:
   - neg
   - neutral
   directions_declared: []
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -45279,13 +45448,18 @@ episodes:
   - uk_political_risk
   - uk_political_transition_—_new_labour_pm_after_starmer_resignation
   subthemes_local:
+  - fiscal_expansion
   - gbp
   n_sources: 3
   events:
   - event_id: 2022-09-06:geopolitical:-
     geo: ''
     subthemes_local:
+    - fiscal_expansion
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - neg
     sources:
     - card:2026-06-23/news_03.md
     - card:2026-07-20/news_02.md
@@ -45302,8 +45476,11 @@ episodes:
         (2016–2026)/Regno Unito- shock politici e monetari — regime ed episodi storici
         (2016–2026).md
       subthemes_local:
+      - fiscal_expansion
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - neg
 - date: '2022-09-23'
   theme: geopolitical
   direction: mixed
@@ -45311,6 +45488,13 @@ episodes:
   - neg
   - neutral
   directions_declared: []
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local:
   - neg
   declared: false
@@ -45342,13 +45526,18 @@ episodes:
   - uk_political_transition_—_new_labour_pm_after_starmer_resignation
   - us_china
   subthemes_local:
+  - fiscal_expansion
   - gbp
   n_sources: 5
   events:
   - event_id: 2022-09-23:geopolitical:-
     geo: ''
     subthemes_local:
+    - fiscal_expansion
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - neg
     sources:
     - card:2026-07-03/news_07.md
     - card:2026-07-14/news_04.md
@@ -45369,8 +45558,11 @@ episodes:
         (2016–2026)/Regno Unito- shock politici e monetari — regime ed episodi storici
         (2016–2026).md
       subthemes_local:
+      - fiscal_expansion
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - neg
   - event_id: 2022-09-23:geopolitical:britain_release
     geo: britain_release
     subthemes_local: []
@@ -45407,6 +45599,11 @@ episodes:
     - kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati
       per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni
       — mappa di episodi datati per event study (2022–2026).md
+  direction_review_excluded:
+    GBPUSD=X: 'Continuazione del mini-budget del 2022-09-23 (minimo raggiunto il lunedì
+      dopo), non una notizia nuova: la finestra si sovrapporrebbe. GBPUSD=X quota
+      dollari per sterlina. Solo la colonna «Direzione attesa», nessun prezzo consultato.
+      Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
   directions_local:
   - neg
   declared: false
@@ -45502,6 +45699,10 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    GBPUSD=X: 'Riga: «GBP/gilt stabilizzazione» — nessun verso scritto sulla sterlina.
+      GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa», nessun
+      prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
   directions_local: []
   declared: false
   subthemes:
@@ -45758,6 +45959,10 @@ episodes:
   directions:
   - neutral
   directions_declared: []
+  direction_review_excluded:
+    GBPUSD=X: 'Riga: «GBP ambiguo». GBPUSD=X quota dollari per sterlina. Solo la colonna
+      «Direzione attesa», nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey).
+      Revisione Claude 2026-10-29.'
   directions_local: []
   declared: false
   subthemes:
@@ -45806,6 +46011,13 @@ episodes:
   directions:
   - neutral
   directions_declared: []
+  directions_by_reference:
+    GBPUSD=X:
+    - pos
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -45827,13 +46039,18 @@ episodes:
   - uk_political_risk
   - uk_political_transition_—_new_labour_pm_after_starmer_resignation
   subthemes_local:
+  - fiscal_consolidation
   - gbp
   n_sources: 2
   events:
   - event_id: 2022-10-17:geopolitical:-
     geo: ''
     subthemes_local:
+    - fiscal_consolidation
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - pos
     sources:
     - card:2026-07-20/news_02.md
     - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
@@ -45846,8 +46063,11 @@ episodes:
         (2016–2026)/Regno Unito- shock politici e monetari — regime ed episodi storici
         (2016–2026).md
       subthemes_local:
+      - fiscal_consolidation
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - pos
 - date: '2022-10-20'
   theme: geopolitical
   direction: mixed
@@ -45855,6 +46075,13 @@ episodes:
   - neg
   - neutral
   directions_declared: []
+  directions_by_reference:
+    GBPUSD=X:
+    - pos
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local:
   - pos
   declared: false
@@ -45879,13 +46106,18 @@ episodes:
   - uk_political_risk
   - uk_political_transition_—_new_labour_pm_after_starmer_resignation
   subthemes_local:
+  - fiscal_consolidation
   - gbp
   n_sources: 3
   events:
   - event_id: 2022-10-20:geopolitical:-
     geo: ''
     subthemes_local:
+    - fiscal_consolidation
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - pos
     sources:
     - card:2026-06-23/news_03.md
     - card:2026-07-20/news_02.md
@@ -45902,14 +46134,24 @@ episodes:
         (2016–2026)/Regno Unito- shock politici e monetari — regime ed episodi storici
         (2016–2026).md
       subthemes_local:
+      - fiscal_consolidation
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - pos
 - date: '2022-10-25'
   theme: geopolitical
   direction: neutral
   directions:
   - neutral
   directions_declared: []
+  directions_by_reference:
+    GBPUSD=X:
+    - pos
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local: []
   declared: false
   subthemes:
@@ -45931,13 +46173,18 @@ episodes:
   - uk_political_risk
   - uk_political_transition_—_new_labour_pm_after_starmer_resignation
   subthemes_local:
+  - fiscal_consolidation
   - gbp
   n_sources: 2
   events:
   - event_id: 2022-10-25:geopolitical:-
     geo: ''
     subthemes_local:
+    - fiscal_consolidation
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - pos
     sources:
     - card:2026-07-20/news_02.md
     - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
@@ -45950,8 +46197,11 @@ episodes:
         (2016–2026)/Regno Unito- shock politici e monetari — regime ed episodi storici
         (2016–2026).md
       subthemes_local:
+      - fiscal_consolidation
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - pos
 - date: '2022-10-29'
   theme: geopolitical
   direction: neg
@@ -51359,6 +51609,11 @@ episodes:
   - neutral
   directions_declared:
   - neutral
+  direction_review_excluded:
+    GBPUSD=X: 'Riga: «GBP neutro/↑ lieve» — due versi possibili, come «neutro/positivo»
+      in Fiscal_Pol_Brazil 2011-08-02. GBPUSD=X quota dollari per sterlina. Solo la
+      colonna «Direzione attesa», nessun prezzo consultato. Lacuna 2026-10-29 (bilancio
+      Healey). Revisione Claude 2026-10-29.'
   directions_local:
   - neutral
   declared: true
@@ -57756,9 +58011,14 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    GBPUSD=X:
+    - neg
     SHLD.L:
     - pos
   direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
     SHLD.L:
     - card:2026-09-26/news_03.md
   directions_local:
@@ -57795,6 +58055,7 @@ episodes:
   - zeitenwende
   subthemes_local:
   - difesa
+  - fiscal_expansion
   - gbp
   n_sources: 4
   events:
@@ -57802,8 +58063,11 @@ episodes:
     geo: ''
     subthemes_local:
     - difesa
+    - fiscal_expansion
     - gbp
     directions_by_reference:
+      GBPUSD=X:
+      - neg
       SHLD.L:
       - pos
     sources:
@@ -57833,8 +58097,11 @@ episodes:
         (2016–2026)/Regno Unito- shock politici e monetari — regime ed episodi storici
         (2016–2026).md
       subthemes_local:
+      - fiscal_expansion
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - neg
 - date: '2025-07-07'
   theme: geopolitical
   direction: mixed
@@ -63835,6 +64102,13 @@ episodes:
   - neutral
   directions_declared:
   - neg
+  directions_by_reference:
+    GBPUSD=X:
+    - neg
+  direction_sources:
+    GBPUSD=X:
+    - kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno
+      Unito- shock politici e monetari — regime ed episodi storici (2016–2026).md
   directions_local:
   - neg
   declared: true
@@ -63891,6 +64165,9 @@ episodes:
     subthemes_local:
     - election_risk
     - gbp
+    directions_by_reference:
+      GBPUSD=X:
+      - neg
     sources:
     - card:2026-07-03/news_07.md
     - card:2026-07-14/news_04.md
@@ -63941,7 +64218,9 @@ episodes:
       subthemes_local:
       - election_risk
       - gbp
-      directions_by_reference: {}
+      directions_by_reference:
+        GBPUSD=X:
+        - neg
   - event_id: 2026-05-07:geopolitical:britain_release
     geo: britain_release
     subthemes_local:
@@ -65312,6 +65591,10 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    GBPUSD=X: 'Riga: «GBP/gilt volatilità» — nessun verso. GBPUSD=X quota dollari
+      per sterlina. Solo la colonna «Direzione attesa», nessun prezzo consultato.
+      Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
   directions_local:
   - neg
   - pos
@@ -65812,6 +66095,10 @@ episodes:
   - neg
   - neutral
   directions_declared: []
+  direction_review_excluded:
+    GBPUSD=X: 'Riga: «GBP/gilt incertezza» — nessun verso. GBPUSD=X quota dollari
+      per sterlina. Solo la colonna «Direzione attesa», nessun prezzo consultato.
+      Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
   directions_local: []
   declared: false
   subthemes:

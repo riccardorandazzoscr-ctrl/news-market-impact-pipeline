@@ -1,0 +1,652 @@
+research: Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+  shock politici e monetari — regime ed episodi storici (2016–2026).md
+voci:
+- riga: '| 2016-06-23 | Giorno del referendum Brexit (voto) | REF | GBP ↑ se Remain (atteso) | `GBPUSD=X`
+    | Alle 22:00 il mercato prezzava Remain (~$1.50); esito ignoto fino a notte |'
+  data: '2016-06-23'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: escluso
+    perché: 'Riga: «GBP ↑ se Remain (atteso)» — verso condizionato a un esito ignoto alla data. GBPUSD=X
+      quota dollari per sterlina. Solo la colonna «Direzione attesa», nessun prezzo consultato. Lacuna
+      2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - brexit
+  - gbp
+  evento: Giorno del voto sul referendum Brexit
+  stato: promossa
+- riga: '| 2016-06-24 | Apertura mercati post-esito Leave | REF | GBP ↓↓, risk-off | `GBPUSD=X`, `^VIX`,
+    `GC=F`, `^STOXX50E`, `^GDAXI`, `EURUSD=X` | GBP −8% vs USD in 24h; shock a sorpresa puro |'
+  data: '2016-06-24'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - EURUSD=X
+  - GBPUSD=X
+  - GC=F
+  - ^GDAXI
+  - ^STOXX50E
+  - ^VIX
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: neg
+    perché: 'Riga: «GBP ↓↓, risk-off». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione
+      attesa», nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - brexit
+  - gbp
+  evento: Esito Leave del referendum Brexit
+  stato: promossa
+- riga: '| 2016-06-24 | Dimissioni Cameron | LEAD | GBP ↓ (marginale) | `GBPUSD=X` | Contemporaneo all''esito;
+    effetto non isolabile dal voto |'
+  data: '2016-06-24'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: 'Stessa data e tema dell''esito Leave (voce precedente), che porta già il verso: il registro tiene
+    una dichiarazione per (data, tema, asset). Revisione Claude 2026-10-29.'
+- riga: '| 2016-10-02 | Conf. Tory May: hard Brexit | REF/LEAD | GBP ↓ | `GBPUSD=X` | Prima conferma direzione
+    "hard"; sterlina verso $1.18 intraday a ottobre |'
+  data: '2016-10-02'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: neg
+    perché: 'Riga: «GBP ↓». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa», nessun
+      prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - brexit
+  - gbp
+  evento: May annuncia la hard Brexit alla conferenza Tory
+  stato: promossa
+- riga: '| 2016-10-07 | Flash crash sterlina | FISC/altro | GBP ↓↓ intraday | `GBPUSD=X` | Evento tecnico/algoritmico;
+    non politico puro |'
+  data: '2016-10-07'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: escluso
+    perché: 'La riga lo dice «evento tecnico/algoritmico; non politico puro»: non è uno shock del tema.
+      GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa», nessun prezzo consultato.
+      Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - gbp
+  evento: Flash crash della sterlina
+  stato: promossa
+- riga: '| 2017-01-17 | Discorso Lancaster House (May) | REF | GBP ambiguo | `GBPUSD=X` | Chiarezza riduce
+    premio rischio nonostante hard Brexit |'
+  data: '2017-01-17'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: escluso
+    perché: 'Riga: «GBP ambiguo». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa»,
+      nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - brexit
+  - gbp
+  evento: Discorso di Lancaster House
+  stato: promossa
+- riga: '| 2017-03-29 | Attivazione Articolo 50 | REF | GBP ↓ lieve | `GBPUSD=X` | Ampiamente atteso →
+    reazione contenuta |'
+  data: '2017-03-29'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: neg
+    perché: 'Riga: «GBP ↓ lieve». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa»,
+      nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - brexit
+  - gbp
+  evento: Attivazione dell'Articolo 50
+  stato: promossa
+- riga: '| 2017-06-08 | Elezioni generali: hung parliament | REF | GBP ↓ | `GBPUSD=X` | Exit poll a sorpresa
+    (atteso: maggioranza Tory); GBP −2% |'
+  data: '2017-06-08'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: neg
+    perché: 'Riga: «GBP ↓». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa», nessun
+      prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - election_risk
+  - gbp
+  evento: 'Elezioni 2017: parlamento senza maggioranza'
+  stato: promossa
+- riga: '| 2018-12-10 | Rinvio del primo *meaningful vote* | REF | GBP ↓ | `GBPUSD=X` | May rinvia perché
+    sconfitta certa |'
+  data: '2018-12-10'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: neg
+    perché: 'Riga: «GBP ↓». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa», nessun
+      prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - brexit
+  - gbp
+  evento: Rinvio del primo meaningful vote
+  stato: promossa
+- riga: '| 2019-01-15 | Primo *meaningful vote*: sconfitta 432–202 | REF | GBP ambiguo | `GBPUSD=X` |
+    Sconfitta record ma largamente attesa → reazione attenuata |'
+  data: '2019-01-15'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: escluso
+    perché: 'Riga: «GBP ambiguo». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa»,
+      nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - brexit
+  - gbp
+  evento: Primo meaningful vote respinto
+  stato: promossa
+- riga: '| 2019-03-12 | Secondo *meaningful vote*: sconfitta 391–242 | REF | GBP ambiguo | `GBPUSD=X`
+    | Atteso |'
+  data: '2019-03-12'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: escluso
+    perché: 'Riga: «GBP ambiguo». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa»,
+      nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - brexit
+  - gbp
+  evento: Secondo meaningful vote respinto
+  stato: promossa
+- riga: '| 2019-03-29 | Terzo *meaningful vote*: sconfitta 286–344 | REF | GBP ↓ | `GBPUSD=X` | Data originaria
+    Brexit; incertezza estensione |'
+  data: '2019-03-29'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: neg
+    perché: 'Riga: «GBP ↓». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa», nessun
+      prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - brexit
+  - gbp
+  evento: Terzo meaningful vote respinto
+  stato: promossa
+- riga: '| 2019-05-24 | Annuncio dimissioni May | LEAD | GBP ↓ | `GBPUSD=X` | Apre fase Johnson/no-deal
+    |'
+  data: '2019-05-24'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: neg
+    perché: 'Riga: «GBP ↓». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa», nessun
+      prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - brexit
+  - gbp
+  evento: May annuncia le dimissioni
+  stato: promossa
+- riga: '| 2019-07-24 | Johnson PM | LEAD | GBP ↓ | `GBPUSD=X` | Aumenta rischio no-deal |'
+  data: '2019-07-24'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: neg
+    perché: 'Riga: «GBP ↓». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa», nessun
+      prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - brexit
+  - gbp
+  evento: Johnson primo ministro, sale il rischio no-deal
+  stato: promossa
+- riga: '| 2019-08 (fine) | Picco timori no-deal | REF | GBP ↓↓ | `GBPUSD=X` | Sterlina ~$1.196, minimo
+    dal 2016 |'
+  data: null
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: '«2019-08 (fine)»: nessuna data esatta, non si aggancia a un evento.'
+- riga: '| 2019-12-12/13 | Elezione: maggioranza Johnson | REF/LEAD | GBP ↑↑ | `GBPUSD=X` | Exit poll
+    → GBP +2%, $1.3445; riduzione premio rischio |'
+  data: '2019-12-12'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: pos
+    perché: 'Riga: «GBP ↑↑». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa»,
+      nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - election_risk
+  - gbp
+  evento: 'Elezioni 2019: maggioranza Johnson'
+  stato: promossa
+- riga: '| 2020-01-31 | Brexit formale | REF | GBP neutro | `GBPUSD=X` | Atteso, prezzato |'
+  data: '2020-01-31'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: neutral
+    perché: 'Riga: «GBP neutro». La riga dice «Atteso, prezzato». GBPUSD=X quota dollari per sterlina.
+      Solo la colonna «Direzione attesa», nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey).
+      Revisione Claude 2026-10-29.'
+  meccanismo:
+  - brexit
+  - gbp
+  evento: Uscita formale dall'UE
+  stato: promossa
+- riga: '| 2020-03-11/19 | Tagli emergenza BoE Covid (a 0,10%) | BOE/EMERG | GBP ↓, risk-off | `GBPUSD=X`,
+    `^VIX`, `GC=F` | Shock pandemia globale, non UK-specifico |'
+  data: '2020-03-11'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  - GC=F
+  - ^VIX
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: escluso
+    perché: 'La riga lo dice «shock pandemia globale, non UK-specifico», ed è una decisione BoE: nel tema
+      geopolitical inquinerebbe i pool di rischio politico. GBPUSD=X quota dollari per sterlina. Solo
+      la colonna «Direzione attesa», nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione
+      Claude 2026-10-29.'
+  meccanismo:
+  - gbp
+  evento: Tagli d'emergenza della BoE per il Covid
+  stato: promossa
+- riga: '| 2022-09-06 | Truss PM | LEAD | GBP ↓ lieve | `GBPUSD=X` | Attesa politica fiscale espansiva
+    |'
+  data: '2022-09-06'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: neg
+    perché: 'Riga: «GBP ↓ lieve». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa»,
+      nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - fiscal_expansion
+  - gbp
+  evento: Truss prima ministra, attesa di espansione fiscale
+  stato: promossa
+- riga: '| 2022-09-23 | Mini-budget Kwarteng ("Growth Plan") | FISC | GBP ↓↓, gilt ↓↓ | `GBPUSD=X` (gilt
+    esterno) | £45bn tagli non finanziati senza forecast OBR; 3° peggior giorno GBP vs USD dal 1992 |'
+  data: '2022-09-23'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: neg
+    perché: 'Riga: «GBP ↓↓, gilt ↓↓». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione
+      attesa», nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - fiscal_expansion
+  - gbp
+  evento: Mini-budget Kwarteng
+  stato: promossa
+- riga: '| 2022-09-26 | Minimo storico sterlina | FISC | GBP ↓↓ | `GBPUSD=X`, `DX-Y.NYB` | $1.0327, minimo
+    da decimalizzazione 1971 |'
+  data: '2022-09-26'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - DX-Y.NYB
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: escluso
+    perché: 'Continuazione del mini-budget del 2022-09-23 (minimo raggiunto il lunedì dopo), non una notizia
+      nuova: la finestra si sovrapporrebbe. GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione
+      attesa», nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - fiscal_expansion
+  - gbp
+  evento: Minimo storico della sterlina
+  stato: promossa
+- riga: '| 2022-09-28 | Intervento emergenza BoE sui gilt (LDI backstop) | EMERG | GBP/gilt stabilizzazione
+    | `GBPUSD=X` (gilt esterno), `^TNX` | Acquisti temporanei gilt lunghi; stress sistemico → `BTP_BUND_SPREAD`
+    rilevante |'
+  data: '2022-09-28'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - BTP_BUND_SPREAD
+  - GBPUSD=X
+  - ^TNX
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: escluso
+    perché: 'Riga: «GBP/gilt stabilizzazione» — nessun verso scritto sulla sterlina. GBPUSD=X quota dollari
+      per sterlina. Solo la colonna «Direzione attesa», nessun prezzo consultato. Lacuna 2026-10-29 (bilancio
+      Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - gbp
+  evento: Intervento d'emergenza della BoE sui gilt
+  stato: promossa
+- riga: '| 2022-10-14 | Licenziamento Kwarteng | FISC/LEAD | GBP ambiguo | `GBPUSD=X` | Hunt cancelliere
+    |'
+  data: '2022-10-14'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: escluso
+    perché: 'Riga: «GBP ambiguo». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa»,
+      nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - fiscal_consolidation
+  - gbp
+  evento: Licenziamento di Kwarteng
+  stato: promossa
+- riga: '| 2022-10-17 | Hunt annulla mini-budget | FISC | GBP ↑, gilt ↑ | `GBPUSD=X` | Ripristino credibilità
+    fiscale |'
+  data: '2022-10-17'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: pos
+    perché: 'Riga: «GBP ↑, gilt ↑». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa»,
+      nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - fiscal_consolidation
+  - gbp
+  evento: Hunt ritira il mini-budget
+  stato: promossa
+- riga: '| 2022-10-20 | Dimissioni Truss | LEAD | GBP ↑ lieve | `GBPUSD=X` | PM più breve della storia
+    (49 gg) |'
+  data: '2022-10-20'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: pos
+    perché: 'Riga: «GBP ↑ lieve». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa»,
+      nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - fiscal_consolidation
+  - gbp
+  evento: Dimissioni di Truss
+  stato: promossa
+- riga: '| 2022-10-25 | Sunak PM | LEAD | GBP ↑ | `GBPUSD=X` | Rendimenti gilt 30Y tornano a livelli pre-mini-budget
+    |'
+  data: '2022-10-25'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: pos
+    perché: 'Riga: «GBP ↑». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa», nessun
+      prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - fiscal_consolidation
+  - gbp
+  evento: Sunak primo ministro
+  stato: promossa
+- riga: '| 2024-07-04/05 | Elezione: landslide Labour (Starmer) | REF/LEAD | GBP neutro/↑ lieve | `GBPUSD=X`
+    | Ampiamente atteso (sondaggi) → reazione contenuta |'
+  data: '2024-07-04'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: escluso
+    perché: 'Riga: «GBP neutro/↑ lieve» — due versi possibili, come «neutro/positivo» in Fiscal_Pol_Brazil
+      2011-08-02. GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa», nessun prezzo
+      consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - election_risk
+  - gbp
+  evento: 'Elezioni 2024: vittoria larga del Labour'
+  stato: promossa
+- riga: '| 2024-08-01 | Primo taglio BoE del ciclo (5,25%→5,0%) | BOE | GBP ↓ lieve | `GBPUSD=X`, `^TNX`
+    | Voto 5–4 (riunione conclusa 31/07); mossa al limite del prezzato |'
+  data: '2024-08-01'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  - ^TNX
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: 'Decisione BoE sotto il tema geopolitical della research: il verso («GBP ↓ lieve») vale per monetary_policy,
+    non per i pool di rischio politico. Lasciata fuori. Revisione Claude 2026-10-29.'
+- riga: '| 2024-11-07 | Taglio BoE a 4,75% | BOE | GBP ↓ lieve | `GBPUSD=X` | Voto 8–1; atteso |'
+  data: '2024-11-07'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: 'Decisione BoE sotto il tema geopolitical della research: il verso («GBP ↓ lieve») vale per monetary_policy,
+    non per i pool di rischio politico. Lasciata fuori. Revisione Claude 2026-10-29.'
+- riga: '| 2025-02-06 | Taglio BoE a 4,5% | BOE | GBP ↓ lieve | `GBPUSD=X` | Voto 7–2 (riunione conclusa
+    05/02) |'
+  data: '2025-02-06'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: 'Decisione BoE sotto il tema geopolitical della research: il verso («GBP ↓ lieve») vale per monetary_policy,
+    non per i pool di rischio politico. Lasciata fuori. Revisione Claude 2026-10-29.'
+- riga: '| 2025-05-08 | Taglio BoE a 4,25% | BOE | GBP ↓ lieve | `GBPUSD=X` | Voto 5–4 (riunione conclusa
+    07/05); contaminato da shock tariffe USA |'
+  data: '2025-05-08'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: 'Decisione BoE sotto il tema geopolitical della research: il verso («GBP ↓ lieve») vale per monetary_policy,
+    non per i pool di rischio politico. Lasciata fuori. Revisione Claude 2026-10-29.'
+- riga: '| 2025-07-02 | "Tears" di Reeves in Parlamento | LEAD/FISC | GBP ↓, gilt ↓↓ | `GBPUSD=X` (gilt
+    esterno) | Timore uscita Reeves → premio rischio fiscale |'
+  data: '2025-07-02'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: neg
+    perché: 'Riga: «GBP ↓, gilt ↓↓». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa»,
+      nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - fiscal_expansion
+  - gbp
+  evento: Lacrime di Reeves in Parlamento, timore di abbandono delle regole fiscali
+  stato: promossa
+- riga: '| 2025-08-07 | Taglio BoE a 4,0% | BOE | GBP ↓ lieve | `GBPUSD=X` | Voto 5–4 (riunione conclusa
+    06/08) |'
+  data: '2025-08-07'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: 'Decisione BoE sotto il tema geopolitical della research: il verso («GBP ↓ lieve») vale per monetary_policy,
+    non per i pool di rischio politico. Lasciata fuori. Revisione Claude 2026-10-29.'
+- riga: '| 2025-12-18 | Taglio BoE a 3,75% | BOE | GBP ↓ lieve | `GBPUSD=X` | Voto 5–4 (riunione conclusa
+    17/12); sesto taglio dal 2024 |'
+  data: '2025-12-18'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni: []
+  meccanismo: []
+  evento: ''
+  stato: nessuna_azione
+  nota: 'Decisione BoE sotto il tema geopolitical della research: il verso («GBP ↓ lieve») vale per monetary_policy,
+    non per i pool di rischio politico. Lasciata fuori. Revisione Claude 2026-10-29.'
+- riga: '| 2026-05-07/08 | Elezioni locali; pressione su Starmer | LEAD | GBP ↓, gilt ↓↓ | `GBPUSD=X`
+    (gilt esterno) | Gilt 10Y ai massimi dal 2008 |'
+  data: '2026-05-07'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: neg
+    perché: 'Riga: «GBP ↓, gilt ↓↓». GBPUSD=X quota dollari per sterlina. Solo la colonna «Direzione attesa»,
+      nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+  meccanismo:
+  - election_risk
+  - gbp
+  evento: Elezioni locali 2026 e pressione su Starmer
+  stato: promossa
+- riga: '| 2026-06-18/22 | By-election Makerfield (Burnham); dimissioni Starmer | LEAD | GBP/gilt volatilità
+    | `GBPUSD=X` | Starmer si dimette 22/06; apre contesa leadership |'
+  data: '2026-06-18'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: escluso
+    perché: 'Riga: «GBP/gilt volatilità» — nessun verso. GBPUSD=X quota dollari per sterlina. Solo la
+      colonna «Direzione attesa», nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione
+      Claude 2026-10-29.'
+  meccanismo:
+  - election_risk
+  - gbp
+  evento: By-election di Makerfield e dimissioni di Starmer
+  stato: promossa
+- riga: '| 2026-07-09 | Apertura nomination leadership Labour | LEAD | GBP/gilt incertezza | `GBPUSD=X`
+    (gilt esterno) | Catalyst di leadership imminente; esito ignoto alla data |'
+  data: '2026-07-09'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  candidati:
+  - GBPUSD=X
+  dichiarazioni:
+  - asset: GBPUSD=X
+    verso: escluso
+    perché: 'Riga: «GBP/gilt incertezza» — nessun verso. GBPUSD=X quota dollari per sterlina. Solo la
+      colonna «Direzione attesa», nessun prezzo consultato. Lacuna 2026-10-29 (bilancio Healey). Revisione
+      Claude 2026-10-29.'
+  meccanismo:
+  - election_risk
+  - gbp
+  evento: Apertura delle candidature alla guida del Labour
+  stato: promossa
