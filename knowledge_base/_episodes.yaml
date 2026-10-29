@@ -1,5 +1,5 @@
-generated_at: '2026-10-29T10:15:27'
-num_episodes: 1537
+generated_at: '2026-10-29T18:21:27'
+num_episodes: 1567
 episodes:
 - date: '1984-01-01'
   theme: commodity_energy
@@ -113643,6 +113643,54 @@ episodes:
       subthemes_local:
       - cny
       directions_by_reference: {}
+- date: '2012-04-17'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    CAD=X:
+    - neg
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2012-04-17:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    directions_by_reference:
+      CAD=X:
+      - neg
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      directions_by_reference:
+        CAD=X:
+        - neg
 - date: '2013-04-04'
   theme: monetary_policy
   direction: mixed
@@ -114221,6 +114269,54 @@ episodes:
     - source: card:2026-09-12/news_04.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2013-10-23'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2013-10-23:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    directions_by_reference:
+      CAD=X:
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      directions_by_reference:
+        CAD=X:
+        - pos
 - date: '2014-01-29'
   theme: monetary_policy
   direction: neutral
@@ -114571,6 +114667,71 @@ episodes:
       subthemes_local:
       - guidance_pivot
       directions_by_reference: {}
+- date: '2015-01-21'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - pos
+    ^GSPTSE:
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    ^GSPTSE:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2015-01-21:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - pos
+      ^GSPTSE:
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - pos
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        ^GSPTSE:
+        - pos
 - date: '2015-05-07'
   theme: monetary_policy
   direction: neg
@@ -114678,6 +114839,61 @@ episodes:
       subthemes_local:
       - term_premium
       directions_by_reference: {}
+- date: '2015-07-15'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - neg
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2015-07-15:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neg
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neg
+        - pos
 - date: '2015-08-11'
   theme: monetary_policy
   direction: mixed
@@ -115113,6 +115329,54 @@ episodes:
       subthemes_local:
       - cny
       directions_by_reference: {}
+- date: '2016-01-20'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    CAD=X:
+    - neg
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2016-01-20:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neg
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neg
 - date: '2016-01-29'
   theme: monetary_policy
   direction: mixed
@@ -115547,6 +115811,119 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+- date: '2017-07-12'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    CAD=X:
+    - neutral
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2017-07-12:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neutral
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neutral
+- date: '2017-09-06'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    CAD=X:
+    - neg
+    ^GSPTSE:
+    - neg
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    ^GSPTSE:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2017-09-06:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neg
+      ^GSPTSE:
+      - neg
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neg
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        ^GSPTSE:
+        - neg
 - date: '2017-11-02'
   theme: monetary_policy
   direction: neutral
@@ -115838,6 +116215,54 @@ episodes:
     - source: card:2026-08-17/news_04.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2018-05-30'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    CAD=X:
+    - neg
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2018-05-30:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    directions_by_reference:
+      CAD=X:
+      - neg
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      directions_by_reference:
+        CAD=X:
+        - neg
 - date: '2018-06-13'
   theme: monetary_policy
   direction: mixed
@@ -116024,6 +116449,54 @@ episodes:
     - source: card:2026-09-06/news_04.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2018-07-11'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    CAD=X:
+    - neutral
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2018-07-11:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neutral
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neutral
 - date: '2018-07-31'
   theme: monetary_policy
   direction: ''
@@ -116438,6 +116911,57 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+- date: '2018-10-24'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    CAD=X:
+    - neg
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2018-10-24:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neg
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neg
 - date: '2018-11-07'
   theme: monetary_policy
   direction: ''
@@ -116480,6 +117004,54 @@ episodes:
       - cny
       - pboc
       directions_by_reference: {}
+- date: '2018-12-05'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2018-12-05:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    directions_by_reference:
+      CAD=X:
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      directions_by_reference:
+        CAD=X:
+        - pos
 - date: '2018-12-19'
   theme: monetary_policy
   direction: mixed
@@ -116858,6 +117430,54 @@ episodes:
     - source: card:2026-07-11/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2019-03-06'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2019-03-06:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    directions_by_reference:
+      CAD=X:
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      directions_by_reference:
+        CAD=X:
+        - pos
 - date: '2019-06-25'
   theme: monetary_policy
   direction: ''
@@ -116972,6 +117592,54 @@ episodes:
       directions_by_reference:
         CNY=X:
         - pos
+- date: '2019-09-04'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    CAD=X:
+    - neg
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2019-09-04:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    directions_by_reference:
+      CAD=X:
+      - neg
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      directions_by_reference:
+        CAD=X:
+        - neg
 - date: '2019-09-18'
   theme: monetary_policy
   direction: mixed
@@ -117059,6 +117727,182 @@ episodes:
     - source: card:2026-08-17/news_04.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2019-10-30'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - neg
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2019-10-30:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    directions_by_reference:
+      CAD=X:
+      - neg
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      directions_by_reference:
+        CAD=X:
+        - neg
+        - pos
+- date: '2020-03-04'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - neg
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2020-03-04:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neg
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neg
+        - pos
+- date: '2020-03-13'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - neg
+    - pos
+    ^GSPTSE:
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    ^GSPTSE:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2020-03-13:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neg
+      - pos
+      ^GSPTSE:
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neg
+        - pos
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        ^GSPTSE:
+        - pos
 - date: '2020-03-16'
   theme: monetary_policy
   direction: ''
@@ -117157,6 +118001,75 @@ episodes:
       subthemes_local:
       - rba
       directions_by_reference: {}
+- date: '2020-03-27'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - pos
+    ^GSPTSE:
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    ^GSPTSE:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - balance_sheet
+  - canada_release
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2020-03-27:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - balance_sheet
+    - canada_release
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - pos
+      ^GSPTSE:
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - balance_sheet
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - pos
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - balance_sheet
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        ^GSPTSE:
+        - pos
 - date: '2020-10-10'
   theme: monetary_policy
   direction: ''
@@ -117410,6 +118323,57 @@ episodes:
       - rate_decision
       - term_premium
       directions_by_reference: {}
+- date: '2021-04-21'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    CAD=X:
+    - neg
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2021-04-21:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - balance_sheet
+    - canada_release
+    - guidance_pivot
+    directions_by_reference:
+      CAD=X:
+      - neg
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - balance_sheet
+      - canada_release
+      - guidance_pivot
+      directions_by_reference:
+        CAD=X:
+        - neg
 - date: '2021-05-31'
   theme: monetary_policy
   direction: pos
@@ -117795,12 +118759,20 @@ episodes:
   - neg
   directions_declared:
   - neg
+  - pos
   directions_by_reference:
+    CAD=X:
+    - neg
+    - pos
     IEF:
     - neg
     ^GSPC:
     - neg
   direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
     IEF:
     - card:2026-09-19/news_03.md
     - card:2026-09-25/news_01.md
@@ -117817,14 +118789,18 @@ episodes:
   - neg
   declared: true
   subthemes:
+  - balance_sheet
+  - canada_release
   - guidance_pivot
   - hawkish
   - rate_decision
   - term_premium
   subthemes_local:
+  - canada_release
   - guidance_pivot
   - hawkish
-  n_sources: 10
+  - rate_decision
+  n_sources: 11
   events:
   - event_id: 2022-01-26:monetary_policy:-
     geo: ''
@@ -117917,6 +118893,32 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+  - event_id: 2022-01-26:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neg
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neg
+        - pos
 - date: '2022-02-03'
   theme: monetary_policy
   direction: neg
@@ -118814,36 +119816,91 @@ episodes:
   theme: monetary_policy
   direction: ''
   directions: []
-  directions_declared: []
+  directions_declared:
+  - neg
+  - pos
   directions_by_reference:
+    CAD=X:
+    - neg
+    - pos
     EWY:
     - neutral
     KRW=X:
     - neg
+    ^GSPTSE:
+    - neg
   direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
     EWY:
     - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
       Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
     KRW=X:
     - kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
       Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+    ^GSPTSE:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
   directions_local:
   - neg
-  declared: false
+  declared: true
   subthemes:
   - australia_release
+  - balance_sheet
   - boj_divergence
+  - canada_release
   - fx_intervention
+  - guidance_pivot
   - korea_release
   - memory_cycle
+  - rate_decision
   - rba
   subthemes_local:
+  - canada_release
   - guidance_pivot
   - korea_release
   - rate_decision
   - rba
-  n_sources: 1
+  n_sources: 2
   events:
+  - event_id: 2022-07-13:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neg
+      - pos
+      ^GSPTSE:
+      - neg
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neg
+        - pos
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        ^GSPTSE:
+        - neg
   - event_id: 2022-07-13:monetary_policy:korea_release
     geo: korea_release
     subthemes_local:
@@ -121239,6 +122296,74 @@ episodes:
     - source: card:2026-07-20/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2022-10-26'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - pos
+    ^GSPTSE:
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    ^GSPTSE:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2022-10-26:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - pos
+      ^GSPTSE:
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - pos
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        ^GSPTSE:
+        - pos
 - date: '2022-10-27'
   theme: monetary_policy
   direction: mixed
@@ -121519,6 +122644,61 @@ episodes:
       - rate_decision
       directions_by_reference:
         CNY=X:
+        - pos
+- date: '2022-12-07'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - neg
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2022-12-07:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neg
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neg
         - pos
 - date: '2022-12-14'
   theme: monetary_policy
@@ -122677,6 +123857,74 @@ episodes:
       - rate_decision
       directions_by_reference:
         CNY=X:
+        - pos
+- date: '2023-01-25'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - pos
+    ^GSPTSE:
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    ^GSPTSE:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2023-01-25:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - pos
+      ^GSPTSE:
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - pos
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      directions_by_reference:
+        ^GSPTSE:
         - pos
 - date: '2023-02-02'
   theme: monetary_policy
@@ -123840,6 +125088,82 @@ episodes:
         VGB.AX:
         - neg
         ^AXJO:
+        - neg
+- date: '2023-06-07'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    CAD=X:
+    - neg
+    ^GSPTSE:
+    - neg
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    ^GSPTSE:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2023-06-07:monetary_policy:australia_release,canada_release
+    geo: australia_release,canada_release
+    subthemes_local:
+    - canada_release
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neg
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neg
+  - event_id: 2023-06-07:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - rate_decision
+    directions_by_reference:
+      ^GSPTSE:
+      - neg
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        ^GSPTSE:
         - neg
 - date: '2023-06-13'
   theme: monetary_policy
@@ -126562,6 +127886,54 @@ episodes:
       directions_by_reference:
         CNY=X:
         - pos
+- date: '2024-01-24'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2024-01-24:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    directions_by_reference:
+      CAD=X:
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      directions_by_reference:
+        CAD=X:
+        - pos
 - date: '2024-01-31'
   theme: monetary_policy
   direction: neg
@@ -127305,12 +128677,20 @@ episodes:
   - neg
   directions_declared:
   - neg
+  - pos
   directions_by_reference:
+    CAD=X:
+    - neg
+    - pos
     IEF:
     - neg
     ^GSPC:
     - neg
   direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
     IEF:
     - card:2026-09-21/news_04.md
     - card:2026-10-06/news_02.md
@@ -127325,15 +128705,19 @@ episodes:
   declared: true
   subthemes:
   - auction
+  - balance_sheet
+  - canada_release
   - guidance_pivot
   - hawkish
   - rate_decision
   - term_premium
   subthemes_local:
+  - canada_release
+  - guidance_pivot
   - hawkish
   - inflation_print
   - term_premium
-  n_sources: 6
+  n_sources: 7
   events:
   - event_id: 2024-04-10:monetary_policy:-
     geo: ''
@@ -127398,6 +128782,30 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+  - event_id: 2024-04-10:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    directions_by_reference:
+      CAD=X:
+      - neg
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      directions_by_reference:
+        CAD=X:
+        - neg
+        - pos
 - date: '2024-04-15'
   theme: monetary_policy
   direction: mixed
@@ -128185,6 +129593,71 @@ episodes:
       directions_by_reference:
         JPY=X:
         - neg
+- date: '2024-06-05'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - pos
+    ^GSPTSE:
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    ^GSPTSE:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2024-06-05:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - pos
+      ^GSPTSE:
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - pos
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        ^GSPTSE:
+        - pos
 - date: '2024-06-12'
   theme: monetary_policy
   direction: mixed
@@ -130274,6 +131747,54 @@ episodes:
         - pos
         ^N225:
         - pos
+- date: '2024-09-04'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    CAD=X:
+    - neutral
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2024-09-04:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neutral
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neutral
 - date: '2024-09-18'
   theme: monetary_policy
   direction: mixed
@@ -132889,6 +134410,57 @@ episodes:
       - boj
       - jpy
       directions_by_reference: {}
+- date: '2025-01-29'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - balance_sheet
+  - canada_release
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2025-01-29:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - balance_sheet
+    - canada_release
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - balance_sheet
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - pos
 - date: '2025-03-19'
   theme: monetary_policy
   direction: mixed
@@ -134546,6 +136118,54 @@ episodes:
       - synchronized_selloff
       - term_premium
       directions_by_reference: {}
+- date: '2025-09-17'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    CAD=X:
+    - neutral
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2025-09-17:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neutral
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neutral
 - date: '2025-10-01'
   theme: monetary_policy
   direction: mixed
@@ -134677,6 +136297,61 @@ episodes:
       - pboc
       - rate_decision
       directions_by_reference: {}
+- date: '2025-10-29'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    CAD=X:
+    - neg
+    - pos
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2025-10-29:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neg
+      - pos
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neg
+        - pos
 - date: '2025-12-10'
   theme: monetary_policy
   direction: mixed
@@ -138528,6 +140203,54 @@ episodes:
         - neg
         EWY:
         - neutral
+- date: '2026-09-02'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    CAD=X:
+    - neg
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2026-09-02:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    directions_by_reference:
+      CAD=X:
+      - neg
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      directions_by_reference:
+        CAD=X:
+        - neg
 - date: '2026-09-11'
   theme: monetary_policy
   direction: ''
@@ -138895,6 +140618,75 @@ episodes:
         EWY:
         - pos
         KRW=X:
+        - neg
+- date: '2026-10-28'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    CAD=X:
+    - neg
+    ^GSPTSE:
+    - neg
+  direction_sources:
+    CAD=X:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    ^GSPTSE:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  subthemes_local:
+  - canada_release
+  - guidance_pivot
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2026-10-28:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - canada_release
+    - guidance_pivot
+    - rate_decision
+    directions_by_reference:
+      CAD=X:
+      - neg
+      ^GSPTSE:
+      - neg
+    sources:
+    - kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese e al TSX_
+      regime ed episodi storici 2011-presente/Sorprese della Bank of Canada e trasmissione
+      al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+    evidence:
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        CAD=X:
+        - neg
+    - source: kb:Sorprese della Bank of Canada e trasmissione al dollaro canadese
+        e al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+        e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+      subthemes_local:
+      - canada_release
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        ^GSPTSE:
         - neg
 - date: '2016-06-23'
   theme: regulatory

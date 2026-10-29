@@ -1,5 +1,5 @@
-generated_at: '2026-10-28T14:04:31'
-num_entries: 45
+generated_at: '2026-10-29T16:14:48'
+num_entries: 46
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -2320,6 +2320,59 @@ entries:
   - tariffs
   - BLS
   - nowcast Cleveland
+- source_file: Sorprese della Bank of Canada e trasmissione al dollaro canadese e
+    al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
+    e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
+  title: Decisioni della Bank of Canada contro il prezzato (tassi, comunicato e guidance)
+    e trasmissione al dollaro canadese e al TSX — regime ed episodi storici (2011–presente)
+  date_compiled: 2026-10-29
+  primary_theme: monetary_policy
+  sub_themes:
+  - canada_release
+  - rate_decision
+  - guidance_pivot
+  - balance_sheet
+  relevant_assets:
+  - CAD=X
+  - ^GSPTSE
+  - DX-Y.NYB
+  - BZ=F
+  - ^GSPC
+  external_assets_mentioned:
+  - Rendimento titolo di Stato canadese a 2 anni — variabile intermedia dei canali
+    1 e 2, misura la sorpresa in pb
+  - OIS/CORRA — probabilità implicita della mossa il giorno prima, base per definire
+    la sorpresa
+  - Spread 2 anni Canada-USA — variabile che lega la sorpresa BoC e la divergenza
+    Fed a USD/CAD
+  - ETF obbligazionari canadesi — proxy della reazione della curva canadese
+  - WTI/WCS — riferimento petrolifero canadese effettivo, il Brent è solo proxy
+  time_window:
+    start: 2011-01-01
+    end: present
+  regime_phases:
+  - commodity_shock_easing: 2011-01-01 to 2017-07-11
+  - normalization_hikes: 2017-07-12 to 2020-03-03
+  - pandemic_qe: 2020-03-04 to 2022-03-01
+  - inflation_tightening: 2022-03-02 to 2024-06-04
+  - easing_tariffs_energy_rehike: 2024-06-05 to present
+  keywords:
+  - Bank of Canada
+  - BoC
+  - banca centrale canadese
+  - Macklem
+  - Poloz
+  - tassi Canada
+  - rialzo BoC
+  - taglio BoC
+  - Monetary Policy Report
+  - dollaro canadese
+  - loonie
+  - TSX
+  - CORRA
+  - Canada rate decision
+  - BoC hike
+  - BoC cut
 - source_file: Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e
     ASX 200_ episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione
     ad AUD, titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md

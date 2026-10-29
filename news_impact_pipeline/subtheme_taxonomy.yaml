@@ -376,6 +376,12 @@ macro_data:
   #   etichettati. NON usarli in `find --subtheme` finche' `analogues.py labels`
   #   non mostra copertura reale: degraderebbero in silenzio al filtro debole.
   # → `japan_release` invece e' USABILE da subito su `monetary_policy` (64).
+  # → Aggiornamento 2026-10-29: con le research arrivate non sono piu' tutti semi.
+  #   USABILI: `australia_release` su `macro_data` (sorprese macro australiane),
+  #   `canada_release` e `korea_release` su `monetary_policy` (BoC; RBA e BoK).
+  #   Ancora SEMI: `canada_release` su `macro_data` (prompt
+  #   `_prompts/canada-release-macro-consenso.md` da eseguire) e `australia_release`
+  #   su `monetary_policy`. Verifica: `analogues.py labels --theme <tema>`.
   # Solo pattern che identificano la RELEASE o l'ISTITUZIONE che la pubblica, mai
   # gli effetti collaterali: `\baustralia\b` generico e `\bcanada\b` generico sono
   # stati provati e SCARTATI — il secondo pescava 14 contesti quasi tutti di dazi
