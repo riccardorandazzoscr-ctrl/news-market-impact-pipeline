@@ -20,7 +20,8 @@ def validate(path: Path) -> list[str]:
         end = headings[index + 1].start() if index + 1 < len(headings) else len(text)
         section = text[match.end():end]
         body = re.sub(r"<!--.*?-->", "", section, flags=re.S).strip()
-        if len(body) < 80 or "…" in body:
+        # Il segnaposto della bozza è una cella con il solo «…»: nel testo «T+1…T+5» è legittimo.
+        if len(body) < 80 or re.search(r"\|\s*…\s*\|", body):
             problems.append(f"sezione {index + 1} vuota o con segnaposto")
         if index == 5 and len(re.findall(r"^\|\s*\d+\s*\|", body, re.M)) < 3:
             problems.append("meno di tre previsioni falsificabili")

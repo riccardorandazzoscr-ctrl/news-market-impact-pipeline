@@ -90,5 +90,30 @@ class ScorecardExcerptTests(unittest.TestCase):
         self.assertEqual(name, "(nessuna)")
 
 
+class ValidateReportTests(unittest.TestCase):
+    """Il segnaposto è la cella «…» della bozza, non ogni «…» del testo (es. «T+1…T+5»)."""
+
+    def _report(self, row6):
+        body = "Testo compilato che spiega l'orizzonte T+1…T+10 e supera la soglia minima di lunghezza."
+        parts = [f"## {i}. Sezione\n\n{body}\n" for i in range(1, 6)]
+        rows = "\n".join(f"| {n} | {row6} | metro | 2026-12-01 |" for n in (1, 2, 3))
+        parts.append(f"## 6. Previsioni\n\n{body}\n\n| # | A | C | V |\n|---|---|---|---|\n{rows}\n")
+        path = Path(self.tmp.name) / "r.md"
+        path.write_text("## 1. Mappa dei regimi attivi\n" + "".join(parts)[len("## 1. Sezione\n"):])
+        return path
+
+    def setUp(self):
+        self.tmp = tempfile.TemporaryDirectory()
+        self.addCleanup(self.tmp.cleanup)
+        import validate_monthly_report as v
+        self.validate = v.validate
+
+    def test_ellissi_nel_testo_accettata(self):
+        self.assertEqual(self.validate(self._report("Il TTF resta sopra 80")), [])
+
+    def test_cella_segnaposto_rifiutata(self):
+        self.assertIn("sezione 6 vuota o con segnaposto", self.validate(self._report("…")))
+
+
 if __name__ == "__main__":
     unittest.main()
