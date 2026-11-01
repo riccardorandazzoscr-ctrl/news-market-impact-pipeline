@@ -1,5 +1,5 @@
-generated_at: '2026-10-29T16:14:48'
-num_entries: 46
+generated_at: '2026-11-01T11:41:25'
+num_entries: 47
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -519,6 +519,81 @@ entries:
   - energy transition
   - country risk
   - capital flight
+- source_file: Elezioni USA e controllo del Congresso (2012–presente)_ sorpresa rispetto
+    ai sondaggi e reazione di azionario, Treasury, dollaro e volatilità/Elezioni
+    USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi e
+    reazione di azionario, Treasury, dollaro e volatilità.md
+  title: 'Elezioni USA e controllo del Congresso: midterm, presidenziali e ballottaggi
+    decisivi; sorpresa rispetto ai sondaggi e trasmissione ad azionario, Treasury,
+    dollaro e volatilità — regime ed episodi storici (2012–presente)'
+  date_compiled: 2026-11-01
+  primary_theme: geopolitical
+  sub_themes:
+  - election_risk
+  - usa_election
+  - midterm
+  - presidential
+  - divided_government
+  - unified_government
+  - polling_surprise
+  relevant_assets:
+  - ^GSPC
+  - ^NDX
+  - IWM
+  - ^VIX
+  - ^TNX
+  - ^TYX
+  - ^FVX
+  - IEF
+  - DX-Y.NYB
+  - HYG
+  - GC=F
+  - BTC-USD
+  - XLV
+  - XLE
+  - ITA
+  - TAN
+  - XLU
+  - ^MOVE
+  external_assets_mentioned:
+  - 'XLF / KBE / KRE — ETF bancari: principale vincitore settoriale nel 2016 (+4%)
+    e nel 2024 (regionali +13%), canale deregolazione e curva'
+  - 'IBB / XBI — biotech: misura più pura del rischio di regolazione dei prezzi dei
+    farmaci (IBB +8,9% il 2016-11-09)'
+  - 'MXN=X — peso messicano: proxy diretto del canale dazi (minimo da oltre due anni
+    il 2024-11-06)'
+  - VIX futures — struttura a termine dell'evento elettorale, utile per separare rimozione
+    dell'incertezza e shock
+  - Polymarket / Kalshi / PredictIt / Intrade / Betfair — quote della vigilia, misura
+    diretta della sorpresa elettorale
+  - ^RUT — Russell 2000 come indice, di cui IWM è proxy
+  - Treasury 2 anni — separa il canale monetario (FOMC nella stessa settimana) da
+    quello fiscale
+  time_window:
+    start: 2012-11-07
+    end: present
+  regime_phases:
+  - post_crisis_gridlock: 2012-11-07 to 2016-11-08
+  - reflation_trade_unified_gop: 2016-11-09 to 2020-11-03
+  - pandemic_fiscal_dominance: 2020-11-04 to 2022-11-08
+  - high_rates_term_premium: 2022-11-09 to present
+  keywords:
+  - elezioni USA
+  - midterm
+  - elezioni di metà mandato
+  - Congresso
+  - Camera
+  - Senato
+  - governo diviso
+  - gridlock
+  - election night
+  - US elections
+  - midterm elections
+  - divided government
+  - red wave
+  - blue wave
+  - swing states
+  - ballottaggio Georgia
 - source_file: Elezioni e rischio politico in Israele_ voto, governi, riforma giudiziaria,
     rating e impatto su USD_ILS (2013–presente)/Elezioni e rischio politico in Israele_
     voto, governi, riforma giudiziaria, rating e impatto su USD_ILS (2013–presente).md
