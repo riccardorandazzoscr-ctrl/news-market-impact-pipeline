@@ -1,4 +1,4 @@
-generated_at: '2026-10-29T18:21:27'
+generated_at: '2026-11-01T08:27:00'
 num_episodes: 1567
 episodes:
 - date: '1984-01-01'
@@ -213,6 +213,7 @@ episodes:
     - card:2026-10-09/news_01.md
     - card:2026-10-15/news_02.md
     - card:2026-10-21/news_01.md
+    - card:2026-10-31/news_01.md
   directions_local:
   - neg
   - pos
@@ -247,7 +248,7 @@ episodes:
   - military_escalation
   - sanctions
   - shipping_chokepoint
-  n_sources: 29
+  n_sources: 30
   events:
   - event_id: 2011-12-27:commodity_energy:-
     geo: ''
@@ -289,6 +290,7 @@ episodes:
     - card:2026-10-09/news_01.md
     - card:2026-10-15/news_02.md
     - card:2026-10-21/news_01.md
+    - card:2026-10-31/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-05/news_01.md
@@ -457,6 +459,14 @@ episodes:
       subthemes_local:
       - hormuz
       - iran
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-31/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
       - shipping_chokepoint
       directions_by_reference:
         BZ=F:
@@ -2639,6 +2649,7 @@ episodes:
     - card:2026-10-20/news_01.md
     - card:2026-10-21/news_01.md
     - card:2026-10-24/news_01.md
+    - card:2026-10-31/news_01.md
   directions_local:
   - neg
   - pos
@@ -2678,7 +2689,7 @@ episodes:
   - shipping_chokepoint
   - supply_disruption
   - upstream_export_strike
-  n_sources: 48
+  n_sources: 49
   events:
   - event_id: 2019-05-13:commodity_energy:-
     geo: ''
@@ -2743,6 +2754,7 @@ episodes:
     - card:2026-10-20/news_01.md
     - card:2026-10-21/news_01.md
     - card:2026-10-24/news_01.md
+    - card:2026-10-31/news_01.md
     evidence:
     - source: card:2026-06-01/news_01.md
       subthemes_local: []
@@ -3002,6 +3014,14 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-10-31/news_01.md
+      subthemes_local:
+      - hormuz
+      - infrastructure_attack
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
 - date: '2019-06-13'
   theme: commodity_energy
   direction: mixed
@@ -3040,6 +3060,7 @@ episodes:
     - card:2026-10-20/news_01.md
     - card:2026-10-21/news_01.md
     - card:2026-10-24/news_01.md
+    - card:2026-10-31/news_01.md
   directions_local:
   - neg
   - pos
@@ -3085,7 +3106,7 @@ episodes:
   - iran
   - military_escalation
   - shipping_chokepoint
-  n_sources: 45
+  n_sources: 46
   events:
   - event_id: 2019-06-13:commodity_energy:-
     geo: ''
@@ -3142,6 +3163,7 @@ episodes:
     - card:2026-10-20/news_01.md
     - card:2026-10-21/news_01.md
     - card:2026-10-24/news_01.md
+    - card:2026-10-31/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-01/news_01.md
@@ -3376,6 +3398,14 @@ episodes:
         - pos
     - source: card:2026-10-24/news_01.md
       subthemes_local:
+      - infrastructure_attack
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-31/news_01.md
+      subthemes_local:
+      - hormuz
       - infrastructure_attack
       - shipping_chokepoint
       directions_by_reference:
@@ -6684,6 +6714,7 @@ episodes:
   direction_sources:
     CRACK_321:
     - card:2026-10-17/news_02.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -6718,7 +6749,7 @@ episodes:
   - refinery_products
   - refinery_strike
   - sanctions
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2022-06-22:commodity_energy:-
     geo: ''
@@ -6740,6 +6771,7 @@ episodes:
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -6792,6 +6824,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         HO=F:
+        - pos
+    - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -9250,7 +9289,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2024-03-12:commodity_energy:-
     geo: ''
@@ -9271,6 +9310,7 @@ episodes:
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -9325,6 +9365,9 @@ episodes:
       directions_by_reference:
         HO=F:
         - pos
+    - source: card:2026-10-31/news_02.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -9354,6 +9397,7 @@ episodes:
   direction_sources:
     CRACK_321:
     - card:2026-10-17/news_02.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -9397,7 +9441,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 16
+  n_sources: 17
   events:
   - event_id: 2024-03-13:commodity_energy:-
     geo: ''
@@ -9429,6 +9473,7 @@ episodes:
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -9515,6 +9560,14 @@ episodes:
       - refinery_strike
       directions_by_reference:
         HO=F:
+        - pos
+    - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - infrastructure_attack
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -10505,6 +10558,7 @@ episodes:
   direction_sources:
     CRACK_321:
     - card:2026-10-17/news_02.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -10536,7 +10590,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2024-05-11:commodity_energy:-
     geo: ''
@@ -10557,6 +10611,7 @@ episodes:
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -10609,6 +10664,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         HO=F:
+        - pos
+    - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -12267,6 +12329,7 @@ episodes:
   direction_sources:
     CRACK_321:
     - card:2026-10-17/news_02.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12298,7 +12361,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2025-01-26:commodity_energy:-
     geo: ''
@@ -12319,6 +12382,7 @@ episodes:
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12371,6 +12435,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         HO=F:
+        - pos
+    - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -12401,6 +12472,7 @@ episodes:
   direction_sources:
     CRACK_321:
     - card:2026-10-17/news_02.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12432,7 +12504,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2025-01-31:commodity_energy:-
     geo: ''
@@ -12453,6 +12525,7 @@ episodes:
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12505,6 +12578,14 @@ episodes:
       - refinery_strike
       directions_by_reference:
         HO=F:
+        - pos
+    - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - infrastructure_attack
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -12680,6 +12761,7 @@ episodes:
   direction_sources:
     CRACK_321:
     - card:2026-10-17/news_02.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12711,7 +12793,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2025-05-15:commodity_energy:-
     geo: ''
@@ -12732,6 +12814,7 @@ episodes:
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12784,6 +12867,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         HO=F:
+        - pos
+    - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -14504,6 +14594,7 @@ episodes:
   direction_sources:
     CRACK_321:
     - card:2026-10-17/news_02.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -14535,7 +14626,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2025-08-27:commodity_energy:-
     geo: ''
@@ -14556,6 +14647,7 @@ episodes:
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -14608,6 +14700,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         HO=F:
+        - pos
+    - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -16385,7 +16484,7 @@ episodes:
   - oil_supply_shock
   - safe_haven_flows
   - shipping_chokepoint
-  n_sources: 38
+  n_sources: 39
   events:
   - event_id: 2026-03-02:commodity_energy:-
     geo: ''
@@ -16450,6 +16549,7 @@ episodes:
     - card:2026-10-21/news_01.md
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
+    - card:2026-10-31/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -16666,6 +16766,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-10-31/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -18121,6 +18224,7 @@ episodes:
     - card:2026-10-21/news_01.md
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
+    - card:2026-10-31/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
   directions_local:
   - neg
@@ -18157,7 +18261,7 @@ episodes:
   - iran
   - military_escalation
   - shipping_chokepoint
-  n_sources: 31
+  n_sources: 32
   events:
   - event_id: 2026-03-27:commodity_energy:-
     geo: ''
@@ -18200,6 +18304,7 @@ episodes:
     - card:2026-10-21/news_01.md
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
+    - card:2026-10-31/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-23/news_01.md
@@ -18386,6 +18491,14 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-25/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-31/news_01.md
       subthemes_local:
       - hormuz
       - military_escalation
@@ -20123,9 +20236,11 @@ episodes:
     - card:2026-10-09/news_01.md
     - card:2026-10-17/news_01.md
     - card:2026-10-18/news_01.md
+    - card:2026-10-31/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     CRACK_321:
     - card:2026-10-17/news_02.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -20185,7 +20300,7 @@ episodes:
   - refinery_products
   - refinery_strike
   - shipping_chokepoint
-  n_sources: 37
+  n_sources: 39
   events:
   - event_id: 2026-04-18:commodity_energy:-
     geo: ''
@@ -20240,6 +20355,8 @@ episodes:
     - card:2026-10-19/news_01.md
     - card:2026-10-20/news_01.md
     - card:2026-10-21/news_01.md
+    - card:2026-10-31/news_01.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -20405,6 +20522,22 @@ episodes:
     - source: card:2026-10-21/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-10-31/news_01.md
+      subthemes_local:
+      - hormuz
+      - infrastructure_attack
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
+        - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -21576,6 +21709,7 @@ episodes:
   direction_sources:
     CRACK_321:
     - card:2026-10-17/news_02.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -21627,7 +21761,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 24
+  n_sources: 25
   events:
   - event_id: 2026-05-29:commodity_energy:-
     geo: ''
@@ -21663,6 +21797,7 @@ episodes:
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -21754,6 +21889,14 @@ episodes:
     - source: card:2026-10-19/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - infrastructure_attack
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
+        - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -22211,6 +22354,7 @@ episodes:
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
     CRACK_321:
     - card:2026-10-17/news_02.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -22263,7 +22407,7 @@ episodes:
   - negotiation_track
   - refinery_products
   - refinery_strike
-  n_sources: 10
+  n_sources: 11
   events:
   - event_id: 2026-06-18:commodity_energy:-
     geo: ''
@@ -22294,6 +22438,7 @@ episodes:
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -22346,6 +22491,13 @@ episodes:
     - source: card:2026-10-19/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
+        - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -22776,6 +22928,7 @@ episodes:
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
     CRACK_321:
     - card:2026-10-17/news_02.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -22819,7 +22972,7 @@ episodes:
   - refinery_products
   - refinery_strike
   - strategic_reserve_release
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2026-07-06:commodity_energy:-
     geo: ''
@@ -22841,6 +22994,7 @@ episodes:
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -22893,6 +23047,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         HO=F:
+        - pos
+    - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -22965,6 +23126,7 @@ episodes:
     - card:2026-10-21/news_01.md
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
+    - card:2026-10-31/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23001,7 +23163,7 @@ episodes:
   - hormuz
   - military_escalation
   - shipping_chokepoint
-  n_sources: 19
+  n_sources: 20
   events:
   - event_id: 2026-07-07:commodity_energy:-
     geo: ''
@@ -23034,6 +23196,7 @@ episodes:
     - card:2026-10-21/news_01.md
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
+    - card:2026-10-31/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23174,6 +23337,14 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-25/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-31/news_01.md
       subthemes_local:
       - hormuz
       - military_escalation
@@ -23412,6 +23583,7 @@ episodes:
     - card:2026-10-21/news_01.md
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
+    - card:2026-10-31/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23443,7 +23615,7 @@ episodes:
   - military_escalation
   - sanctions
   - shipping_chokepoint
-  n_sources: 18
+  n_sources: 19
   events:
   - event_id: 2026-07-13:commodity_energy:-
     geo: ''
@@ -23473,6 +23645,7 @@ episodes:
     - card:2026-10-21/news_01.md
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
+    - card:2026-10-31/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23603,6 +23776,14 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-10-31/news_01.md
+      subthemes_local:
+      - hormuz
+      - sanctions
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23684,6 +23865,7 @@ episodes:
   direction_sources:
     CRACK_321:
     - card:2026-10-17/news_02.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -23715,7 +23897,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2026-07-30:commodity_energy:-
     geo: ''
@@ -23736,6 +23918,7 @@ episodes:
     - card:2026-10-14/news_03.md
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
+    - card:2026-10-31/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -23789,6 +23972,13 @@ episodes:
       - refinery_strike
       directions_by_reference:
         HO=F:
+        - pos
+    - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -39233,6 +39423,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-10-22/news_01.md
+    - card:2026-10-30/news_01.md
     - kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
@@ -39258,7 +39449,7 @@ episodes:
   - infrastructure_attack
   - iran
   - military_escalation
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2019-05-14:geopolitical:-
     geo: ''
@@ -39272,12 +39463,21 @@ episodes:
       - pos
     sources:
     - card:2026-10-22/news_01.md
+    - card:2026-10-30/news_01.md
     - kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
       Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente).md
     evidence:
     - source: card:2026-10-22/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-30/news_01.md
       subthemes_local:
       - houthi
       - infrastructure_attack
@@ -40638,6 +40838,7 @@ episodes:
     - neg
   direction_sources:
     BZ=F:
+    - card:2026-10-30/news_01.md
     - kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
@@ -40667,7 +40868,8 @@ episodes:
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
       Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation
@@ -40695,7 +40897,7 @@ episodes:
   - oil_supply_shock
   - physical_damage
   - refinery_products
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2019-09-16:geopolitical:-
     geo: ''
@@ -40724,6 +40926,7 @@ episodes:
     - card:2026-07-16/news_01.md
     - card:2026-07-20/news_01.md
     - card:2026-10-22/news_01.md
+    - card:2026-10-30/news_01.md
     - kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
@@ -40738,6 +40941,14 @@ episodes:
     - source: card:2026-10-22/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-10-30/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - oil_supply_shock
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine
         e crisi del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
         attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del
@@ -42608,6 +42819,7 @@ episodes:
       storici (2002–presente).md
     BZ=F:
     - card:2026-10-22/news_01.md
+    - card:2026-10-30/news_01.md
     - kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
@@ -42644,7 +42856,7 @@ episodes:
   - houthi
   - infrastructure_attack
   - military_escalation
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2021-03-08:geopolitical:-
     geo: ''
@@ -42664,6 +42876,7 @@ episodes:
       - neg
     sources:
     - card:2026-10-22/news_01.md
+    - card:2026-10-30/news_01.md
     - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
@@ -42678,6 +42891,13 @@ episodes:
       - houthi
       - infrastructure_attack
       - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-30/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
       directions_by_reference:
         BZ=F:
         - pos
@@ -43128,6 +43348,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-10-22/news_01.md
+    - card:2026-10-30/news_01.md
     - kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
@@ -43157,7 +43378,7 @@ episodes:
   - houthi
   - infrastructure_attack
   - military_escalation
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2022-01-18:geopolitical:-
     geo: ''
@@ -43172,12 +43393,21 @@ episodes:
       - pos
     sources:
     - card:2026-10-22/news_01.md
+    - card:2026-10-30/news_01.md
     - kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
       Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente).md
     evidence:
     - source: card:2026-10-22/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-30/news_01.md
       subthemes_local:
       - houthi
       - infrastructure_attack
@@ -44127,6 +44357,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-10-22/news_01.md
+    - card:2026-10-30/news_01.md
     - kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
@@ -44164,7 +44395,8 @@ episodes:
   - oil_supply_shock
   - physical_damage
   - refinery_products
-  n_sources: 2
+  - refinery_strike
+  n_sources: 3
   events:
   - event_id: 2022-03-21:geopolitical:-
     geo: ''
@@ -44175,6 +44407,7 @@ episodes:
     - oil_supply_shock
     - physical_damage
     - refinery_products
+    - refinery_strike
     directions_by_reference:
       BZ=F:
       - pos
@@ -44184,6 +44417,7 @@ episodes:
       - pos
     sources:
     - card:2026-10-22/news_01.md
+    - card:2026-10-30/news_01.md
     - kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
@@ -44195,6 +44429,14 @@ episodes:
       - infrastructure_attack
       - military_escalation
       - oil_supply_shock
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-30/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - refinery_strike
       directions_by_reference:
         BZ=F:
         - pos
@@ -44250,6 +44492,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-10-22/news_01.md
+    - card:2026-10-30/news_01.md
     - kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
@@ -44281,7 +44524,8 @@ episodes:
   - military_escalation
   - physical_damage
   - refinery_products
-  n_sources: 2
+  - refinery_strike
+  n_sources: 3
   events:
   - event_id: 2022-03-25:geopolitical:-
     geo: ''
@@ -44291,6 +44535,7 @@ episodes:
     - military_escalation
     - physical_damage
     - refinery_products
+    - refinery_strike
     directions_by_reference:
       BZ=F:
       - pos
@@ -44298,6 +44543,7 @@ episodes:
       - pos
     sources:
     - card:2026-10-22/news_01.md
+    - card:2026-10-30/news_01.md
     - kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
@@ -44308,6 +44554,14 @@ episodes:
       - houthi
       - infrastructure_attack
       - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-10-30/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - refinery_strike
       directions_by_reference:
         BZ=F:
         - pos
@@ -67234,8 +67488,9 @@ episodes:
         - neg
 - date: '2026-09-08'
   theme: geopolitical
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - pos
   directions_by_reference:
@@ -67249,6 +67504,7 @@ episodes:
     - pos
   direction_sources:
     BZ=F:
+    - card:2026-10-30/news_01.md
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
@@ -67268,7 +67524,8 @@ episodes:
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation
@@ -67289,7 +67546,7 @@ episodes:
   - oil_supply_shock
   - physical_damage
   - refinery_products
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-09-08:geopolitical:-
     geo: ''
@@ -67310,11 +67567,20 @@ episodes:
       XLE:
       - pos
     sources:
+    - card:2026-10-30/news_01.md
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
     evidence:
+    - source: card:2026-10-30/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar
         Rosso_ trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
         Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
@@ -67602,8 +67868,9 @@ episodes:
         - pos
 - date: '2026-09-24'
   theme: geopolitical
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - pos
   directions_by_reference:
@@ -67611,11 +67878,13 @@ episodes:
     - pos
   direction_sources:
     BZ=F:
+    - card:2026-10-30/news_01.md
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation
@@ -67634,7 +67903,7 @@ episodes:
   - infrastructure_attack
   - military_escalation
   - shipping_chokepoint
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-09-24:geopolitical:-
     geo: ''
@@ -67647,11 +67916,21 @@ episodes:
       BZ=F:
       - pos
     sources:
+    - card:2026-10-30/news_01.md
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
     evidence:
+    - source: card:2026-10-30/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar
         Rosso_ trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
         Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
@@ -67727,8 +68006,9 @@ episodes:
         - neg
 - date: '2026-10-05'
   theme: geopolitical
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - pos
@@ -67751,6 +68031,7 @@ episodes:
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
       storici (2002–presente).md
     BZ=F:
+    - card:2026-10-30/news_01.md
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
@@ -67770,7 +68051,8 @@ episodes:
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation
@@ -67792,7 +68074,7 @@ episodes:
   - military_escalation
   - oil_supply_shock
   - refinery_products
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2026-10-05:geopolitical:-
     geo: ''
@@ -67816,6 +68098,7 @@ episodes:
       HO=F:
       - pos
     sources:
+    - card:2026-10-30/news_01.md
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
@@ -67825,6 +68108,14 @@ episodes:
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
       storici (2002–presente).md
     evidence:
+    - source: card:2026-10-30/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - oil_supply_shock
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar
         Rosso_ trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
         Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
@@ -67945,8 +68236,9 @@ episodes:
         - pos
 - date: '2026-10-12'
   theme: geopolitical
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - pos
@@ -67964,6 +68256,7 @@ episodes:
     - pos
   direction_sources:
     BZ=F:
+    - card:2026-10-30/news_01.md
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
@@ -67988,7 +68281,8 @@ episodes:
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation
@@ -68006,7 +68300,7 @@ episodes:
   - houthi
   - infrastructure_attack
   - military_escalation
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-10-12:geopolitical:-
     geo: ''
@@ -68027,11 +68321,19 @@ episodes:
       XLE:
       - pos
     sources:
+    - card:2026-10-30/news_01.md
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
     evidence:
+    - source: card:2026-10-30/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar
         Rosso_ trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
         Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
@@ -68090,8 +68392,9 @@ episodes:
         - neg
 - date: '2026-10-14'
   theme: geopolitical
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - pos
   directions_by_reference:
@@ -68103,6 +68406,7 @@ episodes:
     - pos
   direction_sources:
     BZ=F:
+    - card:2026-10-30/news_01.md
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
@@ -68117,7 +68421,8 @@ episodes:
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation
@@ -68135,7 +68440,8 @@ episodes:
   - houthi
   - infrastructure_attack
   - military_escalation
-  n_sources: 1
+  - shipping_chokepoint
+  n_sources: 2
   events:
   - event_id: 2026-10-14:geopolitical:-
     geo: ''
@@ -68143,6 +68449,7 @@ episodes:
     - houthi
     - infrastructure_attack
     - military_escalation
+    - shipping_chokepoint
     directions_by_reference:
       BZ=F:
       - pos
@@ -68151,11 +68458,20 @@ episodes:
       XLE:
       - pos
     sources:
+    - card:2026-10-30/news_01.md
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
     evidence:
+    - source: card:2026-10-30/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar
         Rosso_ trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
         Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
@@ -68191,8 +68507,9 @@ episodes:
         - pos
 - date: '2026-10-19'
   theme: geopolitical
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - pos
   directions_by_reference:
@@ -68200,11 +68517,13 @@ episodes:
     - pos
   direction_sources:
     BZ=F:
+    - card:2026-10-30/news_01.md
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation
@@ -68222,7 +68541,7 @@ episodes:
   - houthi
   - infrastructure_attack
   - military_escalation
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-10-19:geopolitical:-
     geo: ''
@@ -68234,11 +68553,19 @@ episodes:
       BZ=F:
       - pos
     sources:
+    - card:2026-10-30/news_01.md
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
     evidence:
+    - source: card:2026-10-30/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar
         Rosso_ trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
         Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
@@ -68252,8 +68579,9 @@ episodes:
         - pos
 - date: '2026-10-22'
   theme: geopolitical
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - pos
@@ -68268,6 +68596,7 @@ episodes:
     - pos
   direction_sources:
     BZ=F:
+    - card:2026-10-30/news_01.md
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
@@ -68287,7 +68616,8 @@ episodes:
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - de_escalation
@@ -68306,7 +68636,7 @@ episodes:
   - infrastructure_attack
   - military_escalation
   - oil_supply_shock
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-10-22:geopolitical:-
     geo: ''
@@ -68325,11 +68655,20 @@ episodes:
       XLE:
       - pos
     sources:
+    - card:2026-10-30/news_01.md
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
     evidence:
+    - source: card:2026-10-30/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar
         Rosso_ trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
         Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
@@ -71265,6 +71604,7 @@ episodes:
       regimi ed episodi storici (2017–ottobre 2026).md
     ^FVX:
     - card:2026-08-21/news_02.md
+    - card:2026-10-30/news_02.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -71371,7 +71711,7 @@ episodes:
   - nfp_surprise
   - pmi
   - services
-  n_sources: 45
+  n_sources: 46
   events:
   - event_id: 2018-02-02:macro_data:-
     geo: ''
@@ -71441,6 +71781,7 @@ episodes:
     - card:2026-09-04/news_02.md
     - card:2026-09-05/news_03.md
     - card:2026-09-07/news_04.md
+    - card:2026-10-30/news_02.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -71632,6 +71973,13 @@ episodes:
       - labour_market
       - nfp
       directions_by_reference: {}
+    - source: card:2026-10-30/news_02.md
+      subthemes_local:
+      - activity_growth
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury,
         dollaro, oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese
         su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro
@@ -74847,6 +75195,7 @@ episodes:
     - card:2026-09-17/news_04.md
     ^FVX:
     - card:2026-09-17/news_04.md
+    - card:2026-10-30/news_02.md
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
@@ -74861,13 +75210,14 @@ episodes:
   - conference_board
   - consumer
   - hawkish
+  - inflation_print
   - inflation_upside
   - labour_market
   - pmi
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2021-04-15:macro_data:-
     geo: ''
@@ -74887,6 +75237,7 @@ episodes:
     - card:2026-09-24/news_01.md
     - card:2026-09-26/news_02.md
     - card:2026-10-28/news_04.md
+    - card:2026-10-30/news_02.md
     evidence:
     - source: card:2026-09-17/news_04.md
       subthemes_local:
@@ -74926,6 +75277,13 @@ episodes:
       - consumer
       directions_by_reference:
         ^TNX:
+        - pos
+    - source: card:2026-10-30/news_02.md
+      subthemes_local:
+      - activity_growth
+      - consumer
+      directions_by_reference:
+        ^FVX:
         - pos
 - date: '2021-05-07'
   theme: macro_data
@@ -75445,22 +75803,26 @@ episodes:
     IEAG.AS:
     - card:2026-10-01/news_02.md
     - card:2026-10-03/news_02.md
+    - card:2026-10-31/news_03.md
   directions_local:
   - neg
   declared: true
   subthemes:
   - eurozone_release
   - inflation_print
+  - inflation_upside
   subthemes_local:
   - eurozone_release
   - inflation_print
-  n_sources: 2
+  - inflation_upside
+  n_sources: 3
   events:
   - event_id: 2021-10-29:macro_data:eurozone_release
     geo: eurozone_release
     subthemes_local:
     - eurozone_release
     - inflation_print
+    - inflation_upside
     directions_by_reference:
       EURUSD=X:
       - pos
@@ -75469,6 +75831,7 @@ episodes:
     sources:
     - card:2026-10-01/news_02.md
     - card:2026-10-03/news_02.md
+    - card:2026-10-31/news_03.md
     evidence:
     - source: card:2026-10-01/news_02.md
       subthemes_local:
@@ -75486,6 +75849,14 @@ episodes:
         - neg
         EURUSD=X:
         - pos
+    - source: card:2026-10-31/news_03.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      - inflation_upside
+      directions_by_reference:
+        IEAG.AS:
+        - neg
 - date: '2021-11-10'
   theme: macro_data
   direction: mixed
@@ -75882,22 +76253,26 @@ episodes:
     IEAG.AS:
     - card:2026-10-01/news_02.md
     - card:2026-10-03/news_02.md
+    - card:2026-10-31/news_03.md
   directions_local:
   - neg
   declared: true
   subthemes:
   - eurozone_release
   - inflation_print
+  - inflation_upside
   subthemes_local:
   - eurozone_release
   - inflation_print
-  n_sources: 2
+  - inflation_upside
+  n_sources: 3
   events:
   - event_id: 2021-11-29:macro_data:eurozone_release
     geo: eurozone_release
     subthemes_local:
     - eurozone_release
     - inflation_print
+    - inflation_upside
     directions_by_reference:
       EURUSD=X:
       - pos
@@ -75906,6 +76281,7 @@ episodes:
     sources:
     - card:2026-10-01/news_02.md
     - card:2026-10-03/news_02.md
+    - card:2026-10-31/news_03.md
     evidence:
     - source: card:2026-10-01/news_02.md
       subthemes_local:
@@ -75920,6 +76296,14 @@ episodes:
       subthemes_local:
       - eurozone_release
       - inflation_print
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: card:2026-10-31/news_03.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      - inflation_upside
       directions_by_reference:
         IEAG.AS:
         - neg
@@ -76880,6 +77264,7 @@ episodes:
     IEAG.AS:
     - card:2026-08-20/news_03.md
     - card:2026-10-03/news_02.md
+    - card:2026-10-31/news_03.md
   direction_review_excluded:
     EURUSD=X: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione
       dell''area euro spinge il cambio in due versi, su per il canale dei tassi BCE
@@ -76895,12 +77280,14 @@ episodes:
   - eurozone_release
   - inflation
   - inflation_print
+  - inflation_upside
   - services
   subthemes_local:
   - energy_passthrough
   - eurozone_release
   - inflation_print
-  n_sources: 3
+  - inflation_upside
+  n_sources: 4
   events:
   - event_id: 2022-03-02:macro_data:-
     geo: ''
@@ -76919,12 +77306,14 @@ episodes:
     - energy_passthrough
     - eurozone_release
     - inflation_print
+    - inflation_upside
     directions_by_reference:
       IEAG.AS:
       - neg
     sources:
     - card:2026-08-20/news_03.md
     - card:2026-10-03/news_02.md
+    - card:2026-10-31/news_03.md
     evidence:
     - source: card:2026-08-20/news_03.md
       subthemes_local:
@@ -76941,6 +77330,14 @@ episodes:
       directions_by_reference:
         IEAG.AS:
         - neg
+    - source: card:2026-10-31/news_03.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      - inflation_upside
+      directions_by_reference:
+        IEAG.AS:
+        - neg
 - date: '2022-03-30'
   theme: macro_data
   direction: neg
@@ -76954,6 +77351,7 @@ episodes:
   direction_sources:
     IEAG.AS:
     - card:2026-10-01/news_02.md
+    - card:2026-10-31/news_03.md
   direction_review_excluded:
     EURUSD=X: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione
       dell''area euro spinge il cambio in due versi, su per il canale dei tassi BCE
@@ -76965,10 +77363,12 @@ episodes:
   subthemes:
   - eurozone_release
   - inflation_print
+  - inflation_upside
   subthemes_local:
   - eurozone_release
   - inflation_print
-  n_sources: 2
+  - inflation_upside
+  n_sources: 3
   events:
   - event_id: 2022-03-30:macro_data:-
     geo: ''
@@ -76984,16 +77384,26 @@ episodes:
     subthemes_local:
     - eurozone_release
     - inflation_print
+    - inflation_upside
     directions_by_reference:
       IEAG.AS:
       - neg
     sources:
     - card:2026-10-01/news_02.md
+    - card:2026-10-31/news_03.md
     evidence:
     - source: card:2026-10-01/news_02.md
       subthemes_local:
       - eurozone_release
       - inflation_print
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: card:2026-10-31/news_03.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      - inflation_upside
       directions_by_reference:
         IEAG.AS:
         - neg
@@ -77088,6 +77498,7 @@ episodes:
   - inflation
   - inflation_print
   - inflation_surprise
+  - inflation_upside
   - ism_manufacturing
   - ism_services
   - labour_market
@@ -77111,7 +77522,7 @@ episodes:
   - labour_market
   - nfp
   - us_cpi
-  n_sources: 21
+  n_sources: 22
   events:
   - event_id: 2022-04-01:macro_data:-
     geo: ''
@@ -77150,6 +77561,7 @@ episodes:
     - card:2026-09-07/news_04.md
     - card:2026-09-10/news_07.md
     - card:2026-09-12/news_03.md
+    - card:2026-10-31/news_03.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -77204,6 +77616,9 @@ episodes:
       subthemes_local:
       - inflation_print
       - labour_market
+      directions_by_reference: {}
+    - source: card:2026-10-31/news_03.md
+      subthemes_local: []
       directions_by_reference: {}
     - source: kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury,
         dollaro, oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese
@@ -77767,6 +78182,7 @@ episodes:
     - card:2026-09-17/news_04.md
     ^FVX:
     - card:2026-09-17/news_04.md
+    - card:2026-10-30/news_02.md
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
@@ -77785,6 +78201,7 @@ episodes:
   - deflation_risk
   - hawkish
   - holiday_spending
+  - inflation_print
   - inflation_upside
   - labour_market
   - platform_earnings
@@ -77796,7 +78213,7 @@ episodes:
   - consumer
   - hawkish
   - platform_earnings
-  n_sources: 6
+  n_sources: 7
   events:
   - event_id: 2022-05-17:macro_data:-
     geo: ''
@@ -77818,6 +78235,7 @@ episodes:
     - card:2026-09-24/news_01.md
     - card:2026-09-26/news_02.md
     - card:2026-10-28/news_04.md
+    - card:2026-10-30/news_02.md
     - kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati
       (2011–2026)/ Il consumatore cinese- domanda interna, e-commerce e trasmissione
       ai mercati (2011–2026).md
@@ -77861,6 +78279,13 @@ episodes:
       directions_by_reference:
         ^TNX:
         - pos
+    - source: card:2026-10-30/news_02.md
+      subthemes_local:
+      - activity_growth
+      - consumer
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione
         ai mercati (2011–2026)/ Il consumatore cinese- domanda interna, e-commerce
         e trasmissione ai mercati (2011–2026).md
@@ -77880,6 +78305,7 @@ episodes:
   direction_sources:
     IEAG.AS:
     - card:2026-10-01/news_02.md
+    - card:2026-10-31/news_03.md
   direction_review_excluded:
     EURUSD=X: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione
       dell''area euro spinge il cambio in due versi, su per il canale dei tassi BCE
@@ -77891,10 +78317,12 @@ episodes:
   subthemes:
   - eurozone_release
   - inflation_print
+  - inflation_upside
   subthemes_local:
   - eurozone_release
   - inflation_print
-  n_sources: 2
+  - inflation_upside
+  n_sources: 3
   events:
   - event_id: 2022-05-30:macro_data:-
     geo: ''
@@ -77910,16 +78338,26 @@ episodes:
     subthemes_local:
     - eurozone_release
     - inflation_print
+    - inflation_upside
     directions_by_reference:
       IEAG.AS:
       - neg
     sources:
     - card:2026-10-01/news_02.md
+    - card:2026-10-31/news_03.md
     evidence:
     - source: card:2026-10-01/news_02.md
       subthemes_local:
       - eurozone_release
       - inflation_print
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: card:2026-10-31/news_03.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      - inflation_upside
       directions_by_reference:
         IEAG.AS:
         - neg
@@ -77962,6 +78400,7 @@ episodes:
   - inflation
   - inflation_print
   - inflation_surprise
+  - inflation_upside
   - services
   - uk_cpi
   - uk_political_transition
@@ -77970,7 +78409,7 @@ episodes:
   - energy_passthrough
   - eurozone_release
   - inflation_print
-  n_sources: 11
+  n_sources: 12
   events:
   - event_id: 2022-05-31:macro_data:-
     geo: ''
@@ -77982,6 +78421,7 @@ episodes:
     - card:2026-07-01/news_03.md
     - card:2026-07-14/news_02.md
     - card:2026-07-22/news_05.md
+    - card:2026-10-31/news_03.md
     evidence:
     - source: card:2026-06-02/news_02.md
       subthemes_local:
@@ -77997,6 +78437,9 @@ episodes:
       subthemes_local: []
       directions_by_reference: {}
     - source: card:2026-07-22/news_05.md
+      subthemes_local: []
+      directions_by_reference: {}
+    - source: card:2026-10-31/news_03.md
       subthemes_local: []
       directions_by_reference: {}
   - event_id: 2022-05-31:macro_data:eurozone_release
@@ -79527,6 +79970,7 @@ episodes:
     IEAG.AS:
     - card:2026-08-20/news_03.md
     - card:2026-10-03/news_02.md
+    - card:2026-10-31/news_03.md
     IEF:
     - card:2026-08-23/news_04.md
     - card:2026-10-02/news_03.md
@@ -79550,13 +79994,15 @@ episodes:
   - eurozone_release
   - inflation
   - inflation_print
+  - inflation_upside
   - ism
   - services
   subthemes_local:
   - energy_passthrough
   - eurozone_release
   - inflation_print
-  n_sources: 7
+  - inflation_upside
+  n_sources: 8
   events:
   - event_id: 2022-07-29:macro_data:-
     geo: ''
@@ -79606,6 +80052,7 @@ episodes:
     subthemes_local:
     - eurozone_release
     - inflation_print
+    - inflation_upside
     directions_by_reference:
       IEAG.AS:
       - neg
@@ -79613,6 +80060,7 @@ episodes:
     - card:2026-08-20/news_03.md
     - card:2026-08-31/news_06.md
     - card:2026-10-03/news_02.md
+    - card:2026-10-31/news_03.md
     evidence:
     - source: card:2026-08-20/news_03.md
       subthemes_local:
@@ -79630,6 +80078,14 @@ episodes:
       subthemes_local:
       - eurozone_release
       - inflation_print
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: card:2026-10-31/news_03.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      - inflation_upside
       directions_by_reference:
         IEAG.AS:
         - neg
@@ -80242,6 +80698,7 @@ episodes:
     IEAG.AS:
     - card:2026-08-20/news_03.md
     - card:2026-10-03/news_02.md
+    - card:2026-10-31/news_03.md
   direction_review_excluded:
     EURUSD=X: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione
       dell''area euro spinge il cambio in due versi, su per il canale dei tassi BCE
@@ -80268,6 +80725,7 @@ episodes:
   - inflation
   - inflation_print
   - inflation_surprise
+  - inflation_upside
   - ppi
   - retail_sales
   - services
@@ -80278,7 +80736,8 @@ episodes:
   - energy_passthrough
   - eurozone_release
   - inflation_print
-  n_sources: 13
+  - inflation_upside
+  n_sources: 14
   events:
   - event_id: 2022-08-31:macro_data:-
     geo: ''
@@ -80321,6 +80780,7 @@ episodes:
     - energy_passthrough
     - eurozone_release
     - inflation_print
+    - inflation_upside
     directions_by_reference:
       IEAG.AS:
       - neg
@@ -80331,6 +80791,7 @@ episodes:
     - card:2026-08-31/news_06.md
     - card:2026-09-02/news_05.md
     - card:2026-10-03/news_02.md
+    - card:2026-10-31/news_03.md
     evidence:
     - source: card:2026-08-20/news_03.md
       subthemes_local:
@@ -80363,6 +80824,14 @@ episodes:
       subthemes_local:
       - eurozone_release
       - inflation_print
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: card:2026-10-31/news_03.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      - inflation_upside
       directions_by_reference:
         IEAG.AS:
         - neg
@@ -81002,6 +81471,7 @@ episodes:
   direction_sources:
     IEAG.AS:
     - card:2026-10-01/news_02.md
+    - card:2026-10-31/news_03.md
   direction_review_excluded:
     EURUSD=X: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione
       dell''area euro spinge il cambio in due versi, su per il canale dei tassi BCE
@@ -81013,10 +81483,12 @@ episodes:
   subthemes:
   - eurozone_release
   - inflation_print
+  - inflation_upside
   subthemes_local:
   - eurozone_release
   - inflation_print
-  n_sources: 2
+  - inflation_upside
+  n_sources: 3
   events:
   - event_id: 2022-09-29:macro_data:-
     geo: ''
@@ -81032,16 +81504,26 @@ episodes:
     subthemes_local:
     - eurozone_release
     - inflation_print
+    - inflation_upside
     directions_by_reference:
       IEAG.AS:
       - neg
     sources:
     - card:2026-10-01/news_02.md
+    - card:2026-10-31/news_03.md
     evidence:
     - source: card:2026-10-01/news_02.md
       subthemes_local:
       - eurozone_release
       - inflation_print
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: card:2026-10-31/news_03.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      - inflation_upside
       directions_by_reference:
         IEAG.AS:
         - neg
@@ -81099,6 +81581,7 @@ episodes:
   - inflation
   - inflation_print
   - inflation_surprise
+  - inflation_upside
   - ism
   - services
   - uk_cpi
@@ -81108,7 +81591,7 @@ episodes:
   - energy_passthrough
   - eurozone_release
   - inflation_print
-  n_sources: 12
+  n_sources: 13
   events:
   - event_id: 2022-09-30:macro_data:-
     geo: ''
@@ -81129,6 +81612,7 @@ episodes:
     - card:2026-07-22/news_05.md
     - card:2026-08-23/news_04.md
     - card:2026-10-02/news_03.md
+    - card:2026-10-31/news_03.md
     evidence:
     - source: card:2026-06-02/news_02.md
       subthemes_local:
@@ -81162,6 +81646,9 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+    - source: card:2026-10-31/news_03.md
+      subthemes_local: []
+      directions_by_reference: {}
   - event_id: 2022-09-30:macro_data:eurozone_release
     geo: eurozone_release
     subthemes_local:
@@ -81803,6 +82290,7 @@ episodes:
     IEAG.AS:
     - card:2026-10-01/news_02.md
     - card:2026-10-03/news_02.md
+    - card:2026-10-31/news_03.md
   direction_review_excluded:
     EURUSD=X: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione
       dell''area euro spinge il cambio in due versi, su per il canale dei tassi BCE
@@ -81833,6 +82321,7 @@ episodes:
   - inflation
   - inflation_print
   - inflation_surprise
+  - inflation_upside
   - ppi
   - reflation_gap
   - services
@@ -81845,7 +82334,8 @@ episodes:
   - energy_passthrough
   - eurozone_release
   - inflation_print
-  n_sources: 18
+  - inflation_upside
+  n_sources: 19
   events:
   - event_id: 2022-10-31:macro_data:-
     geo: ''
@@ -81904,6 +82394,7 @@ episodes:
     - energy_passthrough
     - eurozone_release
     - inflation_print
+    - inflation_upside
     directions_by_reference:
       IEAG.AS:
       - neg
@@ -81915,6 +82406,7 @@ episodes:
     - card:2026-09-02/news_05.md
     - card:2026-10-01/news_02.md
     - card:2026-10-03/news_02.md
+    - card:2026-10-31/news_03.md
     evidence:
     - source: card:2026-08-20/news_03.md
       subthemes_local:
@@ -81953,6 +82445,14 @@ episodes:
       directions_by_reference:
         IEAG.AS:
         - neg
+    - source: card:2026-10-31/news_03.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      - inflation_upside
+      directions_by_reference:
+        IEAG.AS:
+        - neg
 - date: '2022-11-01'
   theme: macro_data
   direction: mixed
@@ -81973,6 +82473,7 @@ episodes:
     - card:2026-08-22/news_03.md
     ^FVX:
     - card:2026-08-22/news_03.md
+    - card:2026-10-30/news_02.md
   direction_review_excluded:
     ^TNX: 'Le schede si contraddicono: ISM «sopra attese» in una, «ulteriore rallentamento»
       e «al limite della contrazione» in altre. Revisione Claude 2026-10-15.'
@@ -82023,8 +82524,9 @@ episodes:
   - cny
   - consumer_sentiment
   - ism
+  - labour_market
   - pmi
-  n_sources: 30
+  n_sources: 31
   events:
   - event_id: 2022-11-01:macro_data:-
     geo: ''
@@ -82036,6 +82538,7 @@ episodes:
     - cny
     - consumer_sentiment
     - ism
+    - labour_market
     - pmi
     directions_by_reference:
       IEF:
@@ -82073,6 +82576,7 @@ episodes:
     - card:2026-09-04/news_02.md
     - card:2026-09-08/news_03.md
     - card:2026-09-09/news_03.md
+    - card:2026-10-30/news_02.md
     evidence:
     - source: card:2026-06-16/news_03.md
       subthemes_local: []
@@ -82195,6 +82699,14 @@ episodes:
       - cny
       - consumer_sentiment
       directions_by_reference: {}
+    - source: card:2026-10-30/news_02.md
+      subthemes_local:
+      - activity_growth
+      - ism
+      - labour_market
+      directions_by_reference:
+        ^FVX:
+        - pos
 - date: '2022-11-10'
   theme: macro_data
   direction: mixed
@@ -84532,6 +85044,7 @@ episodes:
     - card:2026-09-17/news_04.md
     ^FVX:
     - card:2026-09-17/news_04.md
+    - card:2026-10-30/news_02.md
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
@@ -84546,6 +85059,7 @@ episodes:
   - conference_board
   - consumer
   - hawkish
+  - inflation_print
   - inflation_upside
   - labour_market
   - pmi
@@ -84553,7 +85067,7 @@ episodes:
   - activity_growth
   - consumer
   - labour_market
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2023-02-15:macro_data:-
     geo: ''
@@ -84574,6 +85088,7 @@ episodes:
     - card:2026-09-24/news_01.md
     - card:2026-09-26/news_02.md
     - card:2026-10-28/news_04.md
+    - card:2026-10-30/news_02.md
     evidence:
     - source: card:2026-09-17/news_04.md
       subthemes_local:
@@ -84613,6 +85128,13 @@ episodes:
       - consumer
       directions_by_reference:
         ^TNX:
+        - pos
+    - source: card:2026-10-30/news_02.md
+      subthemes_local:
+      - activity_growth
+      - consumer
+      directions_by_reference:
+        ^FVX:
         - pos
 - date: '2023-04-03'
   theme: macro_data
@@ -87188,22 +87710,26 @@ episodes:
     IEAG.AS:
     - card:2026-10-01/news_02.md
     - card:2026-10-03/news_02.md
+    - card:2026-10-31/news_03.md
   directions_local:
   - neg
   declared: true
   subthemes:
   - eurozone_release
   - inflation_print
+  - inflation_upside
   subthemes_local:
   - eurozone_release
   - inflation_print
-  n_sources: 2
+  - inflation_upside
+  n_sources: 3
   events:
   - event_id: 2023-08-31:macro_data:eurozone_release
     geo: eurozone_release
     subthemes_local:
     - eurozone_release
     - inflation_print
+    - inflation_upside
     directions_by_reference:
       EURUSD=X:
       - pos
@@ -87212,6 +87738,7 @@ episodes:
     sources:
     - card:2026-10-01/news_02.md
     - card:2026-10-03/news_02.md
+    - card:2026-10-31/news_03.md
     evidence:
     - source: card:2026-10-01/news_02.md
       subthemes_local:
@@ -87229,6 +87756,14 @@ episodes:
         - neg
         EURUSD=X:
         - pos
+    - source: card:2026-10-31/news_03.md
+      subthemes_local:
+      - eurozone_release
+      - inflation_print
+      - inflation_upside
+      directions_by_reference:
+        IEAG.AS:
+        - neg
 - date: '2023-09-13'
   theme: macro_data
   direction: neg
@@ -87587,6 +88122,7 @@ episodes:
     - card:2026-09-17/news_04.md
     ^FVX:
     - card:2026-09-17/news_04.md
+    - card:2026-10-30/news_02.md
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
@@ -87601,13 +88137,14 @@ episodes:
   - conference_board
   - consumer
   - hawkish
+  - inflation_print
   - inflation_upside
   - labour_market
   - pmi
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2023-10-17:macro_data:-
     geo: ''
@@ -87627,6 +88164,7 @@ episodes:
     - card:2026-09-24/news_01.md
     - card:2026-09-26/news_02.md
     - card:2026-10-28/news_04.md
+    - card:2026-10-30/news_02.md
     evidence:
     - source: card:2026-09-17/news_04.md
       subthemes_local:
@@ -87666,6 +88204,13 @@ episodes:
       - consumer
       directions_by_reference:
         ^TNX:
+        - pos
+    - source: card:2026-10-30/news_02.md
+      subthemes_local:
+      - activity_growth
+      - consumer
+      directions_by_reference:
+        ^FVX:
         - pos
 - date: '2023-10-25'
   theme: macro_data
@@ -90656,6 +91201,7 @@ episodes:
       regimi ed episodi storici (2017–ottobre 2026).md
     ^FVX:
     - card:2026-08-25/news_05.md
+    - card:2026-10-30/news_02.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -90684,6 +91230,7 @@ episodes:
   directions_local:
   - neg
   - neutral
+  - pos
   declared: true
   subthemes:
   - activity_growth
@@ -90790,7 +91337,7 @@ episodes:
   - nfp
   - pmi
   - tankan
-  n_sources: 51
+  n_sources: 52
   events:
   - event_id: 2024-04-01:macro_data:-
     geo: ''
@@ -90862,6 +91409,7 @@ episodes:
     - card:2026-08-29/news_04.md
     - card:2026-09-02/news_04.md
     - card:2026-09-03/news_03.md
+    - card:2026-10-30/news_02.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -91026,6 +91574,13 @@ episodes:
     - source: card:2026-09-03/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-10-30/news_02.md
+      subthemes_local:
+      - activity_growth
+      - ism
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury,
         dollaro, oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese
         su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro
@@ -91822,6 +92377,7 @@ episodes:
     - card:2026-09-17/news_04.md
     ^FVX:
     - card:2026-09-17/news_04.md
+    - card:2026-10-30/news_02.md
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
@@ -91836,13 +92392,14 @@ episodes:
   - conference_board
   - consumer
   - hawkish
+  - inflation_print
   - inflation_upside
   - labour_market
   - pmi
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2024-04-15:macro_data:-
     geo: ''
@@ -91862,6 +92419,7 @@ episodes:
     - card:2026-09-24/news_01.md
     - card:2026-09-26/news_02.md
     - card:2026-10-28/news_04.md
+    - card:2026-10-30/news_02.md
     evidence:
     - source: card:2026-09-17/news_04.md
       subthemes_local:
@@ -91901,6 +92459,13 @@ episodes:
       - consumer
       directions_by_reference:
         ^TNX:
+        - pos
+    - source: card:2026-10-30/news_02.md
+      subthemes_local:
+      - activity_growth
+      - consumer
+      directions_by_reference:
+        ^FVX:
         - pos
 - date: '2024-04-24'
   theme: macro_data
@@ -93509,6 +94074,7 @@ episodes:
     - card:2026-09-17/news_04.md
     ^FVX:
     - card:2026-09-17/news_04.md
+    - card:2026-10-30/news_02.md
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
@@ -93523,13 +94089,14 @@ episodes:
   - conference_board
   - consumer
   - hawkish
+  - inflation_print
   - inflation_upside
   - labour_market
   - pmi
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2024-07-16:macro_data:-
     geo: ''
@@ -93549,6 +94116,7 @@ episodes:
     - card:2026-09-24/news_01.md
     - card:2026-09-26/news_02.md
     - card:2026-10-28/news_04.md
+    - card:2026-10-30/news_02.md
     evidence:
     - source: card:2026-09-17/news_04.md
       subthemes_local:
@@ -93588,6 +94156,13 @@ episodes:
       - consumer
       directions_by_reference:
         ^TNX:
+        - pos
+    - source: card:2026-10-30/news_02.md
+      subthemes_local:
+      - activity_growth
+      - consumer
+      directions_by_reference:
+        ^FVX:
         - pos
 - date: '2024-07-30'
   theme: macro_data
@@ -110394,8 +110969,9 @@ episodes:
         - pos
 - date: '2026-08-03'
   theme: macro_data
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - pos
@@ -110422,6 +110998,7 @@ episodes:
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
     ^FVX:
+    - card:2026-10-30/news_02.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -110436,13 +111013,16 @@ episodes:
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
+  - activity_growth
   - benchmark_revisions
   - energy_shock_2026
   - fed_path_repricing
   - good_news_is_bad_news
+  - inflation_print
   - ism_manufacturing
   - ism_services
   - nonfarm_payrolls
@@ -110452,7 +111032,7 @@ episodes:
   subthemes_local:
   - activity_growth
   - ism
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-08-03:macro_data:-
     geo: ''
@@ -110471,11 +111051,19 @@ episodes:
       ^TNX:
       - pos
     sources:
+    - card:2026-10-30/news_02.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
     evidence:
+    - source: card:2026-10-30/news_02.md
+      subthemes_local:
+      - activity_growth
+      - ism
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury,
         dollaro, oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese
         su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro
@@ -123293,6 +123881,7 @@ episodes:
     CNY=X:
     - card:2026-09-20/news_03.md
     JPY=X:
+    - card:2026-10-30/news_03.md
     - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
       e interventi FX — regime ed episodi storici (1998–2026).md'
     ^N225:
@@ -123371,7 +123960,7 @@ episodes:
   - term_premium
   - ycc
   - yen
-  n_sources: 40
+  n_sources: 41
   events:
   - event_id: 2022-12-20:monetary_policy:-
     geo: ''
@@ -123500,6 +124089,7 @@ episodes:
     - card:2026-09-10/news_06.md
     - card:2026-09-12/news_04.md
     - card:2026-09-13/news_02.md
+    - card:2026-10-30/news_03.md
     - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
       e interventi FX — regime ed episodi storici (1998–2026).md'
     - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
@@ -123640,6 +124230,14 @@ episodes:
       - rate_decision
       - term_premium
       directions_by_reference: {}
+    - source: card:2026-10-30/news_03.md
+      subthemes_local:
+      - boj
+      - guidance_pivot
+      - japan_release
+      directions_by_reference:
+        JPY=X:
+        - neg
     - source: 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade,
         uscita YCC e interventi FX — regime ed episodi storici (1998–2026).md'
       subthemes_local:
@@ -130575,6 +131173,7 @@ episodes:
     - neg
   direction_sources:
     JPY=X:
+    - card:2026-10-30/news_03.md
     - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
       e interventi FX — regime ed episodi storici (1998–2026).md'
   direction_review_excluded:
@@ -130677,7 +131276,7 @@ episodes:
   - rate_decision
   - tariff_escalation
   - yen
-  n_sources: 59
+  n_sources: 60
   events:
   - event_id: 2024-07-31:monetary_policy:-
     geo: ''
@@ -130886,6 +131485,7 @@ episodes:
     - card:2026-09-10/news_06.md
     - card:2026-09-12/news_04.md
     - card:2026-09-13/news_02.md
+    - card:2026-10-30/news_03.md
     - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
       e interventi FX — regime ed episodi storici (1998–2026).md'
     evidence:
@@ -131044,6 +131644,14 @@ episodes:
       - japan_release
       - rate_decision
       directions_by_reference: {}
+    - source: card:2026-10-30/news_03.md
+      subthemes_local:
+      - boj
+      - japan_release
+      - rate_decision
+      directions_by_reference:
+        JPY=X:
+        - neg
     - source: 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade,
         uscita YCC e interventi FX — regime ed episodi storici (1998–2026).md'
       subthemes_local:
@@ -144396,6 +145004,7 @@ episodes:
     - card:2026-10-15/news_03.md
     - card:2026-10-19/news_03.md
     - card:2026-10-22/news_04.md
+    - card:2026-10-31/news_04.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
     ^NDX:
@@ -144430,7 +145039,7 @@ episodes:
   subthemes_local:
   - earnings_shock
   - valuation_derisking
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2018-11-16:structural_themes:-
     geo: ''
@@ -144451,6 +145060,7 @@ episodes:
     - card:2026-10-20/news_03.md
     - card:2026-10-22/news_04.md
     - card:2026-10-29/news_03.md
+    - card:2026-10-31/news_04.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
     evidence:
@@ -144500,6 +145110,12 @@ episodes:
       - earnings_shock
       directions_by_reference:
         ^NDX:
+        - neg
+    - source: card:2026-10-31/news_04.md
+      subthemes_local:
+      - earnings_shock
+      directions_by_reference:
+        SOXX:
         - neg
     - source: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori
         & AI capex (2023–2026).md
@@ -144883,6 +145499,7 @@ episodes:
   direction_sources:
     SOXX:
     - card:2026-10-20/news_03.md
+    - card:2026-10-31/news_04.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
   directions_local:
@@ -144892,6 +145509,7 @@ episodes:
   - ai
   - ai_capex
   - ai_capex_spending
+  - ai_semis
   - chips
   - earnings
   - earnings_guidance_shock
@@ -144909,7 +145527,7 @@ episodes:
   subthemes_local:
   - earnings_shock
   - export_controls
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2019-06-14:structural_themes:-
     geo: ''
@@ -144923,6 +145541,7 @@ episodes:
     - card:2026-08-05/news_02.md
     - card:2026-10-20/news_03.md
     - card:2026-10-22/news_04.md
+    - card:2026-10-31/news_04.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
     evidence:
@@ -144938,6 +145557,13 @@ episodes:
     - source: card:2026-10-22/news_04.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-10-31/news_04.md
+      subthemes_local:
+      - earnings_shock
+      - export_controls
+      directions_by_reference:
+        SOXX:
+        - neg
     - source: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori
         & AI capex (2023–2026).md
       subthemes_local:
@@ -146024,6 +146650,7 @@ episodes:
     SOXX:
     - card:2026-10-09/news_03.md
     - card:2026-10-22/news_04.md
+    - card:2026-10-31/news_04.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
   directions_local:
@@ -146033,6 +146660,7 @@ episodes:
   - ai
   - ai_capex
   - ai_capex_spending
+  - ai_semis
   - chips
   - earnings
   - earnings_guidance_shock
@@ -146050,7 +146678,7 @@ episodes:
   - ai_capex_spending
   - earnings_shock
   - memory_cycle
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2022-09-30:structural_themes:-
     geo: ''
@@ -146065,6 +146693,7 @@ episodes:
     sources:
     - card:2026-10-09/news_03.md
     - card:2026-10-22/news_04.md
+    - card:2026-10-31/news_04.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
     evidence:
@@ -146079,6 +146708,13 @@ episodes:
     - source: card:2026-10-22/news_04.md
       subthemes_local:
       - ai_capex_spending
+      - earnings_shock
+      - memory_cycle
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: card:2026-10-31/news_04.md
+      subthemes_local:
       - earnings_shock
       - memory_cycle
       directions_by_reference:
@@ -150480,6 +151116,7 @@ episodes:
   direction_sources:
     SOXX:
     - card:2026-10-22/news_04.md
+    - card:2026-10-31/news_04.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
   directions_local:
@@ -150489,6 +151126,7 @@ episodes:
   - ai
   - ai_capex
   - ai_capex_spending
+  - ai_semis
   - chips
   - earnings
   - earnings_guidance_shock
@@ -150500,11 +151138,12 @@ episodes:
   - nvidia
   - semiconductors
   - semis
+  - valuation_derisking
   subthemes_local:
   - ai_semis
   - earnings_shock
   - foundry_logic
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2024-10-15:structural_themes:-
     geo: ''
@@ -150517,10 +151156,18 @@ episodes:
       - neg
     sources:
     - card:2026-10-22/news_04.md
+    - card:2026-10-31/news_04.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
     evidence:
     - source: card:2026-10-22/news_04.md
+      subthemes_local:
+      - ai_semis
+      - earnings_shock
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: card:2026-10-31/news_04.md
       subthemes_local:
       - ai_semis
       - earnings_shock
@@ -154837,7 +155484,7 @@ episodes:
   - earnings_shock
   - equity_financing
   - valuation_derisking
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2025-11-11:structural_themes:-
     geo: ''
@@ -154859,6 +155506,7 @@ episodes:
     sources:
     - card:2026-10-23/news_02.md
     - card:2026-10-29/news_03.md
+    - card:2026-10-31/news_04.md
     - kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della
       filiera e trasmissione a semiconduttori, indice e credito (2023-presente)/Finanziamento
       azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -154882,6 +155530,9 @@ episodes:
       directions_by_reference:
         ^NDX:
         - neg
+    - source: card:2026-10-31/news_04.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler,
         IPO della filiera e trasmissione a semiconduttori, indice e credito (2023-presente)/Finanziamento
         azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -157590,6 +158241,7 @@ episodes:
       della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
     SOXX:
     - card:2026-10-22/news_04.md
+    - card:2026-10-31/news_04.md
     - kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo
       della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
   directions_local:
@@ -157599,6 +158251,7 @@ episodes:
   subthemes:
   - ai_capex
   - ai_capex_spending
+  - ai_semis
   - concentration_risk
   - dram
   - duopoly_contestability
@@ -157624,7 +158277,7 @@ episodes:
   - hyperscaler_capex
   - memory_cycle
   - valuation_derisking
-  n_sources: 16
+  n_sources: 17
   events:
   - event_id: 2026-07-29:structural_themes:-
     geo: ''
@@ -157658,6 +158311,7 @@ episodes:
     - card:2026-09-07/news_05.md
     - card:2026-09-12/news_05.md
     - card:2026-10-22/news_04.md
+    - card:2026-10-31/news_04.md
     - kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo
       della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
     evidence:
@@ -157727,6 +158381,13 @@ episodes:
       subthemes_local:
       - earnings_shock
       - hbm
+      - memory_cycle
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: card:2026-10-31/news_04.md
+      subthemes_local:
+      - earnings_shock
       - memory_cycle
       directions_by_reference:
         SOXX:

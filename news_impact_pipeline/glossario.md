@@ -73,6 +73,8 @@ già pronto.
 - **TPI (Transmission Protection Instrument)** — lo "scudo anti-spread" della BCE contro un allargamento ingiustificato dei differenziali sovrani nell'area euro.
 - **UMich (University of Michigan Consumer Sentiment)** — indagine mensile sulla fiducia dei consumatori USA, con stima preliminare a metà mese e finale a fine mese. Include le aspettative d'inflazione delle famiglie a 1 anno e a 5-10 anni, seguite dalla Fed. Dal 2024 si raccoglie online: i livelli non sono confrontabili con quelli precedenti.
 - **Vendite al dettaglio (retail sales)** — dato mensile USA (Census Bureau) sulla spesa nei negozi e online; è nominale, quindi include l'effetto dei prezzi: con l'inflazione alta una parte della crescita è solo rincaro.
+- **Vendite di ETF della BoJ** — la Bank of Japan ha comprato per anni fondi azionari giapponesi (ETF) come strumento di stimolo, diventando il primo azionista della Borsa di Tokyo; dal 2026 li rivende a ritmo programmato. Più vendite = più offerta di azioni sul mercato, ma diluita su molti anni.
+- **Vendite finali ai compratori privati domestici** — componente del PIL USA che somma consumi e investimenti fissi privati, escludendo scorte, commercio estero e spesa pubblica (le voci più volatili): è la misura della domanda di fondo che la Fed guarda per capire se la crescita è solida.
 - **Verbali (minutes) della Fed** — il resoconto della riunione del FOMC, pubblicato tre settimane dopo la decisione. Raramente sono una sorpresa: contano quando rivelano un orientamento della maggioranza diverso da quello prezzato.
 - **YCC (Yield Curve Control)** — controllo della curva dei rendimenti: politica con cui una banca centrale (tipicamente la BoJ) fissa un tetto al rendimento di un titolo di Stato comprandone quantità illimitate per difenderlo.
 
@@ -85,6 +87,7 @@ già pronto.
 - **Beta** — la sensibilità di un asset ai movimenti del suo mercato di riferimento. Un beta alto amplifica i movimenti in entrambe le direzioni.
 - **Breakeven d'inflazione** — l'inflazione media implicita nei prezzi di mercato: la differenza fra il rendimento di un titolo di Stato nominale e quello del gemello indicizzato all'inflazione. Sale quando il mercato si aspetta più inflazione (es. con il petrolio in rialzo).
 - **BTP Valore** — titolo di Stato italiano riservato ai risparmiatori retail, collocato in finestre di pochi giorni con premio fedeltà a scadenza; la sua raccolta misura la domanda domestica di debito italiano, un sostegno allo spread che altri paesi (es. la Francia) non hanno.
+- **Buyback (riacquisto di azioni proprie)** — l'azienda usa la cassa per ricomprare le proprie azioni sul mercato: meno azioni in circolazione, più utile per azione. È il modo con cui i profitti straordinari (es. margini di raffinazione record) arrivano agli azionisti.
 - **Capex (Capital Expenditure)** — la spesa in conto capitale: investimenti in beni durevoli (impianti, macchinari, data center).
 - **Carry trade** — indebitarsi in una valuta a basso tasso per investire in attività denominate in valute a tasso più alto. Funziona finché il differenziale resta ampio e il cambio stabile; si smonta violentemente quando una delle due condizioni cade.
 - **CDS (Credit Default Swap)** — contratto che assicura contro il default di un emittente: chi lo compra paga un premio annuo, in punti base del nominale. Se il premio sale, il mercato giudica più probabile il default o chiede più compenso per quel rischio.
@@ -155,8 +158,10 @@ già pronto.
 - **JCPOA (Joint Comprehensive Plan of Action)** — l'accordo del 2015 sul programma nucleare iraniano, da cui gli USA uscirono nel 2018.
 - **Knesset** — il parlamento monocamerale di Israele, 120 seggi: per governare serve una coalizione di almeno 61.
 - **MFF (Multiannual Financial Framework, Quadro finanziario pluriennale)** — il bilancio settennale dell'Unione europea (il prossimo copre il 2028-2034): fissa quanto spende l'UE e per cosa (agricoltura, coesione, difesa, ricerca). Si approva all'unanimità, quindi ogni grande contributore netto, come la Germania, ha di fatto un veto.
+- **Mina adesiva (limpet mine)** — ordigno esplosivo applicato a mano sullo scafo di una nave (da sommozzatori o da un barchino), sotto la linea di galleggiamento. È l'arma degli attacchi alle petroliere nel Golfo dell'Oman del 2019; non richiede di dichiarare un blocco, quindi alza il rischio del transito senza una chiusura formale dello Stretto.
 - **MoU (Memorandum of Understanding)** — memorandum d'intesa: accordo politico preliminare, meno vincolante di un trattato. Nel 2026 è il formato della trattativa USA-Iran su Hormuz.
 - **NATO** — North Atlantic Treaty Organization, l'alleanza militare atlantica.
+- **NPT / TNP (Trattato di non proliferazione nucleare)** — il trattato del 1968 con cui i Paesi senza armi atomiche rinunciano a costruirle in cambio dell'accesso al nucleare civile sotto ispezioni AIEA. Un'uscita dell'Iran toglierebbe gli ispettori e renderebbe più probabile un attacco al programma nucleare: per i mercati, più premio di rischio sul greggio.
 - **OFAC (Office of Foreign Assets Control)** — l'ufficio del Tesoro USA che emette e applica le sanzioni economiche (liste di persone ed entità, licenze di deroga).
 - **OSINT (Open Source Intelligence)** — informazioni ricavate da fonti aperte: immagini satellitari commerciali, video sui social, dati di navigazione. Nei conflitti spesso anticipano o smentiscono le versioni ufficiali sui danni.
 - **Patriot** — sistema americano di difesa antiaerea e antimissile.
@@ -167,11 +172,13 @@ già pronto.
 - **Tagli volontari (OPEC+)** — riduzioni di produzione annunciate da singoli membri (soprattutto Arabia Saudita) oltre le quote formali del gruppo, e quindi revocabili unilateralmente.
 - **Terre rare** — 17 elementi indispensabili a magneti permanenti, motori elettrici, ottiche militari e semiconduttori. La Cina non ha il monopolio dell'estrazione ma sì, di fatto, quello della raffinazione.
 - **UKMTO (UK Maritime Trade Operations)** — centro della Marina britannica che raccoglie e diffonde le segnalazioni di attacchi e incidenti alle navi mercantili fra Golfo, Mar Rosso e Oceano Indiano; è la fonte primaria sugli attacchi nello Stretto.
+- **Waiver (deroghe petrolifere)** — esenzioni temporanee dalle sanzioni USA che permettono a singoli Paesi di comprare greggio iraniano senza subire sanzioni secondarie. Ripristinarle significa più barili iraniani legalmente sul mercato, quindi pressione al ribasso sul prezzo.
 - **War-risk (assicurazione)** — copertura aggiuntiva che armatori e caricatori pagano per transitare in zone di conflitto; quando le navi vengono colpite il premio sale e si somma al nolo, rincarando la merce trasportata.
 
 ## Materie prime, dazi e unità
 
 - **AVT (unità di distillazione atmosferica e sotto vuoto)** — l'impianto primario di una raffineria russa, quello che separa il greggio nelle sue frazioni (benzina, cherosene, diesel, olio combustibile). Se un'unità AVT si ferma, la capacità di lavorazione dell'intero impianto scende in proporzione.
+- **Backwardation (e rollover dei futures)** — curva dei futures in cui le scadenze vicine costano più di quelle lontane: succede quando l'offerta immediata è scarsa. Le serie continue come `BZ=F` passano al contratto successivo alla scadenza (rollover): in backwardation quel passaggio produce un "calo" artificiale della serie, che non è un movimento di mercato.
 - **Bunker fuel** — il carburante delle navi (olio combustibile pesante e gasolio marino); il suo prezzo entra direttamente nei noli e quindi nel costo delle merci importate.
 - **CHP (Combined Heat and Power, cogenerazione)** — centrale che produce insieme elettricità e calore per il teleriscaldamento urbano; colpirla toglie luce e riscaldamento a interi quartieri.
 - **Crack spread 3-2-1 (`CRACK_321`)** — il margine lordo di una raffineria: il valore di 2 barili di benzina + 1 di distillato meno il costo di 3 barili di greggio. Sale quando i prodotti raffinati sono scarsi rispetto al greggio. Serie *derivata*, calcolata e salvata come ticker nel DB del progetto.
