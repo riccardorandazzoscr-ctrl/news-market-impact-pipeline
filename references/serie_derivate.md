@@ -53,6 +53,13 @@ con l'estensione Chrome:
    $V news_impact_pipeline/import_spread_csv.py FR.csv DE.csv --ticker OAT_BUND_SPREAD
    ```
 
+⚠ **Dal 2026-11-01 anche il `href` del link risponde «Access denied»** (verificato da Chrome).
+Per l'incrementale basta la tabella storica della pagina stessa (Date | Open | High | Low |
+Close, ~20 sedute visibili): leggi data e `Close` via JS per i tre simboli, scrivi tre CSV
+minimi `Date,Close` (bastano poche sedute già in DB come sovrapposizione) e importa come al
+punto 3. Lo script prende solo le date dopo l'ultima in DB. Nel browser integrato Stooq mostra
+solo il muro di consenso cookie: usa Chrome.
+
 Prima di importare, confronta lo storico ricalcolato con quello in DB: il 2026-10-02
 coincidevano 8.883 giorni su 8.884 (scarto massimo 1 pb). Per pochi giorni letti a mano
 resta `fetch_daily_spread.py --pairs YYYY-MM-DD,IT,DE ...`, che vuole una data già in DB come
