@@ -54,7 +54,7 @@ Notizia → **l'agente stesso classifica** (ontologia in Design_Document §6.1) 
 contesto di regime → analoghi storici dalla **libreria episodi** (`analogues.py`) → event
 study (rendimenti cumulati a T+1, T+3, T+5, T+10) → scheda in `daily_analysis/YYYY-MM-DD/`
 → `forecast_tracking.py register` (una scheda ambigua resta fuori, l'invio parte comunque)
-→ `render_report.py` → `send_telegram.sh`.
+→ `render_report.py` → `send_telegram.sh`. Una research indicizzata dopo la consegna rifà solo le sue schede di oggi, sui dati congelati al brief (`run_rianalisi_kb.sh`, vedi routine_giornaliera.md).
 
 Automazione: 8 job launchd `com.riccardo.newsimpact.*` (brief, marketdata-update, daily con
 ritentativi e WatchPaths, scorecard, monthly, indexkb, cpilab, weeklypreview); quelli con un modello lanciano `claude -p`

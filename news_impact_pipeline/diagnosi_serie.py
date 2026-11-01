@@ -14,6 +14,7 @@ aspetta), il peso dell'import era la parte piu' cara del controllo.
 `salto_normale` e `PONTE_MASSIMO` reimportandoli da qui: chi li usava non cambia.
 """
 
+import os
 from collections import namedtuple
 from datetime import date, timedelta
 from pathlib import Path
@@ -26,7 +27,9 @@ from pathlib import Path
 # `bootstrap_market_data` lo reimporta, quindi tutti i `from bootstrap_market_data
 # import DB_PATH` sparsi nel progetto continuano a funzionare.
 DB_DIR = Path.home() / "Claude" / "mercati_finanza" / "market_data"
-DB_PATH = DB_DIR / "market_data.db"
+# NEWSIMPACT_DB punta la rianalisi dopo una research alla copia dei prezzi salvata dal
+# run del mattino (run_rianalisi_kb.sh): stessi dati del brief, niente dopo.
+DB_PATH = Path(os.environ.get("NEWSIMPACT_DB") or DB_DIR / "market_data.db")
 
 # Finestra di riferimento della diagnosi, in anni.
 ANNI_DIAGNOSI = 2

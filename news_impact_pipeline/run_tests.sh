@@ -7,6 +7,7 @@
 #   ./run_tests.sh analisi      # solo il guardiano sull'analisi in uscita
 #   ./run_tests.sh stato        # solo le sei fasi di completamento della giornata
 #   ./run_tests.sh watchdog     # solo il tetto di durata e il lock
+#   ./run_tests.sh rianalisi    # solo la rianalisi dopo una research (dati congelati al brief)
 #   ./run_tests.sh analogues    # solo il filtro sotto-tema di analogues.py
 #   ./run_tests.sh forecast     # solo ledger delle previsioni (R09)
 #   ./run_tests.sh usage        # solo il parser dei consumi del run headless
@@ -122,6 +123,9 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "watchdog" ] && \
   run "watchdog — tetto sul run appeso e lock a prova di kill" \
       tests/test_watchdog.sh
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "rianalisi" ] && \
+  run "rianalisi — research in giornata, dati congelati al brief" \
+      tests/test_rianalisi_kb.sh
 
 echo
 echo "============================================================"

@@ -108,6 +108,27 @@ class ForecastTests(unittest.TestCase):
         self.run_quiet(ft.cmd_backfill)
         self.assertEqual(before, ft.LEDGER_PATH.read_text())
 
+    def test_rianalisi_kb_registra_versione_rivista_accanto_all_originale(self):
+        self.run_quiet(ft.cmd_backfill)
+        self.card.write_text(card(bz="-0.90%"), encoding="utf-8")
+        nuova = self.daily / "2026-01-05" / "news_02.md"
+        nuova.write_text(card().replace("test-slug", "nuova-slug"), encoding="utf-8")
+        rev = lambda: ft.cmd_backfill(revisione="rev1200")
+        self.run_quiet(rev)
+        ids = self.by_id()
+        orig = ids["2026-01-05/test-slug/BZ=F/base/T+1"]
+        self.assertEqual(float(orig["expected_median"]), 0.50)          # mattino congelato
+        self.assertTrue(orig["revised_at"])
+        rivista = ids["2026-01-05/test-slug/BZ=F/base@rev1200/T+1"]
+        self.assertEqual(float(rivista["expected_median"]), -0.90)
+        self.assertEqual(rivista["registration"], "rianalisi_kb")
+        # Scheda nata dalla rianalisi: niente originale, scenario invariato.
+        self.assertEqual(ids["2026-01-05/nuova-slug/BZ=F/base/T+1"]["registration"], "rianalisi_kb")
+        # Idempotente: rilanciare la stessa rianalisi non aggiunge righe.
+        before = ft.LEDGER_PATH.read_text()
+        self.run_quiet(rev)
+        self.assertEqual(before, ft.LEDGER_PATH.read_text())
+
     def test_correzione_ambigua_non_mette_in_quarantena_il_registrato(self):
         self.run_quiet(ft.cmd_backfill)
         # Mediana fuori da p25-p75: la revisione è ambigua, la versione registrata no.

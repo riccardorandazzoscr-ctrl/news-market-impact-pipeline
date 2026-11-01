@@ -20,6 +20,7 @@ __pycache__/
 # Market database (28 MB) — rebuild from scratch with bootstrap_market_data.py
 market_data/*.db
 market_data/exports/
+market_data/_mattino/
 
 # Rendered HTML reports — generated from the .md sources by render_report.py
 *.html

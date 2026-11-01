@@ -37,6 +37,25 @@ if [[ ! -d "$KB" ]]; then
   exit 0
 fi
 
+# --- Rianalisi della giornata dopo uno studio nuovo -------------------------
+# Gli studi entrati nel catalogo in questo giro (non quelli solo corretti) rifanno le
+# schede di oggi che servono, sui dati congelati al brief: run_rianalisi_kb.sh. Esce da
+# sola se la giornata non è ancora consegnata. RIANALISI=0 la spegne: la passa il
+# backstop del run giornaliero, che lo studio lo usa già.
+catalogo() {
+  "$PY" -c 'import sys, yaml; [print(e["source_file"]) for e in (yaml.safe_load(open(sys.argv[1])) or {}).get("entries", [])]' \
+    "$KB/catalog.yaml" 2>/dev/null | sort
+}
+CATALOGO_PRIMA="$(catalogo)"
+rianalizza() {
+  [[ "${RIANALISI:-1}" == 0 ]] && return 0
+  local nuovi=(${(f)"$(comm -13 <(print -r -- "$CATALOGO_PRIMA") <(catalogo))"})
+  (( ${#nuovi} )) || return 0
+  log "Studi nuovi nel catalogo → rianalisi della giornata: ${(j:; :)nuovi}"
+  /bin/zsh "$PIPE/run_rianalisi_kb.sh" "${nuovi[@]}" >> "$LOG" 2>&1 \
+    || log "WARN: rianalisi non completata (dettaglio in logs/rianalisi-$(date +%Y-%m-%d).log)."
+}
+
 # --- Scoperta studi non indicizzati ----------------------------------------
 # La domanda «cosa manca all'indice, e il catalogo è stale?» la risponde
 # build_catalog --scan, cioè chi possiede la regola. Prima la rispondeva questo
@@ -72,6 +91,7 @@ if (( ${#UNINDEXED[@]} == 0 )); then
       exit 1
     }
     log "build_catalog rieseguito. DONE."
+    rianalizza
   else
     log "SKIP: nessuno studio non indicizzato e catalog aggiornato. No-op."
   fi
@@ -136,4 +156,5 @@ if (( RC != 0 )); then
   exit "$RC"
 fi
 log "DONE."
+rianalizza
 exit 0

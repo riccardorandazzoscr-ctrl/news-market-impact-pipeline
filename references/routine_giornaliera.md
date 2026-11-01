@@ -15,6 +15,7 @@ dell'abbonamento Claude, la stessa della CLI interattiva.
 | Prezzi | 08:00 ogni giorno | `…newsimpact.marketdata-update` | `update_market_data.py` | Nessuno: Python deterministico |
 | Analisi | 08:15, ritentativi 09:15 e 10:15 | `…newsimpact.daily` | `run_daily_analysis.sh` | Opus 5.5, effort high |
 | Indicizzazione KB | a ogni modifica di `knowledge_base/` | `…newsimpact.indexkb` | `index_studies.sh` | Opus 5.5 |
+| Rianalisi dopo una research | subito dopo l'indicizzazione di uno studio nuovo, se la giornata è già consegnata | `…newsimpact.indexkb` | `run_rianalisi_kb.sh` | Opus 5.5, effort high |
 | Scorecard | Lunedì 09:00 | `…newsimpact.scorecard` | `run_scorecard.sh` | Nessuno: Python deterministico |
 | Strategia mensile | Giorno 1, 09:30 | `…newsimpact.monthly` | `run_monthly_report.sh` | Opus 5.5 |
 | Laboratorio CPI | ogni ora e all'accensione, dopo aver atteso la rete (agisce solo se manca un rilascio) | `…newsimpact.cpilab` | `cpi_lab_auto.py run` | Nessuno: Python deterministico |
@@ -61,6 +62,29 @@ mostrava "disabilitato". Finiva in ~2 minuti, quindi dal 1/10 pubblicava sempre 
 scartava la propria bozza ("another run wrote…" nel log del brief). Spenta il 16/10. Se quella
 frase ricompare nel log, cercare un altro produttore fra le routine claude.ai
 (`RemoteTrigger list`) prima di toccare lo script.
+
+## Rianalisi dopo una research (dal 2026-11-01)
+
+Quando una research entra nel catalogo **dopo** la consegna del mattino, `index_studies.sh`
+lancia `run_rianalisi_kb.sh` con gli studi nuovi (non con quelli solo corretti). La domanda:
+che cosa avrebbe scritto il run del mattino se lo studio fosse già esistito? Quindi:
+
+- **dati fermi al brief**: il run del mattino salva una copia dei prezzi in
+  `market_data/_mattino/AAAA-MM-GG.db` (ne restano 7) e in `daily_analysis/<giorno>/_mattino.json`
+  la scorecard più recente in quel momento. La rianalisi legge i prezzi da lì (`NEWSIMPACT_DB`),
+  gira senza web né MCP e usa solo il brief del mattino;
+- **perimetro**: solo le notizie di oggi che lo studio serve. Una riga scartata per lacuna
+  diventa una scheda, una scheda esistente si rifà nello stesso file; il resto non si tocca;
+- **ledger**: `forecast_tracking.py register --revisione revHHMM`. L'originale resta congelato
+  (la sua versione è in `_forecast_sources/`); la scheda rifatta entra come scenario
+  `<scenario>@revHHMM`, provenienza `rianalisi_kb`, fuori dalle metriche per asset e
+  confrontata col mattino nella sezione 0-ter della scorecard;
+- **Telegram**: un messaggio breve con le schede nuove o rifatte, non il report rispedito.
+
+Solo la giornata in corso. Esce senza fare nulla se la giornata non è consegnata (lo studio lo
+userà il run normale) o se manca la fotografia del mattino. Log: `logs/rianalisi-AAAA-MM-GG.log`.
+A mano: `news_impact_pipeline/run_rianalisi_kb.sh "<source_file dello studio>"`.
+Il backstop del run giornaliero chiama `index_studies.sh` con `RIANALISI=0`.
 
 ## I plist stanno in due posti
 

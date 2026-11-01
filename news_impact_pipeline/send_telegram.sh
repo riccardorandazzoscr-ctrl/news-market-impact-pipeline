@@ -54,6 +54,18 @@ if [[ "${1:-}" == "--scorecard" ]]; then
   echo "[telegram] scorecard $W non trovata ($SC)"; exit 1
 fi
 
+# Modalità messaggio: send_telegram.sh --messaggio "testo"
+# La usa run_rianalisi_kb.sh per l'aggiornamento breve dopo una research: solo le
+# schede cambiate, non il report rispedito. Telegram tronca oltre 4096 caratteri.
+if [[ "${1:-}" == "--messaggio" ]]; then
+  resp=$("${CURL[@]}" -w $'\n%{http_code}' --data-urlencode chat_id="$CHAT" \
+    --data-urlencode text="${2:0:4000}" "$API/sendMessage")
+  if [[ "${resp##*$'\n'}" == "200" && "${resp%$'\n'*}" == *'"ok":true'* ]]; then
+    echo "[telegram] OK: messaggio"; exit 0
+  fi
+  echo "[telegram] FALLITO: messaggio ${resp:0:200}"; exit 1
+fi
+
 D="${1:-$(date +%Y-%m-%d)}"
 BRIEF="$NEWSDIR/morning brief/${D}-morning-briefing.html"
 REPORT="$NEWSDIR/daily_analysis/$D/report.html"

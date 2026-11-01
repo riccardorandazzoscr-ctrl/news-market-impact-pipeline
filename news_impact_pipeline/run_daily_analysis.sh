@@ -412,12 +412,34 @@ fi
 # garantiamo che ogni studio non indicizzato lo sia prima del match del giorno.
 # index_studies.sh è idempotente: no-op se non c'è nulla da indicizzare.
 log "Backstop: controllo studi KB non indicizzati."
-/bin/zsh "$PIPE/index_studies.sh" >> "$LOG" 2>&1
+# RIANALISI=0: uno studio indicizzato qui entra già nel run che sta per partire.
+RIANALISI=0 /bin/zsh "$PIPE/index_studies.sh" >> "$LOG" 2>&1
 
 # Rinfresca la libreria di episodi (Opzione B): include le schede prodotte finora,
 # così l'event study di oggi può pescare un pool ampio di analoghi invece di 5 a mano.
 log "Refresh libreria episodi (analogues)."
 "$PY" "$PIPE/analogues.py" build >> "$LOG" 2>&1
+
+# --- Fotografia del mattino (per la rianalisi dopo una research) -----------
+# run_rianalisi_kb.sh rifà le schede toccate da una research arrivata in giornata
+# con gli stessi dati di questo run: questa copia dei prezzi e la scorecard più
+# recente adesso. Si prende una volta sola: un ritentativo non la sposta in avanti.
+MATTINO="$NEWSDIR/market_data/_mattino"
+if [[ ! -f "$MATTINO/$TODAY.db" ]]; then
+  mkdir -p "$MATTINO" "$DAILY/$TODAY"
+  if sqlite3 "$NEWSDIR/market_data/market_data.db" ".backup '$MATTINO/$TODAY.db'" 2>>"$LOG"; then
+    SC=("$DAILY"/_scorecard/*.md(N))
+    SCF="${SC[-1]:-}"
+    print -r -- "{\"db\": \"$MATTINO/$TODAY.db\", \"scorecard\": \"$SCF\", \"ora\": \"$(date -Iseconds)\"}" \
+      > "$DAILY/$TODAY/_mattino.json"
+    log "Fotografia del mattino: prezzi in ${MATTINO:t}/$TODAY.db, scorecard ${SCF:t}."
+    # Ne restano 7: la rianalisi riguarda solo la giornata in corso.
+    VECCHIE=("$MATTINO"/*.db(N.Om))
+    (( ${#VECCHIE} > 7 )) && /bin/rm -f "${VECCHIE[@]:0:$(( ${#VECCHIE} - 7 ))}"
+  else
+    log "WARN: fotografia del mattino non riuscita: oggi niente rianalisi dopo una research."
+  fi
+fi
 
 # --- Prompt per l'agente ---------------------------------------------------
 # Su una ripresa il prompt dice cosa c'è già e da dove ripartire, invece di far

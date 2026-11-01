@@ -320,7 +320,11 @@ def _sha(path: Path) -> str:
 
 # --- Sottocomandi ----------------------------------------------------------
 
-def cmd_backfill(day=None, live=False, skip=()) -> None:
+def cmd_backfill(day=None, live=False, skip=(), revisione=None) -> None:
+    # revisione = etichetta della rianalisi dopo una research (run_rianalisi_kb.sh).
+    # Una scheda già registrata e poi rifatta entra come scenario "<scenario>@<etichetta>",
+    # accanto all'originale congelato; una scheda nuova entra col suo scenario. In
+    # entrambi i casi registration = "rianalisi_kb".
     existing = load_ledger()
     by_card: dict = {}
     for r in existing:
@@ -363,6 +367,13 @@ def cmd_backfill(day=None, live=False, skip=()) -> None:
                 continue
             new[e["forecast_id"]] = e
 
+        olds = by_card.get(str(card.relative_to(DAILY_DIR)), [])
+        if revisione and olds and all(r.get("card_sha") != sha for r in olds):
+            for e in new.values():
+                e["scenario"] = f"{e['scenario']}@{revisione}"
+                e["forecast_id"] = _key(e)
+            new = {e["forecast_id"]: e for e in new.values()}
+
         # Righe gia' registrate di questa scheda: correzione o no?
         for r in by_card.get(str(card.relative_to(DAILY_DIR)), []):
             if not r.get("card_sha"):
@@ -382,10 +393,11 @@ def cmd_backfill(day=None, live=False, skip=()) -> None:
                 e.setdefault(k, "")
             e["card_sha"] = sha
             e["recorded_at"] = datetime.now().astimezone().isoformat()
-            e["registration"] = "live" if live and card.parent.name == today else "recovered"
+            e["registration"] = ("rianalisi_kb" if revisione else
+                                 "live" if live and card.parent.name == today else "recovered")
             e["ingestion_status"] = "ok"
-            e["method_version"] = version if e["registration"] == "live" else "unknown"
-            if e["registration"] == "live":
+            e["method_version"] = version if e["registration"] in ("live", "rianalisi_kb") else "unknown"
+            if e["registration"] in ("live", "rianalisi_kb"):
                 methods = DAILY_DIR / '_forecast_methods'
                 methods.mkdir(exist_ok=True)
                 method = methods / f'{version}.json'
@@ -593,7 +605,9 @@ def cmd_scorecard(open_browser: bool = False) -> None:
     matured = [r for r in all_rows if r.get("realized_return")
                and r.get("uso") not in ("ritirata", "scenario")
                and r.get("ingestion_status") != "quarantine"]
-    active = [r for r in matured if r.get("uso") == "previsione"]
+    # Le schede rifatte dopo una research ("@" nello scenario) restano fuori dalle
+    # metriche per asset: la stessa notizia conterebbe due volte. Hanno la sez. 0-ter.
+    active = [r for r in matured if r.get("uso") == "previsione" and "@" not in r["scenario"]]
     L = [f"# Scorecard previsioni — {date.today().isocalendar().year}-W{date.today().isocalendar().week:02d}",
          f"\n_Generata: {datetime.now().isoformat(timespec='seconds')}_\n",
          "## In sintesi\n",
@@ -627,6 +641,25 @@ def cmd_scorecard(open_browser: bool = False) -> None:
                 f"{_pct(m['coverage'])} | {m['n_band']} |")
     for key, sub in sorted(groups.items()):
         L.append(group_line(' / '.join(key), sub))
+    # Stessa notizia, stessi dati congelati al brief: cambia solo la research aggiunta.
+    orig = {(r["card_path"], r["asset"], r["scenario"], r["horizon"]): r for r in matured
+            if r.get("uso") == "previsione" and "@" not in r["scenario"]}
+    pairs = [(orig[k], r) for r in matured if r.get("uso") == "previsione" and "@" in r["scenario"]
+             for k in [(r["card_path"], r["asset"], r["scenario"].split("@")[0], r["horizon"])]
+             if k in orig]
+    L.extend(["", "## 0-ter. Schede rifatte dopo una nuova research\n",
+              "Coppie mature (stessa scheda, asset, scenario e orizzonte): stima del mattino "
+              "contro stima rifatta sui dati congelati al brief. Le schede nate dalla "
+              "rianalisi stanno fra le attive, con provenienza `rianalisi_kb` in 0-bis.\n",
+              "| Versione | Coppie | Hit-rate | N hit | MAE (pp) | Copertura | N bande |",
+              "|---|---:|---:|---:|---:|---:|---:|"])
+    for i, label in ((0, "mattino"), (1, "rifatta")):
+        sub = [p[i] for p in pairs]
+        m = metric_summary(sub)
+        mae = (f"{sum(abs(float(r['expected_median']) - float(r['realized_return'])) for r in sub) / len(sub):.2f}"
+               if sub else "n/a")
+        L.append(f"| {label} | {len(sub)} | {_pct(m['hit'])} | {m['n_hit']} | {mae} | "
+                 f"{_pct(m['coverage'])} | {m['n_band']} |")
     L.extend(["", "## 1. Coorti di emissione e versione\n",
               "Le date separano i periodi, non ricostruiscono versioni mancanti. "
               "Le tabelle recuperate oggi restano retrospettive.\n",
@@ -786,6 +819,10 @@ def main():
         cmd = sub.add_parser(name)
         if name in ("register", "audit"):
             cmd.add_argument("--date", type=date.fromisoformat, required=name == "register")
+        if name == "register":
+            cmd.add_argument("--revisione", metavar="ETICHETTA",
+                             help="rianalisi dopo una research: registra le schede rifatte "
+                                  "come scenario <scenario>@ETICHETTA, accanto all'originale")
         if name == "scorecard":
             cmd.add_argument("--open", action="store_true")
     args = parser.parse_args()
@@ -803,7 +840,7 @@ def main():
             # una tabella malformata non deve fermare la consegna del giorno.
             bad = []
             cmd_audit(day, require_declared=True, bad=bad)
-            cmd_backfill(day=day, live=True, skip=set(bad))
+            cmd_backfill(day=day, live=True, skip=set(bad), revisione=args.revisione)
             if bad:
                 raise SystemExit(f"Registrazione parziale: {len(bad)} schede escluse, "
                                  "correggerle e rilanciare 'register'")
