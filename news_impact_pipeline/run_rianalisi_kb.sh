@@ -44,7 +44,15 @@ mkdir -p "$LOGDIR"
 log "START: rianalisi $TAG per: $*"
 
 # --- Cancelli --------------------------------------------------------------
-FASE=$("$PY" "$PIPE/stato_giornata.py" --date "$TODAY" --fase 2>>"$LOG")
+# Consegnata con lo stesso brief e ritoccata dopo l'invio (una lacuna annotata, una
+# correzione a mano) conta come consegnata: è la regola del run giornaliero. Il
+# 2026-11-02 una precisazione in _index.md ha fatto saltare la rianalisi BCE.
+FASE=$("$PY" "$PIPE/stato_giornata.py" --date "$TODAY" --json 2>>"$LOG" | "$PY" -c '
+import json, sys
+s = json.load(sys.stdin)
+f = s["fase"] or "completa"
+dopo_invio = f in ("html_prodotto", "consegna_confermata") and s["input_riconosciuto"] and s.get("consegnato")
+print("completa" if dopo_invio else f)' 2>>"$LOG")
 if [[ "$FASE" != "completa" ]]; then
   log "SKIP: giornata $TODAY non consegnata (ferma su ${FASE:-?}): lo studio entra nel run normale."
   exit 0

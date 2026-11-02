@@ -78,7 +78,8 @@ def scarica_bce(fino: int) -> set[str]:
                                             "August September October November December".split())}
     out = set()
     for y in range(2010, fino + 1):
-        for m in re.finditer(r"(\d{1,2}) ([A-Z][a-z]+) (\d{4}) (?:Combined monetary policy decisions"
+        # Maiuscole non uniformi fra gli anni («Monetary Policy Decisions» l'8/12/2016).
+        for m in re.finditer(r"(\d{1,2}) ([A-Z][a-z]+) (\d{4}) (?i:Combined monetary policy decisions"
                              r" and statement|Monetary policy decisions)", _testo(_get(BCE.format(y=y)))):
             out.add(dt.date(int(m[3]), mesi[m[2]], int(m[1])).isoformat())
     return out
