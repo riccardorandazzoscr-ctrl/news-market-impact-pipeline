@@ -5,66 +5,65 @@ voci:
   fonte: 2026-09-04/news_06.md
   riga: '| `2026-06-11` | neg | japan_release, activity_growth | Release giapponese più recente del pool.
     |'
-  evento: ''
+  evento: Release giapponese (secondo la scheda)
   meccanismo: []
   dichiarazioni:
   - asset: JPY=X
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce l''attesa.
+      Il 2026-06-11 è la riunione BCE. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2026-04-30'
   tema: macro_data
-  fonte: 2026-09-04/news_06.md
-  riga: '| `2026-04-30` | neg | japan_release, boj | Riunione BoJ nel regime corrente. |'
-  evento: ''
+  fonte: 2026-09-08/news_04.md
+  riga: '| `2026-04-30` | neutral | japan_release | Release giapponese della fase corrente. |'
+  evento: Release giapponese (secondo la scheda)
   meccanismo: []
   dichiarazioni:
   - asset: JPY=X
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce l''attesa.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2025-01-24'
   tema: macro_data
   fonte: 2026-09-04/news_06.md
   riga: '| `2025-01-24` | neg | japan_release, boj, rate_decision | Rialzo BoJ nel percorso di normalizzazione.
     |'
-  evento: ''
+  evento: Rialzo BoJ
   meccanismo: []
   dichiarazioni:
   - asset: JPY=X
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Decisione BoJ, non una release: appartiene al pool di politica monetaria. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2024-12-18'
   tema: macro_data
   fonte: 2026-09-04/news_06.md
   riga: '| `2024-12-18` | neg | japan_release, boj, rate_decision | BoJ ferma mentre la Fed taglia in
     modo hawkish. |'
-  evento: ''
+  evento: BoJ ferma (secondo la scheda)
   meccanismo: []
   dichiarazioni:
   - asset: JPY=X
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: Decisione di banca centrale, non una release; e il 18/12/2024 è la FOMC, la BoJ è del 19.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
+  stato: promossa
 - data: '2024-10-23'
   tema: macro_data
   fonte: 2026-09-04/news_06.md
   riga: '| `2024-10-23` | neg | japan_release, activity_growth | Dato di attività giapponese sotto attese.
     |'
-  evento: ''
+  evento: Dato di attività giapponese (secondo la scheda)
   meccanismo: []
   dichiarazioni:
   - asset: JPY=X
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
-- data: '2024-09-18'
-  tema: macro_data
-  fonte: 2026-09-04/news_06.md
-  riga: '| `2024-09-18` | neg | japan_release, boj | Riunione in concomitanza con il primo taglio Fed.
-    |'
-  evento: ''
-  meccanismo: []
-  dichiarazioni:
-  - asset: JPY=X
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce l''attesa.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2024-08-05'
   tema: macro_data
   fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
@@ -75,86 +74,102 @@ voci:
     con nessun taglio prezzato a breve o in un contesto di timore recessivo: `dato forte → conferma di
     tenuta economica → ^GSPC/^NDX su insieme a ^TNX (o con rendimenti poco mossi), ^VIX giù`. È il canale
     che, i'
-  evento: ''
+  evento: Crollo del 5 agosto 2024
   meccanismo: []
   dichiarazioni:
   - asset: JPY=X
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Non è una release giapponese: è la reazione al payroll USA e allo smontaggio del carry trade.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2024-08-01'
   tema: macro_data
   fonte: 2026-09-04/news_06.md
   riga: '| `2024-08-01` | neg | japan_release, yen | Seconda seduta della stessa sequenza: yen in forte
     apprezzamento. |'
-  evento: ''
+  evento: Seconda seduta della sequenza dello yen (secondo la scheda)
   meccanismo: []
   dichiarazioni:
   - asset: JPY=X
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: Descritta dal movimento dello yen, cioè da un esito di prezzo. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-02.
+  stato: promossa
 - data: '2024-07-31'
   tema: macro_data
   fonte: 2026-09-04/news_06.md
   riga: '| `2024-07-31` | neg | japan_release, boj, rate_decision | Rialzo BoJ che innescò lo smontaggio
     del carry trade dei giorni successivi. |'
-  evento: ''
+  evento: Rialzo BoJ di luglio 2024
   meccanismo: []
   dichiarazioni:
   - asset: JPY=X
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Decisione BoJ, non una release: appartiene al pool di politica monetaria. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2023-10-31'
   tema: macro_data
   fonte: 2026-09-04/news_06.md
   riga: '| `2023-10-31` | neg | japan_release, boj, yen | Ulteriore allentamento del controllo della curva
     senza soddisfare le attese: yen debole. |'
-  evento: ''
+  evento: Allentamento del controllo della curva
   meccanismo: []
   dichiarazioni:
   - asset: JPY=X
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Decisione BoJ, non una release: appartiene al pool di politica monetaria. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2022-12-20'
   tema: macro_data
   fonte: 2026-09-04/news_06.md
   riga: '| `2022-12-20` | neg | japan_release, boj, yen | La BoJ allarga a sorpresa la banda del controllo
     della curva: shock di duration globale. |'
-  evento: ''
+  evento: Banda del controllo della curva allargata
   meccanismo: []
   dichiarazioni:
   - asset: JPY=X
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Decisione BoJ, non una release: appartiene al pool di politica monetaria. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2022-07-21'
   tema: macro_data
   fonte: 2026-09-04/news_06.md
   riga: '| `2022-07-21` | neg | japan_release, boj, yen | BoJ ferma mentre lo yen si indebolisce: divergenza
     con la Fed al massimo. |'
-  evento: ''
+  evento: BoJ ferma
   meccanismo: []
   dichiarazioni:
   - asset: JPY=X
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: Decisione BoJ, non una release; ed è anche il giorno del primo rialzo BCE. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-02.
+  stato: promossa
 - data: '2018-12-19'
   tema: macro_data
   fonte: 2026-09-04/news_06.md
   riga: '| `2018-12-19` | neg | japan_release, boj, rate_decision | Riunione BoJ in una fase di stress
     dei mercati globali di fine 2018. |'
-  evento: ''
+  evento: Riunione BoJ di dicembre 2018
   meccanismo: []
   dichiarazioni:
   - asset: JPY=X
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: Decisione di banca centrale, non una release; il 19/12/2018 è anche la FOMC. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-02.
+  stato: promossa
 - data: '2011-08-04'
   tema: macro_data
   fonte: 2026-09-04/news_06.md
   riga: '| `2011-08-04` | neg | japan_release, fx_intervention | Intervento sul cambio delle autorità
     giapponesi contro l''apprezzamento dello yen. |'
-  evento: ''
+  evento: Intervento sul cambio
   meccanismo: []
   dichiarazioni:
   - asset: JPY=X
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: Intervento valutario, non una release. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-02.
+  stato: promossa

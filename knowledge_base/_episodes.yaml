@@ -1,4 +1,4 @@
-generated_at: '2026-11-02T18:03:23'
+generated_at: '2026-11-02T18:59:18'
 num_episodes: 1596
 episodes:
 - date: '1984-01-01'
@@ -28682,6 +28682,10 @@ episodes:
     - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
       sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
       conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  direction_review_excluded:
+    IGLT.L: 'Non è un bilancio britannico: l''etichetta budget_passage viene da un
+      rating sull''Italia; nessun canale diretto verso i gilt. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -31485,6 +31489,10 @@ episodes:
     - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
     ^VIX:
     - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  direction_review_excluded:
+    IGLT.L: 'Non è un bilancio britannico: l''etichetta budget_passage viene da gli
+      Stati Uniti; nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - pos
   declared: false
@@ -31721,6 +31729,10 @@ episodes:
     - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
       sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
       conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  direction_review_excluded:
+    IGLT.L: 'Non è un bilancio britannico: l''etichetta budget_passage viene da uno
+      studio sui rating dell''area euro; nessun canale diretto verso i gilt. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -32379,6 +32391,10 @@ episodes:
     - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
       sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
       conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  direction_review_excluded:
+    IGLT.L: 'Non è un bilancio britannico: l''etichetta budget_passage viene da un
+      rating sulla Francia; nessun canale diretto verso i gilt. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -32439,6 +32455,10 @@ episodes:
     - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
       sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
       conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  direction_review_excluded:
+    IGLT.L: 'Non è un bilancio britannico: l''etichetta budget_passage viene da un
+      rating sulla Francia; nessun canale diretto verso i gilt. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -32628,6 +32648,10 @@ episodes:
     - card:2026-09-24/news_03.md
     - card:2026-10-05/news_02.md
     - card:2026-10-08/news_04.md
+  direction_review_excluded:
+    IGLT.L: 'Non è un bilancio britannico: l''etichetta budget_passage viene da la
+      politica di bilancio francese; nessun canale diretto verso i gilt. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   - pos
@@ -33473,6 +33497,10 @@ episodes:
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
       della BCE e contagio fra periferie — regime ed episodi storici (2010–presente).md
+  direction_review_excluded:
+    IGLT.L: 'Non è un bilancio britannico: l''etichetta budget_passage viene da la
+      politica di bilancio francese; nessun canale diretto verso i gilt. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - pos
   declared: true
@@ -34262,6 +34290,10 @@ episodes:
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
       della BCE e contagio fra periferie — regime ed episodi storici (2010–presente).md
+  direction_review_excluded:
+    IGLT.L: 'Non è un bilancio britannico: l''etichetta budget_passage viene da la
+      politica di bilancio francese; nessun canale diretto verso i gilt. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -34369,6 +34401,10 @@ episodes:
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
       della BCE e contagio fra periferie — regime ed episodi storici (2010–presente).md
+  direction_review_excluded:
+    IGLT.L: 'Non è un bilancio britannico: l''etichetta budget_passage viene da la
+      politica di bilancio francese; nessun canale diretto verso i gilt. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -34568,6 +34604,10 @@ episodes:
     - kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
       sugli spread OAT-Bund e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_
       conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  direction_review_excluded:
+    IGLT.L: 'Non è un bilancio britannico: l''etichetta budget_passage viene da un
+      rating sulla Francia; nessun canale diretto verso i gilt. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -35058,6 +35098,9 @@ episodes:
     IEF: La riga descrive il movimento dei prezzi (la notizia del giorno sui Treasury
       era stata scartata come «reazione»), non un evento. Criterio ex ante, nessun
       prezzo consultato. Revisione Claude 2026-11-01.
+    IGLT.L: 'Non è un bilancio britannico: l''etichetta budget_passage viene da Taiwan;
+      nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -35280,6 +35323,10 @@ episodes:
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
       della BCE e contagio fra periferie — regime ed episodi storici (2010–presente).md
+  direction_review_excluded:
+    IGLT.L: 'Non è un bilancio britannico: l''etichetta budget_passage viene da uno
+      studio sugli spread dell''area euro; nessun canale diretto verso i gilt. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - pos
   declared: true
@@ -47606,6 +47653,8 @@ episodes:
       dopo), non una notizia nuova: la finestra si sovrapporrebbe. GBPUSD=X quota
       dollari per sterlina. Solo la colonna «Direzione attesa», nessun prezzo consultato.
       Lacuna 2026-10-29 (bilancio Healey). Revisione Claude 2026-10-29.'
+    BZ=F: Canale del gas europeo, non del greggio; Nord Stream 1 era già fermo. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
   directions_local:
   - neg
   declared: false
@@ -50485,6 +50534,9 @@ episodes:
       ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
       del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
       episodi storici (2013–presente).md
+  direction_review_excluded:
+    BZ=F: Canale del grano, non del petrolio. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.
   directions_local:
   - neg
   - pos
@@ -50645,6 +50697,9 @@ episodes:
       ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
       del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
       episodi storici (2013–presente).md
+  direction_review_excluded:
+    BZ=F: Canale del grano, non del petrolio. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.
   directions_local:
   - neg
   - pos
@@ -51206,10 +51261,17 @@ episodes:
   - neg
   - pos
   directions_by_reference:
+    BZ=F:
+    - neutral
     IYT:
     - neg
     - pos
   direction_sources:
+    BZ=F:
+    - kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi
+      del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
+      attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
+      Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente).md
     IYT:
     - kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
@@ -51241,6 +51303,8 @@ episodes:
     - houthi
     - shipping_chokepoint
     directions_by_reference:
+      BZ=F:
+      - neutral
       IYT:
       - neg
       - pos
@@ -51261,6 +51325,8 @@ episodes:
         IYT:
         - neg
         - pos
+        BZ=F:
+        - neutral
 - date: '2023-12-18'
   theme: geopolitical
   direction: neg
@@ -51874,6 +51940,10 @@ episodes:
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
       Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente).md
+  direction_review_excluded:
+    BZ=F: Lo studio lo dichiara solo su TTF=F (canale GNL); sul greggio nessun segno
+      ricostruibile. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.
   directions_local: []
   declared: true
   subthemes:
@@ -52014,6 +52084,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    BZ=F: La scheda descrive una fase, non un evento datato. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-02.
   directions_local:
   - neg
   - pos
@@ -52556,6 +52629,10 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    BZ=F: 'Colpisce prodotti e margini, non il greggio: segno ambiguo sul Brent (canale
+      3 dello studio Houthi). Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-02.'
   directions_local:
   - neg
   - pos
@@ -53548,6 +53625,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    BZ=F: La scheda descrive una fase, non un evento datato. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-02.
   directions_local:
   - neg
   declared: true
@@ -59424,6 +59504,10 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    BZ=F: 'Data di domenica, senza seduta: la reazione è del 23/6, che andrebbe dichiarata
+      con quella data. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -61657,6 +61741,10 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    BZ=F: 'Colpisce raffinerie e prodotti: sul greggio il segno è ambiguo (canale
+      3 dello studio Houthi); stessa giornata dell''incontro Trump-Zelensky. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -63364,6 +63452,9 @@ episodes:
       ai mercati — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo
       del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati — regime ed
       episodi storici (2013–presente).md
+  direction_review_excluded:
+    BZ=F: Canale del grano, non del petrolio. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.
   directions_local:
   - neg
   - pos
@@ -66003,6 +66094,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-12/news_01.md
   directions_local:
   - neg
   - pos
@@ -66100,6 +66197,9 @@ episodes:
     - iran
     - sanctions
     - shipping_chokepoint
+    directions_by_reference:
+      BZ=F:
+      - pos
     sources:
     - card:2026-06-12/news_01.md
     - card:2026-06-13/news_01.md
@@ -66313,7 +66413,9 @@ episodes:
       subthemes_local:
       - infrastructure_attack
       - shipping_chokepoint
-      directions_by_reference: {}
+      directions_by_reference:
+        BZ=F:
+        - pos
 - date: '2026-04-18'
   theme: geopolitical
   direction: mixed
@@ -66790,6 +66892,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-09-10/news_01.md
   directions_local:
   - neg
   - pos
@@ -66872,6 +66980,9 @@ episodes:
     - nato
     - sanctions
     - shipping_chokepoint
+    directions_by_reference:
+      BZ=F:
+      - pos
     sources:
     - card:2026-06-16/news_02.md
     - card:2026-06-20/news_01.md
@@ -67090,7 +67201,9 @@ episodes:
       - infrastructure_attack
       - iran
       - military_escalation
-      directions_by_reference: {}
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: card:2026-09-12/news_01.md
       subthemes_local:
       - hormuz
@@ -67111,6 +67224,9 @@ episodes:
   directions_declared:
   - neg
   - pos
+  direction_review_excluded:
+    BZ=F: 'Infrastruttura ucraina, non offerta di greggio: nessun canale diretto sul
+      Brent. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   - pos
@@ -71209,6 +71325,9 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    IGLT.L: Decisione di politica monetaria coordinata, non una release britannica.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
   directions_local:
   - neg
   declared: true
@@ -71573,6 +71692,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    JPY=X: Intervento valutario, non una release. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-02.
   directions_local:
   - neg
   declared: true
@@ -71713,6 +71835,10 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -72164,6 +72290,13 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -72577,6 +72710,9 @@ episodes:
       per un''altra la fiducia è in calo. Revisione Claude 2026-10-15.'
     ^TNX: Giornata dominata da Cina (yuan) e BCE, senza una release ISM/PMI americana
       identificata; le schede si contraddicono sul segno. Revisione Claude 2026-10-15.
+    IEF: 'Data sbagliata: l''ISM manifatturiero uscì l''1/9/2015; il 3/9 è il giorno
+      della BCE e dell''ISM servizi. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-02.'
   directions_local:
   - neg
   - pos
@@ -73135,6 +73271,10 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -73255,6 +73395,10 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -73702,6 +73846,10 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -74237,6 +74385,8 @@ episodes:
     - pos
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - neg
     ^TNX:
@@ -74253,6 +74403,11 @@ episodes:
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
       oro e azionario — regime ed episodi storici (2017–presente).md
     IEF:
+    - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
+      dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
+      d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
+      oro e azionario — regime ed episodi storici (2017–presente).md
+    ^FVX:
     - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
       dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -74306,6 +74461,8 @@ episodes:
       - pos
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - neg
       ^TNX:
@@ -74336,6 +74493,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -74347,6 +74506,8 @@ episodes:
       directions_by_reference:
         ^TNX:
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -74357,6 +74518,8 @@ episodes:
       - us_cpi
       directions_by_reference:
         DX-Y.NYB:
+        - pos
+        ^FVX:
         - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
@@ -74370,6 +74533,8 @@ episodes:
         GC=F:
         - neg
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -74381,6 +74546,8 @@ episodes:
       directions_by_reference:
         ^GSPC:
         - neg
+        ^FVX:
+        - pos
 - date: '2018-03-09'
   theme: macro_data
   direction: neg
@@ -74887,6 +75054,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    JPY=X: Decisione di banca centrale, non una release; il 19/12/2018 è anche la
+      FOMC. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
   directions_local:
   - neg
   - pos
@@ -75086,6 +75256,10 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -75348,6 +75522,8 @@ episodes:
     - pos
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - neg
     - pos
@@ -75365,6 +75541,11 @@ episodes:
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
       oro e azionario — regime ed episodi storici (2017–presente).md
     IEF:
+    - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
+      dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
+      d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
+      oro e azionario — regime ed episodi storici (2017–presente).md
+    ^FVX:
     - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
       dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -75418,6 +75599,8 @@ episodes:
       - pos
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - neg
       - pos
@@ -75449,6 +75632,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -75460,6 +75645,8 @@ episodes:
       directions_by_reference:
         ^TNX:
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -75470,6 +75657,8 @@ episodes:
       - us_cpi
       directions_by_reference:
         DX-Y.NYB:
+        - pos
+        ^FVX:
         - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
@@ -75483,6 +75672,8 @@ episodes:
         GC=F:
         - neg
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -75494,6 +75685,8 @@ episodes:
       directions_by_reference:
         ^GSPC:
         - neg
+        - pos
+        ^FVX:
         - pos
 - date: '2019-07-15'
   theme: macro_data
@@ -75987,6 +76180,9 @@ episodes:
   direction_review_excluded:
     ^TNX: Le schede si contraddicono (contrazione confermata contro «sorpresa al rialzo»)
       e non identificano la release della data. Revisione Claude 2026-10-15.
+    IEF: 'Data sbagliata: l''ISM manifatturiero di agosto 2019 uscì il 3/9, primo
+      giorno lavorativo dopo il Labor Day. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   - pos
@@ -76769,11 +76965,18 @@ episodes:
   directions: []
   directions_declared: []
   directions_by_reference:
+    IEF:
+    - pos
     ^GSPC:
     - neg
     ^TNX:
     - neg
   direction_sources:
+    IEF:
+    - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
+      monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
+      macro e reaction function dei mercati: fase del ciclo di politica monetaria
+      e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
     ^GSPC:
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
@@ -76807,6 +77010,8 @@ episodes:
     - activity_growth
     - ism
     directions_by_reference:
+      IEF:
+      - pos
       ^GSPC:
       - neg
       ^TNX:
@@ -76830,6 +77035,8 @@ episodes:
         - neg
         ^TNX:
         - neg
+        IEF:
+        - pos
 - date: '2019-12-02'
   theme: macro_data
   direction: ''
@@ -77919,6 +78126,13 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -77989,6 +78203,13 @@ episodes:
     - card:2026-10-01/news_02.md
     - card:2026-10-03/news_02.md
     - card:2026-10-31/news_03.md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -78060,6 +78281,8 @@ episodes:
     - pos
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - neg
     - pos
@@ -78077,6 +78300,11 @@ episodes:
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
       oro e azionario — regime ed episodi storici (2017–presente).md
     IEF:
+    - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
+      dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
+      d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
+      oro e azionario — regime ed episodi storici (2017–presente).md
+    ^FVX:
     - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
       dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -78159,6 +78387,8 @@ episodes:
       - pos
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - neg
       - pos
@@ -78257,6 +78487,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -78268,6 +78500,8 @@ episodes:
       directions_by_reference:
         ^TNX:
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -78278,6 +78512,8 @@ episodes:
       - us_cpi
       directions_by_reference:
         DX-Y.NYB:
+        - pos
+        ^FVX:
         - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
@@ -78291,6 +78527,8 @@ episodes:
         GC=F:
         - neg
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -78302,6 +78540,8 @@ episodes:
       directions_by_reference:
         ^GSPC:
         - neg
+        - pos
+        ^FVX:
         - pos
 - date: '2021-11-17'
   theme: macro_data
@@ -78439,6 +78679,13 @@ episodes:
     - card:2026-10-01/news_02.md
     - card:2026-10-03/news_02.md
     - card:2026-10-31/news_03.md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -79208,6 +79455,8 @@ episodes:
     - pos
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - neg
     ^TNX:
@@ -79224,6 +79473,11 @@ episodes:
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
       oro e azionario — regime ed episodi storici (2017–presente).md
     IEF:
+    - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
+      dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
+      d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
+      oro e azionario — regime ed episodi storici (2017–presente).md
+    ^FVX:
     - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
       dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -79283,6 +79537,8 @@ episodes:
       - pos
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - neg
       ^TNX:
@@ -79323,6 +79579,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -79334,6 +79592,8 @@ episodes:
       directions_by_reference:
         ^TNX:
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -79344,6 +79604,8 @@ episodes:
       - us_cpi
       directions_by_reference:
         DX-Y.NYB:
+        - pos
+        ^FVX:
         - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
@@ -79357,6 +79619,8 @@ episodes:
         GC=F:
         - neg
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -79368,6 +79632,8 @@ episodes:
       directions_by_reference:
         ^GSPC:
         - neg
+        ^FVX:
+        - pos
 - date: '2022-02-23'
   theme: macro_data
   direction: neg
@@ -79455,6 +79721,12 @@ episodes:
       dell''area euro spinge il cambio in due versi, su per il canale dei tassi BCE
       e giù per le ragioni di scambio; trasmissione non univoca a EURUSD. Revisione
       Claude 2026-10-15.'
+    ^FVX: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -79542,6 +79814,12 @@ episodes:
       dell''area euro spinge il cambio in due versi, su per il canale dei tassi BCE
       e giù per le ragioni di scambio; trasmissione non univoca a EURUSD. Revisione
       Claude 2026-10-15.'
+    ^FVX: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -80124,6 +80402,8 @@ episodes:
     - neg
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - neg
     ^TNX:
@@ -80140,6 +80420,11 @@ episodes:
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
       oro e azionario — regime ed episodi storici (2017–presente).md
     IEF:
+    - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
+      dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
+      d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
+      oro e azionario — regime ed episodi storici (2017–presente).md
+    ^FVX:
     - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
       dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -80207,6 +80492,8 @@ episodes:
       - neg
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - neg
       ^TNX:
@@ -80267,6 +80554,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -80277,6 +80566,8 @@ episodes:
       - us_cpi
       directions_by_reference:
         ^TNX:
+        - pos
+        ^FVX:
         - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
@@ -80289,6 +80580,8 @@ episodes:
       directions_by_reference:
         DX-Y.NYB:
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -80300,6 +80593,8 @@ episodes:
       directions_by_reference:
         GC=F:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -80311,6 +80606,8 @@ episodes:
       directions_by_reference:
         ^GSPC:
         - neg
+        ^FVX:
+        - pos
 - date: '2022-05-16'
   theme: macro_data
   direction: ''
@@ -80496,6 +80793,12 @@ episodes:
       dell''area euro spinge il cambio in due versi, su per il canale dei tassi BCE
       e giù per le ragioni di scambio; trasmissione non univoca a EURUSD. Revisione
       Claude 2026-10-15.'
+    ^FVX: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -80567,6 +80870,9 @@ episodes:
       dell''area euro spinge il cambio in due versi, su per il canale dei tassi BCE
       e giù per le ragioni di scambio; trasmissione non univoca a EURUSD. Revisione
       Claude 2026-10-15.'
+    IEF: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -81893,6 +82199,8 @@ episodes:
     - neg
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - neg
     ^TNX:
@@ -81909,6 +82217,11 @@ episodes:
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
       oro e azionario — regime ed episodi storici (2017–presente).md
     IEF:
+    - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
+      dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
+      d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
+      oro e azionario — regime ed episodi storici (2017–presente).md
+    ^FVX:
     - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
       dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -81974,6 +82287,8 @@ episodes:
       - pos
       GC=F:
       - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - neg
       ^TNX:
@@ -82027,6 +82342,8 @@ episodes:
       directions_by_reference:
         ^TNX:
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -82038,6 +82355,8 @@ episodes:
       - us_cpi
       directions_by_reference:
         DX-Y.NYB:
+        - pos
+        ^FVX:
         - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
@@ -82051,6 +82370,8 @@ episodes:
       directions_by_reference:
         GC=F:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -82063,6 +82384,8 @@ episodes:
       directions_by_reference:
         ^GSPC:
         - neg
+        ^FVX:
+        - pos
   - event_id: 2022-07-13:macro_data:canada_release
     geo: canada_release
     subthemes_local:
@@ -82098,6 +82421,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    JPY=X: Decisione BoJ, non una release; ed è anche il giorno del primo rialzo BCE.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
   directions_local:
   - neg
   declared: true
@@ -82283,6 +82609,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    IEF:
+    - neg
+  direction_sources:
+    IEF:
+    - card:2026-08-25/news_05.md
   direction_review_excluded:
     ^TNX: 'Le schede descrivono i servizi USA come «misti» e «contraddittori»: segno
       della sorpresa non documentato. Revisione Claude 2026-10-15.'
@@ -82355,6 +82687,9 @@ episodes:
     - ism
     - pmi
     - services
+    directions_by_reference:
+      IEF:
+      - neg
     sources:
     - card:2026-05-31/news_05.md
     - card:2026-06-23/news_06.md
@@ -82464,7 +82799,9 @@ episodes:
       subthemes_local:
       - ism
       - services
-      directions_by_reference: {}
+      directions_by_reference:
+        IEF:
+        - neg
     - source: card:2026-08-25/news_06.md
       subthemes_local:
       - energy_passthrough
@@ -82889,6 +83226,12 @@ episodes:
       dell''area euro spinge il cambio in due versi, su per il canale dei tassi BCE
       e giù per le ragioni di scambio; trasmissione non univoca a EURUSD. Revisione
       Claude 2026-10-15.'
+    ^FVX: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -83662,6 +84005,12 @@ episodes:
       dell''area euro spinge il cambio in due versi, su per il canale dei tassi BCE
       e giù per le ragioni di scambio; trasmissione non univoca a EURUSD. Revisione
       Claude 2026-10-15.'
+    ^FVX: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -84481,6 +84830,12 @@ episodes:
       dell''area euro spinge il cambio in due versi, su per il canale dei tassi BCE
       e giù per le ragioni di scambio; trasmissione non univoca a EURUSD. Revisione
       Claude 2026-10-15.'
+    ^FVX: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -85917,6 +86272,10 @@ episodes:
       dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
       oro e azionario — regime ed episodi storici (2017–presente).md
+  direction_review_excluded:
+    IGLT.L: 'Stessa seduta del CPI USA di novembre 2022: la componente britannica
+      non è separabile. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
   directions_local:
   - neg
   - pos
@@ -86243,6 +86602,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    JPY=X: 'Decisione BoJ, non una release: appartiene al pool di politica monetaria.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -86292,6 +86654,8 @@ episodes:
       con la descrizione.'
     EURUSD=X: Sorpresa rispetto alle attese non documentata dalle fonti («continuazione
       del passthrough», «componente di fondo persistente»). Revisione Claude 2026-10-15.
+    IEF: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce
+      l''attesa. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -86434,6 +86798,13 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -87528,6 +87899,10 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -88240,6 +88615,13 @@ episodes:
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+  direction_review_excluded:
+    ^FVX: 'Release non USA (Regno Unito): il canale verso i Treasury è di secondo
+      ordine e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (Regno Unito): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -88333,6 +88715,10 @@ episodes:
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+  direction_review_excluded:
+    IEF: 'Più release di aree diverse insieme: nessuna sorpresa d''inflazione USA
+      identificabile. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
   directions_local:
   - pos
   declared: true
@@ -88531,6 +88917,10 @@ episodes:
       dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
       oro e azionario — regime ed episodi storici (2017–presente).md
+  direction_review_excluded:
+    IGLT.L: 'Data sbagliata: il PIL mensile di maggio 2023 uscì il 13/7; il 12/7 è
+      il giorno del CPI USA. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-02.'
   directions_local:
   - neg
   - pos
@@ -89197,6 +89587,9 @@ episodes:
     ^TNX: 'ISM servizi sotto le attese (rendimenti giù) nella stessa fase in cui i
       rendimenti lunghi salivano per l''offerta di titoli dopo il declassamento Fitch:
       spinte opposte. Revisione Claude 2026-10-15.'
+    IEF: 'Seduta dominata dall''offerta di Treasury dopo il refunding e il taglio
+      di Fitch: la sorpresa ISM non è separabile. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -89397,6 +89790,10 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    IEF: 'Release non USA (Cina): il canale verso i Treasury è di secondo ordine e
+      la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: false
   subthemes:
@@ -89896,6 +90293,13 @@ episodes:
     - card:2026-10-01/news_02.md
     - card:2026-10-03/news_02.md
     - card:2026-10-31/news_03.md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -89964,6 +90368,8 @@ episodes:
     - neg
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - neg
     ^TNX:
@@ -89980,6 +90386,11 @@ episodes:
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
       oro e azionario — regime ed episodi storici (2017–presente).md
     IEF:
+    - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
+      dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
+      d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
+      oro e azionario — regime ed episodi storici (2017–presente).md
+    ^FVX:
     - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
       dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -90044,6 +90455,8 @@ episodes:
       - neg
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - neg
       ^TNX:
@@ -90089,6 +90502,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -90100,6 +90515,8 @@ episodes:
       - us_cpi
       directions_by_reference:
         ^TNX:
+        - pos
+        ^FVX:
         - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
@@ -90113,6 +90530,8 @@ episodes:
       directions_by_reference:
         DX-Y.NYB:
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -90125,6 +90544,8 @@ episodes:
       directions_by_reference:
         GC=F:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -90137,6 +90558,8 @@ episodes:
       directions_by_reference:
         ^GSPC:
         - neg
+        ^FVX:
+        - pos
 - date: '2023-09-25'
   theme: macro_data
   direction: ''
@@ -90441,6 +90864,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    JPY=X: 'Decisione BoJ, non una release: appartiene al pool di politica monetaria.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -92678,6 +93104,10 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    IEF: 'Release non USA (Cina): il canale verso i Treasury è di secondo ordine e
+      la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: false
   subthemes:
@@ -92722,6 +93152,8 @@ episodes:
     - neg
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - neg
     ^TNX:
@@ -92738,6 +93170,11 @@ episodes:
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
       oro e azionario — regime ed episodi storici (2017–presente).md
     IEF:
+    - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
+      dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
+      d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
+      oro e azionario — regime ed episodi storici (2017–presente).md
+    ^FVX:
     - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
       dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -92799,6 +93236,8 @@ episodes:
       - neg
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - neg
       ^TNX:
@@ -92849,6 +93288,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -92859,6 +93300,8 @@ episodes:
       - us_cpi
       directions_by_reference:
         ^TNX:
+        - pos
+        ^FVX:
         - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
@@ -92871,6 +93314,8 @@ episodes:
       directions_by_reference:
         DX-Y.NYB:
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -92882,6 +93327,8 @@ episodes:
       directions_by_reference:
         GC=F:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -92893,6 +93340,8 @@ episodes:
       directions_by_reference:
         ^GSPC:
         - neg
+        ^FVX:
+        - pos
 - date: '2024-02-15'
   theme: macro_data
   direction: neg
@@ -93083,6 +93532,8 @@ episodes:
     - neg
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - neg
     ^TNX:
@@ -93099,6 +93550,11 @@ episodes:
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
       oro e azionario — regime ed episodi storici (2017–presente).md
     IEF:
+    - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
+      dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
+      d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
+      oro e azionario — regime ed episodi storici (2017–presente).md
+    ^FVX:
     - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
       dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -93151,6 +93607,8 @@ episodes:
       - neg
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - neg
       ^TNX:
@@ -93181,6 +93639,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -93191,6 +93651,8 @@ episodes:
       - us_cpi
       directions_by_reference:
         ^TNX:
+        - pos
+        ^FVX:
         - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
@@ -93203,6 +93665,8 @@ episodes:
       directions_by_reference:
         DX-Y.NYB:
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -93214,6 +93678,8 @@ episodes:
       directions_by_reference:
         GC=F:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -93225,6 +93691,8 @@ episodes:
       directions_by_reference:
         ^GSPC:
         - neg
+        ^FVX:
+        - pos
 - date: '2024-03-19'
   theme: macro_data
   direction: neg
@@ -93263,6 +93731,9 @@ episodes:
   direction_review_excluded:
     JPY=X: 'Nota: ''Contaminato'': tre giorni dopo l''uscita dalla NIRP del 19/3.'
     ^N225: 'Nota: ''Contaminato'': tre giorni dopo l''uscita dalla NIRP del 19/3.'
+    IEF: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - pos
   declared: true
@@ -94309,6 +94780,8 @@ episodes:
     - neg
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - neg
     ^TNX:
@@ -94325,6 +94798,11 @@ episodes:
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
       oro e azionario — regime ed episodi storici (2017–presente).md
     IEF:
+    - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
+      dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
+      d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
+      oro e azionario — regime ed episodi storici (2017–presente).md
+    ^FVX:
     - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
       dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -94407,6 +94885,8 @@ episodes:
       - neg
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - neg
       ^TNX:
@@ -94499,6 +94979,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -94509,6 +94991,8 @@ episodes:
       - us_cpi
       directions_by_reference:
         ^TNX:
+        - pos
+        ^FVX:
         - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
@@ -94521,6 +95005,8 @@ episodes:
       directions_by_reference:
         DX-Y.NYB:
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -94532,6 +95018,8 @@ episodes:
       directions_by_reference:
         GC=F:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -94543,6 +95031,8 @@ episodes:
       directions_by_reference:
         ^GSPC:
         - neg
+        ^FVX:
+        - pos
 - date: '2024-04-15'
   theme: macro_data
   direction: neg
@@ -94678,6 +95168,13 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -95398,6 +95895,8 @@ episodes:
     FTSEMIB.MI: '''Hawkish cut'': il taglio era scontato e la notizia era il tono
       restrittivo; la riga scrive il verso del taglio, non quello della sorpresa.
       Revisione maintainer 2026-09-23.'
+    IEF: 'Data sbagliata: il payroll di maggio 2024 uscì il 7/6; il 6/6 è il primo
+      taglio BCE. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   - pos
@@ -96405,6 +96904,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    JPY=X: 'Decisione BoJ, non una release: appartiene al pool di politica monetaria.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -96504,6 +97006,9 @@ episodes:
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
+  direction_review_excluded:
+    JPY=X: Descritta dal movimento dello yen, cioè da un esito di prezzo. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
   directions_local:
   - neg
   - pos
@@ -97223,6 +97728,9 @@ episodes:
       con un'attesa prima della seduta. Come il 2024-08-05/06 BoJ.
     ^STOXX50E: Il titolo della riga descrive l'esito ('Selloff globale'), non un evento
       con un'attesa prima della seduta. Come il 2024-08-05/06 BoJ.
+    JPY=X: 'Non è una release giapponese: è la reazione al payroll USA e allo smontaggio
+      del carry trade. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -97380,6 +97888,8 @@ episodes:
     EURUSD=X: 'Riga: ''euro/DAX reazione mista'' — non è una direzione.'
     ^GDAXI: 'Riga: ''euro/DAX reazione mista'' — non è una direzione.'
     ^STOXX50E: 'Riga: ''euro/DAX reazione mista'' — non è una direzione.'
+    IEF: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce
+      l''attesa. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - pos
   declared: true
@@ -99924,6 +100434,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    JPY=X: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce
+      l''attesa. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -100485,6 +100998,13 @@ episodes:
       Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
       come canale distinto dalla politica della Bank of Japan — regime ed episodi
       storici (2013–presente).md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: false
   subthemes:
@@ -100556,6 +101076,13 @@ episodes:
       Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
       come canale distinto dalla politica della Bank of Japan — regime ed episodi
       storici (2013–presente).md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: false
   subthemes:
@@ -100618,6 +101145,8 @@ episodes:
       segnali opposti nello stesso rapporto.'
     ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Payroll di poco sopra attese
       ma disoccupazione in salita: beat modesto e segnali opposti nello stesso rapporto.'
+    IGLT.L: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce
+      l''attesa. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   - pos
@@ -101475,6 +102004,10 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    JPY=X: Decisione di banca centrale, non una release; e il 18/12/2024 è la FOMC,
+      la BoJ è del 19. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.
   directions_local:
   - neg
   declared: true
@@ -101572,6 +102105,9 @@ episodes:
     1482.T: 'La riga non indica una sorpresa rispetto all''atteso e la colonna coincide
       con l''esito riportato nella nota (''yen si rafforzò, hike gennaio atteso''):
       in questa research la colonna a volte è l''esito (2026-09-04 lo dichiara).'
+    IEF: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: false
   subthemes:
@@ -102465,6 +103001,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    JPY=X: 'Decisione BoJ, non una release: appartiene al pool di politica monetaria.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -102555,6 +103094,8 @@ episodes:
     GBPUSD=X: 'Nota: ''taglio prezzato''. ''GBP giù'' è il verso del meccanismo; con
       la regola della sorpresa la riga non dice se la BoE fu più o meno accomodante
       del prezzato.'
+    IGLT.L: 'Decisione della BoE, non una release macro: nel pool delle release contaminerebbe
+      il canale. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -102813,6 +103354,9 @@ episodes:
     ^TNX: 'ISM debole con componente prezzi in salita per i dazi: crescita e inflazione
       spingono i rendimenti in versi opposti; le schede si contraddicono sul segno.
       Revisione Claude 2026-10-15.'
+    IEF: 'Segnali opposti nello stesso dato: attività più debole (pro-Treasury) e
+      prezzi in salita (contro): nessun segno univoco su IEF. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   - pos
@@ -103667,6 +104211,10 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  direction_review_excluded:
+    IEF: 'Release non USA (Cina): il canale verso i Treasury è di secondo ordine e
+      la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: false
   subthemes:
@@ -104508,6 +105056,13 @@ episodes:
       Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
       come canale distinto dalla politica della Bank of Japan — regime ed episodi
       storici (2013–presente).md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: false
   subthemes:
@@ -105349,6 +105904,13 @@ episodes:
       Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
       come canale distinto dalla politica della Bank of Japan — regime ed episodi
       storici (2013–presente).md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: false
   subthemes:
@@ -106699,6 +107261,10 @@ episodes:
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+  direction_review_excluded:
+    IEF: 'Release non USA (Cina): il canale verso i Treasury è di secondo ordine e
+      la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - pos
   declared: true
@@ -107525,6 +108091,13 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -107957,6 +108530,13 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -108999,6 +109579,13 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -109587,6 +110174,13 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -109871,6 +110465,10 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -110191,6 +110789,10 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -110269,6 +110871,8 @@ episodes:
       con certezza e decisione di policy ravvicinata nella stessa finestra.'
     ^FVX: 'Rendimento a 5 anni, specchio del verso su IEF: Release non identificata
       con certezza e decisione di policy ravvicinata nella stessa finestra.'
+    JPY=X: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce
+      l''attesa. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   - neutral
@@ -110549,6 +111153,8 @@ episodes:
     - neg
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - neg
     ^TNX:
@@ -110565,6 +111171,11 @@ episodes:
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
       oro e azionario — regime ed episodi storici (2017–presente).md
     IEF:
+    - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
+      dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
+      d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
+      oro e azionario — regime ed episodi storici (2017–presente).md
+    ^FVX:
     - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
       dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -110619,6 +111230,8 @@ episodes:
       - neg
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - neg
       ^TNX:
@@ -110651,6 +111264,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -110662,6 +111277,8 @@ episodes:
       - us_cpi
       directions_by_reference:
         ^TNX:
+        - pos
+        ^FVX:
         - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
@@ -110675,6 +111292,8 @@ episodes:
       directions_by_reference:
         DX-Y.NYB:
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -110687,6 +111306,8 @@ episodes:
       directions_by_reference:
         GC=F:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -110699,6 +111320,8 @@ episodes:
       directions_by_reference:
         ^GSPC:
         - neg
+        ^FVX:
+        - pos
 - date: '2026-05-18'
   theme: macro_data
   direction: ''
@@ -110756,6 +111379,10 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -111161,6 +111788,9 @@ episodes:
       con certezza nelle schede (una la dichiara non ricostruita): verso non attribuibile.'
     EURUSD=X: 'Release non identificata: per una scheda è un dato UK/BoE, per altre
       l''HICP flash dell''area euro, come già per IEF. Revisione maintainer 2026-10-07.'
+    IGLT.L: 'Nessuna release britannica identificabile: la giornata del 2026-06-04
+      non ne tratta e la scheda non dice quale dato. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   - pos
@@ -112262,6 +112892,12 @@ episodes:
     EURUSD=X: 'Rialzo BCE e inflazione area euro sopra attese (euro su), ma nella
       stessa data il CPI USA di maggio con energia in risalita (dollaro su): spinte
       opposte. Revisione Claude 2026-10-15.'
+    JPY=X: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce
+      l''attesa. Il 2026-06-11 è la riunione BCE. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-02.'
+    IEF: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce
+      l''attesa. Il 2026-06-11 è la riunione BCE. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   - neutral
@@ -112732,6 +113368,9 @@ episodes:
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+  direction_review_excluded:
+    IEF: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce
+      l''attesa. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   - pos
@@ -113066,6 +113705,10 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -113780,6 +114423,13 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local:
   - neg
   declared: true
@@ -114451,6 +115101,8 @@ episodes:
     - neg
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - neg
     ^TNX:
@@ -114467,6 +115119,11 @@ episodes:
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
       oro e azionario — regime ed episodi storici (2017–presente).md
     IEF:
+    - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
+      dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
+      d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
+      oro e azionario — regime ed episodi storici (2017–presente).md
+    ^FVX:
     - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
       dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -114521,6 +115178,8 @@ episodes:
       - neg
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - neg
       ^TNX:
@@ -114553,6 +115212,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -114564,6 +115225,8 @@ episodes:
       - us_cpi
       directions_by_reference:
         ^TNX:
+        - pos
+        ^FVX:
         - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
@@ -114577,6 +115240,8 @@ episodes:
       directions_by_reference:
         DX-Y.NYB:
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -114589,6 +115254,8 @@ episodes:
       directions_by_reference:
         GC=F:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -114601,6 +115268,8 @@ episodes:
       directions_by_reference:
         ^GSPC:
         - neg
+        ^FVX:
+        - pos
 - date: '2026-09-29'
   theme: macro_data
   direction: neg
@@ -114669,6 +115338,10 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:
@@ -115264,6 +115937,8 @@ episodes:
     - neg
     IEF:
     - neg
+    ^FVX:
+    - pos
     ^GSPC:
     - neg
     ^TNX:
@@ -115282,6 +115957,11 @@ episodes:
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
       oro e azionario — regime ed episodi storici (2017–presente).md
     IEF:
+    - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
+      dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
+      d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
+      oro e azionario — regime ed episodi storici (2017–presente).md
+    ^FVX:
     - kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury,
       dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
       d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -115341,6 +116021,8 @@ episodes:
       - neg
       IEF:
       - neg
+      ^FVX:
+      - pos
       ^GSPC:
       - neg
       ^TNX:
@@ -115375,6 +116057,8 @@ episodes:
       directions_by_reference:
         IEF:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -115386,6 +116070,8 @@ episodes:
       - us_cpi
       directions_by_reference:
         ^TNX:
+        - pos
+        ^FVX:
         - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
@@ -115399,6 +116085,8 @@ episodes:
       directions_by_reference:
         ^TYX:
         - pos
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -115410,6 +116098,8 @@ episodes:
       - us_cpi
       directions_by_reference:
         DX-Y.NYB:
+        - pos
+        ^FVX:
         - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
@@ -115423,6 +116113,8 @@ episodes:
       directions_by_reference:
         GC=F:
         - neg
+        ^FVX:
+        - pos
     - source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
         a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
         d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,
@@ -115435,6 +116127,8 @@ episodes:
       directions_by_reference:
         ^GSPC:
         - neg
+        ^FVX:
+        - pos
 - date: '2026-10-28'
   theme: macro_data
   direction: ''
@@ -115461,6 +116155,13 @@ episodes:
     - kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_
       episodi e regimi 2011-2026/Sorprese macro australiane e trasmissione ad AUD,
       titoli di Stato e ASX 200_ episodi e regimi 2011-2026.md
+  direction_review_excluded:
+    ^FVX: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+    IEF: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine
+      e la sorpresa non riguarda la Fed. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
   directions_local: []
   declared: true
   subthemes:

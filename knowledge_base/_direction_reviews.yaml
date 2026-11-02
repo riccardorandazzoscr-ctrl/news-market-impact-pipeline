@@ -12878,3 +12878,1279 @@ reviews:
     Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
   status: excluded
   description: Fed taglia 25 pb invece di 50 e raffredda gli acquisti di titoli lunghi
+- date: '2026-10-01'
+  theme: fiscal_policy
+  reference: IGLT.L
+  source: kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi, interventi
+    della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread BTP-Bund e OAT-Bund-
+    crisi politiche e di bilancio italiane e francesi, interventi della BCE e contagio fra periferie —
+    regime ed episodi storici (2010–presente).md
+  reason: 'Non è un bilancio britannico: l''etichetta budget_passage viene da uno studio sugli spread
+    dell''area euro; nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione
+    Claude 2026-11-02.'
+  status: excluded
+  description: Tesi generale sugli spread BTP/OAT-Bund
+- date: '2026-08-14'
+  theme: fiscal_policy
+  reference: IGLT.L
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Non è un bilancio britannico: l''etichetta budget_passage viene da Taiwan; nessun canale diretto
+    verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Bilancio generale di Taiwan 2026
+- date: '2025-10-27'
+  theme: fiscal_policy
+  reference: IGLT.L
+  source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund
+    e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+    sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  reason: 'Non è un bilancio britannico: l''etichetta budget_passage viene da un rating sulla Francia;
+    nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Moody's conferma la Francia, outlook negativo
+- date: '2025-10-16'
+  theme: fiscal_policy
+  reference: IGLT.L
+  source: kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi, interventi
+    della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread BTP-Bund e OAT-Bund-
+    crisi politiche e di bilancio italiane e francesi, interventi della BCE e contagio fra periferie —
+    regime ed episodi storici (2010–presente).md
+  reason: 'Non è un bilancio britannico: l''etichetta budget_passage viene da la politica di bilancio
+    francese; nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione
+    Claude 2026-11-02.'
+  status: excluded
+  description: Lecornu supera le mozioni di sfiducia
+- date: '2025-10-14'
+  theme: fiscal_policy
+  reference: IGLT.L
+  source: kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi, interventi
+    della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread BTP-Bund e OAT-Bund-
+    crisi politiche e di bilancio italiane e francesi, interventi della BCE e contagio fra periferie —
+    regime ed episodi storici (2010–presente).md
+  reason: 'Non è un bilancio britannico: l''etichetta budget_passage viene da la politica di bilancio
+    francese; nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione
+    Claude 2026-11-02.'
+  status: excluded
+  description: Lecornu sospende la riforma delle pensioni
+- date: '2025-08-25'
+  theme: fiscal_policy
+  reference: IGLT.L
+  source: kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi, interventi
+    della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread BTP-Bund e OAT-Bund-
+    crisi politiche e di bilancio italiane e francesi, interventi della BCE e contagio fra periferie —
+    regime ed episodi storici (2010–presente).md
+  reason: 'Non è un bilancio britannico: l''etichetta budget_passage viene da la politica di bilancio
+    francese; nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione
+    Claude 2026-11-02.'
+  status: excluded
+  description: Bayrou annuncia il voto di fiducia
+- date: '2024-12-02'
+  theme: fiscal_policy
+  reference: IGLT.L
+  source: kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi, interventi
+    della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread BTP-Bund e OAT-Bund-
+    crisi politiche e di bilancio italiane e francesi, interventi della BCE e contagio fra periferie —
+    regime ed episodi storici (2010–presente).md
+  reason: 'Non è un bilancio britannico: l''etichetta budget_passage viene da la politica di bilancio
+    francese; nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione
+    Claude 2026-11-02.'
+  status: excluded
+  description: Barnier ricorre al 49.3
+- date: '2024-10-28'
+  theme: fiscal_policy
+  reference: IGLT.L
+  source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund
+    e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+    sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  reason: 'Non è un bilancio britannico: l''etichetta budget_passage viene da un rating sulla Francia;
+    nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Moody's conferma la Francia, outlook negativo
+- date: '2024-10-14'
+  theme: fiscal_policy
+  reference: IGLT.L
+  source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund
+    e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+    sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  reason: 'Non è un bilancio britannico: l''etichetta budget_passage viene da un rating sulla Francia;
+    nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Fitch conferma la Francia, outlook negativo
+- date: '2023-11-20'
+  theme: fiscal_policy
+  reference: IGLT.L
+  source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund
+    e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+    sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  reason: 'Non è un bilancio britannico: l''etichetta budget_passage viene da uno studio sui rating dell''area
+    euro; nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.'
+  status: excluded
+  description: Tesi generale sui rating sovrani dell'area euro
+- date: '2023-06-05'
+  theme: fiscal_policy
+  reference: IGLT.L
+  source: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  reason: 'Non è un bilancio britannico: l''etichetta budget_passage viene da gli Stati Uniti; nessun
+    canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Accordo sul tetto del debito USA
+- date: '2018-09-03'
+  theme: fiscal_policy
+  reference: IGLT.L
+  source: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund
+    e BTP-Bund (2011-presente)/Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa
+    sugli spread OAT-Bund e BTP-Bund (2011-presente).md
+  reason: 'Non è un bilancio britannico: l''etichetta budget_passage viene da un rating sull''Italia;
+    nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Fitch conferma l'Italia, outlook negativo
+- date: '2026-06-04'
+  theme: macro_data
+  reference: IGLT.L
+  source: 2026-09-08/news_06.md
+  reason: 'Nessuna release britannica identificabile: la giornata del 2026-06-04 non ne tratta e la scheda
+    non dice quale dato. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Release britannica sul consumo (secondo la scheda)
+- date: '2025-02-06'
+  theme: macro_data
+  reference: IGLT.L
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Decisione della BoE, non una release macro: nel pool delle release contaminerebbe il canale.
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: BoE taglia a 4,5%
+- date: '2024-12-06'
+  theme: macro_data
+  reference: IGLT.L
+  source: 2026-09-08/news_06.md
+  reason: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce l''attesa. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Release di attività britannica (secondo la scheda)
+- date: '2023-07-12'
+  theme: macro_data
+  reference: IGLT.L
+  source: 2026-09-08/news_06.md
+  reason: 'Data sbagliata: il PIL mensile di maggio 2023 uscì il 13/7; il 12/7 è il giorno del CPI USA.
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: PIL mensile britannico (secondo la scheda)
+- date: '2022-12-13'
+  theme: macro_data
+  reference: IGLT.L
+  source: 2026-09-08/news_06.md
+  reason: 'Stessa seduta del CPI USA di novembre 2022: la componente britannica non è separabile. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Mercato del lavoro britannico, dicembre 2022
+- date: '2008-10-08'
+  theme: macro_data
+  reference: IGLT.L
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: Decisione di politica monetaria coordinata, non una release britannica. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-02.
+  status: excluded
+  description: Taglio coordinato delle banche centrali
+- date: '2025-03-03'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-21/news_02.md
+  reason: 'Segnali opposti nello stesso dato: attività più debole (pro-Treasury) e prezzi in salita (contro):
+    nessun segno univoco su IEF. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: 'ISM manifatturiero di febbraio 2025: nuovi ordini giù, prezzi pagati su'
+- date: '2023-08-03'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-25/news_05.md
+  reason: 'Seduta dominata dall''offerta di Treasury dopo il refunding e il taglio di Fitch: la sorpresa
+    ISM non è separabile. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: ISM servizi di luglio 2023
+- date: '2022-08-03'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-25/news_05.md
+  reason: 'Sorpresa forte al rialzo sull''attività nel pieno dei rialzi Fed: più stretta attesa, prezzo
+    dei Treasury giù. La scheda descrive invece un raffreddamento. Criterio ex ante, nessun prezzo consultato.
+    Revisione Claude 2026-11-02.'
+  direction: neg
+  description: ISM servizi di luglio 2022 a 56,7 contro 53,5 atteso
+- date: '2019-10-03'
+  theme: macro_data
+  reference: IEF
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Sorpresa al ribasso che alza le probabilità di un taglio a ottobre (dalla KB): rendimenti giù,
+    prezzo dei Treasury su. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  direction: pos
+  description: ISM servizi a 52,6, minimo di tre anni
+- date: '2019-09-04'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-25/news_05.md
+  reason: 'Data sbagliata: l''ISM manifatturiero di agosto 2019 uscì il 3/9, primo giorno lavorativo dopo
+    il Labor Day. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: ISM manifatturiero di agosto 2019 (secondo la scheda)
+- date: '2015-09-03'
+  theme: macro_data
+  reference: IEF
+  source: 2026-09-02/news_04.md
+  reason: 'Data sbagliata: l''ISM manifatturiero uscì l''1/9/2015; il 3/9 è il giorno della BCE e dell''ISM
+    servizi. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: ISM manifatturiero di agosto 2015 (secondo la scheda)
+- date: '2026-05-27'
+  theme: geopolitical
+  reference: BZ=F
+  source: 2026-09-10/news_02.md
+  reason: 'Infrastruttura ucraina, non offerta di greggio: nessun canale diretto sul Brent. Criterio ex
+    ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Raid su infrastrutture ucraine
+- date: '2026-05-26'
+  theme: geopolitical
+  reference: BZ=F
+  source: 2026-09-10/news_01.md
+  reason: 'Danno a infrastrutture energetiche di un produttore del Golfo: rischio sull''offerta di greggio.
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  direction: pos
+  description: Colpi su infrastrutture energetiche iraniane
+- date: '2026-04-17'
+  theme: geopolitical
+  reference: BZ=F
+  source: 2026-09-12/news_01.md
+  reason: 'Colpita la rotta di export che aggira Hormuz: offerta saudita a rischio (canale 1 dello studio
+    Houthi). Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  direction: pos
+  description: Attacco all'oleodotto saudita Est-Ovest
+- date: '2025-12-22'
+  theme: geopolitical
+  reference: BZ=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: Canale del grano, non del petrolio. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.
+  status: excluded
+  description: Attacchi ai porti cerealicoli del Mar Nero
+- date: '2025-08-18'
+  theme: geopolitical
+  reference: BZ=F
+  source: 2026-08-23/news_03.md
+  reason: 'Colpisce raffinerie e prodotti: sul greggio il segno è ambiguo (canale 3 dello studio Houthi);
+    stessa giornata dell''incontro Trump-Zelensky. Criterio ex ante, nessun prezzo consultato. Revisione
+    Claude 2026-11-02.'
+  status: excluded
+  description: Attacchi alle infrastrutture energetiche russe
+- date: '2025-06-22'
+  theme: geopolitical
+  reference: BZ=F
+  source: 2026-09-02/news_06.md
+  reason: 'Data di domenica, senza seduta: la reazione è del 23/6, che andrebbe dichiarata con quella
+    data. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Colpi americani sui siti nucleari iraniani
+- date: '2024-06-17'
+  theme: geopolitical
+  reference: BZ=F
+  source: 2026-08-23/news_03.md
+  reason: La scheda descrive una fase, non un evento datato. Criterio ex ante, nessun prezzo consultato.
+    Revisione Claude 2026-11-02.
+  status: excluded
+  description: Intensificazione degli attacchi Houthi (secondo la scheda)
+- date: '2024-03-12'
+  theme: geopolitical
+  reference: BZ=F
+  source: 2026-08-23/news_03.md
+  reason: 'Colpisce prodotti e margini, non il greggio: segno ambiguo sul Brent (canale 3 dello studio
+    Houthi). Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Droni ucraini sulle raffinerie russe
+- date: '2024-01-22'
+  theme: geopolitical
+  reference: BZ=F
+  source: 2026-08-23/news_03.md
+  reason: La scheda descrive una fase, non un evento datato. Criterio ex ante, nessun prezzo consultato.
+    Revisione Claude 2026-11-02.
+  status: excluded
+  description: Prosecuzione della campagna Houthi (secondo la scheda)
+- date: '2024-01-15'
+  theme: geopolitical
+  reference: BZ=F
+  source: kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar Rosso,
+    trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_ attacchi alle infrastrutture
+    energetiche saudite ed emiratine e crisi del Mar Rosso, trasmissione a greggio, prodotti, trasporti
+    e gas (2015-presente).md
+  reason: Lo studio lo dichiara solo su TTF=F (canale GNL); sul greggio nessun segno ricostruibile. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
+  status: excluded
+  description: QatarEnergy sospende i transiti delle metaniere
+- date: '2023-12-15'
+  theme: geopolitical
+  reference: BZ=F
+  source: kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar Rosso,
+    trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_ attacchi alle infrastrutture
+    energetiche saudite ed emiratine e crisi del Mar Rosso, trasmissione a greggio, prodotti, trasporti
+    e gas (2015-presente).md
+  reason: 'Compagnia di container, nessun carico energetico: per lo studio Houthi è un canale di trasporto,
+    non di offerta di greggio (come la Galaxy Leader, neutral). Criterio ex ante, nessun prezzo consultato.
+    Revisione Claude 2026-11-02.'
+  direction: neutral
+  description: Maersk sospende i transiti a Bab el-Mandeb
+- date: '2023-08-02'
+  theme: geopolitical
+  reference: BZ=F
+  source: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  reason: Canale del grano, non del petrolio. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.
+  status: excluded
+  description: Attacco russo al porto di Izmail
+- date: '2023-07-19'
+  theme: geopolitical
+  reference: BZ=F
+  source: 2026-09-10/news_02.md
+  reason: Canale del grano, non del petrolio. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.
+  status: excluded
+  description: Raid sui terminali cerealicoli di Odessa
+- date: '2022-09-26'
+  theme: geopolitical
+  reference: BZ=F
+  source: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  reason: Canale del gas europeo, non del greggio; Nord Stream 1 era già fermo. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-02.
+  status: excluded
+  description: Sabotaggio del Nord Stream
+- date: '2026-06-11'
+  theme: macro_data
+  reference: JPY=X
+  source: 2026-09-04/news_06.md
+  reason: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce l''attesa. Il
+    2026-06-11 è la riunione BCE. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Release giapponese (secondo la scheda)
+- date: '2026-04-30'
+  theme: macro_data
+  reference: JPY=X
+  source: 2026-09-08/news_04.md
+  reason: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce l''attesa. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Release giapponese (secondo la scheda)
+- date: '2025-01-24'
+  theme: macro_data
+  reference: JPY=X
+  source: 2026-09-04/news_06.md
+  reason: 'Decisione BoJ, non una release: appartiene al pool di politica monetaria. Criterio ex ante,
+    nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Rialzo BoJ
+- date: '2024-12-18'
+  theme: macro_data
+  reference: JPY=X
+  source: 2026-09-04/news_06.md
+  reason: Decisione di banca centrale, non una release; e il 18/12/2024 è la FOMC, la BoJ è del 19. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
+  status: excluded
+  description: BoJ ferma (secondo la scheda)
+- date: '2024-10-23'
+  theme: macro_data
+  reference: JPY=X
+  source: 2026-09-04/news_06.md
+  reason: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce l''attesa. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Dato di attività giapponese (secondo la scheda)
+- date: '2024-08-05'
+  theme: macro_data
+  reference: JPY=X
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Non è una release giapponese: è la reazione al payroll USA e allo smontaggio del carry trade.
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Crollo del 5 agosto 2024
+- date: '2024-08-01'
+  theme: macro_data
+  reference: JPY=X
+  source: 2026-09-04/news_06.md
+  reason: Descritta dal movimento dello yen, cioè da un esito di prezzo. Criterio ex ante, nessun prezzo
+    consultato. Revisione Claude 2026-11-02.
+  status: excluded
+  description: Seconda seduta della sequenza dello yen (secondo la scheda)
+- date: '2024-07-31'
+  theme: macro_data
+  reference: JPY=X
+  source: 2026-09-04/news_06.md
+  reason: 'Decisione BoJ, non una release: appartiene al pool di politica monetaria. Criterio ex ante,
+    nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Rialzo BoJ di luglio 2024
+- date: '2023-10-31'
+  theme: macro_data
+  reference: JPY=X
+  source: 2026-09-04/news_06.md
+  reason: 'Decisione BoJ, non una release: appartiene al pool di politica monetaria. Criterio ex ante,
+    nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Allentamento del controllo della curva
+- date: '2022-12-20'
+  theme: macro_data
+  reference: JPY=X
+  source: 2026-09-04/news_06.md
+  reason: 'Decisione BoJ, non una release: appartiene al pool di politica monetaria. Criterio ex ante,
+    nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Banda del controllo della curva allargata
+- date: '2022-07-21'
+  theme: macro_data
+  reference: JPY=X
+  source: 2026-09-04/news_06.md
+  reason: Decisione BoJ, non una release; ed è anche il giorno del primo rialzo BCE. Criterio ex ante,
+    nessun prezzo consultato. Revisione Claude 2026-11-02.
+  status: excluded
+  description: BoJ ferma
+- date: '2018-12-19'
+  theme: macro_data
+  reference: JPY=X
+  source: 2026-09-04/news_06.md
+  reason: Decisione di banca centrale, non una release; il 19/12/2018 è anche la FOMC. Criterio ex ante,
+    nessun prezzo consultato. Revisione Claude 2026-11-02.
+  status: excluded
+  description: Riunione BoJ di dicembre 2018
+- date: '2011-08-04'
+  theme: macro_data
+  reference: JPY=X
+  source: 2026-09-04/news_06.md
+  reason: Intervento valutario, non una release. Criterio ex ante, nessun prezzo consultato. Revisione
+    Claude 2026-11-02.
+  status: excluded
+  description: Intervento sul cambio
+- date: '2026-10-28'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2026-10-14'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
+    e azionario — regime ed episodi storici (2017–presente)/Sorprese d'inflazione negli Stati Uniti (CPI
+    e PCE) e trasmissione a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente).md
+  reason: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+    su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.'
+  direction: pos
+  description: 'CPI settembre 2026: core +0,3% contro +0,2%'
+- date: '2026-09-11'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
+    e azionario — regime ed episodi storici (2017–presente)/Sorprese d'inflazione negli Stati Uniti (CPI
+    e PCE) e trasmissione a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente).md
+  reason: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+    su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.'
+  direction: pos
+  description: 'CPI agosto 2026: core +0,3% contro +0,2%'
+- date: '2026-08-26'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2026-05-12'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
+    e azionario — regime ed episodi storici (2017–presente)/Sorprese d'inflazione negli Stati Uniti (CPI
+    e PCE) e trasmissione a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente).md
+  reason: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+    su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.'
+  direction: pos
+  description: 'CPI aprile 2026: core +0,4% contro +0,3%'
+- date: '2026-02-25'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2026-01-28'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2025-11-26'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2025-10-29'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2025-05-23'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI giapponese
+- date: '2025-04-25'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI giapponese
+- date: '2024-11-29'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI giapponese
+- date: '2024-11-22'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI giapponese
+- date: '2024-04-24'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2024-04-10'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
+    e azionario — regime ed episodi storici (2017–presente)/Sorprese d'inflazione negli Stati Uniti (CPI
+    e PCE) e trasmissione a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente).md
+  reason: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+    su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.'
+  direction: pos
+  description: 'CPI marzo 2024: core +0,4% contro +0,3%'
+- date: '2024-03-12'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
+    e azionario — regime ed episodi storici (2017–presente)/Sorprese d'inflazione negli Stati Uniti (CPI
+    e PCE) e trasmissione a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente).md
+  reason: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+    su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.'
+  direction: pos
+  description: 'CPI febbraio 2024: core +0,4% contro +0,3%'
+- date: '2024-02-13'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
+    e azionario — regime ed episodi storici (2017–presente)/Sorprese d'inflazione negli Stati Uniti (CPI
+    e PCE) e trasmissione a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente).md
+  reason: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+    su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.'
+  direction: pos
+  description: 'CPI gennaio 2024: core +0,4% contro +0,3%'
+- date: '2023-09-13'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
+    e azionario — regime ed episodi storici (2017–presente)/Sorprese d'inflazione negli Stati Uniti (CPI
+    e PCE) e trasmissione a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente).md
+  reason: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+    su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.'
+  direction: pos
+  description: 'CPI agosto 2023: core +0,3% contro +0,2%'
+- date: '2023-08-31'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-10-31/news_03.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2023-06-21'
+  theme: macro_data
+  reference: ^FVX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Release non USA (Regno Unito): il canale verso i Treasury è di secondo ordine e la sorpresa
+    non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI britannico di maggio 2023
+- date: '2023-01-25'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2022-10-31'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-10-31/news_03.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2022-09-29'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-10-31/news_03.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2022-08-31'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-10-31/news_03.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2022-07-13'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
+    e azionario — regime ed episodi storici (2017–presente)/Sorprese d'inflazione negli Stati Uniti (CPI
+    e PCE) e trasmissione a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente).md
+  reason: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+    su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.'
+  direction: pos
+  description: 'CPI giugno 2022: 9,1% contro 8,8%'
+- date: '2022-05-30'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-10-31/news_03.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2022-05-11'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
+    e azionario — regime ed episodi storici (2017–presente)/Sorprese d'inflazione negli Stati Uniti (CPI
+    e PCE) e trasmissione a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente).md
+  reason: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+    su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.'
+  direction: pos
+  description: 'CPI aprile 2022: core +0,6% contro +0,4%'
+- date: '2022-03-30'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-10-31/news_03.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2022-03-02'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-10-31/news_03.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2022-02-10'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
+    e azionario — regime ed episodi storici (2017–presente)/Sorprese d'inflazione negli Stati Uniti (CPI
+    e PCE) e trasmissione a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente).md
+  reason: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+    su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.'
+  direction: pos
+  description: 'CPI gennaio 2022: 7,5% contro 7,2%'
+- date: '2021-11-29'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-10-31/news_03.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2021-11-10'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
+    e azionario — regime ed episodi storici (2017–presente)/Sorprese d'inflazione negli Stati Uniti (CPI
+    e PCE) e trasmissione a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente).md
+  reason: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+    su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.'
+  direction: pos
+  description: 'CPI ottobre 2021: 6,2% contro 5,8%'
+- date: '2021-10-29'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-10-31/news_03.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2021-10-27'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2019-07-11'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
+    e azionario — regime ed episodi storici (2017–presente)/Sorprese d'inflazione negli Stati Uniti (CPI
+    e PCE) e trasmissione a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente).md
+  reason: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+    su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.'
+  direction: pos
+  description: 'CPI giugno 2019: core +0,3% contro +0,2%'
+- date: '2018-02-14'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
+    e azionario — regime ed episodi storici (2017–presente)/Sorprese d'inflazione negli Stati Uniti (CPI
+    e PCE) e trasmissione a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente).md
+  reason: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+    su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-02.'
+  direction: pos
+  description: 'CPI gennaio 2018: +0,5% contro +0,3%'
+- date: '2014-07-23'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2026-10-28'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2026-09-30'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2026-08-26'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2026-07-29'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2026-07-24'
+  theme: macro_data
+  reference: IEF
+  source: 2026-09-10/news_07.md
+  reason: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce l''attesa. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Dati di prezzo di fine luglio 2026 (secondo la scheda)
+- date: '2026-06-11'
+  theme: macro_data
+  reference: IEF
+  source: 2026-09-02/news_03.md
+  reason: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce l''attesa. Il
+    2026-06-11 è la riunione BCE. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Dato di prezzo (secondo la scheda)
+- date: '2026-05-27'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2026-04-29'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2026-03-25'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2026-02-25'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2026-01-28'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2025-11-26'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2025-10-29'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2025-08-21'
+  theme: macro_data
+  reference: IEF
+  source: 2026-09-09/news_03.md
+  reason: 'Release non USA (Cina): il canale verso i Treasury è di secondo ordine e la sorpresa non riguarda
+    la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione cinese
+- date: '2025-05-23'
+  theme: macro_data
+  reference: IEF
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI giapponese
+- date: '2025-04-25'
+  theme: macro_data
+  reference: IEF
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI giapponese
+- date: '2025-03-09'
+  theme: macro_data
+  reference: IEF
+  source: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati (2011–2026)/
+    Il consumatore cinese- domanda interna, e-commerce e trasmissione ai mercati (2011–2026).md
+  reason: 'Release non USA (Cina): il canale verso i Treasury è di secondo ordine e la sorpresa non riguarda
+    la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione cinese
+- date: '2024-12-27'
+  theme: macro_data
+  reference: IEF
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI giapponese
+- date: '2024-11-29'
+  theme: macro_data
+  reference: IEF
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI giapponese
+- date: '2024-11-22'
+  theme: macro_data
+  reference: IEF
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI giapponese
+- date: '2024-08-22'
+  theme: macro_data
+  reference: IEF
+  source: 2026-09-02/news_03.md
+  reason: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce l''attesa. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Dinamica salariale (secondo la scheda)
+- date: '2024-06-06'
+  theme: macro_data
+  reference: IEF
+  source: 2026-09-12/news_03.md
+  reason: 'Data sbagliata: il payroll di maggio 2024 uscì il 7/6; il 6/6 è il primo taglio BCE. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Dati del lavoro di maggio 2024 (secondo la scheda)
+- date: '2024-04-24'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2024-03-22'
+  theme: macro_data
+  reference: IEF
+  source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
+    regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici come canale distinto dalla
+    politica della Bank of Japan — regime ed episodi storici (2013–presente).md
+  reason: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI giapponese
+- date: '2024-02-08'
+  theme: macro_data
+  reference: IEF
+  source: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati (2011–2026)/
+    Il consumatore cinese- domanda interna, e-commerce e trasmissione ai mercati (2011–2026).md
+  reason: 'Release non USA (Cina): il canale verso i Treasury è di secondo ordine e la sorpresa non riguarda
+    la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione cinese
+- date: '2023-08-31'
+  theme: macro_data
+  reference: IEF
+  source: 2026-10-01/news_02.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2023-08-09'
+  theme: macro_data
+  reference: IEF
+  source: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati (2011–2026)/
+    Il consumatore cinese- domanda interna, e-commerce e trasmissione ai mercati (2011–2026).md
+  reason: 'Release non USA (Cina): il canale verso i Treasury è di secondo ordine e la sorpresa non riguarda
+    la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione cinese
+- date: '2023-06-23'
+  theme: macro_data
+  reference: IEF
+  source: 2026-09-10/news_07.md
+  reason: 'Più release di aree diverse insieme: nessuna sorpresa d''inflazione USA identificabile. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: PMI flash europei e americani
+- date: '2023-06-21'
+  theme: macro_data
+  reference: IEF
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Release non USA (Regno Unito): il canale verso i Treasury è di secondo ordine e la sorpresa
+    non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI britannico di maggio 2023
+- date: '2023-04-26'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2023-01-25'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2023-01-04'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-23/news_04.md
+  reason: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce l''attesa. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Prezzi in decelerazione a inizio 2023 (secondo la scheda)
+- date: '2022-10-31'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-20/news_03.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2022-09-29'
+  theme: macro_data
+  reference: IEF
+  source: 2026-10-01/news_02.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2022-08-31'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-20/news_03.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2022-05-31'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-20/news_03.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2022-05-30'
+  theme: macro_data
+  reference: IEF
+  source: 2026-10-01/news_02.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2022-03-30'
+  theme: macro_data
+  reference: IEF
+  source: 2026-10-01/news_02.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2022-03-02'
+  theme: macro_data
+  reference: IEF
+  source: 2026-08-20/news_03.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2021-11-29'
+  theme: macro_data
+  reference: IEF
+  source: 2026-10-01/news_02.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2021-10-29'
+  theme: macro_data
+  reference: IEF
+  source: 2026-10-01/news_02.md
+  reason: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: Inflazione dell'area euro o tedesca
+- date: '2021-10-27'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2019-04-24'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2017-07-26'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2016-07-27'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2016-04-27'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2014-07-23'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano
+- date: '2012-04-24'
+  theme: macro_data
+  reference: IEF
+  source: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026/Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
+    2011-2026.md
+  reason: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa non
+    riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  status: excluded
+  description: CPI australiano

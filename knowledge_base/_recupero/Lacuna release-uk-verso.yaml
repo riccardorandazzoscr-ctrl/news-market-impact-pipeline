@@ -6,12 +6,14 @@ voci:
   riga: '| `2026-06-04` | neg | britain_release, consumer | Release britannica del ciclo corrente sul
     canale del consumo: **è l''analogo più vicino per canale** alla notizia di oggi, e appartiene allo
     stesso regime. |'
-  evento: ''
+  evento: Release britannica sul consumo (secondo la scheda)
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Nessuna release britannica identificabile: la giornata del 2026-06-04 non ne tratta e la
+      scheda non dice quale dato. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2025-02-06'
   tema: macro_data
   fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
@@ -21,46 +23,54 @@ voci:
   riga: '|2025-02-06|BoE taglia a 4,5%; FTSE record, sterlina giù                           |UK           |easing_prezzato    |FTSE
     su, GBP giù                   |GBPUSD=X, IGLT.L                         |Reazione classica taglio
     prezzato                                                                       '
-  evento: ''
+  evento: BoE taglia a 4,5%
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Decisione della BoE, non una release macro: nel pool delle release contaminerebbe il canale.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2024-12-06'
   tema: macro_data
   fonte: 2026-09-08/news_06.md
   riga: '| `2024-12-06` | neg | britain_release, activity_growth | Release di attività britannica nella
     fase di allentamento graduale. |'
-  evento: ''
+  evento: Release di attività britannica (secondo la scheda)
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'La scheda non dice quale dato né il segno della sorpresa: non si ricostruisce l''attesa.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2023-07-12'
   tema: macro_data
   fonte: 2026-09-08/news_06.md
   riga: '| `2023-07-12` | neg | britain_release, activity_growth | Dato di attività britannico (PIL mensile)
     in decelerazione. |'
-  evento: ''
+  evento: PIL mensile britannico (secondo la scheda)
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Data sbagliata: il PIL mensile di maggio 2023 uscì il 13/7; il 12/7 è il giorno del CPI USA.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2022-12-13'
   tema: macro_data
   fonte: 2026-09-08/news_06.md
   riga: '| `2022-12-13` | neg | britain_release, labour_market | Release britannica sul mercato del lavoro
     alla vigilia della riunione della Bank of England di dicembre 2022, nella fase di stretta più rapida.
     |'
-  evento: ''
+  evento: Mercato del lavoro britannico, dicembre 2022
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Stessa seduta del CPI USA di novembre 2022: la componente britannica non è separabile. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2008-10-08'
   tema: macro_data
   fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
@@ -70,9 +80,11 @@ voci:
   riga: '|2008-10-08|Taglio coordinato 50 pb (Fed, BCE, BoE, BoC, Riksbank, SNB)            |sincronizzato|easing_prezzato    |equity
     su atteso, realizzato debole|^GSPC, ^STOXX50E, DX-Y.NYB, EXX6.DE      |Crisi acuta; equity europee
     su poi giù, Wall Street aprì in calo malgrado il taglio                     '
-  evento: ''
+  evento: Taglio coordinato delle banche centrali
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: Decisione di politica monetaria coordinata, non una release britannica. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-02.
+  stato: promossa

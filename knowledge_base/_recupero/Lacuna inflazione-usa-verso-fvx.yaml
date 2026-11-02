@@ -8,12 +8,14 @@ voci:
   riga: '**Canale 1 — inflazione → RBA → differenziale di tassi (direzionale).** La catena è `CPI o media
     troncata sopra/sotto il consenso → aumento/riduzione della probabilità di un rialzo/taglio alla riunione
     RBA successiva → rendimento a 3 anni e differenziale AUD-USD a breve → AUD/USD e prezzo dei titoli'
-  evento: ''
+  evento: CPI australiano
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2026-10-14'
   tema: macro_data
   fonte: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
@@ -23,12 +25,15 @@ voci:
     2026 c''è stata una serie di stampe in cui l''headline, gonfiato dall''energia, era già allineato
     al consenso, e il mercato ha prezzato soltanto lo scarto del core. Il 2026-04-10 l''headline è uscito
     a +0,9% m'
-  evento: ''
+  evento: 'CPI settembre 2026: core +0,3% contro +0,2%'
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+      su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2026-09-11'
   tema: macro_data
   fonte: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
@@ -37,12 +42,15 @@ voci:
   riga: '| 2026-09-11 | IEF | neg | inflation_print, us_cpi, inflation_upside, energy_passthrough | CPI
     agosto 2026 +0,4% m/m in linea; core +0,3% contro +0,2% atteso; core 2,4% a/a in linea\[8\] | Consenso:
     TradingEconomics e Admirals. Rialzo a settembre da 70% a quasi 90% (CME FedWatch via CBS News). FOMC '
-  evento: ''
+  evento: 'CPI agosto 2026: core +0,3% contro +0,2%'
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+      su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2026-08-26'
   tema: macro_data
   fonte: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
@@ -52,12 +60,14 @@ voci:
     2026: +1,0% m/m, media troncata +0,5% m/m | Consenso 0,8% m/m e 0,3% m/m; media troncata 3,6% a/a
     contro 3,5% (investingLive, "consenso degli economisti delle grandi banche"). AUD +0,1% a 0,7171,
     futures s'
-  evento: ''
+  evento: CPI australiano
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2026-05-12'
   tema: macro_data
   fonte: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
@@ -66,12 +76,15 @@ voci:
   riga: '| 2026-05-12 | IEF | neg | inflation_print, us_cpi, inflation_upside, energy_passthrough | CPI
     aprile 2026 +0,6% m/m in linea; 3,8% a/a contro 3,7%; core +0,4% contro +0,3%, 2,8% contro 2,7%\[55\]\[56\]
     | Consenso: Dow Jones (CNBC), FactSet/Kiplinger, Investing.com. Rendimenti in rialzo, futures neg'
-  evento: ''
+  evento: 'CPI aprile 2026: core +0,4% contro +0,3%'
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+      su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2026-02-25'
   tema: macro_data
   fonte: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
@@ -80,12 +93,14 @@ voci:
   riga: '| 2026-02-25 | AUD=X | neg | australia_release, inflation_print, inflation_upside | CPI gennaio
     2026: 3,8%, media troncata 3,4% | Consenso 3,7% e 3,3% (ABC; Trading Economics). Sorprese di 0,1 punti,
     sotto la soglia di 0,2. Il 10 anni sale a circa 4,73% (Trading Economics).\[41\]\[47\]\[48\]\[49\]\['
-  evento: ''
+  evento: CPI australiano
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2026-01-28'
   tema: macro_data
   fonte: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
@@ -94,12 +109,14 @@ voci:
   riga: '| 2026-01-28 | AUD=X | neg | australia_release, inflation_print, inflation_upside | CPI dicembre
     2025 e 4° trim.: media troncata 0,9% t/t contro 0,8% | Mensile 3,8% a/a contro 3,6% (Trading Economics);
     media troncata mensile 3,3% in linea.\[41\] Trimestrale: media troncata 0,9% t/t sopra il sondaggi'
-  evento: ''
+  evento: CPI australiano
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2025-11-26'
   tema: macro_data
   fonte: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
@@ -109,12 +126,14 @@ voci:
     mensile completo (ottobre 2025): 3,8%, media troncata 3,3% | Mercato: 3,6% e 3,0% (WATC); Trading
     Economics: consenso 3,0% sulla media troncata. AUD comprato (FXStreet).\[15\]\[40\]\[41\] Cambio di
     serie: p'
-  evento: ''
+  evento: CPI australiano
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2025-10-29'
   tema: macro_data
   fonte: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
@@ -123,12 +142,14 @@ voci:
   riga: 'La tesi centrale si riassume in quattro punti. Primo: il canale dominante e più pulito è `sorpresa
     sulla media troncata → probabilità di una mossa RBA alla riunione successiva → differenziale di tassi
     a breve → AUD e titoli di Stato`. Quando headline e media troncata sorprendono nello stesso verso, '
-  evento: ''
+  evento: CPI australiano
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2025-05-23'
   tema: macro_data
   fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
@@ -138,12 +159,14 @@ voci:
     giapponese / Japan CPI | ~3,5 settimane (prima del 17/6) | JPY pos; 1482.T neg | JPY=X (aspettative)
     | Venerdì 08:30 JST; per FXStreet USD/JPY *"near 143.00... down over 0.50% on the day"* (CNBC: yen
     +0,15'
-  evento: ''
+  evento: CPI giapponese
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2025-04-25'
   tema: macro_data
   fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
@@ -152,12 +175,14 @@ voci:
   riga: '| 2025-04-25 | Tokyo core CPI aprile +3,4% (massimo da 2 anni, atteso +3,2%) | CPI Tokyo / Tokyo
     CPI | ~5 giorni (prima del 1/5) | JPY pos "atteso" ma realizzato neg | JPY=X (aspettative) | **Contraddizione/rumore**:
     dato forte ma yen si indebolì, USD/JPY +0,59% a 143,45 (incertezza dazi USA dominan'
-  evento: ''
+  evento: CPI giapponese
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2024-11-29'
   tema: macro_data
   fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
@@ -166,12 +191,14 @@ voci:
   riga: '| 2024-11-29 | Tokyo CPI novembre core +2,2% (atteso +2,1%) | CPI Tokyo / Tokyo CPI | ~3 settimane
     (prima del 19/12) | JPY pos; 1482.T neg | JPY=X (aspettative) | Venerdì; yen balzò ~1% a 150,09/USD
     su bet rialzo dicembre |'
-  evento: ''
+  evento: CPI giapponese
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2024-11-22'
   tema: macro_data
   fonte: kb:Giappone; i dati macroeconomici come canale distinto dalla politica della Bank of Japan —
@@ -180,12 +207,14 @@ voci:
   riga: '| 2024-11-22 | CPI nazionale ottobre core +2,3% (sopra attese) | CPI nazionale giapponese / Japan
     CPI | ~4 settimane (prima del 19/12) | JPY pos; 1482.T neg | JPY=X (aspettative) | Uscita 08:30 JST
     venerdì; USD/JPY −0,15% a 154,27 |'
-  evento: ''
+  evento: CPI giapponese
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (Giappone): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2024-04-24'
   tema: macro_data
   fonte: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
@@ -194,12 +223,14 @@ voci:
   riga: 'La tesi centrale si riassume in quattro punti. Primo: il canale dominante e più pulito è `sorpresa
     sulla media troncata → probabilità di una mossa RBA alla riunione successiva → differenziale di tassi
     a breve → AUD e titoli di Stato`. Quando headline e media troncata sorprendono nello stesso verso, '
-  evento: ''
+  evento: CPI australiano
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2024-04-10'
   tema: macro_data
   fonte: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
@@ -209,12 +240,15 @@ voci:
     dei Fed Funds → rendimento a 2 anni → rendimento a 5 e 10 anni → prezzo dei Treasury. È il canale
     primario e il più pulito, con la risposta concentrata sul tratto breve. Il 2024-04-10 il 2 anni è
     sali'
-  evento: ''
+  evento: 'CPI marzo 2024: core +0,4% contro +0,3%'
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+      su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2024-03-12'
   tema: macro_data
   fonte: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
@@ -223,12 +257,15 @@ voci:
   riga: '| 2024-03-12 | IEF | neg | inflation_print, us_cpi, inflation_upside | CPI febbraio 2024 +0,4%
     m/m in linea; +3,2% a/a contro 3,1% atteso; core +0,4% contro +0,3%, 3,8% contro 3,7%\[32\] | Consenso:
     Benzinga. 2 anni «sostanzialmente invariato» al 4,55%: reazione smorzata\[32\] |'
-  evento: ''
+  evento: 'CPI febbraio 2024: core +0,4% contro +0,3%'
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+      su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2024-02-13'
   tema: macro_data
   fonte: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
@@ -238,12 +275,15 @@ voci:
     m/m contro +0,2% atteso; +3,1% a/a contro 2,9%; core +0,4% contro +0,3%, 3,9% contro 3,7%\[29\] |
     Consenso: Dow Jones (CNBC); FactSet concorde (CNN). Rendimenti «in forte rialzo» (CNBC). Rimbalzo
     il giorno '
-  evento: ''
+  evento: 'CPI gennaio 2024: core +0,4% contro +0,3%'
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+      su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2023-09-13'
   tema: macro_data
   fonte: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
@@ -253,23 +293,28 @@ voci:
     agosto 2023 core +0,3% m/m contro +0,2% atteso; headline +0,6% in linea, 3,7% a/a contro 3,6%\[26\]
     | Consenso: Dow Jones (CNBC). Rendimenti «più alti su tutta la curva» (CNBC). Rialzo a novembre circa
     44%'
-  evento: ''
+  evento: 'CPI agosto 2023: core +0,3% contro +0,2%'
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+      su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2023-08-31'
   tema: macro_data
   fonte: 2026-10-31/news_03.md
   riga: '| `2023-08-31` | neg | inflation_print, eurozone_release, inflation_upside | Flash di agosto
     2023 al 5,3% contro 5,1% → ultimo rialzo BCE di settembre prezzato, prezzo bond giù |'
-  evento: ''
+  evento: Inflazione dell'area euro o tedesca
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2023-06-21'
   tema: macro_data
   fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
@@ -279,12 +324,14 @@ voci:
   riga: '|2023-06-21|CPI UK maggio 8,7%, core 7,1% (max da mar-1992)                        |UK           |hiking             |gilt
     yields su, GBP su             |IGLT.L, GBPUSD=X                         |Gilt 2Y >5% (max da lug-2008);
     BoE +50 pb il giorno dopo                                                '
-  evento: ''
+  evento: CPI britannico di maggio 2023
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (Regno Unito): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2023-01-25'
   tema: macro_data
   fonte: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
@@ -294,48 +341,56 @@ voci:
     → costo del capitale e margini e qualità del credito delle banche, valutazioni di REIT e immobiliare
     → ^AXJO al ribasso`. È il motivo per cui una sorpresa d''inflazione al rialzo è `neg` per `^AXJO`.
     Il 20'
-  evento: ''
+  evento: CPI australiano
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2022-10-31'
   tema: macro_data
   fonte: 2026-10-31/news_03.md
   riga: '| `2022-10-31` | neg | inflation_print, eurozone_release, inflation_upside | Flash di ottobre
     2022 al 10,7%, sopra le attese → il picco dell''inflazione energetica allunga la stretta attesa, prezzo
     bond giù |'
-  evento: ''
+  evento: Inflazione dell'area euro o tedesca
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2022-09-29'
   tema: macro_data
   fonte: 2026-10-31/news_03.md
   riga: '| `2022-09-29` | neg | inflation_print, eurozone_release, inflation_upside | CPI tedesco di settembre
     2022 al 10,0% contro 9,4% per la fine dello sconto sui carburanti → secondo rialzo da 75 pb prezzato,
     prezzo bond giù: lo specchio del taglio delle accise tedesche di oggi |'
-  evento: ''
+  evento: Inflazione dell'area euro o tedesca
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2022-08-31'
   tema: macro_data
   fonte: 2026-10-31/news_03.md
   riga: '| `2022-08-31` | neg | inflation_print, eurozone_release, inflation_upside | Flash di agosto
     2022 al 9,1%, sopra le attese, con il gas ai massimi → rialzo da 75 punti base prezzato, prezzo bond
     giù |'
-  evento: ''
+  evento: Inflazione dell'area euro o tedesca
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2022-07-13'
   tema: macro_data
   fonte: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
@@ -344,23 +399,28 @@ voci:
   riga: '| 2022-07-13 | IEF | neg | inflation_print, us_cpi, inflation_upside, energy_passthrough | CPI
     giugno 2022 +1,3% m/m contro +1,1% atteso; +9,1% a/a contro 8,8%; core +0,7% contro +0,5%\[21\] |
     Consenso: Dow Jones (CNBC). Stessa seduta: Bank of Canada +100 pb e Beige Book |'
-  evento: ''
+  evento: 'CPI giugno 2022: 9,1% contro 8,8%'
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+      su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2022-05-30'
   tema: macro_data
   fonte: 2026-10-31/news_03.md
   riga: '| `2022-05-30` | neg | inflation_print, eurozone_release, inflation_upside | CPI tedesco di maggio
     2022 al 7,9% contro 7,6%, energia → anticipa il primo rialzo BCE di luglio, prezzo bond giù |'
-  evento: ''
+  evento: Inflazione dell'area euro o tedesca
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2022-05-11'
   tema: macro_data
   fonte: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
@@ -370,36 +430,43 @@ voci:
     m/m contro +0,2% atteso; +8,3% a/a contro 8,1%; core +0,6% contro +0,4%\[19\] | Consenso: Dow Jones
     (CNBC). Futures da Dow +280 a −105 (Zacks).\[20\] 10 anni forse in calo per fuga verso la qualità
     (non veri'
-  evento: ''
+  evento: 'CPI aprile 2022: core +0,6% contro +0,4%'
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+      su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2022-03-30'
   tema: macro_data
   fonte: 2026-10-31/news_03.md
   riga: '| `2022-03-30` | neg | inflation_print, eurozone_release, inflation_upside | CPI tedesco di marzo
     2022 al 7,3% contro 6,3%: shock energetico dell''invasione → BCE costretta ad accelerare, prezzo bond
     giù |'
-  evento: ''
+  evento: Inflazione dell'area euro o tedesca
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2022-03-02'
   tema: macro_data
   fonte: 2026-10-31/news_03.md
   riga: '| `2022-03-02` | neg | inflation_print, eurozone_release, inflation_upside | Flash di febbraio
     2022 al 5,8% contro 5,6% atteso, pochi giorni dopo l''invasione dell''Ucraina → inflazione energetica
     e rialzi attesi, prezzo bond giù |'
-  evento: ''
+  evento: Inflazione dell'area euro o tedesca
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2022-02-10'
   tema: macro_data
   fonte: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
@@ -409,24 +476,29 @@ voci:
     m/m contro +0,4% atteso; +7,5% a/a contro 7,2%; core +0,6% contro +0,4%, 6,0% contro 5,9%\[18\] |
     Consenso: Dow Jones (CNBC). Stessa mattina: sussidi (223k contro 230k).\[18\] Dopo la chiusura Bullard
     chied'
-  evento: ''
+  evento: 'CPI gennaio 2022: 7,5% contro 7,2%'
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+      su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2021-11-29'
   tema: macro_data
   fonte: 2026-10-31/news_03.md
   riga: '| `2021-11-29` | neg | inflation_print, eurozone_release, inflation_upside | CPI di Germania
     e Spagna di novembre 2021 ai massimi da decenni, vigilia della flash al 4,9% → più stretta prezzata,
     prezzo bond giù |'
-  evento: ''
+  evento: Inflazione dell'area euro o tedesca
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2021-11-10'
   tema: macro_data
   fonte: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
@@ -436,24 +508,29 @@ voci:
     calda → rendimento reale (TIPS) su più del breakeven → costo opportunità dell''oro su → `GC=F` giù.
     È redistributivo perché, in un regime credibile, muove oro e rendimenti in direzioni opposte. Il segno
     si in'
-  evento: ''
+  evento: 'CPI ottobre 2021: 6,2% contro 5,8%'
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+      su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2021-10-29'
   tema: macro_data
   fonte: 2026-10-31/news_03.md
   riga: '| `2021-10-29` | neg | inflation_print, eurozone_release, inflation_upside | Flash di ottobre
     2021 al 4,1% contro 3,7% atteso, trainata dall''energia → il mercato anticipa la fine dei tassi negativi,
     prezzo dei bond in euro giù |'
-  evento: ''
+  evento: Inflazione dell'area euro o tedesca
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (area euro): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2021-10-27'
   tema: macro_data
   fonte: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
@@ -462,12 +539,14 @@ voci:
   riga: '| 2021-10-27 | AUD=X | neg | australia_release, inflation_print, inflation_upside | CPI 3° trim.
     2021, media troncata sopra le attese | Media troncata 0,7% t/t contro 0,5%, 2,1% a/a contro 1,8% (Forex.com,
     consenso di mercato). Consenso sull''headline non recuperato. AUD/USD in rialzo.\[30\] Controll'
-  evento: ''
+  evento: CPI australiano
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2019-07-11'
   tema: macro_data
   fonte: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
@@ -476,12 +555,15 @@ voci:
   riga: '| 2019-07-11 | IEF | neg | inflation_print, us_cpi, inflation_upside | CPI giugno 2019 core +0,3%
     m/m contro +0,2% atteso; core +2,1% a/a contro 2,0%; headline +0,1% contro 0,0% | Consenso: FXStreet.
     Stessa seduta: testimonianza di Powell al Senato\[15\] |'
-  evento: ''
+  evento: 'CPI giugno 2019: core +0,3% contro +0,2%'
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+      su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2018-02-14'
   tema: macro_data
   fonte: kb:Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro, oro
@@ -490,12 +572,15 @@ voci:
   riga: '| 2018-02-14 | IEF | neg | inflation_print, us_cpi, inflation_upside | CPI gennaio 2018 +0,5%
     m/m contro +0,3% atteso; core +0,3% contro +0,2% | Consenso: Reuters. 10 anni al massimo da quattro
     anni (Reuters via Business Standard). Dopo lo shock salariale del 2 febbraio\[11\] |'
-  evento: ''
+  evento: 'CPI gennaio 2018: +0,5% contro +0,3%'
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'CPI USA sopra le attese sul core (dalla KB): più stretta Fed prezzata, rendimento a 5 anni
+      su. Lo studio dà ^TNX pos e IEF neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2014-07-23'
   tema: macro_data
   fonte: kb:Sorprese macro australiane e trasmissione ad AUD, titoli di Stato e ASX 200_ episodi e regimi
@@ -505,9 +590,11 @@ voci:
     2014, media troncata sopra le attese | Media troncata +0,8% t/t, 2,9% a/a contro 2,7% atteso (Reuters
     via FXStreet). Consenso sull''headline non recuperato: le fonti la definiscono "modesta". Reazione:
     sp'
-  evento: ''
+  evento: CPI australiano
   meccanismo: []
   dichiarazioni:
   - asset: ^FVX
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Release non USA (Australia): il canale verso i Treasury è di secondo ordine e la sorpresa
+      non riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa

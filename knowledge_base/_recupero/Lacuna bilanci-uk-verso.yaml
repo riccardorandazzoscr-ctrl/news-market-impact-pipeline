@@ -10,24 +10,29 @@ voci:
     BCE di backstop (spread che si stringe), shock politici o fiscali idiosincratici (spread che si allarga),
     rating comunicati a mercato chiuso. Non regge per il contagio Francia→Italia: dal 2024 il suo segno
     d'
-  evento: ''
+  evento: Tesi generale sugli spread BTP/OAT-Bund
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Non è un bilancio britannico: l''etichetta budget_passage viene da uno studio sugli spread
+      dell''area euro; nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2026-08-14'
   tema: fiscal_policy
   fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   riga: '|2026-08-14|Taiwan     |Bilancio generale 2026 (NT$2,987 tn / ~US$93 mld) dopo stallo record
     di 266 giorni|sblocco                |neutro                              |EWT                  |TAIEX
     −0,46% quel venerdì ma per presa di beneficio su TSMC, non per il bilancio; **caso originante**         '
-  evento: ''
+  evento: Bilancio generale di Taiwan 2026
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Non è un bilancio britannico: l''etichetta budget_passage viene da Taiwan; nessun canale
+      diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2025-10-27'
   tema: fiscal_policy
   fonte: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund
@@ -37,12 +42,15 @@ voci:
     fiscal_deadlock, eurozone_release | Moody''s conferma la Francia ad Aa3 e porta l''outlook da stabile
     a negativo\[47\] | Cat. 5. Comunicato venerdì 2025-10-24 alle 20:40-20:53 UTC circa (FinancialJuice;
     Invest'
-  evento: ''
+  evento: Moody's conferma la Francia, outlook negativo
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Non è un bilancio britannico: l''etichetta budget_passage viene da un rating sulla Francia;
+      nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2025-10-16'
   tema: fiscal_policy
   fonte: kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi, interventi
@@ -52,12 +60,15 @@ voci:
   riga: '| 2025-10-16 | OAT_BUND_SPREAD | neg | france_spread, budget_passage, eurozone_release | Lecornu
     supera due mozioni di sfiducia (271 voti contro i 289 necessari)\[66\]\[67\] | Voto durante la seduta.
     ABC/Reuters: mercato obbligazionario stabile, esito atteso: pressione residua piccola.\[68\] |'
-  evento: ''
+  evento: Lecornu supera le mozioni di sfiducia
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Non è un bilancio britannico: l''etichetta budget_passage viene da la politica di bilancio
+      francese; nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-02.'
+  stato: promossa
 - data: '2025-10-14'
   tema: fiscal_policy
   fonte: kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi, interventi
@@ -67,12 +78,15 @@ voci:
   riga: '| 2025-10-14 | OAT_BUND_SPREAD | neg | france_spread, budget_passage, fiscal_deadlock, eurozone_release
     | Lecornu annuncia la sospensione della riforma delle pensioni e rinuncia al 49.3: il PS non voterà
     la sfiducia\[58\]\[63\] | Dichiarazione di politica generale nel pomeriggio, a mercato aperto (i'
-  evento: ''
+  evento: Lecornu sospende la riforma delle pensioni
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Non è un bilancio britannico: l''etichetta budget_passage viene da la politica di bilancio
+      francese; nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-02.'
+  stato: promossa
 - data: '2025-08-25'
   tema: fiscal_policy
   fonte: kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi, interventi
@@ -83,12 +97,15 @@ voci:
     | Bayrou annuncia un voto di fiducia per l''8 settembre sul piano da 44 miliardi\[50\] | Annuncio
     nel pomeriggio, a mercato aperto: MarketAxess (The DESK) spread da 70 a 75 pb in chiusura e circa
     7'
-  evento: ''
+  evento: Bayrou annuncia il voto di fiducia
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Non è un bilancio britannico: l''etichetta budget_passage viene da la politica di bilancio
+      francese; nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-02.'
+  stato: promossa
 - data: '2024-12-02'
   tema: fiscal_policy
   fonte: kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi, interventi
@@ -98,12 +115,15 @@ voci:
   riga: '| 2024-12-02 | OAT_BUND_SPREAD | pos | france_spread, fiscal_deadlock, budget_passage, eurozone_release
     | Barnier ricorre al 49.3 sulla legge di finanziamento della sicurezza sociale; RN e sinistra depositano
     mozioni di sfiducia | Evento nel pomeriggio, durante la seduta. ING: nella crisi Barnier lo'
-  evento: ''
+  evento: Barnier ricorre al 49.3
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Non è un bilancio britannico: l''etichetta budget_passage viene da la politica di bilancio
+      francese; nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-02.'
+  stato: promossa
 - data: '2024-10-28'
   tema: fiscal_policy
   fonte: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund
@@ -113,12 +133,15 @@ voci:
     eurozone_release | Moody''s conferma la Francia ad Aa2 e porta l''outlook da stabile a negativo\[41\]
     | Cat. 5. Comunicato di venerdì 2024-10-25 (Moody''s, Parigi), ripreso da Bloomberg alle 21:04 UTC:
     «third w'
-  evento: ''
+  evento: Moody's conferma la Francia, outlook negativo
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Non è un bilancio britannico: l''etichetta budget_passage viene da un rating sulla Francia;
+      nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2024-10-14'
   tema: fiscal_policy
   fonte: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund
@@ -127,12 +150,15 @@ voci:
   riga: '| 2024-10-14 | OAT_BUND_SPREAD | pos, neg | sovereign_rating, france_spread, budget_passage,
     eurozone_release | Fitch conferma la Francia ad AA- e porta l''outlook da stabile a negativo\[39\]
     | Cat. 5. Comunicato venerdì 2024-10-11 (Reuters su Investing, ore 17:23 ET), il giorno dopo la presentazione'
-  evento: ''
+  evento: Fitch conferma la Francia, outlook negativo
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Non è un bilancio britannico: l''etichetta budget_passage viene da un rating sulla Francia;
+      nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa
 - data: '2023-11-20'
   tema: fiscal_policy
   fonte: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund
@@ -141,23 +167,28 @@ voci:
   riga: '- Nella seduta di reazione lo spread si muove nella direzione della sorpresa, non del segno della
     decisione. Lo mostrano due conferme contro un taglio atteso, che hanno stretto il BTP-Bund (2018-10-29,
     2020-04-27). Due tagli a sorpresa o fuori calendario lo hanno invece allargato (2013-07-10, 2020-0'
-  evento: ''
+  evento: Tesi generale sui rating sovrani dell'area euro
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Non è un bilancio britannico: l''etichetta budget_passage viene da uno studio sui rating
+      dell''area euro; nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2023-06-05'
   tema: fiscal_policy
   fonte: kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
   riga: '|2023-06-05|USA        |Accordo sul tetto del debito operativo                                            |sblocco                |neutro                              |^GSPC,
     ^VIX          |Firmato sab. 3 giu.; T‑bill a ridosso della X‑date rendevano >6% prima dell’accordo                           '
-  evento: ''
+  evento: Accordo sul tetto del debito USA
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Non è un bilancio britannico: l''etichetta budget_passage viene da gli Stati Uniti; nessun
+      canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2018-09-03'
   tema: fiscal_policy
   fonte: kb:Rating sovrani nell'area euro_ conferme, tagli attesi e tagli a sorpresa sugli spread OAT-Bund
@@ -166,9 +197,12 @@ voci:
   riga: '| 2018-09-03 | BTP_BUND_SPREAD | pos, neg | sovereign_rating, italy_spread, budget_passage, eurozone_release
     | Fitch conferma l''Italia a BBB e porta l''outlook da stabile a negativo\[26\] | Cat. 5. Comunicato
     venerdì 2018-08-31 alle 20:21 UTC circa (timestamp Bloomberg).\[27\] Non ho trovato un''antep'
-  evento: ''
+  evento: Fitch conferma l'Italia, outlook negativo
   meccanismo: []
   dichiarazioni:
   - asset: IGLT.L
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Non è un bilancio britannico: l''etichetta budget_passage viene da un rating sull''Italia;
+      nessun canale diretto verso i gilt. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: promossa

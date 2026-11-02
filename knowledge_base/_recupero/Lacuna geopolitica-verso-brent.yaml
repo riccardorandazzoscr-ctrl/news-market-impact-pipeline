@@ -6,34 +6,40 @@ voci:
   fonte: 2026-09-10/news_02.md
   riga: '| `2026-05-27` | neg | black_sea, military_escalation, infrastructure_attack | Raid massicci
     su infrastrutture ucraine dopo un tentativo negoziale fallito |'
-  evento: ''
+  evento: Raid su infrastrutture ucraine
   meccanismo: []
   dichiarazioni:
   - asset: BZ=F
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Infrastruttura ucraina, non offerta di greggio: nessun canale diretto sul Brent. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2026-05-26'
   tema: geopolitical
   fonte: 2026-09-10/news_01.md
   riga: '| `2026-05-26` | neg | military_escalation, iran, infrastructure_attack | Colpi su infrastrutture
     energetiche iraniane dentro il conflitto già cronico |'
-  evento: ''
+  evento: Colpi su infrastrutture energetiche iraniane
   meccanismo: []
   dichiarazioni:
   - asset: BZ=F
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'Danno a infrastrutture energetiche di un produttore del Golfo: rischio sull''offerta di greggio.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2026-04-17'
   tema: geopolitical
   fonte: 2026-09-12/news_01.md
   riga: '| `2026-04-17` | pos | infrastructure_attack, shipping_chokepoint | Attacco all''infrastruttura
     di export saudita (oleodotto Est-Ovest, primo colpo) con rotta di aggiramento compromessa. |'
-  evento: ''
+  evento: Attacco all'oleodotto saudita Est-Ovest
   meccanismo: []
   dichiarazioni:
   - asset: BZ=F
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'Colpita la rotta di export che aggira Hormuz: offerta saudita a rischio (canale 1 dello studio
+      Houthi). Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2025-12-22'
   tema: geopolitical
   fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
@@ -42,67 +48,80 @@ voci:
   riga: '| 2025-12-22 | Rimbalzo del grano su nuovi attacchi ai porti (Odessa/Pivdennyi, terminal Allseeds;
     Taman lato russo); seduta di lunedì | attacco portuale | ZW=F: pos | Canale 1 | Grano a 5,15 $/bu
     rimbalzando dal minimo di quasi due mesi (5,04 $ il 17/12); guadagni limitati da ampia offerta globale '
-  evento: ''
+  evento: Attacchi ai porti cerealicoli del Mar Nero
   meccanismo: []
   dichiarazioni:
   - asset: BZ=F
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: Canale del grano, non del petrolio. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-02.
+  stato: promossa
 - data: '2025-08-18'
   tema: geopolitical
   fonte: 2026-08-23/news_03.md
   riga: '| `2025-08-18` | neg | military_escalation, infrastructure_attack | Attacchi alle infrastrutture
     energetiche russe con effetto su prodotti raffinati |'
-  evento: ''
+  evento: Attacchi alle infrastrutture energetiche russe
   meccanismo: []
   dichiarazioni:
   - asset: BZ=F
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Colpisce raffinerie e prodotti: sul greggio il segno è ambiguo (canale 3 dello studio Houthi);
+      stessa giornata dell''incontro Trump-Zelensky. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-02.'
+  stato: promossa
 - data: '2025-06-22'
   tema: geopolitical
   fonte: 2026-09-02/news_06.md
   riga: '| `2025-06-22` | neg | military_escalation, infrastructure_attack | Colpi americani sui siti
     nucleari iraniani |'
-  evento: ''
+  evento: Colpi americani sui siti nucleari iraniani
   meccanismo: []
   dichiarazioni:
   - asset: BZ=F
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Data di domenica, senza seduta: la reazione è del 23/6, che andrebbe dichiarata con quella
+      data. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2024-06-17'
   tema: geopolitical
   fonte: 2026-08-23/news_03.md
   riga: '| `2024-06-17` | neg | military_escalation, shipping_chokepoint | Intensificazione degli attacchi
     Houthi alle navi commerciali |'
-  evento: ''
+  evento: Intensificazione degli attacchi Houthi (secondo la scheda)
   meccanismo: []
   dichiarazioni:
   - asset: BZ=F
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: La scheda descrive una fase, non un evento datato. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.
+  stato: promossa
 - data: '2024-03-12'
   tema: geopolitical
   fonte: 2026-08-23/news_03.md
   riga: '| `2024-03-12` | neg | military_escalation, infrastructure_attack | Ondata di attacchi ucraini
     con droni alle raffinerie russe: colpisce prodotti e margine di raffinazione, non il greggio |'
-  evento: ''
+  evento: Droni ucraini sulle raffinerie russe
   meccanismo: []
   dichiarazioni:
   - asset: BZ=F
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Colpisce prodotti e margini, non il greggio: segno ambiguo sul Brent (canale 3 dello studio
+      Houthi). Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2024-01-22'
   tema: geopolitical
   fonte: 2026-08-23/news_03.md
   riga: '| `2024-01-22` | neg | military_escalation, shipping_chokepoint | Prosecuzione della campagna
     sugli Houthi con dirottamento stabile del traffico verso il Capo di Buona Speranza |'
-  evento: ''
+  evento: Prosecuzione della campagna Houthi (secondo la scheda)
   meccanismo: []
   dichiarazioni:
   - asset: BZ=F
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: La scheda descrive una fase, non un evento datato. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.
+  stato: promossa
 - data: '2024-01-15'
   tema: geopolitical
   fonte: kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar Rosso,
@@ -113,12 +132,14 @@ voci:
     e di logistica, non di offerta di greggio. Colpisce i noli container (Goldman Sachs, citata da CNBC
     il 2024-01-03: noli Asia-Europa "roughly tripled from their early December levels"; Freightos: FBX11
     Asia-'
-  evento: ''
+  evento: QatarEnergy sospende i transiti delle metaniere
   meccanismo: []
   dichiarazioni:
   - asset: BZ=F
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: Lo studio lo dichiara solo su TTF=F (canale GNL); sul greggio nessun segno ricostruibile.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
+  stato: promossa
 - data: '2023-12-15'
   tema: geopolitical
   fonte: kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar Rosso,
@@ -129,12 +150,15 @@ voci:
     `attacchi a navi a Bab el-Mandeb → deviazioni delle compagnie (Maersk 2023-12-15, BP 2023-12-18) via
     Capo di Buona Speranza → +2/4 settimane di viaggio (S&P Global) → noli e premi war risk ↑ → ricavi
     dei ve'
-  evento: ''
+  evento: Maersk sospende i transiti a Bab el-Mandeb
   meccanismo: []
   dichiarazioni:
   - asset: BZ=F
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: neutral
+    perché: 'Compagnia di container, nessun carico energetico: per lo studio Houthi è un canale di trasporto,
+      non di offerta di greggio (come la Galaxy Leader, neutral). Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+  stato: promossa
 - data: '2023-08-02'
   tema: geopolitical
   fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
@@ -143,23 +167,27 @@ voci:
   riga: '| 2023-08-02 | Attacco russo al porto danubiano di Izmail (mercoledì) | attacco portuale | ZW=F:
     pos | Canale 1 | Prezzi alimentari globali in rialzo; 180.000 t di grano distrutte dal ritiro russo,
     secondo Kyiv. |'
-  evento: ''
+  evento: Attacco russo al porto di Izmail
   meccanismo: []
   dichiarazioni:
   - asset: BZ=F
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: Canale del grano, non del petrolio. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-02.
+  stato: promossa
 - data: '2023-07-19'
   tema: geopolitical
   fonte: 2026-09-10/news_02.md
   riga: '| `2023-07-19` | neg | black_sea, infrastructure_attack | Raid russi sui terminali cerealicoli
     di Odessa e Chornomorsk: distruzione di capacità di export, non solo minaccia |'
-  evento: ''
+  evento: Raid sui terminali cerealicoli di Odessa
   meccanismo: []
   dichiarazioni:
   - asset: BZ=F
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: Canale del grano, non del petrolio. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-02.
+  stato: promossa
 - data: '2022-09-26'
   tema: geopolitical
   fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
@@ -168,9 +196,11 @@ voci:
   riga: '| 2022-09-26 | Sabotaggio Nord Stream (esplosioni) | escalation/supply-shock | risk-off; gas↑
     | ^VIX↑, GC=F↑, EURUSD=X↓ | NS1 già fermo; NS2 mai operativo. Effetto più simbolico/strutturale che
     di flusso |'
-  evento: ''
+  evento: Sabotaggio del Nord Stream
   meccanismo: []
   dichiarazioni:
   - asset: BZ=F
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: Canale del gas europeo, non del greggio; Nord Stream 1 era già fermo. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-02.
+  stato: promossa
