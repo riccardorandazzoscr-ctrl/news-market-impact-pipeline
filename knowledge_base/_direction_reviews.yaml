@@ -12656,3 +12656,225 @@ reviews:
     Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   direction: neg
   description: 'Nvidia FY19 Q3: guida -21% per le scorte di GPU dopo le cripto (after-close 15/11)'
+- date: '2026-06-11'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-31/news_03.md
+  reason: 'Data sbagliata: per la KB l''11/6/2026 è il rialzo BCE; il rialzo BoJ a 1,0% è riportato dal
+    briefing del 16/6. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: Rialzo BoJ a 1,0% (secondo la scheda)
+- date: '2025-12-10'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-31/news_03.md
+  reason: 'Data sbagliata: il rialzo BoJ a 0,75% è del 19/12/2025 (KB); il 10/12 non è una riunione BoJ.
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: Decisione BoJ di fine 2025 (secondo la scheda)
+- date: '2025-04-08'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-31/news_03.md
+  reason: 'Non è un evento BoJ: nel pool monetario BoJ contaminerebbe il canale di politica monetaria.
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: Avversione al rischio globale nello shock dei dazi
+- date: '2024-12-18'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-31/news_03.md
+  reason: 'Data sbagliata: la decisione BoJ è del 19/12/2024, il 18/12 è la FOMC. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: Riunione BoJ di dicembre 2024 (secondo la scheda)
+- date: '2024-11-07'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-31/news_03.md
+  reason: Non è un evento BoJ. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.
+  status: excluded
+  description: Riprezzamento dei tassi globali dopo le elezioni USA
+- date: '2024-10-23'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-31/news_03.md
+  reason: 'Data sbagliata: la riunione BoJ è del 30-31/10/2024; il 23/10 non è una riunione. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: Riunione BoJ di ottobre 2024 (secondo la scheda)
+- date: '2023-10-19'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-28/news_03.md
+  reason: 'Non è una decisione BoJ (la revisione della YCC è del 31/10/2023): la scheda descrive il mercato,
+    non un annuncio. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: Pressione sul tetto YCC con il decennale USA verso il 5%
+- date: '2022-09-28'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-29/news_02.md
+  reason: 'Data sbagliata: l''intervento è del 22/9/2022; il 28/9 è l''intervento della BoE sui gilt.
+    Né l''uno né l''altro è una decisione BoJ. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-01.'
+  status: excluded
+  description: Intervento del Ministero delle Finanze sullo yen (secondo la scheda)
+- date: '2014-03-19'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-28/news_03.md
+  reason: 'Data sbagliata: le riunioni BoJ sono dell''11/3 e dell''8/4/2014; il 19/3 è la FOMC (Yellen,
+    «circa sei mesi»). Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: Riunione BoJ senza nuovo allentamento (secondo la scheda)
+- date: '2011-08-09'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 2026-08-28/news_03.md
+  reason: 'Data sbagliata: intervento e allentamento BoJ sono del 4/8/2011; il 9/8 è la FOMC (tassi fermi
+    fino a metà 2013). Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: Intervento BoJ sullo yen forte (secondo la scheda)
+- date: '2001-03-19'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC e interventi
+    FX — regime ed episodi storici (1998–2026).md'
+  reason: 'Allentamento: la research stessa scrive «JPY debole», USD/JPY atteso in rialzo. Criterio ex
+    ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  direction: pos
+  description: Avvio del Quantitative Easing BoJ
+- date: '1999-02-12'
+  theme: monetary_policy
+  reference: JPY=X
+  source: 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC e interventi
+    FX — regime ed episodi storici (1998–2026).md'
+  reason: 'Allentamento: la research stessa scrive «JPY debole», USD/JPY atteso in rialzo. Criterio ex
+    ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  direction: pos
+  description: Introduzione della ZIRP
+- date: '2026-08-18'
+  theme: fiscal_policy
+  reference: IEF
+  source: 2026-08-20/news_01.md
+  reason: 'La riga descrive il movimento dei prezzi, non un evento: il verso verrebbe dall''esito. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: Selloff sincronizzato delle curve lunghe
+- date: '2026-08-14'
+  theme: fiscal_policy
+  reference: IEF
+  source: 2026-08-24/news_05.md
+  reason: La riga descrive il movimento dei prezzi (la notizia del giorno sui Treasury era stata scartata
+    come «reazione»), non un evento. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.
+  status: excluded
+  description: Rendimenti in rialzo con stress fiscale
+- date: '2025-09-03'
+  theme: fiscal_policy
+  reference: IEF
+  source: 2026-08-20/news_01.md
+  reason: La riga descrive il movimento dei prezzi, non un evento. Criterio ex ante, nessun prezzo consultato.
+    Revisione Claude 2026-11-01.
+  status: excluded
+  description: Debolezza delle curve lunghe globali
+- date: '2025-05-20'
+  theme: fiscal_policy
+  reference: IEF
+  source: 2026-08-24/news_05.md
+  reason: 'Data non identificata: il downgrade Moody''s è del 16/5/2025 e l''asta ventennale debole del
+    21/5; il 20/5 non porta né l''uno né l''altra. Criterio ex ante, nessun prezzo consultato. Revisione
+    Claude 2026-11-01.'
+  status: excluded
+  description: Asta debole dopo il downgrade USA (secondo la scheda)
+- date: '2025-04-04'
+  theme: fiscal_policy
+  reference: IEF
+  source: 2026-08-20/news_01.md
+  reason: 'Spinte opposte sullo stesso asset: rifugio (prezzi su) e disordine d''offerta (prezzi giù).
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: 'Shock dei dazi: fuga verso la qualità, poi disordine sulla parte lunga'
+- date: '2024-11-06'
+  theme: fiscal_policy
+  reference: IEF
+  source: 2026-08-20/news_01.md
+  reason: 'Programma di tagli fiscali e dazi: più deficit ed emissione attesi, premio a termine atteso
+    in salita, prezzo di IEF atteso in calo. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-01.'
+  direction: neg
+  description: Esito delle presidenziali USA con controllo repubblicano
+- date: '2023-10-19'
+  theme: fiscal_policy
+  reference: IEF
+  source: 2026-08-20/news_01.md
+  reason: Spinte opposte nel discorso (inflazione ancora alta, ma rendimenti che «fanno il lavoro» della
+    Fed); la riga parla del livello, non dell'annuncio. Criterio ex ante, nessun prezzo consultato. Revisione
+    Claude 2026-11-01.
+  status: excluded
+  description: Discorso di Powell all'Economic Club con il decennale vicino al 5%
+- date: '2022-12-20'
+  theme: fiscal_policy
+  reference: IEF
+  source: 2026-08-20/news_01.md
+  reason: 'Si ritira un compratore di duration su scala globale: rendimenti lunghi attesi più alti, prezzo
+    di IEF atteso in calo. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  direction: neg
+  description: BoJ allarga la banda YCC a ±0,5%
+- date: '2021-03-11'
+  theme: fiscal_policy
+  reference: IEF
+  source: 2026-08-21/news_01.md
+  reason: 'Nessuna informazione nuova alla data: la legge era passata alla Camera il 10/3, la firma era
+    attesa. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: Firma dell'American Rescue Plan
+- date: '2021-02-25'
+  theme: fiscal_policy
+  reference: IEF
+  source: 2026-08-20/news_01.md
+  reason: 'Shock d''offerta puro: domanda debole all''asta, rendimenti attesi più alti, prezzo di IEF
+    atteso in calo. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  direction: neg
+  description: Asta del Tesoro a 7 anni andata male
+- date: '2018-06-13'
+  theme: fiscal_policy
+  reference: IEF
+  source: 2026-08-20/news_01.md
+  reason: 'Decisione di politica monetaria, non di bilancio o d''offerta: nel pool fiscale contaminerebbe
+    il canale delle aste; il verso va dichiarato sotto monetary_policy. Criterio ex ante, nessun prezzo
+    consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: Rialzo Fed con dot plot più aggressivo
+- date: '2018-03-21'
+  theme: fiscal_policy
+  reference: IEF
+  source: 2026-08-20/news_01.md
+  reason: 'Decisione di politica monetaria, non di bilancio o d''offerta: va dichiarata sotto monetary_policy.
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: Rialzo Fed con dot plot più ripido
+- date: '2017-12-22'
+  theme: fiscal_policy
+  reference: IEF
+  source: 2026-08-21/news_01.md
+  reason: 'Nessuna informazione nuova alla data: l''approvazione finale del Congresso è del 20/12, la
+    firma era attesa. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: Firma del Tax Cuts and Jobs Act
+- date: '2014-03-19'
+  theme: fiscal_policy
+  reference: IEF
+  source: 2026-08-20/news_01.md
+  reason: 'Decisione di politica monetaria, non di bilancio o d''offerta: va dichiarata sotto monetary_policy.
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: Yellen lega il primo rialzo a «circa sei mesi» dalla fine degli acquisti
+- date: '2003-06-25'
+  theme: fiscal_policy
+  reference: IEF
+  source: 2026-08-20/news_01.md
+  reason: 'Decisione di politica monetaria, non di bilancio o d''offerta: va dichiarata sotto monetary_policy.
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  status: excluded
+  description: Fed taglia 25 pb invece di 50 e raffredda gli acquisti di titoli lunghi

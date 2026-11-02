@@ -1,5 +1,5 @@
-generated_at: '2026-11-02T12:47:09'
-num_episodes: 1574
+generated_at: '2026-11-02T18:03:23'
+num_episodes: 1596
 episodes:
 - date: '1984-01-01'
   theme: commodity_energy
@@ -27000,6 +27000,10 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: 'Decisione di politica monetaria, non di bilancio o d''offerta: va dichiarata
+      sotto monetary_policy. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-01.'
   directions_local:
   - neg
   declared: true
@@ -27916,6 +27920,10 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: 'Decisione di politica monetaria, non di bilancio o d''offerta: va dichiarata
+      sotto monetary_policy. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-01.'
   directions_local:
   - neg
   declared: true
@@ -28361,6 +28369,9 @@ episodes:
     ^NDX: 'La riga dice ''positivo (già prezzato)'': con la regola della sorpresa
       (2026-09-23) il verso non vale e la riga non dice se l''esito fu diverso dal
       prezzato.'
+    IEF: 'Nessuna informazione nuova alla data: l''approvazione finale del Congresso
+      è del 20/12, la firma era attesa. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-01.'
   directions_local:
   - neg
   - pos
@@ -28432,6 +28443,10 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: 'Decisione di politica monetaria, non di bilancio o d''offerta: va dichiarata
+      sotto monetary_policy. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-01.'
   directions_local:
   - neg
   declared: true
@@ -28599,6 +28614,10 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: 'Decisione di politica monetaria, non di bilancio o d''offerta: nel pool
+      fiscale contaminerebbe il canale delle aste; il verso va dichiarato sotto monetary_policy.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
   directions_local:
   - neg
   declared: true
@@ -29994,6 +30013,12 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    IEF:
+    - neg
+  direction_sources:
+    IEF:
+    - card:2026-08-20/news_01.md
   directions_local:
   - neg
   declared: true
@@ -30015,6 +30040,9 @@ episodes:
     - auction
     - term_premium
     - term_premium_shock
+    directions_by_reference:
+      IEF:
+      - neg
     sources:
     - card:2026-08-20/news_01.md
     - card:2026-08-21/news_01.md
@@ -30025,7 +30053,9 @@ episodes:
     - source: card:2026-08-20/news_01.md
       subthemes_local:
       - term_premium
-      directions_by_reference: {}
+      directions_by_reference:
+        IEF:
+        - neg
     - source: card:2026-08-21/news_01.md
       subthemes_local:
       - auction
@@ -30061,6 +30091,10 @@ episodes:
     - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
     ^TNX:
     - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  direction_review_excluded:
+    IEF: 'Nessuna informazione nuova alla data: la legge era passata alla Camera il
+      10/3, la firma era attesa. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-01.'
   directions_local:
   - neg
   declared: true
@@ -31056,6 +31090,12 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    IEF:
+    - neg
+  direction_sources:
+    IEF:
+    - card:2026-08-20/news_01.md
   directions_local:
   - neg
   declared: true
@@ -31077,6 +31117,9 @@ episodes:
     - boj
     - term_premium
     - term_premium_shock
+    directions_by_reference:
+      IEF:
+      - neg
     sources:
     - card:2026-08-20/news_01.md
     - card:2026-08-21/news_01.md
@@ -31088,7 +31131,9 @@ episodes:
       subthemes_local:
       - boj
       - term_premium
-      directions_by_reference: {}
+      directions_by_reference:
+        IEF:
+        - neg
     - source: card:2026-08-21/news_01.md
       subthemes_local:
       - boj
@@ -31609,6 +31654,10 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: Spinte opposte nel discorso (inflazione ancora alta, ma rendimenti che «fanno
+      il lavoro» della Fed); la riga parla del livello, non dell'annuncio. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.
   directions_local:
   - neg
   declared: true
@@ -32486,6 +32535,12 @@ episodes:
   - neg
   directions_declared:
   - neg
+  directions_by_reference:
+    IEF:
+    - neg
+  direction_sources:
+    IEF:
+    - card:2026-08-20/news_01.md
   directions_local:
   - neg
   declared: true
@@ -32509,6 +32564,9 @@ episodes:
     - fiscal_expansion
     - rate_expectations_shock
     - term_premium
+    directions_by_reference:
+      IEF:
+      - neg
     sources:
     - card:2026-08-20/news_01.md
     - card:2026-08-21/news_01.md
@@ -32519,7 +32577,9 @@ episodes:
     - source: card:2026-08-20/news_01.md
       subthemes_local:
       - term_premium
-      directions_by_reference: {}
+      directions_by_reference:
+        IEF:
+        - neg
     - source: card:2026-08-21/news_01.md
       subthemes_local:
       - fiscal_expansion
@@ -32954,6 +33014,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: 'Spinte opposte sullo stesso asset: rifugio (prezzi su) e disordine d''offerta
+      (prezzi giù). Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
   directions_local:
   - neg
   declared: true
@@ -33138,6 +33201,10 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: 'Data non identificata: il downgrade Moody''s è del 16/5/2025 e l''asta ventennale
+      debole del 21/5; il 20/5 non porta né l''uno né l''altra. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-01.'
   directions_local:
   - neg
   declared: true
@@ -33593,6 +33660,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: La riga descrive il movimento dei prezzi, non un evento. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-01.
   directions_local:
   - neg
   declared: true
@@ -34984,6 +35054,10 @@ episodes:
   direction_sources:
     EWT:
     - kb:Fiscal_Pol_Brazil/Fiscal_Pol_Brazil.md
+  direction_review_excluded:
+    IEF: La riga descrive il movimento dei prezzi (la notizia del giorno sui Treasury
+      era stata scartata come «reazione»), non un evento. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-01.
   directions_local:
   - neg
   declared: true
@@ -35050,6 +35124,9 @@ episodes:
   - neg
   directions_declared:
   - neg
+  direction_review_excluded:
+    IEF: 'La riga descrive il movimento dei prezzi, non un evento: il verso verrebbe
+      dall''esito. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
   directions_local:
   - neg
   declared: true
@@ -115541,6 +115618,13 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    JPY=X:
+    - pos
+  direction_sources:
+    JPY=X:
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local: []
   declared: false
   subthemes:
@@ -115565,6 +115649,9 @@ episodes:
     subthemes_local:
     - boj
     - jpy
+    directions_by_reference:
+      JPY=X:
+      - pos
     sources:
     - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
       e interventi FX — regime ed episodi storici (1998–2026).md'
@@ -115574,12 +115661,21 @@ episodes:
       subthemes_local:
       - boj
       - jpy
-      directions_by_reference: {}
+      directions_by_reference:
+        JPY=X:
+        - pos
 - date: '2001-03-19'
   theme: monetary_policy
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    JPY=X:
+    - pos
+  direction_sources:
+    JPY=X:
+    - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
+      e interventi FX — regime ed episodi storici (1998–2026).md'
   directions_local: []
   declared: false
   subthemes:
@@ -115606,6 +115702,9 @@ episodes:
     - balance_sheet
     - boj
     - jpy
+    directions_by_reference:
+      JPY=X:
+      - pos
     sources:
     - 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC
       e interventi FX — regime ed episodi storici (1998–2026).md'
@@ -115616,7 +115715,9 @@ episodes:
       - balance_sheet
       - boj
       - jpy
-      directions_by_reference: {}
+      directions_by_reference:
+        JPY=X:
+        - pos
 - date: '2003-06-25'
   theme: monetary_policy
   direction: neg
@@ -115942,39 +116043,77 @@ episodes:
   direction: neg
   directions:
   - neg
-  directions_declared: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neutral
+    EURUSD=X:
+    - neutral
+    IEAG.AS:
+    - neutral
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
   directions_local:
   - neg
-  declared: false
+  declared: true
   subthemes:
   - auction
+  - balance_sheet_policy
   - curve_steepening
   - ecb
   - ecb_hawkish_surprise_hold_with_open_door_+_hawkish_guidance
   - ecb_hike
+  - ecb_meeting_day
   - ecb_supply_shock_pivot
   - energy_shock
+  - forward_guidance
+  - fragmentation_risk
   - guidance_shock
   - hawkish
   - hawkish_repricing_pre_fomc
   - long_end_rates
   - oil_inflation_channel
   - policy_mistake_risk
+  - policy_pause
+  - press_conference_reversal
   - projection
   - rate_hike_expected
+  - rate_surprise
+  - staff_projections
   - stagflation
   - stagflation_dilemma
   - stagflation_response
   subthemes_local:
+  - ecb
   - rate_decision
   - stagflation
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2011-04-07:monetary_policy:-
     geo: ''
     subthemes_local:
+    - ecb
     - rate_decision
     - stagflation
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neutral
+      EURUSD=X:
+      - neutral
+      IEAG.AS:
+      - neutral
     sources:
     - card:2026-06-03/news_03.md
     - card:2026-06-12/news_05.md
@@ -115984,6 +116123,9 @@ episodes:
     - card:2026-07-19/news_05.md
     - card:2026-07-22/news_04.md
     - card:2026-07-24/news_02.md
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     evidence:
     - source: card:2026-06-03/news_03.md
       subthemes_local:
@@ -116016,44 +116158,119 @@ episodes:
       subthemes_local:
       - rate_decision
       directions_by_reference: {}
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neutral
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neutral
 - date: '2011-07-07'
   theme: monetary_policy
   direction: neg
   directions:
   - neg
-  directions_declared: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+    EURUSD=X:
+    - neg
+    - pos
+    IEAG.AS:
+    - neg
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
   directions_local:
   - neg
-  declared: false
+  declared: true
   subthemes:
   - auction
+  - balance_sheet_policy
   - curve_steepening
   - ecb
   - ecb_hawkish_surprise_hold_with_open_door_+_hawkish_guidance
   - ecb_hike
+  - ecb_meeting_day
   - ecb_supply_shock_pivot
   - energy_shock
+  - forward_guidance
+  - fragmentation_risk
   - guidance_shock
   - hawkish
   - hawkish_repricing_pre_fomc
   - long_end_rates
   - oil_inflation_channel
   - policy_mistake_risk
+  - policy_pause
+  - press_conference_reversal
   - projection
   - rate_hike_expected
+  - rate_surprise
+  - staff_projections
   - stagflation
   - stagflation_dilemma
   - stagflation_response
   subthemes_local:
+  - ecb
   - guidance_pivot
   - rate_decision
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2011-07-07:monetary_policy:-
     geo: ''
     subthemes_local:
+    - ecb
     - guidance_pivot
     - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+      EURUSD=X:
+      - neg
+      - pos
+      IEAG.AS:
+      - neg
+      - pos
     sources:
     - card:2026-06-03/news_03.md
     - card:2026-06-12/news_05.md
@@ -116063,6 +116280,9 @@ episodes:
     - card:2026-07-19/news_05.md
     - card:2026-07-22/news_04.md
     - card:2026-07-24/news_02.md
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     evidence:
     - source: card:2026-06-03/news_03.md
       subthemes_local:
@@ -116094,6 +116314,42 @@ episodes:
       subthemes_local:
       - rate_decision
       directions_by_reference: {}
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
 - date: '2011-08-04'
   theme: monetary_policy
   direction: pos
@@ -116130,6 +116386,10 @@ episodes:
   - neutral
   directions_declared:
   - pos
+  direction_review_excluded:
+    JPY=X: 'Data sbagliata: intervento e allentamento BoJ sono del 4/8/2011; il 9/8
+      è la FOMC (tassi fermi fino a metà 2013). Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-01.'
   directions_local:
   - pos
   declared: true
@@ -116252,6 +116512,206 @@ episodes:
       directions_by_reference:
         JPY=X:
         - neg
+- date: '2011-11-03'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+    EURUSD=X:
+    - neg
+    IEAG.AS:
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - dovish_tilt
+  - ecb
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2011-11-03:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - dovish_tilt
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+      EURUSD=X:
+      - neg
+      IEAG.AS:
+      - pos
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
+- date: '2011-12-08'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - pos
+    EURUSD=X:
+    - neg
+    IEAG.AS:
+    - neg
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - balance_sheet
+  - ecb
+  - hawkish
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2011-12-08:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - balance_sheet
+    - ecb
+    - hawkish
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - pos
+      EURUSD=X:
+      - neg
+      IEAG.AS:
+      - neg
+      - pos
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - pos
 - date: '2012-04-16'
   theme: monetary_policy
   direction: ''
@@ -117073,6 +117533,10 @@ episodes:
   direction_sources:
     IEF:
     - card:2026-08-27/news_03.md
+  direction_review_excluded:
+    JPY=X: 'Data sbagliata: le riunioni BoJ sono dell''11/3 e dell''8/4/2014; il 19/3
+      è la FOMC (Yellen, «circa sei mesi»). Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-01.'
   directions_local:
   - neg
   - pos
@@ -117237,6 +117701,243 @@ episodes:
     - source: card:2026-09-12/news_04.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2014-06-05'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+    EURUSD=X:
+    - neg
+    - pos
+    IEAG.AS:
+    - neg
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - balance_sheet
+  - ecb
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2014-06-05:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - balance_sheet
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+      EURUSD=X:
+      - neg
+      - pos
+      IEAG.AS:
+      - neg
+      - pos
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
+- date: '2014-09-04'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    EURUSD=X:
+    - neg
+    FTSEMIB.MI:
+    - pos
+    IEAG.AS:
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    FTSEMIB.MI:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - balance_sheet
+  - dovish_tilt
+  - ecb
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2014-09-04:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - balance_sheet
+    - dovish_tilt
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      FTSEMIB.MI:
+      - pos
+      IEAG.AS:
+      - pos
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        FTSEMIB.MI:
+        - pos
+  - event_id: 2014-09-04:monetary_policy:britain_release
+    geo: britain_release
+    subthemes_local:
+    - balance_sheet
+    - dovish_tilt
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      EURUSD=X:
+      - neg
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neg
 - date: '2014-09-17'
   theme: monetary_policy
   direction: neg
@@ -117364,6 +118065,126 @@ episodes:
       - rate_decision
       directions_by_reference:
         ^GSPTSE:
+        - pos
+- date: '2015-01-22'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    EURUSD=X:
+    - neg
+    IEAG.AS:
+    - pos
+    ^STOXX50E:
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    ^STOXX50E:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - balance_sheet
+  - dovish_tilt
+  - ecb
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2015-01-22:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - balance_sheet
+    - dovish_tilt
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      EURUSD=X:
+      - neg
+      IEAG.AS:
+      - pos
+      ^STOXX50E:
+      - pos
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        ^STOXX50E:
         - pos
 - date: '2015-05-07'
   theme: monetary_policy
@@ -117717,6 +118538,159 @@ episodes:
       directions_by_reference:
         CNY=X:
         - neg
+- date: '2015-12-03'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - pos
+    EURUSD=X:
+    - pos
+    IEAG.AS:
+    - neg
+    ^GDAXI:
+    - neg
+    ^STOXX50E:
+    - neg
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    ^GDAXI:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    ^STOXX50E:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - balance_sheet
+  - ecb
+  - hawkish
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2015-12-03:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - balance_sheet
+    - ecb
+    - hawkish
+    - rate_decision
+    directions_by_reference:
+      EURUSD=X:
+      - pos
+      IEAG.AS:
+      - neg
+      ^GDAXI:
+      - neg
+      ^STOXX50E:
+      - neg
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        ^GDAXI:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        ^STOXX50E:
+        - neg
+  - event_id: 2015-12-03:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - balance_sheet
+    - ecb
+    - hawkish
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - pos
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - pos
 - date: '2015-12-11'
   theme: monetary_policy
   direction: ''
@@ -118305,6 +119279,108 @@ episodes:
         - pos
         IEF:
         - neg
+- date: '2016-12-08'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - pos
+    EURUSD=X:
+    - neg
+    IEAG.AS:
+    - neg
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - balance_sheet
+  - dovish_tilt
+  - ecb
+  - rate_decision
+  - term_premium
+  n_sources: 1
+  events:
+  - event_id: 2016-12-08:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - balance_sheet
+    - dovish_tilt
+    - ecb
+    - rate_decision
+    - term_premium
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - pos
+      EURUSD=X:
+      - neg
+      IEAG.AS:
+      - neg
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - rate_decision
+      - term_premium
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - rate_decision
+      - term_premium
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - pos
 - date: '2016-12-14'
   theme: monetary_policy
   direction: neg
@@ -118492,6 +119568,128 @@ episodes:
       directions_by_reference:
         CAD=X:
         - neutral
+- date: '2017-07-20'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+    EURUSD=X:
+    - pos
+    IEAG.AS:
+    - neg
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - balance_sheet
+  - ecb
+  - guidance_pivot
+  - hawkish
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2017-07-20:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - balance_sheet
+    - ecb
+    - guidance_pivot
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+      IEAG.AS:
+      - neg
+      - pos
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
+  - event_id: 2017-07-20:monetary_policy:japan_release
+    geo: japan_release
+    subthemes_local:
+    - balance_sheet
+    - ecb
+    - guidance_pivot
+    - hawkish
+    - rate_decision
+    directions_by_reference:
+      EURUSD=X:
+      - pos
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - pos
 - date: '2017-09-06'
   theme: monetary_policy
   direction: ''
@@ -120273,6 +121471,131 @@ episodes:
       directions_by_reference:
         CAD=X:
         - neg
+- date: '2019-09-12'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    EURUSD=X:
+    - neg
+    - pos
+    FTSEMIB.MI:
+    - pos
+    IEAG.AS:
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    FTSEMIB.MI:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - balance_sheet
+  - dovish_tilt
+  - ecb
+  - guidance_pivot
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2019-09-12:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - balance_sheet
+    - dovish_tilt
+    - ecb
+    - guidance_pivot
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      EURUSD=X:
+      - neg
+      - pos
+      FTSEMIB.MI:
+      - pos
+      IEAG.AS:
+      - pos
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - dovish_tilt
+      - ecb
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        FTSEMIB.MI:
+        - pos
 - date: '2019-09-18'
   theme: monetary_policy
   direction: mixed
@@ -120467,6 +121790,126 @@ episodes:
         CAD=X:
         - neg
         - pos
+- date: '2020-03-12'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - pos
+    EURUSD=X:
+    - pos
+    FTSEMIB.MI:
+    - neg
+    IEAG.AS:
+    - neg
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    FTSEMIB.MI:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - balance_sheet
+  - ecb
+  - hawkish
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2020-03-12:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - balance_sheet
+    - ecb
+    - hawkish
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - pos
+      EURUSD=X:
+      - pos
+      FTSEMIB.MI:
+      - neg
+      IEAG.AS:
+      - neg
+      - pos
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        FTSEMIB.MI:
+        - neg
 - date: '2020-03-13'
   theme: monetary_policy
   direction: ''
@@ -121909,12 +123352,42 @@ episodes:
   directions:
   - neg
   - neutral
-  directions_declared: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - pos
+    EURUSD=X:
+    - neg
+    - pos
+    FTSEMIB.MI:
+    - neg
+    IEAG.AS:
+    - neg
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    FTSEMIB.MI:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
   directions_local:
   - neg
-  declared: false
+  declared: true
   subthemes:
   - auction
+  - balance_sheet_policy
   - boj
   - boj_divergence
   - boj_intervention
@@ -121922,6 +123395,7 @@ episodes:
   - curve_steepening
   - ecb
   - ecb_hawkish_surprise_hold_with_open_door_+_hawkish_guidance
+  - ecb_meeting_day
   - ecb_policy
   - energy_passthrough
   - energy_premium_risk
@@ -121931,6 +123405,7 @@ episodes:
   - fomc
   - fomc_minutes
   - forward_guidance
+  - fragmentation_risk
   - fx
   - fx_intervention
   - guidance_pivot
@@ -121944,32 +123419,48 @@ episodes:
   - minutes
   - non_projection_meeting
   - policy_error
+  - policy_pause
+  - press_conference_reversal
   - projection
   - rate_hike_cycle
   - rate_hike_expected
+  - rate_surprise
   - sovereign_fragmentation
+  - staff_projections
   - stagflation
   - thin_liquidity
   - yen
   - yen_carry
   subthemes_local:
+  - balance_sheet
   - ecb
   - guidance_pivot
   - hawkish
   - rate_decision
   - stagflation
   - yen
-  n_sources: 17
+  n_sources: 18
   events:
   - event_id: 2022-06-09:monetary_policy:-
     geo: ''
     subthemes_local:
+    - balance_sheet
     - ecb
     - guidance_pivot
     - hawkish
     - rate_decision
     - stagflation
     - yen
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - pos
+      EURUSD=X:
+      - neg
+      - pos
+      FTSEMIB.MI:
+      - neg
+      IEAG.AS:
+      - neg
     sources:
     - card:2026-06-04/news_03.md
     - card:2026-06-05/news_04.md
@@ -121988,6 +123479,9 @@ episodes:
     - card:2026-07-23/news_04.md
     - card:2026-07-24/news_02.md
     - card:2026-08-16/news_04.md
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     evidence:
     - source: card:2026-06-04/news_03.md
       subthemes_local:
@@ -122049,6 +123543,56 @@ episodes:
     - source: card:2026-08-16/news_04.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        FTSEMIB.MI:
+        - neg
 - date: '2022-06-13'
   theme: monetary_policy
   direction: neg
@@ -122616,13 +124160,30 @@ episodes:
   - neutral
   - pos
   directions_declared:
+  - neg
   - pos
   directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
     EURUSD=X:
     - pos
+    IEAG.AS:
+    - neg
   direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     EURUSD=X:
     - card:2026-09-10/news_04.md
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
   direction_review_excluded:
     JPY=X: 'BoJ ferma come atteso e BCE +50 bp a sorpresa nello stesso giorno: spinte
       opposte sul dollaro, le schede danno neg e pos. Trasmissione non univoca. Revisione
@@ -122633,6 +124194,7 @@ episodes:
   declared: true
   subthemes:
   - auction
+  - balance_sheet_policy
   - boj
   - boj_divergence
   - boj_intervention
@@ -122644,6 +124206,7 @@ episodes:
   - ecb
   - ecb_hawkish_surprise_hold_with_open_door_+_hawkish_guidance
   - ecb_hike
+  - ecb_meeting_day
   - ecb_policy
   - ecb_supply_shock_pivot
   - ecb_terminal_rate_repricing
@@ -122681,12 +124244,16 @@ episodes:
   - pil_q2_debole
   - policy_error
   - policy_mistake_risk
+  - policy_pause
   - pre_fomc
+  - press_conference_reversal
   - rate_decision
   - rate_hike
   - rate_hike_cycle
   - rate_hike_expected
+  - rate_surprise
   - sovereign_fragmentation
+  - staff_projections
   - stagflation_dilemma
   - stagflation_response
   - thin_liquidity
@@ -122694,6 +124261,7 @@ episodes:
   - yen
   - yen_carry
   subthemes_local:
+  - balance_sheet
   - boj
   - ecb
   - ecb_supply_shock_pivot
@@ -122705,16 +124273,26 @@ episodes:
   - rate_decision
   - rate_hike
   - yen
-  n_sources: 34
+  n_sources: 35
   events:
   - event_id: 2022-07-21:monetary_policy:-
     geo: ''
     subthemes_local:
+    - balance_sheet
     - ecb
     - ecb_supply_shock_pivot
     - guidance_pivot
+    - hawkish
     - rate_decision
     - rate_hike
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+      EURUSD=X:
+      - pos
+      IEAG.AS:
+      - neg
     sources:
     - card:2026-06-03/news_03.md
     - card:2026-06-04/news_03.md
@@ -122742,6 +124320,9 @@ episodes:
     - card:2026-08-16/news_04.md
     - card:2026-08-23/news_05.md
     - card:2026-09-04/news_01.md
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     evidence:
     - source: card:2026-06-03/news_03.md
       subthemes_local:
@@ -122842,6 +124423,42 @@ episodes:
       subthemes_local:
       - guidance_pivot
       directions_by_reference: {}
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
   - event_id: 2022-07-21:monetary_policy:eurozone_release
     geo: eurozone_release
     subthemes_local:
@@ -124595,6 +126212,10 @@ episodes:
     - kb:Premio a termine globale e selloff sincronizzati della parte lunga regime
       ed episodi storici (1994–2026)/Premio a termine globale e selloff sincronizzati
       della parte lunga- regime ed episodi storici (1994–2026).md
+  direction_review_excluded:
+    JPY=X: 'Data sbagliata: l''intervento è del 22/9/2022; il 28/9 è l''intervento
+      della BoE sui gilt. Né l''uno né l''altro è una decisione BoJ. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-01.'
   directions_local:
   - neg
   declared: true
@@ -125003,11 +126624,34 @@ episodes:
   directions:
   - neg
   - neutral
-  directions_declared: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    EURUSD=X:
+    - neg
+    IEAG.AS:
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
   directions_local: []
-  declared: false
+  declared: true
   subthemes:
   - auction
+  - balance_sheet_policy
   - boj
   - boj_intervention
   - carry_trade
@@ -125015,6 +126659,7 @@ episodes:
   - ecb
   - ecb_hawkish_surprise_hold_with_open_door_+_hawkish_guidance
   - ecb_hike
+  - ecb_meeting_day
   - ecb_policy
   - ecb_terminal_rate_repricing
   - energy_inflation_passthrough
@@ -125037,21 +126682,38 @@ episodes:
   - long_end_rates
   - minutes
   - non_projection_meeting
+  - policy_pause
+  - press_conference_reversal
   - rate_hike_cycle
   - rate_hike_expected
+  - rate_surprise
   - sovereign_fragmentation
+  - staff_projections
   - thin_liquidity
   - yen_carry
   subthemes_local:
+  - balance_sheet
+  - dovish_tilt
   - ecb
+  - guidance_pivot
   - rate_decision
-  n_sources: 17
+  n_sources: 18
   events:
   - event_id: 2022-10-27:monetary_policy:-
     geo: ''
     subthemes_local:
+    - balance_sheet
+    - dovish_tilt
     - ecb
+    - guidance_pivot
     - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      EURUSD=X:
+      - neg
+      IEAG.AS:
+      - pos
     sources:
     - card:2026-06-04/news_03.md
     - card:2026-06-05/news_04.md
@@ -125070,6 +126732,9 @@ episodes:
     - card:2026-07-23/news_04.md
     - card:2026-07-24/news_02.md
     - card:2026-07-25/news_06.md
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     evidence:
     - source: card:2026-06-04/news_03.md
       subthemes_local:
@@ -125131,6 +126796,42 @@ episodes:
     - source: card:2026-07-25/news_06.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - dovish_tilt
+      - ecb
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - dovish_tilt
+      - ecb
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
 - date: '2022-11-02'
   theme: monetary_policy
   direction: neg
@@ -125694,7 +127395,34 @@ episodes:
   - neutral
   - pos
   directions_declared:
+  - neg
   - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - pos
+    EURUSD=X:
+    - pos
+    IEAG.AS:
+    - neg
+    ^STOXX50E:
+    - neg
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    ^STOXX50E:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
   direction_review_excluded:
     IEF: 'Evento di politica monetaria non americana: la trasmissione ai Treasury
       7-10 anni è di secondo ordine e di segno non univoco.'
@@ -125707,6 +127435,7 @@ episodes:
   declared: true
   subthemes:
   - auction
+  - balance_sheet_policy
   - boj
   - cb_independence
   - curve_steepening
@@ -125714,6 +127443,7 @@ episodes:
   - ecb
   - ecb_hawkish_surprise_hold_with_open_door_+_hawkish_guidance
   - ecb_hike
+  - ecb_meeting_day
   - ecb_policy
   - energy_inflation_passthrough
   - energy_premium_risk
@@ -125737,31 +127467,44 @@ episodes:
   - long_end_rates
   - non_projection_meeting
   - policy_error
+  - policy_pause
+  - press_conference_reversal
   - projection
   - rate_decision
   - rate_hike
   - rate_hike_cycle
   - rate_hike_expected
+  - rate_surprise
   - sovereign_fragmentation
+  - staff_projections
   - stagflation
   - warsh
   subthemes_local:
+  - balance_sheet
   - ecb
   - eurozone_release
   - guidance_pivot
   - hawkish
   - hawkish_guidance
   - rate_decision
-  n_sources: 23
+  n_sources: 24
   events:
   - event_id: 2022-12-15:monetary_policy:-
     geo: ''
     subthemes_local:
+    - balance_sheet
     - ecb
     - guidance_pivot
     - hawkish
     - hawkish_guidance
     - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - pos
+      IEAG.AS:
+      - neg
+      ^STOXX50E:
+      - neg
     sources:
     - card:2026-06-05/news_04.md
     - card:2026-06-06/news_04.md
@@ -125783,6 +127526,9 @@ episodes:
     - card:2026-08-28/news_03.md
     - card:2026-08-28/news_05.md
     - card:2026-09-04/news_01.md
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     evidence:
     - source: card:2026-06-05/news_04.md
       subthemes_local:
@@ -125868,6 +127614,71 @@ episodes:
       subthemes_local:
       - guidance_pivot
       directions_by_reference: {}
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        ^STOXX50E:
+        - neg
+  - event_id: 2022-12-15:monetary_policy:britain_release
+    geo: britain_release
+    subthemes_local:
+    - balance_sheet
+    - ecb
+    - guidance_pivot
+    - hawkish
+    - rate_decision
+    directions_by_reference:
+      EURUSD=X:
+      - pos
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - balance_sheet
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - pos
   - event_id: 2022-12-15:monetary_policy:eurozone_release
     geo: eurozone_release
     subthemes_local:
@@ -129212,6 +131023,27 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+    EURUSD=X:
+    - neg
+    IEAG.AS:
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
   direction_review_excluded:
     IEF: 'Evento di politica monetaria non americana: la trasmissione ai Treasury
       7-10 anni è di secondo ordine e di segno non univoco.'
@@ -129224,6 +131056,7 @@ episodes:
   declared: true
   subthemes:
   - auction
+  - balance_sheet_policy
   - boj
   - cb_independence
   - curve_steepening
@@ -129232,6 +131065,7 @@ episodes:
   - ecb
   - ecb_hawkish_surprise_hold_with_open_door_+_hawkish_guidance
   - ecb_hike
+  - ecb_meeting_day
   - ecb_supply_shock_pivot
   - ecb_terminal_rate_repricing
   - energy_inflation_passthrough
@@ -129256,30 +131090,44 @@ episodes:
   - long_end_rates
   - non_projection_meeting
   - policy_error
+  - policy_pause
+  - press_conference_reversal
   - projection
   - rate_decision
   - rate_hike_expected
+  - rate_surprise
+  - staff_projections
   - stagflation
   - stagflation_dilemma
   - term_premium
   - warsh
   subthemes_local:
+  - dovish_tilt
   - ecb
   - eurozone_release
   - guidance_pivot
   - hawkish
   - projection
   - rate_decision
-  n_sources: 29
+  n_sources: 30
   events:
   - event_id: 2023-09-14:monetary_policy:-
     geo: ''
     subthemes_local:
+    - dovish_tilt
     - ecb
     - guidance_pivot
     - hawkish
     - projection
     - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+      EURUSD=X:
+      - neg
+      IEAG.AS:
+      - pos
     sources:
     - card:2026-06-03/news_03.md
     - card:2026-06-06/news_04.md
@@ -129304,6 +131152,9 @@ episodes:
     - card:2026-09-02/news_01.md
     - card:2026-09-03/news_06.md
     - card:2026-09-04/news_01.md
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     evidence:
     - source: card:2026-06-03/news_03.md
       subthemes_local:
@@ -129399,6 +131250,42 @@ episodes:
       subthemes_local:
       - guidance_pivot
       directions_by_reference: {}
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - dovish_tilt
+      - ecb
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - dovish_tilt
+      - ecb
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - dovish_tilt
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
   - event_id: 2023-09-14:monetary_policy:eurozone_release
     geo: eurozone_release
     subthemes_local:
@@ -129943,6 +131830,9 @@ episodes:
       l''episodio per il suo esito. Come il 2024-08-05/06 BoJ e i picchi di prezzo.'
     IEF: 'Data definita dal movimento di prezzo, non da una notizia con un''attesa
       prima della seduta: come il veto già approvato su ^TNX per la stessa riga.'
+    JPY=X: 'Non è una decisione BoJ (la revisione della YCC è del 31/10/2023): la
+      scheda descrive il mercato, non un annuncio. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-01.'
   directions_local:
   - neg
   - pos
@@ -130221,6 +132111,106 @@ episodes:
       directions_by_reference:
         CNY=X:
         - pos
+- date: '2023-10-26'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neutral
+    EURUSD=X:
+    - neutral
+    IEAG.AS:
+    - neutral
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - ecb
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2023-10-26:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neutral
+      EURUSD=X:
+      - neutral
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neutral
+  - event_id: 2023-10-26:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      IEAG.AS:
+      - neutral
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neutral
 - date: '2023-10-31'
   theme: monetary_policy
   direction: mixed
@@ -132300,6 +134290,121 @@ episodes:
       - rate_decision
       directions_by_reference:
         ^GSPTSE:
+        - pos
+- date: '2024-06-06'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+    EURUSD=X:
+    - pos
+    IEAG.AS:
+    - neg
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - ecb
+  - guidance_pivot
+  - hawkish
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2024-06-06:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - guidance_pivot
+    - hawkish
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+      IEAG.AS:
+      - neg
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
+  - event_id: 2024-06-06:monetary_policy:canada_release
+    geo: canada_release
+    subthemes_local:
+    - ecb
+    - guidance_pivot
+    - hawkish
+    - rate_decision
+    directions_by_reference:
+      EURUSD=X:
+      - pos
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
         - pos
 - date: '2024-06-12'
   theme: monetary_policy
@@ -134965,6 +137070,8 @@ episodes:
   direction_review_excluded:
     IEF: La riga descrive un movimento di rendimenti in due settimane, non una notizia
       del giorno.
+    JPY=X: 'Data sbagliata: la riunione BoJ è del 30-31/10/2024; il 23/10 non è una
+      riunione. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
   directions_local:
   - neg
   declared: true
@@ -135226,6 +137333,8 @@ episodes:
   direction_review_excluded:
     IEF: 'Taglio FOMC atteso e coda del riprezzamento elettorale: nessuna sorpresa
       propria della data.'
+    JPY=X: Non è un evento BoJ. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-01.
   directions_local:
   - neg
   declared: true
@@ -135615,6 +137724,9 @@ episodes:
     - card:2026-09-18/news_03.md
     - card:2026-10-14/news_04.md
     - card:2026-10-29/news_02.md
+  direction_review_excluded:
+    JPY=X: 'Data sbagliata: la decisione BoJ è del 19/12/2024, il 18/12 è la FOMC.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
   directions_local:
   - neg
   - pos
@@ -137280,6 +139392,9 @@ episodes:
   direction_review_excluded:
     CNY=X: 'Riga: ''CNY debole (controllata)'' e nota ''difesa camuffata'': due letture,
       in piena escalation dei dazi.'
+    JPY=X: 'Non è un evento BoJ: nel pool monetario BoJ contaminerebbe il canale di
+      politica monetaria. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-01.'
   directions_local:
   - neg
   declared: true
@@ -137704,6 +139819,108 @@ episodes:
         - neg
         ^GSPC:
         - neg
+- date: '2025-06-05'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+    EURUSD=X:
+    - pos
+    IEAG.AS:
+    - neg
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - ecb
+  - guidance_pivot
+  - hawkish
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2025-06-05:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - guidance_pivot
+    - hawkish
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+      EURUSD=X:
+      - pos
+      IEAG.AS:
+      - neg
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
 - date: '2025-06-18'
   theme: monetary_policy
   direction: mixed
@@ -138254,6 +140471,108 @@ episodes:
         - neg
         ^AXJO:
         - neg
+- date: '2025-07-24'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+    EURUSD=X:
+    - pos
+    IEAG.AS:
+    - neg
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - ecb
+  - guidance_pivot
+  - hawkish
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2025-07-24:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - guidance_pivot
+    - hawkish
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+      EURUSD=X:
+      - pos
+      IEAG.AS:
+      - neg
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
 - date: '2025-07-31'
   theme: monetary_policy
   direction: mixed
@@ -138687,6 +141006,108 @@ episodes:
       - synchronized_selloff
       - term_premium
       directions_by_reference: {}
+- date: '2025-09-11'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+    EURUSD=X:
+    - pos
+    IEAG.AS:
+    - neg
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - ecb
+  - guidance_pivot
+  - hawkish
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2025-09-11:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - guidance_pivot
+    - hawkish
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+      EURUSD=X:
+      - pos
+      IEAG.AS:
+      - neg
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
 - date: '2025-09-17'
   theme: monetary_policy
   direction: ''
@@ -138921,6 +141342,106 @@ episodes:
         CAD=X:
         - neg
         - pos
+- date: '2025-10-30'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neutral
+    EURUSD=X:
+    - neutral
+    IEAG.AS:
+    - neutral
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - ecb
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2025-10-30:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neutral
+      IEAG.AS:
+      - neutral
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neutral
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neutral
+  - event_id: 2025-10-30:monetary_policy:japan_release
+    geo: japan_release
+    subthemes_local:
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
 - date: '2025-12-10'
   theme: monetary_policy
   direction: mixed
@@ -138943,6 +141464,9 @@ episodes:
   direction_review_excluded:
     IEF: 'Taglio atteso con tre dissensi e un solo taglio nel 2026, ma acquisti di
       T-bill e Powell che esclude rialzi: sorpresa di segno incerto.'
+    JPY=X: 'Data sbagliata: il rialzo BoJ a 0,75% è del 19/12/2025 (KB); il 10/12
+      non è una riunione BoJ. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-01.'
   directions_local:
   - neg
   - pos
@@ -139256,6 +141780,106 @@ episodes:
       subthemes_local:
       - guidance_pivot
       directions_by_reference: {}
+- date: '2025-12-18'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neutral
+    EURUSD=X:
+    - neutral
+    IEAG.AS:
+    - neutral
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - ecb
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2025-12-18:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neutral
+      IEAG.AS:
+      - neutral
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neutral
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neutral
+  - event_id: 2025-12-18:monetary_policy:britain_release
+    geo: britain_release
+    subthemes_local:
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
 - date: '2025-12-19'
   theme: monetary_policy
   direction: mixed
@@ -139954,6 +142578,95 @@ episodes:
         - neg
         ^AXJO:
         - neg
+- date: '2026-02-05'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neutral
+    EURUSD=X:
+    - neutral
+    IEAG.AS:
+    - neutral
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - ecb
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2026-02-05:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neutral
+      EURUSD=X:
+      - neutral
+      IEAG.AS:
+      - neutral
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neutral
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neutral
 - date: '2026-02-25'
   theme: monetary_policy
   direction: ''
@@ -140225,6 +142938,124 @@ episodes:
         - neg
         ^AXJO:
         - neg
+- date: '2026-03-19'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+    EURUSD=X:
+    - neg
+    - pos
+    IEAG.AS:
+    - neg
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - ecb
+  - guidance_pivot
+  - hawkish
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2026-03-19:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - guidance_pivot
+    - hawkish
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+      IEAG.AS:
+      - neg
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
+  - event_id: 2026-03-19:monetary_policy:britain_release,japan_release
+    geo: britain_release,japan_release
+    subthemes_local:
+    - ecb
+    - guidance_pivot
+    - hawkish
+    - rate_decision
+    directions_by_reference:
+      EURUSD=X:
+      - neg
+      - pos
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+        - pos
 - date: '2026-03-25'
   theme: monetary_policy
   direction: ''
@@ -140485,11 +143316,30 @@ episodes:
   - pos
   directions_declared:
   - neg
+  - neutral
   - pos
   directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neutral
+    EURUSD=X:
+    - neutral
+    IEAG.AS:
+    - neutral
     ^FVX:
     - pos
   direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     ^FVX:
     - card:2026-09-14/news_03.md
     - card:2026-09-18/news_03.md
@@ -140511,6 +143361,7 @@ episodes:
   declared: true
   subthemes:
   - auction
+  - balance_sheet_policy
   - boj
   - boj_intervention
   - britain_release
@@ -140522,6 +143373,7 @@ episodes:
   - dissent
   - dot_plot
   - ecb
+  - ecb_meeting_day
   - energy_premium_risk
   - energy_shock
   - fed
@@ -140534,6 +143386,7 @@ episodes:
   - fomc_minutes
   - forward_guidance
   - forward_guidance_change
+  - fragmentation_risk
   - fx
   - fx_intervention
   - guidance_pivot
@@ -140553,13 +143406,17 @@ episodes:
   - non_projection_meeting
   - oil_overhang
   - policy_error
+  - policy_pause
   - political_pressure
+  - press_conference_reversal
   - projection
   - rate_decision
   - rate_hike_expected
+  - rate_surprise
   - rates
   - rates_atipico
   - scotus
+  - staff_projections
   - stagflation
   - term_premium
   - thin_liquidity
@@ -140575,7 +143432,7 @@ episodes:
   - hawkish
   - rate_decision
   - warsh
-  n_sources: 45
+  n_sources: 46
   events:
   - event_id: 2026-04-30:monetary_policy:-
     geo: ''
@@ -140589,6 +143446,8 @@ episodes:
     - rate_decision
     - warsh
     directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neutral
       ^FVX:
       - pos
     sources:
@@ -140637,6 +143496,9 @@ episodes:
     - card:2026-09-18/news_03.md
     - card:2026-10-14/news_04.md
     - card:2026-10-29/news_02.md
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     evidence:
     - source: card:2026-06-16/news_01.md
       subthemes_local: []
@@ -140800,6 +143662,62 @@ episodes:
       directions_by_reference:
         ^FVX:
         - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neutral
+  - event_id: 2026-04-30:monetary_policy:britain_release
+    geo: britain_release
+    subthemes_local:
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+  - event_id: 2026-04-30:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      IEAG.AS:
+      - neutral
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neutral
 - date: '2026-05-01'
   theme: monetary_policy
   direction: mixed
@@ -141503,17 +144421,42 @@ episodes:
   - pos
   directions_declared:
   - neg
+  - neutral
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neutral
+    EURUSD=X:
+    - neutral
+    IEAG.AS:
+    - neutral
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
   direction_review_excluded:
     IEF: 'Evento di politica monetaria non americana: la trasmissione ai Treasury
       7-10 anni è di secondo ordine e di segno non univoco.'
     EURUSD=X: 'Rialzo BCE di giugno 2026 (euro su), ma nella stessa data le schede
       mettono il CPI USA di maggio con energia in risalita e un dot plot Fed restrittivo
       (dollaro su): spinte opposte. Revisione Claude 2026-10-15.'
+    JPY=X: 'Data sbagliata: per la KB l''11/6/2026 è il rialzo BCE; il rialzo BoJ
+      a 1,0% è riportato dal briefing del 16/6. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-01.'
   directions_local:
   - neg
   declared: true
   subthemes:
   - auction
+  - balance_sheet_policy
   - bank_of_england
   - boj
   - boj_intervention
@@ -141525,6 +144468,7 @@ episodes:
   - dissent
   - dot_plot
   - ecb
+  - ecb_meeting_day
   - energy_premium_risk
   - energy_shock
   - fed
@@ -141538,6 +144482,7 @@ episodes:
   - fomc_minutes
   - forward_guidance
   - forward_guidance_change
+  - fragmentation_risk
   - fx
   - fx_intervention
   - guidance_pivot
@@ -141558,14 +144503,18 @@ episodes:
   - non_projection_meeting
   - oil_overhang
   - policy_error
+  - policy_pause
   - political_pressure
+  - press_conference_reversal
   - projection
   - rate_decision
   - rate_differential
   - rate_hike_expected
+  - rate_surprise
   - rates
   - rates_atipico
   - scotus
+  - staff_projections
   - stagflation
   - term_premium
   - thin_liquidity
@@ -141581,7 +144530,7 @@ episodes:
   - rate_decision
   - scotus
   - term_premium
-  n_sources: 47
+  n_sources: 48
   events:
   - event_id: 2026-06-11:monetary_policy:-
     geo: ''
@@ -141593,6 +144542,13 @@ episodes:
     - rate_decision
     - scotus
     - term_premium
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neutral
+      EURUSD=X:
+      - neutral
+      IEAG.AS:
+      - neutral
     sources:
     - card:2026-06-16/news_04.md
     - card:2026-06-17/news_03.md
@@ -141640,6 +144596,9 @@ episodes:
     - card:2026-09-02/news_01.md
     - card:2026-09-03/news_04.md
     - card:2026-09-03/news_06.md
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     evidence:
     - source: card:2026-06-16/news_04.md
       subthemes_local:
@@ -141802,6 +144761,36 @@ episodes:
     - source: card:2026-09-03/news_06.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neutral
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neutral
   - event_id: 2026-06-11:monetary_policy:eurozone_release
     geo: eurozone_release
     subthemes_local:
@@ -142146,6 +145135,95 @@ episodes:
       subthemes_local:
       - korea_release
       directions_by_reference: {}
+- date: '2026-07-23'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neutral
+    EURUSD=X:
+    - neutral
+    IEAG.AS:
+    - neutral
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - ecb
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2026-07-23:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neutral
+      EURUSD=X:
+      - neutral
+      IEAG.AS:
+      - neutral
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neutral
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neutral
 - date: '2026-07-29'
   theme: monetary_policy
   direction: ''
@@ -142709,6 +145787,95 @@ episodes:
       directions_by_reference:
         CAD=X:
         - neg
+- date: '2026-09-10'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neutral
+    EURUSD=X:
+    - neutral
+    IEAG.AS:
+    - neutral
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - ecb
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2026-09-10:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neutral
+      EURUSD=X:
+      - neutral
+      IEAG.AS:
+      - neutral
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neutral
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neutral
 - date: '2026-09-11'
   theme: monetary_policy
   direction: ''
@@ -143146,6 +146313,132 @@ episodes:
       directions_by_reference:
         ^GSPTSE:
         - neg
+- date: '2026-10-29'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+    EURUSD=X:
+    - neg
+    - pos
+    IEAG.AS:
+    - neg
+    - pos
+    OAT_BUND_SPREAD:
+    - neg
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    EURUSD=X:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    IEAG.AS:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    OAT_BUND_SPREAD:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - balance_sheet_policy
+  - ecb_meeting_day
+  - forward_guidance
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  - rate_surprise
+  - staff_projections
+  subthemes_local:
+  - ecb
+  - guidance_pivot
+  - rate_decision
+  n_sources: 1
+  events:
+  - event_id: 2026-10-29:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - guidance_pivot
+    - rate_decision
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+      EURUSD=X:
+      - neg
+      - pos
+      IEAG.AS:
+      - neg
+      - pos
+      OAT_BUND_SPREAD:
+      - neg
+      - pos
+    sources:
+    - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
+      regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+      sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    evidence:
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
+    - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+        e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
+        di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
+        2011-2026.md
+      subthemes_local:
+      - ecb
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - neg
+        - pos
 - date: '2016-06-23'
   theme: regulatory
   direction: neg

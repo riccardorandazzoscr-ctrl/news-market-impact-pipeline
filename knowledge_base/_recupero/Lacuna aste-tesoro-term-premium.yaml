@@ -12,7 +12,7 @@ voci:
     verso: escluso
     perché: 'La riga descrive il movimento dei prezzi, non un evento: il verso verrebbe dall''esito. Criterio
       ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
-  stato: da_approvare
+  stato: promossa
 - data: '2026-08-14'
   tema: fiscal_policy
   fonte: 2026-08-24/news_05.md
@@ -25,7 +25,7 @@ voci:
     verso: escluso
     perché: La riga descrive il movimento dei prezzi (la notizia del giorno sui Treasury era stata scartata
       come «reazione»), non un evento. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.
-  stato: da_approvare
+  stato: promossa
 - data: '2025-09-03'
   tema: fiscal_policy
   fonte: 2026-08-20/news_01.md
@@ -38,7 +38,7 @@ voci:
     verso: escluso
     perché: La riga descrive il movimento dei prezzi, non un evento. Criterio ex ante, nessun prezzo consultato.
       Revisione Claude 2026-11-01.
-  stato: da_approvare
+  stato: promossa
 - data: '2025-05-20'
   tema: fiscal_policy
   fonte: 2026-08-24/news_05.md
@@ -52,7 +52,7 @@ voci:
     perché: 'Data non identificata: il downgrade Moody''s è del 16/5/2025 e l''asta ventennale debole
       del 21/5; il 20/5 non porta né l''uno né l''altra. Criterio ex ante, nessun prezzo consultato. Revisione
       Claude 2026-11-01.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-04-04'
   tema: fiscal_policy
   fonte: 2026-08-20/news_01.md
@@ -65,7 +65,7 @@ voci:
     verso: escluso
     perché: 'Spinte opposte sullo stesso asset: rifugio (prezzi su) e disordine d''offerta (prezzi giù).
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
-  stato: da_approvare
+  stato: promossa
 - data: '2024-11-06'
   tema: fiscal_policy
   fonte: 2026-08-20/news_01.md
@@ -79,7 +79,7 @@ voci:
     perché: 'Programma di tagli fiscali e dazi: più deficit ed emissione attesi, premio a termine atteso
       in salita, prezzo di IEF atteso in calo. Criterio ex ante, nessun prezzo consultato. Revisione Claude
       2026-11-01.'
-  stato: da_approvare
+  stato: promossa
 - data: '2023-10-19'
   tema: fiscal_policy
   fonte: 2026-08-20/news_01.md
@@ -93,7 +93,7 @@ voci:
     perché: Spinte opposte nel discorso (inflazione ancora alta, ma rendimenti che «fanno il lavoro» della
       Fed); la riga parla del livello, non dell'annuncio. Criterio ex ante, nessun prezzo consultato.
       Revisione Claude 2026-11-01.
-  stato: da_approvare
+  stato: promossa
 - data: '2022-12-20'
   tema: fiscal_policy
   fonte: 2026-08-20/news_01.md
@@ -106,7 +106,7 @@ voci:
     verso: neg
     perché: 'Si ritira un compratore di duration su scala globale: rendimenti lunghi attesi più alti,
       prezzo di IEF atteso in calo. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
-  stato: da_approvare
+  stato: promossa
 - data: '2021-03-11'
   tema: fiscal_policy
   fonte: 2026-08-21/news_01.md
@@ -120,7 +120,7 @@ voci:
     verso: escluso
     perché: 'Nessuna informazione nuova alla data: la legge era passata alla Camera il 10/3, la firma
       era attesa. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
-  stato: da_approvare
+  stato: promossa
 - data: '2021-02-25'
   tema: fiscal_policy
   fonte: 2026-08-20/news_01.md
@@ -134,7 +134,7 @@ voci:
     verso: neg
     perché: 'Shock d''offerta puro: domanda debole all''asta, rendimenti attesi più alti, prezzo di IEF
       atteso in calo. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
-  stato: da_approvare
+  stato: promossa
 - data: '2018-06-13'
   tema: fiscal_policy
   fonte: 2026-08-20/news_01.md
@@ -148,7 +148,7 @@ voci:
     perché: 'Decisione di politica monetaria, non di bilancio o d''offerta: nel pool fiscale contaminerebbe
       il canale delle aste; il verso va dichiarato sotto monetary_policy. Criterio ex ante, nessun prezzo
       consultato. Revisione Claude 2026-11-01.'
-  stato: da_approvare
+  stato: promossa
 - data: '2018-03-21'
   tema: fiscal_policy
   fonte: 2026-08-20/news_01.md
@@ -161,7 +161,7 @@ voci:
     verso: escluso
     perché: 'Decisione di politica monetaria, non di bilancio o d''offerta: va dichiarata sotto monetary_policy.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
-  stato: da_approvare
+  stato: promossa
 - data: '2017-12-22'
   tema: fiscal_policy
   fonte: 2026-08-21/news_01.md
@@ -175,7 +175,7 @@ voci:
     verso: escluso
     perché: 'Nessuna informazione nuova alla data: l''approvazione finale del Congresso è del 20/12, la
       firma era attesa. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
-  stato: da_approvare
+  stato: promossa
 - data: '2014-03-19'
   tema: fiscal_policy
   fonte: 2026-08-20/news_01.md
@@ -188,7 +188,7 @@ voci:
     verso: escluso
     perché: 'Decisione di politica monetaria, non di bilancio o d''offerta: va dichiarata sotto monetary_policy.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
-  stato: da_approvare
+  stato: promossa
 - data: '2003-06-25'
   tema: fiscal_policy
   fonte: 2026-08-20/news_01.md
@@ -202,4 +202,4 @@ voci:
     verso: escluso
     perché: 'Decisione di politica monetaria, non di bilancio o d''offerta: va dichiarata sotto monetary_policy.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
-  stato: da_approvare
+  stato: promossa
