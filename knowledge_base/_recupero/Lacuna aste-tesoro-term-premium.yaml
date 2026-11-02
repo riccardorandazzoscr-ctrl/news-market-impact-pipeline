@@ -1,0 +1,205 @@
+research: lacuna aste-tesoro-term-premium (fiscal_policy, term_premium, rif IEF; sotto-tema locale)
+voci:
+- data: '2026-08-18'
+  tema: fiscal_policy
+  fonte: 2026-08-20/news_01.md
+  riga: '| `2026-08-18` | neg | term_premium | Selloff sincronizzato sulle curve lunghe di due giorni
+    fa — l''antecedente immediato che ha innescato l''intervento del Tesoro. |'
+  evento: Selloff sincronizzato delle curve lunghe
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'La riga descrive il movimento dei prezzi, non un evento: il verso verrebbe dall''esito. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2026-08-14'
+  tema: fiscal_policy
+  fonte: 2026-08-24/news_05.md
+  riga: '| `2026-08-14` | neg | term_premium, fiscal_deadlock | Episodio più recente: **premio a termine
+    e stress fiscale insieme**, dieci giorni fa. |'
+  evento: Rendimenti in rialzo con stress fiscale
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: La riga descrive il movimento dei prezzi (la notizia del giorno sui Treasury era stata scartata
+      come «reazione»), non un evento. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.
+  stato: da_approvare
+- data: '2025-09-03'
+  tema: fiscal_policy
+  fonte: 2026-08-20/news_01.md
+  riga: '| `2025-09-03` | neg | term_premium, auction | Debolezza sincronizzata delle curve lunghe globali
+    (gilt, JGB, Treasury): il regime in cui siamo ancora oggi. |'
+  evento: Debolezza delle curve lunghe globali
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: La riga descrive il movimento dei prezzi, non un evento. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-01.
+  stato: da_approvare
+- data: '2025-05-20'
+  tema: fiscal_policy
+  fonte: 2026-08-24/news_05.md
+  riga: '| `2025-05-20` | neg | term_premium | Giorno successivo al downgrade USA: **asta debole e allargamento
+    del premio a termine**. |'
+  evento: Asta debole dopo il downgrade USA (secondo la scheda)
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Data non identificata: il downgrade Moody''s è del 16/5/2025 e l''asta ventennale debole
+      del 21/5; il 20/5 non porta né l''uno né l''altra. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2025-04-04'
+  tema: fiscal_policy
+  fonte: 2026-08-20/news_01.md
+  riga: '| `2025-04-04` | neg | risk_off, term_premium | Fase acuta dello shock dazi: fuga verso la qualità
+    e poi disordine sulla parte lunga. |'
+  evento: 'Shock dei dazi: fuga verso la qualità, poi disordine sulla parte lunga'
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Spinte opposte sullo stesso asset: rifugio (prezzi su) e disordine d''offerta (prezzi giù).
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2024-11-06'
+  tema: fiscal_policy
+  fonte: 2026-08-20/news_01.md
+  riga: '| `2024-11-06` | neg | term_premium | Reazione del mercato obbligazionario all''esito elettorale
+    USA: riprezzamento del rischio fiscale sulla parte lunga. |'
+  evento: Esito delle presidenziali USA con controllo repubblicano
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'Programma di tagli fiscali e dazi: più deficit ed emissione attesi, premio a termine atteso
+      in salita, prezzo di IEF atteso in calo. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-01.'
+  stato: da_approvare
+- data: '2023-10-19'
+  tema: fiscal_policy
+  fonte: 2026-08-20/news_01.md
+  riga: '| `2023-10-19` | neg | term_premium | Powell davanti all''Economic Club mentre il decennale USA
+    testa il 5%: apice dell''episodio di premio a termine del 2023, poi rientro rapido. |'
+  evento: Discorso di Powell all'Economic Club con il decennale vicino al 5%
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: Spinte opposte nel discorso (inflazione ancora alta, ma rendimenti che «fanno il lavoro» della
+      Fed); la riga parla del livello, non dell'annuncio. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-01.
+  stato: da_approvare
+- data: '2022-12-20'
+  tema: fiscal_policy
+  fonte: 2026-08-20/news_01.md
+  riga: '| `2022-12-20` | neg | boj, term_premium | La Bank of Japan allarga la banda di controllo del
+    rendimento a 10 anni: rimozione di un compratore di duration, premio a termine su scala globale. |'
+  evento: BoJ allarga la banda YCC a ±0,5%
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'Si ritira un compratore di duration su scala globale: rendimenti lunghi attesi più alti,
+      prezzo di IEF atteso in calo. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2021-03-11'
+  tema: fiscal_policy
+  fonte: 2026-08-21/news_01.md
+  riga: '| `2021-03-11` | neg | fiscal_expansion, term_premium | Biden firma l''American Rescue Plan:
+    1.900 miliardi approvati per via parlamentare stretta, altra espansione a deficit dentro un''economia
+    in riapertura. |'
+  evento: Firma dell'American Rescue Plan
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Nessuna informazione nuova alla data: la legge era passata alla Camera il 10/3, la firma
+      era attesa. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2021-02-25'
+  tema: fiscal_policy
+  fonte: 2026-08-20/news_01.md
+  riga: '| `2021-02-25` | neg | term_premium | Asta del settennale USA andata male: episodio puro di **offerta**,
+    i rendimenti lunghi saltano e la volatilità obbligazionaria esplode. Il precedente più vicino al problema
+    che il buyback vuole risolvere. |'
+  evento: Asta del Tesoro a 7 anni andata male
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: neg
+    perché: 'Shock d''offerta puro: domanda debole all''asta, rendimenti attesi più alti, prezzo di IEF
+      atteso in calo. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2018-06-13'
+  tema: fiscal_policy
+  fonte: 2026-08-20/news_01.md
+  riga: '| `2018-06-13` | neg | rate_decision, term_premium | Secondo rialzo del 2018 con guidance più
+    aggressiva; la curva si appiattisce, il premio a termine si comprime. |'
+  evento: Rialzo Fed con dot plot più aggressivo
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Decisione di politica monetaria, non di bilancio o d''offerta: nel pool fiscale contaminerebbe
+      il canale delle aste; il verso va dichiarato sotto monetary_policy. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2018-03-21'
+  tema: fiscal_policy
+  fonte: 2026-08-20/news_01.md
+  riga: '| `2018-03-21` | neg | rate_decision, term_premium | Rialzo Fed con dot plot più ripido mentre
+    il bilancio si sgonfia: offerta netta di duration al mercato in aumento. |'
+  evento: Rialzo Fed con dot plot più ripido
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Decisione di politica monetaria, non di bilancio o d''offerta: va dichiarata sotto monetary_policy.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2017-12-22'
+  tema: fiscal_policy
+  fonte: 2026-08-21/news_01.md
+  riga: '| `2017-12-22` | neg | fiscal_expansion, term_premium | Trump firma il Tax Cuts and Jobs Act:
+    1.500 miliardi di tagli fiscali su 10 anni **finanziati a deficit** → più emissione attesa → premio
+    a termine in salita. |'
+  evento: Firma del Tax Cuts and Jobs Act
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Nessuna informazione nuova alla data: l''approvazione finale del Congresso è del 20/12, la
+      firma era attesa. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2014-03-19'
+  tema: fiscal_policy
+  fonte: 2026-08-20/news_01.md
+  riga: '| `2014-03-19` | neg | guidance_pivot, term_premium | Yellen lega il primo rialzo a «circa sei
+    mesi» dalla fine degli acquisti: shock di duration sulla parte intermedia della curva. |'
+  evento: Yellen lega il primo rialzo a «circa sei mesi» dalla fine degli acquisti
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Decisione di politica monetaria, non di bilancio o d''offerta: va dichiarata sotto monetary_policy.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2003-06-25'
+  tema: fiscal_policy
+  fonte: 2026-08-20/news_01.md
+  riga: '| `2003-06-25` | neg | term_premium, guidance_pivot | La Fed taglia solo 25pb invece dei 50 attesi
+    e raffredda l''ipotesi di acquisti di titoli lunghi: il premio a termine si riprezza al rialzo, poi
+    rientra. |'
+  evento: Fed taglia 25 pb invece di 50 e raffredda gli acquisti di titoli lunghi
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    verso: escluso
+    perché: 'Decisione di politica monetaria, non di bilancio o d''offerta: va dichiarata sotto monetary_policy.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare

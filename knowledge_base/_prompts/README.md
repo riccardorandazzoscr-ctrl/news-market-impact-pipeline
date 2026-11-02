@@ -49,4 +49,6 @@ Non rinominare la cartella e non togliere il trattino basso.
 
 ## Stato
 
-Un file qui = una research richiesta e non ancora eseguita.
+Un file qui = una research richiesta e non ancora eseguita. Il nome del file è lo slug
+della lacuna (`#lacuna <slug>` nelle giornate): così `lacune.py` mostra quali lacune
+hanno già un prompt, e quante volte sono ricorse mentre il prompt aspettava.

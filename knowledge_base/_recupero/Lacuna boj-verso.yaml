@@ -1,0 +1,160 @@
+research: lacuna boj-verso (monetary_policy, boj, rif JPY=X; sotto-tema locale)
+voci:
+- data: '2026-06-11'
+  tema: monetary_policy
+  fonte: 2026-08-31/news_03.md
+  riga: '| `2026-06-11` | neg | boj, term_premium, jpy | Episodio più recente del canale JGB/premio a
+    termine prima di oggi, verso dichiarato `neg`. |'
+  evento: Rialzo BoJ a 1,0% (secondo la scheda)
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    verso: escluso
+    perché: 'Data sbagliata: per la KB l''11/6/2026 è il rialzo BCE; il rialzo BoJ a 1,0% è riportato
+      dal briefing del 16/6. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2025-12-10'
+  tema: monetary_policy
+  fonte: 2026-08-31/news_03.md
+  riga: '| `2025-12-10` | neg | boj, term_premium, jpy | Episodio di risalita dei rendimenti giapponesi
+    già codificato in libreria con verso dichiarato `neg`. |'
+  evento: Decisione BoJ di fine 2025 (secondo la scheda)
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    verso: escluso
+    perché: 'Data sbagliata: il rialzo BoJ a 0,75% è del 19/12/2025 (KB); il 10/12 non è una riunione
+      BoJ. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2025-04-08'
+  tema: monetary_policy
+  fonte: 2026-08-31/news_03.md
+  riga: '| `2025-04-08` | neg | jpy, risk_off, boj | Fase di forte avversione al rischio globale con lo
+    yen che riprende il ruolo di rifugio e i rendimenti giapponesi in movimento. |'
+  evento: Avversione al rischio globale nello shock dei dazi
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    verso: escluso
+    perché: 'Non è un evento BoJ: nel pool monetario BoJ contaminerebbe il canale di politica monetaria.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2024-12-18'
+  tema: monetary_policy
+  fonte: 2026-08-31/news_03.md
+  riga: '| `2024-12-18` | neg | rate_decision, boj, jpy | La BoJ lascia i tassi fermi contro attese parzialmente
+    di rialzo: yen indebolito, curva giapponese più ripida. |'
+  evento: Riunione BoJ di dicembre 2024 (secondo la scheda)
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    verso: escluso
+    perché: 'Data sbagliata: la decisione BoJ è del 19/12/2024, il 18/12 è la FOMC. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2024-11-07'
+  tema: monetary_policy
+  fonte: 2026-08-31/news_03.md
+  riga: '| `2024-11-07` | neg | boj, jpy, term_premium | Riprezzamento dei tassi globali dopo le elezioni
+    americane, con il canale giapponese che amplifica il movimento sulla parte lunga. |'
+  evento: Riprezzamento dei tassi globali dopo le elezioni USA
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    verso: escluso
+    perché: Non è un evento BoJ. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.
+  stato: da_approvare
+- data: '2024-10-23'
+  tema: monetary_policy
+  fonte: 2026-08-31/news_03.md
+  riga: '| `2024-10-23` | neg | jpy, boj, term_premium | Yen di nuovo in area 152-153 con rendimenti giapponesi
+    in risalita, in un contesto di incertezza politica interna. |'
+  evento: Riunione BoJ di ottobre 2024 (secondo la scheda)
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    verso: escluso
+    perché: 'Data sbagliata: la riunione BoJ è del 30-31/10/2024; il 23/10 non è una riunione. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2023-10-19'
+  tema: monetary_policy
+  fonte: 2026-08-28/news_03.md
+  riga: '| `2023-10-19` | pos | boj, term_premium | Pressione sulla parte lunga con la BoJ costretta a
+    difendere il tetto YCC: canale del premio a termine |'
+  evento: Pressione sul tetto YCC con il decennale USA verso il 5%
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    verso: escluso
+    perché: 'Non è una decisione BoJ (la revisione della YCC è del 31/10/2023): la scheda descrive il
+      mercato, non un annuncio. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2022-09-28'
+  tema: monetary_policy
+  fonte: 2026-08-29/news_02.md
+  riga: '| `2022-09-28` | neg | fx_intervention, jpy, boj | Primo intervento del Ministero delle Finanze
+    sullo yen dal 1998, a 145: la difesa regge poche settimane → il livello viene ri-sfondato. |'
+  evento: Intervento del Ministero delle Finanze sullo yen (secondo la scheda)
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    verso: escluso
+    perché: 'Data sbagliata: l''intervento è del 22/9/2022; il 28/9 è l''intervento della BoE sui gilt.
+      Né l''uno né l''altro è una decisione BoJ. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2014-03-19'
+  tema: monetary_policy
+  fonte: 2026-08-28/news_03.md
+  riga: '| `2014-03-19` | pos | boj, guidance_pivot | Riunione BoJ: nessun allentamento aggiuntivo contro
+    attese di ulteriore stimolo → sorpresa hawkish per omissione |'
+  evento: Riunione BoJ senza nuovo allentamento (secondo la scheda)
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    verso: escluso
+    perché: 'Data sbagliata: le riunioni BoJ sono dell''11/3 e dell''8/4/2014; il 19/3 è la FOMC (Yellen,
+      «circa sei mesi»). Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2011-08-09'
+  tema: monetary_policy
+  fonte: 2026-08-28/news_03.md
+  riga: '| `2011-08-09` | pos | boj, guidance_pivot | Comunicazione di policy in piena crisi del debito:
+    svolta nella guidance con yen sotto pressione di apprezzamento |'
+  evento: Intervento BoJ sullo yen forte (secondo la scheda)
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    verso: escluso
+    perché: 'Data sbagliata: intervento e allentamento BoJ sono del 4/8/2011; il 9/8 è la FOMC (tassi
+      fermi fino a metà 2013). Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '2001-03-19'
+  tema: monetary_policy
+  fonte: 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC e interventi FX
+    — regime ed episodi storici (1998–2026).md'
+  riga: '| 2001-03-19 | Avvio Quantitative Easing (QE) | POLICY/BoJ | JPY debole | JPY=X | Pre-2011, non
+    calcolabile |'
+  evento: Avvio del Quantitative Easing BoJ
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    verso: pos
+    perché: 'Allentamento: la research stessa scrive «JPY debole», USD/JPY atteso in rialzo. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare
+- data: '1999-02-12'
+  tema: monetary_policy
+  fonte: 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC e interventi FX
+    — regime ed episodi storici (1998–2026).md'
+  riga: '| 1999-02-12 | Introduzione ZIRP (Zero Interest Rate Policy) | POLICY/BoJ | JPY debole | JPY=X
+    | Pre-2011, non calcolabile. Contesto deflazione |'
+  evento: Introduzione della ZIRP
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    verso: pos
+    perché: 'Allentamento: la research stessa scrive «JPY debole», USD/JPY atteso in rialzo. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-01.'
+  stato: da_approvare

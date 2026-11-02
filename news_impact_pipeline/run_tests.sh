@@ -116,6 +116,11 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
   run "kb — recupero: dalle proposte approvate alle righe del registro" \
       recupero.py --check
 
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "kb" ] && \
+  run "kb — lacune: etichette, chiusura e riapertura, episodi senza verso" lacune.py --check
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "kb" ] && \
+  run "kb — calendari delle riunioni: date BoJ/BCE su riunioni di altre banche" calendari_riunioni.py --check
+
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "analisi" ] && \
   run "analisi — guardiano contro il run interrotto a metà" \
       tests/test_index_incompleto.sh

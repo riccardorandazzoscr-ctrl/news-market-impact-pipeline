@@ -107,7 +107,8 @@ Perimetro (vincolante):
 4) Non toccare le altre righe di triage né le altre schede; non rigenerare il digest.
    In _index.md aggiungi in coda alla Sintesi di sessione un paragrafo
    "**Aggiornamento dopo la research (${TAG#rev}).**" con cosa è cambiato e perché, e
-   segna la lacuna come chiusa in "Lacune emerse" con N per verso e ticker.
+   segna la lacuna come chiusa in "Lacune emerse" con N per verso e ticker e con
+   l'etichetta \`#lacuna <slug> stato=chiusa\` (slug della lacuna, da venv/bin/python lacune.py).
 5) Scrivi in $DAY/_rianalisi_${TAG}.md un riassunto per il telefono, max 8 righe,
    senza tabelle: quali notizie, scheda nuova o rifatta, cosa dice ora il pool
    (N, verso, INDICATIVE ONLY se N<10) rispetto a stamattina.

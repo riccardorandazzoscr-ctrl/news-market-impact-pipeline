@@ -1,0 +1,72 @@
+research: lacuna ism-usa-verso (macro_data, ism, rif IEF; sotto-tema locale)
+voci:
+- data: '2025-03-03'
+  tema: macro_data
+  fonte: 2026-08-21/news_02.md
+  riga: '| `2025-03-03` | neg | ism, tariff_escalation | ISM manifatturiero in calo dentro lo shock dazi
+    di primavera 2025. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2023-08-03'
+  tema: macro_data
+  fonte: 2026-08-25/news_05.md
+  riga: '| `2023-08-03` | neg | ism, activity_growth | Attività in raffreddamento mentre i rendimenti
+    lunghi salgono per ragioni di offerta di titoli: combinazione sfavorevole per l''azionario. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2022-08-03'
+  tema: macro_data
+  fonte: 2026-08-25/news_05.md
+  riga: '| `2022-08-03` | neg | ism, services | Indicatori di attività in raffreddamento nel pieno del
+    ciclo di rialzi: il mercato oscilla fra "pivot" e "recessione". |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2019-10-03'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  riga: '|2019-10-03|ISM servizi 52,6 (minimo 3 anni)                                       |USA          |easing_prezzato    |equity
+    giù (giorno), rendimenti giù|^GSPC, ^TNX                              |“Insurance cuts”; odds taglio
+    ottobre da ~40% a >85% (Danske); il 4-ott equity su                       '
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2019-09-04'
+  tema: macro_data
+  fonte: 2026-08-25/news_05.md
+  riga: '| `2019-09-04` | neg | ism, activity_growth | Conferma della contrazione manifatturiera americana:
+    la recessione industriale del 2019 senza recessione dei consumi. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2015-09-03'
+  tema: macro_data
+  fonte: 2026-09-02/news_04.md
+  riga: '| `2015-09-03` | neg | ism, activity_growth | Indagine manifatturiera in rallentamento durante
+    il rallentamento industriale globale del 2015 |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: IEF
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere

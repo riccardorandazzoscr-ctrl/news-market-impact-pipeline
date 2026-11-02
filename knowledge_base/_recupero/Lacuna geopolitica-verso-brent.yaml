@@ -1,0 +1,176 @@
+research: lacuna geopolitica-verso-brent (geopolitical, infrastructure_attack,shipping_chokepoint, rif
+  BZ=F; sotto-tema locale)
+voci:
+- data: '2026-05-27'
+  tema: geopolitical
+  fonte: 2026-09-10/news_02.md
+  riga: '| `2026-05-27` | neg | black_sea, military_escalation, infrastructure_attack | Raid massicci
+    su infrastrutture ucraine dopo un tentativo negoziale fallito |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2026-05-26'
+  tema: geopolitical
+  fonte: 2026-09-10/news_01.md
+  riga: '| `2026-05-26` | neg | military_escalation, iran, infrastructure_attack | Colpi su infrastrutture
+    energetiche iraniane dentro il conflitto già cronico |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2026-04-17'
+  tema: geopolitical
+  fonte: 2026-09-12/news_01.md
+  riga: '| `2026-04-17` | pos | infrastructure_attack, shipping_chokepoint | Attacco all''infrastruttura
+    di export saudita (oleodotto Est-Ovest, primo colpo) con rotta di aggiramento compromessa. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2025-12-22'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  riga: '| 2025-12-22 | Rimbalzo del grano su nuovi attacchi ai porti (Odessa/Pivdennyi, terminal Allseeds;
+    Taman lato russo); seduta di lunedì | attacco portuale | ZW=F: pos | Canale 1 | Grano a 5,15 $/bu
+    rimbalzando dal minimo di quasi due mesi (5,04 $ il 17/12); guadagni limitati da ampia offerta globale '
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2025-08-18'
+  tema: geopolitical
+  fonte: 2026-08-23/news_03.md
+  riga: '| `2025-08-18` | neg | military_escalation, infrastructure_attack | Attacchi alle infrastrutture
+    energetiche russe con effetto su prodotti raffinati |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2025-06-22'
+  tema: geopolitical
+  fonte: 2026-09-02/news_06.md
+  riga: '| `2025-06-22` | neg | military_escalation, infrastructure_attack | Colpi americani sui siti
+    nucleari iraniani |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2024-06-17'
+  tema: geopolitical
+  fonte: 2026-08-23/news_03.md
+  riga: '| `2024-06-17` | neg | military_escalation, shipping_chokepoint | Intensificazione degli attacchi
+    Houthi alle navi commerciali |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2024-03-12'
+  tema: geopolitical
+  fonte: 2026-08-23/news_03.md
+  riga: '| `2024-03-12` | neg | military_escalation, infrastructure_attack | Ondata di attacchi ucraini
+    con droni alle raffinerie russe: colpisce prodotti e margine di raffinazione, non il greggio |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2024-01-22'
+  tema: geopolitical
+  fonte: 2026-08-23/news_03.md
+  riga: '| `2024-01-22` | neg | military_escalation, shipping_chokepoint | Prosecuzione della campagna
+    sugli Houthi con dirottamento stabile del traffico verso il Capo di Buona Speranza |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2024-01-15'
+  tema: geopolitical
+  fonte: kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar Rosso,
+    trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_ attacchi alle infrastrutture
+    energetiche saudite ed emiratine e crisi del Mar Rosso, trasmissione a greggio, prodotti, trasporti
+    e gas (2015-presente).md
+  riga: 'Secondo punto. La crisi del Mar Rosso (da novembre 2023) è soprattutto un canale di trasporto
+    e di logistica, non di offerta di greggio. Colpisce i noli container (Goldman Sachs, citata da CNBC
+    il 2024-01-03: noli Asia-Europa "roughly tripled from their early December levels"; Freightos: FBX11
+    Asia-'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2023-12-15'
+  tema: geopolitical
+  fonte: kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar Rosso,
+    trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_ attacchi alle infrastrutture
+    energetiche saudite ed emiratine e crisi del Mar Rosso, trasmissione a greggio, prodotti, trasporti
+    e gas (2015-presente).md
+  riga: '**Canale 4 — Chokepoint e deviazioni (redistributivo fra trasporto e utilizzatori).** Catena:
+    `attacchi a navi a Bab el-Mandeb → deviazioni delle compagnie (Maersk 2023-12-15, BP 2023-12-18) via
+    Capo di Buona Speranza → +2/4 settimane di viaggio (S&P Global) → noli e premi war risk ↑ → ricavi
+    dei ve'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2023-08-02'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  riga: '| 2023-08-02 | Attacco russo al porto danubiano di Izmail (mercoledì) | attacco portuale | ZW=F:
+    pos | Canale 1 | Prezzi alimentari globali in rialzo; 180.000 t di grano distrutte dal ritiro russo,
+    secondo Kyiv. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2023-07-19'
+  tema: geopolitical
+  fonte: 2026-09-10/news_02.md
+  riga: '| `2023-07-19` | neg | black_sea, infrastructure_attack | Raid russi sui terminali cerealicoli
+    di Odessa e Chornomorsk: distruzione di capacità di export, non solo minaccia |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2022-09-26'
+  tema: geopolitical
+  fonte: kb:Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi datati per event study
+    (2022–2026)/Russia-Ucraina- attrito energetico e regime sanzioni — mappa di episodi datati per event
+    study (2022–2026).md
+  riga: '| 2022-09-26 | Sabotaggio Nord Stream (esplosioni) | escalation/supply-shock | risk-off; gas↑
+    | ^VIX↑, GC=F↑, EURUSD=X↓ | NS1 già fermo; NS2 mai operativo. Effetto più simbolico/strutturale che
+    di flusso |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: BZ=F
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere

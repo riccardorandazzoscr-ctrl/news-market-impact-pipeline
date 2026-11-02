@@ -154,6 +154,9 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
    `--min-n` segnala campione piccolo, non impone di raggiungerlo. Non rimuovere
    un vincolo e non aggiungere date soltanto per aumentare N. Eventi manuali
    sono ammessi solo con fonte e motivazione verificabili, stessi vincoli.
+   La data di una riunione Fed, BCE o BoJ scritta a mano si controlla in
+   `calendari_riunioni.yaml` (data della decisione), mai a memoria: a giugno-settembre 2026
+   24 righe di scheda mettevano riunioni BoJ e BCE nei giorni FOMC.
    `--allow-fallback` abilita il vecchio allargamento solo per un confronto
    **descrittivo**, mai per una previsione attiva. Annota il motivo del vuoto:
    famiglia, geografia, sorpresa, riferimento, regime o prezzi mancanti.
@@ -230,6 +233,15 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
    o «senza riferimento», prova il `find` anche con gli altri ticker della stessa classe
    (es. `^FVX` oltre a `^TNX`) e con `--direction neutral`: le revisioni dichiarano il
    verso su un solo ticker.
+
+   **Etichetta fissa (dal 2026-11-01).** Ogni lacuna chiude la sua riga con
+   `` `#lacuna <slug> tipo=studio|verso|asset tema=<tema> sotto=<tok,tok> rif=<ticker>` ``,
+   e la riga di triage ✖ che ne dipende cita `` `#lacuna <slug>` ``. Prima di inventare
+   uno slug, **una volta per run** `venv/bin/python lacune.py`: se la lacuna c'è già, riusa
+   il suo slug (è così che si contano le ricorrenze). Il tipo decide chi la chiude:
+   `verso` = gli episodi ci sono ma senza verso su `rif` (si chiude col registro dei versi,
+   non con una research), `studio` = mancano gli episodi, `asset` = manca il ticker.
+   Una lacuna colmata riceve `` `#lacuna <slug> stato=chiusa` `` sulla riga che lo dice.
 
    Una lacuna verificata in seguito, in sessione interattiva, si corregge sotto la riga
    originale con il marcatore `*Correzione (verifica successiva): …*` (o `*Precisazione

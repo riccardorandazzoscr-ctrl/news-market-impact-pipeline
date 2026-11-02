@@ -1,0 +1,160 @@
+research: lacuna inflazione-giappone-verso (macro_data, japan_release, rif JPY=X; sotto-tema locale)
+voci:
+- data: '2026-06-11'
+  tema: macro_data
+  fonte: 2026-09-04/news_06.md
+  riga: '| `2026-06-11` | neg | japan_release, activity_growth | Release giapponese più recente del pool.
+    |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2026-04-30'
+  tema: macro_data
+  fonte: 2026-09-04/news_06.md
+  riga: '| `2026-04-30` | neg | japan_release, boj | Riunione BoJ nel regime corrente. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2025-01-24'
+  tema: macro_data
+  fonte: 2026-09-04/news_06.md
+  riga: '| `2025-01-24` | neg | japan_release, boj, rate_decision | Rialzo BoJ nel percorso di normalizzazione.
+    |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2024-12-18'
+  tema: macro_data
+  fonte: 2026-09-04/news_06.md
+  riga: '| `2024-12-18` | neg | japan_release, boj, rate_decision | BoJ ferma mentre la Fed taglia in
+    modo hawkish. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2024-10-23'
+  tema: macro_data
+  fonte: 2026-09-04/news_06.md
+  riga: '| `2024-10-23` | neg | japan_release, activity_growth | Dato di attività giapponese sotto attese.
+    |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2024-09-18'
+  tema: macro_data
+  fonte: 2026-09-04/news_06.md
+  riga: '| `2024-09-18` | neg | japan_release, boj | Riunione in concomitanza con il primo taglio Fed.
+    |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2024-08-05'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  riga: '**Canale 2 — “good news is good news” (direzionale, di segno opposto).** Stessa sorpresa, ma
+    con nessun taglio prezzato a breve o in un contesto di timore recessivo: `dato forte → conferma di
+    tenuta economica → ^GSPC/^NDX su insieme a ^TNX (o con rendimenti poco mossi), ^VIX giù`. È il canale
+    che, i'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2024-08-01'
+  tema: macro_data
+  fonte: 2026-09-04/news_06.md
+  riga: '| `2024-08-01` | neg | japan_release, yen | Seconda seduta della stessa sequenza: yen in forte
+    apprezzamento. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2024-07-31'
+  tema: macro_data
+  fonte: 2026-09-04/news_06.md
+  riga: '| `2024-07-31` | neg | japan_release, boj, rate_decision | Rialzo BoJ che innescò lo smontaggio
+    del carry trade dei giorni successivi. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2023-10-31'
+  tema: macro_data
+  fonte: 2026-09-04/news_06.md
+  riga: '| `2023-10-31` | neg | japan_release, boj, yen | Ulteriore allentamento del controllo della curva
+    senza soddisfare le attese: yen debole. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2022-12-20'
+  tema: macro_data
+  fonte: 2026-09-04/news_06.md
+  riga: '| `2022-12-20` | neg | japan_release, boj, yen | La BoJ allarga a sorpresa la banda del controllo
+    della curva: shock di duration globale. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2022-07-21'
+  tema: macro_data
+  fonte: 2026-09-04/news_06.md
+  riga: '| `2022-07-21` | neg | japan_release, boj, yen | BoJ ferma mentre lo yen si indebolisce: divergenza
+    con la Fed al massimo. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2018-12-19'
+  tema: macro_data
+  fonte: 2026-09-04/news_06.md
+  riga: '| `2018-12-19` | neg | japan_release, boj, rate_decision | Riunione BoJ in una fase di stress
+    dei mercati globali di fine 2018. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
+- data: '2011-08-04'
+  tema: macro_data
+  fonte: 2026-09-04/news_06.md
+  riga: '| `2011-08-04` | neg | japan_release, fx_intervention | Intervento sul cambio delle autorità
+    giapponesi contro l''apprezzamento dello yen. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: JPY=X
+    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
+  stato: da_rivedere
