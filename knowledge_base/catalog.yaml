@@ -1,5 +1,5 @@
-generated_at: '2026-11-01T11:41:25'
-num_entries: 47
+generated_at: '2026-11-02T17:56:08'
+num_entries: 48
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -464,6 +464,94 @@ entries:
   - wto
   - piie
   - risk-off
+- source_file: Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
+    e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
+    sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+  title: 'Decisioni di politica monetaria della BCE nelle giornate di riunione: rialzi,
+    tagli, pause e sorprese sulla guidance — regime ed episodi storici (2011–presente)'
+  date_compiled: 2026-11-02
+  primary_theme: monetary_policy
+  sub_themes:
+  - ecb_meeting_day
+  - rate_surprise
+  - forward_guidance
+  - staff_projections
+  - balance_sheet_policy
+  - fragmentation_risk
+  - policy_pause
+  - press_conference_reversal
+  relevant_assets:
+  - EURUSD=X
+  - IEAG.AS
+  - EXX6.DE
+  - ^STOXX50E
+  - ^GDAXI
+  - FTSEMIB.MI
+  - BTP_BUND_SPREAD
+  - OAT_BUND_SPREAD
+  external_assets_mentioned:
+  - €STR / OIS in euro — misura diretta della sorpresa sul tasso, base dell'EA-MPD
+  - Schatz 2 anni — canale dei tassi attesi a breve, più sensibile di IEAG.AS ed EXX6.DE
+  - SX7E (indice bancario europeo) — canale redistributivo banche contro resto del
+    listino
+  - DXY (dollaro contro tutte le valute) — separare la componente BCE dalla componente
+    dollaro in EURUSD=X
+  - Rendimenti BTP e Bund 10 anni separati — scomporre i movimenti di BTP_BUND_SPREAD
+  - EA-MPD (Altavilla et al., 2019) — sorprese infragiornaliere separate per comunicato
+    e conferenza stampa
+  time_window:
+    start: 2011-04-07
+    end: present
+  regime_phases:
+  - sovereign_debt_crisis: 2011-01-01 to 2014-06-04
+  - negative_rates_qe: 2014-06-05 to 2022-07-20
+  - tightening_cycle_2022_2023: 2022-07-21 to 2024-06-05
+  - easing_cycle_2024_2025: 2024-06-06 to 2026-03-18
+  - energy_shock_2026: 2026-03-19 to present
+  keywords:
+  - decisione BCE
+  - riunione BCE
+  - consiglio direttivo
+  - tasso sui depositi
+  - pausa
+  - pausa restrittiva
+  - rialzo
+  - taglio
+  - Lagarde
+  - Draghi
+  - conferenza stampa
+  - comunicato
+  - proiezioni dello staff
+  - riunione per riunione
+  - nessun impegno
+  - frammentazione
+  - spread BTP-Bund
+  - TPI
+  - QE
+  - QT
+  - TLTRO
+  - ECB decision
+  - ECB meeting
+  - Governing Council
+  - deposit rate
+  - deposit facility
+  - hold
+  - hawkish hold
+  - dovish hike
+  - hawkish cut
+  - hike
+  - cut
+  - meeting-by-meeting
+  - data-dependent
+  - not pre-committing
+  - staff projections
+  - press conference
+  - forward guidance
+  - fragmentation
+  - Transmission Protection Instrument
+  - asset purchases
+  - energy shock
+  - Middle East war
 - source_file: Elezioni LatAm e nazionalismo delle risorse, rame e litio (2018–2026)/Elezioni
     LatAm e nazionalismo delle risorse- rame e litio (2018–2026).md
   title: 'Elezioni LatAm e nazionalismo delle risorse: rame e litio (2018–2026)'
