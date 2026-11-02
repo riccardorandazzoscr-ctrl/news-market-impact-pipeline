@@ -1,4 +1,4 @@
-generated_at: '2026-11-01T11:48:27'
+generated_at: '2026-11-02T12:01:05'
 num_episodes: 1574
 episodes:
 - date: '1984-01-01'
@@ -214,6 +214,7 @@ episodes:
     - card:2026-10-15/news_02.md
     - card:2026-10-21/news_01.md
     - card:2026-10-31/news_01.md
+    - card:2026-11-02/news_01.md
   directions_local:
   - neg
   - pos
@@ -248,7 +249,7 @@ episodes:
   - military_escalation
   - sanctions
   - shipping_chokepoint
-  n_sources: 30
+  n_sources: 31
   events:
   - event_id: 2011-12-27:commodity_energy:-
     geo: ''
@@ -291,6 +292,7 @@ episodes:
     - card:2026-10-15/news_02.md
     - card:2026-10-21/news_01.md
     - card:2026-10-31/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-05/news_01.md
@@ -464,6 +466,14 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-31/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-02/news_01.md
       subthemes_local:
       - hormuz
       - military_escalation
@@ -1247,6 +1257,7 @@ episodes:
     - card:2026-10-12/news_02.md
     - card:2026-10-18/news_02.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
   directions_local:
   - neg
   - pos
@@ -1290,7 +1301,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 39
+  n_sources: 40
   events:
   - event_id: 2015-07-14:commodity_energy:-
     geo: ''
@@ -1345,6 +1356,7 @@ episodes:
     - card:2026-10-12/news_02.md
     - card:2026-10-18/news_02.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     evidence:
     - source: card:2026-05-29/news_01.md
       subthemes_local:
@@ -1538,6 +1550,15 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-01/news_01.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      - negotiation_track
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-02/news_01.md
       subthemes_local:
       - de_escalation
       - iran
@@ -2661,6 +2682,7 @@ episodes:
     - card:2026-10-21/news_01.md
     - card:2026-10-24/news_01.md
     - card:2026-10-31/news_01.md
+    - card:2026-11-02/news_01.md
   directions_local:
   - neg
   - pos
@@ -2700,7 +2722,7 @@ episodes:
   - shipping_chokepoint
   - supply_disruption
   - upstream_export_strike
-  n_sources: 49
+  n_sources: 50
   events:
   - event_id: 2019-05-13:commodity_energy:-
     geo: ''
@@ -2766,6 +2788,7 @@ episodes:
     - card:2026-10-21/news_01.md
     - card:2026-10-24/news_01.md
     - card:2026-10-31/news_01.md
+    - card:2026-11-02/news_01.md
     evidence:
     - source: card:2026-06-01/news_01.md
       subthemes_local: []
@@ -3033,6 +3056,14 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-02/news_01.md
+      subthemes_local:
+      - hormuz
+      - infrastructure_attack
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
 - date: '2019-06-13'
   theme: commodity_energy
   direction: mixed
@@ -3072,6 +3103,7 @@ episodes:
     - card:2026-10-21/news_01.md
     - card:2026-10-24/news_01.md
     - card:2026-10-31/news_01.md
+    - card:2026-11-02/news_01.md
   directions_local:
   - neg
   - pos
@@ -3117,7 +3149,7 @@ episodes:
   - iran
   - military_escalation
   - shipping_chokepoint
-  n_sources: 46
+  n_sources: 47
   events:
   - event_id: 2019-06-13:commodity_energy:-
     geo: ''
@@ -3175,6 +3207,7 @@ episodes:
     - card:2026-10-21/news_01.md
     - card:2026-10-24/news_01.md
     - card:2026-10-31/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-01/news_01.md
@@ -3415,6 +3448,14 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-31/news_01.md
+      subthemes_local:
+      - hormuz
+      - infrastructure_attack
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-02/news_01.md
       subthemes_local:
       - hormuz
       - infrastructure_attack
@@ -6726,6 +6767,7 @@ episodes:
     CRACK_321:
     - card:2026-10-17/news_02.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -6760,7 +6802,7 @@ episodes:
   - refinery_products
   - refinery_strike
   - sanctions
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2022-06-22:commodity_energy:-
     geo: ''
@@ -6783,6 +6825,7 @@ episodes:
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -6837,6 +6880,13 @@ episodes:
         HO=F:
         - pos
     - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
+        - pos
+    - source: card:2026-11-02/news_02.md
       subthemes_local:
       - refinery_products
       - refinery_strike
@@ -7533,6 +7583,7 @@ episodes:
     - card:2026-09-30/news_01.md
     - card:2026-10-12/news_02.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
   directions_local:
   - neg
   - pos
@@ -7563,7 +7614,7 @@ episodes:
   - iran
   - negotiation_track
   - shipping_chokepoint
-  n_sources: 33
+  n_sources: 34
   events:
   - event_id: 2023-03-10:commodity_energy:-
     geo: ''
@@ -7609,6 +7660,7 @@ episodes:
     - card:2026-09-30/news_01.md
     - card:2026-10-12/news_02.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     evidence:
     - source: card:2026-05-29/news_01.md
       subthemes_local:
@@ -7764,6 +7816,14 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-01/news_01.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-02/news_01.md
       subthemes_local:
       - de_escalation
       - iran
@@ -9279,6 +9339,7 @@ episodes:
   direction_sources:
     CRACK_321:
     - card:2026-10-17/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -9310,7 +9371,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2024-03-12:commodity_energy:-
     geo: ''
@@ -9332,6 +9393,7 @@ episodes:
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -9389,6 +9451,12 @@ episodes:
     - source: card:2026-10-31/news_02.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-02/news_02.md
+      subthemes_local:
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
+        - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -10255,6 +10323,7 @@ episodes:
     - card:2026-09-30/news_01.md
     - card:2026-10-12/news_02.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
   directions_local:
   - neg
   - pos
@@ -10310,7 +10379,7 @@ episodes:
   - iran
   - military_escalation
   - sanctions
-  n_sources: 46
+  n_sources: 47
   events:
   - event_id: 2024-04-22:commodity_energy:-
     geo: ''
@@ -10371,6 +10440,7 @@ episodes:
     - card:2026-09-30/news_01.md
     - card:2026-10-12/news_02.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     evidence:
     - source: card:2026-06-15/news_01.md
       subthemes_local: []
@@ -10572,6 +10642,13 @@ episodes:
       directions_by_reference:
         BZ=F:
         - neg
+    - source: card:2026-11-02/news_01.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      directions_by_reference:
+        BZ=F:
+        - neg
 - date: '2024-05-11'
   theme: commodity_energy
   direction: mixed
@@ -10589,6 +10666,7 @@ episodes:
     CRACK_321:
     - card:2026-10-17/news_02.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -10620,7 +10698,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2024-05-11:commodity_energy:-
     geo: ''
@@ -10642,6 +10720,7 @@ episodes:
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -10696,6 +10775,13 @@ episodes:
         HO=F:
         - pos
     - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
+        - pos
+    - source: card:2026-11-02/news_02.md
       subthemes_local:
       - refinery_products
       - refinery_strike
@@ -11343,6 +11429,7 @@ episodes:
     - card:2026-09-30/news_01.md
     - card:2026-10-12/news_02.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
   directions_local:
   - neg
   - pos
@@ -11400,7 +11487,7 @@ episodes:
   - oil_supply_shock
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 57
+  n_sources: 58
   events:
   - event_id: 2024-10-26:commodity_energy:-
     geo: ''
@@ -11476,6 +11563,7 @@ episodes:
     - card:2026-09-30/news_01.md
     - card:2026-10-12/news_02.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     evidence:
     - source: card:2026-06-09/news_01.md
       subthemes_local:
@@ -11725,6 +11813,14 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-01/news_01.md
+      subthemes_local:
+      - de_escalation
+      - hormuz
+      - iran
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-02/news_01.md
       subthemes_local:
       - de_escalation
       - hormuz
@@ -12370,6 +12466,7 @@ episodes:
     CRACK_321:
     - card:2026-10-17/news_02.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12401,7 +12498,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2025-01-26:commodity_energy:-
     geo: ''
@@ -12423,6 +12520,7 @@ episodes:
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12477,6 +12575,13 @@ episodes:
         HO=F:
         - pos
     - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
+        - pos
+    - source: card:2026-11-02/news_02.md
       subthemes_local:
       - refinery_products
       - refinery_strike
@@ -12513,6 +12618,7 @@ episodes:
     CRACK_321:
     - card:2026-10-17/news_02.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12544,7 +12650,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2025-01-31:commodity_energy:-
     geo: ''
@@ -12566,6 +12672,7 @@ episodes:
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12620,6 +12727,14 @@ episodes:
         HO=F:
         - pos
     - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - infrastructure_attack
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
+        - pos
+    - source: card:2026-11-02/news_02.md
       subthemes_local:
       - infrastructure_attack
       - refinery_products
@@ -12802,6 +12917,7 @@ episodes:
     CRACK_321:
     - card:2026-10-17/news_02.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12833,7 +12949,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2025-05-15:commodity_energy:-
     geo: ''
@@ -12855,6 +12971,7 @@ episodes:
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -12909,6 +13026,13 @@ episodes:
         HO=F:
         - pos
     - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
+        - pos
+    - source: card:2026-11-02/news_02.md
       subthemes_local:
       - refinery_products
       - refinery_strike
@@ -13778,6 +13902,7 @@ episodes:
     - card:2026-09-30/news_01.md
     - card:2026-10-12/news_02.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
   directions_local:
   - neg
   - pos
@@ -13834,7 +13959,7 @@ episodes:
   - military_escalation
   - negotiation_track
   - shipping_chokepoint
-  n_sources: 55
+  n_sources: 56
   events:
   - event_id: 2025-06-23:commodity_energy:-
     geo: ''
@@ -13906,6 +14031,7 @@ episodes:
     - card:2026-09-30/news_01.md
     - card:2026-10-12/news_02.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     evidence:
     - source: card:2026-06-14/news_01.md
       subthemes_local:
@@ -14147,6 +14273,15 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-01/news_01.md
+      subthemes_local:
+      - ceasefire
+      - de_escalation
+      - hormuz
+      - iran
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-02/news_01.md
       subthemes_local:
       - ceasefire
       - de_escalation
@@ -14646,6 +14781,7 @@ episodes:
     CRACK_321:
     - card:2026-10-17/news_02.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -14677,7 +14813,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2025-08-27:commodity_energy:-
     geo: ''
@@ -14699,6 +14835,7 @@ episodes:
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -14753,6 +14890,13 @@ episodes:
         HO=F:
         - pos
     - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
+        - pos
+    - source: card:2026-11-02/news_02.md
       subthemes_local:
       - refinery_products
       - refinery_strike
@@ -15502,6 +15646,7 @@ episodes:
     BZ=F:
     - card:2026-10-12/news_02.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -15523,12 +15668,13 @@ episodes:
   - refined_products
   - refinery_products
   - safe_haven_vs_supply_regime
+  - shipping_chokepoint
   - strategic_reserve_release
   subthemes_local:
   - de_escalation
   - iran
   - negotiation_track
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2026-02-02:commodity_energy:-
     geo: ''
@@ -15542,6 +15688,7 @@ episodes:
     sources:
     - card:2026-10-12/news_02.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -15556,6 +15703,14 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-01/news_01.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-02/news_01.md
       subthemes_local:
       - de_escalation
       - iran
@@ -15588,6 +15743,7 @@ episodes:
     BZ=F:
     - card:2026-10-12/news_02.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -15609,12 +15765,13 @@ episodes:
   - refined_products
   - refinery_products
   - safe_haven_vs_supply_regime
+  - shipping_chokepoint
   - strategic_reserve_release
   subthemes_local:
   - de_escalation
   - iran
   - negotiation_track
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2026-02-05:commodity_energy:-
     geo: ''
@@ -15628,6 +15785,7 @@ episodes:
     sources:
     - card:2026-10-12/news_02.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -15642,6 +15800,14 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-01/news_01.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-02/news_01.md
       subthemes_local:
       - de_escalation
       - iran
@@ -18300,6 +18466,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-10-31/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
   directions_local:
   - neg
@@ -18336,7 +18503,7 @@ episodes:
   - iran
   - military_escalation
   - shipping_chokepoint
-  n_sources: 32
+  n_sources: 33
   events:
   - event_id: 2026-03-27:commodity_energy:-
     geo: ''
@@ -18380,6 +18547,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-10-31/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-23/news_01.md
@@ -18581,6 +18749,14 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-02/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
       subthemes_local:
       - hormuz
@@ -18744,6 +18920,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Gas europeo e shock di offerta di GNL/Gas europeo e shock di offerta di GNL-
       Qatar e Hormuz, Stati Uniti, Australia, Norvegia, Mediterraneo orientale e rotte
       marittime — regime ed episodi storici (2017–presente).md
@@ -18875,7 +19052,7 @@ episodes:
   - iran
   - negotiation_track
   - oil_supply_shock
-  n_sources: 21
+  n_sources: 22
   events:
   - event_id: 2026-04-08:commodity_energy:-
     geo: ''
@@ -18940,6 +19117,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Gas europeo e shock di offerta di GNL/Gas europeo e shock di offerta di GNL-
       Qatar e Hormuz, Stati Uniti, Australia, Norvegia, Mediterraneo orientale e rotte
       marittime — regime ed episodi storici (2017–presente).md
@@ -19026,6 +19204,15 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-01/news_01.md
+      subthemes_local:
+      - ceasefire
+      - de_escalation
+      - hormuz
+      - iran
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-02/news_01.md
       subthemes_local:
       - ceasefire
       - de_escalation
@@ -19868,6 +20055,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -19946,7 +20134,7 @@ episodes:
   - shipping_chokepoint
   - supply_disruption
   - upstream_export_strike
-  n_sources: 55
+  n_sources: 56
   events:
   - event_id: 2026-04-17:commodity_energy:-
     geo: ''
@@ -20024,6 +20212,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -20293,6 +20482,14 @@ episodes:
       directions_by_reference:
         BZ=F:
         - neg
+    - source: card:2026-11-02/news_01.md
+      subthemes_local:
+      - de_escalation
+      - hormuz
+      - iran
+      directions_by_reference:
+        BZ=F:
+        - neg
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -20333,6 +20530,7 @@ episodes:
     - card:2026-10-17/news_01.md
     - card:2026-10-18/news_01.md
     - card:2026-10-31/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     CRACK_321:
     - card:2026-10-17/news_02.md
@@ -20396,7 +20594,7 @@ episodes:
   - refinery_products
   - refinery_strike
   - shipping_chokepoint
-  n_sources: 39
+  n_sources: 40
   events:
   - event_id: 2026-04-18:commodity_energy:-
     geo: ''
@@ -20453,6 +20651,7 @@ episodes:
     - card:2026-10-21/news_01.md
     - card:2026-10-31/news_01.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -20633,6 +20832,15 @@ episodes:
       - refinery_strike
       directions_by_reference:
         CRACK_321:
+        - pos
+    - source: card:2026-11-02/news_01.md
+      subthemes_local:
+      - hormuz
+      - infrastructure_attack
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
         - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
@@ -21201,6 +21409,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -21231,7 +21440,7 @@ episodes:
   - de_escalation
   - iran
   - negotiation_track
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2026-05-06:commodity_energy:-
     geo: ''
@@ -21249,6 +21458,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -21290,6 +21500,14 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-01/news_01.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-02/news_01.md
       subthemes_local:
       - de_escalation
       - iran
@@ -21700,6 +21918,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -21731,7 +21950,7 @@ episodes:
   - de_escalation
   - iran
   - negotiation_track
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2026-05-28:commodity_energy:-
     geo: ''
@@ -21750,6 +21969,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -21804,6 +22024,15 @@ episodes:
       directions_by_reference:
         BZ=F:
         - neg
+    - source: card:2026-11-02/news_01.md
+      subthemes_local:
+      - ceasefire
+      - de_escalation
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -21833,6 +22062,7 @@ episodes:
     CRACK_321:
     - card:2026-10-17/news_02.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -21884,7 +22114,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 25
+  n_sources: 26
   events:
   - event_id: 2026-05-29:commodity_energy:-
     geo: ''
@@ -21921,6 +22151,7 @@ episodes:
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -22013,6 +22244,14 @@ episodes:
       subthemes_local: []
       directions_by_reference: {}
     - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - infrastructure_attack
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
+        - pos
+    - source: card:2026-11-02/news_02.md
       subthemes_local:
       - infrastructure_attack
       - refinery_products
@@ -22189,6 +22428,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22219,7 +22459,7 @@ episodes:
   - de_escalation
   - iran
   - negotiation_track
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2026-06-12:commodity_energy:-
     geo: ''
@@ -22237,6 +22477,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22285,6 +22526,14 @@ episodes:
       directions_by_reference:
         BZ=F:
         - neg
+    - source: card:2026-11-02/news_01.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22319,6 +22568,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Gas europeo e shock di offerta di GNL/Gas europeo e shock di offerta di GNL-
       Qatar e Hormuz, Stati Uniti, Australia, Norvegia, Mediterraneo orientale e rotte
       marittime — regime ed episodi storici (2017–presente).md
@@ -22358,7 +22608,7 @@ episodes:
   - hormuz
   - iran
   - negotiation_track
-  n_sources: 6
+  n_sources: 7
   events:
   - event_id: 2026-06-15:commodity_energy:-
     geo: ''
@@ -22383,6 +22633,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Gas europeo e shock di offerta di GNL/Gas europeo e shock di offerta di GNL-
       Qatar e Hormuz, Stati Uniti, Australia, Norvegia, Mediterraneo orientale e rotte
       marittime — regime ed episodi storici (2017–presente).md
@@ -22423,6 +22674,15 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-01/news_01.md
+      subthemes_local:
+      - de_escalation
+      - hormuz
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-02/news_01.md
       subthemes_local:
       - de_escalation
       - hormuz
@@ -22502,6 +22762,7 @@ episodes:
     CRACK_321:
     - card:2026-10-17/news_02.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -22554,7 +22815,7 @@ episodes:
   - negotiation_track
   - refinery_products
   - refinery_strike
-  n_sources: 11
+  n_sources: 12
   events:
   - event_id: 2026-06-18:commodity_energy:-
     geo: ''
@@ -22586,6 +22847,7 @@ episodes:
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -22639,6 +22901,13 @@ episodes:
       subthemes_local: []
       directions_by_reference: {}
     - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
+        - pos
+    - source: card:2026-11-02/news_02.md
       subthemes_local:
       - refinery_products
       - refinery_strike
@@ -22961,6 +23230,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22984,13 +23254,14 @@ episodes:
   - refinery_products
   - safe_haven_vs_supply_regime
   - sanctions
+  - shipping_chokepoint
   - strategic_reserve_release
   subthemes_local:
   - de_escalation
   - hormuz
   - iran
   - oil_supply_shock
-  n_sources: 6
+  n_sources: 7
   events:
   - event_id: 2026-06-24:commodity_energy:-
     geo: ''
@@ -23008,6 +23279,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23054,6 +23326,15 @@ episodes:
       directions_by_reference:
         BZ=F:
         - neg
+    - source: card:2026-11-02/news_01.md
+      subthemes_local:
+      - de_escalation
+      - hormuz
+      - iran
+      - oil_supply_shock
+      directions_by_reference:
+        BZ=F:
+        - neg
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23090,6 +23371,7 @@ episodes:
     CRACK_321:
     - card:2026-10-17/news_02.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -23133,7 +23415,7 @@ episodes:
   - refinery_products
   - refinery_strike
   - strategic_reserve_release
-  n_sources: 10
+  n_sources: 11
   events:
   - event_id: 2026-07-06:commodity_energy:-
     geo: ''
@@ -23156,6 +23438,7 @@ episodes:
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -23210,6 +23493,13 @@ episodes:
         HO=F:
         - pos
     - source: card:2026-10-31/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
+        - pos
+    - source: card:2026-11-02/news_02.md
       subthemes_local:
       - refinery_products
       - refinery_strike
@@ -23288,6 +23578,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-10-31/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23301,6 +23592,7 @@ episodes:
   - pos
   declared: true
   subthemes:
+  - de_escalation
   - de_escalation_asymmetry
   - hormuz
   - hormuz_closure
@@ -23324,7 +23616,7 @@ episodes:
   - hormuz
   - military_escalation
   - shipping_chokepoint
-  n_sources: 20
+  n_sources: 21
   events:
   - event_id: 2026-07-07:commodity_energy:-
     geo: ''
@@ -23358,6 +23650,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-10-31/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23506,6 +23799,14 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-10-31/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-02/news_01.md
       subthemes_local:
       - hormuz
       - military_escalation
@@ -23745,6 +24046,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-10-31/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23753,6 +24055,7 @@ episodes:
   - pos
   declared: true
   subthemes:
+  - de_escalation
   - de_escalation_asymmetry
   - hormuz
   - hormuz_closure
@@ -23776,7 +24079,7 @@ episodes:
   - military_escalation
   - sanctions
   - shipping_chokepoint
-  n_sources: 19
+  n_sources: 20
   events:
   - event_id: 2026-07-13:commodity_energy:-
     geo: ''
@@ -23807,6 +24110,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-10-31/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23945,6 +24249,14 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-02/news_01.md
+      subthemes_local:
+      - hormuz
+      - sanctions
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -24027,6 +24339,7 @@ episodes:
     CRACK_321:
     - card:2026-10-17/news_02.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -24058,7 +24371,7 @@ episodes:
   - infrastructure_attack
   - refinery_products
   - refinery_strike
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2026-07-30:commodity_energy:-
     geo: ''
@@ -24080,6 +24393,7 @@ episodes:
     - card:2026-10-17/news_02.md
     - card:2026-10-19/news_01.md
     - card:2026-10-31/news_02.md
+    - card:2026-11-02/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -24141,6 +24455,13 @@ episodes:
       directions_by_reference:
         CRACK_321:
         - pos
+    - source: card:2026-11-02/news_02.md
+      subthemes_local:
+      - refinery_products
+      - refinery_strike
+      directions_by_reference:
+        CRACK_321:
+        - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -24175,6 +24496,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -24215,7 +24537,7 @@ episodes:
   - iran
   - negotiation_track
   - oil_supply_shock
-  n_sources: 6
+  n_sources: 7
   events:
   - event_id: 2026-08-03:commodity_energy:-
     geo: ''
@@ -24237,6 +24559,7 @@ episodes:
     - card:2026-10-26/news_02.md
     - card:2026-10-27/news_01.md
     - card:2026-11-01/news_01.md
+    - card:2026-11-02/news_01.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -24271,6 +24594,14 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-01/news_01.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-02/news_01.md
       subthemes_local:
       - de_escalation
       - iran
@@ -98014,34 +98345,28 @@ episodes:
   direction: neg
   directions:
   - neg
-  directions_declared:
-  - neg
+  directions_declared: []
   direction_review_excluded:
     ^GSPC: 'Riga: ''equity volatile'' — non è una direzione.'
     ^TNX: 'Riga: ''curva più ripida'' — dice la pendenza, non il verso del livello.'
     ^FVX: 'Riga: ''curva più ripida'' — dice la pendenza, non il verso del livello.'
-  directions_local:
-  - neg
-  declared: true
+  directions_local: []
+  declared: false
   subthemes:
   - activity_growth
-  - boj
   - boj_normalization
   - britain_release
-  - consumer
   - eurozone_release
   - good_news_bad_news
   - ism
-  - japan_release
   - japan_tankan
   - labour_market
   - pmi
   - policy_cycle_phase
   - reaction_function
   subthemes_local:
-  - boj
   - japan_release
-  n_sources: 3
+  n_sources: 2
   events:
   - event_id: 2024-09-18:macro_data:-
     geo: ''
@@ -98062,19 +98387,12 @@ episodes:
   - event_id: 2024-09-18:macro_data:japan_release
     geo: japan_release
     subthemes_local:
-    - boj
     - japan_release
     sources:
     - card:2026-07-01/news_01.md
-    - card:2026-09-04/news_06.md
     evidence:
     - source: card:2026-07-01/news_01.md
       subthemes_local:
-      - japan_release
-      directions_by_reference: {}
-    - source: card:2026-09-04/news_06.md
-      subthemes_local:
-      - boj
       - japan_release
       directions_by_reference: {}
 - date: '2024-09-23'
@@ -109880,20 +110198,17 @@ episodes:
   declared: true
   subthemes:
   - activity_growth
-  - boj
   - boj_normalization
-  - consumer
   - inflation_print
   - japan_release
   - japan_tankan
   - labour_market
   subthemes_local:
-  - boj
   - hawkish
   - inflation_print
   - japan_release
   - rate_decision
-  n_sources: 7
+  n_sources: 6
   events:
   - event_id: 2026-04-30:macro_data:-
     geo: ''
@@ -109928,20 +110243,13 @@ episodes:
   - event_id: 2026-04-30:macro_data:japan_release
     geo: japan_release
     subthemes_local:
-    - boj
     - japan_release
     sources:
     - card:2026-07-01/news_01.md
-    - card:2026-09-04/news_06.md
     - card:2026-09-08/news_04.md
     evidence:
     - source: card:2026-07-01/news_01.md
       subthemes_local:
-      - japan_release
-      directions_by_reference: {}
-    - source: card:2026-09-04/news_06.md
-      subthemes_local:
-      - boj
       - japan_release
       directions_by_reference: {}
     - source: card:2026-09-08/news_04.md
@@ -115835,7 +116143,6 @@ episodes:
   - guidance_pivot
   - guidance_shock
   - hawkish
-  - inflation_print
   - intervention
   - japan_release
   - jpy
@@ -115845,10 +116152,9 @@ episodes:
   - rate_hike_expected
   - yen_carry
   subthemes_local:
-  - boj
   - guidance_pivot
   - rate_decision
-  n_sources: 11
+  n_sources: 8
   events:
   - event_id: 2011-08-09:monetary_policy:-
     geo: ''
@@ -115891,29 +116197,6 @@ episodes:
       directions_by_reference: {}
     - source: card:2026-09-10/news_06.md
       subthemes_local: []
-      directions_by_reference: {}
-  - event_id: 2011-08-09:monetary_policy:japan_release
-    geo: japan_release
-    subthemes_local:
-    - boj
-    - guidance_pivot
-    sources:
-    - card:2026-06-20/news_06.md
-    - card:2026-06-22/news_04.md
-    - card:2026-08-28/news_03.md
-    evidence:
-    - source: card:2026-06-20/news_06.md
-      subthemes_local:
-      - boj
-      directions_by_reference: {}
-    - source: card:2026-06-22/news_04.md
-      subthemes_local:
-      - boj
-      directions_by_reference: {}
-    - source: card:2026-08-28/news_03.md
-      subthemes_local:
-      - boj
-      - guidance_pivot
       directions_by_reference: {}
 - date: '2011-10-31'
   theme: monetary_policy
@@ -116818,7 +117101,6 @@ episodes:
   - hawkish_repricing
   - hawkish_surprise
   - higher_for_longer
-  - inflation_print
   - inflation_risk
   - japan_release
   - leadership_transition
@@ -116832,7 +117114,6 @@ episodes:
   - warsh
   subthemes_local:
   - balance_sheet
-  - boj
   - cb_independence
   - dot_plot
   - fed
@@ -116840,7 +117121,7 @@ episodes:
   - hawkish
   - hawkish_repricing
   - rate_decision
-  n_sources: 19
+  n_sources: 18
   events:
   - event_id: 2014-03-19:monetary_policy:-
     geo: ''
@@ -116955,19 +117236,6 @@ episodes:
       directions_by_reference: {}
     - source: card:2026-09-12/news_04.md
       subthemes_local: []
-      directions_by_reference: {}
-  - event_id: 2014-03-19:monetary_policy:japan_release
-    geo: japan_release
-    subthemes_local:
-    - boj
-    - guidance_pivot
-    sources:
-    - card:2026-08-28/news_03.md
-    evidence:
-    - source: card:2026-08-28/news_03.md
-      subthemes_local:
-      - boj
-      - guidance_pivot
       directions_by_reference: {}
 - date: '2014-09-17'
   theme: monetary_policy
@@ -133041,8 +133309,6 @@ episodes:
   - boj_hike
   - carry_trade
   - carry_trade_unwind
-  - ecb
-  - eurozone_release
   - fed
   - fx_intervention
   - guidance_pivot
@@ -133053,7 +133319,7 @@ episodes:
   - rate_decision
   - tariff_escalation
   - yen
-  n_sources: 60
+  n_sources: 58
   events:
   - event_id: 2024-07-31:monetary_policy:-
     geo: ''
@@ -133192,29 +133458,6 @@ episodes:
     - source: card:2026-09-06/news_04.md
       subthemes_local:
       - tariff_escalation
-      directions_by_reference: {}
-  - event_id: 2024-07-31:monetary_policy:eurozone_release
-    geo: eurozone_release
-    subthemes_local:
-    - ecb
-    - eurozone_release
-    - guidance_pivot
-    - hawkish
-    sources:
-    - card:2026-07-07/news_05.md
-    - card:2026-09-10/news_04.md
-    evidence:
-    - source: card:2026-07-07/news_05.md
-      subthemes_local:
-      - ecb
-      - guidance_pivot
-      - hawkish
-      directions_by_reference: {}
-    - source: card:2026-09-10/news_04.md
-      subthemes_local:
-      - ecb
-      - eurozone_release
-      - guidance_pivot
       directions_by_reference: {}
   - event_id: 2024-07-31:monetary_policy:japan_release
     geo: japan_release
@@ -134996,17 +135239,14 @@ episodes:
   - jpy
   - pboc
   - rate_decision
-  - term_premium
   subthemes_local:
-  - boj
   - cny
   - fx_intervention
   - jpy
   - pboc
   - rate_decision
   - tariff_escalation
-  - term_premium
-  n_sources: 7
+  n_sources: 6
   events:
   - event_id: 2024-11-07:monetary_policy:-
     geo: ''
@@ -135050,21 +135290,6 @@ episodes:
       directions_by_reference: {}
     - source: card:2026-09-03/news_06.md
       subthemes_local: []
-      directions_by_reference: {}
-  - event_id: 2024-11-07:monetary_policy:japan_release
-    geo: japan_release
-    subthemes_local:
-    - boj
-    - jpy
-    - term_premium
-    sources:
-    - card:2026-08-31/news_03.md
-    evidence:
-    - source: card:2026-08-31/news_03.md
-      subthemes_local:
-      - boj
-      - jpy
-      - term_premium
       directions_by_reference: {}
 - date: '2024-11-08'
   theme: monetary_policy
@@ -135418,7 +135643,6 @@ episodes:
   - ecb
   - ecb_hold
   - energy_premium_risk
-  - energy_shock
   - fed
   - fed_chair_testimony
   - fed_chair_transition
@@ -135464,13 +135688,11 @@ episodes:
   - pil_q2_debole
   - policy_error
   - pre_fomc
-  - projection
   - rate_decision
   - rate_hike_expected
   - rates
   - rates_atipico
   - sintra
-  - stagflation
   - super_week
   - term_premium
   - testimony
@@ -135483,9 +135705,7 @@ episodes:
   - cb_divergence
   - dot_plot
   - dovish_repricing
-  - ecb
   - election_risk
-  - eurozone_release
   - fed
   - guidance_pivot
   - hawkish
@@ -135494,14 +135714,13 @@ episodes:
   - rate_decision
   - term_premium
   - yen
-  n_sources: 82
+  n_sources: 80
   events:
   - event_id: 2024-12-18:monetary_policy:-
     geo: ''
     subthemes_local:
     - dot_plot
     - dovish_repricing
-    - ecb
     - election_risk
     - fed
     - guidance_pivot
@@ -135517,7 +135736,6 @@ episodes:
     sources:
     - card:2026-06-01/news_03.md
     - card:2026-06-14/news_02.md
-    - card:2026-06-16/news_04.md
     - card:2026-06-17/news_03.md
     - card:2026-06-18/news_01.md
     - card:2026-06-19/news_03.md
@@ -135600,11 +135818,6 @@ episodes:
       - dot_plot
       - guidance_pivot
       - rate_decision
-      directions_by_reference: {}
-    - source: card:2026-06-16/news_04.md
-      subthemes_local:
-      - ecb
-      - guidance_pivot
       directions_by_reference: {}
     - source: card:2026-06-17/news_03.md
       subthemes_local:
@@ -135928,23 +136141,6 @@ episodes:
       directions_by_reference:
         ^FVX:
         - pos
-  - event_id: 2024-12-18:monetary_policy:eurozone_release
-    geo: eurozone_release
-    subthemes_local:
-    - ecb
-    - eurozone_release
-    - guidance_pivot
-    - term_premium
-    sources:
-    - card:2026-09-10/news_04.md
-    evidence:
-    - source: card:2026-09-10/news_04.md
-      subthemes_local:
-      - ecb
-      - eurozone_release
-      - guidance_pivot
-      - term_premium
-      directions_by_reference: {}
   - event_id: 2024-12-18:monetary_policy:japan_release
     geo: japan_release
     subthemes_local:
@@ -137540,7 +137736,6 @@ episodes:
   - ecb_hawkish_surprise_hold_with_open_door_+_hawkish_guidance
   - ecb_hold
   - energy_premium_risk
-  - energy_shock
   - fed
   - fed_chair_transition
   - fed_hawkish
@@ -137564,31 +137759,27 @@ episodes:
   - non_projection_meeting
   - policy_error
   - pre_fomc
-  - projection
   - rate_decision
   - rate_hike_expected
   - rates
-  - stagflation
   - sticky_inflation
   - term_premium
   - warsh
   subthemes_local:
   - cb_independence
   - dot_plot
-  - ecb
   - guidance_pivot
   - hawkish
   - hawkish_hold
   - rate_decision
   - tariff_escalation
-  n_sources: 34
+  n_sources: 33
   events:
   - event_id: 2025-06-18:monetary_policy:-
     geo: ''
     subthemes_local:
     - cb_independence
     - dot_plot
-    - ecb
     - guidance_pivot
     - hawkish
     - hawkish_hold
@@ -137600,7 +137791,6 @@ episodes:
     sources:
     - card:2026-06-01/news_03.md
     - card:2026-06-15/news_03.md
-    - card:2026-06-16/news_04.md
     - card:2026-06-17/news_03.md
     - card:2026-06-18/news_01.md
     - card:2026-06-19/news_03.md
@@ -137641,12 +137831,6 @@ episodes:
       subthemes_local:
       - guidance_pivot
       - hawkish_hold
-      directions_by_reference: {}
-    - source: card:2026-06-16/news_04.md
-      subthemes_local:
-      - ecb
-      - guidance_pivot
-      - rate_decision
       directions_by_reference: {}
     - source: card:2026-06-17/news_03.md
       subthemes_local:
@@ -138792,7 +138976,6 @@ episodes:
   - guidance_pivot
   - guidance_shock
   - hawkish
-  - hawkish_hike
   - hawkish_hold
   - hawkish_reprice_oil
   - hawkish_repricing
@@ -138802,7 +138985,6 @@ episodes:
   - intervention
   - japan
   - jpy
-  - jpy_intervention
   - long_end_rates
   - new_chair_first_press_conference
   - non_projection_meeting
@@ -138813,7 +138995,6 @@ episodes:
   - pil_q2_debole
   - policy_error
   - rate_decision
-  - rate_differential
   - rate_hike_expected
   - rates
   - term_premium
@@ -138822,15 +139003,13 @@ episodes:
   - yen
   - yen_carry
   subthemes_local:
-  - boj
   - dot_plot
   - guidance_pivot
   - hawkish
-  - jpy
   - oil_overhang
   - rate_decision
   - term_premium
-  n_sources: 51
+  n_sources: 46
   events:
   - event_id: 2025-12-10:monetary_policy:-
     geo: ''
@@ -139076,45 +139255,6 @@ episodes:
     - source: card:2026-06-19/news_03.md
       subthemes_local:
       - guidance_pivot
-      directions_by_reference: {}
-  - event_id: 2025-12-10:monetary_policy:japan_release
-    geo: japan_release
-    subthemes_local:
-    - boj
-    - guidance_pivot
-    - hawkish
-    - jpy
-    - term_premium
-    sources:
-    - card:2026-06-16/news_01.md
-    - card:2026-06-22/news_04.md
-    - card:2026-07-04/news_04.md
-    - card:2026-08-31/news_03.md
-    - card:2026-08-31/news_04.md
-    evidence:
-    - source: card:2026-06-16/news_01.md
-      subthemes_local:
-      - boj
-      directions_by_reference: {}
-    - source: card:2026-06-22/news_04.md
-      subthemes_local:
-      - boj
-      directions_by_reference: {}
-    - source: card:2026-07-04/news_04.md
-      subthemes_local:
-      - boj
-      directions_by_reference: {}
-    - source: card:2026-08-31/news_03.md
-      subthemes_local:
-      - boj
-      - jpy
-      - term_premium
-      directions_by_reference: {}
-    - source: card:2026-08-31/news_04.md
-      subthemes_local:
-      - boj
-      - guidance_pivot
-      - hawkish
       directions_by_reference: {}
 - date: '2025-12-19'
   theme: monetary_policy
@@ -140385,7 +140525,6 @@ episodes:
   - energy_premium_risk
   - energy_shock
   - fed
-  - fed_ecb_divergence
   - fed_hawkish
   - fed_hold_+_hawkish_year_end_bets;_dx_y.nyb_come_safe_haven;_regime_fx
   - fed_independence
@@ -140409,7 +140548,6 @@ episodes:
   - intervention
   - japan
   - jpy
-  - jpy_intervention
   - long_end_rates
   - minutes
   - non_projection_meeting
@@ -140418,7 +140556,6 @@ episodes:
   - political_pressure
   - projection
   - rate_decision
-  - rate_differential
   - rate_hike_expected
   - rates
   - rates_atipico
@@ -140430,7 +140567,6 @@ episodes:
   - yen
   - yen_carry
   subthemes_local:
-  - boj
   - cb_independence
   - dot_plot
   - ecb
@@ -140439,7 +140575,7 @@ episodes:
   - hawkish
   - rate_decision
   - warsh
-  n_sources: 50
+  n_sources: 45
   events:
   - event_id: 2026-04-30:monetary_policy:-
     geo: ''
@@ -140664,45 +140800,6 @@ episodes:
       directions_by_reference:
         ^FVX:
         - pos
-  - event_id: 2026-04-30:monetary_policy:japan_release
-    geo: japan_release
-    subthemes_local:
-    - boj
-    - guidance_pivot
-    - rate_decision
-    sources:
-    - card:2026-06-21/news_03.md
-    - card:2026-07-04/news_04.md
-    - card:2026-08-21/news_05.md
-    - card:2026-08-31/news_03.md
-    - card:2026-08-31/news_04.md
-    evidence:
-    - source: card:2026-06-21/news_03.md
-      subthemes_local:
-      - boj
-      - rate_decision
-      directions_by_reference: {}
-    - source: card:2026-07-04/news_04.md
-      subthemes_local:
-      - boj
-      directions_by_reference: {}
-    - source: card:2026-08-21/news_05.md
-      subthemes_local:
-      - boj
-      - rate_decision
-      directions_by_reference: {}
-    - source: card:2026-08-31/news_03.md
-      subthemes_local:
-      - boj
-      - guidance_pivot
-      - rate_decision
-      directions_by_reference: {}
-    - source: card:2026-08-31/news_04.md
-      subthemes_local:
-      - boj
-      - guidance_pivot
-      - rate_decision
-      directions_by_reference: {}
 - date: '2026-05-01'
   theme: monetary_policy
   direction: mixed
@@ -141476,17 +141573,15 @@ episodes:
   - yen
   - yen_carry
   subthemes_local:
-  - boj
   - dot_plot
   - ecb
   - eurozone_release
   - guidance_pivot
   - hawkish
-  - jpy
   - rate_decision
   - scotus
   - term_premium
-  n_sources: 49
+  n_sources: 47
   events:
   - event_id: 2026-06-11:monetary_policy:-
     geo: ''
@@ -141723,28 +141818,6 @@ episodes:
       - eurozone_release
       - hawkish
       - rate_decision
-      directions_by_reference: {}
-  - event_id: 2026-06-11:monetary_policy:japan_release
-    geo: japan_release
-    subthemes_local:
-    - boj
-    - jpy
-    - rate_decision
-    - term_premium
-    sources:
-    - card:2026-06-22/news_04.md
-    - card:2026-08-31/news_03.md
-    evidence:
-    - source: card:2026-06-22/news_04.md
-      subthemes_local:
-      - boj
-      - rate_decision
-      directions_by_reference: {}
-    - source: card:2026-08-31/news_03.md
-      subthemes_local:
-      - boj
-      - jpy
-      - term_premium
       directions_by_reference: {}
 - date: '2026-06-16'
   theme: monetary_policy
@@ -147837,6 +147910,7 @@ episodes:
     - card:2026-10-09/news_03.md
     - card:2026-10-15/news_03.md
     - card:2026-10-20/news_03.md
+    - card:2026-11-02/news_03.md
   directions_local:
   - neg
   declared: true
@@ -147865,7 +147939,7 @@ episodes:
   subthemes_local:
   - memory_cycle
   - valuation_derisking
-  n_sources: 21
+  n_sources: 22
   events:
   - event_id: 2021-11-30:structural_themes:-
     geo: ''
@@ -147897,6 +147971,7 @@ episodes:
     - card:2026-10-19/news_03.md
     - card:2026-10-20/news_03.md
     - card:2026-10-22/news_04.md
+    - card:2026-11-02/news_03.md
     evidence:
     - source: card:2026-07-23/news_03.md
       subthemes_local: []
@@ -147983,6 +148058,13 @@ episodes:
     - source: card:2026-10-22/news_04.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-02/news_03.md
+      subthemes_local:
+      - memory_cycle
+      - valuation_derisking
+      directions_by_reference:
+        SOXX:
+        - neg
 - date: '2021-12-01'
   theme: structural_themes
   direction: neg
@@ -148428,6 +148510,7 @@ episodes:
     - card:2026-10-09/news_03.md
     - card:2026-10-22/news_04.md
     - card:2026-10-31/news_04.md
+    - card:2026-11-02/news_03.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
   directions_local:
@@ -148446,6 +148529,7 @@ episodes:
   - hyperscaler
   - hyperscaler_capex
   - market_concentration
+  - memory_cycle
   - nvidia
   - semiconductors
   - semis
@@ -148455,7 +148539,7 @@ episodes:
   - ai_capex_spending
   - earnings_shock
   - memory_cycle
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2022-09-30:structural_themes:-
     geo: ''
@@ -148471,6 +148555,7 @@ episodes:
     - card:2026-10-09/news_03.md
     - card:2026-10-22/news_04.md
     - card:2026-10-31/news_04.md
+    - card:2026-11-02/news_03.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
     evidence:
@@ -148492,6 +148577,14 @@ episodes:
         - neg
     - source: card:2026-10-31/news_04.md
       subthemes_local:
+      - earnings_shock
+      - memory_cycle
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: card:2026-11-02/news_03.md
+      subthemes_local:
+      - ai_capex_spending
       - earnings_shock
       - memory_cycle
       directions_by_reference:
@@ -160019,6 +160112,7 @@ episodes:
     SOXX:
     - card:2026-10-22/news_04.md
     - card:2026-10-31/news_04.md
+    - card:2026-11-02/news_03.md
     - kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo
       della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
   directions_local:
@@ -160054,7 +160148,7 @@ episodes:
   - hyperscaler_capex
   - memory_cycle
   - valuation_derisking
-  n_sources: 17
+  n_sources: 18
   events:
   - event_id: 2026-07-29:structural_themes:-
     geo: ''
@@ -160089,6 +160183,7 @@ episodes:
     - card:2026-09-12/news_05.md
     - card:2026-10-22/news_04.md
     - card:2026-10-31/news_04.md
+    - card:2026-11-02/news_03.md
     - kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo
       della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
     evidence:
@@ -160163,6 +160258,13 @@ episodes:
         SOXX:
         - neg
     - source: card:2026-10-31/news_04.md
+      subthemes_local:
+      - earnings_shock
+      - memory_cycle
+      directions_by_reference:
+        SOXX:
+        - neg
+    - source: card:2026-11-02/news_03.md
       subthemes_local:
       - earnings_shock
       - memory_cycle

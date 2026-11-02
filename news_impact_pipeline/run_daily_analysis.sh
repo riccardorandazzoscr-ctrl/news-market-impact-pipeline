@@ -625,6 +625,16 @@ if (( ! SERVE_AGENTE )); then
   log "RIPARAZIONE: giornata $TODAY ferma su $FASE. Triage e schede sono a posto: riprendo da lì senza richiamare l'agente."
 fi
 
+# Date di riunioni BoJ/BCE fuori dai calendari ufficiali nelle schede di oggi (2026-11-02):
+# a giugno-settembre le schede mettevano riunioni BoJ e BCE nei giorni FOMC e le schede
+# dopo le ricopiavano dalla libreria. Solo un avviso: la consegna parte comunque.
+if (( ! INCOMPLETA )) && "$PY" "$PIPE/analogues.py" build >> "$LOG" 2>&1 \
+   && ! "$PY" "$PIPE/calendari_riunioni.py" verifica --dal "$TODAY" >> "$LOG" 2>&1; then
+  MSG="schede $TODAY: date di banca centrale fuori calendario (righe sopra nel log). Correggi la scheda o, se la data è giusta, ignora."
+  log "WARN: $MSG"
+  /usr/bin/osascript -e "display notification \"$MSG\" with title \"News-Impact Pipeline\" sound name \"Basso\"" 2>/dev/null
+fi
+
 # Congela le tabelle appena prodotte: lo stesso parser alimenta audit e ledger.
 # La registrazione non valuta prezzi, non invia messaggi e non richiama Claude.
 # Un fallimento NON ferma la consegna (30/09/2026): i ritentativi ripartono senza
