@@ -17,7 +17,7 @@ voci:
     perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
       la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2026-09-17'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -34,7 +34,7 @@ voci:
     perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
       la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2026-09-11'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -50,7 +50,7 @@ voci:
     verso: escluso
     perché: Lo studio la dichiara non separabile dalla trimestrale; canale di finanziamento, segno su
       EWY non definito. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
-  stato: da_approvare
+  stato: promossa
 - data: '2026-08-28'
   tema: structural_themes
   fonte: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e stress di credito
@@ -67,7 +67,7 @@ voci:
     perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
       la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2026-08-24'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -83,7 +83,7 @@ voci:
     verso: escluso
     perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
       coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2026-07-22'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -99,7 +99,7 @@ voci:
     verso: escluso
     perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
       coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2026-07-01'
   tema: structural_themes
   fonte: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e stress di credito
@@ -116,7 +116,7 @@ voci:
     verso: escluso
     perché: Canale che lo studio stesso chiama redistributivo e ambiguo; nessun segno ex ante su EWY.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
-  stato: da_approvare
+  stato: promossa
 - data: '2026-06-08'
   tema: structural_themes
   fonte: 2026-09-01/news_04.md
@@ -129,7 +129,7 @@ voci:
     verso: escluso
     perché: 'Non è un evento datato: la scheda descrive una fase con la sovraperformance dell''azionario
       coreano, cioè un esito di prezzo. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2026-06-04'
   tema: structural_themes
   fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
@@ -142,7 +142,7 @@ voci:
     perché: 'Segnale misto: ricavi AI sopra la guida, software sotto; lo studio stesso dà SOXX solo ''neg
       lieve''. Nessun segno univoco su EWY. Criterio ex ante, nessun prezzo consultato. Revisione Claude
       2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2026-06-02'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -159,7 +159,7 @@ voci:
     perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
       la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2026-06-01'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -177,7 +177,7 @@ voci:
     perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
       la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2026-05-14'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -195,7 +195,7 @@ voci:
     perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
       la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2026-05-06'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -210,7 +210,7 @@ voci:
     verso: escluso
     perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
       coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2026-04-30'
   tema: structural_themes
   fonte: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e stress di credito
@@ -228,7 +228,7 @@ voci:
     perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
       la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2026-02-02'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -245,7 +245,7 @@ voci:
     perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
       la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-12-17'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -262,7 +262,7 @@ voci:
     verso: escluso
     perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
       coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-12-09'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -278,7 +278,7 @@ voci:
     verso: escluso
     perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
       coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-11-11'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -294,7 +294,7 @@ voci:
     verso: escluso
     perché: Lo studio la dichiara non separabile dalla trimestrale; canale di finanziamento, segno su
       EWY non definito. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
-  stato: da_approvare
+  stato: promossa
 - data: '2025-10-31'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -310,7 +310,7 @@ voci:
     verso: escluso
     perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
       coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-10-30'
   tema: structural_themes
   fonte: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e stress di credito
@@ -327,7 +327,7 @@ voci:
     perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
       la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-10-16'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -344,7 +344,7 @@ voci:
     perché: 'Conferma della domanda di chip AI dalla fonderia: più acceleratori significa più HBM, il
       prodotto di SK Hynix e Samsung che pesa sull''indice coreano. Lo studio dà SOXX e EWT pos. Criterio
       ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-09-24'
   tema: structural_themes
   fonte: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e stress di credito
@@ -362,7 +362,7 @@ voci:
     perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
       la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-09-10'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -380,7 +380,7 @@ voci:
     perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
       la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-07-22'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -396,7 +396,7 @@ voci:
     verso: escluso
     perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
       coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-06-11'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -411,7 +411,7 @@ voci:
     verso: escluso
     perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
       coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-06-03'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -427,7 +427,7 @@ voci:
     verso: escluso
     perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
       coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-04-16'
   tema: structural_themes
   fonte: 2026-09-15/news_04.md
@@ -441,7 +441,7 @@ voci:
     perché: 'Vendite di acceleratori alla Cina tagliate da un vincolo esterno: meno domanda di HBM per
       i fornitori coreani. Confondente: shock tariffario di aprile. Criterio ex ante, nessun prezzo consultato.
       Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-04-02'
   tema: structural_themes
   fonte: 2026-09-09/news_05.md
@@ -454,7 +454,7 @@ voci:
     verso: neg
     perché: 'Dazio del 25% sulla Corea annunciato quel giorno e pressione sulla filiera asiatica: pressione
       negativa sull''export coreano. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-03-28'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -471,7 +471,7 @@ voci:
     perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
       la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-01-30'
   tema: structural_themes
   fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
@@ -483,7 +483,7 @@ voci:
     verso: pos
     perché: 'Aumento del capex di un hyperscaler, contro-segnale a DeepSeek: più domanda attesa di GPU
       e quindi di HBM. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-01-29'
   tema: structural_themes
   fonte: 2026-09-06/news_06.md
@@ -496,7 +496,7 @@ voci:
     verso: escluso
     perché: 'Annunci after-close: la seduta del 29/1 non contiene l''informazione, che entra il 30/1 (già
       in questa proposta, dalla KB). Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2025-01-21'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -512,7 +512,7 @@ voci:
     verso: pos
     perché: 'Capex AI aggregato in aumento: più domanda attesa di chip e memoria. Lo studio dà SOXX pos.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2024-12-03'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -527,7 +527,7 @@ voci:
     verso: escluso
     perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
       coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2024-11-04'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -543,7 +543,7 @@ voci:
     verso: escluso
     perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
       coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2024-10-16'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -558,7 +558,7 @@ voci:
     verso: escluso
     perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
       coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2024-10-15'
   tema: structural_themes
   fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
@@ -570,7 +570,7 @@ voci:
     verso: neg
     perché: 'Ordini di macchinari sotto le attese con debolezza della memoria fuori dall''AI: segnale
       negativo sul ciclo della memoria. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2024-10-14'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -585,7 +585,7 @@ voci:
     verso: escluso
     perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
       coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2024-09-20'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -601,7 +601,7 @@ voci:
     verso: escluso
     perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
       coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2024-07-17'
   tema: structural_themes
   fonte: 2026-09-15/news_04.md
@@ -614,7 +614,7 @@ voci:
     verso: neg
     perché: 'Restrizioni estese alla filiera alleata: pressione sui produttori coreani con fabbriche in
       Cina. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2023-10-30'
   tema: structural_themes
   fonte: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
@@ -632,7 +632,7 @@ voci:
     verso: escluso
     perché: 'Regolazione dell''AI pre-annunciata: nessun canale verso la memoria coreana. Criterio ex
       ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2023-10-24'
   tema: structural_themes
   fonte: kb:Auto-limitazione volontaria dell'offerta in settori a capacità strategica; precedenti storici
@@ -648,7 +648,7 @@ voci:
     verso: escluso
     perché: 'Guida autonoma, non semiconduttori: nessun canale verso EWY. Criterio ex ante, nessun prezzo
       consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2022-10-07'
   tema: structural_themes
   fonte: 2026-08-23/news_06.md
@@ -661,7 +661,7 @@ voci:
     verso: neg
     perché: Le regole colpivano anche le fabbriche di memoria in Cina (DRAM e NAND avanzate), dove producono
       Samsung e SK Hynix. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
-  stato: da_approvare
+  stato: promossa
 - data: '2022-09-30'
   tema: structural_themes
   fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
@@ -674,7 +674,7 @@ voci:
     perché: 'Crollo della domanda di memoria dichiarato dal produttore: segnale negativo sul ciclo della
       memoria. Il taglio dell''offerta pesa meno della domanda nel breve. Criterio ex ante, nessun prezzo
       consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2022-04-26'
   tema: structural_themes
   fonte: 2026-08-21/news_07.md
@@ -688,7 +688,7 @@ voci:
     verso: escluso
     perché: 'Mega-cap USA del software prima dell''AI: nessun canale diretto verso la memoria coreana.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2021-11-30'
   tema: structural_themes
   fonte: 2026-10-09/news_03.md
@@ -702,7 +702,7 @@ voci:
     verso: escluso
     perché: 'Non è un evento datato ma un clima di timori, nella stessa seduta di Powell che abbandona
       ''transitorio'': non separabile. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2019-06-14'
   tema: structural_themes
   fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
@@ -714,7 +714,7 @@ voci:
     verso: neg
     perché: Domanda di semiconduttori rivista al ribasso per il bando Huawei, cliente rilevante anche
       della memoria coreana. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
-  stato: da_approvare
+  stato: promossa
 - data: '2019-05-15'
   tema: structural_themes
   fonte: 2026-08-26/news_04.md
@@ -728,7 +728,7 @@ voci:
     verso: neg
     perché: 'Huawei è un grande cliente di memoria di Samsung e SK Hynix: spedizioni a rischio. Criterio
       ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2018-12-26'
   tema: structural_themes
   fonte: 2026-08-25/news_04.md
@@ -741,7 +741,7 @@ voci:
     verso: escluso
     perché: 'Non è un evento: la scheda descrive una capitolazione, cioè un esito di prezzo. Criterio
       ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
 - data: '2018-11-19'
   tema: structural_themes
   fonte: 2026-09-15/news_04.md
@@ -754,7 +754,7 @@ voci:
     verso: escluso
     perché: Descrive la fase più che un evento datato; l'evento d'ancora del gruppo è il 2018-11-16, già
       in questa proposta. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
-  stato: da_approvare
+  stato: promossa
 - data: '2018-11-16'
   tema: structural_themes
   fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
@@ -766,4 +766,4 @@ voci:
     verso: neg
     perché: 'Eccesso di scorte di GPU: meno domanda di memoria grafica e segnale di fine ciclo per i chip.
       Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
-  stato: da_approvare
+  stato: promossa
