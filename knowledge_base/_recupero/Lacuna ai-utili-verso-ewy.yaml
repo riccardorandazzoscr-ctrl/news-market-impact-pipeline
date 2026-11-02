@@ -1,5 +1,5 @@
-research: lacuna ai-utili-verso-ewy (structural_themes, earnings_shock,ai_capex_spending,ai_semis, rif
-  EWY; sotto-tema locale)
+research: lacuna ai-utili-verso-ewy (structural_themes, memory_cycle,earnings_shock,ai_capex_spending,ai_semis,
+  rif EWY; sotto-tema locale)
 voci:
 - data: '2026-10-26'
   tema: structural_themes
@@ -9,12 +9,15 @@ voci:
   riga: 'Le attese ex ante sono coerenti con l''ipotesi su 15 sedute datate tra il 2025-03-28 e il 2026-10-26:
     conferma della spesa su `SOXX`, diluizione su `^NDX`, sollievo del credito su `HYG`. L''ipotesi però
     non è ancora verificata sui rendimenti, perché questo studio non ha avuto accesso alle serie di pre'
-  evento: ''
+  evento: Cluster di emissioni azionarie AI (Classe C Meta, S-1 pubblico Anthropic)
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
+      la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2026-09-17'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -23,12 +26,15 @@ voci:
   riga: '**Sostituzione del debito e credito (direzionale, positivo su `HYG`).** Equity al posto di nuove
     obbligazioni → leva più bassa e rating difeso → spread dei bond dell''emittente più stretti e minore
     offerta di carta di credito → contagio positivo al complesso del credito → prezzo di `HYG` su. Bloomber'
-  evento: ''
+  evento: Sostituzione di debito con equity nel capex AI
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
+      la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2026-09-11'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -37,12 +43,14 @@ voci:
   riga: '- Il catalogo contiene 15 sedute azionarie distinte: 12 non coincidono con una trimestrale dell''emittente
     e sono separabili, 3 coincidono (SoftBank 2025-11-11, Oracle 2026-09-11, Meta 2026-10-22) e non sono
     separabili. Ne derivano 39 righe (data, asset).'
-  evento: ''
+  evento: Seduta azionaria Oracle coincidente con la trimestrale
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: Lo studio la dichiara non separabile dalla trimestrale; canale di finanziamento, segno su
+      EWY non definito. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
+  stato: da_approvare
 - data: '2026-08-28'
   tema: structural_themes
   fonte: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e stress di credito
@@ -51,12 +59,15 @@ voci:
   riga: '| 2026-08-28 | SOXX | neg | ai_capex_financing, ai_semis | Prima seduta dopo il report WSJ: Nvidia
     ha sospeso parte delle operazioni del programma di credito ai neocloud per timori antitrust e resistenze
     dei partner\[11\]\[13\]\[16\]\[67\] | Reuters pubblicò alle 15:31 PDT del 2026-08-27, a mercato '
-  evento: ''
+  evento: Nvidia sospende parte del programma di credito ai neocloud (WSJ)
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
+      la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2026-08-24'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -65,12 +76,14 @@ voci:
   riga: '| 2026-08-24 | Aggreko deposita F-1 per IPO NYSE (valutazione riportata ~$15 mld) trainata dai
     data center | A/B | SOXX: neutral / XLU: pos | XLU | Lunedì. Evento-ancora della tesi: potenza modulare/bridge
     come collo di bottiglia (data center ~19% dei ricavi). |'
-  evento: ''
+  evento: Aggreko deposita l'F-1 per l'IPO (data center)
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
+      coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2026-07-22'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -79,12 +92,14 @@ voci:
   riga: '| 2026-07-22 | GE Vernova Q2: backlog $176 mld, ordini Power +134%, ≥125 GW gas sotto contratto
     al 2026 | B | SOXX: neutral / XLU: pos | XLU | Mercoledì (8-K). Conferma strutturale del canale turbine.
     |'
-  evento: ''
+  evento: 'Trimestrale GE Vernova: backlog turbine'
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
+      coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2026-07-01'
   tema: structural_themes
   fonte: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e stress di credito
@@ -94,33 +109,40 @@ voci:
     è: il fornitore (Nvidia) investe nel cliente, ne garantisce il debito o gli offre credito → il cliente
     usa quei fondi per comprare GPU del fornitore → i ricavi del fornitore sono in parte sostenuti dal
     suo s'
-  evento: ''
+  evento: Circolarità fornitore-cliente nel finanziamento delle GPU
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: Canale che lo studio stesso chiama redistributivo e ambiguo; nessun segno ex ante su EWY.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
+  stato: da_approvare
 - data: '2026-06-08'
   tema: structural_themes
-  fonte: 2026-09-09/news_05.md
-  riga: '| `2026-06-08` | neg | ai_capex_derating, ai_export_controls, ai_semis | Episodio del regime
-    corrente: controlli all''export con riprezzamento al ribasso del capex AI. |'
-  evento: ''
+  fonte: 2026-09-01/news_04.md
+  riga: '| `2026-06-08` | pos | memory_cycle, hbm, kospi | Fase di scarsità dell''HBM con l''azionario
+    coreano che sovraperforma. |'
+  evento: Fase di scarsità dell'HBM (secondo la scheda)
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Non è un evento datato: la scheda descrive una fase con la sovraperformance dell''azionario
+      coreano, cioè un esito di prezzo. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2026-06-04'
   tema: structural_themes
   fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
   riga: ''
-  evento: ''
+  evento: Trimestrale Broadcom Q2 FY26 (after-close 3/6)
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Segnale misto: ricavi AI sopra la guida, software sotto; lo studio stesso dà SOXX solo ''neg
+      lieve''. Nessun segno univoco su EWY. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-02.'
+  stato: da_approvare
 - data: '2026-06-02'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -129,12 +151,15 @@ voci:
   riga: '| 2026-06-01 | SOXX | pos | ai_capex_financing, equity_financing, ipo_supply, ai_semis | Anthropic
     annuncia il deposito confidenziale della bozza di S-1 | Annuncio Rule 135 pubblicato alle 16:00 UTC,
     cioè alle 12:00 ET, a mercato aperto → la data è la stessa seduta.\[43\]\[44\] Segue il round da 65 '
-  evento: ''
+  evento: Bozza confidenziale di S-1 di Anthropic
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
+      la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2026-06-01'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -144,12 +169,15 @@ voci:
     aumento Alphabet da 80 mld $ poi portato a 84,75 mld $, S-1/A di SpaceX a prezzo fisso. Il secondo
     cluster, del 2026-10-22/2026-10-26 (Classe C di Meta, vendita da 95 mld $, S-1 pubblico di Anthropic),
     è co'
-  evento: ''
+  evento: Cluster di emissioni azionarie AI (Anthropic, Alphabet, SpaceX)
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
+      la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2026-05-14'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -159,12 +187,15 @@ voci:
     di Cerebras (CBRS) dopo un''IPO prezzata sopra la forchetta | Pricing la sera del 2026-05-13 a 185
     $ contro una forchetta di 150-160 $: 30 mln di azioni Classe A per 5,55 mld $ (comunicato Cerebras;
     CNBC '
-  evento: ''
+  evento: Debutto in borsa di Cerebras
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
+      la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2026-05-06'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -172,12 +203,14 @@ voci:
     collo di bottiglia — regime ed episodi storici (2021–presente).md
   riga: '| 2026-05-06 | NRC approva i Principal Design Criteria dell''Aurora di Oklo; OKLO +12% | A |
     SOXX: neutral / XLU: pos | XLU, TAN | Mercoledì. Nome SMR; proxy XLU imperfetto. |'
-  evento: ''
+  evento: NRC approva i criteri di progetto dell'Aurora di Oklo
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
+      coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2026-04-30'
   tema: structural_themes
   fonte: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e stress di credito
@@ -187,12 +220,15 @@ voci:
     opachi, il mercato lo legge come **segnale di limite**. È il caso di Meta il 2026-04-30: 96 miliardi
     di ordini al picco contro circa 125 dell''emissione di ottobre, premi più alti su quasi tutte le sei
     t'
-  evento: ''
+  evento: Emissione Meta con ordini in calo
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
+      la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2026-02-02'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -201,12 +237,15 @@ voci:
   riga: '**Sostituzione del debito e credito (direzionale, positivo su `HYG`).** Equity al posto di nuove
     obbligazioni → leva più bassa e rating difeso → spread dei bond dell''emittente più stretti e minore
     offerta di carta di credito → contagio positivo al complesso del credito → prezzo di `HYG` su. Bloomber'
-  evento: ''
+  evento: Emissione obbligazionaria Oracle
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
+      la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-12-17'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -216,12 +255,14 @@ voci:
     145.777 MW; deficit di 6.625 MW sotto il target di riserva del 20% | C | SOXX: neutral / XLU: pos
     | XLU | Mercoledì; report market monitor successivo (data center ~40% dei costi). Prima volta sotto
     il t'
-  evento: ''
+  evento: Asta di capacità PJM 2027/2028
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
+      coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-12-09'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -230,12 +271,14 @@ voci:
   riga: '| 2025-12-09 | GE Vernova investor update: backlog gas ~80 GW a fine 2025, slot sold-out verso
     il 2030 | B | SOXX: neutral / XLU: pos | XLU | Martedì. Segnale di amplificatore (turbine come percorso
     critico). |'
-  evento: ''
+  evento: Investor update GE Vernova
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
+      coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-11-11'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -244,12 +287,14 @@ voci:
   riga: '- Il catalogo contiene 15 sedute azionarie distinte: 12 non coincidono con una trimestrale dell''emittente
     e sono separabili, 3 coincidono (SoftBank 2025-11-11, Oracle 2026-09-11, Meta 2026-10-22) e non sono
     separabili. Ne derivano 39 righe (data, asset).'
-  evento: ''
+  evento: Seduta azionaria SoftBank coincidente con la trimestrale
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: Lo studio la dichiara non separabile dalla trimestrale; canale di finanziamento, segno su
+      EWY non definito. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
+  stato: da_approvare
 - data: '2025-10-31'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -258,12 +303,14 @@ voci:
   riga: '| 2025-10-31 | Nadella (BG2): "GPU in inventario che non posso collegare, mancano warm shells"
     | B/C | SOXX: neutral / XLU: pos | XLU | Episodio pubblicato ~31/10. Non un mover di mercato netto:
     valore semantico, marca il vincolo come guidance. |'
-  evento: ''
+  evento: 'Nadella: GPU in inventario senza capannoni alimentati'
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
+      coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-10-30'
   tema: structural_themes
   fonte: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e stress di credito
@@ -272,12 +319,15 @@ voci:
   riga: 'Primo punto. Le maxi-emissioni investment grade assorbite con domanda record producono un segnale
     di **conferma** della spesa futura. Fra queste: Meta, 30 miliardi di dollari il 2025-10-30 con 125
     miliardi di ordini secondo Bloomberg;\[1\]\[2\] Oracle, 25 miliardi il 2026-02-02 con oltre 129 miliard'
-  evento: ''
+  evento: Emissione Meta da 30 mld $
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
+      la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-10-16'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -286,12 +336,15 @@ voci:
   riga: '| 2025-10-16 | TSMC Q3: ricavi +40% a $33,1 mld, N2 in volume entro fine 2025 | Controllo (chip)
     | SOXX: pos / EWT: pos / XLU: neutral | SOXX, EWT | Giovedì (earnings call). Progresso lato fonderia:
     canale chip positivo. |'
-  evento: ''
+  evento: 'Trimestrale TSMC Q3 2025: ricavi +40%'
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'Conferma della domanda di chip AI dalla fonderia: più acceleratori significa più HBM, il
+      prodotto di SK Hynix e Samsung che pesa sull''indice coreano. Lo studio dà SOXX e EWT pos. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-09-24'
   tema: structural_themes
   fonte: kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e stress di credito
@@ -301,12 +354,15 @@ voci:
     $ di obbligazioni investment grade, seconda emissione societaria USA del 2025\[29\]\[30\] | Bloomberg:
     ordini al picco di quasi 88 miliardi $; la mattina era stata riportata la ricerca di 15 miliardi,
     poi l'
-  evento: ''
+  evento: Emissione obbligazionaria Oracle da 18 mld $
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
+      la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-09-10'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -316,12 +372,15 @@ voci:
     | Nebius lancia e prezza un''offerta di 1 mld $ in azioni Classe A insieme a convertibili | EDGAR:
     FWP di lancio accettato alle 08:46:41 ET del 2025-09-10, quindi pre-apertura → la data è la stessa
     seduta.\['
-  evento: ''
+  evento: Offerta azionaria Nebius
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
+      la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-07-22'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -330,12 +389,14 @@ voci:
   riga: '| 2025-07-22 | Asta capacità PJM 2026/2027 al cap FERC $329,17/MW-day (da $269,92, +22%), 134.311
     MW procurati | C | SOXX: neutral / XLU: pos | XLU | Risultati diffusi ~22/7 (report 23/7). Per Introl
     la domanda data center ha determinato il 63% dell''aumento. |'
-  evento: ''
+  evento: Asta di capacità PJM 2026/2027
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
+      coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-06-11'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -343,12 +404,14 @@ voci:
     collo di bottiglia — regime ed episodi storici (2021–presente).md
   riga: '| 2025-06-11 | Talen–Amazon: PPA ampliato a 1.920 MW fino al 2042 | A | SOXX: neutral / XLU:
     pos | XLU | Mercoledì. Comunicato aziendale ore 06:00 ET. |'
-  evento: ''
+  evento: PPA Talen-Amazon
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
+      coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-06-03'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -357,34 +420,41 @@ voci:
   riga: '| 2025-06-03 | Constellation–Meta: PPA nucleare ventennale (Clinton) | A | SOXX: neutral / XLU:
     pos | XLU | Martedì. CEG sale in apertura (~+7/+15% intraday) poi ripiega: usare la seduta 03/06.
     |'
-  evento: ''
+  evento: PPA nucleare Constellation-Meta
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
+      coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-04-16'
   tema: structural_themes
   fonte: 2026-09-15/news_04.md
   riga: '| `2025-04-16` | neg | export_controls, ai_semis | Svalutazione delle licenze H20 di Nvidia:
     revisione discreta dei ricavi attesi da parte di un vincolo esterno. |'
-  evento: ''
+  evento: Svalutazione H20 di Nvidia per le licenze verso la Cina (after-close 15/4)
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: neg
+    perché: 'Vendite di acceleratori alla Cina tagliate da un vincolo esterno: meno domanda di HBM per
+      i fornitori coreani. Confondente: shock tariffario di aprile. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-04-02'
   tema: structural_themes
   fonte: 2026-09-09/news_05.md
   riga: '| `2025-04-02` | neg | ai_semis, tariff, asean, 232_durable_regime | Tornata tariffaria di inizio
     aprile 2025 con impatto sulla filiera asiatica dei chip. |'
-  evento: ''
+  evento: Dazi reciproci del 2 aprile 2025
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: neg
+    perché: 'Dazio del 25% sulla Corea annunciato quel giorno e pressione sulla filiera asiatica: pressione
+      negativa sull''export coreano. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-03-28'
   tema: structural_themes
   fonte: kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -393,33 +463,40 @@ voci:
   riga: 'Le attese ex ante sono coerenti con l''ipotesi su 15 sedute datate tra il 2025-03-28 e il 2026-10-26:
     conferma della spesa su `SOXX`, diluizione su `^NDX`, sollievo del credito su `HYG`. L''ipotesi però
     non è ancora verificata sui rendimenti, perché questo studio non ha avuto accesso alle serie di pre'
-  evento: ''
+  evento: Seduta azionaria di finanziamento AI (inizio catalogo)
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale di finanziamento del capex (emissioni, IPO, credito): lo studio dichiara solo SOXX/^NDX/HYG;
+      la trasmissione al ciclo della memoria coreano è di secondo ordine e il segno su EWY non è definito.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-01-30'
   tema: structural_themes
   fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
   riga: ''
-  evento: ''
+  evento: Capex Meta 2025 confermato e alzato (after-close 29/1)
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'Aumento del capex di un hyperscaler, contro-segnale a DeepSeek: più domanda attesa di GPU
+      e quindi di HBM. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-01-29'
   tema: structural_themes
   fonte: 2026-09-06/news_06.md
   riga: '| `2025-01-29` | neg | hyperscaler_capex, earnings_shock | Trimestrali degli hyperscaler nell''immediato
     dopo-DeepSeek: il capex annunciato viene letto contro le nuove attese di efficienza |'
-  evento: ''
+  evento: Trimestrali hyperscaler dopo DeepSeek (secondo la scheda)
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Annunci after-close: la seduta del 29/1 non contiene l''informazione, che entra il 30/1 (già
+      in questa proposta, dalla KB). Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2025-01-21'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -428,12 +505,14 @@ voci:
   riga: '| 2025-01-21 | Annuncio Stargate ($500 mld su 4 anni, 10 GW) alla Casa Bianca | A/C | SOXX: pos
     / XLU: pos | ^NDX, XLU | Martedì (conferenza stampa serale). Evento "capex totale": muove entrambi
     i canali nella stessa direzione (sentiment). |'
-  evento: ''
+  evento: Annuncio di Stargate (500 mld $)
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: pos
+    perché: 'Capex AI aggregato in aumento: più domanda attesa di chip e memoria. Lo studio dà SOXX pos.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2024-12-03'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -441,12 +520,14 @@ voci:
     collo di bottiglia — regime ed episodi storici (2021–presente).md
   riga: '| 2024-12-03 | Meta lancia RFP nucleare 1–4 GW (SMR o grandi reattori, dai primi anni 2030) |
     A | SOXX: neutral / XLU: pos | XLU | Martedì. Annuncio a mercato aperto. |'
-  evento: ''
+  evento: RFP nucleare di Meta
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
+      coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2024-11-04'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -455,12 +536,14 @@ voci:
   riga: '| 2024-11-04 | FERC boccia (2-1) l''espansione co-location Talen–Amazon (300→480 MW) | D | SOXX:
     neutral / XLU: neg | XLU | Lunedì (vigilia elezioni USA). CEG −12,5%, VST ~−3%, TLN ~−2%. Segnale
     negativo puro sul canale elettrico. |'
-  evento: ''
+  evento: FERC boccia la co-location Talen-Amazon
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
+      coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2024-10-16'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -468,22 +551,26 @@ voci:
     collo di bottiglia — regime ed episodi storici (2021–presente).md
   riga: '| 2024-10-16 | Amazon–X-energy: investimento ~$500M, >5 GW SMR al 2039 | A | SOXX: neutral /
     XLU: pos | XLU, TAN | Mercoledì. Conferma il pattern SMR degli hyperscaler. |'
-  evento: ''
+  evento: Investimento Amazon in X-energy
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
+      coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2024-10-15'
   tema: structural_themes
   fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
   riga: ''
-  evento: ''
+  evento: 'Fuga della trimestrale ASML Q3 2024: ordini dimezzati, guida 2025 tagliata'
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: neg
+    perché: 'Ordini di macchinari sotto le attese con debolezza della memoria fuori dall''AI: segnale
+      negativo sul ciclo della memoria. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2024-10-14'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -491,12 +578,14 @@ voci:
     collo di bottiglia — regime ed episodi storici (2021–presente).md
   riga: '| 2024-10-14 | Google–Kairos Power: primo PPA aziendale su SMR (500 MW, 6-7 reattori) | A | SOXX:
     neutral / XLU: pos | XLU | Lunedì. Reazione concentrata su nomi nucleari/SMR. |'
-  evento: ''
+  evento: PPA Google-Kairos
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
+      coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2024-09-20'
   tema: structural_themes
   fonte: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
@@ -505,23 +594,27 @@ voci:
   riga: '| 2024-09-20 | Constellation–Microsoft: riavvio Three Mile Island/Crane per data center; CEG
     chiude +22% a $254,98 | A | SOXX: neutral / XLU: pos / ^NDX: neutral | XLU, ^NDX | Venerdì (quad-witching).
     Primo episodio "potenza" ad alta salienza; annuncio a mercato aperto. |'
-  evento: ''
+  evento: Riavvio di Three Mile Island per Microsoft
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale verso memoria e chip
+      coreani. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2024-07-17'
   tema: structural_themes
   fonte: 2026-09-15/news_04.md
   riga: '| `2024-07-17` | neg | export_controls, ai_semis | Notizia di controlli all''export più severi
     sui chip avanzati: SOXX perde circa il 6,8%, il drawdown singolo più simile per ampiezza. |'
-  evento: ''
+  evento: Notizia di controlli all'export più severi sui chip verso la Cina
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: neg
+    perché: 'Restrizioni estese alla filiera alleata: pressione sui produttori coreani con fabbriche in
+      Cina. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2023-10-30'
   tema: structural_themes
   fonte: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
@@ -532,12 +625,14 @@ voci:
     dell''AI negli Stati Uniti e nell''UE ha prodotto quasi soltanto eventi calendarizzati o pre-annunciati.
     L''ordine esecutivo 14110 del 2023-10-30 era stato illustrato alla stampa la domenica precedente.
     Il'
-  evento: ''
+  evento: Ordine esecutivo 14110 sull'AI
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Regolazione dell''AI pre-annunciata: nessun canale verso la memoria coreana. Criterio ex
+      ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2023-10-24'
   tema: structural_themes
   fonte: kb:Auto-limitazione volontaria dell'offerta in settori a capacità strategica; precedenti storici
@@ -546,85 +641,129 @@ voci:
   riga: '| 2023-10-24 | California DMV sospende i permessi driverless di Cruise (GM) | regolatorio (imposto)
     — **contro-esempio di controllo** | imposto (regolatore) | GM (NYSE: GM) | Per CNBC, "the stock closed
     Tuesday at $28.56, down by 2.3%", con minimo a 52 settimane a 28,01$; **movente confondente**: st'
-  evento: ''
+  evento: Sospensione dei permessi di Cruise in California
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Guida autonoma, non semiconduttori: nessun canale verso EWY. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2022-10-07'
   tema: structural_themes
   fonte: 2026-08-23/news_06.md
   riga: '| `2022-10-07` | neg | export_controls, ai_semis | I controlli americani all''export di semiconduttori
     avanzati verso la Cina: il canale regolatorio che pesa ancora oggi sul ramo cinese della storia |'
-  evento: ''
+  evento: Controlli BIS all'export di chip e macchinari verso la Cina
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: neg
+    perché: Le regole colpivano anche le fabbriche di memoria in Cina (DRAM e NAND avanzate), dove producono
+      Samsung e SK Hynix. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
+  stato: da_approvare
 - data: '2022-09-30'
   tema: structural_themes
   fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
   riga: ''
-  evento: ''
+  evento: 'Micron FY22 Q4: ricavi -23% sul trimestre, capex tagliato del 50% (after-close 29/9)'
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: neg
+    perché: 'Crollo della domanda di memoria dichiarato dal produttore: segnale negativo sul ciclo della
+      memoria. Il taglio dell''offerta pesa meno della domanda nel breve. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2022-04-26'
   tema: structural_themes
   fonte: 2026-08-21/news_07.md
   riga: '| `2022-04-26` | neg | earnings_shock | Trimestrali deludenti di Microsoft e Alphabet, Nasdaq
     −3,95%. Analogo per «vendita guidata dagli utili dei mega-cap tecnologici», anche se pre-intelligenza
     artificiale. |'
-  evento: ''
+  evento: Trimestrali deludenti di Microsoft e Alphabet
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: 'Mega-cap USA del software prima dell''AI: nessun canale diretto verso la memoria coreana.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
+- data: '2021-11-30'
+  tema: structural_themes
+  fonte: 2026-10-09/news_03.md
+  riga: '| `2021-11-30` | neg | memory_cycle, valuation_derisking | timori di picco del ciclo della memoria
+    (prezzi DRAM in calo) → vendite sui chip; stesso giorno Powell abbandona "transitorio" (fattore confondente)
+    |'
+  evento: Timori di picco del ciclo della memoria (secondo la scheda)
+  meccanismo: []
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: 'Non è un evento datato ma un clima di timori, nella stessa seduta di Powell che abbandona
+      ''transitorio'': non separabile. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2019-06-14'
   tema: structural_themes
   fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
   riga: ''
-  evento: ''
+  evento: Broadcom taglia la guida FY19 per Huawei e rallentamento (after-close 13/6)
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: neg
+    perché: Domanda di semiconduttori rivista al ribasso per il bando Huawei, cliente rilevante anche
+      della memoria coreana. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
+  stato: da_approvare
 - data: '2019-05-15'
   tema: structural_themes
   fonte: 2026-08-26/news_04.md
   riga: '| `2019-05-15` | neg | export_controls, ai_semis | Huawei inserita nella *entity list* americana:
     i fornitori di semiconduttori devono interrompere le spedizioni, shock di offerta regolatorio sul
     comparto. |'
-  evento: ''
+  evento: Huawei nella entity list americana
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: neg
+    perché: 'Huawei è un grande cliente di memoria di Samsung e SK Hynix: spedizioni a rischio. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
+- data: '2018-12-26'
+  tema: structural_themes
+  fonte: 2026-08-25/news_04.md
+  riga: '| `2018-12-26` | neg | valuation_derisking, memory_cycle | Minimo del bear market del quarto
+    trimestre 2018: capitolazione sul comparto semiconduttori e prezzi DRAM in caduta. |'
+  evento: Minimo del bear market del quarto trimestre 2018 (secondo la scheda)
+  meccanismo: []
+  dichiarazioni:
+  - asset: EWY
+    verso: escluso
+    perché: 'Non è un evento: la scheda descrive una capitolazione, cioè un esito di prezzo. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
 - data: '2018-11-19'
   tema: structural_themes
   fonte: 2026-09-15/news_04.md
   riga: '| `2018-11-19` | neg | earnings_shock, ai_semis | Crollo del comparto semiconduttori su eccesso
     di scorte e fine del ciclo cripto: revisione al ribasso della domanda finale di chip. |'
-  evento: ''
+  evento: Crollo del comparto semiconduttori (secondo la scheda)
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: escluso
+    perché: Descrive la fase più che un evento datato; l'evento d'ancora del gruppo è il 2018-11-16, già
+      in questa proposta. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.
+  stato: da_approvare
 - data: '2018-11-16'
   tema: structural_themes
   fonte: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
   riga: ''
-  evento: ''
+  evento: 'Nvidia FY19 Q3: guida -21% per le scorte di GPU dopo le cripto (after-close 15/11)'
   meccanismo: []
   dichiarazioni:
   - asset: EWY
-    domanda: Pressione ATTESA all'epoca su questo asset? pos/neg/neutral/escluso + perché; niente prezzi.
-  stato: da_rivedere
+    verso: neg
+    perché: 'Eccesso di scorte di GPU: meno domanda di memoria grafica e segnale di fine ciclo per i chip.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+  stato: da_approvare
