@@ -1,0 +1,248 @@
+research: lacuna rba-verso (monetary_policy, rba, rif AUD=X; sotto-tema locale)
+voci:
+- data: '2026-08-27'
+  tema: monetary_policy
+  fonte: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  riga: '| 2026-08-27 | La Bank of Korea alza di 25pb al 3,00% (6-1), secondo rialzo consecutivo; il governatore
+    Shin: "I''m expecting (rate increases) to be gradual, because we need to assess the impact of the
+    two (rate) hikes in a row" (Reuters) | rba_bok_policy (hawkish atteso a metà, tono letto come dovis'
+  evento: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+  meccanismo: []
+  dichiarazioni:
+  - asset: AUD=X
+    verso: escluso
+    perché: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+      comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2026-07-16'
+  tema: monetary_policy
+  fonte: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  riga: '| 2026-07-16 | La Bank of Korea alza il Base Rate di 25pb dal 2,50% al 2,75%, primo rialzo da
+    gennaio 2023, all''unanimità\[58\]\[59\] | rba_bok_policy (hawkish atteso) | KRW=X: neg / EWY: neutral
+    | KRW=X, EWY | Divergenza dichiarata: secondo AJP (fonte secondaria, da verificare) il KOSPI quel
+    giorno'
+  evento: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+  meccanismo: []
+  dichiarazioni:
+  - asset: AUD=X
+    verso: escluso
+    perché: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+      comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2026-05-28'
+  tema: monetary_policy
+  fonte: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  riga: '| 2026-05-28 | La Bank of Korea tiene il tasso al 2,50%, un anno intero senza modifiche; il governatore
+    segnala una svolta restrittiva\[55\] | rba_bok_policy (hawkish su guidance) | KRW=X: neg / EWY: neutral
+    | KRW=X, EWY | PCE USA di aprile nella seduta USA dello stesso giorno: EWY contaminato. MULT'
+  evento: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+  meccanismo: []
+  dichiarazioni:
+  - asset: AUD=X
+    verso: escluso
+    perché: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+      comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2026-04-10'
+  tema: monetary_policy
+  fonte: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  riga: '| 2026-04-10 | La Bank of Korea tiene il tasso al 2,50% citando lo shock d''offerta della guerra
+    in Medio Oriente\[45\] | rba_bok_policy (in linea) | KRW=X: neutral / EWY: neutral | KRW=X, EWY |
+    Seduta di venerdì; EWY nella seduta USA dello stesso giorno. MULTI-CAUSA (petrolio) |'
+  evento: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+  meccanismo: []
+  dichiarazioni:
+  - asset: AUD=X
+    verso: escluso
+    perché: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+      comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2026-02-26'
+  tema: monetary_policy
+  fonte: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  riga: '| 2026-02-26 | La Bank of Korea tiene il tasso al 2,50% all''unanimità (sesta pausa), in linea
+    con le attese\[41\] | rba_bok_policy (in linea) | KRW=X: neutral / EWY: neutral | KRW=X, EWY | Nessuna
+    notizia memoria datata in quella settimana nel materiale raccolto. PURO (presunto): candidato a control'
+  evento: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+  meccanismo: []
+  dichiarazioni:
+  - asset: AUD=X
+    verso: escluso
+    perché: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+      comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2026-01-15'
+  tema: monetary_policy
+  fonte: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  riga: '**Canale E: intervento valutario o verbale della Bank of Korea.** Catena: `dichiarazione/riunione
+    straordinaria BOK o vendita di dollari con il MOEF → offerta di dollari e aspettative sul livello
+    tollerato → KRW=X → EWY (traduzione valutaria)`. Va separato dalla decisione ordinaria perché avviene
+    fu'
+  evento: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+  meccanismo: []
+  dichiarazioni:
+  - asset: AUD=X
+    verso: escluso
+    perché: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+      comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2025-12-23'
+  tema: monetary_policy
+  fonte: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  riga: '| 2025-12-23 | Un membro del board della Bank of Korea (Chang Yong-sung) avverte sulla volatilità
+    del won mentre la valuta tocca 1.483,5, minimo da aprile (Rapporto di stabilità finanziaria BOK)\[32\]
+    | fx_intervention (verbale) | KRW=X: neg | KRW=X | Jawboning verbale con il rapporto semestrale; ne'
+  evento: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+  meccanismo: []
+  dichiarazioni:
+  - asset: AUD=X
+    verso: escluso
+    perché: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+      comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2024-11-29'
+  tema: monetary_policy
+  fonte: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  riga: '| 2024-11-28 | La Bank of Korea taglia a sorpresa di 25pb al 3,00% (secondo taglio consecutivo,
+    primo back-to-back dal 2009)\[25\]\[26\] | rba_bok_policy (sorpresa dovish) | KRW=X: pos / EWY: neutral
+    | KRW=X, EWY | Won −0,58% a 1.396,64 (Tradingpedia), perdite contenute da probabile vendita di dolla'
+  evento: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+  meccanismo: []
+  dichiarazioni:
+  - asset: AUD=X
+    verso: escluso
+    perché: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+      comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2024-11-28'
+  tema: monetary_policy
+  fonte: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  riga: '**Canale C: decisione di tasso Bank of Korea (diretto su KRW=X; amplificatore o attenuante su
+    EWY).** Catena: `decisione BOK vs consenso → differenziale KR-US a breve e flussi su KTB → KRW=X →
+    EWY (in USD = azionario locale × cambio)`. Un rialzo fa scendere `KRW=X`. Su `EWY` l''effetto è ambiguo
+    per '
+  evento: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+  meccanismo: []
+  dichiarazioni:
+  - asset: AUD=X
+    verso: escluso
+    perché: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+      comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2024-10-11'
+  tema: monetary_policy
+  fonte: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  riga: '| 2024-10-11 | La Bank of Korea taglia di 25pb al 3,25%, primo taglio dal 2020\[22\] | rba_bok_policy
+    (dovish, atteso) | KRW=X: pos / EWY: neutral | KRW=X, EWY | Atteso nel sondaggio Reuters. Finimize:
+    KOSPI +0,48% a 2.611,75 (non chiaro se chiusura), won più forte: segno opposto all''atteso su KRW=X'
+  evento: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+  meccanismo: []
+  dichiarazioni:
+  - asset: AUD=X
+    verso: escluso
+    perché: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+      comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2023-01-13'
+  tema: monetary_policy
+  fonte: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  riga: '| 2023-01-13 | La Bank of Korea alza di 25pb a 3,50%, ultimo rialzo del ciclo (10° consecutivo,
+    +300pb totali; Reuters)\[17\] | rba_bok_policy (hawkish, atteso) | KRW=X: neg / EWY: neutral | KRW=X,
+    EWY | Reuters intraday prima della conferenza stampa: won +0,75% sul dollaro, futures KTB a 3 anni
+    +8 '
+  evento: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+  meccanismo: []
+  dichiarazioni:
+  - asset: AUD=X
+    verso: escluso
+    perché: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+      comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2022-07-13'
+  tema: monetary_policy
+  fonte: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  riga: '| 2022-07-13 | La Bank of Korea alza di 50pb a 2,25%, primo "big step" della sua storia\[16\]
+    | rba_bok_policy (hawkish) | KRW=X: neg / EWY: neutral | KRW=X, EWY | Decisione al mattino KST; EWY
+    reagisce nella seduta USA dello stesso giorno, in cui uscì anche il CPI USA di giugno (calendario
+    BLS, da '
+  evento: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+  meccanismo: []
+  dichiarazioni:
+  - asset: AUD=X
+    verso: escluso
+    perché: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+      comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2021-08-26'
+  tema: monetary_policy
+  fonte: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  riga: '| 2021-08-26 | La Bank of Korea alza il Base Rate di 25pb da 0,50% a 0,75%: primo rialzo del
+    ciclo post-pandemia (comunicato BOK)\[15\] | rba_bok_policy (hawkish, atteso a metà) | KRW=X: neg
+    / EWY: neutral | KRW=X, EWY | Il comunicato BOK segnalava calo dell''azionario e won "considerevolmente"
+    più d'
+  evento: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+  meccanismo: []
+  dichiarazioni:
+  - asset: AUD=X
+    verso: escluso
+    perché: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+      comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2020-03-17'
+  tema: monetary_policy
+  fonte: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  riga: '| 2020-03-16 | La Bank of Korea (BOK) taglia d''emergenza di 50pb a 0,75% in una riunione straordinaria
+    iniziata intorno alle 16:30 KST, dopo il taglio d''emergenza della Fed\[14\] | rba_bok_policy (emergenza,
+    dovish) | KRW=X: pos / EWY: neutral | KRW=X, EWY | Annuncio dopo la chiusura KRX delle 15:30'
+  evento: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+  meccanismo: []
+  dichiarazioni:
+  - asset: AUD=X
+    verso: escluso
+    perché: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+      comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2020-03-16'
+  tema: monetary_policy
+  fonte: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  riga: '| 2020-03-16 | La Bank of Korea (BOK) taglia d''emergenza di 50pb a 0,75% in una riunione straordinaria
+    iniziata intorno alle 16:30 KST, dopo il taglio d''emergenza della Fed\[14\] | rba_bok_policy (emergenza,
+    dovish) | KRW=X: pos / EWY: neutral | KRW=X, EWY | Annuncio dopo la chiusura KRX delle 15:30'
+  evento: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+  meccanismo: []
+  dichiarazioni:
+  - asset: AUD=X
+    verso: escluso
+    perché: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+      comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa

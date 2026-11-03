@@ -14154,3 +14154,216 @@ reviews:
     riguarda la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
   status: excluded
   description: CPI australiano
+- date: '2025-03-03'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-21/news_02.md
+  reason: 'Segnali opposti nello stesso dato: attività più debole (rendimenti giù) e prezzi in salita
+    per i dazi (rendimenti su). Stessa scelta già fatta su IEF e ^TNX. Criterio ex ante, nessun prezzo
+    consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: 'ISM manifatturiero di febbraio 2025: nuovi ordini giù, prezzi pagati su'
+- date: '2023-08-03'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-25/news_05.md
+  reason: 'Seduta dominata dall''offerta di Treasury dopo il refunding e il taglio di Fitch: la sorpresa
+    ISM non è separabile. Stessa scelta già fatta su IEF e ^TNX. Criterio ex ante, nessun prezzo consultato.
+    Revisione Claude 2026-11-03.'
+  status: excluded
+  description: ISM servizi di luglio 2023
+- date: '2022-08-03'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-25/news_05.md
+  reason: 'Sorpresa forte al rialzo sull''attività nel pieno dei rialzi Fed: più stretta attesa, rendimento
+    a 5 anni su. Coerente con IEF neg; la scheda descrive invece un raffreddamento. Criterio ex ante,
+    nessun prezzo consultato. Revisione Claude 2026-11-03.'
+  direction: pos
+  description: ISM servizi di luglio 2022 a 56,7 contro 53,5 atteso
+- date: '2019-10-03'
+  theme: macro_data
+  reference: ^FVX
+  source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  reason: 'Sorpresa al ribasso che alza le probabilità di un taglio a ottobre (dalla KB): rendimenti giù.
+    Coerente con ^TNX neg e IEF pos. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-03.'
+  direction: neg
+  description: ISM servizi a 52,6, minimo di tre anni
+- date: '2019-09-04'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-25/news_05.md
+  reason: 'Data sbagliata: l''ISM manifatturiero di agosto 2019 uscì il 3/9, primo giorno lavorativo dopo
+    il Labor Day. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: ISM manifatturiero di agosto 2019 (secondo la scheda)
+- date: '2015-12-01'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-08-25/news_05.md
+  reason: 'Contrazione industriale su dollaro forte e petrolio basso, concorde nelle schede: dato debole,
+    rendimenti giù. Coerente con ^TNX neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-03.'
+  direction: neg
+  description: ISM manifatturiero di novembre 2015 sotto 50, prima volta dal 2012
+- date: '2015-09-03'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-02/news_04.md
+  reason: 'Data sbagliata: l''ISM manifatturiero uscì l''1/9/2015; il 3/9 è il giorno della BCE e dell''ISM
+    servizi. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: ISM manifatturiero di agosto 2015 (secondo la scheda)
+- date: '2026-08-27'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+    comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+- date: '2026-07-16'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+    comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+- date: '2026-05-28'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+    comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+- date: '2026-04-10'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+    comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+- date: '2026-02-26'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+    comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+- date: '2026-01-15'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+    comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+- date: '2025-12-23'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+    comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+- date: '2024-11-29'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+    comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+- date: '2024-11-28'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+    comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+- date: '2024-10-11'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+    comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+- date: '2023-01-13'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+    comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+- date: '2022-07-13'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+    comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+- date: '2021-08-26'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+    comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+- date: '2020-03-17'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+    comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+- date: '2020-03-16'
+  theme: monetary_policy
+  reference: AUD=X
+  source: kb:Reserve Bank of Australia e Bank of Korea; regime ed episodi storici (1999–presente)/Reserve
+    Bank of Australia e Bank of Korea- regime ed episodi storici (1999–presente).md
+  reason: 'Evento della Bank of Korea, non della RBA: l''etichetta `rba` viene dal tipo `rba_bok_policy`,
+    comune alle due banche nella research. Nessuna pressione attesa su AUD=X. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-03.'
+  status: excluded
+  description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)

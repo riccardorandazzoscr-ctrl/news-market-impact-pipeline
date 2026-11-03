@@ -1,0 +1,102 @@
+research: lacuna ism-sorprese-verso (macro_data, ism, rif ^FVX; sotto-tema locale)
+voci:
+- data: '2025-03-03'
+  tema: macro_data
+  fonte: 2026-08-21/news_02.md
+  riga: '| `2025-03-03` | neg | ism, tariff_escalation | ISM manifatturiero in calo dentro lo shock dazi
+    di primavera 2025. |'
+  evento: 'ISM manifatturiero di febbraio 2025: nuovi ordini giù, prezzi pagati su'
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Segnali opposti nello stesso dato: attività più debole (rendimenti giù) e prezzi in salita
+      per i dazi (rendimenti su). Stessa scelta già fatta su IEF e ^TNX. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2023-08-03'
+  tema: macro_data
+  fonte: 2026-08-25/news_05.md
+  riga: '| `2023-08-03` | neg | ism, activity_growth | Attività in raffreddamento mentre i rendimenti
+    lunghi salgono per ragioni di offerta di titoli: combinazione sfavorevole per l''azionario. |'
+  evento: ISM servizi di luglio 2023
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Seduta dominata dall''offerta di Treasury dopo il refunding e il taglio di Fitch: la sorpresa
+      ISM non è separabile. Stessa scelta già fatta su IEF e ^TNX. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2022-08-03'
+  tema: macro_data
+  fonte: 2026-08-25/news_05.md
+  riga: '| `2022-08-03` | neg | ism, services | Indicatori di attività in raffreddamento nel pieno del
+    ciclo di rialzi: il mercato oscilla fra "pivot" e "recessione". |'
+  evento: ISM servizi di luglio 2022 a 56,7 contro 53,5 atteso
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: pos
+    perché: 'Sorpresa forte al rialzo sull''attività nel pieno dei rialzi Fed: più stretta attesa, rendimento
+      a 5 anni su. Coerente con IEF neg; la scheda descrive invece un raffreddamento. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2019-10-03'
+  tema: macro_data
+  fonte: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica monetaria e ampiezza
+    geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese macro e reaction function dei
+    mercati: fase del ciclo di politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno
+    Unito (2007–2026).md'
+  riga: '|2019-10-03|ISM servizi 52,6 (minimo 3 anni)                                       |USA          |easing_prezzato    |equity
+    giù (giorno), rendimenti giù|^GSPC, ^TNX                              |“Insurance cuts”; odds taglio
+    ottobre da ~40% a >85% (Danske); il 4-ott equity su                       '
+  evento: ISM servizi a 52,6, minimo di tre anni
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: neg
+    perché: 'Sorpresa al ribasso che alza le probabilità di un taglio a ottobre (dalla KB): rendimenti
+      giù. Coerente con ^TNX neg e IEF pos. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-03.'
+  stato: promossa
+- data: '2019-09-04'
+  tema: macro_data
+  fonte: 2026-08-25/news_05.md
+  riga: '| `2019-09-04` | neg | ism, activity_growth | Conferma della contrazione manifatturiera americana:
+    la recessione industriale del 2019 senza recessione dei consumi. |'
+  evento: ISM manifatturiero di agosto 2019 (secondo la scheda)
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Data sbagliata: l''ISM manifatturiero di agosto 2019 uscì il 3/9, primo giorno lavorativo
+      dopo il Labor Day. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
+- data: '2015-12-01'
+  tema: macro_data
+  fonte: 2026-08-25/news_05.md
+  riga: '| `2015-12-01` | neg | ism, activity_growth | ISM manifatturiero sotto quota 50 per la prima
+    volta dal 2012: contrazione dell''industria americana → rendimenti in calo. |'
+  evento: ISM manifatturiero di novembre 2015 sotto 50, prima volta dal 2012
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: neg
+    perché: 'Contrazione industriale su dollaro forte e petrolio basso, concorde nelle schede: dato debole,
+      rendimenti giù. Coerente con ^TNX neg. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-03.'
+  stato: promossa
+- data: '2015-09-03'
+  tema: macro_data
+  fonte: 2026-09-02/news_04.md
+  riga: '| `2015-09-03` | neg | ism, activity_growth | Indagine manifatturiera in rallentamento durante
+    il rallentamento industriale globale del 2015 |'
+  evento: ISM manifatturiero di agosto 2015 (secondo la scheda)
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Data sbagliata: l''ISM manifatturiero uscì l''1/9/2015; il 3/9 è il giorno della BCE e dell''ISM
+      servizi. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-03.'
+  stato: promossa
