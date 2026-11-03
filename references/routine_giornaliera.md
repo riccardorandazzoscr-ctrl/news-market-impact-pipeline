@@ -16,6 +16,7 @@ dell'abbonamento Claude, la stessa della CLI interattiva.
 | Analisi | 08:15, ritentativi 09:15 e 10:15 | `…newsimpact.daily` | `run_daily_analysis.sh` | Opus 5.5, effort high |
 | Indicizzazione KB | a ogni modifica di `knowledge_base/` | `…newsimpact.indexkb` | `index_studies.sh` | Opus 5.5 |
 | Rianalisi dopo una research | subito dopo l'indicizzazione di uno studio nuovo, se la giornata è già consegnata | `…newsimpact.indexkb` | `run_rianalisi_kb.sh` | Opus 5.5, effort high |
+| Rianalisi dopo una revisione dei versi | subito dopo `recupero.py promuovi`, se la giornata è già consegnata | nessuno: la lancia `recupero.py` | `run_rianalisi_kb.sh --versi` | Opus 5.5, effort high |
 | Scorecard | Lunedì 09:00 | `…newsimpact.scorecard` | `run_scorecard.sh` | Nessuno: Python deterministico |
 | Strategia mensile | Giorno 1, 09:30 | `…newsimpact.monthly` | `run_monthly_report.sh` | Opus 5.5 |
 | Laboratorio CPI | ogni ora e all'accensione, dopo aver atteso la rete (agisce solo se manca un rilascio) | `…newsimpact.cpilab` | `cpi_lab_auto.py run` | Nessuno: Python deterministico |
@@ -85,6 +86,15 @@ Solo la giornata in corso. Esce senza fare nulla se la giornata non è consegnat
 userà il run normale) o se manca la fotografia del mattino. Log: `logs/rianalisi-AAAA-MM-GG.log`.
 A mano: `news_impact_pipeline/run_rianalisi_kb.sh "<source_file dello studio>"`.
 Il backstop del run giornaliero chiama `index_studies.sh` con `RIANALISI=0`.
+
+**Dopo una revisione dei versi (dal 2026-11-03).** `recupero.py promuovi` lancia in background
+`run_rianalisi_kb.sh --versi <proposta>`, con gli stessi dati fermi al brief, lo stesso ledger e
+lo stesso Telegram. Cambia il perimetro, che decide lo script e non l'agente
+(`recupero.py schede <giornata> <proposta>`): le schede di oggi con il `primary_theme` di una
+voce promossa che ne citano l'asset. In quelle si rilanciano i `find`; se il pool non cambia la
+scheda resta com'è, se cambia si aggiornano solo pool, N, potature, event study e lettura.
+`RIANALISI=0 recupero.py promuovi …` la spegne. A mano:
+`news_impact_pipeline/run_rianalisi_kb.sh --versi "knowledge_base/_recupero/<proposta>.yaml"`.
 
 ## I plist stanno in due posti
 

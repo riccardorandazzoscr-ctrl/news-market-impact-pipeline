@@ -1,8 +1,14 @@
 #!/bin/zsh
-# run_rianalisi_kb.sh — rifà le schede di OGGI toccate da una research appena indicizzata.
+# run_rianalisi_kb.sh — rifà le schede di OGGI toccate da una research appena indicizzata
+# o da versi appena rivisti.
 #
 # Uso: run_rianalisi_kb.sh "<source_file dello studio, relativo a knowledge_base/>" [...]
-# Lo lancia index_studies.sh dopo aver indicizzato uno studio nuovo; a mano va bene uguale.
+#      run_rianalisi_kb.sh --versi "<knowledge_base/_recupero/<proposta>.yaml>" [...]
+# Lo lancia index_studies.sh dopo aver indicizzato uno studio nuovo, e recupero.py
+# promuovi dopo aver portato nel registro versi approvati; a mano va bene uguale.
+# Con --versi (decisione del maintainer, 2026-11-03) l'unica cosa nuova sono le voci
+# promosse della proposta: si rifanno solo le schede del loro tema che citano il loro
+# asset, e nella scheda cambia solo ciò che quelle voci cambiano.
 #
 # La domanda a cui risponde (decisione del maintainer, 2026-11-01): che cosa avrebbe
 # scritto il run del mattino se lo studio fosse già esistito? Quindi tutto è fermo al
@@ -39,9 +45,11 @@ LOG="$LOGDIR/rianalisi-${TODAY}.log"
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >> "$LOG"; }
 avvisa() { /usr/bin/osascript -e "display notification \"$1\" with title \"News-Impact Pipeline\" sound name \"Basso\"" 2>/dev/null; }
 
-(( $# )) || { echo "uso: run_rianalisi_kb.sh <studio> [...]"; exit 2; }
+MODO=kb
+[[ "${1:-}" == --versi ]] && { MODO=versi; shift; }
+(( $# )) || { echo "uso: run_rianalisi_kb.sh [--versi] <studio|proposta> [...]"; exit 2; }
 mkdir -p "$LOGDIR"
-log "START: rianalisi $TAG per: $*"
+log "START: rianalisi $TAG ($MODO) per: $*"
 
 # --- Cancelli --------------------------------------------------------------
 # Consegnata con lo stesso brief e ritoccata dopo l'invio (una lacuna annotata, una
@@ -83,8 +91,41 @@ trap 'rm -rf "$LOCK"' EXIT
 typeset -A PRIMA
 for f in "$DAY"/news_*.md(N); do PRIMA[${f:t}]=$(shasum "$f" | cut -c1-12); done
 
-STUDI="$(printf '  - %s\n' "$@")"
-read -r -d '' PROMPT <<EOF
+if [[ $MODO == versi ]]; then
+  # Voci promosse (data, tema, asset, verso) e schede di oggi dello stesso tema che
+  # citano l'asset: il perimetro si decide qui, non lo sceglie l'agente.
+  VOCI=$("$PY" "$PIPE/recupero.py" voci "$@" 2>>"$LOG")
+  SCHEDE=$("$PY" "$PIPE/recupero.py" schede "$DAY" "$@" 2>>"$LOG")
+  if [[ -z "$SCHEDE" ]]; then
+    log "DONE: nessuna scheda di oggi usa i versi rivisti."
+    exit 0
+  fi
+  log "Perimetro versi: ${(j:, :)${(f)SCHEDE}}."
+  read -r -d '' TESTA <<EOF
+RIANALISI DOPO UNA REVISIONE DEI VERSI — giornata $TODAY, già analizzata e consegnata stamattina.
+
+Nel registro _direction_reviews.yaml sono appena entrate, approvate dal maintainer,
+queste dichiarazioni (data tema asset: verso; "escluso" toglie la coppia dai pool):
+$VOCI
+
+Domanda: che cosa avrebbe scritto il run di stamattina se queste dichiarazioni fossero
+già state nel registro? L'unica cosa nuova sono loro: tutto il resto della scheda
+(classificazione, KB, regime, scenari, considerazioni qualitative, caveat) resta com'è,
+salvo ciò che dipende dai numeri del pool.
+
+Perimetro (vincolante): SOLO queste schede, già individuate:
+$(printf '  - %s\n' ${(f)SCHEDE})
+Per ciascuna rilancia i suoi analogues.py find (stessi argomenti, sempre --before
+$TODAY) e i suoi event_study.py. Se il pool non cambia, non toccare la scheda. Se
+cambia, riscrivila nello stesso file e con lo stesso slug, aggiornando solo pool, N,
+potature, event study e la lettura che ne discende; nient'altro. Non toccare le altre
+schede, le righe di triage né il digest. L'originale è già in _forecast_sources/.
+EOF
+  NOTA="**Aggiornamento dopo la revisione dei versi (${TAG#rev}).**"
+  TITOLO="dopo la revisione dei versi"
+else
+  STUDI="$(printf '  - %s\n' "$@")"
+  read -r -d '' TESTA <<EOF
 RIANALISI DOPO UNA NUOVA RESEARCH — giornata $TODAY, già analizzata e consegnata stamattina.
 
 Nella Knowledge Base sono appena stati indicizzati questi studi:
@@ -92,15 +133,6 @@ $STUDI
 
 Domanda: che cosa avrebbe scritto il run di stamattina se questi studi fossero già
 esistiti? Rispondi SOLO per le notizie di oggi che gli studi servono davvero.
-
-Dati congelati al brief (vincolante):
-- Fonti: il brief di stamattina ($NEWSDIR/morning brief/${TODAY}-morning-briefing.html),
-  la KB e i tool della pipeline. Nient'altro: nessuna notizia, prezzo o commento
-  successivo al brief, nemmeno se lo conosci.
-- I prezzi sono già la copia del mattino (variabile NEWSIMPACT_DB, la leggono tutti i
-  tool): non aprire market_data/market_data.db direttamente.
-- Scorecard: usa SOLO $SCORECARD, non una più recente.
-- analogues.py find sempre con --before $TODAY; event_study.py con --as-of $TODAY.
 
 Perimetro (vincolante):
 1) Leggi $DAY/_index.md (triage, Sintesi, Lacune emerse) e gli studi elencati.
@@ -113,11 +145,29 @@ Perimetro (vincolante):
    stesso slug, cambiando solo ciò che lo studio cambia (pool, event study, lettura).
    L'originale è già conservato in _forecast_sources/: non copiarlo altrove.
 4) Non toccare le altre righe di triage né le altre schede; non rigenerare il digest.
-   In _index.md aggiungi in coda alla Sintesi di sessione un paragrafo
-   "**Aggiornamento dopo la research (${TAG#rev}).**" con cosa è cambiato e perché, e
-   segna la lacuna come chiusa in "Lacune emerse" con N per verso e ticker e con
-   l'etichetta \`#lacuna <slug> stato=chiusa\` (slug della lacuna, da venv/bin/python lacune.py).
-5) Scrivi in $DAY/_rianalisi_${TAG}.md un riassunto per il telefono, max 8 righe,
+EOF
+  NOTA="**Aggiornamento dopo la research (${TAG#rev}).**"
+  TITOLO="dopo una nuova research"
+fi
+
+read -r -d '' PROMPT <<EOF
+$TESTA
+
+Dati congelati al brief (vincolante):
+- Fonti: il brief di stamattina ($NEWSDIR/morning brief/${TODAY}-morning-briefing.html),
+  la KB e i tool della pipeline. Nient'altro: nessuna notizia, prezzo o commento
+  successivo al brief, nemmeno se lo conosci.
+- I prezzi sono già la copia del mattino (variabile NEWSIMPACT_DB, la leggono tutti i
+  tool): non aprire market_data/market_data.db direttamente.
+- Scorecard: usa SOLO $SCORECARD, non una più recente.
+- analogues.py find sempre con --before $TODAY; event_study.py con --as-of $TODAY.
+
+Chiusura:
+- In _index.md aggiungi in coda alla Sintesi di sessione un paragrafo "$NOTA"
+  con cosa è cambiato e perché. Una lacuna che ora è chiusa, se non è già segnata,
+  va segnata in "Lacune emerse" con N per verso e ticker e con l'etichetta
+  \`#lacuna <slug> stato=chiusa\` (slug della lacuna, da venv/bin/python lacune.py).
+- Scrivi in $DAY/_rianalisi_${TAG}.md un riassunto per il telefono, max 8 righe,
    senza tabelle: quali notizie, scheda nuova o rifatta, cosa dice ora il pool
    (N, verso, INDICATIVE ONLY se N<10) rispetto a stamattina.
 
@@ -155,7 +205,7 @@ for f in "$DAY"/news_*.md(N); do
   elif [[ "${PRIMA[${f:t}]}" != "$sha" ]]; then CAMBIATE+=("rifatta ${f:t}"); fi
 done
 if (( ! ${#CAMBIATE} )); then
-  log "DONE: nessuna scheda toccata (lo studio non serve le notizie di oggi)."
+  log "DONE: nessuna scheda toccata (niente di nuovo per le notizie di oggi)."
   exit 0
 fi
 log "Schede: ${(j:, :)CAMBIATE}."
@@ -171,7 +221,7 @@ fi
 "$PY" "$PIPE/render_report.py" --date "$TODAY" >> "$LOG" 2>&1 || log "WARN: render_report.py fallito."
 
 # --- Aggiornamento breve su Telegram -----------------------------------------
-TESTO="🔁 Analisi $TODAY aggiornata dopo una nuova research"$'\n'
+TESTO="🔁 Analisi $TODAY aggiornata $TITOLO"$'\n'
 for c in "${CAMBIATE[@]}"; do
   TESTO+="• ${c%% *} ${c#* }: $(sed -n 's/^# //p' "$DAY/${c#* }" | head -1)"$'\n'
 done

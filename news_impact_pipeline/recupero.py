@@ -25,12 +25,21 @@ Uso:
   recupero.py promuovi knowledge_base/_recupero/<cartella>.yaml
       → le voci con `stato: approvata` entrano nel registro; la libreria viene
         ricostruita e, se una revisione è invalida, il registro torna com'era.
+        Poi parte in background run_rianalisi_kb.sh --versi, che rifà le schede di
+        oggi che usano quei versi (RIANALISI=0 la spegne).
+  recupero.py voci <proposta> [...]            le dichiarazioni promosse, una per riga
+  recupero.py schede <giornata> <proposta> [...]
+      → le schede della giornata dello stesso tema che citano l'asset di una voce
+        promossa: il perimetro della rianalisi dopo una revisione dei versi.
 
 Il prefisso `_` della cartella tiene le proposte fuori da catalogo e libreria:
 una proposta non può entrare nei pool per sbaglio.
 """
 
+import os
+import re
 import sqlite3
+import subprocess
 import sys
 from pathlib import Path
 
@@ -146,6 +155,28 @@ def promuovi(proposta: Path):
     proposta.write_text(yaml.safe_dump(doc, sort_keys=False, allow_unicode=True,
                                        width=100), encoding="utf-8")
     print(f"{len(nuove)} dichiarazioni promosse nel registro.")
+    return len(nuove)
+
+
+def voci_promosse(proposte: list[Path]) -> list[tuple[str, str, str, str]]:
+    """(data, tema, asset, verso) di ogni dichiarazione promossa."""
+    out = []
+    for p in proposte:
+        for v in yaml.safe_load(p.read_text(encoding="utf-8"))["voci"]:
+            if v.get("stato") == "promossa":
+                out += [(v["data"], v["tema"], d["asset"], d["verso"])
+                        for d in v.get("dichiarazioni") or [] if d.get("verso")]
+    return out
+
+
+def schede_toccate(schede: dict[str, str], voci) -> list[str]:
+    """Nomi delle schede il cui primary_theme è il tema di una voce e che ne citano l'asset."""
+    out = []
+    for nome, testo in sorted(schede.items()):
+        tema = re.search(r"\| `primary_theme` \| (\S+) \|", testo)
+        if tema and any(t == tema[1] and f"`{a}`" in testo for _, t, a, _ in voci):
+            out.append(nome)
+    return out
 
 
 def _self_check():
@@ -162,6 +193,11 @@ def _self_check():
     assert righe[1]["status"] == "excluded" and "direction" not in righe[1]
     assert righe[0]["mechanism"] == ["boj_normalization"]
     assert righe[0]["description"] == "Uscita da NIRP e YCC"
+    voci = [("2019-10-03", "macro_data", "^FVX", "neg")]
+    schede = {"news_01.md": "| `primary_theme` | macro_data |\nriferimento `^FVX`",
+              "news_02.md": "| `primary_theme` | monetary_policy |\nriferimento `^FVX`",
+              "news_03.md": "| `primary_theme` | macro_data |\nsolo `^TNX` e ^FVX senza apici"}
+    assert schede_toccate(schede, voci) == ["news_01.md"], schede_toccate(schede, voci)
     for rotta in ({"asset": "X", "verso": "rialzo", "perché": "x"},
                   {"asset": "X", "verso": "pos", "perché": " "}):
         try:
@@ -178,6 +214,21 @@ if __name__ == "__main__":
     elif len(sys.argv) == 3 and sys.argv[1] == "prepara":
         prepara(sys.argv[2])
     elif len(sys.argv) == 3 and sys.argv[1] == "promuovi":
-        promuovi(Path(sys.argv[2]))
+        if promuovi(Path(sys.argv[2])) and os.environ.get("RIANALISI", "1") != "0":
+            # In background: la rianalisi decide da sola se la giornata è consegnata
+            # e se qualche scheda usa questi versi; dura fino a mezz'ora.
+            sh = Path(__file__).with_name("run_rianalisi_kb.sh")
+            subprocess.Popen(["/bin/zsh", str(sh), "--versi", str(Path(sys.argv[2]).resolve())],
+                             stdin=subprocess.DEVNULL, stdout=subprocess.DEVNULL,
+                             stderr=subprocess.DEVNULL, start_new_session=True)
+            print("Rianalisi delle schede di oggi lanciata: logs/rianalisi-<oggi>.log")
+    elif len(sys.argv) >= 3 and sys.argv[1] == "voci":
+        for v in voci_promosse([Path(a) for a in sys.argv[2:]]):
+            print(f"  - {v[0]} {v[1]} {v[2]}: {v[3]}")
+    elif len(sys.argv) >= 4 and sys.argv[1] == "schede":
+        day = Path(sys.argv[2])
+        print("\n".join(schede_toccate(
+            {f.name: f.read_text(encoding="utf-8") for f in day.glob("news_*.md")},
+            voci_promosse([Path(a) for a in sys.argv[3:]]))))
     else:
         raise SystemExit(__doc__)

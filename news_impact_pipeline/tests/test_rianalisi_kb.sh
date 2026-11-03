@@ -35,6 +35,10 @@ setup() {
 [[ "\$1" == "-c" ]] && exec python3 "\$@"
 print -r -- "\${1:t} \${*:2}" >> "$CALLS"
 [[ "\${1:t}" == stato_giornata.py && "\$*" == *--fase* ]] && print -r -- "\${FAKE_FASE:-completa}"
+[[ "\${1:t}" == stato_giornata.py && "\$*" == *--json* ]] && \
+  print -r -- '{"fase": "'"\${FAKE_FASE:-completa}"'", "input_riconosciuto": true, "consegnato": true}'
+[[ "\${1:t}" == recupero.py && "\$2" == voci ]] && print -r -- "  - 2019-10-03 macro_data ^FVX: neg"
+[[ "\${1:t}" == recupero.py && "\$2" == schede ]] && print -r -- "\${FAKE_SCHEDE:-}"
 exit 0
 EOF
   print '#!/bin/zsh\nexit 0' > "$FPIPE/attendi_rete.sh"
@@ -81,6 +85,19 @@ setup; FAKE_MODO=niente run
 check '! grep -q "forecast_tracking.py" $CALLS' "ledger intatto"
 check '[[ ! -f $SANDBOX/telegram.txt ]]' "nessun messaggio"
 check 'grep -q "nessuna scheda toccata" $FPIPE/logs/rianalisi-$OGGI.log' "esito a log"
+rm -rf "$SANDBOX"
+
+print "5. versi rivisti che nessuna scheda usa → niente agente"
+setup; HOME="$FAKE_HOME" CLAUDE="$SANDBOX/claude" zsh "$SCRIPT" --versi "/x/Lacuna a.yaml" >/dev/null 2>&1
+check '[[ ! -f $SANDBOX/claude.txt ]]' "claude non lanciato"
+check 'grep -q "nessuna scheda di oggi usa i versi" $FPIPE/logs/rianalisi-$OGGI.log' "esito a log"
+rm -rf "$SANDBOX"
+
+print "6. versi rivisti usati da una scheda → perimetro fissato, messaggio dedicato"
+setup; FAKE_SCHEDE=news_01.md HOME="$FAKE_HOME" CLAUDE="$SANDBOX/claude" zsh "$SCRIPT" --versi "/x/Lacuna a.yaml" >/dev/null 2>&1
+check 'grep -q "2019-10-03 macro_data ^FVX: neg" $SANDBOX/claude.txt' "voci promosse nel prompt"
+check 'grep -q "SOLO queste schede" $SANDBOX/claude.txt && grep -q "  - news_01.md" $SANDBOX/claude.txt' "perimetro nel prompt"
+check 'grep -q "revisione dei versi" $SANDBOX/telegram.txt' "messaggio dopo la revisione dei versi"
 rm -rf "$SANDBOX"
 
 print "\n$PASS ok, $FAIL falliti"
