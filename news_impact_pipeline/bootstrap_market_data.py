@@ -210,6 +210,15 @@ ASSETS = [
     {"ticker": "NOK=X",       "name": "USD/NOK (corona norvegese)",          "asset_class": "fx",           "region": "norway",    "currency": "NOK", "source": "yfinance", "description": "Corona norvegese — valuta petrolifera e Norges Bank; senza, le notizie scandinave erano intriaggiabili (lacuna 2026-08-10)", "download": True},
     {"ticker": "ILS=X",       "name": "USD/ILS (shekel israeliano)",         "asset_class": "fx",           "region": "israel",    "currency": "ILS", "source": "yfinance", "description": "Shekel — canale piu' diretto del conflitto mediorientale, finora approssimato con GC=F/^VIX (lacuna 2026-08-10)", "download": True},
 
+    # --- Sudafrica (2026-11-04) -------------------------------------------------
+    # Sette notizie scartate in triage dal 2026-06-13 per sola assenza di un asset
+    # sudafricano (proteste anti-migranti, impeachment "Farmgate", elezioni municipali,
+    # uscita dall'AGOA): EEM pesa il Sudafrica ~3%, troppo diluito.
+    # Audit di correlazione 2026-11-04 (soglia 0,85): ZAR=X max 0,47 (SGD=X), EZA max
+    # 0,82 (EEM; EWY, gia' in DB, sta a 0,84). Il rand e' il canale piu' pulito.
+    {"ticker": "ZAR=X",       "name": "USD/ZAR (rand sudafricano)",          "asset_class": "fx",           "region": "south_africa", "currency": "ZAR", "source": "yfinance", "description": "Rand — canale diretto del rischio politico e commerciale sudafricano; sale quando il rand si indebolisce", "download": True},
+    {"ticker": "EZA",         "name": "iShares MSCI South Africa ETF",       "asset_class": "equity",       "region": "south_africa", "currency": "USD", "source": "yfinance", "description": "Azionario Sudafrica in dollari (equity + rand nella vista dell'investitore USA); molto minerario: legge anche oro e platino", "download": True},
+
     # Curva e volatilita' obbligazionaria.
     {"ticker": "^FVX",        "name": "US Treasury 5Y yield",                "asset_class": "fixed_income", "region": "US",        "currency": "USD", "source": "yfinance", "description": "Rendimento Treasury 5 anni — con ^TNX e ^TYX da' la FORMA della curva USA, non solo il livello: distingue un irripidimento guidato dal front end da uno guidato dal premio a termine (lacuna 2026-08-14). RENDIMENTO: sale quando i titoli scendono", "download": True},
     {"ticker": "^MOVE",       "name": "ICE BofA MOVE Index",                 "asset_class": "volatility",   "region": "US",        "currency": "USD", "source": "yfinance", "description": "Volatilita' implicita obbligazionaria — l'equivalente del VIX per i Treasury: distingue un riprezzamento ordinato da uno stress di mercato. L'universo aveva ^VIX come unica misura di volatilita'", "download": True},

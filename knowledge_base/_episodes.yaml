@@ -1,4 +1,4 @@
-generated_at: '2026-11-03T16:28:22'
+generated_at: '2026-11-04T11:15:07'
 num_episodes: 1596
 episodes:
 - date: '1984-01-01'
@@ -1259,6 +1259,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
   directions_local:
   - neg
   - pos
@@ -1302,7 +1303,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 41
+  n_sources: 42
   events:
   - event_id: 2015-07-14:commodity_energy:-
     geo: ''
@@ -1359,6 +1360,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     evidence:
     - source: card:2026-05-29/news_01.md
       subthemes_local:
@@ -1570,6 +1572,15 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      - negotiation_track
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - de_escalation
       - iran
@@ -7596,6 +7607,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
   directions_local:
   - neg
   - pos
@@ -7626,7 +7638,7 @@ episodes:
   - iran
   - negotiation_track
   - shipping_chokepoint
-  n_sources: 35
+  n_sources: 36
   events:
   - event_id: 2023-03-10:commodity_energy:-
     geo: ''
@@ -7674,6 +7686,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     evidence:
     - source: card:2026-05-29/news_01.md
       subthemes_local:
@@ -7845,6 +7858,14 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - de_escalation
       - iran
@@ -10346,6 +10367,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
   directions_local:
   - neg
   - pos
@@ -10401,7 +10423,7 @@ episodes:
   - iran
   - military_escalation
   - sanctions
-  n_sources: 48
+  n_sources: 49
   events:
   - event_id: 2024-04-22:commodity_energy:-
     geo: ''
@@ -10464,6 +10486,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     evidence:
     - source: card:2026-06-15/news_01.md
       subthemes_local: []
@@ -10673,6 +10696,13 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - de_escalation
       - iran
@@ -11461,6 +11491,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
   directions_local:
   - neg
   - pos
@@ -11518,7 +11549,7 @@ episodes:
   - oil_supply_shock
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 59
+  n_sources: 60
   events:
   - event_id: 2024-10-26:commodity_energy:-
     geo: ''
@@ -11596,6 +11627,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     evidence:
     - source: card:2026-06-09/news_01.md
       subthemes_local:
@@ -11861,6 +11893,14 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - de_escalation
+      - hormuz
+      - iran
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - de_escalation
       - hormuz
@@ -13944,6 +13984,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
   directions_local:
   - neg
   - pos
@@ -14000,7 +14041,7 @@ episodes:
   - military_escalation
   - negotiation_track
   - shipping_chokepoint
-  n_sources: 57
+  n_sources: 58
   events:
   - event_id: 2025-06-23:commodity_energy:-
     geo: ''
@@ -14074,6 +14115,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     evidence:
     - source: card:2026-06-14/news_01.md
       subthemes_local:
@@ -14333,6 +14375,15 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - ceasefire
+      - de_escalation
+      - hormuz
+      - iran
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - ceasefire
       - de_escalation
@@ -15699,6 +15750,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -15714,6 +15766,7 @@ episodes:
   - inflation_rates_channel
   - iran
   - lng_supply_shock
+  - military_escalation
   - naval_blockade
   - negotiation_track
   - priced_in_surprise
@@ -15726,7 +15779,7 @@ episodes:
   - de_escalation
   - iran
   - negotiation_track
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2026-02-02:commodity_energy:-
     geo: ''
@@ -15742,6 +15795,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -15772,6 +15826,14 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - de_escalation
       - iran
@@ -15806,6 +15868,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -15821,6 +15884,7 @@ episodes:
   - inflation_rates_channel
   - iran
   - lng_supply_shock
+  - military_escalation
   - naval_blockade
   - negotiation_track
   - priced_in_surprise
@@ -15833,7 +15897,7 @@ episodes:
   - de_escalation
   - iran
   - negotiation_track
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2026-02-05:commodity_energy:-
     geo: ''
@@ -15849,6 +15913,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -15879,6 +15944,14 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - de_escalation
       - iran
@@ -18150,6 +18223,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -18185,7 +18259,7 @@ episodes:
   - military_escalation
   - oil_supply_shock
   - supply_disruption
-  n_sources: 11
+  n_sources: 12
   events:
   - event_id: 2026-03-20:commodity_energy:-
     geo: ''
@@ -18210,6 +18284,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -18286,6 +18361,14 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-04/news_03.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - supply_disruption
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -18335,6 +18418,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -18365,7 +18449,7 @@ episodes:
   subthemes_local:
   - hormuz
   - military_escalation
-  n_sources: 18
+  n_sources: 19
   events:
   - event_id: 2026-03-23:commodity_energy:-
     geo: ''
@@ -18393,6 +18477,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -18513,6 +18598,13 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-04/news_03.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -18560,6 +18652,7 @@ episodes:
     - card:2026-10-31/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
   directions_local:
   - neg
@@ -18596,7 +18689,7 @@ episodes:
   - iran
   - military_escalation
   - shipping_chokepoint
-  n_sources: 34
+  n_sources: 35
   events:
   - event_id: 2026-03-27:commodity_energy:-
     geo: ''
@@ -18642,6 +18735,7 @@ episodes:
     - card:2026-10-31/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-23/news_01.md
@@ -18859,6 +18953,14 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-04/news_03.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
       subthemes_local:
       - hormuz
@@ -19024,6 +19126,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Gas europeo e shock di offerta di GNL/Gas europeo e shock di offerta di GNL-
       Qatar e Hormuz, Stati Uniti, Australia, Norvegia, Mediterraneo orientale e rotte
       marittime — regime ed episodi storici (2017–presente).md
@@ -19155,7 +19258,7 @@ episodes:
   - iran
   - negotiation_track
   - oil_supply_shock
-  n_sources: 23
+  n_sources: 24
   events:
   - event_id: 2026-04-08:commodity_energy:-
     geo: ''
@@ -19222,6 +19325,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Gas europeo e shock di offerta di GNL/Gas europeo e shock di offerta di GNL-
       Qatar e Hormuz, Stati Uniti, Australia, Norvegia, Mediterraneo orientale e rotte
       marittime — regime ed episodi storici (2017–presente).md
@@ -19326,6 +19430,15 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - ceasefire
+      - de_escalation
+      - hormuz
+      - iran
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - ceasefire
       - de_escalation
@@ -19748,6 +19861,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -19814,7 +19928,7 @@ episodes:
   - negotiation_track
   - oil_supply_shock
   - sanctions
-  n_sources: 30
+  n_sources: 31
   events:
   - event_id: 2026-04-13:commodity_energy:-
     geo: ''
@@ -19861,6 +19975,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -20029,6 +20144,15 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-04/news_03.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - negotiation_track
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -20181,6 +20305,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -20259,7 +20384,7 @@ episodes:
   - shipping_chokepoint
   - supply_disruption
   - upstream_export_strike
-  n_sources: 57
+  n_sources: 58
   events:
   - event_id: 2026-04-17:commodity_energy:-
     geo: ''
@@ -20339,6 +20464,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -20617,6 +20743,14 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - de_escalation
+      - hormuz
+      - iran
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - de_escalation
       - hormuz
@@ -21029,6 +21163,7 @@ episodes:
     - card:2026-10-24/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -21061,7 +21196,7 @@ episodes:
   - hormuz
   - infrastructure_attack
   - military_escalation
-  n_sources: 19
+  n_sources: 20
   events:
   - event_id: 2026-04-20:commodity_energy:-
     geo: ''
@@ -21091,6 +21226,7 @@ episodes:
     - card:2026-10-24/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -21221,6 +21357,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - hormuz
       - military_escalation
@@ -21555,6 +21698,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -21571,6 +21715,7 @@ episodes:
   - inflation_rates_channel
   - iran
   - lng_supply_shock
+  - military_escalation
   - naval_blockade
   - negotiation_track
   - priced_in_surprise
@@ -21585,7 +21730,7 @@ episodes:
   - de_escalation
   - iran
   - negotiation_track
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2026-05-06:commodity_energy:-
     geo: ''
@@ -21605,6 +21750,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -21662,6 +21808,14 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - de_escalation
       - iran
@@ -22074,6 +22228,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22090,6 +22245,7 @@ episodes:
   - inflation_rates_channel
   - iran
   - lng_supply_shock
+  - military_escalation
   - naval_blockade
   - negotiation_track
   - priced_in_surprise
@@ -22105,7 +22261,7 @@ episodes:
   - de_escalation
   - iran
   - negotiation_track
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2026-05-28:commodity_energy:-
     geo: ''
@@ -22126,6 +22282,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22190,6 +22347,15 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - ceasefire
+      - de_escalation
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - ceasefire
       - de_escalation
@@ -22595,6 +22761,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22611,6 +22778,7 @@ episodes:
   - inflation_rates_channel
   - iran
   - lng_supply_shock
+  - military_escalation
   - naval_blockade
   - negotiation_track
   - priced_in_surprise
@@ -22625,7 +22793,7 @@ episodes:
   - de_escalation
   - iran
   - negotiation_track
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2026-06-12:commodity_energy:-
     geo: ''
@@ -22645,6 +22813,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22709,6 +22878,14 @@ episodes:
       directions_by_reference:
         BZ=F:
         - neg
+    - source: card:2026-11-04/news_03.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22745,6 +22922,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Gas europeo e shock di offerta di GNL/Gas europeo e shock di offerta di GNL-
       Qatar e Hormuz, Stati Uniti, Australia, Norvegia, Mediterraneo orientale e rotte
       marittime — regime ed episodi storici (2017–presente).md
@@ -22784,7 +22962,7 @@ episodes:
   - hormuz
   - iran
   - negotiation_track
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2026-06-15:commodity_energy:-
     geo: ''
@@ -22811,6 +22989,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Gas europeo e shock di offerta di GNL/Gas europeo e shock di offerta di GNL-
       Qatar e Hormuz, Stati Uniti, Australia, Norvegia, Mediterraneo orientale e rotte
       marittime — regime ed episodi storici (2017–presente).md
@@ -22869,6 +23048,15 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - de_escalation
+      - hormuz
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - de_escalation
       - hormuz
@@ -23216,6 +23404,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23246,7 +23435,7 @@ episodes:
   subthemes_local:
   - hormuz
   - military_escalation
-  n_sources: 18
+  n_sources: 19
   events:
   - event_id: 2026-06-22:commodity_energy:-
     geo: ''
@@ -23274,6 +23463,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23398,6 +23588,13 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-04/news_03.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23428,6 +23625,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23444,6 +23642,7 @@ episodes:
   - inflation_rates_channel
   - iran
   - lng_supply_shock
+  - military_escalation
   - naval_blockade
   - negotiation_track
   - priced_in_surprise
@@ -23458,7 +23657,7 @@ episodes:
   - hormuz
   - iran
   - oil_supply_shock
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2026-06-24:commodity_energy:-
     geo: ''
@@ -23478,6 +23677,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23534,6 +23734,15 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - de_escalation
+      - hormuz
+      - iran
+      - oil_supply_shock
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - de_escalation
       - hormuz
@@ -23787,6 +23996,7 @@ episodes:
     - card:2026-10-31/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23824,7 +24034,7 @@ episodes:
   - hormuz
   - military_escalation
   - shipping_chokepoint
-  n_sources: 22
+  n_sources: 23
   events:
   - event_id: 2026-07-07:commodity_energy:-
     geo: ''
@@ -23860,6 +24070,7 @@ episodes:
     - card:2026-10-31/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -24031,6 +24242,14 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-04/news_03.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -24076,6 +24295,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -24124,7 +24344,7 @@ episodes:
   - sanctions
   - sanctions_product_ban
   - supply_disruption
-  n_sources: 11
+  n_sources: 12
   events:
   - event_id: 2026-07-08:commodity_energy:-
     geo: ''
@@ -24153,6 +24373,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -24221,6 +24442,14 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-04/news_03.md
+      subthemes_local:
+      - ceasefire
+      - military_escalation
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -24276,6 +24505,7 @@ episodes:
     - card:2026-10-31/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -24308,7 +24538,7 @@ episodes:
   - military_escalation
   - sanctions
   - shipping_chokepoint
-  n_sources: 21
+  n_sources: 22
   events:
   - event_id: 2026-07-13:commodity_energy:-
     geo: ''
@@ -24341,6 +24571,7 @@ episodes:
     - card:2026-10-31/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -24488,6 +24719,14 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - hormuz
+      - sanctions
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - hormuz
       - sanctions
@@ -24736,6 +24975,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -24762,6 +25002,7 @@ episodes:
   - inflation_rates_channel
   - iran
   - lng_supply_shock
+  - military_escalation
   - naval_blockade
   - negotiation_track
   - priced_in_surprise
@@ -24776,7 +25017,7 @@ episodes:
   - iran
   - negotiation_track
   - oil_supply_shock
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2026-08-03:commodity_energy:-
     geo: ''
@@ -24800,6 +25041,7 @@ episodes:
     - card:2026-11-01/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -24850,6 +25092,14 @@ episodes:
         BZ=F:
         - neg
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - de_escalation
+      - iran
+      - negotiation_track
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - de_escalation
       - iran
@@ -25023,6 +25273,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -25053,7 +25304,7 @@ episodes:
   subthemes_local:
   - hormuz
   - military_escalation
-  n_sources: 18
+  n_sources: 19
   events:
   - event_id: 2026-09-01:commodity_energy:-
     geo: ''
@@ -25081,6 +25332,7 @@ episodes:
     - card:2026-10-23/news_01.md
     - card:2026-10-25/news_01.md
     - card:2026-11-03/news_01.md
+    - card:2026-11-04/news_03.md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -25195,6 +25447,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-11-03/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-04/news_03.md
       subthemes_local:
       - hormuz
       - military_escalation
@@ -36167,8 +36426,9 @@ episodes:
       directions_by_reference: {}
 - date: '2012-11-07'
   theme: geopolitical
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - neutral
@@ -36204,6 +36464,7 @@ episodes:
       USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi
       e reazione di azionario, Treasury, dollaro e volatilità.md
     ^GSPC:
+    - card:2026-11-04/news_01.md
     - kb:Elezioni USA e controllo del Congresso (2012–presente)_ sorpresa rispetto
       ai sondaggi e reazione di azionario, Treasury, dollaro e volatilità/Elezioni
       USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi
@@ -36218,11 +36479,13 @@ episodes:
       ai sondaggi e reazione di azionario, Treasury, dollaro e volatilità/Elezioni
       USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi
       e reazione di azionario, Treasury, dollaro e volatilità.md
-  directions_local: []
+  directions_local:
+  - neutral
   declared: true
   subthemes:
   - divided_government
   - election_risk
+  - fiscal_deadlock
   - midterm
   - polling_surprise
   - presidential
@@ -36234,7 +36497,7 @@ episodes:
   - fiscal_deadlock
   - presidential
   - usa_election
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2012-11-07:geopolitical:-
     geo: ''
@@ -36259,11 +36522,20 @@ episodes:
       ^VIX:
       - neg
     sources:
+    - card:2026-11-04/news_01.md
     - kb:Elezioni USA e controllo del Congresso (2012–presente)_ sorpresa rispetto
       ai sondaggi e reazione di azionario, Treasury, dollaro e volatilità/Elezioni
       USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi
       e reazione di azionario, Treasury, dollaro e volatilità.md
     evidence:
+    - source: card:2026-11-04/news_01.md
+      subthemes_local:
+      - divided_government
+      - fiscal_deadlock
+      - usa_election
+      directions_by_reference:
+        ^GSPC:
+        - neutral
     - source: kb:Elezioni USA e controllo del Congresso (2012–presente)_ sorpresa
         rispetto ai sondaggi e reazione di azionario, Treasury, dollaro e volatilità/Elezioni
         USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi
@@ -37430,8 +37702,9 @@ episodes:
         - neutral
 - date: '2014-11-05'
   theme: geopolitical
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - neutral
@@ -37466,6 +37739,7 @@ episodes:
       USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi
       e reazione di azionario, Treasury, dollaro e volatilità.md
     ^GSPC:
+    - card:2026-11-04/news_01.md
     - kb:Elezioni USA e controllo del Congresso (2012–presente)_ sorpresa rispetto
       ai sondaggi e reazione di azionario, Treasury, dollaro e volatilità/Elezioni
       USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi
@@ -37475,11 +37749,13 @@ episodes:
       ai sondaggi e reazione di azionario, Treasury, dollaro e volatilità/Elezioni
       USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi
       e reazione di azionario, Treasury, dollaro e volatilità.md
-  directions_local: []
+  directions_local:
+  - neutral
   declared: true
   subthemes:
   - divided_government
   - election_risk
+  - fiscal_deadlock
   - midterm
   - polling_surprise
   - presidential
@@ -37490,7 +37766,7 @@ episodes:
   - election_risk
   - midterm
   - usa_election
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2014-11-05:geopolitical:-
     geo: ''
@@ -37513,11 +37789,20 @@ episodes:
       ^VIX:
       - neg
     sources:
+    - card:2026-11-04/news_01.md
     - kb:Elezioni USA e controllo del Congresso (2012–presente)_ sorpresa rispetto
       ai sondaggi e reazione di azionario, Treasury, dollaro e volatilità/Elezioni
       USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi
       e reazione di azionario, Treasury, dollaro e volatilità.md
     evidence:
+    - source: card:2026-11-04/news_01.md
+      subthemes_local:
+      - divided_government
+      - midterm
+      - usa_election
+      directions_by_reference:
+        ^GSPC:
+        - neutral
     - source: kb:Elezioni USA e controllo del Congresso (2012–presente)_ sorpresa
         rispetto ai sondaggi e reazione di azionario, Treasury, dollaro e volatilità/Elezioni
         USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi
@@ -39898,8 +40183,9 @@ episodes:
         - neutral
 - date: '2018-11-07'
   theme: geopolitical
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - neutral
@@ -39928,6 +40214,7 @@ episodes:
       USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi
       e reazione di azionario, Treasury, dollaro e volatilità.md
     ^GSPC:
+    - card:2026-11-04/news_01.md
     - kb:Elezioni USA e controllo del Congresso (2012–presente)_ sorpresa rispetto
       ai sondaggi e reazione di azionario, Treasury, dollaro e volatilità/Elezioni
       USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi
@@ -39947,11 +40234,13 @@ episodes:
       ai sondaggi e reazione di azionario, Treasury, dollaro e volatilità/Elezioni
       USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi
       e reazione di azionario, Treasury, dollaro e volatilità.md
-  directions_local: []
+  directions_local:
+  - neutral
   declared: true
   subthemes:
   - divided_government
   - election_risk
+  - fiscal_deadlock
   - midterm
   - polling_surprise
   - presidential
@@ -39963,7 +40252,7 @@ episodes:
   - fiscal_deadlock
   - midterm
   - usa_election
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2018-11-07:geopolitical:-
     geo: ''
@@ -39987,11 +40276,21 @@ episodes:
       ^VIX:
       - neg
     sources:
+    - card:2026-11-04/news_01.md
     - kb:Elezioni USA e controllo del Congresso (2012–presente)_ sorpresa rispetto
       ai sondaggi e reazione di azionario, Treasury, dollaro e volatilità/Elezioni
       USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi
       e reazione di azionario, Treasury, dollaro e volatilità.md
     evidence:
+    - source: card:2026-11-04/news_01.md
+      subthemes_local:
+      - divided_government
+      - fiscal_deadlock
+      - midterm
+      - usa_election
+      directions_by_reference:
+        ^GSPC:
+        - neutral
     - source: kb:Elezioni USA e controllo del Congresso (2012–presente)_ sorpresa
         rispetto ai sondaggi e reazione di azionario, Treasury, dollaro e volatilità/Elezioni
         USA e controllo del Congresso (2012–presente)_ sorpresa rispetto ai sondaggi
@@ -74207,6 +74506,7 @@ episodes:
     ^FVX:
     - card:2026-08-21/news_02.md
     - card:2026-10-30/news_02.md
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -74313,7 +74613,7 @@ episodes:
   - nfp_surprise
   - pmi
   - services
-  n_sources: 46
+  n_sources: 47
   events:
   - event_id: 2018-02-02:macro_data:-
     geo: ''
@@ -74384,6 +74684,7 @@ episodes:
     - card:2026-09-05/news_03.md
     - card:2026-09-07/news_04.md
     - card:2026-10-30/news_02.md
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -74578,6 +74879,13 @@ episodes:
     - source: card:2026-10-30/news_02.md
       subthemes_local:
       - activity_growth
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
       - nfp
       directions_by_reference:
         ^FVX:
@@ -74840,6 +75148,7 @@ episodes:
     - card:2026-09-24/news_01.md
     ^FVX:
     - card:2026-09-24/news_01.md
+    - card:2026-11-04/news_04.md
     ^GSPC:
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
@@ -74875,7 +75184,7 @@ episodes:
   subthemes_local:
   - labour_market
   - nfp
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2018-03-09:macro_data:-
     geo: ''
@@ -74896,6 +75205,7 @@ episodes:
     sources:
     - card:2026-09-24/news_01.md
     - card:2026-09-26/news_02.md
+    - card:2026-11-04/news_04.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -74915,6 +75225,13 @@ episodes:
     - source: card:2026-09-26/news_02.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di
         politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito
         (2007–2026)/Sorprese macro e reaction function dei mercati: fase del ciclo
@@ -79363,6 +79680,7 @@ episodes:
     - card:2026-08-21/news_02.md
     ^FVX:
     - card:2026-08-21/news_02.md
+    - card:2026-11-04/news_04.md
   direction_review_excluded:
     EURUSD=X: 'Svolta hawkish di Lagarde (euro su), ma nella stessa data le schede
       mettono gli occupati USA a +467.000 contro 150.000 attesi (dollaro su): spinte
@@ -79444,7 +79762,7 @@ episodes:
   - nfp
   - pmi
   - services
-  n_sources: 49
+  n_sources: 50
   events:
   - event_id: 2022-02-04:macro_data:-
     geo: ''
@@ -79506,6 +79824,7 @@ episodes:
     - card:2026-09-04/news_02.md
     - card:2026-09-05/news_03.md
     - card:2026-09-07/news_04.md
+    - card:2026-11-04/news_04.md
     evidence:
     - source: card:2026-06-04/news_02.md
       subthemes_local:
@@ -79682,6 +80001,13 @@ episodes:
       - labour_market
       - nfp
       directions_by_reference: {}
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
   - event_id: 2022-02-04:macro_data:eurozone_release
     geo: eurozone_release
     subthemes_local:
@@ -81286,6 +81612,7 @@ episodes:
     - card:2026-08-27/news_01.md
     ^FVX:
     - card:2026-08-27/news_01.md
+    - card:2026-11-04/news_04.md
   direction_review_excluded:
     EURUSD=X: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione
       dell''area euro spinge il cambio in due versi, su per il canale dei tassi BCE
@@ -81355,7 +81682,7 @@ episodes:
   - labour_market
   - nfp
   - risk_on
-  n_sources: 35
+  n_sources: 36
   events:
   - event_id: 2022-06-03:macro_data:-
     geo: ''
@@ -81400,6 +81727,7 @@ episodes:
     - card:2026-09-10/news_07.md
     - card:2026-09-12/news_03.md
     - card:2026-10-02/news_03.md
+    - card:2026-11-04/news_04.md
     evidence:
     - source: card:2026-06-06/news_01.md
       subthemes_local:
@@ -81519,6 +81847,13 @@ episodes:
     - source: card:2026-10-02/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
   - event_id: 2022-06-03:macro_data:eurozone_release
     geo: eurozone_release
     subthemes_local:
@@ -82277,6 +82612,7 @@ episodes:
     - card:2026-08-27/news_01.md
     ^FVX:
     - card:2026-08-27/news_01.md
+    - card:2026-11-04/news_04.md
   direction_review_excluded:
     EURUSD=X: 'Regime 2022 (shock energetico post-invasione): una sorpresa d''inflazione
       dell''area euro spinge il cambio in due versi, su per il canale dei tassi BCE
@@ -82320,7 +82656,7 @@ episodes:
   - labour_market
   - nfp
   - state_dependence
-  n_sources: 21
+  n_sources: 22
   events:
   - event_id: 2022-07-08:macro_data:-
     geo: ''
@@ -82352,6 +82688,7 @@ episodes:
     - card:2026-09-10/news_07.md
     - card:2026-09-12/news_03.md
     - card:2026-10-02/news_03.md
+    - card:2026-11-04/news_04.md
     evidence:
     - source: card:2026-06-05/news_02.md
       subthemes_local:
@@ -82427,6 +82764,13 @@ episodes:
     - source: card:2026-10-02/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
   - event_id: 2022-07-08:macro_data:eurozone_release
     geo: eurozone_release
     subthemes_local:
@@ -82892,6 +83236,7 @@ episodes:
   - pos
   directions_declared:
   - neg
+  - pos
   directions_by_reference:
     IEF:
     - neg
@@ -82902,11 +83247,13 @@ episodes:
     - card:2026-08-25/news_05.md
     ^FVX:
     - card:2026-08-25/news_05.md
+    - card:2026-11-03/news_03.md
   direction_review_excluded:
     ^TNX: 'Le schede descrivono i servizi USA come «misti» e «contraddittori»: segno
       della sorpresa non documentato. Revisione Claude 2026-10-15.'
   directions_local:
   - neg
+  - pos
   declared: true
   subthemes:
   - activity_growth
@@ -82962,7 +83309,7 @@ episodes:
   - ism
   - pmi
   - services
-  n_sources: 29
+  n_sources: 30
   events:
   - event_id: 2022-08-03:macro_data:-
     geo: ''
@@ -83009,6 +83356,7 @@ episodes:
     - card:2026-08-29/news_04.md
     - card:2026-09-02/news_04.md
     - card:2026-09-08/news_03.md
+    - card:2026-11-03/news_03.md
     evidence:
     - source: card:2026-05-31/news_05.md
       subthemes_local:
@@ -83123,6 +83471,14 @@ episodes:
       - activity_growth
       - cny
       directions_by_reference: {}
+    - source: card:2026-11-03/news_03.md
+      subthemes_local:
+      - activity_growth
+      - ism
+      - services
+      directions_by_reference:
+        ^FVX:
+        - pos
 - date: '2022-08-05'
   theme: macro_data
   direction: mixed
@@ -83155,6 +83511,7 @@ episodes:
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
     ^FVX:
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -83169,7 +83526,8 @@ episodes:
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - benchmark_revisions
@@ -83190,6 +83548,7 @@ episodes:
   - labor_market
   - labor_market_upside_surprise_jobless_claims
   - labor_softening
+  - labour_market
   - manufacturing_survey
   - monetary_policy
   - nonfarm_payrolls
@@ -83202,7 +83561,7 @@ episodes:
   subthemes_local:
   - labour_market
   - nfp
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2022-08-05:macro_data:-
     geo: ''
@@ -83227,6 +83586,7 @@ episodes:
     - card:2026-07-18/news_04.md
     - card:2026-07-24/news_04.md
     - card:2026-08-05/news_03.md
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -83251,6 +83611,13 @@ episodes:
     - source: card:2026-08-05/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury,
         dollaro, oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese
         su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro
@@ -84553,6 +84920,7 @@ episodes:
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
     ^FVX:
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -84572,7 +84940,8 @@ episodes:
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - benchmark_revisions
@@ -84593,6 +84962,7 @@ episodes:
   - labor_market
   - labor_market_upside_surprise_jobless_claims
   - labor_softening
+  - labour_market
   - manufacturing_survey
   - monetary_policy
   - nonfarm_payrolls
@@ -84606,7 +84976,7 @@ episodes:
   subthemes_local:
   - labour_market
   - nfp
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2022-10-07:macro_data:-
     geo: ''
@@ -84634,6 +85004,7 @@ episodes:
     - card:2026-07-18/news_04.md
     - card:2026-07-24/news_04.md
     - card:2026-08-05/news_03.md
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -84662,6 +85033,13 @@ episodes:
     - source: card:2026-08-05/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury,
         dollaro, oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese
         su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro
@@ -85305,6 +85683,7 @@ episodes:
     ^FVX:
     - card:2026-08-22/news_03.md
     - card:2026-10-30/news_02.md
+    - card:2026-11-04/news_04.md
   direction_review_excluded:
     ^TNX: 'Le schede si contraddicono: ISM «sopra attese» in una, «ulteriore rallentamento»
       e «al limite della contrazione» in altre. Revisione Claude 2026-10-15.'
@@ -85357,7 +85736,7 @@ episodes:
   - ism
   - labour_market
   - pmi
-  n_sources: 31
+  n_sources: 32
   events:
   - event_id: 2022-11-01:macro_data:-
     geo: ''
@@ -85408,6 +85787,7 @@ episodes:
     - card:2026-09-08/news_03.md
     - card:2026-09-09/news_03.md
     - card:2026-10-30/news_02.md
+    - card:2026-11-04/news_04.md
     evidence:
     - source: card:2026-06-16/news_03.md
       subthemes_local: []
@@ -85534,6 +85914,12 @@ episodes:
       subthemes_local:
       - activity_growth
       - ism
+      - labour_market
+      directions_by_reference:
+        ^FVX:
+        - pos
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
       - labour_market
       directions_by_reference:
         ^FVX:
@@ -87195,6 +87581,7 @@ episodes:
       regimi ed episodi storici (2017–ottobre 2026).md
     ^FVX:
     - card:2026-08-21/news_02.md
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -87295,7 +87682,7 @@ episodes:
   - labour_market
   - nfp
   - pmi
-  n_sources: 47
+  n_sources: 48
   events:
   - event_id: 2023-02-03:macro_data:-
     geo: ''
@@ -87364,6 +87751,7 @@ episodes:
     - card:2026-09-04/news_02.md
     - card:2026-09-05/news_03.md
     - card:2026-09-07/news_04.md
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -87549,6 +87937,13 @@ episodes:
       - labour_market
       - nfp
       directions_by_reference: {}
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury,
         dollaro, oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese
         su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro
@@ -90926,6 +91321,7 @@ episodes:
     - card:2026-09-26/news_02.md
     ^FVX:
     - card:2026-09-26/news_02.md
+    - card:2026-11-04/news_04.md
     ^TNX:
     - card:2026-09-24/news_01.md
     - card:2026-09-26/news_02.md
@@ -90954,7 +91350,7 @@ episodes:
   subthemes_local:
   - labour_market
   - nfp
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2023-10-06:macro_data:-
     geo: ''
@@ -90971,6 +91367,7 @@ episodes:
     sources:
     - card:2026-09-24/news_01.md
     - card:2026-09-26/news_02.md
+    - card:2026-11-04/news_04.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -90992,6 +91389,13 @@ episodes:
         - pos
         IEF:
         - neg
+        ^FVX:
+        - pos
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
         ^FVX:
         - pos
     - source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di
@@ -91712,6 +92116,7 @@ episodes:
     - card:2026-08-22/news_03.md
     ^FVX:
     - card:2026-08-22/news_03.md
+    - card:2026-11-04/news_04.md
   directions_local:
   - neg
   - pos
@@ -91803,7 +92208,7 @@ episodes:
   - nfp
   - umich
   - us_cpi
-  n_sources: 58
+  n_sources: 59
   events:
   - event_id: 2023-12-08:macro_data:-
     geo: ''
@@ -91882,6 +92287,7 @@ episodes:
     - card:2026-09-09/news_03.md
     - card:2026-09-10/news_07.md
     - card:2026-09-12/news_03.md
+    - card:2026-11-04/news_04.md
     evidence:
     - source: card:2026-06-07/news_03.md
       subthemes_local:
@@ -92113,6 +92519,13 @@ episodes:
       - inflation_print
       - labour_market
       directions_by_reference: {}
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
 - date: '2023-12-13'
   theme: macro_data
   direction: ''
@@ -92392,6 +92805,7 @@ episodes:
     - card:2026-08-21/news_04.md
     ^FVX:
     - card:2026-08-21/news_04.md
+    - card:2026-11-04/news_04.md
   direction_review_excluded:
     EURUSD=X: Le schede si contraddicono («sopra attese» in una, «in linea/migliore»
       con core in calo in altre) e nella stessa data mettono gli occupati USA sopra
@@ -92479,7 +92893,7 @@ episodes:
   - labour_market
   - nfp
   - state_dependence
-  n_sources: 48
+  n_sources: 49
   events:
   - event_id: 2024-01-05:macro_data:-
     geo: ''
@@ -92537,6 +92951,7 @@ episodes:
     - card:2026-09-07/news_04.md
     - card:2026-09-10/news_07.md
     - card:2026-09-12/news_03.md
+    - card:2026-11-04/news_04.md
     evidence:
     - source: card:2026-06-04/news_02.md
       subthemes_local:
@@ -92694,6 +93109,13 @@ episodes:
       - labour_market
       - nfp
       directions_by_reference: {}
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
   - event_id: 2024-01-05:macro_data:eurozone_release
     geo: eurozone_release
     subthemes_local:
@@ -93055,6 +93477,7 @@ episodes:
     - card:2026-08-22/news_03.md
     ^FVX:
     - card:2026-08-22/news_03.md
+    - card:2026-11-04/news_04.md
     ^TNX:
     - card:2026-09-24/news_01.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
@@ -93155,7 +93578,7 @@ episodes:
   - ism
   - labour_market
   - nfp
-  n_sources: 46
+  n_sources: 47
   events:
   - event_id: 2024-02-02:macro_data:-
     geo: ''
@@ -93217,6 +93640,7 @@ episodes:
     - card:2026-09-05/news_03.md
     - card:2026-09-07/news_04.md
     - card:2026-09-24/news_01.md
+    - card:2026-11-04/news_04.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -93381,6 +93805,13 @@ episodes:
       - nfp
       directions_by_reference:
         ^TNX:
+        - pos
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
         - pos
     - source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di
         politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito
@@ -94692,6 +95123,7 @@ episodes:
       regimi ed episodi storici (2017–ottobre 2026).md
     ^FVX:
     - card:2026-08-26/news_02.md
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -94788,7 +95220,7 @@ episodes:
   - inflation_print
   - labour_market
   - nfp
-  n_sources: 40
+  n_sources: 41
   events:
   - event_id: 2024-04-05:macro_data:-
     geo: ''
@@ -94844,6 +95276,7 @@ episodes:
     - card:2026-09-10/news_07.md
     - card:2026-09-12/news_03.md
     - card:2026-10-02/news_03.md
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -94983,6 +95416,13 @@ episodes:
     - source: card:2026-10-02/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury,
         dollaro, oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese
         su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro
@@ -96347,6 +96787,7 @@ episodes:
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
     ^FVX:
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -96361,7 +96802,8 @@ episodes:
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - activity_growth
@@ -96405,6 +96847,7 @@ episodes:
   - labor_market
   - labor_market_upside_surprise_jobless_claims
   - labor_softening
+  - labour_market
   - long_end_rates
   - nfp
   - nonfarm_payrolls
@@ -96426,7 +96869,7 @@ episodes:
   - labour_market
   - nfp
   - services
-  n_sources: 23
+  n_sources: 24
   events:
   - event_id: 2024-06-07:macro_data:-
     geo: ''
@@ -96475,6 +96918,7 @@ episodes:
     - card:2026-08-18/news_03.md
     - card:2026-08-19/news_04.md
     - card:2026-08-19/news_06.md
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -96550,6 +96994,13 @@ episodes:
     - source: card:2026-08-19/news_06.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury,
         dollaro, oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese
         su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro
@@ -100181,6 +100632,7 @@ episodes:
       regimi ed episodi storici (2017–ottobre 2026).md
     ^FVX:
     - card:2026-09-05/news_03.md
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -100258,7 +100710,7 @@ episodes:
   subthemes_local:
   - labour_market
   - nfp
-  n_sources: 25
+  n_sources: 26
   events:
   - event_id: 2024-10-04:macro_data:-
     geo: ''
@@ -100303,6 +100755,7 @@ episodes:
     - card:2026-08-21/news_04.md
     - card:2026-09-05/news_03.md
     - card:2026-09-07/news_04.md
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -100391,6 +100844,13 @@ episodes:
       - labour_market
       - nfp
       directions_by_reference: {}
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury,
         dollaro, oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese
         su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro
@@ -102724,6 +103184,7 @@ episodes:
     - card:2026-08-25/news_05.md
     ^FVX:
     - card:2026-08-25/news_05.md
+    - card:2026-11-04/news_04.md
     ^GSPC:
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
@@ -102852,7 +103313,7 @@ episodes:
   - pboc
   - pmi
   - us_cpi
-  n_sources: 68
+  n_sources: 69
   events:
   - event_id: 2025-01-10:macro_data:-
     geo: ''
@@ -102950,6 +103411,7 @@ episodes:
     - card:2026-09-26/news_02.md
     - card:2026-10-16/news_02.md
     - card:2026-10-28/news_04.md
+    - card:2026-11-04/news_04.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -103215,6 +103677,13 @@ episodes:
     - source: card:2026-10-28/news_04.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di
         politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito
         (2007–2026)/Sorprese macro e reaction function dei mercati: fase del ciclo
@@ -108978,6 +109447,7 @@ episodes:
     IEF:
     - card:2026-09-24/news_01.md
     ^FVX:
+    - card:2026-11-04/news_04.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -109005,7 +109475,7 @@ episodes:
   subthemes_local:
   - activity_growth
   - labour_market
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2025-12-09:macro_data:-
     geo: ''
@@ -109021,6 +109491,7 @@ episodes:
       - pos
     sources:
     - card:2026-09-24/news_01.md
+    - card:2026-11-04/news_04.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -109035,6 +109506,12 @@ episodes:
         - pos
         IEF:
         - neg
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di
         politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito
         (2007–2026)/Sorprese macro e reaction function dei mercati: fase del ciclo
@@ -110082,8 +110559,9 @@ episodes:
         - neg
 - date: '2026-02-11'
   theme: macro_data
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - pos
@@ -110118,6 +110596,7 @@ episodes:
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
     ^FVX:
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -110132,7 +110611,8 @@ episodes:
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - benchmark_revisions
@@ -110141,6 +110621,7 @@ episodes:
   - good_news_is_bad_news
   - ism_manufacturing
   - ism_services
+  - labour_market
   - nonfarm_payrolls
   - prices_paid
   - stagflation_divergence
@@ -110148,7 +110629,7 @@ episodes:
   subthemes_local:
   - labour_market
   - nfp
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-02-11:macro_data:-
     geo: ''
@@ -110170,11 +110651,19 @@ episodes:
       ^TNX:
       - pos
     sources:
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
     evidence:
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury,
         dollaro, oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese
         su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro
@@ -112554,6 +113043,7 @@ episodes:
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
     ^FVX:
+    - card:2026-11-04/news_04.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -112697,7 +113187,7 @@ episodes:
   - labour_market
   - nfp
   - usa
-  n_sources: 49
+  n_sources: 50
   events:
   - event_id: 2026-06-05:macro_data:-
     geo: ''
@@ -112770,6 +113260,7 @@ episodes:
     - card:2026-08-19/news_04.md
     - card:2026-08-19/news_06.md
     - card:2026-09-24/news_01.md
+    - card:2026-11-04/news_04.md
     - 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di politica
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
@@ -112929,6 +113420,13 @@ episodes:
         - pos
         IEF:
         - neg
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: 'kb:Sorprese macro e reaction function dei mercati: fase del ciclo di
         politica monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito
         (2007–2026)/Sorprese macro e reaction function dei mercati: fase del ciclo
@@ -115241,8 +115739,9 @@ episodes:
         - pos
 - date: '2026-09-04'
   theme: macro_data
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - pos
@@ -115269,6 +115768,7 @@ episodes:
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
     ^FVX:
+    - card:2026-11-04/news_04.md
     - kb:Sorprese su payroll e ISM negli Stati Uniti e trasmissione a Treasury, dollaro,
       oro e azionario; regimi ed episodi storici (2017–ottobre 2026)/Sorprese su payroll
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
@@ -115290,7 +115790,8 @@ episodes:
       e la nota segnala la contaminazione del payroll USA lo stesso giorno.'
     1482.T: 'Riga: ''JPY pos (realizzato)'' — la colonna è l''esito, dichiaratamente;
       e la nota segnala la contaminazione del payroll USA lo stesso giorno.'
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - benchmark_revisions
@@ -115304,6 +115805,7 @@ episodes:
   - japan_cpi
   - japan_data
   - japan_release
+  - labour_market
   - nonfarm_payrolls
   - pmi
   - prices_paid
@@ -115315,7 +115817,7 @@ episodes:
   - household_spending
   - labour_market
   - nfp
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2026-09-04:macro_data:-
     geo: ''
@@ -115335,6 +115837,7 @@ episodes:
       ^TNX:
       - pos
     sources:
+    - card:2026-11-04/news_04.md
     - kb:Giappone; i dati macroeconomici come canale distinto dalla politica della
       Bank of Japan — regime ed episodi storici (2013–presente)/Giappone- i dati macroeconomici
       come canale distinto dalla politica della Bank of Japan — regime ed episodi
@@ -115344,6 +115847,13 @@ episodes:
       e ISM negli Stati Uniti e trasmissione a Treasury, dollaro, oro e azionario-
       regimi ed episodi storici (2017–ottobre 2026).md
     evidence:
+    - source: card:2026-11-04/news_04.md
+      subthemes_local:
+      - labour_market
+      - nfp
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: kb:Giappone; i dati macroeconomici come canale distinto dalla politica
         della Bank of Japan — regime ed episodi storici (2013–presente)/Giappone-
         i dati macroeconomici come canale distinto dalla politica della Bank of Japan
@@ -123248,6 +123758,7 @@ episodes:
   direction_sources:
     CNY=X:
     - card:2026-10-16/news_03.md
+    - card:2026-11-04/news_05.md
     - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
       regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
       Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
@@ -123267,7 +123778,7 @@ episodes:
   - cny
   - fx_intervention
   - pboc
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2020-10-12:monetary_policy:-
     geo: ''
@@ -123280,11 +123791,20 @@ episodes:
       - pos
     sources:
     - card:2026-10-16/news_03.md
+    - card:2026-11-04/news_05.md
     - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
       regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
       Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
     evidence:
     - source: card:2026-10-16/news_03.md
+      subthemes_local:
+      - cny
+      - fx_intervention
+      - pboc
+      directions_by_reference:
+        CNY=X:
+        - pos
+    - source: card:2026-11-04/news_05.md
       subthemes_local:
       - cny
       - fx_intervention
@@ -123519,6 +124039,7 @@ episodes:
   direction_sources:
     CNY=X:
     - card:2026-10-16/news_03.md
+    - card:2026-11-04/news_05.md
     - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
       regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
       Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
@@ -123538,7 +124059,7 @@ episodes:
   - cny
   - fx_intervention
   - pboc
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2021-05-31:monetary_policy:-
     geo: ''
@@ -123551,11 +124072,20 @@ episodes:
       - pos
     sources:
     - card:2026-10-16/news_03.md
+    - card:2026-11-04/news_05.md
     - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
       regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
       Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
     evidence:
     - source: card:2026-10-16/news_03.md
+      subthemes_local:
+      - cny
+      - fx_intervention
+      - pboc
+      directions_by_reference:
+        CNY=X:
+        - pos
+    - source: card:2026-11-04/news_05.md
       subthemes_local:
       - cny
       - fx_intervention
@@ -123736,6 +124266,7 @@ episodes:
   direction_sources:
     CNY=X:
     - card:2026-10-16/news_03.md
+    - card:2026-11-04/news_05.md
     - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
       regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
       Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
@@ -123755,7 +124286,7 @@ episodes:
   - cny
   - fx_intervention
   - pboc
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2021-12-09:monetary_policy:-
     geo: ''
@@ -123768,11 +124299,20 @@ episodes:
       - pos
     sources:
     - card:2026-10-16/news_03.md
+    - card:2026-11-04/news_05.md
     - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
       regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
       Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
     evidence:
     - source: card:2026-10-16/news_03.md
+      subthemes_local:
+      - cny
+      - fx_intervention
+      - pboc
+      directions_by_reference:
+        CNY=X:
+        - pos
+    - source: card:2026-11-04/news_05.md
       subthemes_local:
       - cny
       - fx_intervention
@@ -143969,6 +144509,7 @@ episodes:
   direction_sources:
     CNY=X:
     - card:2026-10-16/news_03.md
+    - card:2026-11-04/news_05.md
     - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
       regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
       Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
@@ -143989,7 +144530,7 @@ episodes:
   - cny
   - fx_intervention
   - pboc
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2026-02-27:monetary_policy:-
     geo: ''
@@ -144002,11 +144543,20 @@ episodes:
       - pos
     sources:
     - card:2026-10-16/news_03.md
+    - card:2026-11-04/news_05.md
     - kb:La gestione del cambio da parte della People's Bank of China fixing, strumenti,
       regimi ed episodi datati (2005–2026)/La gestione del cambio da parte della People's
       Bank of China- fixing, strumenti, regimi ed episodi datati (2005–2026).md
     evidence:
     - source: card:2026-10-16/news_03.md
+      subthemes_local:
+      - cny
+      - fx_intervention
+      - pboc
+      directions_by_reference:
+        CNY=X:
+        - pos
+    - source: card:2026-11-04/news_05.md
       subthemes_local:
       - cny
       - fx_intervention
@@ -151555,6 +152105,10 @@ episodes:
     EWY: Descrive la fase più che un evento datato; l'evento d'ancora del gruppo è
       il 2018-11-16, già in questa proposta. Criterio ex ante, nessun prezzo consultato.
       Revisione Claude 2026-11-02.
+    SOXX: 'La riga descrive il movimento di mercato, non un evento: il catalizzatore
+      (guida Nvidia) è del 15/11 dopo la chiusura, con prima seduta il 16/11. Un verso
+      qui verrebbe dal prezzo. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-04.'
   directions_local:
   - neg
   declared: true
@@ -153854,6 +154408,10 @@ episodes:
       ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
       anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
       al software e alle utility — regime ed episodi storici (2018–presente).md
+  direction_review_excluded:
+    SOXX: 'Provvedimento su un servizio al consumatore in un solo paese, dichiarato
+      dalla KB su IGV: nessun canale verso la domanda di chip. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-04.'
   directions_local: []
   declared: true
   subthemes:
@@ -153902,6 +154460,10 @@ episodes:
     EWY: 'Taglio Samsung annunciato il 7/4 mattina KST, cioè dopo la chiusura USA
       del 6/4; il 7/4 era Venerdì Santo: la prima seduta utile di EWY è il 10/4, non
       il 6/4 della riga. Revisione Claude 2026-10-21.'
+    SOXX: 'Data sbagliata per SOXX: l''annuncio uscì con i preliminari del 7/4 (ora
+      coreana), dopo la chiusura USA del 6/4, e il 7/4/2023 la borsa USA era chiusa
+      per il Venerdì Santo. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-04.'
   directions_local:
   - pos
   declared: true
@@ -154124,6 +154686,7 @@ episodes:
     SOXX:
     - card:2026-10-21/news_05.md
     - card:2026-10-28/news_02.md
+    - card:2026-11-04/news_02.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
     ^NDX:
@@ -154194,7 +154757,7 @@ episodes:
   - hyperscaler_capex
   - memory_cycle
   - valuation_derisking
-  n_sources: 55
+  n_sources: 56
   events:
   - event_id: 2023-05-25:structural_themes:-
     geo: ''
@@ -154271,6 +154834,7 @@ episodes:
     - card:2026-09-12/news_05.md
     - card:2026-10-21/news_05.md
     - card:2026-10-28/news_02.md
+    - card:2026-11-04/news_02.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
     evidence:
@@ -154503,6 +155067,14 @@ episodes:
       - ai_semis
       - earnings_shock
       - hyperscaler_capex
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: card:2026-11-04/news_02.md
+      subthemes_local:
+      - ai_capex_spending
+      - ai_semis
+      - earnings_shock
       directions_by_reference:
         SOXX:
         - pos
@@ -155099,6 +155671,9 @@ episodes:
   direction_review_excluded:
     EWY: 'Guida autonoma, non semiconduttori: nessun canale verso EWY. Criterio ex
       ante, nessun prezzo consultato. Revisione Claude 2026-11-02.'
+    SOXX: 'Non è un evento dei semiconduttori: la KB lo usa come contro-esempio regolatorio
+      su GM, senza canale verso i chip. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-04.'
   directions_local: []
   declared: false
   subthemes:
@@ -155616,11 +156191,16 @@ episodes:
   directions_by_reference:
     EWY:
     - pos
+    SOXX:
+    - pos
     ^NDX:
     - pos
   direction_sources:
     EWY:
     - card:2026-08-21/news_07.md
+    SOXX:
+    - card:2026-08-21/news_07.md
+    - card:2026-11-04/news_02.md
     ^NDX:
     - card:2026-08-21/news_07.md
   directions_local:
@@ -155680,7 +156260,7 @@ episodes:
   - ai_semis
   - earnings_shock
   - export_controls
-  n_sources: 46
+  n_sources: 47
   events:
   - event_id: 2024-02-22:structural_themes:-
     geo: ''
@@ -155694,6 +156274,8 @@ episodes:
     - export_controls
     directions_by_reference:
       EWY:
+      - pos
+      SOXX:
       - pos
       ^NDX:
       - pos
@@ -155744,6 +156326,7 @@ episodes:
     - card:2026-09-07/news_05.md
     - card:2026-09-09/news_05.md
     - card:2026-09-12/news_05.md
+    - card:2026-11-04/news_02.md
     evidence:
     - source: card:2026-05-30/news_04.md
       subthemes_local:
@@ -155874,6 +156457,8 @@ episodes:
         - pos
         EWY:
         - pos
+        SOXX:
+        - pos
     - source: card:2026-08-23/news_06.md
       subthemes_local:
       - ai_capex
@@ -155925,6 +156510,14 @@ episodes:
       - ai_capex
       - earnings_shock
       directions_by_reference: {}
+    - source: card:2026-11-04/news_02.md
+      subthemes_local:
+      - ai_capex_spending
+      - ai_semis
+      - earnings_shock
+      directions_by_reference:
+        SOXX:
+        - pos
 - date: '2024-03-13'
   theme: structural_themes
   direction: ''
@@ -155934,8 +156527,15 @@ episodes:
   directions_by_reference:
     IGV:
     - neutral
+    SOXX:
+    - neutral
   direction_sources:
     IGV:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    SOXX:
     - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
       ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
       anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
@@ -155960,6 +156560,8 @@ episodes:
     directions_by_reference:
       IGV:
       - neutral
+      SOXX:
+      - neutral
     sources:
     - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
       ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
@@ -155975,6 +156577,8 @@ episodes:
       - regulatory_anticipation
       directions_by_reference:
         IGV:
+        - neutral
+        SOXX:
         - neutral
 - date: '2024-05-22'
   theme: structural_themes
@@ -156025,6 +156629,7 @@ episodes:
     - card:2026-09-12/news_05.md
     - card:2026-10-21/news_05.md
     - card:2026-10-28/news_02.md
+    - card:2026-11-04/news_02.md
     ^NDX:
     - card:2026-08-21/news_07.md
   directions_local:
@@ -156079,7 +156684,7 @@ episodes:
   - hbm
   - hyperscaler_capex
   - valuation_derisking
-  n_sources: 42
+  n_sources: 43
   events:
   - event_id: 2024-05-23:structural_themes:-
     geo: ''
@@ -156140,6 +156745,7 @@ episodes:
     - card:2026-09-12/news_05.md
     - card:2026-10-21/news_05.md
     - card:2026-10-28/news_02.md
+    - card:2026-11-04/news_02.md
     evidence:
     - source: card:2026-05-30/news_04.md
       subthemes_local: []
@@ -156299,6 +156905,14 @@ episodes:
       subthemes_local:
       - earnings_shock
       - hbm
+      - hyperscaler_capex
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: card:2026-11-04/news_02.md
+      subthemes_local:
+      - ai_semis
+      - earnings_shock
       - hyperscaler_capex
       directions_by_reference:
         SOXX:
@@ -157509,6 +158123,10 @@ episodes:
       ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
       anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
       al software e alle utility — regime ed episodi storici (2018–presente).md
+  direction_review_excluded:
+    SOXX: 'Veto solo in parte atteso (KB) e dichiarato su IGV: sul canale dei chip
+      l''attesa non ha un segno chiaro. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-04.'
   directions_local: []
   declared: true
   subthemes:
@@ -158298,6 +158916,8 @@ episodes:
     - pos
     IGV:
     - neutral
+    SOXX:
+    - neutral
   direction_sources:
     EWY:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
@@ -158305,6 +158925,11 @@ episodes:
       capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
       storici (2021–presente).md
     IGV:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    SOXX:
     - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
       ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
       anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
@@ -158338,6 +158963,8 @@ episodes:
       - pos
       IGV:
       - neutral
+      SOXX:
+      - neutral
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
@@ -158367,6 +158994,8 @@ episodes:
       - regulatory_anticipation
       directions_by_reference:
         IGV:
+        - neutral
+        SOXX:
         - neutral
 - date: '2025-01-26'
   theme: structural_themes
@@ -160632,6 +161261,10 @@ episodes:
       ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
       anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
       al software e alle utility — regime ed episodi storici (2018–presente).md
+  direction_review_excluded:
+    SOXX: 'Canale (c) inverso, dichiarato dalla KB solo su IGV: riguarda la conformità
+      del software, non la domanda di chip. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-04.'
   directions_local: []
   declared: true
   subthemes:
@@ -161014,6 +161647,12 @@ episodes:
   directions_declared:
   - neg
   - pos
+  directions_by_reference:
+    SOXX:
+    - neg
+  direction_sources:
+    SOXX:
+    - card:2026-08-21/news_07.md
   direction_review_excluded:
     ^NDX: 'Ricavi data center lievemente sotto le stime con guidance sopra, Cina esclusa
       dalla guida: spinte opposte. Revisione Claude 2026-10-21.'
@@ -161085,6 +161724,9 @@ episodes:
     - earnings_shock
     - hyperscaler_capex
     - tariff_escalation
+    directions_by_reference:
+      SOXX:
+      - neg
     sources:
     - card:2026-06-01/news_02.md
     - card:2026-06-17/news_02.md
@@ -161245,7 +161887,9 @@ episodes:
       subthemes_local:
       - ai_capex
       - earnings_shock
-      directions_by_reference: {}
+      directions_by_reference:
+        SOXX:
+        - neg
     - source: card:2026-08-23/news_06.md
       subthemes_local:
       - ai_capex
@@ -161725,8 +162369,15 @@ episodes:
   directions_by_reference:
     IGV:
     - neutral
+    SOXX:
+    - neutral
   direction_sources:
     IGV:
+    - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
+      ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
+      anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
+      al software e alle utility — regime ed episodi storici (2018–presente).md
+    SOXX:
     - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
       ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
       anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
@@ -161751,6 +162402,8 @@ episodes:
     directions_by_reference:
       IGV:
       - neutral
+      SOXX:
+      - neutral
     sources:
     - kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione
       ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
@@ -161766,6 +162419,8 @@ episodes:
       - regulatory_anticipation
       directions_by_reference:
         IGV:
+        - neutral
+        SOXX:
         - neutral
 - date: '2025-10-16'
   theme: structural_themes
@@ -161797,6 +162452,7 @@ episodes:
     SOXX:
     - card:2026-10-21/news_05.md
     - card:2026-10-28/news_02.md
+    - card:2026-11-04/news_02.md
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
       capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
@@ -161816,13 +162472,14 @@ episodes:
   - ai_semis
   - earnings_shock
   - grid_capacity
+  - hyperscaler_capex
   - memory_cycle
   - power_bottleneck
   subthemes_local:
   - ai_semis
   - earnings_shock
   - foundry_logic
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2025-10-16:structural_themes:-
     geo: ''
@@ -161842,6 +162499,7 @@ episodes:
     sources:
     - card:2026-10-21/news_05.md
     - card:2026-10-28/news_02.md
+    - card:2026-11-04/news_02.md
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
       capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
@@ -161858,6 +162516,14 @@ episodes:
       subthemes_local:
       - ai_semis
       - earnings_shock
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: card:2026-11-04/news_02.md
+      subthemes_local:
+      - ai_semis
+      - earnings_shock
+      - foundry_logic
       directions_by_reference:
         SOXX:
         - pos
@@ -162014,6 +162680,15 @@ episodes:
   direction: ''
   directions: []
   directions_declared: []
+  directions_by_reference:
+    SOXX:
+    - neutral
+  direction_sources:
+    SOXX:
+    - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
+      bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
+      capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
+      storici (2021–presente).md
   direction_review_excluded:
     EWY: 'Canale elettrico del capex AI: lo studio dà SOXX neutral, nessun canale
       verso memoria e chip coreani. Criterio ex ante, nessun prezzo consultato. Revisione
@@ -162032,6 +162707,9 @@ episodes:
     geo: ''
     subthemes_local:
     - earnings_shock
+    directions_by_reference:
+      SOXX:
+      - neutral
     sources:
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
@@ -162044,7 +162722,9 @@ episodes:
         episodi storici (2021–presente).md
       subthemes_local:
       - earnings_shock
-      directions_by_reference: {}
+      directions_by_reference:
+        SOXX:
+        - neutral
 - date: '2025-11-11'
   theme: structural_themes
   direction: neg
@@ -162402,6 +163082,10 @@ episodes:
       ai semiconduttori, al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione
       anticipata dell'AI e pause di sicurezza dei modelli- trasmissione ai semiconduttori,
       al software e alle utility — regime ed episodi storici (2018–presente).md
+  direction_review_excluded:
+    SOXX: 'La KB lo dichiara solo su IGV, canale (c) della conformità per chi usa
+      i modelli: nessuna attesa sulla domanda di chip. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-04.'
   directions_local: []
   declared: true
   subthemes:
@@ -163906,6 +164590,9 @@ episodes:
     EWY: 'Segnale misto: ricavi AI sopra la guida, software sotto; lo studio stesso
       dà SOXX solo ''neg lieve''. Nessun segno univoco su EWY. Criterio ex ante, nessun
       prezzo consultato. Revisione Claude 2026-11-02.'
+    SOXX: 'Segnali opposti nello stesso annuncio (dalla KB): ricavi AI molto sopra
+      le attese, ricavi totali e software sotto il consenso. La sorpresa netta non
+      ha un segno. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-04.'
   directions_local:
   - neg
   declared: false
@@ -165745,6 +166432,7 @@ episodes:
       a semiconduttori, indice e credito (2023-presente).md
     SOXX:
     - card:2026-10-28/news_02.md
+    - card:2026-11-04/news_02.md
     - kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della
       filiera e trasmissione a semiconduttori, indice e credito (2023-presente)/Finanziamento
       azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -165780,7 +166468,7 @@ episodes:
   - equity_financing
   - hyperscaler_capex
   - valuation_derisking
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2026-09-11:structural_themes:-
     geo: ''
@@ -165803,6 +166491,7 @@ episodes:
       - neutral
     sources:
     - card:2026-10-28/news_02.md
+    - card:2026-11-04/news_02.md
     - kb:Finanziamento azionario del capex AI_ emissioni degli hyperscaler, IPO della
       filiera e trasmissione a semiconduttori, indice e credito (2023-presente)/Finanziamento
       azionario del capex AI_ emissioni degli hyperscaler, IPO della filiera e trasmissione
@@ -165812,6 +166501,14 @@ episodes:
       subthemes_local:
       - ai_capex_financing
       - earnings_shock
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: card:2026-11-04/news_02.md
+      subthemes_local:
+      - ai_capex_financing
+      - earnings_shock
+      - hyperscaler_capex
       directions_by_reference:
         SOXX:
         - pos

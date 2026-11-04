@@ -39,7 +39,6 @@ LOGDIR="$PIPE/logs"
 CLAUDE=${CLAUDE:-/opt/homebrew/bin/claude}
 TODAY=$(date +%Y-%m-%d)
 DAY="$DAILY/$TODAY"
-TAG="rev$(date +%H%M)"
 LOG="$LOGDIR/rianalisi-${TODAY}.log"
 
 log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >> "$LOG"; }
@@ -49,7 +48,7 @@ MODO=kb
 [[ "${1:-}" == --versi ]] && { MODO=versi; shift; }
 (( $# )) || { echo "uso: run_rianalisi_kb.sh [--versi] <studio|proposta> [...]"; exit 2; }
 mkdir -p "$LOGDIR"
-log "START: rianalisi $TAG ($MODO) per: $*"
+log "START: rianalisi ($MODO) per: $*"
 
 # --- Cancelli --------------------------------------------------------------
 # Consegnata con lo stesso brief e ritoccata dopo l'invio (una lacuna annotata, una
@@ -84,6 +83,11 @@ for i in {1..60}; do
   sleep 10
 done
 print -r -- $$ > "$LOCK/pid"
+# L'etichetta si prende DOPO il lock: due promozioni di fila lanciano due rianalisi
+# nello stesso minuto, e con l'etichetta presa prima la seconda sovrascriveva il
+# riassunto della prima (2026-11-04).
+TAG="rev$(date +%H%M)"
+log "Etichetta $TAG."
 trap 'rm -rf "$LOCK"' EXIT
 
 # --- Libreria con il nuovo studio, impronte prima -------------------------

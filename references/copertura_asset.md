@@ -43,6 +43,7 @@ Base: 17 asset originali.
 | 2026-08-29 | `NZD=X` `SEK=X` | **completano il G10 valutario** (audit non reattivo, vedi sopra) |
 | 2026-08-29 | `IWM` `GDX` `XLU` | fattore dimensione/small cap, minatori auriferi, utility USA per il vincolo elettrico del capex AI |
 | 2026-09-04 | `ZW=F` `ZC=F` | **cereali = canale Mar Nero.** Sull'apertura negoziale russo-ucraina il canale che aveva davvero reagito (grano −2,5%) non era misurabile e la scheda ha descritto solo i canali secondari. Prima esposizione agricola dell'universo: correlazione massima con l'esistente **+0,15** (entrambi su `BZ=F`), fra loro **0,57** |
+| 2026-11-04 | `ZAR=X` `EZA` | Sudafrica: 7 notizie scartate dal 2026-06-13 per assenza di asset (proteste, "Farmgate", elezioni municipali, AGOA). Correlazione massima con l'universo: 0,47 per `ZAR=X` (`SGD=X`) e 0,82 per `EZA` (`EEM`; `EWY` sta a 0,84) |
 
 ## Lacune aperte
 

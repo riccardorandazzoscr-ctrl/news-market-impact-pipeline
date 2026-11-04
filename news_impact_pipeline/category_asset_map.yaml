@@ -119,6 +119,8 @@ geopolitical:
     - EWY             # Corea del Sud: anche canale rischio geopolitico regionale
     - EWT             # Taiwan: proxy diretto del rischio Taiwan/Cina
     - ILS=X           # shekel: canale più diretto del conflitto mediorientale
+    - ZAR=X           # rand: rischio politico/commerciale sudafricano (dal 2026-11-04)
+    - EZA             # equity Sudafrica, in USD: rand + minerari (0,82 con EEM)
     - ITA             # difesa USA (con SHLD.L separa impulso americano da europeo)
     - REMX            # terre rare/metalli strategici: controlli all'export cinesi
     - IYT             # trasporti: costo dei chokepoint marittimi

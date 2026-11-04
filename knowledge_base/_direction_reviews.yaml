@@ -14367,3 +14367,147 @@ reviews:
     prezzo consultato. Revisione Claude 2026-11-03.'
   status: excluded
   description: Decisione o comunicazione della Bank of Korea (dalla research RBA/BoK)
+- date: '2026-06-04'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex (2023–2026).md
+  reason: 'Segnali opposti nello stesso annuncio (dalla KB): ricavi AI molto sopra le attese, ricavi totali
+    e software sotto il consenso. La sorpresa netta non ha un segno. Criterio ex ante, nessun prezzo consultato.
+    Revisione Claude 2026-11-04.'
+  status: excluded
+  description: Broadcom Q2 FY26 (dopo la chiusura del 3/6)
+- date: '2025-10-31'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di bottiglia — regime
+    ed episodi storici (2021–presente)/Il vincolo elettrico del capex AI- potenza, reti e turbine come
+    collo di bottiglia — regime ed episodi storici (2021–presente).md
+  reason: 'La KB dichiara SOXX neutral: valore semantico sul vincolo elettrico, nessuna revisione della
+    domanda di chip. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-04.'
+  direction: neutral
+  description: 'Nadella: GPU in inventario che non si possono collegare per mancanza di capannoni alimentati'
+- date: '2025-08-28'
+  theme: structural_themes
+  reference: SOXX
+  source: 2026-08-21/news_07.md
+  reason: 'Ricavi dei data center appena sotto il consenso e guida che esclude le vendite di H20 in Cina:
+    sorpresa lieve al ribasso sul segmento che regge il comparto. Coerente con il verso della scheda.
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-04.'
+  direction: neg
+  description: Nvidia, secondo trimestre fiscale 2026 (dopo la chiusura del 27/8)
+- date: '2024-02-22'
+  theme: structural_themes
+  reference: SOXX
+  source: 2026-08-21/news_07.md
+  reason: 'Data center +409% e guida del trimestre successivo sopra il consenso: sorpresa netta al rialzo
+    sulla domanda di acceleratori. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-04.'
+  direction: pos
+  description: Nvidia, quarto trimestre fiscale 2024 (dopo la chiusura del 21/2)
+- date: '2023-10-24'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Auto-limitazione volontaria dell'offerta in settori a capacità strategica; precedenti storici
+    e trasmissione ai mercati (1975–presente)/Auto-limitazione volontaria dell'offerta in settori a capacità
+    strategica- precedenti storici e trasmissione ai mercati (1975–presente).md
+  reason: 'Non è un evento dei semiconduttori: la KB lo usa come contro-esempio regolatorio su GM, senza
+    canale verso i chip. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-04.'
+  status: excluded
+  description: Sospensione dei permessi di Cruise (GM) in California
+- date: '2023-04-06'
+  theme: structural_themes
+  reference: SOXX
+  source: 2026-09-01/news_04.md
+  reason: 'Data sbagliata per SOXX: l''annuncio uscì con i preliminari del 7/4 (ora coreana), dopo la
+    chiusura USA del 6/4, e il 7/4/2023 la borsa USA era chiusa per il Venerdì Santo. Criterio ex ante,
+    nessun prezzo consultato. Revisione Claude 2026-11-04.'
+  status: excluded
+  description: Taglio della produzione di memoria di Samsung
+- date: '2018-11-19'
+  theme: structural_themes
+  reference: SOXX
+  source: 2026-09-15/news_04.md
+  reason: 'La riga descrive il movimento di mercato, non un evento: il catalizzatore (guida Nvidia) è
+    del 15/11 dopo la chiusura, con prima seduta il 16/11. Un verso qui verrebbe dal prezzo. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-04.'
+  status: excluded
+  description: Ribasso del comparto a novembre 2018
+- date: '2025-12-12'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
+    al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione anticipata dell'AI
+    e pause di sicurezza dei modelli- trasmissione ai semiconduttori, al software e alle utility — regime
+    ed episodi storici (2018–presente).md
+  reason: 'La KB lo dichiara solo su IGV, canale (c) della conformità per chi usa i modelli: nessuna attesa
+    sulla domanda di chip. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-04.'
+  status: excluded
+  description: Ordine esecutivo sulla preemption delle leggi statali sull'AI (firmato l'11/12)
+- date: '2025-09-29'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
+    al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione anticipata dell'AI
+    e pause di sicurezza dei modelli- trasmissione ai semiconduttori, al software e alle utility — regime
+    ed episodi storici (2018–presente).md
+  reason: 'Firma ampiamente attesa (KB): sul canale della domanda di calcolo nessuna sorpresa, come per
+    l''EO 14110 che la KB dichiara neutral su SOXX. Criterio ex ante, nessun prezzo consultato. Revisione
+    Claude 2026-11-04.'
+  direction: neutral
+  description: Newsom firma SB 53 (trasparenza dei modelli di frontiera)
+- date: '2025-07-01'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
+    al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione anticipata dell'AI
+    e pause di sicurezza dei modelli- trasmissione ai semiconduttori, al software e alle utility — regime
+    ed episodi storici (2018–presente).md
+  reason: 'Canale (c) inverso, dichiarato dalla KB solo su IGV: riguarda la conformità del software, non
+    la domanda di chip. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-04.'
+  status: excluded
+  description: Il Senato toglie la moratoria decennale sulle leggi statali sull'AI
+- date: '2025-01-21'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
+    al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione anticipata dell'AI
+    e pause di sicurezza dei modelli- trasmissione ai semiconduttori, al software e alle utility — regime
+    ed episodi storici (2018–presente).md
+  reason: Revoca promessa in campagna e interamente scontata (KB); l'EO toccava la domanda di calcolo
+    con le soglie di notifica, e la KB dichiara neutral su SOXX già la sua firma pre-annunciata. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-04.
+  direction: neutral
+  description: Prima seduta dopo la revoca dell'EO 14110
+- date: '2024-09-30'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
+    al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione anticipata dell'AI
+    e pause di sicurezza dei modelli- trasmissione ai semiconduttori, al software e alle utility — regime
+    ed episodi storici (2018–presente).md
+  reason: 'Veto solo in parte atteso (KB) e dichiarato su IGV: sul canale dei chip l''attesa non ha un
+    segno chiaro. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-04.'
+  status: excluded
+  description: Veto di Newsom a SB 1047
+- date: '2024-03-13'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
+    al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione anticipata dell'AI
+    e pause di sicurezza dei modelli- trasmissione ai semiconduttori, al software e alle utility — regime
+    ed episodi storici (2018–presente).md
+  reason: 'Voto in calendario dopo l''accordo provvisorio dell''8/12/2023 (KB): le soglie di calcolo per
+    i modelli generali erano note, nessuna sorpresa sulla domanda di chip. Criterio ex ante, nessun prezzo
+    consultato. Revisione Claude 2026-11-04.'
+  direction: neutral
+  description: Voto in plenaria del Parlamento europeo sull'AI Act
+- date: '2023-03-31'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
+    al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione anticipata dell'AI
+    e pause di sicurezza dei modelli- trasmissione ai semiconduttori, al software e alle utility — regime
+    ed episodi storici (2018–presente).md
+  reason: 'Provvedimento su un servizio al consumatore in un solo paese, dichiarato dalla KB su IGV: nessun
+    canale verso la domanda di chip. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-04.'
+  status: excluded
+  description: Il Garante italiano blocca ChatGPT

@@ -1,0 +1,129 @@
+research: lacuna regolazione-semiconduttori-verso (structural_themes, regulatory_anticipation, rif SOXX;
+  sotto-tema locale)
+voci:
+- data: '2025-12-12'
+  tema: structural_themes
+  fonte: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
+    al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione anticipata dell'AI
+    e pause di sicurezza dei modelli- trasmissione ai semiconduttori, al software e alle utility — regime
+    ed episodi storici (2018–presente).md
+  riga: '| 2025-12-12 | IGV | neutral | regulatory_anticipation | Primo giorno di contrattazione dopo
+    l''EO «Ensuring a National Policy Framework for Artificial Intelligence» (preemption delle leggi statali)\[27\]
+    | Firma giovedì 2025-12-11 «Thursday evening» (Roll Call; CNN alle 19:20 ET): prima seduta vener'
+  evento: Ordine esecutivo sulla preemption delle leggi statali sull'AI (firmato l'11/12)
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'La KB lo dichiara solo su IGV, canale (c) della conformità per chi usa i modelli: nessuna
+      attesa sulla domanda di chip. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-04.'
+  stato: promossa
+- data: '2025-09-29'
+  tema: structural_themes
+  fonte: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
+    al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione anticipata dell'AI
+    e pause di sicurezza dei modelli- trasmissione ai semiconduttori, al software e alle utility — regime
+    ed episodi storici (2018–presente).md
+  riga: '| 2025-09-29 | IGV | neutral | regulatory_anticipation | Newsom firma SB 53 (trasparenza per
+    i modelli di frontiera)\[26\] | Firma lunedì 29 settembre (comunicato dell''ufficio del governatore;
+    Hunton, Baker Botts); ora non nota. Firma ampiamente attesa: neutral. |'
+  evento: Newsom firma SB 53 (trasparenza dei modelli di frontiera)
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: neutral
+    perché: 'Firma ampiamente attesa (KB): sul canale della domanda di calcolo nessuna sorpresa, come
+      per l''EO 14110 che la KB dichiara neutral su SOXX. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-04.'
+  stato: promossa
+- data: '2025-07-01'
+  tema: structural_themes
+  fonte: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
+    al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione anticipata dell'AI
+    e pause di sicurezza dei modelli- trasmissione ai semiconduttori, al software e alle utility — regime
+    ed episodi storici (2018–presente).md
+  riga: 'La tesi centrale si articola in quattro punti. Primo: fra il 2023 e il 2025 la regolazione "dura"
+    dell''AI negli Stati Uniti e nell''UE ha prodotto quasi soltanto eventi calendarizzati o pre-annunciati.
+    L''ordine esecutivo 14110 del 2023-10-30 era stato illustrato alla stampa la domenica precedente.
+    Il'
+  evento: Il Senato toglie la moratoria decennale sulle leggi statali sull'AI
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Canale (c) inverso, dichiarato dalla KB solo su IGV: riguarda la conformità del software,
+      non la domanda di chip. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-04.'
+  stato: promossa
+- data: '2025-01-21'
+  tema: structural_themes
+  fonte: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
+    al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione anticipata dell'AI
+    e pause di sicurezza dei modelli- trasmissione ai semiconduttori, al software e alle utility — regime
+    ed episodi storici (2018–presente).md
+  riga: '| 2025-01-21 | IGV | neutral | regulatory_anticipation | Primo giorno di contrattazione dopo
+    la revoca dell''EO 14110 da parte di Trump | Revoca il 2025-01-20, giorno dell''insediamento e Martin
+    Luther King Day (mercati USA chiusi): prima seduta 21 gennaio. Revoca promessa in campagna: interamente
+    sco'
+  evento: Prima seduta dopo la revoca dell'EO 14110
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: neutral
+    perché: Revoca promessa in campagna e interamente scontata (KB); l'EO toccava la domanda di calcolo
+      con le soglie di notifica, e la KB dichiara neutral su SOXX già la sua firma pre-annunciata. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-04.
+  stato: promossa
+- data: '2024-09-30'
+  tema: structural_themes
+  fonte: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
+    al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione anticipata dell'AI
+    e pause di sicurezza dei modelli- trasmissione ai semiconduttori, al software e alle utility — regime
+    ed episodi storici (2018–presente).md
+  riga: '| 2024-09-30 | IGV | pos | regulatory_anticipation | Primo giorno di contrattazione dopo il veto
+    di Newsom a SB 1047 (legge californiana sui modelli di frontiera) | Veto domenica 2024-09-29 (TechCrunch,
+    SF Standard, Crowell): prima seduta utile lunedì 30. Canale (c). Veto parzialmente atteso (Newsom'
+  evento: Veto di Newsom a SB 1047
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Veto solo in parte atteso (KB) e dichiarato su IGV: sul canale dei chip l''attesa non ha
+      un segno chiaro. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-04.'
+  stato: promossa
+- data: '2024-03-13'
+  tema: structural_themes
+  fonte: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
+    al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione anticipata dell'AI
+    e pause di sicurezza dei modelli- trasmissione ai semiconduttori, al software e alle utility — regime
+    ed episodi storici (2018–presente).md
+  riga: 'La tesi centrale si articola in quattro punti. Primo: fra il 2023 e il 2025 la regolazione "dura"
+    dell''AI negli Stati Uniti e nell''UE ha prodotto quasi soltanto eventi calendarizzati o pre-annunciati.
+    L''ordine esecutivo 14110 del 2023-10-30 era stato illustrato alla stampa la domenica precedente.
+    Il'
+  evento: Voto in plenaria del Parlamento europeo sull'AI Act
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: neutral
+    perché: 'Voto in calendario dopo l''accordo provvisorio dell''8/12/2023 (KB): le soglie di calcolo
+      per i modelli generali erano note, nessuna sorpresa sulla domanda di chip. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-04.'
+  stato: promossa
+- data: '2023-03-31'
+  tema: structural_themes
+  fonte: kb:Regolazione anticipata dell'AI e pause di sicurezza dei modelli; trasmissione ai semiconduttori,
+    al software e alle utility — regime ed episodi storici (2018–presente)/Regolazione anticipata dell'AI
+    e pause di sicurezza dei modelli- trasmissione ai semiconduttori, al software e alle utility — regime
+    ed episodi storici (2018–presente).md
+  riga: '| 2023-03-31 | IGV | neg | regulatory_anticipation | Il Garante privacy italiano dispone la limitazione
+    provvisoria del trattamento dei dati degli utenti italiani da parte di OpenAI (blocco di ChatGPT)\[17\]
+    | Fonte: comunicato Garante «Roma, 31 marzo 2023» (provvedimento del 30 marzo); Open, Il Fog'
+  evento: Il Garante italiano blocca ChatGPT
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: escluso
+    perché: 'Provvedimento su un servizio al consumatore in un solo paese, dichiarato dalla KB su IGV:
+      nessun canale verso la domanda di chip. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-04.'
+  stato: promossa
