@@ -218,26 +218,30 @@ voci:
   fonte: 2026-09-04/news_05.md
   riga: '| `2025-06-24` | pos | negotiation_track, de_escalation | Consolidamento del cessate il fuoco
     mediorientale. |'
-  evento: Consolidamento del cessate il fuoco Israele-Iran
+  evento: Prima seduta dopo il cessate il fuoco Israele-Iran
   meccanismo: []
   dichiarazioni:
   - asset: TTF=F
-    verso: escluso
-    perché: 'Nessun evento nuovo: seduta successiva all’annuncio del 2025-06-23, che porta il verso. Criterio
-      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+    verso: neg
+    perché: 'Prima seduta dopo il cessate il fuoco Israele-Iran, annunciato da Trump la sera del 23 a
+      mercati europei chiusi: la tregua riduce il rischio su Hormuz, da cui transita il GNL qatariota,
+      e il premio sul gas europeo scende. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-05, corretta lo stesso giorno (prima: escluso come seduta successiva).'
   stato: promossa
 - data: '2025-06-23'
   tema: geopolitical
   fonte: 2026-09-04/news_05.md
   riga: '| `2025-06-23` | pos | negotiation_track, de_escalation, iran | Annuncio di cessate il fuoco
     nel teatro Israele-Iran: il greggio restituì l''intero premio geopolitico in una seduta. |'
-  evento: Annuncio del cessate il fuoco Israele-Iran
+  evento: Strike USA del weekend e rappresaglia iraniana limitata
   meccanismo: []
   dichiarazioni:
   - asset: TTF=F
-    verso: neg
-    perché: 'La tregua riduce il rischio su Hormuz, da cui transita il GNL qatariota: premio di rischio
-      sul gas europeo in calo. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+    verso: escluso
+    perché: 'Seduta mista: lo strike USA sui siti nucleari di domenica 22 e la rappresaglia iraniana limitata
+      e preannunciata su Al Udeid hanno segni opposti; la tregua arriva la sera, a mercati europei chiusi,
+      e pesa sul 24. Nessun segno netto. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-05, corretta lo stesso giorno (prima: neg come annuncio della tregua).'
   stato: promossa
 - data: '2025-05-19'
   tema: geopolitical

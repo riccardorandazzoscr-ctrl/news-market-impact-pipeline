@@ -14649,18 +14649,22 @@ reviews:
   theme: geopolitical
   reference: TTF=F
   source: 2026-09-04/news_05.md
-  reason: 'Nessun evento nuovo: seduta successiva all’annuncio del 2025-06-23, che porta il verso. Criterio
-    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
-  status: excluded
-  description: Consolidamento del cessate il fuoco Israele-Iran
+  reason: 'Prima seduta dopo il cessate il fuoco Israele-Iran, annunciato da Trump la sera del 23 a
+    mercati europei chiusi: la tregua riduce il rischio su Hormuz, da cui transita il GNL qatariota,
+    e il premio sul gas europeo scende. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-05, corretta lo stesso giorno (prima: escluso come seduta successiva).'
+  direction: neg
+  description: Prima seduta dopo il cessate il fuoco Israele-Iran
 - date: '2025-06-23'
   theme: geopolitical
   reference: TTF=F
   source: 2026-09-04/news_05.md
-  reason: 'La tregua riduce il rischio su Hormuz, da cui transita il GNL qatariota: premio di rischio
-    sul gas europeo in calo. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
-  direction: neg
-  description: Annuncio del cessate il fuoco Israele-Iran
+  reason: 'Seduta mista: lo strike USA sui siti nucleari di domenica 22 e la rappresaglia iraniana
+    limitata e preannunciata su Al Udeid hanno segni opposti; la tregua arriva la sera, a mercati
+    europei chiusi, e pesa sul 24. Nessun segno netto. Criterio ex ante, nessun prezzo consultato.
+    Revisione Claude 2026-11-05, corretta lo stesso giorno (prima: neg come annuncio della tregua).'
+  status: excluded
+  description: Strike USA del weekend e rappresaglia iraniana limitata
 - date: '2025-05-19'
   theme: geopolitical
   reference: TTF=F

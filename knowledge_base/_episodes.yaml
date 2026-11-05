@@ -1,4 +1,4 @@
-generated_at: '2026-11-05T09:46:13'
+generated_at: '2026-11-05T16:53:46'
 num_episodes: 1596
 episodes:
 - date: '1984-01-01'
@@ -60551,12 +60551,12 @@ episodes:
   - pos
   directions_declared:
   - pos
-  directions_by_reference:
-    TTF=F:
-    - neg
-  direction_sources:
-    TTF=F:
-    - card:2026-09-04/news_05.md
+  direction_review_excluded:
+    TTF=F: 'Seduta mista: lo strike USA sui siti nucleari di domenica 22 e la rappresaglia
+      iraniana limitata e preannunciata su Al Udeid hanno segni opposti; la tregua
+      arriva la sera, a mercati europei chiusi, e pesa sul 24. Nessun segno netto.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05, corretta
+      lo stesso giorno (prima: neg come annuncio della tregua).'
   directions_local:
   - neg
   - pos
@@ -60636,9 +60636,6 @@ episodes:
     - iran
     - military_escalation
     - negotiation_track
-    directions_by_reference:
-      TTF=F:
-      - neg
     sources:
     - card:2026-06-16/news_02.md
     - card:2026-06-20/news_01.md
@@ -60780,9 +60777,7 @@ episodes:
       - de_escalation
       - iran
       - negotiation_track
-      directions_by_reference:
-        TTF=F:
-        - neg
+      directions_by_reference: {}
     - source: card:2026-09-06/news_01.md
       subthemes_local:
       - de_escalation
@@ -60818,15 +60813,15 @@ episodes:
     ILS=X:
     - neg
     - pos
+    TTF=F:
+    - neg
   direction_sources:
     ILS=X:
     - kb:Elezioni e rischio politico in Israele_ voto, governi, riforma giudiziaria,
       rating e impatto su USD_ILS (2013–presente)/Elezioni e rischio politico in Israele_
       voto, governi, riforma giudiziaria, rating e impatto su USD_ILS (2013–presente).md
-  direction_review_excluded:
-    TTF=F: 'Nessun evento nuovo: seduta successiva all’annuncio del 2025-06-23, che
-      porta il verso. Criterio ex ante, nessun prezzo consultato. Revisione Claude
-      2026-11-05.'
+    TTF=F:
+    - card:2026-09-04/news_05.md
   directions_local:
   - neg
   - pos
@@ -60915,6 +60910,8 @@ episodes:
       ILS=X:
       - neg
       - pos
+      TTF=F:
+      - neg
     sources:
     - card:2026-06-12/news_01.md
     - card:2026-06-13/news_01.md
@@ -61080,7 +61077,9 @@ episodes:
       subthemes_local:
       - de_escalation
       - negotiation_track
-      directions_by_reference: {}
+      directions_by_reference:
+        TTF=F:
+        - neg
     - source: card:2026-09-05/news_01.md
       subthemes_local:
       - iran
