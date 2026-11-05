@@ -1,0 +1,587 @@
+research: lacuna trattative-russia-ucraina-verso (geopolitical, negotiation_track, rif TTF=F; sotto-tema
+  locale)
+voci:
+- data: '2026-09-18'
+  tema: geopolitical
+  fonte: kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
+    a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi Houthi sull'Arabia Saudita nella doppia
+    strozzatura Hormuz-Mar Rosso_ trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026).md
+  riga: '| 2026-09-18 | BZ=F | neg | houthi, de_escalation, negotiation_track | Riad propone agli Houthi,
+    tramite l''Oman, una tregua di due settimane e colloqui diretti; dichiarazione stampa del Consiglio
+    di Sicurezza ONU\[23\] | Fonte: Jerusalem Post, 18/9 alle 10:24 UTC, che cita Al Akhbar (quotidiano
+    vici'
+  evento: Riad propone agli Houthi una tregua di due settimane (via Oman)
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Tregua nel Mar Rosso: canale greggio e trasporti; la fonte non dichiara un canale sul gas
+      europeo. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2026-09-06'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  riga: '| 2026-09-06 | Visita degli inviati USA (Witkoff, Kushner) a Kyiv dopo Mosca | annuncio di trattativa
+    (NON accordo) | ZW=F: neutral / BZ=F: neg (debole) | Canale 2 | **Annuncio di trattativa, non accordo
+    operativo**: nessun cessate-il-fuoco raggiunto ("the war will continue", Kyiv Independent). Da n'
+  evento: Inviati USA (Witkoff, Kushner) a Kyiv dopo Mosca
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: neg
+    perché: 'Annuncio di trattativa sul conflitto russo-ucraino: sale la probabilità di tregua e scende
+      il premio di rischio sul gas europeo. Debole: annuncio, non accordo (come la KB legge BZ=F). Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2026-05-27'
+  tema: geopolitical
+  fonte: 2026-09-04/news_05.md
+  riga: '| `2026-05-27` | pos | negotiation_track | Episodio più recente del pool nel regime corrente.
+    |'
+  evento: 'Rubio: ai colloqui USA-Iran sarà data «ogni possibilità di riuscire»'
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: neg
+    perché: 'Distensione sul dossier Iran/Hormuz nel regime di interruzione 2026: scende il rischio sul
+      GNL qatariota che transita da Hormuz. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-05.'
+  stato: promossa
+- data: '2026-02-27'
+  tema: geopolitical
+  fonte: 2026-09-04/news_05.md
+  riga: '| `2026-02-27` | pos | negotiation_track, military_escalation | Episodio ambivalente: pista negoziale
+    che coesiste con attività militare — **l''analogo più stretto della configurazione di oggi**. |'
+  evento: Pista negoziale che coesiste con attività militare
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'La fonte stessa lo dice ambivalente: segnali di segno opposto nella stessa data. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-12-27'
+  tema: geopolitical
+  fonte: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  riga: '| 2025-12-27 | Secondo cessate-il-fuoco Thailandia-Cambogia (mediazione Trump/Anwar) | disputa
+    confinaria (tregua) | pos./neutro | THB, THD | Nessuna reazione di mercato isolabile: baht già ai
+    massimi su oro/dollaro |'
+  evento: Secondo cessate-il-fuoco Thailandia-Cambogia
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Disputa confinaria nel Sud-Est asiatico: nessun canale sul gas europeo. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-11-10'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2025-11-10 | Attuazione deal: fentanyl tariff -10pp; sospensione controlli reciproci | T |
+    ↑ equity | ^GSPC | Sospensioni MOFCOM confermate; reciproci al 10% fino a nov-2026 |'
+  evento: Attuazione dell’accordo USA-Cina (dazio fentanyl -10pp)
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-10-30'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2025-10-30 | Vertice Trump-Xi Busan: tregua 1 anno | T | ↑ equity | ^GSPC, EEM | Cina sospende
+    terre rare 1 anno; fentanyl tariff da 20% a 10% |'
+  evento: 'Vertice Trump-Xi a Busan: tregua di un anno'
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-10-26'
+  tema: geopolitical
+  fonte: 2026-08-26/news_05.md
+  riga: '| `2025-10-26` | pos | tariff_escalation, negotiation_track | Firma dei quadri tariffari USA-ASEAN
+    a Kuala Lumpur (19-20%); la Thailandia azzera i dazi sul 99% dei beni americani. |'
+  evento: Firma dei quadri tariffari USA-ASEAN a Kuala Lumpur
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-08-18'
+  tema: geopolitical
+  fonte: 2026-08-28/news_01.md
+  riga: '| `2025-08-18` | neg | military_escalation, negotiation_track | Stallo del negoziato Russia-Ucraina
+    dopo il vertice: ritorno alle posizioni di partenza |'
+  evento: Vertice alla Casa Bianca su Russia-Ucraina dopo l’Alaska
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Segnali misti: la fonte lo legge come stallo, ma nello stesso giorno si discutono garanzie
+      di sicurezza e un incontro fra le parti. Nessun segno netto. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-08-12'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2025-08-12 | Estensione tregua Cina di 90gg | T | ↑ equity | ^GSPC | Evita ritorno al 34% |'
+  evento: Estensione di 90 giorni della tregua USA-Cina
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-08-01'
+  tema: geopolitical
+  fonte: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  riga: '| 2025-08-01 | Dazi ridotti al 19% per Thailandia e Cambogia (dopo tregua) | leva tariffaria
+    | pos. | THB, THD | Condizionati alla tregua confinaria |'
+  evento: Dazi al 19% per Thailandia e Cambogia dopo la tregua
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-07-28'
+  tema: geopolitical
+  fonte: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  riga: '| 2025-07-28 | Cessate-il-fuoco incondizionato (mediazione Anwar/Malaysia) | disputa confinaria
+    (tregua) | pos./neutro | THB, THD | Prima tregua; poi collassata |'
+  evento: Cessate-il-fuoco Thailandia-Cambogia (mediazione Malaysia)
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Disputa confinaria nel Sud-Est asiatico: nessun canale sul gas europeo. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-07-18'
+  tema: geopolitical
+  fonte: 2026-09-04/news_05.md
+  riga: '| `2025-07-18` | pos | negotiation_track | Ripresa dei contatti negoziali sul conflitto ucraino.
+    |'
+  evento: Ripresa dei contatti negoziali sul conflitto ucraino
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: neg
+    perché: 'Ripresa del negoziato russo-ucraino: probabilità di tregua in aumento, premio di rischio
+      sul gas europeo in calo. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-07-14'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2025-07-14 | USA riammette licenze H20/MI308 (Nvidia/AMD) | X/T | ↑ semi | SOXX, ^NDX | Nvidia
+    +4% (Nasdaq record close), AMD +4% il 15-lug |'
+  evento: USA riammettono le licenze H20/MI308
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Export control sui chip: nessun canale sul gas europeo. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-06-25'
+  tema: geopolitical
+  fonte: 2026-09-04/news_05.md
+  riga: '| `2025-06-25` | pos | negotiation_track, de_escalation | Terza seduta di rientro del premio
+    di rischio. |'
+  evento: Terza seduta dopo il cessate il fuoco Israele-Iran
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Nessun evento nuovo: seduta successiva all’annuncio del 2025-06-23, che porta il verso. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-06-24'
+  tema: geopolitical
+  fonte: 2026-09-04/news_05.md
+  riga: '| `2025-06-24` | pos | negotiation_track, de_escalation | Consolidamento del cessate il fuoco
+    mediorientale. |'
+  evento: Consolidamento del cessate il fuoco Israele-Iran
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Nessun evento nuovo: seduta successiva all’annuncio del 2025-06-23, che porta il verso. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-06-23'
+  tema: geopolitical
+  fonte: 2026-09-04/news_05.md
+  riga: '| `2025-06-23` | pos | negotiation_track, de_escalation, iran | Annuncio di cessate il fuoco
+    nel teatro Israele-Iran: il greggio restituì l''intero premio geopolitico in una seduta. |'
+  evento: Annuncio del cessate il fuoco Israele-Iran
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: neg
+    perché: 'La tregua riduce il rischio su Hormuz, da cui transita il GNL qatariota: premio di rischio
+      sul gas europeo in calo. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-05-19'
+  tema: geopolitical
+  fonte: 2026-09-04/news_05.md
+  riga: '| `2025-05-19` | pos | negotiation_track | Contatto diretto fra le parti sul dossier ucraino:
+    il mercato prezza una probabilità di tregua. |'
+  evento: Telefonata Trump-Putin sul dossier ucraino
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: neg
+    perché: 'Contatto diretto al vertice sul conflitto: probabilità di tregua in aumento, premio di rischio
+      sul gas europeo in calo. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-05-12'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2025-05-12 | Tregua di Ginevra: reciproci USA-Cina tagliati al 10% per 90gg | T | ↑ equity
+    | ^GSPC, EEM | De-escalation; rally |'
+  evento: Tregua di Ginevra USA-Cina sui dazi
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-05-06'
+  tema: geopolitical
+  fonte: kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar Rosso,
+    trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_ attacchi alle infrastrutture
+    energetiche saudite ed emiratine e crisi del Mar Rosso, trasmissione a greggio, prodotti, trasporti
+    e gas (2015-presente).md
+  riga: '**Canale 7 — De-escalation e tregue (direzionale, segno opposto).** Catena: `tregua o cessate-il-fuoco
+    → premio di rischio ↓ → BZ=F ↓, IYT ↑ (ritorno atteso ai transiti)`. Riguarda la tregua ONU dell''aprile
+    2022, il cessate-il-fuoco USA-Houthi del 2025-05-06 e la pausa dopo la tregua di Gaza dell''ot'
+  evento: Cessate-il-fuoco USA-Houthi (mediazione Oman)
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Canale 7 della KB: greggio e trasporti; nessun canale dichiarato sul gas europeo. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-04-11'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2025-04-11 | Esenzione smartphone/semiconduttori da EO 2-apr | T/X | ↑ tech | ^NDX, SOXX |
+    Sollievo settoriale; Mag7 +1,9% |'
+  evento: Esenzione di smartphone e semiconduttori dai dazi del 2 aprile
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-04-09'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2025-04-09 | Pausa 90gg reciproci (tranne Cina, a 125%) | T | ↑↑ equity | ^GSPC, ^NDX | S&P
+    +9,52% a 5.456,90 (miglior giorno da 2008, 3° post-WWII); Dow +7,87%, Nasdaq +12,16% |'
+  evento: Pausa di 90 giorni sui dazi reciproci
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-02-28'
+  tema: geopolitical
+  fonte: 2026-09-02/news_06.md
+  riga: '| `2025-02-28` | neg | military_escalation, nato, negotiation_track | Rottura diplomatica sul
+    percorso negoziale ucraino |'
+  evento: Rottura nello Studio Ovale fra Trump e Zelensky
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: pos
+    perché: 'Rottura diplomatica sul percorso negoziale: la probabilità di tregua scende e il premio di
+      rischio sul gas europeo risale. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2025-02-24'
+  tema: geopolitical
+  fonte: 2026-08-28/news_01.md
+  riga: '| `2025-02-24` | neg | military_escalation, negotiation_track | Terzo anniversario dell''invasione
+    con rottura del canale diplomatico |'
+  evento: Terzo anniversario dell’invasione
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Segnali misti: la fonte parla di rottura del canale diplomatico, ma il canale USA-Russia
+      aperto a Riad il 18/2 resta attivo. Nessun segno netto. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2023-11-15'
+  tema: geopolitical
+  fonte: 2026-09-23/news_03.md
+  riga: '| `2023-11-15` | pos | negotiation_track | Vertice Biden-Xi a Woodside: disgelo diplomatico,
+    ripresa dei canali militari |'
+  evento: Vertice Biden-Xi a Woodside
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2023-05-17'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  riga: '| 2023-05-17 | Rinnovo BSGI per 60 giorni (mercoledì) | riapertura (rinnovo) | ZW=F: neg / ZC=F:
+    neg | Canale 1 | "Confirmation… put pressure on the CBOT grains complex, with wheat catching most
+    of the selling" (Dow Jones). Disallineamento con energia ferma. |'
+  evento: Rinnovo dell’accordo sul grano per 60 giorni
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Accordo sul corridoio del grano: il canale è cereali e trasporti, i flussi di gas non cambiano.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2023-03-28'
+  tema: geopolitical
+  fonte: kb:Elezioni e rischio politico in Israele_ voto, governi, riforma giudiziaria, rating e impatto
+    su USD_ILS (2013–presente)/Elezioni e rischio politico in Israele_ voto, governi, riforma giudiziaria,
+    rating e impatto su USD_ILS (2013–presente).md
+  riga: '**Premio istituzionale (canale direzionale).** La catena è: annuncio o voto di una misura che
+    riduce l''indipendenza della magistratura → aumento del rischio percepito di governance e di rating,
+    minacce di delocalizzazione del settore tech, rallentamento delle conversioni di dollari da parte
+    di espor'
+  evento: Pausa della riforma giudiziaria in Israele
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Rischio politico israeliano: nessun canale sul gas europeo. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2023-03-20'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  riga: '| 2023-03-20 | Rinnovo BSGI annunciato sabato 18/03 → prima seduta utile lunedì | riapertura
+    (rinnovo) | ZW=F: neg | Canale 1 | Annuncio nel weekend: reazione datata a lunedì 20/03. "Following
+    Black Sea grain deal extension, wheat falls" (Farm Policy News). |'
+  evento: Rinnovo dell’accordo sul grano (annuncio del 18/3)
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Accordo sul corridoio del grano: il canale è cereali e trasporti, i flussi di gas non cambiano.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2022-11-02'
+  tema: geopolitical
+  fonte: kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione ai mercati
+    — regime ed episodi storici (2013–presente)/Il corridoio cerealicolo del Mar Nero- guerra, accordi
+    sul grano e trasmissione ai mercati — regime ed episodi storici (2013–presente).md
+  riga: '| 2022-11-02 | Russia rientra nell''accordo | riapertura | ZW=F: neg | Canale 1 | Rientro dopo
+    garanzie ucraine; riassorbe lo spike del 31/10. |'
+  evento: La Russia rientra nell’accordo sul grano
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Accordo sul corridoio del grano: il canale è cereali e trasporti, i flussi di gas non cambiano.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2022-04-01'
+  tema: geopolitical
+  fonte: kb:Houthi_ attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar Rosso,
+    trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_ attacchi alle infrastrutture
+    energetiche saudite ed emiratine e crisi del Mar Rosso, trasmissione a greggio, prodotti, trasporti
+    e gas (2015-presente).md
+  riga: '| 2022-04-01 | BZ=F | neg | de_escalation, negotiation_track, houthi | L''inviato ONU Grundberg
+    annuncia una tregua di due mesi, in vigore dal 2022-04-02 alle 19:00\[50\]\[51\] | Annuncio da Amman
+    venerdì 1 aprile (nota ONU); l''ora esatta non è verificata.\[51\] Se fosse uscito dopo la chiusura,
+    la s'
+  evento: Tregua ONU di due mesi in Yemen
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Tregua nel Mar Rosso: canale greggio e trasporti; nessun canale dichiarato sul gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2020-01-15'
+  tema: geopolitical
+  fonte: 2026-09-23/news_03.md
+  riga: '| `2020-01-15` | pos | negotiation_track | Firma della Phase One alla Casa Bianca (testo già
+    noto: reazione attesa contenuta) |'
+  evento: Firma della Phase One USA-Cina
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2019-12-13'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2019-12-13 | Annuncio accordo Phase One; cancellato dazio 15-dic | T | ↑ equity | ^GSPC, ^NDX
+    | Evita deadline 15-dic (List 4B); mercati a nuovi massimi |'
+  evento: Annuncio dell’accordo Phase One
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2019-10-11'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2019-10-11 | "Phase One" annuncio verbale (mini-deal) | T | ↑ equity | ^GSPC | Accordo di massima;
+    testo non finalizzato |'
+  evento: 'Phase One: annuncio verbale'
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2019-08-13'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2019-08-13 | USTR sposta parte List 4 al 15-dic (elettronica, giocattoli) | A | ↑ equity (sollievo)
+    | ^NDX | Rinvio per stagione shopping; "buy-the-news" parziale |'
+  evento: USTR rinvia parte della List 4 al 15 dicembre
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2019-08-01'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2019-08-01 | Minaccia dazi 10% su $300bn (List 4) dal 1-set | E | ↓ equity, ↑VIX | ^GSPC, ^VIX
+    | Annuncio via tweet a mercati aperti; rompe la tregua di Osaka |'
+  evento: Minaccia di dazi al 10% su 300 miliardi
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2019-07-01'
+  tema: geopolitical
+  fonte: 2026-09-17/news_02.md
+  riga: '| `2019-07-01` | pos | sanctions, negotiation_track, hormuz, oil_supply_shock | L''Iran supera
+    i limiti sull''uranio arricchito previsti dal JCPOA e si avvita la spirale sanzionatoria. |'
+  evento: L’Iran supera i limiti JCPOA sull’uranio
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Spirale sanzionatoria sull’Iran: canale greggio; nessun canale dichiarato sul gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2019-06-29'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2019-06-29 | Tregua G20 Osaka: ripresa negoziati | T | ↑ equity | ^GSPC | Sospensione minaccia
+    $300bn; nessun impegno cinese confermato |'
+  evento: Tregua del G20 di Osaka
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2018-12-03'
+  tema: geopolitical
+  fonte: 2026-09-23/news_03.md
+  riga: 'La libreria (`analogues.py find --theme geopolitical --subtheme negotiation_track --subtheme
+    tariff_escalation --direction pos --direction-reference ^GSPC --before 2026-09-23`) restituisce **0
+    episodi**: 68 episodi date-locali esistono, ma nessuno ha un verso dichiarato per ^GSPC in ambito
+    geopoliti'
+  evento: Prima seduta dopo la tregua del G20 di Buenos Aires
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2018-12-01'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2018-12-01 | Tregua G20 Buenos Aires (Trump-Xi): pausa 90gg | T | ↑ equity | ^GSPC | Rinvio
+    aumento List 3; sollievo temporaneo |'
+  evento: Tregua del G20 di Buenos Aires
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2018-05-08'
+  tema: geopolitical
+  fonte: 2026-09-17/news_02.md
+  riga: '| `2018-05-08` | pos | sanctions, iran, negotiation_track | Gli Stati Uniti escono dall''accordo
+    nucleare iraniano (JCPOA) e reimpongono le sanzioni, incluse quelle **secondarie** sugli acquirenti:
+    è il precedente diretto del meccanismo della legge Graham. |'
+  evento: Gli USA escono dal JCPOA
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Sanzioni sul greggio iraniano: canale greggio; nessun canale dichiarato sul gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
+- data: '2017-11-08'
+  tema: geopolitical
+  fonte: 2026-09-23/news_03.md
+  riga: '| `2017-11-08` | pos | negotiation_track | Visita di Stato di Trump a Pechino: distensione e
+    annunci di accordi commerciali → meno rischio dazi → pressione al rialzo su ^GSPC |'
+  evento: Visita di Stato di Trump a Pechino
+  meccanismo: []
+  dichiarazioni:
+  - asset: TTF=F
+    verso: escluso
+    perché: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio del gas europeo.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
+  stato: promossa
