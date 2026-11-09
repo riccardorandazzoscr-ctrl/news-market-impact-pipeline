@@ -1,4 +1,4 @@
-# Prompt di ricerca notizie — Morning Briefing (v3.2, 2026-10-17)
+# Prompt di ricerca notizie — Morning Briefing (v3.3, 2026-11-09)
 
 > Questo è il prompt che il job `com.riccardo.newsimpact.brief` esegue ogni mattina
 > alle 07:40. Copia canonica e versionabile, **fonte unica**:
@@ -33,6 +33,11 @@
 > - v3.1→v3.2 (10-17): **Bigdata tolto.** Un run ha consumato 196 crediti (914→718): il saldo
 >   sarebbe finito in tre giorni. Si torna ai soli livelli web; il prompt vieta il connettore,
 >   che resta collegato all'account.
+> - v3.2→v3.3 (11-09): **titoli FT dai feed RSS pubblici.** Il crawler resta bloccato su ft.com,
+>   ma i feed `ft.com/<sezione>?format=rss` rispondono a `curl` (titolo, sottotitolo, ora; niente
+>   testo). Si leggono via Bash all'inizio del run, come segnale di cosa cercare: un titolo FT
+>   da solo non entra nel briefing, serve una seconda fonte letta. Niente login: l'accesso FT
+>   universitario è personale e il job è headless.
 
 ---
 
@@ -45,6 +50,7 @@ updated in that window. Write the **entire briefing in English**.
 Associated Press, Financial Times, Wall Street Journal, The Economist, BBC, The Guardian,
 New York Times, Politico, MarketWatch, Barron's, Le Monde and El País cannot be fetched
 and do not even appear in search results. Do not search for them or cite them.
+(Exception: Financial Times headlines from its public RSS feeds, see below.)
 Use these tiers instead. Do not use the Bigdata.com connector even if its tools are
 available (its credits are pay-as-you-go).
 1. **Primary institutional sources — mandatory for every data point.** For any macro
@@ -60,6 +66,13 @@ available (its credits are pay-as-you-go).
    "not accessible to our user agent", remove the domains it names and retry.
    Bloomberg pages often cannot be opened: you may use a Bloomberg headline or search
    snippet only together with a second source you actually read.
+   **Financial Times headlines (scouting only).** At the start, run this in Bash to list
+   recent FT headlines with their standfirst and time (FT pages themselves stay blocked):
+   `for s in markets world global-economy companies; do curl -s -m 20 -A "Mozilla/5.0" "https://www.ft.com/$s?format=rss"; done | perl -0ne 'while(/<item>.*?<title><!\[CDATA\[(.*?)\]\]>.*?<description><!\[CDATA\[(.*?)\]\]>.*?<pubDate>(.*?)<\/pubDate>/sg){print "$3 | $1 | $2\n"}' | sort -u`
+   Use them to spot stories, especially scoops, that your searches might miss, then find
+   and read a tier 1 or tier 2 source for each. An FT headline never enters the briefing
+   on its own: same rule as Bloomberg, and cite the source you read, not the FT. If the
+   command returns nothing, carry on without it.
 3. **Anything else — fallback only.** Other sites (market blogs, aggregators, newsletters,
    data portals like Trading Economics) may fill a gap, but never as the sole source for a
    figure when tier 1 has it, and mark them "(secondary source)" next to the citation.
