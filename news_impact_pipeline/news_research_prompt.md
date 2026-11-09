@@ -38,6 +38,9 @@
 >   testo). Si leggono via Bash all'inizio del run, come segnale di cosa cercare: un titolo FT
 >   da solo non entra nel briefing, serve una seconda fonte letta. Niente login: l'accesso FT
 >   universitario è personale e il job è headless.
+>   Testo intero FT: solo in sessione interattiva, con Claude in Chrome sul Chrome di Riccardo
+>   (login FT universitario fatto da lui il 2026-11-09). Per approfondire una notizia o
+>   preparare una research; nessun articolo copiato nella KB o nelle schede, si cita il link.
 
 ---
 
