@@ -1,5 +1,5 @@
-generated_at: '2026-11-02T17:56:08'
-num_entries: 48
+generated_at: '2026-11-09T11:51:05'
+num_entries: 50
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -552,6 +552,89 @@ entries:
   - asset purchases
   - energy shock
   - Middle East war
+- source_file: Distensioni geopolitiche e premio di rischio sul petrolio_ forme di
+    distensione ed episodi storici 2013-2026/Distensioni geopolitiche e premio di
+    rischio sul petrolio_ forme di distensione ed episodi storici 2013-2026.md
+  title: 'Distensioni geopolitiche e premio di rischio sul petrolio: dichiarazioni
+    unilaterali, trattative, tregue, accordi firmati ed eventi politici di terzi —
+    regime ed episodi storici (2013–presente)'
+  date_compiled: 2026-11-05
+  primary_theme: commodity_energy
+  sub_themes:
+  - de_escalation
+  - verbal_de_escalation
+  - peace_talks
+  - ceasefire
+  - signed_agreement
+  - election_risk
+  - negotiation_track
+  - hormuz
+  - iran
+  - houthi
+  - shipping_chokepoint
+  - sanctions
+  - supply_disruption
+  - refinery_products
+  - infrastructure_attack
+  - military_escalation
+  - black_sea
+  - gas_europe
+  - opec_policy
+  relevant_assets:
+  - BZ=F
+  - HO=F
+  - RB=F
+  - XLE
+  - IYT
+  - TTF=F
+  external_assets_mentioned:
+  - 'WTI (CL=F) — benchmark USA: separa la componente domestica da quella del Golfo'
+  - 'Dubai e Oman — greggi del Golfo esposti a Hormuz: misurano il premio regionale'
+  - 'Spread Brent-Dubai (EFS) — oltre 16 $/b ad aprile 2026 (Platts): scarsità di
+    greggio sour del Golfo'
+  - 'Murban — greggio emiratino fisico: disponibilità di barili fuori da Hormuz'
+  - 'Dated Brent — oltre 140 $/b ad aprile 2026: scarsità fisica non incorporata nei
+    future'
+  - 'Baltic Dirty Tanker Index — noli petroliere: canale chokepoint'
+  - Premi assicurativi war risk — costo del transito a Hormuz e nel Mar Rosso
+  - Crack del gasolio europeo ICE — canale prodotti raffinati in Europa
+  - 'OVX — volatilità implicita del greggio: compressione dell''incertezza'
+  time_window:
+    start: 2013-01-01
+    end: present
+  regime_phases:
+  - iran_nuclear_diplomacy: 2013-01-01 to 2018-05-07
+  - maximum_pressure_and_pandemic: 2018-05-08 to 2022-02-23
+  - ukraine_war_supply_shock: 2022-02-24 to 2023-10-06
+  - red_sea_iran_israel: 2023-10-07 to 2026-02-27
+  - iran_war_hormuz: 2026-02-28 to present
+  keywords:
+  - distensione
+  - tregua
+  - cessate il fuoco
+  - accordo firmato
+  - MoU
+  - Memorandum di Islamabad
+  - sospensione dello strike
+  - elezioni
+  - midterm
+  - poteri di guerra
+  - premio di rischio
+  - Stretto di Hormuz
+  - blocco navale
+  - sanzioni
+  - de-escalation
+  - war powers
+  - election
+  - ceasefire
+  - peace deal
+  - signed agreement
+  - risk premium
+  - Strait of Hormuz
+  - naval blockade
+  - peace talks
+  - mediation
+  - event study
 - source_file: Elezioni LatAm e nazionalismo delle risorse, rame e litio (2018–2026)/Elezioni
     LatAm e nazionalismo delle risorse- rame e litio (2018–2026).md
   title: 'Elezioni LatAm e nazionalismo delle risorse: rame e litio (2018–2026)'
@@ -2837,6 +2920,78 @@ entries:
   - Italian spread
   - sovereign spread
   - fragmentation
+- source_file: Trattative Russia-Ucraina_ negoziati, cessate il fuoco e accordi operativi,
+    regimi ed episodi di mercato (2022-presente)/Trattative Russia-Ucraina_ negoziati,
+    cessate il fuoco e accordi operativi, regimi ed episodi di mercato (2022-presente).md
+  title: 'Trattative Russia-Ucraina: annunci di negoziato, cessate il fuoco e accordi
+    operativi — regime ed episodi storici (2022–presente)'
+  date_compiled: 2026-11-09
+  primary_theme: geopolitical
+  sub_themes:
+  - negotiation_track
+  - de_escalation
+  - peace_talks
+  - ceasefire
+  - sanctions
+  - black_sea
+  - russia
+  - ukraine
+  relevant_assets:
+  - ZW=F
+  - ZC=F
+  - TTF=F
+  - BZ=F
+  - HO=F
+  - SHLD.L
+  - ITA
+  - ^STOXX50E
+  - ^GDAXI
+  - EURUSD=X
+  - GC=F
+  external_assets_mentioned:
+  - STOXX Europe Total Market Aerospace & Defense — fonte delle cifre sulla difesa
+    europea; SHLD.L ne è solo un proxy
+  - RHM.DE (Rheinmetall) — titolo europeo della difesa più reattivo agli annunci di
+    pace
+  - Euronext milling wheat (EBM) — riflette più direttamente dell'americano ZW=F il
+    rischio del Mar Nero
+  - Sconto Urals-Brent — misura diretta dell'efficacia delle sanzioni su Rosneft e
+    Lukoil
+  - USD/RUB — reazione russa agli annunci di trattativa e di sanzioni
+  - Eurobond sovrani ucraini — prezzano direttamente la probabilità di cessate il
+    fuoco
+  - ICE Low Sulphur Gasoil — proxy europeo dei prodotti russi, più diretto di HO=F
+  - JKM (GNL asiatico) — controllo per separare il premio di rischio europeo dagli
+    shock globali del GNL
+  time_window:
+    start: 2022-02-24
+    end: present
+  regime_phases:
+  - early_war_negotiations: 2022-02-24 to 2022-04-03
+  - frozen_stalemate: 2022-04-04 to 2025-02-11
+  - us_brokered_track: 2025-02-12 to 2026-02-27
+  - iran_overlay_sanctions_bargaining: 2026-03-02 to present
+  keywords:
+  - trattative di pace
+  - negoziati
+  - cessate il fuoco
+  - tregua
+  - piano di pace
+  - Witkoff
+  - Kushner
+  - Riad
+  - Gedda
+  - Istanbul
+  - Alaska
+  - Ginevra
+  - Russia
+  - Ucraina
+  - peace talks
+  - ceasefire
+  - truce
+  - peace plan
+  - negotiations
+  - summit
 - source_file: bitcoin (2014-2026)/bitcoin (2014-2026).md
   title: 'Bitcoin e cripto: regimi, driver e trasmissione (2014–2026)'
   date_compiled: 2026-06-05
