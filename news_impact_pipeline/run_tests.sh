@@ -71,6 +71,10 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
   run "quant — Run 11: definizioni del protocollo e replay esplorativo (sola lettura)" \
       tests/test_quant_reazione.py
 
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "quant" ] && \
+  run "quant — Run 11b: reazione, reazione di oggi e seguito contro il normale in event_study.py" \
+      tests/test_event_study_reazione.py
+
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "forecast" ] && \
   run "forecast — uso dichiarato, scenario, correzioni e valutazione congelata (R09)" \
       tests/test_forecast_tracking.py

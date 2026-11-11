@@ -818,10 +818,13 @@ sopra è 0,65, a 60 giorni è 75%).
       e uno script che riproduce le misure 1–4 sopra in sola lettura. Commit del protocollo **prima**
       di qualsiasi codice che lo usi. Nessuna modifica alla pipeline. Fatto il 2026-10-07: protocollo nel commit 0813182.
       ⚠ Il test della 1.0.0 confondeva pool e regime: deciso il 2026-10-07, niente previsioni sul seguito.
-- [ ] **11b — `event_study.py`.** Flag per reazione (`R0`, `z0`, coerenza del verso), baseline normale
+- [x] **11b — `event_study.py`.** FATTO — 2026-11-11. Flag per reazione (`R0`, `z0`, coerenza del verso), baseline normale
       accanto al pool (descrittiva, con N effettivo; niente z né cancello) e reazione di oggi (`--reaction-session DATA`). Markdown compatto,
       righe di conclusione stampate dal tool. Test con serie sintetiche in `tests/` (look-ahead incluso:
       la baseline non deve vedere prezzi ≥ `a`). Nessun cambiamento al comportamento di default.
+      Note: `--reaction` (implica `--markdown`) stampa i tre blocchi; `--reaction-session`, `--direction` e
+      `--direction-reference` sono facoltativi. `sigma`/`reaction`/`baseline` ora stanno in `event_study.py` e
+      `quant_reazione.py` le importa. Numeri col punto, come le tabelle esistenti; seduta di reazione = data esatta.
 - [ ] **11c — Ledger.** Parsing dei nuovi blocchi; `register`/`audit` rifiutano `[previsione]` sul
       seguito; Wilson e giorni unici nella 5-bis; le righe esistenti restano byte per byte.
 - [ ] **11d — Template, runbook, render.** `news_card_template.md`, `PHASE5_RUNBOOK.md` (via la regola

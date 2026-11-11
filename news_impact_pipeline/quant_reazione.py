@@ -26,7 +26,7 @@ import yaml
 
 from analogues import LIB_PATH
 from bootstrap_market_data import DB_PATH
-from event_study import detect_monthly_data, load_price_series
+from event_study import baseline, detect_monthly_data, load_price_series, reaction, sigma
 from forecast_tracking import FLAT_THRESHOLD, LEDGER_PATH
 
 PROTOCOL_PATH = Path(__file__).resolve().parents[1] / "experiments/quant_reazione/protocol-1.0.0.json"
@@ -40,36 +40,7 @@ def load_protocol() -> dict:
     return json.loads(PROTOCOL_PATH.read_text(encoding="utf-8"))
 
 
-# --- definizioni del protocollo (pure) --------------------------------------------------------
-
-def sigma(p: np.ndarray, a: int, window: int) -> float | None:
-    """σ campionaria dei log-rendimenti delle `window` sedute che finiscono in a−1; mai prezzi ≥ a."""
-    if a - window - 1 < 0:
-        return None
-    seg = p[a - window - 1:a]
-    if (seg <= 0).any():
-        return None
-    s = float(np.std(np.diff(np.log(seg)), ddof=1))
-    return s if s > 0 else None
-
-
-def reaction(p: np.ndarray, a: int, window: int) -> tuple[float, float] | None:
-    """(R0 in %, z0) della seduta a contro a−1; None se σ non è calcolabile."""
-    s = sigma(p, a, window)
-    if s is None or p[a] <= 0:
-        return None
-    return (p[a] / p[a - 1] - 1) * 100, math.log(p[a] / p[a - 1]) / s
-
-
-def baseline(p: np.ndarray, a: int, h: int, window: int) -> np.ndarray | None:
-    """Rendimenti a h sedute (%) delle `window` finestre che terminano in a−window … a−1."""
-    if a - window - h < 0:
-        return None
-    seg = p[a - window - h:a]
-    if (seg <= 0).any():
-        return None
-    return (seg[h:] / seg[:-h] - 1) * 100
-
+# --- definizioni del protocollo (pure): sigma, reaction e baseline stanno in event_study.py ------
 
 def abs_z_all_sessions(s: pd.Series, window: int) -> pd.Series:
     """|z0| di ogni seduta della serie, con la stessa σ di `sigma` (controllo «giorno qualsiasi»)."""

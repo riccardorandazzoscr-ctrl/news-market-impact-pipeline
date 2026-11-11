@@ -44,12 +44,14 @@ Uso programmatico:
 """
 
 import argparse
+import math
 import sqlite3
 import sys
 from datetime import date, datetime
 from statistics import mean, median, pstdev
 from pathlib import Path
 
+import numpy as np
 import pandas as pd
 
 from bootstrap_market_data import DB_PATH
@@ -57,6 +59,10 @@ from bootstrap_market_data import DB_PATH
 
 DEFAULT_WINDOWS = [1, 3, 5, 10]
 SAMPLE_SIZE_WARNING_THRESHOLD = 10
+# Run 11 «reazione, non seguito»: stessi valori di experiments/quant_reazione/protocol-1.0.0.json
+SIGMA_WINDOW = 60          # sedute per la σ dei log-rendimenti giornalieri
+BASELINE_WINDOW = 250      # finestre per il comportamento normale dell'asset
+ANY_DAY_ABS_Z = 0.674      # mediana di |N(0,1)|: la mossa di «un giorno qualsiasi»
 
 
 # --- DB lookup -------------------------------------------------------------
@@ -274,9 +280,14 @@ def aggregate_stats(per_event: list[dict], windows: list[int]) -> dict:
 
 def run_event_study(tickers: list[str], event_dates: list[date],
                     windows: list[int] = None,
-                    use_adj: bool = True, as_of: date | None = None) -> dict:
+                    use_adj: bool = True, as_of: date | None = None,
+                    reaction: bool = False, session: date | None = None,
+                    direction: str | None = None,
+                    direction_reference: str | None = None) -> dict:
     """
     Esegue lo studio per multipli ticker. Restituisce dict per-ticker.
+    Con reaction=True aggiunge a ogni ticker la chiave "reaction" (Run 11):
+    assente di default, None per le serie mensili.
     """
     if windows is None:
         windows = DEFAULT_WINDOWS
@@ -287,10 +298,134 @@ def run_event_study(tickers: list[str], event_dates: list[date],
         for t in tickers:
             computed = compute_returns(conn, t, event_dates, windows, use_adj=use_adj, as_of=as_of)
             computed["stats"] = aggregate_stats(computed["per_event"], windows)
+            if reaction:
+                prices = load_price_series(conn, t, use_adj=use_adj).dropna()
+                if as_of is not None:
+                    prices = prices[prices.index < pd.Timestamp(as_of)]
+                computed["reaction"] = None if computed["is_monthly"] or prices.empty else \
+                    reaction_blocks(prices, [pe["anchor_date"] for pe in computed["per_event"]],
+                                    windows, session=session,
+                                    direction=direction if t == direction_reference else None)
             out[t] = computed
     finally:
         conn.close()
     return out
+
+
+# --- Run 11: reazione degli analoghi, reazione di oggi, seguito contro il normale ----------------
+
+def sigma(p: np.ndarray, a: int, window: int) -> float | None:
+    """σ campionaria dei log-rendimenti delle `window` sedute che finiscono in a−1; mai prezzi ≥ a."""
+    if a - window - 1 < 0:
+        return None
+    seg = p[a - window - 1:a]
+    if (seg <= 0).any():
+        return None
+    s = float(np.std(np.diff(np.log(seg)), ddof=1))
+    return s if s > 0 else None
+
+
+def reaction(p: np.ndarray, a: int, window: int) -> tuple[float, float] | None:
+    """(R0 in %, z0) della seduta a contro a−1; None se σ non è calcolabile."""
+    s = sigma(p, a, window)
+    if s is None or p[a] <= 0:
+        return None
+    return (p[a] / p[a - 1] - 1) * 100, math.log(p[a] / p[a - 1]) / s
+
+
+def baseline(p: np.ndarray, a: int, h: int, window: int) -> np.ndarray | None:
+    """Rendimenti a h sedute (%) delle `window` finestre che terminano in a−window … a−1."""
+    if a - window - h < 0:
+        return None
+    seg = p[a - window - h:a]
+    if (seg <= 0).any():
+        return None
+    return (seg[h:] / seg[:-h] - 1) * 100
+
+
+def reaction_blocks(prices: pd.Series, anchors: list[date], windows: list[int],
+                    session: date | None = None, direction: str | None = None) -> dict:
+    """Le tre misure del Run 11 per un asset. `prices`: sedute con prezzo valido, già
+    tagliate alla data di analisi (nessun prezzo successivo può entrare). `anchors`: le
+    sedute-ancora degli analoghi. `direction` (pos/neg) solo sull'asset di riferimento."""
+    p, idx = prices.to_numpy(), prices.index
+    pos = sorted(a for a in (int(idx.searchsorted(pd.Timestamp(d))) for d in anchors)
+                 if a < len(p))
+    rz = [r for r in (reaction(p, a, SIGMA_WINDOW) for a in pos) if r]
+    r0 = pd.Series([r for r, _ in rz], dtype=float)
+    z0 = np.array([z for _, z in rz])
+
+    coherent = None
+    if direction in ("pos", "neg") and len(r0):
+        segno = 1 if direction == "pos" else -1
+        coherent = (int((np.sign(r0) == segno).sum()), int((r0 != 0).sum()))
+
+    today = None
+    if session is not None:
+        a = int(idx.searchsorted(pd.Timestamp(session)))
+        r = reaction(p, a, SIGMA_WINDOW) if a < len(p) and idx[a].date() == session else None
+        if r is None or not len(z0):
+            today = {"session": session, "missing": True}
+        else:
+            quota = float((np.abs(z0) <= abs(r[1])).mean())
+            today = {"session": session, "r0": r[0], "z0": r[1],
+                     "pct_signed": round(100 * float((z0 <= r[1]).mean())),
+                     "pct_abs": round(100 * quota),
+                     "label": ("più forte degli analoghi" if quota > 2 / 3 else
+                               "più debole degli analoghi" if quota < 1 / 3 else
+                               "in linea con gli analoghi")}
+
+    normal, n_eff = {}, {}
+    for h in windows:
+        base = baseline(p, len(p), h, BASELINE_WINDOW)
+        normal[h] = float(np.median(base)) if base is not None else None
+        coperte = [a for a in pos if a + h < len(p)]
+        # Ancore a meno di h sedute hanno finestre T+h sovrapposte: un gruppo, un'osservazione.
+        n_eff[h] = sum(1 for i, a in enumerate(coperte) if i == 0 or a - coperte[i - 1] >= h)
+
+    return {"n": len(r0),
+            "r0_median": float(r0.median()) if len(r0) else None,
+            "r0_p25": float(r0.quantile(0.25)) if len(r0) else None,
+            "r0_p75": float(r0.quantile(0.75)) if len(r0) else None,
+            "abs_z_median": float(np.median(np.abs(z0))) if len(z0) else None,
+            "coherent": coherent, "today": today,
+            "normal_median": normal, "n_eff": n_eff}
+
+
+def _format_reaction(ticker: str, data: dict, windows: list[int]) -> list[str]:
+    """I tre blocchi del Run 11, con le righe di conclusione già pronte da copiare."""
+    rx, stats = data["reaction"], data["stats"]
+    coer = f"{rx['coherent'][0]} su {rx['coherent'][1]}" if rx["coherent"] else "—"
+    block = [f"### Reazione degli analoghi — `{ticker}` (N={rx['n']}, |z| mediano "
+             f"{_fmt(rx['abs_z_median']).lstrip('+')} contro {ANY_DAY_ABS_Z:.2f} di un giorno qualsiasi)\n",
+             "| R0 mediana | p25 | p75 | verso coerente |", "|---|---|---|---|",
+             f"| {_fmt(rx['r0_median'])}% | {_fmt(rx['r0_p25'])}% | {_fmt(rx['r0_p75'])}% | {coer} |", ""]
+    t = rx["today"]
+    if t and t.get("missing"):
+        block.append(f"### Reazione di oggi — `{ticker}`, seduta {t['session']}: non ancora disponibile "
+                     f"(nessun prezzo chiuso prima della data di analisi)\n")
+    elif t:
+        block.append(f"### Reazione di oggi — `{ticker}`, seduta {t['session']}: {_fmt(t['r0'])}% "
+                     f"(z {_fmt(t['z0'], 1)}), {t['pct_abs']}° percentile in valore assoluto → {t['label']}\n")
+        block.append(f"Con il segno: {t['pct_signed']}° percentile fra le reazioni degli analoghi.\n")
+
+    min_N = min((stats[w]["N"] for w in windows if stats[w]["N"] > 0), default=0)
+    block.append(f"### Seguito — `{ticker}` [descrittiva] — nessuna previsione sul seguito (N={min_N})\n")
+    cols = ["Stat"] + [f"T+{w}" for w in windows]
+    block.append("| " + " | ".join(cols) + " |")
+    block.append("|" + "|".join(["---"] * len(cols)) + "|")
+    righe = [("mediana", lambda w: stats[w]["median"]),
+             ("mediana normale", lambda w: rx["normal_median"][w]),
+             ("p25", lambda w: stats[w]["p25"]), ("p75", lambda w: stats[w]["p75"])]
+    for label, val in righe:
+        block.append("| " + " | ".join([label] + [f"{_fmt(val(w))}%" for w in windows]) + " |")
+    block.append("| **N** | " + " | ".join(f"**{stats[w]['N']}**" for w in windows) + " |")
+    block.append("| N eff | " + " | ".join(str(rx["n_eff"][w]) for w in windows) + " |")
+    block.append("")
+    if 0 < min_N < SAMPLE_SIZE_WARNING_THRESHOLD:
+        block.append(f"> ⚠ **INDICATIVE ONLY** — campione N={min_N} < "
+                     f"{SAMPLE_SIZE_WARNING_THRESHOLD}. Non trattare come evidenza robusta.")
+    return block
 
 
 # --- Output formatting -----------------------------------------------------
@@ -371,6 +506,14 @@ def format_markdown(study: dict, windows: list[int], detail: bool = True) -> str
 
         if not data["per_event"]:
             block.append("_Nessun evento valido nel campione._\n")
+            blocks.append("\n".join(block))
+            continue
+
+        if data.get("reaction"):
+            block = block[1:] + _format_reaction(ticker, data, windows)
+            if data["skipped_events"]:
+                block.append(f"\n> {len(data['skipped_events'])} evento/i scartato/i "
+                             f"(fuori serie, dati mancanti o stesso giorno-ancora).")
             blocks.append("\n".join(block))
             continue
 
@@ -473,6 +616,17 @@ def main():
                         "dell'output e nelle schede non si incolla mai. Chiedilo "
                         "solo per ispezionare i singoli episodi (potatura, outlier).")
 
+    p.add_argument("--reaction", action="store_true",
+                   help="Run 11: tre blocchi markdown al posto della tabella classica — reazione "
+                        "degli analoghi (seduta-ancora), reazione di oggi e seguito [descrittiva] "
+                        "accanto al comportamento normale dell'asset. Implica --markdown.")
+    p.add_argument("--reaction-session", type=date.fromisoformat, default=None,
+                   help="Con --reaction: la seduta in cui i mercati hanno reagito alla notizia di "
+                        "oggi (deve essere chiusa prima di --as-of).")
+    p.add_argument("--direction", choices=["pos", "neg"], default=None,
+                   help="Con --reaction: verso dichiarato del pool, per la quota di reazioni coerenti.")
+    p.add_argument("--direction-reference", default=None,
+                   help="Con --direction: l'asset a cui il verso si riferisce (solo lì vale).")
     p.add_argument("--as-of", type=date.fromisoformat, default=date.today(),
                    help="Usa solo prezzi anteriori a questa data (default oggi)")
     args = p.parse_args()
@@ -488,9 +642,11 @@ def main():
     if not windows:
         sys.exit("Errore: nessuna finestra valida.")
 
-    study = run_event_study(tickers, event_dates, windows, use_adj=not args.no_adj, as_of=args.as_of)
+    study = run_event_study(tickers, event_dates, windows, use_adj=not args.no_adj, as_of=args.as_of,
+                            reaction=args.reaction, session=args.reaction_session,
+                            direction=args.direction, direction_reference=args.direction_reference)
 
-    if args.markdown:
+    if args.markdown or args.reaction:
         print(format_markdown(study, windows, detail=args.detail))
     else:
         print(format_console(study, windows))

@@ -154,7 +154,9 @@ Metodo: [references/laboratorio_cpi.md](references/laboratorio_cpi.md)
 - **Stato** — 11a chiuso il 2026-10-07: protocollo `experiments/quant_reazione/protocol-1.0.0.json` registrato prima del codice; misure esplorative con `news_impact_pipeline/quant_reazione.py replay`.
 - **Deciso** — (07/10) il segno del seguito T+h non ha informazione (~50%); l'informazione sta nella reazione del giorno della notizia.
 - **Deciso** — (07/10) **niente previsioni sul seguito**: il cancello |z| ≥ 2 non batteva la regola cieca «sempre sotto la mediana normale» (34/11 contro 33/11); scartato prima del go-live, protocollo 1.0.0 mai eseguito, 11e annullato. Vedi `references/esperimenti_scartati.md`.
-- **Prossimo passo** — Run 11b: reazione degli analoghi, reazione di oggi e seguito descrittivo accanto al normale in `event_study.py`, default invariato. Le definizioni di `quant_reazione.py` sono il riferimento.
+- **Fatto (11/11)** — Run 11b: `event_study.py --reaction` stampa reazione degli analoghi, reazione di oggi e seguito `[descrittiva]` accanto al normale; default invariato. Le definizioni (`sigma`, `reaction`, `baseline`) stanno in `event_study.py`.
+- **Osservato (11/11)** — replay rifatto con un mese in più: segno del seguito ancora ~50%, mediana del pool peggio di «zero»; pool con N<10 hanno bande più strette del vero. Numeri: `quant_reazione.py replay`.
+- **Prossimo passo** — Run 11c (ledger: parsing dei nuovi blocchi, rifiuto di `[previsione]` sul seguito, Wilson e giorni unici), poi 11d (template, runbook, go-live). Finché l'11d non è chiuso il run giornaliero usa ancora la tabella classica.
 
 Spec e sequenza: [PIANO_REVISIONE_PIPELINE.md](PIANO_REVISIONE_PIPELINE.md) (Run 11)
 
