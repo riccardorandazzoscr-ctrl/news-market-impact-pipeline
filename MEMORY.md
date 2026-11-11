@@ -156,7 +156,8 @@ Metodo: [references/laboratorio_cpi.md](references/laboratorio_cpi.md)
 - **Deciso** — (07/10) **niente previsioni sul seguito**: il cancello |z| ≥ 2 non batteva la regola cieca «sempre sotto la mediana normale» (34/11 contro 33/11); scartato prima del go-live, protocollo 1.0.0 mai eseguito, 11e annullato. Vedi `references/esperimenti_scartati.md`.
 - **Fatto (11/11)** — Run 11b: `event_study.py --reaction` stampa reazione degli analoghi, reazione di oggi e seguito `[descrittiva]` accanto al normale; default invariato. Le definizioni (`sigma`, `reaction`, `baseline`) stanno in `event_study.py`.
 - **Osservato (11/11)** — replay rifatto con un mese in più: segno del seguito ancora ~50%, mediana del pool peggio di «zero»; pool con N<10 hanno bande più strette del vero. Numeri: `quant_reazione.py replay`.
-- **Prossimo passo** — Run 11c (ledger: parsing dei nuovi blocchi, rifiuto di `[previsione]` sul seguito, Wilson e giorni unici), poi 11d (template, runbook, go-live). Finché l'11d non è chiuso il run giornaliero usa ancora la tabella classica.
+- **Fatto (11/11)** — Run 11c: il ledger legge i blocchi nuovi come `[descrittiva]` e rifiuta `[previsione]` sul seguito; la 5-bis porta l'intervallo di Wilson sui giorni unici. Il parser dà lo stesso risultato di prima su tutte le schede esistenti.
+- **Prossimo passo** — Run 11d (template, runbook, campo `seduta_reazione`, scheda di prova, go-live). Finché non è chiuso il run giornaliero usa ancora la tabella classica. Dopo il go-live la 5-bis non riceve più righe nuove (solo `[previsione]`): decidere quale numero mettere in testa alla scorecard.
 
 Spec e sequenza: [PIANO_REVISIONE_PIPELINE.md](PIANO_REVISIONE_PIPELINE.md) (Run 11)
 

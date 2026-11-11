@@ -178,6 +178,9 @@ def parse_card(path: Path, issues: list | None = None) -> list[dict]:
             rows = {tk: {} for tk in tickers}
             if not horizons or not tickers or len(horizons) != len(set(horizons)):
                 error = "asset/orizzonti non identificabili"
+            elif uso == "previsione" and heading.lower().startswith("seguito"):
+                # Run 11 (deciso il 2026-10-07): il segno del seguito non ha informazione.
+                error = "una tabella del seguito non può essere [previsione]: usa [descrittiva]"
             else:
                 for ln in lines[1:]:
                     cells = _table_row_cells(ln)
@@ -188,6 +191,8 @@ def parse_card(path: Path, issues: list | None = None) -> list[dict]:
                             targets, label = [tk], label[len(tk):].strip()
                             break
                     label = label.lower()
+                    if label in ("mediana normale", "n eff"):
+                        continue  # Run 11: contesto del seguito, non si registra
                     if label not in ("media", "mediana", "p25", "p75", "p25 / p75", "n"):
                         if "mediana" in label:
                             error = "mediana con asset non identificabile"
@@ -507,6 +512,21 @@ def _pct(x):
     return "n/a" if x is None else f"{x * 100:.0f}%"
 
 
+def _wilson(p, n, z=1.96):
+    """Intervallo di Wilson al 95% per una quota p su n osservazioni; None se non c'è nulla."""
+    if p is None or not n:
+        return None
+    centro = (p + z * z / (2 * n)) / (1 + z * z / n)
+    mezzo = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / (1 + z * z / n)
+    return max(0.0, centro - mezzo), min(1.0, centro + mezzo)
+
+
+def _pct_ci(p, n):
+    """'50% [15–85]': la quota con il suo intervallo di Wilson sui giorni unici."""
+    w = _wilson(p, n)
+    return _pct(p) if w is None else f"{_pct(p)} [{w[0] * 100:.0f}–{w[1] * 100:.0f}]"
+
+
 def _write_scorecard_html(md_text: str, md_path: Path, label: str) -> Path:
     """
     Rende la scorecard markdown in un HTML impaginato, nello stesso stile dei
@@ -548,8 +568,10 @@ def metric_summary(rows):
     bands = [r for r in rows if r.get("hist_p25") not in ("", None)
              and r.get("hist_p75") not in ("", None)]
     avg = lambda xs: sum(xs) / len(xs) if xs else None
+    days = lambda xs: len({r.get("anchor_date") or r.get("made_date") for r in xs})
     return {
         "n_hit": len(h), "n_band": len(bands),
+        "hit_days": days(h), "band_days": days(bands),
         "hit": avg([(float(r["expected_median"]) > 0) ==
                     (float(r["realized_return"]) > 0) for r in h]),
         "up": avg([float(r["realized_return"]) > 0 for r in h]),
@@ -685,7 +707,8 @@ def cmd_scorecard(open_browser: bool = False) -> None:
               "Solo tabelle attive; descrittive e legacy senza uso sono sopra. "
               "IC misurato separatamente per ticker e orizzonte. "
               "N unici conta giorni-ancora per asset/orizzonte: resta dipendenza fra "
-              "finestre sovrapposte. Nessun intervallo Wilson o semaforo di affidabilità.\n",
+              "finestre sovrapposte. Fra parentesi quadre l'intervallo di Wilson al 95%, "
+              "calcolato sui giorni unici e non sulle righe. Nessun semaforo di affidabilità.\n",
               "| Asset | Orizzonte | N righe | N unici | Hit-rate | N hit | Sempre su | Sempre giù | IC | Copertura | N bande | Ampiezza banda (pp) |",
               "|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|"])
     grouped = {}
@@ -696,9 +719,9 @@ def cmd_scorecard(open_browser: bool = False) -> None:
         ic = _spearman([float(r['expected_median']) for r in sub],
                        [float(r['realized_return']) for r in sub])
         uniques = len({r.get('anchor_date') or r['made_date'] for r in sub})
-        L.append(f"| {asset} | T+{hz} | {len(sub)} | {uniques} | {_pct(m['hit'])} | "
-                 f"{m['n_hit']} | {_pct(m['up'])} | {_pct(m['down'])} | "
-                 f"{ic if ic is not None else 'n/a'} | {_pct(m['coverage'])} | "
+        L.append(f"| {asset} | T+{hz} | {len(sub)} | {uniques} | {_pct_ci(m['hit'], m['hit_days'])} | "
+                 f"{m['n_hit']} | {_pct_ci(m['up'], m['hit_days'])} | {_pct_ci(m['down'], m['hit_days'])} | "
+                 f"{ic if ic is not None else 'n/a'} | {_pct_ci(m['coverage'], m['band_days'])} | "
                  f"{m['n_band']} | {m['width'] if m['width'] is not None else 'n/a'} |")
     L.extend(["", "## 6. Riferimento storico senza selezione di notizie\n",
               "Ultime 252 finestre disponibili del medesimo asset/orizzonte, tutte concluse "

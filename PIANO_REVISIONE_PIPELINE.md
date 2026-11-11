@@ -825,8 +825,11 @@ sopra è 0,65, a 60 giorni è 75%).
       Note: `--reaction` (implica `--markdown`) stampa i tre blocchi; `--reaction-session`, `--direction` e
       `--direction-reference` sono facoltativi. `sigma`/`reaction`/`baseline` ora stanno in `event_study.py` e
       `quant_reazione.py` le importa. Numeri col punto, come le tabelle esistenti; seduta di reazione = data esatta.
-- [ ] **11c — Ledger.** Parsing dei nuovi blocchi; `register`/`audit` rifiutano `[previsione]` sul
+- [x] **11c — Ledger.** FATTO — 2026-11-11. Parsing dei nuovi blocchi; `register`/`audit` rifiutano `[previsione]` sul
       seguito; Wilson e giorni unici nella 5-bis; le righe esistenti restano byte per byte.
+      Note: `parse_card` salta «mediana normale» e «N eff» (niente colonne nuove nel ledger) e mette in
+      quarantena un `### Seguito …` dichiarato `[previsione]`, così lo rifiutano `audit`, `register` e `backfill`.
+      Wilson al 95% sui giorni unici per hit-rate, sempre-su/giù e copertura. La reazione non si registra (fuori scope).
 - [ ] **11d — Template, runbook, render.** `news_card_template.md`, `PHASE5_RUNBOOK.md` (via la regola
       5-bis, dentro i nuovi comandi in «Riferimento comandi»), campo `seduta_reazione`,
       `render_report.py` se serve. Una scheda di prova completa in sessione manuale, poi go-live.

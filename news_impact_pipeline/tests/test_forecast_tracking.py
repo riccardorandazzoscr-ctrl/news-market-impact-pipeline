@@ -149,6 +149,74 @@ class ForecastTests(unittest.TestCase):
         self.assertAlmostEqual(ret, float(r["realized_return"]), places=2)
         self.assertIn("0 differiscono", self.run_quiet(ft.cmd_recheck))
 
+    def test_il_seguito_del_run_11_si_registra_come_descrittiva(self):
+        self.card.write_text(scheda_run11(), encoding="utf-8")
+        issues = []
+        e = {x["horizon"]: x for x in ft.parse_card(self.card, issues=issues)}
+        self.assertEqual(issues, [])
+        self.assertEqual(sorted(e), [1, 3])
+        self.assertEqual((e[1]["asset"], e[1]["uso"], e[1]["scenario"]), ("BZ=F", "descrittiva", "base"))
+        self.assertEqual((e[1]["expected_median"], e[3]["expected_median"]), (0.5, -0.3))
+        self.assertEqual((e[1]["hist_p25"], e[1]["hist_p75"], e[1]["n_analogues"]), (-1.0, 1.0, 12))
+
+    def test_previsione_sul_seguito_rifiutata_da_audit_e_register(self):
+        self.card.write_text(scheda_run11("previsione"), encoding="utf-8")
+        issues = []
+        self.assertEqual(ft.parse_card(self.card, issues=issues), [])
+        self.assertIn("non può essere [previsione]", issues[0])
+        bad = []
+        out = self.run_quiet(lambda: ft.cmd_audit("2026-01-05", require_declared=True, bad=bad))
+        self.assertIn("QUARANTENA", out)
+        self.assertEqual(bad, [self.card])
+        with contextlib.redirect_stderr(io.StringIO()):
+            self.run_quiet(lambda: ft.cmd_backfill(day="2026-01-05", live=True, skip=set(bad)))
+        self.assertEqual(ft.load_ledger(), [])
+
+    def test_wilson_al_95_per_cento(self):
+        lo, hi = ft._wilson(0.0, 4)
+        self.assertAlmostEqual(lo, 0.0)
+        self.assertAlmostEqual(hi, 0.4899, places=3)
+        lo, hi = ft._wilson(0.5, 4)
+        self.assertAlmostEqual(lo, 0.150, places=3)
+        self.assertAlmostEqual(hi, 0.850, places=3)
+        self.assertIsNone(ft._wilson(None, 4))
+        self.assertIsNone(ft._wilson(0.5, 0))
+        self.assertEqual(ft._pct_ci(0.5, 4), "50% [15–85]")
+        self.assertEqual(ft._pct_ci(None, 0), "n/a")
+
+    def test_i_giorni_unici_non_sono_le_righe(self):
+        riga = lambda giorno, med, real: {"expected_median": med, "realized_return": real, "anchor_date": giorno,
+                                          "made_date": giorno, "hist_p25": "-1", "hist_p75": "1"}
+        m = ft.metric_summary([riga("2026-01-05", "0.5", "0.4"), riga("2026-01-05", "0.6", "0.2"),
+                               riga("2026-01-06", "0.5", "-2.0"), riga("2026-01-07", "0.01", "0.3")])
+        self.assertEqual((m["n_hit"], m["hit_days"]), (3, 2))      # la riga piatta non è direzionale
+        self.assertEqual((m["n_band"], m["band_days"]), (4, 3))
+
+    def test_la_5_bis_porta_wilson_sui_giorni_unici(self):
+        self.run_quiet(ft.cmd_backfill)
+        self.run_quiet(ft.cmd_evaluate)
+        with patch.object(ft, "SCORECARD_DIR", self.daily / "_scorecard"):
+            self.run_quiet(ft.cmd_scorecard)
+        testo = next((self.daily / "_scorecard").glob("*.md")).read_text(encoding="utf-8")
+        bis = testo.split("## 5-bis.")[1].split("## 6.")[0]
+        self.assertIn("intervallo di Wilson al 95%", bis)
+        riga = next(l for l in bis.splitlines() if l.startswith("| BZ=F | T+1 |"))
+        self.assertRegex(riga, r"\| 1 \| (0|100)% \[\d+–\d+\] \|")   # N unici = 1, poi hit-rate con intervallo
+
+
+def scheda_run11(uso="descrittiva"):
+    """Scheda col blocco stampato davvero da event_study.py --reaction (Run 11b)."""
+    import event_study as es
+    stat = lambda med: {"mean": 0.1, "median": med, "stdev": 1.0, "p25": -1.0, "p75": 1.0, "N": 12}
+    dati = {"warnings": [], "per_event": [{}], "skipped_events": [],
+            "stats": {1: stat(0.5), 3: stat(-0.3)},
+            "reaction": {"n": 12, "r0_median": 2.0, "r0_p25": 0.5, "r0_p75": 3.0, "abs_z_median": 1.4,
+                         "coherent": (9, 12), "today": None,
+                         "normal_median": {1: 0.05, 3: 0.12}, "n_eff": {1: 12, 3: 9}}}
+    md = es.format_markdown({"BZ=F": dati}, [1, 3], detail=False).replace("[descrittiva]", f"[{uso}]")
+    return ("# Test\n\n**Data analisi**: 2026-01-05\n**Slug**: test-slug\n\n## Event study\n\n"
+            + md + "\n\n## Provenance\n")
+
 
 if __name__ == "__main__":
     unittest.main()
