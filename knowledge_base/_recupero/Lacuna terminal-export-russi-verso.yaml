@@ -1,0 +1,174 @@
+research: lacuna terminal-export-russi-verso (commodity_energy, upstream_export_strike, rif HO=F; sotto-tema
+  locale)
+voci:
+- data: '2026-08-14'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  riga: '| 2026-08-14 | Attacco a Novorossiysk/Sheskharis (Mar Nero); export di greggio sospeso (~700
+    kb/d, principale hub export Mar Nero) | upstream_export_strike | BZ=F ↑ | BZ=F | Canale greggio puro:
+    toglie barili seaborne. Distinto dal colpo su Ryazan di due settimane prima, che era capacità di raffinaz'
+  evento: Attacco a Novorossiysk/Sheskharis, export di greggio sospeso
+  meccanismo: []
+  dichiarazioni:
+  - asset: HO=F
+    verso: escluso
+    perché: 'Sheskharis/Novorossiysk, export di greggio sospeso: la riga stessa lo chiama "canale greggio
+      puro". Terminal o oleodotto di solo greggio: il canale verso il diesel passa dal costo della materia
+      prima, cioè da BZ=F dove il verso è già dichiarato; sul crack il segno non è univoco. Criterio ex
+      ante, nessun prezzo consultato. Revisione Claude 2026-11-11.'
+  stato: promossa
+- data: '2026-05-03'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  riga: '| 2026-05-03 | Attacco drone al porto petrolifero di Primorsk (Leningrado), terminal di export
+    di Urals e diesel | upstream_export_strike | BZ=F ↑ | BZ=F | Colpisce terminal di export (Primorsk
+    + Ust-Luga = 44% dell''export petrolifero russo). Attacco nella notte del 3/5. |'
+  evento: Attacco drone al terminal di Primorsk (Urals e diesel)
+  meccanismo:
+  - refinery_products
+  dichiarazioni:
+  - asset: HO=F
+    verso: pos
+    perché: 'Primorsk esporta Urals e diesel: l''attacco toglie diesel seaborne russo dal mercato atlantico,
+      pressione al rialzo sul gasolio. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-11.'
+  stato: promossa
+- data: '2026-04-17'
+  tema: commodity_energy
+  fonte: 2026-09-12/news_02.md
+  riga: '| `2026-04-17` | pos | infrastructure_attack, upstream_export_strike | Primo attacco all''oleodotto
+    Est-Ovest saudita di quest''anno: -700.000 barili al giorno stimati, settimane di riparazione. |'
+  evento: Attacco all'oleodotto Est-Ovest saudita
+  meccanismo: []
+  dichiarazioni:
+  - asset: HO=F
+    verso: escluso
+    perché: 'Oleodotto Est-Ovest saudita, greggio. Terminal o oleodotto di solo greggio: il canale verso
+      il diesel passa dal costo della materia prima, cioè da BZ=F dove il verso è già dichiarato; sul
+      crack il segno non è univoco. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-11.'
+  stato: promossa
+- data: '2026-04-16'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  riga: '| 2026-04-16 | Attacco al terminal/raffineria export di Tuapse (Rosneft); danni a porto e stoccaggi,
+    export impossibile, impianto fermo | upstream_export_strike | BZ=F ↑; TTF=F no | BZ=F | Classificato
+    export perché la firma è l''impossibilità di *spedire* (danno a porto e stoccaggi), non la sola dis'
+  evento: Attacco al terminal e alla raffineria export di Tuapse
+  meccanismo:
+  - refinery_products
+  dichiarazioni:
+  - asset: HO=F
+    verso: pos
+    perché: 'Tuapse è raffineria d''export: impianto fermo ed export di prodotti impossibile, quindi meno
+      offerta di distillati. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-11.'
+  stato: promossa
+- data: '2025-11-14'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  riga: '| 2025-11-14 | Attacco a Novorossiysk/Sheskharis (Mar Nero); Transneft sospende i flussi di greggio,
+    export fermato (~761 kb/d) | upstream_export_strike | BZ=F ↑; crack ↑ con il Brent | BZ=F | Caso *pulito*
+    del canale greggio: Brent al settlement +2,19% a $64,39, WTI +2,39% a $60,09 (Reuters). Togli'
+  evento: Attacco a Novorossiysk/Sheskharis, flussi di greggio sospesi
+  meccanismo: []
+  dichiarazioni:
+  - asset: HO=F
+    verso: escluso
+    perché: 'Novorossiysk, flussi di greggio sospesi. La riga riporta "crack ↑ con il Brent", ma è un
+      esito di mercato, non un''attesa all''epoca; trattato come il 2026-08-14. Terminal o oleodotto di
+      solo greggio: il canale verso il diesel passa dal costo della materia prima, cioè da BZ=F dove il
+      verso è già dichiarato; sul crack il segno non è univoco. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-11.'
+  stato: promossa
+- data: '2025-01-04'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  riga: '| 2025-01-04 | Attacco al porto di Ust-Luga (Leningrado), uno dei principali punti di export
+    del greggio russo | upstream_export_strike | BZ=F ↑ | BZ=F | Colpisce infrastruttura di export greggio,
+    non capacità di raffinazione. |'
+  evento: Attacco al porto di Ust-Luga (greggio)
+  meccanismo: []
+  dichiarazioni:
+  - asset: HO=F
+    verso: escluso
+    perché: 'Ust-Luga, la riga indica infrastruttura di export di greggio, non prodotti. Terminal o oleodotto
+      di solo greggio: il canale verso il diesel passa dal costo della materia prima, cioè da BZ=F dove
+      il verso è già dichiarato; sul crack il segno non è univoco. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-11.'
+  stato: promossa
+- data: '2024-02-26'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  riga: '| 2024-02-26 | Attacco a porto e raffineria di Tuapse; danneggiati unità ELOU-AVT-12 e un oleodotto
+    di greggio | upstream_export_strike | BZ=F ↑; CRACK_321 ↑ minore | BZ=F | Caso misto ma con oleodotto
+    di greggio e porto colpiti: classificato upstream/export perché tocca il flusso di greggio. Tuapse'
+  evento: Attacco a porto e raffineria di Tuapse
+  meccanismo:
+  - refinery_products
+  dichiarazioni:
+  - asset: HO=F
+    verso: pos
+    perché: 'Tuapse: danneggiata l''unità di distillazione ELOU-AVT-12 di una raffineria d''export, oltre
+      a porto e oleodotto. Toglie distillati esportati; la riga dichiara CRACK_321 ↑. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-11.'
+  stato: promossa
+- data: '2024-01-22'
+  tema: commodity_energy
+  fonte: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  riga: '| 2024-01-22 | Attacco drone al complesso gas-condensato/export Novatek di Ust-Luga (Baltico);
+    incendio, produzione di prodotti sospesa | upstream_export_strike | BZ=F ↑ modesto; TTF=F possibile
+    | BZ=F, TTF=F | Colpisce nodo export/condensato, non capacità di raffinazione di greggio. Attacco
+    nella n'
+  evento: Attacco al complesso Novatek di Ust-Luga (prodotti sospesi)
+  meccanismo:
+  - refinery_products
+  dichiarazioni:
+  - asset: HO=F
+    verso: pos
+    perché: 'Complesso Novatek di Ust-Luga: frazionamento del condensato, produzione di prodotti sospesa.
+      Toglie distillati e nafta d''export. Debole: volumi di gasolio minori di una raffineria. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-11.'
+  stato: promossa
+- data: '2019-09-14'
+  tema: commodity_energy
+  fonte: 2026-09-08/news_01.md
+  riga: '| `2019-09-14` | pos | infrastructure_attack, oil_supply_shock, upstream_export_strike | Attacco
+    di droni e missili ad **Abqaiq e Khurais**: 5,7 milioni di barili al giorno offline, il più grande
+    shock di offerta singolo della storia moderna. È il precedente più vicino per geografia (Arabia Saudita)'
+  evento: Attacco ad Abqaiq e Khurais
+  meccanismo: []
+  dichiarazioni:
+  - asset: HO=F
+    verso: escluso
+    perché: 'Abqaiq/Khurais, shock di greggio. Terminal o oleodotto di solo greggio: il canale verso il
+      diesel passa dal costo della materia prima, cioè da BZ=F dove il verso è già dichiarato; sul crack
+      il segno non è univoco. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-11.'
+  stato: promossa
+- data: '2019-05-13'
+  tema: commodity_energy
+  fonte: 2026-09-12/news_02.md
+  riga: '| `2019-05-13` | pos | infrastructure_attack, upstream_export_strike | Attacco con droni a stazioni
+    di pompaggio dell''oleodotto Est-Ovest saudita: **il precedente più vicino alla notizia di oggi**.
+    |'
+  evento: Attacco a stazioni di pompaggio dell'oleodotto Est-Ovest saudita
+  meccanismo: []
+  dichiarazioni:
+  - asset: HO=F
+    verso: escluso
+    perché: 'Stazioni di pompaggio dell''oleodotto Est-Ovest saudita, greggio. Terminal o oleodotto di
+      solo greggio: il canale verso il diesel passa dal costo della materia prima, cioè da BZ=F dove il
+      verso è già dichiarato; sul crack il segno non è univoco. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-11.'
+  stato: promossa

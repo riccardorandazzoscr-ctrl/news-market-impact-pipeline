@@ -14881,3 +14881,117 @@ reviews:
     ex ante, nessun prezzo consultato. Revisione Claude 2026-11-05.'
   status: excluded
   description: Visita di Stato di Trump a Pechino
+- date: '2026-08-14'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Sheskharis/Novorossiysk, export di greggio sospeso: la riga stessa lo chiama "canale greggio
+    puro". Terminal o oleodotto di solo greggio: il canale verso il diesel passa dal costo della materia
+    prima, cioè da BZ=F dove il verso è già dichiarato; sul crack il segno non è univoco. Criterio ex
+    ante, nessun prezzo consultato. Revisione Claude 2026-11-11.'
+  status: excluded
+  description: Attacco a Novorossiysk/Sheskharis, export di greggio sospeso
+- date: '2026-05-03'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Primorsk esporta Urals e diesel: l''attacco toglie diesel seaborne russo dal mercato atlantico,
+    pressione al rialzo sul gasolio. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-11.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  description: Attacco drone al terminal di Primorsk (Urals e diesel)
+- date: '2026-04-17'
+  theme: commodity_energy
+  reference: HO=F
+  source: 2026-09-12/news_02.md
+  reason: 'Oleodotto Est-Ovest saudita, greggio. Terminal o oleodotto di solo greggio: il canale verso
+    il diesel passa dal costo della materia prima, cioè da BZ=F dove il verso è già dichiarato; sul crack
+    il segno non è univoco. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-11.'
+  status: excluded
+  description: Attacco all'oleodotto Est-Ovest saudita
+- date: '2026-04-16'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Tuapse è raffineria d''export: impianto fermo ed export di prodotti impossibile, quindi meno
+    offerta di distillati. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-11.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  description: Attacco al terminal e alla raffineria export di Tuapse
+- date: '2025-11-14'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Novorossiysk, flussi di greggio sospesi. La riga riporta "crack ↑ con il Brent", ma è un esito
+    di mercato, non un''attesa all''epoca; trattato come il 2026-08-14. Terminal o oleodotto di solo greggio:
+    il canale verso il diesel passa dal costo della materia prima, cioè da BZ=F dove il verso è già dichiarato;
+    sul crack il segno non è univoco. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-11.'
+  status: excluded
+  description: Attacco a Novorossiysk/Sheskharis, flussi di greggio sospesi
+- date: '2025-01-04'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Ust-Luga, la riga indica infrastruttura di export di greggio, non prodotti. Terminal o oleodotto
+    di solo greggio: il canale verso il diesel passa dal costo della materia prima, cioè da BZ=F dove
+    il verso è già dichiarato; sul crack il segno non è univoco. Criterio ex ante, nessun prezzo consultato.
+    Revisione Claude 2026-11-11.'
+  status: excluded
+  description: Attacco al porto di Ust-Luga (greggio)
+- date: '2024-02-26'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Tuapse: danneggiata l''unità di distillazione ELOU-AVT-12 di una raffineria d''export, oltre
+    a porto e oleodotto. Toglie distillati esportati; la riga dichiara CRACK_321 ↑. Criterio ex ante,
+    nessun prezzo consultato. Revisione Claude 2026-11-11.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  description: Attacco a porto e raffineria di Tuapse
+- date: '2024-01-22'
+  theme: commodity_energy
+  reference: HO=F
+  source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina) regime
+    ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
+    Russia-Ucraina)- regime ed episodi storici (2022–2026).md
+  reason: 'Complesso Novatek di Ust-Luga: frazionamento del condensato, produzione di prodotti sospesa.
+    Toglie distillati e nafta d''export. Debole: volumi di gasolio minori di una raffineria. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-11.'
+  direction: pos
+  mechanism:
+  - refinery_products
+  description: Attacco al complesso Novatek di Ust-Luga (prodotti sospesi)
+- date: '2019-09-14'
+  theme: commodity_energy
+  reference: HO=F
+  source: 2026-09-08/news_01.md
+  reason: 'Abqaiq/Khurais, shock di greggio. Terminal o oleodotto di solo greggio: il canale verso il
+    diesel passa dal costo della materia prima, cioè da BZ=F dove il verso è già dichiarato; sul crack
+    il segno non è univoco. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-11.'
+  status: excluded
+  description: Attacco ad Abqaiq e Khurais
+- date: '2019-05-13'
+  theme: commodity_energy
+  reference: HO=F
+  source: 2026-09-12/news_02.md
+  reason: 'Stazioni di pompaggio dell''oleodotto Est-Ovest saudita, greggio. Terminal o oleodotto di solo
+    greggio: il canale verso il diesel passa dal costo della materia prima, cioè da BZ=F dove il verso
+    è già dichiarato; sul crack il segno non è univoco. Criterio ex ante, nessun prezzo consultato. Revisione
+    Claude 2026-11-11.'
+  status: excluded
+  description: Attacco a stazioni di pompaggio dell'oleodotto Est-Ovest saudita
