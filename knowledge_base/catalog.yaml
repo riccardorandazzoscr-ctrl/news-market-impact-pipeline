@@ -1,5 +1,5 @@
-generated_at: '2026-11-09T11:51:05'
-num_entries: 50
+generated_at: '2026-11-10T22:02:22'
+num_entries: 52
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -883,6 +883,86 @@ entries:
   - Brazilian real
   - Bovespa
   - election risk
+- source_file: Escalation militari nel Golfo e premio di rischio già prezzato_ quando
+    il petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e
+    premio di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
+  title: 'Escalation militari nel Golfo e premio di rischio già prezzato: quando il
+    petrolio ignora un attacco — regime ed episodi storici (2011–presente)'
+  date_compiled: 2026-11-10
+  primary_theme: commodity_energy
+  sub_themes:
+  - military_escalation
+  - priced_conflict
+  - limited_strike
+  - negotiation_track
+  - hormuz
+  - iran
+  - houthi
+  - sanctions
+  - supply_disruption
+  - infrastructure_attack
+  - shipping_chokepoint
+  - refinery_products
+  - oil_supply_shock
+  - gas_europe
+  - de_escalation
+  relevant_assets:
+  - BZ=F
+  - HO=F
+  - RB=F
+  - CRACK_321
+  - XLE
+  - IYT
+  - TTF=F
+  external_assets_mentioned:
+  - WTI (CL=F) — differenziale Brent-WTI oltre 15 dollari nel 2026, misura la scarsità
+    relativa del greggio atlantico
+  - Spread a termine Brent prima-sesta scadenza — misura diretta del premio fisico
+    e della backwardation
+  - OVX — volatilità implicita, domanda di copertura prima e dopo le escalation
+  - Baltic Dirty Tanker Index / noli VLCC — canale in cui si è scaricato il premio
+    del Mar Rosso
+  - Premi assicurativi war risk — costo del transito a Hormuz e Bab el-Mandeb
+  - Spread Brent-Dubai — scarsità del greggio mediorientale
+  - Dated Brent spot — premio fisico (132 dollari a settembre 2026 contro futures
+    a 109)
+  time_window:
+    start: 2011-01-01
+    end: present
+  regime_phases:
+  - low_premium_glut: 2014-11-27 to 2019-05-01
+  - maximum_pressure_iran: 2019-05-02 to 2020-03-08
+  - red_sea_proxy_war: 2023-11-19 to 2026-02-27
+  - iran_war_2026: 2026-02-28 to 2026-08-31
+  - stalemate_escalation_2026: 2026-09-01 to present
+  keywords:
+  - escalation
+  - raid
+  - attacco a petroliere
+  - sequestro
+  - Stretto di Hormuz
+  - premio di rischio
+  - saturazione del premio
+  - azione limitata
+  - trattativa aperta
+  - oleodotto di bypass
+  - blocco navale
+  - priced in
+  - limited strike
+  - defensive strike
+  - self-defense strikes
+  - tanker attack
+  - tanker seizure
+  - risk premium
+  - risk premium saturation
+  - supply disruption
+  - chokepoint
+  - Qeshm
+  - Khasab
+  - Abqaiq
+  - Houthi
+  - Red Sea
+  - event study
 - source_file: Fed_ reaction function, indipendenza e divergenza con la BCE (2023–2026)/Fed_
     reaction function, indipendenza e divergenza con la BCE (2023–2026).md
   title: 'Fed: reaction function, indipendenza e divergenza con la BCE (2023–2026)'
@@ -2566,6 +2646,76 @@ entries:
   - tariffs
   - BLS
   - nowcast Cleveland
+- source_file: Sorprese dei dati di attività cinesi e trasmissione a yuan, rame e
+    asset cinesi (2012–2026)_ catalogo di 35 episodi per event study/Sorprese dei
+    dati di attività cinesi e trasmissione a yuan, rame e asset cinesi (2012–2026)_
+    catalogo di 35 episodi per event study.md
+  title: 'Sorprese dei dati di attività cinesi e trasmissione a yuan, rame e asset
+    cinesi (2012–2026): catalogo di 35 episodi per event study'
+  date_compiled: 2026-11-10
+  primary_theme: macro_data
+  sub_themes:
+  - china
+  - activity_growth
+  - china_gdp
+  - pmi
+  - cny
+  - china_stimulus
+  - china_consumption
+  - commodity_demand
+  - pboc
+  - tariff_escalation
+  relevant_assets:
+  - CNY=X
+  - HG=F
+  - KWEB
+  - AUD=X
+  - EEM
+  - EWY
+  - ^N225
+  - BZ=F
+  - ^GSPC
+  external_assets_mentioned:
+  - CNH (USD/CNH offshore) — reagisce 24h e senza vincolo di fixing, misura più pulita
+    del canale yuan
+  - Hang Seng / Hang Seng China Enterprises — equity cinesi nello stesso fuso della
+    release, evitano il disallineamento di KWEB
+  - CSI 300 — mercato onshore, rilevante per 2016-01-04 (circuit breaker) e 2019-04-01
+  - Minerale di ferro SGX/DCE — canale acciaio-costruzioni, driver più diretto di
+    AUD
+  - Caixin/RatingDog PMI come serie — necessario per ricostruire la storia completa
+    delle sorprese PMI private
+  - Consenso Bloomberg/Reuters come serie — necessario per standardizzare la sorpresa
+    in z-score
+  time_window:
+    start: 2012-01-01
+    end: present
+  regime_phases:
+  - managed_peg_credit_slowdown: 2012-01-01 to 2015-08-10
+  - post_devaluation_two_way_fx: 2015-08-11 to 2019-12-31
+  - covid_shock_and_zero_covid: 2020-01-01 to 2022-12-07
+  - reopening_and_deflation: 2022-12-08 to 2024-09-23
+  - policy_put_export_boom: 2024-09-24 to present
+  keywords:
+  - Cina
+  - PIL cinese
+  - PMI
+  - Caixin
+  - NBS
+  - produzione industriale
+  - vendite al dettaglio
+  - investimenti fissi
+  - yuan
+  - rame
+  - consenso
+  - sorpresa
+  - China GDP
+  - China PMI
+  - Caixin PMI
+  - industrial production
+  - retail sales
+  - data surprise
+  - hard landing
 - source_file: Sorprese della Bank of Canada e trasmissione al dollaro canadese e
     al TSX_ regime ed episodi storici 2011-presente/Sorprese della Bank of Canada
     e trasmissione al dollaro canadese e al TSX_ regime ed episodi storici 2011-presente.md
