@@ -37,11 +37,13 @@ già pronto.
 - **Conference Board (Consumer Confidence Index)** — indice mensile USA della fiducia dei consumatori, costruito da un'associazione privata di imprese; pesa molto la valutazione del mercato del lavoro. Sotto 80 nella componente aspettative è storicamente associato a rischio di recessione.
 - **Consenso** — media delle previsioni degli analisti prima di una release; la "sorpresa" è la differenza fra dato pubblicato e consenso. Fornitori diversi (Reuters, Bloomberg, Wind) pubblicano consensi diversi.
 - **Core (inflazione di fondo)** — l'inflazione esclusi energia e alimentari freschi, perché quelle voci sono volatili e guidate da fattori esterni; il core misura meglio la pressione generata dall'economia interna.
+- **Caixin PMI (dal 2025 RatingDog)** — il PMI manifatturiero cinese privato (S&P Global), più orientato alle imprese private e all'export di quello ufficiale NBS; esce pochi giorni dopo il dato ufficiale.
 - **CPI (Consumer Price Index)** — indice dei prezzi al consumo, la misura di inflazione percepita dalle famiglie.
 - **Destatis** — l'istituto federale di statistica tedesco.
 - **Dissenso (FOMC)** — voto contrario alla decisione della maggioranza, reso pubblico con il comunicato. Due o più dissensi nella stessa direzione sono letti come anticipo della prossima mossa del comitato.
 - **Dot plot** — il grafico a punti in cui ogni membro del comitato Fed indica anonimamente dove vede i tassi negli anni successivi. Non è un impegno, ma è il segnale di guidance più seguito.
 - **Fed / Federal Reserve** — la banca centrale degli Stati Uniti.
+- **Fed funds (tasso e future)** — il tasso overnight fra banche che la Fed fissa come obiettivo (oggi in una fascia di 25 bp, es. 3,75-4%). I future sui Fed funds, quotati al CME, prezzano il tasso medio atteso nei mesi futuri: da lì si ricavano le probabilità di un rialzo o di un taglio alla prossima riunione (vedi CME FedWatch).
 - **Fed regionali (presidenti)** — i dodici presidenti delle Federal Reserve Bank regionali (Cleveland, New York, ecc.). Cinque votano nel FOMC a rotazione (New York sempre): un loro discorso segnala un orientamento, ma pesa meno di una decisione o del presidente della Fed.
 - **Flash estimate (stima flash)** — la prima pubblicazione, rapida e provvisoria, di un dato di inflazione; viene rivista in seguito con il dato definitivo.
 - **FOMC (Federal Open Market Committee)** — il comitato della Fed che decide i tassi; si riunisce otto volte l'anno.
