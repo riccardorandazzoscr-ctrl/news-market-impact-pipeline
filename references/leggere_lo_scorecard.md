@@ -12,6 +12,11 @@ Controllo di completezza: `news_impact_pipeline/venv/bin/python
 news_impact_pipeline/forecast_tracking.py audit` dalla root del progetto.
 Non usare le conclusioni e le liste storiche sotto come regole attuali.
 
+Dal 12 novembre 2026 (Run 11d) le schede non leggono più la scorecard: la tabella del
+seguito è sempre `[descrittiva]` e la 5-bis non riceve righe nuove. Le percentuali della
+5-bis portano l'intervallo di Wilson sui giorni unici. Il perché: `PIANO_REVISIONE_PIPELINE.md`,
+Run 11; i numeri: `news_impact_pipeline/quant_reazione.py replay`.
+
 ---
 
 # Leggere la scorecard senza ingannarsi

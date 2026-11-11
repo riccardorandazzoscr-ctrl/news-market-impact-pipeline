@@ -52,7 +52,7 @@ $V news_impact_pipeline/analogues.py stats                         # qualità li
 
 Notizia → **l'agente stesso classifica** (ontologia in Design_Document §6.1) → KB per il
 contesto di regime → analoghi storici dalla **libreria episodi** (`analogues.py`) → event
-study (rendimenti cumulati a T+1, T+3, T+5, T+10) → scheda in `daily_analysis/YYYY-MM-DD/`
+study (`--reaction`: reazione del giorno, già prezzato, seguito a T+1…T+10) → scheda in `daily_analysis/YYYY-MM-DD/`
 → `forecast_tracking.py register` (una scheda ambigua resta fuori, l'invio parte comunque)
 → `render_report.py` → `send_telegram.sh`. Una research indicizzata o versi promossi dopo la consegna rifanno solo le schede di oggi che toccano, sui dati congelati al brief (`run_rianalisi_kb.sh`, vedi routine_giornaliera.md).
 
@@ -62,8 +62,8 @@ headless su Opus 5.5. L'anteprima della domenica scrive in `weekly_preview/AAAA-
 
 ## Reference
 
-- [leggere_lo_scorecard.md](references/leggere_lo_scorecard.md) — **prima di scrivere una lettura
-  direzionale.** Benchmark sugli stessi casi e IC per asset/orizzonte; nessuna promozione automatica.
+- [leggere_lo_scorecard.md](references/leggere_lo_scorecard.md) — interpretare la scorecard. Le schede
+  non fanno previsioni sul seguito (Run 11): reazione del giorno, già prezzato, seguito descrittivo.
 - [esperimenti_scartati.md](references/esperimenti_scartati.md) — un miglioramento al metodo è già stato provato?
 - [copertura_asset.md](references/copertura_asset.md) — aggiungere un asset, o perché c'è/non c'è.
 - [convenzioni_lettura_asset.md](references/convenzioni_lettura_asset.md) — bond, small cap,

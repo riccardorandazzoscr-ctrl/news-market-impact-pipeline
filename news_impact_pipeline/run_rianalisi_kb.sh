@@ -164,7 +164,8 @@ Dati congelati al brief (vincolante):
 - I prezzi sono già la copia del mattino (variabile NEWSIMPACT_DB, la leggono tutti i
   tool): non aprire market_data/market_data.db direttamente.
 - Scorecard: usa SOLO $SCORECARD, non una più recente.
-- analogues.py find sempre con --before $TODAY; event_study.py con --as-of $TODAY.
+- analogues.py find sempre con --before $TODAY; event_study.py con --as-of $TODAY --reaction
+  (formato a tre blocchi del runbook; --reaction-session solo se la scheda ha seduta_reazione).
 
 Chiusura:
 - In _index.md aggiungi in coda alla Sintesi di sessione un paragrafo "$NOTA"
@@ -176,8 +177,8 @@ Chiusura:
    (N, verso, INDICATIVE ONLY se N<10) rispetto a stamattina.
 
 Valgono tutte le regole del runbook: verso = pressione attesa sul prezzo, N sempre
-riportato, scorecard letta prima della lettura direzionale, [descrittiva] se il segno
-non regge. ECONOMIA DEL RUN: raccogli tutto prima di scrivere, un passaggio per file,
+riportato, nessuna previsione sul seguito (tabella "Seguito" sempre [descrittiva]).
+ECONOMIA DEL RUN: raccogli tutto prima di scrivere, un passaggio per file,
 Edit chirurgico per le correzioni, niente --help. Lavora in $DAY/.
 EOF
 

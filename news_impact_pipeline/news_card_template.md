@@ -30,12 +30,17 @@
 | `primary_theme` | {{PRIMARY_THEME}} |
 | `sub_themes` | {{SUB_THEMES}} |
 | `direction_reference` |  |
+| `seduta_reazione` |  |
 | `sentiment` | {{SENTIMENT}} <!-- hawkish/dovish, bullish/bearish, risk-on/risk-off, neutral --> |
 | `confidence` | {{CONFIDENCE}} <!-- low / medium / high --> |
 | `horizon` | {{HORIZON}} <!-- da category_asset_map.yaml --> |
 
 <!-- Compila direction_reference col ticker del prezzo cui si riferiscono TUTTE
-     le righe Verso della scheda, prima di costruire gli analoghi direzionali. -->
+     le righe Verso della scheda, prima di costruire gli analoghi direzionali.
+     seduta_reazione = AAAA-MM-GG della seduta, GIÀ CHIUSA prima della data analisi,
+     in cui i mercati hanno reagito alla notizia (di solito ieri). Lasciala vuota se
+     l'evento è in calendario, in corso, o uscito a mercati chiusi: la reazione non
+     è ancora osservabile. -->
 
 **Motivazione classificazione**: <!-- 1-3 frasi: perché questo theme, sentiment e confidence. -->
 
@@ -113,29 +118,41 @@ venv/bin/python event_study.py \
   --ticker 'TICKER1,TICKER2' \
   --events YYYY-MM-DD,YYYY-MM-DD,... \
   --windows 1,3,5,10 --as-of {{DATE}} \
-  --markdown
+  --reaction --direction pos --direction-reference TICKER1 \
+  --reaction-session YYYY-MM-DD
 ```
+<!-- --direction e --direction-reference: gli stessi passati ad analogues.py find.
+     --reaction-session: il valore di seduta_reazione; omettilo se il campo è vuoto. -->
 
 ### Risultati
 
-<!-- Incolla qui l'output --markdown di event_study.py.
+<!-- Incolla qui l'output di event_study.py --reaction COM'È: titoli, righe di
+     conclusione e tabelle li stampa il tool, non riscriverli e non ricalcolarli.
      Il sistema flagga automaticamente "INDICATIVE ONLY" se N<10. -->
 
-**Dichiara l'uso di ogni tabella** (obbligatorio dal 2026-09-23): in fondo al titolo
-`### Event study — `TICKER`` aggiungi **una** di queste marche. Le legge
-`forecast_tracking.py`: senza marca la scheda resta fuori dalla registrazione giornaliera (lo storico resta «non dichiarato»).
+Per ogni ticker il tool stampa tre blocchi (formato dal 2026-11-12, Run 11):
 
-- `[previsione]` — ci costruisci sopra la lettura direzionale della scheda.
-- `[descrittiva]` — la riporti, ma dichiari il segno storico inaffidabile (sezione
-  5-bis della scorecard) o non ne trai una direzione.
-- `[scenario: nome-breve]` — tabella alternativa dello stesso asset (secondo pool,
-  sotto-campione). Obbligatoria quando un asset compare in più tabelle: il nome
-  distingue le previsioni, altrimenti la scheda viene segnalata come ambigua e non registrata.
+- `### Reazione degli analoghi — `TICKER`` — quanto si è mosso l'asset nella seduta
+  della notizia negli episodi del pool, e in quanti casi nel verso dichiarato
+  (solo sul `direction_reference`).
+- `### Reazione di oggi — `TICKER`` — solo con `--reaction-session`: la mossa di quella
+  seduta e se è più forte, in linea o più debole degli analoghi. È il «già prezzato».
+- `### Seguito — `TICKER` [descrittiva]` — T+1…T+10 accanto alla mediana normale
+  dell'asset. **Non è una previsione**: il segno del seguito non ha informazione
+  (misurato: `quant_reazione.py replay`). `forecast_tracking.py` registra la tabella
+  come descrittiva e **rifiuta `[previsione]`** su un titolo «Seguito».
 
-_Incolla qui le tabelle generate, una per ticker: non accorpare più asset o
-p25/p75 in una cella nelle nuove schede. Il parser di registrazione controlla
-completezza, valori finiti, quartili e duplicati. Usa [descrittiva] con regime
-incompatibile, sorpresa non documentata o N<10. La soglia non è una prova di edge._
+Se lo stesso asset compare in due tabelle (secondo pool, sotto-campione), nella
+seconda sostituisci `[descrittiva]` con `[scenario: nome-breve]`: il nome distingue
+le righe nel ledger, altrimenti la scheda è segnalata come ambigua e non registrata.
+
+Sotto i blocchi dell'asset di riferimento scrivi **una riga «In pratica: …»** con i
+numeri della reazione (esempio nel runbook, «Stile e chiarezza» punto 4). Se non c'è
+niente da dire, dillo in quella riga, con il numero. Non citare percentuali della
+scorecard.
+
+_Una tabella per ticker: non accorpare più asset o p25/p75 in una cella. Il parser
+di registrazione controlla completezza, valori finiti, quartili e duplicati._
 
 ---
 

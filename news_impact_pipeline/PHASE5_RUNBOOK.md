@@ -46,7 +46,7 @@ Tre regole, in ordine di impatto:
    pre-popolato di placeholder in un proprio passaggio, separato): vieta di
    rigenerare il corpo a pezzi, sezione per sezione, turno dopo turno. Prima di
    scrivere una scheda, **raccogli tutto**: pool di episodi potato, event study,
-   research KB, sezione 5-bis della scorecard. Poi riempi lo scaffold con un solo
+   research KB. Poi riempi lo scaffold con un solo
    Edit che sostituisce tutti i placeholder in blocco. Se dopo devi correggere,
    altro Edit chirurgico sulla stringa da cambiare — mai un heredoc che rigenera
    il corpo.
@@ -94,11 +94,17 @@ venv/bin/python analogues.py find --theme <t> [--subtheme <tok>]... \
 venv/bin/python analogues.py labels --theme <t>    # copertura per token
 venv/bin/python analogues.py stats                 # adozione blocchi dichiarati
 
-# 5. event study
+# 5. event study — formato delle schede: reazione, reazione di oggi, seguito
 venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
-  --windows 1,3,5,10 --as-of AAAA-MM-GG --markdown [--detail] [--no-adj]
-#   --detail aggiunge la tabella per-episodio: pesa l'80% dell'output e nelle
-#   schede non si incolla mai. Chiedilo SOLO per potare il pool o cacciare outlier.
+  --windows 1,3,5,10 --as-of AAAA-MM-GG --reaction \
+  [--direction pos|neg --direction-reference TICKER] [--reaction-session AAAA-MM-GG] [--no-adj]
+#   --reaction stampa per ogni ticker i tre blocchi da incollare com'è nella scheda.
+#   --direction/--direction-reference: gli stessi del find → quota di reazioni nel
+#     verso dichiarato (solo sull'asset di riferimento).
+#   --reaction-session: il campo seduta_reazione della scheda; omettilo se è vuoto.
+# 5b. tabella classica con una riga per episodio: SOLO per potare il pool o cacciare
+#     outlier, non si incolla nelle schede.
+venv/bin/python event_study.py --ticker 'T1' --events <date CSV> --as-of AAAA-MM-GG --markdown --detail
 ```
 
 ## Procedura (tutti i comandi dalla dir `news_impact_pipeline/`)
@@ -158,27 +164,41 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
    `calendari_riunioni.yaml` (data della decisione), mai a memoria: a giugno-settembre 2026
    24 righe di scheda mettevano riunioni BoJ e BCE nei giorni FOMC.
    `--allow-fallback` abilita il vecchio allargamento solo per un confronto
-   **descrittivo**, mai per una previsione attiva. Annota il motivo del vuoto:
+   dichiarato come tale nella scheda. Annota il motivo del vuoto:
    famiglia, geografia, sorpresa, riferimento, regime o prezzi mancanti.
 
    Il regime deve influire sulla selezione: controlla i singoli episodi prima
    del calcolo, escludi quelli incompatibili e documenta la regola usata.
    `--since AAAA-MM-GG` permette di limitare alla fase temporale scelta dalla KB;
    un intervallo di date o i 30 eventi più recenti non provano equivalenza economica.
-   Se non resta un campione confrontabile, la tabella è `[descrittiva]` oppure
-   si dichiara astensione. Non inventare etichette di regime dai rendimenti.
+   Se non resta un campione confrontabile si dichiara astensione. Non inventare etichette di regime dai rendimenti.
 
    Passa **sempre `--as-of DATA_ANALISI` a `event_study.py`**, anche nei rilanci
    storici: usa solo chiusure anteriori a quel giorno ed esclude per ogni
    orizzonte gli esiti ancora immaturi. Non prova la disponibilità all'epoca
    delle etichette: anche le fonti degli episodi devono essere contemporanee.
 
-   L'output di default è **compatto**: solo le tabelle di statistiche, che sono le
-   uniche che finiscono nella scheda. Se devi potare il pool o capire un outlier,
-   rilancia quella singola chiamata con `--detail`. Poi scrivi la scheda **completa
-   in un passaggio** — tabelle e sezioni qualitative insieme (motivazione
-   classificazione, asset, regime, episodi+motivazione, lettura sintetica, caveat).
-   Se min(N) < 10 → la scheda riporta già "INDICATIVE ONLY".
+   **Reazione, non seguito (dal 2026-11-12).** Lancia `event_study.py` con `--reaction`
+   (comando 5): per ogni ticker stampa tre blocchi che incolli **com'è** — reazione
+   degli analoghi nella seduta della notizia, reazione di oggi, seguito T+1…T+10
+   accanto al comportamento normale dell'asset. L'informazione di una notizia sta
+   nella seduta in cui esce; sul seguito il segno storico vale quanto una moneta
+   (misura rieseguibile: `quant_reazione.py replay`). Per questo la tabella del
+   seguito è sempre `[descrittiva]` e non ci si costruisce una direzione attesa.
+
+   **`seduta_reazione`.** Nella Classificazione scrivi la seduta, già chiusa prima
+   della data analisi, in cui i mercati hanno reagito alla notizia (di solito ieri)
+   e passala a `--reaction-session`. Lasciala vuota — e ometti il flag — se l'evento
+   è in calendario, in corso o uscito a mercati chiusi: in quel caso il blocco
+   «Reazione degli analoghi» è la distribuzione attesa della reazione (con due pool,
+   `--direction pos` e `neg`, i due rami «se sopra le attese / se sotto»). Se il
+   blocco «Reazione di oggi» dice «non ancora disponibile», quell'asset non aveva
+   una chiusura in quella seduta: non sostituirla con un'altra data.
+
+   Se devi potare il pool o capire un outlier, usa il comando 5b. Poi scrivi la
+   scheda **completa in un passaggio** — blocchi e sezioni qualitative insieme
+   (motivazione classificazione, asset, regime, episodi+motivazione, lettura
+   sintetica, caveat). Se min(N) < 10 → la scheda riporta già "INDICATIVE ONLY".
 
    **Convenzione Verso dal 2026-09-13.** Passa `--direction-reference TICKER`
    insieme a `--direction`. Il verso indica la pressione sul prezzo dell'asset
@@ -275,25 +295,15 @@ venv/bin/python event_study.py --ticker 'T1,T2' --events <date CSV> \
 ## Note metodologiche (vincolanti — cfr. CLAUDE.md e Design Doc §7)
 
 - Riporta SEMPRE N accanto alle statistiche; N<10 → "indicative only".
-- **Asset su cui NON trarre una direzione attesa.** Prima di scrivere la lettura
-  direzionale, apri la scorecard più recente (`daily_analysis/_scorecard/` — l'ultimo
-  file per settimana ISO) e leggi la sezione **"5-bis. Su quali ASSET prevediamo
-  meglio?"**. La tabella non dà più un giudizio automatico: hit-rate e IC sono
-  metriche diverse (hit-rate = quota di segni corretti, IC = se l'ordine delle
-  magnitudini rispecchia il realizzato) e possono divergere — un IC negativo NON
-  implica da solo che la direzione sia sbagliata più spesso che no. Leggi i due
-  numeri dell'asset che ti serve; se appaiono deboli o incoerenti fra loro, riporta
-  pure la tabella dell'event study ma **dichiara esplicitamente che il segno
-  storico è inaffidabile** su quell'asset invece di costruirci sopra una previsione.
-  La stessa scelta va **marcata nel titolo di ogni tabella**: `[previsione]`,
-  `[descrittiva]` o `[scenario: nome]` (dettagli nel template, sezione Risultati).
-  Il ledger delle previsioni registra solo ciò che è dichiarato lì, non la prosa.
-  Hit-rate >50% e IC positivo non sono una prova di vantaggio: confronta le
-  baseline sugli stessi casi e sullo stesso orizzonte; niente promozione automatica.
-  Regime incompatibile, sorpresa non documentata o N<10 → `[descrittiva]`.
+- **Nessuna previsione sul seguito** (deciso dal maintainer il 2026-10-07, in vigore
+  nelle schede dal 2026-11-12). La tabella «Seguito» è descrittiva: non trarne una
+  direzione attesa e non citare percentuali della scorecard nelle schede. Quello che
+  la scheda può dire con i numeri è: quanto si muove di solito l'asset il giorno di
+  una notizia così, quanto si è già mosso stavolta, e che il seguito non si distingue
+  dal comportamento normale. Le Considerazioni qualitative spiegano il meccanismo e
+  non contraddicono i blocchi senza dirlo. Un secondo pool dello stesso asset va
+  marcato `[scenario: nome]` (dettagli nel template, sezione Risultati).
   Conserva anche le astensioni nella sintesi con il motivo, per misurare la copertura.
-  ⚠ NON dare per scontato un elenco a memoria: cambia ogni settimana, i numeri vanno
-  riletti dalla scorecard corrente.
 - Selezione analoghi: solo info disponibile alla data dell'episodio (no look-ahead).
 - La segmentazione per regime è la difesa principale contro il mixing di contesti
   macro strutturalmente diversi: dichiara sempre se gli analoghi appartengono a
@@ -326,11 +336,14 @@ un problema; l'oscurità sì. Regole:
 3. **Non dare per scontato il contesto.** Se citi un episodio storico (es. "l'errore
    di Trichet del 2011"), aggiungi mezza riga su cosa fu e perché è rilevante.
 
-4. **Interpreta i numeri dell'event study a parole.** Dopo ogni tabella, una riga del
-   tipo: "in pratica: nei 5 episodi simili, a 10 giorni l'indice era in calo nella
-   maggioranza dei casi (mediana −2,4%), ma con forte dispersione → segnale debole".
-   Ricorda sempre cosa significano T+1/T+5/T+10 (giorni di borsa dopo l'evento),
-   mediana vs media, e perché N piccolo = indicativo.
+4. **Interpreta i numeri dell'event study a parole.** Sotto i blocchi dell'asset di
+   riferimento, una riga del tipo: "In pratica: nei 13 episodi simili il Brent si è
+   mosso di +2,2% nel giorno della notizia, 9 volte su 13 nel verso atteso; ieri ha
+   fatto +2,8%, più degli analoghi → la notizia è già nei prezzi. Sul seguito il pool
+   non si distingue dal normale." Se non c'è niente da dire, dillo in quella riga con
+   il numero. Ricorda sempre cosa significano la reazione (seduta della notizia contro
+   la chiusura precedente), T+1/T+5/T+10 (giorni di borsa dopo), la mediana, e perché
+   N piccolo = indicativo.
 
 5. **Tono**: didattico, non accademico. Frasi piane. Va benissimo una parentesi
    esplicativa in più. Evita il gergo non spiegato e le catene di sigle senza link

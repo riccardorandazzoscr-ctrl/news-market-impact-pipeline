@@ -157,7 +157,8 @@ Metodo: [references/laboratorio_cpi.md](references/laboratorio_cpi.md)
 - **Fatto (11/11)** — Run 11b: `event_study.py --reaction` stampa reazione degli analoghi, reazione di oggi e seguito `[descrittiva]` accanto al normale; default invariato. Le definizioni (`sigma`, `reaction`, `baseline`) stanno in `event_study.py`.
 - **Osservato (11/11)** — replay rifatto con un mese in più: segno del seguito ancora ~50%, mediana del pool peggio di «zero»; pool con N<10 hanno bande più strette del vero. Numeri: `quant_reazione.py replay`.
 - **Fatto (11/11)** — Run 11c: il ledger legge i blocchi nuovi come `[descrittiva]` e rifiuta `[previsione]` sul seguito; la 5-bis porta l'intervallo di Wilson sui giorni unici. Il parser dà lo stesso risultato di prima su tutte le schede esistenti.
-- **Prossimo passo** — Run 11d (template, runbook, campo `seduta_reazione`, scheda di prova, go-live). Finché non è chiuso il run giornaliero usa ancora la tabella classica. Dopo il go-live la 5-bis non riceve più righe nuove (solo `[previsione]`): decidere quale numero mettere in testa alla scorecard.
+- **Fatto (11/11)** — Run 11d: template, runbook e prompt di analisi e rianalisi usano `event_study.py --reaction`; campo `seduta_reazione`; via la regola della 5-bis. Scheda di prova in `daily_analysis/_prova_run11d/`.
+- **Da verificare (12/11)** — primo run giornaliero col formato nuovo: blocchi incollati com'è, `seduta_reazione` compilata, registrazione senza quarantene, costo in `logs/usage.csv`. Poi decidere il numero di testa della scorecard (la 5-bis non riceve più righe).
 
 Spec e sequenza: [PIANO_REVISIONE_PIPELINE.md](PIANO_REVISIONE_PIPELINE.md) (Run 11)
 

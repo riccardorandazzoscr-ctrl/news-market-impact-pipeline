@@ -479,7 +479,11 @@ Passi:
 3) Per ogni notizia tenuta esegui il flusso completo (assets, match, new-card).
    Per gli episodi analoghi usa la LIBRERIA (Opzione B): analogues.py find --theme
    <theme> --subtheme <tok> --direction <pos|neg|neutral> --direction-reference <ticker> --before <data notizia> →
-   usa quel pool per --events di event_study.py, con --as-of $TODAY. Verso indica pressione sul prezzo
+   usa quel pool per --events di event_study.py, con --as-of $TODAY --reaction e gli stessi
+   --direction/--direction-reference del find. Compila seduta_reazione nella scheda (la seduta
+   già chiusa in cui i mercati hanno reagito, di solito ieri) e passala a --reaction-session;
+   lasciala vuota e ometti il flag se l'evento è in calendario, in corso o uscito a mercati
+   chiusi. Incolla i tre blocchi stampati dal tool com'è, senza riscriverli. Verso indica pressione sul prezzo
    del ticker (non evento buono/cattivo né rendimento ex post). Compila nella scheda
    direction_reference come da template. Legacy e conflitti sono esclusi: se N è
    piccolo mantienilo indicativo o astieniti, non forzare il segno. Passa SEMPRE --direction e --direction-reference e, sui temi
@@ -487,22 +491,18 @@ Passi:
    diluisce il segnale). La libreria applica già un tetto di recency (30 più recenti).
    Puoi potare i non pertinenti; non aggiungere episodi soltanto per raggiungere N. Poi compila
    via Edit tutte le sezioni qualitative. Se min(N)<10 la scheda riporta "INDICATIVE ONLY".
-   PRIMA di scrivere la lettura direzionale leggi la scorecard più recente in
-   $DAILY/_scorecard/ sezione "5-bis" (per-asset): hit-rate e IC sono metriche
-   diverse (possono divergere) e nella tabella NON c'è più un giudizio automatico —
-   leggi i due numeri dell'asset toccato dalla scheda e giudica tu; se appaiono
-   deboli o incoerenti fra loro riporta l'event study ma dichiara esplicitamente
-   che il segno storico è inaffidabile, invece di trarne una direzione attesa.
-   Rileggi i numeri lì, non a memoria. Confronta anche sempre-su/sempre-giù:
-   hit-rate sopra 50% e IC positivo non autorizzano da soli una previsione.
-   Il filtro sotto-tema ora è stretto: --allow-fallback è solo per descrizione.
-   Regime incompatibile, sorpresa non documentata o N<10 → [descrittiva].
+   NESSUNA previsione sul seguito: la tabella "Seguito" è sempre [descrittiva] (la marca
+   la stampa il tool, [previsione] viene rifiutata dalla registrazione). Non trarne una
+   direzione attesa e non citare percentuali della scorecard. Sotto i blocchi dell'asset
+   di riferimento scrivi una riga "In pratica: ..." con i numeri della reazione (runbook,
+   "Stile e chiarezza" punto 4). Un secondo pool dello stesso asset: [scenario: nome].
+   Il filtro sotto-tema è stretto: --allow-fallback solo per un confronto dichiarato.
    Mantieni ogni tabella nel formato del template: il parser blocca le ambiguità.
 4) Compila la "Sintesi di sessione" in _index.md.
 
 ECONOMIA DEL RUN (vincolante, sezione omonima del runbook): il costo cresce col
 QUADRATO dei turni. Quindi: raccogli TUTTO prima di scrivere (pool potato, event
-study, match KB, sezione 5-bis della scorecard) e scrivi ogni file in UN SOLO
+study, match KB) e scrivi ogni file in UN SOLO
 passaggio; per le correzioni usa Edit chirurgico, mai un heredoc che rigenera il
 corpo; non rileggere ciò che hai appena scritto; non lanciare --help (i flag sono
 nel runbook, sezione "Riferimento comandi"). Questo non deve accorciare né

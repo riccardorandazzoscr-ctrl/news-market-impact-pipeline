@@ -19,13 +19,19 @@ già pronto.
 - **Look-ahead bias** — usare, nel valutare un episodio storico, informazioni che a quella data non erano ancora disponibili. L'event study del progetto lo esclude per costruzione.
 - **Media** — sensibile ai casi estremi: un singolo episodio anomalo può spostarla parecchio. Quando media e mediana hanno segno opposto, la media non è utilizzabile.
 - **Mediana** — il valore centrale del campione di episodi: metà sta sopra, metà sotto. Più robusta della media sui campioni piccoli.
+- **Mediana normale** — la mediana dei rendimenti dello stesso asset, sullo stesso orizzonte, nelle 250 sedute prima dell'analisi: quello che l'asset fa di solito, notizia o no. Nella tabella del seguito sta accanto alla mediana del pool: se le due sono vicine, gli episodi simili non dicono nulla di diverso dal solito.
 - **N** — numero di episodi storici nel campione. Con N<10 il risultato è **indicative only**.
+- **N effettivo (N eff)** — gli episodi contati una volta sola quando le loro finestre T+N si sovrappongono (ancore a meno di N sedute l'una dall'altra): due attacchi a tre giorni di distanza misurano in gran parte lo stesso movimento.
 - **p25 / p75** — 25° e 75° percentile: delimitano la metà centrale degli episodi. Una banda molto più larga della mediana segnala dispersione alta.
 - **Punto base (bp)** — un centesimo di punto percentuale (0,01%).
+- **Reazione (R0)** — la variazione dell'asset nella seduta in cui la notizia arriva sul mercato, contro la chiusura precedente. È lì che sta l'informazione della notizia; i giorni dopo (il seguito) non si distinguono dal comportamento normale.
 - **Regime (storico/macro)** — la fase di mercato (tassi in salita, dollaro forte, ecc.) in cui un episodio è avvenuto. Episodi di regimi diversi non vanno mescolati nello stesso campione.
 - **Rientro verso la media (mean reversion)** — la tendenza di un prezzo a recuperare parte di un movimento brusco nei giorni successivi. Nell'event study si vede quando il segno a T+3/T+10 è opposto alla pressione dichiarata all'evento: il calo (o il rialzo) si è concentrato nel giorno T=0 e poi è stato in parte restituito.
+- **Seduta di reazione** — la seduta, già chiusa, in cui i mercati hanno reagito alla notizia della scheda (di solito il giorno prima dell'analisi). Serve a misurare quanto la notizia è già nei prezzi; se l'evento deve ancora avvenire resta vuota.
+- **Seguito** — i rendimenti cumulati a T+1…T+10 dopo il giorno-ancora. Le schede li riportano come descrizione, non come previsione: sullo storico del progetto il loro segno si indovina una volta su due.
 - **Sempre su / sempre giù (baseline)** — hit rate che si otterrebbe prevedendo sempre un rialzo (o sempre un ribasso) sugli stessi casi e orizzonti della scorecard. Un hit rate che non le supera non dimostra alcun vantaggio, anche se è sopra il 50%.
 - **T+1 / T+3 / T+5 / T+10 (T+N)** — giorni di **borsa** dopo l'evento, non giorni di calendario. I rendimenti sono **cumulati** dal giorno dell'evento, non giornalieri.
+- **z (della reazione)** — la reazione divisa per la volatilità giornaliera dell'asset nelle 60 sedute precedenti: dice quante «giornate normali» vale la mossa. In un giorno qualsiasi il valore assoluto mediano è circa 0,67; sopra 1 la seduta è stata più mossa del solito.
 
 ## Dati macro e banche centrali
 

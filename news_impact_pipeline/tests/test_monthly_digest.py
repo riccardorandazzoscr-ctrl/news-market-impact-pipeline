@@ -115,5 +115,17 @@ class ValidateReportTests(unittest.TestCase):
         self.assertIn("sezione 6 vuota o con segnaposto", self.validate(self._report("…")))
 
 
+class AssetDelleSchede(unittest.TestCase):
+    def test_asset_letti_dal_formato_classico_e_dal_run_11(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            card = Path(tmp) / "2026-11-12" / "news_01.md"
+            card.parent.mkdir()
+            card.write_text("# Titolo\n\n### Reazione degli analoghi — `BZ=F` (N=7, |z| mediano 0.95)\n\n"
+                            "### Seguito — `BZ=F` [descrittiva] — nessuna previsione sul seguito (N=7)\n\n"
+                            "### Seguito — `HO=F` [scenario: pool-b] — nessuna previsione sul seguito (N=7)\n\n"
+                            "### Event study — `^GSPC` [descrittiva]\n", encoding="utf-8")
+            self.assertEqual(md.parse_card(card)["assets"], ["BZ=F", "HO=F", "^GSPC"])
+
+
 if __name__ == "__main__":
     unittest.main()

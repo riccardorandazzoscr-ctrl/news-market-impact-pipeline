@@ -44,7 +44,7 @@ def parse_card(path: Path) -> dict:
     m = re.search(r"^#\s+(.+)$", text, re.MULTILINE)
     if m:
         title = m.group(1).strip()
-    assets = sorted(set(re.findall(r"###\s+Event study\s+—\s+`([^`]+)`", text)))
+    assets = sorted(set(re.findall(r"###\s+(?:Event study|Seguito)\s+—\s+`([^`]+)`", text)))
     return {
         "date": path.parent.name,
         "title": title,

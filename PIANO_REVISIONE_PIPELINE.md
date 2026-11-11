@@ -830,7 +830,7 @@ sopra è 0,65, a 60 giorni è 75%).
       Note: `parse_card` salta «mediana normale» e «N eff» (niente colonne nuove nel ledger) e mette in
       quarantena un `### Seguito …` dichiarato `[previsione]`, così lo rifiutano `audit`, `register` e `backfill`.
       Wilson al 95% sui giorni unici per hit-rate, sempre-su/giù e copertura. La reazione non si registra (fuori scope).
-- [ ] **11d — Template, runbook, render.** `news_card_template.md`, `PHASE5_RUNBOOK.md` (via la regola
+- [x] **11d — Template, runbook, render.** FATTO — 2026-11-11 (go-live: prima analisi col formato nuovo il 2026-11-12; scheda di prova in `daily_analysis/_prova_run11d/`, da far vedere al maintainer). `news_card_template.md`, `PHASE5_RUNBOOK.md` (via la regola
       5-bis, dentro i nuovi comandi in «Riferimento comandi»), campo `seduta_reazione`,
       `render_report.py` se serve. Una scheda di prova completa in sessione manuale, poi go-live.
 - ~~**11e — Decisione (dopo 60 giorni validi).**~~ Annullato il 2026-10-07: non c'è più niente da
