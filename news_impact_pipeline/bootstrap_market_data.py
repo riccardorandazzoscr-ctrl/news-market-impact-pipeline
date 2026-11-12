@@ -219,6 +219,17 @@ ASSETS = [
     {"ticker": "ZAR=X",       "name": "USD/ZAR (rand sudafricano)",          "asset_class": "fx",           "region": "south_africa", "currency": "ZAR", "source": "yfinance", "description": "Rand — canale diretto del rischio politico e commerciale sudafricano; sale quando il rand si indebolisce", "download": True},
     {"ticker": "EZA",         "name": "iShares MSCI South Africa ETF",       "asset_class": "equity",       "region": "south_africa", "currency": "USD", "source": "yfinance", "description": "Azionario Sudafrica in dollari (equity + rand nella vista dell'investitore USA); molto minerario: legge anche oro e platino", "download": True},
 
+    # --- Turchia (2026-11-12) ---------------------------------------------------
+    # Otto giornate di scarti in triage dal 2026-08-11 per sola assenza di un asset
+    # turco (legge sul PKK, raid su Halk TV, esplosione in acciaieria, dimissioni del
+    # capo della vigilanza bancaria). Audit di correlazione 2026-11-12 sui rendimenti
+    # dal 2024 (soglia 0,85): TUR max 0,35 (IWM), TRY=X max 0,10 (AUD=X).
+    # ⚠ TRY=X e' un cambio GESTITO dalla banca centrale (deprezzamento a scalini):
+    # dal 2024 il 55% delle sedute si muove meno dello 0,1%. Una reazione piccola della
+    # lira NON dice che il mercato ha ignorato la notizia: il canale e' TUR.
+    {"ticker": "TRY=X",       "name": "USD/TRY (lira turca)",                "asset_class": "fx",           "region": "turkey",    "currency": "TRY", "source": "yfinance", "description": "Lira turca — sale quando la lira si indebolisce. Cambio gestito: si muove solo negli shock veri (es. arresto di Imamoglu, marzo 2025); nelle sedute normali resta quasi ferma", "download": True},
+    {"ticker": "TUR",         "name": "iShares MSCI Turkey ETF",             "asset_class": "equity",       "region": "turkey",    "currency": "USD", "source": "yfinance", "description": "Azionario turco in dollari (equity + lira nella vista dell'investitore USA); pesano molto le banche: e' il canale del rischio politico e istituzionale turco", "download": True},
+
     # Curva e volatilita' obbligazionaria.
     {"ticker": "^FVX",        "name": "US Treasury 5Y yield",                "asset_class": "fixed_income", "region": "US",        "currency": "USD", "source": "yfinance", "description": "Rendimento Treasury 5 anni — con ^TNX e ^TYX da' la FORMA della curva USA, non solo il livello: distingue un irripidimento guidato dal front end da uno guidato dal premio a termine (lacuna 2026-08-14). RENDIMENTO: sale quando i titoli scendono", "download": True},
     {"ticker": "^MOVE",       "name": "ICE BofA MOVE Index",                 "asset_class": "volatility",   "region": "US",        "currency": "USD", "source": "yfinance", "description": "Volatilita' implicita obbligazionaria — l'equivalente del VIX per i Treasury: distingue un riprezzamento ordinato da uno stress di mercato. L'universo aveva ^VIX come unica misura di volatilita'", "download": True},

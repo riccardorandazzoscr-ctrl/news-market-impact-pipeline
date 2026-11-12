@@ -121,6 +121,8 @@ geopolitical:
     - ILS=X           # shekel: canale più diretto del conflitto mediorientale
     - ZAR=X           # rand: rischio politico/commerciale sudafricano (dal 2026-11-04)
     - EZA             # equity Sudafrica, in USD: rand + minerari (0,82 con EEM)
+    - TUR             # equity Turchia, in USD: rischio politico/istituzionale turco (dal 2026-11-12)
+    - TRY=X           # lira turca: cambio gestito, reagisce solo agli shock veri
     - ITA             # difesa USA (con SHLD.L separa impulso americano da europeo)
     - REMX            # terre rare/metalli strategici: controlli all'export cinesi
     - IYT             # trasporti: costo dei chokepoint marittimi
@@ -280,6 +282,7 @@ financial_stability:
                       # in un vero deleveraging può scendere CON il mercato invece che
                       # con il metallo. La divergenza GDX/GC=F è essa stessa il segnale
     - IWM             # small cap: le prime a soffrire una stretta del credito
+    - TUR             # Turchia: banche e vigilanza, stress istituzionale (dal 2026-11-12)
 
 structural_themes:
   description: "AI, transizione energetica, demografia, deglobalizzazione, demografia"
