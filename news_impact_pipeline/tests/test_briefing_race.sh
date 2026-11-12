@@ -207,6 +207,25 @@ check "grep -q 'SKIP: altro run' '$LOG'" "logga SKIP per il lock"
 check "! grep -q 'PARZIALE' '$LOG'" "non si mette in attesa in parallelo"
 teardown
 
+# ------------------------------------------- 6b. il brief sta ancora lavorando
+print -- "\n6b. Il file del briefing c'e', ma il job del brief non ha finito (2026-11-12)"
+# Il brief scrive il file e poi lo ritocca ancora: partire al primo salvataggio
+# analizza un testo che sta per cambiare. Il lock del brief dice "sto lavorando".
+setup
+scrivi_brief 20
+mkdir -p "$FPIPE/logs/.lock_brief"
+RC=$(run_sut)
+check "[[ $RC -eq 0 ]]" "brief in corso → esce senza errore" "rc=$RC"
+check "grep -q 'ATTESA: briefing ancora in lavorazione' '$LOG'" "logga l'attesa"
+check "! grep -q 'PRONTO' '$LOG'" "NON parte prima della fine del brief"
+rmdir "$FPIPE/logs/.lock_brief"
+RC=$(run_sut)
+check "grep -q 'PRONTO' '$LOG'" "finito il brief (lock tolto) → parte"
+mkdir -p "$FPIPE/logs/.lock_brief"; touch -t 202609010000 "$FPIPE/logs/.lock_brief"
+rm -f "$LOG"; RC=$(run_sut)
+check "grep -q 'PRONTO' '$LOG'" "lock del brief vecchio di giorni (relitto) → non blocca per sempre"
+teardown
+
 # ------------------------------------------- 7. regressione sui briefing veri
 print -- "\n7. Regressione: i 138 briefing reali sono tutti riconosciuti completi"
 # Ogni file passa per lo SCRIPT VERO, non per una ri-scrittura del controllo:

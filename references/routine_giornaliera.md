@@ -30,11 +30,12 @@ da solo: `attendi_rete.sh` (aspetta che l'API risponda, tetto 900 s), poi `updat
 o se si rilancia una data passata; `CATENA=0` la spegne. Anche `run_daily_analysis.sh` chiama
 `attendi_rete.sh` prima di lanciare Claude. Nel log del brief: righe `CATENA:`.
 
-Il job `daily` ha anche `WatchPaths` sulla cartella dei briefing: se il brief
-arriva in ritardo, l'analisi parte appena il file atterra. I ritentativi delle
-09:15 e 10:15 coprono un caso diverso — il run **fallito a metà** — che i
-WatchPaths non ricatturano, perché a quel punto il file del briefing non cambia
-più. Entrambi escono subito se la giornata è già conclusa, e altrimenti
+Il job `daily` non ha più `WatchPaths` (tolto il 2026-11-12): scattava al primo salvataggio del
+file, mentre il modello del brief lo ritoccava ancora, e l'analisi lavorava su un testo poi cambiato.
+Ora l'analisi parte solo quando il brief ha finito: la catena sopra, che toglie il lock del brief
+(`logs/.lock_brief`) prima di lanciarla. Se un run di calendario trova quel lock (più giovane di 45
+minuti) esce con `ATTESA: briefing ancora in lavorazione`. I ritentativi delle 09:15 e 10:15 coprono
+il run **fallito a metà**. Entrambi escono subito se la giornata è già conclusa, e altrimenti
 riprendono dalla **prima fase incompleta**: se mancano solo il report o l'invio
 non richiamano l'agente. A che punto sia una giornata lo dice
 `stato_giornata.py --date AAAA-MM-GG` (tabella delle sei fasi in
@@ -42,8 +43,8 @@ non richiamano l'agente. A che punto sia una giornata lo dice
 
 Eccezione (dal 2026-10-28): una giornata già consegnata completa, con lo stesso briefing,
 **non si rispedisce** anche se dopo l'invio `_index.md` o il report sono stati corretti a
-mano. `WatchPaths` scatta anche quando si apre un brief (macOS gli scrive la data di ultimo
-uso), quindi senza questa regola ogni correzione partiva su Telegram alla prima apertura.
+mano. Senza questa regola ogni correzione manuale (o un trigger spurio, come l'apertura di un
+brief quando c'era `WatchPaths`) rispediva su Telegram.
 Per rispedire apposta: `REINVIA=1 news_impact_pipeline/run_daily_analysis.sh AAAA-MM-GG`.
 
 ⚠ Il brief delle 07:40 può far scattare l'analisi **prima** dell'aggiornamento

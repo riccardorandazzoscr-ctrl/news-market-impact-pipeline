@@ -11,10 +11,9 @@
         <string>/Users/riccardo/Claude/mercati_finanza/news_impact_pipeline/run_daily_analysis.sh</string>
     </array>
 
-    <!-- 08:15 il run vero; 09:15 e 10:15 sono RITENTATIVI, non run in più:
+    <!-- 08:15 il run di calendario; 09:15 e 10:15 sono RITENTATIVI, non run in più:
          lo script esce subito se l'analisi di oggi è già compilata. Coprono il
-         caso "run fallito a metà" (limite di sessione, 5xx), che i WatchPaths
-         da soli non ricatturano perché il file del briefing non cambia più.
+         caso "run fallito a metà" (limite di sessione, 5xx).
          Ereditati dalla routine ChatGPT, che aveva gli stessi tre orari. -->
     <key>StartCalendarInterval</key>
     <array>
@@ -38,12 +37,10 @@
         </dict>
     </array>
 
-    <!-- Riparte appena cambia il contenuto della cartella dei briefing:
-         gestisce il caso "briefing in ritardo" → analisi appena arriva. -->
-    <key>WatchPaths</key>
-    <array>
-        <string>/Users/riccardo/Claude/mercati_finanza/morning brief</string>
-    </array>
+    <!-- Niente WatchPaths dal 2026-11-12: scattava al primo salvataggio del file del
+         briefing, mentre il brief lo stava ancora ritoccando. Ora l'analisi parte
+         quando il brief ha finito (catena in fondo a run_morning_brief.sh) e questi
+         orari restano come rete di sicurezza. -->
 
     <!-- Non eseguire al caricamento del plist (evita run a sorpresa) -->
     <key>RunAtLoad</key>

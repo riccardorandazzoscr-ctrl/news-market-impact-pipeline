@@ -183,6 +183,9 @@ log "DONE briefing $TODAY pubblicato ($STORIE notizie): $BRIEF"
 # Solo per oggi: rilanciare a mano una data passata non deve toccare i prezzi.
 # CATENA=0 la spegne (la suite in tests/ la usa per non lanciare i job veri).
 # Un prezzo non aggiornato non ferma l'analisi da qui: decide il cancello dell'analisi.
+# Il lock del brief si toglie QUI, a file finito e stilizzato: da questo momento
+# l'analisi può partire (il suo cancello la fa aspettare finché il lock c'è).
+rmdir "$LOCK" 2>/dev/null
 if [[ "${CATENA:-1}" != 0 && "$TODAY" == "$(date +%Y-%m-%d)" ]]; then
   if RETE_S=$(/bin/zsh "$PIPE/attendi_rete.sh"); then
     (( ${RETE_S:-0} > 0 )) && log "CATENA: rete tornata dopo ${RETE_S}s."

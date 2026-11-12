@@ -158,6 +158,18 @@ if [[ ! -f "$BRIEF" ]]; then
   exit 0
 fi
 
+# --- Il brief ha finito di scrivere? (2026-11-12) ----------------------------
+# Il file compare prima che il job del brief abbia finito: il modello lo ritocca
+# ancora (quel giorno aggiunse una notizia 6 secondi dopo la partenza dell'analisi,
+# che lavorò su un testo poi cambiato). Finché il lock del brief c'è, non si parte;
+# a riavviarci pensa la catena in fondo a run_morning_brief.sh, che lo toglie prima.
+# Un lock più vecchio del tetto del brief (RUN_MAX 1800s + margine) è un relitto.
+LOCK_BRIEF="$LOGDIR/.lock_brief"
+if [[ -d "$LOCK_BRIEF" && -n "$(find "$LOCK_BRIEF" -maxdepth 0 -mmin -45 2>/dev/null)" ]]; then
+  log "ATTESA: briefing ancora in lavorazione (lock del brief presente). Esco: riparte la catena del brief a fine lavoro."
+  exit 0
+fi
+
 # --- Lock (evita doppio run calendario+watchpath) --------------------------
 # Il lock si porta dentro il PID di chi lo tiene. Senza, un processo ucciso di netto
 # — `kill -9`, corrente staccata: i casi in cui il trap di pulizia NON gira — lasciava
