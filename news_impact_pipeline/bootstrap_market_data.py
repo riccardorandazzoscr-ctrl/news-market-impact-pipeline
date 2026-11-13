@@ -230,6 +230,16 @@ ASSETS = [
     {"ticker": "TRY=X",       "name": "USD/TRY (lira turca)",                "asset_class": "fx",           "region": "turkey",    "currency": "TRY", "source": "yfinance", "description": "Lira turca — sale quando la lira si indebolisce. Cambio gestito: si muove solo negli shock veri (es. arresto di Imamoglu, marzo 2025); nelle sedute normali resta quasi ferma", "download": True},
     {"ticker": "TUR",         "name": "iShares MSCI Turkey ETF",             "asset_class": "equity",       "region": "turkey",    "currency": "USD", "source": "yfinance", "description": "Azionario turco in dollari (equity + lira nella vista dell'investitore USA); pesano molto le banche: e' il canale del rischio politico e istituzionale turco", "download": True},
 
+    # --- Messico (2026-11-13) ---------------------------------------------------
+    # Scarti in triage per assenza del canale messicano: revisione USMCA (2026-07-01,
+    # "MXN/CAD non in DB"), non rinnovo misurato solo su indici diluiti (2026-07-02),
+    # minaccia di raddoppio dei dazi per la carovana di migranti (2026-11-13).
+    # Audit di correlazione 2026-11-13 sui rendimenti dal 2024 (soglia 0,85):
+    # MXN=X max 0,49 (AUD=X), EWW max 0,62 (EZA). Il peso e' un cambio libero e
+    # liquido (sotto lo 0,1% solo nel 16% delle sedute): e' lui il canale di lettura.
+    {"ticker": "MXN=X",       "name": "USD/MXN (peso messicano)",            "asset_class": "fx",           "region": "mexico",    "currency": "MXN", "source": "yfinance", "description": "Peso messicano — sale quando il peso si indebolisce. Cambio libero e molto scambiato: e' il canale diretto di dazi, USMCA e migranti verso il Messico", "download": True},
+    {"ticker": "EWW",         "name": "iShares MSCI Mexico ETF",             "asset_class": "equity",       "region": "mexico",    "currency": "USD", "source": "yfinance", "description": "Azionario messicano in dollari (equity + peso nella vista dell'investitore USA); canale di dazi e USMCA sull'economia messicana", "download": True},
+
     # Curva e volatilita' obbligazionaria.
     {"ticker": "^FVX",        "name": "US Treasury 5Y yield",                "asset_class": "fixed_income", "region": "US",        "currency": "USD", "source": "yfinance", "description": "Rendimento Treasury 5 anni — con ^TNX e ^TYX da' la FORMA della curva USA, non solo il livello: distingue un irripidimento guidato dal front end da uno guidato dal premio a termine (lacuna 2026-08-14). RENDIMENTO: sale quando i titoli scendono", "download": True},
     {"ticker": "^MOVE",       "name": "ICE BofA MOVE Index",                 "asset_class": "volatility",   "region": "US",        "currency": "USD", "source": "yfinance", "description": "Volatilita' implicita obbligazionaria — l'equivalente del VIX per i Treasury: distingue un riprezzamento ordinato da uno stress di mercato. L'universo aveva ^VIX come unica misura di volatilita'", "download": True},

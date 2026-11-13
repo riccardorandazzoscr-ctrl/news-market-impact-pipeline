@@ -45,6 +45,7 @@ Base: 17 asset originali.
 | 2026-09-04 | `ZW=F` `ZC=F` | **cereali = canale Mar Nero.** Sull'apertura negoziale russo-ucraina il canale che aveva davvero reagito (grano −2,5%) non era misurabile e la scheda ha descritto solo i canali secondari. Prima esposizione agricola dell'universo: correlazione massima con l'esistente **+0,15** (entrambi su `BZ=F`), fra loro **0,57** |
 | 2026-11-04 | `ZAR=X` `EZA` | Sudafrica: 7 notizie scartate dal 2026-06-13 per assenza di asset (proteste, "Farmgate", elezioni municipali, AGOA). Correlazione massima con l'universo: 0,47 per `ZAR=X` (`SGD=X`) e 0,82 per `EZA` (`EEM`; `EWY` sta a 0,84) |
 | 2026-11-12 | `TUR` `TRY=X` | Turchia: 8 giornate di scarti dal 2026-08-11 per assenza di asset (PKK, Halk TV, acciaieria, vigilanza bancaria). Correlazione massima: 0,35 per `TUR` (`IWM`), 0,10 per `TRY=X` (`AUD=X`). ⚠ La lira è un cambio gestito (55% delle sedute sotto lo 0,1%): il canale di lettura è `TUR` |
+| 2026-11-13 | `MXN=X` `EWW` | Messico: revisione USMCA scartata il 2026-07-01 con "MXN/CAD non in DB", non rinnovo misurato solo su indici diluiti il 07-02, minaccia di raddoppio dei dazi per i migranti scartata il 11-13. Correlazione massima: 0,49 per `MXN=X` (`AUD=X`), 0,62 per `EWW` (`EZA`). Il peso è un cambio libero: è lui il canale di lettura |
 
 ## Lacune aperte
 

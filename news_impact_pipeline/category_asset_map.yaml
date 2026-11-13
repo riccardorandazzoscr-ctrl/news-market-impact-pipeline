@@ -123,6 +123,8 @@ geopolitical:
     - EZA             # equity Sudafrica, in USD: rand + minerari (0,82 con EEM)
     - TUR             # equity Turchia, in USD: rischio politico/istituzionale turco (dal 2026-11-12)
     - TRY=X           # lira turca: cambio gestito, reagisce solo agli shock veri
+    - MXN=X           # peso messicano: dazi, USMCA, migranti (dal 2026-11-13)
+    - EWW             # equity Messico, in USD (0,62 con EZA)
     - ITA             # difesa USA (con SHLD.L separa impulso americano da europeo)
     - REMX            # terre rare/metalli strategici: controlli all'export cinesi
     - IYT             # trasporti: costo dei chokepoint marittimi
@@ -223,6 +225,7 @@ regulatory:
     - CNY=X           # dazi/misure commerciali verso la Cina
     - CAD=X           # dazi/misure commerciali verso il Canada (dal 2026-08-16)
     - ^GSPTSE         # equity Canada: l'asset piu' colpito dai dazi (dal 2026-08-18)
+    - MXN=X           # dazi/misure commerciali verso il Messico, USMCA (dal 2026-11-13)
     - XLV             # sanitario: drug pricing e regolazione farmaceutica
     - IGV             # software: antitrust e regolazione delle piattaforme
     - REMX            # terre rare: controlli all'export come strumento regolatorio
