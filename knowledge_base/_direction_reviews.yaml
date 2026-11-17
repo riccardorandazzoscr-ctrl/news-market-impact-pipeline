@@ -14995,3 +14995,130 @@ reviews:
     Claude 2026-11-11.'
   status: excluded
   description: Attacco a stazioni di pompaggio dell'oleodotto Est-Ovest saudita
+- date: '2024-07-17'
+  theme: structural_themes
+  reference: SOXX
+  source: 2026-09-15/news_04.md
+  reason: 'Indiscrezioni su controlli USA all''export più severi verso la Cina sui chip avanzati e sulle
+    attrezzature: meno mercato indirizzabile per i membri di SOXX. Verso dal contenuto della notizia;
+    la variazione citata nella riga non è stata usata. Revisione Claude 2026-11-17.'
+  direction: neg
+- date: '2023-05-22'
+  theme: structural_themes
+  reference: SOXX
+  source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  reason: 'La Cina esclude Micron dalle infrastrutture critiche: Micron è in SOXX, i concorrenti coreani
+    che ne beneficiano no, e la research segna «negativo (settore)». Verso dal contenuto della notizia,
+    nessun prezzo consultato. Revisione Claude 2026-11-17.'
+  direction: neg
+- date: '2025-07-22'
+  theme: geopolitical
+  reference: IDR=X
+  source: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  reason: 'Il 19% per l''Indonesia era stato annunciato da Trump il 15/7/2025 (Washington Times, RNZ 16/7);
+    il 22/7 la Casa Bianca pubblica solo il quadro scritto. Nessuna sorpresa sul dazio alla data: pressione
+    attesa nulla. Se si vuole l''episodio vero, è il 2025-07-15 (pos per la rupia, quindi neg su IDR=X),
+    non in libreria. Criterio ex ante, nessun prezzo consultato.'
+  direction: neutral
+  mechanism:
+  - tariff_escalation
+  description: Dichiarazione congiunta USA-Indonesia sul quadro dell'accordo (dazio al 19%)
+- date: '2025-04-02'
+  theme: geopolitical
+  reference: IDR=X
+  source: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  reason: 'Dazio del 32% sull''Indonesia, molto sopra il 10% di base che il mercato considerava lo scenario
+    centrale: pressione attesa al ribasso sulla rupia, quindi al rialzo su USD/IDR. ⚠ Annuncio a mercati
+    USA chiusi e borsa di Giacarta chiusa per Lebaran fino all''8/4: tempistica da controllare, non il
+    verso. Criterio ex ante, nessun prezzo consultato.'
+  direction: pos
+  mechanism:
+  - tariff_escalation
+  description: Dazi reciproci "Liberation Day", Indonesia al 32%
+- date: '2024-02-14'
+  theme: geopolitical
+  reference: IDR=X
+  source: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  reason: 'I sondaggi davano Prabowo vicino o sopra il 50%: la vittoria al primo turno era lo scenario
+    atteso. Toglie il rischio di ballottaggio (positivo) ma conferma un programma di spesa che preoccupava
+    sul deficit (negativo): sulla rupia nessuna pressione netta. Coerente con la research ("neutro IDR").
+    Criterio ex ante, nessun prezzo consultato.'
+  direction: neutral
+  mechanism:
+  - election_risk
+  description: Presidenziali indonesiane, Prabowo in testa al primo turno nei conteggi rapidi
+- date: '2014-07-09'
+  theme: geopolitical
+  reference: IDR=X
+  source: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  reason: 'Jokowi era il candidato preferito dal mercato (il "Jokowi effect") e il suo vantaggio nei sondaggi
+    si era ridotto nelle ultime settimane: i conteggi rapidi a suo favore sono una sorpresa positiva per
+    la rupia, quindi pressione al ribasso su USD/IDR. Confidenza bassa: anche Prabowo rivendicava la vittoria.
+    Criterio ex ante, nessun prezzo consultato.'
+  direction: neg
+  mechanism:
+  - election_risk
+  description: Presidenziali indonesiane, conteggi rapidi favorevoli a Jokowi
+- date: '2021-01-19'
+  theme: corporate_idiosyncratic
+  reference: ^NDX
+  source: kb:Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo diventa evento
+    di indice (2010–presente)/Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo
+    diventa evento di indice (2010–presente).md
+  reason: 'Condanna di Lee Jae-yong: Samsung è quotata a Seoul e non è nel Nasdaq-100, nessun canale meccanico
+    sull''indice. La research stessa la misura su EWY. Criterio ex ante, nessun prezzo consultato. Revisione
+    Claude 2026-11-16.'
+  status: excluded
+- date: '2020-11-03'
+  theme: corporate_idiosyncratic
+  reference: ^NDX
+  source: kb:Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo diventa evento
+    di indice (2010–presente)/Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo
+    diventa evento di indice (2010–presente).md
+  reason: 'Sospensione dell''IPO di Ant: Alibaba è quotata al NYSE, non nel Nasdaq-100. In più la seduta
+    è quella delle elezioni presidenziali USA, contaminata. Criterio ex ante, nessun prezzo consultato.
+    Revisione Claude 2026-11-16.'
+  status: excluded
+- date: '2019-11-04'
+  theme: corporate_idiosyncratic
+  reference: ^NDX
+  source: kb:Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo diventa evento
+    di indice (2010–presente)/Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo
+    diventa evento di indice (2010–presente).md
+  reason: 'Licenziamento del CEO di McDonald''s: titolo NYSE, non nel Nasdaq-100. La research lo legge
+    neutral su ^GSPC per peso troppo piccolo. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-16.'
+  status: excluded
+- date: '2018-02-05'
+  theme: corporate_idiosyncratic
+  reference: ^NDX
+  source: kb:Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo diventa evento
+    di indice (2010–presente)/Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo
+    diventa evento di indice (2010–presente).md
+  reason: 'Scarcerazione di Lee Jae-yong: Samsung non è nel Nasdaq-100. In più la seduta è il crollo di
+    volatilità del 5 febbraio 2018, contaminata. Criterio ex ante, nessun prezzo consultato. Revisione
+    Claude 2026-11-16.'
+  status: excluded
+- date: '2017-08-25'
+  theme: corporate_idiosyncratic
+  reference: ^NDX
+  source: kb:Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo diventa evento
+    di indice (2010–presente)/Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo
+    diventa evento di indice (2010–presente).md
+  reason: 'Condanna in primo grado di Lee Jae-yong: Samsung non è nel Nasdaq-100, nessun canale sull''indice.
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-16.'
+  status: excluded
+- date: '2010-08-09'
+  theme: corporate_idiosyncratic
+  reference: ^NDX
+  source: kb:Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo diventa evento
+    di indice (2010–presente)/Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo
+    diventa evento di indice (2010–presente).md
+  reason: 'Dimissioni forzate di Mark Hurd: HP è quotata al NYSE, non nel Nasdaq-100. La research lo legge
+    neutral su ^GSPC. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-16.'
+  status: excluded

@@ -1,0 +1,34 @@
+research: lacuna controlli-export-chip-verso (structural_themes, export_controls, rif SOXX; sotto-tema
+  locale)
+voci:
+- data: '2024-07-17'
+  tema: structural_themes
+  fonte: 2026-09-15/news_04.md
+  riga: '| `2024-07-17` | neg | export_controls, ai_semis | Notizia di controlli all''export più severi
+    sui chip avanzati: SOXX perde circa il 6,8%, il drawdown singolo più simile per ampiezza. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: neg
+    perché: 'Indiscrezioni su controlli USA all''export più severi verso la Cina sui chip avanzati e sulle
+      attrezzature: meno mercato indirizzabile per i membri di SOXX. Verso dal contenuto della notizia;
+      la variazione citata nella riga non è stata usata. Revisione Claude 2026-11-17.'
+  stato: promossa
+- data: '2023-05-22'
+  tema: structural_themes
+  fonte: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo della memoria
+    DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+  riga: '| 2023-05-22 | La Cina vieta i prodotti Micron nelle infrastrutture critiche | controlli all''export
+    / ritorsione | negativo (settore), positivo (concorrenti coreani) | EWY, EWT, SOXX, EEM | Annuncio
+    CAC domenica 21-mag ora cinese → prima seduta USA utile il 22-mag. Doppio segno: penalizza Micron,
+    av'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SOXX
+    verso: neg
+    perché: 'La Cina esclude Micron dalle infrastrutture critiche: Micron è in SOXX, i concorrenti coreani
+      che ne beneficiano no, e la research segna «negativo (settore)». Verso dal contenuto della notizia,
+      nessun prezzo consultato. Revisione Claude 2026-11-17.'
+  stato: promossa

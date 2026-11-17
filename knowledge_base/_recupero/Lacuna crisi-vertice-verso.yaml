@@ -1,0 +1,106 @@
+research: lacuna crisi-vertice-verso (corporate_idiosyncratic, governance,leadership_transition, rif ^NDX;
+  sotto-tema locale)
+voci:
+- data: '2021-01-19'
+  tema: corporate_idiosyncratic
+  fonte: kb:Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo diventa evento
+    di indice (2010–presente)/Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo
+    diventa evento di indice (2010–presente).md
+  riga: '| 2021-01-19 | EWY | neg | governance | Prima seduta USA dopo la nuova condanna di Lee Jae-yong
+    a 2 anni e mezzo | Sentenza lunedì 2021-01-18 a Seoul; USA chiusi per Martin Luther King, quindi EWY
+    reagisce il 19. Kospi (non in DB) −2,33%, Samsung −3,41% (CNBC).\[1\]\[60\]\[61\]\[62\] Samsung 24,42% '
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^NDX
+    verso: escluso
+    perché: 'Condanna di Lee Jae-yong: Samsung è quotata a Seoul e non è nel Nasdaq-100, nessun canale
+      meccanico sull''indice. La research stessa la misura su EWY. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-16.'
+  stato: promossa
+- data: '2020-11-03'
+  tema: corporate_idiosyncratic
+  fonte: kb:Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo diventa evento
+    di indice (2010–presente)/Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo
+    diventa evento di indice (2010–presente).md
+  riga: '| 2020-11-03 | KWEB | pos, neg | governance, valuation_derisking | Sospensione dell''IPO di Ant
+    Group dopo la convocazione di Jack Ma dai regolatori | Sospensione nella sera di Shanghai = prima
+    dell''apertura USA. Alibaba (non in DB) −8,1% a NY, record (S&P Global).\[9\]\[58\]\[59\] Alibaba
+    10,48% di '
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^NDX
+    verso: escluso
+    perché: 'Sospensione dell''IPO di Ant: Alibaba è quotata al NYSE, non nel Nasdaq-100. In più la seduta
+      è quella delle elezioni presidenziali USA, contaminata. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-16.'
+  stato: promossa
+- data: '2019-11-04'
+  tema: corporate_idiosyncratic
+  fonte: kb:Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo diventa evento
+    di indice (2010–presente)/Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo
+    diventa evento di indice (2010–presente).md
+  riga: '| 2019-11-04 | ^GSPC | neutral | governance, leadership_transition | Prima seduta dopo il licenziamento
+    di Steve Easterbrook da CEO di McDonald''s | Licenziamento deciso venerdì 1° novembre, annunciato
+    domenica 2019-11-03.\[56\] McDonald''s (non in DB) −2,7% a $188,66, minimo da inizio aprile, oltre
+    $'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^NDX
+    verso: escluso
+    perché: 'Licenziamento del CEO di McDonald''s: titolo NYSE, non nel Nasdaq-100. La research lo legge
+      neutral su ^GSPC per peso troppo piccolo. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-16.'
+  stato: promossa
+- data: '2018-02-05'
+  tema: corporate_idiosyncratic
+  fonte: kb:Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo diventa evento
+    di indice (2010–presente)/Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo
+    diventa evento di indice (2010–presente).md
+  riga: '| 2018-02-05 | EWY | pos, neg | governance | Corte d''appello di Seoul riduce e sospende la pena:
+    Lee Jae-yong scarcerato | Verdetto lunedì a Seoul (Al Jazeera, Washington Post, Forbes); Samsung +0,5%
+    (Forbes).\[41\]\[42\]\[43\] Nella stessa seduta USA, crollo di volatilità del 5 febbraio 2018 (Dow
+    −'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^NDX
+    verso: escluso
+    perché: 'Scarcerazione di Lee Jae-yong: Samsung non è nel Nasdaq-100. In più la seduta è il crollo
+      di volatilità del 5 febbraio 2018, contaminata. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-16.'
+  stato: promossa
+- data: '2017-08-25'
+  tema: corporate_idiosyncratic
+  fonte: kb:Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo diventa evento
+    di indice (2010–presente)/Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo
+    diventa evento di indice (2010–presente).md
+  riga: '| 2017-08-25 | EWY | pos, neg | governance | Lee Jae-yong condannato in primo grado a 5 anni
+    per corruzione | Sentenza venerdì pomeriggio a Seoul (notte in USA): prima seduta EWY lo stesso giorno
+    di calendario. Samsung Electronics (non in DB) −1,05% a Seoul (AFP via Malay Mail).\[39\] Pena inferiore'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^NDX
+    verso: escluso
+    perché: 'Condanna in primo grado di Lee Jae-yong: Samsung non è nel Nasdaq-100, nessun canale sull''indice.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-16.'
+  stato: promossa
+- data: '2010-08-09'
+  tema: corporate_idiosyncratic
+  fonte: kb:Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo diventa evento
+    di indice (2010–presente)/Crisi di vertice nelle grandi società quotate_ quando lo shock su un titolo
+    diventa evento di indice (2010–presente).md
+  riga: '| 2010-08-09 | ^GSPC | neutral | governance, leadership_transition | Prima seduta dopo le dimissioni
+    forzate di Mark Hurd da CEO di HP | Annuncio venerdì 2010-08-06 dopo la chiusura (titolo −9,3% nell''after-hours,
+    Bloomberg via Tehran Times).\[28\] Lunedì HP −7,4% a $42,62 (AP/CBS) o −8% (Washington'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^NDX
+    verso: escluso
+    perché: 'Dimissioni forzate di Mark Hurd: HP è quotata al NYSE, non nel Nasdaq-100. La research lo
+      legge neutral su ^GSPC. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-16.'
+  stato: promossa
