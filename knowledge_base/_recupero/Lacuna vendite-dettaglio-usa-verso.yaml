@@ -1,0 +1,143 @@
+research: lacuna vendite-dettaglio-usa-verso (macro_data, consumer, rif ^FVX; sotto-tema locale)
+voci:
+- data: '2026-08-17'
+  tema: macro_data
+  fonte: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati (2011–2026)/
+    Il consumatore cinese- domanda interna, e-commerce e trasmissione ai mercati (2011–2026).md
+  riga: '| 2026-08-17 | Vendite al dettaglio luglio 2026 +0,6% mancano 1,5%; auto −17% | retail_sales
+    | ribasso | ^GDAXI, EXV7.DE | Uscita mattina Pechino |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+      (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+      europei ed emergenti, non su Treasury. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-18.'
+  stato: promossa
+- data: '2026-05-18'
+  tema: macro_data
+  fonte: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati (2011–2026)/
+    Il consumatore cinese- domanda interna, e-commerce e trasmissione ai mercati (2011–2026).md
+  riga: '| 2026-05-18 | Vendite al dettaglio aprile 2026 +0,2%, minimo 40 mesi | retail_sales | ribasso
+    | ^GDAXI | **Contaminato**: fallout guerra Iran sullo stesso periodo |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+      (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+      europei ed emergenti, non su Treasury. Seduta contaminata dal fallout della guerra in Iran. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-18.'
+  stato: promossa
+- data: '2026-01-19'
+  tema: macro_data
+  fonte: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati (2011–2026)/
+    Il consumatore cinese- domanda interna, e-commerce e trasmissione ai mercati (2011–2026).md
+  riga: '| 2026-01-19 | Vendite al dettaglio dic-2025 +0,9%, minimo triennale | retail_sales | ribasso
+    | ^GDAXI | Stessa data prezzi case (contaminazione property) |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+      (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+      europei ed emergenti, non su Treasury. Lunedì festivo USA (Martin Luther King): Treasury chiusi,
+      nessuna seduta di ^FVX. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-18.'
+  stato: promossa
+- data: '2025-09-15'
+  tema: macro_data
+  fonte: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati (2011–2026)/
+    Il consumatore cinese- domanda interna, e-commerce e trasmissione ai mercati (2011–2026).md
+  riga: '| 2025-09-15 | Vendite al dettaglio agosto 2025 +3,4%, sotto attese 3,8%, minimo da nov-2024
+    | retail_sales | ribasso | ^GDAXI | Uscita mattina Pechino |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+      (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+      europei ed emergenti, non su Treasury. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-18.'
+  stato: promossa
+- data: '2024-09-14'
+  tema: macro_data
+  fonte: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati (2011–2026)/
+    Il consumatore cinese- domanda interna, e-commerce e trasmissione ai mercati (2011–2026).md
+  riga: '| 2024-09-14 | Vendite al dettaglio agosto 2024 +2,1% mancano 2,5% | retail_sales | ribasso |
+    ^GDAXI | Dato uscito **sabato** → prima seduta utile lunedì **2024-09-16** |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+      (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+      europei ed emergenti, non su Treasury. Sabato: dato uscito a mercati chiusi, prima seduta utile
+      il 16/9. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-18.'
+  stato: promossa
+- data: '2024-07-15'
+  tema: macro_data
+  fonte: 2026-09-15/news_05.md
+  riga: '| `2024-07-15` | neg | activity_growth, consumer | Dati del secondo trimestre 2024 con vendite
+    al dettaglio +2,0% contro +3,3% atteso: domanda interna sotto attese, produzione in tenuta. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+      (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+      europei ed emergenti, non su Treasury. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-18.'
+  stato: promossa
+- data: '2022-05-16'
+  tema: macro_data
+  fonte: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati (2011–2026)/
+    Il consumatore cinese- domanda interna, e-commerce e trasmissione ai mercati (2011–2026).md
+  riga: '| 2022-05-16 | Vendite al dettaglio aprile 2022 −11,1% a/a (lockdown Shanghai), catering −22,7%
+    | retail_sales | ribasso | ^GDAXI, EEM | Uscita mattina Pechino → seduta europea stesso giorno |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+      (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+      europei ed emergenti, non su Treasury. Seduta dei lockdown di Shanghai, ma senza canale sui tassi
+      USA. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-18.'
+  stato: promossa
+- data: '2022-04-18'
+  tema: macro_data
+  fonte: 2026-09-15/news_05.md
+  riga: '| `2022-04-18` | neg | activity_growth, consumer | Dati di marzo 2022 con vendite al dettaglio
+    in contrazione per i confinamenti: divergenza estrema fra produzione e consumo. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+      (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+      europei ed emergenti, non su Treasury. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-18.'
+  stato: promossa
+- data: '2021-08-16'
+  tema: macro_data
+  fonte: 2026-09-15/news_05.md
+  riga: '| `2021-08-16` | neg | consumer, activity_growth | Dati di luglio 2021 nettamente sotto attese:
+    vendite al dettaglio +8,5% contro +11,5% previsto — l''inizio dell''aggiustamento immobiliare. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+      (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+      europei ed emergenti, non su Treasury. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-18.'
+  stato: promossa

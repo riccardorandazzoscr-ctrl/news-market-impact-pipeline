@@ -15122,3 +15122,90 @@ reviews:
   reason: 'Dimissioni forzate di Mark Hurd: HP è quotata al NYSE, non nel Nasdaq-100. La research lo legge
     neutral su ^GSPC. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-16.'
   status: excluded
+- date: '2026-08-17'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati (2011–2026)/
+    Il consumatore cinese- domanda interna, e-commerce e trasmissione ai mercati (2011–2026).md
+  reason: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+    (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+    europei ed emergenti, non su Treasury. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-18.'
+  status: excluded
+- date: '2026-05-18'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati (2011–2026)/
+    Il consumatore cinese- domanda interna, e-commerce e trasmissione ai mercati (2011–2026).md
+  reason: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+    (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+    europei ed emergenti, non su Treasury. Seduta contaminata dal fallout della guerra in Iran. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-18.'
+  status: excluded
+- date: '2026-01-19'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati (2011–2026)/
+    Il consumatore cinese- domanda interna, e-commerce e trasmissione ai mercati (2011–2026).md
+  reason: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+    (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+    europei ed emergenti, non su Treasury. Lunedì festivo USA (Martin Luther King): Treasury chiusi, nessuna
+    seduta di ^FVX. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-18.'
+  status: excluded
+- date: '2025-09-15'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati (2011–2026)/
+    Il consumatore cinese- domanda interna, e-commerce e trasmissione ai mercati (2011–2026).md
+  reason: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+    (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+    europei ed emergenti, non su Treasury. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-18.'
+  status: excluded
+- date: '2024-09-14'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati (2011–2026)/
+    Il consumatore cinese- domanda interna, e-commerce e trasmissione ai mercati (2011–2026).md
+  reason: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+    (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+    europei ed emergenti, non su Treasury. Sabato: dato uscito a mercati chiusi, prima seduta utile il
+    16/9. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-18.'
+  status: excluded
+- date: '2024-07-15'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-15/news_05.md
+  reason: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+    (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+    europei ed emergenti, non su Treasury. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-18.'
+  status: excluded
+- date: '2022-05-16'
+  theme: macro_data
+  reference: ^FVX
+  source: kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati (2011–2026)/
+    Il consumatore cinese- domanda interna, e-commerce e trasmissione ai mercati (2011–2026).md
+  reason: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+    (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+    europei ed emergenti, non su Treasury. Seduta dei lockdown di Shanghai, ma senza canale sui tassi
+    USA. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-18.'
+  status: excluded
+- date: '2022-04-18'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-15/news_05.md
+  reason: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+    (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+    europei ed emergenti, non su Treasury. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-18.'
+  status: excluded
+- date: '2021-08-16'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-15/news_05.md
+  reason: 'Dato cinese sulle vendite al dettaglio: nessun canale meccanico sul rendimento a 5 anni USA
+    (il consumo cinese non entra nelle attese su Fed e crescita USA); la research lo misura su indici
+    europei ed emergenti, non su Treasury. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-18.'
+  status: excluded
