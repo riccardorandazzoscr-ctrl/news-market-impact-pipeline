@@ -55,6 +55,57 @@ def _slug(s: str) -> str:
     return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-")
 
 
+_ENTRY_RE = re.compile(r"^- \*\*(.+?)\*\*", re.M)
+
+
+def _aliases(label: str) -> list[str]:
+    """Forme con cui una voce del glossario compare nel testo: l'etichetta spezzata su ' / ' e ':',
+    piu' (solo se l'etichetta e' una sigla) il contenuto delle parentesi, e il ticker senza '^'."""
+    out = []
+    for part in re.split(r"\s/\s", label):
+        main = re.sub(r"\s*\([^)]*\)", "", part).replace("`", "").strip()
+        out.append(part.split("(")[0].replace("`", "").strip())   # anche senza il dopo-parentesi ("... ed Entity List")
+        for m in main.split(":"):
+            out += [m.strip(), m.strip().lstrip("^")]
+        for par in re.findall(r"\(([^)]*)\)", part):
+            if re.fullmatch(r"`[^`]+`", par.strip()) or re.fullmatch(r"[A-Z0-9+.&=\-]{2,8}", main):
+                out += [x.replace("`", "").strip() for x in re.split(r",\s*(?:in inglese\s*)?", par)]
+    return [a for a in dict.fromkeys(out) if len(a) >= 2]
+
+
+def _usato(alias: str, testo: str) -> bool:
+    # sigle e ticker (maiuscole, cifre, simboli): maiuscole esatte; parole comuni: senza distinzione
+    sigla = alias == alias.upper() or any(c in alias for c in "=+^_.")
+    pat = r"(?<![\w^=+.])" + re.escape(alias) + r"(?![\w=+])"
+    return bool(re.search(pat, testo, 0 if sigla else re.I))
+
+
+def glossario_del_giorno(glossary_md: str, testo: str) -> tuple[str, int, int]:
+    """Il glossario ridotto alle voci che compaiono in `testo` (indice + schede del giorno).
+    Ritorna (markdown, voci tenute, voci totali). Le sezioni senza voci spariscono."""
+    out, tot, kept, sezione = [], 0, 0, []
+    linkati = [x.replace("`", "").lower() for x in re.findall(r"\[([^\]]{4,})\]\(#doc-glossario\)", testo)]
+    voci = []   # (sezione, righe della voce)
+    for riga in glossary_md.splitlines():
+        if riga.startswith("## "):
+            sezione = riga
+        elif _ENTRY_RE.match(riga):
+            voci.append([sezione, [riga]])
+        elif voci and riga.strip() and not riga.startswith("#"):
+            voci[-1][1].append(riga)          # continuazione di una voce su piu' righe
+    ultima = None
+    for sez, righe in voci:
+        tot += 1
+        label = _ENTRY_RE.match(righe[0]).group(1)
+        if any(_usato(a, testo) for a in _aliases(label)) or any(x in label.lower() for x in linkati):
+            kept += 1
+            if sez != ultima:
+                out += ["", sez, ""]
+                ultima = sez
+            out += righe
+    return "\n".join(out), kept, tot
+
+
 def render(day_dir: Path, day: str) -> Path:
     index_path = day_dir / "_index.md"
     news_paths = sorted(day_dir.glob("news_*.md"))
@@ -77,8 +128,13 @@ def render(day_dir: Path, day: str) -> Path:
         docs.append((anchor, f"{p.stem} — {title}", md.convert(text)))
 
     if GLOSSARY_PATH.exists():
-        md.reset()
-        docs.append(("doc-glossario", "Glossario", md.convert(GLOSSARY_PATH.read_text(encoding="utf-8"))))
+        # solo i termini che compaiono nel report di oggi (indice + schede), non tutto il glossario
+        corpo = "\n".join(p.read_text(encoding="utf-8") for p in ([index_path] if index_path.exists() else []) + news_paths)
+        voci, kept, tot = glossario_del_giorno(GLOSSARY_PATH.read_text(encoding="utf-8"), corpo)
+        if kept:
+            md.reset()
+            intro = f"# Glossario — sigle e termini di oggi\n\n_{kept} voci su {tot}: solo quelle usate nelle schede di oggi._\n"
+            docs.append(("doc-glossario", "Glossario", md.convert(intro + voci)))
 
     nav = "\n".join(
         f'      <li><a href="#{a}">{t}</a></li>' for a, t, _ in docs

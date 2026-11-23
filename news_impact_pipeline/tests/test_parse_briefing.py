@@ -86,6 +86,24 @@ testo = rr._internal_links("Vedi la scheda [qui](news_03.md) per il dettaglio.")
 check("(#doc-news_03)" in testo, "il link diventa un'ancora #doc-news_03", testo)
 check("news_03.md)" not in testo, "il vecchio percorso file non resta nell'output", testo)
 
+print("\n--- render_report: il glossario tiene solo le voci usate oggi ---")
+G = """# Glossario
+## Macro
+- **ADP** — occupazione privata.
+- **BCE (Banca Centrale Europea)** — tassi euro.
+- **Forchetta di prezzo (IPO)** — range.
+## Ticker
+- **^VIX** — volatilita'.
+- **BZ=F** — Brent.
+- **XLE** — energia.
+"""
+out, k, n = rr.glossario_del_giorno(G, "Ha parlato la Banca Centrale Europea. Il VIX sale, `BZ=F` +2%. Vedi la [forchetta](#doc-glossario).")
+check((k, n) == (4, 6), "tiene BCE (nome esteso), ^VIX (senza ^), BZ=F, forchetta (link)", (k, n))
+check("ADP" not in out and "XLE" not in out, "scarta le voci non usate", out)
+check("## Macro" in out and "## Ticker" in out, "mantiene le sezioni con voci", out)
+out2, k2, _ = rr.glossario_del_giorno(G, "adp e xle in minuscolo non sono le sigle")
+check(k2 == 0, "le sigle contano solo a maiuscole esatte", out2)
+
 print(f"\n{'=' * 60}")
 print(f"parse_briefing/render_report: {PASS} passati, {FAIL} falliti")
 print(f"{'=' * 60}")

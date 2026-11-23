@@ -1,8 +1,9 @@
 # Glossario — sigle e termini
 
 Definizioni valide per **tutte** le schede del giorno. `render_report.py` mette
-questa sezione una sola volta, in fondo al report; ogni scheda rimanda qui con
-un link invece di ripetere le definizioni.
+in fondo al report, una sola volta, **solo le voci che compaiono nelle schede di
+quel giorno** (stessa sigla o nome esteso); ogni scheda rimanda qui con un link
+invece di ripetere le definizioni.
 
 Se in una scheda usi un termine o un ticker che **non trovi qui sotto**,
 aggiungilo — una riga, nella sezione più adatta, in ordine alfabetico al suo
