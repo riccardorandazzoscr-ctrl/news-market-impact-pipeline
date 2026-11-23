@@ -15751,3 +15751,126 @@ reviews:
     al rialzo sulla difesa europea, SHLD.L (se la serie copre la data). Criterio ex ante, nessun prezzo
     consultato. Revisione Claude 2026-11-23.'
   direction: pos
+- date: '2026-10-23'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il petrolio ignora
+    un attacco (2011–presente)/Escalation militari nel Golfo e premio di rischio già prezzato_ quando
+    il petrolio ignora un attacco (2011–presente).md
+  reason: 'Ondata su ministero della Difesa, aeroporti e un impianto Aramco a Yanbu non specificato, evacuazione
+    di Dhahran: nessuna capacità di raffinazione persa confermata, il premio è sul greggio; seduta multi-causa
+    (Libia). Colpo a impianti di greggio (giacimenti, stabilizzazione, oleodotti, terminali, depositi)
+    senza capacità di raffinazione persa: greggio e prodotti salgono insieme e il margine 3-2-1 non ha
+    un verso determinabile ex ante (CRACK_321 è Brent contro benzina e diesel NYMEX). Criterio ex ante,
+    nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  status: excluded
+- date: '2026-10-22'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: 2026-11-13/news_01.md
+  reason: 'Aeroporto di Dammam e drone vicino al giacimento di Shaybah: nessuna raffineria colpita. Colpo
+    a impianti di greggio (giacimenti, stabilizzazione, oleodotti, terminali, depositi) senza capacità
+    di raffinazione persa: greggio e prodotti salgono insieme e il margine 3-2-1 non ha un verso determinabile
+    ex ante (CRACK_321 è Brent contro benzina e diesel NYMEX). Criterio ex ante, nessun prezzo consultato.
+    Revisione Claude 2026-11-23.'
+  status: excluded
+- date: '2026-10-05'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: 2026-11-13/news_01.md
+  reason: 'Raffineria di Riad (secondo AFP) e stazione di pompaggio di Khurais nello stesso weekend: il
+    colpo alla raffinazione allarga il margine, quello al trasporto di greggio lo comprime. La research
+    sugli Houthi scrive già `pos, neg` sullo stesso episodio. Criterio ex ante, nessun prezzo consultato.
+    Revisione Claude 2026-11-23.'
+  status: excluded
+- date: '2026-09-24'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: 2026-11-13/news_01.md
+  reason: 'Missili diretti a Taif e all''area di Yanbu intercettati, nessun danno all''offerta: nessun
+    canale sul margine di raffinazione. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  status: excluded
+- date: '2026-09-09'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il petrolio ignora
+    un attacco (2011–presente)/Escalation militari nel Golfo e premio di rischio già prezzato_ quando
+    il petrolio ignora un attacco (2011–presente).md
+  reason: 'Seduta multi-causa: CENTCOM colpisce petroliere legate all''IRGC, attacco iraniano a navi USA
+    e Houthi su impianti sauditi non specificati. Il canale dominante è il greggio e il trasporto marittimo,
+    non la raffinazione. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  status: excluded
+- date: '2026-09-08'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: 2026-11-13/news_01.md
+  reason: 'Attacchi su Jizan, sede di una raffineria da 400.000 b/g, con operazioni sospese per comunicato
+    ufficiale: perdita di capacità di raffinazione sul Mar Rosso → prodotti più scarsi del greggio → margine
+    più largo. Coerente col verso pos della research sugli Houthi. Criterio ex ante, nessun prezzo consultato.
+    Revisione Claude 2026-11-23.'
+  direction: pos
+- date: '2023-11-01'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: 2026-09-09/news_01.md
+  reason: 'Fase iniziale della campagna Houthi contro il traffico marittimo: colpisce il trasporto, non
+    la raffinazione; nessun verso sul margine. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-23.'
+  status: excluded
+- date: '2022-03-25'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: 2026-11-13/news_01.md
+  reason: 'Incendio di due serbatoi del deposito di prodotti Aramco a Jeddah: deposito di distribuzione,
+    non capacità di raffinazione; effetto locale senza canale sul margine 3-2-1. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-23.'
+  status: excluded
+- date: '2022-03-21'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: 2026-11-13/news_01.md
+  reason: 'Ondata Houthi del 19-20/03 con la raffineria YASREF di Yanbu colpita (riduzione temporanea
+    della produzione comunicata da Aramco): perdita di capacità di raffinazione → margine più largo. Weekend
+    → prima seduta lunedì. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  direction: pos
+- date: '2022-01-18'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: 2026-11-13/news_01.md
+  reason: 'Esplosione di autocisterne presso il deposito ADNOC di Mussafah e attacco all''aeroporto di
+    Abu Dhabi: deposito di carburante, nessuna capacità di raffinazione persa; il premio è sul rischio
+    per un esportatore del Golfo. Colpo a impianti di greggio (giacimenti, stabilizzazione, oleodotti,
+    terminali, depositi) senza capacità di raffinazione persa: greggio e prodotti salgono insieme e il
+    margine 3-2-1 non ha un verso determinabile ex ante (CRACK_321 è Brent contro benzina e diesel NYMEX).
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  status: excluded
+- date: '2021-03-08'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: 2026-11-13/news_01.md
+  reason: 'Drone sul deposito di Ras Tanura (terminale di export del greggio) e missile su Dhahran, senza
+    danni gravi. Colpo a impianti di greggio (giacimenti, stabilizzazione, oleodotti, terminali, depositi)
+    senza capacità di raffinazione persa: greggio e prodotti salgono insieme e il margine 3-2-1 non ha
+    un verso determinabile ex ante (CRACK_321 è Brent contro benzina e diesel NYMEX). Criterio ex ante,
+    nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  status: excluded
+- date: '2019-09-16'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: 2026-10-20/news_01.md
+  reason: 'Abqaiq e Khurais: impianto di stabilizzazione del greggio e giacimento, la più grande perdita
+    di greggio della serie ma nessuna raffineria colpita. Colpo a impianti di greggio (giacimenti, stabilizzazione,
+    oleodotti, terminali, depositi) senza capacità di raffinazione persa: greggio e prodotti salgono insieme
+    e il margine 3-2-1 non ha un verso determinabile ex ante (CRACK_321 è Brent contro benzina e diesel
+    NYMEX). Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  status: excluded
+- date: '2019-05-14'
+  theme: commodity_energy
+  reference: CRACK_321
+  source: 2026-11-13/news_01.md
+  reason: 'Droni su due stazioni di pompaggio dell''oleodotto Est-Ovest, linea ferma: trasporto di greggio,
+    nessuna raffinazione colpita. Colpo a impianti di greggio (giacimenti, stabilizzazione, oleodotti,
+    terminali, depositi) senza capacità di raffinazione persa: greggio e prodotti salgono insieme e il
+    margine 3-2-1 non ha un verso determinabile ex ante (CRACK_321 è Brent contro benzina e diesel NYMEX).
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  status: excluded
