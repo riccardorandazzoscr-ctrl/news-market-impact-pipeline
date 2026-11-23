@@ -1,5 +1,5 @@
-generated_at: '2026-11-10T22:02:22'
-num_entries: 52
+generated_at: '2026-11-23T10:39:12'
+num_entries: 57
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -399,6 +399,90 @@ entries:
   - dot-com comparison
   - productivity
   - intangible investment
+- source_file: Crisi di vertice nelle grandi società quotate_ quando lo shock su
+    un titolo diventa evento di indice (2010–presente)/Crisi di vertice nelle grandi
+    società quotate_ quando lo shock su un titolo diventa evento di indice (2010–presente).md
+  title: 'Crisi di vertice e di governance delle grandi società quotate: quando uno
+    shock su un singolo titolo diventa un evento di indice o di settore (2010–presente)'
+  date_compiled: 2026-11-12
+  primary_theme: corporate_idiosyncratic
+  sub_themes:
+  - governance
+  - leadership_transition
+  - concentration_risk
+  - key_person_risk
+  - export_controls
+  - valuation_derisking
+  - regulatory_contagion
+  relevant_assets:
+  - SOXX
+  - ^NDX
+  - ^GSPC
+  - IGV
+  - EWY
+  - EWT
+  - KWEB
+  - ^VIX
+  external_assets_mentioned:
+  - NVDA — titolo colpito dalla crisi di vertice del novembre 2026; serve per stimare
+    il contributo meccanico a ^NDX e SOXX
+  - AAPL — Jobs 2011; peso del 20,5% nel Nasdaq-100 prima del ribilanciamento di maggio
+    2011
+  - MSFT — partner di OpenAI nel caso Altman (novembre 2023)
+  - META (FB) — Cambridge Analytica, marzo 2018
+  - TSLA — causa SEC e accordo, settembre-ottobre 2018
+  - INTC — Krzanich (2018) e Gelsinger (2024)
+  - BABA — sospensione IPO di Ant (2020); peso 10,48% in KWEB
+  - 005930.KS Samsung Electronics — peso del 24% in EWY e del 24,42% nel Kospi
+  - HPQ, MCD — crisi di vertice con peso piccolo, episodi di contrasto
+  - SMH — ETF semiconduttori alternativo a SOXX
+  - ^KS11 Kospi — indice locale; la reazione a Seoul precede quella di EWY
+  - ^IXIC Nasdaq Composite — usato dalle fonti al posto di ^NDX
+  time_window:
+    start: 2010-01-01
+    end: present
+  regime_phases:
+  - apple_single_name_dominance: 2010-01-01 to 2011-05-01
+  - post_rebalance_personal_scandals: 2011-05-02 to 2020-11-02
+  - state_driven_founder_risk: 2020-11-03 to 2022-11-29
+  - ai_megacap_concentration: 2022-11-30 to 2026-11-07
+  - key_person_national_security: 2026-11-08 to present
+  keywords:
+  - crisi di vertice
+  - dimissioni CEO
+  - licenziamento CEO
+  - indagine del consiglio
+  - scandalo personale
+  - arresto
+  - condanna
+  - dimissioni del revisore
+  - fondatore
+  - governance
+  - rischio persona chiave
+  - concentrazione indice
+  - CEO ousted
+  - CEO resigns
+  - board investigation
+  - key person risk
+  - founder crisis
+  - executive arrest
+  - auditor resignation
+  - index concentration
+  - Jensen Huang
+  - Nvidia board
+  - Sam Altman
+  - OpenAI
+  - Steve Jobs
+  - Lee Jae-yong
+  - Samsung
+  - Jack Ma
+  - Ant Group
+  - Mark Hurd
+  - Brian Krzanich
+  - Pat Gelsinger
+  - Steve Easterbrook
+  - Elon Musk SEC
+  - Cambridge Analytica
 - source_file: Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
     e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   title: Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)
@@ -1473,6 +1557,91 @@ entries:
   - aspettative BoJ
   - yen
   - nikkei
+- source_file: Guidance dei produttori di semiconduttori e reazione dell'indice di
+    settore_ sorpresa, fase del ciclo e posizionamento (2016-presente)/Guidance dei
+    produttori di semiconduttori e reazione dell'indice di settore_ sorpresa, fase
+    del ciclo e posizionamento (2016-presente).md
+  title: Guidance dei produttori di semiconduttori e reazione dell'indice di settore
+    — sorpresa sulla guidance, fase del ciclo e posizionamento (2016–presente)
+  date_compiled: 2026-11-18
+  primary_theme: structural_themes
+  sub_themes:
+  - earnings_shock
+  - guidance_surprise
+  - ai_semis
+  - ai_capex
+  - hyperscaler_capex
+  - memory_cycle
+  - concentration_risk
+  - valuation_derisking
+  - euphoria_vs_drawdown
+  relevant_assets:
+  - SOXX
+  - ^NDX
+  - ^GSPC
+  - IGV
+  - EWT
+  - EWY
+  - ^VIX
+  external_assets_mentioned:
+  - NVDA — emittente principale; la sua mossa governa il canale di concentrazione
+    su ^NDX e ^GSPC
+  - SMH — ETF semiconduttori con peso Nvidia molto maggiore di SOXX; proxy più fedele
+    del singolo emittente
+  - AVGO — guidance AI custom (2024-12-13, 2026-06-04) muove SOXX indipendentemente
+    da Nvidia
+  - MU — canale memory_cycle; guidance del 2024-12-18 come controllo negativo
+  - TSM — foundry; data di reazione dell'ADR ai conti del 2026-10-15 incerta
+  - ASML — booking e guidance del 2024-10-15 come shock negativo di filiera
+  - AMD — concorrente; componente redistributiva interna al settore
+  - ^SOX — indice PHLX citato dalle fonti; differisce da SOXX per replica
+  - KOSPI / TAIEX — sottostanti di EWY ed EWT, servirebbero a misurare il NAV stantio
+  - Consenso e whisper sulla guidance (LSEG/FactSet) — variabile chiave del canale
+    euforia vs calo, non disponibile
+  - Volatilità implicita pre-report NVDA — misura del posizionamento, non disponibile
+  time_window:
+    start: 2016-01-01
+    end: present
+  regime_phases:
+  - pre_ai_cyclical: 2016-01-01 to 2022-11-29
+  - ai_breakout: 2022-11-30 to 2024-06-20
+  - ai_priced_in: 2024-06-21 to 2026-10-06
+  - ai_drawdown_governance: 2026-10-07 to present
+  keywords:
+  - guidance Nvidia
+  - conti Nvidia
+  - trimestrale semiconduttori
+  - sorpresa sulla guidance
+  - beat and raise
+  - sell the news
+  - whisper number
+  - indice semiconduttori
+  - SOX
+  - SOXX
+  - chip AI
+  - capex hyperscaler
+  - ciclo delle memorie
+  - HBM
+  - foundry
+  - TSMC
+  - Broadcom guidance
+  - Micron guidance
+  - ASML booking
+  - Oracle cloud
+  - Nvidia earnings
+  - guidance beat
+  - guidance cut
+  - semiconductor index reaction
+  - chip stocks rally
+  - chip stocks selloff
+  - AI capex
+  - hyperscaler spending
+  - memory cycle
+  - index concentration
+  - Nasdaq 100 Nvidia weight
+  - after-hours earnings reaction
+  - export controls chips
+  - euphoria vs drawdown
 - source_file: Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
     2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
     blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -1834,6 +2003,84 @@ entries:
   - Ukraine grain deal
   - Russia grain export
   - fertilizer sanctions
+- source_file: Il ritorno dell'offerta di petrolio dopo un'interruzione_ trasmissione
+    a greggio, raffinati e valute dei produttori (2011–presente)/Il ritorno dell'offerta
+    di petrolio dopo un'interruzione_ trasmissione a greggio, raffinati e valute dei
+    produttori (2011–presente).md
+  title: 'Il ritorno dell''offerta di petrolio dopo un''interruzione (guerre, blocchi,
+    attacchi, sanzioni): barili che rientrano, surplus dichiarati dalle agenzie e
+    trasmissione a greggio, prodotti raffinati e valute dei produttori — regime ed
+    episodi storici (2011–presente)'
+  date_compiled: 2026-11-17
+  primary_theme: commodity_energy
+  sub_themes:
+  - supply_return
+  - oil_supply_shock
+  - opec_policy
+  - refinery_products
+  relevant_assets:
+  - BZ=F
+  - HO=F
+  - RB=F
+  - CRACK_321
+  - XLE
+  - NOK=X
+  - CAD=X
+  external_assets_mentioned:
+  - WTI — benchmark degli episodi nordamericani (Fort McMurray, uragani) e base standard
+    del crack 3-2-1; lo spread Brent-WTI ha toccato estremi nel 2026
+  - Spread a termine del Brent (backwardation) — misura diretta del canale barili
+    fisici e amplificatore della reazione
+  - Dubai e Oman — benchmark dei greggi del Golfo, più esposti ai ritorni via Hormuz
+  - Noli delle petroliere — trasmettono il rischio di rotta e il costo dei ritorni
+    via chokepoint
+  - 'Scorte OCSE — amplificatore: scorte basse aumentano l''ampiezza della reazione'
+  - Premi di rischio assicurativi di guerra — misurano la componente di premio di
+    rischio che il ritorno dovrebbe comprimere
+  - Diesel europeo (ICE gasoil) — misura diretta della stretta sui distillati citata
+    dall'IEA nel novembre 2026
+  time_window:
+    start: 2011-01-03
+    end: present
+  regime_phases:
+  - libya_arab_spring_tight: 2011-01-03 to 2014-11-26
+  - low_premium_glut: 2014-11-27 to 2019-05-01
+  - maximum_pressure_iran: 2019-05-02 to 2020-03-08
+  - pandemic_and_russia_dislocation: 2020-03-09 to 2023-11-18
+  - red_sea_proxy_war: 2023-11-19 to 2026-02-27
+  - iran_war_2026: 2026-02-28 to 2026-08-31
+  - stalemate_escalation_2026: 2026-09-01 to present
+  keywords:
+  - ripresa della produzione
+  - ritorno dei barili
+  - riapertura dei terminal
+  - revoca della force majeure
+  - surplus di offerta
+  - oil market surplus
+  - supply restored
+  - exports resume
+  - force majeure lifted
+  - IEA Oil Market Report
+  - OPEC MOMR
+  - Libia
+  - Ras Lanuf
+  - Es Sider
+  - Abqaiq
+  - Khurais
+  - Kurdistan
+  - oleodotto Iraq-Turchia
+  - CPC
+  - Novorossiysk
+  - Hormuz
+  - Implementation Day
+  - sanzioni Iran
+  - diesel
+  - distillati
+  - margini di raffinazione
+  - crack spread
+  - Gulf exports recover
+  - rientro fisico
+  - valutazione d'agenzia
 - source_file: Il vincolo elettrico del capex AI; potenza, reti e turbine come collo
     di bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico
     del capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
@@ -2486,6 +2733,162 @@ entries:
   - ciclo memoria
   - export semiconduttori Corea
   - prior settimanale
+- source_file: Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione
+    a Treasury, dollaro e azionario (2011-presente)/Richieste di sussidi di disoccupazione
+    USA_ sorprese e trasmissione a Treasury, dollaro e azionario (2011-presente).md
+  title: Richieste settimanali di sussidi di disoccupazione negli Stati Uniti — sorprese,
+    dati in linea e trasmissione a Treasury, dollaro e azionario, regime ed episodi
+    storici (2011–presente)
+  date_compiled: 2026-11-23
+  primary_theme: macro_data
+  sub_themes:
+  - jobless_claims
+  - labour_market
+  relevant_assets:
+  - IEF
+  - ^FVX
+  - ^TNX
+  - DX-Y.NYB
+  - ^GSPC
+  external_assets_mentioned:
+  - Rendimento Treasury a 2 anni — la variabile più sensibile alle attese sulla Fed;
+    ^FVX è solo un sostituto
+  - Futures sui Fed funds — misurano direttamente la revisione delle probabilità di
+    taglio/rialzo
+  - Richieste continuative (serie DOL/FRED) — in alcune settimane più informative
+    delle iniziali
+  - Media a 4 settimane delle richieste iniziali (serie) — filtra rumore e distorsioni
+    festive
+  - Dati intraday — necessari per isolare la finestra 08:30 negli episodi multi-causa
+  - Dow Jones Industrial Average e Nasdaq Composite — citati nelle Note come reazioni
+    documentate
+  time_window:
+    start: 2011-01-03
+    end: present
+  regime_phases:
+  - slow_recovery: 2011-01-03 to 2015-12-31
+  - full_employment: 2016-01-04 to 2020-02-28
+  - pandemic_shock: 2020-03-02 to 2021-12-31
+  - tight_labour_market: 2022-01-03 to 2023-12-29
+  - slowdown_low_firing: 2024-01-02 to present
+  keywords:
+  - sussidi di disoccupazione
+  - richieste iniziali
+  - initial jobless claims
+  - continuing claims
+  - richieste continuative
+  - mercato del lavoro
+  - labor market
+  - Treasury
+  - rendimenti
+  - settimanale
+- source_file: Rischio politico sui data center_ moratorie, tariffe ed elezioni 2026
+    e la trasmissione a semiconduttori e mercati asiatici (2019-2026)/Rischio politico
+    sui data center_ moratorie, tariffe ed elezioni 2026 e la trasmissione a semiconduttori
+    e mercati asiatici (2019-2026).md
+  title: 'Rischio politico e regolatorio sulla domanda di data center: moratorie,
+    permessi, tariffe elettriche, leve federali ed elezioni, trasmissione a semiconduttori,
+    indici tecnologici e mercati asiatici (2019–presente)'
+  date_compiled: 2026-11-17
+  primary_theme: structural_themes
+  sub_themes:
+  - data_center_moratorium
+  - permitting_and_zoning
+  - large_load_tariffs
+  - grid_cost_allocation
+  - election_risk
+  - federal_permitting_acceleration
+  - ai_capex_transmission
+  - asia_semiconductor_spillover
+  relevant_assets:
+  - SOXX
+  - ^NDX
+  - EWY
+  - EWT
+  - ^N225
+  - XLU
+  - IGV
+  - ^GSPC
+  - ^VIX
+  external_assets_mentioned:
+  - NVDA (Nvidia) — principale beneficiario del capex AI; confondente per le dimissioni
+    di Huang del 2026-11-12 e la trimestrale del 2026-11-17
+  - AMD — guidance 2027 nella stessa seduta del 2026-11-04, spinta opposta
+  - MU (Micron) — sensibilità delle memorie al capex dei data center (−17% il 2026-11-05)
+  - TSM (TSMC) — sottostante principale di EWT
+  - SK Hynix e Samsung Electronics — più di metà del Kospi; canale memoria verso EWY
+  - Indice Kospi — reazione locale nella seduta asiatica successiva, circuit breaker
+    del 2026-11-06
+  - Taiex — reazione locale di Taiwan
+  - SOX / SMH — proxy alternativi dei semiconduttori
+  - VST (Vistra) — utility più esposta al Texas/ERCOT, componente di XLU
+  - CEG (Constellation) — utility esposta ai data center, componente di XLU
+  - GEV (GE Vernova) — fornitore di generazione, non in XLU
+  - CRWV (CoreWeave), IREN, APLD, NBIS — operatori di data center/neocloud, misura
+    diretta del canale
+  - CDS dei neocloud — canale credito/finanziamento dei data center
+  - SO (Southern Co/Georgia Power) — esposizione alle decisioni della Georgia PSC
+  - Prezzi della capacità PJM — fuori perimetro, citati solo come contesto
+  time_window:
+    start: 2019-07-12
+    end: present
+  regime_phases:
+  - pre_ai_local_siting_frictions: 2019-07-12 to 2022-11-29
+  - genai_buildout_cost_allocation: 2022-11-30 to 2026-07-13
+  - statewide_moratorium_politics: 2026-07-14 to 2026-11-03
+  - post_midterm_restriction_regime: 2026-11-04 to present
+  keywords:
+  - moratoria data center
+  - data center moratorium
+  - blocco permessi
+  - permit halt
+  - zonizzazione
+  - zoning
+  - by-right
+  - Loudoun County
+  - tariffe elettriche
+  - large load tariff
+  - allocazione costi di rete
+  - cost allocation
+  - grandi carichi
+  - SB 6
+  - ERCOT audit
+  - Batch Zero
+  - TCEQ
+  - Abbott
+  - Hinojosa
+  - governatrice Texas
+  - Texas governor-elect
+  - Hochul executive order
+  - New York moratorium
+  - Maine LD 307
+  - Georgia Public Service Commission
+  - Georgia PSC
+  - Georgia Power
+  - EirGrid
+  - CRU Ireland
+  - Dublino
+  - Singapore moratorium
+  - Amsterdam Haarlemmermeer
+  - elezioni di metà mandato
+  - midterm elections 2026
+  - Democratic sweep
+  - rischio elettorale
+  - election risk
+  - capex AI
+  - AI capex
+  - semiconduttori
+  - chip stocks selloff
+  - Kospi circuit breaker
+  - Nikkei bear market
+  - utility esposte ai data center
+  - Vistra
+  - Constellation
+  - hyperscaler
+  - EO 14318
+  - federal permitting
+  - terre federali
+  - federal lands
 - source_file: Russia-Ucraina attrito energetico e regime sanzioni — mappa di episodi
     datati per event study (2022–2026)/Russia-Ucraina- attrito energetico e regime
     sanzioni — mappa di episodi datati per event study (2022–2026).md
