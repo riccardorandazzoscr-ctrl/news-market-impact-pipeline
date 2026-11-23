@@ -1,0 +1,846 @@
+research: lacuna versi-oro-fed-falco (monetary_policy, hawkish, rif GC=F; sotto-tema locale)
+voci:
+- data: '2026-06-11'
+  tema: monetary_policy
+  fonte: 2026-08-29/news_01.md
+  riga: '| `2026-06-11` | neg | dot_plot, hawkish | Dot plot che sposta in avanti il primo taglio. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2026-05-13'
+  tema: monetary_policy
+  fonte: 2026-08-29/news_01.md
+  riga: '| `2026-05-13` | neg | hawkish, credibility_shock | Comunicazione restrittiva in un contesto
+    di dubbi sulla credibilità antinflazionistica. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Comunicazione restrittiva in un contesto di dubbi sulla credibilità antinflazionistica: il
+      canale tassi spinge l''oro giù, quello di credibilità lo spinge su; nessun verso univoco. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2026-04-30'
+  tema: monetary_policy
+  fonte: 2026-08-29/news_01.md
+  riga: '| `2026-04-30` | neg | rate_decision, hawkish, guidance_pivot | FOMC che rifiuta di validare
+    i tagli prezzati dal mercato → repricing del front-end. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2026-03-19'
+  tema: monetary_policy
+  fonte: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi
+    storici 2011-2026/Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi
+    ed episodi storici 2011-2026.md
+  riga: '**Canale direzionale 3 — proiezioni dello staff** (marzo, giugno, settembre, dicembre). La catena
+    è `revisione dell''inflazione o della crescita → funzione di reazione implicita → tassi attesi → EURUSD=X
+    e IEAG.AS`. Nel 2024-06-06 la revisione al rialzo dell''inflazione al 2,5% per il 2024 trasformò u'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2026-01-21'
+  tema: monetary_policy
+  fonte: 2026-08-28/news_05.md
+  riga: '| `2026-01-21` | pos | guidance_pivot, hawkish | Riprezzamento hawkish di gennaio 2026 |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'La fonte descrive una fase o una vigilia, non un evento discreto della Fed in quella seduta:
+      niente shock datato su cui fissare un verso. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-23.'
+  stato: promossa
+- data: '2025-12-24'
+  tema: monetary_policy
+  fonte: 2026-09-12/news_04.md
+  riga: '| `2025-12-24` | pos | rate_decision, hawkish | Decisione di fine 2025 in fase di riaccelerazione
+    dei prezzi. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'La fonte descrive una fase o una vigilia, non un evento discreto della Fed in quella seduta:
+      niente shock datato su cui fissare un verso. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-23.'
+  stato: promossa
+- data: '2025-12-10'
+  tema: monetary_policy
+  fonte: 2026-08-20/news_02.md
+  riga: '| `2025-12-10` | neg | dot_plot, hawkish | Proiezioni di dicembre 2025 che iniziano a inclinare
+    verso un **rialzo**: è l''episodio che apre il regime di cui i verbali di luglio 2026 sono la continuazione.
+    Il più vicino a oggi. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2025-10-01'
+  tema: monetary_policy
+  fonte: 2026-08-29/news_01.md
+  riga: '| `2025-10-01` | neg | hawkish, guidance_pivot | Comunicazione restrittiva in apertura di trimestre
+    con dati in ritardo: la Fed dichiara di navigare a vista. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'La fonte descrive una fase o una vigilia, non un evento discreto della Fed in quella seduta:
+      niente shock datato su cui fissare un verso. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-23.'
+  stato: promossa
+- data: '2025-09-11'
+  tema: monetary_policy
+  fonte: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi
+    storici 2011-2026/Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi
+    ed episodi storici 2011-2026.md
+  riga: '**Tesi 3 — Le pause sono il caso statisticamente più frequente e il meno documentato.** Il catalogo
+    contiene 9 riunioni `neutral` su tutti e tre gli asset principali. Nelle pause pienamente attese i
+    movimenti riportati dalle fonti sono di 0,2–0,3% sull''euro (2023-10-26, 2025-10-30, 2026-02-05).
+    Le p'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2025-08-25'
+  tema: monetary_policy
+  fonte: 2026-08-29/news_01.md
+  riga: '| `2025-08-25` | neg | hawkish, cb_independence | Pressione politica sulla composizione del board
+    della Fed: shock di indipendenza → premio al rischio sul dollaro e sul lungo. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: pos
+    perché: 'Pressione politica sulla composizione del board Fed: shock all''indipendenza della banca
+      centrale, non stretta monetaria. Il canale atteso sull''oro è la copertura contro il rischio istituzionale
+      e di svalutazione → pressione al rialzo su GC=F, nonostante l''etichetta hawkish. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2025-07-31'
+  tema: monetary_policy
+  fonte: 2026-08-21/news_05.md
+  riga: '| `2025-07-31` | neg | rate_decision, hawkish | Riunione della fase di attesa restrittiva 2025.
+    |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'La fonte (scheda Giappone) data la «riunione della fase di attesa restrittiva 2025»: il 31
+      luglio 2025 è la riunione BoJ, il giorno dopo il FOMC. Evento Bank of Japan: sull''oro agisce solo
+      per via indiretta (yen, carry trade, avversione al rischio), con segno non determinabile ex ante.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2025-07-24'
+  tema: monetary_policy
+  fonte: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi
+    storici 2011-2026/Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi
+    ed episodi storici 2011-2026.md
+  riga: '**Tesi 3 — Le pause sono il caso statisticamente più frequente e il meno documentato.** Il catalogo
+    contiene 9 riunioni `neutral` su tutti e tre gli asset principali. Nelle pause pienamente attese i
+    movimenti riportati dalle fonti sono di 0,2–0,3% sull''euro (2023-10-26, 2025-10-30, 2026-02-05).
+    Le p'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2025-06-18'
+  tema: monetary_policy
+  fonte: 2026-08-20/news_02.md
+  riga: '| `2025-06-18` | neg | hawkish, cb_independence | Fed ferma nonostante la pressione politica
+    esplicita per tagliare: segnale di funzione di reazione e di indipendenza. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Fed ferma nonostante la pressione politica esplicita per tagliare: segnale di indipendenza
+      e funzione di reazione restrittiva → tassi reali e dollaro sostenuti, pressione al ribasso su GC=F.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2025-06-05'
+  tema: monetary_policy
+  fonte: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi
+    storici 2011-2026/Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi
+    ed episodi storici 2011-2026.md
+  riga: '**Canale direzionale 2 — sorpresa sulla guidance.** La catena è `linguaggio sul percorso futuro
+    (impegno, "meeting-by-meeting", "sufficiently long duration", "direction of travel") → riprezzamento
+    dei tassi attesi a 6-24 mesi → EURUSD=X e IEAG.AS`. È il canale dominante dopo il 2022, quando la
+    BCE h'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2025-01-10'
+  tema: monetary_policy
+  fonte: 2026-09-15/news_03.md
+  riga: '| `2025-01-10` | neg | labour_market, hawkish | Occupazione USA molto forte: decennale verso
+    il 4,8%, riprezzamento restrittivo su dato macro. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2024-12-18'
+  tema: monetary_policy
+  fonte: 2026-08-20/news_02.md
+  riga: '| `2024-12-18` | neg | dot_plot, guidance_pivot, hawkish | Powell guida il 2025 su soli due tagli:
+    hawkish hold che innesca un selloff azionario immediato. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2024-09-18'
+  tema: monetary_policy
+  fonte: 2026-08-28/news_03.md
+  riga: '| `2024-09-18` | pos | rate_decision, hawkish | FOMC con taglio da 50bp: riprezzamento del differenziale
+    USA-Giappone |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: pos
+    perché: 'Taglio Fed da 50 pb, più ampio del passo standard: allentamento → tassi reali e dollaro attesi
+      più bassi → pressione al rialzo su GC=F. L''etichetta hawkish della fonte riguarda il differenziale
+      USA-Giappone, non la Fed. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2024-07-31'
+  tema: monetary_policy
+  fonte: 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC e interventi FX
+    — regime ed episodi storici (1998–2026).md'
+  riga: '| 2024-07-31 | Rialzo BoJ a 0,25% (+15 pb) + piano di riduzione acquisti JGB; tono hawkish |
+    BoJ | JPY forte | JPY=X, ^N225 | Innesco prossimale dell''unwind di agosto. A sorpresa nel timing
+    |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento Bank of Japan: sull''oro agisce solo per via indiretta (yen, carry trade, avversione
+      al rischio), con segno non determinabile ex ante. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-23.'
+  stato: promossa
+- data: '2024-06-12'
+  tema: monetary_policy
+  fonte: 2026-08-20/news_02.md
+  riga: '| `2024-06-12` | neg | dot_plot, hawkish | FOMC che riduce le proiezioni da tre tagli a uno:
+    revisione hawkish del percorso, pur con un dato di inflazione benigno lo stesso giorno. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Nella stessa seduta un CPI benigno (pro-oro) e un dot plot più restrittivo (contro l''oro):
+      due shock opposti non separabili su dati giornalieri. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2024-06-06'
+  tema: monetary_policy
+  fonte: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi
+    storici 2011-2026/Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi
+    ed episodi storici 2011-2026.md
+  riga: '**Tesi 1 — Conta la sorpresa, non la decisione.** Delle 31 riunioni in catalogo solo cinque hanno
+    un tasso diverso da quello prezzato: il taglio inatteso del 2011-11-03, il taglio inatteso del 2014-09-04,
+    il rialzo di 50 invece di 25 punti base del 2022-07-21, il mancato taglio del 2020-03-12 e il p'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2024-05-01'
+  tema: monetary_policy
+  fonte: 2026-08-28/news_05.md
+  riga: '| `2024-05-01` | pos | guidance_pivot, hawkish | FOMC di maggio 2024: Powell esclude il rialzo
+    ma allunga l''orizzonte della pausa |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'FOMC in cui Powell esclude un rialzo ma allunga la pausa: segnali di segno opposto nella
+      stessa conferenza, nessun verso univoco sull''oro. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-23.'
+  stato: promossa
+- data: '2024-04-16'
+  tema: monetary_policy
+  fonte: 2026-09-25/news_01.md
+  riga: '| `2024-04-16` | neg | hawkish, guidance_pivot | *manuale* — Powell: "mancanza di ulteriori progressi"
+    sull''inflazione, i tagli slittano → pressione sul prezzo dei Treasury |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2024-04-10'
+  tema: monetary_policy
+  fonte: 2026-09-15/news_03.md
+  riga: '| `2024-04-10` | neg | inflation_print, hawkish | Inflazione di marzo sopra attese: il mercato
+    cancella tre tagli dal percorso atteso. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2024-03-20'
+  tema: monetary_policy
+  fonte: 2026-08-29/news_01.md
+  riga: '| `2024-03-20` | neg | dot_plot, hawkish | FOMC che conferma tre tagli nel 2024 ma alza le stime
+    di crescita e di inflazione: mix restrittivo sul fondo. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'FOMC che conferma tre tagli ma alza le stime di crescita e inflazione: lettura accomodante
+      del percorso e restrittiva del fondo nella stessa giornata, nessun verso univoco sull''oro. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2023-09-20'
+  tema: monetary_policy
+  fonte: 2026-08-20/news_02.md
+  riga: '| `2023-09-20` | neg | guidance_pivot, hawkish, dot_plot | FOMC «higher for longer»: pochi tagli
+    proiettati per il 2024 → salto del premio a termine. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2023-09-14'
+  tema: monetary_policy
+  fonte: 2026-08-28/news_03.md
+  riga: '| `2023-09-14` | pos | rate_decision, hawkish | Riunione con proiezioni riviste al rialzo |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2023-07-27'
+  tema: monetary_policy
+  fonte: 2026-09-02/news_01.md
+  riga: '| `2023-07-27` | neg | rate_decision, hawkish, term_premium | FOMC +25bp al 5,25-5,50% con porta
+    aperta a ulteriori rialzi; parte da qui il selloff del tratto lungo dell''estate 2023 |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2023-06-15'
+  tema: monetary_policy
+  fonte: 2026-08-28/news_03.md
+  riga: '| `2023-06-15` | pos | rate_decision, hawkish | Pausa Fed con dot plot che indica altri due rialzi:
+    pausa hawkish |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2023-06-13'
+  tema: monetary_policy
+  fonte: 2026-09-12/news_04.md
+  riga: '| `2023-06-13` | pos | rate_decision, hawkish | Vigilia FOMC di giugno 2023, con la "pausa da
+    falco". |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'La fonte descrive una fase o una vigilia, non un evento discreto della Fed in quella seduta:
+      niente shock datato su cui fissare un verso. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-23.'
+  stato: promossa
+- data: '2023-05-04'
+  tema: monetary_policy
+  fonte: 2026-09-02/news_01.md
+  riga: '| `2023-05-04` | neg | rate_decision, hawkish, ecb | BCE +25bp con fine dei reinvestimenti APP:
+    stretta quantitativa oltre al tasso |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2023-03-16'
+  tema: monetary_policy
+  fonte: 2026-09-02/news_01.md
+  riga: '| `2023-03-16` | neg | rate_decision, hawkish, ecb | BCE alza di 50bp in piena crisi Credit Suisse:
+    priorità ai prezzi sulla stabilità |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2023-02-02'
+  tema: monetary_policy
+  fonte: 2026-08-28/news_03.md
+  riga: '| `2023-02-02` | pos | guidance_pivot, hawkish | Fase di riprezzamento hawkish di inizio 2023
+    |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'La fonte descrive una fase o una vigilia, non un evento discreto della Fed in quella seduta:
+      niente shock datato su cui fissare un verso. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-12-20'
+  tema: monetary_policy
+  fonte: 'kb:Giappone : Bank of Japan/Giappone : Bank of Japan- carry trade, uscita YCC e interventi FX
+    — regime ed episodi storici (1998–2026).md'
+  riga: '| 2022-12-20 | Sorpresa: allargamento banda YCC 10Y da ±0,25% a ±0,50% | BoJ/POLICY | JPY forte,
+    ^N225 giù | JPY=X, ^N225, (JGB est.) | **Grande sorpresa.** Nikkei -2,5%, USD/JPY -2,7% a ~133; 10Y
+    JGB a ~0,46% |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento Bank of Japan: sull''oro agisce solo per via indiretta (yen, carry trade, avversione
+      al rischio), con segno non determinabile ex ante. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-12-15'
+  tema: monetary_policy
+  fonte: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi
+    storici 2011-2026/Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi
+    ed episodi storici 2011-2026.md
+  riga: '**Amplificatore 1 — riunione con proiezioni.** Le quattro riunioni trimestrali concentrano le
+    sorprese di guidance e proiezioni: 2015-12-03, 2019-09-12, 2022-12-15, 2023-09-14, 2024-06-06, 2026-03-19.
+    L''amplificatore cambia l''ampiezza della reazione, non il segno.'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-12-14'
+  tema: monetary_policy
+  fonte: 2026-08-20/news_02.md
+  riga: '| `2022-12-14` | neg | rate_decision, dot_plot, hawkish | FOMC +50 punti base ma con tasso terminale
+    rivisto al rialzo: rallenta il passo e alza la destinazione → riprezzamento restrittivo. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-11-02'
+  tema: monetary_policy
+  fonte: 2026-09-17/news_03.md
+  riga: '| `2022-11-02` | neg | rate_decision, hawkish, guidance_pivot | Powell smonta in conferenza stampa
+    l''apertura dovish contenuta nel comunicato: il caso da manuale di divergenza fra testo e tono. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-09-21'
+  tema: monetary_policy
+  fonte: 2026-08-20/news_02.md
+  riga: '| `2022-09-21` | neg | rate_decision, dot_plot, hawkish | FOMC +75 punti base con revisione al
+    rialzo dei dot: picco di hawkishness del ciclo → curva su, equity giù. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-09-13'
+  tema: monetary_policy
+  fonte: 2026-09-15/news_03.md
+  riga: '| `2022-09-13` | neg | inflation_print, hawkish | Inflazione di agosto sopra attese: −4,3% sull''S&P
+    500 in una seduta, il più forte riprezzamento restrittivo singolo del ciclo. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-09-08'
+  tema: monetary_policy
+  fonte: 2026-08-27/news_03.md
+  riga: '| `2022-09-08` | pos | rate_decision, ecb, eurozone_release | La BCE alza di 75 punti base, il
+    rialzo singolo più ampio della sua storia, con revisione al rialzo delle proiezioni di inflazione.
+    |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-08-26'
+  tema: monetary_policy
+  fonte: 2026-08-20/news_02.md
+  riga: '| `2022-08-26` | neg | hawkish, guidance_pivot | Discorso di Powell a Jackson Hole («ci sarà
+    del dolore»): la Fed spegne le speranze di pivot → rendimenti su, azionario giù. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-08-15'
+  tema: monetary_policy
+  fonte: 2026-09-12/news_04.md
+  riga: '| `2022-08-15` | pos | rate_decision, hawkish | Fase di comunicazione restrittiva pre-Jackson
+    Hole 2022. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'La fonte descrive una fase o una vigilia, non un evento discreto della Fed in quella seduta:
+      niente shock datato su cui fissare un verso. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-07-21'
+  tema: monetary_policy
+  fonte: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi
+    storici 2011-2026/Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi
+    ed episodi storici 2011-2026.md
+  riga: '**Tesi 1 — Conta la sorpresa, non la decisione.** Delle 31 riunioni in catalogo solo cinque hanno
+    un tasso diverso da quello prezzato: il taglio inatteso del 2011-11-03, il taglio inatteso del 2014-09-04,
+    il rialzo di 50 invece di 25 punti base del 2022-07-21, il mancato taglio del 2020-03-12 e il p'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-06-15'
+  tema: monetary_policy
+  fonte: 2026-09-16/news_02.md
+  riga: '| `2022-06-15` | neg | rate_decision, hawkish | Rialzo effettivo di 75 punti base, il più ampio
+    dal 1994 |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-06-13'
+  tema: monetary_policy
+  fonte: 2026-09-15/news_03.md
+  riga: '| `2022-06-13` | neg | rate_decision, hawkish | Dopo un dato di inflazione sopra attese il mercato
+    riprezza in due giorni la riunione FOMC da 50 a 75 punti base — riprezzamento restrittivo alla vigilia
+    di una riunione, come oggi. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-06-09'
+  tema: monetary_policy
+  fonte: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi
+    storici 2011-2026/Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi
+    ed episodi storici 2011-2026.md
+  riga: '**Tesi 2 — Il segno sull''euro e sul Bund è stabile, quello sullo spread BTP-Bund no.** Una sorpresa
+    restrittiva spinge `EURUSD=X` al rialzo e `IEAG.AS` al ribasso in modo abbastanza coerente nel campione.
+    Su `BTP_BUND_SPREAD` invece il segno dipende dall''esistenza di una rete anti-frammentazione. Pr'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-03-16'
+  tema: monetary_policy
+  fonte: 2026-09-17/news_03.md
+  riga: '| `2022-03-16` | neg | rate_decision, hawkish | Primo rialzo del ciclo 2022. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-01-26'
+  tema: monetary_policy
+  fonte: 2026-09-16/news_02.md
+  riga: '| `2022-01-26` | neg | guidance_pivot, hawkish | Powell dice che c''è «parecchio spazio» per
+    alzare senza danneggiare il mercato del lavoro |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2020-03-12'
+  tema: monetary_policy
+  fonte: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi
+    storici 2011-2026/Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi
+    ed episodi storici 2011-2026.md
+  riga: '**Tesi 1 — Conta la sorpresa, non la decisione.** Delle 31 riunioni in catalogo solo cinque hanno
+    un tasso diverso da quello prezzato: il taglio inatteso del 2011-11-03, il taglio inatteso del 2014-09-04,
+    il rialzo di 50 invece di 25 punti base del 2022-07-21, il mancato taglio del 2020-03-12 e il p'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2018-12-19'
+  tema: monetary_policy
+  fonte: 2026-08-23/news_05.md
+  riga: '| `2018-12-19` | pos | guidance_pivot, hawkish | FOMC di dicembre 2018: rialzo con guidance percepita
+    come troppo rigida sul bilancio → selloff azionario e appiattimento |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2018-10-03'
+  tema: monetary_policy
+  fonte: 2026-09-15/news_03.md
+  riga: '| `2018-10-03` | neg | guidance_pivot, hawkish | Powell dichiara che i tassi sono "molto lontani
+    dal neutrale": il decennale sfonda il 3,2% e l''azionario avvia una correzione di due mesi. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2018-09-26'
+  tema: monetary_policy
+  fonte: 2026-09-17/news_03.md
+  riga: '| `2018-09-26` | neg | rate_decision, hawkish | Rialzo con dot plot che confermava il percorso
+    restrittivo nonostante le pressioni politiche della Casa Bianca — precedente diretto sul tema indipendenza.
+    |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2017-07-20'
+  tema: monetary_policy
+  fonte: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi
+    storici 2011-2026/Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi
+    ed episodi storici 2011-2026.md
+  riga: Tutte le date sono giorni di riunione ordinaria. Le date sono verificate sulle pagine BCE dei
+    comunicati o delle conferenze stampa quando disponibili (2011-07-07, 2011-11-03, 2014-06-05, 2016-12-08,
+    2017-07-20, 2020-03-12, 2022-07-21, 2025-06-05, 2025-12-18, 2026-02-05, 2026-03-19, 2026-04-30, 2026-
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2015-12-16'
+  tema: monetary_policy
+  fonte: 2026-09-17/news_03.md
+  riga: '| `2015-12-16` | neg | rate_decision, hawkish | Primo rialzo dopo la crisi finanziaria: uscita
+    dai tassi zero, l''analogo del "primo rialzo di un ciclo" come oggi. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2015-12-03'
+  tema: monetary_policy
+  fonte: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi
+    storici 2011-2026/Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi
+    ed episodi storici 2011-2026.md
+  riga: '**Tesi 1 — Conta la sorpresa, non la decisione.** Delle 31 riunioni in catalogo solo cinque hanno
+    un tasso diverso da quello prezzato: il taglio inatteso del 2011-11-03, il taglio inatteso del 2014-09-04,
+    il rialzo di 50 invece di 25 punti base del 2022-07-21, il mancato taglio del 2020-03-12 e il p'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2013-09-16'
+  tema: monetary_policy
+  fonte: 2026-09-09/news_02.md
+  riga: '| `2013-09-16` | pos | term_premium, rate_decision, hawkish, pre_fomc | Settimana pre-FOMC del
+    "no taper", con incertezza sulla successione alla presidenza della Fed: premio a termine e rischio
+    di governance insieme. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'La fonte descrive una fase o una vigilia, non un evento discreto della Fed in quella seduta:
+      niente shock datato su cui fissare un verso. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-23.'
+  stato: promossa
+- data: '2013-05-22'
+  tema: monetary_policy
+  fonte: 2026-09-25/news_01.md
+  riga: '| `2013-05-22` | neg | hawkish, term_premium | Bernanke al Congresso apre alla riduzione degli
+    acquisti (taper tantrum): sorpresa hawkish → premio a termine in salita, prezzi dei Treasury giù |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: neg
+    perché: 'Sorpresa restrittiva della Fed (o dato USA che la anticipa): tassi reali attesi e dollaro
+      più alti alzano il costo opportunità dell''oro → pressione al ribasso su GC=F. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2011-12-08'
+  tema: monetary_policy
+  fonte: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi
+    storici 2011-2026/Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause, regimi
+    ed episodi storici 2011-2026.md
+  riga: '| 2011-12-08 | EURUSD=X | neg | ecb, rate_decision, balance_sheet, hawkish | Taglio atteso all''1,00%
+    e LTRO a 36 mesi; in conferenza Draghi raffredda le attese su più acquisti di titoli | Fonte secondaria
+    (Benzinga): EURUSD "slammed" dopo la conferenza; vertice UE 8-9 dicembre (multi-causa); data de'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: GC=F
+    verso: escluso
+    perché: 'Evento BCE: il canale sull''oro passa solo dal cambio euro-dollaro (falco BCE → dollaro più
+      debole), di segno opposto al canale tassi globali; nessun verso univoco ex ante. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa

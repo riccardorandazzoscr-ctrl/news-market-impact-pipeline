@@ -1,0 +1,104 @@
+research: lacuna incursioni-nato-verso (geopolitical, nato,military_escalation, rif SHLD.L; sotto-tema
+  locale)
+voci:
+- data: '2026-05-26'
+  tema: geopolitical
+  fonte: 2026-09-02/news_06.md
+  riga: '| `2026-05-26` | neg | military_escalation, nato | Escalation con dimensione atlantica di fine
+    maggio 2026 |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SHLD.L
+    verso: pos
+    perché: 'Escalation militare con dimensione NATO: più rischio di conflitto sul fianco atlantico alza
+      le attese di spesa e ordini per la difesa europea → pressione al rialzo su SHLD.L. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2025-09-19'
+  tema: geopolitical
+  fonte: 2026-09-12/news_06.md
+  riga: '| `2025-09-19` | pos | nato, military_escalation | Violazioni dello spazio aereo NATO e risposta
+    dell''Alleanza. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SHLD.L
+    verso: pos
+    perché: 'Violazione dello spazio aereo NATO e risposta dell''Alleanza: incursione su territorio alleato
+      → attese di spesa per la difesa e la difesa aerea più alte → pressione al rialzo su SHLD.L. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2025-08-18'
+  tema: geopolitical
+  fonte: 2026-09-02/news_06.md
+  riga: '| `2025-08-18` | neg | military_escalation, nato, negotiation_track | Fase negoziale sull''Ucraina
+    con garanzie di sicurezza europee sul tavolo |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SHLD.L
+    verso: neg
+    perché: 'Fase negoziale sull''Ucraina: la prospettiva di una tregua riduce il premio di guerra sulla
+      difesa europea, anche con garanzie di sicurezza sul tavolo → pressione al ribasso su SHLD.L. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2025-02-24'
+  tema: geopolitical
+  fonte: 2026-09-02/news_06.md
+  riga: '| `2025-02-24` | neg | military_escalation, nato | Terzo anniversario dell''invasione con riposizionamento
+    del sostegno occidentale |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SHLD.L
+    verso: pos
+    perché: 'Riposizionamento del sostegno occidentale all''Ucraina: meno impegno americano significa
+      che l''Europa deve riarmarsi da sola → pressione al rialzo sulla difesa europea, SHLD.L. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-11-15'
+  tema: geopolitical
+  fonte: 2026-08-23/news_03.md
+  riga: '| `2022-11-15` | neg | military_escalation, nato | Caduta di un missile in territorio polacco:
+    rischio momentaneo di attivazione dell''Articolo 5 → risk-off istantaneo, poi rientro |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SHLD.L
+    verso: pos
+    perché: 'Missile caduto in territorio polacco, rischio di attivazione dell''Articolo 5: incursione
+      su territorio NATO → domanda attesa di difesa aerea e spesa militare → pressione al rialzo su SHLD.L,
+      anche se lo shock è rientrato nella stessa notte. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-23.'
+  stato: promossa
+- data: '2022-02-21'
+  tema: geopolitical
+  fonte: 2026-09-02/news_06.md
+  riga: '| `2022-02-21` | neg | military_escalation, nato | Riconoscimento russo delle repubbliche del
+    Donbass: ultimo passo prima dell''invasione |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SHLD.L
+    verso: pos
+    perché: 'Riconoscimento russo delle repubbliche del Donbass, ultimo passo prima dell''invasione: escalation
+      che rende probabile la guerra in Europa → pressione al rialzo sulla difesa europea, SHLD.L. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
+- data: '2014-03-18'
+  tema: geopolitical
+  fonte: kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
+    della difesa europea e riarmo — regime ed episodi storici (2014–2026).md
+  riga: '| 2014-03-18 | Putin firma il trattato di annessione della Crimea | escalation militare | risk-off
+    | ^STOXX50E, ^GDAXI, GC=F, EURUSD=X | Avvio del ciclo di riarmo NATO letto ex-post; alla data è shock
+    geopolitico |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: SHLD.L
+    verso: pos
+    perché: 'Annessione della Crimea: shock geopolitico in Europa che riapre il tema del riarmo NATO →
+      pressione al rialzo sulla difesa europea, SHLD.L (se la serie copre la data). Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  stato: promossa
