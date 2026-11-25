@@ -1,0 +1,44 @@
+research: lacuna fiducia-consumatori-sorprese-rialzo (macro_data, consumer, rif ^FVX; sotto-tema locale)
+voci:
+- data: '2025-08-15'
+  tema: macro_data
+  fonte: 2026-09-15/news_05.md
+  riga: '| `2025-08-15` | neg | activity_growth, consumer | Dati di luglio 2025: l''analogo più recente
+    e più vicino per regime. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Dati di luglio della Cina: l''etichetta consumer è quella del consumo cinese, nessun canale
+      diretto verso il rendimento a 5 anni USA. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-25.'
+  stato: promossa
+- data: '2024-08-15'
+  tema: macro_data
+  fonte: 2026-09-15/news_05.md
+  riga: '| `2024-08-15` | neg | activity_growth, consumer | Dati di luglio 2024: stessa configurazione,
+    produzione che regge e consumo che delude. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Dati di luglio della Cina: l''etichetta consumer è quella del consumo cinese, nessun canale
+      diretto verso il rendimento a 5 anni USA. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-25.'
+  stato: promossa
+- data: '2023-08-15'
+  tema: macro_data
+  fonte: 2026-09-15/news_05.md
+  riga: '| `2023-08-15` | neg | activity_growth, consumer | Dati di luglio 2023 deboli su tutta la linea,
+    accompagnati da un taglio a sorpresa dei tassi della banca centrale cinese. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^FVX
+    verso: escluso
+    perché: 'Dati di luglio della Cina: l''etichetta consumer è quella del consumo cinese, nessun canale
+      diretto verso il rendimento a 5 anni USA. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-25.'
+  stato: promossa

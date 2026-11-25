@@ -1,5 +1,5 @@
-generated_at: '2026-11-23T10:39:12'
-num_entries: 57
+generated_at: '2026-11-24T16:24:22'
+num_entries: 58
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -2958,6 +2958,79 @@ entries:
   - defense
   - re-routing
   - india china oil
+- source_file: Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+    del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+    delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+    e trasmissione a indice e settore (2011–presente).md
+  title: Soluzione delle crisi di vertice nelle grandi società quotate — rientro o
+    conferma del CEO, assoluzioni e scarcerazioni, nuovo vertice accolto come soluzione
+    — e trasmissione a indice e settore (2011–presente)
+  date_compiled: 2026-11-24
+  primary_theme: corporate_idiosyncratic
+  sub_themes:
+  - crisis_resolution
+  - governance
+  - leadership_transition
+  - key_person_risk
+  - concentration_risk
+  relevant_assets:
+  - ^NDX
+  - SOXX
+  - ^GSPC
+  - XLY
+  - EWY
+  - EWT
+  - KWEB
+  - ^VIX
+  external_assets_mentioned:
+  - NVDA — titolo al centro dell'episodio 2026-11-23; serve per separare contributo
+    meccanico e contagio
+  - INTC — reazione alle nomine di Gelsinger e Tan; peso in SOXX alle date degli episodi
+  - DIS — ritorno di Iger; Disney è in XLC, non in XLY
+  - SBUX — rientro di Schultz e nomina di Niccol; peso in XLY
+  - BABA / 9988.HK — ricomparsa di Jack Ma e fine della rettifica di Ant; peso in
+    KWEB
+  - 005930.KS (Samsung Electronics) — grazia e assoluzioni di Lee Jae-yong; peso in
+    EWY e nel Kospi
+  - TSLA — voto sul pacchetto Musk; peso in XLY e NDX
+  - SMH — ETF semiconduttori con peso maggiore di Nvidia rispetto a SOXX (+15,03%
+    il 2026-11-23)
+  - Kospi e Taiex — mercati locali che reagiscono il giorno dopo gli eventi USA
+  - XLC — settore di Disney
+  - RSP — S&P 500 equal-weight, controllo per il contributo meccanico delle mega-cap
+  time_window:
+    start: 2011-01-03
+    end: present
+  regime_phases:
+  - personal_scandals_regulator_settlements: 2011-01-03 to 2020-11-02
+  - state_driven_founder_risk_china_korea: 2020-11-03 to 2022-11-29
+  - ai_megacap_concentration: 2022-11-30 to 2026-10-28
+  - key_person_national_security: 2026-10-29 to present
+  keywords:
+  - rientro del CEO
+  - ritorno del fondatore
+  - reintegro
+  - conferma del CEO
+  - assoluzione
+  - scarcerazione
+  - grazia
+  - accordo con la SEC
+  - fine della crisi di vertice
+  - CEO reinstated
+  - CEO returns
+  - founder returns
+  - acquitted
+  - pardon
+  - settlement
+  - board backs CEO
+  - Jensen Huang
+  - Nvidia board
+  - Bob Iger
+  - Howard Schultz
+  - Lee Jae-yong
+  - Jack Ma
+  - Pat Gelsinger
+  - Lip-Bu Tan
 - source_file: Sorprese d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione
     a Treasury, dollaro, oro e azionario — regime ed episodi storici (2017–presente)/Sorprese
     d'inflazione negli Stati Uniti (CPI e PCE) e trasmissione a Treasury, dollaro,

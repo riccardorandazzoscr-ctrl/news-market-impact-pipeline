@@ -1,5 +1,5 @@
-generated_at: '2026-11-23T10:39:17'
-num_episodes: 1800
+generated_at: '2026-11-25T09:05:13'
+num_episodes: 1826
 episodes:
 - date: '1984-01-01'
   theme: commodity_energy
@@ -4168,6 +4168,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -4221,7 +4223,7 @@ episodes:
   - military_escalation
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 57
+  n_sources: 59
   events:
   - event_id: 2019-06-13:commodity_energy:-
     geo: ''
@@ -4290,6 +4292,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -4616,6 +4620,24 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-11-22/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-24/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-25/news_01.md
       subthemes_local:
       - hormuz
       - iran
@@ -5407,6 +5429,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -5435,7 +5459,7 @@ episodes:
   - iran
   - military_escalation
   - shipping_chokepoint
-  n_sources: 10
+  n_sources: 12
   events:
   - event_id: 2019-07-22:commodity_energy:-
     geo: ''
@@ -5457,6 +5481,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -5534,6 +5560,24 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-11-22/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-24/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-25/news_01.md
       subthemes_local:
       - hormuz
       - iran
@@ -24466,6 +24510,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -24515,7 +24561,7 @@ episodes:
   - negotiation_track
   - priced_conflict
   - shipping_chokepoint
-  n_sources: 52
+  n_sources: 54
   events:
   - event_id: 2026-03-27:commodity_energy:-
     geo: ''
@@ -24580,6 +24626,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -24939,6 +24987,22 @@ episodes:
       subthemes_local:
       - hormuz
       - iran
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-24/news_02.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-25/news_01.md
+      subthemes_local:
+      - hormuz
       - military_escalation
       - shipping_chokepoint
       directions_by_reference:
@@ -27811,6 +27875,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -27870,7 +27936,7 @@ episodes:
   - priced_conflict
   - shipping_chokepoint
   - supply_return
-  n_sources: 38
+  n_sources: 40
   events:
   - event_id: 2026-04-20:commodity_energy:-
     geo: ''
@@ -27926,6 +27992,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -28204,6 +28272,22 @@ episodes:
       - hormuz
       - iran
       - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-24/news_02.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-25/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - shipping_chokepoint
       directions_by_reference:
         BZ=F:
         - pos
@@ -31784,6 +31868,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -31814,7 +31900,7 @@ episodes:
   - negotiation_track
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 11
+  n_sources: 13
   events:
   - event_id: 2026-06-29:commodity_energy:-
     geo: ''
@@ -31839,6 +31925,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -31926,6 +32014,24 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-11-22/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-24/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-25/news_01.md
       subthemes_local:
       - hormuz
       - iran
@@ -32225,6 +32331,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -32280,7 +32388,7 @@ episodes:
   - negotiation_track
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 38
+  n_sources: 40
   events:
   - event_id: 2026-07-07:commodity_energy:-
     geo: ''
@@ -32335,6 +32443,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -32630,6 +32740,22 @@ episodes:
       subthemes_local:
       - hormuz
       - iran
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-24/news_02.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-25/news_01.md
+      subthemes_local:
+      - hormuz
       - military_escalation
       - shipping_chokepoint
       directions_by_reference:
@@ -33051,6 +33177,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -33096,7 +33224,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 36
+  n_sources: 38
   events:
   - event_id: 2026-07-13:commodity_energy:-
     geo: ''
@@ -33145,6 +33273,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -33418,6 +33548,24 @@ episodes:
       - iran
       - military_escalation
       - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-24/news_02.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - sanctions
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-25/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - sanctions
+      - shipping_chokepoint
       directions_by_reference:
         BZ=F:
         - pos
@@ -36311,6 +36459,8 @@ episodes:
     - card:2026-11-12/news_01.md
     - card:2026-11-14/news_01.md
     - card:2026-11-15/news_01.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -36349,7 +36499,7 @@ episodes:
   - priced_conflict
   - refinery_products
   - shipping_chokepoint
-  n_sources: 7
+  n_sources: 9
   events:
   - event_id: 2026-10-30:commodity_energy:-
     geo: ''
@@ -36374,6 +36524,8 @@ episodes:
     - card:2026-11-14/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-23/news_01.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -36433,6 +36585,24 @@ episodes:
       - shipping_chokepoint
       directions_by_reference:
         CRACK_321:
+        - pos
+    - source: card:2026-11-24/news_02.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - priced_conflict
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-25/news_01.md
+      subthemes_local:
+      - hormuz
+      - military_escalation
+      - priced_conflict
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
         - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
@@ -36850,6 +37020,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -36882,7 +37054,7 @@ episodes:
   - priced_conflict
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 13
+  n_sources: 15
   events:
   - event_id: 2026-11-05:commodity_energy:-
     geo: ''
@@ -36910,6 +37082,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -37027,6 +37201,26 @@ episodes:
       - iran
       - military_escalation
       - priced_conflict
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-24/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - priced_conflict
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-25/news_01.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - priced_conflict
+      - shipping_chokepoint
       directions_by_reference:
         BZ=F:
         - pos
@@ -37071,6 +37265,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -37103,7 +37299,7 @@ episodes:
   - priced_conflict
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 13
+  n_sources: 15
   events:
   - event_id: 2026-11-06:commodity_energy:-
     geo: ''
@@ -37131,6 +37327,8 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-24/news_02.md
+    - card:2026-11-25/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -37247,6 +37445,26 @@ episodes:
       - iran
       - military_escalation
       - priced_conflict
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-24/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - priced_conflict
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-25/news_01.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - priced_conflict
+      - shipping_chokepoint
       directions_by_reference:
         BZ=F:
         - pos
@@ -39184,6 +39402,82 @@ episodes:
     - source: card:2026-07-06/news_05.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2021-01-13'
+  theme: corporate_idiosyncratic
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  - pos
+  directions_by_reference:
+    SOXX:
+    - pos
+    ^NDX:
+    - neutral
+  direction_sources:
+    SOXX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    ^NDX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  - leadership_transition
+  subthemes_local:
+  - crisis_resolution
+  - governance
+  - leadership_transition
+  n_sources: 1
+  events:
+  - event_id: 2021-01-13:corporate_idiosyncratic:-
+    geo: ''
+    subthemes_local:
+    - crisis_resolution
+    - governance
+    - leadership_transition
+    directions_by_reference:
+      SOXX:
+      - pos
+      ^NDX:
+      - neutral
+    sources:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    evidence:
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - leadership_transition
+      directions_by_reference:
+        ^NDX:
+        - neutral
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - leadership_transition
+      directions_by_reference:
+        SOXX:
+        - pos
 - date: '2021-01-19'
   theme: corporate_idiosyncratic
   direction: ''
@@ -39237,6 +39531,85 @@ episodes:
       directions_by_reference:
         EWY:
         - neg
+- date: '2021-01-20'
+  theme: corporate_idiosyncratic
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  - pos
+  directions_by_reference:
+    KWEB:
+    - pos
+    ^NDX:
+    - neutral
+  direction_sources:
+    KWEB:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    ^NDX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  - leadership_transition
+  subthemes_local:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  n_sources: 1
+  events:
+  - event_id: 2021-01-20:corporate_idiosyncratic:-
+    geo: ''
+    subthemes_local:
+    - concentration_risk
+    - crisis_resolution
+    - governance
+    - key_person_risk
+    directions_by_reference:
+      KWEB:
+      - pos
+      ^NDX:
+      - neutral
+    sources:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    evidence:
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      directions_by_reference:
+        ^NDX:
+        - neutral
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - concentration_risk
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      directions_by_reference:
+        KWEB:
+        - pos
 - date: '2021-04-14'
   theme: corporate_idiosyncratic
   direction: pos
@@ -39323,6 +39696,156 @@ episodes:
     - source: card:2026-07-06/news_05.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2022-03-16'
+  theme: corporate_idiosyncratic
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    XLY:
+    - neutral
+    ^NDX:
+    - neutral
+  direction_sources:
+    XLY:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    ^NDX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  - leadership_transition
+  subthemes_local:
+  - crisis_resolution
+  - key_person_risk
+  - leadership_transition
+  n_sources: 1
+  events:
+  - event_id: 2022-03-16:corporate_idiosyncratic:-
+    geo: ''
+    subthemes_local:
+    - crisis_resolution
+    - key_person_risk
+    - leadership_transition
+    directions_by_reference:
+      XLY:
+      - neutral
+      ^NDX:
+      - neutral
+    sources:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    evidence:
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - key_person_risk
+      - leadership_transition
+      directions_by_reference:
+        ^NDX:
+        - neutral
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - key_person_risk
+      - leadership_transition
+      directions_by_reference:
+        XLY:
+        - neutral
+- date: '2022-08-12'
+  theme: corporate_idiosyncratic
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    EWY:
+    - neutral
+    ^NDX:
+    - neutral
+  direction_sources:
+    EWY:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    ^NDX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  - leadership_transition
+  subthemes_local:
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  n_sources: 1
+  events:
+  - event_id: 2022-08-12:corporate_idiosyncratic:-
+    geo: ''
+    subthemes_local:
+    - crisis_resolution
+    - governance
+    - key_person_risk
+    directions_by_reference:
+      EWY:
+      - neutral
+      ^NDX:
+      - neutral
+    sources:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    evidence:
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      directions_by_reference:
+        ^NDX:
+        - neutral
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      directions_by_reference:
+        EWY:
+        - neutral
 - date: '2022-09-29'
   theme: corporate_idiosyncratic
   direction: mixed
@@ -39356,6 +39879,85 @@ episodes:
     - source: card:2026-07-06/news_05.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2022-11-21'
+  theme: corporate_idiosyncratic
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    ^GSPC:
+    - neutral
+    ^NDX:
+    - neutral
+  direction_sources:
+    ^GSPC:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    ^NDX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  - leadership_transition
+  subthemes_local:
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  - leadership_transition
+  n_sources: 1
+  events:
+  - event_id: 2022-11-21:corporate_idiosyncratic:-
+    geo: ''
+    subthemes_local:
+    - crisis_resolution
+    - governance
+    - key_person_risk
+    - leadership_transition
+    directions_by_reference:
+      ^GSPC:
+      - neutral
+      ^NDX:
+      - neutral
+    sources:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    evidence:
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      - leadership_transition
+      directions_by_reference:
+        ^NDX:
+        - neutral
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      - leadership_transition
+      directions_by_reference:
+        ^GSPC:
+        - neutral
 - date: '2023-05-24'
   theme: corporate_idiosyncratic
   direction: mixed
@@ -39433,6 +40035,81 @@ episodes:
     - source: card:2026-07-12/news_05.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2023-07-07'
+  theme: corporate_idiosyncratic
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  - pos
+  directions_by_reference:
+    KWEB:
+    - pos
+    ^NDX:
+    - neutral
+  direction_sources:
+    KWEB:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    ^NDX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  - leadership_transition
+  subthemes_local:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  n_sources: 1
+  events:
+  - event_id: 2023-07-07:corporate_idiosyncratic:-
+    geo: ''
+    subthemes_local:
+    - concentration_risk
+    - crisis_resolution
+    - governance
+    directions_by_reference:
+      KWEB:
+      - pos
+      ^NDX:
+      - neutral
+    sources:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    evidence:
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      directions_by_reference:
+        ^NDX:
+        - neutral
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - concentration_risk
+      - crisis_resolution
+      - governance
+      directions_by_reference:
+        KWEB:
+        - pos
 - date: '2023-08-23'
   theme: corporate_idiosyncratic
   direction: mixed
@@ -39791,6 +40468,85 @@ episodes:
       directions_by_reference:
         IGV:
         - neutral
+- date: '2024-02-05'
+  theme: corporate_idiosyncratic
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  - pos
+  directions_by_reference:
+    EWY:
+    - pos
+    ^NDX:
+    - neutral
+  direction_sources:
+    EWY:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    ^NDX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  - leadership_transition
+  subthemes_local:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  n_sources: 1
+  events:
+  - event_id: 2024-02-05:corporate_idiosyncratic:-
+    geo: ''
+    subthemes_local:
+    - concentration_risk
+    - crisis_resolution
+    - governance
+    - key_person_risk
+    directions_by_reference:
+      EWY:
+      - pos
+      ^NDX:
+      - neutral
+    sources:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    evidence:
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      directions_by_reference:
+        ^NDX:
+        - neutral
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - concentration_risk
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      directions_by_reference:
+        EWY:
+        - pos
 - date: '2024-02-21'
   theme: corporate_idiosyncratic
   direction: mixed
@@ -39943,6 +40699,161 @@ episodes:
     - source: card:2026-07-12/news_05.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2024-06-13'
+  theme: corporate_idiosyncratic
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  - pos
+  directions_by_reference:
+    XLY:
+    - pos
+    ^NDX:
+    - neutral
+  direction_sources:
+    XLY:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    ^NDX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  - leadership_transition
+  subthemes_local:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  n_sources: 1
+  events:
+  - event_id: 2024-06-13:corporate_idiosyncratic:-
+    geo: ''
+    subthemes_local:
+    - concentration_risk
+    - crisis_resolution
+    - governance
+    - key_person_risk
+    directions_by_reference:
+      XLY:
+      - pos
+      ^NDX:
+      - neutral
+    sources:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    evidence:
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      directions_by_reference:
+        ^NDX:
+        - neutral
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - concentration_risk
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      directions_by_reference:
+        XLY:
+        - pos
+- date: '2024-08-13'
+  theme: corporate_idiosyncratic
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  - pos
+  directions_by_reference:
+    XLY:
+    - pos
+    ^NDX:
+    - neutral
+  direction_sources:
+    XLY:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    ^NDX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  - leadership_transition
+  subthemes_local:
+  - crisis_resolution
+  - governance
+  - leadership_transition
+  n_sources: 1
+  events:
+  - event_id: 2024-08-13:corporate_idiosyncratic:-
+    geo: ''
+    subthemes_local:
+    - crisis_resolution
+    - governance
+    - leadership_transition
+    directions_by_reference:
+      XLY:
+      - pos
+      ^NDX:
+      - neutral
+    sources:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    evidence:
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - leadership_transition
+      directions_by_reference:
+        ^NDX:
+        - neutral
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - leadership_transition
+      directions_by_reference:
+        XLY:
+        - pos
 - date: '2024-08-28'
   theme: corporate_idiosyncratic
   direction: mixed
@@ -40310,6 +41221,82 @@ episodes:
     - source: card:2026-07-12/news_05.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2025-03-13'
+  theme: corporate_idiosyncratic
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  - pos
+  directions_by_reference:
+    SOXX:
+    - pos
+    ^NDX:
+    - neutral
+  direction_sources:
+    SOXX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    ^NDX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  - leadership_transition
+  subthemes_local:
+  - crisis_resolution
+  - governance
+  - leadership_transition
+  n_sources: 1
+  events:
+  - event_id: 2025-03-13:corporate_idiosyncratic:-
+    geo: ''
+    subthemes_local:
+    - crisis_resolution
+    - governance
+    - leadership_transition
+    directions_by_reference:
+      SOXX:
+      - pos
+      ^NDX:
+      - neutral
+    sources:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    evidence:
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - leadership_transition
+      directions_by_reference:
+        ^NDX:
+        - neutral
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - leadership_transition
+      directions_by_reference:
+        SOXX:
+        - pos
 - date: '2025-05-28'
   theme: corporate_idiosyncratic
   direction: mixed
@@ -40348,6 +41335,81 @@ episodes:
     - source: card:2026-07-12/news_05.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2025-07-17'
+  theme: corporate_idiosyncratic
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    EWY:
+    - neutral
+    ^NDX:
+    - neutral
+  direction_sources:
+    EWY:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    ^NDX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  - leadership_transition
+  subthemes_local:
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  n_sources: 1
+  events:
+  - event_id: 2025-07-17:corporate_idiosyncratic:-
+    geo: ''
+    subthemes_local:
+    - crisis_resolution
+    - governance
+    - key_person_risk
+    directions_by_reference:
+      EWY:
+      - neutral
+      ^NDX:
+      - neutral
+    sources:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    evidence:
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      directions_by_reference:
+        ^NDX:
+        - neutral
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      directions_by_reference:
+        EWY:
+        - neutral
 - date: '2025-08-27'
   theme: corporate_idiosyncratic
   direction: mixed
@@ -40803,6 +41865,169 @@ episodes:
       directions_by_reference:
         KWEB:
         - neg
+- date: '2026-11-23'
+  theme: corporate_idiosyncratic
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    EWT:
+    - pos
+    EWY:
+    - pos
+    SOXX:
+    - pos
+    ^GSPC:
+    - pos
+    ^NDX:
+    - pos
+    ^VIX:
+    - neg
+  direction_sources:
+    EWT:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    EWY:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    SOXX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    ^GSPC:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    ^NDX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    ^VIX:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  - leadership_transition
+  subthemes_local:
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  - leadership_transition
+  n_sources: 1
+  events:
+  - event_id: 2026-11-23:corporate_idiosyncratic:-
+    geo: ''
+    subthemes_local:
+    - concentration_risk
+    - crisis_resolution
+    - governance
+    - key_person_risk
+    - leadership_transition
+    directions_by_reference:
+      EWT:
+      - pos
+      EWY:
+      - pos
+      SOXX:
+      - pos
+      ^GSPC:
+      - pos
+      ^NDX:
+      - pos
+      ^VIX:
+      - neg
+    sources:
+    - kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro del
+      CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+      delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+      e trasmissione a indice e settore (2011–presente).md
+    evidence:
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - concentration_risk
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      - leadership_transition
+      directions_by_reference:
+        ^NDX:
+        - pos
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      - leadership_transition
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - concentration_risk
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      directions_by_reference:
+        ^GSPC:
+        - pos
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - concentration_risk
+      - crisis_resolution
+      - governance
+      - key_person_risk
+      directions_by_reference:
+        ^VIX:
+        - neg
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - key_person_risk
+      directions_by_reference:
+        EWT:
+        - pos
+    - source: kb:Soluzione delle crisi di vertice nelle grandi società quotate_ rientro
+        del CEO, assoluzioni e trasmissione a indice e settore (2011–presente)/Soluzione
+        delle crisi di vertice nelle grandi società quotate_ rientro del CEO, assoluzioni
+        e trasmissione a indice e settore (2011–presente).md
+      subthemes_local:
+      - crisis_resolution
+      - key_person_risk
+      directions_by_reference:
+        EWY:
+        - pos
 - date: '2019-07-08'
   theme: financial_stability
   direction: neg
@@ -52622,7 +53847,8 @@ episodes:
   direction: neg
   directions:
   - neg
-  directions_declared: []
+  directions_declared:
+  - neg
   directions_by_reference:
     ^GSPC:
     - neg
@@ -52630,20 +53856,24 @@ episodes:
     - pos
   direction_sources:
     ^GSPC:
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     ^VIX:
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
-  directions_local: []
-  declared: false
+  directions_local:
+  - neg
+  declared: true
   subthemes:
   - 232_durable_regime
   - cny
   - export_controls
   - protectionism
   - risk_off
+  - sec_301
   - supply_chain
+  - tariff_escalation
   - tariffs
   - trade_policy_uncertainty
   - trade_war
@@ -52651,12 +53881,14 @@ episodes:
   - us_tariffs_regime_shift_section_122_lapse_→_301
   subthemes_local:
   - tariff_escalation
-  n_sources: 3
+  - trade_war
+  n_sources: 4
   events:
   - event_id: 2018-03-01:geopolitical:-
     geo: ''
     subthemes_local:
     - tariff_escalation
+    - trade_war
     directions_by_reference:
       ^GSPC:
       - neg
@@ -52665,6 +53897,7 @@ episodes:
     sources:
     - card:2026-07-22/news_02.md
     - card:2026-07-24/news_06.md
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     evidence:
@@ -52675,6 +53908,13 @@ episodes:
       subthemes_local:
       - tariff_escalation
       directions_by_reference: {}
+    - source: card:2026-11-25/news_02.md
+      subthemes_local:
+      - tariff_escalation
+      - trade_war
+      directions_by_reference:
+        ^GSPC:
+        - neg
     - source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
         e guerra commerciale USA — regime ed episodi storici (2018–2026).md
       subthemes_local:
@@ -52689,7 +53929,8 @@ episodes:
   direction: neg
   directions:
   - neg
-  directions_declared: []
+  directions_declared:
+  - neg
   directions_by_reference:
     ^GSPC:
     - neg
@@ -52697,33 +53938,41 @@ episodes:
     - neg
   direction_sources:
     ^GSPC:
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     ^NDX:
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
-  directions_local: []
-  declared: false
+  directions_local:
+  - neg
+  declared: true
   subthemes:
   - 232_durable_regime
   - cny
   - export_controls
   - protectionism
   - risk_off
+  - sec_301
   - supply_chain
+  - tariff_escalation
   - tariffs
   - trade_policy_uncertainty
   - trade_war
   - us_china
   - us_tariffs_regime_shift_section_122_lapse_→_301
   subthemes_local:
+  - sec_301
   - tariff_escalation
-  n_sources: 3
+  - trade_war
+  n_sources: 4
   events:
   - event_id: 2018-03-22:geopolitical:-
     geo: ''
     subthemes_local:
+    - sec_301
     - tariff_escalation
+    - trade_war
     directions_by_reference:
       ^GSPC:
       - neg
@@ -52732,6 +53981,7 @@ episodes:
     sources:
     - card:2026-07-22/news_02.md
     - card:2026-07-24/news_06.md
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     evidence:
@@ -52742,6 +53992,14 @@ episodes:
       subthemes_local:
       - tariff_escalation
       directions_by_reference: {}
+    - source: card:2026-11-25/news_02.md
+      subthemes_local:
+      - sec_301
+      - tariff_escalation
+      - trade_war
+      directions_by_reference:
+        ^GSPC:
+        - neg
     - source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
         e guerra commerciale USA — regime ed episodi storici (2018–2026).md
       subthemes_local:
@@ -52900,6 +54158,10 @@ episodes:
     ^STOXX50E:
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+  direction_review_excluded:
+    ^GSPC: Riga su ^STOXX50E e ^GDAXI; stessa data del payroll di maggio, la data
+      non è pulita per l'indice USA. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-25.
   directions_local: []
   declared: false
   subthemes:
@@ -52986,6 +54248,10 @@ episodes:
     ^STOXX50E:
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+  direction_review_excluded:
+    ^GSPC: 'Ritorsioni UE già annunciate: canale Europa, impatto atteso sull''indice
+      USA trascurabile. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+      2026-11-25.'
   directions_local: []
   declared: false
   subthemes:
@@ -53033,6 +54299,10 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^GSPC: Vigilia di un pacchetto di dazi già noto; la riga descrive i metalli industriali,
+      nessuna attesa sull'indice. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-25.
   directions_local:
   - neg
   declared: true
@@ -53109,7 +54379,8 @@ episodes:
   direction: neg
   directions:
   - neg
-  directions_declared: []
+  directions_declared:
+  - neg
   directions_by_reference:
     ^GSPC:
     - neg
@@ -53117,18 +54388,21 @@ episodes:
     - neg
   direction_sources:
     ^GSPC:
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     ^NDX:
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
-  directions_local: []
-  declared: false
+  directions_local:
+  - neg
+  declared: true
   subthemes:
   - cny
   - export_controls
   - protectionism
   - risk_off
+  - sec_301
   - supply_chain
   - tariff_escalation
   - tariffs
@@ -53136,13 +54410,17 @@ episodes:
   - trade_war
   - us_china
   subthemes_local:
+  - sec_301
   - tariff_escalation
-  n_sources: 3
+  - trade_war
+  n_sources: 4
   events:
   - event_id: 2018-07-06:geopolitical:-
     geo: ''
     subthemes_local:
+    - sec_301
     - tariff_escalation
+    - trade_war
     directions_by_reference:
       ^GSPC:
       - neg
@@ -53151,6 +54429,7 @@ episodes:
     sources:
     - card:2026-07-22/news_02.md
     - card:2026-08-16/news_03.md
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     evidence:
@@ -53160,6 +54439,14 @@ episodes:
     - source: card:2026-08-16/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-25/news_02.md
+      subthemes_local:
+      - sec_301
+      - tariff_escalation
+      - trade_war
+      directions_by_reference:
+        ^GSPC:
+        - neg
     - source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
         e guerra commerciale USA — regime ed episodi storici (2018–2026).md
       subthemes_local:
@@ -53279,7 +54566,8 @@ episodes:
   direction: neg
   directions:
   - neg
-  directions_declared: []
+  directions_declared:
+  - neg
   directions_by_reference:
     ^GSPC:
     - neg
@@ -53287,33 +54575,41 @@ episodes:
     - neg
   direction_sources:
     ^GSPC:
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     ^NDX:
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
-  directions_local: []
-  declared: false
+  directions_local:
+  - neg
+  declared: true
   subthemes:
   - 232_durable_regime
   - cny
   - export_controls
   - protectionism
   - risk_off
+  - sec_301
   - supply_chain
+  - tariff_escalation
   - tariffs
   - trade_policy_uncertainty
   - trade_war
   - us_china
   - us_tariffs_regime_shift_section_122_lapse_→_301
   subthemes_local:
+  - sec_301
   - tariff_escalation
-  n_sources: 3
+  - trade_war
+  n_sources: 4
   events:
   - event_id: 2018-09-24:geopolitical:-
     geo: ''
     subthemes_local:
+    - sec_301
     - tariff_escalation
+    - trade_war
     directions_by_reference:
       ^GSPC:
       - neg
@@ -53322,6 +54618,7 @@ episodes:
     sources:
     - card:2026-07-22/news_02.md
     - card:2026-07-24/news_06.md
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     evidence:
@@ -53331,6 +54628,14 @@ episodes:
     - source: card:2026-07-24/news_06.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-25/news_02.md
+      subthemes_local:
+      - sec_301
+      - tariff_escalation
+      - trade_war
+      directions_by_reference:
+        ^GSPC:
+        - neg
     - source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
         e guerra commerciale USA — regime ed episodi storici (2018–2026).md
       subthemes_local:
@@ -53413,6 +54718,10 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^GSPC: 'La riga è definita dal movimento di prezzo (selloff globale con più cause):
+      usarla selezionerebbe l''episodio per il suo esito. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-25.'
   directions_local:
   - neg
   declared: true
@@ -54083,6 +55392,10 @@ episodes:
   - pos
   directions_declared:
   - pos
+  direction_review_excluded:
+    ^GSPC: 'La riga è definita dal movimento di prezzo (minimo del selloff e rimbalzo):
+      usarla selezionerebbe l''episodio per il suo esito. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-25.'
   directions_local:
   - neg
   - pos
@@ -54449,7 +55762,8 @@ episodes:
   direction: neg
   directions:
   - neg
-  directions_declared: []
+  directions_declared:
+  - neg
   directions_by_reference:
     ^GSPC:
     - neg
@@ -54457,6 +55771,7 @@ episodes:
     - pos
   direction_sources:
     ^GSPC:
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     ^VIX:
@@ -54464,14 +55779,16 @@ episodes:
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - neg
-  declared: false
+  declared: true
   subthemes:
   - 232_durable_regime
   - cny
   - export_controls
   - protectionism
   - risk_off
+  - sec_301
   - supply_chain
+  - tariff_escalation
   - tariffs
   - trade_policy_uncertainty
   - trade_war
@@ -54479,12 +55796,14 @@ episodes:
   - us_tariffs_regime_shift_section_122_lapse_→_301
   subthemes_local:
   - tariff_escalation
-  n_sources: 3
+  - trade_war
+  n_sources: 4
   events:
   - event_id: 2019-05-05:geopolitical:-
     geo: ''
     subthemes_local:
     - tariff_escalation
+    - trade_war
     directions_by_reference:
       ^GSPC:
       - neg
@@ -54493,6 +55812,7 @@ episodes:
     sources:
     - card:2026-07-22/news_02.md
     - card:2026-07-24/news_06.md
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     evidence:
@@ -54502,6 +55822,13 @@ episodes:
     - source: card:2026-07-24/news_06.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-25/news_02.md
+      subthemes_local:
+      - tariff_escalation
+      - trade_war
+      directions_by_reference:
+        ^GSPC:
+        - neg
     - source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
         e guerra commerciale USA — regime ed episodi storici (2018–2026).md
       subthemes_local:
@@ -55067,8 +56394,12 @@ episodes:
   directions_by_reference:
     MXN=X:
     - pos
+    ^GSPC:
+    - neg
   direction_sources:
     MXN=X:
+    - card:2026-11-13/news_03.md
+    ^GSPC:
     - card:2026-11-13/news_03.md
   directions_local:
   - pos
@@ -55086,6 +56417,8 @@ episodes:
     directions_by_reference:
       MXN=X:
       - pos
+      ^GSPC:
+      - neg
     sources:
     - card:2026-11-13/news_03.md
     evidence:
@@ -55095,6 +56428,8 @@ episodes:
       directions_by_reference:
         MXN=X:
         - pos
+        ^GSPC:
+        - neg
 - date: '2019-06-13'
   theme: geopolitical
   direction: mixed
@@ -55688,7 +57023,8 @@ episodes:
   direction: neg
   directions:
   - neg
-  directions_declared: []
+  directions_declared:
+  - neg
   directions_by_reference:
     ^GSPC:
     - neg
@@ -55696,6 +57032,7 @@ episodes:
     - pos
   direction_sources:
     ^GSPC:
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     ^VIX:
@@ -55706,14 +57043,16 @@ episodes:
       del gas europeo. Criterio ex ante, nessun prezzo consultato. Revisione Claude
       2026-11-05.'
   directions_local:
+  - neg
   - pos
-  declared: false
+  declared: true
   subthemes:
   - 232_durable_regime
   - cny
   - export_controls
   - protectionism
   - risk_off
+  - sec_301
   - supply_chain
   - tariff_escalation
   - tariffs
@@ -55724,13 +57063,15 @@ episodes:
   subthemes_local:
   - negotiation_track
   - tariff_escalation
-  n_sources: 4
+  - trade_war
+  n_sources: 5
   events:
   - event_id: 2019-08-01:geopolitical:-
     geo: ''
     subthemes_local:
     - negotiation_track
     - tariff_escalation
+    - trade_war
     directions_by_reference:
       ^GSPC:
       - neg
@@ -55740,6 +57081,7 @@ episodes:
     - card:2026-07-22/news_02.md
     - card:2026-07-24/news_06.md
     - card:2026-08-16/news_03.md
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     evidence:
@@ -55752,6 +57094,13 @@ episodes:
     - source: card:2026-08-16/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-25/news_02.md
+      subthemes_local:
+      - tariff_escalation
+      - trade_war
+      directions_by_reference:
+        ^GSPC:
+        - neg
     - source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
         e guerra commerciale USA — regime ed episodi storici (2018–2026).md
       subthemes_local:
@@ -55843,6 +57192,10 @@ episodes:
   - pos
   directions_declared:
   - neg
+  direction_review_excluded:
+    ^GSPC: 'Fase acuta di agosto 2019 senza un annuncio datato quel giorno: l''evento
+      non è identificabile. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-25.'
   directions_local:
   - neg
   declared: true
@@ -69775,8 +71128,12 @@ episodes:
   directions_by_reference:
     MXN=X:
     - pos
+    ^GSPC:
+    - neg
   direction_sources:
     MXN=X:
+    - card:2026-11-13/news_03.md
+    ^GSPC:
     - card:2026-11-13/news_03.md
   directions_local:
   - pos
@@ -69794,6 +71151,8 @@ episodes:
     directions_by_reference:
       MXN=X:
       - pos
+      ^GSPC:
+      - neg
     sources:
     - card:2026-11-13/news_03.md
     evidence:
@@ -69803,6 +71162,8 @@ episodes:
       directions_by_reference:
         MXN=X:
         - pos
+        ^GSPC:
+        - neg
 - date: '2024-12-15'
   theme: geopolitical
   direction: mixed
@@ -69812,6 +71173,9 @@ episodes:
   - pos
   directions_declared:
   - pos
+  direction_review_excluded:
+    ^GSPC: 'Contenuto dell''episodio non ricostruito dalla fonte: nessuna attesa documentata.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
   directions_local:
   - pos
   declared: true
@@ -70537,6 +71901,9 @@ episodes:
   - pos
   directions_declared:
   - pos
+  direction_review_excluded:
+    ^GSPC: 'Contenuto dell''episodio non ricostruito dalla fonte: nessuna attesa documentata.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
   directions_local:
   - pos
   declared: true
@@ -70806,16 +72173,19 @@ episodes:
   direction: neg
   directions:
   - neg
-  directions_declared: []
+  directions_declared:
+  - neg
   directions_by_reference:
     ^GSPC:
     - neg
   direction_sources:
     ^GSPC:
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
-  directions_local: []
-  declared: false
+  directions_local:
+  - neg
+  declared: true
   subthemes:
   - 232_durable_regime
   - cny
@@ -70823,6 +72193,7 @@ episodes:
   - protectionism
   - risk_off
   - sec_232
+  - sec_301
   - semis
   - supply_chain
   - taiwan
@@ -70835,7 +72206,7 @@ episodes:
   - us_tariffs_regime_shift_section_122_lapse_→_301
   subthemes_local:
   - tariff_escalation
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2025-02-01:geopolitical:-
     geo: ''
@@ -70851,6 +72222,7 @@ episodes:
     - card:2026-07-30/news_05.md
     - card:2026-08-08/news_05.md
     - card:2026-08-16/news_03.md
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     evidence:
@@ -70873,6 +72245,12 @@ episodes:
     - source: card:2026-08-16/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-25/news_02.md
+      subthemes_local:
+      - tariff_escalation
+      directions_by_reference:
+        ^GSPC:
+        - neg
     - source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
         e guerra commerciale USA — regime ed episodi storici (2018–2026).md
       subthemes_local:
@@ -70939,22 +72317,26 @@ episodes:
   direction: neg
   directions:
   - neg
-  directions_declared: []
+  directions_declared:
+  - neg
   directions_by_reference:
     ^GSPC:
     - neg
   direction_sources:
     ^GSPC:
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
-  directions_local: []
-  declared: false
+  directions_local:
+  - neg
+  declared: true
   subthemes:
   - cny
   - export_controls
   - protectionism
   - risk_off
   - sec_232
+  - sec_301
   - semis
   - supply_chain
   - taiwan
@@ -70966,7 +72348,7 @@ episodes:
   - us_china
   subthemes_local:
   - tariff_escalation
-  n_sources: 6
+  n_sources: 7
   events:
   - event_id: 2025-02-10:geopolitical:-
     geo: ''
@@ -70981,6 +72363,7 @@ episodes:
     - card:2026-07-30/news_05.md
     - card:2026-08-08/news_05.md
     - card:2026-08-16/news_03.md
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     evidence:
@@ -70999,6 +72382,12 @@ episodes:
     - source: card:2026-08-16/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-25/news_02.md
+      subthemes_local:
+      - tariff_escalation
+      directions_by_reference:
+        ^GSPC:
+        - neg
     - source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
         e guerra commerciale USA — regime ed episodi storici (2018–2026).md
       subthemes_local:
@@ -71545,6 +72934,12 @@ episodes:
   - pos
   directions_declared:
   - neg
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - card:2026-08-26/news_05.md
   directions_local:
   - neg
   declared: true
@@ -71582,6 +72977,9 @@ episodes:
     subthemes_local:
     - tariff_escalation
     - valuation_derisking
+    directions_by_reference:
+      ^GSPC:
+      - neg
     sources:
     - card:2026-06-18/news_03.md
     - card:2026-07-06/news_04.md
@@ -71630,7 +73028,9 @@ episodes:
       subthemes_local:
       - tariff_escalation
       - valuation_derisking
-      directions_by_reference: {}
+      directions_by_reference:
+        ^GSPC:
+        - neg
 - date: '2025-02-28'
   theme: geopolitical
   direction: mixed
@@ -71884,6 +73284,7 @@ episodes:
   - neg
   - pos
   directions_declared:
+  - neg
   - pos
   directions_by_reference:
     SHLD.L:
@@ -71894,9 +73295,11 @@ episodes:
     SHLD.L:
     - card:2026-09-26/news_03.md
     ^GSPC:
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
+  - neg
   - pos
   declared: true
   subthemes:
@@ -71920,6 +73323,7 @@ episodes:
   - russia
   - russia_missile_strike
   - sec_232
+  - sec_301
   - semis
   - supply_chain
   - taiwan
@@ -71936,7 +73340,8 @@ episodes:
   - difesa
   - rearm_europe
   - tariff_escalation
-  n_sources: 10
+  - trade_war
+  n_sources: 11
   events:
   - event_id: 2025-03-04:geopolitical:-
     geo: ''
@@ -71944,6 +73349,7 @@ episodes:
     - difesa
     - rearm_europe
     - tariff_escalation
+    - trade_war
     directions_by_reference:
       SHLD.L:
       - pos
@@ -71958,6 +73364,7 @@ episodes:
     - card:2026-08-14/news_06.md
     - card:2026-08-16/news_03.md
     - card:2026-09-26/news_03.md
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     - kb:Industria della difesa europea e riarmo — regime ed episodi storici (2014–2026)/Industria
@@ -71990,6 +73397,13 @@ episodes:
       directions_by_reference:
         SHLD.L:
         - pos
+    - source: card:2026-11-25/news_02.md
+      subthemes_local:
+      - tariff_escalation
+      - trade_war
+      directions_by_reference:
+        ^GSPC:
+        - neg
     - source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
         e guerra commerciale USA — regime ed episodi storici (2018–2026).md
       subthemes_local:
@@ -72661,7 +74075,8 @@ episodes:
   direction: neg
   directions:
   - neg
-  directions_declared: []
+  directions_declared:
+  - neg
   directions_by_reference:
     ^GDAXI:
     - neg
@@ -72672,10 +74087,12 @@ episodes:
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     ^GSPC:
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
-  directions_local: []
-  declared: false
+  directions_local:
+  - neg
+  declared: true
   subthemes:
   - black_sea
   - cny
@@ -72685,6 +74102,7 @@ episodes:
   - protectionism
   - risk_off
   - sec_232
+  - sec_301
   - semis
   - shipping_chokepoint
   - supply_chain
@@ -72697,7 +74115,7 @@ episodes:
   - us_china
   subthemes_local:
   - tariff_escalation
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2025-03-26:geopolitical:-
     geo: ''
@@ -72714,6 +74132,7 @@ episodes:
     - card:2026-07-30/news_05.md
     - card:2026-08-08/news_05.md
     - card:2026-08-16/news_03.md
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     - kb:Il corridoio cerealicolo del Mar Nero- guerra, accordi sul grano e trasmissione
@@ -72736,6 +74155,12 @@ episodes:
     - source: card:2026-08-16/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-25/news_02.md
+      subthemes_local:
+      - tariff_escalation
+      directions_by_reference:
+        ^GSPC:
+        - neg
     - source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
         e guerra commerciale USA — regime ed episodi storici (2018–2026).md
       subthemes_local:
@@ -72760,26 +74185,21 @@ episodes:
   directions_by_reference:
     IDR=X:
     - pos
-    ^GSPC:
-    - neg
-    ^NDX:
-    - neg
-    ^VIX:
-    - pos
   direction_sources:
     IDR=X:
     - 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
       (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi
       storici (2010–2026).md'
-    ^GSPC:
-    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
-      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
-    ^NDX:
-    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
-      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
-    ^VIX:
-    - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
-      e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+  direction_review_excluded:
+    ^GSPC: 'Liberation Day annunciato alle 16:00 ET del 2 aprile, dopo la chiusura:
+      la seduta di reazione è il 3 aprile. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-25.'
+    ^NDX: 'Liberation Day annunciato alle 16:00 ET del 2 aprile, dopo la chiusura:
+      la seduta di reazione è il 3 aprile. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-25.'
+    ^VIX: 'Liberation Day annunciato alle 16:00 ET del 2 aprile, dopo la chiusura:
+      la seduta di reazione è il 3 aprile. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-25.'
   directions_local:
   - neg
   declared: false
@@ -72832,12 +74252,6 @@ episodes:
     directions_by_reference:
       IDR=X:
       - pos
-      ^GSPC:
-      - neg
-      ^NDX:
-      - neg
-      ^VIX:
-      - pos
     sources:
     - card:2026-07-22/news_02.md
     - card:2026-07-24/news_06.md
@@ -72885,13 +74299,50 @@ episodes:
         e guerra commerciale USA — regime ed episodi storici (2018–2026).md
       subthemes_local:
       - tariff_escalation
+      directions_by_reference: {}
+- date: '2025-04-03'
+  theme: geopolitical
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - neg
+  directions_by_reference:
+    ^GSPC:
+    - neg
+  direction_sources:
+    ^GSPC:
+    - card:2026-11-25/news_02.md
+  directions_local:
+  - neg
+  declared: true
+  subthemes:
+  - sec_301
+  - tariff_escalation
+  - trade_war
+  subthemes_local:
+  - tariff_escalation
+  - trade_war
+  n_sources: 1
+  events:
+  - event_id: 2025-04-03:geopolitical:-
+    geo: ''
+    subthemes_local:
+    - tariff_escalation
+    - trade_war
+    directions_by_reference:
+      ^GSPC:
+      - neg
+    sources:
+    - card:2026-11-25/news_02.md
+    evidence:
+    - source: card:2026-11-25/news_02.md
+      subthemes_local:
+      - tariff_escalation
+      - trade_war
       directions_by_reference:
         ^GSPC:
         - neg
-        ^NDX:
-        - neg
-        ^VIX:
-        - pos
 - date: '2025-04-04'
   theme: geopolitical
   direction: mixed
@@ -73050,23 +74501,26 @@ episodes:
   direction: neg
   directions:
   - neg
-  directions_declared: []
+  directions_declared:
+  - neg
   directions_by_reference:
     ^GSPC:
     - neg
   direction_sources:
     ^GSPC:
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
   directions_local:
   - neg
-  declared: false
+  declared: true
   subthemes:
   - cny
   - export_controls
   - protectionism
   - risk_off
   - sec_232
+  - sec_301
   - semis
   - supply_chain
   - taiwan
@@ -73078,12 +74532,14 @@ episodes:
   - us_china
   subthemes_local:
   - tariff_escalation
-  n_sources: 6
+  - trade_war
+  n_sources: 7
   events:
   - event_id: 2025-04-08:geopolitical:-
     geo: ''
     subthemes_local:
     - tariff_escalation
+    - trade_war
     directions_by_reference:
       ^GSPC:
       - neg
@@ -73093,6 +74549,7 @@ episodes:
     - card:2026-07-30/news_05.md
     - card:2026-08-08/news_05.md
     - card:2026-08-16/news_03.md
+    - card:2026-11-25/news_02.md
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
     evidence:
@@ -73112,6 +74569,13 @@ episodes:
     - source: card:2026-08-16/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-25/news_02.md
+      subthemes_local:
+      - tariff_escalation
+      - trade_war
+      directions_by_reference:
+        ^GSPC:
+        - neg
     - source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
         e guerra commerciale USA — regime ed episodi storici (2018–2026).md
       subthemes_local:
@@ -73551,6 +75015,10 @@ episodes:
   directions:
   - neutral
   directions_declared: []
+  direction_review_excluded:
+    ^GSPC: 'Taglio BoE: canale GBP; l''etichetta tariff_escalation viene solo dalla
+      nota sul contagio, non è un evento tariffario. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-25.'
   directions_local:
   - neg
   declared: false
@@ -75789,6 +77257,9 @@ episodes:
       del Mar Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente)/Houthi_
       attacchi alle infrastrutture energetiche saudite ed emiratine e crisi del Mar
       Rosso, trasmissione a greggio, prodotti, trasporti e gas (2015-presente).md
+  direction_review_excluded:
+    ^GSPC: 'Riga regionale ASEAN (valute e azionario locali): nessun canale dichiarato
+      verso ^GSPC. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
   directions_local:
   - neg
   declared: true
@@ -75983,6 +77454,8 @@ episodes:
     - pos
     SOXX:
     - pos
+    ^GSPC:
+    - neg
     ^NDX:
     - pos
   direction_sources:
@@ -76003,6 +77476,8 @@ episodes:
     SOXX:
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
+    ^GSPC:
+    - card:2026-11-13/news_03.md
     ^NDX:
     - kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
       e guerra commerciale USA — regime ed episodi storici (2018–2026).md
@@ -76070,6 +77545,8 @@ episodes:
       - pos
       SOXX:
       - pos
+      ^GSPC:
+      - neg
       ^NDX:
       - pos
     sources:
@@ -76110,6 +77587,8 @@ episodes:
       directions_by_reference:
         MXN=X:
         - pos
+        ^GSPC:
+        - neg
     - source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi
         e guerra commerciale USA — regime ed episodi storici (2018–2026).md
       subthemes_local:
@@ -76462,6 +77941,9 @@ episodes:
     - 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
       (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi
       storici (2010–2026).md'
+  direction_review_excluded:
+    ^GSPC: 'Riga regionale ASEAN (valute e azionario locali): nessun canale dichiarato
+      verso ^GSPC. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
   directions_local:
   - pos
   declared: true
@@ -76605,6 +78087,9 @@ episodes:
   direction_review_excluded:
     HG=F: 'Riga: ''volatilità rame'' — volatilità non è una direzione. Come il 2023-07-28
       BoJ.'
+    ^GSPC: 'Dazio 232 sul rame: canale HG=F, effetto atteso sull''indice marginale;
+      stessa data della riunione FOMC. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-25.'
   directions_local: []
   declared: false
   subthemes:
@@ -76676,6 +78161,9 @@ episodes:
     TTF=F: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio
       del gas europeo. Criterio ex ante, nessun prezzo consultato. Revisione Claude
       2026-11-05.'
+    ^GSPC: 'Riga regionale ASEAN (valute e azionario locali): nessun canale dichiarato
+      verso ^GSPC. Stessa data del payroll di luglio. Criterio ex ante, nessun prezzo
+      consultato. Revisione Claude 2026-11-25.'
   directions_local:
   - pos
   declared: true
@@ -78264,6 +79752,8 @@ episodes:
     TTF=F: 'Trattativa commerciale: nessun canale verso offerta o premio di rischio
       del gas europeo. Criterio ex ante, nessun prezzo consultato. Revisione Claude
       2026-11-05.'
+    ^GSPC: Domenica, nessuna seduta USA quel giorno; riga regionale ASEAN senza canale
+      su ^GSPC. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.
   directions_local:
   - pos
   declared: true
@@ -80160,6 +81650,10 @@ episodes:
   - pos
   directions_declared:
   - pos
+  direction_review_excluded:
+    ^GSPC: 'Sentenza della Corte Suprema sui dazi IEEPA: spinte opposte, dazi caduti
+      ma sostituiti da Section 122 al 10% con incertezza legale. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-25.'
   directions_local:
   - pos
   declared: true
@@ -91463,9 +92957,11 @@ episodes:
         - pos
 - date: '2016-11-23'
   theme: macro_data
-  direction: ''
-  directions: []
-  directions_declared: []
+  direction: neg
+  directions:
+  - neg
+  directions_declared:
+  - pos
   directions_by_reference:
     IEF:
     - neg
@@ -91478,14 +92974,16 @@ episodes:
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
       del lavoro — regime ed episodi storici (2000–2026).md
     ^FVX:
+    - card:2026-11-25/news_03.md
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
       del lavoro — regime ed episodi storici (2000–2026).md
   directions_local:
   - pos
-  declared: false
+  declared: true
   subthemes:
+  - activity_growth
   - conference_board
   - confidence_broad_drop
   - confidence_rebound
@@ -91497,14 +92995,16 @@ episodes:
   - sentiment_spending_divergence
   - soft_data
   subthemes_local:
+  - activity_growth
   - confidence_rebound
   - consumer
   - election_risk
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2016-11-23:macro_data:-
     geo: ''
     subthemes_local:
+    - activity_growth
     - confidence_rebound
     - consumer
     - election_risk
@@ -91514,11 +93014,19 @@ episodes:
       ^FVX:
       - pos
     sources:
+    - card:2026-11-25/news_03.md
     - kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata e anticipo
       sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il consumatore
       statunitense- sentimento dichiarato, spesa realizzata e anticipo sul mercato
       del lavoro — regime ed episodi storici (2000–2026).md
     evidence:
+    - source: card:2026-11-25/news_03.md
+      subthemes_local:
+      - activity_growth
+      - consumer
+      directions_by_reference:
+        ^FVX:
+        - pos
     - source: kb:Il consumatore statunitense; sentimento dichiarato, spesa realizzata
         e anticipo sul mercato del lavoro — regime ed episodi storici (2000–2026)/Il
         consumatore statunitense- sentimento dichiarato, spesa realizzata e anticipo
@@ -97645,6 +99153,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-10-30/news_02.md
     - card:2026-11-18/news_03.md
+    - card:2026-11-25/news_03.md
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
@@ -97666,7 +99175,7 @@ episodes:
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2021-04-15:macro_data:-
     geo: ''
@@ -97688,6 +99197,7 @@ episodes:
     - card:2026-10-28/news_04.md
     - card:2026-10-30/news_02.md
     - card:2026-11-18/news_03.md
+    - card:2026-11-25/news_03.md
     evidence:
     - source: card:2026-09-17/news_04.md
       subthemes_local:
@@ -97736,6 +99246,13 @@ episodes:
         ^FVX:
         - pos
     - source: card:2026-11-18/news_03.md
+      subthemes_local:
+      - activity_growth
+      - consumer
+      directions_by_reference:
+        ^FVX:
+        - pos
+    - source: card:2026-11-25/news_03.md
       subthemes_local:
       - activity_growth
       - consumer
@@ -100997,6 +102514,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-10-30/news_02.md
     - card:2026-11-18/news_03.md
+    - card:2026-11-25/news_03.md
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
@@ -101027,7 +102545,7 @@ episodes:
   - consumer
   - hawkish
   - platform_earnings
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2022-05-17:macro_data:-
     geo: ''
@@ -101051,6 +102569,7 @@ episodes:
     - card:2026-10-28/news_04.md
     - card:2026-10-30/news_02.md
     - card:2026-11-18/news_03.md
+    - card:2026-11-25/news_03.md
     - kb:Il consumatore cinese, domanda interna, e-commerce e trasmissione ai mercati
       (2011–2026)/ Il consumatore cinese- domanda interna, e-commerce e trasmissione
       ai mercati (2011–2026).md
@@ -101102,6 +102621,13 @@ episodes:
         ^FVX:
         - pos
     - source: card:2026-11-18/news_03.md
+      subthemes_local:
+      - activity_growth
+      - consumer
+      directions_by_reference:
+        ^FVX:
+        - pos
+    - source: card:2026-11-25/news_03.md
       subthemes_local:
       - activity_growth
       - consumer
@@ -108459,6 +109985,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-10-30/news_02.md
     - card:2026-11-18/news_03.md
+    - card:2026-11-25/news_03.md
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
@@ -108481,7 +110008,7 @@ episodes:
   - activity_growth
   - consumer
   - labour_market
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2023-02-15:macro_data:-
     geo: ''
@@ -108504,6 +110031,7 @@ episodes:
     - card:2026-10-28/news_04.md
     - card:2026-10-30/news_02.md
     - card:2026-11-18/news_03.md
+    - card:2026-11-25/news_03.md
     evidence:
     - source: card:2026-09-17/news_04.md
       subthemes_local:
@@ -108552,6 +110080,13 @@ episodes:
         ^FVX:
         - pos
     - source: card:2026-11-18/news_03.md
+      subthemes_local:
+      - activity_growth
+      - consumer
+      directions_by_reference:
+        ^FVX:
+        - pos
+    - source: card:2026-11-25/news_03.md
       subthemes_local:
       - activity_growth
       - consumer
@@ -111212,6 +112747,10 @@ episodes:
       monetaria e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026)/Sorprese
       macro e reaction function dei mercati: fase del ciclo di politica monetaria
       e ampiezza geografica — Stati Uniti, area euro, Regno Unito (2007–2026).md'
+  direction_review_excluded:
+    ^FVX: 'Dati di luglio della Cina: l''etichetta consumer è quella del consumo cinese,
+      nessun canale diretto verso il rendimento a 5 anni USA. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-25.'
   directions_local:
   - neg
   declared: true
@@ -112012,6 +113551,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-10-30/news_02.md
     - card:2026-11-18/news_03.md
+    - card:2026-11-25/news_03.md
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
@@ -112033,7 +113573,7 @@ episodes:
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2023-10-17:macro_data:-
     geo: ''
@@ -112055,6 +113595,7 @@ episodes:
     - card:2026-10-28/news_04.md
     - card:2026-10-30/news_02.md
     - card:2026-11-18/news_03.md
+    - card:2026-11-25/news_03.md
     evidence:
     - source: card:2026-09-17/news_04.md
       subthemes_local:
@@ -112103,6 +113644,13 @@ episodes:
         ^FVX:
         - pos
     - source: card:2026-11-18/news_03.md
+      subthemes_local:
+      - activity_growth
+      - consumer
+      directions_by_reference:
+        ^FVX:
+        - pos
+    - source: card:2026-11-25/news_03.md
       subthemes_local:
       - activity_growth
       - consumer
@@ -116695,6 +118243,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-10-30/news_02.md
     - card:2026-11-18/news_03.md
+    - card:2026-11-25/news_03.md
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
@@ -116716,7 +118265,7 @@ episodes:
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2024-04-15:macro_data:-
     geo: ''
@@ -116738,6 +118287,7 @@ episodes:
     - card:2026-10-28/news_04.md
     - card:2026-10-30/news_02.md
     - card:2026-11-18/news_03.md
+    - card:2026-11-25/news_03.md
     evidence:
     - source: card:2026-09-17/news_04.md
       subthemes_local:
@@ -116786,6 +118336,13 @@ episodes:
         ^FVX:
         - pos
     - source: card:2026-11-18/news_03.md
+      subthemes_local:
+      - activity_growth
+      - consumer
+      directions_by_reference:
+        ^FVX:
+        - pos
+    - source: card:2026-11-25/news_03.md
       subthemes_local:
       - activity_growth
       - consumer
@@ -118559,6 +120116,7 @@ episodes:
     - card:2026-09-17/news_04.md
     - card:2026-10-30/news_02.md
     - card:2026-11-18/news_03.md
+    - card:2026-11-25/news_03.md
     ^TNX:
     - card:2026-09-17/news_04.md
     - card:2026-09-18/news_04.md
@@ -118580,7 +120138,7 @@ episodes:
   subthemes_local:
   - activity_growth
   - consumer
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2024-07-16:macro_data:-
     geo: ''
@@ -118602,6 +120160,7 @@ episodes:
     - card:2026-10-28/news_04.md
     - card:2026-10-30/news_02.md
     - card:2026-11-18/news_03.md
+    - card:2026-11-25/news_03.md
     evidence:
     - source: card:2026-09-17/news_04.md
       subthemes_local:
@@ -118650,6 +120209,13 @@ episodes:
         ^FVX:
         - pos
     - source: card:2026-11-18/news_03.md
+      subthemes_local:
+      - activity_growth
+      - consumer
+      directions_by_reference:
+        ^FVX:
+        - pos
+    - source: card:2026-11-25/news_03.md
       subthemes_local:
       - activity_growth
       - consumer
@@ -119814,6 +121380,10 @@ episodes:
   direction_sources:
     HG=F:
     - card:2026-09-15/news_05.md
+  direction_review_excluded:
+    ^FVX: 'Dati di luglio della Cina: l''etichetta consumer è quella del consumo cinese,
+      nessun canale diretto verso il rendimento a 5 anni USA. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-25.'
   directions_local:
   - neg
   declared: true
@@ -129661,6 +131231,10 @@ episodes:
   direction_sources:
     HG=F:
     - card:2026-09-15/news_05.md
+  direction_review_excluded:
+    ^FVX: 'Dati di luglio della Cina: l''etichetta consumer è quella del consumo cinese,
+      nessun canale diretto verso il rendimento a 5 anni USA. Criterio ex ante, nessun
+      prezzo consultato. Revisione Claude 2026-11-25.'
   directions_local:
   - neg
   declared: true
@@ -174707,11 +176281,13 @@ episodes:
     - neg
   direction_sources:
     ^GSPC:
-    - card:2026-08-23/news_01.md
     - card:2026-09-18/news_06.md
     - card:2026-09-21/news_03.md
     - card:2026-09-22/news_02.md
   direction_review_excluded:
+    ^GSPC: 'Liberation Day annunciato alle 16:00 ET del 2 aprile, dopo la chiusura:
+      la seduta di reazione è il 3 aprile. Criterio ex ante, nessun prezzo consultato.
+      Revisione Claude 2026-11-25.'
     CNY=X: '«Liberation Day»: l''annuncio dei dazi reciproci è avvenuto dopo la chiusura
       dei mercati USA del 2 aprile; la seduta di reazione è il 3, non questa data.
       Revisione Claude 2026-10-15.'
@@ -174822,9 +176398,7 @@ episodes:
       subthemes_local:
       - risk_off
       - tariff_escalation
-      directions_by_reference:
-        ^GSPC:
-        - neg
+      directions_by_reference: {}
     - source: card:2026-08-30/news_04.md
       subthemes_local:
       - risk_off
@@ -175872,6 +177446,32 @@ episodes:
         precedenti storici e trasmissione ai mercati (1975–presente)/Auto-limitazione
         volontaria dell'offerta in settori a capacità strategica- precedenti storici
         e trasmissione ai mercati (1975–presente).md
+      subthemes_local: []
+      directions_by_reference: {}
+- date: '2018-10-01'
+  theme: structural_themes
+  direction: pos
+  directions:
+  - pos
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - ai_semis
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  subthemes_local: []
+  n_sources: 1
+  events:
+  - event_id: 2018-10-01:structural_themes:-
+    geo: ''
+    subthemes_local: []
+    sources:
+    - card:2026-11-24/news_01.md
+    evidence:
+    - source: card:2026-11-24/news_01.md
       subthemes_local: []
       directions_by_reference: {}
 - date: '2018-10-10'
@@ -177324,6 +178924,80 @@ episodes:
     - source: kb:bitcoin (2014-2026)/bitcoin (2014-2026).md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2021-01-13'
+  theme: structural_themes
+  direction: pos
+  directions:
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    SOXX:
+    - pos
+  direction_sources:
+    SOXX:
+    - card:2026-11-24/news_01.md
+  directions_local:
+  - pos
+  declared: true
+  subthemes:
+  - ai_semis
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  subthemes_local:
+  - crisis_resolution
+  - governance
+  - leadership_transition
+  n_sources: 1
+  events:
+  - event_id: 2021-01-13:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - crisis_resolution
+    - governance
+    - leadership_transition
+    directions_by_reference:
+      SOXX:
+      - pos
+    sources:
+    - card:2026-11-24/news_01.md
+    evidence:
+    - source: card:2026-11-24/news_01.md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - leadership_transition
+      directions_by_reference:
+        SOXX:
+        - pos
+- date: '2021-01-20'
+  theme: structural_themes
+  direction: pos
+  directions:
+  - pos
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - ai_semis
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  subthemes_local: []
+  n_sources: 1
+  events:
+  - event_id: 2021-01-20:structural_themes:-
+    geo: ''
+    subthemes_local: []
+    sources:
+    - card:2026-11-24/news_01.md
+    evidence:
+    - source: card:2026-11-24/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
 - date: '2021-09-24'
   theme: structural_themes
   direction: ''
@@ -177810,6 +179484,32 @@ episodes:
       directions_by_reference:
         SOXX:
         - neutral
+- date: '2022-03-16'
+  theme: structural_themes
+  direction: pos
+  directions:
+  - pos
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - ai_semis
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  subthemes_local: []
+  n_sources: 1
+  events:
+  - event_id: 2022-03-16:structural_themes:-
+    geo: ''
+    subthemes_local: []
+    sources:
+    - card:2026-11-24/news_01.md
+    evidence:
+    - source: card:2026-11-24/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
 - date: '2022-04-26'
   theme: structural_themes
   direction: mixed
@@ -178179,6 +179879,32 @@ episodes:
       directions_by_reference:
         SOXX:
         - neg
+- date: '2022-08-12'
+  theme: structural_themes
+  direction: pos
+  directions:
+  - pos
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - ai_semis
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  subthemes_local: []
+  n_sources: 1
+  events:
+  - event_id: 2022-08-12:structural_themes:-
+    geo: ''
+    subthemes_local: []
+    sources:
+    - card:2026-11-24/news_01.md
+    evidence:
+    - source: card:2026-11-24/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
 - date: '2022-09-13'
   theme: structural_themes
   direction: neg
@@ -178892,6 +180618,32 @@ episodes:
     - source: card:2026-08-15/news_04.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2022-11-21'
+  theme: structural_themes
+  direction: pos
+  directions:
+  - pos
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - ai_semis
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  subthemes_local: []
+  n_sources: 1
+  events:
+  - event_id: 2022-11-21:structural_themes:-
+    geo: ''
+    subthemes_local: []
+    sources:
+    - card:2026-11-24/news_01.md
+    evidence:
+    - source: card:2026-11-24/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
 - date: '2022-12-31'
   theme: structural_themes
   direction: neg
@@ -179461,6 +181213,7 @@ episodes:
     - card:2026-11-12/news_02.md
     - card:2026-11-18/news_02.md
     - card:2026-11-19/news_04.md
+    - card:2026-11-24/news_01.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
     - kb:Guidance dei produttori di semiconduttori e reazione dell'indice di settore_
@@ -179499,6 +181252,7 @@ episodes:
   - china_frontier_model
   - chips
   - concentration_risk
+  - crisis_resolution
   - critical_minerals
   - datacenter
   - defense_sector
@@ -179509,6 +181263,7 @@ episodes:
   - euphoria_vs_drawdown
   - export_controls
   - global_tech_leadership
+  - governance
   - guidance_surprise
   - hbm
   - hbm_memory
@@ -179547,7 +181302,7 @@ episodes:
   - hyperscaler_capex
   - memory_cycle
   - valuation_derisking
-  n_sources: 60
+  n_sources: 61
   events:
   - event_id: 2023-05-25:structural_themes:-
     geo: ''
@@ -179632,6 +181387,7 @@ episodes:
     - card:2026-11-12/news_02.md
     - card:2026-11-18/news_02.md
     - card:2026-11-19/news_04.md
+    - card:2026-11-24/news_01.md
     - kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori & AI capex
       (2023–2026).md
     - kb:Guidance dei produttori di semiconduttori e reazione dell'indice di settore_
@@ -179900,6 +181656,13 @@ episodes:
       directions_by_reference:
         SOXX:
         - pos
+    - source: card:2026-11-24/news_01.md
+      subthemes_local:
+      - ai_semis
+      - earnings_shock
+      directions_by_reference:
+        SOXX:
+        - pos
     - source: kb:Ciclo semiconduttori & AI capex (2023–2026)/Ciclo semiconduttori
         & AI capex (2023–2026).md
       subthemes_local:
@@ -180152,6 +181915,32 @@ episodes:
         - neg
     - source: kb:Ciclo della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026)/Ciclo
         della memoria DRAM-NAND-HBM e mercato azionario coreano (2016–2026).md
+      subthemes_local: []
+      directions_by_reference: {}
+- date: '2023-07-07'
+  theme: structural_themes
+  direction: pos
+  directions:
+  - pos
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - ai_semis
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  subthemes_local: []
+  n_sources: 1
+  events:
+  - event_id: 2023-07-07:structural_themes:-
+    geo: ''
+    subthemes_local: []
+    sources:
+    - card:2026-11-24/news_01.md
+    evidence:
+    - source: card:2026-11-24/news_01.md
       subthemes_local: []
       directions_by_reference: {}
 - date: '2023-07-13'
@@ -181004,6 +182793,32 @@ episodes:
     - source: card:2026-08-05/news_02.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2023-11-22'
+  theme: structural_themes
+  direction: pos
+  directions:
+  - pos
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - ai_semis
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  subthemes_local: []
+  n_sources: 1
+  events:
+  - event_id: 2023-11-22:structural_themes:-
+    geo: ''
+    subthemes_local: []
+    sources:
+    - card:2026-11-24/news_01.md
+    evidence:
+    - source: card:2026-11-24/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
 - date: '2024-01-10'
   theme: structural_themes
   direction: ''
@@ -181030,6 +182845,32 @@ episodes:
     - kb:bitcoin (2014-2026)/bitcoin (2014-2026).md
     evidence:
     - source: kb:bitcoin (2014-2026)/bitcoin (2014-2026).md
+      subthemes_local: []
+      directions_by_reference: {}
+- date: '2024-02-05'
+  theme: structural_themes
+  direction: pos
+  directions:
+  - pos
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - ai_semis
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  subthemes_local: []
+  n_sources: 1
+  events:
+  - event_id: 2024-02-05:structural_themes:-
+    geo: ''
+    subthemes_local: []
+    sources:
+    - card:2026-11-24/news_01.md
+    evidence:
+    - source: card:2026-11-24/news_01.md
       subthemes_local: []
       directions_by_reference: {}
 - date: '2024-02-21'
@@ -181087,6 +182928,7 @@ episodes:
     - card:2026-11-12/news_02.md
     - card:2026-11-18/news_02.md
     - card:2026-11-19/news_04.md
+    - card:2026-11-24/news_01.md
     - kb:Guidance dei produttori di semiconduttori e reazione dell'indice di settore_
       sorpresa, fase del ciclo e posizionamento (2016-presente)/Guidance dei produttori
       di semiconduttori e reazione dell'indice di settore_ sorpresa, fase del ciclo
@@ -181126,6 +182968,7 @@ episodes:
   - capex_cycle
   - china_frontier_model
   - concentration_risk
+  - crisis_resolution
   - critical_minerals
   - datacenter
   - defense_sector
@@ -181135,6 +182978,7 @@ episodes:
   - euphoria_vs_drawdown
   - export_controls
   - global_tech_leadership
+  - governance
   - guidance_surprise
   - hbm
   - hbm_memory
@@ -181169,7 +183013,7 @@ episodes:
   - concentration_risk
   - earnings_shock
   - export_controls
-  n_sources: 51
+  n_sources: 52
   events:
   - event_id: 2024-02-22:structural_themes:-
     geo: ''
@@ -181244,6 +183088,7 @@ episodes:
     - card:2026-11-12/news_02.md
     - card:2026-11-18/news_02.md
     - card:2026-11-19/news_04.md
+    - card:2026-11-24/news_01.md
     - kb:Guidance dei produttori di semiconduttori e reazione dell'indice di settore_
       sorpresa, fase del ciclo e posizionamento (2016-presente)/Guidance dei produttori
       di semiconduttori e reazione dell'indice di settore_ sorpresa, fase del ciclo
@@ -181454,6 +183299,13 @@ episodes:
         SOXX:
         - pos
     - source: card:2026-11-19/news_04.md
+      subthemes_local:
+      - ai_semis
+      - earnings_shock
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: card:2026-11-24/news_01.md
       subthemes_local:
       - ai_semis
       - earnings_shock
@@ -182080,6 +183932,32 @@ episodes:
       subthemes_local: []
       directions_by_reference: {}
     - source: card:2026-08-15/news_04.md
+      subthemes_local: []
+      directions_by_reference: {}
+- date: '2024-06-13'
+  theme: structural_themes
+  direction: pos
+  directions:
+  - pos
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - ai_semis
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  subthemes_local: []
+  n_sources: 1
+  events:
+  - event_id: 2024-06-13:structural_themes:-
+    geo: ''
+    subthemes_local: []
+    sources:
+    - card:2026-11-24/news_01.md
+    evidence:
+    - source: card:2026-11-24/news_01.md
       subthemes_local: []
       directions_by_reference: {}
 - date: '2024-06-30'
@@ -182782,6 +184660,32 @@ episodes:
       subthemes_local: []
       directions_by_reference: {}
     - source: card:2026-08-15/news_04.md
+      subthemes_local: []
+      directions_by_reference: {}
+- date: '2024-08-13'
+  theme: structural_themes
+  direction: pos
+  directions:
+  - pos
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - ai_semis
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  subthemes_local: []
+  n_sources: 1
+  events:
+  - event_id: 2024-08-13:structural_themes:-
+    geo: ''
+    subthemes_local: []
+    sources:
+    - card:2026-11-24/news_01.md
+    evidence:
+    - source: card:2026-11-24/news_01.md
       subthemes_local: []
       directions_by_reference: {}
 - date: '2024-08-28'
@@ -183919,8 +185823,9 @@ episodes:
       directions_by_reference: {}
 - date: '2024-12-13'
   theme: structural_themes
-  direction: ''
-  directions: []
+  direction: pos
+  directions:
+  - pos
   directions_declared:
   - pos
   directions_by_reference:
@@ -183928,27 +185833,32 @@ episodes:
     - pos
   direction_sources:
     SOXX:
+    - card:2026-11-24/news_01.md
     - kb:Guidance dei produttori di semiconduttori e reazione dell'indice di settore_
       sorpresa, fase del ciclo e posizionamento (2016-presente)/Guidance dei produttori
       di semiconduttori e reazione dell'indice di settore_ sorpresa, fase del ciclo
       e posizionamento (2016-presente).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - ai_capex
   - ai_semis
   - concentration_risk
+  - crisis_resolution
   - earnings_shock
   - euphoria_vs_drawdown
+  - governance
   - guidance_surprise
   - hyperscaler_capex
+  - key_person_risk
   - memory_cycle
   - valuation_derisking
   subthemes_local:
   - ai_semis
   - earnings_shock
   - hyperscaler_capex
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2024-12-13:structural_themes:-
     geo: ''
@@ -183960,11 +185870,20 @@ episodes:
       SOXX:
       - pos
     sources:
+    - card:2026-11-24/news_01.md
     - kb:Guidance dei produttori di semiconduttori e reazione dell'indice di settore_
       sorpresa, fase del ciclo e posizionamento (2016-presente)/Guidance dei produttori
       di semiconduttori e reazione dell'indice di settore_ sorpresa, fase del ciclo
       e posizionamento (2016-presente).md
     evidence:
+    - source: card:2026-11-24/news_01.md
+      subthemes_local:
+      - ai_semis
+      - earnings_shock
+      - hyperscaler_capex
+      directions_by_reference:
+        SOXX:
+        - pos
     - source: kb:Guidance dei produttori di semiconduttori e reazione dell'indice
         di settore_ sorpresa, fase del ciclo e posizionamento (2016-presente)/Guidance
         dei produttori di semiconduttori e reazione dell'indice di settore_ sorpresa,
@@ -185697,6 +187616,54 @@ episodes:
         ^NDX:
         - neg
         - pos
+- date: '2025-03-13'
+  theme: structural_themes
+  direction: pos
+  directions:
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    SOXX:
+    - pos
+  direction_sources:
+    SOXX:
+    - card:2026-11-24/news_01.md
+  directions_local:
+  - pos
+  declared: true
+  subthemes:
+  - ai_semis
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  subthemes_local:
+  - crisis_resolution
+  - governance
+  - leadership_transition
+  n_sources: 1
+  events:
+  - event_id: 2025-03-13:structural_themes:-
+    geo: ''
+    subthemes_local:
+    - crisis_resolution
+    - governance
+    - leadership_transition
+    directions_by_reference:
+      SOXX:
+      - pos
+    sources:
+    - card:2026-11-24/news_01.md
+    evidence:
+    - source: card:2026-11-24/news_01.md
+      subthemes_local:
+      - crisis_resolution
+      - governance
+      - leadership_transition
+      directions_by_reference:
+        SOXX:
+        - pos
 - date: '2025-03-19'
   theme: structural_themes
   direction: ''
@@ -187006,6 +188973,32 @@ episodes:
         - pos
         XLU:
         - neutral
+- date: '2025-07-17'
+  theme: structural_themes
+  direction: pos
+  directions:
+  - pos
+  directions_declared: []
+  directions_local: []
+  declared: false
+  subthemes:
+  - ai_semis
+  - concentration_risk
+  - crisis_resolution
+  - governance
+  - key_person_risk
+  subthemes_local: []
+  n_sources: 1
+  events:
+  - event_id: 2025-07-17:structural_themes:-
+    geo: ''
+    subthemes_local: []
+    sources:
+    - card:2026-11-24/news_01.md
+    evidence:
+    - source: card:2026-11-24/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
 - date: '2025-07-22'
   theme: structural_themes
   direction: ''
@@ -187833,6 +189826,7 @@ episodes:
     SOXX:
     - card:2026-10-28/news_02.md
     - card:2026-11-12/news_02.md
+    - card:2026-11-24/news_01.md
     - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
       stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
       debito degli hyperscaler, vendor financing e stress di credito della filiera
@@ -187853,8 +189847,11 @@ episodes:
   - circular_financing
   - concentration_risk
   - credit_stress
+  - crisis_resolution
   - earnings_shock
+  - governance
   - hyperscaler_capex
+  - key_person_risk
   - memory_cycle
   - neocloud_leverage
   - off_balance_sheet_financing
@@ -187866,7 +189863,7 @@ episodes:
   - ai_semis
   - concentration_risk
   - memory_cycle
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2025-09-22:structural_themes:-
     geo: ''
@@ -187888,6 +189885,7 @@ episodes:
     sources:
     - card:2026-10-28/news_02.md
     - card:2026-11-12/news_02.md
+    - card:2026-11-24/news_01.md
     - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
       stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
       debito degli hyperscaler, vendor financing e stress di credito della filiera
@@ -187904,6 +189902,13 @@ episodes:
       subthemes_local:
       - ai_capex_financing
       - ai_capex_spending
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: card:2026-11-24/news_01.md
+      subthemes_local:
+      - ai_capex_spending
+      - ai_semis
       directions_by_reference:
         SOXX:
         - pos
@@ -188148,6 +190153,7 @@ episodes:
     - card:2026-10-28/news_02.md
     - card:2026-11-04/news_02.md
     - card:2026-11-12/news_02.md
+    - card:2026-11-24/news_01.md
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
       capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
@@ -188165,16 +190171,20 @@ episodes:
   - ai_capex_financing
   - ai_capex_spending
   - ai_semis
+  - concentration_risk
+  - crisis_resolution
   - earnings_shock
+  - governance
   - grid_capacity
   - hyperscaler_capex
+  - key_person_risk
   - memory_cycle
   - power_bottleneck
   subthemes_local:
   - ai_semis
   - earnings_shock
   - foundry_logic
-  n_sources: 5
+  n_sources: 6
   events:
   - event_id: 2025-10-16:structural_themes:-
     geo: ''
@@ -188196,6 +190206,7 @@ episodes:
     - card:2026-10-28/news_02.md
     - card:2026-11-04/news_02.md
     - card:2026-11-12/news_02.md
+    - card:2026-11-24/news_01.md
     - kb:Il vincolo elettrico del capex AI; potenza, reti e turbine come collo di
       bottiglia — regime ed episodi storici (2021–presente)/Il vincolo elettrico del
       capex AI- potenza, reti e turbine come collo di bottiglia — regime ed episodi
@@ -188224,6 +190235,13 @@ episodes:
         SOXX:
         - pos
     - source: card:2026-11-12/news_02.md
+      subthemes_local:
+      - ai_semis
+      - earnings_shock
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: card:2026-11-24/news_01.md
       subthemes_local:
       - ai_semis
       - earnings_shock
@@ -188881,6 +190899,7 @@ episodes:
     SOXX:
     - card:2026-11-18/news_02.md
     - card:2026-11-19/news_04.md
+    - card:2026-11-24/news_01.md
     - kb:Guidance dei produttori di semiconduttori e reazione dell'indice di settore_
       sorpresa, fase del ciclo e posizionamento (2016-presente)/Guidance dei produttori
       di semiconduttori e reazione dell'indice di settore_ sorpresa, fase del ciclo
@@ -188903,18 +190922,21 @@ episodes:
   - ai_capex_financing
   - ai_semis
   - concentration_risk
+  - crisis_resolution
   - earnings_shock
   - equity_financing
   - euphoria_vs_drawdown
+  - governance
   - guidance_surprise
   - hyperscaler_capex
+  - key_person_risk
   - memory_cycle
   - valuation_derisking
   subthemes_local:
   - ai_semis
   - concentration_risk
   - earnings_shock
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2025-11-20:structural_themes:-
     geo: ''
@@ -188932,6 +190954,7 @@ episodes:
     sources:
     - card:2026-11-18/news_02.md
     - card:2026-11-19/news_04.md
+    - card:2026-11-24/news_01.md
     - kb:Guidance dei produttori di semiconduttori e reazione dell'indice di settore_
       sorpresa, fase del ciclo e posizionamento (2016-presente)/Guidance dei produttori
       di semiconduttori e reazione dell'indice di settore_ sorpresa, fase del ciclo
@@ -188945,6 +190968,13 @@ episodes:
         SOXX:
         - pos
     - source: card:2026-11-19/news_04.md
+      subthemes_local:
+      - ai_semis
+      - earnings_shock
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: card:2026-11-24/news_01.md
       subthemes_local:
       - ai_semis
       - earnings_shock
@@ -189749,6 +191779,7 @@ episodes:
     SOXX:
     - card:2026-11-18/news_02.md
     - card:2026-11-19/news_04.md
+    - card:2026-11-24/news_01.md
     - kb:Guidance dei produttori di semiconduttori e reazione dell'indice di settore_
       sorpresa, fase del ciclo e posizionamento (2016-presente)/Guidance dei produttori
       di semiconduttori e reazione dell'indice di settore_ sorpresa, fase del ciclo
@@ -189766,18 +191797,21 @@ episodes:
   - ai_capex_financing
   - ai_semis
   - concentration_risk
+  - crisis_resolution
   - earnings_shock
   - equity_financing
   - euphoria_vs_drawdown
+  - governance
   - guidance_surprise
   - hyperscaler_capex
+  - key_person_risk
   - memory_cycle
   - valuation_derisking
   subthemes_local:
   - ai_semis
   - concentration_risk
   - earnings_shock
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2026-02-26:structural_themes:-
     geo: ''
@@ -189793,6 +191827,7 @@ episodes:
     sources:
     - card:2026-11-18/news_02.md
     - card:2026-11-19/news_04.md
+    - card:2026-11-24/news_01.md
     - kb:Guidance dei produttori di semiconduttori e reazione dell'indice di settore_
       sorpresa, fase del ciclo e posizionamento (2016-presente)/Guidance dei produttori
       di semiconduttori e reazione dell'indice di settore_ sorpresa, fase del ciclo
@@ -189806,6 +191841,13 @@ episodes:
         SOXX:
         - pos
     - source: card:2026-11-19/news_04.md
+      subthemes_local:
+      - ai_semis
+      - earnings_shock
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: card:2026-11-24/news_01.md
       subthemes_local:
       - ai_semis
       - earnings_shock
@@ -192732,6 +194774,7 @@ episodes:
     SOXX:
     - card:2026-11-18/news_02.md
     - card:2026-11-19/news_04.md
+    - card:2026-11-24/news_01.md
     - kb:Guidance dei produttori di semiconduttori e reazione dell'indice di settore_
       sorpresa, fase del ciclo e posizionamento (2016-presente)/Guidance dei produttori
       di semiconduttori e reazione dell'indice di settore_ sorpresa, fase del ciclo
@@ -192756,11 +194799,14 @@ episodes:
   - circular_financing
   - concentration_risk
   - credit_stress
+  - crisis_resolution
   - earnings_shock
   - equity_financing
   - euphoria_vs_drawdown
+  - governance
   - guidance_surprise
   - hyperscaler_capex
+  - key_person_risk
   - memory_cycle
   - neocloud_leverage
   - off_balance_sheet_financing
@@ -192772,7 +194818,7 @@ episodes:
   - concentration_risk
   - earnings_shock
   - hyperscaler_capex
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2026-08-27:structural_themes:-
     geo: ''
@@ -192795,6 +194841,7 @@ episodes:
     sources:
     - card:2026-11-18/news_02.md
     - card:2026-11-19/news_04.md
+    - card:2026-11-24/news_01.md
     - kb:Finanziamento del capex AI_ debito degli hyperscaler, vendor financing e
       stress di credito della filiera (2023–presente)/Finanziamento del capex AI_
       debito degli hyperscaler, vendor financing e stress di credito della filiera
@@ -192812,6 +194859,13 @@ episodes:
         SOXX:
         - pos
     - source: card:2026-11-19/news_04.md
+      subthemes_local:
+      - ai_semis
+      - earnings_shock
+      directions_by_reference:
+        SOXX:
+        - pos
+    - source: card:2026-11-24/news_01.md
       subthemes_local:
       - ai_semis
       - earnings_shock
@@ -194839,8 +196893,9 @@ episodes:
         - neg
 - date: '2026-11-18'
   theme: structural_themes
-  direction: ''
-  directions: []
+  direction: pos
+  directions:
+  - pos
   directions_declared:
   - neg
   - pos
@@ -194867,6 +196922,7 @@ episodes:
       di semiconduttori e reazione dell'indice di settore_ sorpresa, fase del ciclo
       e posizionamento (2016-presente).md
     SOXX:
+    - card:2026-11-24/news_01.md
     - kb:Guidance dei produttori di semiconduttori e reazione dell'indice di settore_
       sorpresa, fase del ciclo e posizionamento (2016-presente)/Guidance dei produttori
       di semiconduttori e reazione dell'indice di settore_ sorpresa, fase del ciclo
@@ -194881,16 +196937,20 @@ episodes:
       sorpresa, fase del ciclo e posizionamento (2016-presente)/Guidance dei produttori
       di semiconduttori e reazione dell'indice di settore_ sorpresa, fase del ciclo
       e posizionamento (2016-presente).md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - ai_capex
   - ai_semis
   - concentration_risk
+  - crisis_resolution
   - earnings_shock
   - euphoria_vs_drawdown
+  - governance
   - guidance_surprise
   - hyperscaler_capex
+  - key_person_risk
   - memory_cycle
   - valuation_derisking
   subthemes_local:
@@ -194899,7 +196959,7 @@ episodes:
   - earnings_shock
   - memory_cycle
   - valuation_derisking
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-11-18:structural_themes:-
     geo: ''
@@ -194921,11 +196981,20 @@ episodes:
       ^VIX:
       - neg
     sources:
+    - card:2026-11-24/news_01.md
     - kb:Guidance dei produttori di semiconduttori e reazione dell'indice di settore_
       sorpresa, fase del ciclo e posizionamento (2016-presente)/Guidance dei produttori
       di semiconduttori e reazione dell'indice di settore_ sorpresa, fase del ciclo
       e posizionamento (2016-presente).md
     evidence:
+    - source: card:2026-11-24/news_01.md
+      subthemes_local:
+      - ai_semis
+      - earnings_shock
+      - valuation_derisking
+      directions_by_reference:
+        SOXX:
+        - pos
     - source: kb:Guidance dei produttori di semiconduttori e reazione dell'indice
         di settore_ sorpresa, fase del ciclo e posizionamento (2016-presente)/Guidance
         dei produttori di semiconduttori e reazione dell'indice di settore_ sorpresa,

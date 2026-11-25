@@ -407,8 +407,8 @@ reviews:
   theme: regulatory
   reference: ^GSPC
   source: 2026-08-23/news_01.md
-  reason: 'Annuncio di dazi reciproci generalizzati: costi attesi maggiori.'
-  direction: neg
+  reason: 'Liberation Day annunciato alle 16:00 ET del 2 aprile, dopo la chiusura: la seduta di reazione è il 3 aprile. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
 - date: '2025-04-04'
   theme: regulatory
   reference: ^GSPC
@@ -1195,8 +1195,8 @@ reviews:
   reference: ^GSPC
   source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
     USA — regime ed episodi storici (2018–2026).md
-  reason: 'Riga: ''↓↓ equity'' sull''asset-canale ^GSPC.'
-  direction: neg
+  reason: 'Liberation Day annunciato alle 16:00 ET del 2 aprile, dopo la chiusura: la seduta di reazione è il 3 aprile. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
   mechanism:
   - tariff_escalation
   description: 'Liberation Day: dazio base e reciproci'
@@ -1205,8 +1205,8 @@ reviews:
   reference: ^NDX
   source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
     USA — regime ed episodi storici (2018–2026).md
-  reason: 'Riga: ''↓↓ equity'' sull''asset-canale ^NDX.'
-  direction: neg
+  reason: 'Liberation Day annunciato alle 16:00 ET del 2 aprile, dopo la chiusura: la seduta di reazione è il 3 aprile. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
   mechanism:
   - tariff_escalation
   description: 'Liberation Day: dazio base e reciproci'
@@ -1215,8 +1215,8 @@ reviews:
   reference: ^VIX
   source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
     USA — regime ed episodi storici (2018–2026).md
-  reason: 'Riga: ''↑VIX'', scritto esplicitamente.'
-  direction: pos
+  reason: 'Liberation Day annunciato alle 16:00 ET del 2 aprile, dopo la chiusura: la seduta di reazione è il 3 aprile. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
   mechanism:
   - tariff_escalation
   description: 'Liberation Day: dazio base e reciproci'
@@ -15873,4 +15873,174 @@ reviews:
     terminali, depositi) senza capacità di raffinazione persa: greggio e prodotti salgono insieme e il
     margine 3-2-1 non ha un verso determinabile ex ante (CRACK_321 è Brent contro benzina e diesel NYMEX).
     Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-23.'
+  status: excluded
+- date: '2026-02-20'
+  theme: geopolitical
+  reference: ^GSPC
+  source: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  reason: 'Sentenza della Corte Suprema sui dazi IEEPA: spinte opposte, dazi caduti ma sostituiti da Section
+    122 al 10% con incertezza legale. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
+- date: '2025-10-26'
+  theme: geopolitical
+  reference: ^GSPC
+  source: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  reason: Domenica, nessuna seduta USA quel giorno; riga regionale ASEAN senza canale su ^GSPC. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.
+  status: excluded
+- date: '2025-08-01'
+  theme: geopolitical
+  reference: ^GSPC
+  source: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  reason: 'Riga regionale ASEAN (valute e azionario locali): nessun canale dichiarato verso ^GSPC. Stessa
+    data del payroll di luglio. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
+- date: '2025-07-30'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Dazio 232 sul rame: canale HG=F, effetto atteso sull''indice marginale; stessa data della riunione
+    FOMC. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
+- date: '2025-07-22'
+  theme: geopolitical
+  reference: ^GSPC
+  source: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  reason: 'Riga regionale ASEAN (valute e azionario locali): nessun canale dichiarato verso ^GSPC. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
+- date: '2025-07-14'
+  theme: geopolitical
+  reference: ^GSPC
+  source: 2026-11-13/news_03.md
+  reason: 'Lettere del 12 luglio con dazio del 30% dal 1° agosto su Messico e UE, due dei maggiori partner:
+    costi attesi più alti per le imprese USA e più incertezza → pressione al ribasso su ^GSPC. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  direction: neg
+- date: '2025-07-07'
+  theme: geopolitical
+  reference: ^GSPC
+  source: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  reason: 'Riga regionale ASEAN (valute e azionario locali): nessun canale dichiarato verso ^GSPC. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
+- date: '2025-05-08'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  reason: 'Taglio BoE: canale GBP; l''etichetta tariff_escalation viene solo dalla nota sul contagio,
+    non è un evento tariffario. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
+- date: '2025-02-27'
+  theme: geopolitical
+  reference: ^GSPC
+  source: 2026-08-26/news_05.md
+  reason: 'Nuovi dazi annunciati in una seduta di de-risking del tecnologico: i due canali, commerciale
+    e valutativo, spingono nella stessa direzione → pressione al ribasso su ^GSPC. Criterio ex ante, nessun
+    prezzo consultato. Revisione Claude 2026-11-25.'
+  direction: neg
+- date: '2025-01-14'
+  theme: geopolitical
+  reference: ^GSPC
+  source: 2026-08-26/news_05.md
+  reason: 'Contenuto dell''episodio non ricostruito dalla fonte: nessuna attesa documentata. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
+- date: '2024-12-15'
+  theme: geopolitical
+  reference: ^GSPC
+  source: 2026-08-26/news_05.md
+  reason: 'Contenuto dell''episodio non ricostruito dalla fonte: nessuna attesa documentata. Criterio
+    ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
+- date: '2024-11-26'
+  theme: geopolitical
+  reference: ^GSPC
+  source: 2026-11-13/news_03.md
+  reason: 'Dazio del 25% su Messico e Canada dal primo giorno di mandato, annunciato la sera del 25 novembre:
+    costi attesi più alti per i due maggiori partner → pressione al ribasso su ^GSPC. Criterio ex ante,
+    nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  direction: neg
+- date: '2019-08-12'
+  theme: geopolitical
+  reference: ^GSPC
+  source: 2026-08-26/news_05.md
+  reason: 'Fase acuta di agosto 2019 senza un annuncio datato quel giorno: l''evento non è identificabile.
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
+- date: '2019-05-31'
+  theme: geopolitical
+  reference: ^GSPC
+  source: 2026-11-13/news_03.md
+  reason: 'Dazio del 5% su tutte le merci messicane dal 10 giugno, a salire fino al 25%, annunciato la
+    sera del 30 maggio: escalation verso un partner commerciale maggiore → pressione al ribasso su ^GSPC.
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  direction: neg
+- date: '2018-12-26'
+  theme: geopolitical
+  reference: ^GSPC
+  source: 2026-08-26/news_05.md
+  reason: 'La riga è definita dal movimento di prezzo (minimo del selloff e rimbalzo): usarla selezionerebbe
+    l''episodio per il suo esito. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
+- date: '2018-10-10'
+  theme: geopolitical
+  reference: ^GSPC
+  source: 2026-08-26/news_05.md
+  reason: 'La riga è definita dal movimento di prezzo (selloff globale con più cause): usarla selezionerebbe
+    l''episodio per il suo esito. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
+- date: '2018-07-02'
+  theme: geopolitical
+  reference: ^GSPC
+  source: 2026-08-26/news_05.md
+  reason: Vigilia di un pacchetto di dazi già noto; la riga descrive i metalli industriali, nessuna attesa
+    sull'indice. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.
+  status: excluded
+- date: '2018-06-22'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: 'Ritorsioni UE già annunciate: canale Europa, impatto atteso sull''indice USA trascurabile.
+    Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  status: excluded
+- date: '2018-06-01'
+  theme: geopolitical
+  reference: ^GSPC
+  source: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  reason: Riga su ^STOXX50E e ^GDAXI; stessa data del payroll di maggio, la data non è pulita per l'indice
+    USA. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.
+  status: excluded
+- date: '2025-08-15'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-15/news_05.md
+  reason: 'Dati di luglio della Cina: l''etichetta consumer è quella del consumo cinese, nessun canale
+    diretto verso il rendimento a 5 anni USA. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-25.'
+  status: excluded
+- date: '2024-08-15'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-15/news_05.md
+  reason: 'Dati di luglio della Cina: l''etichetta consumer è quella del consumo cinese, nessun canale
+    diretto verso il rendimento a 5 anni USA. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-25.'
+  status: excluded
+- date: '2023-08-15'
+  theme: macro_data
+  reference: ^FVX
+  source: 2026-09-15/news_05.md
+  reason: 'Dati di luglio della Cina: l''etichetta consumer è quella del consumo cinese, nessun canale
+    diretto verso il rendimento a 5 anni USA. Criterio ex ante, nessun prezzo consultato. Revisione Claude
+    2026-11-25.'
   status: excluded

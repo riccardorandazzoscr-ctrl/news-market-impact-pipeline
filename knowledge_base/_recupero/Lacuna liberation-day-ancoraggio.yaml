@@ -1,0 +1,268 @@
+research: lacuna liberation-day-ancoraggio (geopolitical, tariff_escalation, rif ^GSPC; sotto-tema locale)
+voci:
+- data: '2026-02-20'
+  tema: geopolitical
+  fonte: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  riga: '| 2026-02-20 | SCOTUS dichiara illegittimi i dazi IEEPA di Trump | leva tariffaria | pos. valute
+    ASEAN | CNY, IDR, THB | Sostituiti con dazi Section 122 al 10%; incertezza legale |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: escluso
+    perché: 'Sentenza della Corte Suprema sui dazi IEEPA: spinte opposte, dazi caduti ma sostituiti da
+      Section 122 al 10% con incertezza legale. Criterio ex ante, nessun prezzo consultato. Revisione
+      Claude 2026-11-25.'
+  stato: promossa
+- data: '2025-10-26'
+  tema: geopolitical
+  fonte: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  riga: '| 2025-10-26 | Firma framework tariffari USA-ASEAN a Kuala Lumpur (19-20%) | leva tariffaria
+    | pos./neutro | THB, IDR, MYR, CNY | Thailandia azzera dazi sul 99% dei beni USA; percorso Annex III
+    verso zero |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: escluso
+    perché: Domenica, nessuna seduta USA quel giorno; riga regionale ASEAN senza canale su ^GSPC. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.
+  stato: promossa
+- data: '2025-08-01'
+  tema: geopolitical
+  fonte: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  riga: '| 2025-08-01 | Dazi ridotti al 19% per Thailandia e Cambogia (dopo tregua) | leva tariffaria
+    | pos. | THB, THD | Condizionati alla tregua confinaria |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: escluso
+    perché: 'Riga regionale ASEAN (valute e azionario locali): nessun canale dichiarato verso ^GSPC. Stessa
+      data del payroll di luglio. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  stato: promossa
+- data: '2025-07-30'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2025-07-30 | Dazio 232 rame 50% (dal 1-ago) su semilavorati/derivati (Procl. 10962) | A | volatilità
+    rame | HG=F | Front-loading COMEX; input grezzi/scrap esclusi; BIS aveva raccomandato 30% |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: escluso
+    perché: 'Dazio 232 sul rame: canale HG=F, effetto atteso sull''indice marginale; stessa data della
+      riunione FOMC. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  stato: promossa
+- data: '2025-07-22'
+  tema: geopolitical
+  fonte: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  riga: '| 2025-07-22 | Framework USA-Indonesia/Filippine: dazio ridotto al 19% | leva tariffaria | pos.
+    IDR/PHP | IDR, EIDO | Riduzione da 32%/20% a 19% |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: escluso
+    perché: 'Riga regionale ASEAN (valute e azionario locali): nessun canale dichiarato verso ^GSPC. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  stato: promossa
+- data: '2025-07-14'
+  tema: geopolitical
+  fonte: 2026-11-13/news_03.md
+  riga: '| `2025-07-14` | pos | tariff_escalation | Prima seduta dopo la lettera pubblicata sabato 12/7:
+    dazio del 30% dal 1° agosto, per fentanyl e cartelli |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: neg
+    perché: 'Lettere del 12 luglio con dazio del 30% dal 1° agosto su Messico e UE, due dei maggiori partner:
+      costi attesi più alti per le imprese USA e più incertezza → pressione al ribasso su ^GSPC. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  stato: promossa
+- data: '2025-07-07'
+  tema: geopolitical
+  fonte: 'kb:ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026)/ASEAN
+    : Sud-Est asiatico- shock geopolitici — regime ed episodi storici (2010–2026).md'
+  riga: '| 2025-07-07 | Trump conferma via lettera dazi 36% Thailandia dal 1° agosto | leva tariffaria
+    | neg. THB/equity THA | THB, THD | Conferma del rate "Liberation Day"; reazione FX regionale modesta
+    |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: escluso
+    perché: 'Riga regionale ASEAN (valute e azionario locali): nessun canale dichiarato verso ^GSPC. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  stato: promossa
+- data: '2025-05-08'
+  tema: geopolitical
+  fonte: kb:Regno Unito, shock politici e monetari — regime ed episodi storici (2016–2026)/Regno Unito-
+    shock politici e monetari — regime ed episodi storici (2016–2026).md
+  riga: '| 2025-05-08 | Taglio BoE a 4,25% | BOE | GBP ↓ lieve | `GBPUSD=X` | Voto 5–4 (riunione conclusa
+    07/05); contaminato da shock tariffe USA |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: escluso
+    perché: 'Taglio BoE: canale GBP; l''etichetta tariff_escalation viene solo dalla nota sul contagio,
+      non è un evento tariffario. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  stato: promossa
+- data: '2025-02-27'
+  tema: geopolitical
+  fonte: 2026-08-26/news_05.md
+  riga: '| `2025-02-27` | neg | tariff_escalation, valuation_derisking | Annuncio di nuovi dazi in una
+    seduta di forte de-risking del comparto tecnologico: doppio canale, commerciale e valutativo. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: neg
+    perché: 'Nuovi dazi annunciati in una seduta di de-risking del tecnologico: i due canali, commerciale
+      e valutativo, spingono nella stessa direzione → pressione al ribasso su ^GSPC. Criterio ex ante,
+      nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  stato: promossa
+- data: '2025-01-14'
+  tema: geopolitical
+  fonte: 2026-08-26/news_05.md
+  riga: '| `2025-01-14` | pos | tariff_escalation | *(episodio ereditato dalla libreria; contenuto non
+    ricostruito in questa sessione)* |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: escluso
+    perché: 'Contenuto dell''episodio non ricostruito dalla fonte: nessuna attesa documentata. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  stato: promossa
+- data: '2024-12-15'
+  tema: geopolitical
+  fonte: 2026-08-26/news_05.md
+  riga: '| `2024-12-15` | pos | tariff_escalation | *(episodio ereditato dalla libreria con etichette
+    date-locali; contenuto non ricostruito in questa sessione — resta nel campione, vedi caveat)* |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: escluso
+    perché: 'Contenuto dell''episodio non ricostruito dalla fonte: nessuna attesa documentata. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  stato: promossa
+- data: '2024-11-26'
+  tema: geopolitical
+  fonte: 2026-11-13/news_03.md
+  riga: '| `2024-11-26` | pos | tariff_escalation | Prima seduta dopo i post della sera del 25/11: dazio
+    del 25% su Messico e Canada dal primo giorno di mandato, per migranti e droga |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: neg
+    perché: 'Dazio del 25% su Messico e Canada dal primo giorno di mandato, annunciato la sera del 25
+      novembre: costi attesi più alti per i due maggiori partner → pressione al ribasso su ^GSPC. Criterio
+      ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  stato: promossa
+- data: '2019-08-12'
+  tema: geopolitical
+  fonte: 2026-08-26/news_05.md
+  riga: '| `2019-08-12` | neg | tariff_escalation, cny | Fase acuta di agosto 2019: lo yuan supera 7 per
+    dollaro e gli Stati Uniti designano la Cina manipolatrice valutaria. Il canale valutario diventa parte
+    del conflitto commerciale. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: escluso
+    perché: 'Fase acuta di agosto 2019 senza un annuncio datato quel giorno: l''evento non è identificabile.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  stato: promossa
+- data: '2019-05-31'
+  tema: geopolitical
+  fonte: 2026-11-13/news_03.md
+  riga: '| `2019-05-31` | pos | tariff_escalation | Prima seduta dopo il tweet della sera del 30/5: dazio
+    del 5% su tutte le merci messicane dal 10/6, a salire fino al 25%, finché non si ferma l''immigrazione
+    irregolare |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: neg
+    perché: 'Dazio del 5% su tutte le merci messicane dal 10 giugno, a salire fino al 25%, annunciato
+      la sera del 30 maggio: escalation verso un partner commerciale maggiore → pressione al ribasso su
+      ^GSPC. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  stato: promossa
+- data: '2018-12-26'
+  tema: geopolitical
+  fonte: 2026-08-26/news_05.md
+  riga: '| `2018-12-26` | pos | tariff_escalation | Minimo del selloff di fine 2018 e rimbalzo violento
+    sulla distensione attesa nei colloqui commerciali: episodio di esaurimento. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (minimo del selloff e rimbalzo): usarla selezionerebbe
+      l''episodio per il suo esito. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  stato: promossa
+- data: '2018-10-10'
+  tema: geopolitical
+  fonte: 2026-08-26/news_05.md
+  riga: '| `2018-10-10` | neg | tariff_escalation, valuation_derisking | Selloff globale con il canale
+    commerciale fra le cause citate: rischio di politica commerciale trasmesso all''azionario. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: escluso
+    perché: 'La riga è definita dal movimento di prezzo (selloff globale con più cause): usarla selezionerebbe
+      l''episodio per il suo esito. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  stato: promossa
+- data: '2018-07-02'
+  tema: geopolitical
+  fonte: 2026-08-26/news_05.md
+  riga: '| `2018-07-02` | neg | tariff_escalation | Vigilia dell''entrata in vigore del primo pacchetto
+    di dazi USA-Cina (6 luglio 2018): i metalli industriali scendono sull''attesa di minore domanda cinese.
+    |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: escluso
+    perché: Vigilia di un pacchetto di dazi già noto; la riga descrive i metalli industriali, nessuna
+      attesa sull'indice. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.
+  stato: promossa
+- data: '2018-06-22'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2018-06-22 | Ritorsioni UE (~$3bn: acciaio, bourbon, moto, jeans) | R | ↓ Europa | ^STOXX50E
+    | Harley-Davidson annuncia spostamento produzione |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: escluso
+    perché: 'Ritorsioni UE già annunciate: canale Europa, impatto atteso sull''indice USA trascurabile.
+      Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.'
+  stato: promossa
+- data: '2018-06-01'
+  tema: geopolitical
+  fonte: kb:Dazi e guerra commerciale USA — regime ed episodi storici (2018–2026)/Dazi e guerra commerciale
+    USA — regime ed episodi storici (2018–2026).md
+  riga: '| 2018-06-01 | Fine esenzioni 232 per UE/Canada/Messico | E | ↓ Europa | ^STOXX50E, ^GDAXI |
+    Colpo agli alleati; ritorsioni annunciate |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^GSPC
+    verso: escluso
+    perché: Riga su ^STOXX50E e ^GDAXI; stessa data del payroll di maggio, la data non è pulita per l'indice
+      USA. Criterio ex ante, nessun prezzo consultato. Revisione Claude 2026-11-25.
+  stato: promossa
