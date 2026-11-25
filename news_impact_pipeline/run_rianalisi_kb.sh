@@ -37,6 +37,7 @@ PY="$PIPE/venv/bin/python"
 DAILY="$NEWSDIR/daily_analysis"
 LOGDIR="$PIPE/logs"
 CLAUDE=${CLAUDE:-/opt/homebrew/bin/claude}
+export CLAUDE_CODE_DISABLE_ADVISOR_TOOL=1   # mai l'advisor nei job (2026-11-25): stesso modello del run, ~$1-1,5 a chiamata
 TODAY=$(date +%Y-%m-%d)
 DAY="$DAILY/$TODAY"
 LOG="$LOGDIR/rianalisi-${TODAY}.log"

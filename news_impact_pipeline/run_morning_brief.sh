@@ -42,6 +42,7 @@ PROMPT_FILE="$PIPE/news_research_prompt.md"
 # Sovrascrivibile perché la suite in tests/ possa metterci un finto `claude`.
 # launchd non la imposta.
 CLAUDE=${CLAUDE:-/opt/homebrew/bin/claude}
+export CLAUDE_CODE_DISABLE_ADVISOR_TOOL=1   # mai l'advisor nei job (2026-11-25): stesso modello del run, ~$1-1,5 a chiamata
 
 mkdir -p "$LOGDIR" "$BRIEF_DIR"
 # Come run_daily_analysis.sh: si può passare una data ISO per rigenerare a mano

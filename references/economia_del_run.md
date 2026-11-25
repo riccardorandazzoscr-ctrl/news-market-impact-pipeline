@@ -108,6 +108,18 @@ un registratore, non ne serve uno.
    costo per scheda utile e per giornata completata — comando, non un numero da
    tenere aggiornato a mano.
 
+## Mai l'advisor nei job (2026-11-25)
+
+Dal 17/11 i `claude -p` hanno iniziato a chiamare l'advisor (`advisorModel` nel settings
+utente, letto anche dai job launchd): 1-2 chiamate a run, ~$1-1,5 ciascuna, +40-50% sul
+run giornaliero (da ~$2,8 a ~$4-4,3), con lo **stesso modello** del run e nessun beneficio
+dimostrato (il parere nei transcript è cifrato). Decisione del maintainer: mai più nei job.
+Tutti gli script che lanciano `"$CLAUDE" -p` esportano `CLAUDE_CODE_DISABLE_ADVISOR_TOOL=1`
+(variabile letta dal binario, vince sul settings); `tests/test_no_advisor.py`
+(`./run_tests.sh usage`) fallisce se un job nuovo la dimentica. Verifica dopo un run:
+nessun blocco `server_tool_use` con `name: advisor` nel transcript e costo per run tornato
+vicino a ~$3.
+
 ## Proposte aperte
 
 Stato e priorità in [MEMORY.md](../MEMORY.md).

@@ -92,6 +92,9 @@ run() {   # run <etichetta> <file> [args...] — .py col venv, .sh con zsh
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "usage" ] && \
   run "consumi — $/scheda utile e $/giornata completata (R14)" tests/test_usage_report.py
 
+[ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "usage" ] && \
+  run "consumi — nessun job lancia claude -p senza spegnere l'advisor" tests/test_no_advisor.py
+
 [ "$FILTRO" = "tutto" ] || [ "$FILTRO" = "prezzi" ] && \
   run "prezzi — finestra sovrapposta, barra provvisoria, freschezza e buchi" \
       tests/test_price_updates.py

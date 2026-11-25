@@ -17,6 +17,7 @@ PY="$PIPE/venv/bin/python"
 WP="$PIPE/weekly_preview.py"
 LOGDIR="$PIPE/logs"
 CLAUDE="/opt/homebrew/bin/claude"
+export CLAUDE_CODE_DISABLE_ADVISOR_TOOL=1   # mai l'advisor nei job (2026-11-25): stesso modello del run, ~$1-1,5 a chiamata
 mkdir -p "$LOGDIR"
 
 MONDAY=$("$PY" "$WP" target-week) || exit 1

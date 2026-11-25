@@ -15,6 +15,7 @@ PY="$PIPE/venv/bin/python"
 MONTHLY="$NEWSDIR/daily_analysis/_monthly"
 LOGDIR="$PIPE/logs"
 CLAUDE="/opt/homebrew/bin/claude"
+export CLAUDE_CODE_DISABLE_ADVISOR_TOOL=1   # mai l'advisor nei job (2026-11-25): stesso modello del run, ~$1-1,5 a chiamata
 
 mkdir -p "$LOGDIR" "$MONTHLY"
 MONTH=$(date -v-1m +%Y-%m)          # mese appena concluso (BSD date, macOS)

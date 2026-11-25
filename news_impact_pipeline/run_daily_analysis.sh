@@ -54,6 +54,7 @@ LOGDIR="$PIPE/logs"
 # Sovrascrivibile per la stessa ragione di MIN_STORIES e WAIT_MAX: la suite in
 # tests/ deve poter mettere al suo posto un finto `claude`. launchd non la imposta.
 CLAUDE=${CLAUDE:-/opt/homebrew/bin/claude}
+export CLAUDE_CODE_DISABLE_ADVISOR_TOOL=1   # mai l'advisor nei job (2026-11-25): stesso modello del run, ~$1-1,5 a chiamata
 
 mkdir -p "$LOGDIR"
 # Data del run: di default oggi. Si può passare una data ISO come primo argomento
