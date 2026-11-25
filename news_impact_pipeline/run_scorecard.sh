@@ -21,6 +21,11 @@ log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >> "$LOG"; }
 
 # Lock anti-concorrenza (run manuale + launchd).
 LOCK="$LOGDIR/.lock_scorecard"
+# Il run è solo Python e dura secondi: un lock di oltre un'ora è un relitto (kill -9,
+# Mac spento) e bloccherebbe la scorecard per sempre (audit 2026-11-25).
+if [[ -d "$LOCK" && -n "$(find "$LOCK" -maxdepth 0 -mmin +60)" ]]; then
+  rmdir "$LOCK" && log "Lock orfano rimosso (più vecchio di un'ora)."
+fi
 if ! mkdir "$LOCK" 2>/dev/null; then
   log "SKIP: altro run scorecard in corso (lock presente)."
   exit 0

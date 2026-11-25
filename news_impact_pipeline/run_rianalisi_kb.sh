@@ -193,7 +193,9 @@ NEWSIMPACT_DB="$DBM" "$CLAUDE" -p "$PROMPT" --model "$MODEL" --effort "$EFFORT" 
   --output-format json </dev/null > "$RAW" 2>>"$LOG" &
 PID_HEADLESS=$!
 ( t=0; while (( t < RUN_MAX )); do sleep 1; t=$((t+1)); kill -0 $PID_HEADLESS 2>/dev/null || exit 0; done
-  kill -TERM $PID_HEADLESS 2>/dev/null ) &
+  # KILL dopo la grazia, come nel giornaliero: se Claude ignora il TERM, `wait` resterebbe
+  # appeso col lock condiviso, e il giornaliero di domani uscirebbe in SKIP (audit 2026-11-25).
+  kill -TERM $PID_HEADLESS 2>/dev/null; sleep 20; kill -KILL $PID_HEADLESS 2>/dev/null ) &
 PID_GUARDIANO=$!
 wait $PID_HEADLESS
 RC=$?

@@ -30,6 +30,11 @@ if [[ -f "$DONE" ]]; then
 fi
 
 LOCK="$LOGDIR/.lock_monthly"
+# Lock di oltre 3 ore = relitto di un kill -9 o di un Mac spento (audit 2026-11-25),
+# come in run_weekly_preview.sh: senza pulizia il mensile uscirebbe in SKIP per sempre.
+if [[ -d "$LOCK" && -n "$(find "$LOCK" -maxdepth 0 -mmin +180)" ]]; then
+  rmdir "$LOCK" && log "Lock orfano rimosso (più vecchio di 3 ore)."
+fi
 if ! mkdir "$LOCK" 2>/dev/null; then
   log "SKIP: altro run mensile in corso (lock presente)."
   exit 0

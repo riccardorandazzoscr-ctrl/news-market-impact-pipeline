@@ -146,6 +146,20 @@ check "! grep -q 'PROMPT START' '$VISTO'" "i marcatori restano fuori"
 check "! grep -q 'Changelog' '$VISTO'" "le note italiane di testata restano fuori"
 teardown
 
+print -- "\n5b. Lock orfano (kill -9, Mac spento) → rimosso, il brief riparte"
+setup
+mkdir -p "$LOCK"; touch -t 202609010000 "$LOCK"
+RC=$(esegui pubblica)
+check "[[ -f '$BRIEF' ]]" "il briefing viene prodotto lo stesso" "rc=$RC"
+check "grep -q 'Lock orfano rimosso' '$LOG'" "lo dice nel log"
+teardown
+setup
+mkdir -p "$LOCK"
+RC=$(esegui pubblica)
+check "[[ ! -f '$BRIEF' ]]" "un lock giovane (run in corso) resta rispettato"
+check "grep -q 'SKIP: altro run' '$LOG'" "ed esce con SKIP"
+teardown
+
 print -- "\n6. Catena: dopo DONE gira l'aggiornamento prezzi, poi l'analisi"
 OGGI=$(date +%Y-%m-%d)
 setup_catena() {

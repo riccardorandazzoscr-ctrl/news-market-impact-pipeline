@@ -101,11 +101,26 @@ fi
 
 # --- Lock (evita doppio run watchpath + backstop giornaliero) --------------
 LOCK="$LOGDIR/.lock_index"
+# Un run vero sta sotto INDEX_MAX + grazia (~61 min): oltre 90 minuti il lock è un
+# relitto (kill -9, Mac spento) e l'indicizzazione uscirebbe in SKIP per sempre.
+if [[ -d "$LOCK" && -n "$(find "$LOCK" -maxdepth 0 -mmin +90)" ]]; then
+  rmdir "$LOCK" && log "Lock orfano rimosso (più vecchio di 90 minuti)."
+fi
 if ! mkdir "$LOCK" 2>/dev/null; then
   log "SKIP: altro run di indicizzazione in corso (lock presente)."
   exit 0
 fi
-trap 'rmdir "$LOCK" 2>/dev/null' EXIT
+PID_HEADLESS=""; PID_GUARDIANO=""
+# Come negli altri job: un run interrotto ha comunque un consumo, si registra prima
+# di togliere il grezzo.
+trap '[[ -n "$PID_GUARDIANO" ]] && kill "$PID_GUARDIANO" 2>/dev/null
+      [[ -n "$PID_HEADLESS" ]] && kill "$PID_HEADLESS" 2>/dev/null
+      if [[ -n "${RAW:-}" && -f "${RAW:-}" ]]; then
+        "$PY" "$PIPE/record_claude_usage.py" "$RAW" "$LOG" "$LOGDIR/usage_index.csv" \
+          "$(date +%Y-%m-%d)" indexkb "$MODEL" interrotto 2>/dev/null
+        /bin/rm -f "$RAW"
+      fi
+      rmdir "$LOCK" 2>/dev/null' EXIT
 
 log "START: studi da indicizzare → ${UNINDEXED[*]}"
 
@@ -148,10 +163,30 @@ EOF
 
 log "Lancio Claude Code headless (model=$MODEL)."
 cd "$NEWSDIR"
+# Watchdog come negli altri job (audit 2026-11-25): questo script gira anche DENTRO il
+# run giornaliero (backstop), prima del suo watchdog. Un Claude appeso qui, come le 7 ore
+# del 2026-08-05, terrebbe occupato il lock del giornaliero e niente report.
+# Nome proprio, non RUN_MAX: il giornaliero e la suite usano quello per sé.
+INDEX_MAX=${INDEX_MAX:-3600}
+# --output-format json: turni e costo finiscono in logs/usage_index.csv (audit
+# 2026-11-25: era l'unico job col modello senza registro dei consumi). Il testo
+# finale lo riporta nel log record_claude_usage.py, come prima.
+RAW="$LOGDIR/.raw_index_$(date +%Y%m%d%H%M%S).json"
 "$CLAUDE" -p "$PROMPT" --model "$MODEL" --permission-mode bypassPermissions \
-  </dev/null >> "$LOG" 2>&1
+  --output-format json </dev/null > "$RAW" 2>>"$LOG" &
+PID_HEADLESS=$!
+( t=0; while (( t < INDEX_MAX )); do sleep 1; t=$((t+1)); kill -0 $PID_HEADLESS 2>/dev/null || exit 0; done
+  log "TIMEOUT: Claude non è tornato entro ${INDEX_MAX}s, processo ucciso."
+  kill -TERM $PID_HEADLESS 2>/dev/null; sleep 20; kill -KILL $PID_HEADLESS 2>/dev/null ) &
+PID_GUARDIANO=$!
+wait $PID_HEADLESS
 RC=$?
+kill $PID_GUARDIANO 2>/dev/null
+PID_GUARDIANO=""; PID_HEADLESS=""
 log "Claude exit code $RC."
+"$PY" "$PIPE/record_claude_usage.py" "$RAW" "$LOG" "$LOGDIR/usage_index.csv" \
+  "$(date +%Y-%m-%d)" indexkb "$MODEL" || log "WARN: parsing usage fallito."
+/bin/rm -f "$RAW"
 if (( RC != 0 )); then
   log "ERROR: indicizzazione incompleta."
   exit "$RC"

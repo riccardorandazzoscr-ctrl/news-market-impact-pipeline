@@ -70,6 +70,12 @@ if brief_completo; then
 fi
 
 LOCK="$LOGDIR/.lock_brief"
+# Un run vero sta sotto RUN_MAX + grazia (~31 min): un lock di oltre 45 minuti è rimasto
+# da un kill -9 o da un Mac spento, e senza questa pulizia il brief uscirebbe in SKIP
+# ogni mattina, in silenzio (audit 2026-11-25). Stessa soglia del cancello dell'analisi.
+if [[ -d "$LOCK" && -n "$(find "$LOCK" -maxdepth 0 -mmin +45)" ]]; then
+  rmdir "$LOCK" && log "Lock orfano rimosso (più vecchio di 45 minuti)."
+fi
 if ! mkdir "$LOCK" 2>/dev/null; then
   log "SKIP: altro run del briefing in corso (lock presente)."
   exit 0

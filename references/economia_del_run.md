@@ -29,7 +29,8 @@ universale — non trattarlo come un vincolo da imporre in un prompt.
 
 **Registro dei consumi** — uno schema unico, un file per job (R14, 2026-09-23):
 `news_impact_pipeline/logs/usage.csv` (giornaliero), `usage_brief.csv` (briefing),
-`usage_monthly.csv` (mensile). Ogni riga: identità (data, job, modello, tentativo),
+`usage_monthly.csv` (mensile), `usage_weeklypreview.csv` (anteprima), `usage_index.csv`
+(indicizzazione KB, dal 2026-11-25; prima il suo costo non era registrato). Ogni riga: identità (data, job, modello, tentativo),
 stato (`ok` / `incompleto` / `errore` / `interrotto` — mai assente: un tentativo
 fallito produce comunque una riga, i campi che non si conoscono restano **vuoti**,
 non `0`), turni, token, costo riportato dal client. Storico pre-R14 (schema a 8
