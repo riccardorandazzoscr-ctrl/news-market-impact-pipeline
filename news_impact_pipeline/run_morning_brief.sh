@@ -118,6 +118,9 @@ title and for the output filename.
 
 $PROMPT"
 
+# Causa di un guasto: solo le righe di questo tentativo (stesso motivo del run giornaliero).
+LOG_INIZIO=$(( $(wc -l < "$LOG" 2>/dev/null || echo 0) + 1 ))
+nel_tentativo() { tail -n +$LOG_INIZIO "$LOG" 2>/dev/null | grep "$@"; }
 log "Lancio Claude Code headless (model=$MODEL, effort=$EFFORT, tetto ${RUN_MAX}s)."
 cd "$NEWSDIR"
 RAW="$LOGDIR/.raw_brief_${TODAY}.json"
@@ -161,13 +164,13 @@ rm -f "$RAW"
 # due deve passare in silenzio: senza brief, alle 08:15 non c'è analisi.
 if ! brief_completo; then
   MSG="briefing $TODAY NON prodotto (exit $RC)."
-  if grep -q "TIMEOUT:" "$LOG" 2>/dev/null; then
+  if nel_tentativo -q "TIMEOUT:"; then
     MSG="Claude appeso oltre ${RUN_MAX}s e ucciso dal watchdog: briefing $TODAY non prodotto. Rilancia: run_morning_brief.sh $TODAY"
-  elif grep -qi "Invalid authentication\|401\|Not logged in\|Please run /login" "$LOG" 2>/dev/null; then
+  elif nel_tentativo -qi "Invalid authentication\|401\|Not logged in\|Please run /login"; then
     MSG="login Claude scaduto: esegui 'claude /login'. Briefing $TODAY non prodotto."
-  elif grep -qi "session limit\|usage limit" "$LOG" 2>/dev/null; then
+  elif nel_tentativo -qi "session limit\|usage limit"; then
     MSG="limite di sessione Claude: briefing $TODAY non prodotto. Rilancia dopo il reset: run_morning_brief.sh $TODAY"
-  elif grep -qi "529\|Overloaded\|rate.limit\|500 Internal\|503" "$LOG" 2>/dev/null; then
+  elif nel_tentativo -qi "529\|Overloaded\|rate.limit\|500 Internal\|503"; then
     MSG="API sovraccarica (529/5xx): briefing $TODAY non prodotto. Rilancia: run_morning_brief.sh $TODAY"
   fi
   log "ERROR: $MSG"

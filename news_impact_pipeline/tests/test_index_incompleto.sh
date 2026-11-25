@@ -337,6 +337,16 @@ check "grep -q 'FALLITO\|limite di sessione' '$LOG'" "logga il fallimento pieno"
 check "grep -q 'Invio su Telegram del solo briefing' '$LOG'" "manda comunque il brief grezzo"
 teardown
 
+# ------------------- 8b. la causa si legge solo nelle righe del tentativo in corso
+print -- "\n8b. Ritentativo con un 529 dopo un tentativo morto per limite di sessione"
+setup
+print -r -- "You've hit your session limit · resets 8pm (Europe/Rome)" > "$LOG"
+RC=$(run_finale 1 "" 0 "API Error: 529 Overloaded")
+check "[[ $RC -eq 1 ]]" "esce con 1" "rc=$RC"
+check "grep -q 'ERROR: API sovraccarica' '$LOG'" "dà la causa di questo tentativo (529)"
+check "! grep -q 'ERROR: limite di sessione' '$LOG'" "non ripesca il limite del tentativo prima"
+teardown
+
 # ------------------------------------- 9. regressione sui 105 _index.md reali
 print -- "\n9. Regressione: l'archivio vero passa per lo script vero"
 # Ogni file passa per lo SCRIPT, non per una ri-scrittura del controllo: un test che

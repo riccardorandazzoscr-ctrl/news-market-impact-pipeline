@@ -537,6 +537,11 @@ if RETE_S=$(/bin/zsh "$PIPE/attendi_rete.sh"); then
 else
   log "WARN: API non raggiungibile dopo ${ATTESA_RETE_MAX:-900}s: lancio comunque."
 fi
+# La causa di un guasto si cerca solo nelle righe di QUESTO tentativo: il log è del
+# giorno e un "session limit" del run delle 08:15 darebbe la causa sbagliata a un 529
+# del ritentativo delle 10:15.
+LOG_INIZIO=$(( $(wc -l < "$LOG" 2>/dev/null || echo 0) + 1 ))
+nel_tentativo() { tail -n +$LOG_INIZIO "$LOG" 2>/dev/null | grep "$@"; }
 log "Lancio Claude Code headless (model=$MODEL, effort=$EFFORT, tetto ${RUN_MAX}s)."
 cd "$NEWSDIR"
 # --output-format json: oltre al testo finale restituisce turni, token e costo.
@@ -596,13 +601,13 @@ rm -f "$RAW"
 #               scritto: successo il 2026-07-10) → WARN e si prosegue.
 if [[ ! -f "$INDEX" ]]; then
   MSG="run $TODAY FALLITO (exit $RC, _index.md assente)."
-  if grep -q "TIMEOUT:" "$LOG" 2>/dev/null; then
+  if nel_tentativo -q "TIMEOUT:"; then
     MSG="Claude appeso oltre ${RUN_MAX}s e ucciso dal watchdog senza aver scritto nulla: run $TODAY non prodotto. Rilancia: run_daily_analysis.sh $TODAY"
-  elif grep -qi "Invalid authentication\|401\|Not logged in\|Please run /login" "$LOG" 2>/dev/null; then
+  elif nel_tentativo -qi "Invalid authentication\|401\|Not logged in\|Please run /login"; then
     MSG="login Claude scaduto: esegui 'claude /login'. Run $TODAY non prodotto."
-  elif grep -qi "session limit\|usage limit" "$LOG" 2>/dev/null; then
+  elif nel_tentativo -qi "session limit\|usage limit"; then
     MSG="limite di sessione Claude: run $TODAY non prodotto. Rilancia dopo il reset: run_daily_analysis.sh $TODAY"
-  elif grep -qi "529\|Overloaded\|rate.limit\|500 Internal\|503" "$LOG" 2>/dev/null; then
+  elif nel_tentativo -qi "529\|Overloaded\|rate.limit\|500 Internal\|503"; then
     MSG="API sovraccarica (529/5xx): run $TODAY non prodotto. Rilancia: run_daily_analysis.sh $TODAY"
   fi
   log "ERROR: $MSG"
@@ -624,10 +629,10 @@ if [[ "$FASE" == "triage_completato" || "$FASE" == "schede_validate" ]]; then
   # L'ora di reset la scrive Claude stesso nell'ultima riga utile del log
   # ("You've hit your session limit · resets 12:40pm (Europe/Rome)"): riportarla
   # evita il rilancio a vuoto prima che il limite si sia azzerato.
-  if grep -q "TIMEOUT:" "$LOG" 2>/dev/null; then
+  if nel_tentativo -q "TIMEOUT:"; then
     MSG="watchdog: Claude appeso oltre ${RUN_MAX}s, ucciso a metà run. Analisi $TODAY INCOMPLETA (${#PARZIALI} schede prodotte, $PENDENTI notizie non triate). Rilancia: run_daily_analysis.sh $TODAY"
-  elif grep -qi "session limit\|usage limit" "$LOG" 2>/dev/null; then
-    RESET=$(grep -o 'resets [0-9:apm]*' "$LOG" 2>/dev/null | tail -1)
+  elif nel_tentativo -qi "session limit\|usage limit"; then
+    RESET=$(nel_tentativo -o 'resets [0-9:apm]*' | tail -1)
     MSG="limite di sessione Claude a metà run: analisi $TODAY INCOMPLETA (${#PARZIALI} schede, $PENDENTI notizie non triate). Rilancia${RESET:+ dopo le ${RESET#resets }}: run_daily_analysis.sh $TODAY"
   fi
   log "ERROR: $MSG"
