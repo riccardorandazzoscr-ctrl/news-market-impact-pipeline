@@ -17,9 +17,9 @@ Sono le tre eccezioni alla regola "gli indicatori calcolati non si persistono": 
 - ⚠ **Non descriverlo come "non in DB" / "vuoto" / "mensile" / "placeholder".**
 - **Fonte**: Stooq, rendimenti benchmark giornalieri (`10YITY.B`, `10YDEY.B`), via
   `fetch_daily_spread.py` (richiede `STOOQ_API_KEY` in `~/Claude/.env`).
-- **Legacy**: `fetch_fred_data.py` (serie FRED **mensili** `IRLTLT01ITM156N` /
-  `IRLTLT01DEM156N`) era la fonte precedente — resta solo come fallback, il fetch
-  giornaliero Stooq la supera e sovrascrive lo stesso ticker.
+- **Legacy**: le serie FRED **mensili** `IRLTLT01ITM156N` / `IRLTLT01DEM156N` erano la
+  fonte precedente. Lo script (`fetch_fred_data.py`) è stato tolto il 2026-11-25: non è
+  un fallback, darebbe una serie mensile al posto di quella giornaliera.
 - **Refresh**: né FRED né Stooq vengono toccati dall'incrementale giornaliero
   `update_market_data.py`. Va rilanciato `fetch_daily_spread.py` a mano.
 

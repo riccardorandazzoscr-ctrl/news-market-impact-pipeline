@@ -387,21 +387,25 @@ log "START: avvio lavoro su $TODAY (prima fase incompleta: $FASE)."
 if (( SERVE_AGENTE )); then   # ⬇⬇ da qui a "fine del tratto con l'agente" ⬇⬇
 
 # --- Salute DB: ricostruisci se incompleto ---------------------------------
-DBCHECK=$("$PY" - <<'PY'
+# Soglia = metà del registro `assets`, non un numero scritto a mano (era 44 con 87
+# asset, audit 2026-11-25): sotto la metà il DB è rotto e si ricostruisce. Un singolo
+# ticker vuoto non vale 15 anni di download: lo segnala `update_market_data.py --check`.
+read -r DBCHECK DBMIN <<< "$("$PY" - <<'PY'
 import sqlite3, os
 p = os.path.expanduser('~/Claude/mercati_finanza/market_data/market_data.db')
 try:
     c = sqlite3.connect(p)
     t = c.execute("SELECT COUNT(DISTINCT ticker) FROM prices").fetchone()[0]
-    print(t)
+    a = c.execute("SELECT COUNT(*) FROM assets").fetchone()[0]
+    print(t, max(a // 2, 1))
 except Exception:
-    print(0)
+    print(0, 1)
 PY
-)
-if [[ "${DBCHECK:-0}" -lt 44 ]]; then
-  log "DB incompleto (ticker=$DBCHECK<44). Ricostruisco (bootstrap + spread daily)."
+)"
+if (( ${DBCHECK:-0} < ${DBMIN:-1} )); then
+  log "DB incompleto (ticker=$DBCHECK<$DBMIN, metà del registro). Ricostruisco (bootstrap + spread daily)."
   "$PY" "$PIPE/bootstrap_market_data.py" >> "$LOG" 2>&1
-  # MAI fetch_fred_data.py come fallback qui: è la fonte legacy, darebbe una serie
+  # MAI la serie FRED come fallback qui (script legacy tolto il 2026-11-25): darebbe una serie
   # MENSILE al posto di quella giornaliera senza segnalarlo (references/quando_si_rompe.md).
   # Se il daily fallisce, si resta senza BTP_BUND_SPREAD aggiornato: procedura manuale
   # in references/serie_derivate.md, non un fallback automatico degradato.

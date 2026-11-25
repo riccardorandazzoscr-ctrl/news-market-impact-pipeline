@@ -115,6 +115,16 @@ def diagnostica(conn, oggi, anni=2):
                             f"[freschezza] {ticker:<14} fermo al {giorni[-1]} "
                             f"({ritardo}g fa, normale ≤{normale}g)"))
 
+    # Il giro sopra parte da `prices`: un ticker del registro senza nemmeno una riga
+    # (simbolo Yahoo sbagliato, download mai riuscito) non lo vedeva nessuno, e il
+    # vecchio conteggio dei ticker del run giornaliero nemmeno (audit 2026-11-25).
+    for (ticker,) in conn.execute(
+            "SELECT ticker FROM assets WHERE ticker NOT IN "
+            "(SELECT DISTINCT ticker FROM prices) ORDER BY ticker"):
+        problemi.append(Problema("copertura", ticker,
+                        f"[copertura]  {ticker:<14} nel registro assets ma senza "
+                        f"nessuna seduta in DB"))
+
     for ticker, n, prima, ultima in conn.execute(
             "SELECT ticker, COUNT(*), MIN(date), MAX(date) FROM prices "
             "WHERE close IS NULL AND adj_close IS NULL GROUP BY ticker"):

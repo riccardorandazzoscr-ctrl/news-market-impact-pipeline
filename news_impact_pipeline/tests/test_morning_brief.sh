@@ -55,9 +55,9 @@ setup() {
   cp "$SCRIPT" "$FPIPE/run.sh"
   cp "$PIPE/news_research_prompt.md" "$FPIPE/news_research_prompt.md"
   cp "$PIPE/record_claude_usage.py" "$FPIPE/record_claude_usage.py"
-  # Il venv finto è solo un passacarte al python di sistema: al parser dei
-  # consumi non serve nessuna dipendenza esterna.
-  { print -r -- '#!/bin/zsh'; print -r -- 'exec /usr/bin/python3 "$@"' } > "$FPIPE/venv/bin/python"
+  cp "$PIPE/parse_briefing.py" "$FPIPE/parse_briefing.py"
+  # Il venv finto passa al python del venv vero: il parser del brief vuole bs4.
+  { print -r -- '#!/bin/zsh'; print -r -- "exec '$PIPE/venv/bin/python' \"\$@\"" } > "$FPIPE/venv/bin/python"
   chmod +x "$FPIPE/venv/bin/python"
 
   # --- finto `claude -p`, pilotato da variabili d'ambiente ---
@@ -69,7 +69,7 @@ print -r -- "$2" > "$FAKE_VISTO"
 if [[ -n "${FAKE_PUBBLICA:-}" ]]; then
   { print -r -- "<html><body>"
     for i in 1 2 3; do
-      print -r -- "<h2>International</h2><div class=\"story\"><h3>N$i</h3><p>T.</p></div>"
+      print -r -- "<section><h2>International</h2><div class=\"story\"><h3>N$i</h3><p>T.</p></div></section>"
     done
     print -r -- "</body></html>" } > "$FAKE_BRIEF"
 fi
@@ -91,7 +91,7 @@ esegui() {
 
 scrivi_brief_completo() {
   { print -r -- "<html><body>"
-    print -r -- "<div class=\"story\"><h3>Vecchia</h3></div>"
+    print -r -- "<section><h2>International</h2><div class=\"story\"><h3>Vecchia</h3></div></section>"
     print -r -- "</body></html>" } > "$BRIEF"
 }
 
@@ -134,6 +134,14 @@ print -r -- "<html><body><div class=\"story\">" > "$BRIEF"   # nessuna chiusura
 RC=$(esegui "" 0)
 check "[[ $RC -ne 0 ]]" "non lo accetta come valido" "rc=$RC"
 check "[[ -f '$VISTO' ]]" "riprova a produrlo invece di uscire con SKIP"
+teardown
+
+print -- "\n4b. Storie fuori da <section>: il parser ne estrae zero → non è un brief valido"
+setup
+print -r -- '<html><body><div class="story"><h3>X</h3></div></body></html>' > "$BRIEF"
+RC=$(esegui "" 0)
+check "[[ -f '$VISTO' ]]" "riprova a produrlo invece di uscire con SKIP"
+check "! grep -q 'SKIP' '$LOG'" "non lo dichiara già presente"
 teardown
 
 print -- "\n5. Il prompt passato è il blocco canonico, non il file intero"

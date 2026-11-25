@@ -275,8 +275,8 @@ sqlite3 market_data/market_data.db "SELECT COUNT(*) FROM assets;"
 - `BTP_BUND_SPREAD` **va ricostruito a mano**: il download automatico da Stooq non
   funziona più. Procedura in [serie_derivate.md](serie_derivate.md).
 
-⚠ **Non usare `fetch_fred_data.py`** per ricostruire lo spread: è la fonte **legacy** e
-darebbe una serie **mensile** al posto di quella giornaliera, senza segnalarlo.
+⚠ **Niente serie FRED** per ricostruire lo spread: darebbe una serie **mensile** al posto di
+quella giornaliera, senza segnalarlo (il vecchio `fetch_fred_data.py` è stato tolto il 2026-11-25).
 
 **Protezione mai implementata** (resta una buona idea): un dump CSV periodico, o una
 copia `.db.bak` **fuori** dalla cartella di lavoro, così uno spostamento di file non

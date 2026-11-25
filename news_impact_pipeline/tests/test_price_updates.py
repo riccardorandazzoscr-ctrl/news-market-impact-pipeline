@@ -146,6 +146,13 @@ class Diagnosi(unittest.TestCase):
         self.assertIn("[copertura]  BUCO", testo)
         self.assertIn("[no prezzo]  ROTTO", testo)
 
+    def test_ticker_del_registro_senza_nessuna_seduta(self):
+        self.serie("SANO", 1100)
+        self.conn.execute("INSERT INTO assets VALUES ('VUOTO','x','equity','US','USD','yfinance','x')")
+        testo = "\n".join(pr.testo for pr in umd.diagnostica(self.conn, OGGI))
+        self.assertIn("[copertura]  VUOTO", testo)
+        self.assertNotIn("SANO", testo)
+
     def test_strumento_giovane_soglia_fissa_invece_che_dedotta(self):
         # meno di 250 sedute prima della finestra: la soglia non puo' venire
         # dalla finestra stessa, o il buco alzerebbe la propria soglia.

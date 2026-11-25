@@ -6,7 +6,7 @@ Scarica i rendimenti **giornalieri** dei titoli di Stato 10Y di Italia e Germani
 da Stooq, calcola lo spread BTP-Bund in basis points e lo salva nel DB sotto il
 ticker BTP_BUND_SPREAD — sostituendo la vecchia serie FRED mensile.
 
-Perché: la serie FRED (fetch_fred_data.py) è mensile, inadatta a misurare la
+Perché: la serie FRED (vecchio fetch_fred_data.py, tolto) è mensile, inadatta a misurare la
 frammentazione eurozona su finestre giornaliere (event study daily, shock periferia).
 Stooq fornisce i due rendimenti 10Y daily; lo spread è BTP10Y − Bund10Y, in bps.
 

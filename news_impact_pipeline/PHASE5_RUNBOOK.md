@@ -355,7 +355,7 @@ un problema; l'oscurità sì. Regole:
 > `~/Claude/mercati_finanza/news_impact_pipeline/PHASE5_RUNBOOK.md`: genera il digest di triage,
 > tria tutte le notizie presenti (subset triato), e produci una scheda di event study completa
 > per ciascuna notizia tenuta in `~/Claude/mercati_finanza/daily_analysis/<oggi>/`. Se il DB mercati
-> è vuoto, ricostruiscilo prima con bootstrap + spread daily (MAI fetch_fred_data.py,
+> è vuoto, ricostruiscilo prima con bootstrap + spread daily (MAI le serie FRED mensili,
 > vedi `references/quando_si_rompe.md`). **Rispetta la sezione "Stile e chiarezza" del
 > runbook: linka le sigle al glossario comune (aggiungendo lì quelle nuove), spiega i
 > meccanismi causali, interpreta i numeri a parole — preferisci la chiarezza alla

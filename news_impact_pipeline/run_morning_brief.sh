@@ -59,10 +59,12 @@ log() { echo "[$(date '+%Y-%m-%d %H:%M:%S')] $*" >> "$LOG"; }
 brief_completo() {
   [[ -f "$BRIEF" ]] || return 1
   grep -q '</body>' "$BRIEF" 2>/dev/null || return 1
-  local n
-  n=$(grep -o 'class="story"' "$BRIEF" 2>/dev/null | wc -l | tr -d ' ')
-  (( n >= 1 ))
+  (( $(conta_storie) >= 1 ))
 }
+# Il parser VERO, come il cancello `input_validato` dell'analisi (audit 2026-11-25): un
+# grep su class="story" accettava un HTML senza <section> da cui il parser estrae zero
+# notizie, e un rilancio usciva con SKIP invece di rifarlo.
+conta_storie() { "$PY" "$PIPE/parse_briefing.py" --file "$BRIEF" --count 2>/dev/null || echo 0; }
 
 if brief_completo; then
   log "SKIP: briefing $TODAY già presente e completo."
@@ -176,7 +178,7 @@ fi
 # Stile unico della pipeline (stile.py): sostituisce solo il <style> del modello; tag,
 # classi e testo restano identici, quindi l'impronta del briefing non cambia.
 "$PY" "$PIPE/stile.py" brief "$BRIEF" >> "$LOG" 2>&1 || log "WARN: stile non applicato (brief valido comunque)."
-STORIE=$(grep -o 'class="story"' "$BRIEF" | wc -l | tr -d ' ')
+STORIE=$(conta_storie)
 log "DONE briefing $TODAY pubblicato ($STORIE notizie): $BRIEF"
 
 # --- Catena: prezzi, poi analisi ---------------------------------------------
