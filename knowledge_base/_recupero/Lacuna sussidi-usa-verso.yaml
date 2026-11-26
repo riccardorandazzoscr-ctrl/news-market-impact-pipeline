@@ -1,0 +1,781 @@
+research: lacuna sussidi-usa-verso (macro_data, jobless_claims, rif ^TNX; sotto-tema locale)
+voci:
+- data: '2026-11-19'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: 'Le richieste continuative contano più delle iniziali quando le iniziali restano basse ma il riassorbimento
+    rallenta. È accaduto nel 2024-08-01 (continuative a 1,877 milioni, massimo da novembre 2021), nel
+    2025-11-20 (1,974 milioni, sopra le 1,95 attese) e nel 2026-11-19 (+70.000 a 1,763 milioni con '
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2026-11-12'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2026-11-12 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 07/11/2026: 200.000 contro 195.000 attese; continuative 1,697 milioni contro 1,71\[98\]\[99\] |
+    Scarto +5.000 (FXStreet; Epoch Times). Contesto: DXY a 103,08, massimo dell''anno, "as Fed hike bets
+    bui'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2026-11-05'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2026-11-05 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 31/10/2026: 189.000 contro 196.000 attese; continuative 1,718 milioni\[97\] | Scarto -7.000 (FXStreet).
+    Rialzo della Bank of England al 4% nella stessa seduta (FXStreet, titoli correlati).\[97\] |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2026-07-23'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2026-07-23 | IEF | neg | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 18/07/2026: 187.000 contro 212.000 attese; continuative 1,796 milioni\[94\] | Sorpresa -25.000,
+    minimo dal 1969 (FXStreet; Bloomberg con consenso 210.000).\[94\]\[95\] Alle 08:30 anche l''indice
+    di attivi'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: pos
+    perché: 'Richieste iniziali sotto il consenso oltre la soglia di rumore (circa 10.000): mercato del
+      lavoro più solido, attesa di rendimenti in rialzo. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2026-05-07'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2026-05-07 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 02/05/2026: 200.000 contro 205.000 attese\[93\] | Scarto -5.000 (Reuters via News Tribune). Payroll
+    di aprile il giorno dopo (attesi +62.000).\[93\] Altri dati da verificare. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2026-04-23'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: 'La tesi centrale è che la soglia di rilevanza delle richieste iniziali non è fissa: dipende dal
+    regime. In un mercato del lavoro stabile (2018-2019, 2023, gran parte del 2026) uno scarto entro 10.000
+    unità dal consenso è rumore. Lo confermano le release del 2026-04-23 (214.000 contro 212.000) e del '
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2026-04-16'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2026-04-16 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    all''11/04/2026: 207.000 contro 215.000 attese; continuative 1,818 milioni\[90\] | Scarto -8.000 (FXStreet).
+    Altri dati da verificare. |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2026-03-19'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2026-03-19 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 14/03/2026: 205.000 contro 215.000 attese; continuative 1,857 milioni\[85\]\[88\] | Scarto -10.000,
+    al limite della soglia (FXStreet; Trading Economics).\[88\]\[89\] Philadelphia Fed da verificare.
+    L'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2026-03-12'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2026-03-12 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 07/03/2026: 213.000 contro 215.000 attese; continuative 1,850 milioni\[86\]\[87\] | Scarto -2.000
+    (Reuters via Investing.com). Fase di timori dopo i payroll negativi di febbraio (amplificatore attivo'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2026-03-05'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2026-03-05 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 28/02/2026: 213.000 contro 215.000 attese; continuative 1,868 milioni (+46.000)\[25\] contro 1,850\[85\]
+    | Scarto -2.000 (FXStreet).\[25\] Continuative sopra le attese.\[85\] No-look-ahead: i payroll'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2026-01-29'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2026-01-29 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 24/01/2026: 209.000 contro 205.000 attese; continuative 1,827 milioni contro 1,860\[72\] | Scarto
+    +4.000 (Trading Economics). Altri dati della seduta da verificare; shutdown parziale dal 31/01.\[83\]'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2026-01-22'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: 'Dove l''event study è affidabile e dove no. È affidabile come strumento di **conteggio e datazione**:
+    le date sono verificate, quasi sempre giovedì con le eccezioni documentate (mercoledì prefestivi di
+    Thanksgiving e di Capodanno), e il verso è assegnato ex ante. È poco affidabile per stimare **rendi'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: pos
+    perché: 'Richieste iniziali sotto il consenso oltre la soglia di rumore (circa 10.000): mercato del
+      lavoro più solido, attesa di rendimenti in rialzo. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2025-12-31'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2025-12-31 | IEF | neg | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 27/12/2025: 199.000 contro 220.000 attese (sondaggio WSJ); continuative 1,866 milioni | Release
+    di mercoledì per il festivo di Capodanno (calendario FRED; UPI), seduta di reazione = mercoledì 31/12\[79\]'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: pos
+    perché: 'Richieste iniziali sotto il consenso oltre la soglia di rumore (circa 10.000): mercato del
+      lavoro più solido, attesa di rendimenti in rialzo. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2025-11-26'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2025-11-26 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 22/11/2025: 216.000 contro 225.000 attese; continuative 1,960 milioni\[76\]\[77\] | Release di
+    mercoledì per Thanksgiving (DOL, PDF del 26/11/2025; Reuters), seduta di reazione = mercoledì.\[76\]\[78'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2025-11-20'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: 'Le richieste continuative contano più delle iniziali quando le iniziali restano basse ma il riassorbimento
+    rallenta. È accaduto nel 2024-08-01 (continuative a 1,877 milioni, massimo da novembre 2021), nel
+    2025-11-20 (1,974 milioni, sopra le 1,95 attese) e nel 2026-11-19 (+70.000 a 1,763 milioni con '
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: escluso
+    perché: 'Prima release dopo lo shutdown, payroll di settembre usciti alla stessa ora: segnali opposti,
+      nessun verso netto. Criterio ex ante sul solo scarto dichiarato, nessun prezzo consultato. Revisione
+      Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2025-09-11'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: 'Dove l''event study è affidabile e dove no. È affidabile come strumento di **conteggio e datazione**:
+    le date sono verificate, quasi sempre giovedì con le eccezioni documentate (mercoledì prefestivi di
+    Thanksgiving e di Capodanno), e il verso è assegnato ex ante. È poco affidabile per stimare **rendi'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neg
+    perché: 'Richieste iniziali sopra il consenso oltre la soglia di rumore: mercato del lavoro più debole,
+      attesa di rendimenti in calo. Stesso giorno CPI +0,4% m/m: il segno resta quello delle richieste,
+      come nella research. Criterio ex ante sul solo scarto dichiarato, nessun prezzo consultato. Revisione
+      Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2024-10-10'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: 'Dove l''event study è affidabile e dove no. È affidabile come strumento di **conteggio e datazione**:
+    le date sono verificate, quasi sempre giovedì con le eccezioni documentate (mercoledì prefestivi di
+    Thanksgiving e di Capodanno), e il verso è assegnato ex ante. È poco affidabile per stimare **rendi'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: escluso
+    perché: 'Sorpresa +28.000 attribuita a uragano Helene e sciopero Boeing, CPI più alto lo stesso giorno:
+      illeggibile. Criterio ex ante sul solo scarto dichiarato, nessun prezzo consultato. Revisione Claude
+      2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2024-01-18'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2024-01-18 | IEF | neg | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 13/01/2024: 187.000 contro 207.000 attese | Sorpresa -20.000, minimo da settembre 2022 (Seeking
+    Alpha); stagionalità di gennaio. Housing starts e Philadelphia Fed da verificare.\[64\] |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: pos
+    perché: 'Richieste iniziali sotto il consenso oltre la soglia di rumore (circa 10.000): mercato del
+      lavoro più solido, attesa di rendimenti in rialzo. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2023-12-07'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2023-12-07 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 02/12/2023: 220.000 contro 222.000 attese | Scarto -2.000, "roughly in line with consensus" (Seeking
+    Alpha). Altri dati da verificare.\[63\] |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2023-11-22'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2023-11-22 | IEF | neg | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 18/11/2023: 209.000 contro 225.000 attese | Release di mercoledì (Thanksgiving il 23/11), seduta
+    di reazione = mercoledì (Seeking Alpha, 22/11/2023 08:32). Beni durevoli alle 08:30 e Michigan alle
+    10:00 '
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: pos
+    perché: 'Richieste iniziali sotto il consenso oltre la soglia di rumore (circa 10.000): mercato del
+      lavoro più solido, attesa di rendimenti in rialzo. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2023-11-16'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2023-11-16 | IEF | pos | jobless_claims, labour_market | Richieste iniziali della settimana
+    all''11/11/2023: 231.000 contro 220.000 attese | Sorpresa +11.000 (Seeking Alpha), appena sopra la
+    soglia: attesa direzionale debole. Prezzi all''import, Philadelphia Fed e produzione industriale da
+    verificar'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neg
+    perché: 'Richieste iniziali sopra il consenso oltre la soglia di rumore: mercato del lavoro più debole,
+      attesa di rendimenti in calo. Criterio ex ante sul solo scarto dichiarato, nessun prezzo consultato.
+      Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2023-10-19'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2023-10-19 | IEF | neg | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 14/10/2023: 198.000 contro 212.000 attese | Sorpresa -14.000 (Seeking Alpha). Discorso di Powell
+    all''Economic Club di New York a mezzogiorno e Philadelphia Fed: da verificare; fase di massimi del
+    10 anni'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: pos
+    perché: 'Richieste iniziali sotto il consenso oltre la soglia di rumore (circa 10.000): mercato del
+      lavoro più solido, attesa di rendimenti in rialzo. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2023-06-15'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2023-06-15 | IEF | pos | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 10/06/2023: 262.000 contro 249.000 attese; continuative 1,775 milioni contro 1,765\[59\] | Sorpresa
+    +13.000, massimo da ottobre 2021 (FXStreet). Alle 08:30 anche vendite al dettaglio e Philadelphia
+    Fed ('
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neg
+    perché: 'Richieste iniziali sopra il consenso oltre la soglia di rumore: mercato del lavoro più debole,
+      attesa di rendimenti in calo. Criterio ex ante sul solo scarto dichiarato, nessun prezzo consultato.
+      Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2023-05-18'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2023-05-18 | IEF | neg | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 13/05/2023: 242.000 contro 255.000 attese | Sorpresa -13.000 (Seeking Alpha). Philadelphia Fed
+    da verificare; trattative sul tetto del debito in corso (fattore concomitante).\[58\] |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: pos
+    perché: 'Richieste iniziali sotto il consenso oltre la soglia di rumore (circa 10.000): mercato del
+      lavoro più solido, attesa di rendimenti in rialzo. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2021-11-24'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: 'Dove l''event study è affidabile e dove no. È affidabile come strumento di **conteggio e datazione**:
+    le date sono verificate, quasi sempre giovedì con le eccezioni documentate (mercoledì prefestivi di
+    Thanksgiving e di Capodanno), e il verso è assegnato ex ante. È poco affidabile per stimare **rendi'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: pos
+    perché: 'Richieste iniziali sotto il consenso oltre la soglia di rumore (circa 10.000): mercato del
+      lavoro più solido, attesa di rendimenti in rialzo. Sorpresa in larga parte stagionale e giornata
+      multi-causa. Criterio ex ante sul solo scarto dichiarato, nessun prezzo consultato. Revisione Claude
+      2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2020-04-02'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2020-04-02 | IEF | pos, neg | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 28/03/2020: 6,648 milioni contro 3,1 milioni attese (Dow Jones; Reuters e Bloomberg 3,5 milioni)\[52\]\[53\]\[54\]\[55\]
+    | Consensi divergenti fra fonti (CNBC; Global News/Reuters); dato poi rivisto'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: escluso
+    perché: 'Sorpresa enorme (6,6 milioni contro 3,1-3,5) con consensi divergenti e Fed già a tasso zero:
+      il consenso non misura il prezzato. Criterio ex ante sul solo scarto dichiarato, nessun prezzo consultato.
+      Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2020-03-26'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: 'Le sorprese molto grandi non sono automaticamente le più informative. Le settimane da milioni
+    del marzo-aprile 2020 erano in parte già prezzate: Bloomberg titolava "It''s Priced In" il 2020-03-26,
+    con la Fed già a tasso zero.\[4\] I salti da uragani (Sandy 2012, Harvey 2017, Helene 2024) e da frodi
+    ('
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: escluso
+    perché: 'Sorpresa enorme con Fed a tasso zero e QE illimitato già annunciato: il consenso non rappresenta
+      il prezzato. Criterio ex ante sul solo scarto dichiarato, nessun prezzo consultato. Revisione Claude
+      2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2019-12-05'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2019-12-05 | IEF | neg | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 30/11/2019: 203.000 contro 215.000 attese | Sorpresa -12.000 (Reuters via CNBC); volatilità post-Thanksgiving
+    (festività più tardiva del 2018). Bilancia commerciale da verificare.\[48\] |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: pos
+    perché: 'Richieste iniziali sotto il consenso oltre la soglia di rumore (circa 10.000): mercato del
+      lavoro più solido, attesa di rendimenti in rialzo. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2019-11-14'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2019-11-14 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 09/11/2019: 225.000 contro 215.000 attese | Scarto +10.000, al limite della soglia; sei giurisdizioni
+    stimate per il Veterans Day (Reuters via CNBC): distorsione da festività. PPI e audizione di Powe'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2019-11-07'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2019-11-07 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 02/11/2019: 211.000 contro 215.000 attese | Scarto -4.000 (Reuters via CNBC); Kentucky stimato.
+    Altri dati da verificare.\[47\] |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2019-10-31'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2019-10-31 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 26/10/2019: 218.000 contro 215.000 attese; continuative 1,69 milioni | Scarto +3.000 (Reuters via
+    CNBC); sciopero GM in corso. Seduta successiva al taglio FOMC del 30/10; PCE ed ECI alle 08:30 da
+    ver'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2019-10-24'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2019-10-24 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 19/10/2019: 212.000 contro 215.000 attese | Scarto -3.000 (Reuters via CNBC). Ordini di beni durevoli
+    e riunione BCE da verificare.\[46\] |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2019-10-17'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2019-10-17 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 12/10/2019: 214.000 contro 215.000 attese | Scarto -1.000 (Reuters via CNBC); Maryland, New York,
+    Virginia e Porto Rico stimati per il Columbus Day. Housing starts, Philadelphia Fed e produzione indu'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2019-08-08'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2019-08-08 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 03/08/2019: 209.000 contro 215.000 attese | Scarto -6.000 (Reuters via CNBC). Settimana di escalation
+    dei dazi USA-Cina: forte rumore di fondo sui Treasury.\[44\] |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2019-01-31'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2019-01-31 | IEF | pos | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 26/01/2019: 253.000 contro 215.000 attese; continuative 1,78 milioni (+69.000)\[42\]\[43\] | Sorpresa
+    +38.000 (Reuters via Investing.com, verificato). Settimana con la festività di Martin Luther King
+    e l'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neg
+    perché: 'Richieste iniziali sopra il consenso oltre la soglia di rumore: mercato del lavoro più debole,
+      attesa di rendimenti in calo. Criterio ex ante sul solo scarto dichiarato, nessun prezzo consultato.
+      Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2018-12-06'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2018-12-06 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 01/12/2018: 231.000 contro 225.000 attese | Scarto +6.000 (Reuters via CNBC). Il 05/12/2018 i mercati
+    azionari erano chiusi per il lutto nazionale (G.H.W. Bush): seduta di reazione regolare il gioved'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2018-11-29'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2018-11-29 | IEF | pos | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 24/11/2018: 234.000 contro 220.000 attese; continuative 1,71 milioni (+50.000) | Sorpresa +14.000
+    (Reuters via CNBC), terzo rialzo consecutivo, settimana di Thanksgiving (volatilità stagionale). Reddito '
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neg
+    perché: 'Richieste iniziali sopra il consenso oltre la soglia di rumore: mercato del lavoro più debole,
+      attesa di rendimenti in calo. Criterio ex ante sul solo scarto dichiarato, nessun prezzo consultato.
+      Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2018-08-09'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2018-08-09 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 04/08/2018: 213.000 contro 220.000 attese | Scarto -7.000 (Reuters via CNBC). PPI di luglio alle
+    08:30 da verificare.\[39\] |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2018-08-02'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2018-08-02 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 28/07/2018: 218.000 contro 220.000 attese; continuative 1,72 milioni | Scarto -2.000 (Reuters via
+    CNBC). Rialzo dei tassi della Bank of England lo stesso giorno (da verificare); ordini di fabbrica
+    al'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2018-07-05'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2018-07-05 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 30/06/2018: 231.000 contro 225.000 attese; continuative 1,74 milioni | Scarto +6.000 (Reuters via
+    CNBC). Seduta successiva al festivo del 4 luglio; ADP, ISM servizi e verbali FOMC da verificare; dazi'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2018-06-21'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2018-06-21 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 16/06/2018: 218.000 contro 220.000 attese | Scarto -2.000 (Reuters via CNBC). Philadelphia Fed
+    da verificare.\[36\] |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2018-05-24'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2018-05-24 | IEF | pos | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 19/05/2018: 234.000 contro 220.000 attese; continuative 1,74 milioni | Sorpresa +14.000 (Reuters
+    via CNBC) in regime di piena occupazione: attesa direzionale debole. Verbali FOMC usciti il giorno
+    prima; '
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neg
+    perché: 'Richieste iniziali sopra il consenso oltre la soglia di rumore: mercato del lavoro più debole,
+      attesa di rendimenti in calo. Criterio ex ante sul solo scarto dichiarato, nessun prezzo consultato.
+      Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2018-04-19'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2018-04-19 | IEF | neutral | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 14/04/2018: 232.000 contro 230.000 attese; continuative 1,86 milioni | Scarto +2.000 (Reuters via
+    CNBC). Philadelphia Fed da verificare.\[34\] |'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: neutral
+    perché: 'Scarto dal consenso entro la soglia di rumore (circa 10.000), o dato letto sulle continuative
+      con distorsione amministrativa: nessuna attesa direzionale. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
+- data: '2017-09-07'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2017-09-07 | IEF | pos, neg | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 02/09/2017: 298.000 contro 241.000 attese\[9\] | Sorpresa +57.000; Texas +51.637 non destagionalizzate,
+    95,6% dell''aumento (CNBC/Reuters): uragano Harvey, illeggibile.\[9\] Stesso giorno riunione BC'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: escluso
+    perché: 'Sorpresa dovuta all''uragano Harvey (Texas, 95,6% dell''aumento): dato illeggibile. Criterio
+      ex ante sul solo scarto dichiarato, nessun prezzo consultato. Revisione Claude 2026-11-26, approvata
+      dal maintainer.'
+  stato: promossa
+- data: '2012-11-15'
+  tema: macro_data
+  fonte: kb:Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury, dollaro e
+    azionario (2011-presente)/Richieste di sussidi di disoccupazione USA_ sorprese e trasmissione a Treasury,
+    dollaro e azionario (2011-presente).md
+  riga: '| 2012-11-15 | IEF | pos, neg | jobless_claims, labour_market | Richieste iniziali della settimana
+    al 10/11/2012: 439.000 contro 375.000 attese; continuative 3,33 milioni (+171.000) | Sorpresa +64.000
+    dovuta all''uragano Sandy (Labor Department via NBC/Reuters): settimana illeggibile. Stesso giorno
+    i'
+  evento: ''
+  meccanismo: []
+  dichiarazioni:
+  - asset: ^TNX
+    verso: escluso
+    perché: 'Sorpresa dovuta all''uragano Sandy: dato illeggibile. Criterio ex ante sul solo scarto dichiarato,
+      nessun prezzo consultato. Revisione Claude 2026-11-26, approvata dal maintainer.'
+  stato: promossa
