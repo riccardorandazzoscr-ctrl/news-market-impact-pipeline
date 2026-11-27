@@ -1,5 +1,5 @@
-generated_at: '2026-11-24T16:24:22'
-num_entries: 58
+generated_at: '2026-11-27T13:29:57'
+num_entries: 59
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -2278,6 +2278,70 @@ entries:
   - CFETS
   - capital controls
   - asian fx spillover
+- source_file: Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+    e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE
+    2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  title: 'Nomine e successioni nel comitato esecutivo della BCE (2011–presente): lettura
+    falco/colomba e trasmissione a euro, spread sovrani e titoli di Stato dell''area
+    euro'
+  date_compiled: 2026-11-26
+  primary_theme: monetary_policy
+  sub_themes:
+  - ecb_appointment
+  - ecb
+  - hawkish
+  - guidance_pivot
+  - cb_independence
+  relevant_assets:
+  - EURUSD=X
+  - BTP_BUND_SPREAD
+  - OAT_BUND_SPREAD
+  - IEAG.AS
+  - ^STOXX50E
+  - FTSEMIB.MI
+  - ^GDAXI
+  - DX-Y.NYB
+  external_assets_mentioned:
+  - Rendimento Bund 2 anni — misura diretta delle attese sui tassi BCE, il canale
+    (a) senza rumore di cambio
+  - Rendimento Bund 10 anni — livello core separato dallo spread; minimi del 3 luglio
+    2019 citati in prosa
+  - €STR forward e OIS sul tasso BCE — misura diretta della variazione della funzione
+    di reazione attesa alla notizia di nomina
+  - Spread Spagna-Bund, Portogallo-Bund, Grecia-Bund — stress periferico 2011 e reazione
+    specifica alla presidenza de Cos
+  - Mercati di previsione e sondaggi sui candidati — unico modo per misurare cosa
+    era prezzato prima della notizia
+  - Dati intraday (tick EUR/USD, Bund future) — necessari per datare indiscrezioni
+    a metà seduta (Handelsblatt 12:09 CET 2011-02-09, Bloomberg 09:10 UTC 2026-11-17)
+  time_window:
+    start: 2011-01-03
+    end: present
+  regime_phases:
+  - sovereign_crisis_backstop: 2011-01-03 to 2015-01-21
+  - qe_negative_rates: 2015-01-22 to 2022-07-20
+  - hiking_cycle: 2022-07-21 to 2023-09-14
+  - normalization_and_succession: 2023-09-15 to present
+  keywords:
+  - BCE
+  - ECB
+  - presidente della BCE
+  - capo economista
+  - chief economist
+  - comitato esecutivo
+  - executive board
+  - nomina
+  - appointment
+  - successione
+  - Lagarde
+  - Draghi
+  - Lane
+  - Schnabel
+  - Brunnermeier
+  - Knot
+  - Hernández de Cos
+  - Eurogruppo
+  - Consiglio europeo
 - source_file: PBOC e politica economica cinese — regime ed episodi storici (2022–2026)/PBOC
     e politica economica cinese — regime ed episodi storici (2022–2026).md
   title: PBOC e politica economica cinese — regime ed episodi storici (2022–2026)

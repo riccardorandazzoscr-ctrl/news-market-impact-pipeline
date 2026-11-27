@@ -1,5 +1,5 @@
-generated_at: '2026-11-26T11:09:10'
-num_episodes: 1826
+generated_at: '2026-11-27T13:30:02'
+num_episodes: 1842
 episodes:
 - date: '1984-01-01'
   theme: commodity_energy
@@ -3612,7 +3612,7 @@ episodes:
   - shipping_chokepoint
   - supply_disruption
   - upstream_export_strike
-  n_sources: 60
+  n_sources: 61
   events:
   - event_id: 2019-05-13:commodity_energy:-
     geo: ''
@@ -3688,6 +3688,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -4038,6 +4039,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -4067,6 +4071,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
   direction_review_excluded:
     CRACK_321: 'Droni su due stazioni di pompaggio dell''oleodotto Est-Ovest, linea
       ferma: trasporto di greggio, nessuna raffinazione colpita. Colpo a impianti
@@ -4089,7 +4094,7 @@ episodes:
   - houthi
   - infrastructure_attack
   - military_escalation
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2019-05-14:commodity_energy:-
     geo: ''
@@ -4104,6 +4109,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     evidence:
     - source: card:2026-11-13/news_01.md
       subthemes_local:
@@ -4122,6 +4128,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-11-26/news_02.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-27/news_01.md
       subthemes_local:
       - houthi
       - infrastructure_attack
@@ -4232,7 +4245,7 @@ episodes:
   - military_escalation
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 59
+  n_sources: 60
   events:
   - event_id: 2019-06-13:commodity_energy:-
     geo: ''
@@ -4303,6 +4316,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -4655,6 +4669,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -4743,7 +4760,7 @@ episodes:
   - hormuz
   - iran
   - military_escalation
-  n_sources: 20
+  n_sources: 21
   events:
   - event_id: 2019-06-20:commodity_energy:-
     geo: ''
@@ -4774,6 +4791,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -4922,6 +4940,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -5113,7 +5134,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 43
+  n_sources: 44
   events:
   - event_id: 2019-07-01:commodity_energy:-
     geo: ''
@@ -5175,6 +5196,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
     evidence:
     - source: card:2026-05-31/news_01.md
       subthemes_local: []
@@ -5416,6 +5438,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
 - date: '2019-07-22'
   theme: commodity_energy
   direction: mixed
@@ -5468,7 +5493,7 @@ episodes:
   - iran
   - military_escalation
   - shipping_chokepoint
-  n_sources: 12
+  n_sources: 13
   events:
   - event_id: 2019-07-22:commodity_energy:-
     geo: ''
@@ -5492,6 +5517,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -5595,6 +5621,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -6086,6 +6115,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -6173,7 +6203,7 @@ episodes:
   - refinery_products
   - supply_disruption
   - upstream_export_strike
-  n_sources: 46
+  n_sources: 47
   events:
   - event_id: 2019-09-16:commodity_energy:-
     geo: ''
@@ -6245,6 +6275,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -6467,6 +6498,14 @@ episodes:
       subthemes_local:
       - houthi
       - infrastructure_attack
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - oil_supply_shock
       directions_by_reference:
         BZ=F:
         - pos
@@ -6966,7 +7005,7 @@ episodes:
   - iran
   - military_escalation
   - supply_disruption
-  n_sources: 52
+  n_sources: 53
   events:
   - event_id: 2020-01-03:commodity_energy:-
     geo: ''
@@ -7031,6 +7070,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -7305,6 +7345,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -8532,6 +8575,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
   direction_review_excluded:
     CRACK_321: 'Drone sul deposito di Ras Tanura (terminale di export del greggio)
       e missile su Dhahran, senza danni gravi. Colpo a impianti di greggio (giacimenti,
@@ -8553,7 +8597,7 @@ episodes:
   - houthi
   - infrastructure_attack
   - military_escalation
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2021-03-08:commodity_energy:-
     geo: ''
@@ -8568,6 +8612,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     evidence:
     - source: card:2026-11-13/news_01.md
       subthemes_local:
@@ -8586,6 +8631,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-11-26/news_02.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-27/news_01.md
       subthemes_local:
       - houthi
       - infrastructure_attack
@@ -8776,6 +8828,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
   direction_review_excluded:
     CRACK_321: 'Esplosione di autocisterne presso il deposito ADNOC di Mussafah e
       attacco all''aeroporto di Abu Dhabi: deposito di carburante, nessuna capacità
@@ -8799,7 +8852,7 @@ episodes:
   - houthi
   - infrastructure_attack
   - military_escalation
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2022-01-18:commodity_energy:-
     geo: ''
@@ -8814,6 +8867,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     evidence:
     - source: card:2026-11-13/news_01.md
       subthemes_local:
@@ -8832,6 +8886,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-11-26/news_02.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-27/news_01.md
       subthemes_local:
       - houthi
       - infrastructure_attack
@@ -9257,6 +9318,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     CRACK_321:
     - card:2026-11-13/news_01.md
   directions_local:
@@ -9273,7 +9335,7 @@ episodes:
   - houthi
   - infrastructure_attack
   - oil_supply_shock
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2022-03-21:commodity_energy:-
     geo: ''
@@ -9290,6 +9352,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     evidence:
     - source: card:2026-11-13/news_01.md
       subthemes_local:
@@ -9316,6 +9379,14 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - oil_supply_shock
+      directions_by_reference:
+        BZ=F:
+        - pos
 - date: '2022-03-25'
   theme: commodity_energy
   direction: mixed
@@ -9332,6 +9403,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
   direction_review_excluded:
     CRACK_321: 'Incendio di due serbatoi del deposito di prodotti Aramco a Jeddah:
       deposito di distribuzione, non capacità di raffinazione; effetto locale senza
@@ -9351,7 +9423,7 @@ episodes:
   - houthi
   - infrastructure_attack
   - military_escalation
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2022-03-25:commodity_energy:-
     geo: ''
@@ -9366,6 +9438,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     evidence:
     - source: card:2026-11-13/news_01.md
       subthemes_local:
@@ -9384,6 +9457,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-11-26/news_02.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-27/news_01.md
       subthemes_local:
       - houthi
       - infrastructure_attack
@@ -11762,6 +11842,7 @@ episodes:
     BZ=F:
     - card:2026-09-06/news_02.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     HO=F:
     - card:2026-09-06/news_02.md
     TTF=F:
@@ -11796,7 +11877,7 @@ episodes:
   - houthi
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 11
+  n_sources: 12
   events:
   - event_id: 2023-12-18:commodity_energy:-
     geo: ''
@@ -11822,6 +11903,7 @@ episodes:
     - card:2026-08-21/news_08.md
     - card:2026-09-06/news_02.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-05/news_01.md
@@ -11870,6 +11952,13 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local:
+      - houthi
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
       subthemes_local:
       - shipping_chokepoint
@@ -11902,9 +11991,10 @@ episodes:
       directions_by_reference: {}
 - date: '2024-01-11'
   theme: commodity_energy
-  direction: neg
+  direction: mixed
   directions:
   - neg
+  - pos
   directions_declared:
   - pos
   directions_by_reference:
@@ -11945,7 +12035,7 @@ episodes:
   - military_escalation
   - sanctions
   - shipping_chokepoint
-  n_sources: 7
+  n_sources: 8
   events:
   - event_id: 2024-01-11:commodity_energy:-
     geo: ''
@@ -11964,6 +12054,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -12022,6 +12113,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -12055,6 +12149,7 @@ episodes:
     BZ=F:
     - card:2026-09-06/news_02.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -12109,7 +12204,7 @@ episodes:
   - houthi
   - military_escalation
   - shipping_chokepoint
-  n_sources: 19
+  n_sources: 20
   events:
   - event_id: 2024-01-12:commodity_energy:-
     geo: ''
@@ -12219,11 +12314,13 @@ episodes:
     subthemes_local:
     - houthi
     - military_escalation
+    - shipping_chokepoint
     directions_by_reference:
       BZ=F:
       - pos
     sources:
     - card:2026-08-19/news_01.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -12231,6 +12328,14 @@ episodes:
     - source: card:2026-08-19/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-27/news_01.md
+      subthemes_local:
+      - houthi
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -13252,6 +13357,7 @@ episodes:
   subthemes:
   - de_escalation
   - hormuz
+  - houthi
   - infrastructure_attack
   - iran
   - military_escalation
@@ -13260,7 +13366,7 @@ episodes:
   subthemes_local:
   - iran
   - military_escalation
-  n_sources: 13
+  n_sources: 14
   events:
   - event_id: 2024-04-01:commodity_energy:-
     geo: ''
@@ -13284,6 +13390,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
     evidence:
     - source: card:2026-09-25/news_02.md
       subthemes_local:
@@ -13376,6 +13483,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
 - date: '2024-04-12'
   theme: commodity_energy
   direction: mixed
@@ -15234,7 +15344,7 @@ episodes:
   subthemes_local:
   - iran
   - military_escalation
-  n_sources: 38
+  n_sources: 39
   events:
   - event_id: 2024-10-01:commodity_energy:-
     geo: ''
@@ -15282,6 +15392,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -15449,6 +15560,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -17809,7 +17923,7 @@ episodes:
   - refinery_products
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 62
+  n_sources: 63
   events:
   - event_id: 2025-06-13:commodity_energy:-
     geo: ''
@@ -17894,6 +18008,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -18209,6 +18324,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -20569,7 +20687,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - upstream_export_strike
-  n_sources: 10
+  n_sources: 11
   events:
   - event_id: 2025-11-14:commodity_energy:-
     geo: ''
@@ -20593,6 +20711,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -20661,6 +20780,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -22452,7 +22574,7 @@ episodes:
   - oil_supply_shock
   - safe_haven_flows
   - shipping_chokepoint
-  n_sources: 50
+  n_sources: 51
   events:
   - event_id: 2026-03-02:commodity_energy:-
     geo: ''
@@ -22530,6 +22652,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -22842,6 +22965,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -24001,7 +24127,7 @@ episodes:
   - priced_conflict
   - refinery_products
   - supply_disruption
-  n_sources: 26
+  n_sources: 27
   events:
   - event_id: 2026-03-20:commodity_energy:-
     geo: ''
@@ -24046,6 +24172,7 @@ episodes:
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
     - card:2026-11-23/news_01.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -24245,6 +24372,9 @@ episodes:
       directions_by_reference:
         CRACK_321:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -24710,7 +24840,7 @@ episodes:
   - negotiation_track
   - priced_conflict
   - shipping_chokepoint
-  n_sources: 54
+  n_sources: 55
   events:
   - event_id: 2026-03-27:commodity_energy:-
     geo: ''
@@ -24777,6 +24907,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -25157,6 +25288,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -26310,7 +26444,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 48
+  n_sources: 49
   events:
   - event_id: 2026-04-13:commodity_energy:-
     geo: ''
@@ -26377,6 +26511,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -26701,6 +26836,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -27686,7 +27824,7 @@ episodes:
   - refinery_products
   - refinery_strike
   - shipping_chokepoint
-  n_sources: 42
+  n_sources: 43
   events:
   - event_id: 2026-04-18:commodity_energy:-
     geo: ''
@@ -27746,6 +27884,7 @@ episodes:
     - card:2026-11-02/news_01.md
     - card:2026-11-22/news_02.md
     - card:2026-11-23/news_01.md
+    - card:2026-11-27/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -27951,6 +28090,9 @@ episodes:
       directions_by_reference:
         CRACK_321:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -28085,7 +28227,7 @@ episodes:
   - priced_conflict
   - shipping_chokepoint
   - supply_return
-  n_sources: 40
+  n_sources: 41
   events:
   - event_id: 2026-04-20:commodity_energy:-
     geo: ''
@@ -28143,6 +28285,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -28440,6 +28583,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -28569,7 +28715,7 @@ episodes:
   - priced_conflict
   - sanctions
   - shipping_chokepoint
-  n_sources: 23
+  n_sources: 24
   events:
   - event_id: 2026-04-29:commodity_energy:-
     geo: ''
@@ -28606,6 +28752,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -28789,6 +28936,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -32058,7 +32208,7 @@ episodes:
   - negotiation_track
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 13
+  n_sources: 14
   events:
   - event_id: 2026-06-29:commodity_energy:-
     geo: ''
@@ -32085,6 +32235,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -32198,6 +32349,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -32555,7 +32709,7 @@ episodes:
   - negotiation_track
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 40
+  n_sources: 41
   events:
   - event_id: 2026-07-07:commodity_energy:-
     geo: ''
@@ -32612,6 +32766,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -32928,6 +33083,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -33070,7 +33228,7 @@ episodes:
   - sanctions
   - sanctions_product_ban
   - supply_disruption
-  n_sources: 23
+  n_sources: 24
   events:
   - event_id: 2026-07-08:commodity_energy:-
     geo: ''
@@ -33112,6 +33270,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -33262,6 +33421,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -33391,7 +33553,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 38
+  n_sources: 39
   events:
   - event_id: 2026-07-13:commodity_energy:-
     geo: ''
@@ -33442,6 +33604,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -33736,6 +33899,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -34438,6 +34604,7 @@ episodes:
   directions:
   - neg
   - neutral
+  - pos
   directions_declared:
   - pos
   directions_by_reference:
@@ -34481,7 +34648,7 @@ episodes:
   - iran
   - military_escalation
   - priced_conflict
-  n_sources: 9
+  n_sources: 10
   events:
   - event_id: 2026-08-31:commodity_energy:-
     geo: ''
@@ -34502,6 +34669,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -34577,6 +34745,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -34894,6 +35065,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     CRACK_321:
     - card:2026-11-13/news_01.md
   directions_local:
@@ -34909,7 +35081,7 @@ episodes:
   subthemes_local:
   - houthi
   - infrastructure_attack
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2026-09-08:commodity_energy:-
     geo: ''
@@ -34925,6 +35097,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     evidence:
     - source: card:2026-11-13/news_01.md
       subthemes_local:
@@ -34943,6 +35116,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-11-26/news_02.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-27/news_01.md
       subthemes_local:
       - houthi
       - infrastructure_attack
@@ -34991,6 +35171,7 @@ episodes:
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -35051,7 +35232,7 @@ episodes:
   - refinery_products
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 28
+  n_sources: 29
   events:
   - event_id: 2026-09-09:commodity_energy:-
     geo: ''
@@ -35097,6 +35278,7 @@ episodes:
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -35325,6 +35507,13 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -35511,7 +35700,7 @@ episodes:
   - priced_conflict
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 12
+  n_sources: 13
   events:
   - event_id: 2026-09-14:commodity_energy:-
     geo: ''
@@ -35538,6 +35727,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -35643,6 +35833,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -35674,6 +35867,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
   direction_review_excluded:
     CRACK_321: 'Missili diretti a Taif e all''area di Yanbu intercettati, nessun danno
       all''offerta: nessun canale sul margine di raffinazione. Criterio ex ante, nessun
@@ -35691,7 +35885,7 @@ episodes:
   subthemes_local:
   - houthi
   - infrastructure_attack
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2026-09-24:commodity_energy:-
     geo: ''
@@ -35705,6 +35899,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     evidence:
     - source: card:2026-11-13/news_01.md
       subthemes_local:
@@ -35721,6 +35916,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-11-26/news_02.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-27/news_01.md
       subthemes_local:
       - houthi
       - infrastructure_attack
@@ -36022,6 +36224,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
   direction_review_excluded:
     CRACK_321: 'Raffineria di Riad (secondo AFP) e stazione di pompaggio di Khurais
       nello stesso weekend: il colpo alla raffinazione allarga il margine, quello
@@ -36041,7 +36244,7 @@ episodes:
   subthemes_local:
   - houthi
   - infrastructure_attack
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2026-10-05:commodity_energy:-
     geo: ''
@@ -36055,6 +36258,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     evidence:
     - source: card:2026-11-13/news_01.md
       subthemes_local:
@@ -36071,6 +36275,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-11-26/news_02.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-27/news_01.md
       subthemes_local:
       - houthi
       - infrastructure_attack
@@ -36334,6 +36545,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
   direction_review_excluded:
     CRACK_321: 'Aeroporto di Dammam e drone vicino al giacimento di Shaybah: nessuna
       raffineria colpita. Colpo a impianti di greggio (giacimenti, stabilizzazione,
@@ -36354,7 +36566,7 @@ episodes:
   subthemes_local:
   - houthi
   - infrastructure_attack
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2026-10-22:commodity_energy:-
     geo: ''
@@ -36368,6 +36580,7 @@ episodes:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     evidence:
     - source: card:2026-11-13/news_01.md
       subthemes_local:
@@ -36390,12 +36603,20 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      directions_by_reference:
+        BZ=F:
+        - pos
 - date: '2026-10-23'
   theme: commodity_energy
   direction: mixed
   directions:
   - neg
   - neutral
+  - pos
   directions_declared:
   - pos
   directions_by_reference:
@@ -36406,6 +36627,7 @@ episodes:
     - card:2026-11-10/news_01.md
     - card:2026-11-11/news_03.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -36444,7 +36666,7 @@ episodes:
   - military_escalation
   - negotiation_track
   - priced_conflict
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2026-10-23:commodity_energy:-
     geo: ''
@@ -36461,6 +36683,7 @@ episodes:
     - card:2026-11-10/news_01.md
     - card:2026-11-11/news_03.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -36483,6 +36706,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-11-26/news_02.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-27/news_01.md
       subthemes_local:
       - houthi
       - infrastructure_attack
@@ -36692,6 +36922,7 @@ episodes:
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -36730,7 +36961,7 @@ episodes:
   - priced_conflict
   - refinery_products
   - shipping_chokepoint
-  n_sources: 10
+  n_sources: 11
   events:
   - event_id: 2026-10-30:commodity_energy:-
     geo: ''
@@ -36758,6 +36989,7 @@ episodes:
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
     - card:2026-11-26/news_02.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -36837,6 +37069,13 @@ episodes:
         BZ=F:
         - pos
     - source: card:2026-11-26/news_02.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-27/news_01.md
       subthemes_local:
       - houthi
       - infrastructure_attack
@@ -37293,7 +37532,7 @@ episodes:
   - priced_conflict
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 15
+  n_sources: 16
   events:
   - event_id: 2026-11-05:commodity_energy:-
     geo: ''
@@ -37323,6 +37562,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -37463,6 +37703,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -37538,7 +37781,7 @@ episodes:
   - priced_conflict
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 15
+  n_sources: 16
   events:
   - event_id: 2026-11-06:commodity_energy:-
     geo: ''
@@ -37568,6 +37811,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-27/news_01.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -37707,6 +37951,9 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -52358,8 +52605,9 @@ episodes:
       directions_by_reference: {}
 - date: '2014-10-06'
   theme: geopolitical
-  direction: ''
-  directions: []
+  direction: pos
+  directions:
+  - pos
   directions_declared:
   - neg
   - pos
@@ -52370,6 +52618,7 @@ episodes:
     - pos
   direction_sources:
     BRL=X:
+    - card:2026-11-27/news_03.md
     - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
@@ -52379,13 +52628,14 @@ episodes:
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
       storici (2002–presente).md
-  directions_local: []
+  directions_local:
+  - neg
   declared: true
   subthemes:
   - election_risk
   subthemes_local:
   - election_risk
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2014-10-06:geopolitical:-
     geo: ''
@@ -52397,11 +52647,18 @@ episodes:
       EWZ:
       - pos
     sources:
+    - card:2026-11-27/news_03.md
     - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
       storici (2002–presente).md
     evidence:
+    - source: card:2026-11-27/news_03.md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - neg
     - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
         a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
         brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
@@ -52422,8 +52679,9 @@ episodes:
         - neg
 - date: '2014-10-13'
   theme: geopolitical
-  direction: ''
-  directions: []
+  direction: pos
+  directions:
+  - pos
   directions_declared:
   - neg
   - pos
@@ -52434,6 +52692,7 @@ episodes:
     - pos
   direction_sources:
     BRL=X:
+    - card:2026-11-27/news_03.md
     - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
@@ -52443,13 +52702,14 @@ episodes:
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
       storici (2002–presente).md
-  directions_local: []
+  directions_local:
+  - neg
   declared: true
   subthemes:
   - election_risk
   subthemes_local:
   - election_risk
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2014-10-13:geopolitical:-
     geo: ''
@@ -52461,11 +52721,18 @@ episodes:
       EWZ:
       - pos
     sources:
+    - card:2026-11-27/news_03.md
     - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
       storici (2002–presente).md
     evidence:
+    - source: card:2026-11-27/news_03.md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - neg
     - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
         a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
         brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
@@ -54738,8 +55005,9 @@ episodes:
       directions_by_reference: {}
 - date: '2018-09-06'
   theme: geopolitical
-  direction: ''
-  directions: []
+  direction: pos
+  directions:
+  - pos
   directions_declared:
   - neg
   - pos
@@ -54750,6 +55018,7 @@ episodes:
     - pos
   direction_sources:
     BRL=X:
+    - card:2026-11-27/news_03.md
     - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
@@ -54759,13 +55028,14 @@ episodes:
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
       storici (2002–presente).md
-  directions_local: []
+  directions_local:
+  - neg
   declared: true
   subthemes:
   - election_risk
   subthemes_local:
   - election_risk
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2018-09-06:geopolitical:-
     geo: ''
@@ -54777,11 +55047,18 @@ episodes:
       EWZ:
       - pos
     sources:
+    - card:2026-11-27/news_03.md
     - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
       storici (2002–presente).md
     evidence:
+    - source: card:2026-11-27/news_03.md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - neg
     - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
         a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
         brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
@@ -54886,8 +55163,9 @@ episodes:
         - neg
 - date: '2018-10-08'
   theme: geopolitical
-  direction: ''
-  directions: []
+  direction: pos
+  directions:
+  - pos
   directions_declared:
   - neg
   - pos
@@ -54898,6 +55176,7 @@ episodes:
     - pos
   direction_sources:
     BRL=X:
+    - card:2026-11-27/news_03.md
     - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
@@ -54907,13 +55186,14 @@ episodes:
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
       storici (2002–presente).md
-  directions_local: []
+  directions_local:
+  - neg
   declared: true
   subthemes:
   - election_risk
   subthemes_local:
   - election_risk
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2018-10-08:geopolitical:-
     geo: ''
@@ -54925,11 +55205,18 @@ episodes:
       EWZ:
       - pos
     sources:
+    - card:2026-11-27/news_03.md
     - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
       storici (2002–presente).md
     evidence:
+    - source: card:2026-11-27/news_03.md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - neg
     - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
         a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
         brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
@@ -63884,8 +64171,9 @@ episodes:
       directions_by_reference: {}
 - date: '2022-10-03'
   theme: geopolitical
-  direction: ''
-  directions: []
+  direction: pos
+  directions:
+  - pos
   directions_declared:
   - neg
   - pos
@@ -63896,6 +64184,7 @@ episodes:
     - pos
   direction_sources:
     BRL=X:
+    - card:2026-11-27/news_03.md
     - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
@@ -63905,13 +64194,14 @@ episodes:
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
       storici (2002–presente).md
-  directions_local: []
+  directions_local:
+  - neg
   declared: true
   subthemes:
   - election_risk
   subthemes_local:
   - election_risk
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2022-10-03:geopolitical:-
     geo: ''
@@ -63923,11 +64213,18 @@ episodes:
       EWZ:
       - pos
     sources:
+    - card:2026-11-27/news_03.md
     - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
       storici (2002–presente).md
     evidence:
+    - source: card:2026-11-27/news_03.md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - neg
     - source: kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione
         a EWZ e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
         brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
@@ -88577,9 +88874,10 @@ episodes:
         - neg
 - date: '2026-10-05'
   theme: geopolitical
-  direction: neg
+  direction: mixed
   directions:
   - neg
+  - pos
   directions_declared:
   - neg
   - pos
@@ -88597,6 +88895,7 @@ episodes:
     - pos
   direction_sources:
     BRL=X:
+    - card:2026-11-27/news_03.md
     - kb:Elezioni presidenziali brasiliane e rischio politico_ trasmissione a EWZ
       e USD_BRL, regimi ed episodi storici (2002–presente)/Elezioni presidenziali
       brasiliane e rischio politico_ trasmissione a EWZ e USD_BRL, regimi ed episodi
@@ -88623,6 +88922,7 @@ episodes:
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
       a greggio, prodotti e trasporti (luglio-ottobre 2026).md
   directions_local:
+  - neg
   - pos
   declared: true
   subthemes:
@@ -88645,7 +88945,7 @@ episodes:
   - military_escalation
   - oil_supply_shock
   - refinery_products
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2026-10-05:geopolitical:-
     geo: ''
@@ -88670,6 +88970,7 @@ episodes:
       - pos
     sources:
     - card:2026-10-30/news_01.md
+    - card:2026-11-27/news_03.md
     - kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_
       trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
       Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
@@ -88687,6 +88988,12 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-27/news_03.md
+      subthemes_local:
+      - election_risk
+      directions_by_reference:
+        BRL=X:
+        - neg
     - source: kb:Attacchi Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar
         Rosso_ trasmissione a greggio, prodotti e trasporti (luglio-ottobre 2026)/Attacchi
         Houthi sull'Arabia Saudita nella doppia strozzatura Hormuz-Mar Rosso_ trasmissione
@@ -143736,6 +144043,118 @@ episodes:
       subthemes_local:
       - cny
       directions_by_reference: {}
+- date: '2011-02-09'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    EURUSD=X:
+    - neg
+    IEAG.AS:
+    - neg
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    EURUSD=X:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    IEAG.AS:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2011-02-09:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - cb_independence
+    - ecb
+    - ecb_appointment
+    - guidance_pivot
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      IEAG.AS:
+      - neg
+      - pos
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - cb_independence
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+        - pos
+  - event_id: 2011-02-09:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - cb_independence
+    - ecb
+    - ecb_appointment
+    - guidance_pivot
+    directions_by_reference:
+      EURUSD=X:
+      - neg
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - cb_independence
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        EURUSD=X:
+        - neg
 - date: '2011-04-07'
   theme: monetary_policy
   direction: neg
@@ -143883,6 +144302,124 @@ episodes:
       subthemes_local:
       - ecb
       - rate_decision
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neutral
+- date: '2011-05-11'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    EURUSD=X:
+    - neutral
+  direction_sources:
+    EURUSD=X:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - ecb
+  - ecb_appointment
+  n_sources: 1
+  events:
+  - event_id: 2011-05-11:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+- date: '2011-06-24'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neutral
+    EURUSD=X:
+    - neutral
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    EURUSD=X:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - ecb
+  - ecb_appointment
+  n_sources: 1
+  events:
+  - event_id: 2011-06-24:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neutral
+      EURUSD=X:
+      - neutral
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
       directions_by_reference:
         BTP_BUND_SPREAD:
         - neutral
@@ -144156,6 +144693,101 @@ episodes:
     - source: card:2026-09-10/news_06.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2011-09-09'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+    EURUSD=X:
+    - neg
+    ^GDAXI:
+    - neg
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    EURUSD=X:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    ^GDAXI:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2011-09-09:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    - guidance_pivot
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+      EURUSD=X:
+      - neg
+      ^GDAXI:
+      - neg
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        ^GDAXI:
+        - neg
 - date: '2011-10-31'
   theme: monetary_policy
   direction: mixed
@@ -146254,8 +146886,9 @@ episodes:
         - neg
 - date: '2015-12-03'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - pos
@@ -146276,6 +146909,7 @@ episodes:
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     EURUSD=X:
+    - card:2026-11-27/news_02.md
     - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
@@ -146296,13 +146930,16 @@ episodes:
       BCE → dollaro più debole), di segno opposto al canale tassi globali; nessun
       verso univoco ex ante. Criterio ex ante, nessun prezzo consultato. Revisione
       Claude 2026-11-23.'
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - balance_sheet_policy
+  - ecb
   - ecb_meeting_day
   - forward_guidance
   - fragmentation_risk
+  - hawkish
   - policy_pause
   - press_conference_reversal
   - rate_surprise
@@ -146310,9 +146947,10 @@ episodes:
   subthemes_local:
   - balance_sheet
   - ecb
+  - eurozone_release
   - hawkish
   - rate_decision
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2015-12-03:monetary_policy:-
     geo: ''
@@ -146388,16 +147026,28 @@ episodes:
     subthemes_local:
     - balance_sheet
     - ecb
+    - eurozone_release
     - hawkish
     - rate_decision
     directions_by_reference:
       BTP_BUND_SPREAD:
       - pos
+      EURUSD=X:
+      - pos
     sources:
+    - card:2026-11-27/news_02.md
     - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     evidence:
+    - source: card:2026-11-27/news_02.md
+      subthemes_local:
+      - ecb
+      - eurozone_release
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - pos
     - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
         e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
         di riunione_ sorprese su tassi, guidance e pause, regimi ed episodi storici
@@ -147297,8 +147947,9 @@ episodes:
         - neutral
 - date: '2017-07-20'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - pos
@@ -147317,6 +147968,7 @@ episodes:
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     EURUSD=X:
+    - card:2026-11-27/news_02.md
     - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
@@ -147329,13 +147981,16 @@ episodes:
       BCE → dollaro più debole), di segno opposto al canale tassi globali; nessun
       verso univoco ex ante. Criterio ex ante, nessun prezzo consultato. Revisione
       Claude 2026-11-23.'
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - balance_sheet_policy
+  - ecb
   - ecb_meeting_day
   - forward_guidance
   - fragmentation_risk
+  - hawkish
   - policy_pause
   - press_conference_reversal
   - rate_surprise
@@ -147343,10 +147998,11 @@ episodes:
   subthemes_local:
   - balance_sheet
   - ecb
+  - eurozone_release
   - guidance_pivot
   - hawkish
   - rate_decision
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2017-07-20:monetary_policy:-
     geo: ''
@@ -147392,6 +148048,26 @@ episodes:
       directions_by_reference:
         BTP_BUND_SPREAD:
         - neg
+        - pos
+  - event_id: 2017-07-20:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb
+    - eurozone_release
+    - guidance_pivot
+    directions_by_reference:
+      EURUSD=X:
+      - pos
+    sources:
+    - card:2026-11-27/news_02.md
+    evidence:
+    - source: card:2026-11-27/news_02.md
+      subthemes_local:
+      - ecb
+      - eurozone_release
+      - guidance_pivot
+      directions_by_reference:
+        EURUSD=X:
         - pos
   - event_id: 2017-07-20:monetary_policy:japan_release
     geo: japan_release
@@ -147629,6 +148305,79 @@ episodes:
         della parte lunga- regime ed episodi storici (1994–2026).md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2018-02-19'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - neutral
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    - pos
+    EURUSD=X:
+    - neutral
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    EURUSD=X:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - ecb
+  - ecb_appointment
+  n_sources: 1
+  events:
+  - event_id: 2018-02-19:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      - pos
+      EURUSD=X:
+      - neutral
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+        - pos
 - date: '2018-03-21'
   theme: monetary_policy
   direction: mixed
@@ -149017,6 +149766,74 @@ episodes:
     - source: card:2026-07-11/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2019-02-11'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    EURUSD=X:
+    - neutral
+    IEAG.AS:
+    - neutral
+  direction_sources:
+    EURUSD=X:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    IEAG.AS:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - ecb
+  - ecb_appointment
+  n_sources: 1
+  events:
+  - event_id: 2019-02-11:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+      IEAG.AS:
+      - neutral
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      directions_by_reference:
+        IEAG.AS:
+        - neutral
 - date: '2019-03-06'
   theme: monetary_policy
   direction: ''
@@ -149103,6 +149920,170 @@ episodes:
       subthemes_local:
       - cny
       directions_by_reference: {}
+- date: '2019-07-02'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  directions_by_reference:
+    EURUSD=X:
+    - neg
+  direction_sources:
+    EURUSD=X:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2019-07-02:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    - guidance_pivot
+    directions_by_reference:
+      EURUSD=X:
+      - neg
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+- date: '2019-07-03'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    FTSEMIB.MI:
+    - pos
+    IEAG.AS:
+    - pos
+    ^STOXX50E:
+    - pos
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    FTSEMIB.MI:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    IEAG.AS:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    ^STOXX50E:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2019-07-03:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    - guidance_pivot
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      FTSEMIB.MI:
+      - pos
+      IEAG.AS:
+      - pos
+      ^STOXX50E:
+      - pos
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        IEAG.AS:
+        - pos
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        ^STOXX50E:
+        - pos
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        FTSEMIB.MI:
+        - pos
 - date: '2019-08-05'
   theme: monetary_policy
   direction: pos
@@ -149439,6 +150420,113 @@ episodes:
     - source: card:2026-08-17/news_04.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2019-09-25'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    EURUSD=X:
+    - neg
+    - pos
+  direction_sources:
+    EURUSD=X:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2019-09-25:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    - guidance_pivot
+    directions_by_reference:
+      EURUSD=X:
+      - neg
+      - pos
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+        - pos
+- date: '2019-10-22'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    EURUSD=X:
+    - neutral
+  direction_sources:
+    EURUSD=X:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - ecb
+  - ecb_appointment
+  n_sources: 1
+  events:
+  - event_id: 2019-10-22:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
 - date: '2019-10-30'
   theme: monetary_policy
   direction: ''
@@ -152046,6 +153134,7 @@ episodes:
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     EURUSD=X:
     - card:2026-09-10/news_04.md
+    - card:2026-11-27/news_02.md
     - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
@@ -152146,7 +153235,7 @@ episodes:
   - rate_decision
   - rate_hike
   - yen
-  n_sources: 35
+  n_sources: 36
   events:
   - event_id: 2022-07-21:monetary_policy:-
     geo: ''
@@ -152348,6 +153437,7 @@ episodes:
     - card:2026-08-28/news_05.md
     - card:2026-09-10/news_04.md
     - card:2026-09-12/news_04.md
+    - card:2026-11-27/news_02.md
     evidence:
     - source: card:2026-08-27/news_03.md
       subthemes_local:
@@ -152378,6 +153468,15 @@ episodes:
       - eurozone_release
       - rate_decision
       directions_by_reference: {}
+    - source: card:2026-11-27/news_02.md
+      subthemes_local:
+      - ecb
+      - eurozone_release
+      - hawkish
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - pos
   - event_id: 2022-07-21:monetary_policy:japan_release
     geo: japan_release
     subthemes_local:
@@ -152915,6 +154014,7 @@ episodes:
   direction_sources:
     EURUSD=X:
     - card:2026-08-27/news_03.md
+    - card:2026-11-27/news_02.md
   direction_review_excluded:
     IEF: 'Evento di politica monetaria non americana: la trasmissione ai Treasury
       7-10 anni è di secondo ordine e di segno non univoco.'
@@ -152985,7 +154085,7 @@ episodes:
   - guidance_pivot
   - hawkish
   - rate_decision
-  n_sources: 29
+  n_sources: 30
   events:
   - event_id: 2022-09-08:monetary_policy:-
     geo: ''
@@ -153121,6 +154221,7 @@ episodes:
     subthemes_local:
     - ecb
     - eurozone_release
+    - guidance_pivot
     - hawkish
     - rate_decision
     directions_by_reference:
@@ -153131,6 +154232,7 @@ episodes:
     - card:2026-08-28/news_05.md
     - card:2026-09-10/news_04.md
     - card:2026-09-12/news_04.md
+    - card:2026-11-27/news_02.md
     evidence:
     - source: card:2026-08-27/news_03.md
       subthemes_local:
@@ -153161,6 +154263,15 @@ episodes:
       - eurozone_release
       - rate_decision
       directions_by_reference: {}
+    - source: card:2026-11-27/news_02.md
+      subthemes_local:
+      - ecb
+      - eurozone_release
+      - guidance_pivot
+      - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - pos
 - date: '2022-09-13'
   theme: monetary_policy
   direction: neg
@@ -159039,6 +160150,56 @@ episodes:
     - source: card:2026-08-27/news_03.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2023-08-30'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    EURUSD=X:
+    - neutral
+  direction_sources:
+    EURUSD=X:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - ecb
+  - ecb_appointment
+  n_sources: 1
+  events:
+  - event_id: 2023-08-30:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
 - date: '2023-09-14'
   theme: monetary_policy
   direction: mixed
@@ -162366,8 +163527,9 @@ episodes:
         - pos
 - date: '2024-06-06'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - pos
@@ -162385,6 +163547,7 @@ episodes:
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     EURUSD=X:
+    - card:2026-11-27/news_02.md
     - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
@@ -162397,23 +163560,27 @@ episodes:
       BCE → dollaro più debole), di segno opposto al canale tassi globali; nessun
       verso univoco ex ante. Criterio ex ante, nessun prezzo consultato. Revisione
       Claude 2026-11-23.'
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - balance_sheet_policy
+  - ecb
   - ecb_meeting_day
   - forward_guidance
   - fragmentation_risk
+  - hawkish
   - policy_pause
   - press_conference_reversal
   - rate_surprise
   - staff_projections
   subthemes_local:
   - ecb
+  - eurozone_release
   - guidance_pivot
   - hawkish
   - rate_decision
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2024-06-06:monetary_policy:-
     geo: ''
@@ -162481,6 +163648,28 @@ episodes:
       - guidance_pivot
       - hawkish
       - rate_decision
+      directions_by_reference:
+        EURUSD=X:
+        - pos
+  - event_id: 2024-06-06:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb
+    - eurozone_release
+    - guidance_pivot
+    - hawkish
+    directions_by_reference:
+      EURUSD=X:
+      - pos
+    sources:
+    - card:2026-11-27/news_02.md
+    evidence:
+    - source: card:2026-11-27/news_02.md
+      subthemes_local:
+      - ecb
+      - eurozone_release
+      - guidance_pivot
+      - hawkish
       directions_by_reference:
         EURUSD=X:
         - pos
@@ -167966,8 +169155,9 @@ episodes:
         - neg
 - date: '2025-06-05'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - pos
@@ -167985,6 +169175,7 @@ episodes:
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     EURUSD=X:
+    - card:2026-11-27/news_02.md
     - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
@@ -167997,23 +169188,27 @@ episodes:
       BCE → dollaro più debole), di segno opposto al canale tassi globali; nessun
       verso univoco ex ante. Criterio ex ante, nessun prezzo consultato. Revisione
       Claude 2026-11-23.'
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - balance_sheet_policy
+  - ecb
   - ecb_meeting_day
   - forward_guidance
   - fragmentation_risk
+  - hawkish
   - policy_pause
   - press_conference_reversal
   - rate_surprise
   - staff_projections
   subthemes_local:
   - ecb
+  - eurozone_release
   - guidance_pivot
   - hawkish
   - rate_decision
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2025-06-05:monetary_policy:-
     geo: ''
@@ -168070,6 +169265,28 @@ episodes:
       directions_by_reference:
         BTP_BUND_SPREAD:
         - neg
+        - pos
+  - event_id: 2025-06-05:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb
+    - eurozone_release
+    - guidance_pivot
+    - hawkish
+    directions_by_reference:
+      EURUSD=X:
+      - pos
+    sources:
+    - card:2026-11-27/news_02.md
+    evidence:
+    - source: card:2026-11-27/news_02.md
+      subthemes_local:
+      - ecb
+      - eurozone_release
+      - guidance_pivot
+      - hawkish
+      directions_by_reference:
+        EURUSD=X:
         - pos
 - date: '2025-06-18'
   theme: monetary_policy
@@ -168646,8 +169863,9 @@ episodes:
         - neg
 - date: '2025-07-24'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - pos
@@ -168665,6 +169883,7 @@ episodes:
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     EURUSD=X:
+    - card:2026-11-27/news_02.md
     - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
@@ -168677,23 +169896,27 @@ episodes:
       BCE → dollaro più debole), di segno opposto al canale tassi globali; nessun
       verso univoco ex ante. Criterio ex ante, nessun prezzo consultato. Revisione
       Claude 2026-11-23.'
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - balance_sheet_policy
+  - ecb
   - ecb_meeting_day
   - forward_guidance
   - fragmentation_risk
+  - hawkish
   - policy_pause
   - press_conference_reversal
   - rate_surprise
   - staff_projections
   subthemes_local:
   - ecb
+  - eurozone_release
   - guidance_pivot
   - hawkish
   - rate_decision
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2025-07-24:monetary_policy:-
     geo: ''
@@ -168750,6 +169973,28 @@ episodes:
       directions_by_reference:
         BTP_BUND_SPREAD:
         - neg
+        - pos
+  - event_id: 2025-07-24:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb
+    - eurozone_release
+    - guidance_pivot
+    - hawkish
+    directions_by_reference:
+      EURUSD=X:
+      - pos
+    sources:
+    - card:2026-11-27/news_02.md
+    evidence:
+    - source: card:2026-11-27/news_02.md
+      subthemes_local:
+      - ecb
+      - eurozone_release
+      - guidance_pivot
+      - hawkish
+      directions_by_reference:
+        EURUSD=X:
         - pos
 - date: '2025-07-31'
   theme: monetary_policy
@@ -169202,8 +170447,9 @@ episodes:
       directions_by_reference: {}
 - date: '2025-09-11'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - neg
   - pos
@@ -169221,6 +170467,7 @@ episodes:
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
     EURUSD=X:
+    - card:2026-11-27/news_02.md
     - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
@@ -169233,23 +170480,27 @@ episodes:
       BCE → dollaro più debole), di segno opposto al canale tassi globali; nessun
       verso univoco ex ante. Criterio ex ante, nessun prezzo consultato. Revisione
       Claude 2026-11-23.'
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - balance_sheet_policy
+  - ecb
   - ecb_meeting_day
   - forward_guidance
   - fragmentation_risk
+  - hawkish
   - policy_pause
   - press_conference_reversal
   - rate_surprise
   - staff_projections
   subthemes_local:
   - ecb
+  - eurozone_release
   - guidance_pivot
   - hawkish
   - rate_decision
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2025-09-11:monetary_policy:-
     geo: ''
@@ -169306,6 +170557,28 @@ episodes:
       directions_by_reference:
         BTP_BUND_SPREAD:
         - neg
+        - pos
+  - event_id: 2025-09-11:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb
+    - eurozone_release
+    - guidance_pivot
+    - hawkish
+    directions_by_reference:
+      EURUSD=X:
+      - pos
+    sources:
+    - card:2026-11-27/news_02.md
+    evidence:
+    - source: card:2026-11-27/news_02.md
+      subthemes_local:
+      - ecb
+      - eurozone_release
+      - guidance_pivot
+      - hawkish
+      directions_by_reference:
+        EURUSD=X:
         - pos
 - date: '2025-09-17'
   theme: monetary_policy
@@ -170533,6 +171806,60 @@ episodes:
         - neg
         EWY:
         - neutral
+- date: '2026-01-19'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    EURUSD=X:
+    - neg
+    - pos
+  direction_sources:
+    EURUSD=X:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - ecb
+  - ecb_appointment
+  n_sources: 1
+  events:
+  - event_id: 2026-01-19:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    directions_by_reference:
+      EURUSD=X:
+      - neg
+      - pos
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+        - pos
 - date: '2026-01-21'
   theme: monetary_policy
   direction: mixed
@@ -174404,6 +175731,75 @@ episodes:
         - pos
         KRW=X:
         - neg
+- date: '2026-09-24'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    EURUSD=X:
+    - neg
+    IEAG.AS:
+    - pos
+  direction_sources:
+    EURUSD=X:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    IEAG.AS:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - ecb
+  - ecb_appointment
+  n_sources: 1
+  events:
+  - event_id: 2026-09-24:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    directions_by_reference:
+      EURUSD=X:
+      - neg
+      IEAG.AS:
+      - pos
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      directions_by_reference:
+        IEAG.AS:
+        - pos
 - date: '2026-09-28'
   theme: monetary_policy
   direction: ''
@@ -174749,6 +176145,7 @@ episodes:
   directions: []
   directions_declared:
   - neg
+  - neutral
   - pos
   directions_by_reference:
     BTP_BUND_SPREAD:
@@ -174756,12 +176153,14 @@ episodes:
     - pos
     EURUSD=X:
     - neg
+    - neutral
     - pos
     IEAG.AS:
     - neg
     - pos
     OAT_BUND_SPREAD:
     - neg
+    - neutral
     - pos
   direction_sources:
     BTP_BUND_SPREAD:
@@ -174772,6 +176171,9 @@ episodes:
     - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
     IEAG.AS:
     - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
@@ -174780,27 +176182,39 @@ episodes:
     - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
   directions_local: []
   declared: true
   subthemes:
   - balance_sheet_policy
+  - cb_independence
+  - ecb
+  - ecb_appointment
   - ecb_meeting_day
   - forward_guidance
   - fragmentation_risk
+  - guidance_pivot
+  - hawkish
   - policy_pause
   - press_conference_reversal
   - rate_surprise
   - staff_projections
   subthemes_local:
+  - cb_independence
   - ecb
+  - ecb_appointment
   - guidance_pivot
   - rate_decision
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-10-29:monetary_policy:-
     geo: ''
     subthemes_local:
+    - cb_independence
     - ecb
+    - ecb_appointment
     - guidance_pivot
     - rate_decision
     directions_by_reference:
@@ -174809,17 +176223,22 @@ episodes:
       - pos
       EURUSD=X:
       - neg
+      - neutral
       - pos
       IEAG.AS:
       - neg
       - pos
       OAT_BUND_SPREAD:
       - neg
+      - neutral
       - pos
     sources:
     - kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance e pause,
       regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate di riunione_
       sorprese su tassi, guidance e pause, regimi ed episodi storici 2011-2026.md
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
     evidence:
     - source: kb:Decisioni BCE nelle giornate di riunione_ sorprese su tassi, guidance
         e pause, regimi ed episodi storici 2011-2026/Decisioni BCE nelle giornate
@@ -174869,6 +176288,247 @@ episodes:
         OAT_BUND_SPREAD:
         - neg
         - pos
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - cb_independence
+      - ecb
+      - ecb_appointment
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - cb_independence
+      - ecb
+      - ecb_appointment
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - neutral
+- date: '2026-11-17'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BTP_BUND_SPREAD:
+    - neg
+    EURUSD=X:
+    - neg
+    IEAG.AS:
+    - neg
+    - pos
+    OAT_BUND_SPREAD:
+    - neg
+  direction_sources:
+    BTP_BUND_SPREAD:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    EURUSD=X:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    IEAG.AS:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    OAT_BUND_SPREAD:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  n_sources: 1
+  events:
+  - event_id: 2026-11-17:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - cb_independence
+    - ecb
+    - ecb_appointment
+    - guidance_pivot
+    directions_by_reference:
+      BTP_BUND_SPREAD:
+      - neg
+      EURUSD=X:
+      - neg
+      IEAG.AS:
+      - neg
+      - pos
+      OAT_BUND_SPREAD:
+      - neg
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - cb_independence
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        EURUSD=X:
+        - neg
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - cb_independence
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        BTP_BUND_SPREAD:
+        - neg
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - cb_independence
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - neg
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - guidance_pivot
+      directions_by_reference:
+        IEAG.AS:
+        - neg
+        - pos
+- date: '2026-11-18'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    EURUSD=X:
+    - neutral
+  direction_sources:
+    EURUSD=X:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - ecb
+  - ecb_appointment
+  n_sources: 1
+  events:
+  - event_id: 2026-11-18:monetary_policy:-
+    geo: ''
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+- date: '2026-11-26'
+  theme: monetary_policy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neutral
+  directions_by_reference:
+    EURUSD=X:
+    - neutral
+  direction_sources:
+    EURUSD=X:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+  directions_local: []
+  declared: true
+  subthemes:
+  - cb_independence
+  - ecb
+  - ecb_appointment
+  - guidance_pivot
+  - hawkish
+  subthemes_local:
+  - ecb
+  - ecb_appointment
+  n_sources: 1
+  events:
+  - event_id: 2026-11-26:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+    sources:
+    - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
+      su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
+      lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
+    evidence:
+    - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
+        e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
+        BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
+        Stato.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
 - date: '2016-06-23'
   theme: regulatory
   direction: neg
