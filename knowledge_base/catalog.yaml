@@ -1,5 +1,5 @@
-generated_at: '2026-11-27T13:29:57'
-num_entries: 59
+generated_at: '2026-11-27T21:39:07'
+num_entries: 60
 entries:
 - source_file: 'ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
     (2010–2026)/ASEAN : Sud-Est asiatico- shock geopolitici — regime ed episodi storici
@@ -208,6 +208,101 @@ entries:
   - export terminal
   - Ust-Luga
   - Primorsk
+- source_file: Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+    effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi e
+    fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su greggio,
+    prodotti e margine di raffinazione (2011–2026).md
+  title: 'Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino:
+    effetto su greggio, prodotti e margine di raffinazione (2011–2026)'
+  date_compiled: 2026-11-27
+  primary_theme: commodity_energy
+  sub_themes:
+  - refinery_attack
+  - export_terminal_attack
+  - crack_spread
+  - input_vs_output_shock
+  - gulf_energy_infrastructure
+  - houthi_attacks
+  - iran_war_2026
+  - hurricane_refinery_outage
+  - shipping_chokepoint
+  - libya_oil_shutdown
+  relevant_assets:
+  - BZ=F
+  - CRACK_321
+  - HO=F
+  - RB=F
+  - TTF=F
+  - XLE
+  - GC=F
+  external_assets_mentioned:
+  - 'CL=F (WTI): necessario per i fermi di raffinazione USA e per il differenziale
+    Brent-WTI, salito a circa 11 $ nel novembre 2026 sulle notizie dal Golfo'
+  - 'ICE Gasoil (LGO): benchmark dei distillati europei, ha reagito molto più di HO=F
+    nel marzo 2026 (+18% il 2 marzo)'
+  - 'Margine di raffinazione Singapore: misura diretta dei colpi a raffinerie del
+    Golfo esportatrici verso l''Asia'
+  - 'Margine di raffinazione Rotterdam/NWE: misura diretta dell''effetto su diesel
+    e jet europei'
+  - 'Dated Brent: il fisico ha reagito più dei futures (+9% il 18 marzo 2026 contro
+    +3,8%)'
+  - 'Noli petroliere (VLCC Golfo-Cina): canale rotte Hormuz e Mar Rosso'
+  - 'JKM LNG: effetto asiatico dei colpi su Ras Laffan'
+  - 'Murban: greggio di riferimento degli Emirati per shock sull''input nel Golfo'
+  time_window:
+    start: 2011-01-01
+    end: present
+  regime_phases:
+  - high_price_arab_spring: 2011-01-01 to 2014-11-27
+  - shale_glut_low_premium: 2014-11-28 to 2020-03-05
+  - covid_and_recovery: 2020-03-06 to 2022-02-23
+  - product_tight_post_2022: 2022-02-24 to 2026-02-27
+  - gulf_war_2026: 2026-02-28 to present
+  keywords:
+  - attacco raffineria
+  - raffineria colpita
+  - terminale petrolifero
+  - porto petrolifero
+  - oleodotto
+  - impianto di stabilizzazione
+  - margine di raffinazione
+  - crack spread
+  - forza maggiore
+  - Houthi
+  - Iran
+  - Hormuz
+  - Mar Rosso
+  - Abqaiq
+  - Ras Tanura
+  - Mina al-Ahmadi
+  - Sitra
+  - Ras Laffan
+  - Jeddah
+  - Baiji
+  - Es Sider
+  - Kirkuk-Ceyhan
+  - uragano raffinerie
+  - incendio raffineria
+  - refinery attack
+  - refinery fire
+  - export terminal attack
+  - drone strike oil facility
+  - crack spread
+  - refining margin
+  - force majeure
+  - oil supply disruption
+  - Strait of Hormuz
+  - Red Sea shipping
+  - Houthi missile Saudi
+  - Iran war 2026
+  - Gulf refinery strike
+  - hurricane refinery outage
+  - Libya oil shutdown
+  - Nigeria pipeline force majeure
+  - Abqaiq attack
+  - Ras Laffan LNG
+  - gasoline futures spike
+  - diesel crack
 - source_file: Auto-limitazione volontaria dell'offerta in settori a capacità strategica;
     precedenti storici e trasmissione ai mercati (1975–presente)/Auto-limitazione
     volontaria dell'offerta in settori a capacità strategica- precedenti storici

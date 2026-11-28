@@ -1,5 +1,5 @@
-generated_at: '2026-11-27T13:30:02'
-num_episodes: 1842
+generated_at: '2026-11-28T07:58:54'
+num_episodes: 1853
 episodes:
 - date: '1984-01-01'
   theme: commodity_energy
@@ -1396,6 +1396,94 @@ episodes:
     - source: card:2026-07-24/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2014-06-18'
+  theme: commodity_energy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+    CRACK_321:
+    - neg
+    - pos
+  direction_sources:
+    BZ=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - crack_spread
+  - export_terminal_attack
+  - gulf_energy_infrastructure
+  - houthi_attacks
+  - hurricane_refinery_outage
+  - input_vs_output_shock
+  - iran_war_2026
+  - libya_oil_shutdown
+  - refinery_attack
+  - shipping_chokepoint
+  subthemes_local:
+  - infrastructure_attack
+  - military_escalation
+  - priced_conflict
+  - refinery_products
+  n_sources: 1
+  events:
+  - event_id: 2014-06-18:commodity_energy:-
+    geo: ''
+    subthemes_local:
+    - infrastructure_attack
+    - military_escalation
+    - priced_conflict
+    - refinery_products
+    directions_by_reference:
+      BZ=F:
+      - pos
+      CRACK_321:
+      - neg
+      - pos
+    sources:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    evidence:
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - infrastructure_attack
+      - military_escalation
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - infrastructure_attack
+      - military_escalation
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        CRACK_321:
+        - neg
+        - pos
 - date: '2014-11-27'
   theme: commodity_energy
   direction: mixed
@@ -1413,6 +1501,7 @@ episodes:
     - card:2026-09-06/news_03.md
     - card:2026-09-19/news_02.md
     - card:2026-09-22/news_01.md
+    - card:2026-11-28/news_02.md
   directions_local:
   - neg
   declared: true
@@ -1433,6 +1522,7 @@ episodes:
   - oil_supply_normalization
   - opec_policy
   - refinery_products
+  - sanctions
   - shipping_chokepoint
   - strait_of_hormuz
   - supply
@@ -1445,7 +1535,7 @@ episodes:
   - shipping_chokepoint
   - supply_disruption
   - supply_glut
-  n_sources: 13
+  n_sources: 14
   events:
   - event_id: 2014-11-27:commodity_energy:-
     geo: ''
@@ -1472,6 +1562,7 @@ episodes:
     - card:2026-09-06/news_03.md
     - card:2026-09-19/news_02.md
     - card:2026-09-22/news_01.md
+    - card:2026-11-28/news_02.md
     evidence:
     - source: card:2026-06-06/news_03.md
       subthemes_local:
@@ -1529,6 +1620,13 @@ episodes:
       subthemes_local:
       - oil_supply_shock
       - opec_policy
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - opec_policy
+      - supply_disruption
       directions_by_reference:
         BZ=F:
         - neg
@@ -1973,6 +2071,83 @@ episodes:
     - source: card:2026-08-13/news_02.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2015-08-27'
+  theme: commodity_energy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+    CRACK_321:
+    - neg
+  direction_sources:
+    BZ=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - crack_spread
+  - export_terminal_attack
+  - gulf_energy_infrastructure
+  - houthi_attacks
+  - hurricane_refinery_outage
+  - input_vs_output_shock
+  - iran_war_2026
+  - libya_oil_shutdown
+  - refinery_attack
+  - shipping_chokepoint
+  subthemes_local:
+  - oil_supply_shock
+  - supply_disruption
+  n_sources: 1
+  events:
+  - event_id: 2015-08-27:commodity_energy:-
+    geo: ''
+    subthemes_local:
+    - oil_supply_shock
+    - supply_disruption
+    directions_by_reference:
+      BZ=F:
+      - pos
+      CRACK_321:
+      - neg
+    sources:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    evidence:
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - oil_supply_shock
+      - supply_disruption
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - oil_supply_shock
+      - supply_disruption
+      directions_by_reference:
+        CRACK_321:
+        - neg
 - date: '2016-01-18'
   theme: commodity_energy
   direction: neg
@@ -2522,17 +2697,20 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-08-30/news_03.md
+    - card:2026-11-28/news_02.md
   directions_local:
   - pos
   declared: true
   subthemes:
   - hormuz
+  - iran
   - opec_policy
+  - sanctions
   - shipping_chokepoint
   - supply_disruption
   subthemes_local:
   - opec_policy
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2016-11-30:commodity_energy:-
     geo: ''
@@ -2545,6 +2723,7 @@ episodes:
     - card:2026-08-30/news_03.md
     - card:2026-09-05/news_06.md
     - card:2026-09-07/news_02.md
+    - card:2026-11-28/news_02.md
     evidence:
     - source: card:2026-08-30/news_03.md
       subthemes_local:
@@ -2560,6 +2739,12 @@ episodes:
       subthemes_local:
       - opec_policy
       directions_by_reference: {}
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - opec_policy
+      directions_by_reference:
+        BZ=F:
+        - pos
 - date: '2017-05-22'
   theme: commodity_energy
   direction: neg
@@ -2701,6 +2886,102 @@ episodes:
     - card:2026-10-11/news_01.md
     evidence:
     - source: card:2026-10-11/news_01.md
+      subthemes_local:
+      - refinery_products
+      - supply_disruption
+      directions_by_reference:
+        CRACK_321:
+        - pos
+- date: '2017-08-28'
+  theme: commodity_energy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - neg
+    CRACK_321:
+    - pos
+    RB=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    RB=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - crack_spread
+  - export_terminal_attack
+  - gulf_energy_infrastructure
+  - houthi_attacks
+  - hurricane_refinery_outage
+  - input_vs_output_shock
+  - iran_war_2026
+  - libya_oil_shutdown
+  - refinery_attack
+  - shipping_chokepoint
+  subthemes_local:
+  - refinery_products
+  - supply_disruption
+  n_sources: 1
+  events:
+  - event_id: 2017-08-28:commodity_energy:-
+    geo: ''
+    subthemes_local:
+    - refinery_products
+    - supply_disruption
+    directions_by_reference:
+      BZ=F:
+      - neg
+      CRACK_321:
+      - pos
+      RB=F:
+      - pos
+    sources:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    evidence:
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - refinery_products
+      - supply_disruption
+      directions_by_reference:
+        RB=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - refinery_products
+      - supply_disruption
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
       subthemes_local:
       - refinery_products
       - supply_disruption
@@ -2976,6 +3257,87 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+- date: '2018-06-14'
+  theme: commodity_energy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+    CRACK_321:
+    - neg
+  direction_sources:
+    BZ=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - crack_spread
+  - export_terminal_attack
+  - gulf_energy_infrastructure
+  - houthi_attacks
+  - hurricane_refinery_outage
+  - input_vs_output_shock
+  - iran_war_2026
+  - libya_oil_shutdown
+  - refinery_attack
+  - shipping_chokepoint
+  subthemes_local:
+  - infrastructure_attack
+  - military_escalation
+  - oil_supply_shock
+  n_sources: 1
+  events:
+  - event_id: 2018-06-14:commodity_energy:-
+    geo: ''
+    subthemes_local:
+    - infrastructure_attack
+    - military_escalation
+    - oil_supply_shock
+    directions_by_reference:
+      BZ=F:
+      - pos
+      CRACK_321:
+      - neg
+    sources:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    evidence:
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - infrastructure_attack
+      - military_escalation
+      - oil_supply_shock
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - infrastructure_attack
+      - military_escalation
+      - oil_supply_shock
+      directions_by_reference:
+        CRACK_321:
+        - neg
 - date: '2018-07-11'
   theme: commodity_energy
   direction: neg
@@ -4089,6 +4451,7 @@ episodes:
   - infrastructure_attack
   - iran
   - negotiation_track
+  - refinery_products
   - shipping_chokepoint
   subthemes_local:
   - houthi
@@ -4154,6 +4517,8 @@ episodes:
   directions_by_reference:
     BZ=F:
     - pos
+    CRACK_321:
+    - neg
   direction_sources:
     BZ=F:
     - card:2026-09-13/news_01.md
@@ -4192,16 +4557,27 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
   directions_local:
   - neg
   - pos
   declared: true
   subthemes:
+  - crack_spread
   - de_escalation
   - energy_infrastructure
+  - export_terminal_attack
   - gas_europe
   - geopolitical
   - geopolitical_diplomacy
@@ -4210,12 +4586,18 @@ episodes:
   - geopolitical_premium_iran
   - geopolitical_risk_premium
   - geopolitical_risk_premium_unwind
+  - gulf_energy_infrastructure
   - hormuz
   - houthi
+  - houthi_attacks
   - houthi_chokepoint
+  - hurricane_refinery_outage
   - infrastructure_attack
+  - input_vs_output_shock
   - iran
   - iran_sanctions
+  - iran_war_2026
+  - libya_oil_shutdown
   - limited_strike
   - middle_east
   - middle_east_war
@@ -4225,6 +4607,7 @@ episodes:
   - oil_supply_shock
   - opec_policy
   - priced_conflict
+  - refinery_attack
   - refinery_products
   - refinery_strike
   - russia
@@ -4245,7 +4628,7 @@ episodes:
   - military_escalation
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 60
+  n_sources: 61
   events:
   - event_id: 2019-06-13:commodity_energy:-
     geo: ''
@@ -4259,6 +4642,8 @@ episodes:
     directions_by_reference:
       BZ=F:
       - pos
+      CRACK_321:
+      - neg
     sources:
     - card:2026-06-01/news_01.md
     - card:2026-06-02/news_01.md
@@ -4317,6 +4702,10 @@ episodes:
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
     - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -4672,6 +5061,30 @@ episodes:
     - source: card:2026-11-27/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        CRACK_321:
+        - neg
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -4961,9 +5374,14 @@ episodes:
   - neg
   directions_declared:
   - neg
+  - pos
   directions_by_reference:
     BZ=F:
     - neg
+    CRACK_321:
+    - pos
+    RB=F:
+    - pos
   direction_sources:
     BZ=F:
     - card:2026-11-05/news_01.md
@@ -4972,23 +5390,42 @@ episodes:
     - kb:Distensioni geopolitiche e premio di rischio sul petrolio_ forme di distensione
       ed episodi storici 2013-2026/Distensioni geopolitiche e premio di rischio sul
       petrolio_ forme di distensione ed episodi storici 2013-2026.md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    RB=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
   directions_local:
   - neg
   declared: true
   subthemes:
   - black_sea
   - ceasefire
+  - crack_spread
   - de_escalation
   - election_risk
+  - export_terminal_attack
   - gas_europe
+  - gulf_energy_infrastructure
   - hormuz
   - houthi
+  - houthi_attacks
+  - hurricane_refinery_outage
   - infrastructure_attack
+  - input_vs_output_shock
   - iran
+  - iran_war_2026
+  - libya_oil_shutdown
   - military_escalation
   - negotiation_track
   - opec_policy
   - peace_talks
+  - refinery_attack
   - refinery_products
   - sanctions
   - shipping_chokepoint
@@ -4999,8 +5436,10 @@ episodes:
   - de_escalation
   - hormuz
   - iran
+  - refinery_products
+  - supply_disruption
   - verbal_de_escalation
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2019-06-21:commodity_energy:-
     geo: ''
@@ -5008,14 +5447,24 @@ episodes:
     - de_escalation
     - hormuz
     - iran
+    - refinery_products
+    - supply_disruption
     - verbal_de_escalation
     directions_by_reference:
       BZ=F:
       - neg
+      CRACK_321:
+      - pos
+      RB=F:
+      - pos
     sources:
     - card:2026-11-05/news_01.md
     - card:2026-11-09/news_01.md
     - card:2026-11-10/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Distensioni geopolitiche e premio di rischio sul petrolio_ forme di distensione
       ed episodi storici 2013-2026/Distensioni geopolitiche e premio di rischio sul
       petrolio_ forme di distensione ed episodi storici 2013-2026.md
@@ -5047,6 +5496,26 @@ episodes:
       directions_by_reference:
         BZ=F:
         - neg
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - refinery_products
+      - supply_disruption
+      directions_by_reference:
+        RB=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - refinery_products
+      - supply_disruption
+      directions_by_reference:
+        CRACK_321:
+        - pos
     - source: kb:Distensioni geopolitiche e premio di rischio sul petrolio_ forme
         di distensione ed episodi storici 2013-2026/Distensioni geopolitiche e premio
         di rischio sul petrolio_ forme di distensione ed episodi storici 2013-2026.md
@@ -6089,6 +6558,8 @@ episodes:
   directions_by_reference:
     BZ=F:
     - pos
+    CRACK_321:
+    - neg
     GC=F:
     - pos
     HO=F:
@@ -6116,13 +6587,26 @@ episodes:
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
     - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     GC=F:
     - card:2026-10-20/news_01.md
     HO=F:
     - card:2026-10-20/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -6133,6 +6617,10 @@ episodes:
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
     XLE:
     - card:2026-10-20/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     ^GSPC:
     - card:2026-10-20/news_01.md
   direction_review_excluded:
@@ -6148,8 +6636,10 @@ episodes:
   - pos
   declared: true
   subthemes:
+  - crack_spread
   - de_escalation
   - energy_infrastructure
+  - export_terminal_attack
   - gas_europe
   - geopolitical
   - geopolitical_diplomacy
@@ -6159,13 +6649,19 @@ episodes:
   - geopolitical_premium_iran
   - geopolitical_risk_premium
   - geopolitical_risk_premium_unwind
+  - gulf_energy_infrastructure
   - hormuz
   - houthi
+  - houthi_attacks
   - houthi_chokepoint
+  - hurricane_refinery_outage
   - infrastructure_attack
+  - input_vs_output_shock
   - iran
   - iran_sanctions
   - iran_us_diplomacy
+  - iran_war_2026
+  - libya_oil_shutdown
   - limited_strike
   - middle_east
   - middle_east_war
@@ -6178,6 +6674,7 @@ episodes:
   - oil_supply_normalization
   - oil_supply_shock
   - priced_conflict
+  - refinery_attack
   - refinery_products
   - refinery_strike
   - russia
@@ -6197,13 +6694,14 @@ episodes:
   - energy_infrastructure
   - houthi
   - infrastructure_attack
+  - iran
   - military_escalation
   - oil_supply_shock
   - physical_damage
   - refinery_products
   - supply_disruption
   - upstream_export_strike
-  n_sources: 47
+  n_sources: 48
   events:
   - event_id: 2019-09-16:commodity_energy:-
     geo: ''
@@ -6211,6 +6709,7 @@ episodes:
     - energy_infrastructure
     - houthi
     - infrastructure_attack
+    - iran
     - military_escalation
     - oil_supply_shock
     - physical_damage
@@ -6220,6 +6719,8 @@ episodes:
     directions_by_reference:
       BZ=F:
       - pos
+      CRACK_321:
+      - neg
       GC=F:
       - pos
       HO=F:
@@ -6276,6 +6777,10 @@ episodes:
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
     - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -6509,6 +7014,58 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      - oil_supply_shock
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      - oil_supply_shock
+      directions_by_reference:
+        CRACK_321:
+        - neg
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      - oil_supply_shock
+      directions_by_reference:
+        HO=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      - oil_supply_shock
+      directions_by_reference:
+        XLE:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -6573,6 +7130,10 @@ episodes:
     BZ=F:
     - card:2026-09-19/news_02.md
     - card:2026-11-17/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Il ritorno dell'offerta di petrolio dopo un'interruzione_ trasmissione a
       greggio, raffinati e valute dei produttori (2011–presente)/Il ritorno dell'offerta
       di petrolio dopo un'interruzione_ trasmissione a greggio, raffinati e valute
@@ -6583,6 +7144,10 @@ episodes:
       di petrolio dopo un'interruzione_ trasmissione a greggio, raffinati e valute
       dei produttori (2011–presente).md
     CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Il ritorno dell'offerta di petrolio dopo un'interruzione_ trasmissione a
       greggio, raffinati e valute dei produttori (2011–presente)/Il ritorno dell'offerta
       di petrolio dopo un'interruzione_ trasmissione a greggio, raffinati e valute
@@ -6606,25 +7171,36 @@ episodes:
   - neg
   declared: true
   subthemes:
+  - crack_spread
+  - export_terminal_attack
+  - gulf_energy_infrastructure
+  - houthi_attacks
+  - hurricane_refinery_outage
+  - input_vs_output_shock
   - iran
+  - iran_war_2026
+  - libya_oil_shutdown
   - military_escalation
   - oil_supply_shock
   - opec_policy
+  - refinery_attack
   - refinery_products
   - shipping_chokepoint
   - supply_disruption
   - supply_return
   subthemes_local:
+  - de_escalation
   - infrastructure_attack
   - oil_supply_shock
   - refinery_products
   - supply_disruption
   - supply_return
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2019-09-17:commodity_energy:-
     geo: ''
     subthemes_local:
+    - de_escalation
     - infrastructure_attack
     - oil_supply_shock
     - refinery_products
@@ -6647,6 +7223,10 @@ episodes:
     sources:
     - card:2026-09-19/news_02.md
     - card:2026-11-17/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Il ritorno dell'offerta di petrolio dopo un'interruzione_ trasmissione a
       greggio, raffinati e valute dei produttori (2011–presente)/Il ritorno dell'offerta
       di petrolio dopo un'interruzione_ trasmissione a greggio, raffinati e valute
@@ -6666,6 +7246,26 @@ episodes:
       directions_by_reference:
         BZ=F:
         - neg
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - de_escalation
+      - supply_return
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - de_escalation
+      - supply_return
+      directions_by_reference:
+        CRACK_321:
+        - pos
     - source: kb:Il ritorno dell'offerta di petrolio dopo un'interruzione_ trasmissione
         a greggio, raffinati e valute dei produttori (2011–presente)/Il ritorno dell'offerta
         di petrolio dopo un'interruzione_ trasmissione a greggio, raffinati e valute
@@ -8111,6 +8711,89 @@ episodes:
       directions_by_reference:
         CRACK_321:
         - pos
+- date: '2020-08-27'
+  theme: commodity_energy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    CRACK_321:
+    - neg
+    - pos
+    RB=F:
+    - neg
+    - pos
+  direction_sources:
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    RB=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - crack_spread
+  - export_terminal_attack
+  - gulf_energy_infrastructure
+  - houthi_attacks
+  - hurricane_refinery_outage
+  - input_vs_output_shock
+  - iran_war_2026
+  - libya_oil_shutdown
+  - refinery_attack
+  - shipping_chokepoint
+  subthemes_local:
+  - refinery_products
+  - supply_disruption
+  n_sources: 1
+  events:
+  - event_id: 2020-08-27:commodity_energy:-
+    geo: ''
+    subthemes_local:
+    - refinery_products
+    - supply_disruption
+    directions_by_reference:
+      CRACK_321:
+      - neg
+      - pos
+      RB=F:
+      - neg
+      - pos
+    sources:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    evidence:
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - refinery_products
+      - supply_disruption
+      directions_by_reference:
+        RB=F:
+        - neg
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - refinery_products
+      - supply_disruption
+      directions_by_reference:
+        CRACK_321:
+        - neg
+        - pos
 - date: '2020-09-16'
   theme: commodity_energy
   direction: pos
@@ -8566,16 +9249,28 @@ episodes:
   - neg
   - pos
   directions_declared:
+  - neg
   - pos
   directions_by_reference:
     BZ=F:
     - pos
+    CRACK_321:
+    - neg
   direction_sources:
     BZ=F:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
     - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
   direction_review_excluded:
     CRACK_321: 'Drone sul deposito di Ras Tanura (terminale di export del greggio)
       e missile su Dhahran, senza danni gravi. Colpo a impianti di greggio (giacimenti,
@@ -8587,17 +9282,27 @@ episodes:
   - pos
   declared: true
   subthemes:
+  - crack_spread
+  - export_terminal_attack
+  - gulf_energy_infrastructure
   - hormuz
   - houthi
+  - houthi_attacks
+  - hurricane_refinery_outage
   - infrastructure_attack
+  - input_vs_output_shock
   - iran
+  - iran_war_2026
+  - libya_oil_shutdown
   - negotiation_track
+  - refinery_attack
+  - refinery_products
   - shipping_chokepoint
   subthemes_local:
   - houthi
   - infrastructure_attack
   - military_escalation
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2021-03-08:commodity_energy:-
     geo: ''
@@ -8608,11 +9313,17 @@ episodes:
     directions_by_reference:
       BZ=F:
       - pos
+      CRACK_321:
+      - neg
     sources:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
     - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     evidence:
     - source: card:2026-11-13/news_01.md
       subthemes_local:
@@ -8644,6 +9355,28 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - military_escalation
+      directions_by_reference:
+        CRACK_321:
+        - neg
 - date: '2021-06-21'
   theme: commodity_energy
   direction: ''
@@ -8755,6 +9488,82 @@ episodes:
       directions_by_reference:
         CRACK_321:
         - pos
+- date: '2021-08-30'
+  theme: commodity_energy
+  direction: ''
+  directions: []
+  directions_declared:
+  - pos
+  directions_by_reference:
+    CRACK_321:
+    - pos
+    RB=F:
+    - pos
+  direction_sources:
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    RB=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - crack_spread
+  - export_terminal_attack
+  - gulf_energy_infrastructure
+  - houthi_attacks
+  - hurricane_refinery_outage
+  - input_vs_output_shock
+  - iran_war_2026
+  - libya_oil_shutdown
+  - refinery_attack
+  - shipping_chokepoint
+  subthemes_local:
+  - refinery_products
+  - supply_disruption
+  n_sources: 1
+  events:
+  - event_id: 2021-08-30:commodity_energy:-
+    geo: ''
+    subthemes_local:
+    - refinery_products
+    - supply_disruption
+    directions_by_reference:
+      CRACK_321:
+      - pos
+      RB=F:
+      - pos
+    sources:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    evidence:
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - refinery_products
+      - supply_disruption
+      directions_by_reference:
+        RB=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - refinery_products
+      - supply_disruption
+      directions_by_reference:
+        CRACK_321:
+        - pos
 - date: '2021-11-23'
   theme: commodity_energy
   direction: neg
@@ -8819,9 +9628,13 @@ episodes:
   - neg
   - pos
   directions_declared:
+  - neg
   - pos
   directions_by_reference:
     BZ=F:
+    - pos
+    CRACK_321:
+    - neg
     - pos
   direction_sources:
     BZ=F:
@@ -8829,6 +9642,15 @@ episodes:
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
     - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
   direction_review_excluded:
     CRACK_321: 'Esplosione di autocisterne presso il deposito ADNOC di Mussafah e
       attacco all''aeroporto di Abu Dhabi: deposito di carburante, nessuna capacità
@@ -8842,17 +9664,28 @@ episodes:
   - pos
   declared: true
   subthemes:
+  - crack_spread
+  - export_terminal_attack
+  - gulf_energy_infrastructure
   - hormuz
   - houthi
+  - houthi_attacks
+  - hurricane_refinery_outage
   - infrastructure_attack
+  - input_vs_output_shock
   - iran
+  - iran_war_2026
+  - libya_oil_shutdown
   - negotiation_track
+  - refinery_attack
+  - refinery_products
   - shipping_chokepoint
   subthemes_local:
   - houthi
   - infrastructure_attack
   - military_escalation
-  n_sources: 4
+  - refinery_products
+  n_sources: 5
   events:
   - event_id: 2022-01-18:commodity_energy:-
     geo: ''
@@ -8860,14 +9693,22 @@ episodes:
     - houthi
     - infrastructure_attack
     - military_escalation
+    - refinery_products
     directions_by_reference:
       BZ=F:
+      - pos
+      CRACK_321:
+      - neg
       - pos
     sources:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
     - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     evidence:
     - source: card:2026-11-13/news_01.md
       subthemes_local:
@@ -8898,6 +9739,31 @@ episodes:
       - infrastructure_attack
       directions_by_reference:
         BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - military_escalation
+      - refinery_products
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - military_escalation
+      - refinery_products
+      directions_by_reference:
+        CRACK_321:
+        - neg
         - pos
 - date: '2022-02-15'
   theme: commodity_energy
@@ -9330,6 +10196,7 @@ episodes:
   - infrastructure_attack
   - iran
   - negotiation_track
+  - refinery_products
   - shipping_chokepoint
   subthemes_local:
   - houthi
@@ -9394,9 +10261,13 @@ episodes:
   - neg
   - pos
   directions_declared:
+  - neg
   - pos
   directions_by_reference:
     BZ=F:
+    - pos
+    CRACK_321:
+    - neg
     - pos
   direction_sources:
     BZ=F:
@@ -9404,6 +10275,15 @@ episodes:
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
     - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
   direction_review_excluded:
     CRACK_321: 'Incendio di due serbatoi del deposito di prodotti Aramco a Jeddah:
       deposito di distribuzione, non capacità di raffinazione; effetto locale senza
@@ -9413,17 +10293,29 @@ episodes:
   - pos
   declared: true
   subthemes:
+  - crack_spread
+  - export_terminal_attack
+  - gulf_energy_infrastructure
   - hormuz
   - houthi
+  - houthi_attacks
+  - hurricane_refinery_outage
   - infrastructure_attack
+  - input_vs_output_shock
   - iran
+  - iran_war_2026
+  - libya_oil_shutdown
   - negotiation_track
+  - refinery_attack
+  - refinery_products
   - shipping_chokepoint
   subthemes_local:
   - houthi
   - infrastructure_attack
   - military_escalation
-  n_sources: 4
+  - priced_conflict
+  - refinery_products
+  n_sources: 5
   events:
   - event_id: 2022-03-25:commodity_energy:-
     geo: ''
@@ -9431,14 +10323,23 @@ episodes:
     - houthi
     - infrastructure_attack
     - military_escalation
+    - priced_conflict
+    - refinery_products
     directions_by_reference:
       BZ=F:
+      - pos
+      CRACK_321:
+      - neg
       - pos
     sources:
     - card:2026-11-13/news_01.md
     - card:2026-11-15/news_01.md
     - card:2026-11-26/news_02.md
     - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     evidence:
     - source: card:2026-11-13/news_01.md
       subthemes_local:
@@ -9469,6 +10370,31 @@ episodes:
       - infrastructure_attack
       directions_by_reference:
         BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        CRACK_321:
+        - neg
         - pos
 - date: '2022-03-31'
   theme: commodity_energy
@@ -10350,17 +11276,20 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-09-07/news_02.md
+    - card:2026-11-28/news_02.md
   directions_local:
   - pos
   declared: true
   subthemes:
   - hormuz
+  - iran
   - opec_policy
+  - sanctions
   - shipping_chokepoint
   - supply_disruption
   subthemes_local:
   - opec_policy
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2022-10-05:commodity_energy:-
     geo: ''
@@ -10373,6 +11302,7 @@ episodes:
     - card:2026-08-30/news_03.md
     - card:2026-09-05/news_06.md
     - card:2026-09-07/news_02.md
+    - card:2026-11-28/news_02.md
     evidence:
     - source: card:2026-08-30/news_03.md
       subthemes_local:
@@ -10383,6 +11313,12 @@ episodes:
       - opec_policy
       directions_by_reference: {}
     - source: card:2026-09-07/news_02.md
+      subthemes_local:
+      - opec_policy
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: card:2026-11-28/news_02.md
       subthemes_local:
       - opec_policy
       directions_by_reference:
@@ -10939,6 +11875,83 @@ episodes:
     - source: card:2026-06-25/news_05.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2023-03-27'
+  theme: commodity_energy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+    CRACK_321:
+    - neg
+  direction_sources:
+    BZ=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - crack_spread
+  - export_terminal_attack
+  - gulf_energy_infrastructure
+  - houthi_attacks
+  - hurricane_refinery_outage
+  - input_vs_output_shock
+  - iran_war_2026
+  - libya_oil_shutdown
+  - refinery_attack
+  - shipping_chokepoint
+  subthemes_local:
+  - oil_supply_shock
+  - supply_disruption
+  n_sources: 1
+  events:
+  - event_id: 2023-03-27:commodity_energy:-
+    geo: ''
+    subthemes_local:
+    - oil_supply_shock
+    - supply_disruption
+    directions_by_reference:
+      BZ=F:
+      - pos
+      CRACK_321:
+      - neg
+    sources:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    evidence:
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - oil_supply_shock
+      - supply_disruption
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - oil_supply_shock
+      - supply_disruption
+      directions_by_reference:
+        CRACK_321:
+        - neg
 - date: '2023-04-03'
   theme: commodity_energy
   direction: mixed
@@ -10953,17 +11966,20 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-08-30/news_03.md
+    - card:2026-11-28/news_02.md
   directions_local:
   - pos
   declared: true
   subthemes:
   - hormuz
+  - iran
   - opec_policy
+  - sanctions
   - shipping_chokepoint
   - supply_disruption
   subthemes_local:
   - opec_policy
-  n_sources: 3
+  n_sources: 4
   events:
   - event_id: 2023-04-03:commodity_energy:-
     geo: ''
@@ -10976,6 +11992,7 @@ episodes:
     - card:2026-08-30/news_03.md
     - card:2026-09-05/news_06.md
     - card:2026-09-07/news_02.md
+    - card:2026-11-28/news_02.md
     evidence:
     - source: card:2026-08-30/news_03.md
       subthemes_local:
@@ -10991,6 +12008,12 @@ episodes:
       subthemes_local:
       - opec_policy
       directions_by_reference: {}
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - opec_policy
+      directions_by_reference:
+        BZ=F:
+        - pos
 - date: '2023-05-03'
   theme: commodity_energy
   direction: neg
@@ -11834,6 +12857,9 @@ episodes:
   directions_by_reference:
     BZ=F:
     - pos
+    CRACK_321:
+    - neg
+    - pos
     HO=F:
     - pos
     TTF=F:
@@ -11843,10 +12869,23 @@ episodes:
     - card:2026-09-06/news_02.md
     - card:2026-11-26/news_02.md
     - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     HO=F:
     - card:2026-09-06/news_02.md
     TTF=F:
     - card:2026-09-06/news_02.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
   direction_review_excluded:
     IYT: 'Research Houthi §3 dà «pos, neg»: noli in salita contro costo del carburante,
       segno netto ambiguo. Revisione Claude 2026-10-22.'
@@ -11855,17 +12894,26 @@ episodes:
   - pos
   declared: true
   subthemes:
+  - crack_spread
+  - export_terminal_attack
   - geopolitical
   - geopolitical_risk_premium
   - geopolitical_risk_premium_unwind
+  - gulf_energy_infrastructure
   - hormuz
   - houthi
+  - houthi_attacks
+  - hurricane_refinery_outage
   - infrastructure_attack
+  - input_vs_output_shock
   - iran
   - iran_sanctions
   - iran_us_diplomacy
+  - iran_war_2026
+  - libya_oil_shutdown
   - oil_de_escalation
   - oil_supply_shock
+  - refinery_attack
   - refinery_products
   - safe_haven_flows
   - safe_haven_unwind
@@ -11877,7 +12925,7 @@ episodes:
   - houthi
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 12
+  n_sources: 13
   events:
   - event_id: 2023-12-18:commodity_energy:-
     geo: ''
@@ -11887,6 +12935,9 @@ episodes:
     - supply_disruption
     directions_by_reference:
       BZ=F:
+      - pos
+      CRACK_321:
+      - neg
       - pos
       HO=F:
       - pos
@@ -11904,6 +12955,10 @@ episodes:
     - card:2026-09-06/news_02.md
     - card:2026-11-26/news_02.md
     - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     evidence:
     - source: card:2026-06-05/news_01.md
@@ -11958,6 +13013,37 @@ episodes:
       - shipping_chokepoint
       directions_by_reference:
         BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - houthi
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - houthi
+      - shipping_chokepoint
+      directions_by_reference:
+        TTF=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - houthi
+      - shipping_chokepoint
+      directions_by_reference:
+        CRACK_321:
+        - neg
         - pos
     - source: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
       subthemes_local:
@@ -13362,6 +14448,7 @@ episodes:
   - iran
   - military_escalation
   - negotiation_track
+  - refinery_products
   - sanctions
   subthemes_local:
   - iran
@@ -15006,6 +16093,83 @@ episodes:
     - source: card:2026-08-18/news_05.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2024-08-26'
+  theme: commodity_energy
+  direction: ''
+  directions: []
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+    CRACK_321:
+    - neg
+  direction_sources:
+    BZ=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - crack_spread
+  - export_terminal_attack
+  - gulf_energy_infrastructure
+  - houthi_attacks
+  - hurricane_refinery_outage
+  - input_vs_output_shock
+  - iran_war_2026
+  - libya_oil_shutdown
+  - refinery_attack
+  - shipping_chokepoint
+  subthemes_local:
+  - oil_supply_shock
+  - supply_disruption
+  n_sources: 1
+  events:
+  - event_id: 2024-08-26:commodity_energy:-
+    geo: ''
+    subthemes_local:
+    - oil_supply_shock
+    - supply_disruption
+    directions_by_reference:
+      BZ=F:
+      - pos
+      CRACK_321:
+      - neg
+    sources:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    evidence:
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - oil_supply_shock
+      - supply_disruption
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - oil_supply_shock
+      - supply_disruption
+      directions_by_reference:
+        CRACK_321:
+        - neg
 - date: '2024-08-28'
   theme: commodity_energy
   direction: neg
@@ -17528,6 +18692,7 @@ episodes:
   directions:
   - neg
   - neutral
+  - pos
   directions_declared:
   - neg
   directions_by_reference:
@@ -17536,18 +18701,22 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-09-06/news_03.md
+    - card:2026-11-28/news_02.md
   directions_local:
   - neg
   declared: true
   subthemes:
   - demand
   - demand_destruction
+  - hormuz
   - inventory
+  - iran
   - opec_policy
+  - sanctions
   subthemes_local:
   - opec_policy
   - tariff_escalation
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2025-04-03:commodity_energy:-
     geo: ''
@@ -17560,6 +18729,7 @@ episodes:
     sources:
     - card:2026-08-13/news_02.md
     - card:2026-09-06/news_03.md
+    - card:2026-11-28/news_02.md
     evidence:
     - source: card:2026-08-13/news_02.md
       subthemes_local:
@@ -17567,6 +18737,13 @@ episodes:
       - tariff_escalation
       directions_by_reference: {}
     - source: card:2026-09-06/news_03.md
+      subthemes_local:
+      - opec_policy
+      - tariff_escalation
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-28/news_02.md
       subthemes_local:
       - opec_policy
       - tariff_escalation
@@ -22423,9 +23600,14 @@ episodes:
   directions_by_reference:
     BZ=F:
     - pos
+    CRACK_321:
+    - neg
+    - pos
     EURUSD=X:
     - neg
     GC=F:
+    - pos
+    HO=F:
     - pos
     INDA:
     - neg
@@ -22468,6 +23650,10 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -22476,6 +23662,11 @@ episodes:
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     EURUSD=X:
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
@@ -22486,12 +23677,21 @@ episodes:
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
+    HO=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     INDA:
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
     TTF=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -22516,23 +23716,31 @@ episodes:
   declared: true
   subthemes:
   - black_sea
+  - crack_spread
   - de_escalation
   - de_escalation_asymmetry
   - energy_infrastructure
+  - export_terminal_attack
   - gas_europe
   - geopolitical
   - geopolitical_middle_east
   - geopolitical_premium_drain
   - geopolitical_risk_premium
   - geopolitical_risk_premium_unwind
+  - gulf_energy_infrastructure
   - hormuz
   - hormuz_closure
   - houthi
+  - houthi_attacks
+  - hurricane_refinery_outage
   - inflation_rates_channel
   - infrastructure_attack
+  - input_vs_output_shock
   - iran
   - iran_sanctions
   - iran_us_diplomacy
+  - iran_war_2026
+  - libya_oil_shutdown
   - limited_strike
   - lng_supply_shock
   - military_escalation
@@ -22549,6 +23757,7 @@ episodes:
   - priced_conflict
   - priced_in_surprise
   - refined_products
+  - refinery_attack
   - refinery_products
   - russia
   - russia_refinery
@@ -22572,9 +23781,10 @@ episodes:
   - military_escalation
   - negotiation_track
   - oil_supply_shock
+  - refinery_products
   - safe_haven_flows
   - shipping_chokepoint
-  n_sources: 51
+  n_sources: 52
   events:
   - event_id: 2026-03-02:commodity_energy:-
     geo: ''
@@ -22586,12 +23796,18 @@ episodes:
     - military_escalation
     - negotiation_track
     - oil_supply_shock
+    - refinery_products
     - safe_haven_flows
     - shipping_chokepoint
     directions_by_reference:
       BZ=F:
       - pos
+      CRACK_321:
+      - neg
+      - pos
       GC=F:
+      - pos
+      HO=F:
       - pos
       INDA:
       - neg
@@ -22653,6 +23869,10 @@ episodes:
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
     - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -22968,6 +24188,61 @@ episodes:
     - source: card:2026-11-27/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - hormuz
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      - refinery_products
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - hormuz
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      - refinery_products
+      - shipping_chokepoint
+      directions_by_reference:
+        HO=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - hormuz
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      - refinery_products
+      - shipping_chokepoint
+      directions_by_reference:
+        CRACK_321:
+        - neg
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        TTF=F:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -23248,6 +24523,107 @@ episodes:
     - source: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2026-03-05'
+  theme: commodity_energy
+  direction: pos
+  directions:
+  - pos
+  directions_declared:
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+    CRACK_321:
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+  directions_local:
+  - pos
+  declared: true
+  subthemes:
+  - crack_spread
+  - export_terminal_attack
+  - gulf_energy_infrastructure
+  - houthi
+  - houthi_attacks
+  - hurricane_refinery_outage
+  - infrastructure_attack
+  - input_vs_output_shock
+  - iran
+  - iran_war_2026
+  - libya_oil_shutdown
+  - refinery_attack
+  - refinery_products
+  - shipping_chokepoint
+  subthemes_local:
+  - infrastructure_attack
+  - iran
+  - priced_conflict
+  - refinery_products
+  n_sources: 2
+  events:
+  - event_id: 2026-03-05:commodity_energy:-
+    geo: ''
+    subthemes_local:
+    - infrastructure_attack
+    - iran
+    - priced_conflict
+    - refinery_products
+    directions_by_reference:
+      BZ=F:
+      - pos
+      CRACK_321:
+      - pos
+    sources:
+    - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    evidence:
+    - source: card:2026-11-27/news_01.md
+      subthemes_local:
+      - infrastructure_attack
+      - iran
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - infrastructure_attack
+      - iran
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - infrastructure_attack
+      - iran
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        CRACK_321:
+        - pos
 - date: '2026-03-08'
   theme: commodity_energy
   direction: mixed
@@ -23880,6 +25256,128 @@ episodes:
     - source: kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
       subthemes_local: []
       directions_by_reference: {}
+- date: '2026-03-18'
+  theme: commodity_energy
+  direction: pos
+  directions:
+  - pos
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+    CRACK_321:
+    - neg
+    - pos
+    TTF=F:
+    - pos
+  direction_sources:
+    BZ=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    TTF=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+  directions_local: []
+  declared: true
+  subthemes:
+  - crack_spread
+  - export_terminal_attack
+  - gulf_energy_infrastructure
+  - houthi
+  - houthi_attacks
+  - hurricane_refinery_outage
+  - infrastructure_attack
+  - input_vs_output_shock
+  - iran
+  - iran_war_2026
+  - libya_oil_shutdown
+  - refinery_attack
+  - refinery_products
+  - shipping_chokepoint
+  subthemes_local:
+  - infrastructure_attack
+  - iran
+  - military_escalation
+  - priced_conflict
+  - refinery_products
+  n_sources: 2
+  events:
+  - event_id: 2026-03-18:commodity_energy:-
+    geo: ''
+    subthemes_local:
+    - infrastructure_attack
+    - iran
+    - military_escalation
+    - priced_conflict
+    - refinery_products
+    directions_by_reference:
+      BZ=F:
+      - pos
+      CRACK_321:
+      - neg
+      - pos
+      TTF=F:
+      - pos
+    sources:
+    - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    evidence:
+    - source: card:2026-11-27/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      - priced_conflict
+      directions_by_reference:
+        TTF=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        CRACK_321:
+        - neg
+        - pos
 - date: '2026-03-19'
   theme: commodity_energy
   direction: mixed
@@ -23890,10 +25388,36 @@ episodes:
   directions_declared:
   - pos
   directions_by_reference:
+    BZ=F:
+    - pos
+    CRACK_321:
+    - pos
+    HO=F:
+    - pos
     TTF=F:
     - pos
   direction_sources:
+    BZ=F:
+    - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    HO=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     TTF=F:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -23901,24 +25425,35 @@ episodes:
   direction_review_excluded:
     BZ=F: 'Intervallo 19-27/03 (campagna aerea USA per riaprire lo Stretto): due letture
       opposte, escalation militare e prospettiva di riapertura.'
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
   - black_sea
+  - crack_spread
   - de_escalation
   - de_escalation_asymmetry
   - energy_infrastructure
+  - export_terminal_attack
   - geopolitical
   - geopolitical_diplomacy
   - geopolitical_premium_drain
   - geopolitical_risk_premium
   - geopolitical_risk_premium_unwind
+  - gulf_energy_infrastructure
   - hormuz
   - hormuz_closure
+  - houthi
+  - houthi_attacks
+  - hurricane_refinery_outage
   - inflation_rates_channel
+  - infrastructure_attack
+  - input_vs_output_shock
   - iran
   - iran_sanctions
   - iran_us_diplomacy
+  - iran_war_2026
+  - libya_oil_shutdown
   - lng_supply_shock
   - middle_east
   - naval_blockade
@@ -23930,26 +25465,43 @@ episodes:
   - opec
   - priced_in_surprise
   - refined_products
+  - refinery_attack
+  - refinery_products
   - russia
   - safe_haven
   - safe_haven_flows
   - safe_haven_unwind
   - safe_haven_vs_supply_regime
+  - shipping_chokepoint
   - strait_of_hormuz
   - strategic_reserve_release
   - tariff_room
   - war_premium_unwind
   subthemes_local:
   - gas_supply_shock
+  - infrastructure_attack
+  - iran
   - military_escalation
-  n_sources: 16
+  - priced_conflict
+  - refinery_products
+  n_sources: 18
   events:
   - event_id: 2026-03-19:commodity_energy:-
     geo: ''
     subthemes_local:
     - gas_supply_shock
+    - infrastructure_attack
+    - iran
     - military_escalation
+    - priced_conflict
+    - refinery_products
     directions_by_reference:
+      BZ=F:
+      - pos
+      CRACK_321:
+      - pos
+      HO=F:
+      - pos
       TTF=F:
       - pos
     sources:
@@ -23967,6 +25519,11 @@ episodes:
     - card:2026-08-12/news_02.md
     - card:2026-08-13/news_03.md
     - card:2026-08-15/news_02.md
+    - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta 2026
       con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
       blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -24015,6 +25572,66 @@ episodes:
     - source: card:2026-08-15/news_02.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-27/news_01.md
+      subthemes_local:
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      - refinery_products
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      - priced_conflict
+      directions_by_reference:
+        TTF=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        CRACK_321:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        HO=F:
+        - pos
     - source: kb:Hormuz, blocco navale e trattativa MoU USA-Iran; il regime di offerta
         2026 con premio già elevato — episodi in tabella canonica (2026-02-01–presente)/Hormuz,
         blocco navale e trattativa MoU USA-Iran- il regime di offerta 2026 con premio
@@ -24036,9 +25653,11 @@ episodes:
   - neutral
   - pos
   directions_declared:
+  - neg
   - pos
   directions_by_reference:
     BZ=F:
+    - neg
     - pos
     CRACK_321:
     - pos
@@ -24068,6 +25687,11 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -24077,6 +25701,10 @@ episodes:
       già elevato — episodi in tabella canonica (2026-02-01–presente).md
     CRACK_321:
     - card:2026-11-23/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -24092,16 +25720,24 @@ episodes:
   - pos
   declared: true
   subthemes:
+  - crack_spread
   - de_escalation
   - de_escalation_asymmetry
   - election_risk
+  - export_terminal_attack
   - gas_europe
+  - gulf_energy_infrastructure
   - hormuz
   - hormuz_closure
   - houthi
+  - houthi_attacks
+  - hurricane_refinery_outage
   - inflation_rates_channel
   - infrastructure_attack
+  - input_vs_output_shock
   - iran
+  - iran_war_2026
+  - libya_oil_shutdown
   - limited_strike
   - lng_supply_shock
   - military_escalation
@@ -24111,6 +25747,7 @@ episodes:
   - priced_conflict
   - priced_in_surprise
   - refined_products
+  - refinery_attack
   - refinery_products
   - safe_haven_vs_supply_regime
   - sanctions
@@ -24119,6 +25756,7 @@ episodes:
   - supply_disruption
   - verbal_de_escalation
   subthemes_local:
+  - de_escalation
   - hormuz
   - infrastructure_attack
   - iran
@@ -24127,11 +25765,12 @@ episodes:
   - priced_conflict
   - refinery_products
   - supply_disruption
-  n_sources: 27
+  n_sources: 28
   events:
   - event_id: 2026-03-20:commodity_energy:-
     geo: ''
     subthemes_local:
+    - de_escalation
     - hormuz
     - infrastructure_attack
     - iran
@@ -24142,6 +25781,7 @@ episodes:
     - supply_disruption
     directions_by_reference:
       BZ=F:
+      - neg
       - pos
       CRACK_321:
       - pos
@@ -24173,6 +25813,10 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-23/news_01.md
     - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -24373,8 +26017,40 @@ episodes:
         CRACK_321:
         - pos
     - source: card:2026-11-27/news_01.md
-      subthemes_local: []
-      directions_by_reference: {}
+      subthemes_local:
+      - infrastructure_attack
+      - iran
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - infrastructure_attack
+      - iran
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        CRACK_321:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - de_escalation
+      - infrastructure_attack
+      - iran
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        BZ=F:
+        - neg
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -24791,6 +26467,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -24840,7 +26517,7 @@ episodes:
   - negotiation_track
   - priced_conflict
   - shipping_chokepoint
-  n_sources: 55
+  n_sources: 56
   events:
   - event_id: 2026-03-27:commodity_energy:-
     geo: ''
@@ -24908,6 +26585,7 @@ episodes:
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
     - card:2026-11-27/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -25291,6 +26969,15 @@ episodes:
     - source: card:2026-11-27/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -26364,6 +28051,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -26444,7 +28132,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 49
+  n_sources: 50
   events:
   - event_id: 2026-04-13:commodity_energy:-
     geo: ''
@@ -26512,6 +28200,7 @@ episodes:
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
     - card:2026-11-27/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -26839,6 +28528,15 @@ episodes:
     - source: card:2026-11-27/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - negotiation_track
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -27759,6 +29457,7 @@ episodes:
     - card:2026-10-31/news_01.md
     - card:2026-11-02/news_01.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-28/news_02.md
     - kb:iran_hormuz/compass_artifact_wf-57769786-924f-41b7-8c1e-36177b05bebd_text_markdown.md
     CRACK_321:
     - card:2026-10-17/news_02.md
@@ -27801,6 +29500,7 @@ episodes:
   - oil_supply_normalization
   - oil_supply_shock
   - opec
+  - opec_policy
   - refinery_products
   - refinery_repair_restart
   - refinery_strike
@@ -27824,7 +29524,7 @@ episodes:
   - refinery_products
   - refinery_strike
   - shipping_chokepoint
-  n_sources: 43
+  n_sources: 44
   events:
   - event_id: 2026-04-18:commodity_energy:-
     geo: ''
@@ -27885,6 +29585,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-23/news_01.md
     - card:2026-11-27/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -28093,6 +29794,15 @@ episodes:
     - source: card:2026-11-27/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - hormuz
+      - infrastructure_attack
+      - iran
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -28168,6 +29878,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -28227,7 +29938,7 @@ episodes:
   - priced_conflict
   - shipping_chokepoint
   - supply_return
-  n_sources: 41
+  n_sources: 42
   events:
   - event_id: 2026-04-20:commodity_energy:-
     geo: ''
@@ -28286,6 +29997,7 @@ episodes:
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
     - card:2026-11-27/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -28586,6 +30298,14 @@ episodes:
     - source: card:2026-11-27/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -28669,6 +30389,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -28715,7 +30436,7 @@ episodes:
   - priced_conflict
   - sanctions
   - shipping_chokepoint
-  n_sources: 24
+  n_sources: 25
   events:
   - event_id: 2026-04-29:commodity_energy:-
     geo: ''
@@ -28753,6 +30474,7 @@ episodes:
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
     - card:2026-11-27/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -28939,6 +30661,15 @@ episodes:
     - source: card:2026-11-27/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - negotiation_track
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -32178,6 +33909,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -32208,7 +33940,7 @@ episodes:
   - negotiation_track
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 14
+  n_sources: 15
   events:
   - event_id: 2026-06-29:commodity_energy:-
     geo: ''
@@ -32236,6 +33968,7 @@ episodes:
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
     - card:2026-11-27/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -32352,6 +34085,14 @@ episodes:
     - source: card:2026-11-27/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -32654,6 +34395,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -32709,7 +34451,7 @@ episodes:
   - negotiation_track
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 41
+  n_sources: 42
   events:
   - event_id: 2026-07-07:commodity_energy:-
     geo: ''
@@ -32767,6 +34509,7 @@ episodes:
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
     - card:2026-11-27/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -33086,6 +34829,15 @@ episodes:
     - source: card:2026-11-27/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -33168,6 +34920,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -33205,6 +34958,7 @@ episodes:
   - naval_blockade
   - negotiation_track
   - oil_supply_shock
+  - opec_policy
   - priced_conflict
   - priced_in_surprise
   - refined_products
@@ -33228,7 +34982,7 @@ episodes:
   - sanctions
   - sanctions_product_ban
   - supply_disruption
-  n_sources: 24
+  n_sources: 25
   events:
   - event_id: 2026-07-08:commodity_energy:-
     geo: ''
@@ -33271,6 +35025,7 @@ episodes:
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
     - card:2026-11-27/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra Russia-Ucraina)
       regime ed episodi storici (2022–2026)/Attacchi alle raffinerie e alla capacità
       di raffinazione russa (guerra Russia-Ucraina)- regime ed episodi storici (2022–2026).md
@@ -33424,6 +35179,15 @@ episodes:
     - source: card:2026-11-27/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Attacchi alle raffinerie e alla capacità di raffinazione russa (guerra
         Russia-Ucraina) regime ed episodi storici (2022–2026)/Attacchi alle raffinerie
         e alla capacità di raffinazione russa (guerra Russia-Ucraina)- regime ed
@@ -33508,6 +35272,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -33553,7 +35318,7 @@ episodes:
   - sanctions
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 39
+  n_sources: 40
   events:
   - event_id: 2026-07-13:commodity_energy:-
     geo: ''
@@ -33605,6 +35370,7 @@ episodes:
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
     - card:2026-11-27/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -33902,6 +35668,15 @@ episodes:
     - source: card:2026-11-27/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - sanctions
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -34620,6 +36395,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -34637,6 +36413,7 @@ episodes:
   - military_escalation
   - negotiation_track
   - oil_supply_shock
+  - opec_policy
   - priced_conflict
   - refinery_products
   - sanctions
@@ -34648,7 +36425,7 @@ episodes:
   - iran
   - military_escalation
   - priced_conflict
-  n_sources: 10
+  n_sources: 11
   events:
   - event_id: 2026-08-31:commodity_energy:-
     geo: ''
@@ -34670,6 +36447,7 @@ episodes:
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
     - card:2026-11-27/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -34748,6 +36526,15 @@ episodes:
     - source: card:2026-11-27/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - priced_conflict
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -35077,6 +36864,7 @@ episodes:
   - infrastructure_attack
   - iran
   - negotiation_track
+  - refinery_products
   - shipping_chokepoint
   subthemes_local:
   - houthi
@@ -35172,6 +36960,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-26/news_02.md
     - card:2026-11-27/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -35211,6 +37000,7 @@ episodes:
   - naval_blockade
   - negotiation_track
   - oil_supply_shock
+  - opec_policy
   - priced_conflict
   - priced_in_surprise
   - refined_products
@@ -35232,7 +37022,7 @@ episodes:
   - refinery_products
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 29
+  n_sources: 30
   events:
   - event_id: 2026-09-09:commodity_energy:-
     geo: ''
@@ -35279,6 +37069,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-26/news_02.md
     - card:2026-11-27/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -35514,6 +37305,16 @@ episodes:
       directions_by_reference:
         BZ=F:
         - pos
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - shipping_chokepoint
+      - supply_disruption
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -35668,6 +37469,7 @@ episodes:
     - card:2026-11-19/news_01.md
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -35700,7 +37502,7 @@ episodes:
   - priced_conflict
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 13
+  n_sources: 14
   events:
   - event_id: 2026-09-14:commodity_energy:-
     geo: ''
@@ -35728,6 +37530,7 @@ episodes:
     - card:2026-11-20/news_02.md
     - card:2026-11-22/news_02.md
     - card:2026-11-27/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -35836,6 +37639,15 @@ episodes:
     - source: card:2026-11-27/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - hormuz
+      - infrastructure_attack
+      - iran
+      - priced_conflict
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -35881,6 +37693,7 @@ episodes:
   - infrastructure_attack
   - iran
   - negotiation_track
+  - refinery_products
   - shipping_chokepoint
   subthemes_local:
   - houthi
@@ -36240,6 +38053,7 @@ episodes:
   - infrastructure_attack
   - iran
   - negotiation_track
+  - refinery_products
   - shipping_chokepoint
   subthemes_local:
   - houthi
@@ -36562,6 +38376,7 @@ episodes:
   - infrastructure_attack
   - iran
   - negotiation_track
+  - refinery_products
   - shipping_chokepoint
   subthemes_local:
   - houthi
@@ -36825,6 +38640,111 @@ episodes:
       directions_by_reference:
         BZ=F:
         - neg
+- date: '2026-10-27'
+  theme: commodity_energy
+  direction: pos
+  directions:
+  - pos
+  directions_declared:
+  - neg
+  - pos
+  directions_by_reference:
+    BZ=F:
+    - pos
+    CRACK_321:
+    - neg
+    - pos
+  direction_sources:
+    BZ=F:
+    - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    CRACK_321:
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+  directions_local:
+  - pos
+  declared: true
+  subthemes:
+  - crack_spread
+  - export_terminal_attack
+  - gulf_energy_infrastructure
+  - houthi
+  - houthi_attacks
+  - hurricane_refinery_outage
+  - infrastructure_attack
+  - input_vs_output_shock
+  - iran
+  - iran_war_2026
+  - libya_oil_shutdown
+  - refinery_attack
+  - refinery_products
+  - shipping_chokepoint
+  subthemes_local:
+  - houthi
+  - infrastructure_attack
+  - priced_conflict
+  - refinery_products
+  n_sources: 2
+  events:
+  - event_id: 2026-10-27:commodity_energy:-
+    geo: ''
+    subthemes_local:
+    - houthi
+    - infrastructure_attack
+    - priced_conflict
+    - refinery_products
+    directions_by_reference:
+      BZ=F:
+      - pos
+      CRACK_321:
+      - neg
+      - pos
+    sources:
+    - card:2026-11-27/news_01.md
+    - kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+      effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+      e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto su
+      greggio, prodotti e margine di raffinazione (2011–2026).md
+    evidence:
+    - source: card:2026-11-27/news_01.md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        BZ=F:
+        - pos
+    - source: kb:Attacchi e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_
+        effetto su greggio, prodotti e margine di raffinazione (2011–2026)/Attacchi
+        e fermi di raffinerie e terminali fuori dal teatro russo-ucraino_ effetto
+        su greggio, prodotti e margine di raffinazione (2011–2026).md
+      subthemes_local:
+      - houthi
+      - infrastructure_attack
+      - priced_conflict
+      - refinery_products
+      directions_by_reference:
+        CRACK_321:
+        - neg
+        - pos
 - date: '2026-10-29'
   theme: commodity_energy
   direction: ''
@@ -37500,6 +39420,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -37532,7 +39453,7 @@ episodes:
   - priced_conflict
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 16
+  n_sources: 17
   events:
   - event_id: 2026-11-05:commodity_energy:-
     geo: ''
@@ -37563,6 +39484,7 @@ episodes:
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
     - card:2026-11-27/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -37706,6 +39628,16 @@ episodes:
     - source: card:2026-11-27/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - priced_conflict
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -37749,6 +39681,7 @@ episodes:
     - card:2026-11-22/news_02.md
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -37781,7 +39714,7 @@ episodes:
   - priced_conflict
   - shipping_chokepoint
   - supply_disruption
-  n_sources: 16
+  n_sources: 17
   events:
   - event_id: 2026-11-06:commodity_energy:-
     geo: ''
@@ -37812,6 +39745,7 @@ episodes:
     - card:2026-11-24/news_02.md
     - card:2026-11-25/news_01.md
     - card:2026-11-27/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Escalation militari nel Golfo e premio di rischio già prezzato_ quando il
       petrolio ignora un attacco (2011–presente)/Escalation militari nel Golfo e premio
       di rischio già prezzato_ quando il petrolio ignora un attacco (2011–presente).md
@@ -37954,6 +39888,16 @@ episodes:
     - source: card:2026-11-27/news_01.md
       subthemes_local: []
       directions_by_reference: {}
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
+      - military_escalation
+      - priced_conflict
+      - shipping_chokepoint
+      directions_by_reference:
+        BZ=F:
+        - pos
     - source: kb:Escalation militari nel Golfo e premio di rischio già prezzato_
         quando il petrolio ignora un attacco (2011–presente)/Escalation militari nel
         Golfo e premio di rischio già prezzato_ quando il petrolio ignora un attacco
@@ -38053,9 +39997,10 @@ episodes:
         - pos
 - date: '2026-11-11'
   theme: commodity_energy
-  direction: neg
+  direction: mixed
   directions:
   - neg
+  - pos
   directions_declared:
   - neg
   - pos
@@ -38074,6 +40019,7 @@ episodes:
   direction_sources:
     BZ=F:
     - card:2026-11-17/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Il ritorno dell'offerta di petrolio dopo un'interruzione_ trasmissione a
       greggio, raffinati e valute dei produttori (2011–presente)/Il ritorno dell'offerta
       di petrolio dopo un'interruzione_ trasmissione a greggio, raffinati e valute
@@ -38102,11 +40048,13 @@ episodes:
   - neg
   declared: true
   subthemes:
+  - hormuz
   - iran
   - military_escalation
   - oil_supply_shock
   - opec_policy
   - refinery_products
+  - sanctions
   - supply_return
   subthemes_local:
   - hormuz
@@ -38115,7 +40063,7 @@ episodes:
   - opec_policy
   - refinery_products
   - supply_return
-  n_sources: 2
+  n_sources: 3
   events:
   - event_id: 2026-11-11:commodity_energy:-
     geo: ''
@@ -38140,6 +40088,7 @@ episodes:
       - neg
     sources:
     - card:2026-11-17/news_01.md
+    - card:2026-11-28/news_02.md
     - kb:Il ritorno dell'offerta di petrolio dopo un'interruzione_ trasmissione a
       greggio, raffinati e valute dei produttori (2011–presente)/Il ritorno dell'offerta
       di petrolio dopo un'interruzione_ trasmissione a greggio, raffinati e valute
@@ -38150,6 +40099,15 @@ episodes:
       - hormuz
       - iran
       - oil_supply_shock
+      - opec_policy
+      - supply_return
+      directions_by_reference:
+        BZ=F:
+        - neg
+    - source: card:2026-11-28/news_02.md
+      subthemes_local:
+      - hormuz
+      - iran
       - opec_policy
       - supply_return
       directions_by_reference:
@@ -47066,8 +49024,9 @@ episodes:
         - pos
 - date: '2023-05-02'
   theme: fiscal_policy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - pos
   directions_by_reference:
@@ -47075,24 +49034,28 @@ episodes:
     - pos
   direction_sources:
     OAT_BUND_SPREAD:
+    - card:2026-11-28/news_01.md
     - kb:Proteste per il costo della vita e spread OAT-Bund e BTP-Bund_ risposta di
       bilancio ed episodi storici dal 2010/Proteste per il costo della vita e spread
       OAT-Bund e BTP-Bund_ risposta di bilancio ed episodi storici dal 2010.md
-  directions_local: []
+  directions_local:
+  - pos
   declared: true
   subthemes:
+  - election_risk
   - eurozone_release
   - fiscal_consolidation
   - fiscal_expansion
   - france_spread
   - italy_spread
   - social_unrest
+  - sovereign_rating
   subthemes_local:
   - eurozone_release
   - france_spread
   - social_unrest
   - sovereign_rating
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2023-05-02:fiscal_policy:eurozone_release
     geo: eurozone_release
@@ -47105,10 +49068,20 @@ episodes:
       OAT_BUND_SPREAD:
       - pos
     sources:
+    - card:2026-11-28/news_01.md
     - kb:Proteste per il costo della vita e spread OAT-Bund e BTP-Bund_ risposta di
       bilancio ed episodi storici dal 2010/Proteste per il costo della vita e spread
       OAT-Bund e BTP-Bund_ risposta di bilancio ed episodi storici dal 2010.md
     evidence:
+    - source: card:2026-11-28/news_01.md
+      subthemes_local:
+      - eurozone_release
+      - france_spread
+      - social_unrest
+      - sovereign_rating
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - pos
     - source: kb:Proteste per il costo della vita e spread OAT-Bund e BTP-Bund_ risposta
         di bilancio ed episodi storici dal 2010/Proteste per il costo della vita e
         spread OAT-Bund e BTP-Bund_ risposta di bilancio ed episodi storici dal 2010.md
@@ -48574,6 +50547,7 @@ episodes:
     - card:2026-10-20/news_02.md
     - card:2026-10-21/news_02.md
     - card:2026-10-22/news_02.md
+    - card:2026-11-28/news_01.md
     - kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi,
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
@@ -48601,7 +50575,7 @@ episodes:
   - eurozone_release
   - france_spread
   - sovereign_rating
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2024-12-16:fiscal_policy:eurozone_release
     geo: eurozone_release
@@ -48616,6 +50590,7 @@ episodes:
     - card:2026-10-20/news_02.md
     - card:2026-10-21/news_02.md
     - card:2026-10-22/news_02.md
+    - card:2026-11-28/news_01.md
     - kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi,
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
@@ -48638,6 +50613,14 @@ episodes:
         OAT_BUND_SPREAD:
         - pos
     - source: card:2026-10-22/news_02.md
+      subthemes_local:
+      - eurozone_release
+      - france_spread
+      - sovereign_rating
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - pos
+    - source: card:2026-11-28/news_01.md
       subthemes_local:
       - eurozone_release
       - france_spread
@@ -49498,6 +51481,7 @@ episodes:
     - card:2026-10-20/news_02.md
     - card:2026-10-21/news_02.md
     - card:2026-10-22/news_02.md
+    - card:2026-11-28/news_01.md
     - kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi,
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
@@ -49530,7 +51514,7 @@ episodes:
   - eurozone_release
   - france_spread
   - sovereign_rating
-  n_sources: 8
+  n_sources: 9
   events:
   - event_id: 2025-09-15:fiscal_policy:-
     geo: ''
@@ -49586,6 +51570,7 @@ episodes:
     - card:2026-10-20/news_02.md
     - card:2026-10-21/news_02.md
     - card:2026-10-22/news_02.md
+    - card:2026-11-28/news_01.md
     - kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi,
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
@@ -49608,6 +51593,14 @@ episodes:
         OAT_BUND_SPREAD:
         - pos
     - source: card:2026-10-22/news_02.md
+      subthemes_local:
+      - eurozone_release
+      - france_spread
+      - sovereign_rating
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - pos
+    - source: card:2026-11-28/news_01.md
       subthemes_local:
       - eurozone_release
       - france_spread
@@ -50162,6 +52155,7 @@ episodes:
     - card:2026-10-20/news_02.md
     - card:2026-10-21/news_02.md
     - card:2026-10-22/news_02.md
+    - card:2026-11-28/news_01.md
     - kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi,
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
@@ -50190,7 +52184,7 @@ episodes:
   - france_spread
   - italy_spread
   - sovereign_rating
-  n_sources: 4
+  n_sources: 5
   events:
   - event_id: 2025-10-20:fiscal_policy:eurozone_release
     geo: eurozone_release
@@ -50208,6 +52202,7 @@ episodes:
     - card:2026-10-20/news_02.md
     - card:2026-10-21/news_02.md
     - card:2026-10-22/news_02.md
+    - card:2026-11-28/news_01.md
     - kb:Spread BTP-Bund e OAT-Bund; crisi politiche e di bilancio italiane e francesi,
       interventi della BCE e contagio fra periferie — regime ed episodi storici (2010–presente)/Spread
       BTP-Bund e OAT-Bund- crisi politiche e di bilancio italiane e francesi, interventi
@@ -50230,6 +52225,14 @@ episodes:
         OAT_BUND_SPREAD:
         - pos
     - source: card:2026-10-22/news_02.md
+      subthemes_local:
+      - eurozone_release
+      - france_spread
+      - sovereign_rating
+      directions_by_reference:
+        OAT_BUND_SPREAD:
+        - pos
+    - source: card:2026-11-28/news_01.md
       subthemes_local:
       - eurozone_release
       - france_spread
@@ -51148,8 +53151,9 @@ episodes:
         - neg
 - date: '2026-10-19'
   theme: fiscal_policy
-  direction: ''
-  directions: []
+  direction: neg
+  directions:
+  - neg
   directions_declared:
   - pos
   directions_by_reference:
@@ -51169,12 +53173,14 @@ episodes:
   directions_local: []
   declared: true
   subthemes:
+  - election_risk
   - eurozone_release
   - fiscal_consolidation
   - fiscal_expansion
   - france_spread
   - italy_spread
   - social_unrest
+  - sovereign_rating
   subthemes_local:
   - contagion
   - eurozone_release
@@ -51183,8 +53189,17 @@ episodes:
   - italy_spread
   - social_unrest
   - sovereign_rating
-  n_sources: 1
+  n_sources: 2
   events:
+  - event_id: 2026-10-19:fiscal_policy:-
+    geo: ''
+    subthemes_local: []
+    sources:
+    - card:2026-11-28/news_01.md
+    evidence:
+    - source: card:2026-11-28/news_01.md
+      subthemes_local: []
+      directions_by_reference: {}
   - event_id: 2026-10-19:fiscal_policy:eurozone_release
     geo: eurozone_release
     subthemes_local:
@@ -144045,8 +146060,9 @@ episodes:
       directions_by_reference: {}
 - date: '2011-02-09'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neutral
+  directions:
+  - neutral
   directions_declared:
   - neg
   - pos
@@ -144084,7 +146100,7 @@ episodes:
   - ecb
   - ecb_appointment
   - guidance_pivot
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2011-02-09:monetary_policy:-
     geo: ''
@@ -144100,10 +146116,14 @@ episodes:
       - neg
       - pos
     sources:
+    - card:2026-11-27/news_04.md
     - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
       su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
       lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
     evidence:
+    - source: card:2026-11-27/news_04.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
         e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
         BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
@@ -144307,8 +146327,9 @@ episodes:
         - neutral
 - date: '2011-05-11'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neutral
+  directions:
+  - neutral
   directions_declared:
   - neutral
   directions_by_reference:
@@ -144316,10 +146337,12 @@ episodes:
     - neutral
   direction_sources:
     EURUSD=X:
+    - card:2026-11-27/news_04.md
     - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
       su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
       lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
-  directions_local: []
+  directions_local:
+  - neutral
   declared: true
   subthemes:
   - cb_independence
@@ -144330,7 +146353,8 @@ episodes:
   subthemes_local:
   - ecb
   - ecb_appointment
-  n_sources: 1
+  - eurozone_release
+  n_sources: 2
   events:
   - event_id: 2011-05-11:monetary_policy:-
     geo: ''
@@ -144355,10 +146379,31 @@ episodes:
       directions_by_reference:
         EURUSD=X:
         - neutral
+  - event_id: 2011-05-11:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    - eurozone_release
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+    sources:
+    - card:2026-11-27/news_04.md
+    evidence:
+    - source: card:2026-11-27/news_04.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - eurozone_release
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
 - date: '2011-06-24'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neutral
+  directions:
+  - neutral
   directions_declared:
   - neutral
   directions_by_reference:
@@ -144372,10 +146417,12 @@ episodes:
       su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
       lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
     EURUSD=X:
+    - card:2026-11-27/news_04.md
     - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
       su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
       lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
-  directions_local: []
+  directions_local:
+  - neutral
   declared: true
   subthemes:
   - cb_independence
@@ -144386,7 +146433,8 @@ episodes:
   subthemes_local:
   - ecb
   - ecb_appointment
-  n_sources: 1
+  - eurozone_release
+  n_sources: 2
   events:
   - event_id: 2011-06-24:monetary_policy:-
     geo: ''
@@ -144422,6 +146470,26 @@ episodes:
       - ecb_appointment
       directions_by_reference:
         BTP_BUND_SPREAD:
+        - neutral
+  - event_id: 2011-06-24:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    - eurozone_release
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+    sources:
+    - card:2026-11-27/news_04.md
+    evidence:
+    - source: card:2026-11-27/news_04.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - eurozone_release
+      directions_by_reference:
+        EURUSD=X:
         - neutral
 - date: '2011-07-07'
   theme: monetary_policy
@@ -144695,8 +146763,9 @@ episodes:
       directions_by_reference: {}
 - date: '2011-09-09'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neutral
+  directions:
+  - neutral
   directions_declared:
   - neg
   - pos
@@ -144733,7 +146802,7 @@ episodes:
   - ecb
   - ecb_appointment
   - guidance_pivot
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2011-09-09:monetary_policy:-
     geo: ''
@@ -144750,10 +146819,14 @@ episodes:
       ^GDAXI:
       - neg
     sources:
+    - card:2026-11-27/news_04.md
     - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
       su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
       lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
     evidence:
+    - source: card:2026-11-27/news_04.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
         e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
         BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
@@ -148307,8 +150380,9 @@ episodes:
       directions_by_reference: {}
 - date: '2018-02-19'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neutral
+  directions:
+  - neutral
   directions_declared:
   - neg
   - neutral
@@ -148325,10 +150399,12 @@ episodes:
       su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
       lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
     EURUSD=X:
+    - card:2026-11-27/news_04.md
     - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
       su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
       lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
-  directions_local: []
+  directions_local:
+  - neutral
   declared: true
   subthemes:
   - cb_independence
@@ -148339,7 +150415,8 @@ episodes:
   subthemes_local:
   - ecb
   - ecb_appointment
-  n_sources: 1
+  - eurozone_release
+  n_sources: 2
   events:
   - event_id: 2018-02-19:monetary_policy:-
     geo: ''
@@ -148378,6 +150455,26 @@ episodes:
         BTP_BUND_SPREAD:
         - neg
         - pos
+  - event_id: 2018-02-19:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    - eurozone_release
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+    sources:
+    - card:2026-11-27/news_04.md
+    evidence:
+    - source: card:2026-11-27/news_04.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - eurozone_release
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
 - date: '2018-03-21'
   theme: monetary_policy
   direction: mixed
@@ -149768,8 +151865,9 @@ episodes:
       directions_by_reference: {}
 - date: '2019-02-11'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neutral
+  directions:
+  - neutral
   directions_declared:
   - neutral
   directions_by_reference:
@@ -149779,6 +151877,7 @@ episodes:
     - neutral
   direction_sources:
     EURUSD=X:
+    - card:2026-11-27/news_04.md
     - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
       su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
       lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
@@ -149786,7 +151885,8 @@ episodes:
     - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
       su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
       lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
-  directions_local: []
+  directions_local:
+  - neutral
   declared: true
   subthemes:
   - cb_independence
@@ -149797,7 +151897,8 @@ episodes:
   subthemes_local:
   - ecb
   - ecb_appointment
-  n_sources: 1
+  - eurozone_release
+  n_sources: 2
   events:
   - event_id: 2019-02-11:monetary_policy:-
     geo: ''
@@ -149833,6 +151934,26 @@ episodes:
       - ecb_appointment
       directions_by_reference:
         IEAG.AS:
+        - neutral
+  - event_id: 2019-02-11:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    - eurozone_release
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+    sources:
+    - card:2026-11-27/news_04.md
+    evidence:
+    - source: card:2026-11-27/news_04.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - eurozone_release
+      directions_by_reference:
+        EURUSD=X:
         - neutral
 - date: '2019-03-06'
   theme: monetary_policy
@@ -149922,8 +152043,9 @@ episodes:
       directions_by_reference: {}
 - date: '2019-07-02'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neutral
+  directions:
+  - neutral
   directions_declared:
   - neg
   directions_by_reference:
@@ -149946,7 +152068,7 @@ episodes:
   - ecb
   - ecb_appointment
   - guidance_pivot
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2019-07-02:monetary_policy:-
     geo: ''
@@ -149958,10 +152080,14 @@ episodes:
       EURUSD=X:
       - neg
     sources:
+    - card:2026-11-27/news_04.md
     - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
       su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
       lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
     evidence:
+    - source: card:2026-11-27/news_04.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
         e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
         BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
@@ -150479,8 +152605,9 @@ episodes:
         - pos
 - date: '2019-10-22'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neutral
+  directions:
+  - neutral
   directions_declared:
   - neutral
   directions_by_reference:
@@ -150488,10 +152615,12 @@ episodes:
     - neutral
   direction_sources:
     EURUSD=X:
+    - card:2026-11-27/news_04.md
     - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
       su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
       lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
-  directions_local: []
+  directions_local:
+  - neutral
   declared: true
   subthemes:
   - cb_independence
@@ -150502,7 +152631,8 @@ episodes:
   subthemes_local:
   - ecb
   - ecb_appointment
-  n_sources: 1
+  - eurozone_release
+  n_sources: 2
   events:
   - event_id: 2019-10-22:monetary_policy:-
     geo: ''
@@ -150524,6 +152654,26 @@ episodes:
       subthemes_local:
       - ecb
       - ecb_appointment
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+  - event_id: 2019-10-22:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    - eurozone_release
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+    sources:
+    - card:2026-11-27/news_04.md
+    evidence:
+    - source: card:2026-11-27/news_04.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - eurozone_release
       directions_by_reference:
         EURUSD=X:
         - neutral
@@ -160152,8 +162302,9 @@ episodes:
       directions_by_reference: {}
 - date: '2023-08-30'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neutral
+  directions:
+  - neutral
   directions_declared:
   - neutral
   directions_by_reference:
@@ -160161,10 +162312,12 @@ episodes:
     - neutral
   direction_sources:
     EURUSD=X:
+    - card:2026-11-27/news_04.md
     - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
       su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
       lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
-  directions_local: []
+  directions_local:
+  - neutral
   declared: true
   subthemes:
   - cb_independence
@@ -160175,7 +162328,8 @@ episodes:
   subthemes_local:
   - ecb
   - ecb_appointment
-  n_sources: 1
+  - eurozone_release
+  n_sources: 2
   events:
   - event_id: 2023-08-30:monetary_policy:-
     geo: ''
@@ -160197,6 +162351,26 @@ episodes:
       subthemes_local:
       - ecb
       - ecb_appointment
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+  - event_id: 2023-08-30:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    - eurozone_release
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+    sources:
+    - card:2026-11-27/news_04.md
+    evidence:
+    - source: card:2026-11-27/news_04.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - eurozone_release
       directions_by_reference:
         EURUSD=X:
         - neutral
@@ -175733,8 +177907,9 @@ episodes:
         - neg
 - date: '2026-09-24'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neutral
+  directions:
+  - neutral
   directions_declared:
   - neg
   - pos
@@ -175763,7 +177938,7 @@ episodes:
   subthemes_local:
   - ecb
   - ecb_appointment
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-09-24:monetary_policy:-
     geo: ''
@@ -175776,10 +177951,14 @@ episodes:
       IEAG.AS:
       - pos
     sources:
+    - card:2026-11-27/news_04.md
     - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
       su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
       lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
     evidence:
+    - source: card:2026-11-27/news_04.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
         e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
         BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
@@ -176312,8 +178491,9 @@ episodes:
         - neutral
 - date: '2026-11-17'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neutral
+  directions:
+  - neutral
   directions_declared:
   - neg
   - pos
@@ -176357,7 +178537,7 @@ episodes:
   - ecb
   - ecb_appointment
   - guidance_pivot
-  n_sources: 1
+  n_sources: 2
   events:
   - event_id: 2026-11-17:monetary_policy:-
     geo: ''
@@ -176377,10 +178557,14 @@ episodes:
       OAT_BUND_SPREAD:
       - neg
     sources:
+    - card:2026-11-27/news_04.md
     - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
       su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
       lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
     evidence:
+    - source: card:2026-11-27/news_04.md
+      subthemes_local: []
+      directions_by_reference: {}
     - source: kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba
         e impatto su euro, spread e titoli di Stato/Nomine nel comitato esecutivo
         BCE 2011-2026_ lettura falco_colomba e impatto su euro, spread e titoli di
@@ -176431,8 +178615,9 @@ episodes:
         - pos
 - date: '2026-11-18'
   theme: monetary_policy
-  direction: ''
-  directions: []
+  direction: neutral
+  directions:
+  - neutral
   directions_declared:
   - neutral
   directions_by_reference:
@@ -176440,10 +178625,12 @@ episodes:
     - neutral
   direction_sources:
     EURUSD=X:
+    - card:2026-11-27/news_04.md
     - kb:Nomine nel comitato esecutivo BCE 2011-2026_ lettura falco_colomba e impatto
       su euro, spread e titoli di Stato/Nomine nel comitato esecutivo BCE 2011-2026_
       lettura falco_colomba e impatto su euro, spread e titoli di Stato.md
-  directions_local: []
+  directions_local:
+  - neutral
   declared: true
   subthemes:
   - cb_independence
@@ -176454,7 +178641,8 @@ episodes:
   subthemes_local:
   - ecb
   - ecb_appointment
-  n_sources: 1
+  - eurozone_release
+  n_sources: 2
   events:
   - event_id: 2026-11-18:monetary_policy:-
     geo: ''
@@ -176476,6 +178664,26 @@ episodes:
       subthemes_local:
       - ecb
       - ecb_appointment
+      directions_by_reference:
+        EURUSD=X:
+        - neutral
+  - event_id: 2026-11-18:monetary_policy:eurozone_release
+    geo: eurozone_release
+    subthemes_local:
+    - ecb
+    - ecb_appointment
+    - eurozone_release
+    directions_by_reference:
+      EURUSD=X:
+      - neutral
+    sources:
+    - card:2026-11-27/news_04.md
+    evidence:
+    - source: card:2026-11-27/news_04.md
+      subthemes_local:
+      - ecb
+      - ecb_appointment
+      - eurozone_release
       directions_by_reference:
         EURUSD=X:
         - neutral
