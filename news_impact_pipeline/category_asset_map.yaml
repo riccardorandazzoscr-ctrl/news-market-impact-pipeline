@@ -67,6 +67,7 @@ fiscal_policy:
   primary:
     - BTP_BUND_SPREAD # spread sovrano = misura diretta del rischio fiscale eurozona
     - OAT_BUND_SPREAD # spread francese: rischio fiscale/politico della Francia (dal 2026-10-02)
+    - BONO_BUND_SPREAD # spread spagnolo: rischio fiscale/politico della Spagna (dal 2026-11-28)
     - FTSEMIB.MI      # equity domestico Italia
     - ^GDAXI          # equity domestico Germania
     - ^STOXX50E       # equity area euro aggregato
@@ -119,6 +120,7 @@ geopolitical:
     - EWY             # Corea del Sud: anche canale rischio geopolitico regionale
     - EWT             # Taiwan: proxy diretto del rischio Taiwan/Cina
     - ILS=X           # shekel: canale più diretto del conflitto mediorientale
+    - BONO_BUND_SPREAD # elezioni e crisi di governo spagnole (dal 2026-11-28); BTP e OAT stanno solo in fiscal_policy
     - ZAR=X           # rand: rischio politico/commerciale sudafricano (dal 2026-11-04)
     - EZA             # equity Sudafrica, in USD: rand + minerari (0,82 con EEM)
     - TUR             # equity Turchia, in USD: rischio politico/istituzionale turco (dal 2026-11-12)

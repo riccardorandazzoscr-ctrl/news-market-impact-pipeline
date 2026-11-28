@@ -260,6 +260,7 @@ già pronto.
 - **BTC-USD / ETH-USD** — Bitcoin ed Ethereum; usati nel progetto come proxy del tema "digital gold" (risk-off) e del tema digitale/AI.
 - **BTP_BUND_SPREAD** — differenziale di rendimento fra BTP italiano e Bund tedesco a 10 anni; misura diretta del rischio sovrano periferico. Serie *derivata*, salvata come ticker.
 - **OAT_BUND_SPREAD** — differenziale di rendimento fra OAT francese e Bund tedesco a 10 anni, in punti base; misura diretta del rischio fiscale e politico francese. Serie *derivata*, salvata come ticker (dal 2005-11).
+- **BONO_BUND_SPREAD** — differenziale di rendimento fra Bono spagnolo e Bund tedesco a 10 anni, in punti base; misura diretta del rischio fiscale e politico spagnolo. Serie *derivata*, salvata come ticker (dal 1995-11).
 - **BZ=F** — futures sul Brent, il contratto di riferimento mondiale sul petrolio greggio (quotato a Londra).
 - **CAD=X** — cambio USD/CAD. ⚠ Sale quando il **dollaro canadese si indebolisce**.
 - **CHF=X** — cambio USD/CHF. Sale quando il franco svizzero si indebolisce. Il franco è un safe haven monetario.

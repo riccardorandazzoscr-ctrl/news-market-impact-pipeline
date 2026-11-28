@@ -3,13 +3,14 @@
 import_spread_csv.py
 
 Importa uno spread sovrano contro il Bund da due CSV Stooq scaricati a mano: di default
-BTP_BUND_SPREAD (Italia 10Y), con --ticker OAT_BUND_SPREAD la Francia (10YFRY.B).
+BTP_BUND_SPREAD (Italia 10Y), con --ticker OAT_BUND_SPREAD la Francia (10YFRY.B), con --ticker BONO_BUND_SPREAD la Spagna (10YESY.B).
 Serve perché il layer anti-bot JS di Stooq blocca il fetch automatico di fetch_daily_spread.py.
 
 Uso:
     venv/bin/python import_spread_csv.py ~/Downloads/10yity_b_d.csv ~/Downloads/10ydey_b_d.csv
     venv/bin/python import_spread_csv.py IT.csv DE.csv --dry-run
     venv/bin/python import_spread_csv.py FR.csv DE.csv --ticker OAT_BUND_SPREAD
+    venv/bin/python import_spread_csv.py ES.csv DE.csv --ticker BONO_BUND_SPREAD
 """
 
 import argparse
@@ -35,7 +36,7 @@ def main():
     ap.add_argument("csv_it", help="CSV Stooq del rendimento Italia 10Y (10YITY.B)")
     ap.add_argument("csv_de", help="CSV Stooq del rendimento Germania 10Y (10YDEY.B)")
     ap.add_argument("--dry-run", action="store_true", help="Mostra l'anteprima, non scrive.")
-    ap.add_argument("--ticker", default=TICKER_SPREAD, choices=[TICKER_SPREAD, "OAT_BUND_SPREAD"])
+    ap.add_argument("--ticker", default=TICKER_SPREAD, choices=[TICKER_SPREAD, "OAT_BUND_SPREAD", "BONO_BUND_SPREAD"])
     args = ap.parse_args()
 
     it = load_csv(args.csv_it)

@@ -1,7 +1,7 @@
-# Serie derivate: spread BTP-Bund e OAT-Bund, crack spread
+# Serie derivate: spread BTP-Bund, OAT-Bund e Bono-Bund, crack spread
 
-**Quando aprire questo file:** devi aggiornare `BTP_BUND_SPREAD` o `OAT_BUND_SPREAD`, o una
-scheda tocca lo spread sovrano italiano/francese o i margini di raffinazione.
+**Quando aprire questo file:** devi aggiornare `BTP_BUND_SPREAD`, `OAT_BUND_SPREAD` o `BONO_BUND_SPREAD`, o una
+scheda tocca lo spread sovrano italiano/francese/spagnolo o i margini di raffinazione.
 
 Sono le tre eccezioni alla regola "gli indicatori calcolati non si persistono": sono
 *serie derivate* salvate come ticker, così l'event study le tratta come ogni altro asset.
@@ -39,7 +39,7 @@ ma solo col link della pagina. Un `fetch('/q/d/l/?s=<simbolo>&i=d')` scritto a m
 invece, restituisce lo storico intero (e vale per il simbolo della pagina aperta). Quindi,
 con l'estensione Chrome:
 
-1. Per ogni simbolo (`10yity.b`, `10ydey.b`, `10yfry.b`) apri la sua pagina, aspetta ~3 s e
+1. Per ogni simbolo (`10yity.b`, `10ydey.b`, `10yfry.b`, `10yesy.b`) apri la sua pagina, aspetta ~3 s e
    fai il fetch del `href` di quel link
    (`[...document.querySelectorAll('a')].find(a=>/Download data in csv/i.test(a.textContent)).href`;
    non stamparlo: l'estensione blocca l'output con query string), poi salva il testo in
@@ -51,6 +51,7 @@ con l'estensione Chrome:
    V=news_impact_pipeline/venv/bin/python
    $V news_impact_pipeline/import_spread_csv.py IT.csv DE.csv
    $V news_impact_pipeline/import_spread_csv.py FR.csv DE.csv --ticker OAT_BUND_SPREAD
+   $V news_impact_pipeline/import_spread_csv.py ES.csv DE.csv --ticker BONO_BUND_SPREAD
    ```
 
 ⚠ **Dal 2026-11-01 anche il `href` del link risponde «Access denied»** (verificato da Chrome).
@@ -76,6 +77,22 @@ Stooq per gilt/JGB/ACGB — da lì i proxy ETF aggiunti il 2026-08-18.
   declassamenti). Prima il proxy era `^STOXX50E`, che diluisce la Francia nell'area euro;
   `BTP_BUND_SPREAD` non lo sostituisce, perché il contagio verso l'Italia è ambiguo.
 - **Refresh**: stessa procedura manuale del BTP-Bund, qui sopra.
+
+## BONO_BUND_SPREAD
+
+- **Cos'è**: Spagna 10Y − Germania 10Y, in **punti base**, come `BTP_BUND_SPREAD`.
+  Giornaliero dal 1995-11-08 (inizio di `10YESY.B` su Stooq). Aggiunto il 2026-11-28, il
+  giorno prima del voto spagnolo (scartato dalla scheda perché in DB non c'era nulla di spagnolo).
+- **Uso**: rischio fiscale e politico **spagnolo** (elezioni, governi, bilanci). Mappato in
+  `fiscal_policy` (primary) e `geopolitical` (secondary, per le elezioni).
+  `BTP_BUND_SPREAD` non lo sostituisce: misura il contagio verso l'Italia.
+- ⚠ **Fino al 2006-10 lo spread è ≤ 0 in 315 sedute** (1998-04 → 2006-10: convergenza e
+  primi anni dell'euro, Spagna a livello o sotto il Bund). Una variazione percentuale lì
+  non ha senso: è in punti base, e come per `OAT_BUND_SPREAD` i controlli 1.6, 2.6 e 2.8 di
+  `test_asset_universe.py` falliscono per natura (serie `computed`, spread vicino a zero).
+- **Refresh**: stessa procedura manuale del BTP-Bund, qui sopra. Dal 2026-11-28 il `href`
+  «Download data in csv file…» risponde di nuovo con lo storico intero (provato per 10YESY.B
+  e 10YDEY.B), mentre il fetch scritto a mano no.
 
 ## CRACK_321
 
